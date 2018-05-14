@@ -1,6 +1,6 @@
 {{{
-  "title": "How to securely connect to DCC Foundation",
-  "date": "9-28-2017",
+  "title": "How to securely connect to CenturyLink Private Cloud on VMware Cloud Foundation",
+  "date": "5-17-2018",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -9,11 +9,11 @@
 }}}
 
 ### Description
-This KB article assumes that you've created a new virtual server on DCC Foundation. If not, follow this guide to [Create a Server](creating-a-server.md), then return to this guide.
+This KB article assumes that you've created a new virtual server on CenturyLink Private Cloud on VMware Cloud Foundation™. If not, follow this guide to [Create a Server](creating-a-server.md), then return to this guide.
 
 Now what? How do you securely connect to your servers? This KB article describes how to use SSL VPN-Plus to securely connect to your servers.
 
-Note: This KB article assumes that you have already setup SSL VPN-Plus in your DCC Foundation environment. If not, follow this guide to [Configure SSL VPN-Plus](configuring-sslvpn-plus.md), then return to this guide.
+Note: This KB article assumes that you have already setup SSL VPN-Plus in your CenturyLink Private Cloud on VMware Cloud Foundation environment. If not, follow this guide to [Configure SSL VPN-Plus](configuring-sslvpn-plus.md), then return to this guide.
 
 ### Steps
 
@@ -29,7 +29,7 @@ Note: This KB article assumes that you have already setup SSL VPN-Plus in your D
 
   ![SSL VPN-Plus](../images/dccf/how-to-securely-connect3.png)
 
-  If you have a Mac, this step is similar - click on __Click here__ to download the .tgz file and then step through the installation with default options.
+  If you have a Mac, this step is similar &mdash; click on __Click here__ to download the .tgz file and then step through the installation with default options.
 
   ![SSL VPN-Plus](../images/dccf/how-to-securely-connect3m.png)
 
@@ -49,7 +49,7 @@ Note: This KB article assumes that you have already setup SSL VPN-Plus in your D
 
   ![SSL VPN-Plus](../images/dccf/how-to-securely-connect6.png)
 
-* Once you are connected, you can use an SSL or RDP client to access the servers within your DCC Foundation environment.
+* Once you are connected, you can use an SSL or RDP client to access the servers within your CenturyLink Private Cloud on VMware Cloud Foundation environment.
 
   ![SSL VPN-Plus](../images/dccf/how-to-securely-connect7.png)
 

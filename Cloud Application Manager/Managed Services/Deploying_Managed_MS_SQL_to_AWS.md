@@ -1,6 +1,6 @@
 {{{
   "title": "Deploying CenturyLink Managed MS SQL via Cloud Application Manager",
-  "date": "09-20-2017",
+  "date": "05-17-2018",
   "author": "Thomas Broadwell",
   "attachments": [],
   "contentIsHTML": false
@@ -41,7 +41,7 @@ Cloud Application Manager’s Managed Services Anywhere allows customers to depl
 
 ### License
 * Licensing for AWS and Azure deployments are provided by the Cloud Provider.  The cost for MS SQL server and the VM it is deployed upon will be reflected within the customer's cloud provider bill, or under the cloud provider's section in the CenturyLink consolidated bill for customers that have elected to utilize CenturyLink's consolidated billing feature.
-* CenturyLink DCC-Foundation supports a bring your own license (BYOL) model.  Customers can enter an activation key at deployment for a Managed MS SQL instance deployed on DCC-Foundation.
+* CenturyLink Private Cloud on VMware Cloud Foundation™ supports a bring your own license (BYOL) model.  Customers can enter an activation key at deployment for a Managed MS SQL instance deployed on CenturyLink Private Cloud on VMware Cloud Foundation.
 
 ### Installation Features
 * Prepare Server for Application Service (OS Specific Parameters)
@@ -70,21 +70,21 @@ Cloud Application Manager’s Managed Services Anywhere allows customers to depl
 
 Deploying Managed MS SQL to your AWS provider with CenturyLink Cloud Application Manager:
 1.	In Boxes, Deployment Policies, search for “SAMPLE”
-2.	Select SAMPLE Managed MS SQL Deployment Policy 
+2.	Select SAMPLE Managed MS SQL Deployment Policy
 
 ![mgd-mssql-1.PNG](../../images/cloud-application-manager/mgd_mssql-1.PNG)
 
-3.	Select the Configure (Gear) dropdown 
+3.	Select the Configure (Gear) dropdown
 4.	Select “Clone”:
 
 ![mgd_mssql-2.PNG](../../images/cloud-application-manager/mgd_mssql-2.PNG)
 
-5.	Modify the Cloned Deployment Policy with your details (Icon, Name, Description) 
+5.	Modify the Cloned Deployment Policy with your details (Icon, Name, Description)
 6.	Select Save
 
 ![mgd_mssql-3.PNG](../../images/cloud-application-manager/mgd_mssql-3.PNG)
 
-7.	Edit your new Deployment Policy with your environment specific details (Resource, Placement and Network) and Save. 
+7.	Edit your new Deployment Policy with your environment specific details (Resource, Placement and Network) and Save.
 **NOTE:  The CenturyLink recommended Instance type is selected in the SAMPLE Managed MS SQL deployment.  Modification of this Instance type may result in significant performance issues.**
 **Disk configuration settings should remain as configured in SAMPLE Managed MS SQL deployment policy.**
 
