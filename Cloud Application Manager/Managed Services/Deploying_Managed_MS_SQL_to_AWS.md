@@ -41,7 +41,7 @@ Cloud Application Manager’s Managed Services Anywhere allows customers to depl
 
 ### License
 * Licensing for AWS and Azure deployments are provided by the Cloud Provider.  The cost for MS SQL server and the VM it is deployed upon will be reflected within the customer's cloud provider bill, or under the cloud provider's section in the CenturyLink consolidated bill for customers that have elected to utilize CenturyLink's consolidated billing feature.
-* CenturyLink Private Cloud on VMware Cloud Foundation™ supports a bring your own license (BYOL) model.  Customers can enter an activation key at deployment for a Managed MS SQL instance deployed on CenturyLink Private Cloud on VMware Cloud Foundation.
+* CenturyLink Private Cloud on VMware Cloud Foundation supports a bring your own license (BYOL) model.  Customers can enter an activation key at deployment for a Managed MS SQL instance deployed on CenturyLink Private Cloud on VMware Cloud Foundation.
 
 ### Installation Features
 * Prepare Server for Application Service (OS Specific Parameters)

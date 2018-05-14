@@ -20,7 +20,7 @@ A new Usage History Enhancement details how CenturyLink safeguards customer acco
 
 ![Image1](../../images/cloud-application-manager/integrated-billing-report.png)
 
-For more details: [Partner Cloud Integration: Detailed Billing Report](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-detailed-billing-report/)
+More details: [Partner Cloud Integration: Detailed Billing Report](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-detailed-billing-report/)
 
 ### Bug Fixes (1)
 
