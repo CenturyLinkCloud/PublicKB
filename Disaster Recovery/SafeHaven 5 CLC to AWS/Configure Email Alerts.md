@@ -31,6 +31,7 @@ Before enabling the email alerts please make sure that the Protection Groups are
 7. Go to recipient's mailbox and check the test email
 
 **NOTE**: If the test email is not received, please re-configure the e-mail notifications settings to work.
+The procedure is same for CLC/VMWare/Manual sites as the source datacenters.
 
 ### Video Tutorial
 <p>

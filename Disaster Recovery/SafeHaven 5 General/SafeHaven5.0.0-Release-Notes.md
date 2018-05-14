@@ -1,9 +1,11 @@
+
 {{{
   "title": "SafeHaven 5.0.0 Release Notes",
   "date": "12-29-2017",
   "author": "Shi Jin",
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
 ### Release Notes
@@ -50,4 +52,8 @@ This is the first major release in the SafeHaven-5 product line and there is no 
 * [Linux SafeHaven Onboarding Scripts Downloads](https://download.safehaven.ctl.io/SH-5.0.0/safehaven_linux_onboarding_scripts-5.0.0.tar.gz)
 
 Please note that you can check the md5 checksum against the file named [MD5SUMS](https://download.safehaven.ctl.io/SH-5.0.0/MD5SUMS).
+
+### Documentations
+
+[SafeHaven Inventory Sheet](https://download.safehaven.ctl.io/SH-5-Docs/SafeHaven-Inventory-Sheet-1.xlsm)
 

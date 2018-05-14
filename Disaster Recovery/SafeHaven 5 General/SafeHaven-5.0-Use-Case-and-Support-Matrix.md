@@ -3,7 +3,8 @@
   "date": "05-17-2018",
   "author": "Mahima Kumar",
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
 ### Article Overview

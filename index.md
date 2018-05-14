@@ -16,6 +16,7 @@
     "Disaster Recovery",
     "Ecosystem Partners",
     "General",
+    "Hybrid IT",
     "LBaaS",
     "Managed Services",
     "Marketplace",
