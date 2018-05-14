@@ -1,6 +1,6 @@
 {{{
   "title": "vCloud Director Prerequisites",
-  "date": "2-19-2018",
+  "date": "5-17-2018",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -9,11 +9,11 @@
 }}}
 
 ### Description
-In this KB article, we walk through the prerequisites needed to enable functionality within the vCloud Director (vCD) Web Console environment for DCC Foundation.
+In this KB article, we walk through the prerequisites needed to enable functionality within the vCloud Director (vCD) Web Console environment for CenturyLink Private Cloud on VMware Cloud Foundation™.
 
-Basic functionality includes everything except the the ability to upload OVF packages and/or ISO images into your DCC Foundation Catalog, which is also covered in this KB, but is typically not required for all users of DCC Foundation.
+Basic functionality includes everything except the the ability to upload OVF packages and/or ISO images into your CenturyLink Private Cloud on VMware Cloud Foundation Catalog, which is also covered in this KB, but is typically not required for all users.
 
-For more information on adding to your Catalog, take a look at this KB article - [Adding to your Catalog in DCC Foundation](add-to-catalog.md).
+For more information on adding to your Catalog, take a look at this KB article - [Adding to your Catalog in CenturyLink Private Cloud on VMware Cloud Foundation](add-to-catalog.md).
 
 ### Supported Browsers
 The vCloud Director Web Console is compatible with recent versions of Google Chrome, Mozilla Firefox, and Microsoft Internet Explorer.
@@ -25,7 +25,7 @@ At a minimum, the following needs to be done for basic functionality to work:
 * Allow Popups for your DCCF URL
 * Add your DCCF URL to Trusted Sites
 
-Details on allowing Flash, Popups and adding to Trusted Sites is below.
+Details on allowing Flash, Popups and adding to Trusted Sites are below.
 
 **Note:** Uploading OVF packages and/or ISO images is only supported using Chrome. Follow the directions below to configure Chrome on Windows or Mac to enable uploading of OVF/ISO. Chrome is the recommended browser for full functionality.
 

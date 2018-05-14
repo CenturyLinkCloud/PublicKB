@@ -1,7 +1,16 @@
 {{{
 "title": "Cloud Platform - Release Notes: May 7, 2018",
+<<<<<<< HEAD
+<<<<<<< HEAD
+"date": "05-07-2018",
+=======
+"date": "02-27-2018",
+>>>>>>> release-notes-050718
+"author": "David O'Brien",
+=======
 "date": "05-08-2018",
 "author": "Thomas Broadwell",
+>>>>>>> upstream/master
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -48,7 +57,7 @@ A new Usage History Enhancement details how CenturyLink safeguards customer acco
 
 ![Image1](../../images/cloud-application-manager/integrated-billing-report.png)
 
-For more details: [Partner Cloud Integration: Detailed Billing Report](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-detailed-billing-report/)
+More details: [Partner Cloud Integration: Detailed Billing Report](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-detailed-billing-report/)
 
 ### Bug Fixes (1)
 
