@@ -21,7 +21,7 @@
 
 
 ### Introduction
-The foundation of Microsoft’s comprehensive data platform, SQL Server delivers breakthrough performance for mission-critical applications – and it gets even better with CenturyLink Cloud Application Manager and our Managed Microsoft SQL service.
+The foundation of Microsoft’s comprehensive data platform, SQL Server delivers breakthrough performance for mission-critical applications &mdash; and it gets even better with CenturyLink Cloud Application Manager and our Managed Microsoft SQL service.
 
 ### Overview
 Cloud Application Manager’s Managed Services Anywhere allows customers to deploy workloads and delegate the management of the workload to CenturyLink, relieving themselves of the burdens of day to day monitoring, patching and Operational activities.  Through Cloud Application Manager, a customer can provision a new VM instance with MS SQL within their AWS provider and chose to have CenturyLink manage both the Operating System and MS SQL.
