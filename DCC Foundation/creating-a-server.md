@@ -18,7 +18,7 @@ Note: This KB assumes you have followed the KB article on [Adding to your Catalo
 ### Steps
 * Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment.
 
-  ![Login to DCC F](../images/dccf/login-to-dcc-f.png)
+  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../images/dccf/login-to-dcc-f.png)
 
 * Once logged in, you will see the __Quick Access__ page. The easiest way to create a virtual server is to click __Add vApp from Catalog__.
 

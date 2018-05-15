@@ -1,9 +1,9 @@
-{{{ 
-"title": "Cloud Platform - Release Notes: November 07, 2017", 
-"date": "11-07-2017", 
-"author": "Anthony Vetter", 
-"attachments": [], 
-"contentIsHTML": false 
+{{{
+"title": "Cloud Platform - Release Notes: November 07, 2017",
+"date": "11-07-2017",
+"author": "Anthony Vetter",
+"attachments": [],
+"contentIsHTML": false
 }}}
 
 ### New Features (3)
@@ -22,7 +22,7 @@ __Cloud Optimization and Analytics__
 
 __Managed Services Anywhere__
 
-   Cloud Application Manager’s Managed Services Anywhere now includes support for Tomcat and Apache, enabling large-scale, mission-critical web applications to be deployed on AWS or Microsoft Azure (CenturyLink DCC-Foundation coming soon). By selecting to deploy Managed Tomcat and/or Apache servers to AWS or Microsoft Azure - (CenturyLink DCC-Foundation coming soon) - customers get all the features of a managed server along with management of the Tomcat / Apache instance. Simply Delegate Management to CenturyLink and receive Monitoring, Alerting, Ticketing, Remote Administration and Patching for both the VM and the Tomcat / Apache intance.
+   Cloud Application Manager’s Managed Services Anywhere now includes support for Tomcat and Apache, enabling large-scale, mission-critical web applications to be deployed on AWS or Microsoft Azure (CenturyLink Private Cloud on VMware Cloud Foundation). By selecting to deploy Managed Tomcat and/or Apache servers to AWS or Microsoft Azure - (CenturyLink Private Cloud on VMware Cloud Foundation) - customers get all the features of a managed server along with management of the Tomcat / Apache instance. Simply Delegate Management to CenturyLink and receive Monitoring, Alerting, Ticketing, Remote Administration and Patching for both the VM and the Tomcat / Apache intance.
 
 Supported Versions:
 * Tomcat 7.0, 8.0 & 8.5
@@ -35,7 +35,7 @@ Supported Operating Systems:
 Supported Cloud Providers:
 * AWS
 * Microsoft Azure
-* CenturyLink DCC-Foundation (Coming Soon)
+* CenturyLink Private Cloud on VMware Cloud Foundation
 
 ### Enhancements (1)
 
@@ -68,9 +68,9 @@ __DCC General Bug Fixes__
 * __OS Validation bug fix:__
 
    Added better wording for validation error message for CPU requirement check.
-  
+
 __Public Cloud IaaS Bug Fixes__
-  
+
 Resolved a bug where some V1 API responses were being truncated before all the data was returned.
 
 Fixed an issue where some VPN server creations were failing.
