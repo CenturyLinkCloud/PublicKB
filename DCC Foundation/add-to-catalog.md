@@ -1,6 +1,6 @@
 {{{
-  "title": "Adding to your Catalog in DCC Foundation",
-  "date": "9-29-2017",
+  "title": "Adding to your Catalog in CenturyLink Private Cloud on VMware Cloud Foundation",
+  "date": "5-17-2018",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -9,16 +9,16 @@
 }}}
 
 ### Description
-In this KB article, we demonstrate how to add an Open Virtualization Format (OVF) Template to your Catalog in DCC Foundation. We also have step-by-step instructions on adding an Existing vApp to your Catalog. In this case, an existing vApp could consist of one or more VMs.
+In this KB article, we demonstrate how to add an Open Virtualization Format (OVF) Template to your Catalog in CenturyLink Private Cloud on VMware Cloud Foundation™. We also have step-by-step instructions on adding an Existing vApp to your Catalog. In this case, an existing vApp could consist of one or more VMs.
 
-A catalog is a container for vApp templates and media files in an organization. Organization administrators and catalog authors within DCC Foundation can create catalogs in an organization. Catalog contents can be shared with other users within DCC Foundation.
+A catalog is a container for vApp templates and media files in an organization. Organization administrators and catalog authors within CenturyLink Private Cloud on VMware Cloud Foundation can create catalogs in an organization. Catalog contents can be shared with other users within CenturyLink Private Cloud on VMware Cloud Foundation.
 
-DCC Foundation contains organization (private) catalogs, and access to the DCC Foundation public catalog. Organization catalogs include vApp templates and media files that you can share with other users in the organization.
+CenturyLink Private Cloud on VMware Cloud Foundation contains organization (private) catalogs, and access to its public catalog. Organization catalogs include vApp templates and media files that you can share with other users in the organization.
 
 ### Steps to add an OVF Template
-* Login to your DCC Foundation environment.
+* Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment.
 
-  ![Login to DCC F](../images/dccf/login-to-dcc-f.png)
+  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../images/dccf/login-to-dcc-f.png)
 
 * Once logged in, you can either click on __Catalogs__ at the top of the page, or click on __Manage Catalogs__ in the shortcuts pane on the right side of the page.
 
@@ -42,7 +42,7 @@ DCC Foundation contains organization (private) catalogs, and access to the DCC F
 
   ![Catalog](../images/dccf/add-to-catalog6.png)
 
-* Once the vApp Template is successfully imported, it can be used to deploy VMs inside of DCC Foundation.
+* Once the vApp Template is successfully imported, it can be used to deploy VMs inside of CenturyLink Private Cloud on VMware Cloud Foundation.
 
 ### Steps to add an Existing vApp to your Catalog
 In this example, we will work with the Engineering vApp to create a new vApp Template. If the vApp is running, it is added to the catalog as a vApp template with all of its VMs in a suspended state.

@@ -1,7 +1,7 @@
 {{{
 "title": "Cloud Platform - Release Notes: May 7, 2018",
-"date": "05-08-2018",
-"author": "Thomas Broadwell",
+"date": "05-07-2018",
+"author": "David O'Brien",
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -16,7 +16,7 @@ We are excited to launch a few major enhancements to our Managed Services Anywhe
 
 ###### Supported Platforms
 
-Besides AWS and Azure, we are now expanding our supported platforms to include CenturyLink Private Cloud (Dedicated Cloud Compute – Foundation). CenturyLink Private Cloud (DCC-F) users can now signup for Cloud Application Manager and enable Managed Services and get the same features that they would get on AWS & Azure.
+Besides AWS and Azure, we are now expanding our supported platforms to include CenturyLink Private Cloud on VMware Cloud Foundation. Users of CenturyLink Private Cloud on VMware Cloud Foundation can now signup for Cloud Application Manager and enable Managed Services and get the same features that they would get on AWS & Azure.
 
 ###### Improved set of fully supported services:
 
@@ -30,7 +30,7 @@ C) AWS Services (Amazon EC2, VPC, Relational Database Services, EBS, S3, ELB, Ro
 
 D) Azure Services (Virtual Machines, Virtual Network, VPN Gateway, Security Groups, ExpressRoute, IP Addresses, Blob Storage, Queue Storage, Disk Storage
 
-E) DCC-Foundation Edge Gateway & VMware vCloud Director service features
+E) CenturyLink Private Cloud on VMware Cloud Foundation Edge Gateway & VMware vCloud Director service features
 
 ###### Service enablement
 Going forward customers can enable Managed Services by "Provider" instead of enabling by instance. Provider is a representation of an Account in the downstream cloud platform. Once Managed Services are enabled on a Provider, CenturyLink will provide full support on the services listed above.
@@ -48,7 +48,7 @@ A new Usage History Enhancement details how CenturyLink safeguards customer acco
 
 ![Image1](../../images/cloud-application-manager/integrated-billing-report.png)
 
-For more details: [Partner Cloud Integration: Detailed Billing Report](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-detailed-billing-report/)
+More details: [Partner Cloud Integration: Detailed Billing Report](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-detailed-billing-report/)
 
 ### Bug Fixes (1)
 
