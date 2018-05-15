@@ -16,9 +16,9 @@ Application Lifecycle Management now offers a Workload Map view into the instanc
 
 ### Enhancements (1)
 
-#### [CenturyLink Private Cloud on VMware Cloud Foundation](/centurylink-private-cloud-on-vmware-cloud-foundation)
+#### [CenturyLink Private Cloud on VMware Cloud Foundation](//centurylink-private-cloud-on-vmware-cloud-foundation)
 
-Customers of CenturyLink Private Cloud on VMware Cloud Foundation now have the option for CenturyLink provided OS licenses, for Microsoft Windows and/or Red Hat Enterprise Linux. 
+Customers of CenturyLink Private Cloud on VMware Cloud Foundation now have the option for CenturyLink provided OS licenses, for Microsoft Windows and/or Red Hat Enterprise Linux.
 
 ### Announcements (2)
 
