@@ -1,16 +1,7 @@
 {{{
 "title": "Cloud Platform - Release Notes: May 7, 2018",
-<<<<<<< HEAD
-<<<<<<< HEAD
 "date": "05-07-2018",
-=======
-"date": "02-27-2018",
->>>>>>> release-notes-050718
 "author": "David O'Brien",
-=======
-"date": "05-08-2018",
-"author": "Thomas Broadwell",
->>>>>>> upstream/master
 "attachments": [],
 "contentIsHTML": false
 }}}
