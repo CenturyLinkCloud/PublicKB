@@ -16,7 +16,7 @@ Once you are done with this configuration, take a look at [How to Securely Conne
 ### Steps
 * Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment.
 
-  ![Login to DCC F](../images/dccf/login-to-dcc-f.png)
+  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../images/dccf/login-to-dcc-f.png)
 
 * Once logged in, click __Administration__ at the top.
 
