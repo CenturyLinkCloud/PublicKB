@@ -1,6 +1,6 @@
 {{{
 "title": "Cloud Platform - Release Notes: May 7, 2018",
-"date": "05-07-2018",
+"date": "05-08-2018",
 "author": "David O'Brien",
 "attachments": [],
 "contentIsHTML": false
@@ -40,7 +40,7 @@ Going forward Managed Services charge is calculated based on the spend of the Pr
 
 Platform Support is not charged for the provider(s) where MSA is enabled.
 
-Find out more about the updates to Managed Services Anywhere in https://www.ctl.io/cloud-application-manager/managed-services-anywhere/ and [the FAQ](https://www.ctl.io/knowledge-base/cloud-application-manager/faq/)
+Find out more about [Managed Services Anywhere](https://www.ctl.io/cloud-application-manager/managed-services-anywhere/) updates and read [the FAQ](https://www.ctl.io/knowledge-base/cloud-application-manager/faq/).
 
 ##### Cloud Optimization and Analytics
 
