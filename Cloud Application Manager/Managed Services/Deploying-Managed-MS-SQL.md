@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:Cloud Application Manager/Managed Services/Deploying_Managed_MS_SQL_to_AWS.md
+=======
+>>>>>>> upstream/master
 {{{
   "title": "Deploying CenturyLink Managed MS SQL via Cloud Application Manager",
   "date": "05-17-2018",
@@ -109,6 +112,7 @@ Deploying Managed MS SQL to your AWS provider with CenturyLink Cloud Application
 ### Help
 
 Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md) for help. Or you may contact [support](http://managedservices.ctl.io) to request help.
+<<<<<<< HEAD
 =======
 {{{
   "title": "Deploying CenturyLink Managed MS SQL via Cloud Application Manager",
@@ -213,3 +217,5 @@ The Sample Deployment policy is generated when the provider is made managed.  Th
 
 Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md) for help. Or you may contact [support](http://managedservices.ctl.io) to request help.
 >>>>>>> upstream/master:Cloud Application Manager/Managed Services/Deploying-Managed-MS-SQL.md
+=======
+>>>>>>> upstream/master

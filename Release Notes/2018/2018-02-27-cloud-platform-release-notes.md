@@ -16,7 +16,7 @@ On the March 1 invoice, Cloud Application Manager will reveal per-provider billi
 
 ###### Application Lifecycle Management
 
-Going forward when a DCC or VMware vCloud provider type is configured, Cloud Application Manager will auto-discover existing instances in DCC as well as VMware vCloud based environments. With this additions, the discovery feature of existing instances is now available for any CLC, AWS, Azure, DCC, DCC-F and VMWare vCloud configured provider.
+Going forward when a DCC or VMware vCloud provider type is configured, Cloud Application Manager will auto-discover existing instances in DCC as well as VMware vCloud based environments. With this additions, the discovery feature of existing instances is now available for any CLC, AWS, Azure, DCC, CenturyLink Private Cloud on VMware Cloud Foundation and VMWare vCloud configured provider.
 
 Consolidated Account activity:
 
@@ -32,8 +32,8 @@ Cloud Application Manager's detailed billing report's account breakout  will pre
 
 Microsoft Azure Checks:
 
-Cloud Application Manager Monitoring now allows for Microsoft Azure checks.  These checks will provide base-level infrastructure metrics and logs for Azure services. 
- 
+Cloud Application Manager Monitoring now allows for Microsoft Azure checks.  These checks will provide base-level infrastructure metrics and logs for Azure services.
+
 The checks live on the Policies tab (Check Catalog) in Cloud Application Management Monitoring site.  Please see the attached image.
 
 ![Image1](../../images/2018-02-27_ReleaseNotes_AzureChecks.png)
@@ -116,4 +116,3 @@ You can test your changes against the SQS Paris region (https://sqs.eu-west-3.am
 
     Manually Updating Your Certificate Bundle
     If you cannot access https://aws.amazon.com and you need to update your certificate bundle, then you can do so by importing at least one of the required CAs. They can be found here https://www.amazontrust.com/repository/ . Instructions for importing a root CA certificate into your certificate bundle will vary so please consult the documentation that came with your software.
-

@@ -18,7 +18,7 @@ CenturyLink Private Cloud on VMware Cloud Foundation contains organization (priv
 ### Steps to add an OVF Template
 * Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment.
 
-  ![Login to DCC F](../images/dccf/login-to-dcc-f.png)
+  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../images/dccf/login-to-dcc-f.png)
 
 * Once logged in, you can either click on __Catalogs__ at the top of the page, or click on __Manage Catalogs__ in the shortcuts pane on the right side of the page.
 

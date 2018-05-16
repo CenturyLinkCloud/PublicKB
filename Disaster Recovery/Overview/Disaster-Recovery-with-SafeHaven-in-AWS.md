@@ -18,7 +18,7 @@ Production Datacenter Site type in this scenario can be:
 
 1. On-Prem VMware
 2. Any CenturyLink Cloud Datacenter
-3. DCC-Foundation
+3. CenturyLink Private Cloud on VMware Cloud Foundation
 4. CenturyLink Bare Metal Servers
 5. Hyper-V Generation 1
 6. Any AWS Region

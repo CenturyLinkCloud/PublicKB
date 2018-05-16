@@ -17,7 +17,7 @@
 #### New Use Case: Use of Amazon Web Services (AWS) as a Disaster Recovery Site
 
 One of the major feature's of this release is the capability to protect production servers on **multiple hypervisors** and failover to **AWS**. Examples of validated hypervisors are:
-* VMware: including VMware based cloud platforms such as CenturyLink Cloud, DCC-F(vCloud Director), etc.
+* VMware: including VMware based cloud platforms such as CenturyLink Cloud, CenturyLink Private Cloud on VMware Cloud Foundation (vCloud Director), etc.
 * Hyper-V Generation 1
 * Xen(AWS)
 * KVM
@@ -56,4 +56,3 @@ Please note that you can check the md5 checksum against the file named [MD5SUMS]
 ### Documentations
 
 [SafeHaven Inventory Sheet](https://download.safehaven.ctl.io/SH-5-Docs/SafeHaven-Inventory-Sheet-1.xlsm)
-
