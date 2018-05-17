@@ -6,7 +6,7 @@
     "Autoscale",
     "Backup",
     "Blueprints",
-    "CPC-VM",
+    "CenturyLink Private Cloud on VMware Cloud Foundation",
     "Cloud Application Manager",
     "Compliance",
     "Container Services",
