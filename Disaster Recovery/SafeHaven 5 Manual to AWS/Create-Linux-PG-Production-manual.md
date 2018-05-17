@@ -1,5 +1,5 @@
 {{{
-  "title": "Create Linux Protection Group with Production site in DCC Foundation",
+  "title": "Create Linux Protection Group with Production site in CenturyLink Private Cloud on VMware Cloud Foundation",
   "date": "02-06-2018",
   "author": "Anshul Arora",
   "attachments": [],
@@ -7,10 +7,10 @@
 }}}
 
 ### Article Overview
-This article explains how to attach a RAW disk to Production SRN in DCC Foundation and create a Linux Protection Group.
+This article explains how to attach a RAW disk to Production SRN in CenturyLink Private Cloud on VMware Cloud Foundation and create a Linux Protection Group.
 
 ### Requirements
-Access to the Production SRN in DCC Foundation and permissions to add raw disks to it.
+Access to the Production SRN in CenturyLink Private Cloud on VMware Cloud Foundation and permissions to add raw disks to it.
 
 ### Assumption
 This article assumes that:
@@ -24,7 +24,7 @@ This article assumes that:
 
 2. Click the **SRN** you want to add storage to, and go to **Hardware** tab.  
 
-Add two raw disks 
+Add two raw disks
 **First RAW disk**: Add a single **raw disk** amounting to "100% of the total used storage(full copy of data)" on Production Linux Server.
 For example, if the VM that needs to be protected has 3 disks of size 1GB, 2GB and 14GB, then add a 17GB raw disk to the production SRN.
 
@@ -61,7 +61,7 @@ For example, if you added a 17GB disk in step 1, then please add a second raw di
    Expand the VM to edit disk layout. You can select an existing disk and change its size to match the production server.   
    If the production VM has more than 1 disks, click **add disk** to add more disks.  
    Click **Next**  
-   
+
    **Note**: Make sure that disk layout matches the production VM.
 
 5. Select a **RAW/Hard disk**. Please select the First RAW disk that we added in previous section's step 3.

@@ -9,7 +9,7 @@
 
 ### Overview
 
-Part of [Cloud Application Manager's](https://www.ctl.io/cloud-application-manager/) Cloud Optimization is Cloud Integration, giving users the ability to benefit from CenturyLink's partnerships with other cloud providers. CenturyLink assumes the billing for these accounts and takes responsibility for platform support. Users may also benefit from Security hardening and cost Optimization. This document is about creating new Amazon Web Services with Cloud Integration.
+Part of [Cloud Application Manager's](https://www.ctl.io/cloud-application-manager/) Cloud Optimization gives users the ability to benefit from CenturyLink's partnerships with other cloud providers. CenturyLink assumes the billing for these accounts and takes responsibility for platform support. Users may also benefit from Security hardening and cost Analytics. This document is about creating new Amazon Web Services with Cloud Optimization.
 
 ### Audience
 
@@ -68,7 +68,7 @@ Videos of these steps can be found [here](https://www.ctl.io/guides/).
 
 5. Provide a name for the provider that identifies it for your purposes
 
-6. Select the "Create a new AWS account for consolidated billing and Platform Support" option. (If the user cannot see this option, they are not an organization Administrator.)
+6. Select the "Create a new AWS account with CenturyLink Cloud Optimization" option. (If the user cannot see this option, they are not an organization Administrator.)
 
   ![Create New AWS Account](../../images/cloud-application-manager/CINT_New_AWS1.1.png)
 
@@ -84,7 +84,13 @@ Please expect at least a few hours before we are able to process your request. I
 * Set up AWS Config Service for auditing
 * Enable MFA Access
 
-An administrative username and password will then be given to the Cloud Application Manager organization administrator.
+8. Within five minutes, you will now automatically receive temporary credentials to your account right within the provider. Click the  "Show Credentials" button to obtain administrator username, temporary password, and login URL for your account. The password is temporary and you will be requested to change it at first login. You may either log into the account via the URL provided or you may click the "AWS Console Button."
+
+  ![Get Credentials](../../images/cloud-application-manager/CAM_COA_Credentials2.png)
+
+  ![Get Credentials2](../../images/cloud-application-manager/CAM_COA_Credentials1.png)
+
+
 
 
 ### Contacting Cloud Application Manager Support

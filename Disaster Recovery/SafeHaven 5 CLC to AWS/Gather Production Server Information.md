@@ -49,3 +49,8 @@ Apart from this other information regarding Domain Controllers, DNS Servers, tra
 ![Image4](../../images/SH5.0/vmdiscovery/image4.png)
 
 6. Click on Export, then select the location for the .xls file.
+
+### Documentations
+
+[SafeHaven Inventory Sheet](https://download.safehaven.ctl.io/SH-5-Docs/SafeHaven-Inventory-Sheet-1.xlsm)
+
