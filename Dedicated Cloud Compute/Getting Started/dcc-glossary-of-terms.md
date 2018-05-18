@@ -1,6 +1,6 @@
 {{{
   "title": "Dedicated Cloud Compute Glossary Terms",
-  "date": "05-18-2018",
+  "date": "05-22-2018",
   "author": "",
   "attachments": [],
   "related-products" : [],

@@ -1,5 +1,5 @@
 {{{ "title": "New Dedicated Cloud Compute User Interface FAQ",
-"date": "05-08-2018",
+"date": "05-22-2018",
 "author": "",
 "attachments": [],
 "contentIsHTML": false
