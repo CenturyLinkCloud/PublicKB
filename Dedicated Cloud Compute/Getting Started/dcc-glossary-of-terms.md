@@ -28,7 +28,7 @@
 
 **Instance Template** &mdash; A standard configuration image created from a virtual machine that contains pre-configured operating systems and customized non-CenturyLink managed applications (if applicable). Instance template(s) allows clients to consistently apply a template to multiple instances simultaneously.
 
-**Managed Hosting** &mdash; The set of CenturyLink [managed server services](/product-catalog/#Managed-Hosting) that include Intelligent Hosting, Foundation Hosting, and Dedicated Cloud Compute.
+**Managed Hosting** &mdash; The set of CenturyLink [managed server services](https://www.ctl.io/product-catalog/#Managed-Hosting) that include Intelligent Hosting, Foundation Hosting, and Dedicated Cloud Compute.
 
 **SavvisStation Portal** &mdash; The name for the interface that ties together centralized systems that CenturyLink uses to provide services to customers. Included in SavvisStation Portal are systems for order processing, provisioning, procurement, management and monitoring, change management, billing, customer support/ticketing and reporting.
 
@@ -36,4 +36,4 @@
 
 **UI (user interface)** &mdash; This refers to the new portal internal and external customers will use to provision and manage virtual resources in the DCC environment.
 
-**Utility Storage** &mdash; [a CenturyLink managed storage service](/dcc-adding-utility-storage/) that includes use of a storage area network, which is provided and managed by CenturyLink. This is a separate service that has its own Service Guide and SLA.
+**Utility Storage** &mdash; [a CenturyLink managed storage service](https://www.ctl.io/knowledge-base/dedicated-cloud-compute/getting-started/dcc-adding-utility-storage/) that includes use of a storage area network, which is provided and managed by CenturyLink. This is a separate service that has its own Service Guide and SLA.
