@@ -1,15 +1,15 @@
-{{{ "title": "New DCC UI Hands-On Introduction",
-"date": "05-30-2017",
+{{{ "title": "New Dedicated Cloud Compute User Interface Hands-On Introduction",
+"date": "05-08-2018",
 "author": "",
 "attachments": [],
 "contentIsHTML": false
 }}}
 
-### New DCC UI Hands-On Introduction
+### New Dedicated Cloud Compute User Interface Hands-On Introduction
 
-This is a script to work through some basic functionality in the new DCC UI.
+This is a script to work through some basic functionality in the new Dedicated Cloud Compute User Interface (DCC UI).
 
-**Note:** this is a live production environment and the functionality in the UI is active. The below steps have been carefully chosen to have no impact on the customer (no power operations, order deployment, etc). Test actions are highlighted in **bold** with a brief description of what the user should see when performing the action.
+**Note:** This is a live production environment and the functionality in the UI is active. The steps below have been carefully chosen to have no impact on the customer (no power operations, order deployment, etc). Test actions are highlighted in **bold** with a brief description of what the user should see when performing the action.
 
 **New DCC UI Hands-On Introduction**
 
@@ -42,31 +42,31 @@ This gives a similar display to the Dashboard Overview, but from a Data Center l
 
 **In the left menu, select a cluster.**
 
-This expands the cluster in the left menu, listing all the VMs in the cluster by preferred name. VMs that are running will display with a "play" icon (a right-facing triangle) before their name. VMs that are stopped will display a "stop" icon (a square). The main view also changes to the Overview for the cluster and displays the Hosts in the cluster. The columns change to show a count of VMs and the amount of vCPUs and vRAM provisioned on each host and the total amount of storage in the cluster. Again, there are Compute and Storage tabs which start from the Cluster level. Additionally, the Cluster view has a Hosts tab and Utilization tab.
+This expands the cluster in the left menu, listing all the VMs in the cluster by preferred name. VMs that are running will display with a "play" icon (a right-facing triangle) before their name. VMs that are stopped will display a "stop" icon (a square). The main view also changes to the Overview for the cluster and displays the Hosts in the cluster. The columns change to show a count of VMs and the amount of vCPUs and vRAM provisioned on each host and the total amount of storage in the cluster. Again, there are Compute and Storage tabs that start from the Cluster level. Additionally, the Cluster view has a Hosts tab and Utilization tab.
 
-**Click the Hosts tab and then select a Host from the drop-down menu that appears.** This view shows the Host's details. Circular graphs show the CPU and RAM usage with charts showing the same over a 12-hour period.
+**Click the Hosts tab and then select a Host from the dropdown menu.** This view shows the Host's details. Circular graphs show the CPU and RAM usage with charts showing the same over a 12-hour period.
 
 **In the left menu, select a VM.** This view shows the VM's details. As with the Host, circular graphs show the vCPU and vRAM usage with charts showing the same over a 12-hour period.
 
-**Note:** depending on your user permissions, you may see action buttons on a bar near the top of this view. This is where a customer would start, stop, restart, clone, delete, or modify the VM displayed. **These buttons are active and functional.** Clicking them is not a part of this test.
+**Note:** Depending on your user permissions, you may see action buttons on a bar near the top of this view. This is where a customer would start, stop, restart, clone, delete, or modify the VM displayed. **These buttons are active and functional.** Clicking them is not a part of this test.
 
 #### Create
 
 In the main menu on the left side of the page, **open the Create item and select Add Server from the fly-out menu that appears.** This brings up the Add Server form.
 
-**Make selections in the datacenter, cluster, billing account number, and operating system fields.** Each selection will populate and enable other fields on the page. Once these four fields have been filled, the estimate cost button on the left side of the page will enable.
+**Make selections in the data center, cluster, billing account number, and operating system fields.** Each selection will populate and enable other fields on the page. Once these four fields have been filled, the estimate cost button on the left side of the page will enable.
 
 **Click the estimate cost button.** This will display the install and monthly costs and discounts for a VM with the selected options.
 
 **Make selections in the vcpu, vram, interface 1, and Storage fields.** This will finish populating all the required fields in the form and enable the save order button.
 
-In the main menu on the left side of the page, **open the Create item again and select Add Storage from the fly-out menu that appears.** This brings up the Add Storage form. **Make selections in the datacenter, cluster, billing account number, storage type, and storage amount fields.**
+In the main menu on the left side of the page, **open the Create item again and select Add Storage from the fly-out menu that appears.** This brings up the Add Storage form. **Make selections in the data center, cluster, billing account number, storage type, and storage amount fields.**
 
 Each selection will populate and enable the field below it. Once all the options have been selected, the estimate cost button on the left side of the page will enable. 
 
 **Click the estimate cost button.** This will display the install and monthly costs and discounts for a VM with the selected options.
 
-**Note:** clusters with Unified storage may not show any storage types and will instead show a message indicating storage cannot be provisioned through the portal at this time. In that case, try a different cluster. If no clusters for the customer can select a storage type, the estimate step can be skipped.
+**Note:** Clusters with Utility Storage may not show any storage types and will instead show a message indicating storage cannot be provisioned through the portal at this time. In that case, try a different cluster. If no clusters for the customer can select a storage type, the estimate step can be skipped.
 
 #### End
 
@@ -78,6 +78,6 @@ Time permitting, one additional area to look at would be utilization metrics. Th
 
 From there, **click the Utilization tab.**
 
-If you've selected a host, the Utilization tab is a drop-down menu and you will need to select a host from the list. This view matches the **Service Utilization** tab on the details page in SavvisStation Portal. The options on this page allow a date range to be set, the display type to be chosen - graph or table, and up to 14 metrics to be selected. After choosing at least one metric, click the show graph button. For each metric that was selected, a graph will be displayed over the date range entered in the form.
+If you've selected a host, the Utilization tab is a dropdown menu and you will need to select a host from the list. This view matches the **Service Utilization** tab on the details page in SavvisStation Portal. The options on this page allow a date range to be set, the display type to be chosen &mdash; graph or table, and up to 14 metrics to be selected. After choosing at least one metric, click the show graph button. For each metric that was selected, a graph will be displayed over the date range entered in the form.
 
 Additionally, the advanced options allow multiple metrics to be compared on the same graph, a single metric to be compared on two time frames, or a single metric to be compared across up to 5 machines. These advanced options are only available in the graph display, and not in a table.

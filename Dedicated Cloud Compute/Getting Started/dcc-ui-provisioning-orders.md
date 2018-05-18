@@ -1,19 +1,19 @@
 {{{
-"title": "Dedicated Cloud Compute - Provisioning Orders",
-"date": "06-01-2017",
+"title": "Dedicated Cloud Compute &mdash; Provisioning Orders",
+"date": "05-08-2018",
 "author": "",
 "attachments": [],
 "related-products" : [],
 "contentIsHTML": false
 }}}
 
-You can provision orders in the new Dedicated Cloud Compute (DCC) UI. Steps include adding and deleting a VM, adding a datastore, and adding and deleting a disk. [Go here](dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
+You can provision orders in the new Dedicated Cloud Compute User Interface (DCC UI). Steps include adding and deleting a VM, adding a datastore, and adding and deleting a disk. [Go here](dcc-ui-demo-videos.md) for a demo on using the new DCC UI.
 
 ### Add VM/Delete VM
 
 1. On the left-hand navigation, click **Create > Add Server**.
 
-2. Make selections in the datacenter, cluster, billing account number, and operating system fields. Each selection will populate and enable other fields on the page. Once these four fields have been filled, the estimate cost button on the left side of the page will become available.
+2. Make selections in the data center, cluster, billing account number, and operating system fields. Each selection will populate and enable other fields on the page. Once these four fields have been filled, the estimate cost button on the left side of the page will become available.
 
     ![dashboard](../../images/dcc-ui-provisioning-orders-1.png)
 

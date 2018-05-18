@@ -1,21 +1,21 @@
-{{{ "title": "New Dedicated Cloud Compute UI FAQ",
-"date": "06-1-2017",
+{{{ "title": "New Dedicated Cloud Compute User Interface FAQ",
+"date": "05-08-2018",
 "author": "",
 "attachments": [],
 "contentIsHTML": false
 }}}
 
-**Q: Where can people see the holistic changes made to the DCC UI?**
-A: The New DCC UI Changes and Updated Views Knowledge Base article has steps and updated images comparing the old and new UI.
+**Q: Where can people see the holistic changes made to the DCC User Interface?**
+A: The new [DCC UI Changes and Updated Views Knowledge Base article](/knowledge-base/dedicated-cloud-compute/getting-started/new-dcc-ui-changes-updated-views/) has steps and updated images comparing the old and new UI.
 
 **Q: Is there any training for learning about the new DCC UI?**
-A: Internal documents and training have been created geared for internal CenturyLink (CTL) teams to learn and use the new DCC UI. The Onboarding team is welcome to adapt this content as needed for presentation to external Dedicated Compute Cloud (DCC) customers. With that in mind, some of the content covered herein is good for internal teams, but is not necessarily something external customers would care to know and/or understand (i.e., how the development teams did a complete overhaul of the backend to separate automation from business logic).
+A: Documents have been created to show how to login and use the new DCC UI. They are all available through the [Getting Started](/knowledge-base/dedicated-cloud-compute/getting-started/#1) section of the Dedicated Cloud Compute Knowledge Base. There are multiple screenshots with a step- by-step explanation of how to use the new DCC UI to provision new Guest OS orders or to make changes against your present Guest OS’s.
 
 **Q: Do users need experience using the SavvisStation Portal?**
-A: No experience with SavvisStation Portal (SSP) is required; however, it is assumed that most students will have seen the old/existing portal interface available through Symphony Orchestrator. Throughout the course there will be references to old/existing features (e.g., Compute Dashboard, Image Management, etc.), and how these concepts are presented in the new portal user interface (UI).
+A: No experience with SavvisStation Portal is required; however, it is assumed that most users will have seen the old/existing portal interface. Throughout the documentation, there will be references to old/existing features (e.g., Compute Dashboard, Image Management, etc.), and how these concepts are presented in the new portal UI.
 
 **A: What other assumptions are important to take note of when using the new UI?**
-Q: Using the new DCC UI assumes the student (user) is familiar with the current DCC UI in regards to the major features, how to navigate, etc. Content in later modules will show how things appear in the new UI.
+Q: Using the new DCC UI assumes the user is familiar with the current DCC UI in regards to the major features, how to navigate, etc. Various documents available in this KB section show how features appear in the new UI.
 
 **A: Will there be a course offering in the future that is split into learning modules?**
 Q: Should a course offering become available, it would be partitioned into four different yet connected modules as follows:
