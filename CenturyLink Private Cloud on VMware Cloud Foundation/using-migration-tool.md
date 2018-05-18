@@ -1,6 +1,6 @@
 {{{
   "title": "Migrating VMs into CenturyLink Private Cloud on VMware Cloud Foundation",
-  "date": "4-25-2018",
+  "date": "5-18-2018",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -81,3 +81,22 @@ During a cold migration, the Replication Manager creates a VM instance in the re
 * Click Start.
 
 The migration job is initiated and a new cold migration job appears in the Migrations tab. You can monitor the progress of the migration job in the Migrations tab.
+
+
+
+
+
+
+### Workload Migration
+* Log in to the vSphere Web Client as an administrator
+* Navigate to the Home tab
+* Click the vCloud Director Extender plug-in
+* Click on 'Migration tab'
+* Click New Migration
+* Specify the type of migration
+* Select the data center, from which you want to migrate virtual machines
+* From the drop down menu, select the virtual machines you want to migrate and click Nex
+* Select a target cloud destination for the virtual machines by providing the requested information
+Select Target Cloud | Provide the registered target vCloud Director. Select vDC | Provide the registered vDC. Select storage profile | Provide a storage profile name. Select network | Provide a network name. vApp layout Select a layout option | Each VM stays individually. or Group all VMs into a single vApp.
+* Schedule the time and date for the migration
+* Click Start to run the migration

@@ -1,6 +1,6 @@
 {{{
   "title": "Preparing Your Environment for Migration into CenturyLink Private Cloud on VMware Cloud Foundation",
-  "date": "4-25-2018",
+  "date": "5-18-2018",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -224,40 +224,20 @@ If you haven't configured the pre-requisite NAT firewall rules as indicated at t
 * In the vSphere Web Client, navigate to Home > Inventories > vCloud Director Extender.
 
   **Note:** You will need to logout of the vSphere Web Client to see the vCloud Director Extender plug-in in the vCenter UI.
+
+  ![Migration Tool](../images/dccf/extender18.png)
+
 * In the Provider Clouds tab, click Add a Provider Cloud.
+
+  ![Migration Tool](../images/dccf/extender19.png)
+
 * Enter a Provider Cloud Name.
-* Enter a Provider Cloud URL.
+* Enter your Provider Cloud URL.
 * Enter a vCD Extender Cloud Service URL and port.
 * Enter vCD Org Admin user name and password.
 * (Optional) You can test the connection to the Provider Cloud by clicking Test.
-* Click Add.
-  Certificates information pop-up window appears.
+* A Certificates information pop-up window appears.
 * Review the hosts certificates information and click Trust Certificates.
+* Click Add.
 
-
-**=== Stuff below is from Kumar's notes - need to verify ===**
-
-* Logout from the vCenter and login back to see the vCloud Dircetor Extender plugin in the vCenter UI
-
-* From vCloud Director Extender plugin icon Click on Provider Cloud
-* Select 'New Provider Cloud' and wizard will prompt to enter Centurylink provided vcloud director org url (https://s<site_ID><DC_ID>a.dccf.ctl.io/cloud/org/<Site_ID>), credentails and vCD extender Cloud Service url <https://<Site_ID><DC_ID>ext.dccf.ctl.io:443 alongwith port information. Click ADD
-* Select trust the certificate warning.
-* You can choose to test before adding to validate the connectivity.
-* Once the networking and URLs are configured correctly you will see the new provider cloud registered under the ‘Provider Clouds’ tab with a status of ‘Running’, you will also see any accessible virtual datacenters (vDC) to which you have access:
-* After the provider cloud is properly registered, you can submit a migration request using the ‘Migrations’ tab in the CX interface
-
-
-
-### Workload Migration
-* Log in to the vSphere Web Client as an administrator
-* Navigate to the Home tab
-* Click the vCloud Director Extender plug-in
-* Click on 'Migration tab'
-* Click New Migration
-* Specify the type of migration
-* Select the data center, from which you want to migrate virtual machines
-* From the drop down menu, select the virtual machines you want to migrate and click Nex
-* Select a target cloud destination for the virtual machines by providing the requested information
-Select Target Cloud | Provide the registered target vCloud Director. Select vDC | Provide the registered vDC. Select storage profile | Provide a storage profile name. Select network | Provide a network name. vApp layout Select a layout option | Each VM stays individually. or Group all VMs into a single vApp.
-* Schedule the time and date for the migration
-* Click Start to run the migration
+  ![Migration Tool](../images/dccf/extender20.png)
