@@ -241,3 +241,5 @@ If you haven't configured the pre-requisite NAT firewall rules as indicated at t
 * Click Add.
 
   ![Migration Tool](../images/dccf/extender20.png)
+
+Now that you're done setting up your environment, you are ready to proceed to the next step - [Migrating VMs into CenturyLink Private Cloud on VMware Cloud Foundation](using-migration-tool.md).
