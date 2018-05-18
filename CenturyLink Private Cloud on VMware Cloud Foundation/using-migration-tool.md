@@ -15,7 +15,7 @@ With vCloud Director Extender, you can migrate your virtual machines from an on-
 
 You can initiate virtual machines migration jobs only from a tenant vCenter Server on-premise. With vCloud Director Extender migration jobs, tenants can preserve their current IP and MAC address scheme after the migration completes.
 
-**Note:** Preserving IP and MAC address scheme after a migration is only possible, if you extend a private, on-premise, virtual network to cloud VDC networks by using the DC Extension feature of vCloud Director Extender. Follow the information in KB titled [Configuring DC Extensions for vCD Extender](l2vpn-migration-tool.md).
+**Note:** Preserving IP and MAC address scheme after a migration is only possible, if you extend a private, on-premise, virtual network to cloud VDC networks by using the DC Extension feature of vCloud Director Extender. Follow the information in KB titled [Configuring DC Extensions for vCD Extender](l2vpn-migration-tool.md) to configure this for your environment.
 
 Migration of an entire data center is a slow process and is often done in stages. To ensure a minimal downtime of client applications, vCloud Director Extender provides flexibility in the different types of migrations.
 
