@@ -52,6 +52,8 @@ By performing a warm migration, you migrate a powered on virtual machine from an
 * (Optional) Enter a tag for the migration job that you are initiating.
 * Click Start.
 
+**Note:** You will not see the "migrated" VM in vCD until you perform a Cutover.
+
 The migration operation is initiated and a new warm migration job appears in the Migrations tab in a Created state. After the warm migration job completes, the warm migration job goes into a cutover-ready status and you can initiate a manual cutover.
 
 By Performing a cutover to a virtual machine, you finalize a warm migration. The Cutover operation includes a final sync and import of a migrated VM into a destination Org VDC's vApp and an optional powering on of the VM.
@@ -82,21 +84,4 @@ During a cold migration, the Replication Manager creates a VM instance in the re
 
 The migration job is initiated and a new cold migration job appears in the Migrations tab. You can monitor the progress of the migration job in the Migrations tab.
 
-
-
-
-
-
-### Workload Migration
-* Log in to the vSphere Web Client as an administrator
-* Navigate to the Home tab
-* Click the vCloud Director Extender plug-in
-* Click on 'Migration tab'
-* Click New Migration
-* Specify the type of migration
-* Select the data center, from which you want to migrate virtual machines
-* From the drop down menu, select the virtual machines you want to migrate and click Nex
-* Select a target cloud destination for the virtual machines by providing the requested information
-Select Target Cloud | Provide the registered target vCloud Director. Select vDC | Provide the registered vDC. Select storage profile | Provide a storage profile name. Select network | Provide a network name. vApp layout Select a layout option | Each VM stays individually. or Group all VMs into a single vApp.
-* Schedule the time and date for the migration
-* Click Start to run the migration
+NEED TO GRAB A SCREENSHOT OF WHAT IT LOOKS LIKE ON THE VCD SIDE
