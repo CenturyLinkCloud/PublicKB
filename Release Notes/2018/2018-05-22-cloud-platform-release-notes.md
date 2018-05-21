@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-### Enhancements (1)
+### Enhancements (8)
 
 #### Cloud Application Manager
 
