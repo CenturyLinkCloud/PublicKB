@@ -1,15 +1,15 @@
 {{{
-"title": "Dedicated Cloud Compute - Adding Unified Storage",
-"date": "06-01-2017",
+"title": "Dedicated Cloud Compute - Adding Utility Storage",
+"date": "05-08-2018",
 "author": "",
 "attachments": [],
 "related-products" : [],
 "contentIsHTML": false
 }}}
 
-### Unified Storage – Standard Increments
+### Utility Storage – Standard Increments
 
-With Unified Storage, customers have the choice of block or file storage. They can also choose from multiple performance levels, including:
+With Utility Storage, customers have the choice of block or file storage. They can also choose from multiple performance levels, including:
 
 |  Performance Level  |  Increments   |  IOPS  |
 |---------------------|---------------|--------|
@@ -17,9 +17,9 @@ With Unified Storage, customers have the choice of block or file storage. They c
 | Vital               |     50 GB     |  5,000 |
 | Value               |     50 GB     |   500  |
 
-### Configuring Unified Storage on a DCC Cluster
+### Configuring Utility Storage on a DCC Cluster
 
-You can add Unified Storage to virtual servers in an existing cluster. The steps in configuring Unified Storage saves the order, but does not deploy the server.
+You can add Utility Storage to virtual servers in an existing cluster. The steps in configuring Utility Storage saves the order, but does not deploy the server.
 
 **Configure and Price a Storage Order**
 
@@ -35,7 +35,7 @@ You can add Unified Storage to virtual servers in an existing cluster. The steps
     * datacenter
     * cluster
     * billing account number (ban)
-    * storage type (**Note:** The storage type drop-down labels are Velocity, Vital, and Value when the cluster type you select is Unified Storage. When the cluster type is Utility Storage, the drop-down labels are QOS1, QOS2, QOS3, and QOS4.
+    * storage type (**Note:** The storage type drop-down labels are Velocity, Vital, and Value when the cluster type you select is Utility Storage. When the cluster type is Utility Storage, the drop-down labels are QOS1, QOS2, QOS3, and QOS4.
     * storage amount
 
 5. Click **estimated cost** to calculate the cost of installation and monthly charges.
@@ -66,10 +66,10 @@ After saving your order the Saved Order window appears. You can also view saved 
 
 1. Click **create > add storage**.
 
-### Deploy the Order for Unified Storage
+### Deploy the Order for Utility Storage
 
 1. Click **deploy**.
 
-### Delete the Order for Unified Storage
+### Delete the Order for Utility Storage
 
 1. Click **delete**.
