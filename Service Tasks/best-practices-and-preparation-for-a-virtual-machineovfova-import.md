@@ -8,7 +8,7 @@
 
 #### OVERVIEW
 
-The CenturyLink Cloud Service Task and Onboarding teams can import images of existing physical or virtual servers directly onto the Platform, generally for compatibility/performance testing, benchmarking, or as part of an overall cloud migration strategy. There are additional Knowledge Base articles which outline the steps involved in exporting an existing virtual machine from various hypervisors (i.e. from [Xen](../Servers/converting-a-xen-image-to-ovf-for-use-in-centurylinkcloud.md), or [VMware Workstation](../Servers/exporting-a-vm-to-an-ovf-from-vmware-workstation-for-import-into-the-centurylink-cloud.md); however, this article serves to outline the best practices suggested for a successful import.
+The CenturyLink Cloud Service Task team can import images of existing physical or virtual servers directly onto the Platform, generally for compatibility/performance testing, benchmarking, or as part of an overall cloud migration strategy. There are additional Knowledge Base articles which outline the steps involved in exporting an existing virtual machine from various hypervisors (i.e. from [Xen](../Servers/converting-a-xen-image-to-ovf-for-use-in-centurylinkcloud.md), or [VMware Workstation](../Servers/exporting-a-vm-to-an-ovf-from-vmware-workstation-for-import-into-the-centurylink-cloud.md); however, this article serves to outline the best practices suggested for a successful import.
 
 * Prepare the required documentation. The minimal information required for importing an OVF/OVA file is:
 
@@ -22,7 +22,7 @@ The CenturyLink Cloud Service Task and Onboarding teams can import images of exi
   * Validate the [Guest Operating System is supported on the CenturyLink Cloud for Import](../Service Tasks/supported-guest-operating-systems-for-ovaovf-import.md)
 
 
-* The VMware hardware version (vmx) must be 8 or lower 
+* The VMware hardware version (vmx) must be 8 or lower
 
 * If exporting multiple Virtual Machines or a collection of Virtual Machines (such as a vAPP), it is required to export each VM individually. Individual files provide greater flexibility and reduce the need for repeated uploads in the event of file corruption (re-uploading a single server vs. the entire collection). **vApp import is unsupported**.
 
