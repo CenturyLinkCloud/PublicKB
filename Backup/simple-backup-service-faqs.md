@@ -105,7 +105,7 @@ A: An "IN_PROGRESS" status for a backup job means the data is actively being tra
 
 **Q: How do you handle backing up open files?**
 
-A: For Windows, Open file backups are supported through VSS snapshots for any VSS compliant applications running on the Windows server. you can enable VSS backups on specific backup policies for Windows servers by checking the "Create VSS Snapshot" checkbox. This can be done when creating the policy, or by editing an existing policy.
+A: For Windows, Open file backups are supported through VSS snapshots for any VSS compliant applications running on the Windows server. You can enable VSS backups on specific backup policies for Windows servers by checking the "Create VSS Snapshot" checkbox. This can be done when creating the policy, or by editing an existing policy.
 
 ![](../images/backup/faq/vss.png)
 
@@ -113,11 +113,15 @@ For Linux, open files will not be backed up and a “Partial_Success” will be 
 
 **Q: How can I confirm that my backups were successful?**
 
-A: In the backup section of the control portal, under the backup policy in question there is a column that shows the last successful backup time for every server on the policy. Alternately, there are two places in the backup agent that show the status of your backups. First, in the Backup Jobs section, which shows all backups executed by this particular agent. Second, for additional information, selecting “Restore” from the Policy Details page will drill down into greater detail about backups for the specific Policy. Details include Backup Date, Status, and Protected Data (GBs).
+A: In the backup section of the control portal, under the backup policy in question there is a column that shows the last successful backup date for every server on the policy. Alternately, there are two places in the backup agent that show the status of your backups. First, in the Backup Jobs section, which shows all backups executed by this particular agent. Second, for additional information, selecting “Restore” from the Policy Details page will drill down into greater detail about backups for the specific Policy. Details include Backup Date, Status, and Protected Data (GBs).
 
 **Q: For a "Failed" or "Partial_Success" backup status, can I see which files failed and why?**
 
-A: Yes, see the sbs-backup-files-failed.csv file located on your system for details.
+A: Yes, see the sbs-backup-files-failed.csv file located on your system's backup agent's log directory for details.
+
+Logs can be viewed at the following locations:
+  * Linux: /var/lib/simple-backup-service
+  * Windows: C:\Windows\System32\config\systemprofile\appdata\local\simplebackupservice
 
 **Q: Where are my backups actually stored?**
 

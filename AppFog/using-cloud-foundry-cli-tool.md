@@ -1,5 +1,7 @@
 {{{ "title": "Using the Cloud Foundry CLI Tool", "date": "01-26-2016", "author": "Ben Heisel", "attachments": [], "related-products" : [], "contentIsHTML": false }}}
 
+<strong>The AppFog service will be retired as of June 29, 2018. Beginning on this date, the AppFog Platform-as-a-Service will no longer be available, including all source code, env vars, and database information.</strong>
+
 ### Audience
 
 AppFog Users
@@ -13,7 +15,7 @@ This article is intended to provide the available commands using the Cloud Found
 * Deploy an application using `cf push <APP_NAME>`. By default, the `cf push` command looks for a manifest.yml file in the current working directory. Use the -f option to provide a non-standard manifest location or filename. For more information refer to this document on [Using a Manifest File](http://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html). Here are possible options when pushing an application:
 ```
 cf push APP_NAME [-b BUILDPACK_NAME] [-c COMMAND] [-d DOMAIN] [-f MANIFEST_PATH] [--docker-image DOCKER_IMAGE]
-   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-n HOST] [-p PATH] [-s STACK] [-t TIMEOUT] [-u HEALTH_CHECK_TYPE] 
+   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-n HOST] [-p PATH] [-s STACK] [-t TIMEOUT] [-u HEALTH_CHECK_TYPE]
    [--no-hostname] [--no-manifest] [--no-route] [--no-start]
 ```
 This example deploys an application named `example-app` with 2 instances, each with a memory allocation of 256M,  and using a specific buildpack:
@@ -74,7 +76,7 @@ USAGE:
 
 VERSION:
    6.13.0-e68ce0f-2015-10-15T22:53:58+00:00
-   
+
 GETTING STARTED:
    help                                   Show help
    login                                  Log user in

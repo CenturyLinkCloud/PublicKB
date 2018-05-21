@@ -1,6 +1,6 @@
 {{{
- "title": "DCC Foundation - Glossary of Terms",
- "date": "06-29-2017",
+ "title": "CenturyLink Private Cloud on VMware Cloud Foundation &mdash; Glossary of Terms",
+ "date": "05-17-2018",
  "author": "",
  "attachments": [],
  "related-products" : [],
@@ -31,7 +31,7 @@
 
 **Solid-State Drive (SSD)**: A solid-state storage device that uses integrated circuit assemblies as memory to store data persistently.
 
-**SSL offloading**: Relieves a Web server of the processing burden of encrypting and/or decrypting traffic sent via SSL , the security protocol that is implemented in every Web browser. The processing is offloaded to a separate device designed specifically to perform SSL acceleration or SSL termination.
+**SSL offloading**: Relieves a Web server of the processing burden of encrypting and/or decrypting traffic sent via SSL, the security protocol that is implemented in every Web browser. The processing is offloaded to a separate device designed specifically to perform SSL acceleration or SSL termination.
 
 **vApp**: Stands for Virtual Application and consists of one or more virtual machines that communicate over a network and use resources and services in a deployed environment. A vApp can contain multiple virtual machines.
 

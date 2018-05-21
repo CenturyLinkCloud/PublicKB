@@ -19,6 +19,7 @@
 
   Building on top of our recently released [costing dashboard](https://www.ctl.io/knowledge-base/release-notes/2017/2017-09-26-cloud-platform-release-notes/), Cloud Application Manager customers with Optimized AWS providers now have access to a Monthly Report that provides a granular breakdown of cost by day and by service in order to further understand how an environment is performing financially.  Customers can access this new functionality as part of the Analytics site of Cloud Application manager by selecting ‘Cost’ and then ‘Monthly Reports’ from the left-hand navigation bar.
 
-  __New Feature to Add Volume Disks to DCC-Foundation__
+  __New Feature to Add Volume Disks to CenturyLink Private Cloud on VMware Cloud Foundation,
+__
 
-  Cloud Application Manager customers using a DCC-Foundation provider now have the ability to add storage disks to the deployment policies to include additional volumes to their DCC-Foundation deployments.
+  Cloud Application Manager customers using a CenturyLink Private Cloud on VMware Cloud Foundation provider now have the ability to add storage disks to the deployment policies to include additional volumes to their CenturyLink Private Cloud on VMware Cloud Foundation deployments.

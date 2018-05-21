@@ -1,6 +1,6 @@
 {{{
-  "title": "Core Concepts with VMware vCloud Director and DCC Foundation",
-  "date": "9-28-2017",
+  "title": "Core Concepts with VMware vCloud Director and CenturyLink Private Cloud on VMware Cloud Foundation",
+  "date": "5-17-2018",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -9,7 +9,7 @@
 }}}
 
 ### Description
-In this KB article, we will explore the core concepts that are within the VMware vCloud Director User Interface (UI), that makes up your DCC Foundation environment.
+In this KB article, we will explore the core concepts that are within the VMware vCloud Director User Interface (UI) that makes up your CenturyLink Private Cloud on VMware Cloud Foundation™ environment.
 
 ### Core Concepts
 VMware vCloud Director (vCD) provides role-based access to a Web console that allows the members of an organization to interact with the organization's resources to create and work with vApps and virtual machines (VMs).

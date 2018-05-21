@@ -1,6 +1,6 @@
 {{{
   "title": "Using the API",
-  "date": "1-10-2018",
+  "date": "5-17-2018",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -9,7 +9,7 @@
 }}}
 
 ### Description
-In this KB article, we walk through the basics of creating a New Session (Logging In) with the vCloud Director (vCD) API that is part of DCC Foundation. Once a new session is established, you should follow the detailed [VMware API documentation](https://code.vmware.com/apis/220/vcloud).
+In this KB article, we walk through the basics of creating a New Session (Logging In) with the vCloud Director (vCD) API that is part of CenturyLink Private Cloud on VMware Cloud Foundation™. Once a new session is established, you should follow the detailed [VMware API documentation](https://code.vmware.com/apis/220/vcloud).
 
 ### Create a New Session (Logging In)
 To begin using the API, you request the system to create a Session object. In this request, you supply your credentials in an Authorization header of the form prescribed by the identity provider that your organization uses. The response includes an authorization token, which you must include in subsequent requests.
@@ -20,7 +20,7 @@ To create a session object, you supply your credentials in an Authorization head
 
 **Prerequisites**
 
-* Login credentials of a DCC Foundation user with appropriate rights.
+* Login credentials of a CenturyLink Private Cloud on VMware Cloud Foundation user with appropriate rights.
 
 **Procedure**
 
