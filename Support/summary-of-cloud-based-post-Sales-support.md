@@ -1,6 +1,6 @@
 {{{
   "title": "Summary of Cloud Based Post-Sales Support Options",
-  "date": "9-22-2016",
+  "date": "5-24-2018",
   "author": "Dave Burkhardt",
   "attachments": [],
   "contentIsHTML": false
@@ -10,8 +10,8 @@
 
 CenturyLink offers customers world-class support services to match any organization’s budget and requirements. This article summarizes the post-sales cloud support teams that are currently available to customers. For more information and/or to engage one of these service groups, please contact your CenturyLink Sales Representative or our NOC.
 
-### CLoud Onboarding Services:
-* All CenturyLink Cloud QuickStart Onboardings. Please see https://www.ctl.io/onboarding/ for more information.
+<!--### CLoud Onboarding Services:
+* All CenturyLink Cloud QuickStart Onboardings. Please see https://www.ctl.io/onboarding/ for more information.-->
 
 ### CenturyLink Cloud Customer Care (support) team
 * 24/7 support of your cloud infrastructure and resources. The Customer Care team is "Always On", available to answer your questions regarding the Platform and work to resolve any isseus you are having with the service. Please see https://www.ctl.io/support/ for more information.
