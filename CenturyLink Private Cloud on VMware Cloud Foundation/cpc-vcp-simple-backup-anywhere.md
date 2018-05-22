@@ -1,5 +1,5 @@
 {{{
-  "title": "Using Simple Backup Anywhere with CenturyLink Private Cloud on VMware Cloud Foundation",
+  "title": "Using Simple Backup Anywhere",
   "date": "05-17-2018",
   "author": "Anthony Hakim",
   "attachments": [],
