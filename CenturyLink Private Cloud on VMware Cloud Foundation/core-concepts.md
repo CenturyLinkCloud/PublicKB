@@ -1,5 +1,5 @@
 {{{
-  "title": "Core Concepts with VMware vCloud Director and CenturyLink Private Cloud on VMware Cloud Foundation",
+  "title": "Core Concepts",
   "date": "5-17-2018",
   "author": "Anthony Hakim",
   "attachments": [],
