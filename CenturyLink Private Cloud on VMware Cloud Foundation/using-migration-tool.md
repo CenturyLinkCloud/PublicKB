@@ -41,22 +41,45 @@ By performing a warm migration, you migrate a powered on virtual machine from an
 **Procedure**
 * In the vSphere Web Client, navigate to Home > Inventories > vCloud Director Extender.
 * In the Migrations tab, click New Migration.
+
+  ![Migration Tool](../images/dccf/migration1.png)
+
 * Select Warm migration and click Next.
-* Select the VM that you want to migrate and click Next.
+
+  ![Migration Tool](../images/dccf/migration-warm1.png)
+
+* Select the Source VMs that you want to migrate and click Next.
   * When you select a VM, the system verifies if the selected VM is powered on.
   * If you select a VM that is powered off, the system returns an error, and you cannot proceed until you select a powered on VM.
-* Select a Target Cloud, a target vDC, a target storage profile, a target network, and whether you want to group all virtual machines that you are migrating into a single vApp, and click Next.
-* (Optional) You can initiate the migration at a specific time.
-* Select a target Recovery Point Objective (RPO).
-* Select the disk type.
-* (Optional) Enter a tag for the migration job that you are initiating.
-* Click Start.
 
-**Note:** You will not see the "migrated" VM in vCD until you perform a Cutover.
+  ![Migration Tool](../images/dccf/migration-warm2.png)
+
+* Select a Target Cloud, a target vDC, a target storage profile, a target network, and whether you want to group all virtual machines that you are migrating into a single vApp, and click Next.
+
+  ![Migration Tool](../images/dccf/migration-warm3.png)
+
+* On the Settings page
+  * Select to run the migration Immediately or At a specific time.
+  * Select a target Recovery Point Objective (RPO).
+  * Select the disk type.
+  * (Optional) Enter a tag for the migration job that you are initiating.
+  * Click Start.
+
+  ![Migration Tool](../images/dccf/migration-warm4.png)
+
+  **Note:** You will not see the "migrated" VM in vCD until you perform a Cutover.
 
 The migration operation is initiated and a new warm migration job appears in the Migrations tab in a Created state. After the warm migration job completes, the warm migration job goes into a cutover-ready status and you can initiate a manual cutover.
 
+  ![Migration Tool](../images/dccf/migration-warm5.png)
+
 By Performing a cutover to a virtual machine, you finalize a warm migration. The Cutover operation includes a final sync and import of a migrated VM into a destination Org VDC's vApp and an optional powering on of the VM.
+
+  ![Migration Tool](../images/dccf/migration-warm6.png)
+
+Once the Cutover operation has fully synchronized, it will appear in CenturyLink Private Cloud on VMware Cloud Foundation.
+
+  ![Migration Tool](../images/dccf/migration4w.png)
 
 ### Cold migration
 By performing a cold migration, you migrate a powered off virtual machine from an on-premise vCenter Server to an Org vDC in CenturyLink Private Cloud on VMware Cloud Foundation. Upon initiation, you start simultaneous file transfer and cutover processes, so no manual operations are required after the migration completes.
@@ -71,17 +94,37 @@ During a cold migration, the Replication Manager creates a VM instance in the re
 **Procedure**
 * In the vSphere Web Client, navigate to Home > Inventories > vCloud Director Extender.
 * In the Migrations tab, click New Migration.
+
+  ![Migration Tool](../images/dccf/migration1.png)
+
 * Select Cold migration and click Next.
+
+  ![Migration Tool](../images/dccf/migration-cold1.png)
+
 * Select the VM that you want to migrate and click Next.
   * When you select a VM, the system verifies if the selected VM is powered off.
   * If you select a VM that is powered on, the system returns an error, and you cannot proceed until you select a powered off VM.
+
+  ![Migration Tool](../images/dccf/migration-cold2.png)
+
 * Select a Target Cloud, a target vDC, a target storage profile, a target network, and whether you want to group all VMs that you are migrating into a single vApp, and click Next.
-* (Optional) You can initiate the migration at a specific time.
-* (Optional) Select if you want to power on the VM after the migration operation completes.
-* Select the disk type.
-* (Optional) Enter a tag for the migration job that you are initiating.
-* Click Start.
+
+  ![Migration Tool](../images/dccf/migration-cold3.png)
+
+* On the Settings page
+  * Select to run the migration Immediately or At a specific time.
+  * Select if you want to power on the VM after the migration operation completes.
+  * Select the disk type.
+  * (Optional) Enter a tag for the migration job that you are initiating.
+  * Click Start.
+
+  ![Migration Tool](../images/dccf/migration-cold4.png)
+
 
 The migration job is initiated and a new cold migration job appears in the Migrations tab. You can monitor the progress of the migration job in the Migrations tab.
 
-NEED TO GRAB A SCREENSHOT OF WHAT IT LOOKS LIKE ON THE VCD SIDE
+  ![Migration Tool](../images/dccf/migration2.png)
+
+Once the VM has fully synchronized, it will appear in CenturyLink Private Cloud on VMware Cloud Foundation.
+
+  ![Migration Tool](../images/dccf/migration4c.png)
