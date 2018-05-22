@@ -1,6 +1,6 @@
 {{{
-  "title": "Preparing Your Environment for Migration into CenturyLink Private Cloud on VMware Cloud Foundation",
-  "date": "5-18-2018",
+  "title": "Preparing Your Environment for Migration",
+  "date": "5-22-2018",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
