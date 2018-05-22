@@ -1,5 +1,5 @@
 {{{
-  "title": "How to securely connect to CenturyLink Private Cloud on VMware Cloud Foundation",
+  "title": "How to securely connect",
   "date": "5-17-2018",
   "author": "Anthony Hakim",
   "attachments": [],

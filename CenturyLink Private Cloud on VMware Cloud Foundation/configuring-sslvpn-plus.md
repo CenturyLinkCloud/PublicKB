@@ -1,5 +1,5 @@
 {{{
-  "title": "Configuring SSL VPN-Plus for CenturyLink Private Cloud on VMware Cloud Foundation",
+  "title": "Configuring SSL VPN-Plus",
   "date": "5-17-2018",
   "author": "Anthony Hakim",
   "attachments": [],
