@@ -1,5 +1,5 @@
 {{{
-  "title": "Add and Claim Storage to SRNs-DCCF to CLC",
+  "title": "Add and Claim Storage to SRNs-CPCVM to CLC",
   "date": "05-03-2018",
   "author": "Anshul Arora",
   "attachments": [],
@@ -18,8 +18,8 @@ This article assumes that:
 2. Both production and recovery SRNs have been registered and peered
 
 ### Add and claim Storage on SRNs.
-**Adding Storage to the Production SRN in DCCF**
-1. Login to DCCF console.
+**Adding Storage to the Production SRN in CPCVM**
+1. Login to CPCVM console.
 2. Click on the production SRN VM.
 3. Go to **Hardware** tab
 4. Under **Hard Disks**, click on **+Add** to add a new hard disk.
