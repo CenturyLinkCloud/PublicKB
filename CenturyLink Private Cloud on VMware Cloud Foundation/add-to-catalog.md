@@ -1,5 +1,5 @@
 {{{
-  "title": "Adding to your Catalog in CenturyLink Private Cloud on VMware Cloud Foundation",
+  "title": "Adding to your Catalog",
   "date": "5-17-2018",
   "author": "Anthony Hakim",
   "attachments": [],

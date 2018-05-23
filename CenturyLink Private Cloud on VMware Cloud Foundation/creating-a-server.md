@@ -1,5 +1,5 @@
 {{{
-  "title": "Creating a Server in CenturyLink Private Cloud on VMware Cloud Foundation",
+  "title": "Creating a Server",
   "date": "5-17-2018",
   "author": "Anthony Hakim",
   "attachments": [],
