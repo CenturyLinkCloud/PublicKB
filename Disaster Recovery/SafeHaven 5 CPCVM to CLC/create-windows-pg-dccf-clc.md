@@ -119,6 +119,30 @@ It is possible to pre-deploy the recovery instance to speed up the Protection Gr
        This will configure the recovery server to boot using iSCSI off the disks of the DR-SRN when a test-failover/failover operation is initiated.
        
        
-   
+ ### Manually Start Replication
+**Note**: This step is only required if **Windows LRA Agent** was not insalled automatially during the creation of the Protection group
+
+1. Log into the Windows production VM.  
+2. Verify that the SafeHaven Agent has already been installed. If not then please install the SafeHaven Agent. **Requires reboot**
+   Download link for the Agent: https://download.safehaven.ctl.io/SH-5.0.1/safehaven_windows_driver-5.0.1.exe
+
+3. After reboot, click on **Start**, find and launch the SafeHaven **Manager.exe**.
+
+4. Select the default options on the first screen of the wizard (all boxes checked) and click **Next**.
+
+5. Verify the NIC type and PCI slot number. Click **Next**
+
+6. Enter the **Local iSCSI IP address of Production SRN** in front of **Target Portal IP Address** and click **Discover**. Select the appropriate ISCSI target to connect from the ISCSI target list.  
+   Click **Connect**, then select **Next**.
+
+5. A new window appears which provides the mapping from source(VMDK on production server) to destination disk(ISCSI on the SRN) along with the recommended Sync Rate, accept the default option and click **Next**.  
+   **NOTE**: Please make sure each production virtual disk you want to protect is mapped to a corresponding iSCSI target destination disk. **The size of the source and destination disk must match**.
+
+6. Enter the IP configuration of the recovery server. Do not use DHCP. Click **Next**.
+
+7. Click **Finish** to end the wizard.
+
+The initial replication of the production windows VM will start now. Close the command prompt window if required.
+
      
      
