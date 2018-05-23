@@ -1,5 +1,5 @@
 {{{
-  "title": "Create Linux Protection Group-DCCF to CLC",
+  "title": "Create Linux Protection Group-CPCVM to CLC",
   "date": "05-02-2018",
   "author": "Anshul Arora",
   "attachments": [],
@@ -10,7 +10,7 @@
 This article explains how to create a Linux Protection Group.
 
 ### Requirements
-Access to the Production SRN in CenturyLink Cloud and permissions to add raw disks to it.
+Access to the Production SRN in CPCVM (DCCF) and permissions to add raw disks to it.
 
 ### Assumption
 This article assumes that:
