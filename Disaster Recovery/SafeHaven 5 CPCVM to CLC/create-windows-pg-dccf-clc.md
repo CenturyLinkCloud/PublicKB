@@ -1,5 +1,5 @@
 {{{
-  "title": "Create Windows Protection Group, Install LRA and Start Replication- CPCVM to CLC",
+  "title": "Create Windows Protection Group, Install LRA and Start Replication- DCCF to CLC",
   "date": "04-30-2018",
   "author": "Anshul Arora",
   "attachments": [],
@@ -104,12 +104,16 @@ It is possible to pre-deploy the recovery instance to speed up the Protection Gr
       
       **Note**:  Automatic Installation requires a **reboot of the production server**.  It is advised to use this option only during maintenance window.
    
-      Leave the box **unchecked** if automatic installation is not required.  
+      Leave the box **unchecked** if automatic installation is not required.   
       Click **Finish**.  
      **Note**: This will Create a Protection group, Deploy a recovery instance and then configure it to boot using iSCSI target from the DR-SRN disk when ever Test-Failover/Failover is performed.  
-     **Note**: It may take some time for the PG to be deployed.  
+     **Note**: It may take some time for the PG to be deployed.
+   
+   10. If the Windows LRA agent has not been installed. Please make sure to install it on the production VM during a maintenance windows.   
+       Link to donwload agent: https://download.safehaven.ctl.io/SH-5.0.1/safehaven_windows_driver-5.0.1.exe   
+       **Note**: Agent Installation triggers a reboot of the production  VM.
      
-   10. If **pre-deployed proxy recovery server** was selected while creating the PG, and the server has not been configured for iscsi boot, then:   
+   11. If **pre-deployed proxy recovery server** was selected while creating the PG, and the server has not been configured for iscsi boot, then:   
        a. Right click the **Protection group** that was just created.  
        b. Go to **Intallation** > **Install SafeHaven makestub**.  
        c. Verify the Protectiongroup name , and click **Next**.  
@@ -118,8 +122,8 @@ It is possible to pre-deploy the recovery instance to speed up the Protection Gr
        f. Click **Next**.
        This will configure the recovery server to boot using iSCSI off the disks of the DR-SRN when a test-failover/failover operation is initiated.
        
-       
- ### Manually Start Replication
+  
+### Manually Start Replication
 **Note**: This step is only required if **Windows LRA Agent** was not insalled automatially during the creation of the Protection group
 
 1. Log into the Windows production VM.  
@@ -144,5 +148,4 @@ It is possible to pre-deploy the recovery instance to speed up the Protection Gr
 
 The initial replication of the production windows VM will start now. Close the command prompt window if required.
 
-     
      
