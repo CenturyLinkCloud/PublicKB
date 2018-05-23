@@ -35,7 +35,7 @@ Accept the **End User License Agreement** and click **Next**.
 
 ![Upgrade](../../images/SH4.0/Cluster/02.png)
 
-Enter the **Customer Name** and the **License key** provided to you by your CenturyLink Onboarding Engineer.
+Enter the **Customer Name** and the **License key** provided to you by your CenturyLink Engineer.
 
 ![Upgrade](../../images/SH4.0/Cluster/03.png)
 
@@ -45,7 +45,7 @@ Fill in the following fields:
 3. Set the **Administrator Password** (Password required to login to the SafeHaven Console GUI to manange the SafeHaven)
 4. Enter the **CMS root password**. You can get this information from the CenturyLink Control Portal.
 5. Click on **Test Login** to confirm connectivity to the CMS.
-6. Copy the **Debian Package for CMS/SRN** link from the **Download Links** section of the [SafeHaven 4.0.2 Release Notes](safehaven-4.0.2-release.md) and enter it in the **SafeHaven 4.0.2 distribution URL** section. Please contact your CenturyLink Cloud Onboarding Engineer if you have any questions regarding the latest version of **Debian Package for CMS/SRN**.
+6. Copy the **Debian Package for CMS/SRN** link from the **Download Links** section of the [SafeHaven 4.0.2 Release Notes](safehaven-4.0.2-release.md) and enter it in the **SafeHaven 4.0.2 distribution URL** section. Please contact your CenturyLink Cloud Engineer if you have any questions regarding the latest version of **Debian Package for CMS/SRN**.
 7. Do not modify the Service Port (TCP) , Heartbeat Port (UDP) , Installation ID.
 
 Click **Next**
@@ -71,4 +71,3 @@ Login to the **SafeHaven Console** by using the **Client Access IP address** for
 The **SafeHaven Cluster** will appear which has now been created and you can start configuring it.
 
 ![Upgrade](../../images/SH4.0/Cluster/07.png)
-

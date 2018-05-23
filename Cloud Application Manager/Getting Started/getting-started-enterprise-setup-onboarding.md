@@ -1,5 +1,5 @@
 {{{
-"title": "Enterprise Setup & Onboarding",
+"title": "Enterprise Setup",
 "date": "09-01-2016",
 "author": "",
 "attachments": [],
@@ -7,9 +7,9 @@
 "sticky": true
 }}}
 
-### Enterprise Setup & Onboarding
+### Enterprise Setup
 
-If you have a SaaS enterprise account in Cloud Application Manager, understand how to set up and onboard users with information in this article.
+If you have a SaaS enterprise account in Cloud Application Manager, understand how to set up users with information in this article.
 
 **In this article:**
 * Your Enterprise in Cloud Application Manager
