@@ -26,7 +26,7 @@ Example: A customer thinks they may have $5 of EC2 usage from January. On Februa
 
 ###### Microsoft Azure Subscription Update
 
-All new, Optimized Azure providers will be given a name that is more closely associated with the Cloud Application Manager provider. The Azure Subscriptions will have the <Provider Name> (<alias>) format. The Provider Name will be what you enter into the Name field. The alias is a short, unique code, created at the time you launch the provider.  
+All new, Optimized Azure providers will be given a name that is more closely associated with the Cloud Application Manager provider. The Azure Subscriptions will have the &lt;Provider Name&gt; (&lt;alias&gt;) format. The Provider Name will be what you enter into the Name field. The alias is a short, unique code, created at the time you launch the provider.  
 
 The experience for gaining access to new Azure subscriptions has been simplified. The Azure credentials which are first given to the admin user of an Optimized, Azure account should automatically allow the customer to see and use the subscription with the Owner role when they log into the Azure Portal and manipulate resources. If that Cloud Application Manager user also launches other Azure providers, their existing Azure user will also get the Owner role on the new subscriptions. A new Azure user will not be created.
 
