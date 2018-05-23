@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-### Enhancements (8)
+### Enhancements (7)
 
 #### Cloud Application Manager
 
@@ -26,7 +26,7 @@ Example: A customer thinks they may have $5 of EC2 usage from January. On Februa
 
 ###### Microsoft Azure Subscription Update
 
-All new, Optimized Azure providers will be given a name that is more closely associated with the Cloud Application Manager provider. The Azure Subscriptions will have the <Provider Name> (<alias>) format. The Provider Name will be what you enter into the Name field. The alias is a short, unique code, created at the time you launch the provider.  
+All new, Optimized Azure providers will be given a name that is more closely associated with the Cloud Application Manager provider. The Azure Subscriptions will have the &lt;Provider Name&gt; (&lt;alias&gt;) format. The Provider Name will be what you enter into the Name field. The alias is a short, unique code, created at the time you launch the provider.  
 
 The experience for gaining access to new Azure subscriptions has been simplified. The Azure credentials which are first given to the admin user of an Optimized, Azure account should automatically allow the customer to see and use the subscription with the Owner role when they log into the Azure Portal and manipulate resources. If that Cloud Application Manager user also launches other Azure providers, their existing Azure user will also get the Owner role on the new subscriptions. A new Azure user will not be created.
 
@@ -54,12 +54,6 @@ Organization Administrators can enable CenturyLink Cloud as one of the authentic
 
 Cloud Application Manager has been enhanced with performance improvements to the Workspace Switcher. When a user expands the dropdown to select an Organization, Cost Center or Workspace, the details are loaded on-demand based on user selection. This reduces the content and time that needs to be loaded upfront, thus providing a greater user experience with shorter load times when using the Workspace switcher.
 
-##### New Applications Site
-
-We have made some changes to the scope of our Management Site. All the functionality related to Application Lifecycle Management has been moved to a new site called "Applications." Management functions like managing providers, users, settings and viewing activity logs and billing information remain in the "Management" site.  "Applications" will still be the default site that users will land on at log on. They can switch to the Management site to perform any management activities.
-
-This will provide a clear distinction between management activities and application related activities thus allowing the users who are interested in each of those activities to easily navigate and remain within their realm.
-
 ### Ecosystem-Partner Integrations (5)
 
 **SearchStax Solr Service** helps companies host, deploy, and administer their Solr-based search solutions in the cloud. **SearchStax** is a managed Solr-as-a-Service that provides automated scaling, backups, disaster recovery, 24/7 monitoring and alerting, comprehensive analytics, and administrative tools.
@@ -72,8 +66,12 @@ This will provide a clear distinction between management activities and applicat
 
 **VoiceXP SaaS** from VoiceXP is a hosted voice assistant on either Amazon Alexa or Google Assistant Voice. To add your information to these platforms, we create an Alexa "app" or Google Assistant "skill&#92;action". We collaborate with you to develop conversation guide based on your content, APIs, and media to deliver an amazing voice experience for your customers.
 
-### Announcements (1)
+### Announcements (2)
 
 #### CenturyLink Private Cloud on VMware Cloud Foundation
 
 DCC Foundation has a new name &mdash; CenturyLink Private Cloud on VMware Cloud Foundation. We will be updating all collateral to reflect this name change.
+
+#### Cloud Application Manager
+
+Please note that the provider type "CenturyLink" in Cloud Application Manager has been renamed to "CenturyLink Cloud", to clearly indicate that it represents an account with CenturyLink Cloud. This also helps users to differentiate "CenturyLink Cloud" from the other CenturyLink Provider types like "CenturyLink DCC" and "CenturyLink DCC-F".

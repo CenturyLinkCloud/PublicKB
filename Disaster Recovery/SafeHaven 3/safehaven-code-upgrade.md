@@ -1,6 +1,6 @@
 {{{
   "title": "SafeHaven: Code update",
-  "date": "9-9-2015",
+  "date": "5-24-2018",
   "author": "Jake Malmad",
   "attachments": [],
   "contentIsHTML": false
@@ -79,6 +79,6 @@ RE-CONFIRM THE VERSION OF SYNTROPY AND SBD AGAIN
 
 NOTE: SRN REBOOT CAN HAVE A SERIOUS IMPACT ON THE CUSTOMER’S ENVIRONMENT SO IT IS STRONGLY RECOMMENDED TO PLEASE CONFIRM WITH THE DATAGARDENS TEAM BEFORE REBOOTING THE SRN’s (AT LEAST FOR NOW).
 
-NOTE: DO NOT USE THE DROPBOX LINKS MENTIONED IN THIS DOCUMENT, these are sample 3.0 links. Please check with the SafeHaven/Onboarding team prior to completing this action and do so under strict guidance (though taking a snapshot prior will mitigate any potential risk).
+NOTE: DO NOT USE THE DROPBOX LINKS MENTIONED IN THIS DOCUMENT, these are sample 3.0 links. Please check with the SafeHaven team prior to completing this action and do so under strict guidance (though taking a snapshot prior will mitigate any potential risk).
 
 IMPORTANT NOTE: it is very important to run an update-grub command after upgrading/downloading kernels as the scstadmin services are tied to the kernal number and will not function properly if not updated and then rebooted.
