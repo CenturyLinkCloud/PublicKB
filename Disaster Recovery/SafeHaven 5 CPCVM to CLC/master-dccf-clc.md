@@ -53,7 +53,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
     d. [Create Manual Checkpoint](../SafeHaven 5 CLC to AWS/Create Manual Checkpoint.md)
 
-    e. [Configure Recovery Servrer]()
+    e. [Configure Recovery Server for a Linux PG](configure-recovery-server-linux.md)
 
 12.  [Configure Email Alerts](../SafeHaven 5 CLC to AWS/Configure Email Alerts.md)
 
