@@ -57,6 +57,6 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 12.  [Configure Email Alerts](../SafeHaven 5 CLC to AWS/Configure Email Alerts.md)
 
-13.  [Test Failover to CLC](../SafeHaven 5 CLC to AWS/Test Failover to AWS.md)
+13.  [Test Failover to CLC]((test-failover-dccf-clc.md)
 
-14.  [Failover to CLC](../SafeHaven 5 CLC to AWS/Failover to AWS.md)
+14.  [Failover to CLC](failover-dccf-clc.md)
