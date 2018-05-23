@@ -1,5 +1,5 @@
 {{{
-  "title": "Create Windows Protection Group, Install LRA and Start Replication- DCCF to CLC",
+  "title": "Create Windows Protection Group, Install LRA and Start Replication- CPCVM to CLC",
   "date": "04-30-2018",
   "author": "Anshul Arora",
   "attachments": [],
