@@ -15,7 +15,7 @@ On May 23, 2018, CenturyLink Cloud upgraded the Virtual Machine (VM) hardware ve
 
 In order for the update to take effect, all VMs in each CenturyLink Cloud service location will need to be issued a shut down command followed by a power on command. Customers may issue the "Shut Down" server power operation from the Control Portal or API, followed by the "On" server power operation to apply the update.
 
-NOTE: VMs running Windows Operating Systems must upgrade their VMware Tools before following the subsequent steps to complete this update. Instructions on updating the VMware Tools for VMs in CenturyLink Cloud can be [found here](https://www.ctl.io/knowledge-base/servers/self-service-updates-of-vmware-tools/)
+NOTE: VMs running Windows Operating Systems must upgrade their VMware Tools before following the subsequent steps to complete this update. Instructions on updating the VMware Tools for VMs in CenturyLink Cloud can be [found here](./self-service-updates-of-vmware-tools.md)
 
 Alternatively, the shut down command can be initiated from a VM Operating System directly, followed by the "On" server power operation from the Control Portal or API. Issuing a "Reboot" server power operation or an Operating System-level reboot command will not cause the update to take effect, since the VM must be completely powered off. There is no minimum amount of time a VM needs to remain in a powered off state in order for the update to take effect.
 
