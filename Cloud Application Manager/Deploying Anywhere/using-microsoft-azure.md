@@ -8,7 +8,7 @@
 
 ### Using Microsoft Azure
 
-There are two different flavors of Azure and Cloud Application Manager has providers for both. This document is in reference to Classic Azure.
+There are two different flavors of Azure and Cloud Application Manager has providers for both. This document is in reference to Microsoft Azure.
 
 *Name** | **URL of Portal** | **Name of Related Cloud Application Manager Provider** | **KB article**
 --- | --- | --- | ---
