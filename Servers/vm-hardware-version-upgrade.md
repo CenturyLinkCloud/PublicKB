@@ -23,23 +23,6 @@ For more information about CenturyLink Cloud server power operations, please rev
 
 Customers may also use the "Reset" or "Power Off" followed by "Power On" server power operations from the CenturyLink Cloud Control Portal or API to apply the update. These power operations force a VM to power off, similar to switching off the power on a physical computer. The "Reset" or "Power Off" server power operations should only be used in the event that a shut down command is unable to properly power off a VM.
 
-### Checking the VM hardware version
-
-After the update has been applied to a VM, it will be running VM hardware version 11.
-
-To check the VM hardware version from a VM running Windows, run the following commands from a remote Powershell session connected to the VM or from the command prompt or Powershell console on the VM directly:
-
-```
-cd C:\Program Files\VMware\VMware Tools\
-VMwareToolboxCmd.exe -v
-```
-
-To check the VM hardware version from a VM running a Linux Operating system, run the following command from a terminal SSH session connected to the VM:
-
-```
-vmware-toolbox-cmd -v
-```
-
 ### More Information
 
 Customers should not expect any change to the regular operation of their VMs after the update has been applied. This update will not make any Operating System or application-level changes.
