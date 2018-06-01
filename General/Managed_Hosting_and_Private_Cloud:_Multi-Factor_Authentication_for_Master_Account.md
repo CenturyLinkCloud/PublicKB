@@ -7,7 +7,7 @@ OTP multi-factor authentication requires the use of a smart phone and compatible
 ### Workflow
 1 – Multi-Factor Opt-in within User Registration
 *	Select “One Time Password using OTP App” during user registration to enroll in Multi-Factor Authentication.
- ![MFA-1.PNG](../../images/MFA-1.png)
+ ![MFA-1.PNG](../images/MFA-1.png)
 * You can opt-in after registration by navigating to the Authentication tab in the left side navigation within Manage My Account.
 
 2 – Initial Login after User Registration
