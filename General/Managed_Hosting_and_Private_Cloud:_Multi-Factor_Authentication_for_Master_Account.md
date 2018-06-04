@@ -16,7 +16,7 @@ OTP multi-factor authentication requires the use of a smart phone and compatible
 <kbd>![MFA-2.PNG](../images/MFA-2.png)</kbd>
 
 3. Multi Factor Authentication One-Time-Password (OTP) Enrollment
-* If this is the first time you are logging into your master account, you will be prompted to complete your Multi-Factor OTP (one-time password) registration.  
+* If this is the first time you are logging into your master account, you will be prompted to complete your Multi-Factor OTP (one-time password) registration.
 <kbd>![MFA-3.PNG](../images/MFA-3.png)</kbd>
 
 * The QR code is valid for 3 minutes. The page includes a timer that will redirect you when the code expires.
