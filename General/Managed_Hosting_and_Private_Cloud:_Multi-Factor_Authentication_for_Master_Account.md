@@ -1,6 +1,6 @@
-{{{ "title": "Managed Hosting and Cloud: Multi-Factor Authentication", "date": "6-1-2018", "author": "Evan McNeill", "attachments": [], "contentIsHTML": false }}}
+{{{ "title": "Managed Hosting and Private Cloud: Multi-Factor Authentication", "date": "6-1-2018", "author": "Evan McNeill", "attachments": [], "contentIsHTML": false }}}
 
-## Managed Hosting & Private Cloud: Getting Started on Multifactor Authentication
+## Managed Hosting & Private Cloud: Getting Started on Multi-factor Authentication
 ### Design
 OTP based multi-factor authentication can be enforced for multifactor required customers, optionally enabled by a user during registration, or from their account page anytime after registration.
 
