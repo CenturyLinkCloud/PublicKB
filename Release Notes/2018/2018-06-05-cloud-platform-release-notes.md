@@ -31,7 +31,7 @@ CAM Monitoring has also introduced Dynamic Check Parameters that allow check par
 
 For each CAM Customer, Administrators of the first, Optimized Azure Subscription will receive Admin credentials and login URL. This can be obtained through the Edit screen of the Optimized, Azure provider. The admin user will receive the Owner role for that first subscription and all future subscriptions created via Cloud Application Manager.
 
-    ![Admin Credentials](../images/admin-creds.png) 
+![Admin Credentials](../../images/Admin-Creds.png) 
 
 #### CAM Platform: New Applications Site
 
