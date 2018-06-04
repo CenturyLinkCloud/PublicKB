@@ -12,6 +12,7 @@ OTP multi-factor authentication requires the use of a smart phone and compatible
 
 2 – Initial Login after User Registration
 * Once registration of the master account is complete, you are prompted to enter your credentials for your CenturyLink Master account for the first time after registration.  
+<kbd>![MFA-2.PNG](../images/MFA-1.png)</kbd>
 
 3 – Multi Factor Authentication One-Time-Password (OTP) Enrollment
 * If this is the first time you are logging into your master account, you will be prompted to complete your Multi-Factor OTP (one-time password) registration.  
