@@ -21,6 +21,7 @@ OTP multi-factor authentication requires the use of a smart phone and compatible
 
 * The QR code is valid for 3 minutes. The page includes a timer that will redirect you when the code expires
 * With your compatible smart phone application (such as Google Authenticator), click the add or + button to configure their Multi-Factor account.
+
 <kbd>![MFA-4.PNG](../images/MFA-4.png)</kbd>
 
 * If you cannot scan the QR code you can click the QR code to reveal a secret key that can be used to manually configure the OTP app (e.g. GoogleAuthenticator for Chrome) 
