@@ -19,14 +19,13 @@ OTP multi-factor authentication requires the use of a smart phone and compatible
 * If this is the first time you are logging into your master account, you will be prompted to complete your Multi-Factor OTP (one-time password) registration.  
 <kbd>![MFA-3.PNG](../images/MFA-3.png)</kbd>
 
-* The QR code is valid for 3 minutes. The page includes a timer that will redirect you when the code expires
+* The QR code is valid for 3 minutes. The page includes a timer that will redirect you when the code expires.
 * With your compatible smart phone application (such as Google Authenticator), click the add or + button to configure their Multi-Factor account.
 
 <kbd>![MFA-4.PNG](../images/MFA-4.png)</kbd>
 
-* If you cannot scan the QR code you can click the QR code to reveal a secret key that can be used to manually configure the OTP app (e.g. GoogleAuthenticator for Chrome) 
+* If you cannot scan the QR code you can click the QR code to reveal a secret key that can be used to manually configure the OTP app (e.g. GoogleAuthenticator for Chrome).
 <kbd>![MFA-5.PNG](../images/MFA-5.png)</kbd>
-
   
 4. Multi Factor Authentication OTP Code
 * After registration of your Multi Factor OTP, you will be prompted to enter the 6 digit code provided on your OTP smart phone app to complete your login process.  You will be prompted to enter this code after every subsequent login with their master account.
