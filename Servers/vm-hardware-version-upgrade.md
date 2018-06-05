@@ -31,7 +31,15 @@ Application of this update is not mandatory and there is no deadline for complet
 
 While this update is not mandatory, CenturyLink Cloud recommends that this update is applied as soon as possible in order to benefit from guest-level protection against the Meltdown and Spectre security vulnerabilities. We also recommend that customers apply any Operating System or application-level patches that may be available to protect against these vulnerabilities.
 
-Patches to protect against the Meltdown and Spectre security vulnerabilities have already been applied across all CenturyLink Cloud service hosting infrastructure.
+Depending on the OS type, different steps may need to be taken to validate vulnerability mitigation.
+
+For Windows, from a PowerShell session prompt customers can run `Install-Module SpeculationControl` (requires PS 5+), then `Import-Module SpeculationControl`, and then run the command `Get-SpeculationControlSettings`.  Some of the OS patches previously released do require customers activation via registry edits or via group policy.  The command output should be green if/when compliant.  (Instructions for Windows Server 2012 R2 might be slightly different; see the link below for more details).
+
+For Linux, there is a shell script called spectre-meltdown-checker available via GitHub [here](https://raw.githubusercontent.com/speed47/spectre-meltdown-checker/master/spectre-meltdown-checker.sh).
+
+For both of the above, see [here](https://vinfrastructure.it/2018/01/meltdown-spectre-check-vsphere-environment/) for further details including screenshots.
+
+Infrastructure-level patches to protect against the Meltdown and Spectre security vulnerabilities have already been applied across all CenturyLink Cloud service hosting infrastructure.
 
 More information about the Meltdown and Spectre security vulnerabilities can be found [here](https://www.netformation.com/featured/notice-on-meltdown-and-spectre-vulnerability/).
 
