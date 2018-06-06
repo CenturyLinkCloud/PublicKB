@@ -1,19 +1,19 @@
 {{{
-  "title": "IPS - Centurylink Dedicated Cloud Compute (DCC) FAQ",
-  "date": "04-04-2016",
+  "title": "IPS - Centurylink Public Cloud on VMware Cloud Foundation FAQ",
+  "date": "06-06-2018",
   "author": "Client-Security",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": false
 }}}
         
-### FAQ for Installing and Implementing IPS Anywhere for CenturyLink Dedicated Cloud Compute (DCC)
+### FAQ for Installing and Implementing IPS Anywhere for CenturyLink Public Cloud on VMware Cloud Foundation
         
-This document is intended to summarize (aka Quick Start) the installation and notification configuration steps for CLC’s IPS “Anywhere” service as derived from the services public KBs.  
+This document is intended to summarize (aka Quick Start) the installation and notification configuration steps for CLC’s IPS “Anywhere” service as derived from the service's public KBs.  
         
 #### Pre-Requisites 
   * Compatible server OS 
-    * IPS supports all Managed DCC OS Images at this time
+    * IPS supports all Managed CenturyLink Public Cloud OS Images at this time
     * Supported OSs KB: https://www.ctl.io/knowledge-base/security/supported-ips-oses/
   * Firewall Rules
   * Centurylink Cloud Account
