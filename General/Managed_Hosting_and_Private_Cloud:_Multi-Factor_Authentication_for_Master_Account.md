@@ -12,10 +12,10 @@ OTP based multi-factor authentication can be enforced for multifactor required c
 
 OTP multi-factor authentication requires the use of a smart phone and compatible smart phone app (such as Google Authenticator or OTP Auth) or browser plug-in (such as Google Authenticator for Chrome)
 ### Workflow
-1. Multi-Factor Opt-in within User Registration
+1 - Multi-Factor Opt-in within User Registration
 Select “One Time Password using OTP App” during user registration to enroll in Multi-Factor Authentication.
 <kbd>![MFA-1.PNG](../images/MFA-1.png)</kbd>
-* You can opt-in after registration by navigating to the Authentication tab in the left side navigation within Manage My Account.
+You can opt-in after registration by navigating to the Authentication tab in the left side navigation within Manage My Account.
 
 2. Initial Login after User Registration
 Once registration of the master account is complete, you are prompted to enter your credentials for your CenturyLink Master account for the first time after registration.  
