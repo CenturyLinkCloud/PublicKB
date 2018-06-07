@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started with Managed Services Anywhere in CAM",
-  "date": "3-31-2018",
+  "date": "5-17-2018",
   "author": "Thomas Broadwell",
   "attachments": [],
   "contentIsHTML": false
@@ -8,15 +8,15 @@
 
 ### Introduction
 
-Managed Services Anywhere (MSA) provides comprehensive managed services including monitoring, patching and remote administration by way of automation and hands-on access by certified IT professionals. Services are offered on Amazon Web Services (AWS), Microsoft Azure (Azure) and Dedicated Cloud Compute Foundation (DCCF) per Provider (An account in one of the previously mentioned cloud platforms where customer is either directly responsible for the billing or buying the services through CenturyLink).
+Managed Services Anywhere (MSA) provides comprehensive managed services including monitoring, patching and remote administration by way of automation and hands-on access by certified IT professionals. Services are offered on Amazon Web Services (AWS), Microsoft Azure (Azure) and CenturyLink Private Cloud on VMware Cloud Foundation per Provider (An account in one of the previously mentioned cloud platforms where customer is either directly responsible for the billing or buying the services through CenturyLink).
 
 ### CAM MSA Technical Dependencies
 
-For CenturyLink teams to be able to offer Managed Services on customer workloads, there is a technical dependency to have a Management Appliance in the VPC (AWS), Virtual Network (Azure) or Org Network (DCCF) where the workloads reside. CenturyLink Management Appliance enables CenturyLink Support Engineers the ability to access customer's workloads in a secure mechanism and provide Managed Services.  Additionally, outbound internet access must be available for the Management Appliance and the managed workloads.
+For CenturyLink teams to be able to offer Managed Services on customer workloads, there is a technical dependency to have a Management Appliance in the VPC (AWS), Virtual Network (Azure) or Org Network (CenturyLink Private Cloud on VMware Cloud Foundation) where the workloads reside. CenturyLink Management Appliance enables CenturyLink Support Engineers the ability to access customer's workloads in a secure mechanism and provide Managed Services.  Additionally, outbound internet access must be available for the Management Appliance and the managed workloads.
 
 ### Enable Managed Services on a cloud provider in Cloud Application Manager (CAM)
 
-After configuring your AWS, Azure or DCC-Foundation provider within CAM (see [Providers](https://www.ctl.io/knowledge-base/cloud-application-manager/core-concepts/providers/) KB article) an initial synchronization of the provider will occur (a sync can be done at any time by clicking the Sync button on the provider's Logs tab).  During the synchronization process, CenturyLink automation will collect information about the provider such as running workloads (VMs), security policies, IAM roles, images/AMIs, Networks, VPCs, and other configuration details.  Upon completion of the synchronization the provider will be Online and available to be affected through CAM Application Lifecycle Management (ALM), Managed Services Anywhere (MSA) and Analytics.
+After configuring your AWS, Azure or CenturyLink Private Cloud on VMware Cloud Foundation provider within CAM (see [Providers](https://www.ctl.io/knowledge-base/cloud-application-manager/core-concepts/providers/) KB article) an initial synchronization of the provider will occur (a sync can be done at any time by clicking the Sync button on the provider's Logs tab).  During the synchronization process, CenturyLink automation will collect information about the provider such as running workloads (VMs), security policies, IAM roles, images/AMIs, Networks, VPCs, and other configuration details.  Upon completion of the synchronization the provider will be Online and available to be affected through CAM Application Lifecycle Management (ALM), Managed Services Anywhere (MSA) and Analytics.
 
   ![MSA-Provider0.PNG](../../images/cloud-application-manager/MSA-Provider0.PNG)
 
@@ -60,7 +60,7 @@ After agreeing to Enable Managed Services Terms, you will be prompted to select 
 
   (**Note:** Where no Virtual Networks existed - eastus2 & northcentralus - ARM templates were deployed, creating new Virtual Networks and security groups prior to the deployment of the Management Appliance within each Virtual Network)
 
-  
+
 
 ### Managed Provider Deployment Policies
 

@@ -40,6 +40,10 @@ Yes. The trial credits will expire after 90 days.
 
 There are multiple reasons your account activation may have been unsuccessful. We have very stringent bot and fraud protection algorithms, third party services and business rules in place, all designed to protect existing customers with services residing on our infrastructure. These sometimes deliver a false positive, which may block a legitimate application. If your address or credit card fails our third-party validation multiple times, you will not be permitted to submit the form again. If you have trouble signing up, feel free to email [help@ctl.io](mailto:help@ctl.io) with a description of your problem. We'll do our best to resolve it for you quickly.
 
+### What does it mean when my account application is interrupted after providing my email and phone number, and I’m redirected to this FAQ page?
+
+This may happen as a result of several factors that are controlled by our third party validation and fraud mitigation services. If you are using a free email client (such as Gmail, Outlook or AOL, for example) you are much more likely to be blocked. Try initiating your application with a business email address and you may have more success.
+
 ### Who do I contact if my account is not immediately created, or if I have other questions?
 
 Please send an email to [help@ctl.io](mailto:help@ctl.io) with relevant details.
