@@ -40,6 +40,9 @@ By performing a warm migration, you migrate a powered on virtual machine from an
 
 **Procedure**
 * In the vSphere Web Client, navigate to Home > Inventories > vCloud Director Extender.
+
+  ![Migration Tool](../images/dccf/migration0.png)
+
 * In the Migrations tab, click New Migration.
 
   ![Migration Tool](../images/dccf/migration1.png)
