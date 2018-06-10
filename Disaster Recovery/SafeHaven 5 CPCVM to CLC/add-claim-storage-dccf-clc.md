@@ -1,5 +1,5 @@
 {{{
-  "title": "Add and Claim Storage to SRNs-CPC-vCF to CLC",
+  "title": "Add and Claim Storage to SRNs: CPC-vCF to CLC",
   "date": "05-03-2018",
   "author": "Anshul Arora",
   "attachments": [],
