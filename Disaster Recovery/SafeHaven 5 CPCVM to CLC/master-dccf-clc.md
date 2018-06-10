@@ -1,5 +1,5 @@
 {{{
-  "title": "Master Article - CPCVM(Production) to CLC(DR) - SafeHaven Setup",
+  "title": "Master Article - CPC-vCF(Production) to CLC(DR) - SafeHaven Setup",
   "date": "04-30-2018",
   "author": "Anshul Arora",
   "attachments": [],
@@ -17,7 +17,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 1. [Gather Production Server Information](../SafeHaven 5 CLC to AWS/Gather Production Server Information.md)
 
-2. [Create Production SRN in CPCVM](../SafeHaven 5 Manual to AWS/Create-Production-SRN-Manual.md)
+2. [Create Production SRN in CPC-vCF](../SafeHaven 5 Manual to AWS/Create-Production-SRN-Manual.md)
 
 3. [Create CMS in CLC](create-cms-clc.md)
 
