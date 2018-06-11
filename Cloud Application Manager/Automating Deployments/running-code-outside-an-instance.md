@@ -64,7 +64,7 @@ chmod +x $pythonfile
 $pythonfile
 
 cat <<NODE> $nodefile
-console.log('printing from node the value of variable1: {{ variable1 }}')
+console.log('printing from node the value of variable1: {{ '{{' }} variable1 {{ '{{' }}')
 
 NODE
 
