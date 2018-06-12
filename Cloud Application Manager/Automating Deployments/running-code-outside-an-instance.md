@@ -46,7 +46,7 @@ This example will guide you through the steps of creating a box, adding a script
 ![code editor](../../images/cloud-application-manager/task-variables-03.png)
 
 **The code used in the example is listed here for reference.**
-```sh
+```
 #!/bin/bash
 
 echo "printing from bash"
@@ -64,7 +64,7 @@ chmod +x $pythonfile
 $pythonfile
 
 cat <<NODE> $nodefile
-console.log('printing from node the value of variable1: {{ '{{' }} variable1 {{ '{{' }}')
+console.log('printing from node the value of variable1: \{{ variable1 }}')
 
 NODE
 
