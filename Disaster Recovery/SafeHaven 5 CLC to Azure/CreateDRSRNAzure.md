@@ -18,7 +18,7 @@ This article explains how to create a SRN (SafeHaven Replication Node) in Azure 
 2. Typically CMS and DR-SRN reside in the same subnet so we will simply re-use the Network Security Group we created in the previous step [Create CMS in Azure](Create CMS in Azure.md)
 3. It is assumed the user also has a storage account created as outlined by KB XXXXXXX.
 
-### Create an AWS instance
+### Create an Azure instance
 1. Go to the Azure portal https://portal.azure.com 
 2. Go to **Virtual Machines** service on the **Favorites** list or search for the service at top of the page next to the arrow glass.
 3. Click on  the plus sign **Add**.
