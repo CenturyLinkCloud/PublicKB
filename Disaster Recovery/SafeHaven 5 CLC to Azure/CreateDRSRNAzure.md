@@ -15,7 +15,7 @@ This article explains how to create a SRN (SafeHaven Replication Node) in Azure 
 
 ### Assumptions
 1. It is assumed here that the user has an Azure account, a VNet created which has accessibility to CenturyLink Cloud Production Datacenter and a Resource Group that will contain all the resources related to SafeHaven.
-2. Typically CMS and DR-SRN reside in the same subnet so we will simply re-use the Network Security Group we created in the previous step [Create CMS in AWS](Create CMS in AWS.md)
+2. Typically CMS and DR-SRN reside in the same subnet so we will simply re-use the Network Security Group we created in the previous step [Create CMS in Azure](Create CMS in Azure.md)
 3. It is assumed the user also has a storage account created as outlined by KB XXXXXXX.
 
 ### Create an AWS instance
@@ -35,7 +35,7 @@ This article explains how to create a SRN (SafeHaven Replication Node) in Azure 
    a. Click on No for Use managed disks, select a **Storage account** for the destination of the DR-SRN unmanaged disks. Azure will filter out automatically the storage accounts that do not match the location selected previously for the Virtual Machine on step 5.  
    b. Click on **Virtual Network** under Network and select the VNet. Azure will filter out automatically the virtual networks that do not match the location selected previously for the Virtual Machine on step 5.  
    c. Select a **Subnet** and a **Public IP address** for the DR-SRN, by default Azure will create a new IP address. DR-SRN requires access to the Internet therefore a public IP address is needed.  
-   d. Click on Advanced under **Network Security Group**, this will open the option to select a Network Security Group, by default Azure will create one that has all traffic open to Instances deployed on the same VNet and any Point to Point VPNs on it. Use the automatically created Network security group.  
+   d. Click on Advanced under **Network Security Group**, this will open the option to select a Network Security Group, by default Azure will create one that has all traffic open to Instances deployed on the same VNet and any Point to Point VPNs on it. Use the Network security group created for the CMS deployment.  
    e. Select a **Diagnostics storage account**, it can be the same storage account selected on step 7. By default Azure enables the Boot diagnostics on the Virtual Machine.  
 8. Leave all the other values to default and click on the OK button.
 9. On the **Summary** blade review the settings and click on the OK button.
