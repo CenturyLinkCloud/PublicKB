@@ -1,5 +1,5 @@
 {{{
-  "title": "Create DR SRN in AWS",
+  "title": "Create DR SRN in Azure",
   "date": "12-27-2017",
   "author": "Juan Aristizabal",
   "attachments": [],
@@ -55,10 +55,3 @@ This article explains how to create a SRN (SafeHaven Replication Node) in Azure 
         systemctl restart sshd
         ```
 
-
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YH-XudTKrlQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</p>  
-
-**Next Step** is to [Create SafeHaven Cluster and Login to SafeHaven Console](Create SafeHaven Cluster and Login to SafeHaven Console.md)
