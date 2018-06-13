@@ -11,7 +11,7 @@ This article explains how to create a SRN (SafeHaven Replication Node) in Azure 
 
 ### Requirements
 1. User must have an Azure account and permissions to deploy a server in the DR subnet.
-2. Internet access on DR-SRN in AWS once it is deployed.
+2. Internet access on DR-SRN in Azure once it is deployed.
 
 ### Assumptions
 1. It is assumed here that the user has an Azure account, a VNet created which has accessibility to CenturyLink Cloud Production Datacenter and a Resource Group that will contain all the resources related to SafeHaven.
