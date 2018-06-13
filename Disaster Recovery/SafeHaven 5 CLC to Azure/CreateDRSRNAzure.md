@@ -23,7 +23,7 @@ This article explains how to create a SRN (SafeHaven Replication Node) in Azure 
 2. Go to **Virtual Machines** service on the **Favorites** list or search for the service at top of the page next to the arrow glass.
 3. Click on  the plus sign **Add**.
 4. Click on **Ubuntu Server**, and then click on **Ubuntu Server 16.04 LTS**. Finally click on the Create button.
-5. On the **Basics** blade provide the following information: 
+5. On the **Basics** blade provide the following information:   
     a. Enter a  **Name** for the Virtual Machine  
     b.  Select **HDD** for the VM disk type  
     c.  Click on **Password** for Authentication type and provide both a **Username** and **Password** for it.  The username cannot be root, the password for root is generated automatically by Azure.  
