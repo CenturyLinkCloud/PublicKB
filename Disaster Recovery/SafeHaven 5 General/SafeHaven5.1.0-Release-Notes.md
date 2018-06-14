@@ -15,6 +15,7 @@
 ### New Features and Enhancements
 This is a minor release for [SafeHaven 5.0.1](SafeHaven5.0.1-Release-Notes.md) with the following new features:
 - Add support to use Microsoft Azure as disaster recovery data center
+- Introduce a new job system 
 
 
 ### Upgrade Path
