@@ -1,3 +1,15 @@
+{{{
+  "title": "Register Azure Datacenters within a SafeHaven Console",
+  "date": "06-14-2018",
+  "author": "Juan Aristizabal",
+  "attachments": [],
+  "contentIsHTML": false
+}}}
+
+### Article Overview
+Register Datacenters within the SafeHaven Console for Azure Cloud.
+
+### Requirements
 1. SafeHaven Cluster already installed and user has access to it.
 2. CMS and SRNs to have proper network connectivity as per SAHA5.0.1 Networking guide.
 
