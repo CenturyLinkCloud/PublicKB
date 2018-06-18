@@ -1,6 +1,6 @@
 
 {{{
-  "title": "Register sites within a SafeHaven Console - DCCF to CLC",
+  "title": "Register sites within a SafeHaven Console - CPC-vCF to CLC",
   "date": "04-30-2018",
   "author": "Anshul Arora",
   "attachments": [],

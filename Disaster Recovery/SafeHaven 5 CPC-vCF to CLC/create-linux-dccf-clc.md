@@ -1,5 +1,5 @@
 {{{
-  "title": "Create Linux Protection Group-DCCF to CLC",
+  "title": "Create Linux Protection Group-CPC-vCF to CLC",
   "date": "05-02-2018",
   "author": "Anshul Arora",
   "attachments": [],
@@ -7,10 +7,10 @@
 }}}
 
 ### Article Overview
-This article explains how to create a Linux Protection Group.
+This article explains how to create a Linux Protection Group when the source site is Centurylink Private Cloud on VMWare Cloud Foundation, and the DR site is CLC
 
 ### Requirements
-Access to the Production SRN in CenturyLink Cloud and permissions to add raw disks to it.
+Access to the Production SRN in CPC-vCF and permissions to add raw disks to it.
 
 ### Assumption
 This article assumes that:

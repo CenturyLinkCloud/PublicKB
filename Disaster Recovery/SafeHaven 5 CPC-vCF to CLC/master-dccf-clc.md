@@ -1,5 +1,5 @@
 {{{
-  "title": "Master Article - DCCF(Production) to CLC(DR) - SafeHaven Setup",
+  "title": "Master Article - CPC-vCF(Production) to CLC(DR) - SafeHaven Setup",
   "date": "04-30-2018",
   "author": "Anshul Arora",
   "attachments": [],
@@ -17,7 +17,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 1. [Gather Production Server Information](../SafeHaven 5 CLC to AWS/Gather Production Server Information.md)
 
-2. [Create Production SRN in DCCF](../SafeHaven 5 Manual to AWS/Create-Production-SRN-Manual.md)
+2. [Create Production SRN in CPC-vCF](../SafeHaven 5 Manual to AWS/Create-Production-SRN-Manual.md)
 
 3. [Create CMS in CLC](create-cms-clc.md)
 
@@ -53,10 +53,10 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
     d. [Create Manual Checkpoint](../SafeHaven 5 CLC to AWS/Create Manual Checkpoint.md)
 
-    e. [Configure Recovery Servrer]()
+    e. [Configure Recovery Server for a Linux PG](configure-recovery-server-linux.md)
 
 12.  [Configure Email Alerts](../SafeHaven 5 CLC to AWS/Configure Email Alerts.md)
 
-13.  [Test Failover to CLC](../SafeHaven 5 CLC to AWS/Test Failover to AWS.md)
+13.  [Test Failover to CLC](test-failover-dccf-clc.md)
 
-14.  [Failover to CLC](../SafeHaven 5 CLC to AWS/Failover to AWS.md)
+14.  [Failover to CLC](failover-dccf-clc.md)
