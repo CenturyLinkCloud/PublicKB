@@ -40,7 +40,7 @@ A: If you have a Cloud Term Commit agreement with us, the cost reduction of movi
 
 **Q: What if I don’t believe standard Cloud servers will meet my specific needs?**
 
-A: While we believe our standard compute product is a good fit for most cloud workloads, there are still some use cases that require specialized services. For customers with applications requiring the highest possible performance from their compute infrastructure, such as Big Data or Artificial Intelligence, our [Bare Metal service](https://www.ctl.io/bare-metal/]) offers the power of physical servers with the flexibility of virtual machines. For customers who want to use a specialized database product and offload some of their application deployment and management tasks, our [Relational Database as a Service](https://www.ctl.io/relational-database/) is the product for you.
+A: While we believe our standard compute product is a good fit for most cloud workloads, there are still some use cases that require specialized services. For customers with applications requiring the highest possible performance from their compute infrastructure, such as Big Data or Artificial Intelligence, our [Bare Metal service](https://www.ctl.io/bare-metal/) offers the power of physical servers with the flexibility of virtual machines. For customers who want to use a specialized database product and offload some of their application deployment and management tasks, our [Relational Database as a Service](https://www.ctl.io/relational-database/) is the product for you.
 
 **Q: What about my standard compute instances? Will they change at all?**
 
