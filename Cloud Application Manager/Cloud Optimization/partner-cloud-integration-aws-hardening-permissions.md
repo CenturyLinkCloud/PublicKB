@@ -8,7 +8,7 @@
 
 ### Overview
 
-As discussed in the [Service Guide](https://www.ctl.io/legal/cloud-application-manager/service-guide/), CenturyLink will provide tools and Operations Staff permissions for Amazon Web Services (AWS) accounts that we harden. The Service Guide provides a high-level overview of those permissions, describing the groups requiring permissions and the type of permissions they are expected to have.
+As discussed in the [Service Guide](/legal/cloud-application-manager/service-guide/), CenturyLink will provide tools and Operations Staff permissions for Amazon Web Services (AWS) accounts that we harden. The Service Guide provides a high-level overview of those permissions, describing the groups requiring permissions and the type of permissions they are expected to have.
 
 ### Audience
 
@@ -28,7 +28,7 @@ For an existing AWS Account:
 
 #### Root Level Access
 
-RCenturyLink does not provide root level access for any account. Root access should be avoided unless absolutely necessary for both Master Payer accounts owned by CenturyLink and any linked account owned by the customer.
+CenturyLink does not provide root level access for any account. Root access should be avoided unless absolutely necessary for both Master Payer accounts owned by CenturyLink and any linked account owned by the customer.
 
 For existing accounts, the Customer administrator is asked to set up Multi-Factor Authentication (MFA) access after configuration and keep their key in a secure location. Customers are also asked never to log in with root account access.
 
@@ -59,7 +59,7 @@ All policies summarized in this document result from intensive consultation with
 * **Role Name**: CTLDeveloperRole
 * **Targeted groups/tools/users**:Cloud Application Manager's Optimization tool. A limited number of CenturyLink developers have access to the tool.
 * **Intent**: The Optimization tool should be able to configure customer accounts, affect IAM permissions, and swiftly remediate any issues.
-* **Change Requests**: Because CenturyLink must maintain administrative access, no changes can be made at this time. Please see the [Service Guide](https://www.ctl.io/legal/cloud-application-manager/service-guide/) for details.
+* **Change Requests**: Because CenturyLink must maintain administrative access, no changes can be made at this time. Please see the [Service Guide](/legal/cloud-application-manager/service-guide/) for details.
 * **Policy Summary**:
   - Full access
 
