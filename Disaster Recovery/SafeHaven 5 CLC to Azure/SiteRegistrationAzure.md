@@ -10,12 +10,11 @@
 Register Datacenters within the SafeHaven Console for Azure Cloud.
 
 ### Requirements
-1. SafeHaven Cluster already installed and user has access to it.
-2. CMS and SRNs to have proper network connectivity as per SAHA5.0.1 Networking guide.
+SafeHaven Cluster already installed and user has access to it.
 
 ### Assumptions
-1. SafeHaven Cluster has already been installed with proper network connectivity between CMS-SRN and SRN-SRN.
-2. A Service Principal on Azure for programatic access has been created.
+1. CMS Virtual Machine has been deployed in Azure and SafeHaven Cluster has already been created.
+2. A Service Principal on Azure for programatic access has been created as per [CreateServicePrincipalAzure](CreateServicePrincipalAzure.md).
 
 ### Register Azure Region
 Each Azure Region is treated as a separate Datacenter within a SafeHaven Cluster.
