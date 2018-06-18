@@ -31,7 +31,7 @@ This is a minor release for [SafeHaven 5.0.1](SafeHaven5.0.1-Release-Notes.md) w
   * [SafeHavenClient.5.1.0-RC1_win64.jar](https://download.safehaven.ctl.io/SH-5.1.0/SafeHavenClient.5.1.0-RC1_win64.jar): the Java application that requires an existing 64bit JRE-8 to run on a Windows OS
 * Windows Downloads:
   * [Driver Installer](https://download.safehaven.ctl.io/SH-5.1.0/safehaven_windows_driver-5.1.0-RC1.exe)
-  * [MakeStub.exe](https://download.safehaven.ctl.io/SH-5.0.1/MakeStub-5.0.1.exe)
+  * [MakeStub.exe](https://download.safehaven.ctl.io/SH-5.1.0/MakeStub-5.0.1.exe)
 * [Linux SafeHaven Onboarding Scripts Downloads](https://download.safehaven.ctl.io/SH-5.1.0/safehaven_linux_onboarding_scripts-5.1.0-RC1.tar.gz)
 * [script to turn a Ubuntu-14 machine into a recovery proxy for Windows servers](https://download.safehaven.ctl.io/SH-5.0.1/makestub_for_windows.sh)
  
