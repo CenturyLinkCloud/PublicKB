@@ -8,7 +8,7 @@
 
 ### Overview
 
-As discussed in the [Service Guide](/legal/cloud-application-manager/service-guide/), CenturyLink will provide tools and Operations Staff permissions for Amazon Web Services (AWS) accounts that we harden. The Service Guide provides a high-level overview of those permissions, describing the groups requiring permissions and the type of permissions they are expected to have.
+As discussed in the [Service Guide](https://www.ctl.io/legal/cloud-application-manager/service-guide/), CenturyLink will provide tools and Operations Staff permissions for Amazon Web Services (AWS) accounts that we harden. The Service Guide provides a high-level overview of those permissions, describing the groups requiring permissions and the type of permissions they are expected to have.
 
 ### Audience
 
@@ -59,7 +59,7 @@ All policies summarized in this document result from intensive consultation with
 * **Role Name**: CTLDeveloperRole
 * **Targeted groups/tools/users**:Cloud Application Manager's Optimization tool. A limited number of CenturyLink developers have access to the tool.
 * **Intent**: The Optimization tool should be able to configure customer accounts, affect IAM permissions, and swiftly remediate any issues.
-* **Change Requests**: Because CenturyLink must maintain administrative access, no changes can be made at this time. Please see the [Service Guide](/legal/cloud-application-manager/service-guide/) for details.
+* **Change Requests**: Because CenturyLink must maintain administrative access, no changes can be made at this time. Please see the [Service Guide](https://www.ctl.io/legal/cloud-application-manager/service-guide/) for details.
 * **Policy Summary**:
   - Full access
 
@@ -86,7 +86,7 @@ All policies summarized in this document result from intensive consultation with
 * **Policy Name**: CTLCAMPolicy, ReadOnlyAccess
 * **Role Name**: CTLCAMRole
 * **Targeted groups/tools/users**: Cloud Application Manager, Monitoring Service
-* **Intent**: To permit Cloud Application Manager's [application lifecycle management (ALM)](/cloud-application-manager/application-lifecycle-management/) capabilities and to enable [Monitoring](../Monitoring/CAMMonitoringUI.md).
+* **Intent**: To permit Cloud Application Manager's [application lifecycle management (ALM)](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) capabilities and to enable [Monitoring](../Monitoring/CAMMonitoringUI.md).
 * **Change Requests**: While this policy is applied by default, [the standard CAM policy](../Deploying Anywhere/using-your-aws-account.md) is intended to be customizable. If you would like to alter the ALM capabilities of Cloud Application Manager, please submit a ticket describing the policy you wish to apply.
 * **Policy Summary**
   - All the ability to manipulate resources as described [here](../Deploying Anywhere/using-your-aws-account.md)
