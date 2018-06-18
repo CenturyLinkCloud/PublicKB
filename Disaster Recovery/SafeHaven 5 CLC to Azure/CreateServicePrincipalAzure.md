@@ -37,5 +37,5 @@ This article explains how to create a Service Principal in order to allow SafeHa
     ```
     This indicates the successful creation of a Service Principal with _Contributor_ level access to the specified subscription. 
     
-7. Note down the values of **appId**, **password** and **tenant** along with the **subscription id** which will be needed on the next phase for the Azure site registration on SafeHaven.  
+7. Note down the values of **appId**, **password** and **tenant** along with the **subscription id** which will be needed on the next phase for the [Azure site registration on SafeHaven](SiteRegistrationAzure.md).  
 8. Click on the **>_** symbol on the top left of the screen to close **Cloud Shell**
