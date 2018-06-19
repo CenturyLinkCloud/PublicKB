@@ -23,6 +23,6 @@ Each Azure Region is treated as a separate Datacenter within a SafeHaven Cluster
 2. Enter **Data Center Name** and select **Microsoft Azure** as the **Data Center Type**. Click **Next**.
 3. Enter your **Azure Subscription ID**,  **Active Directory Tenant ID**, **Client Id** and **Client Secret** with the values obtained as per [CreateServicePrincipalAzure](CreateServicePrincipalAzure.md) using **subscription id**, **tenant**, **appId** and **password** respectively. Next, select your Recovery **Region** and Click **Next**.
 
-![ScreenShot](file.png)
+![ScreenShot](AzureSiteRegistration.png)
 5. Click **Add Site**.
 6. The credentials will be validated by the SafeHaven console before declaring the operation successful.
