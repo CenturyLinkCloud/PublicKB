@@ -38,14 +38,3 @@ Below is a list of all the supported use cases along with the support matrix.
 
 ### Disaster Recovery of a Physical Server into AWS Cloud
 ![Upgrade](../../images/SH5.0/SafeHaven-5.0-Use-Cases-and-Support-Matrix1/Case7.PNG)
-
-### Azure Cloud as DR Site
-
-### Disaster Recovery of a CLC Datacenter/VMware/DCC-F site into Azure
-![Case8](../../images/SH5.0/SafeHaven-5.0-Use-Cases-and-Support-Matrix1/Case8.PNG)
-
-### Disaster Recovery of a Hyper-V Gen1 Server into Azure
-![Case9](../../images/SH5.0/SafeHaven-5.0-Use-Cases-and-Support-Matrix1/Case9.PNG)
-
-### Disaster Recovery of a CLC Bare Metal Server into Azure
-![Case10](../../images/SH5.0/SafeHaven-5.0-Use-Cases-and-Support-Matrix1/Case10.PNG)
