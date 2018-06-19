@@ -7,7 +7,7 @@
 }}}
 
 ### Article Overview
-This article explains how to create a Service Principal in order to allow SafeHaven programatic access to Azure cloud. 
+This article explains how to create a Service Principal in order to allow SafeHaven programmatic access to Azure cloud. 
 
 ### Requirements
 1. User must have an Azure account and permissions to login to the Azure portal.
