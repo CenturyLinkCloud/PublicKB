@@ -4,7 +4,6 @@
   "author": "Mahima Kumar",
   "attachments": [],
   "contentIsHTML": false,
-  "sticky": true
 }}}
 
 ### Article Overview
