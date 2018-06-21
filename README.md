@@ -6,6 +6,13 @@ Welcome to the [CenturyLink Cloud](http://www.ctl.io) Knowledge Base (KB) reposi
 
 If you are new to Git and Github, we highly recommend spending 5 minutes reading this great article on [Understanding the Github Flow](https://guides.github.com/introduction/flow/). This repo follows the Github Flow.
 
+# NEW FEATURE - Markdown Checker
+
+Before submitting your PR, validate the markdown in https://onramp.ctl.io/#!/markdownChecker
+
+The Github file preview does not render markdown exactly the same as we do in ctl.io/knowledge-base/.  The OnRamp Markdown Checker will show you how your KB article will be rendered in ctl.io.  This is especially useful if you have a table in your article.
+
+Please note, the preview in the Onramp markdown checker **only** displays the html conversion view.  It does not give the same styles view (colors, font, etc.) at this time.
 
 # Overview
 
@@ -24,6 +31,8 @@ The repository is organized by category, and each folder represents a category. 
 1. **Anything in the `master` branch is always deployable.** Create a [new branch](https://github.com/blog/1377-create-and-delete-branches) from `master`. Your branch name should be descriptive (e.g., `january-release-notes`, `anti-affinity-policy-faq`) so that others have an idea of what the branch is for.
 
 1. Once your branch has been created, make your changes (add, edit, delete) to your KB article in your favorite Markdown editor (we like [Atom](https://atom.io/)).
+
+1. Validate the markdown to HTML conversion in https://onramp.ctl.io/#!/markdownChecker
 
 1. Commit your change(s) locally to your fork/branch.
 
