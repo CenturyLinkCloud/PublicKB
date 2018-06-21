@@ -50,6 +50,10 @@ passwd root
 ```
 PermitRootLogin yes
 ```  
+and if the key based authentication was used to created the user instead of password in the Azure portal, we need to also change
+```
+asswordAuthentication yes
+```
   c. Restart the SSH service  
 ```
 systemctl restart sshd
