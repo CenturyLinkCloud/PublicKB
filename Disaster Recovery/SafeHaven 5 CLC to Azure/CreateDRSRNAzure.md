@@ -56,7 +56,7 @@ This article explains how to create a SRN (SafeHaven Replication Node) in Azure 
 
     3. and if the key based authentication was used to created the user instead of password in the Azure portal, we need to also change
         ```
-        asswordAuthentication yes
+        PasswordAuthentication yes
         ```
     3. Restart the SSH service  
         ```
