@@ -16,8 +16,8 @@ Over the past year, CenturyLink Cloud has worked hard to improve our standard co
 Due to the positive impact of the storage improvements across all of our cloud infrastructure, we’ve come to realize that our customers no longer need our specialized all-flash storage cloud compute service, [Hyperscale](https://www.ctl.io/hyperscale/). Today, we are announcing the end of availability for Hyperscale.
 
 ### FAQ
-Q: When is Hyperscale being discontinued?
-A: On July 10, 2018, we will remove Hyperscale links from the [CenturyLink Cloud control portal](https://control.ctl.io/). Existing Hyperscale servers will continue to operate until they have been migrated to our standard virtual compute infrastructure.
+**Q**:When is Hyperscale being discontinued?
+**A**: On July 10, 2018, we will remove Hyperscale links from the [CenturyLink Cloud control portal](https://control.ctl.io/). Existing Hyperscale servers will continue to operate until they have been migrated to our standard virtual compute infrastructure.
 
 By August 22, 2018, all Hyperscale servers will have been migrated to our standard compute infrastructure.
 
@@ -37,8 +37,6 @@ The price changes for regions outside of the United States may vary between each
 
 **Q**: What if I have a Cloud Term Commit for a dollar amount that exceeds my needs after migration to the less expensive standard cloud servers?
 **A**: If you have a Cloud Term Commit agreement with us, the cost reduction of moving from Hyperscale to standard cloud servers may result in your Cloud Term Commit adjustment being higher than expected. If so, please reach out to us at help@ctl.io with a subject line of “Review Cloud Commit for Hyperscale” and we will work with you to adjust your Cloud Term Commit dollar amount appropriately.
-
-
 
 **Q**: What if I don’t believe standard Cloud servers will meet my specific needs?
 **A**: While we believe our standard compute product is a good fit for most cloud workloads, there are still some use cases that require specialized services. For customers with applications requiring the highest possible performance from their compute infrastructure, such as Big Data or Artificial Intelligence, our [Bare Metal service](https://www.ctl.io/bare-metal/) offers the power of physical servers with the flexibility of virtual machines. For customers that want to use a specialized database product and offload some of their application deployment and management tasks, our [Relational Database as a Service](https://www.ctl.io/relational-database/) is the product for you.
