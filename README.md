@@ -12,7 +12,7 @@ Before submitting your PR, validate the markdown in https://onramp.ctl.io/#!/mar
 
 The Github file preview does not render markdown exactly the same as we do in ctl.io/knowledge-base/.  The OnRamp Markdown Checker will show you how your KB article will be rendered in ctl.io.  This is especially useful if you have a table in your article.
 
-Please note, the preview in the Onramp markdown checker **only** displays the html conversion view.  It does not give the same styles view (colors, font, etc.) at this time.
+Please note, the preview in the OnRamp markdown checker **only** displays the html conversion view.  It does not give the same styles view (colors, font, etc.) at this time.
 
 # Overview
 
