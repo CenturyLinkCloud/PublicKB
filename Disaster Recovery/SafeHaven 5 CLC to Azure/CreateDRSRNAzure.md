@@ -63,5 +63,6 @@ This article explains how to create a SRN (SafeHaven Replication Node) in Azure 
         systemctl restart sshd
         ```  
     5. If ssh as root gets a message like `Please login as the user "seki" rather than the user "root".`, please run `rm /root/.ssh/authorized_keys` and try again.
+    6. Confirm "ssh as root works using password" works
 
 
