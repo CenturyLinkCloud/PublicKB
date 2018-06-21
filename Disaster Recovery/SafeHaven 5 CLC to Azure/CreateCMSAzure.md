@@ -31,7 +31,7 @@ This article explains how to create a CMS (Central Management Server) in Azure D
     * Click on the OK button.
 6. On the **Size** blade search for B1ms and then select the B1ms Standard type instance. 1 vCPU, 2 GB of RAM and 2 data disks. Click on the Select button.
 7. On the **Settings** blade provide the following information:
-   * Click on No for Use managed disks, select a **Storage account** for the destination of the CMS unmanaged disks. Azure will filter out automatically the storage accounts that do not match the location selected previously for the Virtual Machine on step 5.
+   * Click on **No for Use managed disks**, select a **Storage account** for the destination of the CMS unmanaged disks. Azure will filter out automatically the storage accounts that do not match the location selected previously for the Virtual Machine on step 5.
    * Click on **Virtual Network** under Network and select the VNet. Azure will filter out automatically the virtual networks that do not match the location selected previously for the Virtual Machine on step 5.
    * Select a **Subnet** and a **Public IP address** for the CMS, by default Azure will create a new IP address. CMS requires access to the Internet therefore a public IP address is needed.
    * Click on Advanced under **Network Security Group**, this will open the option to select a Network Security Group, by default Azure will create one that has all traffic open to Instances deployed on the same VNet and any Point to Point VPNs on it. Use the automatically created Network security group.
