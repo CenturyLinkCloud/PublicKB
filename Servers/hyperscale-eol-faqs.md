@@ -21,7 +21,7 @@ Due to the positive impact of the storage improvements across all of our cloud i
 
 **A**: On July 10, 2018, we will remove Hyperscale links from the [CenturyLink Cloud control portal](https://control.ctl.io/). Existing Hyperscale servers will continue to operate until they have been migrated to our standard virtual compute infrastructure.
 
-By August 22, 2018, all Hyperscale servers will have been migrated to our standard compute infrastructure.
+By August 21, 2018, all Hyperscale servers will have been migrated to our standard compute infrastructure.
 
 **Q**: Do I have to do anything?
 
