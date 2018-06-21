@@ -43,7 +43,7 @@ This article explains how to create a SRN (SafeHaven Replication Node) in Azure 
 11. SSH to the DR-SRN Instance using the credentials created on step 5.  
     1. Once logged in elevate to root access and modify the password  
     
-        ```
+        ```bash
         sudo -s
         passwd root
         ```
