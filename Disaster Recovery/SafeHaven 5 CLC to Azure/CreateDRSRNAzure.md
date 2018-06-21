@@ -41,16 +41,16 @@ This article explains how to create a SRN (SafeHaven Replication Node) in Azure 
 9. On the **Summary** blade review the settings and click on the OK button.
 10. Once the Virtual Machine is created go to **Virtual Machines** service and find the Instance, select it and then click on **Networking**, write down either the Public IP or Private IP information depending if you will be accessing the server through the Internet or via VPN from CenturyLink.
 11. SSH to the DR-SRN Instance using the credentials created on step 5.  
-    a. Once logged in elevate to root access and modify the password  
+  a. Once logged in elevate to root access and modify the password  
 ```
 sudo -s
 passwd root
-```  
-    b. Enable SSH root login by editing `/etc/ssh/sshd_config` with this line  
- ```
+```
+  b. Enable SSH root login by editing `/etc/ssh/sshd_config` with this line  
+```
 PermitRootLogin yes
 ```  
-    c. Restart the SSH service  
+  c. Restart the SSH service  
 ```
 systemctl restart sshd
 ```  
