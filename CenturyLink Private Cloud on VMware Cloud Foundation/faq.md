@@ -1,5 +1,5 @@
 {{{
- "title": "FAQ",
+ "title": "CenturyLink Private Cloud on VMware Cloud Foundation FAQ",
  "date": "06-14-2018",
  "author": "Anthony Hakim",
  "attachments": [],
