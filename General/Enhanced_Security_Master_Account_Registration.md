@@ -5,8 +5,6 @@
   "attachments": [],
   "contentIsHTML": false
 }}}
-
-## Enhanced Security: Master Account Registration
 ### Description
 
 As part of our efforts to increase the security of your accounts using the SavvisStation Portal and Private Cloud (DCC), you will need to go through a one-time setup to create a new Master Account.  Once setup is complete, for your security, you will receive a one-time prompt to provide credentials for your services to link them to your master account; as a result, you will be able to navigate between them without re-authenticating going forward. Other security improvements include optional multi-factor authentication through your smart phone (soft token) and the ability to set up multiple security questions for account validation and retrieval purposes.
