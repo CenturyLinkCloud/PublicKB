@@ -26,7 +26,7 @@ It also comes with a number of bug fixes such as
 
 ### Upgrade Path
 * Upgrade from SafeHaven-4 to SafeHaven-5 will be a fresh new installation.
-* It is possible to upgrade from SafeHaven-5.0.1 to version 5.1.0 using the GUI. 
+* SafeHaven-5.0.1 can be upgraded to 5.1.0 using the GUI. 
 
 ### Download Links
 * [SafeHavenAppliance-5.0.1.ova](https://download.safehaven.ctl.io/SH-5.0.1/SafeHavenAppliance-5.0.1.ova): OVA to be imported to private VMware vSphere or vCloud Director envrionment as templates for SRN/CMS appliances
