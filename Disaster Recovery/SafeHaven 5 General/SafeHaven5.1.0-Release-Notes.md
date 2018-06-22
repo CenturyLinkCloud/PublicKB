@@ -16,6 +16,7 @@
 This is a feature release based on [SafeHaven 5.0.1](SafeHaven5.0.1-Release-Notes.md) with the following new features:
 - Add support to use Microsoft Azure as disaster recovery data center. Please refer to the [SafeHaven KBs](../) for more detailed documentation on the "DR to Azure" use case.
 - Introduce a new job system 
+
 It also comes with a number of bug fixes such as
 - removing the network isolation checkbox in GUI for Linux PG since there is no such capability
 - providing a way to enter new license key in GUI after the old license is expired
