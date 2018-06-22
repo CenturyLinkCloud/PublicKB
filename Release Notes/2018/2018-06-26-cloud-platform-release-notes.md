@@ -17,6 +17,7 @@ Cloud Application Manager now includes a new Overview page in the Management sit
 ##### Optimized AWS Provider Updates
 
 CAM has made updates to the IAM Roles and Policies of its Optimized hardening process that offer you more security and control.
+
 * Admins: Any admin of an Optimized CAM provider can click the "AWS Console" button to open a window into the console where they inherit a role called the CTLCINTAdminRole. Not only does that user inherit all the permissions and restrictions given to CAM already, but read-only access into everything else. See CAMOverridePolicy below for more information.
 * Non-Admins: Any user of CAM who is not the admin but has the optimized provider shared with them can click the "AWS Console" button to open a window into the console where they inherit a read-only role called the CTLCINTReadRole. This ensures the admin can give another user visibility into the AWS Console without accidentally creating a security loophole.
 * CenturyLink Operations: Employees of CenturyLink providing platform support to you may also click the AWS Console button and inherit a role into your account called CTLOperationsRole that provides them only read-only access plus the ability to update IAM. While many of our customers want fast support, this gives you the peace of mind that you are compliant with auditors and protect your business applications.
@@ -33,7 +34,7 @@ Cloud Application Manager customers can now see their Azure cloud native monitor
 Product Highlights include:
 
 * Users will be able to list & switch between their Azure providers within a Workspace.
-* Upon selecting a Provider, users will be able to see a subset of their configured Azure services. 
+* Upon selecting a Provider, users will be able to see a subset of their configured Azure services.
 * With a single click, each individual metric graph on the dashboard will allow the user to do a deep dive on our more detailed graph page.
 
 ![Microsoft Azure](../../images/Microsoft-Azure.jpg)
