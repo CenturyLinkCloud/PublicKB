@@ -25,7 +25,6 @@ It also comes with a number of bug fixes such as
 
 
 ### Upgrade Path
-**NOTE**: 
 * Upgrade from SafeHaven-4 to SafeHaven-5 will be a fresh new installation.
 * It is possible to upgrade from SafeHaven-5.0.1 to version 5.1.0 using the GUI. 
 
