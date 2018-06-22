@@ -20,7 +20,7 @@ It also comes with a number of bug fixes such as
 - removing the network isolation checkbox in GUI for Linux PG since there is no such capability
 - providing a way to enter new license key in GUI after the old license is expired
 - fixing the bug where an AWS PG does not automatically resume sync after a temporary network outage
-...
+- and more...
 
 
 ### Upgrade Path
