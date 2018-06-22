@@ -1,5 +1,5 @@
 {{{
-  "title": "SafeHaven 5.1.0-RC1 Release Notes",
+  "title": "SafeHaven 5.1.0 Release Notes",
   "date": "06-22-2018",
   "author": "Shi Jin",
   "attachments": [],
