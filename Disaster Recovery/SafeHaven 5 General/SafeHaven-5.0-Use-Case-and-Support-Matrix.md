@@ -1,9 +1,10 @@
 {{{
   "title": "SafeHaven 5.0 Use Cases and Support Matrix",
-  "date": "12-19-2017",
+  "date": "05-17-2018",
   "author": "Mahima Kumar",
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
 ### Article Overview
@@ -19,7 +20,7 @@ Below is a list of all the supported use cases along with the support matrix.
 ### Disaster Recovery of an On-Prem VMware/DCC-Core site into a CLC Datacenter
 ![Upgrade](../../images/SH5.0/SafeHaven-5.0-Use-Cases-and-Support-Matrix1/Case2.PNG)
 
-### Disaster Recovery of a CLC Datacenter/VMware/DCC-Foundation site into AWS Cloud
+### Disaster Recovery of a CLC Datacenter/VMware/CenturyLink Private Cloud on VMware Cloud Foundation site into AWS Cloud
 ![Upgrade](../../images/SH5.0/SafeHaven-5.0-Use-Cases-and-Support-Matrix1/Case3.PNG)
 
 ### Disaster Recovery of a Hyper-V Gen1 server into AWS Cloud
@@ -33,4 +34,3 @@ Below is a list of all the supported use cases along with the support matrix.
 
 ### Disaster Recovery of a Physical Server into AWS Cloud
 ![Upgrade](../../images/SH5.0/SafeHaven-5.0-Use-Cases-and-Support-Matrix1/Case7.PNG)
-

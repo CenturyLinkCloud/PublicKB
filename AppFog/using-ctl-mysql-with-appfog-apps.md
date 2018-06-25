@@ -7,6 +7,8 @@
   "contentIsHTML": false
 }}}
 
+<strong>The AppFog service will be retired as of June 29, 2018. Beginning on this date, the AppFog Platform-as-a-Service will no longer be available, including all source code, env vars, and database information.</strong>
+
 ### Audience
 
 Application developers
@@ -99,8 +101,8 @@ cf unbind-service myapp acmedb
 Note: Attempts to immediately delete a newly created Relational DB service will result in the below error. Waiting several minutes to pass after creating a new Relational DB instance will allow the service to be deleted.
 
 ```
-FAILED 
-Server error, status code: 502, error code: 10001, message: Service instance tezt: The service broker returned an invalid response for the request to https://addons.ctl.io/brokers/cfv2/usea 
+FAILED
+Server error, status code: 502, error code: 10001, message: Service instance tezt: The service broker returned an invalid response for the request to https://addons.ctl.io/brokers/cfv2/usea
 st/v2/service_instances/c724ac99-5119-4f08-bf10-410344bacbcc. Status Code: 409 Conflict, Body: {}
 ```
 

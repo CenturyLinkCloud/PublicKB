@@ -80,6 +80,8 @@ Version boxes can be managed in different ways. To see these options, go to vers
 
 ![version-control-and-auto-updates-10.png](../../images/cloud-application-manager/version-control-and-auto-updates-10.png)
 
+For more information on how to publish a box see this [tutorial](../Tutorials/publish-script-box.md).
+
 ### Contacting Cloud Application Manager Support
 
 We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.

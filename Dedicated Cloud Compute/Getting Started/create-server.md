@@ -1,6 +1,6 @@
 {{{
   "title": "Create Server",
-  "date": "04-19-2017",
+  "date": "05-08-2018",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -10,7 +10,7 @@
 
 ### Description
 
-The User Interface (UI) for Dedicated Cloud Compute (DCC) has been updated with a new look and feel. This documents the process to create a new server.
+The Dedicated Cloud Compute User Interface ((DCC UI) has been updated with a new look and feel. This documents the process to create a new server.
 
 ### Audience
 
@@ -46,7 +46,7 @@ In this section, you will have the ability to customize the specifications of yo
 
 * Select your preferred **language** if applicable.
 
-* Select your **domain** - only applicable if you selected a Windows OS.
+* Select your **domain** &mdash; only applicable if you selected a Windows OS.
 
 * Select your desired duration for the **burn-in period (days)**.
 

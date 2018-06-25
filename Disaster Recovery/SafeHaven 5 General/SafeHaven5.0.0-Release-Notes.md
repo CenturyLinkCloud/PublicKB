@@ -1,3 +1,4 @@
+
 {{{
   "title": "SafeHaven 5.0.0 Release Notes",
   "date": "12-29-2017",
@@ -15,7 +16,7 @@
 #### New Use Case: Use of Amazon Web Services (AWS) as a Disaster Recovery Site
 
 One of the major feature's of this release is the capability to protect production servers on **multiple hypervisors** and failover to **AWS**. Examples of validated hypervisors are:
-* VMware: including VMware based cloud platforms such as CenturyLink Cloud, DCC-F(vCloud Director), etc.
+* VMware: including VMware based cloud platforms such as CenturyLink Cloud, CenturyLink Private Cloud on VMware Cloud Foundation (vCloud Director), etc.
 * Hyper-V Generation 1
 * Xen(AWS)
 * KVM
@@ -31,7 +32,7 @@ Another major feature is the introduction of Microsoft Virtual Shadow Copy (VSS)
 #### Built-in network isolation capability via GUI
 Introduced built-in network isolation capability via GUI for recovery servers running on the same subnet as the recovery SRN.
 
-**NOTE**:This feature is ONLY available for use cases where the recovery site is CenturyLink Cloud (CLC).
+**NOTE**:This feature is ONLY available for Windows Production VMs when the recovery site is CenturyLink Cloud (CLC).
 
 ### Upgrade Path
 This is the first major release in the SafeHaven-5 product line and there is no upgrade path from any previous SafeHaven versions. Even the appliances (CMS/SRN) used in previous versions cannot be reused in SafeHaven-5 since it uses Ubuntu-16.04 as the base OS for the first time (in comparision, SafeHaven-4 uses Ubuntu-14.04 as the base OS).
@@ -51,3 +52,6 @@ This is the first major release in the SafeHaven-5 product line and there is no 
 
 Please note that you can check the md5 checksum against the file named [MD5SUMS](https://download.safehaven.ctl.io/SH-5.0.0/MD5SUMS).
 
+### Documentations
+
+[SafeHaven Inventory Sheet](https://download.safehaven.ctl.io/SH-5-Docs/SafeHaven-Inventory-Sheet-1.xlsm)

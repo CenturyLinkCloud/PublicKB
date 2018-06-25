@@ -20,6 +20,8 @@ This article assumes that a SafeHaven cluster has already been created successfu
 3. To allow the Protection Group to use maximum available bandwidth, click **Edit** in front of 2048.
 Check the box in front of **Maximum Available Bandwidth**. Click **Ok**
 
+**Note**: The procedure is same for CLC/VMWare/Manual sites as source datacenters.
+
 ### Video Tutorial
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/37-86QUfJW0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
