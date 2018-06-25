@@ -1,7 +1,7 @@
 {{{
- "title": "CenturyLink Private Cloud on VMware Cloud Foundation &mdash; Glossary of Terms",
- "date": "05-17-2018",
- "author": "",
+ "title": "Glossary of Terms",
+ "date": "06-07-2018",
+ "author": "Anthony Hakim",
  "attachments": [],
  "related-products" : [],
  "contentIsHTML": false
@@ -35,7 +35,7 @@
 
 **vApp**: Stands for Virtual Application and consists of one or more virtual machines that communicate over a network and use resources and services in a deployed environment. A vApp can contain multiple virtual machines.
 
-**vCloud Availability**: vCloud Availability for vCloud Director makes it easy for service providers to run a disaster-recovery-as-a-service (DRaaS) offering that is natively compatible with the end customer’s vSphere environment.
+**vCloud Director Extender**: VMware vCloud Director Extender is a hybrid cloud solution that enables cloud providers and tenants to expand multi-tier applications and perform workload migrations between on-premise data centers and the cloud.
 
 **vCloud Director (vCD)**: VMware Inc.'s cloud computing management tool. It manages Infrastructure as a Service (IaaS) architectures by monitoring and controlling various cloud-computing components, such as security, virtual machine (VM) provisioning, billing and self-service access.
 

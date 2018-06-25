@@ -24,7 +24,7 @@ During the deployment of the various appliances, it is necessary to input the pu
 **Important Note:** You will also need to obtain the public IPs for the Service Provider Extender and vCloud Director for your CenturyLink Private Cloud on VMware Cloud Foundation environment. Refer to the following example for what you need.
 
 **Example:**  
-Tenant Replicator: {{Translated Public IP}}:443
+`Tenant Replicator: <Translated Public IP>:443`
 
 The following examples have 2 Management IPs and 1 Public IP for the Tenant (Customer) and 2 Public IPs on the Service Provider (CenturyLink Private Cloud on VMware Cloud Foundation) side:
 
