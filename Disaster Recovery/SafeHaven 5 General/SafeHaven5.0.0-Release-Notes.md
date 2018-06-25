@@ -40,7 +40,7 @@ This is the first major release in the SafeHaven-5 product line and there is no 
 **NOTE**: Upgrade from SafeHaven-4 to SafeHaven-5 will be a fresh new installation.
 
 ### SafeHaven Most Recent Releases
-Please take a look at the link below to download the latest available release
+Please take a look at the link below to download the latest available release  
 https://www.ctl.io/knowledge-base/disaster-recovery/overview/most-recent-safehaven-release-updates/
 
 ### Documentations
