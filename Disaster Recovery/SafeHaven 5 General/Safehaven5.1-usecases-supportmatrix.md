@@ -54,3 +54,7 @@ Below is a list of all the supported use cases along with the support matrix.
 
 ### Disaster Recovery of a Physical Server into Azure
 ![awsazure](Support Matrix/12.PNG)
+
+
+### Additional Information
+![awsazure](Support Matrix/moreinfo.PNG)
