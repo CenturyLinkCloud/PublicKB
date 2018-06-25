@@ -48,3 +48,9 @@ Below is a list of all the supported use cases along with the support matrix.
 
 ### Disaster Recovery of a CLC Bare Metal Server into Azure
 ![Case10](../../images/SH5.0/SafeHaven-5.0-Use-Cases-and-Support-Matrix1/Case10.PNG)
+
+### Disaster Recovery of an AWS server into Azure
+![awsazure](Support Matrix/11.PNG)
+
+### Disaster Recovery of a Physical Server into Azure
+![awsazure](Support Matrix/12.PNG)
