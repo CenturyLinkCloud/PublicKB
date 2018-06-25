@@ -39,6 +39,10 @@ This is the first major release in the SafeHaven-5 product line and there is no 
 
 **NOTE**: Upgrade from SafeHaven-4 to SafeHaven-5 will be a fresh new installation.
 
+### SafeHaven Most Recent Releases
+Please take a look at the link below to download the latest available release
+https://www.ctl.io/knowledge-base/disaster-recovery/overview/most-recent-safehaven-release-updates/
+
 ### Download Links
 * [SafeHavenAppliance-5.0.0.ova](https://download.safehaven.ctl.io/SH-5.0.0/SafeHavenAppliance-5.0.0.ova): OVA to be imported to private VMware vSphere or vCloud Director envrionment as templates for SRN/CMS appliances
 * [Ubuntu-16.vhdx](https://download.safehaven.ctl.io/SH-5.0.0/Ubuntu-16.vhdx): Hyper-V image for SRN/CMS appliances in a private Hyper-V envrionment
