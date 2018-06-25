@@ -22,7 +22,7 @@ The following Knowledge Base articles explain how to access and use the Support 
 
 The Network Exchange support ticket prioritization and response time details are available at *[Ticket Prioritization Matrix](../Support/ticket-prioritization-matrix.md)*.
 
-The process to escalate support tickets can be found at *[How do I escalate a ticket?](../Support/How-do-i-escalate-a-ticket.md)*
+The process to escalate support tickets can be found at *[How do I escalate a ticket?](../Support/how-do-i-escalate-a-ticket.md)*
 
 ### PIN Number for Authentication
 
