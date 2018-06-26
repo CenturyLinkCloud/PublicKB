@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-<strong>The AppFog service was retired on June 29, 2018. The AppFog Platform-as-a-Service is no longer available, including all source code, env vars, and database information. More information is available [here](https://www.ctl.io/knowledge-base/AppFog/appfog-retirement-guide.md).
+<strong>The AppFog service was retired on June 29, 2018. The AppFog Platform-as-a-Service is no longer available, including all source code, env vars, and database information. More information is available [here](../knowledge-base/AppFog/appfog-retirement-guide.md).
 
 ### Article Overview
 There are several ways to perform searching tasks within the CenturyLink Cloud Control Portal. These include methods to search for servers, groups, metadata related to descriptions and custom fields, as well as filtering infrastructure or other lists for specific items.
