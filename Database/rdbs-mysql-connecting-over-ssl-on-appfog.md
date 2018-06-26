@@ -7,7 +7,7 @@
   "contentIsHTML": false
 }}}
 
-<strong>The AppFog service was retired on June 29, 2018. The AppFog Platform-as-a-Service is no longer available, including all source code, env vars, and database information. More information is available [here](../../appfog/appfog-retirement-guide/).</strong>
+<strong>The AppFog service was retired on June 29, 2018. The AppFog Platform-as-a-Service is no longer available, including all source code, env vars, and database information. More information is available [here](../../appfog/appfog-retirement-guide.md).</strong>
 
 ### Audience
 This article is to support AppFog customers using the ctl_mysql service through the AppFog AddOn Engine. The ctl_mysql service is Centurylink's MySQL-compatible Relational Database Service. For instructions on how to use your cert after purchasing through the Relational DB UI, see our Knowledge Base article titled [Connecting to MySQL Relational DB Over SSL](rdbs-mysql-connecting-over-ssl.md).
