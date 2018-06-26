@@ -7,7 +7,7 @@
 }}}
 
 
-<strong>The AppFog service was retired on June 29, 2018. The AppFog Platform-as-a-Service is no longer available, including all source code, env vars, and database information. More information is available [here](/appfog-retirement-guide/).
+<strong>The AppFog service was retired on June 29, 2018. The AppFog Platform-as-a-Service is no longer available, including all source code, env vars, and database information. More information is available [here](../../appfog/appfog-retirement-guide/).</strong>
 
 CenturyLink [Ecosystem Program Partner Members](centurylink-cloud-ecosystem-program-guide.md) gain access to a marketplace of [resources](ecosystem-program-resources.md) that make integrations easy.
 
