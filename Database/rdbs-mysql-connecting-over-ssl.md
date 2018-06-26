@@ -7,7 +7,7 @@
   "contentIsHTML": false
 }}}
 
-<strong>The AppFog service was retired on June 29, 2018. The AppFog Platform-as-a-Service is no longer available, including all source code, env vars, and database information. More information is available [here](../../appfog/appfog-retirement-guide/).</strong>
+<strong>The AppFog service was retired on June 29, 2018. The AppFog Platform-as-a-Service is no longer available, including all source code, env vars, and database information. More information is available [here](../../appfog/appfog-retirement-guide.md).</strong>
 
 ### Audience
 This article is to support customers of Relational DB Service, CenturyLink's MySQL compatible database-as-a-service product. The steps below are for customers using Relational DB Service through the Control Portal.
