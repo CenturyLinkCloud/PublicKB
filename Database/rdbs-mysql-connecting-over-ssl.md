@@ -8,7 +8,7 @@
 }}}
 
 ### Audience
-This article is to support customers of Relational DB Service, CenturyLink's MySQL compatible database-as-a-service product. The steps below are for customers using Relational DB Service through the Control Portal. For instructions on how to use your cert in AppFog, please refer to our Knowledge Base article titled [Connecting to MySQL Relational DB Over SSL on AppFogv2](rdbs-mysql-connecting-over-ssl-on-appfog.md).
+This article is to support customers of Relational DB Service, CenturyLink's MySQL compatible database-as-a-service product. The steps below are for customers using Relational DB Service through the Control Portal.
 
 ### Connecting over SSL-enabled Connection
 1. Once in the user interface, you will see a list of your database subscriptions. Locate and click on the subscription for which you need to download a certificate. This takes you to a new screen with subscription details and a button to download your certificate. When you click this button, a file called `[dbinsancename].pem`. is downloaded. This is the certificate that enables the SSL connection.

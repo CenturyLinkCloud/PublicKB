@@ -27,7 +27,7 @@ The green top navigation bar has been replaced with a new nav bar on the left si
 * **Infrastructure:** manage your servers by data center
 * **Network:** network and ip address management
 * **Orchestration:** Runner and Blueprints
-* **Services:** application services, such as AppFog, Relational DB
+* **Services:** Relational DB
 * **Queue:** blueprint queue
 * **Settings:** account settings, user management, branding and theming
 
