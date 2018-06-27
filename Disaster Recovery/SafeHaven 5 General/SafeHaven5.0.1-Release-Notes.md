@@ -24,8 +24,8 @@ This is a patch release for [SafeHaven 5.0.0](SafeHaven5.0.0-Release-Notes.md) w
 **NOTE**: Upgrade from SafeHaven-4 to SafeHaven-5 will be a fresh new installation.
 
 ### SafeHaven Most Recent Releases
-Please take a look at the link below to download the latest available release  
-https://www.ctl.io/knowledge-base/disaster-recovery/overview/most-recent-safehaven-release-updates/
+Please take a look at the link below to download the latest available release   
+[Most recent Release updates](../Overview/Most-Recent-SafeHaven-Release-Updates.md)
 
 
 ### Download Links
