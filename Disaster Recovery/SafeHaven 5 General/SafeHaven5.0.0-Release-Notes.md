@@ -41,7 +41,7 @@ This is the first major release in the SafeHaven-5 product line and there is no 
 
 ### SafeHaven Most Recent Releases
 Please take a look at the link below to download the latest available release  
-https://www.ctl.io/knowledge-base/disaster-recovery/overview/most-recent-safehaven-release-updates/
+[Most recent Release updates](../../Disaster Recovery/Overview/most-recent-safehaven-release-updates.md)
 
 ### Documentations
 
