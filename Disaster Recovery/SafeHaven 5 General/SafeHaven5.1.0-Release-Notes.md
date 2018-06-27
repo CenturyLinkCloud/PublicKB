@@ -29,7 +29,7 @@ It also comes with a number of bug fixes such as
 * SafeHaven-5.0.1 can be upgraded to 5.1.0 using the GUI. 
 
 ### SafeHaven Most Recent Releases
-Please take a look at the link below to download the latest available release
+Please take a look at the link below to download the latest available release  
 [Most recent Release updates](../../Disaster Recovery/Overview/most-recent-safehaven-release-updates.md)
 
 ### Download Links
