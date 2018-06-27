@@ -50,7 +50,8 @@
     </p>
   </li>
   <li>
-    <p>Customers who have applications hosted in CenturyLink datacenters, running on the value-added service network known as the Hosted Area Network (HAN) also have the option of buying a managed link into the cloud that bypasses the Internet. This
-      product is known as Cloud Network Service (CNS) and it can be ordered by contacting your CenturyLink account executive.</p>
+    <p>Customers who have applications hosted in CenturyLink datacenters, running on the value-added service network known as the Hosted Area Network (HAN) also have the option of buying a managed link into the cloud that bypasses the Internet.
+<p>
+This product is known as NetEx and it can be ordered by contacting your CenturyLink account executive. The implementation of NetEx will provides an automated self-service deployment opportunity which eliminates the need for manual customer configuration requests into CenturyLink. NetEx is available within a certain scope of datacenters. This can be referenced here: <a href="https://ca.ctl.io/knowledge-base/network/network-exchange-connectivity-matrix-configuration-guide/">https://ca.ctl.io/knowledge-base/network/network-exchange-connectivity-matrix-configuration-guide/</a>.</p>
   </li>
 </ol>
