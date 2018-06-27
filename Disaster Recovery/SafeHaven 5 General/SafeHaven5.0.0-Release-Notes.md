@@ -41,7 +41,7 @@ This is the first major release in the SafeHaven-5 product line and there is no 
 
 ### SafeHaven Most Recent Releases
 Please take a look at the link below to download the latest available release  
-[Most recent Release updates](../../Disaster Recovery/Overview/most-recent-safehaven-release-updates.md)
+[Most recent Release updates](../Overview/Most-Recent-SafeHaven-Release-Updates.md)
 
 ### Documentations
 
