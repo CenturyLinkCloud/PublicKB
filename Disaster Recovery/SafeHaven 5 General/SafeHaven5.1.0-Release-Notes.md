@@ -30,7 +30,7 @@ It also comes with a number of bug fixes such as
 
 ### SafeHaven Most Recent Releases
 Please take a look at the link below to download the latest available release
-https://www.ctl.io/knowledge-base/disaster-recovery/overview/most-recent-safehaven-release-updates/
+[Most recent Release updates](../../Disaster Recovery/Overview/most-recent-safehaven-release-updates.md)
 
 ### Download Links
 * [SafeHavenAppliance-5.0.1.ova](https://download.safehaven.ctl.io/SH-5.0.1/SafeHavenAppliance-5.0.1.ova): OVA to be imported to private VMware vSphere or vCloud Director envrionment as templates for SRN/CMS appliances
