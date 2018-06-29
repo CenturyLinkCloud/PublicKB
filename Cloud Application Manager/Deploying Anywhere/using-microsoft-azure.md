@@ -45,7 +45,7 @@ You need an Microsoft Azure subscription to be able to consume Azure services. F
     * Select: CenturyLink-CAM
 11. Return to the *Azure Active Diretory* panel, select *App Registrations* then *CenturyLink-CAM* then *Settings* and finally *Keys*.
 12. Set a Key with the following values:
-    * Description: CenturyLink-CAM App Key
+    * Description: CAM-App-Key
     * Expires: Never Expires
 13. Upon saving a **Key** value will be generated. Copy and keep the key (aka the **Secret**) value as you won't see it anymore once you navigate away.
 14. Input your Microsoft Azure Provider for an existing account as listed below:
