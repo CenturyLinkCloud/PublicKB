@@ -15,7 +15,7 @@ This article explains how to create a CMS (Central Management Server) in Azure D
 
 ### Assumptions
 1. It is assumed here that the user has an Azure account, a VNet created which has accessibility to CenturyLink Cloud Production Datacenter and a Resource Group that will contain all the resources related to SafeHaven.
-2. It is assumed the user also has a storage account created as outlined by KB XXXXXXX.
+2. It is assumed the user has a storage account created.
 
 ### Create an Azure instance
 1. Go to the Azure portal https://portal.azure.com 
