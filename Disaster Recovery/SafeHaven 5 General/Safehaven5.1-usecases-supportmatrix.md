@@ -57,4 +57,4 @@ Below is a list of all the supported use cases along with the support matrix.
 
 
 ### Additional Information
-![awsazure](Support Matrix/moreinfo.PNG)
+![awsazure](../../images/SH5.0/5.1SupportMatrix/moreinfo.PNG)
