@@ -25,35 +25,35 @@ Below is a list of all the supported use cases along with the support matrix.
 ### AWS Cloud as DR Site
 
 ### Disaster Recovery of a CLC Datacenter/VMware/CenturyLink Private Cloud on VMware Cloud Foundation site into AWS Cloud
-![Upgrade](Support Matrix/3.PNG)
+![Upgrade](../../images/SH5.0/5.1SupportMatrix/Case3.PNG)
 
 ### Disaster Recovery of a Hyper-V Gen1 server into AWS Cloud
-![Upgrade](Support Matrix/4.PNG)
+![Upgrade](../../images/SH5.0/5.1SupportMatrix/Case4.PNG)
 
 ### Disaster Recovery of a CLC Bare Metal server into AWS Cloud
-![Upgrade](Support Matrix/5.PNG)
+![Upgrade](../../images/SH5.0/5.1SupportMatrix/Case5.PNG)
 
 ### Disaster Recovery of an AWS Region into another AWS Region
-![Upgrade](Support Matrix/6.PNG)
+![Upgrade](../../images/SH5.0/5.1SupportMatrix/Case6.PNG)
 ### Disaster Recovery of a Physical Server into AWS Cloud
-![Upgrade](Support Matrix/7.PNG)
+![Upgrade](../../images/SH5.0/5.1SupportMatrix/Case7.PNG)
 
 ### Azure Cloud as DR Site
 
 ### Disaster Recovery of a CLC Datacenter/VMware/DCC-F site into Azure
-![Case8](../../images/SH5.0/SafeHaven-5.0-Use-Cases-and-Support-Matrix1/Case8.PNG)
+![Case8](../../images/SH5.0/5.1SupportMatrix/Case8.PNG)
 
 ### Disaster Recovery of a Hyper-V Gen1 Server into Azure
-![Case9](../../images/SH5.0/SafeHaven-5.0-Use-Cases-and-Support-Matrix1/Case9.PNG)
+![Case9](../../images/SH5.0/5.1SupportMatrix/Case9.PNG)
 
 ### Disaster Recovery of a CLC Bare Metal Server into Azure
-![Case10](../../images/SH5.0/SafeHaven-5.0-Use-Cases-and-Support-Matrix1/Case10.PNG)
+![Case10](../../images/SH5.0/5.1SupportMatrix/Case10.PNG)
 
 ### Disaster Recovery of an AWS server into Azure
-![awsazure](Support Matrix/11.PNG)
+![awsazure](../../images/SH5.0/5.1SupportMatrix/Case11.PNG)
 
 ### Disaster Recovery of a Physical Server into Azure
-![awsazure](Support Matrix/12.PNG)
+![awsazure](../../images/SH5.0/5.1SupportMatrix/Case12.PNG)
 
 
 ### Additional Information
