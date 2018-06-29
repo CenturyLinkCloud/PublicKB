@@ -3,8 +3,7 @@
   "date": "03-27-2018",
   "author": "Shi Jin",
   "attachments": [],
-  "contentIsHTML": false,
-  "sticky": true
+  "contentIsHTML": false
 }}}
 
 ### Release Notes
@@ -23,6 +22,11 @@ This is a patch release for [SafeHaven 5.0.0](SafeHaven5.0.0-Release-Notes.md) w
 
 ### Upgrade Path
 **NOTE**: Upgrade from SafeHaven-4 to SafeHaven-5 will be a fresh new installation.
+
+### SafeHaven Most Recent Releases
+Please take a look at the link below to download the latest available release   
+[Most recent Release updates](../Overview/Most-Recent-SafeHaven-Release-Updates.md)
+
 
 ### Download Links
 * [SafeHavenAppliance-5.0.1.ova](https://download.safehaven.ctl.io/SH-5.0.1/SafeHavenAppliance-5.0.1.ova): OVA to be imported to private VMware vSphere or vCloud Director envrionment as templates for SRN/CMS appliances
