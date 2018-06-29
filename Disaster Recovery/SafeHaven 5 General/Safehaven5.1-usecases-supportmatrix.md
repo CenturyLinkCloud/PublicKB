@@ -25,7 +25,7 @@ Below is a list of all the supported use cases along with the support matrix.
 ### AWS Cloud as DR Site
 
 ### Disaster Recovery of a CLC Datacenter/VMware/CenturyLink Private Cloud on VMware Cloud Foundation site into AWS Cloud
-![Upgrade](../../images/SH5.0/5.1SupportMatrix/Case3.PNG)
+![Upgrade](../../images/SH5.0/5.1SupportMatrix/case3.PNG)
 
 ### Disaster Recovery of a Hyper-V Gen1 server into AWS Cloud
 ![Upgrade](../../images/SH5.0/5.1SupportMatrix/Case4.PNG)
