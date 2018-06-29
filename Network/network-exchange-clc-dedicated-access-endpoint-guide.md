@@ -1,6 +1,6 @@
 {{{
   "title": "Network Exchange Dedicated Access Endpoint Guide",
-  "date": "05-09-2018",
+  "date": "06-28-2018",
   "author": "Jason Holland",
   "attachments": [],
   "related-products" : [],
@@ -15,7 +15,7 @@
 
 ### Dedicated Access Endpoint Capabilities
 
-* Choices of 1Gb/s and 10Gb/s dedicated connectivity between the End User’s equipment and Network Exchange equipment.
+* Choices of 1Gbps and 10Gbps dedicated connectivity between the End User’s equipment and Network Exchange equipment.
 * Options of a single line connection or a redundant connection (two physical connections) to increase gauranteed uptime.
 * Partially automated setup and tear down of connections between the End User’s equipment and the End User’s dedicated ports on the terminating Network Exchange equipment. The Dedicated Access Endpoint requires that one or two cross connects, with number based on redundancy, be implemented.  
 * Routing Types of both BGP and Static are available.
@@ -23,7 +23,7 @@
 ### Notes
 
 * Dedicated Access may be used for connecting directly to CenturyLink Managed Hosting and third party networks and devices.
-* This document does not apply to CenturyLink endpoints reached via HAN. For HAN-connected endpoints, please refer to the [Network Exchange CenturyLink Managed Hosting via HAN Endpoint Guide](../Network/network-exchange-clc-managed-hosting-endpoint-guide.md).
+* This document does not apply to CenturyLink endpoints reached through the Managed Area Network (HAN). For HAN-connected endpoints, please refer to the [Network Exchange CenturyLink Managed Hosting via HAN Endpoint Guide](../Network/network-exchange-clc-managed-hosting-endpoint-guide.md).
 * Additional purchase(s) required includes Hosting Access Extension (HAE) - a cross connect - with number of orders matching the number of connections, one for a single line or two for redundant connections. The cross connects will connect Network Exchange and the End User’s equipment following the provisioning of Network Exchange. Network Exchange will provide the equipment location and ports on the Network Exchange switches to be connected to, so the connections can be completed.
 * The user will have a choice between a 1Gbps and 10Gbps connection. The optics used to connect to Network Exchange are one of:
   * QFX-SFP-1GE-LX SFP 1000BASE-LX Gigabit Ethernet Optics, 1,310 nm for 10 km transmission on single mode fiber-optic (SMF)
