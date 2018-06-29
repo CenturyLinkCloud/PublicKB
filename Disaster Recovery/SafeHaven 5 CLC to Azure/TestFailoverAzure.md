@@ -28,14 +28,13 @@ While the Test Failover command is in effect, instances of the Protection Group 
 
 3. Under the Production Server Name, click on the Selected Checkpoint. Click **Next**, this will open up a Configuration Detail section on the right side of the window.
 
-4. Select the **Resource Group, VM Size-Type, Virtual Network, Network Security group, Subnet and IP Address(or select DHCP)** for each of the disk checkpoints selected on the previous step. Click Launch.
+4. Select the **Resource Group, VM Size-Type, Virtual Network, Network Security group, Subnet and IP Address(or select DHCP)** for each of the disk checkpoints selected on the previous step. Click Launch.  
 **NOTE:** Please select a Virtual Network with Isolated Network. Running a test failover instance in a non-isolated environment can adversely affect the production environment.
 
 5. The instance(s) will be created and the wizard will display the Instance Name, state, the instance ID, and IP.  
 
 6. Login to the Azure Virtual Machine using the Production Server credentials (local/cached/domain credentials) and confirm all the data is intact as well as applications are behaving as expected.  
-
-**Note**: After the instance is deployed you can optionally delete it from the wizard by selecting the instance row and clicking on the Delete button or Click on Close to end the Wizard.  
+**NOTE**: After the instance is deployed you can optionally delete it from the wizard by selecting the instance row and clicking on the Delete button or Click on Close to end the Wizard.  
 
 7. If you click on Close to end the wizard, the Test failover instance will still continue to run.
 
