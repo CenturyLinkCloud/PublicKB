@@ -30,7 +30,7 @@ You need an Microsoft Azure subscription to be able to consume Azure services. F
 1. Login to the [Azure portal](https://portal.azure.com/) using your Microsoft Account.
 2. Select *Azure Active Directory* in the menu, and then *Properties*
 3. Copy and take note of the **Directory ID** for later.  
-4. Next select *App registrations*, within the Azure Active Diretory panel 
+4. Next select *App registrations*, within the Azure Active Directory panel 
 5. Create a *New Application Registration* with the following values: 
     * Name: CenturyLink-CAM
     * Application Type: Web app / API
@@ -43,9 +43,9 @@ You need an Microsoft Azure subscription to be able to consume Azure services. F
     * Role: Contributor (If you do not see the Contributor role, you will need to talk to your administrator.)
     * Assign Access to: Azure AD user, group or application
     * Select: CenturyLink-CAM
-11. Return to the *Azure Active Diretory* panel, select *App Registrations* then *CenturyLink-CAM* then *Settings* and finally *Keys*. 
+11. Return to the *Azure Active Directory* panel, select *App Registrations* then *CenturyLink-CAM* then *Settings* and finally *Keys*. 
 12. Set a Key with the following values:
-    * Description: CenturyLink-CAM App Key
+    * Description: CAM-App-Key
     * Expires: Never Expires
 13. Upon saving a **Key** value will be generated. Copy and keep the key (aka the **Secret**) value as you won't see it anymore once you navigate away.
 14. Input your Microsoft Azure Provider for an existing account as listed below:
