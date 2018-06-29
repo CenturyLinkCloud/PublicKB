@@ -1,7 +1,7 @@
 {{{
   "title": "Network Exchange Getting Started Guide",
-  "date": "06-16-2017",
-  "author": "Rob Lesieur",
+  "date": "06-28-2018",
+  "author": "Jason Holland",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -10,50 +10,45 @@
 
 ### Product Overview
 
-[Network Exchange](//www.ctl.io/network-exchange/) provides secure, reliable, automated interconnectivity between service networks offered by Network Exchange Providers, including managed hosting, colocation and cloud environments. A Network Exchange Provider is any service provider who has integrated their networking domain for interconnect provisioning by Network Exchange. A Network Exchange User is any credentialed user of Network Exchange who has provider-defined access privileges to two or more Network Exchange Providers. This is the party who ultimately consumes Network Exchange, regardless of the Provider with which they have a direct contractual relationship. An instance of Network Exchange is itself referred to as an Exchange. It is an interconnect between two or more Network Exchange Providers. A Network Exchange User may have one or more Exchanges. A connectivity point for a Network Exchange Provider for a given Exchange is referred to as an Exchange Port. For example, "Colocation" is a type of Exchange Port.
+[Network Exchange](https://www.ctl.io/network-exchange/) provides secure, high-speed, redundant, automated network connections between disparate IT environments allowing for a true hybrid environment. Common environments include CenturyLink Cloud (CLC), CenturyLink Private Cloud on VMware Cloud Foundation (VCF), Colocation environments, CenturyLink Managed Hosting, CenturyLink Dedicated Cloud Compute, 3rd party networks and customer owned devices. Network Exchange is ideal for your hybrid environment as well as capacity augmentation or cloud bursting, data migration, and disaster recovery. 
 
-Network Exchange is offered in a pay-as-you-go billing model in which the Network Exchange User pays only for the bandwidth they consume for billable Exchange Port types. Please refer to the Knowledge Base article [Network Exchange Billing Guide ](network-exchange-billing-guide.md) for details on how billing is calculated.
+An instance of Network Exchange is referred to as an Exchange. An Exchange is an interconnect between two or more IT environments. A Network Exchange customer may have one or more Exchanges. A connectivity point, such as a Colocation, in an Exchange is referred to as an Endpoint.
 
-**Note:** All equipment and connectivity is redundant in Network Exchange, including cross connects to colocation and direct connect endpoint types. Non-redundant connectivity is not supported.
+Network Exchange is offered in a fixed monthly billing model preventing customers from experiencing unexpected charges. Please refer to the Knowledge Base article [Network Exchange Billing Guide ](network-exchange-billing-guide.md) for details on how billing is calculated.
+
+**Note:** Redundancy to all Endpoint types are supported in Network Exchange. Non-redundant connectivity is also available for Colocation environments or Endpoints required Dedicated Access.
 
 ### Glossary
 
-* **Network Exchange:** Provides secure, reliable, automated interconnectivity between service networks within a metro-area computing environment.
-  * **Network Exchange Provider:** Any service provider who has integrated their networking domain for interconnect Network Exchange.  
-This integration comes in two common sub-types:
-    * **Software Defined Integration:** Dynamic allocation of networks, IPs and routing by an API-driven resource model
-    * **Configured Integration:** Automated allocation of networks, IPs and routing by Provider-defined manual entry for which the Provider is responsible
-  * **Network Exchange User:** Any credentialed users of Network Exchange who has Provider-defined access privileges to two or more Network Exchange Providers.  This is the party who ultimately consumes Network Exchange, regardless of the Provider with which they have a direct contractual relationship.
-    * **Exchange:** An interconnect between two or more Network Exchange Providers. A Network Exchange User may have one or more Exchanges.
-    * **Exchange Port:** The connectivity point for a Network Exchange Provider for a given Exchange.
+* **Network Exchange:** Provides secure, reliable, automated interconnectivity between Endpoints within a metro-area.
+    * **Exchange:** An instance of Network Exchange with an interconnect between two or more IT environments. A Network Exchange customer may have one or more Exchanges.
+    * **Endpoint:** A connectivity point for a given Exchange.
 
 * Common Provider business models include:
   * **Hosted Service Provider:** Primarily provides SaaS or managed services on infrastructure hosted by CenturyLink o External Managed Service Provider: Primarily provides services to others on infrastructure not operated by CTL, i.e. IaaS clouds, SaaS platforms, Colocation providers.
   * **External Network Service Provider:** Primarily provides WAN services, e.g. Level3, Comcast.
   * **CenturyLink Managed Service Provider:** Any CTL-provided service, e.g. CLC, DCC, Managed Hosting, Network Exchange or CenturyLink Managed Network Provider: Any CTL-provided network, e.g. IQ, CTL-SDWAN
 * **On-Net Provider:** A service provider, fitting any of the above sub-models, who is directly or indirectly reachable via Network Exchange
-* **On-Net Traffic:** Network traffic that leaves Network Exchange to a CenturyLink Managed Service Provider, CenturyLink Managed Network Provider or Hosted Service Provider
-* **Egress Traffic:** Network traffic that leaves Network Exchange to an External Managed Service Provider or External Network Service Provider
-* **Network Exchange Reseller:** A Provider who also offers white-labeled Network Exchange interconnectivity, providing their customers access to all On-Net Providers.
 
 ### Prerequisites
 
 * You must be logged in to perform the functions outlined in this guide.
-* The desired Exchange Port type should be verified as supported at the desired data center(s). Please refer to the Knowledge Base article [Network Exchange Availability Matrix](network-exchange-connectivity-matrix-configuration-guide.md).
-* The desired Exchange Ports / data center combination(s) per Exchange should be validated as a supported configuration in the Knowledge Base article [Network Exchange Configuration Guide](network-exchange-connectivity-matrix-configuration-guide.md) once Exchange Port availability has been validated, per the previous step.
-* Each Exchange Port type has certain prerequisites, capabilities and caveats that should be understood before setting up an Exchange. Please see the following Knowledge Base documents for details:
-	* [Network Exchange CenturyLink Cloud Exchange Ports](network-exchange-clc-endpoint-guide.md)
-	* [Network Exchange Managed Hosting Exchange Ports](network-exchange-clc-managed-hosting-endpoint-guide.md)
-	* [Network Exchange Colocation Exchange Ports](network-exchange-clc-colocation-endpoint-guide.md)
-	* [Network Exchange Dedicated Access Exchange Ports](network-exchange-clc-dedicated-access-endpoint-guide.md)
+* The desired Endpoint should be verified as supported at the desired data center(s). Please refer to the Knowledge Base article [Network Exchange Availability Matrix](network-exchange-connectivity-matrix-configuration-guide.md).
+* The desired Endpoint / data center combination(s) per Exchange should be validated as a supported configuration in the Knowledge Base article [Network Exchange Availability Guide](network-exchange-connectivity-matrix-configuration-guide.md) once Endpoint availability has been validated, per the previous step.
+* Each Endpoint type has certain prerequisites, capabilities and caveats that should be understood before setting up an Exchange. Please see the following Knowledge Base documents for details:
+	* [Network Exchange CenturyLink Cloud Endpoint Guide](network-exchange-clc-endpoint-guide.md)
+	* [Network Exchange Colocation Endpoint Guide](network-exchange-clc-colocation-endpoint-guide.md)
+	* [Network Exchange Managed Hosting via HAN Endpoint Guide](network-exchange-clc-managed-hosting-endpoint-guide.md)
+	* [Network Exchange Dedicated Access Endpoint Guide](network-exchange-centurylink-private-cloud-endpoint-guide.md)
+	* [Network Exchange CenturyLink Private Cloud on VMWare Cloud Foundation Endpoint Guide](network-exchange-clc-endpoint-guide.md)
 
 ### Exceptions
 
-Network Exchange is designed to enable connectivity between any supported Exchange Port type in any supported data center. Under certain circumstances, not all supported Exchange Port types will be available at every supported data center. Any exceptions to this general rule will be noted in the Knowledge Base article [Network Exchange Configuration Guide](network-exchange-connectivity-matrix-configuration-guide.md) in the addendum. Retirement of known exceptions will be published in the [CenturyLink Cloud release notes](//www.ctl.io/knowledge-base/release-notes/2017/#1).
+Network Exchange is designed to enable connectivity between any supported Endpoint type in any supported data center. Under certain circumstances, not all supported Endpoint types will be available at every supported data center. Any exceptions to this general rule will be noted in the Knowledge Base article [Network Exchange Availability Matrix and Configuration Guide](network-exchange-connectivity-matrix-configuration-guide.md) in the addendum. 
 
 ### Log-in to Network Exchange
 
-1. Log-in to [Control Portal](https://control.ctl.io/auth/Login?ReturnUrl=%2f) using your ctl.io username and password.
+1. Navigate to the Cloud Application Manager login site and login using your Cloud Application Manager or CenturyLink Cloud username and password.
 
 2. From the left side navigation menu, click on **Products > Network Exchange**.
   
