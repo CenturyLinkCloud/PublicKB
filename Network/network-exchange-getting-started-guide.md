@@ -161,7 +161,7 @@ Click **Next**. You may cancel this operation by clicking the red X on the scree
    
 Select the **Provider** from the drop down list.
 
-![Network Exchange Portal](../images/netex-cam-add-endpoint-3-to-new-exchange-page-10.png)
+![Network Exchange Portal](../images/network/netex-cam-add-endpoint-3-to-new-exchange-page-10.png)
 
 Enter a Description in the Description text field.
 
