@@ -1,6 +1,6 @@
 {{{
   "title": "Support Escalation Process for Partners",
-  "date": "08-16-2016",
+  "date": "05-24-2018",
   "author": "",
   "attachments": [],
   "contentIsHTML": false
@@ -12,7 +12,7 @@
 
 ### Partner Action Items
 * Make sure this information is distributed to support team
-* Create Support Email alias and share with the Onboarding Manager
+* Create Support Email alias
 * Set up an account with Zendesk
 
 ### Support Introduction

@@ -1,6 +1,6 @@
 {{{
   "title": "Network Exchange FAQs",
-  "date": "05-01-2018",
+  "date": "06-28-2018",
   "author": "Jason Holland",
   "attachments": [],
   "related-products" : [],
@@ -10,9 +10,9 @@
 
 ### Product Overview
 
-[Network Exchange](https://www.ctl.io/network-exchange/) provides a secure, high speed, redundant (optional), private network to connect compute islands together to support hybrid IT. It is the preferred alternative to using the Internet or IPSec VPN for customers needing to connect two or more environments directly together. Common environments include CenturyLink Cloud (CLC), CenturyLink Managed Hosting, CenturyLink Managed Hosting Network (HAN), CenturyLink Dedicated Cloud Compute, 3rd party networks and customer owned devices. Network Exchange is ideal for your hybrid environment as well as capacity augmentation or cloud bursting, data migration, and disaster recovery. 
+[Network Exchange](https://www.ctl.io/network-exchange/) provides secure, high-speed, redundant, automated network connections between disparate IT environments allowing for a true hybrid environment. It is the preferred alternative to using the Internet or IPSec VPN for customers needing to connect two or more environments directly together. Common environments include CenturyLink Cloud (CLC), CenturyLink Private Cloud on VMware Cloud Foundation (VCF), Colocation environments, CenturyLink Managed Hosting, CenturyLink Dedicated Cloud Compute, 3rd party networks and customer owned devices. Network Exchange is ideal for your hybrid environment as well as capacity augmentation or cloud bursting, data migration, and disaster recovery. 
 
-Network Exchange provides the user with near total control of connection setup and management via the CLC Control Portal, coupled with CLC network automation, and pre-deployed network infrastructure. 
+Network Exchange provides the user with near total control of connection setup and management via the Network Exchange Internet portal, combined with automation through software defined networking, and pre-deployed network infrastructure. 
 
 ### Frequently Asked questions
 
@@ -26,7 +26,7 @@ Network Exchange provides the user with near total control of connection setup a
 
 **Q: Where do I go for support of Network Exchange?**
 
-**A:** For additional information, questions, and support of the CLC Network Exchange UI, please refer to the [Network Exchange Product Page](https://www.ctl.io/network-exchange) for more information and links to resources. Questions and support requests should be emailed to help@ctl.io.
+**A:** For additional information, questions, and support of the Network Exchange UI, please refer to the [Network Exchange Product Page](https://www.ctl.io/network-exchange) for more information and links to resources. Questions and support requests should be emailed to help@ctl.io.
 
 **Q: Does Network Exchange use SDN (Software Defined Networking) technologies?**
 
@@ -38,7 +38,7 @@ Network Exchange provides the user with near total control of connection setup a
 
 **Q: Is the provisioning of a Network Exchange circuit completely automated from end-to-end?**
 
-**A:** At the initial launch, Network Exchange provisioning to CLC is fully automated. The provisioning of Colocated and Dedicated Access Endpoints require physical implementation of cross connects and potentially some additional configuration. The provisioning to CenturyLink Managed Hosting Network (HAN) requires minimal manual configurations.
+**A:** At the initial launch, Network Exchange provisioning to CenturyLink Cloud, CenturyLink Private Cloud on VCF and in the near future AWS is fully automated. The provisioning of Colocated and Dedicated Access Endpoints require physical implementation of cross connects and potentially some additional configuration. The provisioning to CenturyLink Managed Hosting Network (HAN) requires minimal manual configurations.
 
 **Q: Is Network Exchange Layer 2 or Layer 3?**
 
@@ -78,4 +78,4 @@ Network Exchange provides the user with near total control of connection setup a
 
 **Q: I'm a Cloud Network Service (CNS) customer. Can I use Network Exchange at the same time as CNS?**
 
-**A:** Yes. A customer can use both CNS and Network Exchange at the same time so long as each is operated under it's own subaccount on CLC. Different VLANs must be used for CTL Managed Hosting endpoints.
+**A:** Yes. A customer can use both CNS and Network Exchange at the same time so long as each is operated under it's own subaccount on CLC. Different VLANs must be used for CenturyLink Managed Hosting Network (HAN) endpoints.

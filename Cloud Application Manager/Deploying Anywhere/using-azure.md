@@ -15,7 +15,7 @@ There are two different flavors of Azure and Cloud Application Manager has provi
 Classic Azure | https://manage.windowsazure.com | Classic Azure | This document
 Microsoft Azure | https://portal.azure.com | Microsoft Azure  | [Using Microsoft Azure](using-microsoft-azure.md)
 
-Microsoft's Classic Azure hosts applications in virtual machines and in cloud services via Web, Worker roles. Cloud Application Manager supports deploying to all three models through the Virtual Machine Role, Web and Worker roles. Take a look at the [benefits of deploying to Azure using Cloud Application Manager.
+Microsoft's Classic Azure hosts applications in virtual machines and in cloud services via Web, Worker roles. Cloud Application Manager supports deploying to all three models through the Virtual Machine Role, Web and Worker roles. Take a look at the [benefits of deploying to Azure using Cloud Application Manager](#benefits-of-deploying-to-azure-using-cloud-application-manager).
 
 **Note:** If you’re running Cloud Application Manager as an appliance in your private datacenter, you can deploy only to the virtual machine role.
 To learn about Azure hosting services, see the [Azure help](https://azure.microsoft.com/en-us/documentation/articles/choose-web-site-cloud-service-vm/).

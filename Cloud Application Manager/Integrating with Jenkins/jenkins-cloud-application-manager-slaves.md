@@ -105,7 +105,7 @@ Run Jenkins jobs using slaves launched via Cloud Application Manager on any clou
 
 **Steps**
 
-1. Go to the configure system page at **http://<your Jenkins host>/configure.**
+1. Go to the configure system page at **http://\<your Jenkins host\>/configure.**
 
 2. Set up Jenkins to launch slaves using the slave box. Click **Add** for **Slave Configurations**.
 
@@ -140,7 +140,7 @@ When defining the [Jenkins server box](jenkins-cloud-application-manager-setup.m
 
 **Steps**
 
-1. Go to the configure global security page at http://<your Jenkins host>/configureSecurity/.
+1. Go to the configure global security page at **http://\<your Jenkins host\>/configureSecurity/.**
 
 2. Select **Enable Security** and set **Fixed** to 55555 as shown. Save the setting.
 
@@ -168,7 +168,7 @@ Follow these steps to locate slaves launched via Cloud Application Manager in ca
 
 **Steps**
 
-1. Go to your Jenkins server management interface at http://<your Jenkins host>:8080.
+1. Go to your Jenkins server management interface at **http://\<your Jenkins host\>:8080.**
 
 2. Click the slave if active. It’s typically named as <Jenkins slave box environment name——–ID>. Here’s an example.
 

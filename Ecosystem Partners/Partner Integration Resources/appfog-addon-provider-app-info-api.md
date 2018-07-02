@@ -6,6 +6,8 @@
   "contentIsHTML": false
 }}}
 
+<strong>The AppFog service was retired on June 29, 2018. The AppFog Platform-as-a-Service is no longer available, including all source code, env vars, and database information. More information is available [here](../../AppFog/appfog-retirement-guide.md).</strong>
+
 ### Purpose
 
 The new Add-on Engine marketplace is made available to the NextGen AppFog v2 users to provision and bind services to their applications. This document describes the App Info endpoint, which AppFog Add-on Partners can use to retrieve the list of provisioned add-ons.

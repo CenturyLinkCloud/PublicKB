@@ -1,6 +1,6 @@
 {{{
   "title": "Network Exchange Billing Guide",
-  "date": "05-09-2018",
+  "date": "06-28-2018",
   "author": "Jason Holland",
   "attachments": [],
   "related-products" : [],
@@ -8,11 +8,11 @@
   "sticky": false
 }}}
 
-Network Exchange has fixed monthly rates based on the following parameters:
+Network Exchange has fixed monthly rates based on:
 1) Endpoint type
 2) Rate Limit
 3) Redundancy, and
-4) for CenturyLink Cloud, location
+4) for the Endpoint type of CenturyLink Cloud, location
 
 Network Exchange Pricing
 

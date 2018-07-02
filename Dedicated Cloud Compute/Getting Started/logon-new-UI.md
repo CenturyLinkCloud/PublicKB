@@ -1,6 +1,6 @@
 {{{
   "title": "Log On to new UI",
-  "date": "04-19-2017",
+  "date": "05-08-2018",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -22,7 +22,7 @@ Dedicated Cloud Compute customers.
 
 ### Process
 
-1. Go to [SavvisStation Portal](https://www.savvisstation.savvis.com/) and log-in with your username and password.
+1. Go to [SavvisStation Portal](https://www.savvisstation.savvis.com/) and log in with your username and password.
 
   ![SSP Logon](../../images/dcc/logon-ssp.png)
 

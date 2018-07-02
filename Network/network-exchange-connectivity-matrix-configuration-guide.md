@@ -1,6 +1,6 @@
 {{{
-  "title": "Network Exchange Connectivity Matrix and Configuration Guide",
-  "date": "05-08-2018",
+  "title": "Network Exchange Availability Matrix and Configuration Guide",
+  "date": "06-28-2018",
   "author": "Jason Holland",
   "attachments": [],
   "related-products" : [],
@@ -12,16 +12,17 @@
 
 The table, below, documents the metropolitan areas where Network Exchange is offered and the type and identity of Endpoints that are available there for inclusion into an Exchange. Please note any constraints in the following section.
 
-Metro Area|Colocation/<br>Dedicated Cloud Compute|Managed Hosting|CenturyLink Cloud
+Metro Area|Colocation/<br>Dedicated Access|Managed Hosting|CenturyLink Cloud
 ----------|------------------------------------|---------------|-----------------
-Ashburn, VA|DC2|DC2<br>DC3<br>DC4|VA1
-Santa Clara, CA|SC8|SC8<br>SC9|UC1
+Ashburn, VA|DC2<br>DC3<br>DC4|DC2<br>DC3<br>DC4|VA1
+Santa Clara, CA|SC8<br>SC9|SC8<br>SC9|UC1
 Chicago, IL|CH3|CH3|IL1
-New Jersey, NJ|NJ2|NJ2<br>NJ2X|NY1
+New Jersey, NJ|NJ2<br>NJ2X|NJ2<br>NJ2X|NY1
 London, UK|LO1|LO1|GB3
 London, UK|LO6|LO6|GB1
-Frankfurt, DE|FR6|FR6|DE3
-Toronto, Canada|TR1|TR1|CA3
+Frankfurt, DE|FR6|FR6|DE1<br>DE3
+Seattle, WA|SE2|SE2|WA1
+Toronto, CA|TR1|TR1|CA3
 Sydney, AU|SY7|SY7|AU1
 Singapore, SG|SG2|SG2|SG1
 
