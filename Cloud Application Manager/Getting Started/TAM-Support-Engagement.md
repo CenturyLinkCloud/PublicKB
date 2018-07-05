@@ -8,7 +8,7 @@
 
 ### TAM Assignment
 
-All Cloud Application Manager customers are subject to a **Primary** TAM which means that a TAM will be **assigned to the account**, and a pool of TAM’s are available to assist if that primary is not available.  The TAM’s are available 8am-5pm PST as a part of the standard TAM resource in either the Platform Advisory Support or Managed Services Anywhere capabilities in Cloud Application Manager.  At any time, a customer can upgrade their TAM to a Designated or Dedicated resource (for an additional cost) which is always assigned to the account.  An Advanced Managed Services upgrade can be used to get a Designated or Dedicated TAM.
+All Cloud Application Manager customers are subject to a **Primary** TAM which means that a TAM will be **assigned to the account**, and a pool of TAM’s are available to assist if that primary is not available.  The TAM’s are available 8am-5pm CST as a part of the standard TAM resource in either the Platform Advisory Support or Managed Services Anywhere capabilities in Cloud Application Manager.  At any time, a customer can upgrade their TAM to a Designated or Dedicated resource (for an additional cost) which is always assigned to the account.  An Advanced Managed Services upgrade can be used to get a Designated or Dedicated TAM.
 
 The following process is used to have a TAM assigned to the account:
 * Once a quote is signed and the order is booked (managed by the sales professional), the Technical Account Management team is notified, and a TAM is identified 
