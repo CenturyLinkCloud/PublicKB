@@ -16,7 +16,6 @@ There may be times when you want to manually link or unlink an account.  This ar
 
 ### Steps
 **1:** Logging in With Your Master Account   
-
 Go to [https://www.ctl.io/](https://www.ctl.io/), and click on the "Log In" link to the top right.  Click on Managed Hosting.
 
 ![ES-LAUA-1.png](../images/ES-LAUA-1.png)
@@ -28,7 +27,6 @@ Log in with your master account.
 **Please Note:** If you have not linked an account yet, you will be brought to a screen asking you to login with your SavvisStation credentials.  You can link your SavvisStation account and then proceed to step 2.  Otherwise, you can hover over your name at the top right, click "Manage My Account", and proceed to step 3.
 
 **2:** Managing Your Account  
-
 Once you are in SavvisStation, go to the top right and hover over your name.  Click on "My Account".  
 
 ![ES-LAUA-2.png](../images/ES-LAUA-2.png)
