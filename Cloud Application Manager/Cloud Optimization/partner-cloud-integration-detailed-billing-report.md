@@ -1,14 +1,14 @@
 {{{
   "title": "Partner Cloud Integration: Detailed Usage History",
-  "date": "05-07-2018",
-  "author": "Ben Swoboda",
+  "date": "06-29-2018",
+  "author": "Kevin Quaintance",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
 ### Overview
 
-Optimizing Accounts allows a Cloud Application Manager user to receive [consolidated bills](partner-cloud-integration-consolidated-billing.md). To get further details for these invoices, users may review the billing history.
+Optimizing Accounts allows a Cloud Application Manager user to receive [consolidated bills](partner-cloud-integration-consolidated-billing.md). To get further details for these invoices, users may review the billing history.  Two views are available:  "Centurylink Billing Cycle" is displayed by default and, starting on the 10th of each month, the "Vendor Billing Cycle" view becomes available.
 
 ### Audience
 
@@ -43,3 +43,9 @@ You may select a line item and it will provide detail into all the services, by 
  Details of how CenturyLink safeguards customer accounts so they are billed fairly is also represented. If a Reserved Instance is purchased in one account and assigned by Amazon Web Services to a different account, CenturyLink will perform inter-customer adjustments. The RI-purchasing account will be credited and the RI-consuming account will be debited.
 
  ![Inter-Customer Adjustments](../../images/cloud-application-manager/CAM_COA_InterCustomerAdjustment.png)
+
+ The *Vendor Billing Cycle* view fulfills the need to reconcile the CenturyLink billing cycle with our vendor billing cycles.  On the 10th of every month, CenturyLink will make a final assessment of the differences between what we put on your last invoice and what our vendor charged us. With that final sliver of data, we can also make a "Vendor Billing Cycle" button appear in Cloud Application Manager's Usage History. When you click it, the data will align with the Vendor's billing cycle. Any line items that start with "Post-Bill Update" have not appeared on a CenturyLink invoice for that month. You will never see "Post Bill Updates" on an invoice. They are only presented in the Cloud Application Manager Usage History. But those same charges will appear as "Update to previous month…" on the next month's invoice.
+
+Example: A customer thinks they may have $5 of EC2 usage from January. On February 1 they receive a CenturyLink invoice totaling $4 from CenturyLink: $3 of usage on a EC2 for January usage and a $1 charge from December usage called "Update to Previous Month's EC2 Services." There is no "Vendor Billing Cycle" Button yet available. On February 10, the customer sees the button in Cloud Application Manager. When they click it, they see the same $3 of usage on a EC2 for January usage plus the $2 Post-Bill Update to EC2 Services.
+
+![Vendor Billing Enhancement](../../images/cloud-application-manager/usage-history-enhancement.png)

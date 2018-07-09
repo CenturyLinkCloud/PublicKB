@@ -27,7 +27,7 @@ For Amazon Web Services, we are currently limited to serving billable customers 
 
 * An understanding of the features and benefits of [Partner Cloud Integration](partner-cloud-integration.md)
 
-* For each CenturyLink Cloud account integrated with Amazon Web Services, both CenturyLink's AWS Terms and Conditions for the relevant territory must be accepted. These will be presented to any user attempting to create a new "Microsoft Azure" provider in Cloud Application Manager.
+* For each CenturyLink Cloud account integrated with Amazon Web Services, both CenturyLink's AWS Terms and Conditions for the relevant territory must be accepted. These will be presented to any user attempting to create a new "Amazon Web Services" provider in Cloud Application Manager.
 
 ### Important Information
 
@@ -84,7 +84,7 @@ Please expect at least a few hours before we are able to process your request. I
 * Set up AWS Config Service for auditing
 * Enable MFA Access
 
-8. Within five minutes, you will now automatically receive temporary credentials to your account right within the provider. Click the  "Show Credentials" button to obtain administrator username, temporary password, and login URL for your account. The password is temporary and you will be requested to change it at first login. You may either log into the account via the URL provided or you may click the "AWS Console Button."
+8. Within five minutes, you will now automatically receive temporary credentials to your account right within the provider. Click the  "Show Credentials" button to obtain administrator username, temporary password, and login URL for your account. The password is temporary and you will be requested to change it at first login. You may either log into the account via the URL provided or you may click the "AWS Console Button." *Please Note:*  We do not provide root access per our hardening policy.  [See Hardening Policy](partner-cloud-integration-aws-hardening-permissions.md)
 
   ![Get Credentials](../../images/cloud-application-manager/CAM_COA_Credentials2.png)
 
@@ -95,10 +95,13 @@ Please expect at least a few hours before we are able to process your request. I
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
+If you are having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/), please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
 * Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+
+If you would like a complete IAM assessment, please reach out to your assigned CTL representative.
