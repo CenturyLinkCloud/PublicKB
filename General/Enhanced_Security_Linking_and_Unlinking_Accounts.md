@@ -47,6 +47,6 @@ To add an account, simply click the "add" button on the desired account type.  A
 ![ES-LAUA-5.png](../images/ES-LAUA-5.png)  
 
 **6:** Removing an Account  
-To remove an account, simply click the "remove" button on the desired account.  You will then be prompted to confirm you do want to remove the account.  Once you confirm, the account will be removed and you can the "remove" button will become an "add" button, allowing you to add an account of that type.  
+To remove an account, simply click the "remove" button on the desired account.  You will then be prompted to confirm you do want to remove the account.  Once you confirm, the account will be removed and the "remove" button will become an "add" button. You can then add an account of that type.  
 
 ![ES-LAUA-6.png](../images/ES-LAUA-6.png)  
