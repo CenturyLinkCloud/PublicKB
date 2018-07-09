@@ -2,7 +2,6 @@
   "category_order": [
     "Support",
     "Accounts & Users",
-    "AppFog",
     "Autoscale",
     "Backup",
     "Blueprints",

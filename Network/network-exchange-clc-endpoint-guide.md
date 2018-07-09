@@ -1,6 +1,6 @@
 {{{
   "title": "Network Exchange CenturyLink Cloud Endpoint Guide",
-  "date": "05-09-2018",
+  "date": "06-28-2018",
   "author": "Jason Holland",
   "attachments": [],
   "related-products" : [],
@@ -17,7 +17,7 @@ To create a dedicated virtual routing table (Dedicated VR), the VR will need to 
 
 ### CLC Endpoint Capabilities
 
-* 2 connection speeds (up to) 1Gb/s and 10Gb/s of shared bandwidth.  
+* 2 connection speeds (up to) 1Gbps and 10Gbps of shared bandwidth.  
 * Fully automated setup and tear down of CenturyLink Cloud connections to the End User’s VLANs.
 * CLC firewall rules are automatically updated as CLC endpoints are added or deleted.
 * BGP is used for dynamically managing routes between Network Exchange and CenturyLink Cloud.

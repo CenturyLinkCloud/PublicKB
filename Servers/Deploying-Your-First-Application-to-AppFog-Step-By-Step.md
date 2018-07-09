@@ -7,6 +7,8 @@
   "contentIsHTML": false
 }}}
 
+<strong>The AppFog service was retired on June 29, 2018. The AppFog Platform-as-a-Service is no longer available, including all source code, env vars, and database information. More information is available [here](../AppFog/appfog-retirement-guide.md).</strong>
+
 ### Overview
 
 AppFog is CenturyLink’s scalable, robust, high performing multi-tenant Platform-as-a-Service (Paas) platform.  This product has been updated with several powerful new features including automatic cross datacenter provisioning and replication.  This important new features creates a high level of application availability that can allow applications to stay online during a datacenter failure event.

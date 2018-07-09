@@ -6,6 +6,8 @@
   "contentIsHTML": false
 }}}
 
+<strong>The AppFog service was retired on June 29, 2018. The AppFog Platform-as-a-Service is no longer available, including all source code, env vars, and database information. More information is available [here](../../AppFog/appfog-retirement-guide.md).</strong>
+
 ### Purpose
 
 To describe changes that Heroku Add-on Partners need to make in order to integrate with the AppFog V2 Add-on Engine marketplace. The new Add-on Engine marketplace is made available to the NextGen AppFog users to provision and bind services to their applications.
@@ -17,7 +19,7 @@ Provides an additional channel for Partner services through the CenturyLink Clou
 ### Audience
 
 - Heroku Add-on Partners
- 
+
 ### What's Included
 
 - Changes to Add-on service manifests
@@ -35,7 +37,7 @@ Provides an additional channel for Partner services through the CenturyLink Clou
 
 ### Introduction
 
-Integrating your Partner service with the CenturyLink Add-on Engine marketplace is similar to the Heroku Add-on Partner integration approach. 
+Integrating your Partner service with the CenturyLink Add-on Engine marketplace is similar to the Heroku Add-on Partner integration approach.
 
 There are changes to be made to the Partner manifest and provisioning API to integrate with Add-on Engine. The following sections will describe the details around these needed changes.
 
