@@ -62,7 +62,7 @@ After verifying your email, you will be redirected to a login page.  Here you wi
 
 **9:** Multi-Factor Authentication  
 If you elected to use multi-factor authentication, you will now be prompted to complete the multi-factor OTP registration.
-[Click here for more information and step by step instructions.](https://www.ctl.io/knowledge-base/general/managed-hosting-and-private-cloud-multi-factor-authentication-for-master-account/)
+[Click here for more information and step by step instructions.](managed-hosting-and-private-cloud-multi-factor-authentication-for-master-account.md)
 
 **10:** Account Linking  
 If you didn't elect to use multi-factor authentication, or after you've provided your one time password, you will be prompted to either link your SavvisStation account or your Private Cloud account.  Which one you are prompted for depends on what service you selected in step 1.  Checking the 'Link this account' box will save these account credentials to your master account.  The next time you log in, you will not be required to enter the credentials of a linked account once you are authenticated with your master account credentials.
