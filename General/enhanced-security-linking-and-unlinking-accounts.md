@@ -12,7 +12,7 @@ As part of our efforts to increase the security of your accounts using the Savvi
 
 There may be times when you want to manually link or unlink an account.  This article steps you through this process.  This can be done after you have created your master account.
 
-[If you haven't created your master account yet, please go here for a step by step guide.](Enhanced_Security_Master_Account_Registration.md)
+[If you haven't created your master account yet, please go here for a step by step guide.](enhanced-security-master-account-registration.md)
 
 ### Steps
 **1:** Logging in With Your Master Account   
