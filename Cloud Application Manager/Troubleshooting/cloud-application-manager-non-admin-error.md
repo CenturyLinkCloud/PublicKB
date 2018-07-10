@@ -30,7 +30,7 @@ Select **Microsoft Azure** to build a customer account in the current Microsoft 
 
 For billing purposes, only a CenturyLink Cloud account admin is able to approve Azure usage charges. We assume non-admins have not been given high-enough permissions to be able to approve those charges. Therefore, if a non-admin attempts to create a new Azure Customer, you will see the following exception message.
 
-"Thank you for your interest in gaining access to Integrated Azure. A centuryLink Cloud account administrator for your account as the ability to provide access to you. Please visit https://www.ctl.io/knowledge-base/accounts-&-users/user-permissions/ to learn how to locate your account administrator."
+"Thank you for your interest in gaining access to Integrated Azure. A centuryLink Cloud account administrator for your account has the ability to provide access to you. Please visit https://www.ctl.io/knowledge-base/accounts-&-users/user-permissions/ to learn how to locate your account administrator."
 
 ![Cloud Application Manager Error: Non-Admin Setting Up a Provider](../../images/cloud-application-manager-error2.png)
 
