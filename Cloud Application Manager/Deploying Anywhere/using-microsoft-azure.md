@@ -19,7 +19,7 @@ Each of Cloud Application Manager's Microsoft Azure Providers gives you the opti
 
 If you want to learn how to use the New Account feature, please visit [Partner Cloud: Getting Started With a New Azure Customer](../Cloud Optimization/partner-cloud-integration-azure-new.md). The rest of this article assumes you will be using an existing, Azure Customer Account without any integration with CenturyLink.
 
-If you do have an existing Azure account that you want CenturyLink to manage or support, please contact incident@CenturyLink.com. Please provide the name and domain of your account. Also, please describe any products, services, or resources within your Customer Account that are not currently shown in this list of [permitted products](../Cloud Optimization/partner-cloud-integration-azure-capabilities.md). We likely have already have begun work to enable your products.
+If you do have an existing Azure account that you want CenturyLink to manage or support, please contact incident@CenturyLink.com. Please provide the name and domain of your account.
 
 ### Before You Begin
 
@@ -30,20 +30,20 @@ You need an Microsoft Azure subscription to be able to consume Azure services. F
 1. Login to the [Azure portal](https://portal.azure.com/) using your Microsoft Account.
 2. Select *Azure Active Directory* in the menu, and then *Properties*
 3. Copy and take note of the **Directory ID** for later.  
-4. Next select *App registrations*, within the Azure Active Directory panel 
-5. Create a *New Application Registration* with the following values: 
+4. Next select *App registrations*, within the Azure Active Diretory panel
+5. Create a *New Application Registration* with the following values:
     * Name: CenturyLink-CAM
     * Application Type: Web app / API
     * Sign-on URL: https://localhost/logon
 6. Upon saving an **Application ID** will be generated. Copy and take note of this value for later.
 7. Navigate to *Subscriptions* panel.
-8. In the *Overview* tab an **Subscription ID** is listed.  Copy and take note of this value for later. 
+8. In the *Overview* tab an **Subscription ID** is listed.  Copy and take note of this value for later.
 9. Select *Access Control (IAM)* and then selecte the *Add* button at the top of screen.  
 10. When creating the new role, do so with the following values:
     * Role: Contributor (If you do not see the Contributor role, you will need to talk to your administrator.)
     * Assign Access to: Azure AD user, group or application
     * Select: CenturyLink-CAM
-11. Return to the *Azure Active Directory* panel, select *App Registrations* then *CenturyLink-CAM* then *Settings* and finally *Keys*. 
+11. Return to the *Azure Active Diretory* panel, select *App Registrations* then *CenturyLink-CAM* then *Settings* and finally *Keys*.
 12. Set a Key with the following values:
     * Description: CAM-App-Key
     * Expires: Never Expires
@@ -51,7 +51,7 @@ You need an Microsoft Azure subscription to be able to consume Azure services. F
 14. Input your Microsoft Azure Provider for an existing account as listed below:
     * Subscription ID: Azure Subscription ID
     * Application ID: Application ID
-    * Secret: Key value 
+    * Secret: Key value
     * Tenant: Active Directory ID
 
 If you cannot find a specific template that you are looking for in Cloud Application Manager be sure to check out the [Azure github quickstart templates](https://github.com/Azure/azure-quickstart-templates).
