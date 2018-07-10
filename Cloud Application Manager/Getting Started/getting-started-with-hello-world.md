@@ -38,7 +38,7 @@ Configure the box to install a greeting in the virtual environment. To store you
 
 **Automate the box install**
 
-To install the greeting on the instance, add an install event. Under **Configuration > Events > install**, click **install**.
+To install the greeting on the instance, add an install event. Under **Code > Events > install**, click **install**.
 
 ![getting-started-hello-3.png](../../images/cloud-application-manager/getting-started-hello-3.png)
 
