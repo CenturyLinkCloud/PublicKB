@@ -30,7 +30,7 @@ On the Boxes page, click **New > Script** box. Under Requirements, select Linux 
 
 **Add a greeting variable**
 
-Configure the box to install a greeting in the virtual environment. To store your Hello World greeting, under Configuration > Variables, create a text variable called **Greeting** and enter **Hello World** as its value and save.
+Configure the box to install a greeting in the virtual environment. To store your Hello World greeting, under Code > Variables, click the **New** button, then create a text variable called **Greeting** and enter **Hello World** as its value and save.
 
 **Note**: Add a port variable with a value of 22 if you plan to SSH into the Hello World instance after deploying.
 
