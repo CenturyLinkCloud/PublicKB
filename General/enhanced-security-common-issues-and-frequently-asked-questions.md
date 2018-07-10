@@ -96,4 +96,4 @@ A: At this time, you can only link one of each type of account to a master accou
 
 **Q: How can I remove or change a linked account?**
 
-A:  [Please review this KB article that will walk you through the steps of managing your linked accounts.](enhanced-security-linking-and-unlinking_Accounts.md)
+A:  [Please review this KB article that will walk you through the steps of managing your linked accounts.](enhanced-security-linking-and-unlinking-accounts.md)
