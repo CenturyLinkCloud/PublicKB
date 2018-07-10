@@ -34,7 +34,7 @@ The Client Response Center can assist you with issues regarding the following ap
 * Private Cloud (Dedicated Cloud Compute)
 * Support (managedsupport.ctl.io)
 
-_Note: If you are unable to reach any of the above applications due to issues with your master account or multi-factor authentication, [click here for support.](#contacting-customer-care-team)_
+_Note: If you are unable to reach any of the above applications due to issues with your master account or multi-factor authentication, [contact the customer care team.](#contacting-the-customer-care-team)_
 
 If you are experiencing an issue with the above, there are two ways to open up a ticket with the Client Response Center.
 
