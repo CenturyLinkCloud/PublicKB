@@ -37,20 +37,20 @@ For behavior-based capacity changes, we start by accounting for the ebbs and flo
 
 We find the optimal growth rate for each device that best describes the historic rate of change for that device. Depending upon what technique is more accurate for the particular device in question, we will either use a linear or a non-linear prediction model.
 
-![ConsumedCPUCoresMAX](../images/ConsumedCPUCoresMAX.png)
+![ConsumedCPUCoresMAX](../../images/ConsumedCPUCoresMAX.png)
 
 Next, we need to account for the process-oriented changes to the device. Once we factor these into the model, we can then figure out the expected future utilization rate of that device. Since we know the maximum capacity for each device, this means we know roughly how long each device has until it is fully burdened. The next step is to share these expectations with the business and to integrate them within the larger decision-making process.
 
-![ConsumedCPUCores](../images/ConsumedCPUCores.png)
+![ConsumedCPUCores](../../images/ConsumedCPUCores.png)
 
 How we Integrate Forecasts with Business Processes
 As previously mentioned, we try to account for process changes in the models for each device. However, there are also business-scale process changes. The biggest sources of these changes come from logistics and procurement. The time it takes to install new hardware depends upon the utilization rate of our data centers, the availability of hardware by suppliers, and the workload of our operations teams. It also takes time for procurement. The finance team helps further investigate the recommendations for capacity and obtains business approval for sustained increases to capacity. Two procurement factors take place: optimization and integration. Optimization is involved in model accuracy and strength while taking the current supply into account. Integration factors current project results and read-outs with procurement-driven business decisions going forward. The manner in which we purchase what we need along with the components themselves will change as the cloud industry itself is constantly changing.
 
-![Memory Consumption Forecast Ex DC](../images/Memory-Consumption-Forecast-Ex-DC.png)
+![Memory Consumption Forecast Ex DC](../../images/Memory-Consumption-Forecast-Ex-DC.png)
 
 To account for these process changes, we create elasticity in our models. We do this by first examining the typical time required for each stage of the capacity planning process including: planning, purchasing, ordering, building, and installation. Once we know the typical lead times required for increasing the capacity of our platform, we know how far we need to forecast. Next, we create the ideal forecast for this time window.
 
-![automated capacity planning algorithm](../images/automated_capacity_planning_algorithm.png)
+![automated capacity planning algorithm](../../images/automated_capacity_planning_algorithm.png)
 
 We also examine the accuracy of our forecast technique by studying the historic data for each device and examining how well our forecast would have done at predicting future capacity needs. Through understanding historic performance, we are able to figure out the most optimal way to configure our forecasts for this duration.
 
