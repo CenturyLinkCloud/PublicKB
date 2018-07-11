@@ -46,7 +46,7 @@ features such as:
 **Q:** What Data Center(s) is Load Balancer as a Service (LBaaS) available
 in?
 
-**A:** Please review the [Feature Availability Matrix](../../hybrid-it/hybrid-it-availability-matrix) for a list of LBaaS Locations.
+**A:** Please review the [Feature Availability Matrix](/../hybrid-it/hybrid-it-availability-matrix) for a list of LBaaS Locations.
 
 **Q:** What if I require a Load Balancer but I don’t have a presence in
 a LBaaS enabled Data Center?
