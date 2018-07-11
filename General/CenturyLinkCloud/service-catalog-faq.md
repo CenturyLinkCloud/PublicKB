@@ -30,7 +30,7 @@ Here are a few specific examples of scenarios where the Service Catalog might be
 
 Access to services is best established on a set-it-and-forget-it-basis – it is not advisable to use the Service Catalog to repeatedly toggle services on and off. Access to a service should only be turned off when an Account Administrator is confident that the service is not already being consumed by an account.
 
-**What [roles](../Accounts & Users/roles-faq.md) can access the Service Catalog?**
+**What [roles](../../Accounts & Users/roles-faq.md) can access the Service Catalog?**
 
 Only Account Administrators have permission to view the Service Catalog and enable or disable services.
 

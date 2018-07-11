@@ -952,7 +952,7 @@ clc group get-monitoring-statistics --group-name Test --type hourly --start "201
 ***Reuqest statistics realtime (last 4 hours) in 30 minutes interval***
 
 ### Webhook (only avaiable until version v1.1.0-rc.2)
-CLI can be used to configure webhooks, this enable customers to leverage the alert notification webhook services built into CenturyLink Cloud with 3rd party web apps or services.  The current event list are: "Account.Created", "Account.Delted", "Account.Updated", "Alert.Notificiation", "Server.Created", "Server.Deleted", "Server.Updated", "User.Created", "User.Deleted", "User.Updated".  To learn more on setup webhook in CenturyLink Cloud, please see [Configuring Webhooks and Consuming Notificatios](../General/consuming-webhook-alerts-with-3rd-party-web-apps.md).
+CLI can be used to configure webhooks, this enable customers to leverage the alert notification webhook services built into CenturyLink Cloud with 3rd party web apps or services.  The current event list are: "Account.Created", "Account.Delted", "Account.Updated", "Alert.Notificiation", "Server.Created", "Server.Deleted", "Server.Updated", "User.Created", "User.Deleted", "User.Updated".  To learn more on setup webhook in CenturyLink Cloud, please see [Configuring Webhooks and Consuming Notificatios](../General/CenturyLinkCloud/consuming-webhook-alerts-with-3rd-party-web-apps.md).
 
 ***List all current webhook***
 ```

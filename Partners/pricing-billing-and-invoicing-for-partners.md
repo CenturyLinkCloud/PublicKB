@@ -33,7 +33,7 @@ This can be done manually at the time of invoice.  You’d simply communicate th
 ## Set Your Own Price Feature
 The Set Your Own Price Feature provides a way Partners can set custom prices for their sub accounts.  The following link provides a detailed overview of the Set Your Own Price feature.
 
-Please review the [Set Your Own Price Feature](../General/setting-prices-for-sub-accounts.md)
+Please review the [Set Your Own Price Feature](/setting-prices-for-sub-accounts.md)
 
 ## Getting Billing Data and Reports
 

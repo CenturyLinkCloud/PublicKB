@@ -41,7 +41,7 @@ Parent accounts can control firewall policies associated with parent-child netwo
 
 ### Service Catalog
 
-The [Service Catalog](../General/getting-started-with-the-service-catalog.md) allows Account Administrators to enable or disable certain cloud platform services for users of individual parent or sub accounts.
+The [Service Catalog](../General/CenturyLinkCloud/getting-started-with-the-service-catalog.md) allows Account Administrators to enable or disable certain cloud platform services for users of individual parent or sub accounts.
 
 ![Service Catalog in account Hierarchy](../images/account-hierarchy-7.png)
 
