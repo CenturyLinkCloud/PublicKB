@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-### Enhancements (5)
+### Enhancements (6)
 
 #### [Cloud Application Manager](//www.ctl.io/cloud-application-manager/)
 
@@ -29,3 +29,6 @@ Cloud Application Manager now provides the ability to import AWS Auto Scaling gr
 * New Job System
   * Introduction of a completely new job system,  which makes user experience very smooth. It is easier to monitor jobs with the added sub-job feature. The overall response time is significantly reduced due to the new job system. 
 
+#### Public Cloud Inftrastrucure as a Service
+
+* We've updated CenturyLink Cloud's control portal user interface with a new look and feel. Our new aesthetic design has been applied across all of our cloud services to give users a similar experience across products. There are no functionality or feature changes associated with this user interface update.
