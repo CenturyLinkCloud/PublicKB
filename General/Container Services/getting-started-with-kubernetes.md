@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-![logo](../images/kubernetes.jpg)
+![logo](../../images/kubernetes.jpg)
 
 Please visit [here](https://github.com/CenturyLinkCloud/adm-kubernetes-on-clc) for instructions on how to install Kubrenetes on CenturyLink Cloud.
 
@@ -81,7 +81,7 @@ vi ansible/credentials.sh
 source ansible/credentials.sh
 
 ```
-4) Make sure the computer you are working on has access to the CenturyLink Cloud network. This is done by using a VM inside the CenturyLink Cloud network or having an active VPN connection to the CenturyLink Cloud network. To find out how to configure the VPN connection, [visit here](../Network/how-to-configure-client-vpn.md).
+4) Make sure the computer you are working on has access to the CenturyLink Cloud network. This is done by using a VM inside the CenturyLink Cloud network or having an active VPN connection to the CenturyLink Cloud network. To find out how to configure the VPN connection, [visit here](../../Network/how-to-configure-client-vpn.md).
 
 
 #### Ubuntu 14  Walkthrough: Installation of Requirements and Scripts

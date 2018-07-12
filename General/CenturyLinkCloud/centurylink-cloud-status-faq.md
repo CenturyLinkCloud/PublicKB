@@ -32,4 +32,4 @@ A: Yes. You can add a Slack webhook in your notification preferences. Visit http
 
 **Q: How do I provide feedback and ideas on how to improve this service?**
 
-A: We welcome your requests and feedback! Please see [How Do I Submit a Feature Request?](../Support/how-do-i-submit-a-feature-request.md) to learn how to best reach us with your input.
+A: We welcome your requests and feedback! Please see [How Do I Submit a Feature Request?](../../Support/how-do-i-submit-a-feature-request.md) to learn how to best reach us with your input.

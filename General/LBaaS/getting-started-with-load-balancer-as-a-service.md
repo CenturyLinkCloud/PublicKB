@@ -34,16 +34,16 @@ LBaaS is a load balancing solution that is meant to provide both server load bal
 To get started with the User Interface (UI), select the Network Icon
 inside of Control Portal:
 
-![](../images/LBaaS/GettingStarted/image1.png)
+![](../../images/LBaaS/GettingStarted/image1.png)
 
 Next, select Load Balancer from list of Network objects:
 
-![](../images/LBaaS/GettingStarted/image2.png)
+![](../../images/LBaaS/GettingStarted/image2.png)
 
 Now, let’s get started creating a Load Balancer. Click ‘create load
 balancer’
 
-![](../images/LBaaS/GettingStarted/image3.png)
+![](../../images/LBaaS/GettingStarted/image3.png)
 
 * (1)Select a location (Data Center) you wish to deploy the load balancer
 to
@@ -51,18 +51,18 @@ to
 * (3) Provide description (if needed)
 * (4) Select Create Load Balancer
 
-![](../images/LBaaS/GettingStarted/image4.png)
+![](../../images/LBaaS/GettingStarted/image4.png)
 
 Upon creating your load balancer, the UI will refresh to show you the
 status of your load balancer
 
-![](../images/LBaaS/GettingStarted/image5.png)
+![](../../images/LBaaS/GettingStarted/image5.png)
 
 Once status has changed from ‘creating’ to ‘active’ your Load Balancer
 is ready to add pools (Please note, a manual refresh of the page may be
 required to see an updated status).
 
-![](../images/LBaaS/GettingStarted/image6.png)
+![](../../images/LBaaS/GettingStarted/image6.png)
 
 ### Adding Pool(s) – User Interface
 
@@ -70,7 +70,7 @@ Now that the Load Balancer is created, we need to add pools. After
 selecting the Load Balancer from the previous screen, click on either of
 the ‘add pool’ buttons.
 
-![](../images/LBaaS/GettingStarted/image7.png)
+![](../../images/LBaaS/GettingStarted/image7.png)
 
 After selecting ‘add pool’, you will now need to populate the following
 fields:
@@ -91,7 +91,7 @@ At this point it is time to add node(s), do so by selecting the ‘add
 node’ button. Enter the IP of the node and the desired port (to add
 additional nodes to the pool, simply repeat this step).
 
-![](../images/LBaaS/GettingStarted/image8.png)
+![](../../images/LBaaS/GettingStarted/image8.png)
 
 ### Health Checks – User Interface
 
@@ -115,7 +115,7 @@ will be able to see the health check button, but will be unable to
 enable health checks at this time). Simply set the health check
 parameters based on the definitions provided below.
 
-![](../images/LBaaS/GettingStarted/image9.png)
+![](../../images/LBaaS/GettingStarted/image9.png)
 
 ### Health Check Definitions
 
@@ -144,44 +144,44 @@ it!
 To update a pool, first, select the load balancer instance the pool is
 associated to.
 
-![](../images/LBaaS/GettingStarted/image10.png)
+![](../../images/LBaaS/GettingStarted/image10.png)
 
 Next, drill in to the appropriate pool:
 
-![](../images/LBaaS/GettingStarted/image11.png)
+![](../../images/LBaaS/GettingStarted/image11.png)
 
 Once in the pool, make any necessary changes and when finished select
 ‘save’ to commit the changes. Once the changes are committed, you will
 be redirected back to the list of pools, which will show a status of
 ‘updating’
 
-![](../images/LBaaS/GettingStarted/image12.png)
+![](../../images/LBaaS/GettingStarted/image12.png)
 
 Once the updates are complete, the status will change to ‘active’.
 
-![](../images/LBaaS/GettingStarted/image13.png)
+![](../../images/LBaaS/GettingStarted/image13.png)
 
 ### Delete a Pool via UI
 
 To delete a pool, select the appropriate load balancer the pool is
 associated to.
 
-![](../images/LBaaS/GettingStarted/image10.png)
+![](../../images/LBaaS/GettingStarted/image10.png)
 
 From the list of available pools, select the pool you wish to delete.
 
-![](../images/LBaaS/GettingStarted/image11.png)
+![](../../images/LBaaS/GettingStarted/image11.png)
 
 Once in the pool, select the delete pool button.
 
-![](../images/LBaaS/GettingStarted/image14.png)
+![](../../images/LBaaS/GettingStarted/image14.png)
 
 Upon selecting delete, you will be prompted to confirm your decision to
 complete. Upon selecting ‘Yes, I am sure’, you will be redirected back
 to the list of pools, to which you can see a status of ‘deleting’ on the
 pool in question.
 
-![](../images/LBaaS/GettingStarted/image15.png)
+![](../../images/LBaaS/GettingStarted/image15.png)
 
 Once the pool has successfully been deleted, the page will refresh and
 the deleted pool will no longer appear in the list of available pools.
@@ -191,11 +191,11 @@ the deleted pool will no longer appear in the list of available pools.
 To Delete or Update a load balancer, select the appropriate Load
 Balancer.
 
-![](../images/LBaaS/GettingStarted/image10.png)
+![](../../images/LBaaS/GettingStarted/image10.png)
 
 Select the ‘settings’ button.
 
-![](../images/LBaaS/GettingStarted/image16.png)
+![](../../images/LBaaS/GettingStarted/image16.png)
 
 Once inside of the settings, you can update the name and/or description
 of the Load Balancer. To commit your changes, select save.
@@ -203,7 +203,7 @@ of the Load Balancer. To commit your changes, select save.
 Alternatively, if you wish to delete the load balancer in question,
 select the delete button.
 
-![](../images/LBaaS/GettingStarted/image17.png)
+![](../../images/LBaaS/GettingStarted/image17.png)
 
 
 ### API Configuration and Management

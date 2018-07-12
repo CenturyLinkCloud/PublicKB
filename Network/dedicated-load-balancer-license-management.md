@@ -28,12 +28,12 @@ The Netscaler Load Balancer uses FlexLM licensing to license features on the pro
 
 #### CLI Method
 
-1. SSH or use PuTTY on Windows to login to VPX management IP 
+1. SSH or use PuTTY on Windows to login to VPX management IP
 2. In the CLI run:
  ```
   show ns license
  ```
- 
+
 3. Review the output. If the Model Number ID lists 1 instead of the proper model and the Load Balancing feature says NO, the license is expired. The Model ID should read the correct model (i.e.: 200) and the Load Balancing feature should say YES.
 
 #### GUI Method
@@ -51,27 +51,27 @@ The Netscaler Load Balancer uses FlexLM licensing to license features on the pro
  ```
   shell
   ```
-  
+
 3. Review the /var/log/license.log file to determine the location and filename of the license file in use.
  ```
   cat /var/log/license.log | grep -v lmgrd  | grep "License file"
   ```
-  
+
 4. The license file should be in the /nsconfig/license directory. The license.log file can be listed to determine when was the last time the VPX ran the license daemon to check the license.
  ```
   ls -la /var/log/license.log
   ```
-  
+
 5. Navigate to the /nsconfig/license directory.
  ```
   cd /nsconfig/license
   ```
-  
+
 6. Review the file listed as the license file obtained in step 3. This example uses the license file named license.lic.
  ```
   cat license.lic | grep INCREMENT
   ```
-  
+
 7. Observe the lines in the file that start with the word **INCREMENT** in all capital letters. This line contains the license expiration date.
 
 ### Updating Licenses
@@ -82,7 +82,7 @@ There are two methods depending on if you are updating a lone LB or an HA pair. 
 
 #### HA Pair
 
-Users may need to [configure Java](../General/how-to-configure-java-settings-to-access-web-user-interfaces.md) to ensure they can access the Web GUI.
+Users may need to [configure Java](../General/CenturyLinkCloud/how-to-configure-java-settings-to-access-web-user-interfaces.md) to ensure they can access the Web GUI.
 
 1. The following steps will need to be performed on each node, starting with the secondary load balancer first.
    - For non-Windows users connect to the RNAT IP over SSH and add `.old` to the license filename, then use SCP to upload the file to `/nsconfig/license`.
@@ -137,7 +137,7 @@ This process is very similar to handling the HA pair except no failover is neede
       7. On the right pane, add `.old` to the current license name.
       8. Drag the new license from the left pane to the right pane.
 2. Save the configuration and reboot
-   1. SSH or use PuTTY on Windows to login to the VPX management IP 
+   1. SSH or use PuTTY on Windows to login to the VPX management IP
    2. Enter `save ns config`
    3. Enter `reboot`
    4. Enter `yes` if prompted
