@@ -25,11 +25,11 @@ This article will help users properly configure their Java settings to connect t
 
 5. Uncheck the box "Keep temporary files on my computer" and press OK.
 
-    ![uncheck temp files](../images/java-settings-to-access-citrix-web-user-interfaces-01.png)
+    ![uncheck temp files](../../images/java-settings-to-access-citrix-web-user-interfaces-01.png)
 
 6. Next go to the Security tab and change the slider to Medium. Please note that you are responsible for the security of your OS and computer.
 
-    ![change security to medium](../images/java-settings-to-access-citrix-web-user-interfaces-02.png)
+    ![change security to medium](../../images/java-settings-to-access-citrix-web-user-interfaces-02.png)
 
 7. Add the Web UI IP Address to the Exception Site List:
     * Click on “Edit Site List”

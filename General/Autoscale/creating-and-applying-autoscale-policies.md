@@ -13,7 +13,7 @@ How does Autoscale work? For vertical Autoscale, servers that exceed a user-defi
 
 For example, consider a vertical Autoscale policy that sets a range of 4 to 6 CPUs for a server. The server is set to scale up by 2 CPUs if the server is running at 90% utilization for longer than 15 minutes. If the server is at 15% CPU utilization for longer than 15 minutes, then the policy scales the server down IF this event occurs during the user-defined scale down window. (A similar story would apply for horizontal Autoscale using number of servers instead of number of CPUs.)
 
-![Autoscale CPU](../images/createautoscale-autoscale-cpu02.png)
+![Autoscale CPU](../../images/createautoscale-autoscale-cpu02.png)
 
 This KB article describes all of the steps for creating, applying, and testing both vertical and horizontal Autoscale policies.
 
@@ -33,7 +33,7 @@ This KB article describes all of the steps for creating, applying, and testing b
 
 4. Click **vertical autoscale policy**. Define the general policy characteristics.
 
-  ![Autoscale Policy](../images/createautoscale-autoscale-parameters.png)
+  ![Autoscale Policy](../../images/createautoscale-autoscale-parameters.png)
 
   * name: name of the autoscale policy
   * cpu range: the allowable minimum and maximum number of CPUs for the server. This range is used for each server that the policy is applied to. If you have three servers each using the same policy, they each have the capability to use the maximum number of CPUs.
@@ -49,7 +49,7 @@ This KB article describes all of the steps for creating, applying, and testing b
 6. Click **Create**.
 
 7. Your policy is now part of the list of vertical Autoscale policies.
-   ![Autoscale Policy](../images/createautoscale-autoscale-cpu08.png)
+   ![Autoscale Policy](../../images/createautoscale-autoscale-cpu08.png)
 
 ### Configuring Vertical Autoscale - Existing Server
 Vertical Autoscale policies can be added to existing servers or during the server creation process. These steps show how to apply to an existing server. (Similar steps below are followed after setting the **autoscale** option to **on** when creating a server.
@@ -59,7 +59,7 @@ Vertical Autoscale policies can be added to existing servers or during the serve
 
 2. From the server settings page, mouseover the CPU utilization chart and click **EDIT** when the button appears. This displays the Edit CPU panel.
 
-   ![Autoscale Policy](../images/createautoscale-autoscale-server-settings.png)
+   ![Autoscale Policy](../../images/createautoscale-autoscale-server-settings.png)
 
 3. Flip the Autoscale slider to **ON** and choose an Autoscale policy from the drop-down.
    * If you flip this switch from the Create Server page, you see a preview of all the details of the policy after you select it. From the server settings page, only the policy name is displayed.
@@ -69,10 +69,10 @@ Vertical Autoscale policies can be added to existing servers or during the serve
 4. Click **apply** to save the updated server settings. Your server is now listed next to the associated policy on the Autoscale Policies page.
 
 5. Next, create a significant amount of load on the server in order to exceed the upper threshold for a sustained period of time. In the example below, see that the CPU utilization is consistently above 88%.
-   ![Autoscale Policy](../images/createautoscale-autoscale-cpu13.png)
+   ![Autoscale Policy](../../images/createautoscale-autoscale-cpu13.png)
 
 6. After the threshold period has passed, note that the server has a new CPU (without rebooting) and an entry was added to the activity history. The activity history entry shows the average CPU amount that triggered the Autoscale, how long the threshold period was, and how many CPUs the server has now.
-   ![Autoscale Policy](../images/createautoscale-scale-up-event.png)
+   ![Autoscale Policy](../../images/createautoscale-scale-up-event.png)
 
 7. To test scale down, visit your Autoscale policy and broaden the **scale down window** timeframe. This ensures that the period of low usage coincides with the window where scale down is allowed.
 
@@ -80,7 +80,7 @@ Vertical Autoscale policies can be added to existing servers or during the serve
    * Note that a scale down event takes the server back to the minimum number of CPUs defined in the Autoscale policy.
    * The activity history entry shows the average CPU amount that triggered the Autoscale, how long the threshold period was, and how many CPUs the server has now. In this scenario, see that the server has a single CPU allocated after the scale down occurs.
 
-   ![Autoscale Policy](../images/createautoscale-scale-down-event.png)
+   ![Autoscale Policy](../../images/createautoscale-scale-down-event.png)
 
 9. Autoscale policies can be changed at any time and those changes are instantly reflected on the related servers. In addition, at any point you can remove the policy from a server, and go back to manually changing CPU capacity.
 
@@ -93,7 +93,7 @@ Vertical Autoscale policies can be added to existing servers or during the serve
 
 4. Click **horizontal autoscale policy**. Define the general policy characteristics.
 
-  ![Autoscale Policy](../images/createautoscale-h-autoscale-parameters.png)
+  ![Autoscale Policy](../../images/createautoscale-h-autoscale-parameters.png)
 
   * name: name of the autoscale policy
   * minimum servers: defines the minimum number of for the servers to remain on at all times.
@@ -109,10 +109,10 @@ Vertical Autoscale policies can be added to existing servers or during the serve
   * cool down period: defines how long to wait after performing one Autoscale event before considering another (15 minutes, 20 minutes, 30 minutes).
 
 5. Click **save policy**. Your policy is now part of the list of Horizontal Autoscale policies.
-   ![Autoscale Policy](../images/createautoscale-new-h-scale-list.png)
+   ![Autoscale Policy](../../images/createautoscale-new-h-scale-list.png)
 
 6. **Note**: You need to have a load balancer group created and a pool configured in order to move on to the next step.
-   * Please follow the instructions for [creating and configuring a load balancer](../Network/creating-a-self-service-load-balancing-configuration.md) before proceeding.
+   * Please follow the instructions for [creating and configuring a load balancer](../../Network/creating-a-self-service-load-balancing-configuration.md) before proceeding.
    * Ideally, you should configure the load balancer with all the IP addresses (and ports) of the servers in the group you plan on applying the autoscale policy to.
    * If you don't do this, the autoscale policy takes care of it for you, but it could take up to five minutes before the load balancer configuration is updated after the autoscale policy is applied to the group.
    * Once you have a load balancer group and pool created and ready to use, continue on to the next steps.
@@ -128,22 +128,22 @@ Vertical Autoscale policies can be added to existing servers or during the serve
    * You may want to read the Autoscale FAQ for more information on how the load balancer options here are used and other additional information.
 
 5. You now see the details of your policy listed to show you that it has been applied to the group.
-   ![Group Autoscale Policy](../images/createautoscale-h-policy-details.png)
+   ![Group Autoscale Policy](../../images/createautoscale-h-policy-details.png)
 
 6. To test your policy, start by creating a significant amount of load on the powered on servers in the group in order to exceed the upper threshold for a sustained period of time.
    * In the example below, see that only two of four servers are currently powered on and we are using the **stress** tool in Linux to simulate very high CPU utilization on the servers.
 
-   ![2 Powered On](../images/createautoscale-two-powered-on.png)
-   ![Linux Stress](../images/createautoscale-linux-stress-top.png)
+   ![2 Powered On](../../images/createautoscale-two-powered-on.png)
+   ![Linux Stress](../../images/createautoscale-linux-stress-top.png)
 
 7. After the threshold period has passed, note that there is an additional server in the group that is now powered on and an entry was added to the activity history. The activity history entry shows the average utilization amount that triggered the Autoscale and which servers were affected.
 
-   ![3 Powered On](../images/createautoscale-three-servers-powered-on.png)
-   ![Activity Log](../images/createautoscale-activity-log-h-scale-event.png)
+   ![3 Powered On](../../images/createautoscale-three-servers-powered-on.png)
+   ![Activity Log](../../images/createautoscale-activity-log-h-scale-event.png)
 
 8. After the peak usage has dropped below the lower threshold, wait until the cool down period has passed, and watch for a scale in to occur.
 
-   ![2 Powered On](../images/createautoscale-two-powered-on.png)
-   ![Activity Log](../images/createautoscale-activity-log-h-scale-in-event.png)
+   ![2 Powered On](../../images/createautoscale-two-powered-on.png)
+   ![Activity Log](../../images/createautoscale-activity-log-h-scale-in-event.png)
 
 9. Autoscale policies can be changed at any time and those changes are instantly reflected on the related servers. In addition, at any point you can remove the policy from a group. All the servers remain in the group and in the load balancer pool, but none are powered on/off automatically.

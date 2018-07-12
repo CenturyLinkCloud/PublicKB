@@ -24,9 +24,9 @@ You can create a staging group anywhere, but the best place is as a nested group
 ### Adding New Servers to Group
 If you would like to increase the number of available servers that can be powered on for autoscaling out, you just need to add servers to the horizontal autoscale group. As indicated above, though, you want to make sure that they have the same configuration as the other servers that already exist in the group. Instead of creating servers from scratch and manually updating them with the necessary software and configuration, there are two recommended approaches:
 
-* **Cloning** - You may wish to keep a server in the staging area that has all the software and configurations you need for all servers in your autoscale group. When you want to add new servers to the autoscale group, just clone this server and put the new server in the autoscale group. The benefit here is that you can use this source server in the staging area when performing any changes so you only need to apply updates to a single server, as described in the next section. (Learn more about [how to clone servers](../Servers/how-to-clone-a-virtual-machine-os-instance.md).)
+* **Cloning** - You may wish to keep a server in the staging area that has all the software and configurations you need for all servers in your autoscale group. When you want to add new servers to the autoscale group, just clone this server and put the new server in the autoscale group. The benefit here is that you can use this source server in the staging area when performing any changes so you only need to apply updates to a single server, as described in the next section. (Learn more about [how to clone servers](../../Servers/how-to-clone-a-virtual-machine-os-instance.md).)
 
-* **Template** - Instead of keeping a powered-on server in the staging area, you may choose to convert it to a template so that you can create servers using this custom template instead of one of the pre-configured OS ones. In this case, you do not have to keep a server in the staging area, but if you want to make changes to the template, you'll have to first convert it back to a server, perform your changes, and then convert it back to a template. (Learn more about [how to create os templates](../Servers/how-to-create-customer-specific-os-templates.md))
+* **Template** - Instead of keeping a powered-on server in the staging area, you may choose to convert it to a template so that you can create servers using this custom template instead of one of the pre-configured OS ones. In this case, you do not have to keep a server in the staging area, but if you want to make changes to the template, you'll have to first convert it back to a server, perform your changes, and then convert it back to a template. (Learn more about [how to create os templates](../../Servers/how-to-create-customer-specific-os-templates.md))
 
 ### Updating Software/Configuration on Existing Servers in Group
 Depending on the kind of update(s) required, there are two options for updating servers in a horizontal autoscale group:
@@ -43,13 +43,13 @@ This is the preferred method for updating servers in a horizontal autoscale grou
 
 **Update servers in place.**
 
-This method is generally not preferred unless you have a small number of servers in a group, the updates to be made are relatively minor (small changes, easily repeatable, fast-running), and/or if you absolutely must maintain the private IP addresses for the servers. If you choose this method, be sure to read about using Blueprints scripts for [Automated Application Deployment to Multiple Servers](../Blueprints/automated-application-deployment-to-multiple-servers.md) as one approach for an easy, repeatable, and automated process.
+This method is generally not preferred unless you have a small number of servers in a group, the updates to be made are relatively minor (small changes, easily repeatable, fast-running), and/or if you absolutely must maintain the private IP addresses for the servers. If you choose this method, be sure to read about using Blueprints scripts for [Automated Application Deployment to Multiple Servers](../../Blueprints/automated-application-deployment-to-multiple-servers.md) as one approach for an easy, repeatable, and automated process.
 
 1. Put server in maintenance mode. This step prevents the server from being powered off by a scale in event while you are patching it. (Alternatively, you could also move the server into a staging area group.)
 
 2. Remove server IP from load balancer pool. (This happens automatically within five minutes after completing step 1, but if you can't wait that long, you may remove it manually.)
 
-3. Update/patch the server as required (and restart if needed). (See [Automated Application Deployment to Multiple Servers](../Blueprints/automated-application-deployment-to-multiple-servers.md) for one approach to scripting this process.)
+3. Update/patch the server as required (and restart if needed). (See [Automated Application Deployment to Multiple Servers](../../Blueprints/automated-application-deployment-to-multiple-servers.md) for one approach to scripting this process.)
 
 4. Take server out of maintenance mode to re-enable being powered off/on by autoscale events. (Alternatively, you could move the server back in to the autoscale group from a staging area group if that's the method that was used.)
 

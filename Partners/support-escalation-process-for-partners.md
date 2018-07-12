@@ -147,7 +147,7 @@ You can get updates through CenturyLink Cloud Status in two ways:
    * You will receive an email alerting you of your enrollment.
    * Information about planned maintenance and outages is sent out to the email addresses provided by users when they provision an account on the CenturyLink Cloud platform.
 
-* [Learn More About CenturyLink Cloud Status](../General/centurylink-cloud-status-faq.md)
+* [Learn More About CenturyLink Cloud Status](../General/CenturyLinkCloud/centurylink-cloud-status-faq.md)
 
 ### CenturyLink Cloud Overview
 The best practice for reducing escalation is by understanding  CenturyLink Cloud products, services, and features as well as possible.

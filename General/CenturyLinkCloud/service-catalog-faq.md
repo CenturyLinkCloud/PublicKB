@@ -30,7 +30,7 @@ Here are a few specific examples of scenarios where the Service Catalog might be
 
 Access to services is best established on a set-it-and-forget-it-basis – it is not advisable to use the Service Catalog to repeatedly toggle services on and off. Access to a service should only be turned off when an Account Administrator is confident that the service is not already being consumed by an account.
 
-**What [roles](../Accounts & Users/roles-faq.md) can access the Service Catalog?**
+**What [roles](../../Accounts & Users/roles-faq.md) can access the Service Catalog?**
 
 Only Account Administrators have permission to view the Service Catalog and enable or disable services.
 
@@ -53,7 +53,7 @@ If you are using a service and it becomes unavailable, contact your account admi
 
 **The service I want to control is not listed in the Service Catalog. How can I restrict access to it?**
 
-There are many ways to limit the services that users can or can’t see. User [roles](../Accounts & Users/roles-faq.md) restrict access to specific areas of the cloud platform, and therefore restrict access to specific services and functionality. Additionally, some services are not available in certain datacenters, which effectively precludes users from having access to them.
+There are many ways to limit the services that users can or can’t see. User [roles](../../Accounts & Users/roles-faq.md) restrict access to specific areas of the cloud platform, and therefore restrict access to specific services and functionality. Additionally, some services are not available in certain datacenters, which effectively precludes users from having access to them.
 
 Suggestions for additional services that should be added to the Service Catalog are enthusiastically welcomed. Send your input to noc@ctl.io or to the CenturyLink UserVoice forum. (See http://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/ for more details on submitting feature requests via UserVoice.)
 
@@ -62,7 +62,7 @@ Suggestions for additional services that should be added to the Service Catalog 
 Yes. It’s possible to turn a service off for sub accounts, and to make that service invisible to the Account Administrators of those accounts. A parent can set access to service use (“can use”) and the visibility to Account Administrators (“in service catalog”) independently, and on a sub account by sub account basis. See the below screen shot for a visualization of how this works.
 
 
-![sub account checkboxes](../images/sub-account-checkboxes.png)
+![sub account checkboxes](../../images/sub-account-checkboxes.png)
 
 
 **Can a sub account make changes to settings made by their parent account?**

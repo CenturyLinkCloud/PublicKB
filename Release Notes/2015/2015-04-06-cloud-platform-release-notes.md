@@ -18,7 +18,7 @@
 
 * **No charge for Managed OS services when servers are powered off.** Virtual machines with a managed OS will NOT incur hourly managed OS fees when the server is powered off. Charges will re-start after the VM is powered back on.
 
-* **CenturyLink Cloud Status.** A new portal - [status.ctl.io](http:./status.ctl.io) - includes real-time updates on the status of CenturyLink Cloud services, and upcoming maintenance notifications. Accordingly, maintenance and outage notifications will no longer come from communications@centurylinkcloud.com; instead they will come from noc@ctl.io. More information about this service can be found [here](../../General/centurylink-cloud-status-faq.md).
+* **CenturyLink Cloud Status.** A new portal - [status.ctl.io](http:./status.ctl.io) - includes real-time updates on the status of CenturyLink Cloud services, and upcoming maintenance notifications. Accordingly, maintenance and outage notifications will no longer come from communications@centurylinkcloud.com; instead they will come from noc@ctl.io. More information about this service can be found [here](../../General/CenturyLinkCloud/centurylink-cloud-status-faq.md).
 
 ![centurylink-status](../../images/centurylink-status.png)
 

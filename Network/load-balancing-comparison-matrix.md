@@ -20,7 +20,7 @@ High Availability|Yes|Yes|Optional|Optional
 Mode/Port|TCP/80<br>TCP/443|HTTP<br>TCP/Any|Any|Any
 Method|Round Robin<br>Least Connection|Round Robin<sup>6</sup><br>Least Connection<sup>6</sup><br>SourceIP<sup>6</sup><br>URL Hash<sup>6</sup>|[Listing](http://docs.citrix.com/en-us/netscaler/11-1/load-balancing/load-balancing-customizing-algorithms.html)|Varies by<br>Vendor
 Persistence|SourceIP|SourceIP|[Listing](http://docs.citrix.com/en-us/netscaler/11-1/load-balancing/load-balancing-persistence/persistence.html)|Varies by<br>Vendor
-Health Checks|No|[Yes](../LBaaS/getting-started-with-load-balancer-as-a-service.md)|Yes|Yes
+Health Checks|No|[Yes](../General/LBaaS/getting-started-with-load-balancer-as-a-service.md)|Yes|Yes
 SSL Offloading|No|No|Yes|Yes
 WAF|No|No|Optional|Optional
 Global Server Load Balancing|No|No|Optional|Optional

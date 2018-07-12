@@ -19,7 +19,7 @@ This setting allows Account Administrators to determine whether or not account u
 
 See Additional Settings, below, for more details on adjusting the “Can Use” settings for individual sub accounts.
 
-![service catalog can use toggle](../images/service-catalog-can-use-toggle.png)
+![service catalog can use toggle](../../images/service-catalog-can-use-toggle.png)
 
 
 #### *In Service Catalog*
@@ -27,7 +27,7 @@ This setting allows Account Administrators to pre-determine visibility and acces
 
 When this setting is toggled to OFF, the Account Administrator of the new sub account will not see the service in the catalog and users will not have access to the service.
 
-![service catalog in service](../images/service-catalog-in-service.png)
+![service catalog in service](../../images/service-catalog-in-service.png)
 
 
 #### *Additional Settings*
@@ -35,12 +35,12 @@ The Account Administrator of a parent account can restrict visibility and access
 
 Note that turning off the “In Service Catalog” option for a sub account automatically turns off “Can Use” for that sub account. The inverse is not true. For sub accounts, “Can Use” can be turned off, but “In Service Catalog” can remain on, if desired.
 
-![service catalog sub account settings](../images/service-catalog-sub-account-settings.png)
+![service catalog sub account settings](../../images/service-catalog-sub-account-settings.png)
 
 
 These settings can also be toggled across all sub accounts with a single click by using the “all” and “none” buttons on the upper left and right corners of the sub account list.
 
-![service catalog all or none](../images/service-catalog-all-or-none.png)
+![service catalog all or none](../../images/service-catalog-all-or-none.png)
 
 
 ### Examples
@@ -49,7 +49,7 @@ Say you want to turn off Premium Backup for your own account’s users and all y
 
 Set “Can Use” for your own account to OFF, and “Submit Changes.”
 
-![service catalog can use off](../images/service-catalog-can-use-off.png)
+![service catalog can use off](../../images/service-catalog-can-use-off.png)
 
 
 *Note that it is not currently possible to disable a feature at the parent account level but also have it enabled for sub accounts.*
@@ -60,7 +60,7 @@ First, leave “can use” for your own account set to ON.
 
 Next, either click the “none” button to turn off the availability of the feature for all sub accounts, or select on an account by account basis which accounts you want to restrict access to. Note that turning off the “In Service Catalog” option for sub accounts automatically turns off “Can Use.” The inverse is not true. “Can Use” can be turned off, but “In Service Catalog” can remain on, if desired.
 
-![service catalog none toggle](../images/service-catalog-none-toggle.png)
+![service catalog none toggle](../../images/service-catalog-none-toggle.png)
 
 
 In both the above examples, for an account where “Can Use” has been turned OFF, premium storage is unavailable when a user of that account is provisioning a server.
@@ -69,12 +69,12 @@ So how does this flow through to the end user?
 
 Here’s how the Create Server process looks to a user of an account with Premium Backup enabled in the Service Catalog. Storage Backup Level appears as an option, and the user gets to select Standard or Premium:
 
-![service catalog example 1](../images/service-catalog-example-1.png)
+![service catalog example 1](../../images/service-catalog-example-1.png)
 
 
 This is how the Create Server process looks to a user of an account with Premium Backup disabled in the Service Catalog. Storage Backup Level defaults to Standard, and the option to select Premium Storage simply doesn’t appear in the server creation process:
 
-![service catalog example 2](../images/service-catalog-example-2.png)
+![service catalog example 2](../../images/service-catalog-example-2.png)
 
 
 ### IMPORTANT

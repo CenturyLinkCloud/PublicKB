@@ -21,7 +21,7 @@ Customers can analyze a detailed breakdown of estimated usage history in several
 
 * __Via API.__ Users can get usage estimates using [a simple REST call](https://www.ctl.io/api-docs/v2/#billing). The API will return a JSON object containing an array with invoicing data.
 
-NOTE: The dollar amounts shown for these options will reflect what is configured in your [pricing catalog](../General/setting-default-prices-for-sub-accounts.md) for each account. Further, the summaries above, by design, do not display detailed timestamps of events that affect billing. However, platform activities that affect usage - such as pausing a server for a weekend - are reflected in your real-time estimates throughout the Control Portal AND in your actual usage estimate.
+NOTE: The dollar amounts shown for these options will reflect what is configured in your [pricing catalog](../Partners/setting-default-prices-for-sub-accounts.md) for each account. Further, the summaries above, by design, do not display detailed timestamps of events that affect billing. However, platform activities that affect usage - such as pausing a server for a weekend - are reflected in your real-time estimates throughout the Control Portal AND in your actual usage estimate.
 
 ### Request a Service Task
 
