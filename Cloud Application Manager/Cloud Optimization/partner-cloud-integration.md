@@ -44,6 +44,9 @@ Current features of Partner Cloud Optimization include:
 * **Monitoring:** Cloud Application Manager's [monitoring capabilities](https://www.ctl.io/knowledge-base/cloud-application-manager/monitoring/#1) are provided for your account.
 * **Partner List Pricing:** Our pricing is consistent with whatever price our partners sell products.
 * **Support:** CenturyLink takes on responsibility for platform-level support with Azure resources related to IaaS: Virtual Machines, Storage, Network, and Resource Groups.
+* **Resale** You can view your Resale enablements under the organization settings page.  If you require resale capability, please submit a support ticket.  Once enabled, you can verify this setting under the "Settings" option:
+
+![Select a Month](../../images/cloud-application-manager/cam-resale-settings.png)
 
 
 
@@ -59,7 +62,7 @@ For additional details on support responsibilities for our partners and their SL
 * The true strength of Cloud Optimization is that it opens to door for trained, CenturyLink resources to do work for you on your behalf, in AWS and Azure. If you are interested in contracting with CenturyLink to provide design, implementation, or ongoing, additional support, request an engagement with your sales representative.
 
 **Partner Pricing Details:**
-* **Azure:** Pricing available to CenturyLink customers is shown [here](https://www.ctl.io/pricing). Partners changes prices regularly. Available products are also listed [here](partner-cloud-integration-azure-capabilities.md). If your organization has agreements with Microsoft or AWS which differ from what is shown, please submit a ticket for review. We are constantly working to increase the scope of what is offered through our partners and it is likely we have plans to offer what you require.
+* **Azure:** Pricing available to CenturyLink customers is shown [here](https://www.ctl.io/pricing). Partners changes prices regularly.  If your organization has agreements with Microsoft or AWS which differ from what is shown, please submit a ticket for review. We are constantly working to increase the scope of what is offered through our partners and it is likely we have plans to offer what you require.
 
 **Availability Restrictions**
 * **General:**
@@ -82,7 +85,7 @@ Microsoft | Azure and AWS  | **Infrastructure** Troubleshoot and provide technic
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
+If you are having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/), please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

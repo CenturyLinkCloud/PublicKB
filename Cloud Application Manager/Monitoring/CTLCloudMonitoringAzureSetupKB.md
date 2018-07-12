@@ -10,7 +10,7 @@
 The below process details the steps to manual configure your Azure account for CenturyLink's Azure Native Monitoring functionality.
 
 #### Create CenturyLink Cloud Monitoring IAM Policy
-* Access the Azure dashboard [here](https://portal.azure.com/iam)
+* Access the Azure dashboard [here](https://portal.azure.com/)
 * Click "Virtual machines" in the left-hand navigation and select your managed appliance VM
 * Click Configuration and select Yes for Managed service identity, and click Save.
 * Click Subscriptions in the left-hand navigation and click the subscription you want to apply your IAM policy to 

@@ -111,11 +111,11 @@ Within the connection string, each element polls values of the Node.js applicati
 
 **Step 3. Tag Bindings for Instance Connectivity**
 
-Tagging bindings allow services to discover each other automatically. At deploy time, for the bindings defined in the boxes, we need to apply tags of instances to which they can bind. In this example, we ask the Nginx loadbalancer to bind to instances tagged production and nodejsapp. What this does is, the binding not only looks for instances of a particular box type as defined in the box but makes sure the instances match these tags. The binding takes effect only when both conditions are met. This is how tagged bindings allow instances to connect automatically to one or many services at scale.
+Tagging bindings allow services to discover each other automatically. At deploy time, for the bindings defined in the boxes, we need to apply tags of instances to which they can bind. In this example, we ask the Nginx loadbalancer to bind to instances tagged 'production' and 'nodejs'. What this does is, the binding not only looks for instances of a particular box type as defined in the box but makes sure the instances match these tags. The binding takes effect only when both conditions are met. This is how tagged bindings allow instances to connect automatically to one or many services at scale.
 
 ![bindinglargescaledeployments6.png](../../images/cloud-application-manager/bindinglargescaledeployments6.png)
 
-As another example, here we launch the Node.js application specifying its binding connection to MongoDB instances tagged production, mongodb. Importantly, also note that we tagged the Node.js instance as production and nodejsapp so that Nginx can bind to it.
+As another example, here we launch the Node.js application specifying its binding connection to MongoDB instances tagged 'production' and 'mongodb'. Importantly, also note that we tagged the Node.js instance as 'production' and 'nodejs' so that Nginx can bind to it.
 
 ![bindinglargescaledeployments7.png](../../images/cloud-application-manager/bindinglargescaledeployments7.png)
 

@@ -16,9 +16,9 @@ Login access to the Manual Production Site.
 ### Assumptions
 This article assumes that the user has login access to the Manual Production Site.
 
-### Create Production SRN - If production site is DCC-Foundation
-1. Login to the **DCC-Foundation** portal with your credentials.  
-2. Upload the **SafeHaven OVA** (from the latest Release notes) to the DCC-Foundation portal. Once that is complete click on **Catalog**, then **SafeHaven**.  
+### Create Production SRN - If production site is CenturyLink Private Cloud on VMware Cloud Foundation
+1. Login to the **CenturyLink Private Cloud on VMware Cloud Foundation** portal with your credentials.  
+2. Upload the **SafeHaven OVA** (from the latest Release notes) to the CenturyLink Private Cloud on VMware Cloud Foundation portal. Once that is complete click on **Catalog**, then **SafeHaven**.  
 3. Right-Click on **SafeHavenApplianceOVA** and select **Add to My Cloud**  
 4. Enter a name for the VM, and click **Next**.  
 5. Under **Configure Resources** tab, enter the **Virtual Machine** name, **Computer Name** (Can be same as VM name).  
@@ -50,7 +50,7 @@ This article assumes that the user has login access to the Manual Production Sit
 **Note**: Please assign a static IP address to the VM.
 You have now completed the deployment of SRN in a Manual Site.
 
-### Video Tutorial (SRN in DCC-F)
+### Video Tutorial (SRN in CenturyLink Private Cloud on VMware Cloud Foundation)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dMrEwtQm1I0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Video Tutorial (SRN in Hyper-V)
