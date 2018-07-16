@@ -10,18 +10,18 @@
 
 * Billing Dashboard
 * Billing Usage History
-___
+
 ### Billing Dashboard
 When you click on **Billing** in the left side menu you will land into a dashboard page, where a bar graph with the billed amount for the latest months will be shown. You can also change the range of months being shown in the bar graph by selecting a different value from the to p-right dropdown on the graph.
 
-![billing-dashboard.png](../../images/cloud-application-manager/billing/billing-dashboard.png)
+![Billing Dashboard](../../images/cloud-application-manager/billing/billing-dashboard.png)
 
 ### Billing Usage History
 When you click on **Usage History** option under the **Billing** left menu item, you will be able to review your detailled billing information.
 
 When you enter this page you can see a list with latest months billing summary, and when you click on a line, details for that month appears on the bottom of the page, showing the line-items you may encounter in your invoice, and additional information for each item.
 
-![billing-usage-history.png](../../images/cloud-application-manager/billing/billing-usage-history.png)
+![Billing Usage History](../../images/cloud-application-manager/billing/billing-usage-history.png)
 
 Some items have a dropdown icon at the beginning, meaning that you can click on it to drill down and see further details on that item appearing below.
 

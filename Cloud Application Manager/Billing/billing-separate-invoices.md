@@ -10,7 +10,7 @@
 
 * Billing in a single invoice
 * Setting up billing for multiple invoices
-___
+
 ### Billing in a single invoice
 This is the default behavior for any Cloud Application Manager customer. All usage and support charges may be included into a single bill for the whole organization.
 
