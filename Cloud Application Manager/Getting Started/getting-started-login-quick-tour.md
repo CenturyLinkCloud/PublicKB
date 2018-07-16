@@ -96,7 +96,7 @@ ___
 
 ![getting-started-login-5.png](../../images/cloud-application-manager/getting-started-login-5.png)
 
-* Connect to a provider to orchestrate deployments. Click **New Provider** to add AWS, Azure, vSphere, Google Cloud, OpenStack, or CloudStack.
+* Connect to a provider to orchestrate deployments. Click **New** to add AWS, Azure, vSphere, Google Cloud, OpenStack, or CloudStack.
 * Locate a provider through search or by type.
 * Sync or delete provider accounts using Bulk Actions.
 
