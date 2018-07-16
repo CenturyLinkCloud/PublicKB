@@ -72,7 +72,7 @@ ___
 
 ![getting-started-login-3.png](../../images/cloud-application-manager/getting-started-login-3.png)
 
-* Click **New Instance** to launch instances of boxes to a provider environment in the public or private cloud.
+* Click **New** to launch instances of boxes to a provider environment in the public or private cloud.
 * Manage instances you’ve [launched](../Deploying Anywhere/deploying-managing-instances.md) through the web interface, the API, or on [any infrastructure using the Cloud Application Manager agent](../Deploying Anywhere/deploying-on-anyinfra.md). Here you can quickly [manage the lifecycle](../Deploying Anywhere/deploying-managing-instances.md) of several instances from the Bulk Actions menu or handle them individually from the gear menu.
 * Find an instance by searching any part of its name, or click filtered views of instances you launched or that were shared with you. Or locate them by tags.
 
