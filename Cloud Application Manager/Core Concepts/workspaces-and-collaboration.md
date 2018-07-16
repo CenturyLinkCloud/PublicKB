@@ -68,6 +68,10 @@ All Cost Centers and Workspaces belong to an Organization.
 
 The administrators of an Organization can change many settings that affect the whole organizations. See more details [here](../Administering Your Organization/admin-overview.md).
 
+### Favorites
+
+The Favorites section contains a list of any workspace, cost center or organization that the user added for easier or more convenient access to. To add to this section, simply click the Star icon in the upper left hand corner of any of the aforementioned spaces. To remove, click the Star icon again.
+
 ### Switching and Managing Workspaces, Cost Centers and Organizations
 
 You can use the switcher in the top of the screen to access different Workspaces, Cost Centers and Organizations to which you have access.
@@ -85,6 +89,11 @@ This allows you to filter and search for the right scope to the work you need to
 **Workspace Switcher - Organization view**
 
 ![workspace-and-sharing3.png](../../images/cloud-application-manager/workspace-and-sharing3.png)
+
+**Workspace Switcher - Favorites view**
+
+![workspace-and-sharing11.png](../../images/cloud-application-manager/workspace-and-sharing3.png)
+
 
 The switcher also offer the option to create Workspaces and Cost Centers.
 
