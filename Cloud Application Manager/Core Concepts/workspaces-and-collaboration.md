@@ -13,6 +13,7 @@ In this article:
 * Workspaces
 * Cost Center
 * Organizations
+* Favorites
 * Switching and Managing Workspaces, Cost Centers and Organizations
 * Create Workspace flow
 * Create Cost Center flow
@@ -92,7 +93,7 @@ This allows you to filter and search for the right scope to the work you need to
 
 **Workspace Switcher - Favorites view**
 
-![workspace-and-sharing11.png](../../images/cloud-application-manager/workspace-and-sharing3.png)
+![workspace-and-sharing11.png](../../images/cloud-application-manager/workspace-and-sharing11.png)
 
 
 The switcher also offer the option to create Workspaces and Cost Centers.
