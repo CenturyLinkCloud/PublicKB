@@ -71,6 +71,8 @@ If you didn't elect to use multi-factor authentication, or after you've provided
 
 For more information, please review the [account linking and unlinking guide](enhanced-security-linking-and-unlinking-accounts.md).
 
+![ES-MAR-10.png](../images/ES-MAR-10.png)  
+
 ### FAQ  
 **Q: What services does Enhanced Security currently work with?**
 
