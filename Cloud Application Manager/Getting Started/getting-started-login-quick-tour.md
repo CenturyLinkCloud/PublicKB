@@ -106,7 +106,7 @@ ___
 
 ![getting-started-login-9.png](../../images/cloud-application-manager/getting-started-login-9.png)
 
-* Shows you all the public boxes available for all users, categorized as **Featured, Managed Services, Services, Plugins** and **Others** to easily locate and deploy. 
+* Shows you all the public boxes available for all users, categorized as **Featured, Managed Services, Services, Plugins** and **Other** to easily locate and deploy. 
 * There is a feature where you can request to publish one of your own boxes to the catalog. It will become available in the catalog for any user in one of the existing categories or a new one.
 
 
