@@ -8,12 +8,12 @@
 
 ### Using Microsoft Azure
 
-There are two different flavors of Azure and Cloud Application Manager has providers for both. This document is in reference to Classic Azure.
+There are two different flavors of Azure and Cloud Application Manager has providers for both. This document is in reference to Microsoft Azure.
 
 *Name** | **URL of Portal** | **Name of Related Cloud Application Manager Provider** | **KB article**
 --- | --- | --- | ---
-Classic Azure | https://manage.windowsazure.com | Classic Azure | This document
-Microsoft Azure | https://portal.azure.com | Microsoft Azure  | [Using Microsoft Azure](using-microsoft-azure.md)
+Classic Azure | https://manage.windowsazure.com | Classic Azure | [Using Classic Azure](using-azure.md)
+Microsoft Azure | https://portal.azure.com | Microsoft Azure  | This document
 
 Each of Cloud Application Manager's Microsoft Azure Providers gives you the option of setting it up either for an existing or a new Azure Customer Account. Existing accounts are your responsibility and will continue to be billed to you by Azure. New Accounts will automatically be generated on your behalf and the credentials pulled into the Provider via [Cloud Optimization](../Cloud Optimization/partner-cloud-integration.md), allowing you to hand off platform-level support and billing to CenturyLink.
 
@@ -28,17 +28,38 @@ You need an Microsoft Azure subscription to be able to consume Azure services. F
 ### Steps
 
 1. Login to the [Azure portal](https://portal.azure.com/) using your Microsoft Account.
-2. Select *Azure Active Directory* in the menu, and then *App registrations*.
-3. Create a new Application Registration in the Azure Active Directory. <b>Be sure to select "Web app / API" when selecting the application type.</b>
-4. Log back in to the Azure portal and go to subscriptions tab, select *Access Control (IAM)* and then select  *+ Add* on the new screen.
-5. Select *Contributor* role. (If you do not see the Contributor role, you may need to talk to your administrator.)
-6. Search for the application you just created in step 2 and click OK!
-7. Return to the "App Registrations" panel in Step 2. Select the app, and select "Keys" in the "Settings" panel. Give the key any name and expiration date, and select "Save." The value of the key will be generated. Copy and keep the value (secret key) as you won't see it anymore once you navigate away.
-8. Complete your Microsoft Azure Provider for an existing account with the information below:
-> Subscription ID: The active subscription ID<br>
-> Client ID: The Application ID<br>
-> Secret: The key value generated in Step 4<br>
-> Tenant: Copy from Azure Active Directory > Properties > Directory ID<br>
+2. Select *Azure Active Directory* in the menu, and then *Properties*
+3. Copy and take note of the **Directory ID** for later.  
+4. Next select *App registrations*, within the Azure Active Directory panel
+5. Create a *New Application Registration* with the following values:
+    * Name: **CenturyLink-CAM**
+    * Application Type: **Web app / API**
+    * Sign-on URL: **https://localhost/logon**
+6. Upon saving an **Application ID** will be generated. Copy and take note of this value for later.
+
+7. For allowing the support personnel to access with a temporary user to your account in case they need to troubleshoot any support issue, you need to grant some permissions on the application you just created. To do so, on the application you just created click on **Settings > Required Permissions > Add > Microsoft Graph API** and select the following **Delegated** permissions:
+    * Read and write all users' full profiles _(User.ReadWrite.All)_
+    * Read and write directory data _(Directory.ReadWrite.All)_
+
+    Then click **Done** and **Grant permissions** to apply them to your application.
+
+8. Navigate to *Subscriptions* panel.
+9. In the *Overview* tab an **Subscription ID** is listed.  Copy and take note of this value for later.
+10. Select *Access Control (IAM)* and then selecte the *Add* button at the top of screen.  
+11. When creating the new role, do so with the following values:
+    * Role: **Owner** (If you do not see the Owner role, you will need to talk to your administrator.)
+    * Assign Access to: **Azure AD user, group or application**
+    * Select: **CenturyLink-CAM**
+12. Return to the *Azure Active Directory* panel, select *App Registrations* then *CenturyLink-CAM* then *Settings* and finally *Keys*.
+13. Set a Key with the following values:
+    * Description: **CAM-App-Key**
+    * Expires: **Never Expires**
+14. Upon saving a **Key** value will be generated. Copy and keep the key (aka the **Secret**) value as you won't see it anymore once you navigate away.
+15. Input your Microsoft Azure Provider for an existing account as listed below:
+    * Subscription ID: **_Azure Subscription ID_**
+    * Application ID: **_Application ID_**
+    * Secret: **_Key value_**
+    * Tenant: **_Active Directory ID_** or **_Domain_**
 
 If you cannot find a specific template that you are looking for in Cloud Application Manager be sure to check out the [Azure github quickstart templates](https://github.com/Azure/azure-quickstart-templates).
 
@@ -46,7 +67,7 @@ If you cannot find a specific template that you are looking for in Cloud Applica
 
 To connect to Microsoft Azure in Cloud Application Manager, you need to follow these steps.
 
-**Steps**
+#### Steps
 
 1. In Cloud Application Manager, go to **Providers** > **New Provider** and select **Microsoft Azure**.
    ![microsoft-azure-add-provider-1.png](../../images/cloud-application-manager/microsoft-azure-add-provider-1.png)
@@ -78,7 +99,7 @@ You can deploy to the following services in Azure:
 * Linux based virtual machines
 * Microsoft Azure templates
 
-**Azure OS Images Available to Deploy in Cloud Application Manager**
+#### Azure OS Images Available to Deploy in Cloud Application Manager
 
 As part of the result of synchronization process you can find a list of available operative systems that you can use in your policy boxes. You can check this list in **Providers** page > **Configuration**.
 
@@ -101,7 +122,7 @@ On the other hand, you could remove it from available images using the "Trash" i
 
 ![microsoft-azure-delete-os-image-11.png](../../images/cloud-application-manager/microsoft-azure-delete-os-image-11.png)
 
-**Microsoft Azure Compute Deployment Options**
+#### Microsoft Azure Compute Deployment Options
 
 To deploy a virtual machine with compute services you can edit one of windows or RHEL policy boxes or create a new one. Then you can save your changes and click **Deploy**.
 
@@ -109,7 +130,7 @@ To deploy a virtual machine with compute services you can edit one of windows or
 
 ![microsoft-azure-compute-deployment-options-4.png](../../images/cloud-application-manager/microsoft-azure-compute-deployment-options-4.png)
 
-**Resources**
+#### Resources
 
 | Option | Description |
 |--------|-------------|
@@ -122,8 +143,7 @@ To deploy a virtual machine with compute services you can edit one of windows or
 | Instances | Specify the number of instances to spawn. Note that at this time, we don’t autoscale or load balance instances. To enable that, you have to manually configure these options in [Azure](https://msdn.microsoft.com/en-us/library/hh680914). |
 | Delegate Management  | Delegate management to CenturyLink.  |
 
-
-**Network**
+#### Network
 
 | Option | Description |
 |--------|-------------|
@@ -132,7 +152,7 @@ To deploy a virtual machine with compute services you can edit one of windows or
 |Security Group | Filter incoming and outgoing traffic for the virtual machine based on a set of rules. Multiple security groups in a zone can be selected for a virtual machine. For more information, see [Security Groups](http://docs.cloudstack.apache.org/projects/cloudstack-administration/en/4.3/networking_and_traffic.html#security-groups). |
 |Public IP Address   | The public IP Address exposes our server to the public internet where other applications can access it.|
 
-**Disks**
+#### Disks
 
 | Option | Description |
 |--------|-------------|
@@ -140,11 +160,11 @@ To deploy a virtual machine with compute services you can edit one of windows or
 
 If you can't create any policy box on Windows Azure provider probably you have to create a virtual network from azure portal or you may deploy a new one with a template as we describe in following section.
 
-**Microsoft Azure ARM Template Deployment Options**
+#### Microsoft Azure ARM Template Deployment Options
 
 Azure ARM Templates are supported on Cloud Application Manager with Microsoft Azure provider. You can deploy whatever you want with the same syntax you use on Azure APIs and portal. For this purpose you can create a custom deployment policy and deploy it with an ARM Template box together.
 
-**Steps**
+#### Steps
 
 1. Create Deployment Policy:
    * Go to **Boxes** > **New** > **Deployment Policy**.
@@ -170,10 +190,9 @@ Azure ARM Templates are supported on Cloud Application Manager with Microsoft Az
 
 You can import existing Virtual Machines into you workspace only in one click. The list of available instances you can import come with your Microsoft Azure provider synchronization.
 
-**Available Instances**
+#### Available Instances
 
 As part of the result of synchronization process you can find a list of available virtual machines that already exist in your account but not used yet in Cloud Application Manager. You can import an existing one clicking **Import** button.
-
 
 ![microsoft-azure-available-instances-9.png](../../images/cloud-application-manager/microsoft-azure-available-instances-9.png)
 
@@ -181,13 +200,13 @@ We strongly recommend synchronize your Azure provider before you try to register
 
 ### Shutdown and Terminate Instances in Azure
 
-**Shutdown Instance**
+#### Shutdown Instance
 
 When a shutdown operation is executed from Cloud Application Manager, the virtual machine is stopped on Azure but not deallocated, in order to maintain the VM configuration and not loose the IP address. This means that the virtual machine will continue billed.
 
 To deallocate a virtual machine stopped, you have to enter on Azure portal and click again on Stop.
 
-**Terminate Instance**
+#### Terminate Instance
 
 When a terminate operation is executed from Cloud Application Manager, this operation execute the dispose scripts from your box instance and then deletes the virtual infrastructure. You can't revert the action and since you can lose data, be sure you want to perform this action in the first place.
 
@@ -198,5 +217,6 @@ We’re sorry you’re having an issue in [Cloud Application Manager](https://ww
 For issues related to API calls, send the request body along with details related to the issue.
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
 * Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log

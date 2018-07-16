@@ -39,7 +39,7 @@
 
 * __CenturyLink Cloud Status.__ [status.ctl.io](//status.ctl.io/) provides real-time updates on the status of CenturyLink Cloud services, and upcoming maintenance notifications. Notifications surrounding Compute, Network, and Storage are now based on what servers an account has in a specific data center, allowing our customers to get the information they need - and only the information that they need.
 
-  Our KB has more [information about the CenturyLink Cloud Status service.](../../General/centurylink-cloud-status-faq.md)
+  Our KB has more [information about the CenturyLink Cloud Status service.](../../General/CenturyLinkCloud/centurylink-cloud-status-faq.md)
 
 
 ### Online Tools (1)

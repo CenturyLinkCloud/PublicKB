@@ -1,6 +1,6 @@
 {{{
   "title": "Partner Cloud: Consolidated Billing",
-  "date": "03-31-2018",
+  "date": "07-12-2018",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
@@ -39,6 +39,10 @@ Daily Updates | Once per day, CenturyLink provides an updated estimate for all a
 Monthly Usage | On the last day of the month, CenturyLink will take the most updated estimate from the vendor for your Optimized accounts and apply that to your CenturyLink invoice. This will, by necessity, exclude a few hours of the month's usage. | The last update will occur at approximately 3pm UTC (10am Central). Your CenturyLink invoice is normally available on the first day of the new month. | AWS: All data available since the last update; Azure: All data from one day ago, 5am UTC to 4:59 UTC (12:00am to 11:59 Central).   | These updates are made for Optimized Amazon Web Services accounts and Optimized Microsoft Azure accounts.
 Reconciliation Usage | Reconciliation charges account for any difference between what CenturyLink charged in monthly usage and what our partners show on finalized invoices. | Reconciliation charges appear on CenturyLink invoices one month in arrears.  | All usage and fees from the previous month are considered in our calculations. |These updates are made for Optimized Amazon Web Services accounts and Optimized Microsoft Azure accounts.
 Arrears Usage | Instead of basing invoices off of estimates and reconciling one month later, CenturyLink waits until the vendor's invoice has been finalized before collecting the usage data and providing an invoice.  | Your entire month's usage will be will be billed one month in arrears |  All usage and fees from the previous month are considered in our calculations.  | No partners, currently
+
+**Understanding Optimization Charges on Your Invoice**
+
+For a detailed explanation of your invoice, please review your [Usage History Report](partner-cloud-integration-detailed-billing-report.md).
 
 More complete information about your Cloud Application Manager invoice should be reviewed [here](../FAQ/FAQ.md).
 

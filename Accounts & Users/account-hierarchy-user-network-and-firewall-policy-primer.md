@@ -1,6 +1,6 @@
 {{{
   "title": "Account Hierarchy User, Network, Service Catalog, and Firewall Policy Primer",
-  "date": "6-16-2015",
+  "date": "5-24-2018",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
@@ -41,7 +41,7 @@ Parent accounts can control firewall policies associated with parent-child netwo
 
 ### Service Catalog
 
-The [Service Catalog](../General/getting-started-with-the-service-catalog.md) allows Account Administrators to enable or disable certain cloud platform services for users of individual parent or sub accounts.
+The [Service Catalog](../General/CenturyLinkCloud/getting-started-with-the-service-catalog.md) allows Account Administrators to enable or disable certain cloud platform services for users of individual parent or sub accounts.
 
 ![Service Catalog in account Hierarchy](../images/account-hierarchy-7.png)
 
@@ -53,4 +53,4 @@ Take note that accounts and Server Groups are very different.  Whereas accounts 
 
 ### Considerations and Example Use Cases
 
-The CenturyLink Cloud onboarding services team is specially positioned to help customers design the most effective account hierarchy.  Note that account structure and naming cannot be changed once created (though subaccounts can always be created/removed).  
+The CenturyLink Cloud services team is specially positioned to help customers design the most effective account hierarchy.  Note that account structure and naming cannot be changed once created (though subaccounts can always be created/removed).  
