@@ -49,6 +49,8 @@ When you log in, the top navigation bar guides you to the main areas of Cloud Ap
 * Instances
 * Boxes
 * Providers
+* Catalog
+* Activity
 * Your Account
 * Help
 
@@ -97,6 +99,26 @@ ___
 * Connect to a provider to orchestrate deployments. Click **New Provider** to add AWS, Azure, vSphere, Google Cloud, OpenStack, or CloudStack.
 * Locate a provider through search or by type.
 * Sync or delete provider accounts using Bulk Actions.
+
+___
+
+**Catalog**
+
+![getting-started-login-9.png](../../images/cloud-application-manager/getting-started-login-9.png)
+
+* Shows you all the public boxes available for all users, categorized as **Featured, Managed Services, Services, Plugins** and **Others** to easily locate and deploy. 
+* There is a feature where you can request to publish one of your own boxes to the catalog. It will become available in the catalog for any user in one of the existing categories or a new one.
+
+
+___
+
+**Activity**
+
+![getting-started-login-10.png](../../images/cloud-application-manager/getting-started-login-10.png)
+
+* Allows you to see (based on your scope and permissions) all of the relevant activity that has occured in the platform, the type of event and the user that performed the event.
+* Filter through activity by type of event or switch between all activity or current scope.
+* Search by user name or action to narrow the results, or click on certain actions to navigate to the affected resource.
 
 ___
 
