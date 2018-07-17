@@ -53,6 +53,8 @@ You must now setup 3 security questions.  You can choose from one of the pre-pop
 **7:** Verify Your Email  
 After setting up your security questions, you will be asked to provide a token sent to your email address.  Log in to your email and obtain the token.  Enter it into the text box and click the register button.
 
+After a period of time, a button will appear that will help you track your email if you did not recieve it.  This will display information regarding the email.  Some common issues are the email was not sent because it was not a valid email address, or it was blocked by the receiving email server.
+
 ![ES-MAR-8.png](../images/ES-MAR-8.png)
 
 **8:** Log In With Your Master Account  
@@ -65,9 +67,11 @@ If you elected to use multi-factor authentication, you will now be prompted to c
 [Click here for more information and step by step instructions.](managed-hosting-and-private-cloud-multi-factor-authentication-for-master-account.md)
 
 **10:** Account Linking  
-If you didn't elect to use multi-factor authentication, or after you've provided your one time password, you will be prompted to either link your SavvisStation account or your Private Cloud account.  Which one you are prompted for depends on what service you selected in step 1.  Checking the 'Link this account' box will save these account credentials to your master account.  The next time you log in, you will not be required to enter the credentials of a linked account once you are authenticated with your master account credentials.
+If you didn't elect to use multi-factor authentication, or after you've provided your one time password, you will be directed to the account linking page.  This is the page where you have the ability to link your other services.  Once linked, you will only need to log in with your master account.  There is also an option to login without linking, for those who do not want to link their account.
 
-![ES-MAR-10.png](../images/ES-MAR-10.png)
+For more information, please review the [account linking and unlinking guide](enhanced-security-linking-and-unlinking-accounts.md).
+
+![ES-MAR-10.png](../images/ES-MAR-10.png)  
 
 ### FAQ  
 **Q: What services does Enhanced Security currently work with?**
