@@ -71,7 +71,7 @@ The administrators of an Organization can change many settings that affect the w
 
 ### Favorites
 
-The Favorites section contains a list of any workspace, cost center or organization that the user added for easier or more convenient access to. To add to this section, simply click the Star icon in the upper left hand corner of any of the aforementioned spaces. To remove, click the Star icon again.
+The Favorites section contains a list of any workspace, cost center or organization that the user added for easier or more convenient access to. To add to this section, simply click the Star icon in the upper left hand corner of any of the aforementioned spaces.The star will become dark grey to indicate that the space has been successfully added. Clicking the Star icon again, which then turns the color to white, will remove the space from the Favorites section.
 
 ### Switching and Managing Workspaces, Cost Centers and Organizations
 
