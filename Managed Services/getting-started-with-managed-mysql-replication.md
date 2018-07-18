@@ -15,7 +15,7 @@ This guide provides (2) unique options and customers should evaluate their needs
 
 ### Prerequisites
 
-* [Data Center must support Managed Services](../CenturyLinkCloud/centuryLink-cloud-feature-availability-matrix.md)
+* [Data Center must support Managed Services](../General/CenturyLinkCloud/centuryLink-cloud-feature-availability-matrix.md)
 * [Deploy (2) Managed RHEL 6/7 Servers](../Managed Services/created-a-managed-server-now-what.md) or [Convert existing RHEL 6/7 Servers to Managed](../Managed Services/converting-unmanaged-virtual-machines-to-managed.md)
 * [Deploy Managed MySQL Services to the Servers](../Managed Services/getting-started-with-managed-mysql.md)
 

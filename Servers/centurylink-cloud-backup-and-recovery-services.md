@@ -66,7 +66,7 @@ Managed Backup is a superior alternative to many do-it-yourself options. Why? No
   * Managed Red Hat Enterprise Linux 5
   * Managed Red Hat Enterprise Linux 6
   * Managed Red Hat Enterprise Linux 7
-* [Available Locations](../CenturyLinkCloud/centuryLink-cloud-feature-availability-matrix.md)
+* [Available Locations](../General/CenturyLinkCloud/centuryLink-cloud-feature-availability-matrix.md)
 
 ### [Marketplace Provider Program Partners](//www.ctl.io/marketplace/program)
 The CenturyLink Marketplace Provider Program is designed to provide additional value within CenturyLink’s enterprise cloud computing platform through partnerships with innovative cloud technology and service providers. By integrating their technology into CenturyLink Cloud, our technology partners can take advantage of a differentiated, digital route-to-market: presented as part of a enterprise-grade automation platform which powers one of the largest pools of IT infrastructure in the world.
