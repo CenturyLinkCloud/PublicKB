@@ -18,7 +18,7 @@ There may be times when you want to manually link or unlink an account.  This ar
 **1:** Logging in With Your Master Account   
 Go to [https://www.ctl.io/](https://www.ctl.io/), and click on the "Log In" link to the top right.  Click on Managed Hosting.
 
-![ES-LAUA-1.png](../images/ES-LAUA-1.png)
+![ES-LAUA-1.png](../../images/ES-LAUA-1.png)
 
 Alternatively, you can go to [https://savvisstation.savvis.com](https://savvisstation.savvis.com), which will redirect you to the same login page.  
 
@@ -29,24 +29,24 @@ Log in with your master account.
 **2:** Managing Your Account  
 Once you are in SavvisStation, go to the top right and hover over your name.  Click on "My Account".  
 
-![ES-LAUA-2.png](../images/ES-LAUA-2.png)
+![ES-LAUA-2.png](../../images/ES-LAUA-2.png)
 
 **3:** Go To Account Linking  
 Click on "Account Linking" on the left hand side of the screen.  
 
-![ES-LAUA-3.png](../images/ES-LAUA-3.png)
+![ES-LAUA-3.png](../../images/ES-LAUA-3.png)
 
 **4:** Manage Your Account Links  
 In this screen, you can see which accounts have been linked.  You also have the ability to add new links, or remove existing links.  The table lists the different services you can link, and if an account is linked, some basic information on that account.    
 
-![ES-LAUA-4.png](../images/ES-LAUA-4.png)
+![ES-LAUA-4.png](../../images/ES-LAUA-4.png)
 
 **5:** Adding an Account  
 To add an account, simply click the "add" button on the desired account type.  A new dialog will appear prompting you to enter your credentials in.  Once you have entered the credentials in, click the "link" button.  This will then authenticate the credentials, and if successful, link the account.  The linked account will then show up in the list and the "add" button will change to a "remove" button.  
 
-![ES-LAUA-5.png](../images/ES-LAUA-5.png)  
+![ES-LAUA-5.png](../../images/ES-LAUA-5.png)  
 
 **6:** Removing an Account  
 To remove an account, simply click the "remove" button on the desired account.  You will then be prompted to confirm you do want to remove the account.  Once you confirm, the account will be removed and the "remove" button will become an "add" button. You can then add an account of that type.  
 
-![ES-LAUA-6.png](../images/ES-LAUA-6.png)  
+![ES-LAUA-6.png](../../images/ES-LAUA-6.png)  
