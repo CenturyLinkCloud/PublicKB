@@ -58,7 +58,7 @@ Cloud Application Manager simplifies Azure deployments with these benefits:
 
 * **Switch between VM, web, and worker roles:** It’s easy to migrate from virtual machine to web or worker role deployments or vice versa because your configuration is encapsulated in boxes. Simply kill the VM machines and deploy your box into web or worker roles or the other way around.
 
-* **Focus on applications:** Once your machines are deployed in Azure through Cloud Application Manager, you can focus on your application and easily handle the entire lifecycle of application instances. We do all the backend API operations to manage your instances. For example, when you delete an instance that you no longer need, we automatically delete the availability set, virtual machine instances, storage account and cloud service, associated with the instance.dsfsdsd
+* **Focus on applications:** Once your machines are deployed in Azure through Cloud Application Manager, you can focus on your application and easily handle the entire lifecycle of application instances. We do all the backend API operations to manage your instances. For example, when you delete an instance that you no longer need, we automatically delete the availability set, virtual machine instances, storage account and cloud service, associated with the instance.
 
 ### Registering Your Azure Subscription in Cloud Application Manager
 
