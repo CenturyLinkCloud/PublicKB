@@ -7,12 +7,34 @@
 "sticky": true
 }}}
 
+## Getting started - User Management
+
 **In this article:**
 
-* User Management page
-* User Management options
-* Creating Cloud Application Manager Users
-* Logging in to Cloud Application Manager
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [User Management page](#user-management-page)
+* [User Management options](#user-management-options)
+* [Creating Cloud Application Manager Users](#creating-cloud-application-manager-users)
+* [Logging In to Cloud Application Manager](#logging-in-to-cloud-application-manager)
+* [Getting General Support](#getting-general-support)
+
+### Overview
+
+This article goes through the User Management capabilities that Cloud Application Manager provides for any user with administrator privileges.
+
+### Audience
+
+All users with Cloud Application Manager organization administrator access.
+
+### Prerequisites
+
+* Access to Cloud Application Manager, Management site.
+
+* The user must be an Administrator of the organization in Cloud Application Manager.
+
+* The user should be at the organization level scope to access the Users option in the left side menu.
 
 ### User Management page
 
@@ -24,12 +46,15 @@ A Cloud Application Manager administrator can access User Management page from w
 * **Instances**, **Boxes** and **Provider** (the number of each that he owns)
 * **Last Login** (date of last login, or empty if never logged in)
 * **Created** (date when the user was created)
+* **Gear icon** (clicking on it provides a dropdown menu with the actions that the administrator can  perform on the user account)
 
 There is also a search field in the top page of the screen to look for users that matches the search term in their name, email or id fields.
 
+![Users List](../../images/cloud-application-manager/management/users.png)
+
 ### User Management options
 
-Next to each user in the User Management page there is a gear button that provides access to an administrator to the following options, depending on the state of the user:
+Each user in the users list has an associated gear button that provides the ability for an administrator to access some the following options, depending on the state of the user:
 
 * **Edit User**: to change first or last name of the user
 * **Resend Invitation**: to resend invitation email to an invited user who has not yet logged in
@@ -68,15 +93,25 @@ You have a few options:
 
 ___
 
-**Help**
+### Getting General Support
 
-Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md) for help. Or you may contact [support](mailto:incident@CenturyLink.com) from within the Cloud Application Manager interface.
+Customers can contact the CenturyLink Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
 
-![Getting Started - Support options](../../images/cloud-application-manager/getting-started-login-7.png)
+**Contact:**
 
-For issues related to API calls, send the request body along with details related to the issue.
+1. **Phone:** 888-638-6771
 
-In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+2. **Email:** incident@centurylink.com
 
-* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+3. **Create Ticket in Cloud Application Manager:**
+Directly within the platform, users can “Create Ticket” by clicking on the “?” symbol in upper right corner near the users log-in profile icon.  This takes users directly to the Managed Servicers Portal where they can open, track and review status of issues that have been raised with the support desk.  Additionally, this is how a TAM can be engaged as well.
+
+    ![Getting Started - Support options](../../images/cloud-application-manager/getting-started-login-7.png)
+
+**Instructions:**
+
+1. Provide your name
+2. CAM account name
+3. A brief description of your request or issue for case recording purposes
+
+The support desk will escalate the information to the Primary TAM and transfer the call if desired.
