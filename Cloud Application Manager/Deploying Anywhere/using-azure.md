@@ -10,8 +10,8 @@
 
 **In this article:**
 
-* [Overview](#Overview)
-* [Before You Begin](#Before-You-Begin)
+* [Overview](#overview)
+* [Before You Begin](#before-you-begin)
 * [Benefits of Deploying to Azure Using Cloud Application Manager](#benefits-of-deploying-to-azure-using-cloud-application-manager)
 * [Registering Your Azure Subscription in Cloud Application Manager](#registering-your-azure-subscription-in-cloud-application-manager)
 * [Deploying in Azure](#deploying-in-azure)

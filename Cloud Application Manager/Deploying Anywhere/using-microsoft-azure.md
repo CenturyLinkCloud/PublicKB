@@ -10,8 +10,8 @@
 
 **In this article:**
 
-* [Overview](#Overview)
-* [Before You Begin](#Before-You-Begin)
+* [Overview](#overview)
+* [Before You Begin](#before-you-begin)
 * [Registering Your Microsoft Azure Subscription (ARM) in Cloud Application Manager](#registering-your-microsoft-azure-subscription-arm-in-cloud-application-manager)
 * [Deploying Instances in Azure](#deploying-instances-in-azure)
 * [Registering Existing Instances from your Azure Account](#registering-existing-instances-from-your-azure-account)
