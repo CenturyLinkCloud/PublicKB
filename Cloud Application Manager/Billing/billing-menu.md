@@ -34,7 +34,7 @@ All users with Cloud Application Manager organization administrator access.
 * The user should be at the organization level scope to access the Billing option in the left side menu.
 
 ### Billing Dashboard
-When you click on **Billing** in the left side menu you will land into a dashboard page, where a bar graph with the billed amount for the latest months will be shown. You can also change the range of months being shown in the bar graph by selecting a different value from the to p-right dropdown on the graph.
+When you click on **Billing** in the left side menu you will land into a dashboard page, where a bar graph with the billed amount for the latest months will be shown. You can also change the range of months being shown in the bar graph by selecting a different value from the top-right dropdown on the graph.
 
 ![Billing Dashboard](../../images/cloud-application-manager/billing/billing-dashboard.png)
 
