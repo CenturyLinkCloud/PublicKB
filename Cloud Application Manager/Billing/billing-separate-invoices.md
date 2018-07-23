@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-## Billing in separate invoices
+### Billing in separate invoices
 
 **In this article:**
 

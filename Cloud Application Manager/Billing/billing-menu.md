@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-## Billing Menu
+### Billing Menu
 
 **In this article:**
 
