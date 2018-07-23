@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-## Using Azure
+### Using Azure
 
 **In this article:**
 
