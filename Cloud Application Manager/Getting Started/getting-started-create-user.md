@@ -7,7 +7,7 @@
 "sticky": true
 }}}
 
-## Getting started - User Management
+### Getting started - User Management
 
 **In this article:**
 
