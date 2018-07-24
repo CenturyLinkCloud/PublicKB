@@ -26,6 +26,6 @@ This article assumes that the user has login access to the CenturyLink Cloud Por
 
 4. Configure the SRN with **2 vCPU** and **4GB of memory**(bare minimum requirements).
 
-5. Under the **Network** section, select a **network** (VLAN) that will have connectivity to the SRNw, and enter the appropriate **Primary and Secondary DNS**. Click on **Create Server**. Wait for the server to get deployed.
+5. Under the **Network** section, select a **network** (VLAN) that will have connectivity to the SRNs, and enter the appropriate **Primary and Secondary DNS**. Click on **Create Server**. Wait for the server to get deployed.
 
 You have now completed the deployment of CMS  in CenturyLink Cloud.
