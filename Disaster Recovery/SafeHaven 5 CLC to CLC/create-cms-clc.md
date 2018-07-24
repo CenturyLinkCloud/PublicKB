@@ -12,7 +12,7 @@ This article explains how to create a CMS (Central Management Server) in CLC DR 
 
 ### Requirements
 1. Login access to the CenturyLink Cloud Portal at https://control.ctl.io.
-2. Internet access on the Production SRN in CenturyLink Cloud once it is deployed.
+2. Internet access to both Production site SRN and Recovery site SRN in CenturyLink Cloud once it is deployed.
 
 ### Assumptions
 This article assumes that the user has login access to the CenturyLink Cloud Portal.
