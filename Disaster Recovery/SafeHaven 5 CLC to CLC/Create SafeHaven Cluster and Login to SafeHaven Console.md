@@ -1,6 +1,6 @@
 {{{
   "title": "Create a SafeHaven Cluster and Login to SafeHaven Console",
-  "date": "12-27-2017",
+  "date": "07-25-2018",
   "author": "Weiran Wang",
   "attachments": [],
   "contentIsHTML": false
