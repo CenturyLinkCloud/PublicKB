@@ -1,7 +1,7 @@
 {{{
   "title": "Register SRN within a SafeHaven Console",
-  "date": "12-27-2017",
-  "author": "Mahima Kumar",
+  "date": "07-25-2018",
+  "author": "Weiran Wang",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -33,21 +33,5 @@ Fill in the following fields:
 
 **NOTE**: Follow the same procedure to register the all the SRN's within the SafeHaven Console. For AWS SRN the Local iSCSI IP and Service IP  are the same.
 
-The above procedure stays the same for CLC/VMWare/Manual sites as the source datacenters.
+The above procedure stays the same for VMWare/Manual sites as the source datacenters.
 
-### Video tutorial(CLC to AWS)
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/smxX1hcuyYI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</p>
-
-### Video tutorial (VMWare to AWS)
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aRxIXwsazt4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</p>
-
-### Video tutorial (Manual to AWS)
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qqhdhkFfFjE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</p>
-
-**Next Step** is to [Add SRN Peer](Add SRN Peer.md)
