@@ -1,7 +1,7 @@
 {{{
   "title": "Modify WAN Replication Rate",
-  "date": "12-27-2017",
-  "author": "Anshul Arora",
+  "date": "07-25-2018",
+  "author": "Weiran Wang",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -20,7 +20,7 @@ This article assumes that a SafeHaven cluster has already been created successfu
 3. To allow the Protection Group to use maximum available bandwidth, click **Edit** in front of 2048.
 Check the box in front of **Maximum Available Bandwidth**. Click **Ok**
 
-**Note**: The procedure is same for CLC/VMWare/Manual sites as source datacenters.
+**Note**: The procedure is same for VMWare/Manual sites as source datacenters.
 
 ### Video Tutorial
 <p>
