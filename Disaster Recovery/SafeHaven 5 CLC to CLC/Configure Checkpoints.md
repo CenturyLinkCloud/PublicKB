@@ -1,7 +1,7 @@
 {{{
   "title": "Configure Checkpoints",
-  "date": "12-27-2017",
-  "author": "Anshul Arora",
+  "date": "07-25-2018",
+  "author": "Weiran Wang",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -27,7 +27,7 @@ Before enabling the periodic checkpoints please make sure that the replication i
 6. Click **Finish**
 7. Wait for a few checkpoints to show up in the **Checkpoint History** tab before proceeding with any recovery operation like Test-Failover or Failover.
 
-**Note**: The procedure is same for CLC/VMWare/Manual sites as source datacenters.
+**Note**: The procedure is same for VMWare/Manual sites as source datacenters.
 ### Video Tutorial
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B8VxbbKT094" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
