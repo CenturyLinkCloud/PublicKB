@@ -6,44 +6,40 @@
 "contentIsHTML": false
 }}}
 
-### Enhancements (3)
+### Enhancements (5)
 
-#### [Cloud Application Manager](//www.ctl.io/cloud-application-manager/)
+#### [Public Cloud Infrastructure as a Service](//www.ctl.io/product-overview/#)
 
-##### Managed Services Anywhere
-Several feature enhancements have been made to the CAM Monitoring service including Intelligent Policies, hierarchical organization of policies and UI updates. These enhancements allow the application of policies to workloads dynamically based on meta-data about the workload and inheritance from higher scopes. These feature updates enable policy reuse through inherited defaults and the ability to override settings at any scope level.
+##### Control Portal Design Update
 
-Three new concepts have been introduced to facilitate Intelligent Policies: Policy Scope, Policy Inheritance and Policy Filter.
+We've updated CenturyLink Cloud's control portal user interface with a new look and feel. Our new aesthetic design has been applied across all of our cloud services to give users a similar experience across products.
 
-**Policy Scope:** Tiered hierarchy used to classify collections of IT assets
-**Policy Inheritance:** Relationship between policies enabling policy composition. This is the mechanism through which checks are augmented, modified or removed within a policy.
-**Policy Filter:** Programmatic expression that is evaluated to selectively apply policies within a scope.
+There are no functionality or feature changes associated with this user interface update.
 
-The results of Intelligent Policies and the Hierarchical model are:
+##### Virtual Machine Power Operation Retries
 
-* Fewer policies are required to to maintain
-* Policies organized by functional role
-* Agents actively request their own policies
-* Asynchronous configuration changes to policies
-* Incremental deployments will receive customer overrides
+We have improved our orchestration for Virtual Machine power operations. Customers should experience fewer scenarios where blueprint operations involving Virtual Machine power operations fail.
 
-CAM Monitoring has also introduced Dynamic Check Parameters that allow check parameter values to be taken from agent metadata. This allows policy templates to have secret or otherwise unique values associated to them but have the same policy applied to many agents.
+#### [Simple Backup Reporting](//www.ctl.io/simple-backup-service/)
 
-##### [Cloud Optimization and Analytics](//www.ctl.io/cloud-application-manager/cloud-optimization/)
+We are pleased to announce the addition of reporting functionality to the Simple Backup Service. The Simple Backup reports easily enable you to view the statuses of your backups and restores. Reports are generated in a CSV format for easy consumption, and are currently available from the Simple Backup section within CenturyLink Cloud Control Portal, as well as directly from our public API's. Please read our knowledge base articles for more information on the [reporting features](//www.ctl.io/knowledge-base/backup/reports/) and [API functionality](//www.ctl.io/api-docs/v2/#simple-backup).
 
-For each CAM Customer, Administrators of the first Optimized Azure Subscription will receive Admin credentials and login URL. This can be obtained through the Edit screen of the Optimized Azure provider. The admin user will receive the Owner role for that first subscription and all future subscriptions created via Cloud Application Manager.
+[//www.ctl.io/knowledge-base/backup/reports/](//www.ctl.io/knowledge-base/backup/reports/)
 
-![Image1](../../images/cloud-application-manager/CAM-COA-Azure-Admin-Credentials.png)
+[//www.ctl.io/api-docs/v2/#simple-backup](//www.ctl.io/api-docs/v2/#simple-backup)
 
-#### Platform
+#### [Cloud Application Manager](//www.ctl.io/cloud-application-manager/cloud-optimization/)
 
-##### New Applications Site
+##### Application Lifecycle Management
 
-We have made changes to the scope of our Management Site. All OF the functionality related to Application Lifecycle Management has been moved to a new site called "Applications." Management functions like managing providers, users, settings and viewing activity logs and billing information remain in the "Management" site. "Applications" will still be the default site that users will land on at log on. They can switch to the Management site to perform any management activities.
+**Task variables improvement:** Application Lifecycle Manager now supports two additional events to associate with "Task Variables". Apart from the existing 'deploy' and 'remove' events associated with an instance, Application Lifecycle Management now supports 'post-deploy' and 'teardown' events. These two events are associated with the corresponding events (including power-on and stop) of every machine of the instance (one or many), and the script associated also executes whenever an auto-scale event occurs related to the new provisioned/disposed machine. The execution of this code script is still performed outside the VM the task variable is associated with, in a controlled environment. Users also have access to the data of the associated machine such as IP addresses, so that the values can be used inside the code. The knowledge base article has been updated to reflect this improvement: [//www.ctl.io/knowledge-base/cloud-application-manager/automating-deployments/running-code-outside-an-instance/](//www.ctl.io/knowledge-base/cloud-application-manager/automating-deployments/running-code-outside-an-instance/)
 
-This will provide a clear distinction between management activities and application related activities thus allowing the users who are interested in each of those activities to easily navigate and remain within their realm.
+**Support for Azure Managed Disks:** Application Lifecycle Manager now includes support to configure Azure deployment policies to use Managed Disks instead of block blobs as the storage type. Managed disk types are the default recommended option from Microsoft, and Application Lifecycle Management now aligns with this recommendation by adding this support to Microsoft Azure deployment Policies.
 
-### Bug Fixes (2)
+### Announcements (1)
 
-* Bug preventing full admin credentials from appearing in the credentials window for new, AWS and Azure providers.
-* Bug causing a discrepancy between provider logs and the optimized provider status bar.
+#### [Public Cloud Infrastructure as a Service](//www.ctl.io/product-overview/#)
+
+We have removed the ability to provision Hyperscale servers from our "Create Server" page.
+
+On June 20, 2018, CenturyLink Cloud announced the retirement of our Hyperscale server type. For more information, please see our [FAQ](//www.ctl.io/knowledge-base/servers/hyperscale-eol-faqs/): [//www.ctl.io/knowledge-base/servers/hyperscale-eol-faqs/](//www.ctl.io/knowledge-base/servers/hyperscale-eol-faqs/)
