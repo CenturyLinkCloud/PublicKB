@@ -11,11 +11,11 @@ CenturyLink Cloud offers customers [Hyperscale Servers](//www.ctl.io/hyperscale/
 
 Anti-affinity policies make it possible to spread workloads across physical hosts. When a new server is created and references an anti-affinity policy, the CenturyLink Cloud platform makes sure that all the virtual servers in that policy are distributed to unique physical hosts.
 ### Prerequisites to Leverage Anti-Affinity Policies
-* A Hyperscale enabled Data Center. Refer to the [Centurylink Cloud Feature Availability Matrix](../General/centuryLink-cloud-feature-availability-matrix.md) for a list of Cloud locations that support Hyperscale
+* A Hyperscale enabled Data Center. Refer to the [Centurylink Cloud Feature Availability Matrix](../General/CenturyLinkCloud/centuryLink-cloud-feature-availability-matrix.md) for a list of Cloud locations that support Hyperscale
 * A Hyperscale Virtual Machine. Customers can only apply Anti-Affinity Policies to Hyperscale Virtual Machines. Standard Virtual Machines are not supported at this time.
 
 ### Creating an Anti-Affinity Policy
-1. In the left navigation pane click on **Infrastructure** > **Policies** > **Hypsercale Anti-Affinity** 
+1. In the left navigation pane click on **Infrastructure** > **Policies** > **Hypsercale Anti-Affinity**
 
     ![anti-affinity policy GUI](../images/centuryLink_cloud_anti-affinity_policies_01.png)
 

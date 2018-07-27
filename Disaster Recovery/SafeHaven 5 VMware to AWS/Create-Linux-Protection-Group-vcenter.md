@@ -23,11 +23,11 @@ This article assumes that:
 
 2. In the Navigation Tree, right click the **SRN** you want to add storage to, and click **Edit Settings**.
 
-Add two hard disks 
-First Hard disk: Add a single **hard disk** amounting to "100% of the total used storage(full copy of data)" on Production Linux Server.
+Add two raw disks 
+**First RAW disk**: Add a single **raw disk** amounting to "100% of the total used storage(full copy of data)" on Production Linux Server.
 For example, if the VM that needs to be protected has 3 disks of size 1GB, 2GB and 14GB, then add a 17GB raw disk to the production SRN.
 
-Second RAW disk: Add a second **raw disk** for checkpoints retention. The minimum size of this raw disk should be 5% of the disk added in step 4.
+**Second RAW disk**: Add a second **raw disk** for checkpoints retention. The minimum size of this raw disk should be 5% of the disk added in step 4.
 For example, if you added a 17GB disk in step 1, then please add a second raw disk of roughly 1GB.
 
 3. Click **Add**, and select **Hard Disk**. click **Next**

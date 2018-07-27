@@ -308,7 +308,7 @@ This box installs a development environment with the sample Rails app, runtimes,
 1. Create a new box called **Rails Dev Env** based on Linux Compute.
 
 2. Add the following variables:
-    * Box variable called mysql that points to the** MySQL Ubuntu** box
+    * Box variable called mysql that points to the **MySQL Ubuntu** box
     * Box variable called rails that points to the **Rails with GitHub** box
 
 3. Expand the rails box variable all the way down to the ruby box. Set RVM_RUBY_VERSION to **ruby-2.0.0-p576**.

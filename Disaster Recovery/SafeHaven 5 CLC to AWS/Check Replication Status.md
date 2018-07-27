@@ -45,9 +45,10 @@ Monitor the WAN replication by logging into the SafeHaven console, click on the 
 
 ![Upgrade](../../images/SH5.0/create_PR_SRN_in_CLC/unsynceddata.PNG)
 
-Once the WAN replication completes and the Unsyncronized data count is close to 0 bytes, **next step** is to [Configure Checkpoints](Configure Checkpoints.md)
-
 ### Video Tutorial
 
 #### Check Replication Status for Windows
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Bczh8PkN-N8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+Once the WAN replication completes and the Unsyncronized data count is close to 0 bytes, **next step** is to [Configure Checkpoints](Configure Checkpoints.md)
+

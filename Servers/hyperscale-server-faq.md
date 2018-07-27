@@ -19,7 +19,7 @@ A: Hyperscale Virtual Servers differ from Standard Virtual Servers in 3 ways:
 
 * Storage: Hyperscale storage is 100% SSD, instead of a mix of spindle/SSD. Consequently, users can expect different storage levels between Hyperscale and CenturyLink Cloud servers.
 * Advanced Tasks: Snapshots, Clone, Convert to Template and Archive features are not available on Hyperscale Instances.
-* Geographies: Hyperscale is available in a limited subset of locations. Refer to our [Availability Matrix for a complete list](../General/centuryLink-cloud-feature-availability-matrix.md). Standard cloud servers, in contrast, can be deployed across 16 federated data centers
+* Geographies: Hyperscale is available in a limited subset of locations. Refer to our [Availability Matrix for a complete list](../General/CenturyLinkCloud/centuryLink-cloud-feature-availability-matrix.md). Standard cloud servers, in contrast, can be deployed across 16 federated data centers
 
 **Q: Can I interact with and manage Hyperscale Servers the same as with regular servers?**
 

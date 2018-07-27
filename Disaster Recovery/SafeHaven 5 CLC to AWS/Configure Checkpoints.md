@@ -27,7 +27,7 @@ Before enabling the periodic checkpoints please make sure that the replication i
 6. Click **Finish**
 7. Wait for a few checkpoints to show up in the **Checkpoint History** tab before proceeding with any recovery operation like Test-Failover or Failover.
 
-The procedure is same for CLC/VMWare/Manual sites as source datacenters.
+**Note**: The procedure is same for CLC/VMWare/Manual sites as source datacenters.
 ### Video Tutorial
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B8VxbbKT094" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
@@ -35,4 +35,4 @@ The procedure is same for CLC/VMWare/Manual sites as source datacenters.
 
 **Next Step** is to [Configure Email Alerts](Configure Email Alerts.md).
 
-**NOTE**: **At this point the user MUST setup SafeHaven email alerts to receive regular cluster email reports as well as reports incase there is an outage in the Production datacenter. This is an absolutely critical peice for a complete DR solution.**
+**NOTE**: **At this point the user MUST setup SafeHaven email alerts to receive regular cluster email reports as well as reports incase there is an outage in the Production datacenter. This is an absolutely critical piece for a complete DR solution.**

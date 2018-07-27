@@ -38,7 +38,7 @@ To do this, access the details by selecting "Code", then "Edit", where the follo
 | Option | Description |
 |--------|-------------|
 | Server Type | You can choose the server type: standard or [bare metal](../../Servers/bare-metal-faq.md). |
-| Datacenter | Clusters are grouped in [Datacenters](../../General/centurylink-cloud-data-center-locations.md). To select a Cluster, Cloud Application Manager needs to know the Datacenter the Cluster belongs to. |
+| Datacenter | Clusters are grouped in [Datacenters](../../General/CenturyLinkCloud/centurylink-cloud-data-center-locations.md). To select a Cluster, Cloud Application Manager needs to know the Datacenter the Cluster belongs to. |
 | Group |	You can choose the group in which you want the new instance to be included. |
 | Template | The list of templates that we can use to create the VM. |
 | Delegate OS Management | Select "on" if you want to [delegate OS management](../../Managed Services/managed-operating-system-frequently-asked-questions.md). This option is off by default. |

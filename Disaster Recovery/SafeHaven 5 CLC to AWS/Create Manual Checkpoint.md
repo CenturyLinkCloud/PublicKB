@@ -29,7 +29,7 @@ Protection Group has completed initial replication.
 4. The **Manual Checkpoint** job will appear at the bottom of the screen.
 5. Once **Create Image** job is complete, click on **Checkpoint History** to view the checkpoint. (This may take a few minutes/hours depending on the EBS Snapshot and AMI creation process.)
 
-The procedure is same for CLC/AWS/Manual sites as source datacenters.
+**Note**: The procedure is same for CLC/AWS/Manual sites as source datacenters.
 
 ### Video Tutorial
 <p>

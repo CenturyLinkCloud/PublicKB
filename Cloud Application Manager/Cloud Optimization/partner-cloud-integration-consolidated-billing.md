@@ -1,6 +1,6 @@
 {{{
   "title": "Partner Cloud: Consolidated Billing",
-  "date": "08-20-2017",
+  "date": "07-12-2018",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
@@ -40,6 +40,12 @@ Monthly Usage | On the last day of the month, CenturyLink will take the most upd
 Reconciliation Usage | Reconciliation charges account for any difference between what CenturyLink charged in monthly usage and what our partners show on finalized invoices. | Reconciliation charges appear on CenturyLink invoices one month in arrears.  | All usage and fees from the previous month are considered in our calculations. |These updates are made for Optimized Amazon Web Services accounts and Optimized Microsoft Azure accounts.
 Arrears Usage | Instead of basing invoices off of estimates and reconciling one month later, CenturyLink waits until the vendor's invoice has been finalized before collecting the usage data and providing an invoice.  | Your entire month's usage will be will be billed one month in arrears |  All usage and fees from the previous month are considered in our calculations.  | No partners, currently
 
+**Understanding Optimization Charges on Your Invoice**
+
+For a detailed explanation of your invoice, please review your [Usage History Report](partner-cloud-integration-detailed-billing-report.md).
+
+More complete information about your Cloud Application Manager invoice should be reviewed [here](../FAQ/FAQ.md).
+
 Your aggregated charges for all the services from any of your Cloud Optimized accounts  will appear as Cloud Application Manager line items, labeled as the following.
 
 **Monthly Usage**
@@ -52,17 +58,11 @@ Your aggregated charges for all the services from any of your Cloud Optimized ac
 * Integrated, AWS Reserve Instance Fees - IaaS
 * Integrated, AWS Reserve Instances - IaaS
 
-**Efficiency Discount**
-
-For standard customers, CenturyLink provides a 5% efficiency discount to any on-demand EC2 usage (identified as "Integrated AWS EC2 Services"). That discount will appear as a credit on the customer's invoice as "Service Discount: Integrated AWS EC2 Services."
-
-Services described as "AWS Monthly EC2 Reserved Instance Charges" are exempt from the discount.
 
 *Azure*
 * Integrated Microsoft Azure Services IaaS
 * Integrated Microsoft Azure Services SaaS
 
-Standard customers currently get a 5% efficiency discount off the public, list price for Azure for all the line items described above. Currently, there is not a line item showing the credit. It is included in the line item itself.
 
 **Reconciliation**
 
@@ -74,18 +74,16 @@ Standard customers currently get a 5% efficiency discount off the public, list p
 * Update to Previous Month AWS Reserve Instance Fees - IaaS
 * Update to Previous Month  AWS Reserve Instances - IaaS
 
-The Efficiency Discount pattern mentioned above is also applied to Reconciliation line items. 
 
 *AZURE*
 
 * Update to Previous Month Microsoft Azure Services SaaS
 * Update to Previous Month Microsoft Azure Services IaaS
 
-The Efficiency Discount pattern mentioned above is also applied to Reconciliation line items. 
 
   *Exchange Rates*
 
-  The way CenturyLink handles Monthly Usage billing for non-US customers is obtain the current exchange rate of the day of the update, not necessarilly the rate for the day associated with the retrieved data (see table above).
+  The way CenturyLink handles Monthly Usage billing for non-US customers is obtain the current exchange rate of the day of the update, not necessarily the rate for the day associated with the retrieved data (see table above).
 
   The way CenturyLink handles Reconciliation billing for non-US customers is to obtain the exchange rate for the first day of the month for which the Reconciliation data is available, not the rate for any day associated with the month of the retrieved data.
 
