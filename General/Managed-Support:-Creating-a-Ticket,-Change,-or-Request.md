@@ -22,9 +22,9 @@ Creating your support tickets and changes have been refreshed for the [Support P
   
 **Please Note:**
 
--The number of questions will vary depending on the nature of the request
+- The number of questions will vary depending on the nature of the request
 
--‘What is the Status’ will usually dictate whether a ticket or change is being created.  ‘Experiencing an Issue’ will create a ticket, and ‘Requesting a Change’ will create a change.
+- ‘What is the Status’ will usually dictate whether a ticket or change is being created.  ‘Experiencing an Issue’ will create a ticket, and ‘Requesting a Change’ will create a change.
 
 **3:** Answer any remaining questions and click Submit.
 
