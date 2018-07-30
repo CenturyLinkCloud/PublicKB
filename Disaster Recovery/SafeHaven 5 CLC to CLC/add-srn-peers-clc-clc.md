@@ -2,9 +2,9 @@
 
   "title": "Add SRN Peer",
 
-  "date": "12-27-2017",
+  "date": "07-30-2018",
 
-  "author": "Juan Aristizabal",
+  "author": "Weiran Wang",
 
   "attachments": [],
 
@@ -28,7 +28,7 @@ SRNs should already be registered within the SafeHaven Console.
 
 ### Assumptions
 
-SafeHaven Cluster already installed with proper network connectivity between CMS-SRN and SRN-SRN.
+SafeHaven Cluster already installed with proper network connectivity between CMS-SRNs and SRN-SRN.
 
 
 
@@ -50,10 +50,6 @@ Once all the production and recovery SRN(s) have been registered, then we must e
 
 
 
-**NOTE**: Please follow the same procedure for CLC/VMWare/Manual sites as source datacenters. 
-
-
-
 ### Video Tutorial
 
 <p>
@@ -61,8 +57,4 @@ Once all the production and recovery SRN(s) have been registered, then we must e
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wtTgkhxLNGw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 </p>
-
-
-
-**Next Step** is to [Add and Claim Storage on Production SRN in CenturyLink Cloud](Add and Claim Storage on Production SRN in CenturyLink Cloud.md)
 
