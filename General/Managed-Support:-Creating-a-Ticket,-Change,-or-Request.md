@@ -21,16 +21,21 @@ Creating your support tickets and changes have been refreshed for the [Support P
   ![Create](../images/managedsupport/Create-2.png)
   
 **Please Note:**
+
 -The number of questions will vary depending on the nature of the request
+
 -‘What is the Status’ will usually dictate whether a ticket or change is being created.  ‘Experiencing an Issue’ will create a ticket, and ‘Requesting a Change’ will create a change.
 
 **3:** Answer any remaining questions and click Submit.
 
   ![Create](../images/managedsupport/Create-3.png)
 
-*Note
+**Please Note:**
+
 - Questions will vary depending on the request (This example is very long).
+
 - Required fields are denoted with a *
+
 4: Once the request is submitted, you are free to navigate the site to wait for a returned Ticket ID or wait on the same page.  Tickets and changes should be created and available to view in under 30 seconds.  Once complete, the Ticket ID will appear in the upper right of the page.
 
   ![Create](../images/managedsupport/Create-4.png)
