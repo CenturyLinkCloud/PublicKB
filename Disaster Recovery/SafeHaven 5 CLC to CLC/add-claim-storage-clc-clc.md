@@ -7,7 +7,7 @@
 }}}
 
 ### Article Overview
-This article explains how to attach storage on a SRN in CenturyLink Cloud. After the SRN has been registered with the SafeHaven Console, the next step is to attach storage to it before creating Protection Groups.
+This article explains how to attach storage on production site SRN and recovery site SRN in CenturyLink Cloud. After the SRNs have been registered with the SafeHaven Console, the next step is to attach storage to it before creating Protection Groups.
 
 **NOTE**: For ease of management and troubleshooting it is recommended that the user creates one Storage Pool per Protection Group.
 
@@ -18,29 +18,43 @@ This article explains how to attach storage on a SRN in CenturyLink Cloud. After
 ### Assumptions
 This article assumes that the user has already registered the SRNs within the SafeHaven Console and wants to add storage to the SRNs before creating Protection Groups.
 
-### Add storage to the Production SRN in CenturyLink Cloud
-1. Login to CLC Control portal https://control.ctl.io, select **Servers** under the **Infrastructure** tab. Confirm the Storage requirements for the Production Server (in this case Windows). Based on the Production Server O.S. Type and [Storage Requirements](Determine Storage Requirements.md), calculate the amount of storage that needs to be added.
+### Add and claim Storage on SRNs.
+#### Adding Storage to the Production SRN in Centurylink Private Cloud
+1. Login to Centurylink Cloud Portal.
+2. Click on the PROD-SRN.
+3. Click on **Edit Storage**.
+4. Click on **Add storage**. Then select **raw disk**.
+5. Change the size of the disk :
 
-2. In the Navigation Tree, select the **SRN** you want to add storage to, then scroll down on the main data panel and select **edit storage**.
-3. Select **add storage** and then in the drop-down menu select **raw disk**.
-   **NOTE**: **DO NOT** select a **partitoned** disk.
+ If the production/source VM is a **Linux machine**:   
+    The disk size should be **125% of total provisioned storage**, and **6GB per Protection group** for Failback Test Failover.    
+    For example, If Production VMs disk size is 16 GB, add a 26 GB(20 + 6) disk to the Production SRN.   
 
-4. Add required storage and **apply**. Wait for the job to complete.
+   If the production/source VM is a **Windows machine**:  
+  **For a local cache based Windows Protection Group(recommended):** 
+    The disk size should be **10% of total provisioned storage**   
+    For example, If Production VMs disk size is 60 GB, add a 6GB disk to the Production SRN.  
 
-### Claim storage pool for CenturyLink Cloud Production SRN
-1. Once the storage has been attached to the SRNs, the next step is to login to the **SafeHaven Console**.
-2. Go to the Navigation Tree and select the Production SRN. In the **Properties Panel** select **Claim Storage Pool**.
-**NOTE**: If you don't see a device listed click on **Rescan** in order to force a rescan of the SCSI bus on the SRN.
+   **For a Replica based Windows Protection Group(recommended):**    
+   The disk size should be **125% of total provisioned storage**, and **6GB per Protection group** for Failback Test Failover.
+   For example, If Production VMs disk size is 60 GB, add a 81 GB(75+6) disk to the Production SRN.
 
-3. If this is the first storage device you are claiming, then select the Storage Device you want to claim and select **Create a New Storage Pool for the Device**. Fill in the **Storage Pool Name** and click **Claim**.
+6. Click on **apply**
 
-4. Depending on the protection group architecture, the user can claim another disk following a similar procedure and can either **Create a new Storage Pool** or **Add to an existing Storage Pool**.
 
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CjH_Pts0tuk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</p>
-
-For **Windows** Protection Group, **Next Step** is to [Create Windows Protection Group, Install LRA and Start Replication](Create-Windows-Protection-Group-Install-LRA-and-Start-Replication.md)
-
-For **Linux** Protection Group, **Next Step** is to [Create Linux Protection Group](Create Linux Protection Group.md)
+#### Adding Storage to the DR SRN in CLC
+1. Login to Centurylink Cloud Portal.
+2. Click on the DR-SRN.
+3. Click on **Edit Storage**.
+4. Click on **Add storage**. Then select **raw disk**.
+5. The disk size should be **125% of total provisioned storage**, and **6GB per Protection group** for Failback Test Failover.    
+    For example, If Production VMs disk size is 16 GB, add a 26 GB(20 + 6) disk to the Production SRN.
+6. Click on **apply**
+    
+#### Claim storage pool for CenturyLink Cloud SRNs
+1. Login to the SafeHaven Console.
+2. click on Production SRN.
+3. On the right side, click **Claim Storage**.
+4. Select the recently added disk, then select **Create a new Storage Pool for the Device**
+5. Enter a **Storage Pool Name**, and click **Claim**.
+6. Click on the DR SRN, and repeat steps 3 to 5.
