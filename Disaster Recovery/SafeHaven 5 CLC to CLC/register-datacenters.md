@@ -18,7 +18,7 @@ SafeHaven Cluster has already been installed with proper network connectivity be
 
 ### Register CenturyLink Cloud Datacenter
 Each CenturyLink Cloud Parent or Sub Account is treated as a separate Datacenter within a SafeHaven Cluster.
-
+Follow the steps to register both production site DataCenter and RecoverySite DataCenter
 1. Within the **SafeHaven Console**, right-click on the **Administrator@Cluster** in the Navigation Tree on the left, and select **Register Data Center** from the drop-down menu.
 2. Enter **Data Center Name**, and select **CenturyLink Cloud** as the **Data Center Type**. Click **Register**.
 3. Click on the Data Center you registered and under the **Properties** Panel. Click on **Change Credentials**.
