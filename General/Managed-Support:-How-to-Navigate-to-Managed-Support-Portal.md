@@ -14,7 +14,7 @@ As of **6/23/2018**, support functionality formerly accessible from SavvisStatio
 
 You can access the new support solution by clicking the ‘Support’ tab:
 
-![howtonavigatetosupportportal-1.png](../../howtonavigatetosupportportal-1.png)
+![portal1](../../howtonavigatetosupportportal-1.png)
 
 Clicking this link will direct you to the dashboard for the Support Portal.  Additionally, due to SavvisStations’ former abilities to view support information in other areas of the site, there are also other links and drilldowns that will redirect you to the Support Portal.  Some examples include:
 
