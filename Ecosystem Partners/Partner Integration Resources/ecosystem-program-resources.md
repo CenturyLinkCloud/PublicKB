@@ -7,6 +7,8 @@
   "contentIsHTML": false
 }}}
 
+<strong>The AppFog service was retired on June 29, 2018. The AppFog Platform-as-a-Service is no longer available, including all source code, env vars, and database information. More information is available [here](../../AppFog/appfog-retirement-guide.md).</strong>
+
 ### Overview
 
 CenturyLink [Ecosystem Program Partner Members](centurylink-cloud-ecosystem-program-guide.md) gain access to a bevy of resources that make integrations easy and minimize time to successful customer adoption.  Leverage the assets below to make use of the investments CenturyLink has already made on your behalf so you can minimize your engineering and marketing learning curve.
@@ -25,4 +27,3 @@ Integration of 3rd party technology with CenturyLink Cloud can be achieved by le
 Get live support with any integration questions directly from our community of experts!
 
 [![Slack](../../images/ecosystem_program_resources/ctl-community-slack-screenshot.png)](http://ctl-community-slackin.useast.appfog.ctl.io/)
-

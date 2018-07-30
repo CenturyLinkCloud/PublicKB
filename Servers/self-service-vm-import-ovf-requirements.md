@@ -45,6 +45,12 @@ Your OVF must meet the following requirements to be imported successfully.
   - `rm /etc/udev/rules.d/70-persistent-net.rules`
 - Create a blank file named **75-persistent-net-generator.rules** to prevent the build of the persistent net rules file.
   - `touch /etc/udev/rules.d/75-persistent-net-generator.rules`
+  
+#### Specific Requirements for Red Hat 7 64-Bit OVFs
+- Ensure Consistent Network Device Naming is enabled.
+
+#### Specific Requirements for CentOS OVFs
+- Ensure the network interface configuration follows the RHEL convention of "ens160", "ens162" etc, for compatibility with our platform automation controls (cloning, network changes, etc).
 
 ### Other Notes
 - In addition, the import function will enable the following capabilities if they are not available on your OVF image:

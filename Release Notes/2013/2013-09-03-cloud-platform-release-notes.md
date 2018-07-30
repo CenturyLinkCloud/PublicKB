@@ -8,7 +8,7 @@
 
 ### New Features (1)
 
-* **Vertical Autoscale.** Customers can now view, create, edit, apply and delete CPU Autoscale policies for cloud servers. User-defined ranges specify the maximum and minimum number of CPUs allowed for a server, and the user-defined thresholds identify at which utilization values the servers should scale up -- and scale down -- its CPU assignment. Autoscale policies can be applied to servers based on Windows Server 2012 Datacenter Edition, Red Hat Enterprise Linux 5/6, and Ubuntu 10/12 x64.Please see additional KB articles "<a href="../../Autoscale/creating-and-applying-autoscale-policies.md">Creating and applying Autoscale policies</a>" and "<a href="../../Autoscale/autoscale-faq.md">Autoscale FAQs</a>" for more information about this exciting feature.
+* **Vertical Autoscale.** Customers can now view, create, edit, apply and delete CPU Autoscale policies for cloud servers. User-defined ranges specify the maximum and minimum number of CPUs allowed for a server, and the user-defined thresholds identify at which utilization values the servers should scale up -- and scale down -- its CPU assignment. Autoscale policies can be applied to servers based on Windows Server 2012 Datacenter Edition, Red Hat Enterprise Linux 5/6, and Ubuntu 10/12 x64.Please see additional KB articles "<a href="../../General/Autoscale/creating-and-applying-autoscale-policies.md">Creating and applying Autoscale policies</a>" and "<a href="../../General/Autoscale/autoscale-faq.md">Autoscale FAQs</a>" for more information about this exciting feature.
 
 ### Minor Enhancements (4)
 

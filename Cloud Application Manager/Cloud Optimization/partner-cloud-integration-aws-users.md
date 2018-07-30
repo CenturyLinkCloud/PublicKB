@@ -31,7 +31,6 @@ Within the request, please provide the list of users who require Access and a se
 
 Once you have the user, navigate to https://portal.azure.com/. If you automatically sign into a portal without being asked for your credentials, that can be confusing. You are likely already logged into another Microsoft account. Sign out of the account, navigate back to https://portal.azure.com/, and try again.
 
-All users will be given CenturyLink's [customized set of Azure permissions](partner-cloud-integration-azure-capabilities.md).
 
 ### Contacting Cloud Application Manager Support
 

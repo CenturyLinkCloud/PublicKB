@@ -1,93 +1,135 @@
 {{{
 "title": "FAQ",
-"date": "07-14-2017",
+"date": "05-18-2017",
 "author": "",
 "attachments": [],
 "contentIsHTML": false,
 "sticky": true
 }}}
 
-### FAQs
+### FAQ
 
-This page contains answers to frequently asked questions on different topics.
+Here you will find any frequently asked questions for different topics.
 
 **In this article:**
 * Costs
 * Support
+* Invoice
 ___
 
 ### Costs
-### When is a customer charged with Application Lifecycle Management charges?
-The customer begins incurring charges when an instance is deploy and running using one of the following.
+##### How is the Managed Services Anywhere (MSA) charge calculated?
+MSA charges are calculated based on the spend on all managed providers.  
 
-* Application Box<br>
-* Script Box<br>
-* Template<br>
-* Container<br>
-* Deployment Policy<br>
+##### When is a customer charged with Application Lifecycle Management (ALM) charges?
+ALM charges are accrued on a per hour basis for instances that are deployed via Cloud Application Manager boxes and running within a non-managed (MSA) provider.  When instances that have been deployed via the cloud provider's console are registered within Cloud Application Manager, the accrual of ALM charges will likewise occur.
 
-### What if an Application Box has multiple Script Boxes?
-From a billing perspective, each instance representing a Script Box or a Template in an Application Box is considered its own instance.
+##### Is Application Lifecycle Management (ALM) included in Managed Services Anywhere (MSA) charges?
+Yes, ALM is included in MSA.  No additional ALM charges are billed for instances that are on a managed provider.
 
-### If a customer deploys a Script Box on an existing instance, will there be any additional charge?
-No. There are no additional charges when the customer deploys a Script Box on an existing instance using a Deployment Policy.
+##### Is platform support included in Managed Services Anywhere (MSA) charges?
+Yes, platform support is included in MSA.  No additional platform support charges are billed for managed providers.
 
-### Is the platform support fee optional?
-No.
+##### What if an Application box has multiple script boxes?
+On a non-managed provider, each instance representing a script box or a template within an application box is considered its own instance and ALM charges will be accrued per instance.  
 
-### How is an instance defined?
-An instance is the output of execution from one of the following box types. An Application Box may
-have more than one instance. In terms of billing, an instance is charged only for the uptime of the instance.
+##### If a customer deploys a script box on an existing instance will there be any additional charge?
+No. There will not be any additional charge if the customer deploys a script box on an existing instance that was deployed using a deployment policy.
 
-* Application Box<br>
-* Script Box<br>
-* Template<br>
-* Container<br>
-* Deployment Policy<br>
+##### Is the platform support fee optional on a non-managed provider?
+No, platform support is not optional on non-managed providers.  Platform support is included for managed providers.
 
-### A Template Box can be used to deploy a collection of virtual machines along with more than one cloud native service. From a billing perspective, is it still considered a single instance?
-Yes, an execution of a Template Box is considered a single instance from billing perspective, even though the template can be used to deploy several virtual machines or cloud native services.
+##### How is an instance defined?
+An instance is the output of execution of one of the following box types. Application box may
+have more than one instance. In terms of Application Lifecycle Management billing, an instance is charged only for the uptime of the instance.
 
-### When does a brown-field instance starts billing?
-After registering an auto-discovered instance, all brown-field instances start charging according to the Application Lifecycle Management pricing.
+-Application box<br>
+-Script box<br>
+-Template<br>
+-Container<br>
+-Deployment Policy<br>
 
-### Is a Management Appliance required in order to deploy a Managed OS on AWS or Azure?
-Yes.  A Management Appliance must be deployed within the environment where the workload(s) to be managed exist.  
+##### A Template Box can be used to deploy a collection of virtual machines along with more than one cloud native service. Is it still a single instance from billing perspective?
+Yes, an execution of a Template Box is considered a single instance from an Application Lifecycle Management (non-mangage provider) billing perspective even though the template can be used to deploy several virtual machines or cloud native services.
 
-### Is a customer charged for the deployment of a Management Appliance?
-The customer will not be charged for the Application Lifecycle Management nor the Managed OS of the deployed Management appliance.  The customer will be responsible for the cost of the infrastructure on which the Management Appliance is deployed.  The infrastructure type required for the Management Appliance:  Azure - Standard_A1_v2 or AWS - t2.medium
+##### When does a brown-field instance starts billing?
+After registering an auto-discovered instance on a non-managed provider, all brown-field instances will start charging according to the Application Lifecycle Management pricing. 
 
-### When a user buys Managed OS on Azure OR AWS, is the user charged on Application Lifecycle Management?
-The user is charged on Application Lifecycle Management for the life of the instance. When a user buys Managed OS on Azure OR AWS on that instance, the additional charge for Managed OS is levied on the instance starting from the time the service is applied. The collective charges are $ 0.13 per instance-hour managed.
+##### How are charges represented on the invoice?
+Cloud Application Manager charges are represented on the invoice as one or more of the following line items
+Product/Service<br>
+• Cloud Application Manager<br>
+• Cloud Application Manager Appliance<br>
+• AWS Services IaaS<br>
+• AWS Services SaaS<br>
+• Microsoft Azure Services SaaS<br>
+• Microsoft Azure Services IaaS<br>
+• Cloud Application Manager Support<br>
 
-### How are charges represented on the invoice?
-Cloud Application Manager charges are represented on the invoice as one or more of the following line items or
-Product/Service:<br>
-* Cloud Application Manager<br>
-* Cloud Application Manager Appliance<br>
-* AWS Services IaaS<br>
-* AWS Services SaaS<br>
-* Microsoft Azure Services SaaS<br>
-* Microsoft Azure Services IaaS<br>
-* Cloud Application Manager Support<br>
-
-###  What is included in calculating Platform Support charges?
-Platform Support charges are calculated on the combined spend of the following charges:<br>
-* Application Lifecycle Management<br>
-* AWS Services<br>
-* Azure Services<br>
+#####  What is included in calculating Platform Support charges?
+Platform Support charges are calculated on the combined spend of the following charges<br>
+• Application Lifecycle Management<br>
+• AWS Services<br>
+• Azure Services<br>
 
 ___
 
 ### Support
 
-### What is included as part of Platform Support?
-Platform Support constitutes:<br>
-* [Application Lifecycle Management support](https://www.ctl.io/cloud-application-manager/support/)<br>
-* [Azure platform support comparable to Azure Professional Direct](https://azure.microsoft.com/en-us/support/plans/prodirect/)<br>
-* [AWS platform support comparable to AWS Business Support](https://aws.amazon.com/premiumsupport/business-support/)<br>
-* Managed Services
-Full details of Platform Support are [published here](https://www.ctl.io/legal/cloud-application-manager/service-guide/).<br>
+##### What is included as part of Platform Support?
+Platform Support constitutes<br>
+• Application Lifecycle Management support (https://www.ctl.io/cloud-application-manager/support/)<br>
+• Azure platform support comparable to Azure Professional Direct (https://azure.microsoft.com/en-us/support/plans/prodirect/)<br>
+• AWS platform support comparable to AWS Business Support (https://aws.amazon.com/premiumsupport/business-support/)<br>
+• Managed Services
+Full details of Platform Support are published at https://www.ctl.io/legal/cloud-application-manager/service-guide/<br>
 
-### What if the customer has an existing Enterprise Support with AWS or Premier Support with Azure?
+
+##### What if the customer has an existing Enterprise Support with AWS or Premier Support with Azure?
 Customers can keep their plan by upgrading the Platform Support for additional charges.
+
+___
+
+### Invoice
+
+##### How are Cloud Application Manager charges represented on my invoice?
+Charges on your CenturyLink invoice are represented by an alias. Cloud Application Manager currently has three different types of alias' including Billing Account Alias, Cost Center Account Alias and Account Alias.
+
+
+
+##### What is a Billing Account Alias?
+A billing account alias represents any charges directly associated to the organization level. Currently no charges are applied directly to the billing account alias.
+
+Cloud Application Manager Billing Account Alias
+![Billing Account Alias](../../images/cloud-application-manager/cam-organization-alias.png)
+
+
+
+##### What is a Cost Center Account Alias?
+A cost center account alias represents any charges directly associated to the cost center. Currently no charges are applied directly to the cost center alias.
+
+Cloud Application Manager Cost Center Alias
+![Cost Center Account Alias](../../images/cloud-application-manager/cam-costcenter-alias.png)
+
+
+
+
+##### What is a Account Alias?
+An account alias represents any charges directly associated to a provider. Currently, all charges of Cloud Application Manager are directly associated to each provider.
+
+Each provider is associated to a cost center and is shown as such in the bill.
+
+Cloud Application Manager Account Alias
+![Account Alias](../../images/cloud-application-manager/cam-provider-alias.png)
+
+Invoice Example
+![Bill Example](../../images/cloud-application-manager/cam-customer-bill-example.png)
+
+
+#### Where can I see more detail for my bill?
+Customers can login to their Cloud Application Manager account for a [Detailed Billing Report](../Cloud Optimization/partner-cloud-integration-detailed-billing-report.md).  
+
+Customers can also check out our knowledge base for more billing information for [Cloud Optimization charges](../Cloud Optimization/partner-cloud-integration-consolidated-billing.md).
+
+##### What if I have more questions about the bill?
+If you have any other questions about your bill please contact [Cloud Application Manager Support](https://www.ctl.io/cloud-application-manager/#Support).

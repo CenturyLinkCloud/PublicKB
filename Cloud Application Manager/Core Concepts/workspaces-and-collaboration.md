@@ -13,6 +13,7 @@ In this article:
 * Workspaces
 * Cost Center
 * Organizations
+* Favorites
 * Switching and Managing Workspaces, Cost Centers and Organizations
 * Create Workspace flow
 * Create Cost Center flow
@@ -42,9 +43,9 @@ The different levels are:
 
 1. **Visitor:**  A visitor member can see instances and boxes, but he cannot edit them or see providers. Use this role to monitor share what is happening on a workspace without worrying about the user potentially breaking something.
 
-2. **User:** An user member can see and edit instances, see boxes, but he cannot see providers. He is allowed to deploy instances. Use this role for people who will apply fixes and who need to deploy instances but shouldn’t edit boxes without supervision. For example, developers can user the User rights to deploy testing environments.
+2. **User:** A user member can see and edit instances, see boxes, but he cannot see providers. He is allowed to deploy instances. Use this role for people who will apply fixes and who need to deploy instances but shouldn’t edit boxes without supervision. For example, developers can user the User rights to deploy testing environments.
 
-3. **Author:** An author member can see and edit instances and boxes, and see providers. He cannot edit a provider but he can author new policy boxes. This is a common role for people who is creating boxes and managing an environment, but shouldn’t be changing the credential or adding new members.
+3. **Author:** An author member can see and edit instances and boxes, and see providers. He cannot edit a provider but he can author new policy boxes. This is a common role for people who are creating boxes and managing the environment, but shouldn’t be changing the credentials or adding new members.
 
 4. **Administrator:** An administrator member can see and edit instances, boxes and providers. In addition, he can change permission of other members and other settings. He has the highest permissions of all members. Use this for team leaders of the workspace.
 
@@ -56,7 +57,7 @@ If you want to use this feature in different ways, please [contact us](mailto:in
 
 All workspaces belong to a Cost Center that is assigned when it’s created.
 
-Being a member of a Cost Center allows you to manage all assets of all the workspaces belonging to it as is you were an Administrator of those workspaces.
+Being a member of a Cost Center allows you to manage all assets of all the workspaces belonging to it as if you were an Administrator of those workspaces.
 
 In addition to that, a Cost Center member can create new and delete workspaces inside the Cost Center.
 
@@ -67,6 +68,10 @@ Users who manage a big team or several project are usually Cost Center administr
 All Cost Centers and Workspaces belong to an Organization.
 
 The administrators of an Organization can change many settings that affect the whole organizations. See more details [here](../Administering Your Organization/admin-overview.md).
+
+### Favorites
+
+The Favorites section contains a list of any workspace, cost center or organization that the user added for easier or more convenient access to. To add to this section, simply click the Star icon in the upper left hand corner of any of the aforementioned spaces. The star will become dark grey to indicate that the space has been successfully added. Clicking the Star icon again, which then turns the color to white, will remove the space from the Favorites section.
 
 ### Switching and Managing Workspaces, Cost Centers and Organizations
 
@@ -85,6 +90,11 @@ This allows you to filter and search for the right scope to the work you need to
 **Workspace Switcher - Organization view**
 
 ![workspace-and-sharing3.png](../../images/cloud-application-manager/workspace-and-sharing3.png)
+
+**Workspace Switcher - Favorites view**
+
+![workspace-and-sharing11.png](../../images/cloud-application-manager/workspace-and-sharing11.png)
+
 
 The switcher also offer the option to create Workspaces and Cost Centers.
 

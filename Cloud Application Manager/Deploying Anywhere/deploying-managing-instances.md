@@ -24,10 +24,10 @@ An instance is an instantiated version of a box launched to provider’s virtual
 
   ![deploy-instance-selectboxfromcatalog-1.png](../../images/cloud-application-manager/deploy-instance-selectboxfromcatalog-1.png)
 
-    * **Boxes**. Shows boxes you created in your workspace.
-    * **Explore**. Shows default boxes available to all Cloud Application Manager users. These include service boxes such as Linux Compute, Windows Compute; includes AWS services like MySQL Database, Oracle Database, DynamoDB, PostgreSQL Database, and S3 bucket; and includes the Azure Microsoft SQL Database service. You can directly launch an instance to these database services. While you can’t modify those boxes, you can combine them with other boxes to build multi-tiered applications.
+* **Boxes**. Shows boxes you created in your workspace.
+* **Explore**. Shows default boxes available to all Cloud Application Manager users. These include service boxes such as Linux Compute, Windows Compute; includes AWS services like MySQL Database, Oracle Database, DynamoDB, PostgreSQL Database, and S3 bucket; and includes the Azure Microsoft SQL Database service. You can directly launch an instance to these database services. While you can’t modify those boxes, you can combine them with other boxes to build multi-tiered applications.
 
-    **Note:** Don’t find a box you’re looking for? Check if you’re in the right workspace. Remember that you may not have access if the box is no longer shared with you.
+  **Note:** Don’t find a box you’re looking for? Check if you’re in the right workspace. Remember that you may not have access if the box is no longer shared with you.
 
 3. In the New Instance dialog, specify the instance name and deployment policy.
 
@@ -39,10 +39,10 @@ An instance is an instantiated version of a box launched to provider’s virtual
 
   ![instance-provideconfigurationvalues-2.png](../../images/cloud-application-manager/instance-provideconfigurationvalues-2.png)
 
-    * Listed here are all the variables defined in the main box as well as those within nested boxes or box type variables.
-    * Required variables are marked with an asterisk. To see all variables including optional ones, click Show More.
-    * When a variable is required, you must specify its value to launch an instance of the box. If optional, you can launch without giving values, and do it later in the [lifecycle editor](../Core Concepts/lifecycle-editor.md).
-    * [Binding type variables](../Automating Deployments/parameterizing-boxes-with-variables.md) are also listed here. Depending on how it’s defined in the box, you can select as its value any instance or that of a specific box type deploying or active in the workspace.
+  * Listed here are all the variables defined in the main box as well as those within nested boxes or box type variables.
+  * Required variables are marked with an asterisk. To see all variables including optional ones, click Show More.
+  * When a variable is required, you must specify its value to launch an instance of the box. If optional, you can launch without giving values, and do it later in the [lifecycle editor](../Core Concepts/lifecycle-editor.md).
+  * [Binding type variables](../Automating Deployments/parameterizing-boxes-with-variables.md) are also listed here. Depending on how it’s defined in the box, you can select as its value any instance or that of a specific box type deploying or active in the workspace.
 
 ### Creating a Deployment Policy
 
@@ -99,7 +99,7 @@ Select **Always on** if you don’t want to schedule anything. Shutdown powers o
 
     **Note:** Even if you don’t schedule an instance at the time of deploying, you can do so later. Once online, you can go to an instance page and in **Edit Details**, set the schedule.
 
-    Besides the user interface, you can automatically schedule instances using the instances API with a [POST ot PUT](https://www.ctl.io/api-docs/cam/#application-lifecycle-management-instances-api) request.
+    Besides the user interface, you can automatically schedule instances using the instances API with a [POST or PUT](https://www.ctl.io/api-docs/cam/#application-lifecycle-management-instances-api) request.
 
 ### Handling Instance Lifecycle States
 

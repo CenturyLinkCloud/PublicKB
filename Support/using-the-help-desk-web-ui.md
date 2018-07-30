@@ -3,7 +3,7 @@
   "date": "9-22-2016",
   "author": "Erik Jensen",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
 ### Description 
