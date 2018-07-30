@@ -17,24 +17,29 @@ SRN resides in both production and DR datacenters and work in pairs. A single Sa
 ### Assumptions
 This article assumes that the user has login access to the CenturyLink Cloud Portal.
 
-### Create SRNs in CenturyLink Cloud
-1. Login to the **CenturyLink Control Portal** with your credentials.
-
-2. Select the Production site **DataCenter** and the appropriate **Server Group** to deploy the SRN. Click on **Create Server** from the drop-down menu.
-
-3. Under the **Create Server** section, select the **Standard** server type. Select **Ubuntu 16 | 64 bit** as the **Operating System** type. Provide a **Name** and **Description** for the SRN. Provide a **root password** and confirm it.
-
-4. Configure the SRN with **2 vCPU** and **4GB of memory**(bare minimum requirements).
-
-5. Under the **Network** section, select a **network** (VLAN) that will have connectivity to the peer SRN, CMS and the appropriate recovery / production servers(depending on the environemnt) and enter the appropriate **Primary and Secondary DNS**. Click on **Create Server**. Wait for the server to get deployed.
-
-6. Repeat the procedure to create the Recovery site SRN in Recovery Datacenter
-
-You have now completed the deployment of SRNs in CenturyLink Cloud.
-
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GN8EhOBatIE" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</p>
-
-**Next Step** is to [Create CMS in AWS](Create CMS in AWS.md)
+### Deploy the SafeHaven Repliation Node(SRN) in CenturyLink Cloud
+1. Login to Centurylink Cloud portal with your ceredentials - https://control.ctl.io/
+2. Change the subaccount if needed by clicking on top of the screen.
+3. Click on the Datacenter that is required to be the Production Datacenter.
+4. Create a Group(Optional):  
+  a. Click on **create** button on the right to expand it.  
+  b. Click **Group**.  
+  c. Enter the group **name**  
+  d. Click **Create Server Group**.  
+5. Create an SRN:  
+  a. Click **Create** button on the right to expand it.  
+  b. Click **Server**.  
+  c. Make sure that correct **Datacenter** and **Group** is selected.    
+     Select **Server Type** : **Standard**  
+     Select **Operating System** : **Ubuntu 16|64-bit**  
+     Enter **Server Name**. Just 6 characters are allowed.  
+     Enter **admin/root password**
+     Give the server **2 CPUs** and **4 GB Memory**.  
+     **Note**: No need to add any additional storage at this point.  
+     Select a **Network**. This is the network where the Recovery Servers will be deployed.
+     Click **Create Server**. 
+     
+ 6. You can monitor the VM create job. It can take a few minutes. An email notification will be sent to the registered email account upon successful deployment.
+ 7. Repeat step 1-6 in Recovery Datacenter to create DR-SRN
+ 
+ Both PROD-SRN and DR-SRN are now deployed. 
