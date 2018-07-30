@@ -79,7 +79,7 @@ A: No, please encrypt drive with compatible mode.
 
 **Q: Can CenturyLink Cloud provide a portable device?**
 
-A: Yes, we can provide a portable device.  Associated cost will be added as a one-time charge to your bill.  Note that this method can take 3-5 business days to procure and ship from our supplier.
+A: No, we no longer provide portable devices to customers for this process. 
  
 **Q: Where can I ship data?**
 

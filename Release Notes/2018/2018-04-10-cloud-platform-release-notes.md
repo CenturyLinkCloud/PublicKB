@@ -16,9 +16,9 @@ Application Lifecycle Management now offers a Workload Map view into the instanc
 
 ### Enhancements (1)
 
-#### [DCC Foundation](//www.ctl.io/dcc-foundation/)
+#### [CenturyLink Private Cloud on VMware Cloud Foundation](//centurylink-private-cloud-on-vmware-cloud-foundation)
 
-Customers of DCC Foundation now have the option for CenturyLink provided OS licenses, for Microsoft Windows and/or Red Hat Enterprise Linux. 
+Customers of CenturyLink Private Cloud on VMware Cloud Foundation now have the option for CenturyLink provided OS licenses, for Microsoft Windows and/or Red Hat Enterprise Linux.
 
 ### Announcements (2)
 
@@ -48,6 +48,6 @@ CenturyLink Cloud is excited to release a new load balancer service in our AU1 l
 • Load balance on any port 23 and up
 • Configurable health checks
 
-These new features are presently available in our AU1, CA3, DE1, DE3, GB3, IL1, NY1, SG1, UC1 and VA1 locations with plans to enable additional locations in the coming months. Be on the lookout for future announcements regarding service expansion. Please note, our Shared Load Balancer service will continue to be available in all other locations until they are LBaaS enabled. 
+These new features are presently available in our AU1, CA3, DE1, DE3, GB3, IL1, NY1, SG1, UC1 and VA1 locations with plans to enable additional locations in the coming months. Be on the lookout for future announcements regarding service expansion. Please note, our Shared Load Balancer service will continue to be available in all other locations until they are LBaaS enabled.
 
 For information on pricing for LBaaS and Shared Load Balancer, see [pricing](//www.ctl.io/pricing).

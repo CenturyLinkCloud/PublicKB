@@ -11,9 +11,9 @@ Bindings glue together different parts of a multi-tier application over the netw
 
 * [Brief recap on Bindings](#brief-recap-on-bindings)
 * [A Simple Example](#a-simple-example)
-  * [Create the NFS Server script box](#create-the-nfs-server-script-box)
-    * [Install Script](#install-script)
-    * [Configure Script](#configure-script)
+  * [Create the NFS Server script box](#creating-the-nfs-server-script-box)
+   	*	[Install Script](#install-script)
+   	* [Configure Script](#configure-script)
   * [NFS client box](#nfs-client-box)
 * [Three Tiers application from Catalog](#three-tiers-application-from-catalog)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)

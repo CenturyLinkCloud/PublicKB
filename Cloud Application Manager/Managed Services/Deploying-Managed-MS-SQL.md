@@ -1,7 +1,7 @@
 {{{
   "title": "Deploying CenturyLink Managed MS SQL via Cloud Application Manager",
-  "date": "09-20-2017",
-  "author": "Thomas Broadwell",
+  "date": "06-20-2018",
+  "author": "Managed Applications Team",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -13,90 +13,76 @@
 * [Supported Versions](#supported-versions)
 * [Supported Editions](#supported-editions)
 * [Supported Operating Systems](#supported-operating-systems)
-* [License](#license)
-* [Installation Features](#installation-features)
-* [Configuration](#configuration)
-* [Administration](#administration)
-* [Deploying Managed MS SQL](#deploying-managed-ms-sql)
-
+* [Licensing](#licensing)
+* [Deployment Overview](#deployment-overview)
+* [Deploying Managed MSSQL via CAM](#deploying-managed-mssql-via-cam)
 
 ### Introduction
-The foundation of Microsoft’s comprehensive data platform, SQL Server delivers breakthrough performance for mission-critical applications – and it gets even better with CenturyLink Cloud Application Manager and our Managed Microsoft SQL service.
+The foundation of Microsoft’s comprehensive data platform, SQL Server delivers breakthrough performance for mission-critical applications – and it gets even better with CenturyLink Cloud Application Manager (CAM) and our Managed Microsoft SQL service.
 
 ### Overview
-Cloud Application Manager’s Managed Services Anywhere (MSA) allows customers to deploy workloads and delegate the management of the workload to CenturyLink, relieving themselves of the burdens of day to day monitoring, patching and Operational activities.  Through Cloud Application Manager, a customer can provision a VM instance running Apache within any MSA enabled provider and because Managed Services has been enabled on the provider, CenturyLink will manage both the Operating System and MS SQL.
+Cloud Application Manager’s Managed Services Anywhere (MSA) allows customers to deploy workloads and delegate the management of the workload to CenturyLink, relieving themselves of the burdens of day to day monitoring, patching and Operational activities.  Through Cloud Application Manager, a customer can provision a VM instance running SQL Server within any MSA-enabled provider.  With Managed Services enabled on the provider, CenturyLink will manage both the Windows OS & MSSQL.
 
 ### Supported Versions
-*  Microsoft SQL Server 2008 R2
-*  Microsoft SQL Server 2012
-*  Microsoft SQL Server 2014
+* Microsoft SQL Server 2012
+* Microsoft SQL Server 2014
+* Microsoft SQL Server 2016
+* Microsoft SQL Server 2017
 
 ### Supported Editions
-*  Standard Edition
-*  Enterprise Edition
+* Web
+* Standard
+* Enterprise
 
 ### Supported Operating Systems
-*	Managed Microsoft Windows Server 2008 R2
-*	Managed Microsoft Windows Server 2012
+* Managed Microsoft Windows Server 2012
+* Managed Microsoft Windows Server 2012 R2
+* Managed Microsoft Windows Server 2016
 
-### License
-* Licensing for AWS and Azure deployments are provided by the Cloud Provider.  The cost for MS SQL server and the VM it is deployed upon will be reflected within the customer's cloud provider bill, or under the cloud provider's section in the CenturyLink consolidated bill for customers that have elected to utilize CenturyLink's consolidated billing feature.
+### Licensing
+* Provider: CenturyLink Private Cloud on VMware Cloud Foundation (DCC-F): Licensing is provided by CenturyLink.
+* Provider: AWS or Azure: Licensing is provided by the Cloud Provider.  The cost for MSSQL and the VM it is deployed upon will be reflected within the customer's cloud provider bill, or under the cloud provider's section in the CenturyLink consolidated bill for customers that have elected to utilize CenturyLink's consolidated billing feature.
 
-### Installation Features
-* Prepare Server for Application Service (OS Specific Parameters)
+### Deployment Overview
+* Prepare Server for Application Service (OS-specific parameters)
 * Install Microsoft SQL Server (including available options and features)
-* Install applicable Microsoft SQL Server Service Packs
-* Harden Microsoft SQL Server to CenturyLink Standards
+* Install the latest Microsoft SQL Server Service Pack available for the specified version (unless specified)
+* Harden Microsoft SQL Server to CenturyLink standards (includes backup & maintenance jobs)
 * Install CenturyLink Monitoring
-* Perform Quality Assurance against Microsoft SQL Server Installation/Hardening
 
-### Configuration
-* Create/Configure Microsoft SQL Server service accounts and SPNs
-* Configure Login Auditing
-* Configure Database Encryption using TDE
-* Configure CenturyLink Monitoring
-* Configure CenturyLink approved and provided Database Backups and Maintenance Jobs
-
-### Administration
-* SQL Server Log Monitoring
-* Restart/Stop/Start Services
-* Update managed servers with all recommended security patches, service packs and hot-fixes upon customer request
-* Coordinate patching with Customer during maintenance hours
-*	Support for Microsoft SQL Server Analysis Services (SSAS)
-
-
-### Deploying Managed MS SQL
-
-Deploying Managed MS SQL to your provider with CenturyLink Cloud Application Manager:
-1. In Boxes, Deployment Policies, search for “SAMPLE Managed MS SQL”
-2. Select SAMPLE Managed MS SQL Deployment Policy
-
-  ![MgdMSSQL0.png](../../images/cloud-application-manager/MgdMSSQL0.png)
-The Sample Deployment policy is generated when the provider is made managed.  This policy's default configuration may be changed to suit the environment in which it is being installed.
-
-3. Select the Configure (Gear) dropdown
-4. Select “Clone”:
-5. Modify the Cloned Deployment Policy with your details (Icon, Name, Description)
-6. Select Save
-
-  ![MgdMSSQL2.PNG](../../images/cloud-application-manager/MgdMSSQL2.PNG)
-
-7. Edit your new Deployment Policy with your environment specific details (Resource, Placement and Network) and Save.
-**NOTE:  The CenturyLink recommended Instance type is selected in the SAMPLE Managed MS SQL deployment.  Modification of this Instance type may result in significant performance issues.**
-**Disk configuration settings should remain as configured in SAMPLE Managed MS SQL deployment policy.**
-
-  ![MgdMSSQL3.PNG](../../images/cloud-application-manager/MgdMSSQL3.PNG) ![MgdMSSQL4.PNG](../../images/cloud-application-manager/MgdMSSQL4.PNG)
-
-8. In Catalog, select the Managed Services Anywhere subcategory and then select the “CenturyLink Managed SQL Server”.  Deploy CenturyLink Managed SQL Server.
-
-  ![MgdMSSQL5.PNG](../../images/cloud-application-manager/MgdMSSQL5.PNG)
-
-9. Update the Details of the instance that is to be deployed, selecting the appropriate Deployment Policy for your desired environment.
-  ![MgdMSSQL6.PNG](../../images/cloud-application-manager/MgdMSSQL6.PNG)
-
-10. Select Deploy
-
+### Deploying Managed MSSQL via CAM
+1. **Create Deployment Policy**
+    - This portion of the procedure is provider-dependent.  Refer to the applicable provider section below:
+    - **Provider: CenturyLink Private Cloud on VMware Cloud Foundation (DCC-F)**
+        1. Create a deployment policy using your MSA-enabled provider
+            - **vApp Template**: Windows Server 2012 or greater
+            - **Virtual CPUs**: At least 4 is optimal from a licensing cost perspective for Standard or Enterprise Edition, considering the minimum number of per-core/vCPU licenses is 4.
+            - **Memory**: Minimum recommended value is 4GB.  At least 16 GB is recommended for production workloads.
+            - **Disks**: At least 2 disk are required; one for system/boot, another for MSSQL data/backups (minimum recommended value is 10 GB).
+    - **Provider: AWS or Microsoft Azure**
+        1. Create a deployment policy by cloning a "SAMPLE" MSSQL deployment policy
+            1. In Boxes, Deployment Policies, search for "SAMPLE Managed MS SQL"
+            2. Select the provider-specific SAMPLE Managed MS SQL deployment policy
+                - ![MSSQL_AwsDeploymentPolicySample.png](../../images/cloud-application-manager/managed-apps/MSSQL_AwsDeploymentPolicySample.png)
+                - The Sample Deployment policy is generated when the provider is made managed.  This policy's default configuration may be changed to suit the environment in which it is being installed.
+            3. Select the Configure (gear) dropdown
+            4. Select "Clone"
+            5. Modify the cloned deployment policy with your details (Icon, Name, Description)
+            6. Select Save
+                - ![MSSQL_AwsDeploymentPolicyCloning.png](../../images/cloud-application-manager/managed-apps/MSSQL_AwsDeploymentPolicyCloning.png)
+            7. Edit your new deployment policy with your environment specific details (Resource, Placement and Network) and Save.
+                - ![MSSQL_AwsDeploymentPolicyEditResource.png](../../images/cloud-application-manager/managed-apps/MSSQL_AwsDeploymentPolicyEditResource.png) 
+                - **NOTE**: The CenturyLink recommended Instance type is selected in the SAMPLE Managed MS SQL deployment.  Modification of this Instance type may result in significant performance issues.
+                - ![MSSQL_AwsDeploymentPolicyEditNetwork.png](../../images/cloud-application-manager/managed-apps/MSSQL_AwsDeploymentPolicyEditNetwork.png)
+                - **NOTE**: Disk configuration within the SAMPLE policy should remain as configured, however the quantity & size can be adjusted as needed.  At least 2 disk are required; one for system/boot, another for MSSQL data/backups.
+2. Deploy "CenturyLink Managed SQL Server" script box from the Catalog using the created Deployment Policy                
+    1. In Catalog, "Managed Services Anywhere" subcategory, select "CenturyLink Managed SQL Server".  Within this script box, select Deploy (top center, green).
+        - ![MSSQL_CatalogBox.png](../../images/cloud-application-manager/managed-apps/MSSQL_CatalogBox.png)
+        - **Details**: Select the appropriate Deployment Policy for your desired environment.
+        - **Variables**: Select the target Version & Edition.  Other variables/options are available by clicking "Show More".
+            - Refer to the "CenturyLink Managed SQL Server" Overview/ReadMe for details of each variable
+        ![MSSQL_CatalogBoxVars.png](../../images/cloud-application-manager/managed-apps/MSSQL_CatalogBoxVars.png)
+    2. Select Deploy
 
 ### Help
-
 Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md) for help. Or you may contact [support](http://managedservices.ctl.io) to request help.

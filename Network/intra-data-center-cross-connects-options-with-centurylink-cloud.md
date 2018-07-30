@@ -12,7 +12,7 @@ This Knowledge Base provides an overview for customers who are considering deplo
 ### Cross Connects Description and Benefits
 CenturyLink Cloud offers [multiple connectivity options](../Network/network-access-options-for-connecting-to-centurylink-clouds-platform.md) for its customers to leverage when deciding how they will connect to their resources deployed on CenturyLink Cloud’s platform (e.g., VPN tunnels, CNS, Cross Connects, etc). That said, as a point of clarity, this Knowledge Base article specifically pertains to the deployment of cross connects.
 
-In summary, cross connects are directly connected redundant network circuits between two physically isolated organizations within a data center provider’s facility. Currently, CenturyLink Cloud has [presence within the data centers listed in our KB](../General/centurylink-cloud-data-center-locations.md). This direct connectivity allows for fast, low-latency secure connections – a perfect combination for enterprises who want to securely extend their network into the cloud. While this process may differ slightly in each data center, this article describes the general options and decisions that need to be considered.
+In summary, cross connects are directly connected redundant network circuits between two physically isolated organizations within a data center provider’s facility. Currently, CenturyLink Cloud has [presence within the data centers listed in our KB](../General/CenturyLinkCloud/centurylink-cloud-data-center-locations.md). This direct connectivity allows for fast, low-latency secure connections – a perfect combination for enterprises who want to securely extend their network into the cloud. While this process may differ slightly in each data center, this article describes the general options and decisions that need to be considered.
 
 Many of our data center providers are within in multiple building across their respective metropolitan areas, and therefore “campus cross connects” are also an option for customers to consider (e.g., Customer is in Equinix’s CH1 building and CenturyLink Cloud is in Equinix’s CH3 building). These connections are usually more costly, but are a feasible option to be considered.
 
@@ -57,7 +57,7 @@ Once a purchasing decision is made, the following will need to be ascertained/su
     * Desktop initiated Internet access
   * Verify circuit hand-off will be native Ethernet hand-offs – e.g., no DS-3, SONET, OC3
   * Determine the preferred routing protocol (e.g., static, BGP, OSPF).
-  * Will the cross connect be deployed within one of [the data centers/campuses.](../General/centurylink-cloud-data-center-locations.md)
+  * Will the cross connect be deployed within one of [the data centers/campuses.](../General/CenturyLinkCloud/centurylink-cloud-data-center-locations.md)
   * Determine if any specific IP address ranges are required for CLC. Note, CLC can generally only provide /24 networks for customers, but if a specific requirement is needed CenturyLink Cloud will evaluate such requests.
 
 Once the aforementioned is decided, the next steps are for CLC’s customers to complete the LoA (if CenturyLink Cloud is purchasing the cross connect on the customer’s behalf) and authorize an agreement for any associated costs. Customers should expect a minimum of two week lead time to provision most cross connect deployments once all of the paperwork has been finalized.

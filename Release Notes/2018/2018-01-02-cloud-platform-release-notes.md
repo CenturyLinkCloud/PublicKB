@@ -48,7 +48,7 @@ Instances List now also shows the instance IP adresses (either public or private
 
 One of the major feature's of this release is the capability to protect production servers on **multiple hypervisors** to failover to **AWS**. Examples of validated hypervisors are
 
-* VMware: including VMware based cloud platforms such as CLC, DCC-F, etc.
+* VMware: including VMware based cloud platforms such as CLC, CenturyLink Private Cloud on VMware Cloud Foundation, etc.
 * Hyper-V Generation 1
 * Xen(AWS)
 * KVM
