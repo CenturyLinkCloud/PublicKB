@@ -18,6 +18,8 @@ This article focusses on how to Register SRNs within the SafeHaven Console for C
 2. Datacenters already registered.
 
 ### Register SRN
+
+Please use the following steps for both PROD-SRN and DR-SRN registration 
 **Right-click** on the any registered **Data Center** within the Navigation Tree and select **Register SRN** from the drop-down menu.
 
 Fill in the following fields:
