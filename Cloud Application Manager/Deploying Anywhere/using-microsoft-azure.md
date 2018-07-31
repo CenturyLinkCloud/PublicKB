@@ -184,7 +184,7 @@ For more information, see the [Azure help](https://docs.microsoft.com/en-us/azur
 | Local Disk | When **Managed** toggle is ON it will use managed disks |
 | Data Disk | Storage size for data in addition to the Local Disk|
 
-If you can't create any policy box on Windows Azure provider probably you have to create a virtual network from Azure portal or you may deploy a new one with a template as we describe in following section. If you choose to use an Azure provider optimized by CenturyLink either [existing](Cloud Optimization/partner-cloud-integration-azure-existing.md) or [new](Cloud Optimization/partner-cloud-integration-azure-new.md) we will create a default network for you.
+If you can't create any policy box on Windows Azure provider probably you have to create a virtual network from Azure portal or you may deploy a new one with a template as we describe in following section. If you choose to use a [new Azure provider optimized by CenturyLink](../Cloud Optimization/partner-cloud-integration-azure-new.md) we will create a default network for you.
 
 #### Microsoft Azure ARM Template Deployment Options
 
