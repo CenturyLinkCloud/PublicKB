@@ -16,7 +16,7 @@ This article explains how to initiate Failover to CLC using SafeHaven incase of 
 ### Assumptions
 This article assumes that a SafeHaven cluster has already been created successfully. Both production and recovery SRNs are registered and peered with storage pools claimed correctly. Initial replication has completed and there is at least one checkpoint available. This article assumes that Test Failover has been done successfully.
 
-**NOTE**: It is strongly recommended that users must peform a Test Failover before doing an actual Failover even incase of a disaster scenario to verify the integrity of data in the recovery datacenter as a first step. Refer to [Test Failover to CLC](test-failover-dccf-clc.md) for more information.
+**NOTE**: It is strongly recommended that users must peform a Test Failover before doing an actual Failover even incase of a disaster scenario to verify the integrity of data in the recovery datacenter as a first step. Refer to [Test Failover to CLC](Test-Failover-to-CLC.md) for more information.
 
 ### Failover to CLC
 Users may not choose to perform Network Isolation incase of an actual Failover event.
