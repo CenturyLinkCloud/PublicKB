@@ -1,7 +1,7 @@
 {{{
 "title": "Using Microsoft Azure",
-"date": "04-19-2017",
-"author": "",
+"date": "07-31-2018",
+"author": "Guillermo Sanchez",
 "attachments": [],
 "contentIsHTML": false
 }}}
