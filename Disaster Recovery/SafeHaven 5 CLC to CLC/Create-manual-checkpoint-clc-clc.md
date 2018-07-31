@@ -34,4 +34,3 @@ Protection Group has completed initial replication.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OG60GTH7rUw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </p>
 
-As a **Next Step** the user may wish to do a [Test Failover to AWS](Test Failover to AWS.md)
