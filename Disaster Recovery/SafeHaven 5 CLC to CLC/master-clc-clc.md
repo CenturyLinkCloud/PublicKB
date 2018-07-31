@@ -17,7 +17,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 1. [Gather Production Server Information](../SafeHaven 5 CLC to AWS/Gather Production Server Information.md)
 
-3. [Create CMS in CLC](create-cms-clc.md)
+3. [Create CMS in CLC](../SafeHaven 5 CPC-vCF to CLC/create-cms-clc.md)
 
 4. [Create SRNs in CLC](create-srns-clc.md)
 
