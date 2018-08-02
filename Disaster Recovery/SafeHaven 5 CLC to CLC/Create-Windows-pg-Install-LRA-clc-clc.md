@@ -35,86 +35,93 @@ This article assumes that:
 
 4. Select Automatically Deploy and Configure New recovery Proxy Servers. or Select Use pre-deployed proxy recovery server , if the recovery server has already been deployed
 
-Click Next.
+5. If **Automatic deployment of the new recovery proxy instance** is selected:  
+ 
+    a. Select a **Parent Hardware Group**.    
+    b. Enter a **Stub Group Name** if required.  
+    c. Select **Linux** as the **OS base for all the Stub machines**  
+    d. Enter an **Alias**(maximum 6 characters) for the Recovery Server.  
+    e. Select a **Proxy Template**  
+**Note** : Make sure that the **Template** you select has the same **NIC and PCI slot number** as the production/source VM.  
+    f. Select the **Installed OS on Production Server**.  
+    g. In front of **"Connect all the server to"**, select the **DR vlan**. The Recovery instance will be deployed in this particular vlan.  
+    h. Enter the **administrator**(or root) password that you want to be set on the Recovery server.  
+       Click **Next**.  
+    
+    **OR**  
+      
+    If **pre-deployed proxy recovery server** is selected:    
+    
+    a. **Select** the Recovery server instance from the Recovery Datacenter.  
+       Click **Next**.  
+    b. Under **Mapping**, click on **select** and select the right recovery instance after clicking on down arrow.  
+       Click **Next**.  
+    
+  6. Enter a **Protection Group Name**.
+     Click on the VM name. Click **Add Disk** on the right to the VM. 
+     Expand the VM to see the disks attached to it.
+     Select a disk and click on **Resize Disk** to change the size of the disk.
+     Make sure that the disk layout of the VM matches the production VM.
+     Click **Next**.
+  
+  7. SafeHaven supports two types of protection types. Select a Protection type:
+     **Local Replica** : 125% of total production VM's storage on the local SRN and 125% on the DR SRN.
+     **Local Cache** : 10% of total production VM's storage on the local SRN and 125% on the DR SRN.   
+     Please [click here](../Overview/local-cache-vs-local-replica.md) for more information on difference between local cache and local replica
+     
+  8. If you selected **Local Replica**:  
+     Under **Production Data Center**, Select a **primary storage pool** and **checkpoint storage pool**. It is completly fine to use the same pool for both primary storage and checkpoint storage.  
+     Under **Recovery Data Center**, select **Primary storage pool** and **checkpoints storage pool**.  
+     
+     If you selected **Local Cache**.
+     Under **Production Data Center**, Select a **local cache storage pool**
+     Under **Recovery Data Center**, select **Primary storage pool** and **checkpoints storage pool**.  It is completly fine to use the same pool for both primary storage and checkpoint storage.  
+     Click **Next**
+     
+   9. Check **Automatically Install Windows LRA** if you want the SafeHaven Agent to be automatically installed on the production/source VM.   
+      
+      **Note**:  Automatic Installation requires a **reboot of the production server**.  It is advised to use this option only during maintenance window.
+   
+      Leave the box **unchecked** if automatic installation is not required.   
+      Click **Finish**.  
+     **Note**: This will Create a Protection group, Deploy a recovery instance and then configure it to boot using iSCSI target from the DR-SRN disk when ever Test-Failover/Failover is performed.  
+     **Note**: It may take some time for the PG to be deployed.
+   
+   10. If the Windows LRA agent has not been installed. Please make sure to install it on the production VM during a maintenance windows.   
+       Link to donwload agent: https://download.safehaven.ctl.io/SH-5.0.1/safehaven_windows_driver-5.0.1.exe   
+       **Note**: Agent Installation triggers a reboot of the production  VM.
+     
+   11. If **pre-deployed proxy recovery server** was selected while creating the PG, and the server has not been configured for iscsi boot, then:   
+       a. Right click the **Protection group** that was just created.  
+       b. Go to **Intallation** > **Install SafeHaven makestub**.  
+       c. Verify the Protectiongroup name , and click **Next**.  
+       d. Enter the root password of the VM.  
+       e. Check all the boxes.  
+       f. Click **Next**.
+       This will configure the recovery server to boot using iSCSI off the disks of the DR-SRN when a test-failover/failover operation is initiated.
+       
+  
+### Manually Start Replication
+**Note**: This step is only required if **Windows LRA Agent** was not insalled automatially during the creation of the Protection group
 
-If Automatic deployment of the new recovery proxy instance is selected:
+1. Log into the Windows production VM.  
+2. Verify that the SafeHaven Agent has already been installed. If not then please install the SafeHaven Agent. **Requires reboot**
+   Download link for the Agent: https://download.safehaven.ctl.io/SH-5.0.1/safehaven_windows_driver-5.0.1.exe
 
-a. Select a Parent Hardware Group.
-b. Enter a Stub Group Name if required.
-c. Select Linux as the OS base for all the Stub machines
-d. Enter an Alias(maximum 6 characters) for the Recovery Server.
-e. Select a Proxy Template
-Note : Make sure that the Template you select has the same NIC and PCI slot number as the production/source VM.
-f. Select the Installed OS on Production Server.
-g. In front of "Connect all the server to", select the DR vlan. The Recovery instance will be deployed in this particular vlan.
-h. Enter the administrator(or root) password that you want to be set on the Recovery server.
-Click Next.
+3. After reboot, click on **Start**, find and launch the SafeHaven **Manager.exe**.
 
-OR
+4. Select the default options on the first screen of the wizard (all boxes checked) and click **Next**.
 
-If pre-deployed proxy recovery server is selected:
+5. Verify the NIC type and PCI slot number. Click **Next**
 
-a. Select the Recovery server instance from the Recovery Datacenter.
-Click Next.
-b. Under Mapping, click on select and select the right recovery instance after clicking on down arrow.
-Click Next.
+6. Enter the **Local iSCSI IP address of Production SRN** in front of **Target Portal IP Address** and click **Discover**. Select the appropriate ISCSI target to connect from the ISCSI target list.  
+   Click **Connect**, then select **Next**.
 
-Enter a Protection Group Name. Click on the VM name. Click Add Disk on the right to the VM. Expand the VM to see the disks attached to it. Select a disk and click on Resize Disk to change the size of the disk. Make sure that the disk layout of the VM matches the production VM. Click Next.
+5. A new window appears which provides the mapping from source(VMDK on production server) to destination disk(ISCSI on the SRN) along with the recommended Sync Rate, accept the default option and click **Next**.  
+   **NOTE**: Please make sure each production virtual disk you want to protect is mapped to a corresponding iSCSI target destination disk. **The size of the source and destination disk must match**.
 
-SafeHaven supports two types of protection types. Select a Protection type: Local Replica : 125% of total production VM's storage on the local SRN and 125% on the DR SRN. Local Cache : 10% of total production VM's storage on the local SRN and 125% on the DR SRN.
-Please click here for more information on difference between local cache and local replica
+6. Enter the IP configuration of the recovery server. Do not use DHCP. Click **Next**.
 
-If you selected Local Replica:
-
-If you selected Local Replica:
-Under Production Data Center, Select a primary storage pool and checkpoint storage pool. It is completly fine to use the same pool for both primary storage and checkpoint storage.
-Under Recovery Data Center, select Primary storage pool and checkpoints storage pool.
-
-If you selected Local Cache. Under Production Data Center, Select a local cache storage pool Under Recovery Data Center, select Primary storage pool and checkpoints storage pool. It is completly fine to use the same pool for both primary storage and checkpoint storage.
-Click Next
-
-Check Automatically Install Windows LRA if you want the SafeHaven Agent to be automatically installed on the production/source VM.
-
-Note: Automatic Installation requires a reboot of the production server. It is advised to use this option only during maintenance window.
-
-Leave the box unchecked if automatic installation is not required.
-Click Finish.
-Note: This will Create a Protection group, Deploy a recovery instance and then configure it to boot using iSCSI target from the DR-SRN disk when ever Test-Failover/Failover is performed.
-Note: It may take some time for the PG to be deployed.
-
-If the Windows LRA agent has not been installed. Please make sure to install it on the production VM during a maintenance windows.
-Link to donwload agent: https://download.safehaven.ctl.io/SH-5.0.1/safehaven_windows_driver-5.0.1.exe
-Note: Agent Installation triggers a reboot of the production VM.
-
-If pre-deployed proxy recovery server was selected while creating the PG, and the server has not been configured for iscsi boot, then:
-a. Right click the Protection group that was just created.
-b. Go to Intallation > Install SafeHaven makestub.
-c. Verify the Protectiongroup name , and click Next.
-d. Enter the root password of the VM.
-e. Check all the boxes.
-f. Click Next. This will configure the recovery server to boot using iSCSI off the disks of the DR-SRN when a test-failover/failover operation is initiated.
-
-Manually Start Replication
-Note: This step is only required if Windows LRA Agent was not insalled automatially during the creation of the Protection group
-
-Log into the Windows production VM.
-
-Verify that the SafeHaven Agent has already been installed. If not then please install the SafeHaven Agent. Requires reboot Download link for the Agent: https://download.safehaven.ctl.io/SH-5.0.1/safehaven_windows_driver-5.0.1.exe
-
-After reboot, click on Start, find and launch the SafeHaven Manager.exe.
-
-Select the default options on the first screen of the wizard (all boxes checked) and click Next.
-
-Verify the NIC type and PCI slot number. Click Next
-
-Enter the Local iSCSI IP address of Production SRN in front of Target Portal IP Address and click Discover. Select the appropriate ISCSI target to connect from the ISCSI target list.
-Click Connect, then select Next.
-
-A new window appears which provides the mapping from source(VMDK on production server) to destination disk(ISCSI on the SRN) along with the recommended Sync Rate, accept the default option and click Next.
-NOTE: Please make sure each production virtual disk you want to protect is mapped to a corresponding iSCSI target destination disk. The size of the source and destination disk must match.
-
-Enter the IP configuration of the recovery server. Do not use DHCP. Click Next.
-
-Click Finish to end the wizard.
+7. Click **Finish** to end the wizard.
 
 The initial replication of the production windows VM will start now. Close the command prompt window if required.
