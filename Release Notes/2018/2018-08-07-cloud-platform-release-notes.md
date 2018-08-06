@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-## Enhancements (3)
+## Enhancements (5)
 
 ### [Cloud Application Manager](/cloud-application-manager/)
 
@@ -25,3 +25,25 @@ Application Lifecycle Management now supports integration with the ITSM product 
 ##### Support for Azure Availability Sets
 
 Application Lifecycle Management now supports enabling high availability in Microsoft Azure deployment policies with more than one machine. Once you increase the number of instances (machines) that a Microsoft Azure deployment policy will provision to a value higher than one in the UI, a new toggle appears below that allows you to enable High availability. When you enable this option and deploy an instance with this policy, Application Lifecycle Management will make use of Microsoft Azure Availability Sets to provide the high availability requirement.
+
+#### [Managed Services Anywhere](/cloud-application-manager/managed-services-anywhere/)
+
+##### Watcher Agent Dashboards now Live!
+
+Cloud Application Manager customers can now see the metric data collected by the Watcher agent on the new dashboard landing page. Information about their VM’s OS and Applications can be viewed in an easy-to-read dashboard.
+
+Product highlights include:
+
+* Users will be able to list & switch between their agents within a Workspace.
+* With a single click, each individual metric graph on the dashboard will allow the user to do a deep dive on our more detailed graph page.
+
+##### Support for Edge Gateway on CPC on vCF
+
+CenturyLink Private Cloud on vCloud Foundation (CPC on vCF) customers’ Edge Gateways can now be monitored and managed via Managed Services Anywhere
+
+Watcher Monitors coming soon:
+
+* Edge Gateway Load Balancer
+* Edge Gateway Load Balancer Pools
+* Edge Gateway Load Balancer Pool Members
+* Edge Gateway VPN
