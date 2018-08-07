@@ -7,7 +7,10 @@
 }}}
 
 <p>All changes performed by CenturyLink Cloud&nbsp;will be done in compliance with the following criteria:</p>
-<p>All of the change types listed below can be performed as an emergency change where maintenance needs to be performed immediately. In these abnormal situations, no customer notification in required.</p>
+
+<p>1. All Network changes will be performed outside of local datacenter time of 8:00am to 5:00pm Monday through Friday, to provide greater network stability during core business hours. The exception is for break/fix work during an Urgent Incident or in extreme circumstances.</p>
+
+<p>2. All of the change types listed below can be performed as an emergency change where maintenance needs to be performed immediately except where it conflicts with section 1 above. In these abnormal situations, no customer notification is required.</p>
 
 <table>
   <tbody>

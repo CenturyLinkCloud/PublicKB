@@ -17,17 +17,24 @@ CenturyLink has created multiple opportunities for software vendors to integrate
 
 *The endpoint for the* ```/saas-usage/``` *is not published in this article for security reasons. Your organization will be provided documentation for the endpoint & expected JSON payload during onboarding*
 
-##### Provision Account
+##### Dependencies 
 
-The CenturyLink Cloud Marketplace will provide the user interface & collect the information that is required to provision an account on your platform. However, we do not collect Private Card Information (PCI) on your behalf.
+To build out the APIs, the SKUs must be created. The process for SKU creation is as follows:
+* Provider submits pricing information to Marketplace team representative. 
+* Marketplace team representative formats the SKUs and submits them to the CenturyLink Platform billing team to create the SKUs in staging. 
+* Once created the Marketplace team representative will assign the SKUs to the provider's alias and associated products in the Provider Portal.
+* Provider can then use the SKUs to build out the API calls.
 
-You will be able to specify which data points are displayed to your perspective buyer, as well as which are required for them to complete.  This is done through the [Product Provisioning Configuration](software-as-a-service-product-provisioning.md). In addition to the user input, as configured, CenturyLink will provide the following fields which your API client must tie to the customer for recording usage-based product SKUs (see below) in the future:
+
+##### Deploy Software or Services
+
+The CenturyLink Cloud Marketplace will provide the user interface & collect the information that is required to deploy the software or services to an account on your platform. However, we do not collect Private Card Information (PCI) on your behalf.
+
+You will be able to specify which data points are displayed to your perspective buyer, as well as which are required for them to complete.  This is done through the [Product Deployment Configuration](software-as-a-service-product-provisioning.md). In addition to the user input, as configured, CenturyLink will provide the following fields which your API client must tie to the customer for recording usage-based product SKUs (see below) in the future:
 
 * **provisioningId** - String - Unique identifier (GUID) of the provisioning event
 * **productSkus** - Array of strings - provisioned product SKU ids
 * **productId** - int - marketplace product id
-
-We understand that there will be a need for variability with the API names among our providers but would prefer the following scheme when possible: ```/provider-name-provision-account/```.
 
 The parameters will be passed via a JSON payload. The exact JSON message will vary between providers. We've provided an example below.
 
@@ -37,23 +44,74 @@ The parameters will be passed via a JSON payload. The exact JSON message will va
   "productSkus": ["MRKTPLC-PROVIDER-NAME-PRODCT-NAME"],
   "productId": 123,
   "name": "some customer",
-  "email": "customer-email-address@customoredomain.com"
+  "email": "customer-email-address@customerDomain.com"
 }
 ```
 
 The status codes your API will need to return are:
 
-* 200 - Account Provisioning Successful (CustomerID from your platform to be returned)
-* 40x - Account Provisioning Failure
+* 200 - Success (CustomerID from your platform to be returned)
+* 40x - Invalid inputs - The error message (body or string) will be displayed to the user
+* 50x - Server Side Error - A generic error message will be displayed to the user
+
+**Note**
+
+Return payload to CenturyLink upon completed registration must return the customerId: 
+
+```
+{ “customerId”: “YOUR-CUSTOMERID-STRING” }  
+```
+
+YOUR-CUSTOMERID-STRING can be a number, but you must pass it as a string.
+While customerId is the only required field, you can return any other information you wish.
+All returned data will be stored for future reference.
+
+##### Delayed Billing Start
+
+Some providers require manual work before a customer begins use of the products.  To accommodate this, we have implemented delayed billing options, available for each defined SKU.  The options are to start billing immediately, at a specified time, or manually.  Most SKUs will start billing immediately (upon the customer purchase).
+
+SKUs with a delayed timeframe (e.g. 3 days or 1 week), will automatically start billing at the scheduled time.  You will be able to update the scheduled time through the provider portal in case you experience delays.
+
+SKUs implementing the manual start billing option will not start billing until you report the software or service has been started for the customer.  You can report this manually through the provider portal, within the **Deployments** tab, or by making an API call, detailed below.  You may also include SKUs that were set to start billing at a specified time.
+
+*The full endpoint for the* ```/start-billing/``` *API is not published in this article for security reasons. Your organization will be provided documentation for the endpoint during onboarding*
+
+The elements passed to the ```/start-billing/``` API must include the following items:
+
+* **providerKey** - String - Your unique identifier, provided by CenturyLink.
+* **customerid** - String - The ID assigned to the customer from your organization, returned by your API in the provisioning API call.
+* **provisioningId** - String - Unique identifier (GUID) of the provisioning event
+* **productId** - int - The product id for the product in the CenturyLink Cloud Marketplace. This is provided in the provisioning API call.
+* **productSkus** - Array - A list of SKUs for which to start billing.
+
+An example JSON payload the ```/start-billing/``` API is provided below.
+
+```
+{
+  "providerKey": "SOME-UNIQUE-IDENTIFIER",
+  "customerId": "1234",
+  "provisioningId": "9ddz0a5e-f2d5-6eb5-89b9-7a42d0fbb836",
+  "productId": 123,
+  "productSkus": [
+    "MRKTPLC-PROVIDER-NAME-PRODCT-NAME-1",
+    "MRKTPLC-PROVIDER-NAME-PRODCT-NAME-2"
+  ]
+}
+```
+
+```/start-billing/``` will return the following status codes.
+
+* 200 - Billing has started for the given product SKUs.
+* 40x - Invalid Input - provisioningId, customerId, providerKey, productId, and productSkus required.  productId must be an integer
 * 50x - Server Side Error
 
 ##### Usage-Based Product SKUs
 
-*The full endpoint for the* ```/saas-usage/``` *is not published in this article for security reasons. Your organization will be provided documentation for the endpoint during onboarding*
-
 Some of your products may include [Usage-based billing](usage-based-billing.md).  Upon provisioning, you are required to track each customer's usage and report it to CenturyLink by the end of each month.  You may report usage for a customer at any time during the month, but keep in mind that every usage report sent is added to the customer's billing.  As such, it is **highly recommended** that you send a single month's usage at the end of each month for each customer.
 
 The cutoff time to bill the customer for the current month is 3:45pm (CST) on the last day of each month.  Any usages reported after 6:00pm (CST) on the last day of the month will be applied to the next month's bill for the customer.  To allow time for processing, Please do not send usage reporting between 3:45pm (CST) and 6:00pm (CST) on the last day of the month.  
+
+*The full endpoint for the* ```/saas-usage/``` *is not published in this article for security reasons. Your organization will be provided documentation for the endpoint during onboarding*
 
 The elements passed to the ```/saas-usage/``` API must include the following items:
 
@@ -80,7 +138,7 @@ An example JSON payload the ```/saas-usage/``` API is provided below.
 ```/saas-usages/``` will return the following status codes.
 
 * 200 - Usage Successfully Added
-* 40x - Invalid Input - provisioningId, customerId, providerKey, productId, and productSku required.  usageCount must be a number
+* 40x - Invalid Input - provisioningId, customerId, providerKey, productId, and productSku required.  productId must be an integer and usageCount must be a number (float | decimal | integer)
 * 50x - Server Side Error
 
 ##### Software Termination

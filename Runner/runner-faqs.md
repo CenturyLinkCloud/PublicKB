@@ -1,6 +1,6 @@
 {{{
   "title": "FAQs: Runner",
-  "date": "04-27-2016",
+  "date": "06-29-2018",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -91,6 +91,10 @@ Query the status for your execution and then:
 **Q: Can I configure my Runner jobs to be executed in a schedule?**
 
 **A:** Yes you could schedule the jobs, please refer the API documentation for more details Job Schedule
+
+**Q: What timezone are Runner jobs executing in?**
+
+**A:** Runner jobs are configured to run relative to the timezone of the browser that's used to create them. If your browser leverages the timezone of the OS, and you're in the Pacific timezone, then the Runner jobs will be in PDT and so you'll want to account for that if you're setting up jobs against servers in other timezones.  
 
 **Q: My Job is still RUNNING, is there a way for me to check the tasks completed and their statuses?**
 

@@ -1,7 +1,7 @@
 {{{
   "title": "How do I get support for CenturyLink Cloud services?",
-  "date": "9-21-2016",
-  "author": "",
+  "date": "3-1-2018",
+  "author": "Justin Lentz",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true

@@ -12,14 +12,12 @@
 This guide provides a list of the Operating Systems and Control Portal actions that affect the power state of a server on the CenturyLink Cloud.
 
 ### Operating System Templates 64-Bit
-* CentOS 5
 * CentOS 6
 * Debian 6
 * Debian 7
 * RedHat Enterprise Linux 5
 * RedHat Enterprise Linux 6
 * RedHat Enterprise Linux 7
-* Ubuntu 12
 * Ubuntu 14
 * Ubuntu 16
 * Windows Server 2008 R2

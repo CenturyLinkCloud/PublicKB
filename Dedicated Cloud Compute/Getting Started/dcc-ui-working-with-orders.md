@@ -1,6 +1,6 @@
 {{{
-"title": "Dedicated Cloud Compute - Working with Orders",
-"date": "06-01-2017",
+"title": "Dedicated Cloud Compute &mdash; Working with Orders",
+"date": "05-08-2018",
 "author": "",
 "attachments": [],
 "related-products" : [],

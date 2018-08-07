@@ -9,27 +9,31 @@
 ### Description (goal/purpose)
 
 CenturyLink Cloud will default to having one Billing Account Number (BAN) per Hierarchy that is automatically generated upon signing up for the service. We do have the capability to separate Master and Sub-Accounts onto different BANs, if requested.
-- Sub-Accounts can be billed separately from their Master Account, and separate from each other
 
+* Sub-Accounts can be billed separately from their Master Account, and separate from each other
 
 ### Audience
 
-- Customers
+* Customers
 
 ### Prerequisites
-- There must be a Master and a Sub-Account within the same hierarchy, currently billing on the same invoice before making this request
+There must be a Master and a Sub-Account within the same hierarchy, currently billing on the same invoice before making this request
 
 
 ### Steps
 
-1. On the Knowledge Base Home Page click “Submit Support Request”
+1. On the Knowledge Base Home Page click “Submit Support Request” or email help@ctl.io. Include your PIN.
+
 2. In the Subject Line, please add “New BAN Request”
+
 3. In the Description, be sure to include the following information:
-  - The Sub Account Alias you would like to be associated to a New BAN
-  - Billing Address
-  - Billing contact
-  - Currency if other than USD
+    * The Sub Account Alias you would like to be associated to a New BAN
+    * Billing Address
+    * Billing contact
+    * Currency if other than USD
+
 4. Once you submit the ticket, you may get a response back with additional questions
+
 5. You will receive a response back to your ticket within 2-3 business days with your new BAN.
 
 ### FAQ

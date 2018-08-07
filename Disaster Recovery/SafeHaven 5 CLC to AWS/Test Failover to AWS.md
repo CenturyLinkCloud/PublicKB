@@ -39,6 +39,8 @@ While the Test Failover command is in effect, instances of the Protection Group 
 
 8. To remove the Test Failover instance, right click the protection group and click **Manage Instance**. Select the Instance you want to terminate and click **Delete**. This will shutdown and terminate the EC2 Instance.
 
+The procedure is same for CLC/VMWare/Manual sites as source datacenters.
+
 ### Video Tutorial
 <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rrBvCAI4HM4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>

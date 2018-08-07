@@ -1,13 +1,17 @@
 {{{
-  "title": "Master Article - CLC(Production) to AWS(DR) SafeHaven Setup",
+  "title": "Master Article - VMware(Production) to AWS(DR) SafeHaven Setup",
   "date": "12-27-2017",
   "author": "Mahima Kumar",
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 
 ### Article Overview
 This article explains how to setup SafeHaven at a high level and use SafeHaven for recovery with all the KB article links in order for VMware(Production) to AWS(DR) use case.
+
+### Prerequisites
+* **Network and Ports requirements** - There are certain ports which need to be allowed in between the Production and DR vlans for SafeHaven to work. Please click [**here for Safehaven 5 Network and Ports requirements**](../SafeHaven 5 General/SafeHaven-5.0-Network and Port Requirements.md)
 
 ### SafeHaven Setup and Recovery Workflow
 
@@ -17,44 +21,46 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 3. [Setup AWS for SafeHaven-5 using CloudFormation](../SafeHaven 5 General/Setup AWS for SafeHaven-5 using CloudFormation.md)
 
-4. [Create Production SRN in VMware]
+4. [Create Production SRN in vCenter](Create-Production-SRN-in-vCenter.md)
 
-5. [Create CMS in AWS]
+5. [Create CMS in AWS](../SafeHaven 5 CLC to AWS/Create CMS in AWS.md)
 
-6. [Create DR SRN in AWS]
+6. [Create DR SRN in AWS](../SafeHaven 5 CLC to AWS/Create DR SRN in AWS.md)
 
 7. [Create SafeHaven Cluster and Login to SafeHaven Console](../SafeHaven 5 CLC to AWS/Create SafeHaven Cluster and Login to SafeHaven Console.md)
 
-8. [Register Datacenters within SafeHaven Console]
+8. [Register Datacenters within SafeHaven Console](Register-vcenter-SafeHaven Console.md)
 
-9. [Register SRN within SafeHaven Console]
+9. [Register SRN within SafeHaven Console](../SafeHaven 5 CLC to AWS/Register SRN within SafeHaven Console.md)
 
-10. [Add SRN Peer]
+10. [Add SRN Peer](../SafeHaven 5 CLC to AWS/Add SRN Peer.md)
 
-11. [Add and Claim Storage on Production SRN in CenturyLink Cloud]
+11. [Add and Claim Storage on Production SRN in VMWare vCenter](Add-and-Claim-Storage-on-Production-SRN-vmware.md)
 
-12. [Create Windows Protection Group,Install LRA and Start Replication]
+12. [Create Windows Protection Group,Install LRA and Start Replication](Create-Windows-PG-VMWare.md)
 
-    a. [Modify WAN Replication Rate and Check Replication Status]
+    a. [Modify WAN Replication Rate](../SafeHaven 5 CLC to AWS/Modify WAN Replication Rate.md)
+    
+    b. [Check Replication Status](../SafeHaven 5 CLC to AWS/Check Replication Status.md)
+    
+    c. [Configure Checkpoints](../SafeHaven 5 CLC to AWS/Configure Checkpoints.md)
 
-    b. [Configure Checkpoints]
+    d. [Create Manual Checkpoint](../SafeHaven 5 CLC to AWS/Create Manual Checkpoint.md)
 
-    c. [Create Manual Checkpoint]
-
-13. [Create Linux Protection Group]
+13. [Create Linux Protection Group](Create-Linux-Protection-Group-vcenter.md)
 	
-    a. [Install Scripts and Start Replication for Linux Protection Group]
+    a. [Install Scripts and Start Replication for Linux Protection Group](../SafeHaven 5 CLC to AWS/Install Scripts and Start Replication for Linux Protection Group.md)
     
-    b. [Modify WAN Replication Rate]
+    b. [Modify WAN Replication Rate](../SafeHaven 5 CLC to AWS/Modify WAN Replication Rate.md)
     
-    c. [Configure Checkpoints]
+    c. [Configure Checkpoints](../SafeHaven 5 CLC to AWS/Configure Checkpoints.md)
 
-    d. [Create Manual Checkpoint]
+    d. [Create Manual Checkpoint](../SafeHaven 5 CLC to AWS/Create Manual Checkpoint.md) 
 
 14.  [Configure Email Alerts](../SafeHaven 5 CLC to AWS/Configure Email Alerts.md)
     
-15.  [Test Failover to AWS]
+15.  [Test Failover to AWS](../SafeHaven 5 CLC to AWS/Test Failover to AWS.md)
  
-16.  [Failover to AWS]
+16.  [Failover to AWS](../SafeHaven 5 CLC to AWS/Failover to AWS.md)
 
-17. [AWS Statistics]
+17. [AWS Statistics](../SafeHaven 5 CLC to AWS/AWS Statistics.md)

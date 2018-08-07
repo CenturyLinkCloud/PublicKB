@@ -53,7 +53,7 @@ The following provides steps to get started:
    * To access the agent directly, connect to your server, launch a browser, navigate to `http://localhost:15915`, and view the [Agent Security KB](sbs-agent-security.md) to obtain credentials.
    * Alternatively, you can also [configure the agent for remote access](sbs-agent-security.md) and connect to the agent from your local computer browser if you have a VPN configured to connect into your servers; the address would be `http://<your servers IP address>:15915` (e.g., `http://10.11.12.13:15915`).
    * [Installing RDP for Linux](linux-rdp.md) also enables agent access.
-   * For Linux, a local firewall will need to be opened by executing the following commands:
+   * For Linux, a local firewall may need to be opened. That should be able to be accomplished by executing the following commands:
 
    ```
    firewall-cmd --permanent --add-port=15915/tcp

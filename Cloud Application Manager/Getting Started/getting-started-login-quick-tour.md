@@ -49,6 +49,8 @@ When you log in, the top navigation bar guides you to the main areas of Cloud Ap
 * Instances
 * Boxes
 * Providers
+* Catalog
+* Activity
 * Your Account
 * Help
 
@@ -70,7 +72,7 @@ ___
 
 ![getting-started-login-3.png](../../images/cloud-application-manager/getting-started-login-3.png)
 
-* Click **New Instance** to launch instances of boxes to a provider environment in the public or private cloud.
+* Click **New** to launch instances of boxes to a provider environment in the public or private cloud.
 * Manage instances you’ve [launched](../Deploying Anywhere/deploying-managing-instances.md) through the web interface, the API, or on [any infrastructure using the Cloud Application Manager agent](../Deploying Anywhere/deploying-on-anyinfra.md). Here you can quickly [manage the lifecycle](../Deploying Anywhere/deploying-managing-instances.md) of several instances from the Bulk Actions menu or handle them individually from the gear menu.
 * Find an instance by searching any part of its name, or click filtered views of instances you launched or that were shared with you. Or locate them by tags.
 
@@ -94,9 +96,29 @@ ___
 
 ![getting-started-login-5.png](../../images/cloud-application-manager/getting-started-login-5.png)
 
-* Connect to a provider to orchestrate deployments. Click **New Provider** to add AWS, Azure, vSphere, Google Cloud, OpenStack, or CloudStack.
+* Connect to a provider to orchestrate deployments. Click **New** to add AWS, Azure, vSphere, Google Cloud, OpenStack, or CloudStack.
 * Locate a provider through search or by type.
 * Sync or delete provider accounts using Bulk Actions.
+
+___
+
+**Catalog**
+
+![getting-started-login-9.png](../../images/cloud-application-manager/getting-started-login-9.png)
+
+* Shows you all the public boxes available for all users, categorized as **Featured, Managed Services, Services, Plugins** and **Other** to easily locate and deploy. 
+* There is a feature where you can request to publish one of your own boxes to the catalog. It will become available in the catalog for any user in one of the existing categories or a new one.
+
+
+___
+
+**Activity**
+
+![getting-started-login-10.png](../../images/cloud-application-manager/getting-started-login-10.png)
+
+* Allows you to see (based on your scope and permissions) all of the relevant activity that has occured in the platform, the type of event and the user that performed the event.
+* Filter through activity by type of event or switch between all activity or current scope.
+* Search by user name or action to narrow the results, or click on certain actions to navigate to the affected resource.
 
 ___
 

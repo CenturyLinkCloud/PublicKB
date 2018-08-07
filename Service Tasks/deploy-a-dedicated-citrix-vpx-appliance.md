@@ -1,6 +1,6 @@
 {{{
   "title": "Deploy a Dedicated Citrix VPX Appliance",
-  "date": "5-9-2017",
+  "date": "2-23-2018",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -36,7 +36,7 @@ In order to properly process your request to deploy Citrix VPX device(s) custome
 * The number of VIP's you'd like reserved in the network for load balancing. The support team can later reserve more via a ticket. Generally, our team will reserve 10 VIPs out of the box unless stated otherwise.
 * [Indicate which of the (6) dedicated load balancer types you wish to purchase.](http://www.ctl.io/load-balancing/#Pricing)
 * Indicate the Quantity of devices you wish to purchase.  **If you require Highly Available Load Balancers 2 units must be purchased.**
-* Indicate the VPX build version you wish to leverage:  10.5, 11 or 11.1
+* Indicate the VPX build version you wish to leverage:  10.5, 11, 11.1 or **12<sup>new!</sup>**
 * [Provide your pin](../Support/pin-authentication-for-support-requests.md)
 
 ### Accessing the VPX Appliance(s)

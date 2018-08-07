@@ -27,7 +27,7 @@ This article assumes that the user has already registered the SRN within the Saf
 
 4. Add required storage and **apply**. Wait for the job to complete.
 
-**NOTE**: There is no need to allocate storage for the SRN on AWS, depending on the size of your Protection Group SafeHaven will automatically create the EBS volumes to meet the requirements.
+**NOTE**: There is no need to allocate storage for the SRN in AWS or Azure, depending on the size of your Protection Group SafeHaven will automatically create the volumes to meet the requirements.
 
 ### Claim storage pool for CenturyLink Cloud Production SRN
 1. Once the storage has been attached to the SRN, the next step is to login to the **SafeHaven Console**.

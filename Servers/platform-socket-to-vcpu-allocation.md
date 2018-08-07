@@ -1,6 +1,6 @@
 {{{
   "title": "Platform Socket to vCPU Allocation",
-  "date": "12-14-2016",
+  "date": "2-20-2018",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
@@ -21,7 +21,4 @@ Number of vCPUs|Virtual Sockets|Cores per Sockets
 *and so on....*
 
 ### Licensing Impact
-Many vendors license and/or limit their applications and services based on any one of the **3** items above. For example, [Microsoft SQL Server 2016 limits](//msdn.microsoft.com/en-us/library/cc645993.aspx) **Standard Edition** to the lesser of 4 Sockets or 24 cores. Thus customers who want to leverage more than 4 vCPUs on CenturyLink Cloud would need to leverage **Enterprise Edition** which does not impose such limits. Customers should carefully review each vendors licensing terms against the delivery model used on CenturyLink Cloud to make sure they comply with those terms and are not procuring more compute than a product is capable of consuming.
-
-### Custom Configurations
-Customers can [Submit a Custom Request](../Support/submitting-custom-requests.md) if they require a unique Socket to vCPU ratio.  It is highly recommended by both VMware and CenturyLink to keep the default delivery model for optimal performance and self-service capabilities.  
+Many vendors license and/or limit their applications and services based on any one of the **3** items above. For example, [Microsoft SQL Server 2016 limits](//msdn.microsoft.com/en-us/library/cc645993.aspx) **Standard Edition** to the lesser of 4 Sockets or 24 cores. Customers who want to optimize their costs on CenturyLink Cloud should consider leveraging our [Relational DB for MSSQL service](https://www.ctl.io/relational-database/relational-db-mssql/) for larger compute configurations (> 4 vCPU). This service is designed and implemented in such a way that customers can leverage **Standard or Web Edition** licenses up to 16 vCPU **without** the need to procure **Enterprise Edition**. Customers who wish to deploy and manage their own MS SQL Server virtual machines and database platform will need to purchase **Enterprise Edition** to leverage more than 4 vCPUs on CenturyLink Cloud due to the socket to vCPU ratios above. Customers should carefully review each vendors licensing terms against the delivery model used on CenturyLink Cloud to make sure they comply with those terms and are not procuring more compute than a product is capable of consuming.

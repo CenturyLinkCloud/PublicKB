@@ -17,7 +17,7 @@ Sign into the [Provider Portal](https://provider-portal.ctl.io/#/login) using yo
 
 ### Provider Homepage
 
-Once logged in you will directed to your Provider Home page. The home page will have any message that the CenturyLink Marketplace team have sent you or have been created due to an error with a product deployment. There is also a Provider Workflow which is a dashboard that shows your company specific progress on onboarding tasks as well as product completion progress.
+Once logged in you will directed to your Provider Home page. The home page will have any messages that the CenturyLink Marketplace team has sent you or have been created due to an error with a product deployment. There is also a Provider Workflow which is a dashboard that shows your company-specific progress on onboarding tasks as well as product completion progress.
 You can hover over the pie charts on the dashboard for more information.
 
 ![EPP](../../images/EPPnew7.png)
@@ -62,7 +62,7 @@ The Products tab is where Providers can view, create, edit, add, and clone produ
 
 ### Deployments
 
-The Deployments tab is where Providers can review and download monthly reports for their active and non active products and subscriptions in the Marketplace. The Provider can also see deployment success or failure messages here. There are filters to allow the Provider to search by customer, product type, and month.
+The Deployments tab is where Providers can review and download monthly reports for their active and non-active products and subscriptions in the Marketplace. The Provider can also see deployment success or failure messages here. There are filters to allow the Provider to search by customer, product type, and month.
 
 ![EPP](../../images/EPPnew5.png)
 
