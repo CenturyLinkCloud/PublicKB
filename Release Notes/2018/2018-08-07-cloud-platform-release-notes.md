@@ -6,9 +6,9 @@
 "contentIsHTML": false
 }}}
 
-## Enhancements (5)
+### Enhancements (5)
 
-### [Cloud Application Manager](//www.ctl.io/cloud-application-manager/)
+#### [Cloud Application Manager](//www.ctl.io/cloud-application-manager/)
 
 #### [Cloud Optimization](//www.ctl.io/cloud-application-manager/cloud-optimization/)
 
