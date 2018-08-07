@@ -18,6 +18,7 @@ This is patch release based on [SafeHaven 5.1.0](SafeHaven5.1.0-Release-Notes.md
 - Introduce the Azure Statistics tab in the GUI
 - Allow the automatically LRA installation using a non-Administrator username
 - Fixed power operation bug in failback
+- Fixed a bug where changes to email configuration is not effective until the CMS manager service is restarted 
 
 
 ### Upgrade Path
