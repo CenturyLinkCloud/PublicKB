@@ -53,7 +53,11 @@ You need an Microsoft Azure subscription to be able to consume Azure services. F
     * Read and write all users' full profiles _(User.ReadWrite.All)_
     * Read and write directory data _(Directory.ReadWrite.All)_
 
-    Then click **Done** and **Grant permissions** to apply them to your application.
+    Then click **Save**.
+    Now click on **Add > Windows Azure Active Directory** and select the following **Application** permission:
+    * Read and write directory data _(Directory.ReadWrite.All)_
+
+    Then click **Save** and **Grant permissions** to apply them to your application.
 
 8. Navigate to *Subscriptions* panel.
 9. In the *Overview* tab an **Subscription ID** is listed.  Copy and take note of this value for later.
@@ -66,7 +70,7 @@ You need an Microsoft Azure subscription to be able to consume Azure services. F
     * *Microsoft.Compute*
     * *Microsoft.Network*
     * *Microsoft.Storage*
-    
+
     For more information, please refer to [Azure help](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services#portal)
 13. Return to the *Azure Active Directory* panel, select *App Registrations* then *CenturyLink-CAM* then *Settings* and finally *Keys*.
 14. Set a Key with the following values:
