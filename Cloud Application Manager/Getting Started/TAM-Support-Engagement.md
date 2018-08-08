@@ -8,7 +8,7 @@
 
 ### TAM Assignment
 
-All Cloud Application Manager customers are subject to a **Primary** TAM which means that a TAM will be **assigned to the account**, and a pool of TAM’s are available to assist if that primary is not available.  The TAM’s are available 8am-5pm PST as a part of the standard TAM resource in either the Platform Advisory Support or Managed Services Anywhere capabilities in Cloud Application Manager.  At any time, a customer can upgrade their TAM to a Designated or Dedicated resource (for an additional cost) which is always assigned to the account.  An Advanced Managed Services upgrade can be used to get a Designated or Dedicated TAM.
+All Cloud Application Manager customers are subject to a **Primary** TAM which means that a TAM will be **assigned to the account**, and a pool of TAM’s are available to assist if that primary is not available.  The TAM’s are available 8am-5pm CST as a part of the standard TAM resource in either the Platform Advisory Support or Managed Services Anywhere capabilities in Cloud Application Manager.  At any time, a customer can upgrade their TAM to a Designated or Dedicated resource (for an additional cost) which is always assigned to the account.  An Advanced Managed Services upgrade can be used to get a Designated or Dedicated TAM.
 
 The following process is used to have a TAM assigned to the account:
 * Once a quote is signed and the order is booked (managed by the sales professional), the Technical Account Management team is notified, and a TAM is identified 
@@ -43,7 +43,7 @@ The support desk will escalate the information to the Primary TAM and transfer t
 ### Getting the TAM
 In order to reach a TAM, users can use either of the following methods:
 
-1.	Open Ticket via **phone** or **email** (see above)
+1.	**Call** the CenturyLink Global Operations Center at 888-638-6771, and you will be **transferred to your primary TAM.**
 
 2.	**Create Ticket in Cloud Application Manager** directly (see Create Ticket above)
-Submit your request via Managed Services Portal https://managedservices.ctl.io/msp/login or contact the CRC per the above instructions.
+Submit your request via Managed Services Portal https://managedservices.ctl.io/msp/login and your primary TAM will contact you.

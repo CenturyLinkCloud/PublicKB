@@ -19,6 +19,7 @@ This article assumes that:
 2. Both production and recovery SRNs have been registered and peered
 3. Storage on both SRNs is added and claimed.
 
+
 ### Create Recovery Server
 A recovery server boots off of disks of the DR SRN when a test failover/ failover operation is issued. 
 1. Go to Centurylink Cloud Portal.
@@ -35,6 +36,7 @@ A recovery server boots off of disks of the DR SRN when a test failover/ failove
    Enter the **Name** of the server.  
    Provide a **description** for the server.  
 
+
 ### Create a Linux Protection Group
 1. Right click on the **Production SRN** and click **Create Protection Group**.
 
@@ -46,22 +48,24 @@ A recovery server boots off of disks of the DR SRN when a test failover/ failove
 
    **NOTE**: Only one Linux server can be selected per Protection Group.
 
-5. a. **Select** the Recovery server instance from the Recovery Datacenter.  
+4. a. **Select** the Recovery server instance from the Recovery Datacenter.  
       Click **Next**.  
    b. Under **Mapping**, click on **select** and select the right recovery instance after clicking on down arrow.  
       Click **Next**.  
     
-6. Enter a **Protection Group Name**.
+5. Enter a **Protection Group Name**.
    Click on the VM name. Click **Add Disk** on the right to the VM. 
    Expand the VM to see the disks attached to it.
    Select a disk and click on **Resize Disk** to change the size of the disk.
    Make sure that the disk layout of the VM matches the production VM.
    Click **Next**.
    
-7. If you selected **Local Replica**:  
+6. If you selected **Local Replica**:  
    Under **Production Data Center**, Select a **primary storage pool** and **checkpoint storage pool**. It is completly fine to use the same pool for both primary storage and checkpoint storage.  
    Under **Recovery Data Center**, select **Primary storage pool** and **checkpoints storage pool**. 
    Click **Next**
-8. Click **Finish**.
+7. Click **Finish**.
 
 **Note**: It may take a few minutes for the the protection group to be created.
+
+

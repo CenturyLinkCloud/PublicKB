@@ -101,10 +101,10 @@ To request a trial, use the following process:
 5. You will receive a confirmation email from the CenturyLink Cloud team confirming the trial has been setup for the customer.
 
 ### Tips for Where to Set up a Trial in Your Hierarchy
-It’s best to place your Trial Subaccount where it will ultimately reside in the hierarchy as a billable account. This helps the Partner avoid having to delete and rebuild the customer's infrastructure at the end of the trial. 
+It’s best to place your Trial Subaccount where it will ultimately reside in the hierarchy as a billable account. This helps the Partner avoid having to delete and rebuild the customer's infrastructure at the end of the trial.
 
-###Monitor the Trial 
-Partners should work closely with the prospect and monitor the status of their trials. This will improve the customer experience and increase the chance of that prospect becoming a billable customer. This is important as you’ll be able to monitor how the customer is using the trial, answer questions that arise, and insure there are no surprises if the prospect uses the entire trial credit amount. 
+###Monitor the Trial
+Partners should work closely with the prospect and monitor the status of their trials. This will improve the customer experience and increase the chance of that prospect becoming a billable customer. This is important as you’ll be able to monitor how the customer is using the trial, answer questions that arise, and insure there are no surprises if the prospect uses the entire trial credit amount.
 
 After the credit amount is depleted, CenturyLink starts billing you (the Partner) for your customer’s usage. When a trial is created, an Account Alias is also created
 
@@ -117,5 +117,5 @@ The customer account will be removed from the Control Portal by CenturyCloud Tea
 The Service Catalog allows Account Administrators to enable or disable certain cloud platform services for users of the account. It also allows certain services to be enabled or disabled for individual sub accounts.
 
 ### Learn More
-* [How to Use the Service Catalog](../General/getting-started-with-the-service-catalog.md)
-* [Service Catalog FAQ](../General/service-catalog-faq.md)
+* [How to Use the Service Catalog](../General/CenturyLinkCloud/getting-started-with-the-service-catalog.md)
+* [Service Catalog FAQ](../General/CenturyLinkCloud/service-catalog-faq.md)

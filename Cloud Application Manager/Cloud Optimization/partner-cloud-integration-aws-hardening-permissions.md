@@ -1,7 +1,7 @@
 {{{
   "title": "Partner Cloud Integration: CenturyLink Permissions and Access for Optimized AWS Accounts",
-  "date": "05-07-2018",
-  "author": "Ben Swoboda",
+  "date": "06-29-2018",
+  "author": "Kevin Quaintance",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -15,6 +15,8 @@ As discussed in the [Service Guide](https://www.ctl.io/legal/cloud-application-m
 Account users that have or are considering CenturyLink Optimization of AWS Accounts. This is for all new AWS accounts created through Cloud Application Manager and any existing account moving into CenturyLink's care.
 
 ### Prerequisites
+
+*NOTE:* To facilitate the hardening process, the customer must enable the "CTLDeveloperRole".  Once this is enabled, the hardening process will configure the remaining roles below.
 
 For a new AWS Account:
 * The customer must have reviewed the process for creating a [new Amazon Web Services account](partner-cloud-integration-aws-new.md)
@@ -30,7 +32,7 @@ For an existing AWS Account:
 
 CenturyLink does not provide root level access for any account. Root access should be avoided unless absolutely necessary for both Master Payer accounts owned by CenturyLink and any linked account owned by the customer.
 
-For existing accounts, the Customer administrator is asked to set up Multi-Factor Authentication (MFA) access after configuration and keep their key in a secure location. Customers are also asked never to log in with root account access.
+Customers with existing accounts are asked to deliver root account credentials to CenturyLink per the Service Guide. This includes root email, root password, and MFA’s secret configuration key. You may continue to use your IAM credentials.
 
 For Master Payers and new accounts created through Cloud Application Manager, MFA access is set up after account configuration is complete. The key is kept in an encrypted vault within a domain separated from the main CenturyLink domain.
 
@@ -87,7 +89,7 @@ All policies summarized in this document result from intensive consultation with
 * **Role Name**: CTLCAMRole
 * **Targeted groups/tools/users**: Cloud Application Manager, Monitoring Service
 * **Intent**: To permit Cloud Application Manager's [application lifecycle management (ALM)](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) capabilities and to enable [Monitoring](../Monitoring/CAMMonitoringUI.md).
-* **Change Requests**: While this policy is applied by default, [the standard CAM policy](../Deploying Anywhere/using-your-aws-account.md) is intended to be customizable. If you would like to alter the ALM capabilities of Cloud Application Manager, please submit a ticket describing the policy you wish to apply.
+* **Change Requests**: While this policy is applied by default, [the standard CAM policy](../Deploying Anywhere/using-your-aws-account.md) is intended to be customizable. If you would like to alter the ALM capabilities of Cloud Application Manager, you may create custom policies under the "CAMOverridePolicy".
 * **Policy Summary**
   - All the ability to manipulate resources as described [here](../Deploying Anywhere/using-your-aws-account.md)
   - Allows governance for all EC2 functions

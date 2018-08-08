@@ -49,6 +49,9 @@ Your OVF must meet the following requirements to be imported successfully.
 #### Specific Requirements for Red Hat 7 64-Bit OVFs
 - Ensure Consistent Network Device Naming is enabled.
 
+#### Specific Requirements for CentOS OVFs
+- Ensure the network interface configuration follows the RHEL convention of "ens160", "ens162" etc, for compatibility with our platform automation controls (cloning, network changes, etc).
+
 ### Other Notes
 - In addition, the import function will enable the following capabilities if they are not available on your OVF image:
   - For Windows: PSEXEC must not be firewalled. PS Remoting is enabled. WinRM is enabled.

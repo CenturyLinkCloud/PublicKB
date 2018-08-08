@@ -25,13 +25,15 @@ This article assumes that:
 
 ### Create a Windows Protection Group
 1. Right click on the **Production SRN** and select **Create Protection Group**.
+ 
 
 **NOTE**: Always start the Protection Group creation from the Production SRN.
 
-2. Select the **Remote SRN** and click **Start Wizard**.  
+2. Select the **Recovery SRN**, and click **Start Wizard**.  
 
 3. **Select the servers** from the production datacenter that you want to include in the Protection Group.  Remember that it is perfectly acceptable to select just one server for inclusion in the Protection Group. Click **Next**.  
 **NOTE**: VSS Checkpoints are not available if you select multiple Windows to create a single Protection Group.
+
 
 4. Select Automatically Deploy and Configure New recovery Proxy Servers. or Select Use pre-deployed proxy recovery server , if the recovery server has already been deployed
 
@@ -88,7 +90,7 @@ This article assumes that:
      **Note**: It may take some time for the PG to be deployed.
    
    10. If the Windows LRA agent has not been installed. Please make sure to install it on the production VM during a maintenance windows.   
-       Link to donwload agent: https://download.safehaven.ctl.io/SH-5.0.1/safehaven_windows_driver-5.0.1.exe   
+       Link to donwload agent: https://download.safehaven.ctl.io/SH-5.1.1/safehaven_windows_driver-5.1.1.exe   
        **Note**: Agent Installation triggers a reboot of the production  VM.
      
    11. If **pre-deployed proxy recovery server** was selected while creating the PG, and the server has not been configured for iscsi boot, then:   
@@ -106,7 +108,7 @@ This article assumes that:
 
 1. Log into the Windows production VM.  
 2. Verify that the SafeHaven Agent has already been installed. If not then please install the SafeHaven Agent. **Requires reboot**
-   Download link for the Agent: https://download.safehaven.ctl.io/SH-5.0.1/safehaven_windows_driver-5.0.1.exe
+   Download link for the Agent:https://download.safehaven.ctl.io/SH-5.1.1/safehaven_windows_driver-5.1.1.exe
 
 3. After reboot, click on **Start**, find and launch the SafeHaven **Manager.exe**.
 
@@ -115,13 +117,15 @@ This article assumes that:
 5. Verify the NIC type and PCI slot number. Click **Next**
 
 6. Enter the **Local iSCSI IP address of Production SRN** in front of **Target Portal IP Address** and click **Discover**. Select the appropriate ISCSI target to connect from the ISCSI target list.  
+
    Click **Connect**, then select **Next**.
 
-5. A new window appears which provides the mapping from source(VMDK on production server) to destination disk(ISCSI on the SRN) along with the recommended Sync Rate, accept the default option and click **Next**.  
+7. A new window appears which provides the mapping from source(VMDK on production server) to destination disk(ISCSI on the SRN) along with the recommended Sync Rate, accept the default option and click **Next**.  
    **NOTE**: Please make sure each production virtual disk you want to protect is mapped to a corresponding iSCSI target destination disk. **The size of the source and destination disk must match**.
 
-6. Enter the IP configuration of the recovery server. Do not use DHCP. Click **Next**.
+8. Enter the IP configuration of the recovery server. Do not use DHCP. Click **Next**.
 
-7. Click **Finish** to end the wizard.
+
+9. Click **Finish** to end the wizard.
 
 The initial replication of the production windows VM will start now. Close the command prompt window if required.
