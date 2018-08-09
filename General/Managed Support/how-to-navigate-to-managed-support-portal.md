@@ -1,5 +1,5 @@
 {{{
-  "title": "Managed Support: How to Navigate to Managed Support Portal",
+  "title": "How to Navigate to Managed Support Portal",
   "date": "7-30-2018",
   "author": "Evan McNeill",
   "attachments": [],
@@ -16,7 +16,7 @@ As of **6/23/2018**, support functionality formerly accessible from SavvisStatio
 
 You can access the new support solution by clicking the ‘Support’ tab:
 
-  ![supportportalnavigation](../images/managedsupport/howtonavigatetosupportportal-1.png)
+  ![supportportalnavigation](../../images/managedsupport/howtonavigatetosupportportal-1.png)
 
 Clicking this link will direct you to the dashboard for the Support Portal.  Additionally, due to SavvisStations’ former abilities to view support information in other areas of the site, there are also other links and drilldowns that will redirect you to the Support Portal.  Some examples include:
 
@@ -33,7 +33,7 @@ Any linkable services to your Master Account will include a (?) icon in the head
 **Examples:**
 
 Private Cloud:
-  ![supportportalnavigation](../images/managedsupport/howtonavigatetosupportportal-2.png)
+  ![supportportalnavigation](../../images/managedsupport/howtonavigatetosupportportal-2.png)
 
 Manage My Account (Accessible via ‘Manage my Account’) under profile dropdowns:
-  ![supportportalnavigation](../images/managedsupport/howtonavigatetosupportportal-3.png)
+  ![supportportalnavigation](../../images/managedsupport/howtonavigatetosupportportal-3.png)
