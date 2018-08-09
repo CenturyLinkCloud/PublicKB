@@ -16,7 +16,6 @@ This article will walk you through some of the common issues, and what steps you
 Registration Issues|Steps to Resolve|
 :---|:---|
 I cannot click next on the password creation screen.|Ensure you are creating a valid password.  If the password is not valid, follow the on screen prompts to ensure the password meets all requirements.
-I did not receive the registration email with my token.|Check your spam or junk folders for the email.  Also, verify that your email provider is not blocking the email.  The registration email is sent from "noreply@ctl.io" with the subject "CenturyLink Email Validation Token".  If you are still unable to find the email with the token, [engage our customer care team for assistance.](#contacting-the-customer-care-team)
 I am constantly receiving session timeouts when trying to create a master account.|Remove all cookies in the browser you are trying to register with.  Then, manually opt-in by visiting this link [https://sso.ctl.io/oxauth/enableSso](https://sso.ctl.io/oxauth/enableSso).  Lastly, go back to the service, which should redirect you back to the master account screen and try to [create your master account again.](enhanced-security-master-account-registration.md)
 **Sign-In Issues**|**Steps to Resolve**
 I am unable to login.|Verify which account is being requested.  For Master Accounts, you will enter in your email first, then be taken to another screen to enter your password.  If you haven't linked an account for the service you are trying to access, you will be prompted to provide credentials for that service after logging into your master account.  This process is only needed once if you check the "link my account" button.  It will state "Account Linking" at the top.  The service being linked will be stated in the information tab below that.  In either scenario, you can reset your password by clicking the "Forgot your password" link below the login button.
@@ -25,6 +24,20 @@ Issues scanning the QR code for multi-factor.|Please review [this KB article reg
 **Account Linking Issues**|**Steps to Resolve**
 I am prompted to enter my SavvisStation/Private Cloud credentials every time even though I've logged in with a master account.|The first time you log into a service after creating a master account, you will need to enter in the credentials of that service to link the accounts.  When logging into the service, check the "link my account" button to create the link.  After this is done, you will no longer need to enter in the credentials of that service when logging in with your master account.  For more information regarding linking and unlinking accounts, [please review this KB article.](enhanced-security-linking-and-unlinking-accounts.md)
 I receive an error stating my username or password is incorrect when trying to link a service account.|You can reset your password by clicking the "Forgot Password" link located below the sign-in button.  If you are still receiving issues, you can [reach out to the Client Response Center for assistance.](#contacting-the-client-response-center)
+
+If the above issues did not help you, you can reach out to our support teams for assistance.
+
+### Email Issues
+When you are registering your master account for the first time you will be emailed a token.  This token allows us to verify that you have provided a valid email that you have access to.  When you are waiting for the token to be emailed, a button labeled "Where's my email" will be presented after 3 minutes.  Clicking this button will provide some information on where in the delivery process the email is.  Below, we review the different responses, and provide guidance around those responses. 
+
+The registration email is always sent from "noreply@ctl.io" with the subject "CenturyLink Email Validation Token".
+
+Where's my email response|Action to take|
+:---|:---|
+Emails may take up to 5 minutes to show in this report. Please try again.|We were unable to report the status of your email.  Email statuses are updated every 5 minutes.  Please wait 5 minutes, and try again.
+Email successfully sent at 'date/time'|Your email has been successfully sent, and we have not received a blocked or bounced reply from the receiving email server.  If you cannot find the email, please check your spam/junk folder or filters.  If you still cannot find the email, please provide the date, time, sender email and subject to your email administrator to diagnose.  Please note that a successfully sent email may still be rejected by the destination.  Once this happens, the status being reported from "Where's my email" will be updated.
+Email was bounced at 'date/time' due to 'reason'|The email was sent, but the receiving email server bounced the message.  Please ensure the email address you provided is correct, as an incorrect email address can cause this error.  If it is correct, please provide the date, time, sender email and subject to your email administrator to diagnose.
+Email was blocked at 'date/time' due to 'reason'|The email was sent, but the receiving email server blocked the message.  Please ensure the email address you provided is correct.  If it is correct, please provide the date, time, sender email and subject to your email administrator to diagnose.
 
 If the above issues did not help you, you can reach out to our support teams, detailed below.
 
@@ -36,13 +49,7 @@ The Client Response Center can assist you with issues regarding the following ap
 
 _Note: If you are unable to reach any of the above applications due to issues with your master account or multi-factor authentication, [contact the customer care team.](#contacting-the-customer-care-team)_
 
-If you are experiencing an issue with the above, there are two ways to open up a ticket with the Client Response Center.
-
-First, [you can open a ticket through the support site.](https://managedservices.ctl.io/msp/support/request)
-This will require that you log in with your master account and have at least one linked account.  
-For assistance with creating a ticket, [this video will step you through the process.](https://www.youtube.com/watch?v=CWauPgOe4Jg)
-
-Alternatively, if the issue you are facing doesn't allow you to open a ticket, you can send an email to incident@centurylink.com.  In the email, please provide details about what you are trying to accomplish and what error you are receiving.  You can also include screenshots of the error you are receiving in this email.  
+[If you are experiencing an issue with the above, please visit the Managed Services and Support page for contact instructions.](https://www.ctl.io/managed-services/support/)
 
 ### Contacting the Customer Care Team  
 The Customer Care team can assist with issues regarding the new Enhanced Security Master Account.  If you are experiencing an issue with this account, send an email to help@ctl.io with details about what you are trying to accomplish and what error you are receiving.  You can also include screenshots of the error you are receiving in this email.  
