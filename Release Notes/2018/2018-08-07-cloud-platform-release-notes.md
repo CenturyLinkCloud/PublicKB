@@ -14,7 +14,7 @@
 
 ##### Intra-Organization Adjustments
 
-More details of how CenturyLink distributes credits between Optimized AWS Accounts is now represented in Usage History. It represents pre-invoice adjustments for customers who would otherwise have a negative balance on a particular line item because of shifting RI discounts. For more detail, visit the [Knowledge Base](//www.ctl.io/knowledge-base//cloud-application-manager/cloud-optimization/partner-cloud-integration-detailed-billing-report/).
+More details of how CenturyLink distributes credits between Optimized AWS Accounts is now represented in Usage History. It represents pre-invoice adjustments for customers who would otherwise have a negative balance on a particular line item because of shifting RI discounts. For more detail, visit the [Knowledge Base](//www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-detailed-billing-report/).
 
 #### [Application Lifecycle Management](//www.ctl.io/cloud-application-manager/application-lifecycle-management/)
 
