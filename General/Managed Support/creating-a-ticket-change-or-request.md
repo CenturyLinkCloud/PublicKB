@@ -12,7 +12,7 @@ Creating your support tickets and changes have been refreshed for the [Support P
 
 ### Steps
 
-**1:** [Navigate to the Support Portal](how-to-navigate-to-managed-support-portal) and click Create on the left side navigation.
+**1:** [Navigate to the Support Portal](/how-to-navigate-to-managed-support-portal/) and click Create on the left side navigation.
 
   ![Create](../../images/managedsupport/Create-1.png)
 
