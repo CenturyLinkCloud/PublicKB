@@ -12,7 +12,7 @@ Templates for your devices can be created to bulk upload your devices to a ticke
 
 ### Steps
 
-1: [Navigate to the Support Portal](/how-to-navigate-to-managed-support-portal.md) and click Create on the left side navigation
+1: [Navigate to the Support Portal](../../../how-to-navigate-to-managed-support-portal.md) and click Create on the left side navigation
 
   ![devicetemplate](../../images/managedsupport/devicetemplate-1.png)
   
