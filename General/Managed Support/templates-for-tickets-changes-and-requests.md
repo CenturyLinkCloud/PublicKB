@@ -1,5 +1,5 @@
 {{{
-  "title": "Managed Support: Templates for Tickets, Changes, and Requests",
+  "title": "Templates for Tickets, Changes, and Requests",
   "date": "8-6-2018",
   "author": "Evan McNeill",
   "attachments": [],
