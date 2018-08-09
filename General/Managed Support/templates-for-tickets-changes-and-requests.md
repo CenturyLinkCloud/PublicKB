@@ -12,7 +12,7 @@ Templates for your tickets, changes, and request can be created to save form con
 
 ### Steps
 
-**1:** [Navigate to the Support Portal](how-to-navigate-to-managed-support-portal/) and click Create on the left side navigation
+**1:** [Navigate to the Support Portal](how-to-navigate-to-managed-support-portal.md) and click Create on the left side navigation
 
 ![Template](../../images/managedsupport/requesttemplate-1.png)
 
