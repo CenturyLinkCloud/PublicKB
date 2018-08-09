@@ -41,4 +41,3 @@ Creating your support tickets and changes have been refreshed for the [Support P
   ![Create](../../images/managedsupport/Create-4.png)
   
 At this time, you can click on this returned message and view your ticket.  If the message clears before you can click it, you can find your ticket by clicking Tickets > Open Tickets, or check the dashboard as it displays the most recently modified tickets.  For additional information, please see our guides for viewing or performing self-service on your tickets or changes.  Also see our guides for creating templates for your requests, as well as bulk uploading your devices.
- 
