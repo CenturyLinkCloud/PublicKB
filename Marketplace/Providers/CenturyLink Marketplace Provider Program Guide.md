@@ -21,8 +21,8 @@ By integrating their technology into the CenturyLink Marketplace, our technology
 
 **Streamlined Product Delivery**
 
-The Marketplace offers options for providers to choose the best route to integrate into the Marketplace based on their product technology. Providers can learn more about those options [here](https://www.ctl.io/marketplace-program/#Overview).
-CenturyLink Ecosystem engineers do the "heavy lifting" to integrate many products into the Marketplace and customers consume via a low friction self-service model. Additionally, Marketplace transactions do not require a SoW.
+The Marketplace offers a documented SaaS integration path into the Marketplace. Providers can learn more about the integration process [here](software-as-a-service-saas-api.md).
+A CenturyLink Marketplace engineer works closely with the Providers development team to provide SaaS integration guidance and testing of the providers solution. A Marketplace team member will also work with the Provider to gain access to the Provider Portal to create customer-facing content for the product and SKU creation. Additionally, Marketplace transactions do not require a SoW, which shortens the procurement processes from months to days.
 
 **Grow Your Reach with a Digital Route to Market**
 
@@ -41,6 +41,10 @@ This document explains the process for onboarding technology into the CenturyLin
 ### Joining the Marketplace Provider Program
 
 Providers can enter the Marketplace in many ways. Some enter via a CenturyLink sales or channel partner relationship. If you are a provider and wish to learn more about participating in the Marketplace, but do not have a CenturyLink representative to work with, you can fill out the "**Sign Up Now**" form found [here](https://www.ctl.io/marketplace-program/) and a Marketplace representative will reach out to you with more information.
+
+### Go to Market Activities
+
+As part of the Marketplace program, Providers will work with a Marketplace team member to create a Go to Market plan. The Marketplace team will build out a blog and social campaign, create a folder in our internal sales library to host sales enablement content, and give Providers access to the CenturyLink Brownbag program, which allows for Providers to present their product to the CenturyLink sales team and solution architects. The Provider will also work with a Marketplace team member to execute any additional joint Go to Market or sales Enablement training.
 
 ### Application Process
 
@@ -78,7 +82,7 @@ To ensure Candidate solutions deliver both business value and trouble-free use, 
 
 * The solution delivers the business value outlined in the application
 
-Candidates have up to three months to complete any integration needed, validate functionality and create the necessary documentation. During this period, CenturyLink will provide the Candidate access to a fully functioning, production cloud environment with a $2,000 USD monthly usage credit to be used for automation testing. Once the technology integration has been certified, the Partner will continue to have access to the same integration environment with the same $2,000 USD monthly integration credit in order to ensure compatibility with new features and versions. In order to continue receiving this ongoing integration benefit, Candidates will need to be a cloud customer in good standing, through standard online terms and conditions found [here](https://www.ctl.io/legal/).
+Candidates have up to three months to complete any integration needed, validate functionality and create the necessary documentation. During this period, CenturyLink will provide the Candidate access to a fully functioning, production cloud environment with a monthly usage credit to be used for automation testing. Once the technology integration has been certified, the Partner will continue to have access to the same integration environment with a monthly integration credit in order to ensure compatibility with new features and versions. In order to continue receiving this ongoing integration benefit, Candidates will need to be a cloud customer in good standing, through standard online terms and conditions found [here](https://www.ctl.io/legal/).
 
 Please note the Partner technology must function with the standard CenturyLink Cloud or product feature set as no feature development on the part of the CenturyLink Development Center will be performed to enable a Candidate through the process. During this development period and throughout the term of the Program, the Partner will be provided access, on a limited basis, to CenturyLink Integration Engineers as needed for detailed technology questions and roadmap exploration.
 
