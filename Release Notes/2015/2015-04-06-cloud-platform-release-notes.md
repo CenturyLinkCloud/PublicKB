@@ -38,9 +38,9 @@
 
 * **Account Activation.** The "activate" experience on [activate.centurylinkcloud.com](https://activate.centurylinkcloud.com) has been enhanced with two-factor authentication and a simplified user flow.
 
-* **Data center-specific Pricing Catalog and Cloud Price Estimator.** Region-specific pricing is now reflected in these tools. Simply select a data center using the drop-down, and prices will update automatically.
+* **Data center-specific Pricing Catalog and Online Price Estimator.** Region-specific pricing is now reflected in these tools. Simply select a data center using the drop-down, and prices will update automatically.
 
-  Data Center can be selected when using the estimator:
+  Data Center can be selected when using the online price estimator:
 
   ![Pricing Example 01](../../images/pricing-example-01.png)
 
