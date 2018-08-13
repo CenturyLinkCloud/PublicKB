@@ -16,7 +16,7 @@ This article explains how to create a SRN (SafeHaven Replication Node) in Azure 
 ### Assumptions
 1. It is assumed here that the user has an Azure account, a VNet created which has accessibility to CenturyLink Cloud Production Datacenter and a Resource Group that will contain all the resources related to SafeHaven.
 2. Typically CMS and DR-SRN reside in the same subnet so we will simply re-use the Network Security Group we created in the previous step [Create CMS in Azure](CreateCMSAzure.md)
-3. It is assumed the user also has a storage account created as outlined by KB XXXXXXX.
+3. It is assumed the user has a storage account created.
 
 ### Create an Azure instance
 1. Go to the Azure portal https://portal.azure.com 

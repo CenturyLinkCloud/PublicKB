@@ -124,6 +124,4 @@ To change the the TRUSTe Certified Logo, do the following:
    * Recommended image size is 142 pixels wide by 45 pixels high.
 
 ### Learn More
-* [Cloud Services Estimator](https://www.ctl.io/blog/post/cloud-services-estimator-now-open-source/)
-
 * [Make Your Own Cloud](https://www.ctl.io/blog/post/take-control-channel-partners-and-enterprise-customers-can-make-our-cloud-their-own/)

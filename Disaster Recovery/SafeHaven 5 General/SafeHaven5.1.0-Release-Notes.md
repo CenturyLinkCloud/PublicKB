@@ -3,8 +3,7 @@
   "date": "06-22-2018",
   "author": "Shi Jin",
   "attachments": [],
-  "contentIsHTML": false,
-  "sticky": true
+  "contentIsHTML": false
 }}}
 
 ### Release Notes
@@ -21,8 +20,6 @@ It also comes with a number of bug fixes such as
 - removing the network isolation checkbox in GUI for Linux PG since there is no such capability
 - providing a way to enter new license key in GUI after the old license is expired
 - fixing the bug where an AWS PG does not automatically resume sync after a temporary network outage
-- and more...
-
 
 ### Upgrade Path
 * Upgrade from SafeHaven-4 to SafeHaven-5 will be a fresh new installation.
@@ -43,5 +40,9 @@ Please take a look at the link below to download the latest available release
   * [MakeStub.exe](https://download.safehaven.ctl.io/SH-5.1.0/MakeStub-5.1.0.exe)
 * [Linux SafeHaven Onboarding Scripts Downloads](https://download.safehaven.ctl.io/SH-5.1.0/safehaven_linux_onboarding_scripts-5.1.0.tar.gz)
 * [script to turn a Ubuntu-14 machine into a recovery proxy for Windows servers](https://download.safehaven.ctl.io/SH-5.1.0/makestub_for_windows.sh)
+
+
+### Documentations
+[SafeHaven Inventory Sheet](https://download.safehaven.ctl.io/SH-5-Docs/SafeHaven-Inventory-Sheet-Azure.xlsm)
  
 Please note that you can check the md5 checksum against the file named [MD5SUM-5.1.0.txt](https://download.safehaven.ctl.io/SH-5.1.0/MD5SUM-5.1.0.txt).
