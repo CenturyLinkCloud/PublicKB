@@ -152,7 +152,9 @@ password: "Your CTL Cloud password"
 
 If you are unsure of what specific SBS account policy you want, you can use this command will list them all for an account alias. Replace CTL-Alias with your CTL-Alias:
 
-**.\clc backup get-account-policies --account-alias CTL-Alias --sort-by name --ascending-sort true | more**
+```
+.\clc backup get-account-policies --account-alias CTL-Alias --sort-by name --ascending-sort true | more
+```
 
 Example Output:
 
@@ -197,7 +199,9 @@ If you have more than 100 items in TotalCount you can add the offsetswitch --off
 
 This command will list all your SBS policies for a server named SERVERNAME. You will be able to figure out what SBS Account Policy and SBS Server Policy to use to find the proper Restore Point with:
 
-**.\clc backup get-applied-server-policies --server-id [SERVERNAME]**
+```
+.\clc backup get-applied-server-policies --server-id [SERVERNAME]
+```
 
 Example Output:
 
@@ -224,7 +228,9 @@ Example Output:
 
 This example command will list all the valid in-retention restore points for a SBS Account Policy and SBS Server Policy ID above. This example uses a date range from 2018-01-01 thru 2018-05-06 using the examples from above:
 
-**.\clc backup get-restore-point-details --account-policy-id e629e5af-xxxx-xxxx-xxxx-yyyyyyyyyyyy --server-policy-id aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee --backup-finished-start-date 2018-01-01 --backup-finished-end-date 2018-05-06 --sort-by retentionExpiredDate --ascending-sort true --in-retention-only true**
+```
+.\clc backup get-restore-point-details --account-policy-id e629e5af-xxxx-xxxx-xxxx-yyyyyyyyyyyy --server-policy-id aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee --backup-finished-start-date 2018-01-01 --backup-finished-end-date 2018-05-06 --sort-by retentionExpiredDate --ascending-sort true --in-retention-only true
+```
 
 As a script:
 
