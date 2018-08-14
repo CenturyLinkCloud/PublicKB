@@ -12,11 +12,11 @@
 SBS Glossary of terms used in this document
 ====
 
-* CLC Command A program supplied by Centurylink Cloud to interact with the CTL Cloud API directly.
-* SBS Policy A backup policy defined by the customer that defines backups for one or more Servers.
-* SBS ServerPolicy The information that joins a single Server to a SBS Policy
-* SBS RestorePoint The meta information about a single backup for a single server.
-* Restore Server A VM or Server running the same OS and belonging to the same SBS Policy as the original Server.
+* CLC Command - A program supplied by Centurylink Cloud to interact with the CTL Cloud API directly.
+* SBS Policy - A backup policy defined by the customer that defines backups for one or more Servers.
+* SBS ServerPolicy - The information that joins a single Server to a SBS Policy
+* SBS RestorePoint - The meta information about a single backup for a single server.
+* Restore Server - A VM or Server running the same OS and belonging to the same SBS Policy as the original Server.
 
 Requirements for SBS to Restore Backups to a Different Server
 ====
