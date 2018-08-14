@@ -75,7 +75,30 @@ The Linux SBS logs are located in directory **/var/lib/simple-backup-service**
 
 The current log is named **sbs-agent.log**
 
-In this example using grep on Linux you can find a proper date using a pair of greps:
+In this example using grep on Linux
+
+```
+/var/lib/simple-backup-service# grep "restore point" sbs-agent.log
+
+2018-04-30T01:04:03,511 INFO  thread=pool-1-thread-1 class=com.ctl.clc.agent.backups.BackupServiceImpl - Created restore point: 8e463b1f-b0a0-4d84-93b3-68914f
+cd3b4520180430010403 with creationDate: 1525050243440 retentionExpiredDate: 1525395843440
+2018-05-01T01:04:03,653 INFO  thread=pool-1-thread-1 class=com.ctl.clc.agent.backups.BackupServiceImpl - Created restore point: 8e463b1f-b0a0-4d84-93b3-68914f
+cd3b4520180501010403 with creationDate: 1525136643610 retentionExpiredDate: 1525482243610
+2018-05-02T01:04:03,490 INFO  thread=pool-1-thread-1 class=com.ctl.clc.agent.backups.BackupServiceImpl - Created restore point: 8e463b1f-b0a0-4d84-93b3-68914f
+cd3b4520180502010403 with creationDate: 1525223043419 retentionExpiredDate: 1525568643419
+2018-05-03T01:04:03,867 INFO  thread=pool-1-thread-1 class=com.ctl.clc.agent.backups.BackupServiceImpl - Created restore point: 8e463b1f-b0a0-4d84-93b3-68914f
+cd3b4520180503010403 with creationDate: 1525309443785 retentionExpiredDate: 1525655043785
+2018-05-04T01:04:03,850 INFO  thread=pool-1-thread-1 class=com.ctl.clc.agent.backups.BackupServiceImpl - Created restore point: 8e463b1f-b0a0-4d84-93b3-68914f
+cd3b4520180504010403 with creationDate: 1525395843768 retentionExpiredDate: 1525741443768
+2018-05-05T01:04:04,105 INFO  thread=pool-1-thread-1 class=com.ctl.clc.agent.backups.BackupServiceImpl - Created restore point: 8e463b1f-b0a0-4d84-93b3-68914f
+cd3b4520180505010403 with creationDate: 1525482244020 retentionExpiredDate: 1525827844020
+2018-05-06T01:04:03,815 INFO  thread=pool-1-thread-1 class=com.ctl.clc.agent.backups.BackupServiceImpl - Created restore point: 8e463b1f-b0a0-4d84-93b3-68914f
+cd3b4520180506010403 with creationDate: 1525568643735 retentionExpiredDate: 1525914243735
+2018-05-07T01:04:03,774 INFO  thread=pool-1-thread-1 class=com.ctl.clc.agent.backups.BackupServiceImpl - Created restore point: 8e463b1f-b0a0-4d84-93b3-68914f
+cd3b4520180507010403 with creationDate: 1525655043691 retentionExpiredDate: 1526000643691
+```
+
+You can find a proper date using a pair of greps:
 
 ```
 grep -E "restore point" sbs-agent.log | grep "20180505"
