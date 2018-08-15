@@ -13,16 +13,23 @@ This features is available for boxes that have been [published in the catalog](.
 
 Task variables define code and an associated event. When a box with a task variable is deployed, CAM will run this code within the instance's lifecyle, at a moment indicated by the task variable's event:
 
-* `deploy`: as the first step after you click *Deploy*, before any provisioning is run on the provider.
-* `remove`: as the last step once the instance has been terminated on the provider. 
+* `deploy`: as the first step after you click *Deploy*, before any provisioning is run on the provider; it runs once per instance.
+* `post_deploy`: as soon as a machine is powers up and appears in CAM; this may ocurr during deployment, when the instance powers up after a shutdown event (initiated from CAM or from the cloud provider console), or when an instance appears during an autoscaling up event.
+* `teardown`: whenever a machine shuts down; this may ocurr during a shutdown event, when an instace terminates during an autoscale down event, or during a terminate event.
+* `remove`: as the last step once the instance has been terminated on the provider; it runs once per instance.
+
+Both `deploy` and `remove` are associated with the instance lifetime *end to end*, whereas `post_deploy` and `teardown` are associated with the lifetime of each machine. This is specially useful for instances with multiple machines (as defined in a deployment policy box) or for instances with autoscaling where machines may appear and dissapear automatically.
 
 Although not run within the instance itself, task variables behave similarly to event scripts:
 
 * Jinja templating [syntax](syntax-for-variables.md) is available, so you may access variables from within the script.
 * `elasticbox set` and `elasticbox config` [commands](cloud-application-manager-commands.md) are available.
-* When using box composition, task variables of child boxes are run first during `deploy` and `provisioned` events, whereas they are run last during `remove` events.
+* When using box composition, task variables of child boxes are run first during `deploy` and `post_deploy` events, whereas they are run last during `teardown` and `remove` events.
 * A failure during a task variable execution will result in an unavailable state. A failure may be triggered from within the script with an exit code different from 0 or may occur if the script took too long to complete and was forcibly stopped.
-* Output from the script will appear in the instance activiy log.
+* Scripts should be idempotent, same as event scripts, in case they run multiple times due to an instance error.
+* Output from the script will appear in the instance activity log.
+* There may be only one task variable of each event per box (so up to four task variables per box, one per event). You can add multiple File variables, but at most one per event will be converted to Task variable during the verification process (more on this below).
+
 
 ### Languages
 
@@ -51,7 +58,7 @@ This example will guide you through the steps of creating a box, adding a script
 
 echo "printing from bash"
 
-pythonfile=/tmp/pytnontest.py
+pythonfile=/tmp/pythontest.py
 nodefile=/tmp/nodetest.js
 
 cat <<PYTHON> $pythonfile
@@ -92,7 +99,12 @@ elasticbox set variable1 value_set_from_task
 
 ### Script failures
 
-The exit code of the task variables affects the state of the instance as the event scripts do: any value different from 0 will put the instance in *unavailable* state. If this occurs during the deploy operation, no VM will be provisioned and the **Retry Deploy** action will be available. If this occurs during the terminate operation, the VM will be deleted, but the instance will appear as *unavailable*. At that point you may either **Force Terminate** the instance, triggering the task variables, or **Delete** it, removing the instance from the workspace without running the task variables again.
+The exit code of the task variables affects the state of the instance as the event scripts do: any value different from 0 will put the instance in *unavailable* state:
+
+- If this occurs during the `deploy` operation, no VM will be provisioned and the **Retry Deploy** action will be available.
+- An error that occurs in the `post_deploy` operation will leave the instance as *unavailable*. If this ocurred during the initial deployment, the **Retry Deploy** action will be available. If it ocurred during an autoscaling operation or power on, you will need to reconfigure or reinstall.
+- If this occurs during the `teardown` operation, the VM will be in unavailable state and you will need to **Reconfigure** or **Force Terminate**.
+- If this occurs during the `terminate` operation, the VM will be deleted, but the instance will appear as *unavailable*. At that point you may either **Force Terminate** the instance, triggering the task variables, or **Delete** it, removing the instance from the workspace without running the task variables again. 
 
 ![failure on task variable](../../images/cloud-application-manager/task-variables-11.png)
 

@@ -31,15 +31,13 @@
 ![Left Navigation](../../images/left-nav-01.png)
 
 
-### Online Tools (4)
+### Online Tools (3)
 
-* **Cloud Cost Estimator now open source.** Understand and model cloud costs in more depth by viewing and modifying the code behind the [CenturyLink Cloud Cost Estimator](http://www.ctl.io/estimator). Details are available in this [blog post](http://www.ctl.io/blog/post/cloud-services-estimator-now-open-source), and the Github repository can be found [here](http://www.github.com/CenturyLinkCloud/PriceEstimator).
-
-* **Map of CenturyLink data centers and services.** View CenturyLink's portfolio of capabilities by data center using an [interactive map](http://www.ctl.io/data-centers) online.  The tool supports multiple layers of filtering, as well as standard online map controls.
+* **Map of CenturyLink data centers and services.** View CenturyLink's portfolio of capabilities by data center using an [interactive map](http://www.ctl.io/data-centers/) online.  The tool supports multiple layers of filtering, as well as standard online map controls.
 
 ![Online Map of Services & Locations](../../images/datacenter-capabilities-map-01.png)
 
-* **CenturyLinkCloud.com is now multi-language.** Browse http://www.ctl.io in multiple languages, including German, Japanese, English (UK), English (Canada), and Canadian French. To change the language, simply navigate to the bottom right of any page on the site.
+* **ctl.io is now multi-language.** Browse http://www.ctl.io in multiple languages, including German, Japanese, English (UK), English (Canada), and Canadian French. To change the language, simply navigate to the bottom right of any page on the site.
 
 ![Multi-language Site](../../images/multilanguage-website-01.png)
 * **New Knowledge Base.** The CenturyLink Cloud [Knowledge Base](http://www.ctl.io/knowledge-base) has been re-designed to be even easier to use. These enhancements include improved organization, layout, and search capabilities.
