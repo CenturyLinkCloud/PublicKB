@@ -52,7 +52,7 @@ Customers creating OS Templates for Windows Servers should carefully review the 
 
 **Q: I've created a custom template in Data Center A, but when I try to create a VM from the template in Data Center B it's not showing?**
 
-A: Customer created templates do not replicate to all data centers out of the box today. If you need templates copied to other data centers please [open a support request](../Support/how-do-i-report-a-support-issue.md).  Copying templates to a different account will incur a [VM Transfer](https://www.ctl.io/service-tasks/#vm-transfer) fee.
+A: Customer created templates do not replicate to all data centers out of the box today. If you need templates copied to other data centers within the same account alias please [open a support request](../Support/how-do-i-report-a-support-issue.md).  Copying templates to a different account alias will incur a [VM Transfer](https://www.ctl.io/service-tasks/#vm-transfer) fee.
 
 **Q: I've created a custom template in my account, but when I try to create a VM from the template in my _sub_ accounts, it's not showing?**
 
