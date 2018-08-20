@@ -34,7 +34,7 @@ When multiple metric producers are selected, the list of collected metrics for a
 
 All instances of Hyperscale servers are re-entitled as standard compute instances. While these instances will still be hosted on our Hyperscale platform before the August 21st End of life, they will now be billed using our standard compute pricing.
 
-On June 20th, CenturyLink Cloud announced the end of life for our Hyperscale server instances. Read more at this [Knowledge Base article](../../servers/hyperscale-eol-faqs.md).
+On June 20th, CenturyLink Cloud announced the end of life for our Hyperscale server instances. Read more at this [Knowledge Base article](../../../servers/hyperscale-eol-faqs.md).
 
 ##### Site Redirect
 
