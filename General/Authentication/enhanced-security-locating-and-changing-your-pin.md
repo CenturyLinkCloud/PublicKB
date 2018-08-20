@@ -19,7 +19,7 @@ This article assumes that you have [created your master account](enhanced-securi
 
 Go to [https://www.ctl.io/](https://www.ctl.io/), and click on the "Log In" link to the top right.  Click on Managed Hosting.  
 
-![ES-LAUA-1.png](../images/ES-LCYP-1.png)
+![ES-LCYP-1.png](../../images/ES-LCYP-1.png)
 
 Alternatively, you can go to [https://savvisstation.savvis.com](https://savvisstation.savvis.com), which will redirect you to the same login page.  
 
@@ -30,13 +30,13 @@ Log in with your master account.
 
 Once you are in SavvisStation, go to the top right and hover over your name.  Click on "My Account".  
 
-![ES-LAUA-2.png](../images/ES-LCYP-2.png)
+![ES-LCYP-2.png](../../images/ES-LCYP-2.png)
 
 **3:** View Your PIN  
 
 You should be directed to the Contact Details section.  If you were not, click 'Contact Details' on the left side of the screen. In this section you can find your PIN. 
 
-![ES-LAUA-3.png](../images/ES-LCYP-3.png)
+![ES-LCYP-3.png](../../images/ES-LCYP-3.png)
 
 **4:** Changing Your PIN  
 
