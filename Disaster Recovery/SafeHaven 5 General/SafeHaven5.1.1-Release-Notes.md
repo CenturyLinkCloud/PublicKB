@@ -39,7 +39,7 @@ Please take a look at the link below to download the latest available release
 * Windows Downloads:
   * [Driver Installer](https://download.safehaven.ctl.io/SH-5.1.1/safehaven_windows_driver-5.1.1.exe)
   * [MakeStub.exe](https://download.safehaven.ctl.io/SH-5.1.1/MakeStub-5.1.1.exe)
-* [Linux SafeHaven Onboarding Scripts Downloads](https://download.safehaven.ctl.io/SH-5.1.1/safehaven_linux_onboarding_scripts-5.1.1.tar.gz)
+* [Linux Onboarding Script](linux-onboarding-releases.md)
 * [script to turn a Ubuntu-14 machine into a recovery proxy for Windows servers](https://download.safehaven.ctl.io/SH-5.1.1/makestub_for_windows.sh)
 
 Please note that you can check the md5 checksum against the file named [MD5SUM-5.1.1.txt](https://download.safehaven.ctl.io/SH-5.1.1/MD5SUM-5.1.1.txt).
