@@ -42,7 +42,7 @@ The claimed storage pool should now be increased. If it is still showing old val
 4. Scroll to the right, and click on **expand**
 5. Enter the new size of the disk, and click **Finish**.
 
-### check the replication on source VM
+### Check the replication on source VM
 1. Login to the Source VM.
 2. run SafeHaven **tools** commandline as **administrator**. You can find it by searching "tools" from widnows start menu.
 3. Type **DgSyncEx.exe**, and press enter.
