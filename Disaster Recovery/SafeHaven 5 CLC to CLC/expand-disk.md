@@ -24,4 +24,4 @@ This step explains how to expand disk on the DR SRN to accomodate the expanded s
 6. Login to Centurylink Cloud Portal : https://control.ctl.io/
 7. Under infrastructure, go to the DR SRN for the resized source VM under the DR Datacenter.
 8. On the right hand side, click on edit storage. Expand the disk in CLC from step 5 according to the image below 
-   ![disk mapping](../../images/SH5.0/byoip/diskformat.png)
+   ![disk mapping](../../images/SH5.0/diskformat.png)
