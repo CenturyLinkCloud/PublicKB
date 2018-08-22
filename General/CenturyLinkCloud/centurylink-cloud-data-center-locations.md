@@ -1,14 +1,14 @@
 {{{
-  "title": "CenturyLink Cloud Data Center Locations",
-  "date": "7-16-2018",
+  "title": "CenturyLink Cloud Locations",
+  "date": "8-13-2018",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-Some important details about our locations are listed below. You can also refer to [our website](//www.ctl.io/data-centers) for the latest information on our data center locations.
+Some important details about our locations are listed below. You can also refer to [our website](//www.ctl.io/data-centers) for the latest information on data centers and where you can find all of our Hybrid IT Platform services, from Managed Services to Colocation.
 
-**CenturyLink Cloud Data Center**|**Provider**|**Physical Address**|**More Information**
+**Data Center**|**Provider**|**Physical Address**|**More Information**
 ---------------------------------|------------|--------------------|--------------------
 US West (Seattle) - WA1|Internap|3355 S 120th Place<br>Seattle, WA 98168|[provider details](http://www.internap.com/data-centers/data-center-locations/seattle/)
 US West (Santa Clara) - UC1|Cyxtera (SC8)|4700 Old Ironsides<br>Santa Clara, CA 95054|[provider details](https://www.cyxtera.com/images/sc8-santa-clara-ca-colocation-datasheet-ss111864.pdf)
