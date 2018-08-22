@@ -1,6 +1,6 @@
 {{{
-  "title": "SafeHaven Linux Onboarding Release Notes",
-  "date": "11-21-2017",
+  "title": "SafeHaven-5 Linux Onboarding Release Notes",
+  "date": "08-21-2017",
   "author": "Shi Jin",
   "attachments": [],
   "contentIsHTML": false
@@ -11,6 +11,7 @@ Please note that all releases mentioned in this page works with a SafeHaven-5 cl
 
 ### v1.6.1, released on August 21, 2018
 
-Download:
+Download: https://download.safehaven.ctl.io/SH-5-Linux/safehaven_linux_onboarding_scripts-v1.6.1-2018-08-21.tar.gz
+MD5SUM: `eb7854c05dca3c2dcb19840c211878d4`
 
 Note that this is a first release of the Linux onboarding scripts that supports AWS and Azure.
