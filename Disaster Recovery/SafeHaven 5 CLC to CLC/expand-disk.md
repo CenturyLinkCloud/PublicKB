@@ -28,7 +28,7 @@ This step explains how to expand disk on the DR SRN to accomodate the expanded s
 9. Click **Apply**, and wait for the disk resize job to finish.
 
 ### Expand Protection group.
-1. Go to SafeHaven console, and click on the DR SRN.
+1. Go to SafeHaven console and click on the DR SRN.
 The claimed storage pool should now be increased. If it is still showing old value, click on rescan to update it.
 2. Click on the Protection group with the resized source VM.
 3. Under **General** panel, click on **Expand** in front of **Protection Group Size**.
@@ -44,7 +44,7 @@ The claimed storage pool should now be increased. If it is still showing old val
 
 ### Check the replication on source VM
 1. Login to the Source VM.
-2. run SafeHaven **tools** commandline as **administrator**. You can find it by searching "tools" from widnows start menu.
+2. run SafeHaven **tools** commandline as **administrator**. You can find it by searching "tools" from windows start menu.
 3. Type **DgSyncEx.exe**, and press enter.
 4. Type, **rescan**, and press enter to update the disk size in source VM.
 5. Type **list**, and press enter.
