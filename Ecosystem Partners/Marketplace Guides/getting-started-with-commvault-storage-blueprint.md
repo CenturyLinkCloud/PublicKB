@@ -84,7 +84,7 @@ After the Blueprint completes, you will need to RDP to the server, login to the 
    * Network VLAN
    * Primary DNS - you can use the default of enter 8.8.8.8
    * Secondary DNS - you can use the default of enter 8.8.8.8
-   * Server Type - Hyperscale `IMPORTANT - Must choose Hyperscale`
+   * Server Type
    * Service Level - Premium
    * Customize the server name, the default is Commvault
 

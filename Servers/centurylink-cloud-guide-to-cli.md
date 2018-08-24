@@ -62,7 +62,7 @@ When running commands (GO CLI command/Python CLI command)
 -   name - name of the server or group, when creating a new server, the length limit is 6 characters
 -   data-center - name of the data centers (e.g. IL1, VA1, CA1)
 -   network-name/network - name of the VLAN, [they can be listed using CLI](#read-commands)
--   type - server type, either standard or hyperscale
+-   type - server typee
 -   storage-type/backup-level - storage type, current option is standard
 -   group-name/group - name of the group within the account
 -   configuration-id - ID of bare metal from output of `clc data-center get-baremetal-capabilities`
@@ -289,12 +289,6 @@ clc server list --all --filter location-id=CA3 --query details.host-name
 or
 ```
 clc server list –all --query location-id=ca3
-```
-
-**Find all the hyperscale (or standard/baremetal) server in the
-account**
-```
-clc server list --all --filter type=hyperscale --query details.host-name
 ```
 
 **All OS/templates available in a DC**
