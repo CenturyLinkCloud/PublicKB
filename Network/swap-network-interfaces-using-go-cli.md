@@ -36,3 +36,22 @@ Begin by editing the properties of the secondary network (Ethernet 1)
 Select IPv4 properties, and add the gateway for the secondary network.
 
 ![../images/swap-network-interfaces-Interface-2.png](../images/swap-network-interfaces-Interface-2.png)
+
+After adding a gateway, and pressing OK, you will see a warning screen
+
+![../images/swap-network-interfaces-Interface-warning.png](../images/swap-network-interfaces-Interface-warning.png)
+
+Press OK and continue.
+
+Edit the primary network (Ethernet 0)
+
+![../images/swap-network-interfaces-Interface-3.png](../images/swap-network-interfaces-Interface-3.png)
+
+Remove the default gateway and press OK.
+
+![../images/swap-network-interfaces-Interface-4.png](../images/swap-network-interfaces-Interface-4.png)
+
+Once this step is completed, you will lose RDP connectivity to the server.  Reconnect on the new primary interface (now Ethernet 1) and you will be able to continue using the server.
+
+#### Centos Linux
+
