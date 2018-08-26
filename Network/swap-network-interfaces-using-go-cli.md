@@ -29,4 +29,10 @@ Follow these steps to modify routes for the following operating systems in the C
 
 #### Windows
 
+Begin by editing the properties of the secondary network (Ethernet 1)
+
 ![../images/swap-network-interfaces-Interface-1.png](../images/swap-network-interfaces-Interface-1.png)
+
+Select IPv4 properties, and add the gateway for the secondary network.
+
+![../images/swap-network-interfaces-Interface-2.png](../images/swap-network-interfaces-Interface-2.png)
