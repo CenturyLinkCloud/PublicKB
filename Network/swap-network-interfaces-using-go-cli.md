@@ -51,7 +51,70 @@ Remove the default gateway and press OK.
 
 ![../images/swap-network-interfaces-Interface-4.png](../images/swap-network-interfaces-using-go-cli/swap-network-interfaces-Interface-4.png)
 
-Once this step is completed, you will lose RDP connectivity to the server.  Reconnect on the new primary interface (now Ethernet 1) and you will be able to continue using the server.
+Once this step is completed, you will lose RDP connectivity to the server.  Reconnect on the new primary interface (now Ethernet 1) and you will be able to continue using the server's new primary interface.
 
 #### Centos Linux
 
+The interface configuration files in CentOS will be found in `/etc/sysconfig/network-scripts` 
+
+Begin by editing the primary interface (`ifcfg-ens160`)
+
+![../images/swap-network-interfaces-CentOS-Interface-1.png](../images/swap-network-interfaces-using-go-cli/swap-network-interfaces-CentOS-Interface-1.png)
+
+Remove the gateway from the interface.
+
+![../images/swap-network-interfaces-CentOS-Interface-2.png](../images/swap-network-interfaces-using-go-cli/swap-network-interfaces-CentOS-Interface-2.png)
+
+Save and exit this file.
+
+Edit the secondary interface (`ifcfg-ens192`)
+
+![../images/swap-network-interfaces-CentOS-Interface-3.png](../images/swap-network-interfaces-using-go-cli/swap-network-interfaces-CentOS-Interface-3.png)
+
+Add a gateway entry to this interface
+
+![../images/swap-network-interfaces-CentOS-Interface-4.png](../images/swap-network-interfaces-using-go-cli/swap-network-interfaces-CentOS-Interface-4.png)
+
+Save and exit this file.
+
+Once these changes have been made, you can restart networking on the server using the `service network restart` command.
+
+After the restart command is issued, you will likely lose SSH connectivity to the server.  Reconnect on the new primary interface (now ens192) and you will be able to continue using the server's new primary interface.
+
+#### Ubuntu Linux
+
+Ubuntu network interfaces are all stored in `/etc/network/interfaces`.  Bring this file up in a text editor.
+
+![../images/swap-network-interfaces-ubuntu-Interface-1.png](../images/swap-network-interfaces-using-go-cli/swap-network-interfaces-ubuntu-Interface-1.png)
+
+Remove the default gateway from the ens160 interface and add a gateway to the ens192 interface.
+
+![![../images/swap-network-interfaces-ubuntu-Interface-2.png](../images/swap-network-interfaces-using-go-cli/swap-network-interfaces-ubuntu-Interface-2.png)
+
+Save and exit this file.
+
+Once these changes have been made, you can restart networking on the server using the `systemctl restart networking` command.
+
+After the restart command is issued, you will likely lose SSH connectivity to the server.  Reconnect on the new primary interface (now ens192) and you will be able to continue using the server's new primary interface.
+
+
+### Remove a Network Interface from a Server
+
+1. Run the remove-secondary-network Go CLI command.  Use the optional --account-alias field is only required if you wish to remove a network interface from a server in a sub-account
+
+    ```
+    clc server remove-secondary-network --server-name XXXXX --network-name XXXXX --account-alias XXXX
+    ```
+
+    ```
+    {
+      "OperationId": "f31a59e3fbff4458a988f00e9a8e97fe",
+      "URI": "http://api.ctl.io/v2-experimental/operations/CCVA/status/f31a59e3fbff4458a988f00e9a8e97fe"
+    }
+    ```
+
+2. Validate the network interface you requested be removed is in fact removed in Control and the Server.
+
+    ![Control secondary interface removed](../images/add-or-remove-network-interface-to-server-using-go-cli-03.png)
+
+    ![Windows Adapters removed](../images/add-or-remove-network-interface-to-server-using-go-cli-04.png)
