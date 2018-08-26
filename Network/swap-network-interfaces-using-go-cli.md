@@ -29,3 +29,4 @@ Follow these steps to modify routes for the following operating systems in the C
 
 #### Windows
 
+![../images/swap-network-interfaces-Interface-1.png](../images/swap-network-interfaces-Interface-1.png)
