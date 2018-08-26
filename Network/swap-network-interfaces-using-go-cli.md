@@ -85,7 +85,7 @@ After the restart command is issued, you will likely lose SSH connectivity to th
 
 Ubuntu network interfaces are all stored in `/etc/network/interfaces`.  Bring this file up in a text editor.
 
-![../images/swap-network-interfaces-ubuntu-Interface-1.png](../images/swap-network-interfaces-using-go-cli/swap-network-interfaces-ubuntu-Interface-1.png)
+![../images/swap-network-interfaces-ubuntu-Interface-1.PNG](../images/swap-network-interfaces-using-go-cli/swap-network-interfaces-ubuntu-Interface-1.PNG)
 
 Remove the default gateway from the ens160 interface and add a gateway to the ens192 interface.
 
