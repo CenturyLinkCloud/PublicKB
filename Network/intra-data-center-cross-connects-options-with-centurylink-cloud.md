@@ -9,6 +9,8 @@
 ### Overview
 This Knowledge Base provides an overview for customers who are considering deploying an intra-data center cross connect. The labor for this deployment is a [service task](//www.ctl.io/service-tasks/), performed by platform engineers to specifications provided by the customer.
 
+The customer will not have physical access to the CLC cloud space. CLC will need to be engaged using help@ctl.io if coordination of access needs to take place with the data center provider.
+
 ### Cross Connects Description and Benefits
 CenturyLink Cloud offers [multiple connectivity options](../Network/network-access-options-for-connecting-to-centurylink-clouds-platform.md) for its customers to leverage when deciding how they will connect to their resources deployed on CenturyLink Cloud’s platform (e.g., VPN tunnels, CNS, Cross Connects, etc). That said, as a point of clarity, this Knowledge Base article specifically pertains to the deployment of cross connects.
 
@@ -19,11 +21,12 @@ Many of our data center providers are within in multiple building across their r
 ### Planning Your Cross Connect
 The first decision a customer needs to determine is how they want to purchase the cross connect. There are generally two options available to a customer:
   * Option 1 - The customer purchases the cross connect directly from the data center provider:
-    * Pros: In the long run, this is cheaper for the customer as they are purchasing the cross connect directly from the data center provider.
-    * Cons: The customer is responsible for the coordination of the cross connect implementation with the data center provider directly.</p>
+    * This is cheaper for the customer as they are purchasing the cross connect directly from the data center provider.
+    * CLC is responsible for the coordination of the cross connect implementation with the data center provider directly.
 
   * Option 2 - The customer purchases the cross connect from CenturyLink Cloud:
-    * Pros: CLC manages the implementation of the cross connect with the data center provider. The costs of the cross connect will come as part of the customer’s normal CLC monthly invoice.
+    * The costs of the cross connect will come as part of the customer’s normal CLC monthly invoice.
+    * CLC manages the implementation of the cross connect with the data center provider.
 
 Regardless, if a customer chooses to purchase the cross connect on their own, there still will be a fee that will include the following services:
   * Verify cross connect connectivity options with data center provider
