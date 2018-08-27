@@ -36,7 +36,7 @@ Creating your support tickets and changes have been refreshed for the [Support P
 
 - Required fields are denoted with a red * symbol
 
-4: Once the request is submitted, you are free to navigate the site to wait for a returned Ticket ID or wait on the same page.  Tickets and changes should be created and available to view in under 30 seconds.  Once complete, the Ticket ID will appear in the upper right of the page.
+**4:** Once the request is submitted, you are free to navigate the site to wait for a returned Ticket ID or wait on the same page.  Tickets and changes should be created and available to view in under 30 seconds.  Once complete, the Ticket ID will appear in the upper right of the page.
 
   ![Create](../../images/managedsupport/Create-4.png)
   
