@@ -11,10 +11,10 @@ Snapshots are a feature of our platform that allow a machine to be quickly rever
 
 ### Snapshot Implications
 * Using snapshots with a very high rate of change can cause significant performance degradation when the snapshot is removed. Your server may **lose connectivity** or become **unavailable** for several minutes or longer during the removal process.
-* Snapshots are not supported on Standard Virtual Servers with greater than 1 TB of  Storage Allocated. Hyperscale Servers cannot leverage the Snapshot feature.
+* Snapshots are not supported on Standard Virtual Servers with greater than 1 TB of  Storage Allocated.
 * Configuration changes to Virtual Servers, such as CPU/RAM/Disk, cannot be performed while a snapshot is present.  
 * Cloning of virtual servers with a snapshot is a supported operation.  Please review [How To: Clone a Virtual Machine](../Servers/how-to-clone-a-virtual-machine-os-instance.md) for more information.
-* Customers who leverage the [Simple Backup Service](//www.ctl.io/simple-backup-service/) should avoid the use of snapshots on a reccuring basis or while simple backup services are in use. Simple backup leverages a **local** file manifest to track file changes and should a customer revert to an old snapshot the ability to restore any backup sets taken **after** the snapshot was initiated will be lost without manual intervention from Customer Care. This is primarily due to the current manifest being replaced with an old snapshot copy when the entire Virtual Machine is reverted to an older state. 
+* Customers who leverage the [Simple Backup Service](//www.ctl.io/simple-backup-service/) should avoid the use of snapshots on a reccuring basis or while simple backup services are in use. Simple backup leverages a **local** file manifest to track file changes and should a customer revert to an old snapshot the ability to restore any backup sets taken **after** the snapshot was initiated will be lost without manual intervention from Customer Care. This is primarily due to the current manifest being replaced with an old snapshot copy when the entire Virtual Machine is reverted to an older state.
 
 ### Create a snapshot of an existing server
 
@@ -49,7 +49,7 @@ Customers can delete a snapshot by selecting the red X next to the snapshot name
   ![select delete snapshot icon](../images/creating-and-managing-server-snapshots-07.png)
 
   ![confirm delete snapshot dialog box](../images/creating-and-managing-server-snapshots-08.png)
-  
+
 ### Scheduling Snapshots
 1. One-time snapshots can be configured as a [Scheduled Task](creating-a-scheduled-task.md)
 2. There are cases where a customer will benefit from taking or reverting snapshots of a server or group on a regular basis. Our [Runner Service](../Runner/getting-started-with-runner.md) provides the ability to schedule repeating snapshot events, there is an existing published Runner Snapshot Job.

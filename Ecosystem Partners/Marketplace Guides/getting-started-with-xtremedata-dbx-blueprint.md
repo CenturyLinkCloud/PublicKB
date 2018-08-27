@@ -31,7 +31,7 @@ XtremeData delivers high performance, full-featured ANSI SQL database engine des
 CenturyLink Cloud Users
 
 ### Deploying a New Cluster
-Single button deploy of a new cluster including a master host, a standby master for failover, and two nodes. For best performance these should be deployed on Hyperscale servers.
+Single button deploy of a new cluster including a master host, a standby master for failover, and two nodes.
 
 #### Steps
 1. Locate the Blueprint in the Blueprint Library.
