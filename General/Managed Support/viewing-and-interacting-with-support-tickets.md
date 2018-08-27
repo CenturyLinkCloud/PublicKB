@@ -9,8 +9,6 @@
 ### Description
 
 Within the Support Portal, you can create tickets for your issues or requests to be reviewed and resolved by CenturyLink Support.  Once your ticket is created, there are multiple ways to view and interact with that ticket to check status, provide an update, self-close, and more.  This article will cover the various ways you can view and interact with your support tickets.
-Templates for your devices can be created to bulk upload your devices to a ticket, change, or request.  This is useful if you have groups of devices you submit request for frequently or on a recurring basis.  This article will cover creating device templates and loading them into the device field.
-
 
 **Ticket Dashboard Summary View**
 
