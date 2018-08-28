@@ -60,9 +60,13 @@ All users with Cloud Application Manager organization administrator access.
 5. Once you have authorize the connection, you will see **Authorized** in your configuration, and you will have the option to **Reauthorize** in case you need to do so, or when your token expires:
   ![ServiceNow CMDB authorized](../../images/cloud-application-manager/management/servicenow-cmdb-authorized.png)
 
+The **Activity** audit log will show a record whenever the ITSM ServiceNow CMDB integration has been switched on or off:
+
+  ![ServiceNow CMDB activity log](../../images/cloud-application-manager/management/servicenow-cmdb-activity.png)
+
 ### Behavior
 
-Once ServiceNot CMDB integration has been configured, the following behavior will occur when deploying any instance through Cloud Application Manager.
+Once ServiceNow CMDB integration has been configured, the following behavior will occur when deploying any instance through Cloud Application Manager.
 
 #### When deploying a new instance
 
