@@ -60,7 +60,7 @@ You need an Microsoft Azure subscription to be able to consume Azure services. F
 
     Then click **Save** and **Grant permissions** to apply them to your application.
 
-    In order to allow automatically deletion, you must add the Company Administrator Role to the App. https://docs.microsoft.com/en-us/powershell/module/msonline/add-msolrolemember?view=azureadps-1.0 :
+    In order to allow automatic deletion, you must add the Company Administrator Role to the App. https://docs.microsoft.com/en-us/powershell/module/msonline/add-msolrolemember?view=azureadps-1.0 :
 ~~~
 $tenantGuid = ‘YOUR-TENANT-ID’
 $user = ‘YOUR_USER@YOUR-DOMAIN.onmicrosoft.com'
