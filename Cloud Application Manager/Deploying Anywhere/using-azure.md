@@ -195,10 +195,7 @@ To deploy in Cloud Application Manager, simply select your box based on Linux or
 
 | Option | Windows or Linux | Description |
 |--------|------------------|-------------|
-| Location | Both | Select a virtual network, region, or affinity group to physically place the instance.<li>**Virtual Networks.** To let the instance connect to services in Azure, select a virtual private network that you previously created in your subscription. See the Azure help on [creating virtual networks](https://docs.microsoft.com/en-us/rest/api/virtualnetwork/virtualnetworks).</li><li>**Regions.** Select a region to place the instance.</li><li>**Affinity Groups.** Select an affinity group, if you created one to keep the instance close to other regional resources in the datacenter.</li> |
-=======
 | Location | Both | Select a virtual network, region, or affinity group to physically place the instance. <li>**Virtual Networks.** To let the instance connect to services in Azure, select a virtual private network that you previously created in your subscription. See the Azure help on [creating virtual networks](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-create-vnet-classic-portal). </li><li>**Regions.** Select a region to place the instance. </li><li>**Affinity Groups.** Select an affinity group, if you created one to keep the instance close to other regional resources in the datacenter.</li> |
->>>>>>> d4665ede4b04ffd8abde7d9d00ae0c8bfcd91feb
 | Availability Set | Both | Select Automatic to let Azure create an availability set for fault tolerance. This protects the virtual machine against single points of failure in the same cloud service and region. For more information, see [Manage the Availability of Virtual Machines](https://azure.microsoft.com/en-us/documentation/articles/manage-availability-virtual-machines/). |
 
 ##### Autoscaling
