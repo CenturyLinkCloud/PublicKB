@@ -6,17 +6,37 @@
 "contentIsHTML": false
 }}}
 
+### Billing in separate invoices
+
 **In this article:**
 
-* Billing in a single invoice
-* Setting up billing for multiple invoices
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Billing in a single invoice](#billing-in-a-single-invoice)
+* [Setting up billing for multiple invoices](#setting-up-billing-for-multiple-invoices)
+* [Getting General Support](#getting-general-support)
+
+### Overview
+
+This article is meant to assist Cloud Application Manager customers who wants to receive their CenturyLink bill splitted into multiple invoices.
+
+### Audience
+
+Cloud Application Manager organization administrators.
+
+### Prerequisites
+
+An active Cloud Application Manager account.
 
 ### Billing in a single invoice
+
 This is the default behavior for any Cloud Application Manager customer. All usage and support charges may be included into a single bill for the whole organization.
 
 A single invoice will be generated with all the corresponding charges for the customer organization.
 
 ### Setting up billing for multiple invoices
+
 For setting up Cloud Application Manager to generate multiple invoices aligned by line of business of the customer organization, you will need to match your line of business structure with the Cost Center structure in Cloud Application Manager.
 
 To do so, you must:
@@ -38,8 +58,7 @@ Customers can contact the CenturyLink Global Operations Support center (support 
 
 2. **Email:** incident@centurylink.com
 
-3. **Create Ticket in Cloud Application Manager**
-Directly within the platform, users can “Create Ticket” by clicking on the “?” symbol in upper right corner near the users log-in profile icon.  This takes users directly to the Managed Servicers Portal where they can open, track and review status of issues that have been raised with the support desk.  Additionally, this is how a TAM can be engaged as well.
+3. **Create Ticket in Cloud Application Manager:** Directly within the platform, users can “Create Ticket” by clicking on the “?” symbol in upper right corner near the users log-in profile icon.  This takes users directly to the Managed Servicers Portal where they can open, track and review status of issues that have been raised with the support desk.  Additionally, this is how a TAM can be engaged as well.
 
 **Instructions:**
 

@@ -7,7 +7,7 @@
 "sticky": true
 }}}
 
-The CenturyLink Marketplace Provider Program Guide is designed to outline the process expectations for technology companies seeking to integrate their products and services into the CenturyLink Marketplace. Partners who enter this program and meet the certification requirements will be eligible to have their approved technology listed in the CenturyLink Marketplace. To express interest in joining the program, prospective partners can visit the [CenturyLink Marketplace Provider Program](https://www.ctl.io/marketplace-program/) web page, reach out to their sales account manager directly, or email the [Marketplace team](mailto:Marketplace@ctl.io).
+The CenturyLink Marketplace Provider Program Guide is designed to outline the process expectations for technology companies seeking to integrate their products and services into the CenturyLink Marketplace. Providers who enter this program and meet the certification requirements will be eligible to have their approved technology listed in the CenturyLink Marketplace. To express interest in joining the program, prospective Providers can visit the [CenturyLink Marketplace Provider Program](https://www.ctl.io/marketplace-program/) web page, reach out to their sales account manager directly, or email the [Marketplace team](mailto:Marketplace@ctl.io).
 
 ### Audience
 
@@ -15,18 +15,18 @@ The CenturyLink Marketplace Provider Program Guide is designed to outline the pr
 * CenturyLink Employees
 
 The CenturyLink Marketplace Provider Program is designed to provide additional value within CenturyLink’s enterprise cloud computing platform and other strategic CenturyLink products and offerings, through partnerships with innovative technology and service providers. The CenturyLink Marketplace provides an online catalog of installable software and solutions, allowing consumers to browse and purchase in a self-service, low friction consumption model. The Marketplace also provides a quick and easy way for CenturyLink sales force to help customers purchase solutions.
-By integrating their technology into the CenturyLink Marketplace, our technology partners can take advantage of a differentiated, digital route-to-market: presented as part of a enterprise-grade automation platform which powers one of the largest pools of IT infrastructure in the world.
+By integrating their technology into the CenturyLink Marketplace, our technology Providers can take advantage of a differentiated, digital route-to-market: presented as part of a enterprise-grade automation platform which powers one of the largest pools of IT infrastructure in the world.
 
 ## Benefits of Integrating with the CenturyLink Marketplace
 
 **Streamlined Product Delivery**
 
-The Marketplace offers options for providers to choose the best route to integrate into the Marketplace based on their product technology. Providers can learn more about those options [here](https://www.ctl.io/marketplace-program/#Overview).
-CenturyLink Ecosystem engineers do the "heavy lifting" to integrate many products into the Marketplace and customers consume via a low friction self-service model. Additionally, Marketplace transactions do not require a SoW.
+The Marketplace offers a documented SaaS integration path into the Marketplace. Providers can learn more about the integration process [here](software-as-a-service-saas-api.md).
+A CenturyLink Marketplace engineer works closely with the Providers development team to provide SaaS integration guidance and testing of the providers solution. A Marketplace team member will also work with the Provider to gain access to the Provider Portal to create customer-facing content for the product and SKU creation. Additionally, Marketplace transactions do not require a SoW, which shortens the procurement processes from months to days.
 
 **Grow Your Reach with a Digital Route to Market**
 
-Capitalize on the growth of cloud computing. By launching directly from the CenturyLink Marketplace, customers can quickly deploy products, decreasing the length of the sales cycle. Gain exposure to CenturyLink's growing community of partners, providers, and customers.
+Capitalize on the growth of cloud computing. By launching directly from the CenturyLink Marketplace, customers can quickly deploy products, decreasing the length of the sales cycle. Gain exposure to CenturyLink's growing community of Providers, Partners, and customers.
 
 **Simplified Billing and Payments**
 
@@ -40,7 +40,11 @@ This document explains the process for onboarding technology into the CenturyLin
 
 ### Joining the Marketplace Provider Program
 
-Providers can enter the Marketplace in many ways. Some enter via a CenturyLink sales or channel partner relationship. If you are a provider and wish to learn more about participating in the Marketplace, but do not have a CenturyLink representative to work with, you can fill out the "**Sign Up Now**" form found [here](https://www.ctl.io/marketplace-program/) and a Marketplace representative will reach out to you with more information.
+Providers can enter the Marketplace in many ways. Some enter via a CenturyLink sales or channel Provider relationship. If you are a provider and wish to learn more about participating in the Marketplace, but do not have a CenturyLink representative to work with, you can fill out the "**Sign Up Now**" form found [here](https://www.ctl.io/marketplace-program/) and a Marketplace representative will reach out to you with more information.
+
+### Go to Market Activities
+
+As part of the Marketplace program, Providers will work with a Marketplace team member to create a Go to Market plan. The Marketplace team will build out a blog and social campaign, create a folder in our internal sales library to host sales enablement content, and give Providers access to the CenturyLink Brownbag program, which allows for Providers to present their product to the CenturyLink sales team and solution architects. The Provider will also work with a Marketplace team member to execute any additional joint Go to Market or sales Enablement training.
 
 ### Application Process
 
@@ -78,9 +82,9 @@ To ensure Candidate solutions deliver both business value and trouble-free use, 
 
 * The solution delivers the business value outlined in the application
 
-Candidates have up to three months to complete any integration needed, validate functionality and create the necessary documentation. During this period, CenturyLink will provide the Candidate access to a fully functioning, production cloud environment with a $2,000 USD monthly usage credit to be used for automation testing. Once the technology integration has been certified, the Partner will continue to have access to the same integration environment with the same $2,000 USD monthly integration credit in order to ensure compatibility with new features and versions. In order to continue receiving this ongoing integration benefit, Candidates will need to be a cloud customer in good standing, through standard online terms and conditions found [here](https://www.ctl.io/legal/).
+Providers have up to three months to complete any integration needed, validate functionality and create the necessary documentation. During this period, CenturyLink will provide the Providers access to a fully functioning, production cloud environment with a monthly usage credit to be used for automation testing. Once the technology integration has been certified, the Provider will continue to have access to the same integration environment with a monthly integration credit in order to ensure compatibility with new features and versions. In order to continue receiving this ongoing integration benefit, Providers will need to be a cloud customer in good standing, through standard online terms and conditions found [here](https://www.ctl.io/legal/). The Provider must also be an active participating Provider. At no time should the account or credit be used for company production usage. Accounts are reviewed on a discretionary basis by CenturyLink to ensure that Providers are meeting the requirements listed above. CenturyLink reserves the right to terminate this credit at any time with a 30-day notification to the Provider via email to the active users on the CenturyLink Cloud account.
 
-Please note the Partner technology must function with the standard CenturyLink Cloud or product feature set as no feature development on the part of the CenturyLink Development Center will be performed to enable a Candidate through the process. During this development period and throughout the term of the Program, the Partner will be provided access, on a limited basis, to CenturyLink Integration Engineers as needed for detailed technology questions and roadmap exploration.
+Please note the Provider technology must function with the standard CenturyLink Cloud or product feature set as no feature development on the part of the CenturyLink Development Center will be performed to enable a Candidate through the process. During this development period and throughout the term of the Program, the Provider will be provided access, on a limited basis, to CenturyLink Integration Engineers as needed for detailed technology questions and roadmap exploration.
 
 ## Documentation
 
@@ -90,7 +94,7 @@ Public Articles should be used to practically guide end-users through deploying 
 
 Internal Articles will be used to provide detailed information to the CenturyLink Sales teams. These internal articles should include any documentation that the provider deems necessary for the sales teams to be trained to confidently educated customers on the product offering and the solutions it provides. Examples of these articles are sales enablement content, tear sheets, demos, and reference architectures.
 
-Once these KB articles are completed and published, the Partner will coordinate with the CenturyLink Marketplace team to validate the automated deployment model works as intended and the documentation accurate. For successful validation, CenturyLink Cloud Marketplace Integrators should be able to use the provided documentation to completely build and validate all features through our standard platform without the need for support outside of any unexpected issues.
+Once these KB articles are completed and published, the Provider will coordinate with the CenturyLink Marketplace team to validate the automated deployment model works as intended and the documentation accurate. For successful validation, CenturyLink Cloud Marketplace Integrators should be able to use the provided documentation to completely build and validate all features through our standard platform without the need for support outside of any unexpected issues.
 
 ## Onboarding
 
@@ -98,30 +102,30 @@ As the provider works with the CenturyLink Integration Engineers to certify thei
 
 ## Product Lifecycle Management
 
-Marketplace Provider Partners will be responsible for a number of tasks in order for their products to remain certified and eligible on the CenturyLink Marketplace:
+Marketplace Providers will be responsible for a number of tasks in order for their products to remain certified and eligible on the CenturyLink Marketplace:
 
 ## Business Development
 
-* Partner shall, within proper usage guidelines, contribute marketing collateral for use by both CenturyLink and Partner sales organizations.
+* Provider shall, within proper usage guidelines, contribute marketing collateral for use by both CenturyLink and Partner sales organizations.
 
-* Partner shall identify a use case to serve as the center-point of a content marketing strategy for which CenturyLink will publish a blog, video demo, or both to the CenturyLink Cloud blog.
+* Provider shall identify a use case to serve as the center-point of a content marketing strategy for which CenturyLink will publish a blog, video demo, or both to the CenturyLink Cloud blog.
 
-* Partner will provide sales and offer development support for solution development around their technology.
+* Provider will provide sales and offer development support for solution development around their technology.
 
 **Continuous Training**
 
-* As the Partner’s product changes or as needed and with reasonable notice:
+* As the Provider’s product changes or as needed and with reasonable notice:
 
-*  Partners will be expected to update KnowledgeBase articles and support the updating of recorded training videos for CenturyLink’s customer base.
+*  Providers will be expected to update KnowledgeBase articles and support the updating of recorded training videos for CenturyLink’s customer base.
 
-* Upon request, Partner will provide supplementary technical training for the CenturyLink Cloud Support team.
+* Upon request, Provider will provide supplementary technical training for the CenturyLink Cloud Support team.
 
-* Upon request, Partner will provide supplementary technical training for the CenturyLink Cloud Sales and Solution Architecture team.
+* Upon request, Provider will provide supplementary technical training for the CenturyLink Cloud Sales and Solution Architecture team.
 
 **Account Management**
 
-Partner is responsible for all aspects of their client management.
-CenturyLink will not act on behalf of or interact directly with the client on matters related to the usage of the Partner’s product.
+Provider is responsible for all aspects of their client management.
+CenturyLink will not act on behalf of or interact directly with the client on matters related to the usage of the Provider’s product.
 
 **Support**
 

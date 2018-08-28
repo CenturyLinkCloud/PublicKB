@@ -13,7 +13,7 @@ The key to success with cloud infrastructure is to manage your deployments by us
 
 Over the past year, CenturyLink Cloud has worked hard to improve our standard compute service to fulfill more of our customers’ cloud hosting needs. By standardizing our storage infrastructure on all-flash platforms, customers have the ability to host distributed workloads on a common compute product while maximizing performance.
 
-Due to the positive impact of the storage improvements across all of our cloud infrastructure, we’ve come to realize that our customers no longer need our specialized all-flash storage cloud compute service, [Hyperscale](https://www.ctl.io/hyperscale/). Today, we are announcing the end of availability for Hyperscale.
+Due to the positive impact of the storage improvements across all of our cloud infrastructure, we’ve come to realize that our customers no longer need our specialized all-flash storage cloud compute service, Hyperscale. Today, we are announcing the end of availability for Hyperscale.
 
 ### FAQ
 
