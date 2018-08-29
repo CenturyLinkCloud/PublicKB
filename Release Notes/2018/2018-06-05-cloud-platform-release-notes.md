@@ -6,9 +6,11 @@
 "contentIsHTML": false
 }}}
 
-### Ehancements (3)
+### Enhancements (3)
 
-#### [Managed Services Anywhere](//www.ctl.io//cloud-application-manager/managed-services-anywhere/)
+#### [Cloud Application Manager](//www.ctl.io/cloud-application-manager/)
+
+##### [Managed Services Anywhere](//www.ctl.io//cloud-application-manager/managed-services-anywhere/)
 
 Several feature enhancements have been made to the CAM Monitoring service including Intelligent Policies, hierarchical organization of policies and UI updates. These enhancements allow the application of policies to workloads dynamically based on meta-data about the workload and inheritance from higher scopes. These feature updates enable policy reuse through inherited defaults and the ability to override settings at any scope level.
 
@@ -31,7 +33,7 @@ CAM Monitoring has also introduced Dynamic Check Parameters that allow check par
 
 For each CAM Customer, Administrators of the first, Optimized Azure Subscription will receive Admin credentials and login URL. This can be obtained through the Edit screen of the Optimized, Azure provider. The admin user will receive the Owner role for that first subscription and all future subscriptions created via Cloud Application Manager.
 
-![Admin Credentials](../../images/Admin-Creds.png) 
+![Admin Credentials](../../images/Admin-Creds.png)
 
 #### CAM Platform: New Applications Site
 

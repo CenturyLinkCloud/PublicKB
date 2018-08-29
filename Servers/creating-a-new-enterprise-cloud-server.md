@@ -19,7 +19,7 @@ The heart of the CenturyLink Cloud Platform is the ability to create and manage 
     * Data Center Location
     * Group Membership
     * [Managed Operating System](https://www.ctl.io/managed-services/operating-system/) (if available in selection location)
-    * Server Type: [Standard](https://www.ctl.io/servers/) or [Hyperscale](https://www.ctl.io/hyperscale/) (if available in selection location)
+    * Server Type: [Standard](https://www.ctl.io/servers/) 
     * [Operating System](../Support/supported-operating-systems.md)
     * [Server Name](../Servers/server-naming-convention.md)
     * Description

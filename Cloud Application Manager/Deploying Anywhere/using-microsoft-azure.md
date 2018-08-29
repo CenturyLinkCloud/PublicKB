@@ -1,12 +1,24 @@
 {{{
 "title": "Using Microsoft Azure",
-"date": "04-19-2017",
-"author": "",
+"date": "07-31-2018",
+"author": "Guillermo Sanchez",
 "attachments": [],
 "contentIsHTML": false
 }}}
 
 ### Using Microsoft Azure
+
+**In this article:**
+
+* [Overview](#overview)
+* [Before You Begin](#before-you-begin)
+* [Registering Your Microsoft Azure Subscription (ARM) in Cloud Application Manager](#registering-your-microsoft-azure-subscription-arm-in-cloud-application-manager)
+* [Deploying Instances in Azure](#deploying-instances-in-azure)
+* [Registering Existing Instances from your Azure Account](#registering-existing-instances-from-your-azure-account)
+* [Shutdown and Terminate Instances in Azure](#shutdown-and-terminate-instances-in-azure)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
+
+### Overview
 
 There are two different flavors of Azure and Cloud Application Manager has providers for both. This document is in reference to Microsoft Azure.
 
@@ -25,7 +37,7 @@ If you do have an existing Azure account that you want CenturyLink to manage or 
 
 You need an Microsoft Azure subscription to be able to consume Azure services. Follow these steps to create one.
 
-### Steps
+#### Steps
 
 1. Login to the [Azure portal](https://portal.azure.com/) using your Microsoft Account.
 2. Select *Azure Active Directory* in the menu, and then *Properties*
@@ -41,7 +53,11 @@ You need an Microsoft Azure subscription to be able to consume Azure services. F
     * Read and write all users' full profiles _(User.ReadWrite.All)_
     * Read and write directory data _(Directory.ReadWrite.All)_
 
-    Then click **Done** and **Grant permissions** to apply them to your application.
+    Then click **Save**.
+    Now click on **Add > Windows Azure Active Directory** and select the following **Application** permission:
+    * Read and write directory data _(Directory.ReadWrite.All)_
+
+    Then click **Save** and **Grant permissions** to apply them to your application.
 
 8. Navigate to *Subscriptions* panel.
 9. In the *Overview* tab an **Subscription ID** is listed.  Copy and take note of this value for later.
@@ -50,12 +66,18 @@ You need an Microsoft Azure subscription to be able to consume Azure services. F
     * Role: **Owner** (If you do not see the Owner role, you will need to talk to your administrator.)
     * Assign Access to: **Azure AD user, group or application**
     * Select: **CenturyLink-CAM**
-12. Return to the *Azure Active Directory* panel, select *App Registrations* then *CenturyLink-CAM* then *Settings* and finally *Keys*.
-13. Set a Key with the following values:
+12. Now select *Resource providers* in your subscription and **Register** the following providers:
+    * *Microsoft.Compute*
+    * *Microsoft.Network*
+    * *Microsoft.Storage*
+
+    For more information, please refer to [Azure help](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services#portal)
+13. Return to the *Azure Active Directory* panel, select *App Registrations* then *CenturyLink-CAM* then *Settings* and finally *Keys*.
+14. Set a Key with the following values:
     * Description: **CAM-App-Key**
     * Expires: **Never Expires**
-14. Upon saving a **Key** value will be generated. Copy and keep the key (aka the **Secret**) value as you won't see it anymore once you navigate away.
-15. Input your Microsoft Azure Provider for an existing account as listed below:
+15. Upon saving a **Key** value will be generated. Copy and keep the key (aka the **Secret**) value as you won't see it anymore once you navigate away.
+16. Input your Microsoft Azure Provider for an existing account as listed below:
     * Subscription ID: **_Azure Subscription ID_**
     * Application ID: **_Application ID_**
     * Secret: **_Key value_**
@@ -136,29 +158,37 @@ To deploy a virtual machine with compute services you can edit one of windows or
 |--------|-------------|
 | Location | Select the region where you want to deploy the virtual machine. Each location has available its own images, networks and sizes so is the first parameter you have to choose.<br>Only locations with networks available are shown. |
 | OS Image | Select the guest OS to run in the worker role instance. Note that Windows 2008 images are not synced at this time because the Cloud Application Manager agent doesn’t work on them. |
-| Size | Select a size to set the number of CPU cores, memory, and disk size to store your OS files, process temporary memory, and store application data. For more information, see the [Azure help](https://msdn.microsoft.com/en-us/library/azure/dn197896.aspx). Note that D-Series sizes use solid-state drive disks. |
+| Size | Select a size to set the number of CPU cores, memory, and disk size to store your OS files, process temporary memory, and store application data. For more information, see the [Azure help](https://docs.microsoft.com/en-us/azure/cloud-services/cloud-services-sizes-specs). Note that D-Series sizes use solid-state drive disks. |
 | Username | Specify a username to be able to RDP or SSH into the instance directly. |
 | Password | Specify a password to be able to RDP or SSH into the instance directly. |
 | SSH Certificate | Only in Linux machines you can specify a certificate to access via ssh. |
-| Instances | Specify the number of instances to spawn. Note that at this time, we don’t autoscale or load balance instances. To enable that, you have to manually configure these options in [Azure](https://msdn.microsoft.com/en-us/library/hh680914). |
+| Instances | Specify the number of instances to spawn. If you increase it to a value higher than 1, a **High Availability** toggle will appear below that you can enable to use Azure availability sets for high availability support. Note that at this time, we don’t autoscale or load balance instances. To enable that, you have to manually configure these options in [Azure](https://docs.microsoft.com/en-us/azure/cloud-services/cloud-services-how-to-scale-portal) |
 | Delegate Management  | Delegate management to CenturyLink.  |
+
+When you increase the number of instances, the High Availability toggle appears:
+
+![High Availability toggle visible](../../images/cloud-application-manager/microsoft-azure-compute-deployment-options-4-ha.png)
+
+For more information, see the [Azure help](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/tutorial-availability-sets#availability-set-overview)
 
 #### Network
 
 | Option | Description |
 |--------|-------------|
-| Virtual Network |	This network has to be created before because Cloud Application Manager doesn't deploy any. |
+| Virtual Network | Choose the network to deploy to among the list of available networks. |
 | Subnet | This subnet is the resource related to  the virtual machine's network interface. Actually a virtual network is not used at deployment time. |
-|Security Group | Filter incoming and outgoing traffic for the virtual machine based on a set of rules. Multiple security groups in a zone can be selected for a virtual machine. For more information, see [Security Groups](http://docs.cloudstack.apache.org/projects/cloudstack-administration/en/4.3/networking_and_traffic.html#security-groups). |
+|Security Group | Filter incoming and outgoing traffic for the virtual machine based on a set of rules. Multiple security groups in a zone can be selected for a virtual machine. For more information, see [Security Groups](https://docs.microsoft.com/en-us/azure/virtual-network/security-overview). |
 |Public IP Address   | The public IP Address exposes our server to the public internet where other applications can access it.|
 
 #### Disks
 
 | Option | Description |
 |--------|-------------|
-| Data Disk   |  Storage size for data in addition to the Local Disk|
+| Storage Account | Select the Storage Account to use among the existing ones or Automatic (it will create a new one)|
+| Local Disk | When **Managed** toggle is ON it will use managed disks |
+| Data Disk | Storage size for data in addition to the Local Disk|
 
-If you can't create any policy box on Windows Azure provider probably you have to create a virtual network from azure portal or you may deploy a new one with a template as we describe in following section.
+If you can't create any policy box on Windows Azure provider probably you have to create a virtual network from Azure portal or you may deploy a new one with a template as we describe in following section. If you choose to use a [new Azure provider optimized by CenturyLink](../Cloud Optimization/partner-cloud-integration-azure-new.md) we will create a default network for you.
 
 #### Microsoft Azure ARM Template Deployment Options
 

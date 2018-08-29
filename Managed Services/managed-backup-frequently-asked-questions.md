@@ -100,7 +100,7 @@ A: Hot backup is not offered in Managed Backup.  Managed Backup is for file/fold
 
 For SQL, Mysql , Oracle and other databases, a suggested method is to put the data to a file/folder for inclusion in the backups.
 
-To safely backup and restore Microsoft Exchange mailbox data CenturyLink Cloud customers must implementation and operate their own solution.  Using 3rd party backup clients allows customers to perform recovery of message/mailbox (Exchange) data, define retention periods and backup frequency.  Customers can speak to a CenturyLink Cloud sales representative for guidance.
+To safely backup and restore Microsoft Exchange mailbox data CenturyLink Cloud customers must implement and operate their own solution.  Using 3rd party backup clients allows customers to perform recovery of message/mailbox (Exchange) data, define retention periods and backup frequency.  Customers can speak to a CenturyLink Cloud sales representative for guidance.
 
 **Q: Where are my offsite vault copies stored?**
 
