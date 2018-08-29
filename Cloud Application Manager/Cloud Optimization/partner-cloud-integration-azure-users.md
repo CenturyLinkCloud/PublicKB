@@ -1,6 +1,6 @@
 {{{
   "title": "Partner Cloud Integration: Obtaining Users to Portal.Azure.Com",
-  "date": "07-20-2018,
+  "date": "07-20-2018",
   "author": "Kevin Quaintance",
   "attachments": [],
   "contentIsHTML": false
