@@ -48,17 +48,30 @@ You need an Microsoft Azure subscription to be able to consume Azure services. F
     * Application Type: **Web app / API**
     * Sign-on URL: **https://localhost/logon**
 6. Upon saving an **Application ID** will be generated. Copy and take note of this value for later.
+7. For allowing the support personnel to access with a temporary user to your account in case they need to troubleshoot any support issue, you need to grant some permissions on the application you just created. To do so, on the application you just created click on **Settings > Required Permissions > Add > Microsoft Graph API** and select the following **Application** permission:
+    * Read and write directory Data
+     _(Directory.ReadWrite.All)_
 
-7. For allowing the support personnel to access with a temporary user to your account in case they need to troubleshoot any support issue, you need to grant some permissions on the application you just created. To do so, on the application you just created click on **Settings > Required Permissions > Add > Microsoft Graph API** and select the following **Delegated** permissions:
+    and the following **Delegated** permissions:
     * Read and write all users' full profiles _(User.ReadWrite.All)_
     * Read and write directory data _(Directory.ReadWrite.All)_
-
-    Then click **Save**.
-    Now click on **Add > Windows Azure Active Directory** and select the following **Application** permission:
-    * Read and write directory data _(Directory.ReadWrite.All)_
+    * Access directory as the signed in user
+    _(Directory.AccessAsUser.All)_
 
     Then click **Save** and **Grant permissions** to apply them to your application.
 
+    In order to allow automatic deletion, you must add the Company Administrator Role to the App. https://docs.microsoft.com/en-us/powershell/module/msonline/add-msolrolemember?view=azureadps-1.0 :
+~~~
+$tenantGuid = ‘YOUR-TENANT-ID’
+$user = ‘YOUR_USER@YOUR-DOMAIN.onmicrosoft.com'
+$password = 'YOUR PASSWORD'
+$appID = ‘YOUR-APP-ID’
+$Creds = New-Object System.Management.Automation.PsCredential($user, (ConvertTo-SecureString $password -AsPlainText -Force))
+Connect-MSOLSERVICE -Credential $Creds
+$msSP = Get-MsolServicePrincipal -AppPrincipalId $appID -TenantID $tenantGuid
+$objectId = $msSP.ObjectId
+Add-MsolRoleMember -RoleName "Company Administrator" -RoleMemberType ServicePrincipal -RoleMemberObjectId $objectId
+~~~
 8. Navigate to *Subscriptions* panel.
 9. In the *Overview* tab an **Subscription ID** is listed.  Copy and take note of this value for later.
 10. Select *Access Control (IAM)* and then selecte the *Add* button at the top of screen.  
