@@ -1,6 +1,6 @@
 {{{
 "title": "Using Microsoft Azure",
-"date": "07-31-2018",
+"date": "09-03-2018",
 "author": "Guillermo Sanchez",
 "attachments": [],
 "contentIsHTML": false
@@ -61,6 +61,7 @@ You need an Microsoft Azure subscription to be able to consume Azure services. F
     Then click **Save** and **Grant permissions** to apply them to your application.
 
     In order to allow automatic deletion, you must add the Company Administrator Role to the App. https://docs.microsoft.com/en-us/powershell/module/msonline/add-msolrolemember?view=azureadps-1.0 :
+
 ~~~
 $tenantGuid = ‘YOUR-TENANT-ID’
 $user = ‘YOUR_USER@YOUR-DOMAIN.onmicrosoft.com'
@@ -72,6 +73,7 @@ $msSP = Get-MsolServicePrincipal -AppPrincipalId $appID -TenantID $tenantGuid
 $objectId = $msSP.ObjectId
 Add-MsolRoleMember -RoleName "Company Administrator" -RoleMemberType ServicePrincipal -RoleMemberObjectId $objectId
 ~~~
+
 8. Navigate to *Subscriptions* panel.
 9. In the *Overview* tab an **Subscription ID** is listed.  Copy and take note of this value for later.
 10. Select *Access Control (IAM)* and then selecte the *Add* button at the top of screen.  
@@ -105,10 +107,10 @@ To connect to Microsoft Azure in Cloud Application Manager, you need to follow t
 #### Steps
 
 1. In Cloud Application Manager, go to **Providers** > **New Provider** and select **Microsoft Azure**.
-   ![microsoft-azure-add-provider-1.png](../../images/cloud-application-manager/microsoft-azure-add-provider-1.png)
+   ![Microsoft Azure - Add Provider](../../images/cloud-application-manager/microsoft-azure/add-provider-1.png)
 
 2. Fill the form with Subscription ID, Application ID, Secret and Tenant obtained in previous section and save.
-   ![microsoft-azure-credentials-2.png](../../images/cloud-application-manager/microsoft-azure-credentials-2.png)
+   ![Microsoft Azure - Credentials](../../images/cloud-application-manager/microsoft-azure/credentials-2.png)
 
 Once pressed the save button our new provider starts to synchronize with our azure account from which you will get the following information:
 
@@ -119,7 +121,7 @@ Once pressed the save button our new provider starts to synchronize with our azu
 
 During synchronization, we can get warnings about locations may be ignored because there are no associated virtual networks to them. This is because Cloud Application Manager does not create virtual networks but requires one in the deployment operation of one virtual machine.
 
-![microsoft-azure-during-sync.png](../../images/cloud-application-manager/microsoft-azure-during-sync.png)
+![Microsoft Azure - During sync](../../images/cloud-application-manager/microsoft-azure/during-sync.png)
 
 
 The result of the synchronization process will be the creation of one ARM template box and two policy boxes (Windows and RHEL respectively) in case of exist a virtual network in our account.
@@ -138,13 +140,13 @@ You can deploy to the following services in Azure:
 
 As part of the result of synchronization process you can find a list of available operative systems that you can use in your policy boxes. You can check this list in **Providers** page > **Configuration**.
 
-![microsoft-azure-os-images-available-to-deploy-3.png](../../images/cloud-application-manager/microsoft-azure-os-images-available-to-deploy-3.png)
+![Microsoft Azure - OS images available to deploy](../../images/cloud-application-manager/microsoft-azure/os-images-available-to-deploy-3.png)
 
 This images are what we show in image list from policy box edition.
 
 In addition, if you don't find the right image in that list, you could add a new image from the Azure Marketplace clicking in the "New" button at the top right corner and defining the following image properties:
 
-![microsoft-azure-add-os-image-to-deploy-10.png](../../images/cloud-application-manager/microsoft-azure-add-os-image-to-deploy-10.png)
+![Microsoft Azure - Add OS image to deploy](../../images/cloud-application-manager/microsoft-azure/add-os-image-to-deploy-10.png)
 
 | Option | Description |
 |--------|-------------|
@@ -155,17 +157,19 @@ In addition, if you don't find the right image in that list, you could add a new
 
 On the other hand, you could remove it from available images using the "Trash" icon.
 
-![microsoft-azure-delete-os-image-11.png](../../images/cloud-application-manager/microsoft-azure-delete-os-image-11.png)
+![Microsoft Azure - Delete OS image](../../images/cloud-application-manager/microsoft-azure/delete-os-image-11.png)
 
 #### Microsoft Azure Compute Deployment Options
 
 To deploy a virtual machine with compute services you can edit one of windows or RHEL policy boxes or create a new one. Then you can save your changes and click **Deploy**.
 
-![microsoft-azure-compute-deployment-options-pre4.png](../../images/cloud-application-manager/microsoft-azure-compute-deployment-options-pre4.png)
+![Microsoft Azure - Compute deployment options](../../images/cloud-application-manager/microsoft-azure/compute-deployment-options-pre4.png)
 
-![microsoft-azure-compute-deployment-options-4.png](../../images/cloud-application-manager/microsoft-azure-compute-deployment-options-4.png)
+If you can't create any policy box on Windows Azure provider probably you have to create a virtual network from Azure portal or you may deploy a new one with a template as we describe in following section. If you choose to use a [new Azure provider optimized by CenturyLink](../Cloud Optimization/partner-cloud-integration-azure-new.md) we will create a default network for you.
 
 #### Resources
+
+![Microsoft Azure Deployment Options - Resources](../../images/cloud-application-manager/microsoft-azure/compute-deployment-options-resources.png)
 
 | Option | Description |
 |--------|-------------|
@@ -175,33 +179,71 @@ To deploy a virtual machine with compute services you can edit one of windows or
 | Username | Specify a username to be able to RDP or SSH into the instance directly. |
 | Password | Specify a password to be able to RDP or SSH into the instance directly. |
 | SSH Certificate | Only in Linux machines you can specify a certificate to access via ssh. |
-| Instances | Specify the number of instances to spawn. If you increase it to a value higher than 1, a **High Availability** toggle will appear below that you can enable to use Azure availability sets for high availability support. Note that at this time, we don’t autoscale or load balance instances. To enable that, you have to manually configure these options in [Azure](https://docs.microsoft.com/en-us/azure/cloud-services/cloud-services-how-to-scale-portal) |
+| Instances | Specify the number of instances to spawn. If you increase it to a value higher than 1, a **High Availability** toggle will appear below that you can enable to use Azure availability sets for high availability support. |
+| ScaleSet  | Specify if the instance/s should be created into a ScaleSet resource. When switched on, it will enable auto-scaling and load-balancer sections (see below)  |
 | Delegate Management  | Delegate management to CenturyLink.  |
 
 When you increase the number of instances, the High Availability toggle appears:
 
-![High Availability toggle visible](../../images/cloud-application-manager/microsoft-azure-compute-deployment-options-4-ha.png)
+![High Availability toggle visible](../../images/cloud-application-manager/microsoft-azure/compute-deployment-options-ha.png)
 
 For more information, see the [Azure help](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/tutorial-availability-sets#availability-set-overview)
 
 #### Network
 
+![Microsoft Azure Deployment Options - Network](../../images/cloud-application-manager/microsoft-azure/compute-deployment-options-network.png)
+
 | Option | Description |
 |--------|-------------|
 | Virtual Network | Choose the network to deploy to among the list of available networks. |
 | Subnet | This subnet is the resource related to  the virtual machine's network interface. Actually a virtual network is not used at deployment time. |
-|Security Group | Filter incoming and outgoing traffic for the virtual machine based on a set of rules. Multiple security groups in a zone can be selected for a virtual machine. For more information, see [Security Groups](https://docs.microsoft.com/en-us/azure/virtual-network/security-overview). |
-|Public IP Address   | The public IP Address exposes our server to the public internet where other applications can access it.|
+|Security Group | Filter incoming and outgoing traffic for the virtual machine based on a set of rules. Multiple security groups in a zone can be selected for a virtual machine.  For more information, see [Security Groups](https://docs.microsoft.com/en-us/azure/virtual-network/security-overview).  This option will not appear if you choose to use a **ScaleSet** feature above.|
+|Public IP Address | The public IP Address exposes our server to the public internet where other applications can access it. If loadbalancing is configured, this public IP will be associated with it, instead of associating it directly with the instances. |
 
 #### Disks
+
+![Microsoft Azure Deployment Options - Disks](../../images/cloud-application-manager/microsoft-azure/compute-deployment-options-disks.png)
 
 | Option | Description |
 |--------|-------------|
 | Storage Account | Select the Storage Account to use among the existing ones or Automatic (it will create a new one)|
 | Local Disk | When **Managed** toggle is ON it will use managed disks |
-| Data Disk | Storage size for data in addition to the Local Disk|
+| Data Disk | Storage size for data volume in addition to the Local Disk. This option will not appear if you choose to use a **ScaleSet** feature above.|
 
-If you can't create any policy box on Windows Azure provider probably you have to create a virtual network from Azure portal or you may deploy a new one with a template as we describe in following section. If you choose to use a [new Azure provider optimized by CenturyLink](../Cloud Optimization/partner-cloud-integration-azure-new.md) we will create a default network for you.
+#### Autoscaling
+
+Once you have enabled the ScaleSet switch, you can switch on Autoscaling feature, in which you can also configure the following options:
+
+![Microsoft Azure Deployment Options - Autoscaling](../../images/cloud-application-manager/microsoft-azure/compute-deployment-options-autoscaling.png)
+
+| Option | Description |
+|--------|-------------|
+| Min. Instances | Minimum number of instances |
+| Max. Instances | Maximum number of instances |
+| Scale Out CPU Threshold | CPU threshold to fire a scale out event |
+| Increased by | Number of instances to add when a scale out event occurs |
+| Scale In CPU Threshold | CPU threshold to fire a scale in event |
+| Decreased by | Number of instances to remove when a scale in event occurs |
+
+The number of instances launched by the autoscaling feature is limited to the maximum number specified under Instances.
+
+#### LoadBalancer
+
+Once you have enabled the ScaleSet switch, you can switch on Loadbalancer feature, in which you can also configure the following options:
+
+![Microsoft Azure Deployment Options - LoadBalancer](../../images/cloud-application-manager/microsoft-azure/compute-deployment-options-loadbalancer.png)
+
+| Option | Description |
+|--------|-------------|
+| New Load Balancer | Create a new load balancer resource |
+| Use App Gateway | Use an existing Application Gateway. It must be available in a subnet other than the instance |
+| Protocol | TCP or UDP |
+| Port | Load balancer port |
+| Instance Port | Instance port to redirect to |
+
+When we add a port to the load balancer, apart from the load balancing rule that will be created, it will also configure the necessary probes and NAT rules to be able to access the backend instanctes through the load balancer.
+
+Setting up all these configuration we would deploy a set of instances with their corresponding availability set, autoscaling rules, load balancing, public IP, jump server and healthchecks with just a single click.
 
 #### Microsoft Azure ARM Template Deployment Options
 
@@ -211,11 +253,11 @@ Azure ARM Templates are supported on Cloud Application Manager with Microsoft Az
 
 1. Create Deployment Policy:
    * Go to **Boxes** > **New** > **Deployment Policy**.
-   ![microsoft-azure-create-new-deployment-policy-5.png](../../images/cloud-application-manager/microsoft-azure-create-new-deployment-policy-5.png)
+   ![Microsoft Azure - Create new deployment policy](../../images/cloud-application-manager/microsoft-azure/create-new-deployment-policy-5.png)
    * **Select Microsoft Azure** on the menu.
-   ![microsoft-azure-select-arm-new-deployment-policy-box-6.png](../../images/cloud-application-manager/microsoft-azure-select-arm-new-deployment-policy-box-6.png)
+   ![Microsoft Azure - Select ARM new deployment policy box](../../images/cloud-application-manager/microsoft-azure/select-arm-new-deployment-policy-box-6.png)
    * Select provider, name and description fields.
-   ![microsoft-azure-select-provider-name-7.png](../../images/cloud-application-manager/microsoft-azure-select-provider-name-7.png)
+   ![Microsoft Azure - Select provider name](../../images/cloud-application-manager/microsoft-azure/select-provider-name-7.png)
    * Click **Save**.
 
 2. Edit Deployment Policy.
@@ -223,7 +265,7 @@ Azure ARM Templates are supported on Cloud Application Manager with Microsoft Az
    * Put your own template and click **Save**.
 
 3. Deploy Template.
-   ![microsoft-azure-deploy-template-8.png](../../images/cloud-application-manager/microsoft-azure-deploy-template-8.png)
+   ![Microsoft Azure - Deploy template](../../images/cloud-application-manager/microsoft-azure/deploy-template-8.png)
    * From Template click **Deploy**.
    * **Select** one ARM Template Box.
    * Choose a name and description for the new instance.
@@ -237,7 +279,7 @@ You can import existing Virtual Machines into you workspace only in one click. T
 
 As part of the result of synchronization process you can find a list of available virtual machines that already exist in your account but not used yet in Cloud Application Manager. You can import an existing one clicking **Import** button.
 
-![microsoft-azure-available-instances-9.png](../../images/cloud-application-manager/microsoft-azure-available-instances-9.png)
+![Microsoft Azure - Available instances](../../images/cloud-application-manager/microsoft-azure/available-instances-9.png)
 
 We strongly recommend synchronize your Azure provider before you try to register the virtual machine. This due to such instance may be registered by another user before you try to register it. This way you can avoid this kind of problems.
 
