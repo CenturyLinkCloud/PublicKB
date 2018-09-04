@@ -23,7 +23,7 @@ Application Lifecycle Management now supports Azure Load Balancer and Azure App 
 #### [SafeHaven DRaaS](//www.ctl.io/disaster-recovery/)
 
 * Support for Linux Operating Systems : RHEL6/7, Ubuntu 14/16 for DR to Azure.
-* CMS box in CAM catalogs to deploy and configure SafeHaven Console.
+* CMS box in Cloud Application Manager catalogs to deploy and configure SafeHaven Console.
 * Addition of Azure Statistics tab in SafeHaven Console.
 * Support for Azure Managed Disks.
 
