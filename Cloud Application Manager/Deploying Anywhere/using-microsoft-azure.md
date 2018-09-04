@@ -180,10 +180,10 @@ If you can't create any policy box on Windows Azure provider probably you have t
 | Password | Specify a password to be able to RDP or SSH into the instance directly. |
 | SSH Certificate | Only in Linux machines you can specify a certificate to access via ssh. |
 | Instances | Specify the number of instances to spawn. If you increase it to a value higher than 1, a **High Availability** toggle will appear below that you can enable to use Azure availability sets for high availability support. |
-| ScaleSet  | Specify if the instance/s should be created into a ScaleSet resource. When switched on, it will enable auto-scaling and load-balancer sections (see below)  |
+| ScaleSet  | Specify if the instance/s should be created into a ScaleSet resource. When switched on, it will enable auto-scaling and load-balancer sections (see below). It will also create a managed Availability Set.  |
 | Delegate Management  | Delegate management to CenturyLink.  |
 
-When you increase the number of instances, the High Availability toggle appears:
+When you increase the number of instances, and if you have not enable Scale Set, the High Availability toggle appears:
 
 ![High Availability toggle visible](../../images/cloud-application-manager/microsoft-azure/compute-deployment-options-ha.png)
 
@@ -197,8 +197,8 @@ For more information, see the [Azure help](https://docs.microsoft.com/en-us/azur
 |--------|-------------|
 | Virtual Network | Choose the network to deploy to among the list of available networks. |
 | Subnet | This subnet is the resource related to  the virtual machine's network interface. Actually a virtual network is not used at deployment time. |
-|Security Group | Filter incoming and outgoing traffic for the virtual machine based on a set of rules. Multiple security groups in a zone can be selected for a virtual machine.  For more information, see [Security Groups](https://docs.microsoft.com/en-us/azure/virtual-network/security-overview).  This option will not appear if you choose to use a **ScaleSet** feature above.|
-|Public IP Address | The public IP Address exposes our server to the public internet where other applications can access it. If loadbalancing is configured, this public IP will be associated with it, instead of associating it directly with the instances. |
+|Security Group | Filter incoming and outgoing traffic for the virtual machine based on a set of rules. Multiple security groups in a zone can be selected for a virtual machine.  For more information, see [Security Groups](https://docs.microsoft.com/en-us/azure/virtual-network/security-overview).  This option will not appear if you choose to use a **ScaleSet** feature above, but all restrictions associated with the network and subnet above will be applied.|
+|Public IP Address | The public IP Address exposes our server to the public internet where other applications can access it. If loadbalancing is configured, a public IP will be automatically associated with it, so this option will be hidden because there is no need to associate public IPs directly with the instances. |
 
 #### Disks
 
