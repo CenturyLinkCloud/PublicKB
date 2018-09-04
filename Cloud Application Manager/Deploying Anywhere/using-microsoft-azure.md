@@ -2,6 +2,7 @@
 "title": "Using Microsoft Azure",
 "date": "09-03-2018",
 "author": "Guillermo Sanchez",
+"keywords": ["microsoft", "azure", "arm"],
 "attachments": [],
 "contentIsHTML": false
 }}}
