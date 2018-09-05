@@ -16,6 +16,8 @@
 
 **Sample Use Case** ISV would like to build a virtual machine base template that includes the OS, software packages and security customization to improve speed of delivery to their client base.
 
+**Please note** Text files stored on user's Desktops will NOT be carried over in the template if they are stored on the C Drive of a windows virtual machine
+
 ### Clones
 
 **Definition** Cloning creates an independent, duplicate copy of an existing virtual machine which is nearly identical to the “source” virtual machine. The cloned machine retains the same hardware, operating system, application and configuration items as the original virtual machine; however, certain items, such as the server’s security identifier, are changed during the process. For some further information around cloning, please see [Cloning Best Practices](../Servers/cloning-best-practices.md)
@@ -25,6 +27,9 @@
 **Costs** As a virtual machine clone is a completely separate copy of a VM, it is billed per hour based on the resources assigned. Visit our [pricing catalog](https://www.ctl.io/pricing) for rates.
 
 **Sample Use Case** IT department needs to reproduce and find a resolution to a software bug that is affecting theircustomers. In order to avoid changes and downtime to the production environment , a clone of the problem virtual machine is created allowing for further troubleshooting without customer impact.
+
+**Please note** Text files stored on user's Desktops will NOT be carried over in the Clone if they are stored on the C Drive of a windows virtual machine
+
 
 ### Snapshots
 
