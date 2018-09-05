@@ -25,4 +25,6 @@ It is important to understand the changes enacted by a clone job, to minimize co
 
 - The impact of cloning may vary between Operating Systems. For example, Server 2012 has features built-in to facilitate "cleaner" clones of Virtual Machines than earlier revisions.
 
+ - Text files stored on user's Desktops will NOT be carried over in the Clone if they are stored on the C Drive of a windows virtual machine
+
 - When a clone is requested for a server with multiple NICs, the newly cloned machine will only have a single NIC.
