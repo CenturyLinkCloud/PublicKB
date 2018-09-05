@@ -15,6 +15,7 @@ CenturyLink Cloud customers may choose to create their own baseline OS templates
 ### Exclusions
 
 * The Convert to Template option is unsupported for customers who leverage virtual machines with the multi-vNIC feature
+* Text files stored on user's Desktops will NOT be carried over in the Clone if they are stored on the C Drive of a windows virtual machine
 
 ### Important Notices
 
