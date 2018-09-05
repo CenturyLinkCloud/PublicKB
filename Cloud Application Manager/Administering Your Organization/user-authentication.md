@@ -11,7 +11,7 @@ In Cloud Application Manager enterprise organizations, users can sign in using a
 
 ![admin-user1.png](../../images/cloud-application-manager/admin-user1.png)
 
-you can access to these settings in the Site Management of your account
+you can access these settings from the left side menu in the Management site of your organization
 
 ![site-management1.png](../../images/cloud-application-manager/site-management-org-settings.png)
 
