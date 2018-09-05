@@ -27,7 +27,7 @@ This article provides information about the **Most Recent SafeHaven Release Upda
 
 |Release Date|Link to Release Notes|
 |---|---|
-|September 5, 2018|SafeHaven 5.1.2](../SafeHaven 5 General/SafeHaven5.1.2-Release-Notes.md)|
+|September 5, 2018|[SafeHaven 5.1.2](../SafeHaven 5 General/SafeHaven5.1.2-Release-Notes.md)|
 |August 7, 2018|[SafeHaven 5.1.1](../SafeHaven 5 General/SafeHaven5.1.1-Release-Notes.md)|
 |June 22, 2018|[SafeHaven 5.1.0](../SafeHaven 5 General/SafeHaven5.1.0-Release-Notes.md)|
 |March 27, 2018|[SafeHaven 5.0.1](../SafeHaven 5 General/SafeHaven5.0.1-Release-Notes.md)|
