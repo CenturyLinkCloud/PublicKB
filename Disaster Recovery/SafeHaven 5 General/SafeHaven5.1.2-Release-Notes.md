@@ -35,14 +35,14 @@ Please take a look at the link below to download the latest available release
 * [Ubuntu-16.vhdx](https://download.safehaven.ctl.io/SH-5.0.0/Ubuntu-16.vhdx): Hyper-V image for SRN/CMS appliances in a private Hyper-V envrionment
 * [Debian Package for CMS/SRN](https://download.safehaven.ctl.io/SH-5.1.2/safehaven-5.1.2.deb): to be used in the cluster installer
 * [GUI Package](https://download.safehaven.ctl.io/SH-5.1.2/SafeHavenConsole-5.1.2.zip): zip file containing the JRE, runs on any Windows platform
-  * [SafeHavenClient.5.1.1_win64.jar](https://download.safehaven.ctl.io/SH-5.1.2/SafeHavenClient.5.1.2_win64.jar): the Java application that requires an existing 64bit JRE-8 to run on a Windows OS
+  * [SafeHavenClient.5.1.2_win64.jar](https://download.safehaven.ctl.io/SH-5.1.2/SafeHavenClient.5.1.2_win64.jar): the Java application that requires an existing 64bit JRE-8 to run on a Windows OS
 * Windows Downloads:
   * [Driver Installer](https://download.safehaven.ctl.io/SH-5.1.2/safehaven_windows_driver-5.1.2.exe)
   * [MakeStub.exe](https://download.safehaven.ctl.io/SH-5.1.2/MakeStub-5.1.2.exe)
 * [Linux SafeHaven Onboarding Scripts Downloads](linux-onboarding-releases.md)
 * [script to turn a Ubuntu-14 machine into a recovery proxy for Windows servers](https://download.safehaven.ctl.io/SH-5.1.2/makestub_for_windows.sh)
 
-Please note that you can check the md5 checksum against the file named [MD5SUM-5.1.1.txt](https://download.safehaven.ctl.io/SH-5.1.2/MD5SUM-5.1.2.txt).
+Please note that you can check the md5 checksum against the file named [MD5SUM-5.1.2.txt](https://download.safehaven.ctl.io/SH-5.1.2/MD5SUM-5.1.2.txt).
 
 
 ### Documentations
