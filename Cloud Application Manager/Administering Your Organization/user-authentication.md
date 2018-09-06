@@ -7,8 +7,14 @@
 }}}
 
 ### Enable User Authentication
-In Cloud Application Manager enterprise organizations, users can sign in using any of the single sign-on authentication options you enable in the [admin console](admin-overview.md).
+In Cloud Application Manager enterprise organizations, users can sign in using any of the single sign-on authentication options
+
 ![admin-user1.png](../../images/cloud-application-manager/admin-user1.png)
+
+you can access these settings from the left side menu in the Management site of your organization
+
+![site-management1.png](../../images/cloud-application-manager/site-management-org-settings.png)
+
 
 **In this article:**
 * Single sign-on with Google, GitHub, or username, password
@@ -47,6 +53,12 @@ download link:
    * **Service Provider Entity ID.** This value must match with the entityID property on SP metadata file.
 
 5. Finally it's needed to download the IdP Metadata file and upload on CAM admin console.
+
+Take into consideration that this is our valid **Attribute mapping list**:
+
+- EMAIL: 'email', 'Email', 'User.Email'.
+- FIRST NAME: 'firstname', 'FirstName', 'User.FirstName'.
+- LAST NAME: 'lastname', 'LastName', 'User.LastName'.
 
 ### Single Sign-On with LDAP
 Enable LDAP in Cloud Application Manager to let users log in using credentials managed in OpenLDAP or Windows Active Directory.
@@ -115,6 +127,7 @@ This gives your developers, operations engineers, or IT admins access to the sam
 
 5. Click **Sync** to start syncing.
    **Note:** By default, we sync every 24 hours to get the latest group updates. To sync at any other time, click **Sync**. If a group member is deleted or moved out, they no longer have access to Cloud Application Manager workspaces and won’t be able to log in. To show or hide synchronized groups details, click on **View Groups** or **Hide Groups**.
+
 
 ### Giving LDAP Accounts Admin Access
 As good practice, you should give an LDAP user in your organization administrative access to Cloud Application Manager and set aside the default administrator account to use in case of emergency. After you set up LDAP, give the LDAP user admin access as follows.
