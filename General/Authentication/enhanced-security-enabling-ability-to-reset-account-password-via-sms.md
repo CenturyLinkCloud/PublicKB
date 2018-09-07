@@ -1,5 +1,5 @@
 {{{
-  "title": "Enhanced Security: Ability to Reset Account via SMS",
+  "title": "Enhanced Security: Ability to Reset Account Password via SMS",
   "date": "9-7-2018",
   "author": "Daniel Stephan",
   "attachments": [],
