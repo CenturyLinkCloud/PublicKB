@@ -1,6 +1,6 @@
 ﻿{{{
   "title": "Managed Operating System - Frequently Asked Questions",
-  "date": "02-11-2015",
+  "date": "08-30-2018",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false,
@@ -130,9 +130,13 @@ On Managed VMs, there are additional tasks that is being processed in the backgr
 * [making a new server a managed server](../Managed Services/created-a-managed-server-now-what.md)
 * [converting an existing server to a managed server](../Managed Services/converting-unmanaged-virtual-machines-to-managed.md)
 
+**What are the shared CenturyLink Managed Active Directory Domains?**
+
+CenturyLink has two shared Managed Active Directory environments, one of which your server will be joined to when it goes through the "Make Managed" process if you don't specify a customer-owned Managed Active Directory domain for it to join.  The two shared Managed Active Directory domains are named <em>na.msmps.net</em> and <em>cadmi.net</em>.
+
 **Can I join Managed Servers to my own domain?**
 
-Yes, customers may elect to join a Managed Server to their own domain instead of the CenturyLink Shared Active Directory Domain.  In order to join Managed Servers to a <em>dedicated</em> customer domain a user must deploy [Managed Active Directory](getting-started-with-managed-active-directory.md) in the CenturyLink Cloud.
+Yes, customers may elect to join a Managed Server to their own domain instead of a CenturyLink Shared Active Directory Domain.  As a pre-requisite to joining Managed Servers to a <em>dedicated</em> customer domain, you must first deploy [Managed Active Directory](getting-started-with-managed-active-directory.md) in the CenturyLink Cloud. 
 
 **Can *un-managed* Servers be converted to *Managed* (or vice versa)?**
 

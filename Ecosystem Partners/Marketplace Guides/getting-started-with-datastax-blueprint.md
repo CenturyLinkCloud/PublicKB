@@ -15,9 +15,9 @@ Data Stax has 3 Blueprints available:
 
 1. **DataStax Enterprise Starter Cluster Blueprint** - Will deploy DataStax OpsCenter, which will be used to install and manage the DSE database itself, and also to add additional nodes to the cluster once they have been created in the CenturyLink cloud with the DataStax Enterprise Node Blueprint.
 
-2. **DataStax Enterprise Additional Node Blueprint** - Will deploy 1 DataStax Enterprise Node on CenturyLink Hyperscale server. This node can be added to an existing cluster.
+2. **DataStax Enterprise Additional Node Blueprint** - Will deploy 1 DataStax Enterprise Node on CenturyLink cloud server. This node can be added to an existing cluster.
 
-3. **DataStax Enterprise Additional DC Blueprint** - Intended to be run on as an additional DC and does not include OpsCenter. This Blueprint will deploy high performance Hyperscale nodes and anti-affinity pools to create a five-node cluster equipped with locally attached solid state flash storage (SSD). This ensures efficient cluster operations by providing extremely low-latency response times for random reads while supplying ample sequential write performance for compaction and flush operations.
+3. **DataStax Enterprise Additional DC Blueprint** - Intended to be run on as an additional DC and does not include OpsCenter. This Blueprint will deploy high performance nodes and anti-affinity pools to create a five-node cluster equipped with locally attached solid state flash storage (SSD). This ensures efficient cluster operations by providing extremely low-latency response times for random reads while supplying ample sequential write performance for compaction and flush operations.
 
 ### Partner Profile
 DataStax - “Fast, Scalable Distributed Database Technology”
@@ -51,7 +51,7 @@ Follow these step by step instructions to get started with DataStax Blueprint de
    * On the first page, “Customize Blueprint”, ensure the following options are configured.
    * Password/Confirm Password (This is the root password for the servers. Keep this in a secure place).
    * Optionally set the server name prefix by adding numbers after each server name.
-   * **IMPORTANT**: For the “Server Type” choose Hyperscale and set the Anti-Affinity Pool to the one created earlier.
+   * **IMPORTANT**: Set the Anti-Affinity Pool to the one created earlier.
 
 4. Review and Confirm the Blueprint.
 

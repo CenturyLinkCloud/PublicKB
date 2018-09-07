@@ -7,7 +7,7 @@
 }}}
 
 ### Challenge
-Standard and Hyperscale virtual servers are deployed with a single network interface card (NIC) on a single network VLAN.
+Standard and virtual servers are deployed with a single network interface card (NIC) on a single network VLAN.
 
 Customers can assign any number of IP addresses and aliases to the NIC but they are all on the same network VLAN.  Applications that require layer-2 access to multiple VLANs require secondary NICs.
 
