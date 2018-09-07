@@ -19,7 +19,7 @@ This article assumes that you have [created your master account](enhanced-securi
 
 Go to [https://www.ctl.io/](https://www.ctl.io/), and click on the "Log In" link to the top right.  Click on Managed Hosting.  
 
-![ES-EARAVS-1.png](../images/ES-EARAVS-1.png)
+![ES-EARAVS-1.png](../../images/ES-EARAVS-1.png)
 
 Alternatively, you can go to [https://savvisstation.savvis.com](https://savvisstation.savvis.com), which will redirect you to the same login page.  
 
