@@ -30,7 +30,7 @@ Log in with your master account.
 
 Once you are in SavvisStation, go to the top right and hover over your name.  Click on "My Account".  
 
-![ES-EARAVS-2.png](../images/ES-EARAVS-2.png)
+![ES-EARAVS-2.png](../../images/ES-EARAVS-2.png)
 
 **3:** Adding Your Phone Number  
 You should be directed to the Contact Details section.  In this section, you can enter in your mobile phone number. 
@@ -40,14 +40,14 @@ You should be directed to the Contact Details section.  In this section, you can
 
 Once the phone number has provided, enter your password and click the update button.
 
-![ES-EARAVS-3.png](../images/ES-EARAVS-3.png)
+![ES-EARAVS-3.png](../../images/ES-EARAVS-3.png)
 
 **4:** Verify Your Phone Number  
 You will receive a text message with a token.  Enter the token into the verification screen and click update.  Once this is done, you can complete account password resets via SMS.
 
-![ES-EARAVS-4.png](../images/ES-EARAVS-4.png)
+![ES-EARAVS-4.png](../../images/ES-EARAVS-4.png)
 
 **5:** Resetting Your Account Password via SMS  
 After adding and verifying your phone number, you now have the option to send password reset tokens via SMS.  When resetting your password, choose "SMS Text Message" in the token delivery drop down to receive the token via SMS.
 
-![ES-EARAVS-5.png](../images/ES-EARAVS-5.png)
+![ES-EARAVS-5.png](../../images/ES-EARAVS-5.png)
