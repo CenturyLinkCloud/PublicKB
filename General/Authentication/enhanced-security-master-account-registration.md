@@ -29,7 +29,14 @@ Enter the email address you would like to register the master account with and c
 ![ES-MAR-3.png](../../images/ES-MAR-3.png)
 
 **3:** Enter Your Contact Details  
-Enter in your first and last name in the contact details section.  Once done, click the next button.
+Enter in your first and last name in the contact details section.  You will also be automatically assigned a PIN here.  If you do not like the PIN assigned, you may change it.  
+
+**PIN Criteria:**  
+* Your PIN can only contain numbers
+* Your PIN must be a minimum of 4 digits
+* Your PIN can only be a maximum of 10 digits  
+
+Once done, click the next button.
 
 ![ES-MAR-4.png](../../images/ES-MAR-4.png)
 
