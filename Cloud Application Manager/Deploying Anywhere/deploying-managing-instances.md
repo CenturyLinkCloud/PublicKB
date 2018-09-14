@@ -105,10 +105,7 @@ Select **Always on** if you don’t want to schedule anything. Shutdown powers o
 
 Instance actions (on the instances page or the lifecycle editor) trigger deployment related event scripts from your box. Take these actions to start, stop, terminate an instance, and even perform upgrades or make changes to your live instance.
 
-Some actions are available only after the instance changes state. For example, you can’t forcibly terminate an instance until you’ve terminated it first or you can't force online an instance if it isn't unavailable.
-
-  ![instance-force-online.png](../../images/cloud-application-manager/instance-force-online.png)
-
+Some actions are available only after the instance changes state. For example, you can’t forcibly terminate an instance until you’ve terminated it first.
 
 Go to the Admin Console to [manage several instances](../Administering Your Organization/manage-assets-monitor-usage.md)
  spread across users and workspaces in your organization.
@@ -139,6 +136,11 @@ This executes the dispose scripts from your box instance and then deletes the vi
 
 If a Terminate fails for some reason (maybe a broken dispose script) then this forcibly deletes the virtual infrastructure. If you previously terminated or deleted an instance from the provider’s side, the instance may linger in Force Terminate in Cloud Application Manager. Give it a couple of minutes then try to force-terminate again.
 
+**Force Online**
+
+Allow user with "Admin" role to reset the state of an instance in case it goes into the "unavailable" state when the last attempted operation was reconfigure or reinstall.
+
+
 **Delete**
 
 Click the delete icon after you Terminate or Force Terminate an instance. Until then, the box instance page and logs are retained in the Cloud Application Manager database. But delete completely removes the box instance page.
@@ -154,10 +156,6 @@ This lets you modify the box version, you can select one of the others box versi
 **Edit Details**
 
 This shows the instance’s details that you can modify. These details are: icon, name, description, tags, expiration, updates (available for box versions only) and automatic reconfigure.
-
-**Force Online**
-
-Allow user with "Admin" role to reset the state of an instance in case it goes into the "unavailable" state when the last attempted operation was reconfigure or reinstall.
 
 
 ### Contacting Cloud Application Manager Support
