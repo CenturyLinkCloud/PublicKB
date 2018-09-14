@@ -22,9 +22,10 @@ This article assumes that:
 1. A SafeHaven cluster has been created successfully
 2. Both production and recovery SRNs have been registered and peered
 3. Proper storage has been attached and claimed on both SRNs
+4. You have opened the SafeHaven console and connected to your CMS
 
 ### Create a Windows Protection Group
-1. Right click on the **Production SRN** and select **Create Protection Group**.
+1. In the SafeHaven Console, right-click on the **Production SRN** and select **Create Protection Group**.
  
 
 **NOTE**: Always start the Protection Group creation from the Production SRN.
