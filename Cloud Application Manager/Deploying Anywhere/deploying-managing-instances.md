@@ -105,9 +105,13 @@ Select **Always on** if you don’t want to schedule anything. Shutdown powers o
 
 Instance actions (on the instances page or the lifecycle editor) trigger deployment related event scripts from your box. Take these actions to start, stop, terminate an instance, and even perform upgrades or make changes to your live instance.
 
-Some actions are available only after the instance changes state. For example, you can’t forcibly terminate an instance until you’ve terminated it first.
+Some actions are available only after the instance changes state. For example, you can’t forcibly terminate an instance until you’ve terminated it first or you can't force online an instance if it isn't unavailable.
 
-Go to the Admin Console to [manage several instances](../Administering Your Organization/manage-assets-monitor-usage.md) spread across users and workspaces in your organization.
+  ![instance-force-online.png](../../images/cloud-application-manager/instance-force-online.png)
+
+
+Go to the Admin Console to [manage several instances](../Administering Your Organization/manage-assets-monitor-usage.md)
+ spread across users and workspaces in your organization.
 
   ![instance-states-8-2.png](../../images/cloud-application-manager/instance-states-8-2.png)
 
@@ -150,6 +154,11 @@ This lets you modify the box version, you can select one of the others box versi
 **Edit Details**
 
 This shows the instance’s details that you can modify. These details are: icon, name, description, tags, expiration, updates (available for box versions only) and automatic reconfigure.
+
+**Force Online**
+
+Allow user with "Admin" role to reset the state of an instance in case it goes into the "unavailable" state when the last attempted operation was reconfigure or reinstall.
+
 
 ### Contacting Cloud Application Manager Support
 
