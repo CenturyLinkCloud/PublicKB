@@ -1,7 +1,7 @@
 {{{
   "title": "Importing and Exporting data using a portable storage device",
-  "date": "12-26-2016",
-  "author": "Dana Bowlin",
+  "date": "2-23-2017",
+  "author": "Steve Akers",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -23,9 +23,9 @@ CenturyLink Cloud supports importing and exporting data through portable storage
   * dm-crypt, p7zip or GPG for Linux OS variants
 * Include all power sources and connection cables required for the device
 * USB 2.0 or above
-* Drive formatted with NTFS filesystem – FAT32 will not support large files
-* Drive cannot have any external locking mechanisms that could require multiple touches to remain available
-* For data import, ensure that there is enough disk space available on server
+* Device formatted with NTFS filesystem – FAT32 will not support large files
+* Device cannot have any external locking mechanisms that could require multiple touches to remain available
+* For data import, ensure that there is enough disk space available on the cloud server receiving the data
 * Prepaid return shipping label
 
 ### Device retention
@@ -38,21 +38,21 @@ If you are using domain specific ACLs. You must grant the "everyone" group full 
 
 ##### Requesting an Import/Export
 1. Create a Ticket through the CenturyLink Cloud Ticketing system
-  * Indicate the datacenter where the portable device will be sent
-  * Indicate the expected ship date and expected arrival date of the device
-  * Provide the password for the encryption only via the ticket
-  * Provide the location address to send the device after the data copy is completed
-  * Provide the names of the servers involved
-  * Provide details on what needs to be imported/exported (OVA/OVF and/or pathnames to files/directories)
-  * Provide any additional details about the data to be imported/exported
-  * Provide pre-paid shipping method and/or FedEx account number to be charged for return shipping.
+    * Indicate the datacenter where the portable device will be sent
+    * Indicate the expected ship date and expected arrival date of the device
+    * Provide the password for the encryption only via the ticket
+    * Provide the location address to send the device after the data copy is completed
+    * Provide the names of the servers involved
+    * Provide details on what needs to be imported/exported (OVA/OVF and/or pathnames to files/directories)
+    * Provide any additional details about the data to be imported/exported
+    * Provide pre-paid shipping method and/or FedEx account number to be charged for return shipping.
 
 2. Our team will reply with the data center mailing address and a data center logistics ticket number must be included on the shipping label. Note that the logistics number is different than the CenturyLink Cloud ticket number.
 
 ##### Import/Export Process
-1. Ship or deliver portable device to the datacenter - include the support ticket number (provided by Service Task) on the shipping label.
+1. Ship or deliver portable device to the datacenter - include the datacenter specific ticket number (provided by Service Task) on the shipping label.
 
-2. Our team will receive the device, connect the device to our network and begin the process to copy the data.
+2. Our team will receive the device, connect it to a dedicated import/export server and scan for viruses and malware.  If our antivirus process detects any threats or vulnerabilities, the device will be disconnected from our server and returned.  No data will be transferred from an infected device onto our network. If the device is free from viruses and malware, we will perform the import/export.
 
 3. Our team will periodically update the ticket for this request as we progress with the work.
 
@@ -79,7 +79,7 @@ A: No, please encrypt drive with compatible mode.
 
 **Q: Can CenturyLink Cloud provide a portable device?**
 
-A: Yes, we can provide a portable device.  Associated cost will be added as a one-time charge to your bill.  Note that this method can take 3-5 business days to procure and ship from our supplier.
+A: No, we no longer provide portable devices to customers for this process. 
  
 **Q: Where can I ship data?**
 

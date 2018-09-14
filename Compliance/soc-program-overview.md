@@ -31,3 +31,5 @@ If the CenturyLink customer has audit rights in their Master Service Agreement (
 ![SOC Report Availability ](../images/SOC-report-availability.png)
 
 All distributable documents include a "click wrap" feature that contains the embedded Non-Disclosure Agreement (NDA) language for the customer to agree to at the time the document is opened. This eliminates the need for the customer to sign and fax back an NDA. Any entity receiving the letter or reports is bound by the confidentiality clauses in the NDA.
+
+To request a copy of the SOC2 report, open a ticket with CenturyLink Platform Support, by emailing [help@ctl.io](mailto:help@ctl.io).

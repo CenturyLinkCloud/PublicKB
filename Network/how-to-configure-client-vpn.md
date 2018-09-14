@@ -1,7 +1,7 @@
 {{{
   "title": "How To Configure Client VPN",
-  "date": "12-23-2014",
-  "author": "jw@tier3.com",
+  "date": "3-21-2018",
+  "author": "john.mastin@ctl.io",
   "attachments": []
 }}}
 
@@ -36,7 +36,7 @@ In order to maximize resource efficiency on the platform, the Client VPN service
 **How to Configure Client VPN – Windows**
 
 1. **Download and install the latest OpenVPN client for Windows**
-  1. Download the latest stable 64-bit release (for Vista and later) from the [OpenVPN client](https://openvpn.net/index.php/open-source/downloads.html) website.
+  1. Download the OpenVPN client from the [OpenVPN client](https://openvpn.net/index.php/open-source/downloads.html) website. There is currently a known issue when using OpevnVPN client version 2.4.5 with OpenVPN servers provisioned prior to June 2017, to resolve use  2.3.18-I602 64-bit release. Additional information can be found in our [Troubleshooting Article](../Network/vpn-client-connection-troubleshooting.md).
   2. Double-click the installer and accept the UAC prompt.
   3. Accept all of the default options.
 2. **Copy the downloaded OpenVPN configuration files into place**
@@ -92,7 +92,7 @@ In order to maximize resource efficiency on the platform, the Client VPN service
   9.	Select the **Check Automatically** button so that Tunnelblick will periodically check for updates.
 3.	**Connect to your datacenter using Tunnelblick**
   1.	Click on the Tunnelblick icon in the menu bar.
-  2.	Select **Connect**.
+  2.	Select **Connect**.  You may get a pop-up window stating that 'ns-cert-type' was deprecated in OpenVPN 2.4 and removed in OpenVPN 2.5.  It is safe to click the OK button to dismiss the pop-up.  You should still be able to connect.
   3.	The Tunnelblick icon will change to show you that you have successfully connected.
   4.	If you get any warnings about public IP address not changing, you can click on the box for **Do not check for IP address changes** and then the **OK** button.
 4.	**Connect to servers**

@@ -8,7 +8,7 @@ git:
 # Use sed to replace the SSH URL with the public URL, then initialize submodules
 before_install:
 node_js:
-  - '0.12'
+  - '8'
 before_install:
   - git submodule foreach 'git fetch && git fetch --tags'
   - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules

@@ -1,6 +1,6 @@
 {{{
   "title": "How To: Add Public IP to Server",
-  "date": "2-29-2016",
+  "date": "2-13-2017",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -17,6 +17,9 @@ CenturyLink Cloud customers may wish to add a public IP to specific virtual mach
     1. Use the free OpenVPN client included in every CenturyLink Cloud Account. Refer to [How To Configure Client VPN](../Network/how-to-configure-client-vpn.md). This is the ideal solution for individuals who are mobile and not in fixed office or data center locations.
     2. Build an IPSEC VPN Tunnel from a remote office or data center location. Refer to [Creating a Self-Service IPSEC Site-to-Site VPN Tunnel](../Network/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md). IPSEC VPN tunnels are best for remote access to Cloud Virtual Machines when administrators are in centralized offices or data centers.
     3. If either of the previous options are not feasible customers should at a minimum use the source IP filter service on the public IP and pair that with local OS firewall policies within the guest VM.
+
+### Exceptions
+* Public IP's can only be applied to the **Primary Network** interface.  While the platform allows for **Secondary Network** interfaces customers cannot deploy a public IP to them.
 
 ### Add Public IP to Server
 1. Open the Servers GUI in the Control Portal

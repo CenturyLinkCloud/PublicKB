@@ -67,7 +67,7 @@
     the ways you can now&nbsp;<a href="http://www.ctl.io/blog/full/deploying-docker-containers-on-centurylink-cloud">Deploy Containers on CenturyLink Cloud</a>!</li>
   <li><strong>Better Back Office support. </strong>We've done some housekeeping on our side to improve logging and more efficiently manage certain common requests. With these tools, we can now better support our customers who may run into blueprint failures
     or are in&nbsp;need of&nbsp;<a href="http://www.ctl.io/products/support/service-tasks">Service Tasks</a>.&nbsp;</li>
-  <li><strong>Data Center Updates.&nbsp;</strong>The CenturyLink Cloud successfully migrated all users from the Croyden (GB2) data center to our data center in Portsmouth (GB1). There is also data center expansion planned in Great Britain in the coming weeks.&nbsp;
+  <li><strong>Data Center Updates.&nbsp;</strong>The CenturyLink Cloud successfully migrated all users from the Croyden (GB2) data center to our data center in Reading (GB1). There is also data center expansion planned in Great Britain in the coming weeks.&nbsp;
     <br
     /><img src="https://t3n.zendesk.com/attachments/token/dY44pCFVakFBS4tueAboQeoFr/?name=dc-list-ca3-nogb2.png" alt="dc-list-ca3-nogb2.png" />
   </li>

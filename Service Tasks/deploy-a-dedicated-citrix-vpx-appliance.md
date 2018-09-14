@@ -1,13 +1,19 @@
 {{{
   "title": "Deploy a Dedicated Citrix VPX Appliance",
-  "date": "3-23-2015",
+  "date": "2-23-2018",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
 ### Overview
-This knowledge base article will guide a customer through the process of deploying dedicated Citrix VPX load balancer(s) via [Service Task](http://www.ctl.io/service-tasks) on the CenturyLink Cloud.
+This Knowledge Base article will guide a customer through the process of deploying dedicated Citrix VPX load balancer(s) via [Service Task](http://www.ctl.io/service-tasks) on the CenturyLink Cloud.
+
+### FAQ
+
+**Q: How is a Dedicated Citrix VPX Priced?**
+
+**A:** Refer to our [Pricing Catalog](https://www.ctl.io/pricing) under Load Balancing for Citrix VPX License fees. These fees include **only** the license costs on a monthly basis. Compute usage for each appliance is based on a **2vCPU/2GB RAM/20GB Storage** Virtual Machine size.  Customers can leverage our [Online Price Estimator](https://www.ctl.io/estimator/) to determine this cost based on location. When using **Highly Available** configurations **both** licensing and compute costs will be **multiplied 2x**.
 
 ### Deploy a Load Balancing VLAN
 
@@ -23,14 +29,14 @@ In the sample below in CA3 we have a network created and named NLB_10.100.97.0/2
 [Create a formal request to the Service Task team.](../Service Tasks/requesting-service-tasks-on-centurylink-cloud.md)
 In order to properly process your request to deploy Citrix VPX device(s) customers will need to supply the Service Task team with the following information.
 
-* The Account alias of the Account you wish to deploy the VPX(s) into. The alias is found on the Account, Info page
+* The [Account alias](../Support/determine-control-portal-alias.md) of the Account you wish to deploy the VPX(s) into.
 * The Data Center in which you wish the VPX(s) to be deployed
 * The Network into which the VPX(s) should be deployed. In this example above NLB_10.100.97.0/24 was leveraged.
 * The Server Group you'd like the VPX(s) deployed into
 * The number of VIP's you'd like reserved in the network for load balancing. The support team can later reserve more via a ticket. Generally, our team will reserve 10 VIPs out of the box unless stated otherwise.
 * [Indicate which of the (6) dedicated load balancer types you wish to purchase.](http://www.ctl.io/load-balancing/#Pricing)
 * Indicate the Quantity of devices you wish to purchase.  **If you require Highly Available Load Balancers 2 units must be purchased.**
-* Indicate the VPX build version you wish to leverage:  10.5 or 11
+* Indicate the VPX build version you wish to leverage:  10.5, 11, 11.1 or **12<sup>new!</sup>**
 * [Provide your pin](../Support/pin-authentication-for-support-requests.md)
 
 ### Accessing the VPX Appliance(s)

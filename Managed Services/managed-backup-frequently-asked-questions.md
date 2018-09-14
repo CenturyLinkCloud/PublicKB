@@ -35,21 +35,16 @@ A: There could be a few causes:
 
 **Q: How much does the Managed Backup service cost? Why is the cost not included in the estimates shown in Control Portal?**
 
-A: Managed Backup uses a tiered pricing model and will cost anywhere from $0.87 to $1.10 per GB per month,and depending on how much average protected storage is being used (see table below). *Note: Existing managed hosting customers using Data Protect Backup will have cloud usage contribute to overall protected data utilization and also may have different pricing based on existing term commit agreements.* Though the costs for Managed Backup does not currently show up as part of the estimates in Control Portal, they will appear on your monthly invoice from CenturyLink as a separate line item. If you have detailed questions regarding billing, please contact your CenturyLink Sales Representative using one of the numbers above.
+A: Managed Backup uses a tiered pricing model and will cost anywhere from $0.42 to $0.49 per GB per month,and depending on how much average protected storage is being used (see table below). *Note: Existing managed hosting customers using Data Protect Backup will have cloud usage contribute to overall protected data utilization and also may have different pricing based on existing term commit agreements.* Though the costs for Managed Backup does not currently show up as part of the estimates in Control Portal, they will appear on your monthly invoice from CenturyLink as a separate line item. If you have detailed questions regarding billing, please contact your CenturyLink Sales Representative using one of the numbers above.
 
 **Avg Protected Data Utilization**|**Monthly Price per GB**
 ----------------------------------|------------------------
-0-1|$1.10
-1-5|$1.08
-5-10|$1.05
-10-15|$1.03
-15-20|$1.01
-20-25|$0.98
-25-30|$0.96
-30-40|$0.94
-40-50|$0.91
-50-75|$0.89
-75-100|$0.87
+0 - 1,024|$0.49
+1,025 - 5,120|$0.47
+5,121 - 10,240|$0.46
+10,241 - 25,600|$0.45
+25,601 - 51,200|$0.43
+51,201 - 102,400|$0.42
 
 *For information on how "average protected data utilization" is calculated, review the attachment at the end of this KB.*
 
@@ -105,7 +100,7 @@ A: Hot backup is not offered in Managed Backup.  Managed Backup is for file/fold
 
 For SQL, Mysql , Oracle and other databases, a suggested method is to put the data to a file/folder for inclusion in the backups.
 
-To safely backup and restore Microsoft Exchange mailbox data CenturyLink Cloud customers must implementation and operate their own solution.  Using 3rd party backup clients allows customers to perform recovery of message/mailbox (Exchange) data, define retention periods and backup frequency.  Customers can speak to a CenturyLink Cloud sales representative for guidance.
+To safely backup and restore Microsoft Exchange mailbox data CenturyLink Cloud customers must implement and operate their own solution.  Using 3rd party backup clients allows customers to perform recovery of message/mailbox (Exchange) data, define retention periods and backup frequency.  Customers can speak to a CenturyLink Cloud sales representative for guidance.
 
 **Q: Where are my offsite vault copies stored?**
 

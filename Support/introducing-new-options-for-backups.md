@@ -107,11 +107,11 @@ The answer varies depending on the workload and your requirements. Along those l
 * Support Model: Supported by CenturyLink (since the product is integrated into the Control Portal); on-boarding from CenturyLink is also included
 * To Get Started: Contact your account team, or [visit the product page](https://www.ctl.io/disaster-recovery/)
 * Other resources:
-  * [This section of the knowledge base](../Disaster Recovery) has additional articles on Safe Haven.
+  * [This section of the Knowledge Base](https://www.ctl.io/knowledge-base/disaster-recovery/safehaven-3/#1) has additional articles on Safe Haven.
 
 #### CommVault
 * When to use it: Data and file backup, with many powerful features and capabilities to protect data across a variety of platforms, and to host data across a variety of storage media. OS-level images are supported.
-* Requirements: Detailed in [this knowledge base article: Getting Started with CommVault Storage Blueprint](../Ecosystem Partners/Marketplace Guides/getting-started-with-commvault-storage-blueprint.md)
+* Requirements: Detailed in [this Knowledge Base article: Getting Started with CommVault Storage Blueprint](../Ecosystem Partners/Marketplace Guides/getting-started-with-commvault-storage-blueprint.md)
 * Cost: Based on the amount of storage protected. Pricing is available upon request, and evaluation licenses are available. Compute resources are required to run CommVault “control” servers in CenturyLink Cloud.
 * Licensing: Bring your own license (BYOL), available from CommVault
 * Availability: GA
@@ -123,7 +123,7 @@ The answer varies depending on the workload and your requirements. Along those l
 
 #### Double Take, from Vision Solutions
 * When to use it: Disaster Recovery, with an RTO of 4 hours; High Availability (HA) versions of the product, with an RTO of minutes, are also available. Further, a managed service for DR is also available.
-* Requirements: These are detailed on [this excellent knowledge base article CenturyLink Cloud Guide to Double Take DR](../Servers/centurylink-cloud-guide-to-doubletake-dr.md)
+* Requirements: These are detailed on [this excellent Knowledge Base article CenturyLink Cloud Guide to Double Take DR](../Servers/centurylink-cloud-guide-to-doubletake-dr.md)
 * Cost: Pricing is available upon request
 * Licensing: Bring Your Own License, available from Vision Solutions; usage-based pricing may also be available in the coming months.
 * Availability: GA

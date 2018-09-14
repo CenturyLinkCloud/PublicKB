@@ -12,7 +12,7 @@
 
 ### Early Adopter Program Updates (4)
 
-* __NEW - Simple Backup Service Beta Launch.__ This new self-service product offers protection for your data with file-level backups hosted in secure object storage. Control every aspect of your backups - including retention period, frequency of backup, and location - with policies you create and manage. The service is now in beta and is available to select customers. To request an invitation to the beta program, [visit the product page](https://www.ctl.io/simple-backup-service/) or send an email to [help@ctl.io](mailto:help@ctl.io). Note that this service will replace [the Standard and Premium storage services in Q1 2016](https://www.ctl.io/knowledge-base/support/backup-service-changes-faq/).
+* __NEW - Simple Backup Service Beta Launch.__ This new self-service product offers protection for your data with file-level backups hosted in secure object storage. Control every aspect of your backups - including retention period, frequency of backup, and location - with policies you create and manage. The service is now in beta and is available to select customers. To request an invitation to the beta program, [visit the product page](https://www.ctl.io/simple-backup-service/) or send an email to [help@ctl.io](mailto:help@ctl.io). Note that this service will replace the Standard and Premium storage services in Q1 2016.
 
 ![Simple Backup Service Policy](../../images/2015-12-15_simplebackup.png)
 

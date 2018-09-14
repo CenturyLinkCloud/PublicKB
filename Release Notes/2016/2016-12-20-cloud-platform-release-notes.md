@@ -24,8 +24,6 @@
 
 * __CTL.IO__
 
-	- __Online Cloud Estimator__ - [ElasticBox](https://www.ctl.io/elasticbox/) is now available on the [Cloud Estimator](https://www.ctl.io/estimator/).
-
 	- __Alternative Activation__ - For new customers who do not have credit card for online sign up, please contact your sales representative to proceed without a credit card.
 
 

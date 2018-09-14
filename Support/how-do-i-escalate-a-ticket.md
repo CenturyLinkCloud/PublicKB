@@ -31,7 +31,7 @@
 ### Steps
 
 1. **Please review the Ticket Prioritization Matrix so that you understand what priority your ticket should be.**
-2. **Email escalation@ctl.io with the following information:**
+2. **A NEW TICKET must be created by a separate email. Forwarding or CC'ing an existing ticket will prevent automation from handling the request properly and an escalation will not occur. Email escalation@ctl.io with the following information:**
 
   Subject: ESCALATION: Ticket - <your ticket number>
 

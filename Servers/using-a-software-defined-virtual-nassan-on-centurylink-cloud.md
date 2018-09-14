@@ -15,7 +15,7 @@ Customers looking to operate CIFS, NFS or iSCSI services within the cloud platfo
 * **Pool Storage**-Pool virtual disks and S3 Compatible Object Storage to create large block iSCSI or NAS volumes for virtual or bare metal servers.
 * **High Availability**-Create highly available storage services in any combination of on-premise, CenturyLink Cloud or other leading Cloud vendors.  
 
-In this knowledge base we will be using our **ecosystem** [SoftNAS](//www.softnas.com) Virtual Appliance. [SoftNAS](//www.softnas.com) is a software-defined unified NAS/SAN storage solution for businesses that need powerful, frictionless and agile storage.
+In this Knowledge Base article we will be using our **ecosystem** [SoftNAS](//www.softnas.com) Virtual Appliance. [SoftNAS](//www.softnas.com) is a software-defined unified NAS/SAN storage solution for businesses that need powerful, frictionless and agile storage.
 
 ### Security Notes
 In this sample deployment no security services were put in place around access to either iSCSI block or filesystem (CIFS, NFS) services. SoftNAS and the CenturyLink Cloud provide a wide range of authentication and security components customers can and should implement that are outside the scope of a basic functionality overview.

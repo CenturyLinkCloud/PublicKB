@@ -1,6 +1,6 @@
 {{{
   "title": "Supported Operating Systems",
-  "date": "9-2-2016",
+  "date": "9-13-2017",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
@@ -10,22 +10,9 @@
 
 The following operating systems are supported in CenturyLink Cloud:
 
-* CentOS 5
-* CentOS 6
-* CentOS 7
-* Debian 6
-* Debian 7
-* RedHat Enterprise Linux 5
-* RedHat Enterprise Linux 6
-* RedHat Enterprise Linux 7
-* Ubuntu 12
-* Ubuntu 14
-* Ubuntu 16
-* Windows Server 2008 R2 Standard
-* Windows Server 2008 R2 Enterprise
-* Windows Server 2008 R2 Datacenter Edition
-* Windows Server 2012 Datacenter Edition
-* Windows Server 2012 R2 Datacenter Edition
+Virtual Machines|Bare Metal
+----------------|----------
+CentOS 6<br>CentOS 7<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>RedHat Enterprise Linux 6<br>RedHat Enterprise Linux 7<br>Ubuntu 14<br>Ubuntu 16<br>Windows Server 2008 R2 Standard<br>Windows Server 2008 R2 Enterprise<br>Windows Server 2008 R2 Datacenter Edition<br>Windows Server 2012 Datacenter Edition<br>Windows Server 2012 R2 Datacenter Edition<br>Windows Server 2016 Datacenter Edition|Windows 2012 R2 Standard Edition<br>Windows 2012 R2 Datacenter Edition<br>Red Hat Enterprise Linux 6<br>Red Hat Enterprise Linux 7<br>CentOS 6<br>CentOS 7<br>Ubuntu 14<br>Ubuntu 16
 
 **NOTE: Only the 64-bit version of each OS is supported**
 
@@ -40,6 +27,10 @@ Yes - the only requirement is that each custom template needs to "map" to a supp
 ### What is your operating system retirement policy?
 
 This is listed [here](../Servers/operating-system-template-retirement-policy.md).
+
+### Can I perform an in-place upgrade of the Operating System?
+
+No, in-place upgrades of the Operating System are not supported.  This means that you cannot, for example, upgrade a Windows Server 2012 Standard edition to Windows Server 2012 Datacenter edition.  It will be necessary to deploy a new server if you need a different OS edition.
 
 ### I'd like to deploy an operating system that is not supported. What are my options?
 

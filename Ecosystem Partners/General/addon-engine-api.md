@@ -7,6 +7,8 @@
   "contentIsHTML": false
 }}}
 
+<strong>The AppFog service was retired on June 29, 2018. The AppFog Platform-as-a-Service is no longer available, including all source code, env vars, and database information.</strong>
+
 ### Purpose
 
 The new Add-on Engine marketplace available to the AppFog v2 users to provision and
@@ -116,7 +118,7 @@ $ kiri login myusername --authendpoint https://api.ctl.io
 ```
 
 Once authenticated you can now upload and test Service Manifests located in your CenturyLink Cloud
-Control account. This ensures that one Partner is not able to see another Partner's Service Manifests.
+Control Portal account. This ensures that one Partner is not able to see another Partner's Service Manifests.
 
 Kiri can make a test provision call and will use the manifests `api.test` block
 ```

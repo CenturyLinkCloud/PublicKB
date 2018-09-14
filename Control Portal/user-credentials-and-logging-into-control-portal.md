@@ -26,8 +26,8 @@ CenturyLink Cloud customers
    ![Control Portal Login](../images/control-portal-login.png)
 
 **Note:** Your account may have SAML enabled allowing for Single Sign-On capabilities. For more information, refer to this Knowledge Base article about enabling SAML.
-* [Control Portal](https://www.ctl.io/knowledge-base/control-portal/using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal/)
-* [Control Portal with Windows 2012 R2 ](https://www.ctl.io/knowledge-base/control-portal/using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal-with-windows-2012r2/)
+* [Control Portal](using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md)
+* [Control Portal with Windows 2012 R2 ](using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal-with-windows-2012R2.md)
 
 Also, if you are an Account Admin, you have the ability to see information for other user accounts that have been created within your sub account. That information is available in Users area under the Account menu. While you cannot see user passwords, your credential enable you to perform the following:
 * View username and information.
@@ -39,6 +39,18 @@ Also, if you are an Account Admin, you have the ability to see information for o
 ### Server Admin Credentials
 These credentials are different from your Control Portal user credentials. Server Admin credentials are used to gain access to a server you have created within your account. These credentials are typically set at the time when you create the server and can be changed from the server details page. **Note:** The password should be secure and strong, particularly if your server is accessible via the public Internet.
 
+Server Admin Credentials in the Control Portal should always be the same as what is on the server.  Out of sync passwords can impact opertions like:
+* On-Server Manipulation
+  * Disk add/delete/expand
+  * Network Interface add/modify
+  * Blueprint Execution 
+  * Script Execution
+  * Software package installation
+* Server Manipulation
+  * Cloning
+  * Template creation
+* Customer Care Engineer access upon customer request
+
 For more information on changing or retrieving server administrator passwords, please reference the following two Knowledge Base articles:
-* [How to Change a Server Administrator Password](https://www.ctl.io/knowledge-base/servers/how-to-change-a-server-administrator-password/)
-* [How to Retrieve a Root/Administrator Password](https://www.ctl.io/knowledge-base/servers/how-to-retrieve-rootadministrator-password/)
+* [How to Change a Server Administrator Password](../Servers/how-to-change-a-server-administrator-password.md)
+* [How to Retrieve a Root/Administrator Password](../Servers/how-to-retrieve-rootadministrator-password.md)

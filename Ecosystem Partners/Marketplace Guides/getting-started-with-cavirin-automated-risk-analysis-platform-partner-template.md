@@ -17,7 +17,7 @@ For additional information about the company please visit [Cavirin](http://www.c
 ##### Cavirin Sales and Support:
 * 24x7 Web Support - [https://support.cavirin.com](https://support.cavirin.com)
 * 24x7 Email Support - [support@cavirin.com](mailto:support@cavirin.com)
-* Sales Telephone Support - Please email [Tim Thompson](mailto:tthompson@cavirin.com) or via telephone: (469) 831-8357
+* Sales Telephone Support - Please email [Sales](mailto:sales@cavirin.com) or via telephone: 1-408-200-3544 option 2
 
 ### Description
 Cavirin has integrated their technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this compliance and regulatory governance solution.

@@ -23,7 +23,7 @@
 
 ### Enhancements (3)
 
-* __Intrusion Prevention/IPS.__ Installation of the [Intrusion Prevention Service (IPS)](https://www.ctl.io/intrusion-prevention-service/) can be done via Blueprint. Details on the installation process and other [information on Intrusion Prevention](https://www.ctl.io/knowledge-base/security/#1) can be found in the Security section of our knowledge base.
+* __Intrusion Prevention/IPS.__ Installation of the [Intrusion Prevention Service (IPS)](https://www.ctl.io/intrusion-prevention-service/) can be done via Blueprint. Details on the installation process and other [information on Intrusion Prevention](https://www.ctl.io/knowledge-base/security/#1) can be found in the Security section of our Knowledge Base.
 
   * __Now Available in UC1.__ IPS is now available in all CenturyLink Cloud Data Centers, including UC1.
 

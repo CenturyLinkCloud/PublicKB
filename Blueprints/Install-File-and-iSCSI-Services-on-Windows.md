@@ -36,7 +36,7 @@ By leveraging [CenturyLink Cloud Public Blueprints](../Blueprints/centurylink-cl
 ### Install File and iSCSI Services on Windows using Blueprints
 Customers who are building environments in the CenturyLink Cloud may wish to use Blueprints to build servers and install File and iSCSI Services in an automated fashion. Blueprints provide a tool for customers to build environments for multiple deployments.
 
-To use this approach follow the [How to Build a Blueprint](../Blueprints/how-to-build-a-blueprint.md) knowledge base article and combine the Install File and iSCSI Services on Windows script with Windows Virtual Machine builds.
+To use this approach follow the [How to Build a Blueprint](../Blueprints/how-to-build-a-blueprint.md) Knowledge Base article and combine the Install File and iSCSI Services on Windows script with Windows Virtual Machine builds.
 
 ![File and Storage Servers Environment](../images/Install-File-and-iSCSI-Services-on-Windows-05.png)
 

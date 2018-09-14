@@ -1,7 +1,7 @@
 {{{
   "title": "The Runner Minion",
-  "date": "04-29-2016",
-  "author": "Benjamin Harristhal",
+  "date": "05-12-2017",
+  "author": "Justin Colbert",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -44,40 +44,84 @@ Execute a docker pull on the image to download it to your system.
 docker pull centurylink/rnr-minion
 ```
 
-#### Register The Runner Minion
-Register the Runner Minion to receive an access token.
+### Register The Runner Minion
+Register the Runner Minion to receive an access token. Please note that all calls to the Runner APIs require a valid CenturyLink Cloud bearer token.
 
-##### Request
-Attribute | Value
---- | --- |
-URL | http://api.runner.ctl.io/minions/{account-alias}/tokens
-Authorization | "Bearer eye...qaw="
-Payload | {}
+#### URL
+##### Structure
+    POST https://api.runner.ctl.io/minions/{account-alias}/tokens
 
-##### Curl example:
-```
-curl \
--XPOST \
--H "Content-Type: application/json" \
--H "Authorization: Bearer eyJ0e...fIw" \
-https://api.runner.ctl.io/minions/wftc/tokens \
---data '{}'
-```
+#### Request
+##### URI Parameters
+| Name | Type | Description | Req. |
+| --- | --- | --- | --- |
+| account-alias | string | Short code for a particular account | Yes |
 
-##### Response
-Key | Value
---- | ---
-"accountAlias"| "{account-alias}",
-"location"| "minion.default",
-"requestQueue"| "minion.default",
-"replyQueue"| "minion.default.reply",
-"id"| "ea94a4b...-da2266e761f3",
-"token"| "1020...-a023a23b586f"
+##### Content Parameters
+| Name | Type | Description | Req. |
+| --- | --- | --- | --- |
+| name | string | A unique name for the minion | No |
+| description | string | A description for the minion | No |
+| location | string | Location to associate with the minion. This will also be the queue name that the minion polls from | No |
+| networks | array | CIDR Network blocks to associate the minion with | No |
+
+#### Examples
+##### JSON
+
+    {
+      "name":"private_minion",
+      "description":"A private minion",
+      "location":"minion.private"
+      "networks":[ "127.0.0.1/24", "10.123.0.1/24" ]
+    }
+
+
+#### Response
+##### Minion Definition
+| Name | Type | Description |
+| --- | --- | --- | --- |
+| name | string | The minion name |
+| description | string | The minion description |
+| accountAlias | string | The CLC alias this minion is associated with |
+| location | string | Location associated with the minion |
+| requestQueue| string | The name of the minion requests queue |
+| replyQueue| string | The name of the minion replies queue |
+| networks | array | The networks associated with this minion |
+| id | string | The minion ID |
+| token | string | The minion startup token |
+
+#### Examples
+##### JSON
+    {
+      "name": "private_minion",
+      "description": "A private minion",
+      "accountAlias": "WFTC",
+      "location": "minion.private",
+      "providerType": null,
+      "requestQueue": "minion.private",
+      "replyQueue": "minion.private.reply",
+      "networks": null,
+      "id": "274a7833-....-....-....-...a867c4723",
+      "token": "e4feb008-....-....-....-...9daf251a6"
+    }
 
 
 #### Launch The Runner Minion
-Then launch your Runner Minion with the token.
+The below command will then launch your new Runner minion
 
 ```
-docker run -it  centurylink/rnr-minion --token=1020...-a023a23b586f --verbose --minion-api-endpoint=https://api.runner.ctl.io/minions --queue-api-endpoint=https://api.runner.ctl.io/queues
+docker run -dit  centurylink/rnr-minion --token=<token>
 ```
+
+
+#### Minion Specific SSH Key
+One benefit of using your own Minion, is the ability for a user to set a private SSH key to use for all connections routed through their Minion. By starting a Minion with the below command, the specified SSH Private key will be used for all outbound connections unless a different set of credentials are manually specified in the job definition.
+
+```
+docker run -dit -v <path/to/ssh_key>:/data01/minion/ssh_key centurylink/rnr-minion --token=<token>
+```
+
+#### Making use of your new Minion
+Once your Minion is up and running, there are two ways that you can use it. First, if you specified any networks whenever you registered your minion, Runner will automatically route traffic destined for those subnets to your Minion. Second, by adding a rnr_location property to any host like in the image below, you can tell Runner to route all tasks destined for that server through the specified Minion.
+
+![](../images/runner/rnr_location.jpg)

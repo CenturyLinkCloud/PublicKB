@@ -14,7 +14,7 @@
   <li><strong><strong>vRealize (vCAC) adapter. </strong></strong>CenturyLink Cloud is now supported by&nbsp;<a href="https://www.vmware.com/products/vrealize-suite" target="new">VMware’s vRealize</a>,&nbsp;a cloud management platform that enables users to
     perform functions against VMware vSphere, other hypervisors, and select public clouds.&nbsp;For CenturyLink customers who have built custom private clouds using VCE or hybrid solutions with vCloud Air, vRealize provides a seamless integration point
     for extending deployments to the CenturyLink Cloud. Likewise, VMware customers looking to extend their hybrid footprint into the CenturyLink Cloud can leverage vRealize to manage their CenturyLink Cloud virtual machines. You can find more about&nbsp;the
-    full features of this integration in<a href="https://t3n.zendesk.com/entries/54755210-vRealize-6-1-formerly-vCAC-Support-for-CenturyLink-Cloud" target="new">&nbsp;our knowledge base</a>.
+    full features of this integration in<a href="https://t3n.zendesk.com/entries/54755210-vRealize-6-1-formerly-vCAC-Support-for-CenturyLink-Cloud" target="new">&nbsp;our Knowledge Base</a>.
     <p><img src="https://t3n.zendesk.com/attachments/token/wP9LtW8dhUPUuzlJlA7qaRnMs/?name=vRealize_2.png" alt="vRealize_2.png" />
     </p>
   </li>

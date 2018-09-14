@@ -24,7 +24,7 @@ http://www.datto.com/
 |Datto Channel Manager<br>Brian Buckman<br>bbuckman@datto.com<br>(312) 638-2742<br>pricing will come from your authorized MSP | 24x7 Customer Support<br> [www.datto.com/support](http://www.datto.com/support)<br>(877) 455-6015	|
 
 ### Description
-Datto has integrated their technology with the CenturyLink Cloud platform. The purpose of this knowledge base article is to help the reader take advantage of this integration to achieve rapid time-to-value for this data protection solution.
+Datto has integrated their technology with the CenturyLink Cloud platform. The purpose of this Knowledge Base article is to help the reader take advantage of this integration to achieve rapid time-to-value for this data protection solution.
 
 Technology from Datto helps CenturyLink Cloud customers address the business challenge of data protection and eliminates downtime by virtualizing systems instantly and is now available as part of the CenturyLink Cloud Blueprint Engine.
 

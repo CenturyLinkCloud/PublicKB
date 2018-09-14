@@ -61,7 +61,7 @@ CenturyLink's WordPress Hosting platform hosts secure, enterprise class, cloud-b
 
 **Q: What are the differences between a standard WordPress install and a CenturyLink Cloud WordPress install?**
 
-A: The CenturyLink WordPress hosting team has compiled a [knowledge base article for known WordPress Limitaions](wordpress-known-limitations.md).
+A: The CenturyLink WordPress hosting team has compiled a [Knowledge Base article for known WordPress Limitaions](wordpress-known-limitations.md).
 
 **Q: I lost my Git confirmation email, how do I confirm my Git repository?**
 
@@ -69,7 +69,7 @@ A: Use the link here: https://git.wordpress.ctl.io/users/confirmation/new
 
 **Q: How do I migrate my existing WordPress Site to CenturyLink's WordPress hosting platform?**
 
-A: The CenturyLink WordPress hosting team has compiled a [knowledge base article for manually migrating a WordPress site to CenturyLink Cloud](wordpress-site-migration-to-centurylink-cloud.md).
+A: The CenturyLink WordPress hosting team has compiled a [Knowledge Base article for manually migrating a WordPress site to CenturyLink Cloud](wordpress-site-migration-to-centurylink-cloud.md).
 
 **Q: Can I have persistent storage with CenturyLink WordPress Hosting?**
 

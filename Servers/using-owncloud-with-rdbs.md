@@ -75,7 +75,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 
 
 ### Create a CenturyLink Relational DB MySQL Instance
-1. Use [Create a MySQL instance on CenturyLink Relational DB MySQL Instance](../Database/getting-started-with-mysql-rdbs.md) knowledge article to create a database instance
+1. Use [Create a MySQL instance on CenturyLink Relational DB MySQL Instance](../Database/rdbs-mysql-getting-started.md) knowledge article to create a database instance
 2. Note down the user name and the connection string from the setup
 
   ![DBaaS](../images/owncloud/rdbs.png)
@@ -150,7 +150,7 @@ Create a Linux server in CenturyLink Cloud using the following knowledge article
 
   ![ownCloud Welcome](../images/owncloud/owncloud-welcome.png)
 
-7. Download the certificate from Relational DB Service to the ownCloud server to enable secure communication between the database and the ownCloud server.  Please refer to this [Connecting to MySQL Relational DB Service over SSL-enabled Connection](../Database/connecting-to-mysql-rdbs-over-ssl.md) knowledge article.
+7. Download the certificate from Relational DB Service to the ownCloud server to enable secure communication between the database and the ownCloud server.  Please refer to this [Connecting to MySQL Relational DB Service over SSL-enabled Connection](../Database/rdbs-mysql-connecting-over-ssl.md) knowledge article.
 	- Add the following to section to the config.php file (default location: /var/www/owncloud/config/)
 
 	   ```

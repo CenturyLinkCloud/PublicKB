@@ -12,7 +12,7 @@
   MX records. The Spam filter will filter out unwanted messages and then route the email to your mail server.</p>
 <p>MX records are configured in DNS. To configure MX records using the Control portal follow these steps:</p>
 <ol>
-  <li>Navigate to Domains -&gt; DNS. Select the DNS zone that corresponds with your email domain</li>
+  <li>Navigate to Network and select DNS. Select the DNS zone that corresponds with your email domain</li>
   <li>Select the DNS Tasks drop down and hit Add New Record</li>
   <li>Select type: MX</li>
   <li>In the Exchange field, input the MX record</li>

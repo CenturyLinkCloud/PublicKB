@@ -1,44 +1,45 @@
 {{{
   "title": "Getting Started with Managed MySQL",
-  "date": "10-14-2014",
-  "author": "Jared Ruckle",
+  "date": "7-5-2017",
+  "author": "CenturyLink",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
-<p>MySQL&nbsp;is an open source Relational Database Management System (RDBMS) that uses Structured Query Language (SQL).</p>
-<p>Here's how to create a managed MySQL environment in CenturyLink Cloud.</p>
+MySQL is an open source Relational Database Management System (RDBMS) that uses Structured Query Language (SQL). This article will cover creating a managed MySQL environment in CenturyLink Cloud.
 
-**NOTE**: Before you can deploy Managed MySQL, you must create a Managed Red Hat server.</strong></strong>
+### Prerequisites
+- The server must have internet access.
+- The server must already have a Managed Red Hat OS.
 
-<p><strong>1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Orchestration** > **Blueprints Library**. Search for the "MySQL" in the Blueprint library. Then, click on the “CLC Managed Oracle MySQL Enterprise” Blueprint. After that, click on the **deploy blueprint** button.
-</p>
-<p><strong><img src="https://t3n.zendesk.com/attachments/token/ipTUFXewdtsL8lJwQvDbHtuWG/?name=mysql.png" alt="mysql.png" /></strong>
-</p>
-<p><strong>2.&nbsp;</strong>Fill out the appropriate details for the CLC Managed Oracle MySQL Enterprise Blueprint.</p>
-<p><strong>**NOTE** Please ensure the Install and Registration is executed on the same server.</strong>
-</p>
-<p><strong><img src="https://t3n.zendesk.com/attachments/token/Blrn1HQfw7DKphQM9DqG1sGCI/?name=Confirm_BP.jpg" alt="Confirm_BP.jpg" /></strong>
-</p>
-<p><strong>3. </strong>Verify the information is correct (pictured below).</p>
-<p><strong><img src="https://t3n.zendesk.com/attachments/token/20hdlgqVN5CIbTpogRYRkVo7j/?name=Verify.jpg" alt="Verify.jpg" />&nbsp;</strong>
-</p>
-<p><strong>4.&nbsp;</strong>Once verified, click on the 'deploy blueprint' button. You will be presented with the deployment details along with an email stating the Blueprint has been queued.</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/C5O8dw2OTDdSxFq9KkktJspvC/?name=Queue.png" alt="Queue.png" /></p>
-<p>&nbsp;You will receive an email that your Blueprint has been installed when the Blueprint is complete.</p>
-<p><strong>**NOTE** The server now has the Managed Oracle MySQL Enterprise service.</strong>
-</p>
-<h3><strong>&nbsp;FREQUENTLY ASKED QUESTIONS</strong></h3>
-<p>&nbsp;<strong>Q: How is the CenturyLink Cloud for Managed Oracle MySQL Enterprise priced?</strong>
-</p>
-<p>A: CenturyLink Cloud Managed Oracle MySQL Enterprise is priced by the VM, billed hourly.</p>
-<p><strong>Q: What Versions of Oracle MySQL Enterprise are supported?</strong>
-</p>
-<p>A: CenturyLink Cloud Supports&nbsp;MySQL v5.5, MySQL 5.6 and MySQL 5.7.</p>
-<p><strong>Q: What operating systems are supported for Managed Oracle MySQL?</strong>
-</p>
-<p>A: Managed Red Hat.
-</p>
-<p><strong>Q: Can *un-managed* MySQL Services be converted to *Managed* (or vice versa)?</strong>
-</p>
-<p>A: This capability is not available at this time.</p>
+### Steps
+1. Log onto the [Control Portal](https://control.ctl.io). Using the left side navigation bar, click on **Orchestration** > **Blueprints Library**. Search for the "MySQL" in the Blueprint library, then click on the “CLC Managed Oracle MySQL Enterprise” Blueprint.
+![getting-started-with-managed-mysql-01.png](../images/getting-started-with-managed-mysql-01.png)
+2. Click on the **deploy blueprint** button, then fill out the appropriate details for the CLC Managed Oracle MySQL Enterprise Blueprint. **NOTE: Ensure the Install and Registration is executed on the same server.**
+![getting-started-with-managed-mysql-02.png](../images/getting-started-with-managed-mysql-02.png)
+3. Verify the information is correct.
+![getting-started-with-managed-mysql-03.png](../images/getting-started-with-managed-mysql-03.png)
+4. Once verified, click on the **deploy blueprint** button. You will be presented with the deployment details along with an email stating the Blueprint has been queued and another one when it is complete. **NOTE: The server now has the Managed Oracle MySQL Enterprise service.**
+![getting-started-with-managed-mysql-04.png](../images/getting-started-with-managed-mysql-04.png)
+
+### Frequently Asked Questions
+
+**Q: How is the CenturyLink Cloud for Managed Oracle MySQL Enterprise product priced?**
+
+A: Managed Oracle MySQL Enterprise is priced according to our [pricing catalog](//www.ctl.io/pricing) and includes MySQL Enterprise software as part of the ongoing fees for the service.
+
+**Q: What versions of Oracle MySQL Enterprise are supported?**
+
+A: CenturyLink Cloud Supports MySQL 5.6 and MySQL 5.7.
+
+**Q: Can the customer have multiple MySQL instances installed on the same server?**
+
+A: Not at this time.
+
+**Q: What operating systems are supported for Managed Oracle MySQL?**
+
+A: **Managed** Red Hat Enterprise Linux
+
+**Q: Can *un-managed* MySQL Services be converted to *Managed* (or vice versa)?**
+
+A: This capability is not available at this time.

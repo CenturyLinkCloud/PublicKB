@@ -21,7 +21,7 @@ Below is a graphical representation of the CenturyLink Cloud Load Balancing serv
 ![load balancing platform overview](../images/View-Source-IP-in-Web-Server-Logs-when-using-Load-Balancing.png)
 
 ### Solution
-CenturyLink Cloud inserts an X-Forwarded-For header that can be used to filter the original source IP on a customers web server logs. The following knowledge base articles from Citrix provide details for various web server platforms on how to configure Source IP logging.
+CenturyLink Cloud inserts an X-Forwarded-For header that can be used to filter the original source IP on a customers web server logs. The following Knowledge Base articles from Citrix provide details for various web server platforms on how to configure Source IP logging.
 
 * [Microsoft Windows 2003](//support.citrix.com/article/CTX119347)
 * [Microsoft Windows 2008 or Windows 2008 R2](//support.citrix.com/article/CTX125526)

@@ -18,7 +18,7 @@ There are two steps to creating a user.
 2. Create the account.
 
 #### 1. Prerequisites
-Prior to creating a user via the API, you must have an API user created. To do that, you will need the API key and password.  Directions for creating a user via the API can be referenced [here](https://www.ctl.io/knowledge-base/accounts-&-users/creating-users/).
+Prior to creating a user via the API, you must have an API user created. To do that, you will need the API key and password.  Directions for creating a user via the API can be referenced [here](creating-users.md).
 
 #### 2. Authentication
 While there are multiple ways to authenticate, this example uses the REST method. In PowerShell you can authenticate using this code:

@@ -39,7 +39,7 @@
 
 * __CenturyLink Cloud Status.__ [status.ctl.io](//status.ctl.io/) provides real-time updates on the status of CenturyLink Cloud services, and upcoming maintenance notifications. Notifications surrounding Compute, Network, and Storage are now based on what servers an account has in a specific data center, allowing our customers to get the information they need - and only the information that they need.
 
-  Our KB has more [information about the CenturyLink Cloud Status service.](../../General/centurylink-cloud-status-faq.md)
+  Our KB has more [information about the CenturyLink Cloud Status service.](../../General/CenturyLinkCloud/centurylink-cloud-status-faq.md)
 
 
 ### Online Tools (1)
@@ -55,9 +55,6 @@
 
 
 ### Ecosystem: New Blueprints (4)
-
-* [__Vormetric.__](../../Ecosystem Partners/Marketplace Guides/getting-started-with-vormetric-encryption-agent-deployment-blueprints.md)
-This security solution complements our previous integration with Vormetric Security Manager, allowing the deployment of encryption agents to various server endpoints on the CenturyLink Cloud.  With Vormetric, a single infrastructure and management environment protects data wherever it resides with file, volume and cloud storage encryption, tokenization with dynamic data masking, field-level application encryption, sophisticated access control policies, third party and integrated encryption key management.
 
 * [__SoftNAS.__](../../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-appliance.md)
 SoftNAS is one of the most popular storage technologies in the cloud.  This Partner Template, available via Service Task, provides CenturyLink customers with an enterprise-grade, software-defined, NAS storage gateway to safely and reliably operate their business-critical IT systems and storage folders inside CenturyLink Cloud.

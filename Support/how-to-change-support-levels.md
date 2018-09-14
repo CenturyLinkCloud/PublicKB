@@ -1,6 +1,6 @@
 {{{
   "title": "How To Change Your Account Support Level",
-  "date": "9-21-2016",
+  "date": "3-22-2017",
   "author": "Erik Jensen",
   "attachments": []
 }}}
@@ -11,13 +11,15 @@ CenturyLink Cloud offers three different [Support Levels](https://www.ctl.io/sup
 * Professional (Default option for contracts)
 * Enterprise (Premier level of support)
 
+Developer support is free, while pricing for Professional and Enterprise support tiers is graduated based on usage. Support Level pricing is described [here](https://www.ctl.io/support/), in the section titled "Pricing".
+
 ### Determine Your Current Support Level
 1. To determine your current Support Level, log into the [Control Portal](https://control.ctl.io), click "Settings" and then "Account Settings".
 
-2. Click "Support" on the Settings Tab.
+2. Click "Support" on the Settings Tab. In the Support Service Level section, find "Support Level".
 
 ### Change your Support Level
-If you wish to request a change to your Support Level, send an email to [help@ctl.io](mailto:help@ctl.io) and include the following information:
+An Account Administrator (i.e., a user account with the Account Administrator [role](https://www.ctl.io/role-permissions-matrix/#A-Management)) can request to change the Support Level for an account.  To do so, send an email to [help@ctl.io](mailto:help@ctl.io) and include the following information:
 * Account Alias to be changed
 * Support Level (Developer, Professional, or Enterprise)
 * Your Control account username and [account PIN](https://www.ctl.io/knowledge-base/support/pin-authentication-for-support-requests/) for security verification purposes
