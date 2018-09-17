@@ -28,7 +28,7 @@ This article assumes that the user has login access to the CenturyLink Cloud Por
   b. Click **Group**.  
   c. Enter the group **name**  
   d. Click **Create Server Group**.  
-5. Create an SRN:  
+5. Create a new VM:  
   a. Click **Create** button on the right to expand it.  
   b. Click **Server**.  
   c. Make sure that correct **Datacenter** and **Group** is selected.    
