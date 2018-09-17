@@ -62,7 +62,7 @@ To access your application from a computer outside the CenturyLink Cloud network
 3. Deploy the Blueprint.
    * Once verified, click the `deploy blueprint` button.
    * On the first Deploy page you will be able to setup the Password, Group, Network, DNS and Server Names to match your requirements.
-   * You need to set the Server Type to Hyperscale to provision local SSD storage.
+   * You need to set the Server Type to provision local SSD storage.
    * Once you've completed the required modifications push the `next` button to review your settings.
    * Now click the `deploy blueprint` button again to begin deployment.
    * You will see the deployment details along with an email stating the Blueprint is queued for execution.

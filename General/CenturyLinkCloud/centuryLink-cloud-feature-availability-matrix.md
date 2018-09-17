@@ -18,7 +18,6 @@ The CenturyLink Cloud provides a vast array of services for customers to consume
 
 **Feature**|**Availability**
 -----------|----------------
-[Hyperscale Computing](//www.ctl.io/hyperscale)|US East (New York) - NY1<br>US East (Sterling) - VA1<br>Great Britain (Slough) - GB3<br>Canada (Toronto - Mississauga) - CA3<br>APAC (Singapore) - SG1
 [Bare Metal](//www.ctl.io/bare-metal)|US East (New York) - NY1<br>US East (Sterling) - VA1<br>APAC (Australia - Sydney) - AU1<br>Canada (Vancouver) - CA1<br>Great Britain (Slough) - GB3<br>Great Britain (Reading) - GB1<br>Germany (Frankfurt) - DE3
 [Relational DB for MySQL](//www.ctl.io/relational-database/relational-db-mysql/)|US West (Santa Clara) - UC1<br>US Central (Chicago) - IL1<br>US East (Sterling) - VA1<br>US East (New York) - NY1<br>Canada (Toronto - Mississauga) - CA3<br>Great Britain (Slough) - GB3<br>Great Britain (Reading) - GB1<br>Germany (Frankfurt) - DE1<br>Germany (Frankfurt) - DE3<br>APAC (Singapore) - SG1<br>APAC (Australia - Sydney) - AU1
 [Relational DB for MSSQL](//www.ctl.io/relational-database/relational-db-mssql/)|US West (Santa Clara) - UC1<br>US Central (Chicago) - IL1<br>US East (Sterling) - VA1<br>US East (New York) - NY1<br>Canada (Toronto - Mississauga) - CA3<br>Great Britain (Slough) - GB3<br>Great Britain (Reading) - GB1<br>Germany (Frankfurt) - DE1<br>Germany (Frankfurt) - DE3<br>APAC (Singapore) - SG1<br>APAC (Australia - Sydney) - AU1

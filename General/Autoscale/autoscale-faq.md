@@ -32,7 +32,7 @@ Though it is not explicitly disabled by the platform, it is not recommended that
 
 **What Operating Systems support Autoscale?**
 
-Vertical Autoscale can be applied to any server type that supports a "hot add" of CPU resources without a reboot. Those OSes include: Windows Server 2012/2012 R2 Datacenter Edition, Red Hat Enterprise Linux 6/7 x64, CentOS 6 x64 and Ubuntu 12/14/16 x64. Horizontal Autoscale is applied at the group level and works with any server types within that group.
+Vertical Autoscale can be applied to any server type that supports a "hot add" of CPU resources without a reboot. Those OSes include: Windows Server 2012/2012 R2 Datacenter Edition, Red Hat Enterprise Linux 6/7 x64, CentOS 6 x64 and Ubuntu 12/14/16 x64. Horizontal Autoscale is applied at the group level and works with any server types within that group. Note, if VMware Tools are outdated a reboot may occur. VMware Tools updating steps are provided in the [Self-Service Updates of VMware Tools](../../Servers/Self-Service-Updates-of-VMware-Tools.md) article.
 
 Note: Vertical Autoscale is not currently supported for systems running Windows Server 2016.
 

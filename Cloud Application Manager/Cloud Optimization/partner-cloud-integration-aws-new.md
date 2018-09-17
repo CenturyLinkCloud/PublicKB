@@ -1,7 +1,7 @@
 {{{
   "title": "Partner Cloud: Getting Started With A New AWS Customer Account",
-  "date": "08-18-17",
-  "author": "Ben Swoboda",
+  "date": "07-20-18",
+  "author": "Kevin Quaintance",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -27,7 +27,7 @@ For Amazon Web Services, we are currently limited to serving billable customers 
 
 * An understanding of the features and benefits of [Partner Cloud Integration](partner-cloud-integration.md)
 
-* For each CenturyLink Cloud account integrated with Amazon Web Services, both CenturyLink's AWS Terms and Conditions for the relevant territory must be accepted. These will be presented to any user attempting to create a new "Amazon Web Services" provider in Cloud Application Manager.
+* For each CenturyLink Cloud account integrated with Amazon Web Services, both CenturyLink's AWS Terms and Conditions for the relevant territory must be accepted. These will be presented to any user attempting to create a new "Amazon Web Services" provider in Cloud Application Manager. See our [Service Guide](https://www.ctl.io/legal/cloud-application-manager/supplemental-terms/) for a current list of countries we support.
 
 ### Important Information
 
