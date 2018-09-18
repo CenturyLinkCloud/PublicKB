@@ -42,4 +42,4 @@ In this KB article, we walk through how to enable a Cloud Application Manager Pr
 
   ![CAM Provider](../images/dccf/cam-provider4.png)
 
-For additional information on using Cloud Application Manager, please refer to the [Knowledge Base](../cloud-application-manager/getting-started.md).
+For additional information on using Cloud Application Manager, please refer to the [Knowledge Base](www.ctl.io/cloud-application-manager/getting-started.md).
