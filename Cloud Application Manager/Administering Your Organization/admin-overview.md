@@ -1,7 +1,8 @@
 {{{
 "title": "Overview",
-"date": "09-01-2016",
-"author": "",
+"date": "08-17-2018",
+"author": "Guillermo Sanchez",
+"keywords": ["administration", "overview"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -28,11 +29,9 @@ From here, you can get to Settings in two different ways:
 * Once you select the Organization scope, you will have access to the **Settings** tab in the principal navigation menu.
   ![admin-overview4.png](../../images/cloud-application-manager/admin-overview4.png)
 
-
 The Settings allows you to set up organization wide configurations.
 
-The Settings is where you set up your organization for everyone to use. This includes things like enabling sign-in options, turning on access to cloud providers, tagging instances users launch, integrating to custom IPAM or CMDB solutions using webhooks, and configuring admin boxes.
-
+The Settings is where you set up your organization for everyone to use. This includes things like enabling sign-in options, turning on access to cloud providers, tagging instances users launch, integrating to custom IPAM or CMDB solutions using webhooks or a ServiceNow configured connection, and configuring admin boxes.
 
 ### Contacting Cloud Application Manager Support
 

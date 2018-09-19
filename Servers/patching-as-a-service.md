@@ -20,7 +20,7 @@ Table of Contents
 * [Detail of Patches Deployed in an Execution](#detail-of-patches-deployed-in-an-execution)
 
 
-<strong>The AppFog service was retired on June 29, 2018. The AppFog Platform-as-a-Service is no longer available, including all source code, env vars, and database information. More information is available [here](../AppFog/appfog-retirement-guide.md).</strong>
+<strong>The AppFog service was retired on June 29, 2018. The AppFog Platform-as-a-Service is no longer available, including all source code, env vars, and database information. </strong>
 
 ### Overview
 
