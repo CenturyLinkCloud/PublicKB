@@ -1,6 +1,6 @@
 {{{
-  "title": "Partner Cloud Integration: Obtaining Users to Portal.Azure.Com",
-  "date": "07-20-2018",
+  "title": "Partner Cloud Integration: Maintaining Users on the AWS portal",
+  "date": "09-19-2018",
   "author": "Kevin Quaintance",
   "attachments": [],
   "contentIsHTML": false
@@ -34,7 +34,7 @@ Once you have the user, navigate to https://console.aws.amazon.com/. If you auto
 
 ### Contacting Cloud Application Manager Support
 
-If you are experiencing an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/), please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
+If you are experiencing an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/), please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md) or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
