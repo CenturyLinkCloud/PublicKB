@@ -23,15 +23,15 @@ This article explains how to:
 
 For complex Hybrid IT scenarios, we recommend that you contact a Solutions Engineer through the Contact button to the right of the Estimator. Our experts can assist in helping you determine the products and configurations that best suit your needs, and in obtaining your estimate.
 
-To create estimates for multiple products within our Hybrid IT portfolio, first [download the Estimator Spreadsheet template](../estimator/template/?prefix=), which is an Excel file containing multiple sheets. Add products to the relevant sheets and save the Excel file. Then, upload the saved file into the Online Pricing Estimator to generate an estimate.
+To create estimates for multiple products within our Hybrid IT portfolio, first [download the Estimator Spreadsheet template](https://www.ctl.io/estimator/), which is an Excel file containing multiple sheets. Add products to the relevant sheets and save the Excel file. Then, upload the saved file into the Online Pricing Estimator to generate an estimate.
 
-[![Spreadsheet template](../../images/estimator/template.png)
+![Spreadsheet template](../../images/estimator/template.png)
 
 ### Completing the Estimator Spreadsheet
 
 The Excel file consists of sheets that match the products that can be configured in the Online Pricing Estimator. Some values are dependent on conditions such as the selected operating system, so available options will change based on whether you have chosen Linux, Red Hat or Windows, or database type.
 
-[![Visible dropdown](../../images/estimator/dropdown.png)
+![Visible dropdown](../../images/estimator/dropdown.png)
 
 As a timesaver, the Online Pricing Estimator also contains built-in defaults for some values. Those sections can be left blank in the spreadsheet if they meet your needs. And we’ve done our best to make the Estimator Spreadsheet “mistake-proof.” So if you exceed the allowable maximum for a given variable, the value you entered will revert to the maximum allowed value. After the Excel file has been uploaded, you can make necessary adjustments in the Online Pricing Estimator.
 
