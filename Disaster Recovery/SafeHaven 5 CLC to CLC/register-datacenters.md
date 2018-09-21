@@ -23,6 +23,6 @@ Follow the steps to register both production site DataCenter and RecoverySite Da
 2. Enter **Data Center Name**, and select **CenturyLink Cloud** as the **Data Center Type**. Click **Register**.
 3. Click on the Data Center you registered and under the **Properties** Panel. Click on **Change Credentials**.
 4. Enter your **CenturyLink Portal Username** and **Password** for CenturyLink Cloud administration. Click **Next**.
-5. Select your **parent account** or **sub-account** as well as the CenturyLink Data Center **Location**. Click **Finish**.
+5. Select your **Organization's parent account** or **sub-account** as well as the **Location** of the CenturyLink Data Center . Click **Finish**.
 
 **Properties Panel** shows the CenturyLink Cloud information.
