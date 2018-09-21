@@ -60,9 +60,9 @@ Enable SAML in Cloud Application Manager to let users log in using credentials m
 
 Take into consideration that currently this is our valid **Attribute mapping list**:
 
-* EMAIL: 'email', 'Email', 'User.Email'.
-* FIRST NAME: 'firstname', 'FirstName', 'User.FirstName'.
-* LAST NAME: 'lastname', 'LastName', 'User.LastName'.
+* **EMAIL**: 'email', 'Email', 'User.Email'.
+* **FIRST NAME**: 'firstname', 'FirstName', 'User.FirstName'.
+* **LAST NAME**: 'lastname', 'LastName', 'User.LastName'.
 
 ### Single Sign-On with LDAP
 
