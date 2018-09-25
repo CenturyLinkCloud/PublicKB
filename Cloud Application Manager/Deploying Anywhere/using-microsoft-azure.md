@@ -32,8 +32,6 @@ Each of Cloud Application Manager's Microsoft Azure Providers gives you the opti
 
 If you want to learn how to use the New Account feature, please visit [Partner Cloud: Getting Started With a New Azure Customer](../Cloud Optimization/partner-cloud-integration-azure-new.md). The rest of this article assumes you will be using an existing, Azure Customer Account without any integration with CenturyLink.
 
-If you do have an existing Azure account that you want CenturyLink to manage or support, please contact incident@CenturyLink.com. Please provide the name and domain of your account. Also, please describe any products, services, or resources within your Customer Account that are not currently shown in this list of [permitted products](../Cloud Optimization/partner-cloud-integration-azure-capabilities.md). We likely have already have begun work to enable your products.
-
 ### Before You Begin
 
 You need an Microsoft Azure subscription to be able to consume Azure services. Follow these steps to create one.
