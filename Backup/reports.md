@@ -17,4 +17,4 @@ The Restore Jobs Report does not have any inputs needed, and will generate a lis
 
 ![](../images/backup/reporting/reports.png)
 
-Coming soon will be a Restore Points report that will provide a detailed overview of all the backup jobs for a specified server within a specific date range.
+The Restore Points report provides a detailed overview of all the backup jobs for a specified server within a specific date range. Simply specify the Account Policy (backup policy), Server Policy (server name), the date range you would like to look against and click generate report.
