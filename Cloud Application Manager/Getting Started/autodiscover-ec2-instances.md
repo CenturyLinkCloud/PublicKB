@@ -1,7 +1,8 @@
 {{{
 "title": "Auto-discover AWS EC2 instances",
-"date": "07-30-2018",
+"date": "09-19-2018",
 "author": "Guillermo Sanchez",
+"keywords": ["cam", "instances", "auto-discovery", "register", "aws"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -49,45 +50,69 @@ You can register the following type of instances into Cloud Application Manager:
 
 ### Auto-discover and register AWS EC2 instances in Cloud Application Manager
 
-* Choose an unregistered instance of your provider
+You can register your instances either from the Unregistered Instances tab of your provider details page, where you can import a single instance or select many of them and execute a bulk register, or from the Instances page where you can register one instance at a time.
 
-![Unregistered Instances](../../images/cloud-application-manager/aws-registerInstance-tuto01.png)
+In both cases, you should be in the target workspace scope where you want to register the instance for the register option to be enabled.
 
-* Start registering
+#### Register an instance or instances from the Unregistered Instances tab
 
-![Register Instance](../../images/cloud-application-manager/aws-registerInstance-tuto02.png)
+Click on the register icon of an instance:
+
+![Unregistered Instances Provider details tab](../../images/cloud-application-manager/register/aws-registerInstance-button.png)
+
+Or choose several unregistered instances of your AWS provider and click **Bulk Actions > Register**.
+
+Follow the steps of the [Register process](#register-process) below.
+
+#### Register an instance from the Instances page
+
+You must be in the All or Unregistered view of the Instances page and click on the register icon of the instance you want to register:
+
+![Register Instance from Instances page](../../images/cloud-application-manager/register/aws-registerInstance-instances-button.png)
+
+Then, follow the steps of the [Register process](#register-process) below.
+
+#### Register process
+
+* Start registering. If you are performing a bulk register, a first step appears in the dialog providing the option to apply property values to all instances to register
+
+    ![Register Instance bulk](../../images/cloud-application-manager/register/aws-registerInstance-bulk.png)
+
+* The next step of the bulk import, or the single step if you are registering a single instance will allow you to set the properties for each  instance to be registered
+
+    ![Register Instance](../../images/cloud-application-manager/register/aws-registerInstance-dialog.png)
 
 * Unsuccessful Registration
 
-![Unsuccessful registering](../../images/cloud-application-manager/aws-registerInstance-tuto03.png)
+    ![Unsuccessful registering](../../images/cloud-application-manager/register/aws-registerInstance-failed.png)
 
 * Go to the instance details
 
-![Detail of unregistered instance](../../images/cloud-application-manager/aws-registerInstance-tuto04.png)
+    ![Detail of Unsuccessful registered instance](../../images/cloud-application-manager/register/aws-registerInstance-failedDetails.png)
 
 * Get the endpoint address for ssh connection
 
-![Endpoint address](../../images/cloud-application-manager/aws-registerInstance-tuto05.png)
+    ![Endpoint address](../../images/cloud-application-manager/register/aws-registerInstance-endpoint.png)
 
 * Use your token key-pair and connect to the instance
 
-![SSH connected](../../images/cloud-application-manager/aws-registerInstance-tuto06.png)
+    ![SSH connected](../../images/cloud-application-manager/register/aws-registerInstance-ssh.png)
 
-* Copy the script for manual creation of the agent
+* Copy the snippet for manual creation of the agent script
 
-![Copy script](../../images/cloud-application-manager/aws-registerInstance-tuto07.png)
+    ![Copy script](../../images/cloud-application-manager/register/aws-registerInstance-snippet.png)
 
-* Use your favorite editor to create the shell script and fix execution permission
+* Use your favorite editor to create the shell script by pasting the copied snippet and change execution permission
 
-![Create shell script](../../images/cloud-application-manager/aws-registerInstance-tuto08.png)
+    ![Create shell script](../../images/cloud-application-manager/register/aws-registerInstance-chmod.png)
 
 * Start agent
 
-![Start elasticbox agent](../../images/cloud-application-manager/aws-registerInstance-tuto09.png)
+    ![Start elasticbox agent](../../images/cloud-application-manager/register/aws-registerInstance-agent.png)
 
 * The instance is now successfully registered
 
-![Start elasticbox agent](../../images/cloud-application-manager/aws-registerInstance-tuto10.png)
+    ![Start elasticbox agent](../../images/cloud-application-manager/register/aws-registerInstance-success.png)
 
 ### Contacting Cloud Application Manager Support
 
