@@ -1,6 +1,6 @@
 {{{
-  "title": "Partner Cloud Integration: Obtaining Users to Portal.Azure.Com",
-  "date": "07-20-2018",
+  "title": "Partner Cloud Integration: Maintaining Users on the AWS portal",
+  "date": "09-19-2018",
   "author": "Kevin Quaintance",
   "attachments": [],
   "contentIsHTML": false
