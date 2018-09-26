@@ -61,7 +61,7 @@ to confirm the script and access the .txt output file. The file contains the log
 
     ![sbspowershellscriptlogging.png](../images/sbspowershellscriptlogging.png)
 
-11. You can also check the Control Portal to see the policies that were created. Navigate to the [Control Portal](https://control.ctl.io) and login with your CenturyLink Cloud credentials.
+11. You can also check the Control Portal to see the policies that were created. Navigate to the [Control Portal](https://control.ctl.io) and login with your CenturyLink Cloud account credentials.
 
 12. From the Navigation Menu, click **Infrastructure > Policies**. On the Policies page, click **Simple Backup Service**.
 
@@ -319,4 +319,4 @@ forEach ($Server in $serverDetails)
 
 ### Want to Know More About the Simple Backup Service?
 
-Check out our SBS product page [here](//www.ctl.io/simple-backup-service/). The CenturyLink Cloud [Knowledge Base](../Backup) also has a number of articles on backup, including [Getting Started with Simple Backup](../backup/getting-started-with-simple-backup/) and [Simple Backup How It Works](../backup/simple-backup-service-how-it-works/).
+Check out our SBS product page [here](//www.ctl.io/simple-backup-service/). The CenturyLink [Knowledge Base](../Backup) also has a number of articles on backup, including [Getting Started with Simple Backup](getting-started-with-simple-backup.md) and [Simple Backup How It Works](simple-backup-service-how-it-works.md).

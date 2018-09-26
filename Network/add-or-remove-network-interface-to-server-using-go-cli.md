@@ -9,6 +9,8 @@
 ### Overview
 Customers may wish to implement additional network interfaces (NICs) on CenturyLink Cloud [Virtual](//www.ctl.io/servers/) or [Bare Metal](//www.ctl.io/bare-metal/) Servers.  To implement this CenturyLink has provided an API to [add](//www.ctl.io/api-docs/v2/#servers-add-secondary-network) or [remove](//www.ctl.io/api-docs/v2/#servers-remove-secondary-network) network interfaces.  Customers who wish to simply use a CLI tool to implement these additional interfaces can leverage our [Go CLI.](//github.com/CenturyLinkCloud/clc-go-cli)
 
+Note: Only one vNIC per VLAN is permitted.
+
 ### Prerequisites
 * A CenturyLink Cloud Account
 * [Go CLI](//github.com/CenturyLinkCloud/clc-go-cli)
@@ -69,3 +71,5 @@ Customers may wish to implement additional network interfaces (NICs) on CenturyL
     ![Control secondary interface removed](../images/add-or-remove-network-interface-to-server-using-go-cli-03.png)
 
     ![Windows Adapters removed](../images/add-or-remove-network-interface-to-server-using-go-cli-04.png)
+    
+**Note:** You can use these API calls to move a Server from one VLAN to another, however you will need to open a support ticket ([help@ctl.io](mailto:help@ctl.io) or [support website](https://support.ctl.io/access/unauthenticated?return_to=https%3A%2F%2Ft3n.zendesk.com%2Ftickets%2Fnew)) to coordinate the swap of primary and secondary designations for the NICs in Control to allow for the deletion of the secondary NIC.  Default and static routes will need to be reviewed and possibly updated to match the new primary.

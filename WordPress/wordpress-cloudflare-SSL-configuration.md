@@ -30,4 +30,4 @@ There are multiple methods that could be used to terminate SSL for an existing s
 * Authenticated Origin Pulls			= On or Off
 
 Aditional [SSL related information] (https://support.cloudflare.com/hc/en-us/categories/200276247) on CloudFlare
-
+

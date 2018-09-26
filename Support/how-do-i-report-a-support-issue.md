@@ -1,7 +1,7 @@
 {{{
   "title": "How do I get support for CenturyLink Cloud services?",
-  "date": "9-21-2016",
-  "author": "",
+  "date": "3-1-2018",
+  "author": "Justin Lentz",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
@@ -14,7 +14,7 @@
 * [Exceptions](#exceptions)
 * [Email Support](#email-support)
 * [Chat Support](#chat-support)
-  * [Chat System Requirements](#chat-system-requirements)
+* [Chat System Requirements](#chat-system-requirements)
 * [Phone Support](#phone-support)
 * [FAQ](#faq)
 
@@ -33,7 +33,7 @@ CenturyLink Cloud offers [flexible support options](//www.ctl.io/support/) for c
 US: 888.638.6771<br>UK: +44.118.322.6100<br>Singapore: +65.6305.8099| incident@centurylink.com | request@centurylink.com
 
 ### Email Support
-1. Use the template below, providing relevant information for each line item.  It is very important that you include your username and [user PIN](../Support/pin-authentication-for-support-requests.md) when submitting a support request as we use this information as a means of authenticating the request.
+1. Use the template below, providing relevant information for each line item.  It is very important that you include your [account alias,](../Support/determine-control-portal-alias.md) username and [user PIN](../Support/pin-authentication-for-support-requests.md) when submitting a support request as we use this information as a means of authenticating the request.
 
     ```
     Account Alias:
@@ -49,23 +49,26 @@ US: 888.638.6771<br>UK: +44.118.322.6100<br>Singapore: +65.6305.8099| incident@c
 
 3. Determine the priority level using the [Ticket Prioritization Matrix. ](../Support/ticket-prioritization-matrix.md)
 
-3. Send an email to [help@ctl.io](mailto:help@ctl.io) **or** [high@ctl.io](mailto:high@ctl.io) based on the priority.  Alternatively, you may select the **?** icon inside the Control Portal and choose **submit a support request.**
+4. Submit request:
+* Send an email to [help@ctl.io](mailto:help@ctl.io) **or** [high@ctl.io](mailto:high@ctl.io) based on the priority.
 
-    ![submit a support request](../images/how-do-i-get-support-for-centurylink-cloud-services-01.png)
+* Alternatively, you may select the **?** icon inside the Control Portal and choose **submit a support request.** This will create a new ticket in our Support ticketing system. As described in the [Support Ticketing](../Support/zendesk-login-help-for-helpdesk-ticketing-and-kb-access.md) article, this is a separate user account from the Control Portal.
+
+    ![submit a support request](../images/how-do-i-get-support-for-centurylink-cloud-services-01.PNG)
 
 ### Chat Support
 Customers in the **Professional and Enterprise** support tier can leverage our real-time chat system.
 
 1. Login to the [Control Portal](//control.ctl.io), select the **?** icon and choose **Chat with support.**
 
-    ![Chat with support](../images/how-do-i-get-support-for-centurylink-cloud-services-02.png)
+    ![Chat with support](../images/how-do-i-get-support-for-centurylink-cloud-services-02.PNG)
 
     ![chat dialog box](../images/how-do-i-get-support-for-centurylink-cloud-services-03.png)
 
 2. Provide your Account Alias, [user PIN](../Support/pin-authentication-for-support-requests.md) and description of the problem to the support engineer.
 
-#### Chat System Requirements
-* Supported operating systems: Windows XP, Vista, 7, 8, 8.1, 10, Mac OS X 10.8 and newer 
+### Chat System Requirements
+* Supported operating systems: Windows XP, Vista, 7, 8, 8.1, 10, Mac OS X 10.8 and newer
 * Supported browsers: Chrome 31 and newer, Mozilla Firefox 29 and newer, Internet Explorer 7 and newer, Safari 6 and newer, Opera 12 and newer
 
 ### Phone Support
@@ -92,6 +95,7 @@ UK|+44 20 0333 0338
 Hong Kong|+852 58032338
 Australia|+61 7 4410 3380
 Singapore|+65 3158 9575
+Japan|+81-3-4540-3776
 
 ### FAQ
 

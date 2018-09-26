@@ -1,7 +1,7 @@
 {{{
   "title": "Bare Metal FAQ",
-  "date": "10-20-2016",
-  "author": "Joseph Nguyen & Bryan Friedman",
+  "date": "2-28-2018",
+  "author": "CenturyLink",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": false
@@ -14,36 +14,8 @@ CenturyLink Bare Metal servers introduce the ability to provision and manage phy
 This FAQ addresses commonly asked questions about the service. For further information on this service and how it compares to virtual servers, see [Server Comparison Matrix](../Servers/server-comparison-matrix.md).
 
 
-**What are the available configurations for Bare Metal servers?**
+**What are the available configurations & locations for Bare Metal servers?**
 Server configurations are available depending on data center locations.  Please see matrix below for availability of configurations by data centers.
-
-* 4 cores (3.6GHz E3), 16 GB RAM, 10Gb NIC
-  * Storage is 2x1TB 7200 RAID 1 (0.91TB usable)
-* 12 cores (2.4GHz 2x6 E5), 64 GB RAM, dual 10Gb NIC
-  * Storage is 4x2TB 7200 RAID 5 (5.46TB usable)
-* 20 cores (2.3GHz 2x10 E5), 128 GB RAM, dual 10Gb NIC
-  * Storage is 6x2TB 7200 RAID 5 (9.09TB usable)
-* 24 cores (2.3GHz 2x12 E5), 128 GB RAM, dual 10Gb NIC
-  * Storage is 1x960GB SSD (960GB usable)  
-* 24 cores (2.3GHz 2x12 E5), 128 GB RAM, dual 10Gb NIC
-  * Storage is 1x3.84TB SSD (3.84TB usable)  
-* 24 cores (2.3GHz 2x12 E5), 512 GB RAM, dual 10Gb NIC
-  * Storage is 1x3.84TB SSD (3.84TB usable)    
-* 20 cores (2.3GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC
-  * Storage is 2x800GB SSD (1.6TB usable)
-  * Storage is 12x2TB 7200 RAID/JBOD Configurable (24TB usable)  
-* 16 cores (2.4GHz 2x8 E5), 256 GB RAM, dual 10Gb NIC
-  * Storage is 2x800GB SSD (1.6TB usable)
-  * Storage is 4x4TB 7200 RAID/JBOD Configurable (16TB usable)  
-
-**Why don't I see the option to provision a Bare Metal?**
-
-There are a couple reasons you might not see the option for Bare Metal servers.  First, check your data center and the current [availability for Bare Metal servers](https://www.ctl.io/data-centers/#/filters/Bare%20Metal).  Bare Metal servers are not available in all data centers.  If you are in a data center where Bare Metal servers should be available, contact Customer Care to have them check to see if Bare Metal servers need to be enabled for your account.
-
-**Why doesn't all server types options appear as an option to provision?**
-
-Not all data centers will carry all server types.
-As we expand our Bare Metal product offering, we are trying to match customer demand with server types by locations.  Please see table below for availability of server types by data centers. If you would like to see certain server types in specific data centers, we would love to hear from you. Please drop us a note by submitting a [Feature Request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/) including a brief explanation of your use case and the need for the particular configuration of resources and location.
 
 Location|Available Configurations<sup>1</sup>
 --------|------------------------
@@ -52,9 +24,19 @@ Great Britain (Slough)-GB3|4 cores E3/16 GB RAM/2x1TB 7200 RAID 1 (0.91TB usable
 US East (New York)-NY1|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x2TB 7200 SATA<sup>2</sup><br>16 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
 Canada (Vancouver)-CA1|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x2TB 7200 SATA<sup>2</sup><br>16 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
 Australia (Sydney)-AU1|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x2TB 7200 SATA<sup>2</sup><br>16 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
+Germany (Frankfurt)-DE3|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x4TB 7200 SATA<sup>2</sup><br>20 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
+Great Britain (Reading)-GB1|24 cores E5/128 GB RAM/1x960GB SSD<br>24 cores E5/128 GB RAM/1x3.84TB SSD<br>24 cores E5/512 GB RAM/1x3.84TB SSD <br>20 cores E5/256 GB RAM/2x800GB SSD/12x4TB 7200 SATA<sup>2</sup><br>20 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA<sup>2</sup>
 
 <sup>1: All Physical servers include 10Gbps Network Interfaces</sup><br>
 <sup>2: SATA Disks are attached to Dell PERC H730 RAID Controllers and can operate in HBA/JBOD or RAID mode<sup>
+
+**Why don't I see the option to provision a Bare Metal?**
+
+There are a couple reasons you might not see the option for Bare Metal servers.  First, check your data center and the current [availability for Bare Metal servers](https://www.ctl.io/data-centers/#/filters/Bare%20Metal).  Bare Metal servers are not available in all data centers.  If you are in a data center where Bare Metal servers should be available, contact Customer Care to have them check to see if Bare Metal servers need to be enabled for your account.
+
+**Why doesn't all server types options appear as an option to provision?**
+
+Not all data centers will carry all server types as shown above in the configuration and location matrix. As we expand our Bare Metal product offering, we are trying to match customer demand with server types by locations. If you would like to see certain server types in specific data centers, we would love to hear from you. Please drop us a note by submitting a [Feature Request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/) including a brief explanation of your use case and the need for the particular configuration of resources and location.
 
 **Why am I seeing an error saying "limit exceeded" for CPU, memory, or storage when I try to provision a Bare Metal server?**
 
@@ -66,7 +48,11 @@ No, the CPU, memory and storage are static resources on each individual Bare Met
 
 **What are the self-service actions available to me through the Control portal for Bare Metal servers?**
 
-Through the Control portal you are able to power the Bare Metal server on or off, perform a server reset and add a single public IP.
+Through the Control Portal you are able to power the Bare Metal server on or off, perform a server reset and add a single public IP.
+
+**What options are available for adding public IP addresses to my servers?**
+
+Through the Control Portal customers can add **a single public ip address** to a bare metal server. Customers who require multiple public IP addresses should consider using a Virtual Machine delivery model or [submit a feature request.](../Support/how-do-i-submit-a-feature-request.md)
 
 **What are the best suited workloads for this new server class?**
 
@@ -74,7 +60,7 @@ Any applications not well-suited to virtualization whether it be performance or 
 
 **How do I connect my Bare Metal servers over the network to my CenturyLink Cloud virtual servers?**
 
-Bare Metal servers share the same network as CenturyLink Cloud virtual servers so it's as easy as creating and connecting networks amongst all your server types.  For more information on Network features of CenturyLink Cloud platform, reference the [Network Section](https://www.ctl.io/knowledge-base/network/#1) of our knowledge base.
+Bare Metal servers share the same network as CenturyLink Cloud virtual servers so it's as easy as creating and connecting networks amongst all your server types.  For more information on Network features of CenturyLink Cloud platform, reference the [Network Section](https://www.ctl.io/knowledge-base/network/#1) of our Knowledge Base.
 
 **Since these servers use local storage, how do I avoid application failure if underlying hardware fails?**
 
@@ -98,7 +84,7 @@ Bare Metal servers can be incorporated in the same firewall policies currently a
 
 **What should I do if I do not see the configuration of CPU/Memory/Storage I want?**
 
-We've initially launched with a limited number of Bare Metal server configuration types and have added new Bare Metal server configurations.  We fully expect to continue expanding upon the number of types and quantity available of each based on customer feedback.  The server configuration screen will provide an up to date indication of our available server types.  If you do not see a configuration type there that suits your needs, please submit a [Feature Request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/) including a brief explanation of your use case and the need for a particular configuration of resources.
+We've initially launched with a limited number of Bare Metal server configuration types and have added new Bare Metal server configurations.  We fully expect to continue expanding upon the number of types and quantity available of each based on customer feedback.  The server configuration screen will provide an up to date indication of our available server types.  If you do not see a configuration type there that suits your needs, please submit a [Feature Request](../Support/how-do-i-submit-a-feature-request.md) including a brief explanation of your use case and the need for a particular configuration of resources.
 
 **What features do Bare Metal servers share with CenturyLink Cloud virtual servers?**
 
@@ -122,16 +108,21 @@ Customers can retrieve the available configuration ID's, pricing and SKU details
 
 Separately, we have listed the configuration ID's in the table below:
 
-Configuration|ConfigurationID
--------------|----------------
-4 core, 16 GB RAM, 2x 1TB HDD|529e2592a3e640a7c2617b5e8bc8feaed94eac22
-12 core, 64 GB RAM, 4x 2TB HDD|f24b18ba2ce23657657444601649c7b8b7f9b60c
-20 core, 128 GB RAM, 6x 2TB HDD|8057e3629403e92d6693352ad17a807dc8970aef
-24 core, 128 GB RAM, 1x 960GB SSD|331afd25f49e10187c9095a33bd16209e013a56f
-24 core, 128 GB RAM, 1x 3.84TB SSD|44ed64b3174dc99f6f549b3707eefcc58fd701de
-24 core, 512 GB RAM, 1x 3.84TB SSD|7f6a073eb8e13626ee01c1ab5e698cf1c25ca073
-20 core, 256 GB RAM, 2x800GB SSD + 12x2TB HDD|43e0a50bf7ab9e80c493b1c8bf5da75dfba3f7e1
-16 core, 256 GB RAM, 2x800GB SSD + 4x4TB HDD|2516e341b960652f01563933d72523d9c222a437
+Location|Configuration|ConfigurationID
+--------|-------------|----------------
+VA1<br>GB3|4 core, 16 GB RAM, 2x 1TB HDD|529e2592a3e640a7c2617b5e8bc8feaed94eac22
+VA1<br>GB3|12 core, 64 GB RAM, 4x 2TB HDD|f24b18ba2ce23657657444601649c7b8b7f9b60c
+VA1<br>GB3|20 core, 128 GB RAM, 6x 2TB HDD|8057e3629403e92d6693352ad17a807dc8970aef
+AU1<br>CA1<br>NY1|24 core, 128 GB RAM, 1x 960GB SSD|331afd25f49e10187c9095a33bd16209e013a56f
+AU1<br>CA1<br>NY1|24 core, 128 GB RAM, 1x 3.84TB SSD|44ed64b3174dc99f6f549b3707eefcc58fd701de
+AU1<br>CA1<br>NY1|24 core, 512 GB RAM, 1x 3.84TB SSD|7f6a073eb8e13626ee01c1ab5e698cf1c25ca073
+AU1<br>CA1<br>NY1|20 core, 256 GB RAM, 2x800GB SSD + 12x2TB HDD|43e0a50bf7ab9e80c493b1c8bf5da75dfba3f7e1
+AU1<br>CA1<br>NY1|16 core, 256 GB RAM, 2x800GB SSD + 4x4TB HDD|2516e341b960652f01563933d72523d9c222a437
+DE3<br>GB1|24 core, 128 GB RAM, 1x 960GB SSD|6f16f5f852ab701fd85779bfdbcb0d4f97b6932e
+DE3<br>GB1|24 core, 128 GB RAM, 1x 3.84TB SSD|4c3f0369c42c74f7ce34096ee9a6a79efaf72e0b
+DE3<br>GB1|24 core, 512 GB RAM, 1x 3.84TB SSD|715fc7b2d4affd6b87ff405684eb04a004951283
+DE3<br>GB1|20 core, 256 GB RAM, 2x800GB SSD + 12x4TB HDD|88a98572bad1bf5c03156475523ee6075a39be3a
+DE3<br>GB1|20 core, 256 GB RAM, 2x800GB SSD + 4x4TB HDD|e6e8aa03dbeb61e25af77c6134f307d4d9f9a0d6
 
 **Where are Bare Metal servers available geographically?**
 
@@ -165,12 +156,12 @@ Storage is pre-defined and not customizable for the following server configurati
   * Storage is 6x2TB 7200 RAID 5 (9.09TB usable)
 
 Storage is customizable for the following server configurations. The user will be able to select from available options upon provisioning of a server.  Please see additional FAQ on Enabling encryption  on RAID controller below.
-* 20 cores (2.3GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC
+* 20 cores, 256 GB RAM, dual 10Gb NIC
   * Storage is 2x800GB SSD (1.6TB usable)
-  * Storage is 12x2TB 7200 RAID/JBOD Configurable (24TB usable)  
-* 16 cores (2.4GHz 2x10 E5), 256 GB RAM, dual 10Gb NIC
+  * Storage is 12x2TB or 12x4TB 7200 RAID/JBOD Configurable
+* 16 or 20 cores, 256 GB RAM, dual 10Gb NIC
   * Storage is 2x800GB SSD (1.6TB usable)
-  * Storage is 4x4TB 7200 RAID/JBOD Configurable (16TB usable)  
+  * Storage is 4x4TB 7200 RAID/JBOD Configurable
 
 **Can I configure encryption on the RAID controller?**
 
@@ -193,7 +184,17 @@ Yes, Bare Metal servers do support multiple vNIC configurations. Additional vNIC
 
 **Can I bring my own OS image?**
 
-No, the available Operating Systems include Windows 2012 R2 Standard Edition, Windows 2012 R2 Datacenter Edition, RHEL6, CentOS 6, and Ubuntu 14. If there is a particular OS image you would like to see incorporated please [submit a feature request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/).
+No, the available Operating Systems on bare metal are:
+* Windows 2012 R2 Standard Edition
+* Windows 2012 R2 Datacenter Edition
+* Red Hat Enterprise Linux 6
+* Red Hat Enterprise Linux 7
+* CentOS 6
+* CentOS 7
+* Ubuntu 14 LTS
+* Ubuntu 16 LTS
+
+If there is a particular OS image you would like to see incorporated please [submit a feature request](https://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/).
 
 As an alternative to a custom image, Bare Metal servers do support the [execute package](https://www.ctl.io/knowledge-base/servers/using-group-tasks-to-install-software-and-run-scripts-on-groups/) action from the Control Portal as well as through the [API](https://www.ctl.io/api-docs/v2/#server-actions-execute-package), allowing you to install the same software or run the same scripts on many servers at once.
 
@@ -244,9 +245,14 @@ Click `Next >` two more times until you reach the Confirmation screen. Finally, 
 
 Once the server comes back up, log in as Administrator again. To finish the configuration you'll need to go back and create at least one virtual switch, but be very careful to follow the steps below so you don't lose network connectivity.
 
-First, open Network and Sharing Center from Control Panel and look for the connection labeled `team0 - VLAN <ID>` where `<ID>` is the VLAN tag. Take note of this number as you will need it in a following step.
+First, open Network and Sharing Center from Control Panel and look for the connection labeled `team0 - VLAN <ID>` where `<ID>` is the VLAN tag. Click on the connection `team0 - VLAN <ID>`, then select Properties.
 
 ![Note the VLAN ID](../images/bare-metal-faq-4.png)
+
+Note the `<ID>` number and adapapter as you will need them in the following steps, in this example "2332" and "Microsoft Network Adapter Multiplexor Driver #2".
+
+![Note the adapter](../images/bare-metal-faq-7.PNG)
+
 
 Now, launch `Hyper-V Manager`, right click on the server name, and select `Virtual Switch Manager...`.
 
@@ -257,6 +263,11 @@ Click `Create Virtual Switch` (you probably want an External type). Give the swi
 ![Enter the VLAN ID](../images/bare-metal-faq-6.png)
 
 Click `OK` and then `Yes` to apply the changes. You are now free to set up virtual machines connected to this virtual switch.
+
+Once you have created a virtual machine, select the VM in Hyper-V Manager, right click and select Settings. From the Setting menu select Network Adapter, assign the virtual switch created above "Test-Switch" in our example, select the check box to "Enable virtual LAN identifiation", and enter the vlan `<ID>` noted earlier.
+
+![VM adapter setting](../images/bare-metal-faq-8.PNG)
+
 
 **How do I activate my Windows VMs provisioned on a Windows 2012 Datacenter Edition Bare Metal server?**
 

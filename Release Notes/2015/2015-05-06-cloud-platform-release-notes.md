@@ -51,17 +51,11 @@
 
 * [**MongoDB**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-mongodb-blueprint.md) - A cross-platform, NoSQL-style, document-oriented database. MongoDB’s structure is JSON-like, making integration of unstructured data in certain types of applications easier and faster.
 
-* [**AlertLogic**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-alert-logic-threat-manager-partner-template.md) - Delivers deep security insight and supports continuous monitoring against cyber-threats.  Built for web scale, the Alert Logic threat management solution combines a cloud-deployed endpoint solution with the power of an aggregated threat intelligence database.
-
 * [**Vision Solutions - DoubleTake**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-blueprint.md) - Best-of-breed technology helping customers address the business challenge of adopting cloud-based disaster recovery strategies and performing near-zero downtime migrations without risk across physical, virtual or cloud server platforms.
 
 
-### Open Source Contributions (3)
+### Open Source Contributions
 
 Selected highlights include:
 
  * **ImageLayers v0.1** – [ImageLayers.io](https://imagelayers.io/) is a browser-based visualization tool for Docker Images and their layers. This utility helps developers understand composition of a Docker Image and any [commonalities between images](https://imagelayers.io/?images=java:latest,golang:latest,node:latest,python:latest,php:latest,ruby:latest). For more information, read [**this blog post**](http://www.centurylinklabs.com/imagelayers-io-docker-visualization-and-badges/) and browse [the wiki here](https://github.com/CenturyLinkLabs/imagelayers).
-
- * **Total Cost of Ownership Tool** - Comparing clouds across providers can be difficult, due to differences in performance and the underlying capabilities of each vendor. This open source tool makes it easier to understand these subtleties and variations. complicate API now interacts with Fleet API v0.9.0 directly. [**View the repository on Github**](https://github.com/CenturyLinkCloud/EstimatorTCO).
-
-* **Panamax Installer v0.6.0** – Panamax CLI (pmxcli) is a command-line tool for managing deployments to Panamax Remote Agents. The Panamax CLI can be run alongside Panamax and its dependencies, or as a standalone. Learn more in [**this blog post**](http:./www.centurylinklabs.com/pmxcli-a-cli-for-panamax-remote-deployments/), or visit the [Panamax CLI wiki](https://github.com/CenturyLinkLabs/panamaxcli).

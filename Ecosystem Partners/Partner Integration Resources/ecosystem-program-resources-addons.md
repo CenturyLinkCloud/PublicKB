@@ -7,6 +7,8 @@
 }}}
 
 
+<strong>The AppFog service was retired on June 29, 2018. The AppFog Platform-as-a-Service is no longer available, including all source code, env vars, and database information. </strong>
+
 CenturyLink [Ecosystem Program Partner Members](centurylink-cloud-ecosystem-program-guide.md) gain access to a marketplace of [resources](ecosystem-program-resources.md) that make integrations easy.
 
 The CenturyLink Cloud AddOn engine allows partners to add their services to the AppFog marketplace, giving customers access to service broker delivered services.  Partners register their service with the AppFog AddOn engine.  The service is then visible to the AppFog user through the AppFog marketplace.  The customer can sign up for the service directly through AppFog.

@@ -2,14 +2,21 @@
 
 # CenturyLink Cloud Knowledge Base
 
-Welcome to the [CenturyLink Cloud](http://www.ctl.io) knowledge base (KB) repository. This is the source of information on all of our products and services available today. Please follow the guidelines below to contribute or make changes.
+Welcome to the [CenturyLink Cloud](http://www.ctl.io) Knowledge Base (KB) repository. This is the source of information on all of our products and services available today. Please follow the guidelines below to contribute or make changes.
 
 If you are new to Git and Github, we highly recommend spending 5 minutes reading this great article on [Understanding the Github Flow](https://guides.github.com/introduction/flow/). This repo follows the Github Flow.
 
+# NEW FEATURE - Markdown Checker
+
+Before submitting your PR, validate the markdown in https://onramp.ctl.io/#!/markdownChecker
+
+The Github file preview does not render markdown exactly the same as we do in ctl.io/knowledge-base/.  The OnRamp Markdown Checker will show you how your KB article will be rendered in ctl.io.  This is especially useful if you have a table in your article.
+
+Please note, the preview in the OnRamp markdown checker **only** displays the html conversion view.  It does not give the same styles view (colors, font, etc.) at this time.
 
 # Overview
 
-The repository is organized by category, and each folder represents a category. Within each category folder are markdown (.md) files that represent an individual knowledge base article.
+The repository is organized by category, and each folder represents a category. Within each category folder are markdown (.md) files that represent an individual Knowledge Base article.
 
 ## How To Make Contributions
 
@@ -24,6 +31,8 @@ The repository is organized by category, and each folder represents a category. 
 1. **Anything in the `master` branch is always deployable.** Create a [new branch](https://github.com/blog/1377-create-and-delete-branches) from `master`. Your branch name should be descriptive (e.g., `january-release-notes`, `anti-affinity-policy-faq`) so that others have an idea of what the branch is for.
 
 1. Once your branch has been created, make your changes (add, edit, delete) to your KB article in your favorite Markdown editor (we like [Atom](https://atom.io/)).
+
+1. Validate the markdown to HTML conversion in https://onramp.ctl.io/#!/markdownChecker
 
 1. Commit your change(s) locally to your fork/branch.
 
@@ -115,7 +124,7 @@ You can use 1 level of nested categories by creating sub directories under the m
 ### Front Matter
 
 
-The top of each .md file contains metadata about the knowledge base article itself. It is used to list things such as author, date created, modified, keywords, title, etc. It should look like this:
+The top of each .md file contains metadata about the Knowledge Base article itself. It is used to list things such as author, date created, modified, keywords, title, etc. It should look like this:
 
 ```code
 {{{
@@ -153,35 +162,41 @@ Use heading level 3 (###) as the highest heading level in the KB articles (for c
 
 ### Links
 
-KBs use full links (instead of relative links), with the "http:" or "https:" removed.
-
-  Links to KB articles should follow this format:
+Links to other KB articles should follow this format:
 
     ```
     [Link Text](../category/kb-article-name.md)
     [Link Text](../category/sub-category/kb-article-name.md)
     ```
 
-    so like this (folder names are case-sensitive):
+    Example (folder names are case-sensitive):
 
     ```
     [Packages Best Practices](../Blueprints/packages-best-practices.md)
-    [Using SAML for Single-Sign-On](../Control Portal/using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md )
+    [Using SAML for Single-Sign-On](../Control Portal/using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md)
     ```
 
-  Links to external sites should follow this format:
+Links to ctl.io sites (internal links) should follow this format:
 
     ```
     [Managed Microsoft SQL](//www.ctl.io/managed-services/ms-sql)
     ```
-    **Note:** The links have the "http:" or "https:" deleted so that the site will render regardless of the protocol (the ctl.io website only displays https; this ensures there are no conflicts.)
+    **Note:** The links have the "http:" or "https:" removed so that the site will render regardless of the protocol (the ctl.io website only displays https; this ensures there are no conflicts.)
 
-  Links to embedded videos, such as podcasts, should look like this:
+Links to external sites (not ctl.io) should be full, regular links and follow this format:
+
+    ```
+    [Github](https://github.com/)
+    ```
+
+Links to podcasts should look like this:
 
   ```
   <iframe id='ei8087582' src='//centurylinklabs.podomatic.com/embed/frame/posting/2016-06-06T12_59_45-07_00?json_url=http%3A%2F%2Fcenturylinklabs.podomatic.com%2Fentry%2Fembed_params%2F2016-06-06T12_59_45-07_00%3Fcolor%3D43bee7%26autoPlay%3Dfalse%26facebook%3Dtrue%26height%3D85%26width%3D620%26minicast%3Dfalse%26objembed%3D0&notb=1' height='85' width='620'frameborder='0' marginheight='0' marginwidth='0' scrolling='no' allowfullscreen></iframe>
   ```
   **Note:** Like the external site links, the "http:" and "https:" are removed from the links to eliminate conflicts.
+
+  Podcasts should be posted on the podomatic website as well.
 
 ### Images
 

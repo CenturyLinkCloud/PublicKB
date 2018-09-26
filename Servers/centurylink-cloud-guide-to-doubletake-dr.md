@@ -289,7 +289,7 @@ The Double-Take license required for this node is ‘Double-Take DR For Windows 
 -   Create a snapshot of the target server from the Control Portal
     ([Creating and Managing Server Snapshots knowledge
     article](../Servers/creating-and-managing-server-snapshots.md)),
-    [API](//www.ctl.io/api-docs/v2/\#server-actions-create-snapshot)
+    [API](https://www.ctl.io/api-docs/v2/#server-actions-create-snapshot)
     or [CLI](//github.com/CenturyLinkCloud/CenturyLink Cloud-go-cli) for recovery or rebuild the test node with the procedure [Creating a Target Server](#creating-a-target-server)
 
     ![DT-CenturyLink Cloud-snapshot](../images/doubletake/DT-clc-snapshot.png)

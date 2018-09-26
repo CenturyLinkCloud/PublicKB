@@ -10,7 +10,7 @@
 
 * __Intrusion Prevention has been released for General Availability.__ The [Intrusion Prevention or IPS Product](https://www.ctl.io/intrusion-prevention-service/) is now available in all CenturyLink Cloud Data Centers.  
 
-  The product installs a Trend Micro Agent on a host machine to protect that host against known and unknown vulnerabilities to operating systems and over 100 applications. The IPS agent automatically scans the host for newly installed applications every 24 hours, and if any are found, the protection policy is updated accordingly. The agent is also automatically updated with new Trend Micro patches to protect against new vulnerabilities. Details on installing IPS and configuring your event notification destinations are available in the Security section of our [knowledge base](https://www.ctl.io/knowledge-base/security/#1).
+  The product installs a Trend Micro Agent on a host machine to protect that host against known and unknown vulnerabilities to operating systems and over 100 applications. The IPS agent automatically scans the host for newly installed applications every 24 hours, and if any are found, the protection policy is updated accordingly. The agent is also automatically updated with new Trend Micro patches to protect against new vulnerabilities. Details on installing IPS and configuring your event notification destinations are available in the Security section of our [Knowledge Base](https://www.ctl.io/knowledge-base/security/#1).
 
   Other Service Highlights:
   * Installation via Blueprints
@@ -70,7 +70,7 @@
 
 ### Enhancements (3)
 
-* __Object Storage - Performance Enhancements & New Pricing.__ The object storage service in Canada now offers improved performance and reliability, while continuing to provide the familiar S3 interface. Existing customers will automatically receive these new capabilities. More details are available on the [Object Storage product page](https://www.ctl.io/object-storage/), including new pricing, and the [knowledge base](https://www.ctl.io/knowledge-base/object-storage).
+* __Object Storage - Performance Enhancements & New Pricing.__ The object storage service in Canada now offers improved performance and reliability, while continuing to provide the familiar S3 interface. Existing customers will automatically receive these new capabilities. More details are available on the [Object Storage product page](https://www.ctl.io/object-storage/), including new pricing, and the [Knowledge Base](https://www.ctl.io/knowledge-base/object-storage).
 
 * __Added Year to Activity History.__ The Control Portal now shows the year for each event in the Activity History.
 
@@ -88,7 +88,7 @@
 
 ### Ecosystem (3)
 
-* __Appcito.__ [Appcito](http://www.appcito.com) CAFE (Cloud Application Front End) is an easy-to-deploy, unified and cloud-native service that enables cloud application teams to select and deploy enterprise grade L4 to L7 application network services.  This cloud-native, proxy-based service gateway improves application delivery with a web-scale solution for load balancing, application security and continuous availability.  [Get started](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-appcito-cafe/) with the Appcito blueprint today.
+* __Appcito.__ [Appcito](http://www.appcito.com) CAFE (Cloud Application Front End) is an easy-to-deploy, unified and cloud-native service that enables cloud application teams to select and deploy enterprise grade L4 to L7 application network services.  This cloud-native, proxy-based service gateway improves application delivery with a web-scale solution for load balancing, application security and continuous availability.
 
 * __CloudFuze.__ [CloudFuze](https://www.cloudfuze.com/), provides management tools for cloud-based file and storage services.  Their integration allows customers of CenturyLink’s cloud platform to utilize one tool to track and manage information residing in diverse cloud file-sharing services with a common management framework.
 Start controlling your storage sprawl by [deploying CloudFuze](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-cloudfuze-blueprint/) on CenturyLink today.

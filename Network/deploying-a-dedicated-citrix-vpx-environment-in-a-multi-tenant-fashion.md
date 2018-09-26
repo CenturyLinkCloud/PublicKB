@@ -27,7 +27,7 @@ Each CenturyLink Cloud client will receive an initial account, this is the Paren
 * [Practical guide for using roles](../Accounts & Users/practical-guide-for-using-roles.md)
 
 ### Deploy the Dedicated Citrix VPX Appliances
-Follow the [Deploy a dedicated Citrix VPX Appliance](../Service Tasks/deploy-a-dedicated-citrix-vpx-appliance.md) knowledge base and for additional information refer to the [Load Balancing Comparison Matrix](../Network/load-balancing-comparison-matrix.md)
+Follow the [Deploy a dedicated Citrix VPX Appliance](../Service Tasks/deploy-a-dedicated-citrix-vpx-appliance.md) Knowledge Base article and for additional information refer to the [Load Balancing Comparison Matrix](../Network/load-balancing-comparison-matrix.md)
 
 For this use case the following information was used.
 * The Management IP of the VPX(s) is 10.100.97.100

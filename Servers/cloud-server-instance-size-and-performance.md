@@ -20,16 +20,6 @@ The CenturyLink Cloud Platform does not offer predefined virtual "instance types
 
 The max configuration for a given Standard virtual machine is 16 vCPU, 128 GB of memory and 4 TB of storage. Refer to [Operating System Root Drive Size](../Servers/operating-system-root-drive-size.md) for OS Drive Sizes.
 
-### Maximum Resources (Hyperscale)
-
-* 16 vCPU, with at least 2 GHz per vCPU
-* 128 GB memory
-* Up to 1 TB Storage (SSD)
-    * single disk up to 1 TB
-    * up to 15 disks, not exceeding 1 TB
-* Up to 4 vNIC
-
-The max configuration for a given Hyperscale virtual machine is 16 vCPU, 128 GB of memory and 1 TB of storage. Refer to [Operating System Root Drive Size](../Servers/operating-system-root-drive-size.md) for OS Drive Sizes.
 
 ### Maximum Throughput
 
@@ -42,7 +32,6 @@ Load Balancer						   	| 100 Mbps to 400 Mbps (based on unit size purchased)<br>
 VPN (client)							  | up to 20 Mbps<br>19 max concurrent connections (higher volumes available)
 VPN (IPSEC)                 | up to 1 Gbps
 Standard VM-based Storage   | 5ms latency<br>Minimum IOPS (2500), Maximum IOPS (20,000) with 4KB block size
-Hyperscale VM-based Storage | Minimum of 15,000 IOPS
 
 <sup>1</sup>All Virtual Servers using our OS Templates are deployed with 10 Gbps vNICs
 

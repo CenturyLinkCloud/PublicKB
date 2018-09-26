@@ -68,7 +68,7 @@ The purpose of this documentation is to introduce and explain the process and de
    * The publishing mechanism submits the Blueprint for an automated review by the build system.
    * Any inconsistencies are flagged and the publishing processes errors out if exceptions are found.
 
-14. Fro the Navigation Menu, select **Orchestration > Blueprint Library** to locate published Blueprint.
+14. From the Navigation Menu, select **Orchestration > Blueprint Library** to locate published Blueprint.
    * Upon successful publication process, the Blueprint will show up on the Blueprint Library page.
    * By default, all available Blueprints deployed by the user in the specific account are available.
    * Use the Search box on the right to locate your Blueprint.

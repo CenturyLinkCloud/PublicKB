@@ -12,14 +12,12 @@
 This guide provides a list of the Operating Systems and Control Portal actions that affect the power state of a server on the CenturyLink Cloud.
 
 ### Operating System Templates 64-Bit
-* CentOS 5
 * CentOS 6
 * Debian 6
 * Debian 7
 * RedHat Enterprise Linux 5
 * RedHat Enterprise Linux 6
 * RedHat Enterprise Linux 7
-* Ubuntu 12
 * Ubuntu 14
 * Ubuntu 16
 * Windows Server 2008 R2
@@ -69,13 +67,11 @@ Change number of vCPUs|CentOS 5<br>Debian 6<br>Debian 7<br>RedHat Enterprise Lin
 * Delete scheduled task
 * View server scheduled tasks
 * Add storage volumes
-* Change anti-affinity policy for hyperscale server
 * Change custom field values
 * Change server description
 * Change server group
 * Change server password
 * Change storage amount of existing volumes
-* Remove anti-affinity policy for hyperscale server
 * Create server snapshot: Can impact availability
 * Delete server snapshot: Can impact availability
 * View server snapshots
@@ -84,19 +80,15 @@ Change number of vCPUs|CentOS 5<br>Debian 6<br>Debian 7<br>RedHat Enterprise Lin
 * View server templates
 * Create Alert policy
 * Create Horizontal Autoscale policy
-* Create Hyperscale Anti-Affinity policy
 * Create Vertical Autoscale policy: May impact power state based on policy rules
 * Delete Alert policy
 * Delete Horizontal Autoscale policy
-* Delete Hyperscale Anti-Affinity policy
 * Delete Vertical Autoscale policy
 * Edit Alert policy
 * Edit Horizontal Autoscale policy: May impact power state based on policy rules
-* Edit Hyperscale Anti-Affinity policy
 * Edit Vertical Autoscale policy: May impact power state based on policy rules
 * View Alert policy
 * View Horizontal Autoscale policy
-* View Hyperscale Anti-Affinity policy
 * View Vertical Autoscale policy
 * Add horizontal autoscale policy to group: May impact power state based on policy rules
 * Change horizontal autoscale policy of a group: May impact power state based on policy rules

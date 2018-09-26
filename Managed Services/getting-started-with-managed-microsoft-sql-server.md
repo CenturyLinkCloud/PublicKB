@@ -1,20 +1,19 @@
 {{{
   "title": "Getting Started with Managed Microsoft SQL Server",
-  "date": "01-19-2016",
-  "author": "Gavin Lai",
+  "date": "05-14-2018",
+  "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false
 }}}
-### Table of Content
+### Table of Contents
 * [Overview](#overview)
 * [Socket to vCPU Allocation](#socket-to-vcpu-allocation)
 * [Prerequisites](#prerequisites)
 * [Supported Managed Operating Systems](#supported-managed-operating-systems)
 * [Supported Managed Microsoft SQL Server Editions](#supported-managed-microsoft-sql-server-editions)
 * [Important Information](#important-information)
-* [Installation Process](#installation-process)
-  * [Managed SQL with CenturyLink provided license](#managed-sql-with-centurylink-provided-license)
-  * [Managed SQL with BYOL](#managed-sql-with-byol)
+* [Managed SQL with CenturyLink provided license](#managed-sql-with-centurylink-provided-license)
+* [Managed SQL with BYOL](#managed-sql-with-byol)
 * [Frequently Asked Questions](#frequently-asked-questions)
 
 ### Overview
@@ -40,75 +39,74 @@ It is recommended customers review our delivery model for [Sockets to vCPU](../S
 * Microsoft SQL Server 2012 Enterprise Edition
 * Microsoft SQL Server 2014 Standard Edition
 * Microsoft SQL Server 2014 Enterprise Edition
+* Microsoft SQL Server 2016 Standard Edition
+* Microsoft SQL Server 2016 Enterprise Edition
 
 ### Important Information
 * The costs shown in the Blueprint UI do not include licenses fees, only managed services fees
 * Bring Your Own License (BYOL) is available via Blueprint
 
-### Installation Process
-
-#### Managed SQL with CenturyLink provided license
+### Managed SQL with CenturyLink provided license
 
 1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Orchestration** > **Blueprints Library**. Search for **MS SQL** in the Blueprint library. Then, click on the **CLC Managed MS SQL** Blueprint.
 
-  ![managed MS SQL blueprint](../images/getting-started-with-managed-microsoft-sql-server-01.png)
+    ![managed MS SQL blueprint](../images/getting-started-with-managed-microsoft-sql-server-01.png)
 
 2. Click on the deploy blueprint button.
 
-  ![deploy ms sql blueprint](../images/getting-started-with-managed-microsoft-sql-server-02.png)
+    ![deploy ms sql blueprint](../images/getting-started-with-managed-microsoft-sql-server-02.png)
 
 3. Select the appropriate virtual machine, editions, location to install, features and licensing you wish to implement.
 
-  ![input blueprint parameters](../images/getting-started-with-managed-microsoft-sql-server-03.png)
+    ![input blueprint parameters](../images/getting-started-with-managed-microsoft-sql-server-03.png)
 
 4. Review the blueprint parameters and select deploy blueprint.  
 
-  ![review blueprint parameters](../images/getting-started-with-managed-microsoft-sql-server-04.png)
+    ![review blueprint parameters](../images/getting-started-with-managed-microsoft-sql-server-04.png)
 
 5. An email notification will be sent to the initiator of the blueprint for both queuing and completion.
 
-  ```
-  Your request "CLC Managed MS SQL" has been queued.
-  ```
+    ```
+    Your request "CLC Managed MS SQL" has been queued.
+    ```
 
-  ```
-  Your request "CLC Managed MS SQL" has successfully completed.
-  ```
+    ```
+    Your request "CLC Managed MS SQL" has successfully completed.
+    ```
 
-#### Managed SQL with BYOL
+### Managed SQL with BYOL
 
 1. Search for **MS SQL** in the Blueprint library. Then, click on the **CLC Managed MS SQL BYOL** Blueprint (shown mouse over description in the diagram below).
 
-  ![managed MS SQL BYOL blueprint](../images/managed-mssql-byol/getting-started-with-managed-microsoft-sql-server-byol-01.png)
+    ![managed MS SQL BYOL blueprint](../images/managed-mssql-byol/getting-started-with-managed-microsoft-sql-server-byol-01.png)
 
 2. Click on the deploy blueprint button.
 
-  ![deploy ms sql blueprint](../images/managed-mssql-byol/getting-started-with-managed-microsoft-sql-server-byol-02.png)
+    ![deploy ms sql blueprint](../images/managed-mssql-byol/getting-started-with-managed-microsoft-sql-server-byol-02.png)
 
 3. Select the appropriate virtual machine, editions, location to install, features and licensing you wish to implement.
 
-  ![input blueprint parameters](../images/managed-mssql-byol/getting-started-with-managed-microsoft-sql-server-byol-03.png)
+    ![input blueprint parameters](../images/managed-mssql-byol/getting-started-with-managed-microsoft-sql-server-byol-03.png)
 
 4. Review the blueprint parameters and select deploy blueprint.  
 
-  ![review blueprint parameters](../images/managed-mssql-byol/getting-started-with-managed-microsoft-sql-server-byol-04.png)
+    ![review blueprint parameters](../images/managed-mssql-byol/getting-started-with-managed-microsoft-sql-server-byol-04.png)
 
 5. An email notification will be sent to the initiator of the blueprint for both queuing and completion.
 
-  ```
-  Your request "CLC Managed MS SQL BYOL" has been queued.
-  ```
+    ```
+    Your request "CLC Managed MS SQL BYOL" has been queued.
+    ```
 
-  ```
-  Your request "CLC Managed MS SQL BYOL" has successfully completed.
-  ```
-
+    ```
+    Your request "CLC Managed MS SQL BYOL" has successfully completed.
+    ```
 
 ### Frequently Asked Questions
 
 **Q: How is the CenturyLink Cloud for Managed Microsoft SQL priced?**
 
-A: Please see [Pricing Catalog](//www.ctl.io/pricing/#/va1) for more information.
+A: Please see [Pricing Catalog](//www.ctl.io/pricing/) for more information.
 
 **Q: How do I request MSSQL Mirroring or MSSQL AlwaysOn Configuration?**
 

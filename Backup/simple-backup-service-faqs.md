@@ -1,6 +1,6 @@
 {{{
-  "title": "Simple backup FAQs",
-  "date": "12-14-2016",
+  "title": "Simple Backup Service FAQs",
+  "date": "11-17-2017",
   "author": "John Gerger",
   "attachments": [],
   "related-products" : [],
@@ -16,6 +16,7 @@
 * [Restores](#restores)
 * [Policies](#policies)
 * [Frequency](#frequency)
+* [Scheduling](#scheduling)
 * [Retention](#retention)
 * [Inclusions and Exclusions](#inclusions-and-exclusions)
 * [Billing](#billing)
@@ -34,7 +35,7 @@ up-sg1.backup.ctl.io
 up-uc1.backup.ctl.io
 up-gb3.backup.ctl.io
 ```
-Additional endpoints will need to be configured based on the Storage Region selected as indicated in the [How it Works](./simple-backup-service-how-it-works.md) KB article.
+Additional endpoints will need to be configured based on the Storage Region selected as indicated in the [How it Works](simple-backup-service-how-it-works.md) KB article.
 
 **Q: What OSes are supported?**
 
@@ -50,7 +51,11 @@ A: No further backups occur from the server to storage. If a backup agent is una
 
 **Q: Is SBS intended to be used for Disaster Recovery?**
 
-A: No, SBS provides file-level backup protection. In fact, SBS does not backup certain [OS files](#inclusions-and-exclusions) or provide snapshot capability. Users can still perform [manual snapshots on-demand](https://www.ctl.io/knowledge-base/servers/creating-and-managing-server-snapshots/) and as scheduled tasks within the server settings. For full [Disaster Recovery](https://www.ctl.io/knowledge-base/support/introducing-new-options-for-backups/#how-does-the-simple-backup-service-compare-to-other-options-are-available-on-centurylink-cloud) services, there are a number of options available internally or through Certified Ecosystem partners.
+A: No, SBS provides file-level backup protection. In fact, SBS does not backup certain [OS files](#inclusions-and-exclusions) or provide snapshot capability. Users can still perform [manual snapshots on-demand](../Servers/creating-and-managing-server-snapshots.md) and as scheduled tasks within the server settings. For full [Disaster Recovery](https://www.ctl.io/knowledge-base/support/introducing-new-options-for-backups/#how-does-the-simple-backup-service-compare-to-other-options-are-available-on-centurylink-cloud) services, there are a number of options available internally or through Certified Ecosystem partners.
+
+**Q: Does SBS support server cloning?**
+
+A: No, currently SBS does not support cloning. If the agent is installed on a server and the server is cloned there can be data continuity issues between the backups of the source and cloned server. If a server is going to be cloned, the SBS agent must be [uninstalled](removing-simple-backup-service.md) first, and the agent properly installed on all servers needed after they are cloned.
 
 ### Agent
 
@@ -60,7 +65,7 @@ A: Although the SBS agent will run on 1 Core, 1GB of RAM VM's, the overall speed
 
 **Q: What are the logon credentials for the backup agent?**
 
-A: Please review the [SBS Agent Security Configurations](./sbs-agent-security.md) KB article for details.
+A: Please review the [SBS Agent Security Configurations](sbs-agent-security.md) KB article for details.
 
 **Q: Can I change the backup agent credentials for all my instances in one place?**
 
@@ -68,7 +73,7 @@ A: Not at this time. Each properties file must be updated individually.
 
 **Q: How can I access my backup agent from a remote machine?**
 
-A: Please review the [SBS Agent Security Configurations](./sbs-agent-security.md) KB article for details.
+A: Please review the [SBS Agent Security Configurations](sbs-agent-security.md) KB article for details.
 
 **Q: Where can I find the backup agent's logs on my machine?**
 
@@ -92,7 +97,7 @@ A: The agent is setup to start on boot at install time.
 
 **Q: Where do I configure backups?**
 
-A: The Control Portal provides backup configuration functionality. Please refer to our [Getting Started Guide](./getting-started-with-simple-backup.md) for more details. Additionally, the [Backup API](https://www.ctl.io/api-docs/v2/#simple-backup) may be used for advanced scripting.
+A: The Control Portal provides backup configuration functionality. Please refer to our [Getting Started Guide](getting-started-with-simple-backup.md) for more details. Additionally, the [Backup API](https://www.ctl.io/api-docs/v2/#simple-backup) may be used for advanced scripting.
 
 **Q: What does an "IN_PROGRESS" status backup mean?**
 
@@ -100,19 +105,27 @@ A: An "IN_PROGRESS" status for a backup job means the data is actively being tra
 
 **Q: How do you handle backing up open files?**
 
-A: At this time, open files will not be backed up and a “Partial_Success” will be shown as the Restore Point Status.
+A: For Windows, Open file backups are supported through VSS snapshots for any VSS compliant applications running on the Windows server. You can enable VSS backups on specific backup policies for Windows servers by checking the "Create VSS Snapshot" checkbox. This can be done when creating the policy, or by editing an existing policy.
+
+![](../images/backup/faq/vss.png)
+
+For Linux, open files will not be backed up and a “Partial_Success” will be shown as the Restore Point Status if open files are encountered in the targeted backup path.
 
 **Q: How can I confirm that my backups were successful?**
 
-A: There are two places in the agent that show the status of your backups. First, in the Backup Jobs section, which shows all backups executed by this particular agent. Second, for additional information, selecting “Restore” from the Policy Details page will drill down into greater detail about backups for the specific Policy. Details include Backup Date, Status, and Protected Data (GBs).
+A: In the backup section of the control portal, under the backup policy in question there is a column that shows the last successful backup date for every server on the policy. Alternately, there are two places in the backup agent that show the status of your backups. First, in the Backup Jobs section, which shows all backups executed by this particular agent. Second, for additional information, selecting “Restore” from the Policy Details page will drill down into greater detail about backups for the specific Policy. Details include Backup Date, Status, and Protected Data (GBs).
 
 **Q: For a "Failed" or "Partial_Success" backup status, can I see which files failed and why?**
 
-A: Yes, see the sbs-backup-files-failed.csv file located on your system for details.
+A: Yes, see the sbs-backup-files-failed.csv file located on your system's backup agent's log directory for details.
+
+Logs can be viewed at the following locations:
+  * Linux: /var/lib/simple-backup-service
+  * Windows: C:\Windows\System32\config\systemprofile\appdata\local\simplebackupservice
 
 **Q: Where are my backups actually stored?**
 
-A: The SBS agent on the server transfers backup data to one of six different backup storage regions, each built on top of cloud object storage. CenturyLink sources this object storage from a combination of its own cloud platform, as well as 3rd party cloud providers such as Amazon Web Services. For more information, see our [How It Works](https://www.ctl.io/knowledge-base/backup/simple-backup-service-how-it-works/) KB article.
+A: The SBS agent on the server transfers backup data to one of six different backup storage regions, each built on top of cloud object storage. CenturyLink sources this object storage from a combination of its own cloud platform, as well as 3rd party cloud providers such as Amazon Web Services. For more information, see our [How It Works](simple-backup-service-how-it-works.md) KB article.
 
 ### Restores
 
@@ -122,7 +135,7 @@ A: An "IN_PROGRESS" status for a restore job indicates the data is actively bein
 
 **Q: Can I select specific files/folders to restore from a restore point?**
 
-A: Yes, in the restore section there is an option to perform a full restore, or selective file restore. Using the selective file restore option allows you to enter the full path to a file or folder and the option to add multiple paths to restore.
+A: Yes, in the restore section there is an option to perform a full restore, or selective file restore. Using the selective restore option allows you to enter the full path to a file or folder and the option to add multiple paths to restore. While using the selective restore function you are able to use * as a wildcard in the path or filename.
 
 **Q: Can restores be performed to another server?**
 
@@ -155,13 +168,9 @@ A: Common causes of obscured restore files:
   - Permissions of the files and folders restored as assigned during backup execution.
   - Invalid path structure provided as a Restore Path. In this case, the files and folders will be restored to the C:Windows\System32 folder for Windows or the SimpleBackupService directory for Linux.
 
-**Q: Why am I seeing a different number of restore points than I expected?**
-
-A: The number of restore points depends on the backup frequency as selected in the policy. Note that the frequency is the measurement of time between the end of the last backup and the next backup.
-
 **Q: How do I stop an in-progress restore from completing?**
 
-A: Restarting the Simple Backup Service on the server will stop all running restore task(s). See https://www.ctl.io/knowledge-base/backup/restarting-simple-backup-service/ for steps to restart in Linux and Windows.
+A: Restarting the Simple Backup Service on the server will stop all running restore task(s). See [Restarting Simple Backup Service](restarting-simple-backup-service.md) for steps to restart in Linux and Windows.
 
 ### Policies
 
@@ -195,6 +204,18 @@ A: Currently, the most efficient method of viewing all the policies applied to a
 
 ### Frequency
 
+**Q: Where has the frequency setting gone when creating a new policy?**
+
+A: We have replaced the frequency method of backing up with a CRON style scheduling method. Please see below for more details.
+
+**Q: Will my backup policies that were setup with frequency still function?**
+
+A: YES! We have backwards compatibility for all backup policies that use the frequency method of backing up
+
+**Q: How do I change my old frequency based policies over to schedule based policies?**
+
+Simply select the policy you wish to change, click edit, and select the desired schedule for the new policy. Once it has been saved, the new schedule will take effect.
+
 **Q: If the backup frequency is every 4 hours, what should I expect?**
 
 A: This depends on how long a backup takes to complete. The frequency timer will not start until the previous backup has completed, so in this example the next backup will start 4 hours after the previous one has completed.
@@ -205,7 +226,21 @@ A: Yes. From the Backup Agent, click the **Backup** button from the Home Dashboa
 
 **Q: Can I schedule backups to execute at a specific time in the day?**
 
-A: No. The policy frequency determines when the next backup will be executed or the user may manually trigger a backup. Once a backup has completed, the frequency will start to countdown and the next backup will occur when the frequency countdown has expired. If you want to prevent backups from occurring during peak business hours, you will need to stop and restart the service accordingly.
+A: YES! This is part of our new Scheduling feature; for more details, please see the [getting started guide](getting-started-with-simple-backup.md)
+
+### Scheduling
+
+**Q: What scheduling configurations are available?**
+
+A: You can configure a backup schedule on an hourly, daily, weekly, monthly or yearly basis.
+
+**Q: Can I set the hour of the day to backup?**
+
+A: Yes, all options except for hourly allow you to specify at what hour you want the backup to start.
+
+**Q: Can I specify a time for backups to NOT happen?**
+
+A: No, you can not currently specify a blackout period for backups.
 
 ### Retention
 
@@ -216,6 +251,10 @@ A: No. This is a manual process at this time. A [support request](https://www.ct
 **Q: Why do unchanged files not follow retention?**
 
 A: This provides the ability to utilize incremental backups with consistent full backup protection. By not expiring unchanged files, there is no need to retransfer them to object storage, which minimizes data transfer costs and provides quicker backups. Bottom line is that it provides quicker and cheaper backups for our users.
+
+**Q: What is the maximum retention period for backups?**
+
+A: 18263 days (approximately 50 years)
 
 ### Inclusions and Exclusions
 
@@ -263,7 +302,7 @@ A: SBS provides a simplified billing model. The cost per GB for backups is calcu
 
 * Backup Cost Calculation Example:
 
-  10 GB of data backed up starting on the 15th of the month assuming no changes throughout the reamining duration of the month.
+  10 GB of data backed up starting on the 15th of the month assuming no changes throughout the remaining duration of the month.
 
   Hourly GB Usage = (10 GB of backup x 15 days x 24 hours) = 3,600 GB
 

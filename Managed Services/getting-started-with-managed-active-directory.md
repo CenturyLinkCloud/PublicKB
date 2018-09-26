@@ -11,7 +11,7 @@
 
 <p>Here's how to get started with Managed Active Directory in CenturyLink Cloud:</p>
 
-<p>1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Orchestration** > **Blueprints Library**. Search for "Active Directory". Click on the “CLC Managed Active Directory – Add DC” Blueprint.</p>
+<p>1. Log on to the Control Portal. Using the left side navigation bar, click on Orchestration > Blueprints Library. Search for "Active Directory". Click on the “CLC Managed Active Directory – Add DC” Blueprint.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/EyJnmscs4LOWcKiCl1J26abrq/?name=AD_DC.jpg" alt="AD_DC.jpg" />
 </p>
 <p>2. Click on the deploy blueprint button.</p>

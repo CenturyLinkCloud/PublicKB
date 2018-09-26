@@ -6,6 +6,7 @@
   "contentIsHTML": false
 }}}
 
+<strong>The AppFog service was retired on June 29, 2018. The AppFog Platform-as-a-Service is no longer available, including all source code, env vars, and database information. </strong>
 
 ### Contents
 - [Overview](#overview)
@@ -44,12 +45,11 @@ There are four values at the top of the dashboard.
  - Public IP addresses
  - Simple Backup Usage
  - Relational Database Services
- - Appfog
 
 ***Current Hour*** includes (MSSQL is no longer included as billing has been changed to monthly):
  - All infrastructure costs (CPU, Memory, disk) and OS licenses (where applicable) from all datacenters
  - Managed Services costs (Managed OS, Active Directory, Databases, Web server)
-  
+
 
 ***One Time Changes*** includes:
  - Any Service Task charges
@@ -107,10 +107,6 @@ Under Network menu, the cost of VLANs, Share Load Balanacer, DNS and Site to Sit
 
 CenturyLink Cloud offers different services for which the cost estimation can be found under the individual service page.
 
-#### Appfog
-
-![Appfog](../images/estimator/appfog.png)
-
 #### Backup
 
 ![Backup](../images/estimator/backup.png)
@@ -157,7 +153,6 @@ Below is a table to summarize the services included in portal cost estimation:
 | Load Balancer | Load Balancer |
 | Site to Site VPN | VPN |
 | DNS  | DNS |
-| Appfog | Appfog break down by region |
 | Backup | Simple Backup |
 | Object Storage | Object Storage (month estimate/current hour/month to date) |
 | Relational DB | Relational DB |
