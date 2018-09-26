@@ -29,7 +29,8 @@ Download the **GUI Package** from the **Download Links** section of the most rec
 ### Create a New SafeHaven Cluster
 1. Launch the **safehaven-console.exe**.
 2. Click on **Create new cluster**.
-3. Enter the **Organization Name** and the **License key** provided to you by your CenturyLink Resource. Click **Next**.
+3. Enter the **Organization Name** and the **License key** provided to you by your CenturyLink Resource. Click **Next**.  
+**Note:** You can request a license key by sending an email to help@ctl.io and specifying the number of VMs in the request
 4. Fill in the following fields:  
 
    a. Enter **CMS Hostname**.
