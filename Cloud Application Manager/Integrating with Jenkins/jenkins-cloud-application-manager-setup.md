@@ -206,9 +206,9 @@ Enter this value:
    # Install Jenkins and Git
    curl -ks https://jenkins-ci.org/debian-stable/jenkins-ci.org.key | apt-key -y add -
    echo deb http://pkg.jenkins-ci.org/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list
-
+	 apt-get install default-jre -y
    apt-get -y update
-   apt-get -y --force-yes install jenkins git
+   apt-get -y --allow-unauthenticated install jenkins git
    ```
 
    * Install the plugins, the build job templates, and configure GitHub plugins with username, access token, and repository URL. Copy, paste the script in the configure event and save.
@@ -260,7 +260,10 @@ Enter this value:
    install_template \{{ MERGE_JOB }}\ ${JENKINS_HOME}/jobs/merge/config.xml
 
    chown -R jenkins:jenkins ${JENKINS_HOME}/jobs
-
+	 if [ -f /etc/default/jenkins ]
+	 then
+	 	sed -i 's/-Djava.awt.headless=true/-Djava.awt.headless=true -Dhudson.remoting.ClassFilter=check/g' /etc/default/jenkins
+	 fi
    # Restart Jenkins server
    service jenkins restart
    ```
