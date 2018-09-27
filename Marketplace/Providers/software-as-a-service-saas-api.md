@@ -17,6 +17,15 @@ CenturyLink has created multiple opportunities for software vendors to integrate
 
 *The endpoint for the* ```/saas-usage/``` *is not published in this article for security reasons. Your organization will be provided documentation for the endpoint & expected JSON payload during onboarding*
 
+##### Dependencies
+
+To build out the APIs, the SKUs must be created. The process for SKU creation is as follows:
+* Provider submits pricing information to Marketplace team representative.
+* Marketplace team representative formats the SKUs and submits them to the CenturyLink Platform billing team to create the SKUs in staging.
+* Once created the Marketplace team representative will assign the SKUs to the provider's alias and associated products in the Provider Portal.
+* Provider can then use the SKUs to build out the API calls.
+
+
 ##### Deploy Software or Services
 
 The CenturyLink Cloud Marketplace will provide the user interface & collect the information that is required to deploy the software or services to an account on your platform. However, we do not collect Private Card Information (PCI) on your behalf.
@@ -27,15 +36,15 @@ You will be able to specify which data points are displayed to your perspective 
 * **productSkus** - Array of strings - provisioned product SKU ids
 * **productId** - int - marketplace product id
 
-The parameters will be passed via a JSON payload. The exact JSON message will vary between providers. We've provided an example below.
+The parameters will be passed via a JSON payload. If you do not add a required field with "email" in the name, a required "Contact Email" field will be added to the form.  The exact JSON payload will vary between providers, based on configuration of the product. At a minimum, all fields in the example below **always** will be sent in the payload delivered to your API.  
 
 ```
 {
   "provisioningId": "9ddz0a5e-f2d5-6eb5-89b9-7a42d0fbb836",
   "productSkus": ["MRKTPLC-PROVIDER-NAME-PRODCT-NAME"],
   "productId": 123,
-  "name": "some customer",
-  "email": "customer-email-address@customerDomain.com"
+  "contactEmail": "customer-email-address@customerDomain.com",
+  "userAlias": "ABCD"
 }
 ```
 
@@ -44,6 +53,18 @@ The status codes your API will need to return are:
 * 200 - Success (CustomerID from your platform to be returned)
 * 40x - Invalid inputs - The error message (body or string) will be displayed to the user
 * 50x - Server Side Error - A generic error message will be displayed to the user
+
+**Note**
+
+Return payload to CenturyLink upon completed registration must return the customerId:
+
+```
+{ “customerId”: “YOUR-CUSTOMERID-STRING” }  
+```
+
+YOUR-CUSTOMERID-STRING can be a number, but you must pass it as a string.
+While customerId is the only required field, you can return any other information you wish.
+All returned data will be stored for future reference.
 
 ##### Delayed Billing Start
 

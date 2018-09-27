@@ -62,7 +62,7 @@ When running commands (GO CLI command/Python CLI command)
 -   name - name of the server or group, when creating a new server, the length limit is 6 characters
 -   data-center - name of the data centers (e.g. IL1, VA1, CA1)
 -   network-name/network - name of the VLAN, [they can be listed using CLI](#read-commands)
--   type - server type, either standard or hyperscale
+-   type - server typee
 -   storage-type/backup-level - storage type, current option is standard
 -   group-name/group - name of the group within the account
 -   configuration-id - ID of bare metal from output of `clc data-center get-baremetal-capabilities`
@@ -289,12 +289,6 @@ clc server list --all --filter location-id=CA3 --query details.host-name
 or
 ```
 clc server list –all --query location-id=ca3
-```
-
-**Find all the hyperscale (or standard/baremetal) server in the
-account**
-```
-clc server list --all --filter type=hyperscale --query details.host-name
 ```
 
 **All OS/templates available in a DC**
@@ -631,6 +625,10 @@ clc server execute-package --server-ids CA2ABCDMYSQLU01 --package "package-id=fc
   ```
   clc server update-public-ip-address --server-name CA3ABCD2TSQL01 --public-ip xxx.xxx.xxx.xxx --ports port=8080,portTo=8085,protocol=tcp --source-restrictions "CIDR=xxx.xxx.xxx.xxx/32"
   ```
+  - Update a public IP port and define **multiple** IP restrictions
+  ```
+  clc server update-public-ip-address --server-name CA3CCVANET4701 --public-ip xxx.xxx.xxx.xxx --ports port=8080,portTo=8085,protocol=tcp --source-restrictions "CIDR=xxx.xxx.xxx.xxx/32" "CIDR=xxx.xxx.xxx.xxx/24"
+  ```
 
 **Adding a secondary network card on a server**
 Please refer to the [Add or Remove Network Interface to Server using Go CLI](../Network/add-or-remove-network-interface-to-server-using-go-cli.md)
@@ -948,7 +946,7 @@ clc group get-monitoring-statistics --group-name Test --type hourly --start "201
 ***Reuqest statistics realtime (last 4 hours) in 30 minutes interval***
 
 ### Webhook (only avaiable until version v1.1.0-rc.2)
-CLI can be used to configure webhooks, this enable customers to leverage the alert notification webhook services built into CenturyLink Cloud with 3rd party web apps or services.  The current event list are: "Account.Created", "Account.Delted", "Account.Updated", "Alert.Notificiation", "Server.Created", "Server.Deleted", "Server.Updated", "User.Created", "User.Deleted", "User.Updated".  To learn more on setup webhook in CenturyLink Cloud, please see [Configuring Webhooks and Consuming Notificatios](../General/consuming-webhook-alerts-with-3rd-party-web-apps.md).
+CLI can be used to configure webhooks, this enable customers to leverage the alert notification webhook services built into CenturyLink Cloud with 3rd party web apps or services.  The current event list are: "Account.Created", "Account.Delted", "Account.Updated", "Alert.Notificiation", "Server.Created", "Server.Deleted", "Server.Updated", "User.Created", "User.Deleted", "User.Updated".  To learn more on setup webhook in CenturyLink Cloud, please see [Configuring Webhooks and Consuming Notificatios](../General/CenturyLinkCloud/consuming-webhook-alerts-with-3rd-party-web-apps.md).
 
 ***List all current webhook***
 ```

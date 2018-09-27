@@ -29,25 +29,26 @@ Download the **GUI Package** from the **Download Links** section of the most rec
 ### Create a New SafeHaven Cluster
 1. Launch the **safehaven-console.exe**.
 2. Click on **Create new cluster**.
-3. Enter the **Organization Name** and the **License key** provided to you by your CenturyLink Onboarding Resource. Click **Next**.
+3. Enter the **Organization Name** and the **License key** provided to you by your CenturyLink Resource. Click **Next**.  
+**Note:** You can request a license key by sending an email to help@ctl.io and specifying the number of VMs in the request
 4. Fill in the following fields:  
 
    a. Enter **CMS Hostname**.
-    
+
    b. **CMS Access IP** (used to connect to the SafeHaven Console GUI) and **CMS Service IP** (used for communication between CMS 		and SRN's). Typically the CMS Private IP address is entered in these fields although they can differ in some cases. You can 	get this information from the CMS Server deployed in the recovery datacenter which is AWS in this case.
-    
+
    c. Set the **Administrator Password** (Password required to login to the SafeHaven Console GUI to manage the DR environment and 	initiate recovery operations).  
-    
+
    d. Enter the **CMS root password**. You can get this information from the CMS Server deployed in the recovery datacenter which 		is AWS in this case.
-    
+
     **NOTE**: Best practice is to use different passwords for Administrator and root user.
-    
+
    e. Click on **Validate CMS Access** to confirm connectivity to the CMS.
 
-   f. Copy the **Debian Package for CMS/SRN** link from the **Download Links** section of the most recent SafeHaven release notes. 
-   In this case, it is  [SafeHaven 5.0 Release Notes](../SafeHaven 5 General/SafeHaven5.0.0-Release-Notes.md) and enter it in the **SafeHaven distribution URL** field. 
-   
-   **NOTE**:Please contact your CenturyLink Cloud Onboarding Resource if you have any questions regarding the latest version of **Debian 
+   f. Copy the **Debian Package for CMS/SRN** link from the **Download Links** section of the most recent SafeHaven release notes.
+   In this case, it is  [SafeHaven 5.0 Release Notes](../SafeHaven 5 General/SafeHaven5.0.0-Release-Notes.md) and enter it in the **SafeHaven distribution URL** field.
+
+   **NOTE**:Please contact your CenturyLink Cloud Resource if you have any questions regarding the latest version of **Debian 
    Package for CMS/SRN**. Do not modify the Service Port (TCP), Heartbeat Port (UDP), Installation ID.
 
 5. Click **Next**

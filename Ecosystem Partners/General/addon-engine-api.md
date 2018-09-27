@@ -7,6 +7,8 @@
   "contentIsHTML": false
 }}}
 
+<strong>The AppFog service was retired on June 29, 2018. The AppFog Platform-as-a-Service is no longer available, including all source code, env vars, and database information.</strong>
+
 ### Purpose
 
 The new Add-on Engine marketplace available to the AppFog v2 users to provision and

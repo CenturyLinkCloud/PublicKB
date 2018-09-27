@@ -48,13 +48,13 @@ Instances List now also shows the instance IP adresses (either public or private
 
 One of the major feature's of this release is the capability to protect production servers on **multiple hypervisors** to failover to **AWS**. Examples of validated hypervisors are
 
-* VMware: including VMware based cloud platforms such as CLC, DCC-F, etc.
+* VMware: including VMware based cloud platforms such as CLC, CenturyLink Private Cloud on VMware Cloud Foundation, etc.
 * Hyper-V Generation 1
 * Xen(AWS)
 * KVM
 * Physical servers: all the available baremetal servers provided by CLC have been validated
 
-**NOTE**: Please refer to [SafeHaven-5.0-Use-Case-and-Support-Matrix](../../Disaster Recovery/SafeHaven 5 General/SafeHaven-5.0-Use-Case-and-Support-Matrix.md) for more information on all the use cases and support matrix.
+**NOTE**: Please refer to [SafeHaven-5.0-Use-Case-and-Support-Matrix](../../Disaster Recovery/SafeHaven 5 General/Safehaven5.1-usecases-supportmatrix.md) for more information on all the use cases and support matrix.
 
 ##### Microsoft Virtual Shadow Copy (VSS) Enabled Checkpoints
 

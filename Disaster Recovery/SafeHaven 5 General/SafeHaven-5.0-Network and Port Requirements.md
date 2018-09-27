@@ -9,6 +9,7 @@
 ### Article Overview
 This article covers different TCP and UDP ports required to be opened on CMS, SRN, and local guest for SafeHaven 5.0.
 
+![Network_port_requirements](../../images/SH5.0/network-ports-requirements.PNG)
 ### CMS
 * TCP/22: ssh (remote management)
 * TCP/20081: SafeHaven  communication with GUI, **SSL encrypted**

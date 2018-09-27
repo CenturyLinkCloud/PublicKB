@@ -1,7 +1,7 @@
 {{{
   "title": "Partner Cloud: Getting Started With A New AWS Customer Account",
-  "date": "08-18-17",
-  "author": "Ben Swoboda",
+  "date": "07-20-18",
+  "author": "Kevin Quaintance",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -9,13 +9,13 @@
 
 ### Overview
 
-Part of [Cloud Application Manager's](https://www.ctl.io/cloud-application-manager/) Cloud Optimization is Cloud Integration, giving users the ability to benefit from CenturyLink's partnerships with other cloud providers. CenturyLink assumes the billing for these accounts and takes responsibility for platform support. Users may also benefit from Security hardening and cost Optimization. This document is about creating new Amazon Web Services with Cloud Integration.
+Part of [Cloud Application Manager's](https://www.ctl.io/cloud-application-manager/) Cloud Optimization gives users the ability to benefit from CenturyLink's partnerships with other cloud providers. CenturyLink assumes the billing for these accounts and takes responsibility for platform support. Users may also benefit from Security hardening and cost Analytics. This document is about creating new Amazon Web Services with Cloud Optimization.
 
 ### Audience
 
 All of our customers are invited to use Cloud Optimization via Cloud Application Manager.
 
-For Amazon Web Services, we are currently limited to serving billable customers who are not resellers (or customers of resellers) with offices within the United States. Also, this offering is not for CenturyLink employees. If you need special considerations for setting up an account, please email [cloudintegration@ctl.io](mailto:cloudintegration@ctl.io).
+For Amazon Web Services, we are currently limited to serving billable customers who are not resellers (or customers of resellers) with offices within the United States. See our [Service Guide](https://www.ctl.io/legal/cloud-application-manager/supplemental-terms/) for a current list of countries we support.  Also, this offering is not for CenturyLink employees. If you need special considerations for setting up an account, please email [cloudintegration@ctl.io](mailto:cloudintegration@ctl.io).
 
 ### Prerequisites
 
@@ -27,7 +27,7 @@ For Amazon Web Services, we are currently limited to serving billable customers 
 
 * An understanding of the features and benefits of [Partner Cloud Integration](partner-cloud-integration.md)
 
-* For each CenturyLink Cloud account integrated with Amazon Web Services, both CenturyLink's AWS Terms and Conditions for the relevant territory must be accepted. These will be presented to any user attempting to create a new "Microsoft Azure" provider in Cloud Application Manager.
+* For each CenturyLink Cloud account integrated with Amazon Web Services, both CenturyLink's AWS Terms and Conditions for the relevant territory must be accepted. These will be presented to any user attempting to create a new "Amazon Web Services" provider in Cloud Application Manager. See our [Service Guide](https://www.ctl.io/legal/cloud-application-manager/supplemental-terms/) for a current list of countries we support.
 
 ### Important Information
 
@@ -68,7 +68,7 @@ Videos of these steps can be found [here](https://www.ctl.io/guides/).
 
 5. Provide a name for the provider that identifies it for your purposes
 
-6. Select the "Create a new AWS account for consolidated billing and Platform Support" option. (If the user cannot see this option, they are not an organization Administrator.)
+6. Select the "Create a new AWS account with CenturyLink Cloud Optimization" option. (If the user cannot see this option, they are not an organization Administrator.)
 
   ![Create New AWS Account](../../images/cloud-application-manager/CINT_New_AWS1.1.png)
 
@@ -84,15 +84,24 @@ Please expect at least a few hours before we are able to process your request. I
 * Set up AWS Config Service for auditing
 * Enable MFA Access
 
-An administrative username and password will then be given to the Cloud Application Manager organization administrator.
+8. Within five minutes, you will now automatically receive temporary credentials to your account right within the provider. Click the  "Show Credentials" button to obtain administrator username, temporary password, and login URL for your account. The password is temporary and you will be requested to change it at first login. You may either log into the account via the URL provided or you may click the "AWS Console Button." *Please Note:*  We do not provide root access per our hardening policy.  [See Hardening Policy](partner-cloud-integration-aws-hardening-permissions.md)
+
+  ![Get Credentials](../../images/cloud-application-manager/CAM_COA_Credentials2.png)
+
+  ![Get Credentials2](../../images/cloud-application-manager/CAM_COA_Credentials1.png)
+
+
 
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
+If you are experiencing an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/), please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
 * Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+
+If you would like a complete IAM assessment, please reach out to your assigned CTL representative.

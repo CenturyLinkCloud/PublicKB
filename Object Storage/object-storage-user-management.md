@@ -55,13 +55,7 @@ To create a new Object Storage user:
 
 ### Disable a Storage User
 
-Users may be disabled and re-enabled.  It is not currently possible to delete users.  When a user is disabled, buckets and objects owned by that user will become inaccessible.
-
-* Disabling a user does not stop billing for storage owned only by that user.
-* Before disabling a user, be sure to configure ACLs for any entities that only that user has write access to so that you may access those entities.
-* If you are trying to delete objects and buckets, do the deletion before disabling the user.
-
-To disable a user:
+Users may be disabled and re-enabled.  It is not currently possible to delete users.  When a user is disabled, its key cannot be used to access your buckets and objects.  To disable a user:
 
 1. Navigate to the user's details, which may look like this:
 
