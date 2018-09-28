@@ -54,4 +54,4 @@ The next step is to create the Product Provisioning within the Provider Portal f
 
   ![SaaS6.png](../../images/SaaS5.png)
 
-For any questions, please contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
+For any questions, please contact us at [Marketplace@centurylink.com](mailto:Marketplace@centurylink.com).

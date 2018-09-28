@@ -13,7 +13,7 @@ CenturyLink [Ecosystem Program Partner Members](centurylink-cloud-ecosystem-prog
 
 The CenturyLink Cloud AddOn engine allows partners to add their services to the AppFog marketplace, giving customers access to service broker delivered services.  Partners register their service with the AppFog AddOn engine.  The service is then visible to the AppFog user through the AppFog marketplace.  The customer can sign up for the service directly through AppFog.
 
-Prospective partners with questions should contact ecosystem@ctl.io
+Prospective partners with questions should contact ECOSystem@centurylink.com
 
 ### Core Documentation
 

@@ -17,7 +17,7 @@ Get started by acquiring the following:
 
 * Locate your virtual appliance source in a compatible format (see requirements below)
 * Document the sizing paramerters (CPU, RAM, Storage)
-* Send this information to your assigned Integration Engineer or if you don't have one contact ecosystem@ctl.io
+* Send this information to your assigned Integration Engineer or if you don't have one contact ECOSystem@centurylink.com
 
 
 ### Requirements

@@ -14,4 +14,4 @@
  * One-Time
  * [Usage Based](usage-based-billing.md)
 
- Should you have additional questions, please contact us at [Marketplace@ctl.io](mailto: marketplace@ctl.io).
+ Should you have additional questions, please contact us at [Marketplace@centurylink.com](mailto: Marketplace@centurylink.com).
