@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-### Enhancements (3)
+### Enhancements (4)
 
 #### Dedicated Cloud Compute (DCC)
 Customers using the [DCC UI](https://dcc.ctl.io) now have the ability to:
