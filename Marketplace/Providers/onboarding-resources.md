@@ -30,7 +30,7 @@ Finally, it provides the approval process for the [Marketplace Provider Agreemen
 
 ### Marketplace Provider Agreement (MPA)
 
-The Marketplace Provider Agreement governs the Terms & Conditions of your products entry into the Marketplace. It can be found [here](https://www.ctl.io/legal/marketplace/). If you have questions about the agreement, please address them with the CenturyLink Marketplace Digital Team by contacting us at [Marketplace@centurylink.com](mailto:Marketplace@centurylink.com).
+The Marketplace Provider Agreement governs the Terms & Conditions of your products entry into the Marketplace. It can be found [here](https://www.ctl.io/legal/marketplace/). If you have questions about the agreement, please address them with the CenturyLink Hybrid IT Marketplace Team by contacting us at [Marketplace@centurylink.com](mailto:Marketplace@centurylink.com).
 
 ### CenturyLink Cloud Marketplace
 
