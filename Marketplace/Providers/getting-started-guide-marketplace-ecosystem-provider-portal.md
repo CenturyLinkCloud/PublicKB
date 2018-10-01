@@ -101,7 +101,7 @@ From the **Provider Details** page, you can find a list of your products that ha
              - This field accepts Markdown formatting.
              - Click the **Preview** tab to see how your Markdown renders.
    * **Resources** (optional), such as links to Knowledge Base articles, whitepapers, demos, or blog posts.
-   * **Pricing** for hourly, monthly, or one time usage. (required)
+   * **Pricing** for hourly, monthly, one time, or accumulation/usage-based billing. (required)
 
 8. Once you enter all product information, click the **Preview** button to see how your Markdown renders.
 
