@@ -1,6 +1,6 @@
 {{{
 "title": "Getting Started Guide: Marketplace & Provider Portal",
-"date": "12-07-2017",
+"date": "10-01-2018",
 "author": "Brandy Smith",
 "attachments": [],
 "contentIsHTML": false,
@@ -52,6 +52,8 @@ It can be found [here](https://www.ctl.io/legal/marketplace/). Once you have rea
 
 ### Creating a New Product
 
+Product creation is done in the staging environment of the Provider Portal to allow for testing. To create products you will log into the staging environment here: https://provider-portal.staging.ctl.io/#/login. You will login with your same CenturyLink Cloud credentials for both production and staging.
+
 From the **Provider Details** page, you can find a list of your products that have been added to the Marketplace. If you're a new Provider, you may not see any products listed.
 
 1. To add a new product click the green **add product** button. A blank **Product Details** form opens.
@@ -76,6 +78,7 @@ From the **Provider Details** page, you can find a list of your products that ha
 6. Complete any additional fields. Note: Some fields are required. Others are optional. **Important** The Provider Portal supports Markdown within specified fields. When adding links or email addresses, please note that ensuring that you are using proper Markdown formatting is very important. Improper links will cause 404s. The correct format for links and emails are below. If you have any questions or concerns with loading content into the Provider Portal, please reach out to the [Marketplace team](mailto:Marketplace@ctl.io).
 
 **Markdown Link**
+
 ```[Link Text](http://google.com)```
 
 **Email Link** `[email@xxx.com](mailto:email@xxx.com)`and emails are below. If you have any questions or concerns with loading content into the Provider Portal, please reach out to the [Marketplace team](mailto:Marketplace@ctl.io).
@@ -98,7 +101,7 @@ From the **Provider Details** page, you can find a list of your products that ha
              - This field accepts Markdown formatting.
              - Click the **Preview** tab to see how your Markdown renders.
    * **Resources** (optional), such as links to Knowledge Base articles, whitepapers, demos, or blog posts.
-   * **Pricing** (optional) for hourly, monthly, or one time usage.
+   * **Pricing** for hourly, monthly, or one time usage. (required)
 
 8. Once you enter all product information, click the **Preview** button to see how your Markdown renders.
 
@@ -106,22 +109,24 @@ From the **Provider Details** page, you can find a list of your products that ha
 
 10. Click **Create**.
 
-11. Click **Request Publication**. This forwards a request to the CenturyLink Marketplace team notifying them to review and publish your product. If there are questions/issues related to the submission, a Marketplace team member will contact you. Otherwise, your product is published within two business days.
+11. Once all of the technical and billing integrations are completed and you are ready to test the product in staging, Click **Request Publication**. This forwards a request to the CenturyLink Marketplace team notifying them to review and publish your product. If there are questions/issues related to the submission, a Marketplace team member will contact you. Otherwise, your product is published within two business days.
+A Marketplace team member will give you a test account to be able to test the product in staging.
 
 **Note**:
 
-Required steps for publication of products are as follows:
+Required steps for publication of products to staging are as follows:
 
 1) MPA has been reviewed and accepted.
 2) W-9 has been submitted to the Marketplace team, reviewed, and approved.
 3) Product EULA URL is listed under the product EULA field.
 4) Support information is listed under the product support field.
-5) Technical integration has been completed and tested.
-6) Billing integration has been completed and tested.
+5) Technical integration has been completed.
+6) Billing integration has been completed.
 
 
    ![EPP6](../../images/EPP6.png)
 
+11. Once the product has been successfully tested for Technical & Billing integration, a Marketplace team member will migrate the product from staging to production.
 
 ### Making Changes to a Product
 
@@ -137,7 +142,7 @@ Required steps for publication of products are as follows:
 
 ### Cloning a Product
 
-This is a great way to simplify entering similar products into the Marketplace.
+This is a great way to simplify entering similar products into the Marketplace. **This must be done in staging**.
 
 1. Navigate to the **Product Details** page.
 
