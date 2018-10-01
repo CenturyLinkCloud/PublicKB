@@ -1,7 +1,7 @@
 {{{
 "title": "Launching Slaves via Cloud Application Manager",
-"date": "09-01-2016",
-"author": "",
+"date": "10-01-2018",
+"author": "Modified by Gavin Lai",
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -40,17 +40,19 @@ Configure a Jenkins slave in Cloud Application Manager. Later, you’ll call thi
 
    ```
    #!/bin/bash
+	 sudo groupadd jenkins
+	 sudo useradd -m -d /var/lib/jenkins -G sudo -g jenkins jenkins
    apt-get -y update
-
+	 JENKINS_HOME=~jenkins
    if [ -z $(which java 2>/dev/null) ]
    then
-       apt-get -y install openjdk-7-jre
+       apt-get install default-jre -y
    fi
 
       apt-get -y install git
 
    # Download the Jenkins agent
-   wget {{ JENKINS_URL }}/jnlpJars/slave.jar -O slave.jar
+   wget {{ JENKINS_URL }}/jnlpJars/slave.jar -O ${JENKINS_HOME}/slave.jar
    ```
 
    **Start**. This script starts the slave agent.
@@ -58,10 +60,12 @@ Configure a Jenkins slave in Cloud Application Manager. Later, you’ll call thi
    ```
    #!/bin/bash
 
-   # Execute the agent and save the PID
-   nohup java -jar slave.jar {{ JNLP_SLAVE_OPTIONS }} > slave.log 2>&1 &
+	 JENKINS_HOME=~jenkins
+	 # Execute the agent and save the PID
+	 cd ${JENKINS_HOME}
+	 nohup java -jar ${JENKINS_HOME}/slave.jar {{ JNLP_SLAVE_OPTIONS }} > ${JENKINS_HOME}/slave.log 2>&1 &
 
-   echo \$! > slave.pid
+	 echo $! > ${JENKINS_HOME}/slave.pid
    ```
 
    **Stop**. This script kills the agent when the retention period on Jenkins ends.
