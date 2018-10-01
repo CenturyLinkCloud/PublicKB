@@ -43,7 +43,11 @@ Create a new Azure customer account | **This is a Cloud Optimized option.** Begi
 
 Charges for [Azure usage](partner-cloud-integration-consolidated-billing.md) will appear on invoices from CenturyLink.
 
+### Considerations
 
+* If you do not have a basic, existing Azure ARM subscription with basic Azure pricing, please contact Microsoft or CenturyLink to review whether your subscription or the resources on it can transfer wholely into CenturyLink's care or whether resources on it need to be migrated from one subscription to another (this is a meta data move only and does not cause any outage).
+* In a CSP environment, it is expected that customers enjoy the benefits of CenturyLink acting as liason to Microsoft and first point of contact for all Azure incidents, billing issues, and requests. Customers who gain access to Cloud Application Manager's support desk and features do so in lieu of certain Azure features which are available, such as help desk and billing consoles.
+* [Reserved Instances](partner-cloud-integration-azure-ri.md) are available through CenturyLink.
 
 
 ### Steps
