@@ -30,7 +30,7 @@ ___
 
 **Create a MySQL Database box**
 
-For this tutorial we will use an Amazon RDS, as the box is already pre-configured.
+For this tutorial we will use an Amazon RDS (any MySQL server can be used), as the box is already pre-configured.
 
 On the Boxes page, click **New** > **Template** and select **MySQL Database**. Choose the MySql Icon, name it MySQL DB and select your AWS provider. This example box needs the AWS CloudFormation service. Save.
 
@@ -74,7 +74,7 @@ On the Boxes page, click **New** > **Script**. Name it LAMP Stack. Since LAMP ne
 
 **Step 2. Indicate a relationship to the database tier with a binding.**
 
- In the Code tab, on Variables, click **New**. Select **Binding**. Call it mysql_service and bind to the MySQL DB box you created earlier.
+ In the Code tab, on Variables, click **New**. Select **Binding**. Call it mysqlservice and bind to the MySQL DB box you created earlier.
 
 **Note:** Variable names are case sensitive, so name exactly as given.
 
@@ -98,20 +98,13 @@ Copy, paste the following code in a plain text file. Save it as Create_Sample_Da
 
 ```
 CREATE DATABASE sampledb;
-
-    USE sampledb;
-
-    CREATE TABLE users (first_name VARCHAR(20),  last_name VARCHAR(20), address VARCHAR(20), login VARCHAR(20), password_hash VARCHAR(20));
-
-    INSERT INTO users VALUES ('Antony','Kornings','1850, Las Ramblas','antonyk', 'e22c2d3bf2a5557cb971');
-
-    INSERT INTO users VALUES ('Diana','Krallz','850, El camino','dianak', 'f2a5557e22c2d3bcb971');
-
-    INSERT INTO users VALUES ('Edgard','Boxer','100, Alpine Street','edgardb', 'e25557cb9712c2d3bf2a');
-
-    INSERT INTO users VALUES ('Nathaniel','Cold','55, Elm Street','nathanielc', '7cb971e22c2d3bf2a555');
-
-    INSERT INTO users VALUES ('Michael','Snow','88, Alamo Road','dianak', 'd3bf2a5557ce22c2b971');
+USE sampledb;
+CREATE TABLE users (first_name VARCHAR(20),  last_name VARCHAR(20), address VARCHAR(20), login VARCHAR(20), password_hash VARCHAR(20));
+INSERT INTO users VALUES ('Antony','Kornings','1850, Las Ramblas','antonyk', 'e22c2d3bf2a5557cb971');
+INSERT INTO users VALUES ('Diana','Krallz','850, El camino','dianak', 'f2a5557e22c2d3bcb971');
+INSERT INTO users VALUES ('Edgard','Boxer','100, Alpine Street','edgardb', 'e25557cb9712c2d3bf2a');
+INSERT INTO users VALUES ('Nathaniel','Cold','55, Elm Street','nathanielc', '7cb971e22c2d3bf2a555');
+INSERT INTO users VALUES ('Michael','Snow','88, Alamo Road','dianak', 'd3bf2a5557ce22c2b971');
 ```
 
 In the LAMP box Code tab, on Variables, click **New**. Select **File**. Call it SQL_SCRIPT and upload the file you saved. This file will be pushed to the database at deploy time.
@@ -144,56 +137,33 @@ Copy, paste the following code in the install event dialog, then save.
 
 ```
 #!/bin/bash
-
-    # To ensure that all of your software packages are up to date, perform a quick software update on your instance.
-
-    # This process may take a few minutes, but it is important to make sure you have the latest security updates and bug fixes.
-
-    # We use the -y option that installs the updates without asking for confirmation.
-
-    yum update -y
-
-    # Install the Apache web server, MySQL, and PHP software packages.
-
-    # We use the yum groupinstall command to install multiple software packages and all related dependencies at the same time.
-
-    yum groupinstall -y "Web Server" "MySQL Database" "PHP Support"
-
-    # Install the php-mysql package
-
-    yum install -y php-mysql
-
-    # Start the Apache web server
-
-    service httpd start
-
-    # Configure the Apache web server to start at each system boot
-
-    chkconfig httpd on
-
-    # This is only to show the configuration for this sample.
-
-    # Verify that httpd is on by running:
-
-    chkconfig --list httpd
-
-    # This should output something similar to the next line, showing httpd is on in runlevels 2, 3, 4, and 5:
-
-    # httpd           0:off   1:off   2:on    3:on    4:on    5:on    6:off
-
-    # To test your LAMP web server
-
-    # Create a simple PHP file in the Apache document root.
-
-    echo "" > /var/www/html/phpinfo.php
-
-    curl http://127.0.0.1/phpinfo.php
-
-    # You should see the PHP information page in the output of the install script
-
-    # Delete the phpinfo.php file. Although this can be useful information to you, it should not be broadcast to the Internet for security reasons.
-
-    rm /var/www/html/phpinfo.php
+# To ensure that all of your software packages are up to date, perform a quick software update on your instance.
+# This process may take a few minutes, but it is important to make sure you have the latest security updates and bug fixes.
+# We use the -y option that installs the updates without asking for confirmation.
+yum update -y
+# Install the Apache web server, MySQL, and PHP software packages.
+# We use the yum groupinstall command to install multiple software packages and all related dependencies at the same time.
+yum groupinstall -y "Web Server" "MySQL Database" "PHP Support"
+# Install the php-mysql package
+yum install -y php-mysql
+yum install -y mysql-utilities.noarch
+yum install -y mysql
+# Start the Apache web server
+service httpd start
+# Configure the Apache web server to start at each system boot
+chkconfig httpd on
+# This is only to show the configuration for this sample.
+# Verify that httpd is on by running:
+chkconfig --list httpd
+# This should output something similar to the next line, showing httpd is on in runlevels 2, 3, 4, and 5:
+# httpd           0:off   1:off   2:on    3:on    4:on    5:on    6:off
+# To test your LAMP web server
+# Create a simple PHP file in the Apache document root.
+echo "" > /var/www/html/phpinfo.php
+curl http://127.0.0.1/phpinfo.php
+# You should see the PHP information page in the output of the install script
+# Delete the phpinfo.php file. Although this can be useful information to you, it should not be broadcast to the Internet for security reasons.
+rm /var/www/html/phpinfo.php
 ```
 
 **Step 7. Add events that connect the tiers using the binding.**
@@ -202,20 +172,13 @@ Under Events > configure, click **configure**. Copy, paste the following code an
 
 ```
  #!/bin/bash
-
-    # In configuration Script there is available ip, and variables of the bindings we will show them for this sample.
-
-    echo $mysql_service.address.public
-
-    echo $mysql_service.port
-
-    echo $mysql_service.username
-
-    echo $mysql_service.password
-
-    cp Easy-PHP-MySQL/index.php /var/www/html
-
-    elasticbox config -i Easy-PHP-MySQL/db_connect.php -o /var/www/html/db_connect.php
+# In configuration Script there is available ip, and variables of the bindings we will show them for this sample (public or private address can be used depending on the configuration).
+echo {{ mysqlservice.address.private }}
+echo {{ mysqlservice.port }}
+echo {{ mysqlservice.username }}
+echo {{ mysqlservice.password }}
+cp Easy-PHP-MySQL/index.php /var/www/html
+elasticbox config -i Easy-PHP-MySQL/db_connect.php -o /var/www/html/db_connect.php
 ```
 
 Under Events > start, click **start**. Copy, paste the following code and save. Here the cURL command connects to the database server using the database credentials from the binding and downloads the file you uploaded in step 4. The script in the file creates a database with sample data.
@@ -225,7 +188,7 @@ Under Events > start, click **start**. Copy, paste the following code and save. 
 
     # In start script the bindings are ready for use
 
-    curl -ks $SQL_SCRIPT | mysql --host=$mysql_service.address.public  --port=$mysql_service.port --user=$mysql_service.username --password=$mysql_service.password
+    curl -ks $SQL_SCRIPT | mysql --host={{ mysqlservice.address.public }} --port={{ mysqlservice.port }} --user={{ mysqlservice.username }} --password={{ mysqlservice.password }}
 ```
 
 Yay! You just defined a simple LAMP stack application and connected its tiers with a binding.
@@ -247,7 +210,7 @@ Before deploying the app tier, you need an active database instance, so launch t
 
 **Launch the App Tier**
 
-From the Instances page, click **New** and select the LAMP Stack box. For the deployment policy, select the AWS Policy you created. For the mysql_service binding, select the tag you define in the instance you previously launched. Also schedule the instance to terminate an hour after deploying. Click **Deploy** to create an instance of the app tier.
+From the Instances page, click **New** and select the LAMP Stack box. For the deployment policy, select the AWS Policy you created. For the mysqlservice binding, select the tag you define in the instance you previously launched. Also schedule the instance to terminate an hour after deploying. Click **Deploy** to create an instance of the app tier.
 
 ![tutorial-lamp-stack-15.png](../../images/cloud-application-manager/tutorial-lamp-stack-15.png)
 
