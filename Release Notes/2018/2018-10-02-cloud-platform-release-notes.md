@@ -15,7 +15,7 @@ Customers using the [DCC UI](https://dcc.ctl.io) now have the ability to:
 * Update the preferred name of a Virtual Machine Instance.
 
 #### Simple Backup Monitoring
-We are pleased to announce the addition of monitoring functionality to the Simple Backup Service. The Simple Backup monitoring functionality currently allows users to subscribe to email alert notifications for failed, or successful backups and easily enables users to view the statuses of their backups. We are currently working on WebHooks for monitoring as well, so stay tuned for future updates when that feature is available. [Please see our knowledge base articles for more information on monitoring features.](//www.ctl.io/knowledge-base/backup/sbs-monitoring/)
+We are pleased to announce the addition of monitoring functionality to the Simple Backup Service. The Simple Backup monitoring functionality currently allows users to subscribe to email alert notifications for failed, or successful backups and easily enables users to view the statuses of their backups. We are currently working on WebHooks for monitoring as well, so stay tuned for future updates when that feature is available. [Please see our knowledge base articles for more information on monitoring features.](../../Backup/sbs-monitoring.md)
 
 #### Cloud Application Manager
 
@@ -27,7 +27,7 @@ Cloud Application Manager now includes the ability to enable automatic synchroni
 
 **Azure Reserved Instances**
 
-Cloud Application Manager now supports ordering and billing for Azure Reserved Instances in Optimized, Azure accounts. Create a support ticket to order RIs. Reserved Instance benefits will become available immediately after purchase. Benefits of Reserved Instances will be visible in Cloud Application Manager usage history. Up-Front costs for Reserved Instances will be shown on the invoice following your purchase. [Click here for more information.](//www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-azure-ri/)
+Cloud Application Manager now supports ordering and billing for Azure Reserved Instances in Optimized, Azure accounts. Create a support ticket to order RIs. Reserved Instance benefits will become available immediately after purchase. Benefits of Reserved Instances will be visible in Cloud Application Manager usage history. Up-Front costs for Reserved Instances will be shown on the invoice following your purchase. [Click here for more information.](../../Cloud Application Manager/Cloud Optimization/partner-cloud-integration-azure-ri.md)
 
 ### Announcements (1)
 
