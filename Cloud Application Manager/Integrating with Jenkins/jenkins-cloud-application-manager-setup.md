@@ -1,7 +1,7 @@
 {{{
 "title": "Setting Up Jenkins with Cloud Application Manager",
-"date": "09-01-2016",
-"author": "",
+"date": "10-01-2018",
+"author": "Modified by Gavin Lai",
 "attachments": [],
 "contentIsHTML": false
 }}}
