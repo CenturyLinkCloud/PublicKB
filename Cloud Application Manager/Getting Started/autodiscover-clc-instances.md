@@ -14,9 +14,8 @@
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
-* [When you add CenturyLink Cloud as a provider for the first time](#when-you-add-centurylink-cloud-as-a-provider-for-the-first-time)
-* [If you have existing CenturyLink Cloud provider in Cloud Application Manager](#if-you-have-existing-centurylink-cloud-provider-in-cloud-application-manager)
-* [Auto-discover and register CenturyLink Cloud Server instances in Cloud Application Manager](#auto-discover-and-register-centurylink-cloud-server-instances-in-cloud-application-manager)
+* [Discovering the unregistered instances](#discovering-the-unregistered-instances)
+* [Register CenturyLink Cloud Server instances in Cloud Application Manager](#register-centurylink-cloud-server-instances-in-cloud-application-manager)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
@@ -31,15 +30,33 @@ Users who want to register their CenturyLink Cloud instances into Cloud Applicat
 
 An active Cloud Application Manager account and an existing CenturyLink Cloud account with active instances.
 
-### When you add CenturyLink Cloud as a provider for the first time
+### Discovering the unregistered instances
+
+The unregistered instances are discovered by a synchronization process that might occur in the following circumstances:
+
+* When you add CenturyLink Cloud as a provider for the first time
+* When you have existing CenturyLink Cloud provider in Cloud Application Manager
+* When you enable automatic discovery of resources
+
+#### When you add CenturyLink Cloud as a provider for the first time
 
 As soon as you add CenturyLink Cloud as a provider in your workspace, Cloud Application Manager will auto-discover those instances that exist in CenturyLink Cloud and save them in the Unregistered instances tab under the Provider details. These unregistered instances will also be shown in the Instances page under All or Unregistered submenu items. You can follow the on-screen instructions to register them in Cloud Application Manager.
 
-### If you have existing CenturyLink Cloud provider in Cloud Application Manager
+#### When you have existing CenturyLink Cloud provider in Cloud Application Manager
 
 The next time you click on sync, Cloud Application Manager will auto-discover those instances that exist in CenturyLink Cloud but have not been provisioned using Cloud Application Manager and save them in the Unregistered instances tab under the Provider details. You can follow the on-screen instructions to register them in Cloud Application Manager.
 
-### Auto-discover and register CenturyLink Cloud Server instances in Cloud Application Manager
+#### When you enable automatic discovery of resources
+
+You can enable the Automatic discovery of resources toggle in the Provider details dialog.
+
+![Edit Provider - Auto discovery of resources](../../images/cloud-application-manager/register/clc-registerInstance-autoSync.png)
+
+When enabled, it will cause an automatic synchronization just for unregistered instances every 20 minutes, to check for any change in the available instances and their corresponding state. The Unregistered Instances tab in the Provider details as well as the Instances page where unregistered instances are shown will display the state from latest synchronization, either automatically triggered or explicitly triggered by pressing the Sync button.
+
+This feature is only available for Optimized or Managed type of Providers.
+
+### Register CenturyLink Cloud Server instances in Cloud Application Manager
 
 You can register your instances either from the Unregistered Instances tab of your provider details page, where you can import a single instance or select many of them and execute a bulk register, or from the Instances page where you can register one instance at a time.
 
