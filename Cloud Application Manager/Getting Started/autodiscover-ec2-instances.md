@@ -13,10 +13,9 @@
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
-* [When you add AWS as a provider for the first time](#when-you-add-aws-as-a-provider-for-the-first-time)
-* [If you have an existing AWS provider in Cloud Application Manager](#if-you-have-an-existing-aws-provider-in-cloud-application-manager)
-* [Type of instances you can register](#type-of-instances-you-can-register)
-* [Auto-discover and register AWS EC2 instances in Cloud Application Manager](#auto-discover-and-register-aws-ec2-instances-in-cloud-application-manager)
+* [Discovering the unregistered instances](#discovering-the-unregistered-instances)
+* [Considerations when registering AWS EC2 instances into Cloud Application Manager](#considerations-when-registering-aws-ec2-instances-into-cloud-application-manager)
+* [Register AWS EC2 instances in Cloud Application Manager](#register-aws-ec2-instances-in-cloud-application-manager)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
@@ -30,17 +29,37 @@ Users who want to register their AWS EC2 instances into Cloud Application Manage
 
 An active Cloud Application Manager account and an existing AWS account with active EC2 instances.
 
-### When you add AWS as a provider for the first time
+### Discovering the unregistered instances
+
+The unregistered instances are discovered by a synchronization process that might occur in the following circumstances:
+
+* When you add AWS as a provider for the first time
+* When you have an existing AWS provider in Cloud Application Manager
+* When you enable automatic discovery of resources
+
+#### When you add AWS as a provider for the first time
 
 As soon as you add AWS as providers in your workspace, Cloud Application Manager will auto-discover those instances that exist in AWS and save them in the Unregistered instances tab under the Provider details. You can follow the on-screen instructions to register them in Cloud Application Manager.
 
-### If you have an existing AWS provider in Cloud Application Manager
+#### When you have an existing AWS provider in Cloud Application Manager
 
-The next time you click on sync, Cloud Application Manager will auto-discover those instances that exist in AWS EC2 but have not been provisioned using Cloud Application Manager and save them in the Unregistered instances tab under the Provider details. You can follow the on-screen instructions to register them in Cloud Application Manager.
+If you have an existing AWS provider in Cloud Application Manager, the next time you click on sync Cloud Application Manager will auto-discover those instances that exist in AWS EC2 but have not been provisioned using Cloud Application Manager and save them in the Unregistered instances tab under the Provider details. You can follow the on-screen instructions to register them in Cloud Application Manager.
 
-To register AWS EC2 instance, an additional step is required. Cloud Application Manager uses UserData to install the Cloud Application Manager agent on provision time. Since the instance was initially provisioned outside of Cloud Application Manager, users have to execute a script to install the Cloud Application Manager agent.
+#### When you enable automatic discovery of resources
 
-### Type of instances you can register
+You can enable the Automatic discovery of resources toggle in the Provider details dialog.
+
+![Edit Provider - Auto discovery of resources](../../images/cloud-application-manager/register/aws-registerInstance-autoSync.png)
+
+When enabled, it will cause an automatic synchronization just for unregistered resources every 20 minutes, to check for any change in the available resources and their corresponding state. The Unregistered Instances tab in the Provider details as well as the Instances page where unregistered resources are shown will display the state from latest synchronization, either automatically triggered or explicitly triggered by pressing the Sync button.
+
+This feature is only available for Optimized or Managed type of Providers.
+
+### Considerations when registering AWS EC2 instances into Cloud Application Manager
+
+To register an AWS EC2 instance, an additional step is required. Cloud Application Manager uses UserData to install the Cloud Application Manager agent on provision time. Since the instance was initially provisioned outside of Cloud Application Manager, users have to execute a script to install the Cloud Application Manager agent.
+
+#### Type of instances you can register
 
 You can register the following type of instances into Cloud Application Manager:
 
@@ -48,7 +67,7 @@ You can register the following type of instances into Cloud Application Manager:
 2. **EC2 CloudFormation instances**: instances deployed as part of a CloudFormation template. Only the EC2 instance will be imported, and when deleted only the instance would be affected, no other resources that might have been deployed by the same Cloud Formation template would be deleted along with the instance.
 3. **EC2 instances from an Auto-scaling group or template**: the instances belonging to an Auto Scaling Group or Template will be shown grouped under the Register Instances page and they will be imported as a whole into a single instance that will contain all the related machines. Once properly registered (either providing the certificate for Cloud Application Manager to access the machines and install the agent or when the agent is installed manually), all the machines would be shown in Cloud Application Manager into the instance details page, and all auto-scaling events would be detected and the instance details updated to show the current machines available into the group. If you terminate the instance in Cloud Application Manager, all the machines of the group would be terminated.
 
-### Auto-discover and register AWS EC2 instances in Cloud Application Manager
+### Register AWS EC2 instances in Cloud Application Manager
 
 You can register your instances either from the Unregistered Instances tab of your provider details page, where you can import a single instance or select many of them and execute a bulk register, or from the Instances page where you can register one instance at a time.
 
