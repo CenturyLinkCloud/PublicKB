@@ -25,7 +25,6 @@ The CenturyLink Marketplace allows customers to purchase software from an extens
 **Provider Portal Access (Responsible Party: Provider)**
 
 * Once you have created your CenturyLink Cloud account provide the Marketplace representative that you are working with your (CLC) account alias. They will then create your Provider Portal account. You will then be able to access the [Provider Portal](https://provider-portal.ctl.io).
-* Once you have created your CenturyLink Cloud account provide the Marketplace representative that you are working with your (CLC) account alias. They will then create your Provider Portal account. You will then be able to access the [Provider Portal](https://provider-portal.ctl.io).
 
 * There is training material located within the provider portal.
 

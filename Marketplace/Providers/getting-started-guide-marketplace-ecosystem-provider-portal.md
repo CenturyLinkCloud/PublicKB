@@ -193,7 +193,7 @@ Some products are assigned service tasks. This is determined between the partner
 
   ![EPP11](../../images/EPP11.png)
 
-4. Fill in the required fields. If you need assistance filing in the information on this tab, reach out to the [Ecosystem team](mailto:support@ECOSystem@centurylink.com).
+4. Fill in the required fields. If you need assistance filing in the information on this tab, reach out to the [Ecosystem team](mailto:ECOSystem@centurylink.com).
 
 
 ### Frequently Asked Questions
