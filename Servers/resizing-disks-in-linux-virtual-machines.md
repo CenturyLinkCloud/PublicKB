@@ -1,6 +1,6 @@
 {{{
   "title": "Resizing Disks in Linux Virtual Machines",
-  "date": "09-23-2015",
+  "date": "09-11-2018",
   "author": "Anthony Hakim",
   "attachments": []
 }}}
@@ -32,3 +32,7 @@ The resize disk request will be submitted to the queue.
 Once complete, you can test using the following commands:
 
   ![Resizing disks in Linux Virtual Machines](../images/resizing-disks-in-linux-virtual-machines6.png)
+  
+In the uncommon occurrence that an issue occurs during the Blueprint process which prevents proper disk expansion from within the Linux OS, you can manually expand the drive with the help of [these instructions][1].
+  
+[1]: https://www.ctl.io/knowledge-base/servers/manually-expanding-file-system-on-linux-machines/ "Manually expanding the file system on a Linux VM"
