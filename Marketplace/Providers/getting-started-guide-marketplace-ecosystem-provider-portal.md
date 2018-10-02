@@ -75,13 +75,13 @@ From the **Provider Details** page, you can find a list of your products that ha
 
    ![EPP5](../../images/EPP5.png)
 
-6. Complete any additional fields. Note: Some fields are required. Others are optional. **Important** The Provider Portal supports Markdown within specified fields. When adding links or email addresses, please note that ensuring that you are using proper Markdown formatting is very important. Improper links will cause 404s. The correct format for links and emails are below. If you have any questions or concerns with loading content into the Provider Portal, please reach out to the [Marketplace team](mailto:Marketplace@ctl.io).
+6. Complete any additional fields. Note: Some fields are required. Others are optional. **Important** The Provider Portal supports Markdown within specified fields. When adding links or email addresses, please note that ensuring that you are using proper Markdown formatting is very important. Improper links will cause 404s. The correct format for links and emails are below. If you have any questions or concerns with loading content into the Provider Portal, please reach out to the [Marketplace team](mailto:Marketplace@centurylink.com).
 
 **Markdown Link**
 
 ```[Link Text](http://google.com)```
 
-**Email Link** `[email@xxx.com](mailto:email@xxx.com)`and emails are below. If you have any questions or concerns with loading content into the Provider Portal, please reach out to the [Marketplace team](mailto:Marketplace@ctl.io).
+**Email Link** `[email@xxx.com](mailto:email@xxx.com)`and emails are below. If you have any questions or concerns with loading content into the Provider Portal, please reach out to the [Marketplace team](mailto:Marketplace@centurylink.com).
 
    * Enter **Short Description** (required).
    * Enter **Full Description** (required).
@@ -193,7 +193,7 @@ Some products are assigned service tasks. This is determined between the partner
 
   ![EPP11](../../images/EPP11.png)
 
-4. Fill in the required fields. If you need assistance filing in the information on this tab, reach out to the [Ecosystem team](mailto:support@ecosystem@ctl.io).
+4. Fill in the required fields. If you need assistance filing in the information on this tab, reach out to the [Ecosystem team](mailto:support@ECOSystem@centurylink.com).
 
 
 ### Frequently Asked Questions
@@ -256,4 +256,4 @@ This is what it looks like in **Preview** mode.
 * [GitHub Markdown Editor](https://markdown-it.github.io/)
 * The CenturyLink Cloud [Marketplace](https://www.ctl.io/marketplace/)
 * Marketplace Provider [Onboarding Resource Guide](onboarding-resources.md).
-* For questions or suggestions on how to make this Guide more useful, email the [Marketplace team](mailto:Marketplace@ctl.io).
+* For questions or suggestions on how to make this Guide more useful, email the [Marketplace team](mailto:Marketplace@centurylink.com).

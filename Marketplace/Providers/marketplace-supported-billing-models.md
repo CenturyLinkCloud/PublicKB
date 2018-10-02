@@ -26,4 +26,4 @@ The process for SKU creation is as follows:
 * Provider can then use the SKUs to build out the API calls.
 
 
- Should you have additional questions, please contact us at [Marketplace@ctl.io](mailto: marketplace@ctl.io).
+ Should you have additional questions, please contact us at [Marketplace@centurylink.com](mailto: Marketplace@centurylink.com).

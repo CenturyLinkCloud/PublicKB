@@ -115,11 +115,11 @@ There are no Cohesive Networks VNS3 license costs included. The cost to deploy t
 #### Process to request credit for Service Task fee
 Follow this process to request credit on your account to reimburse any expense to deploy the Partner Template.
 
-1. Please copy and paste the email below and send it to [ecosystem@ctl.io](mailto:ecosystem@ctl.io)
+1. Please copy and paste the email below and send it to [ECOSystem@centurylink.com](mailto:ECOSystem@centurylink.com)
 
 ----
 
-TO: Ecosystem@CTL.io
+TO: ECOSystem@centurylink.com
 
 EMAIL SUBJECT:   Requesting Credit for Cohesive Partner Template Deployment
 
