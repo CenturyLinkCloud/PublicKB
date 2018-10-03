@@ -38,7 +38,7 @@ This article explains how to create a SRN (SafeHaven Replication Node) in Azure 
    d. Click on Advanced under **Network Security Group**, this will open the option to select a Network Security Group, by default Azure will create one that has all traffic open to Instances deployed on the same VNet and any Point to Point VPNs on it. Use the Network security group created during the CMS deployment.  
    e. Select a **Diagnostics storage account**, it can be the same storage account selected in step 7. By default Azure enables the Boot diagnostics on the Virtual Machine.  
 8. Leave all the other values to default and click on the OK button.
-9. On the **Summary** blade review the settings and click on the OK button.
+9. On the **Summary** blade review the settings and click on the **Create** button.
 10. Once the Virtual Machine is created go to **Virtual Machines** service and find the Instance, select it and then click on **Networking**, write down either the Public IP or Private IP information depending if you will be accessing the server through the Internet or via VPN from CenturyLink.
 11. SSH to the DR-SRN Instance using the credentials created in step 5.  
     1. Once logged in elevate to root access and modify the password  
