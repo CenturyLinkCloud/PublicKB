@@ -61,17 +61,17 @@ You need an Microsoft Azure subscription to be able to consume Azure services. F
 
     In order to allow automatic deletion, you must add the Company Administrator Role to the App. https://docs.microsoft.com/en-us/powershell/module/msonline/add-msolrolemember?view=azureadps-1.0 :
 
-~~~
-$tenantGuid = ‘YOUR-TENANT-ID’
-$user = ‘YOUR_USER@YOUR-DOMAIN.onmicrosoft.com'
-$password = 'YOUR PASSWORD'
-$appID = ‘YOUR-APP-ID’
-$Creds = New-Object System.Management.Automation.PsCredential($user, (ConvertTo-SecureString $password -AsPlainText -Force))
-Connect-MSOLSERVICE -Credential $Creds
-$msSP = Get-MsolServicePrincipal -AppPrincipalId $appID -TenantID $tenantGuid
-$objectId = $msSP.ObjectId
-Add-MsolRoleMember -RoleName "Company Administrator" -RoleMemberType ServicePrincipal -RoleMemberObjectId $objectId
-~~~
+    ~~~powershell
+    $tenantGuid = 'YOUR-TENANT-ID'
+    $user = 'YOUR_USER@YOUR-DOMAIN.onmicrosoft.com'
+    $password = 'YOUR PASSWORD'
+    $appID = 'YOUR-APP-ID'
+    $Creds = New-Object System.Management.Automation.PsCredential($user, (ConvertTo-SecureString $password -AsPlainText -Force))
+    Connect-MSOLSERVICE -Credential $Creds
+    $msSP = Get-MsolServicePrincipal -AppPrincipalId $appID -TenantID $tenantGuid
+    $objectId = $msSP.ObjectId
+    Add-MsolRoleMember -RoleName "Company Administrator" -RoleMemberType ServicePrincipal -RoleMemberObjectId $objectId
+    ~~~
 
 8. Navigate to *Subscriptions* panel.
 9. In the *Overview* tab an **Subscription ID** is listed.  Copy and take note of this value for later.
