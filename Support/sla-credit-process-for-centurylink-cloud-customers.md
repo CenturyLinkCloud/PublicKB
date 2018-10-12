@@ -4,6 +4,7 @@
   "author": "Denise Cline",
   "attachments": []
 }}}
+
 ### Description (goal/purpose)
 
 This article outlines the process for submitting an SLA Credit in the Control Portal following an Urgent Incident. Currently, the SLA Credit Tool in the Control Portal only calculates Server impact. For all other impacted services, please submit an SLA Credit request to help@ctl.io.
