@@ -18,7 +18,7 @@ We have made enhancements to the context switching behavior to ease management a
 
 **Customizable AWS Permissions for Operations**
 
-In Optimized AWS Accounts, Customers and CenturyLink Support now have the ability to customize permissions and restrictions for CenturyLink Support. CenturyLink will not make changes without customer consent and all changes will be logged. Please review the KB for [permissions](/../../Cloud Application Manager/Cloud Optimization/partner-cloud-integration-aws-hardening-permissions/).
+In Optimized AWS Accounts, Customers and CenturyLink Support now have the ability to customize permissions and restrictions for CenturyLink Support. CenturyLink will not make changes without customer consent and all changes will be logged. Please review the KB for [permissions](/../../Cloud Application Manager/Cloud Optimization/partner-cloud-integration-aws-hardening-permissions.md).
 
 #### [Analytics](https://www.ctl.io/cloud-application-manager/)
 
