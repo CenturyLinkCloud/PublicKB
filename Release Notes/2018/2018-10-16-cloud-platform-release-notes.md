@@ -8,6 +8,8 @@
 
 ### Enhancements (5)
 
+#### [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/)
+
 #### Portal
 
 **Context switching enhancements**
