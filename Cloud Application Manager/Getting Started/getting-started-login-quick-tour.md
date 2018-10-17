@@ -116,10 +116,17 @@ ___
 
 ![getting-started-login-10.png](../../images/cloud-application-manager/getting-started-login-10.png)
 
-* Allows you to see (based on your scope and permissions) all of the relevant activity that has occured in the platform, the type of event and the user that performed the event.
+* Allows you to see (based on your scope and permissions) all of the relevant activity that has occurred in the platform, the type of event and the user that performed the event.
 * Filter through activity by type of event or switch between all activity or current scope.
-* Search by user name or action to narrow the results, or click on certain actions to navigate to the affected resource.
+![activity-filter-list.png](../../images/cloud-application-manager/activity-filter-list.png)
 
+    * Provider, this option filters the result and shows only the provider's activity.
+    * Settings, this option filters the result and shows only the Setting's activity.
+    * User, this option filters the result and shows only the activities that are related to the users.
+        
+        > **note that you can combine these filters with each other on your own will.**
+        
+* Search by user name or action to narrow the results, or click on certain actions to navigate to the affected resource.
 ___
 
 **Your Account**
