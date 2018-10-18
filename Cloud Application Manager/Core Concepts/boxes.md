@@ -2,7 +2,7 @@
 "title": "Boxes",
 "date": "09-01-2016",
 "author": "",
-"keywords": ["boxes", "box"],
+"keywords": ["cam","alm","boxes", "box"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -22,11 +22,11 @@ This article is meant to assist Cloud Application Manager customers who wants to
 
 ### Audience
 
-CenturyLink Cloud Users
+Cloud Application Manager Users
 
 ### Prerequisites
 
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to Applications site (Application Lifecycle Management module) of Cloud Application Manager as an authorized user.
 
 ### Boxes
 
