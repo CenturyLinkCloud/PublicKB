@@ -348,21 +348,34 @@ To deploy workloads to an EC2 instance, create a [deployment policy](../Automati
 | AMI | Select a public, private, or shared AWS or an AWS community based AMI available by location.|
 | Instance Type | Select an instance type that’s pre-determined by the size of compute, memory, and network resources from the list that AWS provides, for example, db.t1.micro.|
 | Keypairs | Select a key pair you created in AWS to connect to the instance or select None if you don’t want SSH access to the instance.|
-|IAM Role | Select one to assign an existing IAM role to the instance. This allows the instance to make and accept API requests securely using the permissions defined by the role. To let Cloud Application Manager view and pass the existing role to the instance, update the Cloud Application Manager IAM role policy with the listed permissions. To learn more about IAM roles, see the [AWS docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#permission-to-pass-iam-roles).|
-| Instances | Select the number of instances to launch.|
+| IAM Role | Select one to assign an existing IAM role to the instance. This allows the instance to make and accept API requests securely using the permissions defined by the role. To let Cloud Application Manager view and pass the existing role to the instance, update the Cloud Application Manager IAM role policy with the listed permissions. To learn more about IAM roles, see the [AWS docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#permission-to-pass-iam-roles).|
+| Instances | Select the number of instances to launch. |
+| Delegate Management | Delegate management to CenturyLink. |
+
+**Placement**
+
+| Deployment Option | Description |
+|-------------------|-------------|
+| Network Type | Select to deploy an instance in EC2 or in a Virtual Private Cloud (VPC) that you created in AWS. |
+| Autoscaling | Turn on to allow AWS to automatically scale to the number of instances you specified (under Instances). |
+| Availability Zone | Select an availability zone, such as us-east-1a if deploying in EC2 or select a subnet if deploying in your VPC. |
 
 **Network**
 
 | Deployment Option | Description |
 |-------------------|-------------|
-| Cloud | Select to deploy an instance in EC2 or in a Virtual Private Cloud (VPC) that you created in AWS. |
-| Availability Zone |	Select an availability zone, such as us-east-1a if deploying in EC2 or select a subnet if deploying in your VPC. |
-| Placement Group |	Select an existing placement group from AWS to cluster instances for high network performance. Some instances can get 10 Gbps connectivity depending on their instance type. To learn more, see the [AWS docs](//docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html). To let Cloud Application Manager view and direct the instance to the placement group, update the Cloud Application Manager IAM role policy with the [listed permissions](using-your-aws-account.md). |
 | Security Groups |	Select security groups to route traffic to the instance. If you didn’t create a security group in AWS for EC2 or a VPC, select **Automatic** for Cloud Application Manager to create one on your behalf. |
+| Placement Group |	Select an existing placement group from AWS to cluster instances for high network performance. Some instances can get 10 Gbps connectivity depending on their instance type. To learn more, see the [AWS docs](//docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html). To let Cloud Application Manager view and direct the instance to the placement group, update the Cloud Application Manager IAM role policy with the [listed permissions](using-your-aws-account.md). |
 | Elastic IP |	When launching to AWS, select Elastic IP to allocate a fresh static IP address from the EC2 or VPC pool and associate it to the instance depending on whether you’re deploying to EC2 classic or your VPC. If you’re using dynamic DNS to assign an IP address in EC2 or want to allow internet traffic to communicate with your instance in a non default VPC, then use Elastic IPs to guarantee public access. **Note:** You can’t autoscale the instance when you choose an Elastic IP for it. For more information, see the [AWS help](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html). |
 
-**Elastic Block Store**
-Instance types come with a default root device volume. To get storage on top of the default volume, add EBS volumes under Elastic Block Store.
+
+**Other**
+
+| Deployment Option | Description |
+|-------------------|-------------|
+| Elastic Block Store | Instance types come with a default root device volume. To get storage on top of the default volume, add EBS volumes under Elastic Block Store. |
+| Target Groups | This allows you to attach an instance to both types of load balancers automatically. |
+| Classic Load Balancer |  n addition to the Application Load Balancer and the Network Load Balancer, Cloud Application Manager also support the Classic Load Balancers. |
 
 ![aws-depprofile-elasticblockstore-settings-3.png](../../images/cloud-application-manager/aws-depprofile-elasticblockstore-settings-3.png)
 
