@@ -2,6 +2,7 @@
 "title": "Using AWS",
 "date": "09-24-2018",
 "author": "Guillermo Sanchez",
+"keywords": ["aws", "ecs, "deploy"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -17,6 +18,7 @@
 * [Choosing the right policy](#choosing-the-right-policy)
 * [Add Custom AMIs in Cloud Application Manager](#add-custom-amis-in-cloud-application-manager)
 * [Deploy to Your AWS Account](#deploy-to-your-aws-account)
+* [Create a Deployment Policy](#create-a-deployment-policy)
 * [EC2 (Linux and Windows)](#ec2-linux-and-windows)
 * [AWS ECS](#aws-ecs)
 * [Shutdown and Terminate Instances in AWS](#shutdown-and-terminate-instances-in-aws)
@@ -302,6 +304,7 @@ By default, Cloud Application Manager makes the latest AWS Linux and Windows AMI
 
 **Note:** For this to work you may have go to the AWS marketplace and accept the license agreement for that AMI. Although most AMIs come pre-installed with [cloud-init](https://cloudinit.readthedocs.org/en/latest/), some may not, in which case you must install it. Cloud Application Manager requires cloud-init to bootstrap the Cloud Application Manager agent.
 
+
 ### Deploy to Your AWS Account
 
 When you deploy a box, we show [deployment policies](../Automating Deployments/deploymentpolicy-box.md) whose claims match the required tags of the box.
@@ -313,6 +316,18 @@ RDS, DynamoDB, and Memcached are CloudFormation boxes. To deploy to an RDS servi
 * AWS CloudFormation
 
 **Note:** If your AWS account has new AMIs, key pairs, security groups, and the like, you must sync with the AWS account in Cloud Application Manager to pick up all the changes.
+
+### Create a Deployment Policy
+
+On the Boxes page, click **New** > **Deployment Policy**. Here select a type of deployment policy box.
+
+![deploymentpolicyboxes1.png](../../images/cloud-application-manager/deploymentpolicyboxes1.png)
+
+The next step is to select a cloud provider added in Cloud Application Manager and optionally add [claim tags](../Core Concepts/boxes.md). Save to continue.
+
+![deploymentpolicyboxes2.png](../../images/cloud-application-manager/deploymentpolicyboxes2.png)
+
+To deploy workloads to an EC2 instance, create a [deployment policy](../Automating Deployments/deploymentpolicy-box.md) for an AWS account or use the one your admin shared with you.
 
 ### EC2 (Linux and Windows)
 To deploy workloads to an EC2 instance, create a [deployment policy](../Automating Deployments/deploymentpolicy-box.md) for an AWS account or use the one your admin shared with you.
@@ -496,7 +511,7 @@ You can modify the following attributes of an instance only when it is stopped:
 * Kernel
 * RAM disk
 
-#### erminate Instance
+#### Terminate Instance
 
 When you terminate an instance, the whole history of the instance is kept in Cloud Application Manager and you can use it as a reference for other instances, to copy the variables or to clone the instance. The instance in AWS is terminated.
 
