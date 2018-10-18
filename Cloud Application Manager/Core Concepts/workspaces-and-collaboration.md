@@ -8,18 +8,36 @@
 }}}
 
 ### Workspaces, Cost Centers, Organizations and Sharing
-In this article:
-* Overview
-* Workspaces
-* Cost Center
-* Organizations
-* Favorites
-* Switching and Managing Workspaces, Cost Centers and Organizations
-* Create Workspace flow
-* Create Cost Center flow
-* Sharing Boxes, Instances, and Providers
+
+#### In this article:
+
+- [Overview](#overview)
+- [Audience](#audience)
+- [Prerequisites](#prerequisites)
+- [Introduction](#introduction)
+- [Workspaces](#workspaces)
+- [Cost Center](#cost-center)
+- [Organizations](#organizations)
+- [Favorites](#favorites)
+- [Switching and Managing Workspaces, Cost Centers and Organizations](#switching-and-managing-workspaces-cost-centers-and-organizations)
+- [Create Workspace flow](#create-workspace-flow)
+- [Create Cost Center flow](#create-cost-center-flow)
+- [Sharing Boxes, Instances, and Providers](#sharing-boxes-instances-and-providers)
+- [Getting General Support](#getting-general-support)
 
 ### Overview
+
+This article guides Cloud Application Manager customers around the concepts of [Workspaces](#workspaces), [Cost Centers](#cost-center), [Organizations](#organizations), and how to share them with other users.
+
+### Audience
+
+Cloud Application Manager users.
+
+### Prerequisites
+
+An active Cloud Application Manager account.
+
+### Introduction
 
 In Cloud Application Manager, boxes let you deliver applications predictably. Sharing enables others to reuse your box configuration or work collaboratively to build better applications.
 
@@ -79,22 +97,21 @@ You can use the switcher in the top of the screen to access different Workspaces
 
 This allows you to filter and search for the right scope to the work you need to do. The Instances, Boxes and Providers available to you will change to reflect the selected scope. For example, if you select a Cost Center, you can see all Instances, Boxes and Providers that are in Workspaces belonging to that Cost Center.
 
-**Workspace Switcher - Workspace view**
+#### Workspace Switcher - Workspace view
 
 ![workspace-and-sharing1.png](../../images/cloud-application-manager/workspace-and-sharing1.png)
 
-**Workspace Switcher - Cost Center View**
+#### Workspace Switcher - Cost Center View
 
 ![workspace-and-sharing2.png](../../images/cloud-application-manager/workspace-and-sharing2.png)
 
-**Workspace Switcher - Organization view**
+#### Workspace Switcher - Organization view
 
 ![workspace-and-sharing3.png](../../images/cloud-application-manager/workspace-and-sharing3.png)
 
-**Workspace Switcher - Favorites view**
+#### Workspace Switcher - Favorites view
 
 ![workspace-and-sharing11.png](../../images/cloud-application-manager/workspace-and-sharing11.png)
-
 
 The switcher also offer the option to create Workspaces and Cost Centers.
 
@@ -112,7 +129,7 @@ Create Cost Center flow will ask users to select the Organization the Cost Cente
 
 ### Sharing Boxes, Instances, and Providers
 
-**Sharing**
+#### Sharing
 
 When you create a box, launch an instance, or add a provider, they are created in the Workspace that you have selected in the Workspace Switcher. You can control how others use it by giving them view or edit access. Edit access gives users the same level of access as the owner but they cannot delete the asset.
 
@@ -124,39 +141,39 @@ When you share with a Workspace, all workspace members get access according to t
 
 A workspace is a shared environment in which members of that workspace can access the same providers, boxes, and instances. Workspaces are contextual. When you switch workspaces you see a whole different group of instances, boxes, and providers, which belong only to that workspace.
 
-**Example**
+#### Example
 
 Say you have a Jenkins box that integrates and stages code for testing. You want to collaborate with other Jenkins experts to make the box configuration highly usable. So you give their workspace edit access. Next, the QA team needs this box to deploy and run tests, so you give their workspace view access. Now the QA team can deploy Jenkins instances, but as you’d expect, they aren’t allowed to change the underlying Jenkins box definition.
 
 Notice that providers and policy boxes cannot be shared with workspaces that are not in the same Cost Center.
 
-**Steps**
+#### Steps
 
 1. From the box, instance, or provider detail page, click **Share**.
 
-![workspace-and-sharing6.png](../../images/cloud-application-manager/workspace-and-sharing6.png)
+    ![workspace-and-sharing6.png](../../images/cloud-application-manager/workspace-and-sharing6.png)
 
 2. In the sharing dialog, type the name of the users or workspaces you want to share with and select them.
 
-![workspace-and-sharing7.png](../../images/cloud-application-manager/workspace-and-sharing7.png)
+    ![workspace-and-sharing7.png](../../images/cloud-application-manager/workspace-and-sharing7.png)
 
 3. For each user or workspace that you added, give view or edit access. They get edit access by default.
 
-![workspace-and-sharing8.png](../../images/cloud-application-manager/workspace-and-sharing8.png)
+    ![workspace-and-sharing8.png](../../images/cloud-application-manager/workspace-and-sharing8.png)
 
-**Stop Sharing**
+#### Stop Sharing
 
 To discontinue sharing with a user or workspace, open the sharing dialog, and remove them.
 
 ![workspace-and-sharing9.png](../../images/cloud-application-manager/workspace-and-sharing9.png)
 
-**Transfer Ownership**
+#### Transfer Ownership
 
 Sometimes, because your role in the organization changes, you may want to transfer an asset you own to another user or workspace. To change owners, open the sharing dialog, and make another user or workspace the owner. An asset can only have one owner at a time.
 
 ![workspace-and-sharing10.png](../../images/cloud-application-manager/workspace-and-sharing10.png)
 
-**Sharing Boxes**
+#### Sharing Boxes
 
 When you want others to change your current box configuration or collaborate with you to define a better box, give them edit access to it. Give view access only when they need to consume your box configuration, but not make changes, like deploying for example.
 
@@ -169,12 +186,32 @@ In view mode, users automatically get access to all versions of a box, but can�
 * View events and variables.
 * Pull a box version into the instance lifecycle editor to update configuration.
 
-**Sharing Instances**
+#### Sharing Instances
 
 A couple of reasons to share instances is to let others use it or get help with testing or debugging for example. If it’s the latter, you can get help by giving them edit access to your instance. That lets them make changes to your instance configuration.
 
 Also you may give view access to make an instance available for others to use, say as a binding. For example, although view access to a database instance prevents developers from making changes to the database configuration, they can bind to it and run tests.
 
-**Sharing Providers**
+#### Sharing Providers
 
 Sharing providers has its benefits. You can give view access to company-approved providers and let users deploy to that particular provider. When teams deploy to a shared provider, you can track org-wide usage and compliance cohesively. Provider accounts can be shared only in the Enterprise Edition.
+
+### Getting General Support
+
+Customers can contact the CenturyLink Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
+
+#### Contact
+
+1. **Phone:** 888-638-6771
+
+2. **Email:** incident@centurylink.com
+
+3. **Create Ticket in Cloud Application Manager:** Directly within the platform, users can “Create Ticket” by clicking on the “?” symbol in upper right corner near the users log-in profile icon.  This takes users directly to the Managed Servicers Portal where they can open, track and review status of issues that have been raised with the support desk.  Additionally, this is how a TAM can be engaged as well.
+
+#### Instructions
+
+1. Provide your name
+2. CAM account name
+3. A brief description of your request or issue for case recording purposes
+
+The support desk will escalate the information to the Primary TAM and transfer the call if desired.
