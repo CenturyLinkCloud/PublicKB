@@ -33,7 +33,7 @@ A provider is a public or private cloud account you register in Cloud Applicatio
 
 #### Supported provider types
 
-Cloud Application Manager integrates with many popular clouds. Here’s a full list of clouds Cloud Application Manager supports and their availability by Edition:
+Cloud Application Manager integrates with many popular clouds. Here is a full list of clouds Cloud Application Manager supports and their availability by Edition:
 
 | Clouds                                                                                                                | Enterprise <br> (Saas) | Enterprise <br> (Appliance) |
 | --------------------------------------------------------------------------------------------------------------------- | :--------------------: | :-------------------------: |
