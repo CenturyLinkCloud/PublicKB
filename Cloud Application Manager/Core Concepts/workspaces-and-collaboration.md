@@ -7,9 +7,7 @@
 "sticky": true
 }}}
 
-### Workspaces, Cost Centers, Organizations and Sharing
-
-#### In this article:
+### In this article:
 
 - [Overview](#overview)
 - [Audience](#audience)
@@ -200,7 +198,7 @@ Sharing providers has its benefits. You can give view access to company-approved
 
 Customers can contact the CenturyLink Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
 
-#### Contact
+#### Contact:
 
 1. **Phone:** 888-638-6771
 
@@ -208,7 +206,7 @@ Customers can contact the CenturyLink Global Operations Support center (support 
 
 3. **Create Ticket in Cloud Application Manager:** Directly within the platform, users can “Create Ticket” by clicking on the “?” symbol in upper right corner near the users log-in profile icon.  This takes users directly to the Managed Servicers Portal where they can open, track and review status of issues that have been raised with the support desk.  Additionally, this is how a TAM can be engaged as well.
 
-#### Instructions
+#### Instructions:
 
 1. Provide your name
 2. CAM account name
