@@ -2,7 +2,7 @@
 "title": "Using AWS",
 "date": "09-24-2018",
 "author": "Guillermo Sanchez",
-"keywords": ["aws", "ecs, "deploy"],
+"keywords": ["aws", "ecs", "deploy"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -18,7 +18,6 @@
 * [Choosing the right policy](#choosing-the-right-policy)
 * [Add Custom AMIs in Cloud Application Manager](#add-custom-amis-in-cloud-application-manager)
 * [Deploy to Your AWS Account](#deploy-to-your-aws-account)
-* [Create a Deployment Policy](#create-a-deployment-policy)
 * [EC2 (Linux and Windows)](#ec2-linux-and-windows)
 * [AWS ECS](#aws-ecs)
 * [Shutdown and Terminate Instances in AWS](#shutdown-and-terminate-instances-in-aws)
@@ -304,7 +303,6 @@ By default, Cloud Application Manager makes the latest AWS Linux and Windows AMI
 
 **Note:** For this to work you may have go to the AWS marketplace and accept the license agreement for that AMI. Although most AMIs come pre-installed with [cloud-init](https://cloudinit.readthedocs.org/en/latest/), some may not, in which case you must install it. Cloud Application Manager requires cloud-init to bootstrap the Cloud Application Manager agent.
 
-
 ### Deploy to Your AWS Account
 
 When you deploy a box, we show [deployment policies](../Automating Deployments/deploymentpolicy-box.md) whose claims match the required tags of the box.
@@ -316,18 +314,6 @@ RDS, DynamoDB, and Memcached are CloudFormation boxes. To deploy to an RDS servi
 * AWS CloudFormation
 
 **Note:** If your AWS account has new AMIs, key pairs, security groups, and the like, you must sync with the AWS account in Cloud Application Manager to pick up all the changes.
-
-### Create a Deployment Policy
-
-On the Boxes page, click **New** > **Deployment Policy**. Here select a type of deployment policy box.
-
-![deploymentpolicyboxes1.png](../../images/cloud-application-manager/deploymentpolicyboxes1.png)
-
-The next step is to select a cloud provider added in Cloud Application Manager and optionally add [claim tags](../Core Concepts/boxes.md). Save to continue.
-
-![deploymentpolicyboxes2.png](../../images/cloud-application-manager/deploymentpolicyboxes2.png)
-
-To deploy workloads to an EC2 instance, create a [deployment policy](../Automating Deployments/deploymentpolicy-box.md) for an AWS account or use the one your admin shared with you.
 
 ### EC2 (Linux and Windows)
 To deploy workloads to an EC2 instance, create a [deployment policy](../Automating Deployments/deploymentpolicy-box.md) for an AWS account or use the one your admin shared with you.
@@ -350,7 +336,7 @@ To deploy workloads to an EC2 instance, create a [deployment policy](../Automati
 | Keypairs | Select a key pair you created in AWS to connect to the instance or select None if you don’t want SSH access to the instance.|
 | IAM Role | Select one to assign an existing IAM role to the instance. This allows the instance to make and accept API requests securely using the permissions defined by the role. To let Cloud Application Manager view and pass the existing role to the instance, update the Cloud Application Manager IAM role policy with the listed permissions. To learn more about IAM roles, see the [AWS docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#permission-to-pass-iam-roles).|
 | Instances | Select the number of instances to launch. |
-| Delegate Management | Delegate management to CenturyLink. |
+| Delegate Management | Only visible if this feature is available in your account. Delegate the instance management to CenturyLink. For more information see [Managed Services Anywhere](../Managed%20Services/getting-started-with-cam-enable-managed-provider.md)|
 
 **Placement**
 
@@ -367,7 +353,6 @@ To deploy workloads to an EC2 instance, create a [deployment policy](../Automati
 | Security Groups |	Select security groups to route traffic to the instance. If you didn’t create a security group in AWS for EC2 or a VPC, select **Automatic** for Cloud Application Manager to create one on your behalf. |
 | Placement Group |	Select an existing placement group from AWS to cluster instances for high network performance. Some instances can get 10 Gbps connectivity depending on their instance type. To learn more, see the [AWS docs](//docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html). To let Cloud Application Manager view and direct the instance to the placement group, update the Cloud Application Manager IAM role policy with the [listed permissions](using-your-aws-account.md). |
 | Elastic IP |	When launching to AWS, select Elastic IP to allocate a fresh static IP address from the EC2 or VPC pool and associate it to the instance depending on whether you’re deploying to EC2 classic or your VPC. If you’re using dynamic DNS to assign an IP address in EC2 or want to allow internet traffic to communicate with your instance in a non default VPC, then use Elastic IPs to guarantee public access. **Note:** You can’t autoscale the instance when you choose an Elastic IP for it. For more information, see the [AWS help](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html). |
-
 
 **Other**
 
@@ -388,7 +373,6 @@ Follow these steps to add more volumes.
 #### Steps
 
 Configure volumes. Select a [type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html), [device mapping](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-device-mapping-concepts.html), size, and IOPS where available.
-
 
 | Type | Usage | Size | IOPS |
 |------|-------|------|------|
