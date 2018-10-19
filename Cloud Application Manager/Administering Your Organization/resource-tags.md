@@ -2,7 +2,7 @@
 "title": "Tag Instances",
 "date": "10-30-2017",
 "author": "",
-"keywords": ["tags", "settings", "organization tag", "organization tag"]
+"keywords": ["tags", "settings", "organization tag", "organization tag"],
 "attachments": [],
 "contentIsHTML": false
 }}}
