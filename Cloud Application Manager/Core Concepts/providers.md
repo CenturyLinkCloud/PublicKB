@@ -7,15 +7,12 @@
 "contentIsHTML": false
 }}}
 
-### Providers <!-- omit in toc -->
-
 **In this article:**
 
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
 * [Providers](#providers)
-  * [Supported provider types](#supported-provider-types)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
