@@ -4,7 +4,8 @@
 "author": "",
 "attachments": [],
 "contentIsHTML": false,
-"sticky": true
+"sticky": true,
+"keywords": ["workspaces", "organizations", "cost centers", "context switcher", "sharing", "user levels", "creating"]
 }}}
 
 ### In this article:
@@ -91,45 +92,45 @@ The Favorites section contains a list of any workspace, cost center or organizat
 
 ### Switching and Managing Workspaces, Cost Centers and Organizations
 
-You can use the switcher in the top of the screen to access different Workspaces, Cost Centers and Organizations to which you have access.
+You can use the Context Switcher in the top of the screen to access different Workspaces, Cost Centers and Organizations to which you have access.
 
 This allows you to filter and search for the right scope to the work you need to do. The Instances, Boxes and Providers available to you will change to reflect the selected scope. For example, if you select a Cost Center, you can see all Instances, Boxes and Providers that are in Workspaces belonging to that Cost Center.
 
-#### Workspace Switcher - Workspace view
+#### Context Switcher - Workspaces view
 
-![workspace-and-sharing1.png](../../images/cloud-application-manager/workspace-and-sharing1.png)
+![Context Switcher - Workspaces view](../../images/cloud-application-manager/workspace-and-sharing1.png)
 
-#### Workspace Switcher - Cost Center View
+#### Context Switcher - Cost Center View
 
-![workspace-and-sharing2.png](../../images/cloud-application-manager/workspace-and-sharing2.png)
+![Context Switcher - Cost Center View](../../images/cloud-application-manager/workspace-and-sharing2.png)
 
-#### Workspace Switcher - Organization view
+#### Context Switcher - Organization view
 
-![workspace-and-sharing3.png](../../images/cloud-application-manager/workspace-and-sharing3.png)
+![Context Switcher - Organization view](../../images/cloud-application-manager/workspace-and-sharing3.png)
 
 #### Workspace Switcher - Favorites view
 
-![workspace-and-sharing11.png](../../images/cloud-application-manager/workspace-and-sharing11.png)
+![Workspace Switcher - Favorites view](../../images/cloud-application-manager/workspace-and-sharing11.png)
 
-The switcher also offer the option to create Workspaces and Cost Centers.
+The Context Switcher also offer the option to create Workspaces and Cost Centers.
 
 ### Create Workspace flow
 
 Create workspace flow will ask users to select the Cost Center the workspace belongs to. Once created, the Cost Center cannot be changed.
 
-![workspace-and-sharing4.png](../../images/cloud-application-manager/workspace-and-sharing4.png)
+![Create Workspace](../../images/cloud-application-manager/workspace-and-sharing4.png)
 
 ### Create Cost Center flow
 
 Create Cost Center flow will ask users to select the Organization the Cost Center belongs to. It will usually be only one organization to select. Once created, the Cost Center cannot change Organization.
 
-![workspace-and-sharing5.png](../../images/cloud-application-manager/workspace-and-sharing5.png)
+![Create Cost Center](../../images/cloud-application-manager/workspace-and-sharing5.png)
 
 ### Sharing Boxes, Instances, and Providers
 
 #### Sharing
 
-When you create a box, launch an instance, or add a provider, they are created in the Workspace that you have selected in the Workspace Switcher. You can control how others use it by giving them view or edit access. Edit access gives users the same level of access as the owner but they cannot delete the asset.
+When you create a box, launch an instance, or add a provider, they are created in the Workspace that you have selected in the Context Switcher. You can control how others use it by giving them view or edit access. Edit access gives users the same level of access as the owner but they cannot delete the asset.
 
 When you share with a user, the asset will appear in his personal workspace with the permission given.
 
