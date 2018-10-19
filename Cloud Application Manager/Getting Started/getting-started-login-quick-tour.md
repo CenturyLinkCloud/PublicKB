@@ -118,7 +118,7 @@ ___
 
 * Allows you to see (based on your scope and permissions) all of the relevant activity that has occurred in the platform, the type of event and the user that performed the event.
 * Filter through activity by type of event or switch between all activity or current scope.
-![activity-filter-list.png](../../images/cloud-application-manager/activity-filter-list.png)
+![Activity page, Filter dropdown](../../images/cloud-application-manager/activity-filter-list.png)
 
     * Provider, this option filters the result and shows only the provider's activity.
     * Settings, this option filters the result and shows only the Setting's activity.
