@@ -38,11 +38,11 @@ Give access to cloud provider infrastructure using a deployment policy box. Poli
 
 On the Boxes page, click **New** > **Deployment Policy**. Here select a type of deployment policy box.
 
-![deploymentpolicyboxes1.png](../../images/cloud-application-manager/deploymentpolicyboxes1.png)
+![New deployment policy box](../../images/cloud-application-manager/deploymentpolicyboxes1.png)
 
 The next step is to select a cloud provider added in Cloud Application Manager and optionally add [claim tags](../Core Concepts/boxes.md). Save to continue.
 
-![deploymentpolicyboxes2.png](../../images/cloud-application-manager/deploymentpolicyboxes2.png)
+![New virtual of physical machine policy box](../../images/cloud-application-manager/deploymentpolicyboxes2.png)
 
 Click **Edit** to customize the policy. Select the resource, network, and other deployment settings from the cloud provider. See the provider help for details.
 
@@ -60,9 +60,9 @@ Click **Edit** to customize the policy. Select the resource, network, and other 
 
 ### Give Access to the Policy
 
-Once you set up the policy, give team workspaces and individuals access to cloud resources for their box deployments. Team workspaces and individuals that already had access to the workspace where the Deployment Policy Box was created,  automatically have access to it. Give access to other individuals or team workspaces by clicking on the pencil of the **Collaborators** panel in the **Overview** tab of the deployment policy box, search the users and give them view, edit, or owner access.
+Once you set up the policy, give team workspaces and individuals access to cloud resources for their box deployments. Team workspaces and individuals that already had access to the workspace where the Deployment Policy Box was created, automatically have access to it already. Give access to other individuals or team workspaces by clicking on the pencil of the **Collaborators** panel in the **Overview** tab of the deployment policy box, search the users and give them **view**, **edit**, or **owner** access.
 
-![deploymentpolicyboxes-share.png](../../images/cloud-application-manager/deploymentpolicyboxes-share.png)
+![Share deployment policy box](../../images/cloud-application-manager/deploymentpolicyboxes-share.png)
 
 * Is Owner. Rename or delete the policy metadata and edit the policy settings if you have edit access to the provider registered in Cloud Application Manager.
 * Can Edit. Change the policy box metadata and edit the policy settings if you have edit access to the provider.
@@ -85,11 +85,11 @@ Admin boxes are useful in these deployment scenarios:
 
 To create an admin box, open a deployment policy and add a script box under Variables. Typically, you want to add a script box that matches the policy OS type. In a Windows policy for example, add a script box that runs on Windows. A policy can have as many admin boxes as needed.
 
-![deploymentpolicyboxes3.png](../../images/cloud-application-manager/deploymentpolicyboxes3.png)
+![Admin box list view](../../images/cloud-application-manager/deploymentpolicyboxes3.png)
 
 When a box launches on a deployment policy containing an admin box, Cloud Application Manager wraps it like a child box in the admin box deployment. In each main event type such as install, configure, start, stop, the admin box runs first followed by events of the box launched. To execute admin box events before others within each event subcategory like pre-install, install, move the commands to the admin box pre-install, pre-configure, and pre-start events.
 
-![deploymentpolicyboxes4.png](../../images/cloud-application-manager/deploymentpolicyboxes4.png)
+![Admin box's executing output](../../images/cloud-application-manager/deploymentpolicyboxes4.png)
 
 ### Contacting Cloud Application Manager Support
 
