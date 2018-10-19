@@ -2,7 +2,7 @@
 "title": "Manage Cloud Application Manager Assets",
 "date": "09-01-2016",
 "keywords": ["details", "settings", "organization", "clouds",
-"tags", "webhooks", "authentication", "theme"]
+"tags", "webhooks", "authentication", "theme"],
 "author": "",
 "attachments": [],
 "contentIsHTML": false
