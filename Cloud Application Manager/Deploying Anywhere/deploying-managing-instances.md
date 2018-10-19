@@ -6,16 +6,28 @@
 "contentIsHTML": false
 }}}
 
-### Deploying and Managing Instances
-
 **In this article:**
 
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
 * [Instances page](#instances-page)
 * [Deploying a New Instance](#deploying-a-new-instance)
-* [Creating a Deployment Policy](#creating-a-deployment-policy)
 * [Scheduling Instances](#scheduling-instances)
 * [Handling Instance Lifecycle States](#handling-instance-lifecycle-states)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
+
+### Overview
+
+This article is meant to assist Cloud Application Manager customers in the management of their instances.
+
+### Audience
+
+Cloud Application Manager customers.
+
+### Prerequisites
+
+An active Cloud Application Manager account.
 
 ### Instances page
 
@@ -27,13 +39,13 @@ There are three different submenus under the Instances menu:
 
 * **All**: shows all type of instances, either registered or unregistered.
 
-* **Registered**: shows only registered instances, which are the ones deployed through or imported into Cloud Application Manager. In these instances you can do lifecycle management by executing lifecycle events or using the lifecycle editor to change variables, event scripts or box versions of the instance. You can also select a specific state among the available ones (Online, Unavailable, Processing, Shutdown, Terminated) to only show the instance in the selected state.
+* **Registered**: shows only registered instances, which are the ones deployed through or imported into Cloud Application Manager. In these instances, you can do lifecycle management by executing lifecycle events or using the lifecycle editor to change variables, event scripts or box versions of the instance. You can also select a specific state among the available ones (Online, Unavailable, Processing, Shutdown, Terminated) to show only the instance in the selected state.
 
-* **Unregistered**: shows only unregistered instances, which are the ones accesible into all the defined providers that were not deployed through Cloud Application Manager. They are discovered in the sychronization event of a provider, and are classified by Type and Subtype.
+* **Unregistered**: shows only unregistered instances, which are the ones accessible into all the defined providers that were not deployed through Cloud Application Manager. They are discovered in the synchronization event of a provider and are classified by Type and Subtype.
   * Type: Any of Compute, Network, Database, Storage or Other
   * Subtype: this is the instance class, specific to each provider type. For example, for AWS type providers we can see VPC or Application Load Balancers (for Network type instances), and S3 or Elastic Block Storages (for Storage type instances)
 
-  You can also select a specific state among the available ones (Active, Inactive) to only show the instance in the selected state.
+  You can also select a specific state among the available ones (Active, Inactive) to show only the instance in the selected state.
 
 A Compute type unregistered instance can be registered (imported) into Cloud Application Manager, to enable lifecycle management on it (an icon button allowing it will appear at the end of its row), so it will be shown from them on as a registered instance in the corresponding views. The Unregistered Instances tab in the provider details page remains unchanged showing only compute registerable instances. If you want to bulk register (import) several instances from the same provider, use this feature from there instead, where bulk register is also available as a bulk action.
 
@@ -52,32 +64,34 @@ These icons are respectively:
 
 #### Instance view filters
 
-Next to the view types icon there is a filter icon button that makes visible all available filters for the view:
+There is a filter icon button next to the view types icon that makes visible all available filters for the view:
 
 ![Instances view filters](../../images/cloud-application-manager/instances/instance-filters.png)
 
-These filters are dynamically filled with the valid values, allow multiple selection in values and are respectively:
+These filters are dynamically filled with the valid values, allow multiple selections in values and are respectively:
 
+* **Cost Center**: Filter by cost centers responsible for instances
 * **Workspace**: filter by any accessible workspace containing instances
 * **Providers**: filter by available provider types or providers
 * **Types**: filter by available types or subtypes
 * **Location**: filter by available location, including Global
 * **Tags**: filter by defined tags in instances
 
-Some of the filters, such as Providers and types, have two level of filtering (i.e. provider type and provider), allowing a mixed selection of levels. For example, you can select AWS provider type to show all AWS providers instances, and a specific Microsoft Azure provider to also show this provider instances in the same view.
+Some of the filters, such as Providers and types, have two level of filtering (i.e., provider type and provider), allowing a mixed selection of levels. For example, you can select AWS provider type to show all AWS providers instances, and a specific Microsoft Azure provider to also show this provider instances in the same view.
 
 ### Deploying a New Instance
 
 An instance is an instantiated version of a box launched to provider’s virtual infrastructure or your own. Follow these steps to launch one.
 
 **Steps**
+
 1. Click **Instances** > **New**
 2. Select a box. You can search and look through the tabs.
 
   ![deploy-instance-selectboxfromcatalog-1.png](../../images/cloud-application-manager/deploy-instance-selectboxfromcatalog-1.png)
 
-* **Boxes**. Shows boxes you created in your workspace.
-* **Explore**. Shows default boxes available to all Cloud Application Manager users. These include service boxes such as Linux Compute, Windows Compute; includes AWS services like MySQL Database, Oracle Database, DynamoDB, PostgreSQL Database, and S3 bucket; and includes the Azure Microsoft SQL Database service. You can directly launch an instance to these database services. While you can’t modify those boxes, you can combine them with other boxes to build multi-tiered applications.
+  * **Boxes**. Shows boxes you created in your workspace.
+  * **Explore**. Shows default boxes available to all Cloud Application Manager users. These include service boxes such as Linux Compute, Windows Compute; includes AWS services like MySQL Database, Oracle Database, DynamoDB, PostgreSQL Database, and S3 bucket; and includes the Azure Microsoft SQL Database service. You can directly launch an instance to these database services. While you can’t modify those boxes, you can combine them with other boxes to build multi-tiered applications.
 
   **Note:** Don’t find a box you’re looking for? Check if you’re in the right workspace. Remember that you may not have access if the box is no longer shared with you.
 
@@ -85,7 +99,7 @@ An instance is an instantiated version of a box launched to provider’s virtual
 
    **Name.** Give a name to recognize the instance.
 
-   **Deployment Policy.** Select a previously created deployment policy or create a new one. For details, see Creating a Deployment Policy.
+   **Deployment Policy.** Select a previously created deployment policy or create a new one. For details, see [Creating a Deployment Policy](../Automating Deployments/deploymentpolicy-box.md).
 
 4. In the New Instance dialog, pass deployment parameters under **Variables**. Before launching, you can override and provide fresh values.
 
@@ -95,37 +109,6 @@ An instance is an instantiated version of a box launched to provider’s virtual
   * Required variables are marked with an asterisk. To see all variables including optional ones, click Show More.
   * When a variable is required, you must specify its value to launch an instance of the box. If optional, you can launch without giving values, and do it later in the [lifecycle editor](../Core Concepts/lifecycle-editor.md).
   * [Binding type variables](../Automating Deployments/parameterizing-boxes-with-variables.md) are also listed here. Depending on how it’s defined in the box, you can select as its value any instance or that of a specific box type deploying or active in the workspace.
-
-### Creating a Deployment Policy
-
-A deployment policy defines settings for your infrastructure that are applied at deployment time. These settings include the cloud provider that will host the deployed boxes, how the virtual infrastructure will be sized, and where it will be placed.
-
-**Steps**
-
-1. In the New Instance dialog, click **Create a new deployment policy box**.
-
-  ![instance-createnewdeploymentprofile-3-2.png](../../images/cloud-application-manager/instance-createnewdeploymentprofile-3-2.png)
-
-2. Select a deployment policy box.
-
-  ![instance-createnewdeploymentprofile-name-4-2.png](../../images/cloud-application-manager/instance-createnewdeploymentprofile-find-4-2.png)
-
-3. Configure the deployment policy settings for the box you selected from the catalog.
-
-  ![instance-configuredeploymentsettings-5-2.png](../../images/cloud-application-manager/instance-configuredeploymentsettings-5-2.png)
-
-4. Click **Save**.
-
-    Settings in the deployment profile vary by the provider you deploy to. For provider specific deployment settings, see these articles:
-    * [Using CenturyLink Cloud](using-centurylink-cloud.md)
-    * [Using Google Cloud](using-google-cloud.md)
-    * [Using Your AWS Account](using-your-aws-account.md)
-    * [Using the vSphere Private Datacenter](using-the-vmware-vcenter-private-datacenter.md)
-    * [Using Your OpenStack Cloud](using-openstack-cloud.md)
-    * [Using CloudStack](using-cloudstack.md)
-    * [Using Azure](using-azure.md)
-
-    **Note:** If you’re deploying to public cloud providers like AWS or Google Compute, you’ll most likely be charged by the cloud provider for the virtual infrastructure you provision. Familiarize yourself with their pricing model as Cloud Application Manager assumes no responsibility for costs incurred.
 
 ### Scheduling Instances
 
@@ -139,7 +122,7 @@ Follow these steps to schedule an instance.
 1. From the Instances page, click **New**.
 2. Select a box you want to deploy.
 3. In the New Instance dialog, select the **Shutdown** or **Terminate** operation from the **Expiration** drop-down.
-Select **Always on** if you don’t want to schedule anything. Shutdown powers off the instance while Terminate deletes the instance on the provider’s side.
+  Select **Always on** if you don’t want to schedule anything. Shutdown powers off the instance while Terminate deletes the instance on the provider’s side.
 
   ![schedule-instance-chooseoperation-6-2.png](../../images/cloud-application-manager/schedule-instance-chooseoperation-6-2.png)
 
@@ -155,7 +138,7 @@ Select **Always on** if you don’t want to schedule anything. Shutdown powers o
 
 ### Handling Instance Lifecycle States
 
-Instance actions (on the instances page or the lifecycle editor) trigger deployment related event scripts from your box. Take these actions to start, stop, terminate an instance, and even perform upgrades or make changes to your live instance.
+Instance actions (on the instances page or the lifecycle editor) trigger deployment-related event scripts from your box. Take these actions to start, stop, terminate an instance, and even perform upgrades or make changes to your live instance.
 
 Some actions are available only after the instance changes state. For example, you can’t forcibly terminate an instance until you’ve terminated it first.
 
@@ -185,23 +168,23 @@ This executes the dispose scripts from your box instance and then deletes the vi
 
 **Force Terminate**
 
-If a Terminate fails for some reason (maybe a broken dispose script) then this forcibly deletes the virtual infrastructure. If you previously terminated or deleted an instance from the provider’s side, the instance may linger in Force Terminate in Cloud Application Manager. Give it a couple of minutes then try to force-terminate again.
+If a Terminate fails for some reason (maybe a broken dispose script), then this forcibly deletes the virtual infrastructure. If you previously terminated or deleted an instance from the provider’s side, the instance may linger in Force Terminate in Cloud Application Manager. Give it a couple of minutes then try to force-terminate again.
 
 **Force Online**
 
-Allow user with "Admin" role to reset the state of an instance in case it goes into the "unavailable" state when the last attempted operation was reconfigure or reinstall.
+Allow user with "Admin" role to reset the state of an instance in case it went into the "unavailable" state when the last attempted operation was Reconfigure or Reinstall.
 
 **Delete**
 
-Click the delete icon after you Terminate or Force Terminate an instance. Until then, the box instance page and logs are retained in the Cloud Application Manager database. But delete completely removes the box instance page.
+Click the delete icon after you Terminate or Force Terminate an instance. Until then, the box instance page and logs are retained in the Cloud Application Manager database. However, delete completely removes the box instance page.
 
 **Clone**
 
-This creates a new instance with selected instance’s settings, but you can modify all of them before launch the new deployment.
+This creates a new instance with the selected instance’s settings, but you can modify all of them before launch the new deployment.
 
 **Update Instance**
 
-This lets you modify the box version, you can select one of the others box versions. After choose the new version, the instance is going to be reinstalled.
+This lets you modify the box version; you can select one of the other box versions. After choosing the new version, the instance is going to be reinstalled.
 
 **Edit Details**
 
@@ -214,5 +197,6 @@ We’re sorry you’re having an issue in [Cloud Application Manager](https://ww
 For issues related to API calls, send the request body along with details related to the issue.
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
 * Windows: RDP into the instance to locate the log at /ProgramData/ElasticBox/Logs/elasticbox-agent.log
