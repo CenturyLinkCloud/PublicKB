@@ -29,11 +29,11 @@ An active Cloud Application Manager account.
 
 ### Providers
 
-A provider is a public or private cloud account you register in Cloud Application Manager. Cloud Application Manager interfaces with the provider account’s API to provision and orchestrate deployments automatically. Before you can deploy workloads from Cloud Application Manager, you need to register a provider first. Cloud Application Manager integrates with many popular clouds.
+A provider is a public or private cloud account you register in Cloud Application Manager. Cloud Application Manager interfaces with the provider account’s API to provision and orchestrate deployments automatically. Before you can deploy workloads from Cloud Application Manager, you need to register a provider first.
 
 #### Supported provider types
 
-Here’s a full list of clouds Cloud Application Manager supports and their availability by Edition:
+Cloud Application Manager integrates with many popular clouds. Here’s a full list of clouds Cloud Application Manager supports and their availability by Edition:
 
 | Clouds                                                                                                                | Enterprise <br> (Saas) | Enterprise <br> (Appliance) |
 | --------------------------------------------------------------------------------------------------------------------- | :--------------------: | :-------------------------: |
