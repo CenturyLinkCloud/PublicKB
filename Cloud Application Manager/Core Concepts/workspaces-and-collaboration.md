@@ -41,7 +41,7 @@ Each member can have a level of permission that will allow him to see different 
 
 The different levels are:
 
-1. **Visitor:**  A visitor member can see instances and boxes, but he cannot edit them or see providers. Use this role to monitor share what is happening on a workspace without worrying about the user potentially breaking something.
+1. **Visitor:**  A visitor member can see instances, boxes and providers, but he cannot edit them. Use this role to monitor share what is happening on a workspace without worrying about the user potentially breaking something.
 
 2. **User:** A user member can see and edit instances, see boxes, but he cannot see providers. He is allowed to deploy instances. Use this role for people who will apply fixes and who need to deploy instances but shouldn’t edit boxes without supervision. For example, developers can user the User rights to deploy testing environments.
 
