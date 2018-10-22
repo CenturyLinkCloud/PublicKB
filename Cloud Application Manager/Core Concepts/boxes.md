@@ -2,9 +2,31 @@
 "title": "Boxes",
 "date": "09-01-2016",
 "author": "",
+"keywords": ["cam","alm","boxes", "box"],
 "attachments": [],
 "contentIsHTML": false
 }}}
+
+### Table of Contents
+
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Boxes](#boxes)
+* [Understanding Box Basics](#understanding-box-basics)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
+
+### Overview
+
+This article is meant to assist Cloud Application Manager customers who wants to create and manage boxes.
+
+### Audience
+
+Cloud Application Manager Users
+
+### Prerequisites
+
+* Access to Applications site (Application Lifecycle Management module) of Cloud Application Manager as an authorized user.
 
 ### Boxes
 
