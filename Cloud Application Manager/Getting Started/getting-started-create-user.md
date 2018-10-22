@@ -2,7 +2,7 @@
 "title": "Creating Cloud Application Manager Users",
 "date": "05-16-2017",
 "author": "",
-"keywords": ["user", "users", "create user", "delete user"],
+"keywords": ["cam", "user", "users", "create user", "delete user"],
 "attachments": [],
 "contentIsHTML": false,
 "sticky": true
