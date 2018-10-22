@@ -121,7 +121,7 @@ Currently, the only way to remove Managed Services from a VM once it has been de
 
 **How can I tell my *managed* VMs from my <em>unmanaged</em> VMs in the CenturyLink Cloud Control portal?**
 
-Managed VMs will be noted with an asterisk (&#42;) in front of the server name. For example, &#42;ILMHPELCTA04. This notation is intended to make it easier to locate managed VMs from within a list of all Cloud VMs you have created.
+Managed VMs will be noted with a green CenturyLink logo in front of the server name. This notation is intended to make it easier to locate managed VMs from within a list of all Cloud VMs you have created.
 
 **My VM shows under construction in Control, but shows that the build has completed successfully?**
 
