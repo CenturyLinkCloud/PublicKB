@@ -336,7 +336,7 @@ To deploy workloads to an EC2 instance, create a [deployment policy](../Automati
 | Keypairs | Select a key pair you created in AWS to connect to the instance or select None if you don’t want SSH access to the instance.|
 | IAM Role | Select one to assign an existing IAM role to the instance. This allows the instance to make and accept API requests securely using the permissions defined by the role. To let Cloud Application Manager view and pass the existing role to the instance, update the Cloud Application Manager IAM role policy with the listed permissions. To learn more about IAM roles, see the [AWS docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#permission-to-pass-iam-roles).|
 | Instances | Select the number of instances to launch. |
-| Delegate Management | Only visible if this feature is available in your account. Delegate the instance management to CenturyLink. For more information see [Managed Services Anywhere](../Managed%20Services/getting-started-with-cam-enable-managed-provider.md)|
+| Delegate Management | Only visible if this feature is available in your account. Delegate the instance management to CenturyLink. For more information see [Managed Services Anywhere](../Managed Services/getting-started-with-cam-enable-managed-provider.md)|
 
 **Placement**
 
