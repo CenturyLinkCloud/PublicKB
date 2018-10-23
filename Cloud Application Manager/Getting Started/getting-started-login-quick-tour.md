@@ -11,9 +11,21 @@
 
 **In this article:**
 
-* Login
-* Quick tour
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Login](#login)
+* [Quick tour](#quick-tour)
 
+ ### Overview
+ This article makes a quick tour on login page and the panel after login to the platform.
+ 
+ ### Audience
+ All users with Cloud Application Manager access.
+ 
+ ### Prerequisites
+ * Access to Cloud Application Manager, Management site.
+ 
 ___
 
 ### Login
@@ -53,6 +65,7 @@ When you log in, the top navigation bar guides you to the main areas of Cloud Ap
 * Activity
 * Your Account
 * Help
+____
 
 **Dashboard**
 
