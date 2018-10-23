@@ -47,14 +47,19 @@ The next step is to select a cloud provider added in Cloud Application Manager a
 Click **Edit** to customize the policy. Select the resource, network, and other deployment settings from the cloud provider. See the provider help for details.
 
 * [CenturyLink Cloud](../Deploying Anywhere/using-centurylink-cloud.md)
-* [Google Cloud](../Deploying Anywhere/using-google-cloud.md)
+* [CenturyLink DCC](../Deploying Anywhere/using-dcc.md)
+* [CenturyLink Private Cloud on VMware Cloud Foundation](https://www.ctl.io/knowledge-base/centurylink-private-cloud-on-vmware-cloud-foundation/)
 * [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md)
-* [VMware vCenter](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md)
-* [Azure](../Deploying Anywhere/using-azure.md)
-* [OpenStack](../Deploying Anywhere/using-openstack-cloud.md)
-* [Rackspace Cloud](../Deploying Anywhere/using-rackspace-cloud.md)
+* Amazon Web Services GovCloud (Same documentation as [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md))
 * [CloudStack](../Deploying Anywhere/using-cloudstack.md)
+* Dimension Data
+* [Google Cloud](../Deploying Anywhere/using-google-cloud.md)
+* [Microsoft Azure](../Deploying Anywhere/using-azure.md)
+* [OpenStack Cloud](../Deploying Anywhere/using-openstack-cloud.md)
+* [Rackspace Cloud](../Deploying Anywhere/using-rackspace-cloud.md)
 * [SoftLayer](../Deploying Anywhere/using-softlayer.md)
+* [vCloud Air and vCloud Director](../Deploying Anywhere/orchestrating-vcloud-air-vcloud-director-deployments.md)
+* [VMware vCenter](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md)
 
 **Note:** If you’re deploying to public cloud providers like AWS or Google Compute, you’ll most likely be charged by the cloud provider for the virtual infrastructure you provision. Familiarize yourself with their pricing model as Cloud Application Manager assumes no responsibility for costs incurred.
 
