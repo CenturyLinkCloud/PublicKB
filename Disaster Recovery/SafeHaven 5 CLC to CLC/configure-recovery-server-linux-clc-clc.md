@@ -21,7 +21,7 @@ This article assumes that:
 ### Configure the recovery server
 A recovery server boots off of disks of the DR SRN when a test failover/ failover operation is issued. 
 1. Right click on the Linux PG, select **Test Failover** from the drop-down menu
-2. Select the desired checkpoint and lick on next
+2. Select the desired checkpoint and click on next
 3. Once **Test Failover** and **Power on** are completed, click on next.
 4. Confirm the right PG is selected and click on **Next**
 5. SSH into the Recovery Linux Server.
