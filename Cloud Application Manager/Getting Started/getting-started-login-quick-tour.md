@@ -127,7 +127,7 @@ ___
 
 **Activity**
 
-![getting-started-login-10.png](../../images/cloud-application-manager/getting-started-login-10.png)
+![Activity page](../../images/cloud-application-manager/getting-started-login-10.png)
 
 * Allows you to see (based on your scope and permissions) all of the relevant activity that has occurred in the platform, the type of event and the user that performed the event.
 * Filter through activity by type of event or switch between all activity or current scope.
