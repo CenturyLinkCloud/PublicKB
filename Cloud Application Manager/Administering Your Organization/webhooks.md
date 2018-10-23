@@ -7,13 +7,29 @@
 }}}
 
 ### Integrate Network Management Solutions with Webhooks
+**In this article:**
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Integrating with Infoblox](#integrating-with-infoblox)
+
+### Overview
+
 Cloud Application Manager integrates with IPAM, DNS, DHCP, and CMDB network management solutions over webhooks. Webhooks are available in the Enterprise Edition.
 
 A webhook requires a custom web service to connect to your network management solution. You can build this custom web service as a box. We show how this works for Infoblox as an example. Say you deploy an instance to vCenter from Cloud Application Manager. Cloud Application Manager calls the custom Infoblox web service over the webhook and provides the instance IP configuration. The web service passes it to Infoblox. Once the web service gets the IP and domain name from Infoblox, it returns the information to Cloud Application Manager, which assigns the IP configuration to the instance.
 
-**In this article:**
+### Audience
 
-* Integrating with Infoblox
+All users with Cloud Application Manager organization administrator access.
+
+### Prerequisites
+
+* Access to Cloud Application Manager, Management site.
+
+* The user must be an Administrator of the organization in Cloud Application Manager.
+
+* The user should be at the organization level scope to access the Settings option in the left side menu.
 
 
 ### Integrating with Infoblox

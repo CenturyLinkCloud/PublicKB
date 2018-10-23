@@ -8,6 +8,22 @@
 }}}
 
 ### Tag Instances
+**In this article:**
+
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Preset or Custom Tags](#preset-or-custom-tags)
+* [Applying Tags for Your Organization](#applying-tags-for-your-organization)
+* [Reporting on Cloud Application Manager Tags](#reporting-on-cloud-application-manager-tags)
+   * [AWS](#aws)
+   * [Google Cloud](#google-cloud)
+   * [OpenStack](#openstack)
+   * [vSphere](#vsphere)
+   * [CloudStack](#cloudstack)
+
+### Overview
+
 Tags give information about an instance deployed through Cloud Application Manager. They let you report on provider resources consumed by Cloud Application Manager users. They inform what box, provider, user, workspace, and such from Cloud Application Manager were involved in deploying an instance.
 
 As an Cloud Application Manager administrator, you get to apply 10 tags for your organization. From the [Settings](admin-overview.md), once you can add preset or custom tags, they’re applied to the provider when a user launches an instance to any public or private cloud such as AWS, vSphere, Google Cloud, Azure, OpenStack, and CloudStack. They are applied on instances launched in Linux, Windows, CloudFormation, and RDS services.
@@ -18,15 +34,18 @@ Cloud Application Manager supports tagging in the Enterprise Edition (SaaS & Vir
 
 In the Settings for your organization, you can add tags under Settings > Tags.
 
-### In this article
-* Preset or Custom Tags
-* Applying Tags for Your Organization
-* Reporting on Cloud Application Manager Tags
-   * AWS
-   * Google Cloud
-   * OpenStack
-   * vSphere
-   * CloudStack
+### Audience
+
+All users with Cloud Application Manager organization administrator access.
+
+### Prerequisites
+
+* Access to Cloud Application Manager, Management site.
+
+* The user must be an Administrator of the organization in Cloud Application Manager.
+
+* The user should be at the organization level scope to access the Settings option in the left side menu.
+
 
 ### Preset or Custom Tags
 A tag consists of a key and a value. You can tag with a custom or preset value.
