@@ -133,7 +133,7 @@ ___
 * Filter through activity by type of event or switch between all activity or current scope.
 ![Activity page, Filter dropdown](../../images/cloud-application-manager/activity-filter-list.png)
 
-    * Provider, this option filters the result and shows only the provider's activity.
+    * **Provider**, this option filters the result and shows only the provider's activity.
     * Settings, this option filters the result and shows only the Setting's activity.
     * User, this option filters the result and shows only the activities that are related to the users.
         
