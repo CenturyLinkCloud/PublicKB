@@ -17,10 +17,10 @@
 * [Applying Tags for Your Organization](#applying-tags-for-your-organization)
 * [Reporting on Cloud Application Manager Tags](#reporting-on-cloud-application-manager-tags)
 * [Reporting on AWS](#aws)
-   * [Google Cloud](#google-cloud)
-   * [OpenStack](#openstack)
-   * [vSphere](#vsphere)
-   * [CloudStack](#cloudstack)
+* [Reporting Google Cloud](#google-cloud)
+* [Reporting OpenStack](#openstack)
+* [Reporting vSphere](#vsphere)
+* [Reporting CloudStack](#cloudstack)
 
 ### Overview
 
