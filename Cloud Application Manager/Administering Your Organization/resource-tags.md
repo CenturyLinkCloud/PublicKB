@@ -16,7 +16,7 @@
 * [Preset or Custom Tags](#preset-or-custom-tags)
 * [Applying Tags for Your Organization](#applying-tags-for-your-organization)
 * [Reporting on Cloud Application Manager Tags](#reporting-on-cloud-application-manager-tags)
-   * [AWS](#aws)
+* [Reporting on AWS](#aws)
    * [Google Cloud](#google-cloud)
    * [OpenStack](#openstack)
    * [vSphere](#vsphere)
