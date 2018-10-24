@@ -134,7 +134,7 @@ ___
 ![Activity page, Filter dropdown](../../images/cloud-application-manager/activity-filter-list.png)
 
     * **Provider**, this option filters the result and shows only the provider's activity.
-    * Settings, this option filters the result and shows only the Setting's activity.
+    * **Settings**, this option filters the result and shows only the Setting's activity.
     * User, this option filters the result and shows only the activities that are related to the users.
         
         > **note that you can combine these filters with each other on your own will.**
