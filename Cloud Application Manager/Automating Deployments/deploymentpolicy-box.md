@@ -1,7 +1,7 @@
 {{{ "title": "Deployment Policy Boxes",
 "date": "09-19-2018",
 "author": "",
-"keywords": ["cam", "deployment-policy", "provider"],
+"keywords": ["cam", "deployment-policy", "provider", "policy-box", "admin-box"],
 "attachments": [],
 "contentIsHTML": false
 }}}
