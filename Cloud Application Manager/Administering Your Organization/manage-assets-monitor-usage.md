@@ -53,7 +53,7 @@ To see more info about the options in this section you can refer to these pages:
 * [Network Exchange](https://www.ctl.io/knowledge-base/network/network-exchange-getting-started-guide)
 * Show Unregistered Resources: By enabling this option in the Settings, you'll be able to see the unregistered instances under the CAM/ALM Instances menu.
 
-![admin-assets1.png](../../images/cloud-application-manager/admin-assets1.png)
+![Organization Settings - Details](../../images/cloud-application-manager/admin-assets1.png)
 
 ### Manage Administrators
 
