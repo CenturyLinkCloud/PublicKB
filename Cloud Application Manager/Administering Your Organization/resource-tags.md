@@ -19,7 +19,7 @@
 * [Reporting on AWS](#aws)
 * [Reporting on Google Cloud](#google-cloud)
 * [Reporting on OpenStack](#openstack)
-* [Reporting vSphere](#vsphere)
+* [Reporting on vSphere](#vsphere)
 * [Reporting CloudStack](#cloudstack)
 
 ### Overview
