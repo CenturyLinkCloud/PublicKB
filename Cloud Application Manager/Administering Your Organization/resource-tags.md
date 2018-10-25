@@ -18,7 +18,7 @@
 * [Reporting on Cloud Application Manager Tags](#reporting-on-cloud-application-manager-tags)
 * [Reporting on AWS](#aws)
 * [Reporting on Google Cloud](#google-cloud)
-* [Reporting OpenStack](#openstack)
+* [Reporting on OpenStack](#openstack)
 * [Reporting vSphere](#vsphere)
 * [Reporting CloudStack](#cloudstack)
 
