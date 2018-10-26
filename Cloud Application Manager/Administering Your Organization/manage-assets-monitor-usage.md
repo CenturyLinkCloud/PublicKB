@@ -8,7 +8,6 @@
 "contentIsHTML": false
 }}}
 
-### Manage Cloud Application Manager Assets
 **In this article:**
 
 * [Overview](#overview)
