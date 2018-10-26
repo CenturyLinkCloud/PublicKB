@@ -7,7 +7,6 @@
 "contentIsHTML": false
 }}}
 
-### Tag Instances
 **In this article:**
 
 * [Overview](#overview)
@@ -17,10 +16,12 @@
 * [Applying Tags for Your Organization](#applying-tags-for-your-organization)
 * [Reporting on Cloud Application Manager Tags](#reporting-on-cloud-application-manager-tags)
 * [Reporting on AWS](#reporting-on-aws)
-* [Reporting on Google Cloud](#google-cloud)
-* [Reporting on OpenStack](#openstack)
-* [Reporting on vSphere](#vsphere)
-* [Reporting on CloudStack](#cloudstack)
+* [Reporting on Google Cloud](#reporting-on-google-cloud)
+* [Reporting on OpenStack](#reporting-on-openstack)
+* [Reporting on vSphere](#reporting-on-vsphere)
+* [Reporting on CloudStack](#reporting-on-cloudstack)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
+
 
 ### Overview
 
@@ -91,7 +92,7 @@ One of the chief benefits of tagging is that you can report and analyze how Clou
 
 Refer to the following sections to view or manage the tags applied on a box instance launched in a specific cloud provider.
 
-### AWS
+### Reporting on AWS
 In addition to preset and custom tags, Cloud Application Manager tags instances with CloudFormation labels. Tags currently don’t apply to Elastic Block Store, and Virtual Private Cloud instances. To report on tagged instances deployed in AWS, see [this article](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/usage-reports.html#usage-reports-prereqs).
 
 **Steps**
@@ -104,7 +105,7 @@ In addition to preset and custom tags, Cloud Application Manager tags instances 
 4. Select an instance and click the **Tags** tab to manage the applied tags.
    ![admin-tags3.png](../../images/cloud-application-manager/admin-tags3.png)
 
-### Google Cloud
+### Reporting on Google Cloud
 
 **Steps**
 1. [Log in to the Google Cloud Console](https://console.developers.google.com/).
@@ -114,7 +115,7 @@ In addition to preset and custom tags, Cloud Application Manager tags instances 
 3. Under Compute Engine, click **VM instances** and manage the tags applied under Custom metadata.
    ![admin-tags4.png](../../images/cloud-application-manager/admin-tags4.png)
 
-### OpenStack
+### Reporting on OpenStack
 
 **Steps**
 1. Log in to your OpenStack dashboard.
@@ -124,7 +125,7 @@ In addition to preset and custom tags, Cloud Application Manager tags instances 
 3. Under **Instances**, select the instance whose tags you want to view. The tags are listed under Meta.
    ![admin-tags5.png](../../images/cloud-application-manager/admin-tags5.png)
 
-### vSphere
+### Reporting on vSphere
 
 **Steps**
 1. Log in to your VMware vSphere thin client for vCenter 5.0 or later.
@@ -134,7 +135,7 @@ In addition to preset and custom tags, Cloud Application Manager tags instances 
 3. Under **Custom Fields**, the tags applied to the instance are listed.
    ![admin-tags6.png](../../images/cloud-application-manager/admin-tags6.png)
 
-### CloudStack
+### Reporting on CloudStack
 
 **Steps**
 1. Log in to your CloudStack management console.

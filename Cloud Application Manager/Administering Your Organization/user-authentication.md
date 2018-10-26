@@ -7,8 +7,6 @@
 "contentIsHTML": false
 }}}
 
-### Enable User Authentication
-
 **In this article:**
 
 * [Overview](#overview)

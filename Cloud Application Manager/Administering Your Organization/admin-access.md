@@ -6,7 +6,6 @@
 "contentIsHTML": false
 }}}
 
-### Give Admin Access to Cloud Application Manager
 When you sign up for the Cloud Application Manager Enterprise Edition, you get a default administrator account that lets you globally manage settings for all Cloud Application Manager users in your organization. Besides the default account, you can give any Cloud Application Manager user administrator access through the admin console under Organization > Administrators.
 
 **To Give Admin Access**

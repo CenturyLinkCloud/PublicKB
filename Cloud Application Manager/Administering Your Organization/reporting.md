@@ -6,8 +6,6 @@
 "contentIsHTML": false
 }}}
 
-### Get Control and Insights with Dashboard
-
 The Dashboard shows cloud costs and resource usage in public and private clouds. It includes public clouds like AWS, Google Cloud, Azure and private clouds like VMware vCenter, VMware vCloud Director, and SoftLayer. It also helps you make budget-friendly decisions and curb costs through cost center budgeting.
 
 Depending on the scope, different views and different data can be shown.

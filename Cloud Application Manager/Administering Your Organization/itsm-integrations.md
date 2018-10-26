@@ -7,8 +7,6 @@
 "contentIsHTML": false
 }}}
 
-### ITSM Integrations
-
 **In this article:**
 
 * [Overview](#overview)

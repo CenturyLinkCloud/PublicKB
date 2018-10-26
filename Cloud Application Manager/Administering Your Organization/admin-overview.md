@@ -7,8 +7,6 @@
 "contentIsHTML": false
 }}}
 
-### Overview
-
 As an administrator for Cloud Application Manager, you get special privileges. You can access to Cloud Application Manager like any other regular user. On top of that, you get an overview of everything users do in your organization. You get to set it up for them to use and control all assets they create in Cloud Application Manager.
 The Settings is the interface where you manage and control Settings for your organization.
 
