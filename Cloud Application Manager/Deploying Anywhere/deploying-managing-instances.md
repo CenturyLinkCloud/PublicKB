@@ -88,7 +88,7 @@ An instance is an instantiated version of a box launched to provider’s virtual
 1. Click **Instances** > **New**
 2. Select a box. You can search and look through the tabs.
 
-  ![deploy-instance-selectboxfromcatalog-1.png](../../images/cloud-application-manager/deploy-instance-selectboxfromcatalog-1.png)
+  ![Explore to select box from catalog](../../images/cloud-application-manager/deploy-instance-selectboxfromcatalog-1.png)
 
   * **Boxes**. Shows boxes you created in your workspace.
   * **Explore**. Shows default boxes available to all Cloud Application Manager users. These include service boxes such as Linux Compute, Windows Compute; includes AWS services like MySQL Database, Oracle Database, DynamoDB, PostgreSQL Database, and S3 bucket; and includes the Azure Microsoft SQL Database service. You can directly launch an instance to these database services. While you can’t modify those boxes, you can combine them with other boxes to build multi-tiered applications.
@@ -103,7 +103,7 @@ An instance is an instantiated version of a box launched to provider’s virtual
 
 4. In the New Instance dialog, pass deployment parameters under **Variables**. Before launching, you can override and provide fresh values.
 
-  ![instance-provideconfigurationvalues-2.png](../../images/cloud-application-manager/instance-provideconfigurationvalues-2.png)
+  ![Providing default configuration values to new instances](../../images/cloud-application-manager/instance-provideconfigurationvalues-2.png)
 
   * Listed here are all the variables defined in the main box as well as those within nested boxes or box type variables.
   * Required variables are marked with an asterisk. To see all variables including optional ones, click Show More.
@@ -121,20 +121,20 @@ Follow these steps to schedule an instance.
 **Steps**
 1. From the Instances page, click **New**.
 2. Select a box you want to deploy.
-3. In the New Instance dialog, select the **Shutdown** or **Terminate** operation from the **Expiration** drop-down.
+3. In the New Instance dialog, select the **Shutdown** or **Terminate** operation from the **Expiration** drop-down.  
   Select **Always on** if you don’t want to schedule anything. Shutdown powers off the instance while Terminate deletes the instance on the provider’s side.
 
-  ![schedule-instance-chooseoperation-6-2.png](../../images/cloud-application-manager/schedule-instance-chooseoperation-6-2.png)
+  ![Instance expiration operation](../../images/cloud-application-manager/schedule-instance-chooseoperation-6-2.png)
 
 4. For the selected operation, set a predefined or custom UTC schedule.
 
-  ![schedule-instance-selectschedule-7-2.png](../../images/cloud-application-manager/schedule-instance-selectschedule-7-2.png)
+  ![Scheduling shutdown for new instances](../../images/cloud-application-manager/schedule-instance-selectschedule-7-2.png)
 
 5. When done, click **Deploy**.
 
-    **Note:** Even if you don’t schedule an instance at the time of deploying, you can do so later. Once online, you can go to an instance page and in **Edit Details**, set the schedule.
+  **Note:** Even if you don’t schedule an instance at the time of deploying, you can do so later. Once online, you can go to an instance page and in **Edit Details**, set the schedule.
 
-    Besides the user interface, you can automatically schedule instances using the instances API with a [POST or PUT](https://www.ctl.io/api-docs/cam/#application-lifecycle-management-instances-api) request.
+  Besides the user interface, you can automatically schedule instances using the instances API with a [POST or PUT](https://www.ctl.io/api-docs/cam/#application-lifecycle-management-instances-api) request.
 
 ### Handling Instance Lifecycle States
 
@@ -144,7 +144,7 @@ Some actions are available only after the instance changes state. For example, y
 
 Go to the Admin Console to [manage several instances](../Administering Your Organization/manage-assets-monitor-usage.md) spread across users and workspaces in your organization.
 
-  ![instance-states-8-2.png](../../images/cloud-application-manager/instance-states-8-2.png)
+  ![Instance actions menu](../../images/cloud-application-manager/instance-states-8-2.png)
 
 **Reconfigure**
 
