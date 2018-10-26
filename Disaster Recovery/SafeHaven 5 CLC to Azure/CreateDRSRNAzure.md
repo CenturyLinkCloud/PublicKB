@@ -32,7 +32,7 @@ This article explains how to create a SRN (SafeHaven Replication Node) in Azure 
     f.  Click on the OK button.  
 6. On the **Size** blade search for F4 and then select the F4 Standard type instance. 4 vCPUs, 8 GB of RAM and 16 data disks. Click on the Select button.
 7. On the **Settings** blade provide the following information:  
-   a. Click on No for Use managed disks, select a **Storage account** for the destination of the DR-SRN unmanaged disks. Azure will filter out automatically the storage accounts that do not match the location selected previously for the Virtual Machine in step 5.  
+   a. Click on No for Use unmanaged disks, select a **Storage account** for the destination of the DR-SRN unmanaged disks. Azure will filter out automatically the storage accounts that do not match the location selected previously for the Virtual Machine in step 5.  
    b. Click on **Virtual Network** under Network and select the VNet. Azure will filter out automatically the virtual networks that do not match the location selected previously for the Virtual Machine in step 5.  
    c. Select a **Subnet** and a **Public IP address** for the DR-SRN, by default Azure will create a new IP address. DR-SRN requires access to the Internet therefore a public IP address is needed.  
    d. Click on Advanced under **Network Security Group**, this will open the option to select a Network Security Group, by default Azure will create one that has all traffic open to Instances deployed on the same VNet and any Point to Point VPNs on it. Use the Network security group created during the CMS deployment.  
