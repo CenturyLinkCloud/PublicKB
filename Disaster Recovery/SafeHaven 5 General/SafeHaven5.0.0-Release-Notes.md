@@ -22,7 +22,7 @@ One of the major feature's of this release is the capability to protect producti
 * KVM
 * Physical servers: all the available baremetal servers provided by CLC have been validated
 
-**NOTE**: Please refer to [SafeHaven-5.0-Use-Case-and-Support-Matrix](Safehaven5.1-usecases-supportmatrix.md) for more information on all the use cases and support matrix.
+**NOTE**: Please refer to [SafeHaven-5.1-Use-Case-and-Support-Matrix](Safehaven5.1-usecases-supportmatrix.md) for more information on all the use cases and support matrix.
 
 #### Microsoft Virtual Shadow Copy (VSS) Enabled Checkpoints
 Another major feature is the introduction of Microsoft Virtual Shadow Copy (VSS) enabled checkpoint for single Windows server protection groups.
