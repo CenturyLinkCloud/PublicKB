@@ -15,4 +15,4 @@ The Marketplace was built as a pre-approved commercialization contract vehicle, 
 
 Additionally, you'll find that the MPA is patterned and is **very** similar to the agreements associated with other popular cloud marketplaces where your product(s) may already be placed.
 
-Should you have additional questions or concerns, please contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
+Should you have additional questions or concerns, please contact us at [Marketplace@centurylink.com](mailto:Marketplace@centurylink.com).

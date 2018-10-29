@@ -99,10 +99,10 @@ After deploying this Partner Template, the end-user can email Halon at [sales@ha
 #### Process to request credit for Service Task fee
 Follow this process to request credit on your account to reimburse any expense to deploy the Partner Template.
 
-* Please copy and paste the email below and send it to [Ecosystem Partner](mailto:ecosystem@ctl.io).
+* Please copy and paste the email below and send it to [Ecosystem Partner](mailto:ECOSystem@centurylink.com).
 
   ```
-  TO: Ecosystem@CTL.io
+  TO: ECOSystem@centurylink.com
 
   EMAIL SUBJECT:   Requesting Credit for Halon Partner Template Deployment
 

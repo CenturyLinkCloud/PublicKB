@@ -17,7 +17,7 @@ If you extend your domain into CenturyLink Cloud as a managed domain then we wil
 
 ### Self-Service Patching
 
-Although the [Automated Patching](../Servers/patching-as-a-service.md) service is available for any server - whether managed or unmanaged - it is recommended that clients planning to update managed devices should work with the Client Service Center to schedule a maintenance activity for Standard, Managed Patching because it is included with managed servers.
+It is recommended that clients planning to update managed devices work with the Client Service Center to schedule a maintenance activity for Standard, Managed Patching because it is included with managed servers.
 
 ### Standard, Managed Patching
 

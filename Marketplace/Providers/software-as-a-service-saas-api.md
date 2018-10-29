@@ -176,4 +176,4 @@ An example JSON payload the ```/saas-usage/end``` API is provided below.
 * 40x - Invalid Input - provisioningId, customerId, providerKey, productId, and productSkus required.
 * 50x - Server Side Error
 
-For any questions, please contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
+For any questions, please contact us at [Marketplace@centurylink.com](mailto:Marketplace@centurylink.com).

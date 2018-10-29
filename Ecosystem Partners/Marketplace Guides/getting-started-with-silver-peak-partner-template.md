@@ -114,10 +114,10 @@ The costs listed above in Steps 1 and 2 are for the infrastructure only. After d
 
 #### Process to request credit for Service Task fee
 Follow this process to request credit on your account to reimburse any expense to deploy the Partner Template:
-* Please copy and paste the email below and send it to [ecosystem@ctl.io](mailto:ecosystem@ctl.io).
+* Please copy and paste the email below and send it to [ECOSystem@centurylink.com](mailto:ECOSystem@centurylink.com).
 
   ```
-  TO: Ecosystem@CTL.io
+  TO: ECOSystem@centurylink.com
 
   EMAIL SUBJECT:   Requesting Credit for Silver Peak Partner Template Deployment
 

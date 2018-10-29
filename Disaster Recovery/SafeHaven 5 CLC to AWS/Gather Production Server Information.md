@@ -29,7 +29,7 @@ Apart from this other information regarding Domain Controllers, DNS Servers, tra
 
 ### VM Discovery for VMware on prem site using SafeHaven console
 
-**Note** use the VM Dicovery tool enbeeded in the SafeHaven console to get the required information when the customer environment is VMware.
+**Note** use the VM Discovery tool embedded in the SafeHaven console to get the required information when the customer environment is VMware.
 
 1. Launch the SafeHaven console.
 2. Click on the VM Discovery button.

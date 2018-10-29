@@ -7,7 +7,7 @@
 "sticky": true
 }}}
 
-The CenturyLink Marketplace Provider Program Guide is designed to outline the process expectations for technology companies seeking to integrate their products and services into the CenturyLink Marketplace. Providers who enter this program and meet the certification requirements will be eligible to have their approved technology listed in the CenturyLink Marketplace. To express interest in joining the program, prospective Providers can visit the [CenturyLink Marketplace Provider Program](https://www.ctl.io/marketplace-program/) web page, reach out to their sales account manager directly, or email the [Marketplace team](mailto:Marketplace@ctl.io).
+The CenturyLink Marketplace Provider Program Guide is designed to outline the process expectations for technology companies seeking to integrate their products and services into the CenturyLink Marketplace. Providers who enter this program and meet the certification requirements will be eligible to have their approved technology listed in the CenturyLink Marketplace. To express interest in joining the program, prospective Providers can visit the [CenturyLink Marketplace Provider Program](https://www.ctl.io/marketplace-program/) web page, reach out to their sales account manager directly, or email the [Marketplace team](mailto:Marketplace@centurylink.com).
 
 ### Audience
 
