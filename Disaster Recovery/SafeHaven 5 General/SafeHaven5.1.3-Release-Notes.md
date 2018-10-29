@@ -37,7 +37,7 @@ Please take a look at the link below to download the latest available release
 * [Linux SafeHaven Onboarding Scripts Downloads](linux-onboarding-releases.md)
 * [script to turn a Ubuntu-14 machine into a recovery proxy for Windows servers](https://download.safehaven.ctl.io/SH-5.1.3/makestub_for_windows.sh)
 
-Please note that you can check the md5 checksum against the file named [MD5SUM-5.1.2.txt](https://download.safehaven.ctl.io/SH-5.1.3/MD5SUM-5.1.3.txt).
+Please note that you can check the md5 checksum against the file named [MD5SUM-5.1.3.txt](https://download.safehaven.ctl.io/SH-5.1.3/MD5SUM-5.1.3.txt).
 
 
 ### Documentations
