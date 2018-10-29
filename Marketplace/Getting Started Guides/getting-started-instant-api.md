@@ -32,7 +32,7 @@ Not only can you create and host your enterprise grade API platform with ease, I
 
 ### Audience
 
-* Consumers of the [Instant API Enterprise Grade API Platform](https://www.ctl.io/marketplace/partner/IAPI/product/InstantAPI/)
+* Consumers of the [Instant API Enterprise Grade API Platform]
 
 * Current CenturyLink Cloud Customers
 

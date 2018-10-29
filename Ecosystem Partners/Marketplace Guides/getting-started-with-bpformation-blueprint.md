@@ -43,7 +43,7 @@ CenturyLink Cloud Users
 ### About Community Releases on CenturyLink Cloud
 CenturyLink Cloud publishes a variety of packaged and certified community releases of OSS or otherwise generally available software solutions. These certifications are limited to successful deployment of assets on cloud servers and do not extend onto ongoing software configuration, guarantees, or support.
 
-Have a suggestion for other software to include within the CenturyLink Cloud Blueprints Library? Email ecosystem@ctl.io.
+Have a suggestion for other software to include within the CenturyLink Cloud Blueprints Library? Email ECOSystem@centurylink.com.
 
 ### Frequently Asked Questions
 **Who should I contact for support?**

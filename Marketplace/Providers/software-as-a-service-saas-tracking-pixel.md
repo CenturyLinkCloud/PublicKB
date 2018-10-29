@@ -18,7 +18,7 @@ CenturyLink has created multiple opportunities for software vendors to integrate
 
 The tracking pixel option allows CenturyLink to monitor demand & accounts created by the CenturyLink Cloud Marketplace drives to your organizations website & product.
 
-Below is a JavaScript tracking pixel that may be used to integrate with the CenturyLink Cloud Marketplace. You will need the Provider Key that you were provided during onboarding with the tracking pixel. If you were not provided a Provider Key or require a new one to be issued, contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
+Below is a JavaScript tracking pixel that may be used to integrate with the CenturyLink Cloud Marketplace. You will need the Provider Key that you were provided during onboarding with the tracking pixel. If you were not provided a Provider Key or require a new one to be issued, contact us at [Marketplace@centurylink.com](mailto:Marketplace@centurylink.com).
 
 **JavaScript Tracking Pixel**
 ```

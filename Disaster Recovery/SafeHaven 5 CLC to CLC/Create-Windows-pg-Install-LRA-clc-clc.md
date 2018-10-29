@@ -12,7 +12,7 @@ This article explains how to create Windows Protection Group and protect a Windo
 ### Requirements
 1. To protect a Windows server using SafeHaven, we need to install a Local Replication Agent (LRA) on the production server. In order to complete the LRA installation, a **Reboot** of the production server is required. **Please schedule a downtime window for LRA installation.**
 
-2. For Ansible LRA installation to work, make sure TCP 445 port Inbound is open on the production server by running the following command via Windows Commandline (run as administrator):
+2. For Ansible LRA installation to work, make sure TCP 445 port Inbound is open on the production server by running the following command via Windows PowerShell (run as administrator):
 ```
 New-NetFirewallRule -DisplayName "psexec tcp 445" -Name "psexec tcp 445" -Profile Any -LocalPort 445 -Protocol TCP
 ```
@@ -22,9 +22,10 @@ This article assumes that:
 1. A SafeHaven cluster has been created successfully
 2. Both production and recovery SRNs have been registered and peered
 3. Proper storage has been attached and claimed on both SRNs
+4. You have opened the SafeHaven console and connected to your CMS
 
 ### Create a Windows Protection Group
-1. Right click on the **Production SRN** and select **Create Protection Group**.
+1. In the SafeHaven Console, right-click on the **Production SRN** and select **Create Protection Group**.
  
 
 **NOTE**: Always start the Protection Group creation from the Production SRN.
