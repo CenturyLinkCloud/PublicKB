@@ -14,7 +14,13 @@
 
 ### New Features and Enhancements
 This is patch release based on [SafeHaven 5.1.2](SafeHaven5.1.2-Release-Notes.md) with the following improvements:
-- 
+- There are a number of improvements for the Windows Agent such as 
+  - A hanging VSS provider/writer would no longer impact future non-VSS checkpoints
+  - Fully support for Windows storage space
+  - Improved event log
+- An unified job system is now working for both Generation 1 (DR to CLC) and Generate 2 (DR to AWS/Azure) protection groups (PG)
+- Better timeout handling for LVM commands
+- An improved method for local cache PG resize
 
 ### Upgrade Path
 * Upgrade from SafeHaven-4 to SafeHaven-5 will be a fresh new installation.
