@@ -36,7 +36,7 @@ All users with Cloud Application Manager organization administrator access.
    ![organization-admin-menu](../../images/cloud-application-manager/admin-access1.png)
 
 3. Once you are in the Organization scope, you will have access to the **Settings** tab in the principal navigation menu.
-   ![cam-organization-setting](../../images/cloud-application-manager/admin-access2.png)
+   ![Organization settings menu](../../images/cloud-application-manager/admin-access2.png)
 
 4. Under Administrators section, click **Add** and type the user’s name in the search field and select to save them.
    ![Organization settings - Add administrator](../../images/cloud-application-manager/admin-access3.png)
