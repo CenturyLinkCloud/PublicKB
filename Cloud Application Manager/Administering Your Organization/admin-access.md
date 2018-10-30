@@ -33,7 +33,7 @@ All users with Cloud Application Manager organization administrator access.
 ### To Give Admin Access
 1. Log in to Cloud Application Manager as the default administrator.
 2. Access to the context switcher drop-down located in the top navigation menu, open it and click on **Organizations**.
-   ![organization-admin-menu](../../images/cloud-application-manager/admin-access1.png)
+   ![Context switcher - Organizations option](../../images/cloud-application-manager/admin-access1.png)
 
 3. Once you are in the Organization scope, you will have access to the **Settings** tab in the principal navigation menu.
    ![Organization settings menu](../../images/cloud-application-manager/admin-access2.png)
