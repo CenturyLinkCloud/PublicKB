@@ -54,4 +54,4 @@ CenturyLink is actively conducting patching and other remediation activities acr
 
 Also, please note: While CenturyLink is patching our environment, we want to remind our customers that they are responsible for updating the operating system of their cloud virtual and bare metal servers. We are actively working to apply the latest patches to our Operating System templates to ensure any new virtual servers are not at risk of these vulnerabilities. We recommend you check with your operating system vendor(s) and system manufacturer(s) and apply any updates as soon as they are available.
 
-See our full post [here](https://www.ctl.io/blog/post/intel-discloses-three-security-vulnerabilities/).
+See [our full post](https://www.ctl.io/blog/post/intel-discloses-three-security-vulnerabilities/).
