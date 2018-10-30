@@ -39,7 +39,7 @@ All users with Cloud Application Manager organization administrator access.
    ![cam-organization-setting](../../images/cloud-application-manager/admin-access2.png)
 
 4. Under Administrators section, click **Add** and type the user’s name in the search field and select to save them.
-   ![add-administrator-organization-setting](../../images/cloud-application-manager/admin-access3.png)
+   ![Organization settings - Add administrator](../../images/cloud-application-manager/admin-access3.png)
 
 
 To revoke administrator privileges for a user, click X against their name under **Administrators**.
