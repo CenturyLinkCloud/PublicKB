@@ -30,7 +30,7 @@ The graph also shows the legend in the bottom with the total charges of the disp
 
 Terraform is a provider-agnostic templating system, so whenever you define a Terraform template box in Application Lifecycle Management, you can select which provider to deploy to among the supported provider types: AWS, Microsoft Azure, Google Cloud Platform and CenturyLink Cloud.
 
-For more information, refer to [Template Boxes](../../Cloud Application Manager/automating-deployments/template-box.md).
+For more information, refer to [Template Boxes](../../Cloud Application Manager/Automating Deployments/template-box.md).
 
 **Support for New AWS Instance Type**
 
