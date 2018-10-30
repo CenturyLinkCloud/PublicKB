@@ -43,7 +43,7 @@ All users with Cloud Application Manager organization administrator access.
 
     Once you specify the ServiceNow host, you should copy the Redirect URL and click on the **Create an application registry for CAM** link which will open the ServiceNow server configuration in a new tab or window where you will configure the ServiceNow application registration for Cloud Application Manager (CAM) and fill in the following:
     * Click on the lock next to Redirect URL to unlock the field and paste there the value you copied from CAM form earlier.
-    * Specify a meaningfull name for your ServiceNow application registration for CAM
+    * Specify a meaningful name for your ServiceNow application registration for CAM
     * Copy the Client ID that has been automatically generated and go back to CAM to paste it in the corresponding field
     * Specify the same Client Secret in both configuration pages (CAM and ServiceNow).
     * In ServiceNow application registration page you can change the **Refresh Token Lifespan** value to "-1" to define that it will never expire.

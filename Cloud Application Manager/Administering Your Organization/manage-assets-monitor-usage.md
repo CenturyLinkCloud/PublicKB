@@ -58,37 +58,37 @@ To see more info about the options in this section you can refer to these pages:
 
 Under **Administrators**, you can see a list of all administrators of the organization. For more details, visit [Give admin access to Cloud Application Manager](admin-access.md)
 
-![organization-setting-manage-admins](../../images/cloud-application-manager/admin-assets2.png)
+![Organization Settings - Manage Admins](../../images/cloud-application-manager/admin-assets2.png)
 
 ### Manage Clouds
 
 All clouds available in the organization are listed under **Clouds** section. Visit [Enable Access to Cloud Providers](provider-access.md).
 
-![organization-setting-manage-clouds](../../images/cloud-application-manager/admin-assets3.png)
+![Organization Settings - Manage Clouds](../../images/cloud-application-manager/admin-assets3.png)
 
 ### Manage Tags
 
 Take a look at all tags in the organization under **Tags** in the admin console. More information in [Tag Instances](resource-tags.md)
 
-![organization-setting-manage-tags](../../images/cloud-application-manager/admin-assets4.png)
+![Organization Settings - Manage Tags](../../images/cloud-application-manager/admin-assets4.png)
 
 ### Manage Webhooks
 
 View all webhooks available in the organization under **Webhooks**. In order to add a new webhook, click **Add** and write the URL.
 
-![organization-setting-manage-webhooks](../../images/cloud-application-manager/admin-assets5.png)
+![Organization Settings - Manage Webhooks](../../images/cloud-application-manager/admin-assets5.png)
 
 ### Manage Authentication
 
 In Cloud Application Manager enterprise organizations, users can sign in using any of the single sign-on authentication options you enable in the admin console. [Enable User Authentication](user-authentication.md)
 
-![organization-setting-manage-authentication](../../images/cloud-application-manager/admin-assets6.png)
+![Organization Settings - Manage Authentication](../../images/cloud-application-manager/admin-assets6.png)
 
 ### Manage Theme
 
 The organization has the ability of customize the logo and the colors under **Theme** section.
 
-![organization-setting-manage-theme](../../images/cloud-application-manager/admin-assets7.png)
+![Organization Settings - Manage Theme](../../images/cloud-application-manager/admin-assets7.png)
 
 
 ### Contacting Cloud Application Manager Support

@@ -13,7 +13,7 @@
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
 * [To Give Admin Access](#to-give-admin-access)
-* [Getting General Support](#getting-general-support)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
 
@@ -33,13 +33,13 @@ All users with Cloud Application Manager organization administrator access.
 ### To Give Admin Access
 1. Log in to Cloud Application Manager as the default administrator.
 2. Access to the context switcher drop-down located in the top navigation menu, open it and click on **Organizations**.
-   ![Context switcher - Organizations option](../../images/cloud-application-manager/admin-access1.png)
+   ![Context Switcher Organizations Option](../../images/cloud-application-manager/admin-access1.png)
 
 3. Once you are in the Organization scope, you will have access to the **Settings** tab in the principal navigation menu.
-   ![Organization settings menu](../../images/cloud-application-manager/admin-access2.png)
+   ![Organization Settings Menu](../../images/cloud-application-manager/admin-access2.png)
 
 4. Under Administrators section, click **Add** and type the user’s name in the search field and select to save them.
-   ![Organization settings - Add administrator](../../images/cloud-application-manager/admin-access3.png)
+   ![Organization Settings Add Administrator](../../images/cloud-application-manager/admin-access3.png)
 
 
 To revoke administrator privileges for a user, click X against their name under **Administrators**.

@@ -134,7 +134,7 @@ This gives your developers, operations engineers, or IT admins access to the sam
 3. Under **Authentication**, make sure LDAP is on and set up with at least one source with the conditions to sync groups.
 
 4. Turn on **LDAP Group Sync**.
-   ![settings-auth-ldap-group-sync](../../images/cloud-application-manager/management/settings-auth-ldap-group-sync.png)
+   ![settings Auth LDAP Group Sync](../../images/cloud-application-manager/management/settings-auth-ldap-group-sync.png)
 
 5. Click **Sync** to start syncing.
    **Note:** By default, we sync every 24 hours to get the latest group updates. To sync at any other time, click **Sync**. If a group member is deleted or moved out, they no longer have access to Cloud Application Manager workspaces and won’t be able to log in. To show or hide synchronized groups details, click on **Show Groups** or **Hide Groups**.

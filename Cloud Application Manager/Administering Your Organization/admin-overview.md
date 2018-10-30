@@ -35,21 +35,21 @@ All users with Cloud Application Manager organization administrator access.
 1. After you log in to Cloud Application Manager.
 2. Access to the context switcher menu, located in the top left navigation bar.
 
-   ![workspace-instances](../../images/cloud-application-manager/admin-overview1.png)
+   ![Workspace Instances](../../images/cloud-application-manager/admin-overview1.png)
 
 3. Click on **Organizations** tab.
 
-   ![change-cam-workspace-scope](../../images/cloud-application-manager/admin-overview2.png)
+   ![Change CAM Workspace Scope](../../images/cloud-application-manager/admin-overview2.png)
 
 From here, you can get to Settings in two different ways:
 
 * Clicking on the **edit/pencil button**, located in the top right of the organization card.
 
-  ![edit-organization-properties](../../images/cloud-application-manager/admin-overview3.png)
+  ![Edit Organization Properties](../../images/cloud-application-manager/admin-overview3.png)
 
 * Once you select the Organization scope, you will have access to the **Settings** tab in the principal navigation menu.
 
-  ![organization-setting](../../images/cloud-application-manager/admin-overview4.png)
+  ![Organization Setting](../../images/cloud-application-manager/admin-access2.png)
 
 The Settings allows you to set up organization wide configurations.
 
