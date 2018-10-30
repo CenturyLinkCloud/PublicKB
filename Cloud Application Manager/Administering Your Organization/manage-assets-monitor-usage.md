@@ -1,9 +1,9 @@
 {{{
 "title": "Manage Cloud Application Manager Assets",
-"date": "09-01-2016",
+"date": "10-30-2018",
+"author": "Arya Roudi",
 "keywords": ["cam", "details", "settings", "organization", "clouds",
 "tags", "webhooks", "authentication", "theme", "setting"],
-"author": "",
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -34,9 +34,7 @@ All users with Cloud Application Manager organization administrator access.
 ### Prerequisites
 
 * Access to Cloud Application Manager, Management site.
-
 * The user must be an Administrator of the organization in Cloud Application Manager.
-
 * The user should be at the organization level scope to access the Settings option in the left side menu.
 
 
@@ -60,37 +58,37 @@ To see more info about the options in this section you can refer to these pages:
 
 Under **Administrators**, you can see a list of all administrators of the organization. For more details, visit [Give admin access to Cloud Application Manager](admin-access.md)
 
-![admin-assets2.png](../../images/cloud-application-manager/admin-assets2.png)
+![organization-setting-manage-admins](../../images/cloud-application-manager/admin-assets2.png)
 
 ### Manage Clouds
 
 All clouds available in the organization are listed under **Clouds** section. Visit [Enable Access to Cloud Providers](provider-access.md).
 
-![admin-assets3.png](../../images/cloud-application-manager/admin-assets3.png)
+![organization-setting-manage-clouds](../../images/cloud-application-manager/admin-assets3.png)
 
 ### Manage Tags
 
 Take a look at all tags in the organization under **Tags** in the admin console. More information in [Tag Instances](resource-tags.md)
 
-![admin-assets4.png](../../images/cloud-application-manager/admin-assets4.png)
+![organization-setting-manage-tags](../../images/cloud-application-manager/admin-assets4.png)
 
 ### Manage Webhooks
 
 View all webhooks available in the organization under **Webhooks**. In order to add a new webhook, click **Add** and write the URL.
 
-![admin-assets5.png](../../images/cloud-application-manager/admin-assets5.png)
+![organization-setting-manage-webhooks](../../images/cloud-application-manager/admin-assets5.png)
 
 ### Manage Authentication
 
 In Cloud Application Manager enterprise organizations, users can sign in using any of the single sign-on authentication options you enable in the admin console. [Enable User Authentication](user-authentication.md)
 
-![admin-assets6.png](../../images/cloud-application-manager/admin-assets6.png)
+![organization-setting-manage-authentication](../../images/cloud-application-manager/admin-assets6.png)
 
 ### Manage Theme
 
 The organization has the ability of customize the logo and the colors under **Theme** section.
 
-![admin-assets7.png](../../images/cloud-application-manager/admin-assets7.png)
+![organization-setting-manage-theme](../../images/cloud-application-manager/admin-assets7.png)
 
 
 ### Contacting Cloud Application Manager Support

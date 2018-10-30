@@ -1,7 +1,7 @@
 {{{
 "title": "ITSM Integrations",
-"date": "08-17-2018",
-"author": "Guillermo Sanchez",
+"date": "10-30-2018",
+"author": "Arya Roudi",
 "keywords": ["administration", "itsm", "servicenow"],
 "attachments": [],
 "contentIsHTML": false
@@ -14,7 +14,7 @@
 * [Prerequisites](#prerequisites)
 * [Configuration Steps](#configuration-steps)
 * [Behavior](#behavior)
-* [Getting General Support](#getting-general-support)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
 
@@ -28,7 +28,6 @@ All users with Cloud Application Manager organization administrator access.
 
 * Access to Cloud Application Manager, Management site.
 * The user must be an Administrator of the organization in Cloud Application Manager.
-
 * The user should be at the organization level scope to access the Settings option in the left side menu, or through the pencil button in the organization element in the context switcher.
 
 ### Configuration Steps
@@ -88,7 +87,7 @@ The instance activity log will show that the instance termination has been infor
 
 ![ServiceNow CMDB unregistered](../../images/cloud-application-manager/management/servicenow-cmdb-unregistered.png)
 
-### Getting General Support
+### Contacting Cloud Application Manager Support
 
 Customers can contact the CenturyLink Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
 
