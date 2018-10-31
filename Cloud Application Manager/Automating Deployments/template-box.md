@@ -25,7 +25,7 @@ It supports all CloudFormation templates available from AWS. Leverage services s
 Cloud Application Manager supports all CloudFormation templates available from AWS. Leverage services such as EC2, Elastic Block Store, Simple Notification Service, Elastic Load Balancing and Auto Scaling, RDS, S3, DynamoDB, Elastic IPs, and much more.
 
 
-**In this article:**
+**In this section:**
 
 * Create a CloudFormation Template and Launch a Stack
 * Update a CloudFormation stack in real-time
@@ -168,7 +168,7 @@ How to write ARM Templates [see](https://docs.microsoft.com/en-us/azure/azure-re
 
 The many services available in Azure take a look at the official documentation [here](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services).
 
-In this article:
+In this section:
 
 * Create an Azure Resource Manager Template and Launch a Stack
 * Update an Azure Resource Manager Stack in Real-Time
