@@ -5,7 +5,8 @@
 "contentIsHTML": false
 }}}
 
-* Deploy Using CloudFormation Templates
+
+* [Deploy Using CloudFormation Templates](#deploy-using-cloudformation-templates)
 * [Deploy Using Azure Resource Manager Templates](#deploy-using-azure-resource-manager-templates)
 * [Deploy Using Terraform Templates](#deploy-using-terraform-templates)
 
