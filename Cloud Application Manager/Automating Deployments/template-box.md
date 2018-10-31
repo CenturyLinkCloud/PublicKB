@@ -278,7 +278,7 @@ To learn more about:
 * Terraform configurations [see](https://www.terraform.io/docs/configuration/index.html).
 
 
-In this article:
+In this section:
 
 * Create a Terraform Template and apply configuration
 * Update a Terraform configuration in Real-Time
