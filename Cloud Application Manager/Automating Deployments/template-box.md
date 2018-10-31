@@ -306,7 +306,7 @@ We use a sample Basic Two-Tier Architecture in Google Cloud with Terraform templ
     * **File**. Upload an existing template. When you save, the contents of the file are available in the template. You can upload one up to 1MB in size.
 
     * **Import from URL**. Upload an existing template. When you save, the contents of the file are available in the template. You can upload one up to 1MB in size.
-    It's also supported specify a GitHub public repository URL to import all the Terraform configuration files in the repository in only one step.
+    It's also supported specify a GitHub public repository URL to import all the Terraform configuration files located into the repository in a single step.
 
     **Note:** When you import from a file or a URL, make sure its content is formatted in Terraform format (HCL or JSON syntax) and follows the Terraform template conventions.
 
