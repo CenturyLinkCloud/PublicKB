@@ -271,7 +271,7 @@ To illustrate, we create a second Azure Resource Manager box to scale the WordPr
 
 The Cloud Application Manager Terraform Template box allows to apply any Terraform configuration files on Amazon Web Services, Microsoft Azure, Google Cloud Platform and CenturyLink Cloud using Cloud Application Manager.
 
-This allows you to use the power of Cloud Application Manager (instance history, Lifecycle Editor, bindings, box versioning) combined with any service supported by Terraform.
+This feature provides you with the ability to use the power of Cloud Application Manager (instance history, Lifecycle Editor, bindings, box versioning) combined with any service supported by Terraform.
 
 To learn more about:
 
