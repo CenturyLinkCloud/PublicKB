@@ -300,7 +300,7 @@ We use a sample Basic Two-Tier Architecture in Google Cloud with Terraform templ
 
 3. In the box, select **New** in Templates, under Code tab.
 
-    ![terraformboxes2.png](../../images/cloud-application-manager/terraformboxes2.png)
+    ![Select Terraform template file](../../images/cloud-application-manager/terraformboxes2.png)
 
     * **Blank Template**. Develop one from scratch. When you save, you have a blank template you can start authoring. Configuration files with extensions `.tf`, `.tf.json` and `.auto.tfvars` are allowed.
     * **File**. Upload an existing template. When you save, the contents of the file are available in the template. You can upload one up to 1MB in size.
