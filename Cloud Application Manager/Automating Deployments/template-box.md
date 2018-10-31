@@ -7,7 +7,7 @@
 
 * Deploy Using CloudFormation Templates
 * Deploy Using Azure Resource Manager Templates
-* Deploy Using Terraform Templates
+* [Deploy Using Terraform Templates](#deploy-using-terraform-templates)
 
 ### Deploy Using CloudFormation Templates
 
