@@ -275,7 +275,7 @@ This allows you to use the power of Cloud Application Manager (instance history,
 
 To learn more about:
 
-* Terraform configurations [see](https://www.terraform.io/docs/configuration/index.html).
+* Terraform configurations see [here](https://www.terraform.io/docs/configuration/index.html).
 
 
 In this section:
