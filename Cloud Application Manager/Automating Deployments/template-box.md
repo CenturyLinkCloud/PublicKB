@@ -339,7 +339,7 @@ We use a sample Basic Two-Tier Architecture in Google Cloud with Terraform templ
     is added as a variable, it will be available on your templates. Cloud Application Manager will add to the Terraform environmnet, on deployment time, the Terraform `module` section so you don't need to add it in your files. Anyway you could reference it on your `outputs` for example:
         * `value = "${module.TWO_TIER_MODULE.pool_public_ip}"`
 
-        ![terraformboxes5.png](../../images/cloud-application-manager/terraformboxes5.png)
+        ![Terraform module through a Box variable](../../images/cloud-application-manager/terraformboxes5.png)
 
     * The file variable is a useful way to include a script that you want to use to provision your machines, or keys for your resources. When you add a file variable, Cloud Application Manager stores it on a secure server and it will add the file to the Terraform environment. The file variable will contain the file path in the Terraform environment so it could be used in your configuration files. Examples:
 
