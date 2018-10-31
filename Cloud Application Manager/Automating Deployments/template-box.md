@@ -317,7 +317,7 @@ We use a sample Basic Two-Tier Architecture in Google Cloud with Terraform templ
 
 1. Start importing [sample Basic Two-Tier Architecture in Google Cloud templates](https://github.com/terraform-providers/terraform-provider-google/tree/2.0.0/examples/two-tier) and click the pencil of some Terraform files to modify.
 
-     ![terraformboxes4.png](../../images/cloud-application-manager/terraformboxes4.png)
+     ![Edit Terraform template file](../../images/cloud-application-manager/terraformboxes4.png)
 
      **Note**: For more information on creating Terraform configuration templates, please refer to the official [documentation](https://www.terraform.io/docs/configuration/index.html).
 
