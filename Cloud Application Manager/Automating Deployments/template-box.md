@@ -323,7 +323,7 @@ We use a sample Basic Two-Tier Architecture in Google Cloud with Terraform templ
 
 2. Customize parameters. Although optional, if you have them in the template, they’re automatically shown under Variables. You can customize several parameters as in this example.
 
-    ![terraformboxes3.png](../../images/cloud-application-manager/terraformboxes3.png)
+    ![Terraform template box variables](../../images/cloud-application-manager/terraformboxes3.png)
 
      **Variables in Terraform boxes**:
 
