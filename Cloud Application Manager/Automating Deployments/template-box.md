@@ -296,7 +296,7 @@ We use a sample Basic Two-Tier Architecture in Google Cloud with Terraform templ
 
 2. Click **Boxes > New > Template > Terraform Template**. Give the box a meaningful name to identify it in the box service catalog. Specify other [metadata](../Core Concepts/boxes.md).
 
-     ![terraformboxes1.png](../../images/cloud-application-manager/terraformboxes1.png)
+     ![New Terraform template box](../../images/cloud-application-manager/terraformboxes1.png)
 
 3. In the box, select **New** in Templates, under Code tab.
 
