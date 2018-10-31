@@ -331,7 +331,7 @@ We use a sample Basic Two-Tier Architecture in Google Cloud with Terraform templ
 
     * Variables imported from a template are always required at deploy time even if you don’t flag them as such in the box. Since they must contain values at launch time, you can set a default value when creating them or supply them at deploy time.
 
-    * The text variable can be parametrized through Jinja, for example to use binding information. See more documentation about this [here](syntax-for-variables.md).
+    * The text variables can be parametrized through Jinja, for example, to use binding information. See more documentation about this [here](syntax-for-variables.md).
 
     * Terraform local modules are supported adding [box type variables](parameterizing-boxes-with-variables.md) to the Terraform Box.
     Box variables added to your Terraform box will be automatically available on your template as Local modules named as the variable name.
