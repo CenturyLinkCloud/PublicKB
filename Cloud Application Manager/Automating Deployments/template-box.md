@@ -325,7 +325,7 @@ We use a sample Basic Two-Tier Architecture in Google Cloud with Terraform templ
 
     ![terraformboxes3.png](../../images/cloud-application-manager/terraformboxes3.png)
 
-     Variables in Terraform boxes:
+     **Variables in Terraform boxes**:
 
     * Bindings have a special use and are explained later in this walkthrough.
 
