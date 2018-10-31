@@ -7,13 +7,11 @@
 }}}
 
 
-### New Features (4)
+### New Features (3)
 
 * __Managed OS.__ Clients can leverage our deep expertise in infrastructure and application management and offload critical IT functions for important applications. Managed servers are regularly patched and monitored, so the risks from viruses and other threats are reduced. __Managed OS are now available in three new locations: Singapore (SG1), Toronto (CA3), and Chicago (IL1).__
 
   Managed OS continue to be available in Virginia (VA1), Santa Clara (UC1) and London (GB3).
-
-* __Patching as a Service.__ Now available for free to all CenturyLink customers using Windows 2012. Our customers can patch their Windows 2012 servers through blueprints or 'execute package' on demand via the Control Portal or API. The service provides the capability to patch servers, know when the patching started and finished as well as list of all patches applied. [You can learn more about Patching as a Service in our KB.](../../Servers/patching-as-a-service.md)
 
 * __Orchestrate.__ Our multi-modal managed datatabse service, [Orchestrate](https://www.ctl.io/blog/post/centurylink-acquires-orchestrate/), gives developers a single API for key-value, geospatial, graph, and timeseries data. And it just keeps getting better and better! Check out the new functionality delivered this month, focused on usability and exposing API features:
 
@@ -39,7 +37,7 @@
 
 * __CenturyLink Cloud Status.__ [status.ctl.io](//status.ctl.io/) provides real-time updates on the status of CenturyLink Cloud services, and upcoming maintenance notifications. Notifications surrounding Compute, Network, and Storage are now based on what servers an account has in a specific data center, allowing our customers to get the information they need - and only the information that they need.
 
-  Our KB has more [information about the CenturyLink Cloud Status service.](../../General/centurylink-cloud-status-faq.md)
+  Our KB has more [information about the CenturyLink Cloud Status service.](../../General/CenturyLinkCloud/centurylink-cloud-status-faq.md)
 
 
 ### Online Tools (1)

@@ -1,6 +1,6 @@
 {{{
 "title": "Getting Started Guide: Alert Logic Log Manager",
-"date": "04-05-2017",
+"date": "10-15-2018",
 "author": "",
 "attachments": [],
 "contentIsHTML": false

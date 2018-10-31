@@ -25,6 +25,7 @@ Log into the Control Portal to acquire your user credentials.
 1. From the Navigation Menu, Click **Services > Object Storage**. On the Object Storage page, click the **Users** tab.
 
 2. Click the user name associated with the buckets (or has access to an individual bucket) that you want to access. Locate and record the **access key id** and the **secret access key** values. These act as your credentials for all API operations.
+
    ![Access Keys](../images/kb-object-storage-access-keys.png)
 
 3. Create a new Visual Studio project. In this example, the project is a **Console** application.
@@ -247,6 +248,7 @@ using (var client2 = new HttpClient())
 ```
 
 8. Run the application and first see that all Object Storage buckets are returned, and then ask for the contents of a single bucket.
+
    ![kb-objectstorage.gif](https://t3n.zendesk.com/attachments/token/bkeyeatvpms07td/?name=kb-objectstorage.gif)
 
 ### Using Amazon SDK for .NET to Interact with Object Storage
@@ -334,6 +336,7 @@ Node.js is a popular platform for building high-performing JavaScript-friendly a
 
 ### Detailed Steps
 1. Create a [new Node.js project](http://nodejs.org/"). This example solution uses the [Express framework](http://expressjs.com/) to provide an MVC foundation to the application.
+
    ![objectstorage-api04.png](https://t3n.zendesk.com/attachments/token/agqgzziwti8eium/?name=objectstorage-api04.png)
 
 2. Use the Node Package Manager (npm) to install the [AWS SDK for Node](http://aws.amazon.com/sdkfornodejs/) by using the `npm install aws-sdk` command.
@@ -405,3 +408,19 @@ table(class="table table-striped table-bordered table-hover")
 ```
 
 6. Run the Node.js application and see that the list of CenturyLink Cloud Object Storage buckets is retrieved and displayed on the page.
+
+### Using the Amazon SDK for Java to Interact with Object Storage
+Amazon Web Services also ships an [SDK for Java](https://aws.amazon.com/sdk-for-java/), and that SDK works with CenturyLink Cloud Object Storage. To get started, include the package in your project; an example for Gradle is shown below (syntax can vary if a different build system is being used and/or if a different version of the package is desired).
+```
+compile 'com.amazonaws:aws-java-sdk-s3:1.11.411'
+```
+
+You can then use the following code to create a client object that can be used to interact with CenturyLink Cloud Object Storage:
+```
+AmazonS3 s3client = AmazonS3ClientBuilder.standard()
+            .withClientConfiguration(new ClientConfiguration().withSignerOverride("S3SignerType"))
+            .withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration("https://canada.os.ctl.io", ""))
+            .build()
+```
+
+There are several different options to configure the client's behavior, including how to [supply it with your credentials](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/credentials.html). Documentation on how to use the client to perform operations like listing buckets, listing objects in a bucket, creating a bucket, creating an object in a bucket, and more can be found [here](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/examples-s3.html).

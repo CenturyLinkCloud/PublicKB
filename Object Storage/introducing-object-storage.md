@@ -19,7 +19,7 @@ A: CenturyLink Cloud Object Storage is based on a popular software package with 
 
 **Q: What are the key vocabulary terms for Object Storage?**
 
-A: Object Storage is deployed in a series of "regions" which include data centers for each CenturyLink Cloud geography (US, Canada, Europe). Note that as of this time, Object Storage is only available in Canada and US-East. Object Storage uses "buckets" to hold "objects." Buckets are flat (no hierarchy) and can contain an unlimited number of objects and unlimited amount of storage. "Access Control Lists" (ACLs) describe permissions to a bucket and the objects within it. Object Storage "users" are associated with a given region and have an "access key ID" and "secret access key" which act as the user's username and password for accessing storage.
+A: Object Storage is deployed in a series of "regions" which include data centers for each CenturyLink Cloud geography (a full list of available regions is [here](https://www.ctl.io/knowledge-base/object-storage/object-storage-regions-and-service-points/)). Object Storage uses "buckets" to hold "objects." Buckets are flat (no hierarchy) and can contain an unlimited number of objects and unlimited amount of storage. "Access Control Lists" (ACLs) describe permissions to a bucket and the objects within it. Object Storage "users" have an "access key ID" and "secret access key" which act as the user's username and password for accessing storage.
 
 **Q: How do Object Storage users relate to CenturyLink Cloud users?**
 
@@ -37,7 +37,7 @@ A: Data stored in an Object Storage region is stored in a highly available, faul
 
 A: Bucket Administrators can use the CenturyLink Cloud Control Portal to create users, create buckets, and secure buckets. Object users and developers have their choice of numerous best-of-breed tools for interfacing with objects.
 
-**Q: So what exact do I do in the Control Portal vs. 3rd party tools?**
+**Q: What can I do in the Control Portal vs. 3rd party tools?**
 
 A: The following breakdown explains what is available in the Control Portal and what you should use 3rd party tools for:
 

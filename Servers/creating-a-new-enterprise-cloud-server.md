@@ -19,7 +19,7 @@ The heart of the CenturyLink Cloud Platform is the ability to create and manage 
     * Data Center Location
     * Group Membership
     * [Managed Operating System](https://www.ctl.io/managed-services/operating-system/) (if available in selection location)
-    * Server Type: [Standard](https://www.ctl.io/servers/) or [Hyperscale](https://www.ctl.io/hyperscale/) (if available in selection location)
+    * Server Type: [Standard](https://www.ctl.io/servers/) 
     * [Operating System](../Support/supported-operating-systems.md)
     * [Server Name](../Servers/server-naming-convention.md)
     * Description
@@ -29,7 +29,7 @@ The heart of the CenturyLink Cloud Platform is the ability to create and manage 
 
 3. Input the required resources, network and other advanced configuration information for your new server.
     * CPU, RAM & Storage up to [the platform maximums](../Servers/cloud-server-instance-size-and-performance.md). Virtual server configurations can be modified after deployment.
-    * Enable a [CPU autoscale](../Autoscale/creating-and-applying-autoscale-policies.md) policy if desired.
+    * Enable a [CPU autoscale](../General/Autoscale/creating-and-applying-autoscale-policies.md) policy if desired.
     * Select a [Network](../Network/creating-and-deleting-vlans.md) for your virtual machine.
     * Set a primary and secondary dns server.
     * Enable a Time to Live (TTL) if desired for your virtual machine to be destroyed.

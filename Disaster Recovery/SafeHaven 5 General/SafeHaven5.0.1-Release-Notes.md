@@ -51,9 +51,8 @@ Download links:
   * [SafeHavenClient.5.0.1-hotfix1_win64.jar](https://download.safehaven.ctl.io/SH-5.0.1/SafeHavenClient.5.0.1-hotfix1_win64.jar): the Java application that requires an existing 64bit JRE-8 to run on a Windows OS. For quick upgrading, can be used to replace the existing SafeHavenClient.jar
  
 ### Documentations
- 
 
-[SafeHaven Inventory Sheet](https://download.safehaven.ctl.io/SH-5-Docs/SafeHaven-Inventory-Sheet-1.xlsm)
+[SafeHaven Inventory Sheet](https://download.safehaven.ctl.io/SH-5-Docs/SafeHaven-Inventory-Sheet-Azure.xlsm)
 
 
 Please note that you can check the md5 checksum against the file named [MD5SUMS](https://download.safehaven.ctl.io/SH-5.0.1/MD5SUMS).

@@ -10,8 +10,8 @@
 
 * [Introduction](#introduction)
 * [Overview](#overview)
-* [Supported Versions](#supported-versions)
-* [Supported Editions](#supported-editions)
+* [Supported Installation Types](#supported-installation-types)
+* [Supported Options](#supported-options)
 * [Supported Operating Systems](#supported-operating-systems)
 * [License](#license)
 * [Installation Features](#installation-features)
@@ -26,7 +26,7 @@ Internet Information Services (IIS, formerly Internet Information Server) is an 
 ### Overview
 Cloud Application Manager’s Managed Services Anywhere (MSA) allows customers to depend on CenturyLink to manage cloud deployed workloads, relieving themselves of the burdens of day to day monitoring, patching and Operational activities.  Through Cloud Application Manager's Managed Service Anywhere (MSA), a customer can provision a VM instance running Apache within any MSA enabled provider and because Managed Services has been enabled on the provider, CenturyLink will manage both the Operating System and IIS.
 
-### Supported Installation types
+### Supported Installation Types
 *  Basic
 *  Full
 *  ASP.NET

@@ -18,7 +18,7 @@ The CenturyLink Cloud Service Task team can import images of existing physical o
   * Whether the imported VM is to be a [Managed OS](../Managed Services/managed-operating-system-frequently-asked-questions.md) instance.
   * Account and Group in the Control Portal that the Virtual Machine(s) will be registered in
   * VLAN or Network the Virtual Machine is to utilize
-  * Type of Virtual Server (Standard or Hyperscale)
+  * Type of Virtual Server
   * Validate the [Guest Operating System is supported on the CenturyLink Cloud for Import](../Service Tasks/supported-guest-operating-systems-for-ovaovf-import.md)
 
 
@@ -36,7 +36,7 @@ The CenturyLink Cloud Service Task team can import images of existing physical o
 
 * Member servers may rely on domain controllers not present in the CenturyLink Cloud environment to properly authenticate or execute policies- please take this into consideration when planning the upload priority, order and testing methodology. While not always possible, it is considered best practice disjoin the machine from the domain prior to exporting and then rejoin the domain once the import is complete, as the machine’s virtual hardware, SID and other descriptors will have changed. The possible lack of CLC-based authentication is the basis for requiring the customer provide a local administrator account prior to import.
 
-* The same snapshot-based backup and restoration tools are available for imported templates, but note these are not transaction-safe so application-or-database-aware backups should be utilized. When deploying templates on a platform without snapshot capability (such as Hyperscale) then the customer is responsible for developing and testing a backup and recovery methodology.
+* The same snapshot-based backup and restoration tools are available for imported templates, but note these are not transaction-safe so application-or-database-aware backups should be utilized. When deploying templates on a platform without snapshot capability then the customer is responsible for developing and testing a backup and recovery methodology.
 
 * Describe any dependencies, specific applications to be tested, or other non-standard configurations to be tested during import.
 

@@ -3,8 +3,7 @@
   "date": "06-22-2018",
   "author": "Shi Jin",
   "attachments": [],
-  "contentIsHTML": false,
-  "sticky": true
+  "contentIsHTML": false
 }}}
 
 ### Release Notes
@@ -41,5 +40,9 @@ Please take a look at the link below to download the latest available release
   * [MakeStub.exe](https://download.safehaven.ctl.io/SH-5.1.0/MakeStub-5.1.0.exe)
 * [Linux SafeHaven Onboarding Scripts Downloads](https://download.safehaven.ctl.io/SH-5.1.0/safehaven_linux_onboarding_scripts-5.1.0.tar.gz)
 * [script to turn a Ubuntu-14 machine into a recovery proxy for Windows servers](https://download.safehaven.ctl.io/SH-5.1.0/makestub_for_windows.sh)
+
+
+### Documentations
+[SafeHaven Inventory Sheet](https://download.safehaven.ctl.io/SH-5-Docs/SafeHaven-Inventory-Sheet-Azure.xlsm)
  
 Please note that you can check the md5 checksum against the file named [MD5SUM-5.1.0.txt](https://download.safehaven.ctl.io/SH-5.1.0/MD5SUM-5.1.0.txt).

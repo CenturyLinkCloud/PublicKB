@@ -55,4 +55,4 @@ These new features are presently available in our UC1 and VA1 Data Centers with 
 
 Please note, our Shared Load Balancing service will continue to be available in all other data centers until they are LBaaS enabled.  Shared Load Balancer customers in those data centers that do not yet have LBaaS will continue with pricing set at $0.04/instance hour.
 
-For additional information please check out our [FAQ](../../LBaaS/LBaaSFAQ.md) as well as our [getting started guide] (../../LBaaS/getting-started-with-load-balancer-as-a-service.md).  As always, feel free to contact us directly should you have unanswered questions or feedback!  We look forward to hearing from you!
+For additional information please check out our [FAQ](../../General/LBaaS/LBaaSFAQ.md) as well as our [getting started guide] (../../LBaaS/getting-started-with-load-balancer-as-a-service.md).  As always, feel free to contact us directly should you have unanswered questions or feedback!  We look forward to hearing from you!

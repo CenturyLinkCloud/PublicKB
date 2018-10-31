@@ -25,7 +25,7 @@ To create a new policy, you need to click the “New” button in the upper left
 
 ![CreatePolicy](../../images/CreatePolicy.PNG)
 
-From there you will be able to set up the metric or status checks you want to see.  You can also set up the servers you want to associate the checks with as well.
+From there you will be able to set up the metric or status checks you want to see.  You can also set up the servers (**Agents**) you want to associate the checks with as well.
 
 ![AddPolicyCheckandServer](../../images/AddPolicyCheckandServer.PNG)
 
