@@ -4,7 +4,7 @@
 "attachments": [],
 "contentIsHTML": false
 }}}
-
+**In this article:**
 
 * [Deploy Using CloudFormation Templates](#deploy-using-cloudformation-templates)
 * [Deploy Using Azure Resource Manager Templates](#deploy-using-azure-resource-manager-templates)
