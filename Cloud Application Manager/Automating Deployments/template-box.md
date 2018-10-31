@@ -286,7 +286,7 @@ In this article:
 
 ### Create a Terraform Template and apply configuration
 
-The Terraform Template box consists mainly of a template list where you describe all the cloud resources you need to run your application. Cloud Application Manager parses the templates and automatically shows input parameters under a section called Variables. This enables you to customize a template easily.
+The Terraform Template box consists mainly on a list of template files where you describe all the cloud resources you need to run your application. Cloud Application Manager parses the templates and automatically shows input parameters under a section called Variables. This enables you to customize a template easily.
 
 We use a sample Basic Two-Tier Architecture in Google Cloud with Terraform templates to show how to create and launch a Terraform box template in Cloud Application Manager.
 
