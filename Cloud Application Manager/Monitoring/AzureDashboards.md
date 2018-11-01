@@ -11,13 +11,13 @@
 
 ### Overview:
 
-The Cloud Application Manager Monitoring dashboard allows customers to view cloud native monitoring data for Microsoft Azure & Amazon Web Services (AWS) providers.  Our goal is to provide users of the Cloud Application Manager Monitoring site with Cloud Provider metrics and graphs about their infrastructure and services residing within AWS and Azure.  
+The Cloud Application Manager Monitoring dashboard allows customers to view cloud native monitoring data for Microsoft Azure & Amazon Web Services (AWS) providers.  Our goal is to provide users of the Cloud Application Manager Monitoring site with Cloud Provider metrics and graphs for their infrastructure and services in AWS and Azure.  
 
  ![Dashboards Full](../../images/WatcherDashboard.PNG)
 
 #### Features:
 
-•	User will be able to list & switch between Azure providers within a Workspace 
+•	User will be able to list & select providers configured within a Workspace 
 
 •	All Application Insights resource types/namespaces are available to be viewed as individual dashboards
 
@@ -43,7 +43,7 @@ The Cloud Application Manager Monitoring dashboard allows customers to view clou
 #### Navigation 
 
 Left Navigation:  
-When a user navigates to the Cloud Application Manager Monitoring site they will see a Dashboard tab on the left-hand side.  All configured AWS and Azure providers will be listed under the Dashboards tab.  Only one provider may be opened at a time and only the metrics related to that provider are listed (dynamically loaded).  An example would be that Azure may have 200 metrics available but the configured provider set up 22 CloudWatch metric checks.  Only the 22 will be shown and not every metric available.
+When a user navigates to the Cloud Application Manager Monitoring site they will see a Dashboard tab on the left-hand side.  All configured AWS and Azure providers will be listed under the Dashboards tab.  Only one provider may be opened at a time and only the metrics related to that provider are listed (dynamically loaded).
 
  ![Dashboard Left Nav](../../images/Watcher%20Left%20Side%20Nav.PNG)
 
