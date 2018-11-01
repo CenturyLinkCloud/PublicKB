@@ -47,7 +47,7 @@ When a user navigates to the Cloud Application Manager Monitoring site they will
 
  ![Dashboard Left Nav](../../images/Watcher%20Left%20Side%20Nav.PNG)
 
-Lazy Loading:  
-When a user selects a service listed under their provider, all metrics associated with that service will be loaded.  On the screen, just the graphs that are visible are loaded.  As you scroll left/right or up/down the graphs will start loading.  This is called lazy loading and improves performance by only loading the graphs that are visible.  Minimal charges may apply after AWS CloudWatch free tier limit is exceeded.  Please [click here](https://aws.amazon.com/cloudwatch/pricing) to view the AWS free tier details and pricing.
+**Lazy Loading:**  
+When a user selects a service listed under their provider, all metrics associated with that service will be loaded.  On the screen, just the graphs that are visible are loaded.  As you scroll left/right or up/down the graphs will start loading.  This is called lazy loading and improves performance by only loading the graphs that are visible.  
  
 ![Dashboard](../../images/Watcher%20Azure%20Dashboard.PNG)
