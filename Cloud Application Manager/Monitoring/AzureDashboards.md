@@ -13,7 +13,7 @@
 
 The Cloud Application Manager Monitoring dashboard allows customers to view cloud native monitoring data for Microsoft Azure & Amazon Web Services (AWS) providers.  Our goal is to provide users of the Cloud Application Manager Monitoring site with Cloud Provider metrics and graphs about their infrastructure and services residing within AWS and Azure.  
 
- ![Dashboards Full](../images/WatcherDashboard.PNG)
+ ![Dashboards Full](../../images/WatcherDashboard.PNG)
 
 #### Features:
 
