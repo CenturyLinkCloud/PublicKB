@@ -7,8 +7,6 @@
 "contentIsHTML": false
 }}}
 
-### Using Microsoft Azure
-
 **In this article:**
 
 * [Overview](#overview)
@@ -303,4 +301,4 @@ For issues related to API calls, send the request body along with details relate
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
 
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+* Windows: RDP into the instance to locate the log at /ProgramData/ElasticBox/Logs/elasticbox-agent.log
