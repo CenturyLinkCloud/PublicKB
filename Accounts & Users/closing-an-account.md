@@ -12,7 +12,7 @@
 We're sorry to see you go. To make sure your off-boarding experience is as easy as possible, follow the steps below. Please be aware that it's not possible to recover an account or the associated assets after the account is deleted. Proceed cautiously to ensure you've recovered all data before proceeding to deletion.
 
 ### Exceptions
-- Cloud Term Commitment Customers: If you have a cloud term commitment, please contract your sales representative to execute a terminate service order.
+- Cloud Term Commitment Customers: If you have a cloud term commitment, please contact your sales representative to execute a terminate service order.
 
 ### Detailed Steps
 1. Ascertain all the services in use created by the account. Viewing the account's [Usage History][1] can help with this.
