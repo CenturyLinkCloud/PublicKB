@@ -62,3 +62,5 @@ Your OVF must meet the following requirements to be imported successfully.
 - All OVF files will be deleted 5 days after initial import. Please import your images soon after completion of the FTP transfer.
 - Managed Services are not available on imported VMs.
 - Import failures can be caused by conflicting settings on the OVF. To assist with troubleshooting a failured OVF, try to import the OVF back into the original virtualized environment and gather logs from this activity.
+
+
