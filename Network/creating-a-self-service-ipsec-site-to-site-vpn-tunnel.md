@@ -91,6 +91,7 @@
  ><strong>Service Task</strong></a> engagement, which is a fee-based deployment performed manually on the applicable data center firewall (depending on the data center you wish to connect). Once the task is engaged as a Service Task, we will send you a standard form which we require to be filled out and sent back on the request ticket. This information will define the Site-to-Site VPN specifications we'll use to build and deploy the configuration. Contact your account manager with any questions, or send mail to help@ctl.io and we will advise further.</p>
 <p>Common reasons for non-standard VPN tunnels include:</p>
 <ul>
+  <li>IKEv2 VPNs</li>
   <li>Requesting an engineer to perform a live turn-up with you on a conference call</li>
   <li>Requesting CenturyLink Cloud complete your organization's VPN information, or provide network documentation beyond what is included in this article.</li>
   <li>Any requirement for an engineer to attend a live meeting or telephone call.</li>
@@ -101,6 +102,7 @@
       supply the public IP address space to be used to present your data center resources.</li>
   </ul>
   <li>Using the VPN as a fail-over for direct-connect customers (ex. you want to back-up your MPLS WAN with a VPN tunnel)</li>
+  <li>Redundant VPN - Verified with SonicWall using Dead Peer Detection - Note that some customer endpoints will not support redundancy, we will work with you on a case by case basis to determine compatiblity</li>
   <li>Certificate-based authentication</li>
   <li>Non-IP Address IKE identity (such as used with a dynamic remote peer IP address, or hostname-based identity strings)</li>
   <li>User requires assistance with their device (no technical expertise in-house) - we can provide one-time configuration assistance for most enterprise-class VPN endpoints:</li>
