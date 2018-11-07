@@ -30,7 +30,7 @@ Finally, it provides the approval process for the [Marketplace Provider Agreemen
 
 ### Marketplace Provider Agreement (MPA)
 
-The Marketplace Provider Agreement governs the Terms & Conditions of your products entry into the Marketplace. It can be found [here](https://www.ctl.io/legal/marketplace/). If you have questions about the agreement, please address them with the CenturyLink Marketplace Digital Team by contacting us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
+The Marketplace Provider Agreement governs the Terms & Conditions of your products entry into the Marketplace. It can be found [here](https://www.ctl.io/legal/marketplace/). If you have questions about the agreement, please address them with the CenturyLink Hybrid IT Marketplace Team by contacting us at [Marketplace@centurylink.com](mailto:Marketplace@centurylink.com).
 
 ### CenturyLink Cloud Marketplace
 
@@ -42,6 +42,6 @@ A CenturyLink Cloud Account is required to be a provider on the CenturyLink Cl
 
 ### Getting Started Guide: Marketplace & Ecosystem Provider Portal
 
-The [Marketplace Getting Started Guide](getting-started-guide-marketplace-ecosystem-provider-portal.md) will serve as your primary guide for creating your product in the Provider Portal. We recommend using it in conjunction with the training videos provided within the Portal. Our goal for the CenturyLink Cloud Marketplace is to provide a superior user experience with respect to learning about your product. If you'd like additional support developing your content, we're here to help. Contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
+The [Marketplace Getting Started Guide](getting-started-guide-marketplace-ecosystem-provider-portal.md) will serve as your primary guide for creating your product in the Provider Portal. We recommend using it in conjunction with the training videos provided within the Portal. Our goal for the CenturyLink Cloud Marketplace is to provide a superior user experience with respect to learning about your product. If you'd like additional support developing your content, we're here to help. Contact us at [Marketplace@centurylink.com](mailto:Marketplace@centurylink.com).
 
-We update the guide monthly with any updates that have been released. If for some reason, you feel as though the guide is missing information or if you have additional questions, please let us know at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
+We update the guide monthly with any updates that have been released. If for some reason, you feel as though the guide is missing information or if you have additional questions, please let us know at [Marketplace@centurylink.com](mailto:Marketplace@centurylink.com).

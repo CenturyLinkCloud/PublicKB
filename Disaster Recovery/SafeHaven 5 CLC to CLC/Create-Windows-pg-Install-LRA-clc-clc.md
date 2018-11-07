@@ -105,7 +105,7 @@ This article assumes that:
        
   
 ### Manually Start Replication
-**Note**: This step is only required if **Windows LRA Agent** was not insalled automatially during the creation of the Protection group
+**Note**: This step is only required if **Windows LRA Agent** was not installed automatially during the creation of the Protection group
 
 1. Log into the Windows production VM.  
 2. Verify that the SafeHaven Agent has already been installed. If not then please install the SafeHaven Agent. **Requires reboot**

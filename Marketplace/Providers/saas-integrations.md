@@ -18,7 +18,7 @@ Software Providers that are classified as Software as a Service (SaaS) generally
 
 The tracking pixel option allows CenturyLink to monitor demand & accounts created by the CenturyLink Cloud Marketplace drives to your organizations website & product.
 
-Below is a JavaScript tracking pixel that may be used to integrate with the CenturyLink Cloud Marketplace. You will need the Provider Key that you were provided during onboarding with the tracking pixel. If you were not provided a Provider Key or require a new one to be issued, contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
+Below is a JavaScript tracking pixel that may be used to integrate with the CenturyLink Cloud Marketplace. You will need the Provider Key that you were provided during onboarding with the tracking pixel. If you were not provided a Provider Key or require a new one to be issued, contact us at [Marketplace@centurylink.com](mailto:Marketplace@centurylink.com).
 
 **JavaScript Tracking Pixel**
 ```
@@ -140,4 +140,4 @@ An example json payload the ```/update-subscription/``` API is provided below.
   * **expired** set to 'true' & **expired-date** not provided
 * 50x - Server Side Error
 
-Depending on how your product is billed, you may be required to call ```/update-subscription/``` multiple times per customer subscription so we can ensure the customer is appropriately billed for your services. For any questions, please contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
+Depending on how your product is billed, you may be required to call ```/update-subscription/``` multiple times per customer subscription so we can ensure the customer is appropriately billed for your services. For any questions, please contact us at [Marketplace@centurylink.com](mailto:Marketplace@centurylink.com).
