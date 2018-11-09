@@ -1,7 +1,7 @@
 {{{
-  "title": "How To: Add Public IP to Server",
-  "date": "2-13-2017",
-  "author": "Chris Little",
+  "title": "How To: Add/Edit/Delete Public IP on Server",
+  "date": "11-08-2018",
+  "author": "Christian Presley",
   "attachments": [],
   "contentIsHTML": false
 }}}
