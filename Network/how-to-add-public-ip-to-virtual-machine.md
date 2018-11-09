@@ -1,5 +1,5 @@
 {{{
-  "title": "How To: Add/Edit/Delete Public IP on Server",
+  "title": "How To: Add/Edit/Delete Public IP on Virtual Machine or Server",
   "date": "11-08-2018",
   "author": "Christian Presley",
   "attachments": [],
