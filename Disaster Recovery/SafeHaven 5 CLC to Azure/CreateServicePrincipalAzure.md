@@ -1,5 +1,5 @@
 {{{
-  "title": "Create Storage Account in Azure",
+  "title": "Create Service Principal in Azure",
   "date": "06-14-2018",
   "author": "Juan Aristizabal",
   "attachments": [],
