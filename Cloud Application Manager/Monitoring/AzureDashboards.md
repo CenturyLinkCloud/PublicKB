@@ -13,7 +13,7 @@
 
 The Cloud Application Manager Monitoring dashboard allows customers to view cloud native monitoring data for Microsoft Azure & Amazon Web Services (AWS) providers.  Our goal is to provide users of the Cloud Application Manager Monitoring site with Cloud Provider metrics and graphs for their infrastructure and services in AWS and Azure.  
 
- ![Dashboards Full](../../images/WatcherDashboard.PNG)
+ ![Dashboards Full](/images/WatcherDashboard.PNG)
 
 #### Features:
 
@@ -45,9 +45,9 @@ The Cloud Application Manager Monitoring dashboard allows customers to view clou
 Left Navigation:  
 When a user navigates to the Cloud Application Manager Monitoring site they will see a Dashboard tab on the left-hand side.  All configured AWS and Azure providers will be listed under the Dashboards tab.  Only one provider may be opened at a time and only the metrics related to that provider are listed (dynamically loaded).
 
- ![Dashboard Left Nav](../../images/Watcher%20Left%20Side%20Nav.PNG)
+ ![Dashboard Left Nav](/images/Watcher%20Left%20Side%20Nav.PNG)
 
 **Lazy Loading:**  
 When a user selects a service listed under their provider, all metrics associated with that service will be loaded.  On the screen, just the graphs that are visible are loaded.  As you scroll left/right or up/down the graphs will start loading.  This is called lazy loading and improves performance by only loading the graphs that are visible.  
  
-![Dashboard](../../images/Watcher%20Azure%20Dashboard.PNG)
+![Dashboard](/images/Watcher%20Azure%20Dashboard.PNG)
