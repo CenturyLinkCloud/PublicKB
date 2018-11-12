@@ -27,7 +27,7 @@ Your OVF must meet the following requirements to be imported successfully.
 - Only a single image should be present. Multiple images (for example a vApp) are not supported. Refer to the [Open Virtualization Format White Paper](http://www.dmtf.org/sites/default/files/standards/documents/DSP2017_2.0.0.pdf) for more information.
 - The OVF file name must not include a "`.`" or a "`-`".
 - Ping should not be blocked on the firewall.
-- The VMware hardware version (VMX) must be 8 or lower.
+- The VMware hardware version (VMX) must be 11, 12 or 13.
 - The latest version of VMware Tools must be installed. You will get the error message that reads "the guest operations agent is out of date" if your version is not correct.
 - The OVF must be exported from VMware. Other hypervisors are not supported.
 - The current Administrator or Root password must be input during the import process.
@@ -56,9 +56,11 @@ Your OVF must meet the following requirements to be imported successfully.
 - In addition, the import function will enable the following capabilities if they are not available on your OVF image:
   - For Windows: PSEXEC must not be firewalled. PS Remoting is enabled. WinRM is enabled.
   - For Red Hat: Ensure the root account’s shell is Bash.
-- We assume that Windows OVFs are properly licensed under Volume Licensing. Upon successful import, the OVF is then licensed using CenturyLink's SPLA agreement with Microsoft. No changes are made to the license key during import.
-- Bring your own licensing is not supported for neither Windows nor Red Hat.
+- We assume that Windows OVFs are properly licensed under Volume Licensing. Upon successful import, the OVF is then licensed using CenturyLink's SPLA agreement with Microsoft. 
+- Licenses for OVF files are managed by CenturyLink. Customer provided licenses are not supported.
 - All OVF files will be stored in the FTP server located in your account's home data center.
 - All OVF files will be deleted 5 days after initial import. Please import your images soon after completion of the FTP transfer.
 - Managed Services are not available on imported VMs.
 - Import failures can be caused by conflicting settings on the OVF. To assist with troubleshooting a failured OVF, try to import the OVF back into the original virtualized environment and gather logs from this activity.
+
+

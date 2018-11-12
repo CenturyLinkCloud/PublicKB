@@ -78,4 +78,4 @@ The Help tab is where Providers can go to watch tutorial videos and find links t
 * [GitHub Markdown Editor](https://markdown-it.github.io/)
 * The CenturyLink Cloud [Marketplace](https://www.ctl.io/marketplace/)
 * Marketplace Provider [Onboarding Resource Guide](onboarding-resources.md).
-* For questions or suggestions on how to make this Guide more useful, email the [Marketplace team](mailto:Marketplace@ctl.io).
+* For questions or suggestions on how to make this Guide more useful, email the [Marketplace team](mailto:Marketplace@centurylink.com).

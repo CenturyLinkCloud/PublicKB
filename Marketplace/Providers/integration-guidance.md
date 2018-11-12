@@ -13,7 +13,7 @@ In general, The CenturyLink Cloud Marketplace integrates with two primary softwa
 1. Traditional software that requires the provider software to be installed on the customer's infrastructure.
 2. Software as a Service, or SaaS.
 
-While there is no exact criteria for the software that is eligible to be integrated into the CenturyLink Cloud Marketplace, below is guidance on what scenarios we see most frequently. If your organizations software doesn't match all of the criteria, your software is still likely a match. Contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io) to discuss further.
+While there is no exact criteria for the software that is eligible to be integrated into the CenturyLink Cloud Marketplace, below is guidance on what scenarios we see most frequently. If your organizations software doesn't match all of the criteria, your software is still likely a match. Contact us at [Marketplace@centurylink.com](mailto:Marketplace@centurylink.com) to discuss further.
 
 ### Guidance
 
@@ -44,4 +44,4 @@ While there is no exact criteria for the software that is eligible to be integra
 * System Integrators
 * Independent Software Vendors (ISVs)
 
-To express interest in joining the program, prospective partners can visit the [CenturyLink Marketplace Provider Program](https://www.ctl.io/marketplace-program/) web page, reach out to their sales account manager directly, or email the [Marketplace team](mailto:Marketplace@ctl.io).
+To express interest in joining the program, prospective partners can visit the [CenturyLink Marketplace Provider Program](https://www.ctl.io/marketplace-program/) web page, reach out to their sales account manager directly, or email the [Marketplace team](mailto:Marketplace@centurylink.com).

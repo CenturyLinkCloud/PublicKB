@@ -49,7 +49,7 @@ Method 2. Manual LRA Installation and Manually Start Initial Replication
 
 ### METHOD 1
 #### Automatic/Ansible LRA installation and Automatically Start Initial Replication
-1. Once the Protection Group is created and its status is **Ready** on the Properties tab, right click on it and click **Install Local Replication Agent**.
+1. Once the Protection Group is created and its status is **Running** on the Properties tab, right click on it and click **Install Local Replication Agent**.
 2. First select the VM you need to install LRA on, then click **Next**.
 3. Next you will need to provide the credentials for each protected VM, and acknowledge that you understand that :  
     a. Each selected virtual server will automatically reboot during the process.  
