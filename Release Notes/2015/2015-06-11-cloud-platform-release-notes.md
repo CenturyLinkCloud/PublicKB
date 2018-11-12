@@ -13,22 +13,6 @@
 
   Managed OS continue to be available in Virginia (VA1), Santa Clara (UC1) and London (GB3).
 
-* __Orchestrate.__ Our multi-modal managed datatabse service, [Orchestrate](https://www.ctl.io/blog/post/centurylink-acquires-orchestrate/), gives developers a single API for key-value, geospatial, graph, and timeseries data. And it just keeps getting better and better! Check out the new functionality delivered this month, focused on usability and exposing API features:
-
-  * New dashboard query form. Explore the full glory of Orchestrate's API with the newly updated dashboard UI.
-  * New bulk write API.  Write up to 250 documents, events, and graph relations in one request.
-
-  Read more about [how you can get started with Orchestrate](//www.orchestrate.io/docs).
-
-* __Network APIs.__ Networking functions are now available via self-service API. Specific capabilities include:
-  * Create an intra-DC firewall
-  * Get an intra-DC firewall policy
-  * Get an intra-DC firewall policy list
-  * Update an intra-DC firewall policy
-
-  [**Review the documentation for APIs here.**](//www.ctl.io/api-docs/v2/#firewall-policies)
-
-
 ### Minor Enhancements (3)
 
 * __Database as a Service.__ Certified Managed MySQL now works with RHEL6 and 7. You can [read more about Managed MySQL in our KB](../../Managed Services/getting-started-with-managed-mysql.md).
@@ -38,11 +22,6 @@
 * __CenturyLink Cloud Status.__ [status.ctl.io](//status.ctl.io/) provides real-time updates on the status of CenturyLink Cloud services, and upcoming maintenance notifications. Notifications surrounding Compute, Network, and Storage are now based on what servers an account has in a specific data center, allowing our customers to get the information they need - and only the information that they need.
 
   Our KB has more [information about the CenturyLink Cloud Status service.](../../General/CenturyLinkCloud/centurylink-cloud-status-faq.md)
-
-
-### Online Tools (1)
-
-* __Blueprint Formation.__ Take our new blueprint formation tool for a spin. [This GitHub repository](//github.com/CenturyLinkCloud/bpformation) contains a command line interface to interact with the CenturyLink Cloud Blueprints packaging and workflow services.
 
 
 ### Notifications (2)
