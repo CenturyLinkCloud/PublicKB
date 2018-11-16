@@ -48,11 +48,13 @@ Note a couple of things about instances you deploy on CenturyLink Cloud through 
 
 | Option | Description |
 |--------|-------------|
+| Server Type | Select a server type, for example, standard. |
 | Datacenter | Select a location to place the instance, for example, UC1. |
 | Group |	Select placement group for the new instance. |
 | Template | Select from a list of CenturyLink Cloud Linux or Windows images. Images are specific to the box service type, that is, Linux or Windows. |
-| Managed |	Allow CenturyLink manage this server. |
 | Instances | Specify the number of instances to provision. |
+| Admin/root Password | Choose Admin/root password for your instance |
+| Confirm Password | Confirm the password |
 
 
 **Network**
