@@ -78,7 +78,7 @@ The CenturyLink Marketplace Provider Program is designed to provide additional v
 * Leverage existing, proven technology deployed in other operating environments outside CenturyLink cloud
 * Implement your own Encryption standards
 * Advanced feature sets such as Hot backup agents for MS SQL and Hyper-V Integration on Bare Metal
-* [List of Partners](../Ecosystem Partners/General/ecosystem-partner-list.md)
+
 
 ### Comparison Matrix
 
