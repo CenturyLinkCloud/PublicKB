@@ -12,7 +12,6 @@
 CenturyLink Cloud offers customers a wide range of load balancing solutions in our product catalog.  Customers who wish to quickly review the choices along with features and capabilities can use the comparison matrix below.
 
 ### Comparison Matrix
-
 -----------|---------------------|---------|-----------------------------------------|-------------
 Control Integration<sup>1</sup>|Yes|Yes|No|No
 High Availability|Yes|Yes|Optional|Optional
