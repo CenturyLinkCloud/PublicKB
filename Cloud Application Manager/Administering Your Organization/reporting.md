@@ -55,7 +55,7 @@ At the bottom, there are two charts which describe the use of providers and the 
 
 ### Cost Center scope
 
-In this scope, the information showed is focused on cost usage and provider usage.
+In this scope, the information showed is focused on resources and provider usage.
 At the top, there are four boxes with the information described below:
                                                           
 * **Instances** - Total number of instances inside of the cost center with the line chart of the last month.
