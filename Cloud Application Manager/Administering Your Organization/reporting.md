@@ -65,7 +65,7 @@ At the top, there are four boxes with the information described below:
 
 ![CAM Cost Center Dashboard](../../images/cloud-application-manager/admin-reports2.png)
 
-At the bottom, as well as it happens with the workspace scope, there are two charts, one with the Usage by provider and the other with the Usage by cost by workspace. Both can be filtered by date range. And the last one, can also be filtered by provider type.
+At the bottom, as well as it happens with the workspace scope, there are two charts, one with the Usage by provider and the other with the Usage by workspace. Both can be filtered by date range. And the last one, can also be filtered by provider type.
 If you filter by provider type, the chart shows the information organized by account, services, sizes or locations.
 
 ![CAM Cost Center Dashboard Provider](../../images/cloud-application-manager/admin-reports3.png)
