@@ -85,7 +85,7 @@ At the top, there are five boxes with the information described above:
 
 ![Organization Dashboard](../../images/cloud-application-manager/admin-reports4.png)
 
-At the bottom, there are two charts. One of them with the same information and behavior that the provider usage chart of the cost center scope, and the second one with the usage by cost center, shows the usage of each cost center by percentage.
+At the bottom, there are two charts. One of them with the same information and behavior that the provider usage chart of the cost center scope but for the organization scope, and the second one with the usage by cost center, shows the usage of each cost center by percentage.
 
 
 ### Contacting Cloud Application Manager Support
