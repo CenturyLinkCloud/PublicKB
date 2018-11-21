@@ -74,7 +74,7 @@ In the provider usage chart, the information described at the top, is current ac
 
 ### Organization scope
 
-In this scope, the information showed is focused in provider usage in every cost center.
+In this scope, the information showed is focused on resources and usage by provider and cost center.
 At the top, there are five boxes with the information described above:
                                                           
 * **Instances** - Total number of instances inside of the organization with the line chart of the last month.
