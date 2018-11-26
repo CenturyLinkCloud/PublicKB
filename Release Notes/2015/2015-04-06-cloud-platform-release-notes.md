@@ -38,9 +38,9 @@
 
 * **Account Activation.** The "activate" experience on [activate.centurylinkcloud.com](https://activate.centurylinkcloud.com) has been enhanced with two-factor authentication and a simplified user flow.
 
-* **Data center-specific Pricing Catalog and Cloud Price Estimator.** Region-specific pricing is now reflected in these tools. Simply select a data center using the drop-down, and prices will update automatically.
+* **Data center-specific Pricing Catalog and Online Price Estimator.** Region-specific pricing is now reflected in these tools. Simply select a data center using the drop-down, and prices will update automatically.
 
-  Data Center can be selected when using the estimator:
+  Data Center can be selected when using the online price estimator:
 
   ![Pricing Example 01](../../images/pricing-example-01.png)
 
@@ -48,15 +48,6 @@
 
   ![Pricing Example 02](../../images/pricing-example-02.png)
 
-
-### Ecosystem: New Blueprints (5)
-
-* [**Orchestrate**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-orchestrate-blueprint.md) - Online database web service designed to support modern cloud-based application development. Includes support for search, time-ordered events, geospatial or graph queries with a performant REST API. CenturyLink helps customers get started with a sample application that signs up for Orchestrate and allows customers to begin working with the Orchestrate API.
-
-* [**XtremeData**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-xtremedata-dbx-blueprint.md) - High performance, full-featured ANSI SQL database engine designed for performance at scale, up to hundreds of terabytes. Simple to deploy, simple to administer, simple to scale up using CenturyLink Cloud Blueprints.
-
-
-* [**Chef**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-chef-server-blueprint.md) - Chef turns infrastructure into code, allowing users to automate how they build, deploy, and manage cloud-based infrastructure using the same software development practices as they use for their primary codebase. CenturyLink has integrated Chef Server in to a Blueprint that will automatically install and configure Chef Standalone Server on Red Hat Enterprise Linux.
 
 ### Open Source Contributions (4)
 Selected highlights include:

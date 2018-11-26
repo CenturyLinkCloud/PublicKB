@@ -1,7 +1,7 @@
 {{{
   "title": "Partner Cloud: Getting Started With An Existing Azure Customer Account",
-  "date": "05-07-18",
-  "author": "Ben Swoboda",
+  "date": "07-20-18",
+  "author": "Kevin Quaintance",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -29,7 +29,7 @@ For Azure, we are currently limited to serving billable customers who are not re
 
 * An understanding of the features and benefits of [Partner Cloud Integration](partner-cloud-integration.md)
 
-* For each CenturyLink Cloud account integrated with Azure, both CenturyLink's and Microsoft's Terms and Conditions must be accepted. These will be presented to any user attempting to create a new "Microsoft Azure" provider in Cloud Application Manager.
+* For each CenturyLink Cloud account integrated with Azure, both CenturyLink's and Microsoft's Terms and Conditions must be accepted. These will be presented to any user attempting to create a new "Microsoft Azure" provider in Cloud Application Manager. See our [Service Guide](https://www.ctl.io/legal/cloud-application-manager/supplemental-terms/) for a current list of countries we support.
 
 ### Important Information
 
@@ -43,7 +43,11 @@ Create a new Azure customer account | **This is a Cloud Optimized option.** Begi
 
 Charges for [Azure usage](partner-cloud-integration-consolidated-billing.md) will appear on invoices from CenturyLink.
 
+### Considerations
 
+* If you do not have a basic, existing Azure ARM subscription with basic Azure pricing, please contact Microsoft or CenturyLink to review whether your subscription or the resources on it can transfer wholely into CenturyLink's care or whether resources on it need to be migrated from one subscription to another (this is a meta data move only and does not cause any outage).
+* In a CSP environment, it is expected that customers enjoy the benefits of CenturyLink acting as liason to Microsoft and first point of contact for all Azure incidents, billing issues, and requests. Customers who gain access to Cloud Application Manager's support desk and features do so in lieu of certain Azure features which are available, such as help desk and billing consoles.
+* [Reserved Instances](partner-cloud-integration-azure-ri.md) are available through CenturyLink.
 
 
 ### Steps
@@ -86,7 +90,7 @@ In the end, the following will have occurred:
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
+If you are experiencing an issue with [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/), please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

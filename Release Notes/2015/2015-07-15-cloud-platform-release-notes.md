@@ -16,7 +16,6 @@ The service is available today in Sterling, VA (VA1) and will soon be online in 
 
 * __AppFog v2.__ Deploy and manage web applications easier with the new, Control Portal-integrated AppFog service based on the open source Cloud Foundry (v2) project. Deploy web applications to a multiple regions and host them in a managed fabric that supports Java, Ruby, Node.js, Go, Python and PHP. Available now in the US-East and US-West region, AppFog offers a scalable runtime for cloud-native applications at only $0.04 per GB hour.  
 ![appfog](../../images/2015-07-15_releasenotes3.png)  
-Check out the [Product Page](//www.ctl.io/appfog) and [AppFog section of the Knowledge Base](//www.ctl.io/knowledge-base/appfog/#1) for everything you need to know to get started!
 
 * __WordPress-as-a-Service (Beta).__ WordPress powers tens of millions of websites worldwide, but it can be challenging to set up and maintain yourself. CenturyLink is delivering WordPress-as-a-Service where you can rapidly create sites, map to custom domains, and store configuration information in a provided Git account. WordPress-as-a-Service is available for free in our Virginia data center during beta. Check out our [Product Page](//www.ctl.io/wordpress) and [these KB articles](../../WordPress/getting-started-with-wordpress-as-a-service.md) for further details on signing up and using the service!  
 ![wordpress](../../images/2015-07-15_releasenotes4.png)
@@ -56,23 +55,6 @@ Check out the [Product Page](//www.ctl.io/appfog) and [AppFog section of the Kno
 
 * [__Cloud Dev Center.__](//www.ctl.io/developers) Developers now have a primary destination for all the info needed to build apps in the CenturyLink Cloud. Find links to developer tools, video tutorials, and a constant barrage of articles that show you how to deploy scalable, highly available apps in the cloud.
 
-
-### Ecosystem: New Blueprints (5)
-
-* [__Cavirin.__](../../Ecosystem Partners/Marketplace Guides/getting-started-with-cavirin-automated-risk-analysis-platform-partner-template.md)
-Delivering continuous IT audit and operational compliance isn't easy.  Cavirin's Automated Risk Analysis platform can help, available to deploy to your CenturyLink Cloud account via Service Task.  This technology provides a visual, effective way to constantly monitor your security posture against the profile most appropriate for your organization. Cavirin’s “Big Picture” view serves as a pass-fail “report card” that grades the security of your environment and lets you share the results with customers.  Cavirin continuously checks clouds, devices, and IPs against the policies you define and alerts you to changes and violations.
-
-* [__Liferay.__](../../Ecosystem Partners/Marketplace Guides/getting-started-with-liferay-blueprint.md)
-The leading open source portal technology for enterprise applications, Liferay is used to build modern workflow portals to engage with customers, partners and employees. Liferay is an all-in-one package with broad capabilities and integrations that include Microsoft Office® integration, web publishing, social networking and mashups support.  Users can spin up their own Liferay server in minutes using a CenturyLink Cloud Blueprint.
-
-* [__Elasticsearch.__](../../Ecosystem Partners/Marketplace Guides/getting-started-with-elasticsearch-blueprint.md)
-Elasticsearch is a search server based on Lucene. It provides a distributed, multitenant-capable, full-text search engine with a RESTful web interface and schema-free JSON documents. Elasticsearch is developed in Java and is released as open source under the terms of the Apache License. Elasticsearch is the second most popular enterprise search engine and allows you to start small and scale horizontally as you grow. Simply add more nodes, and let the cluster automatically manage resources.  CenturyLink Cloud makes it easy to get started with ElasticSearch, simply deploy our Blueprint that will automatically install and configure your Elasticsearch server in minutes.
-
-* [__Moodle.__](../../Ecosystem Partners/Marketplace Guides/getting-started-with-moodle-blueprint.md)
-Moodle (modular, object-oriented, dynamic, learning environment) is an open-source learning management system written in PHP.  It’s commonly used by higher learning and human resource organizations.  With customizable management features, it is used to create private websites with online courses for educators and trainers to achieve learning goals.  Moodle  allows for extending and tailoring learning environments using community sourced plugins.  CenturyLink has integrated Moodle in to a Blueprint for easy deployment by users.
-
-* [__Redmine.__](../../Ecosystem Partners/Marketplace Guides/getting-started-with-redmine-blueprint.md)
-Redmine is an open-source, browser-based project management and issue tracking tool. It allows users to manage multiple projects and associated subprojects. It features per project wikis and forums, time tracking, and flexible role based access control. It includes a calendar and Gantt charts to aid visual representation of projects and their deadlines. Redmine integrates with various version control systems and includes a repository browser and diff viewer.  Use Redmine in minutes by creating a Redmine server using the CenturyLink Cloud Blueprint.
 
 ### Open Source Contributions (5)
 

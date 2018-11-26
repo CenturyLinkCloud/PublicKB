@@ -62,7 +62,7 @@ When running commands (GO CLI command/Python CLI command)
 -   name - name of the server or group, when creating a new server, the length limit is 6 characters
 -   data-center - name of the data centers (e.g. IL1, VA1, CA1)
 -   network-name/network - name of the VLAN, [they can be listed using CLI](#read-commands)
--   type - server type, either standard or hyperscale
+-   type - server typee
 -   storage-type/backup-level - storage type, current option is standard
 -   group-name/group - name of the group within the account
 -   configuration-id - ID of bare metal from output of `clc data-center get-baremetal-capabilities`
@@ -100,21 +100,35 @@ The CLI command is clc in Linux or MacOSX and clc-cli for Windows.
 `clc-cli` --help will print out the help message,
 
 ```
-usage: clc-cli.exe [-h] [--cols [COL [COL ...]]] [--config CONFIG] [--v1-api-key KEY] [--v1-api-passwd PASSWORD]                    [--v2-api-username USERNAME] [--v2-api-passwd PASSWORD] [--async] [--quiet] [--verbose] [--format {json,table,text,csv}]                    {accounts,users,servers,groups,billing,networks,queue,blueprints} ...
+usage: clc-cli.exe [-h] [--cols [COL [COL ...]]] [--config CONFIG]
+                   [--v1-api-key KEY] [--v1-api-passwd PASSWORD]
+                   [--v2-api-username USERNAME] [--v2-api-passwd PASSWORD]
+                   [--async] [--quiet] [--verbose]
+                   [--format {json,table,text,csv}]
+                   {accounts,users,servers,groups,billing,networks,queue,blueprints}
+                   ...
 
-CLI tool for interacting with CenturyLink Cloud API.  
+CLI tool for interacting with the CenturyLink Cloud API.
+http://www.ctl.io
+
 optional arguments:
-  -h, --help                  show this help message and exit
-  --cols [COL [COL ...]]      Include only specific columns in the output
-  --config CONFIG, -c         CONFIG Ini config file
-  --v1-api-key KEY            V1 API key
-  --v1-api-passwd PASSWORD    V1 API password
-  --v2-api-username USERNAME  V2 API username
-  --v2-api-passwd PASSWORD    V2 API password
-  --async                     Return immediately after queueing long-running calls
-  --quiet, -q                 Supress status output (repeat up to 2 times)
-  --verbose, -v               Increase verbosity
-  --format {json,table,text,csv}, -f {json,table,text,csv}  Output result format (table is default)
+  -h, --help            show this help message and exit
+  --cols [COL [COL ...]]
+                        Include only specific columns in the output
+  --config CONFIG, -c CONFIG
+                        Ini config file
+  --v1-api-key KEY      V1 API key
+  --v1-api-passwd PASSWORD
+                        V1 API password
+  --v2-api-username USERNAME
+                        V2 API username
+  --v2-api-passwd PASSWORD
+                        V2 API password
+  --async               Return immediately after queueing long-running calls
+  --quiet, -q           Supress status output (repeat up to 2 times)
+  --verbose, -v         Increase verbosity
+  --format {json,table,text,csv}, -f {json,table,text,csv} 
+                        Output result format (table is default)
 
 Commands:
   {accounts,users,servers,groups,billing,networks,queue,blueprints}
@@ -126,7 +140,6 @@ Commands:
     networks            Network activities
     queue               Work queue
     blueprints          Blueprints
-
 ```
 
 
@@ -289,12 +302,6 @@ clc server list --all --filter location-id=CA3 --query details.host-name
 or
 ```
 clc server list –all --query location-id=ca3
-```
-
-**Find all the hyperscale (or standard/baremetal) server in the
-account**
-```
-clc server list --all --filter type=hyperscale --query details.host-name
 ```
 
 **All OS/templates available in a DC**

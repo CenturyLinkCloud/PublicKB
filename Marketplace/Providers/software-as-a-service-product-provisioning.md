@@ -14,7 +14,7 @@ The next step is to create the Product Provisioning within the Provider Portal f
 
 ### Product Provisioning
 
-1. Log into the [Provider Portal](https://provider-portal.ctl.io), using your CenturyLink Cloud credentials.
+1. Product creation and Provisioning is done in the staging environment of the Provider Portal to allow for testing. To create products you will log into the staging environment here: https://provider-portal.staging.ctl.io/#/login. You will login with your same CenturyLink Cloud credentials for both production and staging.
 
 2. If a product tile has yet to be created, you can do so by following the steps outlined in the [Getting Started Guide](getting-started-guide-marketplace-ecosystem-provider-portal.md).
 
@@ -54,4 +54,6 @@ The next step is to create the Product Provisioning within the Provider Portal f
 
   ![SaaS6.png](../../images/SaaS5.png)
 
-For any questions, please contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
+Please review the Marketplace [Billing KB](marketplace-supported-billing-models.md) for information on the Billing and SKU creation process.
+
+For any questions, please contact us at [Marketplace@centurylink.com](mailto:Marketplace@centurylink.com).

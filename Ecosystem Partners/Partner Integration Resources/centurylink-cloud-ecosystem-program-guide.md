@@ -8,7 +8,7 @@
 }}}
 
 ### Description
-This CenturyLink Marketplace Provider Program Guide is designed to outline the process expectations for technology companies seeking to integrate their products and services with CenturyLink Cloud.  Partners who enter this program and meet the certification requirements will be eligible to have their deployable technology listed in the CenturyLink Cloud Marketplace.  To express interest in joining the program, prospective partners can visit the CenturyLink Cloud [Marketplace Provider Program](//www.ctl.io/marketplace/program) web page or send email to [ecosystem@ctl.io](mailto:ecosystem@ctl.io).
+This CenturyLink Marketplace Provider Program Guide is designed to outline the process expectations for technology companies seeking to integrate their products and services with CenturyLink Cloud.  Partners who enter this program and meet the certification requirements will be eligible to have their deployable technology listed in the CenturyLink Cloud Marketplace.  To express interest in joining the program, prospective partners can visit the CenturyLink Cloud [Marketplace Provider Program](//www.ctl.io/marketplace/program) web page or send email to [ECOSystem@centurylink.com](mailto:ECOSystem@centurylink.com).
 
 ### Audience
 * CenturyLink Cloud Marketplace Applicant, Candidate and Provider firms
@@ -24,7 +24,7 @@ This document explains the process for onboarding technology into the CenturyLin
 
 ![Process Logo](../../images/centurylink-cloud-ecosystem-program-guide-ecosystem_process.png)
 
-Entry into the Marketplace Provider Program consists of two primary steps: **Application** and **Certification**. Once a potential technology is identified, the company is classified as an Applicant. Once a company becomes a Customer of CenturyLink Cloud, they accept the Marketplace Provider Program Supplemental Terms.  Upon engaging with the [Ecosystem team](mailto:ecosystem@ctl.io), validating an integration strategy, the Applicant is referred to as a Candidate. Once the solution is certified, the Candidate becomes a **Certified Provider**.
+Entry into the Marketplace Provider Program consists of two primary steps: **Application** and **Certification**. Once a potential technology is identified, the company is classified as an Applicant. Once a company becomes a Customer of CenturyLink Cloud, they accept the Marketplace Provider Program Supplemental Terms.  Upon engaging with the [Ecosystem team](mailto:ECOSystem@centurylink.com), validating an integration strategy, the Applicant is referred to as a Candidate. Once the solution is certified, the Candidate becomes a **Certified Provider**.
 
 ### Application
 

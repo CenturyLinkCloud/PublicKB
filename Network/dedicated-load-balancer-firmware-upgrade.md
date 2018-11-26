@@ -40,7 +40,7 @@ Please upgrade firmware on dedicated load balancer: HOSTNAME.
 Version to upgrade to: VERSION.00.00
 ```
 
-This a Service task and will be [billed accordingly](//www.ctl.io/service-tasks/#Pricing).
+This is a Service task and will be [billed accordingly](//www.ctl.io/service-tasks/#Pricing).
 
 * Second option, you perform the upgrade yourself and your message to NOC can be :
 

@@ -11,9 +11,21 @@
 
 **In this article:**
 
-* Login
-* Quick tour
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Login](#login)
+* [Quick tour](#quick-tour)
 
+ ### Overview
+ This article makes a quick tour on login page and the panel after login to the platform.
+ 
+ ### Audience
+ All users with Cloud Application Manager access.
+ 
+ ### Prerequisites
+ * Access to Cloud Application Manager, Management site.
+ 
 ___
 
 ### Login
@@ -36,7 +48,7 @@ Enter your company Active Directory credentials in the username, password fields
 
    **Note**: When you log in with your AD credentials, GitHub or Google accounts, Cloud Application Manager does not have access to your password. We use your email to create a profile and workspace for you.
 
-![getting-started-login-1.png](../../images/cloud-application-manager/getting-started-login-1.png)
+![CAM Login Page](../../images/cloud-application-manager/getting-started-login-1.png)
 
 ___
 
@@ -53,16 +65,17 @@ When you log in, the top navigation bar guides you to the main areas of Cloud Ap
 * Activity
 * Your Account
 * Help
+____
 
 **Dashboard**
 
-![getting-started-login-8.png](../../images/cloud-application-manager/getting-started-login-8.png)
+![CAM workspace panel](../../images/cloud-application-manager/getting-started-login-8.png)
 
 It is a global vision of the content and uses of the workspace. There you can see the number of the instances, boxes or providers and their status. In addition, there are two charts with the uses by day, week or month.
 
 **Workspaces**
 
-![getting-started-login-2.png](../../images/cloud-application-manager/getting-started-login-2.png)
+![CAM Workspace menu](../../images/cloud-application-manager/getting-started-login-2.png)
 
 When you log in, you’re in your personal workspace. From the workspace drop-down, you can access team workspaces if you belong to them, or create one and add others to share Cloud Application Manager assets and collaborate. To learn more, see [Workspaces & Sharing](../Core Concepts/workspaces-and-collaboration.md).
 
@@ -70,7 +83,7 @@ ___
 
 **Instances**
 
-![getting-started-login-3.png](../../images/cloud-application-manager/getting-started-login-3.png)
+![CAM instances menu ](../../images/cloud-application-manager/getting-started-login-3.png)
 
 * Click **New** to launch instances of boxes to a provider environment in the public or private cloud.
 * Manage instances you’ve [launched](../Deploying Anywhere/deploying-managing-instances.md) through the web interface, the API, or on [any infrastructure using the Cloud Application Manager agent](../Deploying Anywhere/deploying-on-anyinfra.md). Here you can quickly [manage the lifecycle](../Deploying Anywhere/deploying-managing-instances.md) of several instances from the Bulk Actions menu or handle them individually from the gear menu.
@@ -82,7 +95,7 @@ ___
 
 The Boxes page shows everything you create including boxes shared with you.
 
-![getting-started-login-4.png](../../images/cloud-application-manager/getting-started-login-4.png)
+![CAM Boxes menu](../../images/cloud-application-manager/getting-started-login-4.png)
 
 * Click **New** to create a box. Automate configuration by selecting a box type: Script, Deployment Policy, CloudFormation, Container.
 * Cloud Application Manager provides a public service box catalog, which you find when you filter by the public tag. Public boxes are available to all users. These are pre-configured, which means you can directly deploy or nest them in other boxes. Since they’re publicly available to everyone, you can’t modify their configuration, but you can pass your own parameters before deploying. Examples of public boxes include MongoDB, Puppet, Chef Solo, Rails, Redis, RabbitMQ, WordPress among others.
@@ -94,7 +107,7 @@ ___
 
 **Providers**
 
-![getting-started-login-5.png](../../images/cloud-application-manager/getting-started-login-5.png)
+![CAM providers menu](../../images/cloud-application-manager/getting-started-login-5.png)
 
 * Connect to a provider to orchestrate deployments. Click **New** to add AWS, Azure, vSphere, Google Cloud, OpenStack, or CloudStack.
 * Locate a provider through search or by type.
@@ -104,7 +117,7 @@ ___
 
 **Catalog**
 
-![getting-started-login-9.png](../../images/cloud-application-manager/getting-started-login-9.png)
+![CAM catalog menu](../../images/cloud-application-manager/getting-started-login-9.png)
 
 * Shows you all the public boxes available for all users, categorized as **Featured, Managed Services, Services, Plugins** and **Other** to easily locate and deploy. 
 * There is a feature where you can request to publish one of your own boxes to the catalog. It will become available in the catalog for any user in one of the existing categories or a new one.
@@ -114,17 +127,24 @@ ___
 
 **Activity**
 
-![getting-started-login-10.png](../../images/cloud-application-manager/getting-started-login-10.png)
+![Activity page](../../images/cloud-application-manager/getting-started-login-10.png)
 
-* Allows you to see (based on your scope and permissions) all of the relevant activity that has occured in the platform, the type of event and the user that performed the event.
+* Allows you to see (based on your scope and permissions) all of the relevant activity that has occurred in the platform, the type of event and the user that performed the event.
 * Filter through activity by type of event or switch between all activity or current scope.
-* Search by user name or action to narrow the results, or click on certain actions to navigate to the affected resource.
+![Activity page, Filter dropdown](../../images/cloud-application-manager/activity-filter-list.png)
 
+    * **Provider**, this option filters the result and shows only the provider's activity.
+    * **Settings**, this option filters the result and shows only the Setting's activity.
+    * **User**, this option filters the result and shows only the activities that are related to the users.
+        
+        > **note that you can combine these filters with each other on your own will.**
+        
+* Search by user name or action to narrow the results, or click on certain actions to navigate to the affected resource.
 ___
 
 **Your Account**
 
-![getting-started-login-6.png](../../images/cloud-application-manager/getting-started-login-6.png)
+![CAM account menu](../../images/cloud-application-manager/getting-started-login-6.png)
 
 * From the username drop-down, access your account profile where you can change your username or reset password if you’re using username and password to log in.
 * Access the Admin Console from here to administer your Cloud Application Manager organization.
@@ -136,7 +156,7 @@ ___
 
 Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md) for help. Or you may contact [support](mailto:incident@CenturyLink.com) from within the Cloud Application Manager interface.
 
-![getting-started-login-7.png](../../images/cloud-application-manager/getting-started-login-7.png)
+![CAM help/support menu](../../images/cloud-application-manager/getting-started-login-7.png)
 
 For issues related to API calls, send the request body along with details related to the issue.
 

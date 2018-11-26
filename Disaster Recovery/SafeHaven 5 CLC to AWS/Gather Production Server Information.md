@@ -11,7 +11,7 @@ This article covers the information a user needs to gather before protecting a P
 This article does not cover any other aspect of the DR setup.
 
 ### Production Server Information
-Production Servers can either be Windows or Linux. Please refer to [SafeHaven 5.0 Use Case and Support Matrix](../SafeHaven 5 General/SafeHaven-5.0-Use-Case-and-Support-Matrix.md) for more information.
+Production Servers can either be Windows or Linux. Please refer to [SafeHaven 5.0 Use Case and Support Matrix](../SafeHaven 5 General/Safehaven5.1-usecases-supportmatrix.md) for more information.
 
 Gather the following information for the servers you want to protect:
 
@@ -29,7 +29,7 @@ Apart from this other information regarding Domain Controllers, DNS Servers, tra
 
 ### VM Discovery for VMware on prem site using SafeHaven console
 
-**Note** use the VM Dicovery tool enbeeded in the SafeHaven console to get the required information when the customer environment is VMware.
+**Note** use the VM Discovery tool embedded in the SafeHaven console to get the required information when the customer environment is VMware.
 
 1. Launch the SafeHaven console.
 2. Click on the VM Discovery button.

@@ -2,6 +2,7 @@
 "title": "Creating Cloud Application Manager Users",
 "date": "05-16-2017",
 "author": "",
+"keywords": ["cam", "user", "users", "create user", "delete user"],
 "attachments": [],
 "contentIsHTML": false,
 "sticky": true
@@ -38,7 +39,7 @@ All users with Cloud Application Manager organization administrator access.
 
 ### User Management page
 
-A Cloud Application Manager administrator can access User Management page from within Management site and he can find there all the existing users in the organization with some useful data of each user such as:
+A Cloud Application Manager administrator can access the User Management page from within Management site and he can find there all the existing users in the organization with some useful data of each user such as:
 
 * **Name** and **email**
 * **Id**
@@ -104,7 +105,7 @@ Customers can contact the CenturyLink Global Operations Support center (support 
 2. **Email:** incident@centurylink.com
 
 3. **Create Ticket in Cloud Application Manager:**
-Directly within the platform, users can “Create Ticket” by clicking on the “?” symbol in upper right corner near the users log-in profile icon.  This takes users directly to the Managed Servicers Portal where they can open, track and review status of issues that have been raised with the support desk.  Additionally, this is how a TAM can be engaged as well.
+Directly within the platform, users can “Create Ticket” by clicking on the “?” symbol in the upper right corner near the user's login profile icon. This takes users directly to the Managed Support Portal where they can open, track and review the status of issues that have been raised with the support desk.  Additionally, this is how a TAM can be engaged as well.
 
     ![Getting Started - Support options](../../images/cloud-application-manager/getting-started-login-7.png)
 

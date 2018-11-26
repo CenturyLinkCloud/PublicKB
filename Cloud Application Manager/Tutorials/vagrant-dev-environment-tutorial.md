@@ -221,7 +221,7 @@ This installs MySQL server and creates a database.
     #
     # * Logging and Replication
     #
-    # Both location gets rotated by the cronjob.
+    # Both location gets rotated by the crontab.
     # Be aware that this log type is a performance killer.
     # As of 5.1 you can enable the log at runtime!
     #general_log_file        = /var/log/mysql/mysql.log

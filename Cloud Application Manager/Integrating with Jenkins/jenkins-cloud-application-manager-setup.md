@@ -1,7 +1,7 @@
 {{{
 "title": "Setting Up Jenkins with Cloud Application Manager",
-"date": "09-01-2016",
-"author": "",
+"date": "10-01-2018",
+"author": "Modified by Gavin Lai",
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -206,9 +206,9 @@ Enter this value:
    # Install Jenkins and Git
    curl -ks https://jenkins-ci.org/debian-stable/jenkins-ci.org.key | apt-key -y add -
    echo deb http://pkg.jenkins-ci.org/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list
-
+	 apt-get install default-jre -y
    apt-get -y update
-   apt-get -y --force-yes install jenkins git
+   apt-get -y --allow-unauthenticated install jenkins git
    ```
 
    * Install the plugins, the build job templates, and configure GitHub plugins with username, access token, and repository URL. Copy, paste the script in the configure event and save.
