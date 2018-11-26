@@ -56,23 +56,6 @@ The service is available today in Sterling, VA (VA1) and will soon be online in 
 * [__Cloud Dev Center.__](//www.ctl.io/developers) Developers now have a primary destination for all the info needed to build apps in the CenturyLink Cloud. Find links to developer tools, video tutorials, and a constant barrage of articles that show you how to deploy scalable, highly available apps in the cloud.
 
 
-### Ecosystem: New Blueprints (5)
-
-* [__Cavirin.__](../../Ecosystem Partners/Marketplace Guides/getting-started-with-cavirin-automated-risk-analysis-platform-partner-template.md)
-Delivering continuous IT audit and operational compliance isn't easy.  Cavirin's Automated Risk Analysis platform can help, available to deploy to your CenturyLink Cloud account via Service Task.  This technology provides a visual, effective way to constantly monitor your security posture against the profile most appropriate for your organization. Cavirin’s “Big Picture” view serves as a pass-fail “report card” that grades the security of your environment and lets you share the results with customers.  Cavirin continuously checks clouds, devices, and IPs against the policies you define and alerts you to changes and violations.
-
-* [__Liferay.__](../../Ecosystem Partners/Marketplace Guides/getting-started-with-liferay-blueprint.md)
-The leading open source portal technology for enterprise applications, Liferay is used to build modern workflow portals to engage with customers, partners and employees. Liferay is an all-in-one package with broad capabilities and integrations that include Microsoft Office® integration, web publishing, social networking and mashups support.  Users can spin up their own Liferay server in minutes using a CenturyLink Cloud Blueprint.
-
-* [__Elasticsearch.__](../../Ecosystem Partners/Marketplace Guides/getting-started-with-elasticsearch-blueprint.md)
-Elasticsearch is a search server based on Lucene. It provides a distributed, multitenant-capable, full-text search engine with a RESTful web interface and schema-free JSON documents. Elasticsearch is developed in Java and is released as open source under the terms of the Apache License. Elasticsearch is the second most popular enterprise search engine and allows you to start small and scale horizontally as you grow. Simply add more nodes, and let the cluster automatically manage resources.  CenturyLink Cloud makes it easy to get started with ElasticSearch, simply deploy our Blueprint that will automatically install and configure your Elasticsearch server in minutes.
-
-* [__Moodle.__](../../Ecosystem Partners/Marketplace Guides/getting-started-with-moodle-blueprint.md)
-Moodle (modular, object-oriented, dynamic, learning environment) is an open-source learning management system written in PHP.  It’s commonly used by higher learning and human resource organizations.  With customizable management features, it is used to create private websites with online courses for educators and trainers to achieve learning goals.  Moodle  allows for extending and tailoring learning environments using community sourced plugins.  CenturyLink has integrated Moodle in to a Blueprint for easy deployment by users.
-
-* [__Redmine.__](../../Ecosystem Partners/Marketplace Guides/getting-started-with-redmine-blueprint.md)
-Redmine is an open-source, browser-based project management and issue tracking tool. It allows users to manage multiple projects and associated subprojects. It features per project wikis and forums, time tracking, and flexible role based access control. It includes a calendar and Gantt charts to aid visual representation of projects and their deadlines. Redmine integrates with various version control systems and includes a repository browser and diff viewer.  Use Redmine in minutes by creating a Redmine server using the CenturyLink Cloud Blueprint.
-
 ### Open Source Contributions (5)
 
 * [__Ansible Adapter for CenturyLink Cloud.__](//github.com/CenturyLinkCloud/clc-ansible-module) The CenturyLink Cloud Ansible Modules allow devops to utilize the popular provisioning tool Ansible to define and manage infrastructure resources on the CenturyLink Cloud platform. Among other capabilities, the adapter lets you pull server inventory, create policies, create and manage groups, create and manage servers, execute scripts packages against servers, and much more.
