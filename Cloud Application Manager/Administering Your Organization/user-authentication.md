@@ -1,17 +1,17 @@
 {{{
 "title": "Enable User Authentication",
-"date": "09-14-2018",
-"author": "Guillermo Sanchez",
+"date": "10-30-2018",
+"author": "Arya Roudi",
 "keywords": ["cam", "authentication", "sso", "oauth", "google", "github", "saml", "ldap", "clc"],
 "attachments": [],
 "contentIsHTML": false
 }}}
 
-### Enable User Authentication
-
 **In this article:**
 
 * [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
 * [Single sign-on with Google, GitHub, or username, password](#single-sign-on-with-google-github-or-username-password)
 * [Single Sign-On with SAML](#single-sign-on-with-saml)
 * [Single Sign-On with LDAP](#single-sign-on-with-ldap)
@@ -22,6 +22,19 @@
 In Cloud Application Manager, enterprise organization users can sign in using any of the single sign-on authentication options you enable in the [Settings page](admin-overview.md).
 
 ![Settings > Authentication methods](../../images/cloud-application-manager/management/settings-auth-methods.png)
+
+### Audience
+
+All users with Cloud Application Manager organization administrator access.
+
+### Prerequisites
+
+* Access to Cloud Application Manager, Management site.
+
+* The user must be an Administrator of the organization in Cloud Application Manager.
+
+* The user should be at the organization level scope to access the Settings option in the left side menu.
+
 
 ### Single sign-on with Google, GitHub, or username, password
 
@@ -37,7 +50,7 @@ Cloud Application Manager can be configured to act as a SP, and delegate the use
 
 When users log in with SAML into Cloud Application Manager, the user is redirected to the SAML IdP site, who will authenticate to the user, asking credentials if is not logged yet, and then sending back to CAM.
 
-#### Setting up a SAML IdP
+### Setting up a SAML IdP
 
 Enable SAML in Cloud Application Manager to let users log in using credentials managed by a SAML identity provider.
 
@@ -72,9 +85,9 @@ Add LDAP sources in Cloud Application Manager to match the structure of LDAP in 
 
 When users sign in to Cloud Application Manager with their LDAP credentials, we don’t store their passwords. The login session passes on their credentials to each LDAP source defined in Cloud Application Manager. The LDAP server looks the user up by their username or Use Principal Name (UPN), typically in the **yourname@example.com** format. The server responds with an authorized or unauthorized request. If authorized, we grant the user access in Cloud Application Manager. Else, we deny access.
 
-#### Setting Up LDAP in Cloud Application Manager
+### Setting Up LDAP in Cloud Application Manager
 
-##### Steps
+#### Steps
 
 1. Sign in to Cloud Application Manager as an [administrator](admin-access.md).
 2. Navigate to the **Settings** page in the Management site.
@@ -104,7 +117,7 @@ When users sign in to Cloud Application Manager with their LDAP credentials, we 
 
 5. Click **Save** to keep the information.
 
-#### Syncing with LDAP Groups
+### Syncing with LDAP Groups
 
 LDAP group members get automatic access to team workspaces in Cloud Application Manager when you enable sharing with those groups. Through the Cloud Application Manager web or API interface, you can directly add LDAP groups as members of a workspace instead of searching and adding them one by one.
 
@@ -112,7 +125,7 @@ LDAP group members get automatic access to team workspaces in Cloud Application 
 
 This gives your developers, operations engineers, or IT admins access to the same deployment assets to do their part in automating with necessary access levels. Follow these steps to sync with LDAP groups.
 
-##### Steps
+#### Steps
 
 1. Sign in to Cloud Application Manager as an [administrator](admin-access.md).
 
@@ -121,16 +134,16 @@ This gives your developers, operations engineers, or IT admins access to the sam
 3. Under **Authentication**, make sure LDAP is on and set up with at least one source with the conditions to sync groups.
 
 4. Turn on **LDAP Group Sync**.
-   ![admin-user6.png](../../images/cloud-application-manager/management/settings-auth-ldap-group-sync.png)
+   ![settings Auth LDAP Group Sync](../../images/cloud-application-manager/management/settings-auth-ldap-group-sync.png)
 
 5. Click **Sync** to start syncing.
    **Note:** By default, we sync every 24 hours to get the latest group updates. To sync at any other time, click **Sync**. If a group member is deleted or moved out, they no longer have access to Cloud Application Manager workspaces and won’t be able to log in. To show or hide synchronized groups details, click on **Show Groups** or **Hide Groups**.
 
-#### Giving LDAP Accounts Admin Access
+### Giving LDAP Accounts Admin Access
 
 As good practice, you should give an LDAP user in your organization administrative access to Cloud Application Manager and set aside the default administrator account to use in case of emergency. After you set up LDAP, give the LDAP user admin access as follows.
 
-##### Steps
+#### Steps
 
 1. Sign in to Cloud Application Manager as the LDAP user with the corresponding LDAP credentials. This registers the user in Cloud Application Manager with a personal workspace.
 
@@ -142,7 +155,7 @@ As good practice, you should give an LDAP user in your organization administrati
 
 If you enable CenturyLink Cloud authentication method, any user with CenturyLink Cloud credentials may log in to Cloud Application Manager using these credentials.
 
-##### Steps
+#### Steps
 
 1. Sign in to Cloud Application Manager as an [administrator](admin-access.md).
 
