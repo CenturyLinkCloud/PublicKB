@@ -47,7 +47,7 @@ There are three different submenu options under Instances:
 
   You can also select a specific state among the available ones (Active, Inactive) to show only the instance in the selected state.
 
-The Instances page displays on the top of the page a new button, a search field  and a filters and instance view buttons. The search field allows you to find any instance looking for its name, instance-id, service-id, public or private IP address, support_id or hostname fields, or also by owner or last user who acted on the instance.
+The Instances page displays on the top of the page a new button, a search field  and a filters and instance view buttons. The search field allows you to find any instance looking for most of the instance fields such as name, instance-id, service-id, public or private IP address, support_id, hostname, owner or last user who acted on the instance.
 
 Below this components you can find the corresponding list or graph of instances, depending on the view type that is selected.
 
