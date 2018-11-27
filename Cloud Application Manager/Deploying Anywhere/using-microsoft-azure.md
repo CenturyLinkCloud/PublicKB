@@ -14,6 +14,7 @@
 * [Registering Your Microsoft Azure Subscription (ARM) in Cloud Application Manager](#registering-your-microsoft-azure-subscription-arm-in-cloud-application-manager)
 * [Deploying Instances in Azure](#deploying-instances-in-azure)
 * [Registering Existing Instances from your Azure Account](#registering-existing-instances-from-your-azure-account)
+* [Azure Native Resources](#azure-native-resources)
 * [Shutdown and Terminate Instances in Azure](#shutdown-and-terminate-instances-in-azure)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
@@ -279,6 +280,40 @@ As part of the result of synchronization process you can find a list of availabl
 ![Microsoft Azure - Available instances](../../images/cloud-application-manager/microsoft-azure/available-instances-9.png)
 
 We strongly recommend synchronize your Azure provider before you try to register the virtual machine. This due to such instance may be registered by another user before you try to register it. This way you can avoid this kind of problems.
+
+### Azure Native Resources
+
+After the synchronization process, you will also find in the Instances page a list of Azure resources that already exist in your account. You can also register virtual machine type instances from here.
+
+![Microsoft Azure - Unregistered instances](../../images/cloud-application-manager/microsoft-azure/unregistered-instances.png)
+
+These resources can be filtered by the following types and subtypes:
+
+* Compute
+  * ScaleSet
+  * Virtual machine
+* Network
+  * Load balancer
+  * Security groups
+  * Network interface
+  * Virtual networks
+  * IP address
+  * VPN
+  * Application gateway
+  * Local gateway
+  * Express gateway
+* Storage
+  * File
+  * BLOB
+  * Table
+  * Queue
+* Database
+  * Sql Server
+  * Managed Sql Server
+  * MySQL
+  * PostgreSQL
+  * CosmosDB     
+
 
 ### Shutdown and Terminate Instances in Azure
 
