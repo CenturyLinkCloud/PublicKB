@@ -16,7 +16,7 @@ Starting this release, users who logon to AWS Management Console via Cloud Appli
 
 **Link to provider monitoring dashboard**
 
-Cloud Application Manager now includes a Monitoring button in the provider details page to go to the provider monitoring dashboard into the Monitoring site. This new button is accessible in any AWS or Azure type providers and will open a new window or tab in your browser to display it.
+Cloud Application Manager now includes a Monitoring button in the provider details page to go to the provider's monitoring dashboard in the Monitoring site. This new button is accessible in any AWS or Azure type providers and will open a new window or tab in your browser to display it.
 
 #### [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/)
 
@@ -28,7 +28,7 @@ Cloud Application Manager now includes a Monitoring button in the provider detai
 
 The user can now use these new resource types in the template definition of any Cloud Formation template box, or update the template file of any existing template instance and reconfigure it to use the new resource types.
 
-**Support for new AWS instance type**
+**Support for new AWS instance types**
 
 [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) now supports additional AWS instance types: m5a and r5a. Once you synchronize your AWS provider in Cloud Application Manager, you will be able to select this Instance type in your Deployment Policy boxes to provision this type of instance at deployment time.
 
