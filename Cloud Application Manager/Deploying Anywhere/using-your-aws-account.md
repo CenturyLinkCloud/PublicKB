@@ -38,7 +38,7 @@ All Cloud Application Manager users who wants to deploy workloads into AWS.
 
 ### Prerequisites
 
-* Access to Cloud Application Manager Management site.
+* Access to Cloud Application Manager [Management site](https://account.cam.ctl.io/#/providers?type=Amazon-Web-Services).
 * The user must have an existing AWS account or should be an Administrator of the organization in Cloud Application Manager to [create](../Cloud Optimization/partner-cloud-integration-aws-new.md) or [bring](../Cloud Optimization/partner-cloud-integration-aws-existing.md) an AWS account to be managed by CenturyLink.
 
 ### Connect Your AWS Account in Cloud Application Manager

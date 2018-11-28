@@ -31,7 +31,11 @@ An active Cloud Application Manager account.
 
 ### Instances page
 
+<<<<<<< HEAD
 The Instances left side menu option of the Applications site allows you to see at a glance a view of all instances you have access to through your configured providers in your current scope.
+=======
+The left side menu of [Applications site](https://cam.ctl.io/#/instances) shows you at a glance a view of all instances you have access to through your configured providers.
+>>>>>>> [CAM-7553] - Review all CAM KB links to login-dashboard
 
 ![All instances page](../../images/cloud-application-manager/instances/all-instances.png)
 
