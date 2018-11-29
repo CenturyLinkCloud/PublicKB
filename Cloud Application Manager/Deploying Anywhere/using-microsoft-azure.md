@@ -289,7 +289,7 @@ After the synchronization process, you will also find in the Instances page a li
 
 These resources can be filtered by the following types and subtypes:
 
-* Compute
+* **Compute**
   * ScaleSet
   * Virtual machine
 * **Network**
