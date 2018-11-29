@@ -292,7 +292,7 @@ These resources can be filtered by the following types and subtypes:
 * Compute
   * ScaleSet
   * Virtual machine
-* Network
+* **Network**
   * Load balancer
   * Security groups
   * Network interface
