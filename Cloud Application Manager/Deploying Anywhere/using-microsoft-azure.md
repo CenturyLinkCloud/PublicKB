@@ -302,7 +302,7 @@ These resources can be filtered by the following types and subtypes:
   * Application gateway
   * Local gateway
   * Express gateway
-* Storage
+* **Storage**
   * File
   * BLOB
   * Table
