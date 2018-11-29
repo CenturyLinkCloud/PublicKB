@@ -307,7 +307,7 @@ These resources can be filtered by the following types and subtypes:
   * BLOB
   * Table
   * Queue
-* Database
+* **Database**
   * Sql Server
   * Managed Sql Server
   * MySQL
