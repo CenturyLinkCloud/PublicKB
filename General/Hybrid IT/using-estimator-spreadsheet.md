@@ -8,7 +8,7 @@
 
 ### Audience
 
-Customers and Sales Representatives using the Online Price Estimator to generate complex Hybrid IT Solution estimates.
+Customers and Sales Representatives using the [Online Price Estimator](https://www.ctl.io/estimator/) to generate complex Hybrid IT Solution cost estimates.
 
 ### Overview
 

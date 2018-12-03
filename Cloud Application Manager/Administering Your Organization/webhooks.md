@@ -1,19 +1,36 @@
 {{{
 "title": "Integrate Network Management Solutions with Webhooks",
-"date": "09-01-2016",
-"author": "",
+"date": "10-30-2018",
+"author": "Arya Roudi",
+"keywords":["webhooks", "manage webhooks", "manage provider tags"],
 "attachments": [],
 "contentIsHTML": false
 }}}
 
-### Integrate Network Management Solutions with Webhooks
+**In this article:**
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Integrating with Infoblox](#integrating-with-infoblox)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
+
+### Overview
+
 Cloud Application Manager integrates with IPAM, DNS, DHCP, and CMDB network management solutions over webhooks. Webhooks are available in the Enterprise Edition.
 
 A webhook requires a custom web service to connect to your network management solution. You can build this custom web service as a box. We show how this works for Infoblox as an example. Say you deploy an instance to vCenter from Cloud Application Manager. Cloud Application Manager calls the custom Infoblox web service over the webhook and provides the instance IP configuration. The web service passes it to Infoblox. Once the web service gets the IP and domain name from Infoblox, it returns the information to Cloud Application Manager, which assigns the IP configuration to the instance.
 
-**In this article:**
+### Audience
 
-* Integrating with Infoblox
+All users with Cloud Application Manager organization administrator access.
+
+### Prerequisites
+
+* Access to Cloud Application Manager, Management site.
+
+* The user must be an Administrator of the organization in Cloud Application Manager.
+
+* The user should be at the organization level scope to access the Settings option in the left side menu.
 
 
 ### Integrating with Infoblox
@@ -27,7 +44,8 @@ In this example, Infoblox provides a static IP and domain name for every instanc
    1. Create a network for every vCenter network to which you deploy from Cloud Application Manager. This has the CIDR range of IP addresses Infoblox can assign. Under Data Management > Toolbar, click Add and Add Network.
 
    2. Add global extensible attributes for the vCenter networks. Under Administration > Extensible Attributes, add these four:
-   ![admin-webhooks1.png](../../images/cloud-application-manager/admin-webhooks1.png)
+
+   ![Infoblox Global Extensible](../../images/cloud-application-manager/admin-webhooks1.png)
 
       * **Network** - Name of the vCenter network.
       * **Gateway** - Address of the vCenter network gateway node.
@@ -35,7 +53,7 @@ In this example, Infoblox provides a static IP and domain name for every instanc
       * **DNS Suffix** - Domain name suffix that registers and resolves the DNS name.
 
    3. Add the four global extensible attributes to each network. Edit each network. Under Extensible Attributes, add the four attributes and specify values.
-      ![admin-webhooks2.png](../../images/cloud-application-manager/admin-webhooks2.png)
+      ![Infoblox Global Extensible Network](../../images/cloud-application-manager/admin-webhooks2.png)
 
       When you deploy, Cloud Application Manager maps the network you select in the deployment policy to these Infoblox network attributes to derive the right IP configuration.
 
@@ -43,7 +61,7 @@ In this example, Infoblox provides a static IP and domain name for every instanc
 
 1. Create a custom Infoblox web service. We define the web service in a box. [Contact us](mailto:incident@CenturyLink.com) to share the box with you.
 
-   ![admin-webhooks3.png](../../images/cloud-application-manager/admin-webhooks3.png)
+   ![Custom- Infoblox Webervice](../../images/cloud-application-manager/admin-webhooks3.png)
 
    **Install script**
 
@@ -197,11 +215,11 @@ In this example, Infoblox provides a static IP and domain name for every instanc
 
 2. Deploy the custom Infoblox web service box. We provide values for the address, password, and user. These are admin credentials to access Infoblox.
 
-   ![admin-webhooks4.png](../../images/cloud-application-manager/admin-webhooks4.png)
+   ![Deploy Custom Infoblox Web Service](../../images/cloud-application-manager/admin-webhooks4.png)
 
 3. Add the custom Infoblox web service endpoint as a webhook. Under [Admin Console](admin-overview.md) > Webhooks, enter the endpoint of the deployed webservice as a webhook like this: http://endpoint_of_webservice_instance/requestIP
 
-   ![admin-webhooks5.png](../../images/cloud-application-manager/admin-webhooks5.png)
+   ![Infoblox Web Service Webhook](../../images/cloud-application-manager/admin-webhooks5.png)
 
 4. To see the Infoblox integration in action, we deploy an instance from Cloud Application Manager to vCenter.
 In the deployment policy, we select a custom specification. This acts as a holder for the network information Cloud Application Manager gets from InfoBlox. vCenter overrides the values of the custom specification with the values from Infoblox.

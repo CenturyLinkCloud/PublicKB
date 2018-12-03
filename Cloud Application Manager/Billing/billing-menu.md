@@ -34,20 +34,28 @@ All users with Cloud Application Manager organization administrator access.
 * The user should be at the organization level scope to access the Billing option in the left side menu.
 
 ### Billing Dashboard
-When you click on **Billing** in the left side menu you will land into a dashboard page, where a bar graph with the billed amount for the latest months will be shown. You can also change the range of months being shown in the bar graph by selecting a different value from the top-right dropdown on the graph.
+When you click on **Billing** in the left side menu you will land into a dashboard page, where a bar graph with the billed amount for the previous months will be shown. You can change the range of months being shown in the bars graph by selecting a different value in the date filter and you can also select the consumption categories you want to display with the consumption category type filter.
 
 ![Billing Dashboard](../../images/cloud-application-manager/billing/billing-dashboard.png)
 
 ### Billing Usage History
-When you click on **Usage History** option under the **Billing** left menu item, you will be able to review your detailled billing information.
+When you click on **Usage History** option under the **Billing** left menu item, you will be able to review your detailed billing information.
+When you enter this page, you can see a list with the previous months billing summary, including the period of usage and the total credit and debit amounts for each month.
 
-When you enter this page you can see a list with latest months billing summary, and when you click on a line, details for that month appears on the bottom of the page, showing the line-items you may encounter in your invoice, and additional information for each item.
+![Billing Usage History](../../images/cloud-application-manager/billing/billing-usage-history-summary.png)
+
+When you click on a line, the details for that month appears on the bottom of the page, showing the line-items you may encounter in your invoice, including for example your Application Lifecycle charges, your support charges as well as your discounts.
+Each line item on the below table includes additional information such as region (where applicable), quantity, cost and total.
 
 ![Billing Usage History](../../images/cloud-application-manager/billing/billing-usage-history.png)
 
 Some items have a dropdown icon at the beginning, meaning that you can click on it to drill down and see further details on that item appearing below.
 
 For more information about the usage history details see [detailed billing report](../Cloud Optimization/partner-cloud-integration-detailed-billing-report.md).
+
+### Pricing
+
+When you click on **Pricing** option under the Billing left menu item, you will be able to see the Cloud Application Manager default pricing of the different Cloud Application Manager products and services, including the billing type and the hourly or monthly price, depending on the type and the setup fee if any is required.
 
 ### Getting General Support
 

@@ -53,6 +53,19 @@ Overrides can be be performed by customer users with appropriate permissions or 
 Change Requests may result in exceptions to hardening. Please read the "Change Request" sections below. If you submit one and it is accepted, CAM will not be able to overwrite those changes as a result of future hardening attempts.
 
 
+**Customer Admin User / Group**
+* **Attached Policy Names**: CTLCustomerPolicy, AdministratorAccess
+* **Targeted groups/tools/users**: The first Administrator who created a new AWS account via Cloud Application Manager, plus any further users placed in that group.
+* **Intent**: To be able to provide the first administrator as many permissions as possible so that they can begin to set up the new account.
+* **Change Requests**: The policies will be applied by default to this group for any new accounts created by CenturyLink. If you would like  to add further restrictions to the group and the users it contains, the customer retains all permissions to do so.
+* **Policy Summary**
+- Restricts the ability to link or unlink from an organization.
+- Restricts deleting CenturyLink-defined IAM policies, roles and additional sundry functions (such as MFA/SAML deletion).
+- Billing/Usage/Budgeting aspects of the portal are restricted to prevent confusion due to CenturyLink consolidated billing. (Optimized accounts have access to this data through Cloud Application Manager's Analytics tools.)
+- Full administrator access to all other aspects of the account which are not restricted by other policies.
+
+
+
 **Customer Role**
 * **Attached Policy Names**: CTLCustomerPolicy
 * **Targeted groups/tools/users**: Any customer user. This policy is applied to all customer IAM Groups.
