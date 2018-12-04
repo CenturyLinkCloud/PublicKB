@@ -1,5 +1,5 @@
 {{{ "title": "Deploying and Managing Instances",
-"date": "09-18-2018",
+"date": "11-27-2018",
 "author": "Guillermo Sánchez",
 "keywords": ["cam", "instances", "lifecycle", "deploy", "deployment-policy"],
 "attachments": [],
@@ -31,11 +31,11 @@ An active Cloud Application Manager account.
 
 ### Instances page
 
-The left side menu of Applications site shows you at a glance a view of all instances you have access to through your configured providers.
+The Instances left side menu option of the Applications site allows you to see at a glance a view of all instances you have access to through your configured providers in your current scope.
 
 ![All instances page](../../images/cloud-application-manager/instances/all-instances.png)
 
-There are three different submenus under the Instances menu:
+There are three different submenu options under Instances:
 
 * **All**: shows all type of instances, either registered or unregistered.
 
@@ -47,7 +47,11 @@ There are three different submenus under the Instances menu:
 
   You can also select a specific state among the available ones (Active, Inactive) to show only the instance in the selected state.
 
-A Compute type unregistered instance can be registered (imported) into Cloud Application Manager, to enable lifecycle management on it (an icon button allowing it will appear at the end of its row), so it will be shown from them on as a registered instance in the corresponding views. The Unregistered Instances tab in the provider details page remains unchanged showing only compute registerable instances. If you want to bulk register (import) several instances from the same provider, use this feature from there instead, where bulk register is also available as a bulk action.
+The Instances page displays on the top of the page a new button, a search field  and a filters and instance view buttons. The search field allows you to find any instance looking for most of the instance fields such as name, instance-id, service-id, public or private IP address, support_id, hostname, owner or last user who acted on the instance.
+
+Below this components you can find the corresponding list or graph of instances, depending on the view type that is selected.
+
+In the instances list, any Compute type unregistered instance can be registered (imported) into Cloud Application Manager to enable lifecycle management on it (an icon button allowing it will appear at the end of its row), so it will be shown from them on as a registered instance in the corresponding views. The Unregistered Instances tab in the provider details page remains unchanged showing only compute registerable instances. If you want to bulk register (import) several instances from the same provider, use this feature from there instead, where bulk register is also available as a bulk action.
 
 #### Instance view types
 

@@ -1,13 +1,11 @@
 {{{
 "title": "ITSM Integrations",
-"date": "08-17-2018",
-"author": "Guillermo Sanchez",
+"date": "10-30-2018",
+"author": "Arya Roudi",
 "keywords": ["administration", "itsm", "servicenow"],
 "attachments": [],
 "contentIsHTML": false
 }}}
-
-### ITSM Integrations
 
 **In this article:**
 
@@ -16,7 +14,7 @@
 * [Prerequisites](#prerequisites)
 * [Configuration Steps](#configuration-steps)
 * [Behavior](#behavior)
-* [Getting General Support](#getting-general-support)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
 
@@ -30,7 +28,6 @@ All users with Cloud Application Manager organization administrator access.
 
 * Access to Cloud Application Manager, Management site.
 * The user must be an Administrator of the organization in Cloud Application Manager.
-
 * The user should be at the organization level scope to access the Settings option in the left side menu, or through the pencil button in the organization element in the context switcher.
 
 ### Configuration Steps
@@ -46,7 +43,7 @@ All users with Cloud Application Manager organization administrator access.
 
     Once you specify the ServiceNow host, you should copy the Redirect URL and click on the **Create an application registry for CAM** link which will open the ServiceNow server configuration in a new tab or window where you will configure the ServiceNow application registration for Cloud Application Manager (CAM) and fill in the following:
     * Click on the lock next to Redirect URL to unlock the field and paste there the value you copied from CAM form earlier.
-    * Specify a meaningfull name for your ServiceNow application registration for CAM
+    * Specify a meaningful name for your ServiceNow application registration for CAM
     * Copy the Client ID that has been automatically generated and go back to CAM to paste it in the corresponding field
     * Specify the same Client Secret in both configuration pages (CAM and ServiceNow).
     * In ServiceNow application registration page you can change the **Refresh Token Lifespan** value to "-1" to define that it will never expire.
@@ -90,7 +87,7 @@ The instance activity log will show that the instance termination has been infor
 
 ![ServiceNow CMDB unregistered](../../images/cloud-application-manager/management/servicenow-cmdb-unregistered.png)
 
-### Getting General Support
+### Contacting Cloud Application Manager Support
 
 Customers can contact the CenturyLink Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
 
