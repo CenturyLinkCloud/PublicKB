@@ -26,7 +26,7 @@ Cloud Application Manager Users
 
 ### Prerequisites
 
-* Access to Applications site (Application Lifecycle Management module) of Cloud Application Manager as an authorized user.
+* Access to [Applications site](https://cam.ctl.io/#/boxes) (Application Lifecycle Management module) of Cloud Application Manager as an authorized user.
 
 ### Boxes
 

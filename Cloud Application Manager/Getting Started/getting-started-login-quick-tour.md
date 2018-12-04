@@ -18,13 +18,13 @@
 * [Quick tour](#quick-tour)
 
  ### Overview
- This article makes a quick tour on login page and the panel after login to the platform.
+ This article makes a quick tour on login page and the panel after login to the platform in Applications site.
  
  ### Audience
  All users with Cloud Application Manager access.
  
  ### Prerequisites
- * Access to Cloud Application Manager, Management site.
+ * Access to Cloud Application Manager, [Applications site](https://cam.ctl.io/login).
  
 ___
 
@@ -32,7 +32,7 @@ ___
 
 **Where to log in?**
 
-* To access Cloud Application Manager in the cloud, browse to http://cam.ctl.io/login or your Cloud Application Manager company URL.
+* To access Cloud Application Manager in the cloud, browse to [Applications site](https://cam.ctl.io/login) or your Cloud Application Manager company URL.
 * To access Cloud Application Manager inside a private network, ask your administrator for the login URL.
 
    **Note**: Enable JavaScript on the browser to use Cloud Application Manager. If not, some elements of the web interface may not work or render properly. We support Cloud Application Manager on the latest Chrome, Safari, Firefox, and Internet Explorer browsers.
@@ -54,24 +54,27 @@ ___
 
 ### Quick Tour
 
-When you log in, the top navigation bar guides you to the main areas of Cloud Application Manager.
+When you log in, at the top you will see the global navigation bar. It has three sections: Service, Site and Context. 
+Notice you are in the **Applications site**. In the context section you can access to **Workspaces**. 
+
+* Service   ( Cloud Application Manager )
+* Site      ( Applications site )
+* Context   ( Organization, Cost Centers or Workspaces )
+
+On the left side, a menu guides you to the main areas of Cloud Application Manager
 
 * Dashboard
-* Workspaces
 * Instances
 * Boxes
 * Providers
 * Catalog
 * Activity
+
+On the right side of the top bar, you will find help and your account menus.
+
 * Your Account
 * Help
 ____
-
-**Dashboard**
-
-![CAM workspace panel](../../images/cloud-application-manager/getting-started-login-8.png)
-
-It is a global vision of the content and uses of the workspace. There you can see the number of the instances, boxes or providers and their status. In addition, there are two charts with the uses by day, week or month.
 
 **Workspaces**
 
@@ -80,6 +83,12 @@ It is a global vision of the content and uses of the workspace. There you can se
 When you log in, you’re in your personal workspace. From the workspace drop-down, you can access team workspaces if you belong to them, or create one and add others to share Cloud Application Manager assets and collaborate. To learn more, see [Workspaces & Sharing](../Core Concepts/workspaces-and-collaboration.md).
 
 ___
+
+**Dashboard**
+
+![CAM workspace panel](../../images/cloud-application-manager/getting-started-login-8.png)
+
+It is a global vision of the content and uses of the workspace. There you can see the number of the instances, boxes or providers and their status. In addition, there are two charts with the uses by day, week or month.
 
 **Instances**
 
@@ -122,7 +131,6 @@ ___
 * Shows you all the public boxes available for all users, categorized as **Featured, Managed Services, Services, Plugins** and **Other** to easily locate and deploy. 
 * There is a feature where you can request to publish one of your own boxes to the catalog. It will become available in the catalog for any user in one of the existing categories or a new one.
 
-
 ___
 
 **Activity**
@@ -134,12 +142,14 @@ ___
 ![Activity page, Filter dropdown](../../images/cloud-application-manager/activity-filter-list.png)
 
     * **Provider**, this option filters the result and shows only the provider's activity.
-    * **Settings**, this option filters the result and shows only the Setting's activity.
-    * **User**, this option filters the result and shows only the activities that are related to the users.
-        
+    * **Box**, this option filters the result and shows only the box's activity.
+    * **Instance**, this option filters the result and shows only the activities that are related to the instances.
+    * **Catalog**, this option filters the result and shows only the catalog's activity.
+      
         > **note that you can combine these filters with each other on your own will.**
         
 * Search by user name or action to narrow the results, or click on certain actions to navigate to the affected resource.
+
 ___
 
 **Your Account**
@@ -147,7 +157,6 @@ ___
 ![CAM account menu](../../images/cloud-application-manager/getting-started-login-6.png)
 
 * From the username drop-down, access your account profile where you can change your username or reset password if you’re using username and password to log in.
-* Access the Admin Console from here to administer your Cloud Application Manager organization.
 * Get tokens to use Cloud Application Manager via the CLI or API with Authentication Tokens.
 
 ___
