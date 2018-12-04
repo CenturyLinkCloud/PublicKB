@@ -7,9 +7,9 @@
 }}}
 
 ### Overview
-CenturyLink Cloud customers may wish to import OVA/OVF Guest Operating Systems to the platform via a [Service Task](//www.ctl.io/products/support/service-tasks). Customers frequently request a list of the supported Guest Operating Systems the CenturyLink Cloud supports for Import and this KB is meant to address this query.
+CenturyLink Cloud customers may wish to import OVA/OVF Guest Operating Systems to the platform via a [Service Task](//www.ctl.io/products/support/service-tasks.md). Customers frequently request a list of the supported Guest Operating Systems the CenturyLink Cloud supports for Import and this KB is meant to address this query.
 
-It is recommended that customers leverage our [Self-Service OVF Import Capabilities](../service-tasks/supported-guest-operating-systems-for-ovaovf-import.md) for Operating Systems supported by this functionality.
+It is recommended that customers leverage our [Self-Service OVF Import Capabilities](../service-tasks//service-tasks/best-practices-and-preparation-for-a-virtual-machineovfova-import.md) for Operating Systems supported by this functionality.
 
 ### Prerequisites
 * A CenturyLink Cloud Account
@@ -40,7 +40,7 @@ It is recommended that customers leverage our [Self-Service OVF Import Capabilit
 
 **Q: I run Xen, KVM, Hyper-V or other x86/x64 Virtualization Services.  Can I import images from these technologies into CenturyLink Cloud?**
 
-A: Customers must convert their virtual servers to an OVF format prior to import (manual or self-service) to the CenturyLink Cloud.  As long as the operating system is supported as shown above an import is possible once the VM is converted to OVF.  Customers are advised to review the [OVF requirements for import.](../service-tasks/supported-guest-operating-systems-for-ovaovf-import.md)
+A: Customers must convert their virtual servers to an OVF format prior to import (manual or self-service) to the CenturyLink Cloud.  As long as the operating system is supported as shown above an import is possible once the VM is converted to OVF.  Customers are advised to review the [OVF requirements for import.](../service-tasks//service-tasks/best-practices-and-preparation-for-a-virtual-machineovfova-import/)
 
 **Q: I run Intel IA64 or Oracle SPARC hardware platforms can I import a server based on this technology into CenturyLink Cloud?**
 
