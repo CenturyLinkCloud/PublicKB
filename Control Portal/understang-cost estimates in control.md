@@ -6,8 +6,6 @@
   "contentIsHTML": false
 }}}
 
-<strong>The AppFog service was retired on June 29, 2018. The AppFog Platform-as-a-Service is no longer available, including all source code, env vars, and database information. </strong>
-
 ### Contents
 - [Overview](#overview)
 - [Dashboard](#main-dashboard)
@@ -147,7 +145,7 @@ Below is a table to summarize the services included in portal cost estimation:
 
 | Portal | Estimates |
 | ------------ | ------------ |
-| Main Dashboard Month Estimate | CPU<br>Memory<br>Disk<br>OS license<br>Database License<br>VLANs<br>VPN<br>Load Balancer<br>Object Storage<br>Public IP<br>Simple BAckup<br>Appfog<br>Relational DB<br>DNS |
+| Main Dashboard Month Estimate | CPU<br>Memory<br>Disk<br>OS license<br>Database License<br>VLANs<br>VPN<br>Load Balancer<br>Object Storage<br>Public IP<br>Simple Backup Service<br>Relational DB<br>DNS |
 | Data Center View<br>Group View<br>Server View | CPU<br>Memory<br>Disk<br>OS license |
 | Network | VLANs |
 | Load Balancer | Load Balancer |
@@ -156,4 +154,4 @@ Below is a table to summarize the services included in portal cost estimation:
 | Backup | Simple Backup |
 | Object Storage | Object Storage (month estimate/current hour/month to date) |
 | Relational DB | Relational DB |
-| Billing | CPU<br>Memory<br>Disk<br>OS license<br>Database License (per server)<br>VLANs<br>VPN<br>Load Balancer<br>Object Storage<br>Public IP (per data center)<br>Simple Backup<br>Appfog<br>Relational DB<br>DNS<br>Bandwidth<br>Support<br>Credit |
+| Billing | CPU<br>Memory<br>Disk<br>OS license<br>Database License (per server)<br>VLANs<br>VPN<br>Load Balancer<br>Object Storage<br>Public IP (per data center)<br>Simple Backup Service<br>Relational DB<br>DNS<br>Bandwidth<br>Support<br>Credit |
