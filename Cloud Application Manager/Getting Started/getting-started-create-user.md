@@ -31,7 +31,7 @@ All users with Cloud Application Manager organization administrator access.
 
 ### Prerequisites
 
-* Access to Cloud Application Manager, Management site.
+* Access to Cloud Application Manager, [Management site](https://account.cam.ctl.io/#/users).
 
 * The user must be an Administrator of the organization in Cloud Application Manager.
 
@@ -39,7 +39,7 @@ All users with Cloud Application Manager organization administrator access.
 
 ### User Management page
 
-A Cloud Application Manager administrator can access the User Management page from within Management site and he can find there all the existing users in the organization with some useful data of each user such as:
+A Cloud Application Manager administrator can access the User Management page from within [Management site](https://account.cam.ctl.io/#/users) and he can find there all the existing users in the organization with some useful data of each user such as:
 
 * **Name** and **email**
 * **Id**

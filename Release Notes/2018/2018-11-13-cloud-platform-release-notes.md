@@ -12,7 +12,7 @@
 
 **Default pricing page in CAM Management site**
 
-[Cloud Application Manager](https://www.ctl.io/cloud-application-manager/) Management site now includes a Pricing section under the Billing page where authenticated users with administrative privileges can check the standard pricing of the different Cloud Application Manager products and services, including the billing type and the hourly or monthly price, depending on the type and the setup fee if any is required. Note that this information is the standard pricing and it does not include any custom pricing terms and/or conditions that the customer may have contracted.  We are currently working on providing those custom terms and conditions so they can be included in this section in the near future.
+[Cloud Application Manager](https://www.ctl.io/cloud-application-manager/) [Management site](https://account.cam.ctl.io/#/billing) now includes a Pricing section under the Billing page where authenticated users with administrative privileges can check the standard pricing of the different Cloud Application Manager products and services, including the billing type and the hourly or monthly price, depending on the type and the setup fee if any is required. Note that this information is the standard pricing and it does not include any custom pricing terms and/or conditions that the customer may have contracted.  We are currently working on providing those custom terms and conditions so they can be included in this section in the near future.
 
 #### [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/)
 

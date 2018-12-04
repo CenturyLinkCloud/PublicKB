@@ -41,7 +41,7 @@ All users with Cloud Application Manager organization administrator access.
 
 ### Prerequisites
 
-* Access to Cloud Application Manager, Management site.
+* Access to Cloud Application Manager, [Management site](https://account.cam.ctl.io/#/settings).
 
 * The user must be an Administrator of the organization in Cloud Application Manager.
 
