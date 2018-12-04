@@ -13,6 +13,7 @@
 - [Prerequisites](#prerequisites)
 - [Getting started with Google Deployment Templates on Cloud Application Manager](#getting-started-with-google-deployment-templates-on-cloud-application-manager)
 - [Google Deployment Templates](#google-deployment-templates)
+- [Sample Template](#sample-template)
 - [Getting General Support](#getting-general-support)
 
 ### Overview
@@ -26,8 +27,8 @@ All Cloud Application Manager users using Google Compute providers.
 
 ### Prerequisites
 
-* An active Cloud Application Manager account
-* An existing [Google Compute Provider](../Deploying Anywhere/using-google-cloud.md) configured in Cloud Application Manager
+- An active Cloud Application Manager account
+- An existing [Google Compute Provider](../Deploying Anywhere/using-google-cloud.md) configured in Cloud Application Manager
 
 ### Getting started with Google Deployment Templates on Cloud Application Manager
 
@@ -86,23 +87,23 @@ while a different deployment still uses the very same resource. Other times the 
 might get blocked, because it can not clean up a resource it has deployed,
 if a different instance has already deleted it.
 
-A good practice to avoid these scenarios is to prefix the name of each resource with the name of the deployment,
+A good practice to avoid these scenarios is to prefix the name of each resource with the **name of the deployment**,
 which happens to be the *service-id* in Cloud Application Manager.
 
-```
+```Jinja
 resources:
-- name: {{ env['deployment'] }}-vm
+- name: \{{ env['deployment'] }}-vm
   type: compute.v1.instance
   properties:
-    zone: {{ properties["zone"] }}
-    machineType: projects/{{ env["project"] }}/zones/{{ properties["zone"] }}/machineTypes/{{ properties["machineType"] }}
+    zone: \{{ properties["zone"] }}
+    machineType: projects/\{{ env["project"] }}/zones/\{{ properties["zone"] }}/machineTypes/\{{ properties["machineType"] }}
     disks:
       .....
 ```
 
 #### Box Variables
 
-Box variables are exposed as *properties* for the templates, and can be referenced like `{{ properties["zone"] }}`.
+Box variables are exposed as *properties* for the templates, and can be referenced like `\{{ properties["zone"] }}`.
 The *zone* variable is automatically crated at deployment time unless the Box defines one, and has the value of
 *Default Zone* property defined in the Deployment Policy.
 
@@ -119,7 +120,7 @@ Google also defines some useful environment variables automatically:
 | `env['type']` | resource type declared in top-level configuration |
 | `properties['variable_name']` | Box variables are exposed in *properties* |
 
-Variables can be referenced like `{{ properties["machineType"] }}` in **Jinja** template files.
+Variables can be referenced like `\{{ properties["machineType"] }}` in **Jinja** template files.
 
 Variables can be used only with *Jinja* and *Python* type template files.
 **Yaml** template files have to be renamed to *jinja* to use variables with them.
@@ -131,12 +132,12 @@ The corresponding feature is called *Outputs* in
 [Google's Documentation](https://cloud.google.com/deployment-manager/docs/configuration/expose-information-outputs).
 Any Outputs defined in templates are going to end up as output variables in Cloud Application Manager. 
 
-```
+```Jinja
 outputs:
 - name: internalIP
-  value: $(ref.{{name}}-vm.networkInterfaces[0].networkIP)
+  value: $(ref.\{{name}}-vm.networkInterfaces[0].networkIP)
 - name: ip
-  value: $(ref.{{name}}-vm.networkInterfaces[0].accessConfigs[0].natIP)
+  value: $(ref.\{{name}}-vm.networkInterfaces[0].accessConfigs[0].natIP)
 - name: port
   value: 80
 ```
@@ -149,6 +150,88 @@ The resources that have been created by the deployment are going to populate the
 and will be deleted when the instance is terminated.
 
 ![Resources deployed with Google Deployment Manager](../../images/cloud-application-manager/google-deployment-manager/resources.png)
+
+### Sample Template
+
+The following template deploys a single virtual machine instance with a firewall rule.
+
+To use this template in a Template Box, you need to define a mandatory variable named `machineType` with value of a valid
+Google Compute Engine virtual [machine type](https://cloud.google.com/compute/docs/machine-types).
+Here are some possible values to define it as an Option type variable: `f1-micro,g1-small,n1-standard-1`
+
+**Important to note** that in the following template, the `name` property of each resource gets a derived value,
+`\{{env['deployment']}}` as a prefix, which contains the deployment-ID, and therefore gets a new distinct value
+each time a new Instance is deployed. If we used static names for the resources, a second deployed Instance
+would update the already existing resource, instead of creating a new one, and would delete the only resource
+when terminated, leaving the remaining Instance referring to a non-existing resource, and therefore fail to
+terminate in CAM. And also bear in mind the dire threat of unintentionally deleting resources.
+
+```Jinja
+resources:
+- name: \{{ env['deployment'] }}-vm
+  type: compute.v1.instance
+  properties:
+    zone: \{{ properties["zone"] }}
+    machineType: projects/\{{ env["project"] }}/zones/\{{ properties["zone"] }}/machineTypes/\{{ properties["machineType"] }}
+    disks:
+    - deviceName: boot
+      type: PERSISTENT
+      boot: true
+      autoDelete: true
+      initializeParams:
+        sourceImage: projects/debian-cloud/global/images/family/debian-9
+    networkInterfaces:
+    - network: global/networks/default
+      accessConfigs:
+      - name: External NAT
+        type: ONE_TO_ONE_NAT
+    metadata:
+      items:
+      - key: startup-script
+        value: |
+          #!/bin/bash -e
+          apt update && apt -y install nginx-light
+    tags:
+      items:
+      - \{{ name }}-tcp-80
+- name: \{{ env['deployment'] }}-tcp-80
+  type: compute.v1.firewall
+  properties:
+    allowed:
+    - IPProtocol: TCP
+      ports:
+      - '80'
+    network: global/networks/default
+    sourceRanges:
+    - 0.0.0.0/0
+    targetTags:
+    - \{{name}}-tcp-80
+
+outputs:
+- name: internalIP
+  value: $(ref.\{{ env['deployment'] }}-vm.networkInterfaces[0].networkIP)
+- name: ip
+  value: $(ref.\{{ env['deployment'] }}-vm.networkInterfaces[0].accessConfigs[0].natIP)
+- name: port
+  value: 80
+```
+
+This template defines `internalIP`, `ip` and `port` output variables. You can check their output value in the Lifecycle Editor
+of the deployed Instance.
+
+#### To deploy this template
+
+1. Create a new Provider with your Google credentials, or *Sync* your existing provider
+   (only need to do once if you have never used Deployment Manager with this Provider before)
+2. Create a Deployment Policy Box of *Google Deployment* type
+3. Create a Template Box of *Google Deployment Template* type
+4. Create a Box variable called `machineType` of *Options* type, *required*, list of *values* as `f1-micro,g1-small,n1-standard-1`
+5. Create and edit an empty template for the Box, and copy the template from above
+6. Deploy the box to get an Instance
+7. If all goes well, check out the *Lifecycle Editor* (for output variables) and the *Resources* tab (for list of deployed resources).
+
+Consult Google's [Deployment Manager](https://cloud.google.com/deployment-manager/docs/configuration/) documentation
+to learn more about deployment templates.
 
 ### Getting General Support
 
