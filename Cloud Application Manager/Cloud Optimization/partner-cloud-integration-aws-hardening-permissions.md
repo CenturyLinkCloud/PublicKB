@@ -1,6 +1,6 @@
 {{{
   "title": "Partner Cloud Integration: CenturyLink Permissions and Access for Optimized AWS Accounts",
-  "date": "10-11-18",
+  "date": "12-04-18",
   "author": "Benjamin Swoboda",
   "attachments": [],
   "contentIsHTML": false
