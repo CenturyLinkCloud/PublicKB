@@ -91,18 +91,18 @@ which happens to be the *service-id* in Cloud Application Manager.
 
 ```
 resources:
-- name: {{ env['deployment'] }}-vm
+- name: \{{ env['deployment'] }}-vm
   type: compute.v1.instance
   properties:
-    zone: {{ properties["zone"] }}
-    machineType: projects/{{ env["project"] }}/zones/{{ properties["zone"] }}/machineTypes/{{ properties["machineType"] }}
+    zone: \{{ properties["zone"] }}
+    machineType: projects/\{{ env["project"] }}/zones/\{{ properties["zone"] }}/machineTypes/\{{ properties["machineType"] }}
     disks:
       .....
 ```
 
 #### Box Variables
 
-Box variables are exposed as *properties* for the templates, and can be referenced like `{{ properties["zone"] }}`.
+Box variables are exposed as *properties* for the templates, and can be referenced like `\{{ properties["zone"] }}`.
 The *zone* variable is automatically crated at deployment time unless the Box defines one, and has the value of
 *Default Zone* property defined in the Deployment Policy.
 
@@ -119,7 +119,7 @@ Google also defines some useful environment variables automatically:
 | `env['type']` | resource type declared in top-level configuration |
 | `properties['variable_name']` | Box variables are exposed in *properties* |
 
-Variables can be referenced like `{{ properties["machineType"] }}` in **Jinja** template files.
+Variables can be referenced like `\{{ properties["machineType"] }}` in **Jinja** template files.
 
 Variables can be used only with *Jinja* and *Python* type template files.
 **Yaml** template files have to be renamed to *jinja* to use variables with them.
@@ -134,9 +134,9 @@ Any Outputs defined in templates are going to end up as output variables in Clou
 ```
 outputs:
 - name: internalIP
-  value: $(ref.{{name}}-vm.networkInterfaces[0].networkIP)
+  value: $(ref.\{{name}}-vm.networkInterfaces[0].networkIP)
 - name: ip
-  value: $(ref.{{name}}-vm.networkInterfaces[0].accessConfigs[0].natIP)
+  value: $(ref.\{{name}}-vm.networkInterfaces[0].accessConfigs[0].natIP)
 - name: port
   value: 80
 ```
