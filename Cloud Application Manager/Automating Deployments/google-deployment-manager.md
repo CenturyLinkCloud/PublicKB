@@ -1,5 +1,5 @@
 {{{ "title": "Using Google Deployment Manager with Cloud Application Manager",
-"date": "29-11-2018",
+"date": "11-29-2018",
 "author": "Dénes Pál",
 "attachments": [],
 "contentIsHTML": false,
@@ -129,7 +129,7 @@ If the main template file is a **.yaml*, it is automatically renamed as **.jinja
 
 The corresponding feature is called *Outputs* in
 [Google's Documentation](https://cloud.google.com/deployment-manager/docs/configuration/expose-information-outputs).
-Any Outputs defined in templates are going to end up as output variables in Cloud Application Manager. 
+Any Outputs defined in templates are going to end up as output variables in Cloud Application Manager.
 
 ```
 outputs:
