@@ -1,7 +1,7 @@
 {{{
   "title": "CenturyLink Cloud Optimization Introduction",
-  "date": "06-01-2017",
-  "author": "Chris Meyer",
+  "date": "12-06-2018",
+  "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -38,4 +38,4 @@ After logging into Cloud Application Manager you can navigate to the Anlaytics U
 
 
 #### Adding provider to CAM
-In order to view a cloud providers analytics data a user must have [Administrator access](https://www.ctl.io/knowledge-base/cloud-application-manager/core-concepts/workspaces-and-collaboration/#workspaces), to a [shared workspace](https://www.ctl.io/knowledge-base/cloud-application-manager/core-concepts/workspaces-and-collaboration/#sharing-boxes-instances-and-providers) where a valid on-boarded cloud provider has been added. You can speak to your companies Cloud Application Manager Organization Admin to add you as an 'administrator' to a shared workspace that has already had the target cloud provider account added as a 'provider' or you can add valid credentials to the 'providers' in your personal workspace.  
+In order to view a cloud providers analytics data a user must have [Access](https://www.ctl.io/knowledge-base/cloud-application-manager/core-concepts/workspaces-and-collaboration/#workspaces), to a [shared workspace](https://www.ctl.io/knowledge-base/cloud-application-manager/core-concepts/workspaces-and-collaboration/#sharing-boxes-instances-and-providers) where a valid on-boarded cloud provider has been added. If the administrator does not wish for users of CAM to be able to do anything except read data, they should provide Visitor access to the workspace. You can speak to your company's Cloud Application Manager Organization Admin to add you as an 'administrator' to a shared workspace that has already had the target cloud provider account added as a 'provider' or you can add valid credentials to the 'providers' in your personal workspace.  
