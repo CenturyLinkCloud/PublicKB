@@ -7,7 +7,9 @@
 }}}
 
 ### Introduction
-The Cloud Application Manager [Analytics UI](https://analytics.cam.ctl.io) is a location where users can view cost savings recommendations, best practices evaluations and cross capability environment configuration reporting for cloud providers that are being monitored as part of our [Cloud Optimization](https://www.ctl.io/cloud-application-manager/cloud-optimization) offering.   
+The Cloud Application Manager [Analytics UI](https://analytics.cam.ctl.io) is a location where users can view cost savings recommendations, best practices evaluations and cross capability environment configuration reporting for cloud providers that are being monitored as part of our [Cloud Optimization](https://www.ctl.io/cloud-application-manager/cloud-optimization) offering.
+
+Currently, the only way to gain access to Analytics is via an Optimized Provider. 
 
 
 ### Overview
