@@ -24,7 +24,7 @@ Once all the production and recovery SRN(s) have been registered, then we must e
 
 **NOTE**: A single production SRN can be paired with multiple recovery SRNs and vice-versa(many-to-many mapping is allowed and not limited to one-to-one mapping).
 
-Please follow the same procedure for CLC/VMWare/Manual sites as source datacenters. 
+**NOTE**: Please follow the same procedure for CLC/VMWare/Manual sites as source datacenters. 
 
 ### Video Tutorial
 <p>

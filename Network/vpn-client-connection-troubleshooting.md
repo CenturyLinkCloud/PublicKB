@@ -94,6 +94,8 @@ Thu Mar 15 14:04:32 2018 us=513966 Exiting due to fatal error
 ```
 There is a known issue with the latest OpenVPN client and your OpenVPN server.  Please download and use OpenVPN client 2.3.18-I602 from the OpenVPN downloads page: https://openvpn.net/index.php/open-source/downloads.html.
 
+Alternately, you can open a ticket with Customer Care asking for your OpenVPN server to be rebuilt using a newer version of OpenVPN.  Due to the workflow of creating a new server, all your existing certs will be deleted.  New certs will need to be downloaded to any VPN clients accessing the Cloud servers.
+
 If you are using Tunnelblick on macOS, you may see a pop-up warning you about ns-cert-type.  It is safe to click the OK button to dismiss the pop-up.  You should still be able to connect.
 
 

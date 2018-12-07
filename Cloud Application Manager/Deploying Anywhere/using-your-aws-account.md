@@ -1,33 +1,53 @@
 {{{
 "title": "Using AWS",
-"date": "09-01-2016",
-"author": "",
+"date": "09-24-2018",
+"author": "Guillermo Sanchez",
+"keywords": ["aws", "ecs", "deploy"],
 "attachments": [],
 "contentIsHTML": false
 }}}
 
 ### Using AWS
 
-Deploy to AWS from Cloud Application Manager as follows.
+**In this article:**
+
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Connect Your AWS Account in Cloud Application Manager](#connect-your-aws-account-in-cloud-application-manager)
+* [Choosing the right policy](#choosing-the-right-policy)
+* [Add Custom AMIs in Cloud Application Manager](#add-custom-amis-in-cloud-application-manager)
+* [Deploy to Your AWS Account](#deploy-to-your-aws-account)
+* [EC2 (Linux and Windows)](#ec2-linux-and-windows)
+* [AWS ECS](#aws-ecs)
+* [Shutdown and Terminate Instances in AWS](#shutdown-and-terminate-instances-in-aws)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
+
+### Overview
+
+This article is meant to assist users of Cloud Application Manager to learn how to deploy any workload to AWS from Cloud Application Manager as follows.
 
 * For EC2 (Linux and Windows) use [deployment policies](../Automating Deployments/deploymentpolicy-box.md). Select a policy when you launch workloads from boxes.
 * For any other AWS service, configure a custom [CloudFormation box](../Automating Deployments/template-box.md).
 
-We orchestrate with AWS APIs in the backend to provision, install, and manage the lifecycle of your workloads based on the box configuration.
+Cloud Application Manager orchestrates with AWS APIs in the backend to provision, install, and manage the lifecycle of your workloads based on the box configuration.
 
-**In this article:**
-* Connect your AWS account in Cloud Application Manager
-* Add custom AMIs in Cloud Application Manager
-* Deploy to Your AWS Account
-* Auto-Discover Instances
+### Audience
 
-## Connect Your AWS Account in Cloud Application Manager
+All Cloud Application Manager users who wants to deploy workloads into AWS.
+
+### Prerequisites
+
+* Access to Cloud Application Manager [Management site](https://account.cam.ctl.io/#/providers?type=Amazon-Web-Services).
+* The user must have an existing AWS account or should be an Administrator of the organization in Cloud Application Manager to [create](../Cloud Optimization/partner-cloud-integration-aws-new.md) or [bring](../Cloud Optimization/partner-cloud-integration-aws-existing.md) an AWS account to be managed by CenturyLink.
+
+### Connect Your AWS Account in Cloud Application Manager
 
 Before you deploy in AWS, you need to connect your AWS account in Cloud Application Manager. Watch this video for details.
 
 <iframe frameborder="0" height="316" src="//player.vimeo.com/video/126177639" width="561"></iframe>
 
-**Choosing the right policy**
+### Choosing the right policy
 
 The AWS IAM Policy regulates what Cloud Application Manager is allowed to do and see from your account. Depending on your usage you might want to restrict more or less the operations allowed.
 
@@ -37,7 +57,7 @@ For example, if you are planning to deploy RDS and ElastiCache from CloudFormati
 
 Here is an example of a common policy that give access to some AWS services but not all:
 
-```
+```json
 {
 "Version": "2012-10-17",
 "Statement": [
@@ -64,13 +84,20 @@ Here is an example of a common policy that give access to some AWS services but 
         "iam:PassRole",
         "iam:ListRoles",
         "iam:ListInstanceProfilesForRole",
+        "iam:CreatePolicy",
+        "iam:DeletePolicy",
+        "iam:CreateRole",
+        "iam:DeleteRole",
+        "iam:AttachRolePolicy",
+        "iam:DetachRolePolicy",
         "rds:*",
         "route53:*",
         "route53domains:*",
         "s3:*",
         "sns:*",
-        "sts:AssumeRole",
-        "support:*"
+        "ce:*",
+        "support:*",
+        "sts:AssumeRole"
     ],
     "Sid": "Stmt1378777340000",
     "Resource": [
@@ -86,7 +113,7 @@ The full list of possible actions is described [here](http://docs.aws.amazon.com
 
 If you are not planning to use CloudFormation template boxes and you want to use Script Boxes and Deployment Policy Boxes, here is the minimal policy required for them to work:
 
-```
+```json
 {
 "Version": "2012-10-17",
 "Statement": [
@@ -196,6 +223,12 @@ If you are not planning to use CloudFormation template boxes and you want to use
         "iam:PassRole",
         "iam:ListRoles",
         "iam:ListInstanceProfilesForRole",
+        "iam:CreatePolicy",
+        "iam:DeletePolicy",
+        "iam:CreateRole",
+        "iam:DeleteRole",
+        "iam:AttachRolePolicy",
+        "iam:DetachRolePolicy",
         "rds:AuthorizeDBSecurityGroupIngress",
         "rds:AddTagsToResource",
         "rds:CreateDBInstance",
@@ -230,8 +263,12 @@ If you are not planning to use CloudFormation template boxes and you want to use
         "s3:PutBucketCORS",
         "s3:PutBucketPolicy",
         "s3:PutBucketTagging",
-        "sts:AssumeRole",
-        "support:*"
+        "ce:GetCostAndUsage",
+        "ce:GetReservationUtilization",
+        "ce:GetDimensionValues",
+        "ce:GetTags",
+        "support:*",
+        "sts:AssumeRole"
     ],
     "Sid": "Stmt1378777340000",
     "Resource": [
@@ -243,19 +280,18 @@ If you are not planning to use CloudFormation template boxes and you want to use
 }
 ```
 
-**Create an IAM Role with the Policy chosen**
+#### Create an IAM Role with the Policy chosen
 
 1. Create a custom AWS policy and copy, paste the permissions chosen before and name it CAM_Policy. You can edit these permissions before if some deployment fails because of the lack of permissions.
 
 2. Create an IAM role by clicking the create role button.  Then select the **Another AWS Account tab**. Provide the information below
 
-   * Account ID: 540339316802
-   * External ID: elasticbox
-   * Require MFA: Leave unselected
-                                                                                                                                       
-   
-   Then, add the policy you created (**CAM_Policy**) as well as the policy called **ReadOnlyAccess**. 
-                                                   
+   * **Account ID**: 540339316802
+   * **External ID**: elasticbox
+   * **Require MFA**: Leave unselected
+
+   Then, add the policy you created (**CAM_Policy**) as well as the policy called **ReadOnlyAccess**.
+
 3. Register the IAM role in Cloud Application Manager.
    * **Important:** If you use Cloud Application Manager as an appliance, connect to your AWS account using the secret and key credentials.
 
@@ -284,13 +320,11 @@ To deploy workloads to an EC2 instance, create a [deployment policy](../Automati
 
 ![aws-deployment-policy-2.png](../../images/cloud-application-manager/aws-deployment-policy-3.png)
 
-
 **Deployment**
 
 | Deployment Option | Description |
 |-------------------|-------------|
 | Provider | This shows the name or GUID of the AWS provider account in Cloud Application Manager. If you don’t have access to the provider account, you see the GUID. |
-
 
 **Resource**
 
@@ -298,24 +332,35 @@ To deploy workloads to an EC2 instance, create a [deployment policy](../Automati
 |-------------------|-------------|
 | Region | Select the region where you want to create the instance, for example, us-east-1.|
 | AMI | Select a public, private, or shared AWS or an AWS community based AMI available by location.|
-| Instance Type |	Select an instance type that’s pre-determined by the size of compute, memory, and network resources from the list that AWS provides, for example, db.t1.micro.|
+| Instance Type | Select an instance type that’s pre-determined by the size of compute, memory, and network resources from the list that AWS provides, for example, db.t1.micro.|
 | Keypairs | Select a key pair you created in AWS to connect to the instance or select None if you don’t want SSH access to the instance.|
-|IAM Role | Select one to assign an existing IAM role to the instance. This allows the instance to make and accept API requests securely using the permissions defined by the role. To let Cloud Application Manager view and pass the existing role to the instance, update the Cloud Application Manager IAM role policy with the listed permissions. To learn more about IAM roles, see the [AWS docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#permission-to-pass-iam-roles).|
-| Instances |	Select the number of instances to launch.|
+| IAM Role | Select one to assign an existing IAM role to the instance. This allows the instance to make and accept API requests securely using the permissions defined by the role. To let Cloud Application Manager view and pass the existing role to the instance, update the Cloud Application Manager IAM role policy with the listed permissions. To learn more about IAM roles, see the [AWS docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#permission-to-pass-iam-roles).|
+| Instances | Select the number of instances to launch. |
+| Delegate Management | Only visible if this feature is available in your account. Delegate the instance management to CenturyLink. For more information see [Managed Services Anywhere](../Managed Services/getting-started-with-cam-enable-managed-provider.md)|
 
+**Placement**
+
+| Deployment Option | Description |
+|-------------------|-------------|
+| Network Type | Select to deploy an instance in EC2 or in a Virtual Private Cloud (VPC) that you created in AWS. |
+| Autoscaling | Turn on to allow AWS to automatically scale to the number of instances you specified (under Instances). |
+| Availability Zone | Select an availability zone, such as us-east-1a if deploying in EC2 or select a subnet if deploying in your VPC. |
 
 **Network**
 
 | Deployment Option | Description |
 |-------------------|-------------|
-| Cloud | Select to deploy an instance in EC2 or in a Virtual Private Cloud (VPC) that you created in AWS. |
-| Availability Zone |	Select an availability zone, such as us-east-1a if deploying in EC2 or select a subnet if deploying in your VPC. |
-| Placement Group |	Select an existing placement group from AWS to cluster instances for high network performance. Some instances can get 10 Gbps connectivity depending on their instance type. To learn more, see the [AWS docs](//docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html). To let Cloud Application Manager view and direct the instance to the placement group, update the Cloud Application Manager IAM role policy with the [listed permissions](using-your-aws-account.md). |
 | Security Groups |	Select security groups to route traffic to the instance. If you didn’t create a security group in AWS for EC2 or a VPC, select **Automatic** for Cloud Application Manager to create one on your behalf. |
+| Placement Group |	Select an existing placement group from AWS to cluster instances for high network performance. Some instances can get 10 Gbps connectivity depending on their instance type. To learn more, see the [AWS docs](//docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html). To let Cloud Application Manager view and direct the instance to the placement group, update the Cloud Application Manager IAM role policy with the [listed permissions](using-your-aws-account.md). |
 | Elastic IP |	When launching to AWS, select Elastic IP to allocate a fresh static IP address from the EC2 or VPC pool and associate it to the instance depending on whether you’re deploying to EC2 classic or your VPC. If you’re using dynamic DNS to assign an IP address in EC2 or want to allow internet traffic to communicate with your instance in a non default VPC, then use Elastic IPs to guarantee public access. **Note:** You can’t autoscale the instance when you choose an Elastic IP for it. For more information, see the [AWS help](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html). |
 
-**Elastic Block Store**
-Instance types come with a default root device volume. To get storage on top of the default volume, add EBS volumes under Elastic Block Store.
+**Other**
+
+| Deployment Option | Description |
+|-------------------|-------------|
+| Elastic Block Store | Instance types come with a default root device volume. To get storage on top of the default volume, add EBS volumes under Elastic Block Store. |
+| Target Groups | This allows you to attach an instance to both types of load balancers automatically. |
+| Classic Load Balancer |  n addition to the Application Load Balancer and the Network Load Balancer, Cloud Application Manager also support the Classic Load Balancers. |
 
 ![aws-depprofile-elasticblockstore-settings-3.png](../../images/cloud-application-manager/aws-depprofile-elasticblockstore-settings-3.png)
 
@@ -325,10 +370,9 @@ Select from General Purpose (SSD), Provisioned IOPS (SSD) or Magnetic volume typ
 
 Follow these steps to add more volumes.
 
-**Steps**
+#### Steps
 
 Configure volumes. Select a [type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html), [device mapping](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-device-mapping-concepts.html), size, and IOPS where available.
-
 
 | Type | Usage | Size | IOPS |
 |------|-------|------|------|
@@ -368,6 +412,7 @@ When deploying via AWS, we register the instance to the load balancer and automa
 ### AWS ECS
 
 To deploy workloads to an ECS instances:
+
 * AWS ECS
 * Image Lifecycle
 * Deploy the Instance
@@ -378,13 +423,11 @@ To deploy workloads to an ECS instances:
 
 Create a new policy box of type “Amazon EC2 Container Service” or use the one your admin shared with you.
 
-
 **Deployment**
 
 | Deployment Option | Description |
 |-------------------|-------------|
 | Provider | This shows the name or GUID of the AWS provider account in Cloud Application Manager . If you don’t have access to the provider account, you see the GUID. |
-
 
 **Resource**
 
@@ -392,11 +435,10 @@ Create a new policy box of type “Amazon EC2 Container Service” or use the on
 |-------------------|-------------|
 | Region | Select the region where you want to create the instance, for example, us-east-1.|
 | Cluster | Select the cluster where you want to deploy you container. |
-| CPU Units |	The number of cpu units to reserve for the container. A container instance has 1,024 cpu units for every CPU core.|
+| CPU Units | The number of cpu units to reserve for the container. A container instance has 1,024 cpu units for every CPU core.|
 | Memory | The number of MiB of memory to reserve for the container. If your container attempts to exceed the memory allocated here, the container is killed.|
 | IAM Role | Select one to assign an existing IAM role to the instance. This allows the instance to make and accept API requests securely using the permissions defined by the role. To let Cloud Application Manager view and pass the existing role to the instance, update the Cloud Application Manager IAM role policy with the listed permissions. To learn more about IAM roles, see the [AWS docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#permission-to-pass-iam-roles).|
 | Instances | Select the number of instances to launch. |
-
 
 **Network**
 
@@ -405,7 +447,7 @@ Create a new policy box of type “Amazon EC2 Container Service” or use the on
 | Load Balancing | Select the load balancer to be used by the container. |
 | Port Mappings | Maps the ports between the container port and the host port. |
 
-### Image Lifecycle
+#### Image Lifecycle
 
 **Build the Image**
 
@@ -413,10 +455,9 @@ Use the ebcli to build the image.
 
 **Sintax**
 
-```
+```sh
 ebcli build ”<box ID>” [-t “<image name>”] [--image <image name>] [--boxes-path <boxes path>]
 ```
-
 
 **Parameters**
 
@@ -426,25 +467,27 @@ ebcli build ”<box ID>” [-t “<image name>”] [--image <image name>] [--box
 | –image | Name of the base image to be used. E.g. ubuntu:14.04 or Centos. |
 | –boxes-path |	Path where the boxes are located. |
 
-### Push the Image
+##### Push the Image
+
 Use the docker client to push the image to your favorite docker registry. If you have questions about this step, check out the official Docker documentation about images.
 
-**Syntax**
+Syntax:
 
-```
+```sh
 docker push “<image name>”
 ```
 
-### Post the Image
+##### Post the Image
+
 Use the ebcli to post the image to your box
 
-**Syntax**
+Syntax:
 
-```
+```sh
 ebcli post “<docker image>”
 ```
 
-### Deploy the Instance
+##### Deploy the Instance
 
 Deploy the instance as you would do for a regular deployment, but instead, select the previously created deployment profile. The box will be deployed as a container within the ECS cluster selected in the Deployment Policy.
 
@@ -452,7 +495,7 @@ Deploy the instance as you would do for a regular deployment, but instead, selec
 
 As soon as the state of an instance changes to shutdown or terminated, you stop incurring charges for that instance.
 
-**Shutdown Instance**
+#### Shutdown Instance
 
 When a shutdown operation is executed from Cloud Application Manager, the instance is stopped. AWS don't charge hourly usage for a stopped instance, or data transfer fees, but AWS do charge for the storage for any Amazon EBS volumes. Each time you start a stopped instance AWS charge a full instance hour, even if you make this transition multiple times within a single hour.
 
@@ -465,7 +508,7 @@ You can modify the following attributes of an instance only when it is stopped:
 * Kernel
 * RAM disk
 
-**Terminate Instance**
+#### Terminate Instance
 
 When you terminate an instance, the whole history of the instance is kept in Cloud Application Manager and you can use it as a reference for other instances, to copy the variables or to clone the instance. The instance in AWS is terminated.
 
@@ -484,5 +527,6 @@ We’re sorry you’re having an issue in [Cloud Application Manager](https://ww
 For issues related to API calls, send the request body along with details related to the issue.
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
 * Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log

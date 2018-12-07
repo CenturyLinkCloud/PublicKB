@@ -39,8 +39,7 @@
 
   __Managed Services Anywhere__
 
-  Cloud Application Manager’s Managed Services Anywhere now includes support for MS SQL, the foundation of Microsoft’s comprehensive data platform.  By selecting to deploy a Managed MS SQL server to AWS or Microsoft Azure - (CenturyLink DCC-Foundation
-coming soon) - customers get all the features of a managed server along with management of the SQL Server instance.  Simply Delegate Management to CenturyLink and receive Monitoring, Alerting, Ticketing, Remote Administration and Patching for both the VM and the SQL Server instance.
+  Cloud Application Manager’s Managed Services Anywhere now includes support for MS SQL, the foundation of Microsoft’s comprehensive data platform.  By selecting to deploy a Managed MS SQL server to AWS or Microsoft Azure - (CenturyLink Private Cloud on VMware Cloud Foundation) - customers get all the features of a managed server along with management of the SQL Server instance.  Simply Delegate Management to CenturyLink and receive Monitoring, Alerting, Ticketing, Remote Administration and Patching for both the VM and the SQL Server instance.
 
   Supported Versions
   - Microsoft SQL Server 2008 R2

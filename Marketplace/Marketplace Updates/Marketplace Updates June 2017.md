@@ -32,4 +32,4 @@ Our Featured Marketplace Provider is FlexSecure. FlexSecure is a context-based A
 
 By adding multi-layered authentication options that may require user interaction before granting access, organizations have the ability to add significant levels of security to protect their data from hackers and prevent unauthorized access. To learn more about FlexSecure, visit [their site](http://www.flexsecure.co/) or read their CenturyLink Marketplace provider spotlight blog post, [Security Made Easy with FlexSecure](https://www.ctl.io/blog/post/security-made-easy-with-flexsecure/).
 
-You can find the [FlexSecure Passwordless Authentication](https://www.ctl.io/marketplace/partner/ADMN/product/FlexSecure%20Passwordless%20Authentication/) product on the [CenturyLink Marketplace](https://www.ctl.io/marketplace/).
+You can find the [FlexSecure Passwordless Authentication](https://www.ctl.io/marketplace/partner/ADMN/) product on the [CenturyLink Marketplace](https://www.ctl.io/marketplace/).

@@ -26,7 +26,7 @@ Fill in the following fields:
 2. SRN **Root Password** (set at the time of SRN deployment).
 3. **Service IP**: SRN IP used to communicate with other SafeHaven Nodes (SRN and CMS). Typically set as the Private IP of the SRN.
 4. **WAN Replication IP**: SRN IP used to communicate with the peer SRN for WAN replication. Typically set as the Private IP of the SRN.
-5. **Local iSCSI IP**: SRN IP used to communicate with the production/recovery servers in its native Datacenter. Typically set as the Private IP of the SRN.
+5. **Local iSCSI IP**: SRN IP used to communicate with the production/recovery servers in its native Datacenter. Typically set as the Private IP of the SRN. **Note**: This is not required for AWS SRN registration.
 6. Do not modify the Service Port (TCP) and Heartbeat Port (UDP).
 
 **NOTE**: Incase SRN has multiple NIC's, Service IP and WAN Replication IP will be the Primary IP of the SRN which has proper network connectivity to other SRN's and CMS. Local iSCSI IP will be set to 0.0.0.0

@@ -9,6 +9,7 @@
 ### Article Overview
 This article covers different TCP and UDP ports required to be opened on CMS, SRN, and local guest for SafeHaven 5.0.
 
+![Network_port_requirements](../../images/SH5.0/network-ports-requirements.PNG)
 ### CMS
 * TCP/22: ssh (remote management)
 * TCP/20081: SafeHaven  communication with GUI, **SSL encrypted**
@@ -70,4 +71,4 @@ During normal operations, there is only one possible outgoing Internet access wh
 
 * Temporarily allow all Internet access (http and https) during cluster installation phase.
 * White list https://*.ctl.io/ which could cover anything provided by CenturyLink Cloud.
-* White list https://*.amazonaws.com/ which could ocver anything provided by Amazon Web Services
+* White list https://*.amazonaws.com/ which could cover anything provided by Amazon Web Services

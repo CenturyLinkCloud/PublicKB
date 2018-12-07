@@ -1,6 +1,6 @@
 {{{
   "title": "Load Balancing Comparison Matrix",
-  "date": "3-26-2018",
+  "date": "4-24-2018",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": false,
@@ -13,14 +13,14 @@ CenturyLink Cloud offers customers a wide range of load balancing solutions in o
 
 ### Comparison Matrix
 
-**Feature**|**LBaaS<br>(Legacy)**|**LBaaS**|**Citrix VPX<sup>4</sup><br>(Dedicated)**|**[Marketplace](../Ecosystem Partners/Partner Integration Resources/ecosystem-program-resources.md)**
+**Feature**|**LBaaS<br>(Legacy)**|**LBaaS**|**Citrix VPX<sup>4</sup><br>(Dedicated)**|**Marketplace**
 -----------|---------------------|---------|-----------------------------------------|-------------
 Control Integration<sup>1</sup>|Yes|Yes|No|No
 High Availability|Yes|Yes|Optional|Optional
 Mode/Port|TCP/80<br>TCP/443|HTTP<br>TCP/Any|Any|Any
 Method|Round Robin<br>Least Connection|Round Robin<sup>6</sup><br>Least Connection<sup>6</sup><br>SourceIP<sup>6</sup><br>URL Hash<sup>6</sup>|[Listing](http://docs.citrix.com/en-us/netscaler/11-1/load-balancing/load-balancing-customizing-algorithms.html)|Varies by<br>Vendor
 Persistence|SourceIP|SourceIP|[Listing](http://docs.citrix.com/en-us/netscaler/11-1/load-balancing/load-balancing-persistence/persistence.html)|Varies by<br>Vendor
-Health Checks|No|[Yes](../LBaaS/getting-started-with-load-balancer-as-a-service.md)|Yes|Yes
+Health Checks|No|[Yes](../General/LBaaS/getting-started-with-load-balancer-as-a-service.md)|Yes|Yes
 SSL Offloading|No|No|Yes|Yes
 WAF|No|No|Optional|Optional
 Global Server Load Balancing|No|No|Optional|Optional
@@ -28,7 +28,7 @@ GeoIP Filtering|No|No|Yes|Yes
 [SLA](//www.ctl.io/legal/sla/)<sup>2</sup>|Yes|Yes|Limited|Limited
 [Support](../Support/how-do-i-report-a-support-issue.md)<sup>3</sup>|Yes|Yes|Limited|Limited
 Lifecycle Management<sup>7</sup>|Day 0<br>Day 2<br>Day N|Day 0<br>Day 2<br>Day N|Day 0|Day 0
-[Locations](../General/centurylink-cloud-data-center-locations.md)|Any|VA1<br>UC1<br>IL1<br>NY1<br>CA3<br>GB3<br>SG1<br>DE1<br>DE3|Any|Any
+[Locations](../General/CenturyLinkCloud/centurylink-cloud-data-center-locations.md)|CA1<br>CA2<br>GB1|VA1<br>VA2<br>UC1<br>WA1<br>IL1<br>NY1<br>CA3<br>GB3<br>SG1<br>DE1<br>DE3<br>AU1|Any|Any
 OSI Model<sup>5</sup>|Layer 4|Layer 4|Layer 4<br>Layer 7|Layer 4<br>Layer 7
 
 <sup>1: Control Integration at a minimum allows a customer to implement the service on-demand, operate it via self-service in the UX (or using API) with a pay as you go model.</sup>
@@ -52,6 +52,5 @@ The links below provide supporting material that can assist a customer with furt
 
 * [Citrix Netscaler VPX Documentation](http://docs.citrix.com/en-us/netscaler/11-1.html)
 * [Citrix Netscaler VPX Editions](//www.citrix.com/products/netscaler-adc/platforms.html#editions)
-* [CenturyLink Ecosystem Partners](../Ecosystem Partners/General/ecosystem-partner-list.md)
 * [CenturyLink Pricing Catalog](//www.ctl.io/pricing/)
 * [CenturyLink Cloud Legal Documentation (SLA, Service Guide etc)](//www.ctl.io/legal/)

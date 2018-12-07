@@ -6,7 +6,6 @@
   "contentIsHTML": false
 }}}
 
-
 ### Contents
 - [Overview](#overview)
 - [Dashboard](#main-dashboard)
@@ -44,12 +43,11 @@ There are four values at the top of the dashboard.
  - Public IP addresses
  - Simple Backup Usage
  - Relational Database Services
- - Appfog
 
 ***Current Hour*** includes (MSSQL is no longer included as billing has been changed to monthly):
  - All infrastructure costs (CPU, Memory, disk) and OS licenses (where applicable) from all datacenters
  - Managed Services costs (Managed OS, Active Directory, Databases, Web server)
-  
+
 
 ***One Time Changes*** includes:
  - Any Service Task charges
@@ -107,10 +105,6 @@ Under Network menu, the cost of VLANs, Share Load Balanacer, DNS and Site to Sit
 
 CenturyLink Cloud offers different services for which the cost estimation can be found under the individual service page.
 
-#### Appfog
-
-![Appfog](../images/estimator/appfog.png)
-
 #### Backup
 
 ![Backup](../images/estimator/backup.png)
@@ -151,14 +145,13 @@ Below is a table to summarize the services included in portal cost estimation:
 
 | Portal | Estimates |
 | ------------ | ------------ |
-| Main Dashboard Month Estimate | CPU<br>Memory<br>Disk<br>OS license<br>Database License<br>VLANs<br>VPN<br>Load Balancer<br>Object Storage<br>Public IP<br>Simple BAckup<br>Appfog<br>Relational DB<br>DNS |
+| Main Dashboard Month Estimate | CPU<br>Memory<br>Disk<br>OS license<br>Database License<br>VLANs<br>VPN<br>Load Balancer<br>Object Storage<br>Public IP<br>Simple Backup Service<br>Relational DB<br>DNS |
 | Data Center View<br>Group View<br>Server View | CPU<br>Memory<br>Disk<br>OS license |
 | Network | VLANs |
 | Load Balancer | Load Balancer |
 | Site to Site VPN | VPN |
 | DNS  | DNS |
-| Appfog | Appfog break down by region |
 | Backup | Simple Backup |
 | Object Storage | Object Storage (month estimate/current hour/month to date) |
 | Relational DB | Relational DB |
-| Billing | CPU<br>Memory<br>Disk<br>OS license<br>Database License (per server)<br>VLANs<br>VPN<br>Load Balancer<br>Object Storage<br>Public IP (per data center)<br>Simple Backup<br>Appfog<br>Relational DB<br>DNS<br>Bandwidth<br>Support<br>Credit |
+| Billing | CPU<br>Memory<br>Disk<br>OS license<br>Database License (per server)<br>VLANs<br>VPN<br>Load Balancer<br>Object Storage<br>Public IP (per data center)<br>Simple Backup Service<br>Relational DB<br>DNS<br>Bandwidth<br>Support<br>Credit |
