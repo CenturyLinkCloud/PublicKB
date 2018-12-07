@@ -54,8 +54,8 @@ Change Requests may result in exceptions to hardening. Please read the "Change R
 
 
 **Customer Admin User / Group**
-* **IAM GroupName**: <yourCompanyName>Group
-* **Admin User's IAM Name**: <yourCompanyName>Admin
+* **IAM GroupName**: `yourCompanyName`Group
+* **Admin User's IAM Name**: `yourCompanyName`Admin
 * **Attached Policy Names**: CTLCustomerPolicy, AdministratorAccess
 * **Targeted groups/tools/users**: The first Administrator who created a new AWS account via Cloud Application Manager, plus any further users placed in that group.
 * **Intent**: To be able to provide the first administrator as many permissions as possible so that they can begin to set up the new account.
