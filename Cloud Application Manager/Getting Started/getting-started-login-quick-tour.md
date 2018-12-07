@@ -57,23 +57,24 @@ ___
 When you log in, at the top you will see the global navigation bar. It has three sections: Service, Site and Context. 
 Notice you are in the **Applications site**. In the context section you can access to **Workspaces**. 
 
-* Service   ( Cloud Application Manager )
-* Site      ( Applications site )
-* Context   ( Organization, Cost Centers or Workspaces )
+* **Service**  Cloud Application Manager
+* **Site**     Applications site
+* **Context**  Organization, Cost Center or Workspace selected
 
 On the left side, a menu guides you to the main areas of Cloud Application Manager
 
-* Dashboard
-* Instances
-* Boxes
-* Providers
-* Catalog
-* Activity
+* **Dashboard**
+* **Instances**
+* **Boxes**
+* **Providers**
+* **Catalog**
+* **Activity**
 
-On the right side of the top bar, you will find help and your account menus.
+On the right side of the top navigation bar, you will find the links to **Help** and **My Account** menus.
 
-* Your Account
-* Help
+* **My Account**
+* **Help**
+
 ____
 
 **Workspaces**
@@ -88,7 +89,9 @@ ___
 
 ![CAM workspace panel](../../images/cloud-application-manager/getting-started-login-8.png)
 
-It is a global vision of the content and uses of the workspace. There you can see the number of the instances, boxes or providers and their status. In addition, there are two charts with the uses by day, week or month.
+The Dashboard page displays a global vision of the content and uses of the current scope. There you can see the number of instances, boxes or providers it contains. In addition, there are two charts with the uses by day, week or month.
+
+___
 
 **Instances**
 
@@ -152,7 +155,7 @@ ___
 
 ___
 
-**Your Account**
+**My Account**
 
 ![CAM account menu](../../images/cloud-application-manager/getting-started-login-6.png)
 
