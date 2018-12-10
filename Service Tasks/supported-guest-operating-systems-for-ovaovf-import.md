@@ -39,7 +39,7 @@ Ensure your OVF meets requirements for import they are listed here in the KB und
 
 **Q: I run Xen, KVM, Hyper-V or other x86/x64 Virtualization Services.  Can I import images from these technologies into CenturyLink Cloud?**
 
-A: Customers must convert their virtual servers to an OVF format prior to import (manual or self-service) to the CenturyLink Cloud.  As long as the operating system is supported as shown above an import is possible once the VM is converted to OVF.  Customers are advised to review the [OVF requirements for import.](../service-tasks//service-tasks/best-practices-and-preparation-for-a-virtual-machineovfova-import/)
+A: Customers must convert their virtual servers to an OVF format prior to import (manual or self-service) to the CenturyLink Cloud.  As long as the operating system is supported as shown above an import is possible once the VM is converted to OVF.  
 
 **Q: I run Intel IA64 or Oracle SPARC hardware platforms can I import a server based on this technology into CenturyLink Cloud?**
 
