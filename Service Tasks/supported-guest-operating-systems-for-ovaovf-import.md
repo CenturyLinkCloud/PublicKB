@@ -9,11 +9,10 @@
 ### Overview
 CenturyLink Cloud customers may wish to import OVA/OVF Guest Operating Systems to the platform via a [Service Task](//www.ctl.io/products/support/service-tasks.md). Customers frequently request a list of the supported Guest Operating Systems the CenturyLink Cloud supports for Import and this KB is meant to address this query.
 
-It is recommended that customers leverage our [Self-Service OVF Import Capabilities](../service-tasks//service-tasks/best-practices-and-preparation-for-a-virtual-machineovfova-import.md) for Operating Systems supported by this functionality.
+Ensure your OVF meets requirements for import they are listed here in the KB under Service tasks > Best Practices and preparation for a virtual machine OVF import.
 
 ### Prerequisites
 * A CenturyLink Cloud Account
-* Review the [Best Practices and Preparation for an OVA/OVF Import](../Service Tasks/best-practices-and-preparation-for-a-virtual-machineovfova-import.md) documentation.
 
 ### Exclusions
 * Industry packaged Virtual Appliances from vendors, including but not limited to, Citrix VPX, F5 VE, SoftNAS, should be vetted with CenturyLink Cloud Sales to validate compatibility. Many Virtual Appliances are part of our ecosystem program and have been validated.  The support of these packaged virtual appliances are not the focus of this article.
