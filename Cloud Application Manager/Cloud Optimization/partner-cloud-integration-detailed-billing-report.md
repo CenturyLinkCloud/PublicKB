@@ -25,7 +25,10 @@ Cloud Application Manager organization administrator access.
 
 Starting January 1, 2018 data will be available according to the following methods for December 2017 usage, going forward. November reconciliation SKUs (labeled "Update to Previous Month...") which appear on the December invoice will not have any detail. If you need detailed information for those prior months, please submit a support ticket.
 
-To gain access to the information, navigate to the billing history within Cloud Application Manager by switching your context to an organization. Then select "Billing", then "Usage History."
+To gain access to the information, in the top navigation bar change the "Site" to Management.
+Make certain the context is that of your organization, not a Cost Center or Workspace.
+Click Billing In 
+Select "Billing", then "Usage History."
 
 Select a month.
 
