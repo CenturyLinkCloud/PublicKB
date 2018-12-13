@@ -30,7 +30,7 @@ In this KB article, we walk through how to enable Distributed Firewall for Centu
   * When should this change be performed? **Prioritized (Any time in the next X hours)**
   * Change Subject: **CenturyLink Private Cloud on VMware Cloud Foundation Prioritized**
   * Change Details: **Please enable Distributed Firewall in my CPC on vCF environment - `<yourURL>`**.
-  * Priority: Select the appropriate priority (P1 Standard, P2 Standard or P3 Standard).
+  * Priority: Select the appropriate priority (**P1 Standard, P2 Standard or P3 Standard**).
   * Click on the **submit** button.
 
 4. You will be contacted by CenturyLink to coordinate the change request.
