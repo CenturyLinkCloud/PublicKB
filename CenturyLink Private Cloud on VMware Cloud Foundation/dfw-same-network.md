@@ -1,6 +1,6 @@
 {{{
   "title": "Micro-segmentation with Distributed Firewall - Same Network",
-  "date": "11-8-2018",
+  "date": "12-13-2018",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -9,11 +9,11 @@
 }}}
 
 ### Description
-In this KB article, we walk through how to enable Distributed Firewall for CenturyLink Private Cloud on VMware Cloud Foundation™.
+In this KB article, we walk through how to enable Distributed Firewall for CenturyLink Private Cloud on VMware Cloud Foundation.
 
 ### Prerequisites
-* You must have a Cloud Application Manager Account
 * Your base URL, and user credentials for CenturyLink Private Cloud on VMware Cloud Foundation
+*
 
 ### Steps
 
