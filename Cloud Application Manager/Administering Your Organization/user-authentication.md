@@ -29,7 +29,7 @@ All users with Cloud Application Manager organization administrator access.
 
 ### Prerequisites
 
-* Access to Cloud Application Manager, Management site.
+* Access to Cloud Application Manager, [Management site](https://account.cam.ctl.io/#/settings).
 
 * The user must be an Administrator of the organization in Cloud Application Manager.
 
@@ -90,7 +90,7 @@ When users sign in to Cloud Application Manager with their LDAP credentials, we 
 #### Steps
 
 1. Sign in to Cloud Application Manager as an [administrator](admin-access.md).
-2. Navigate to the **Settings** page in the Management site.
+2. Navigate to the **Settings** page in the [Management site](https://account.cam.ctl.io/#/settings).
 3. Under **Authentication**, enable LDAP by turning it on.
 4. For each LDAP source, provide information to connect and the conditions to search users and sync groups. This information is filled in the following dialog:
 
@@ -129,7 +129,7 @@ This gives your developers, operations engineers, or IT admins access to the sam
 
 1. Sign in to Cloud Application Manager as an [administrator](admin-access.md).
 
-2. Navigate to the **Settings** page in the Management site.
+2. Navigate to the **Settings** page in the [Management site](https://account.cam.ctl.io/#/settings).
 
 3. Under **Authentication**, make sure LDAP is on and set up with at least one source with the conditions to sync groups.
 
@@ -159,7 +159,7 @@ If you enable CenturyLink Cloud authentication method, any user with CenturyLink
 
 1. Sign in to Cloud Application Manager as an [administrator](admin-access.md).
 
-2. Navigate to the **Settings** page in the Management site.
+2. Navigate to the **Settings** page in the [Management site](https://account.cam.ctl.io/#/settings).
 
 3. Under **Authentication**, enable **CenturyLink Cloud** by turning it on.
 

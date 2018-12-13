@@ -54,6 +54,7 @@ To get values of default deployment variables in parent box event scripts, follo
 * `\{{ machine }}`: Gives the name of the virtual infrastructure where Cloud Application Manager runs the script. It has the eb-XXXXX-1 format.
 * `\{{ instance }}`: Gives the ID for the instance in the i-XXXXXX format.
 * `\{{ service }}`: Gives the dynamic ID for type of service used to generate machines and services for the instance. Cloud Application Manager uses this service ID, say eb-XXXXX, to create resources with the provider such as servers, security groups, and so on.
+* `\{{ service.provider_type }}`: Gives the underlying provider type descriptive name the instance has been deployed into.
 * `\{{ addresses }}`: Gives the public and private IP addresses of all instances deployed for a box.
 * `\{{ address.public }}`: Gives the public IP address of the current instance.
 * `\{{ address.private }}`: Gives the private IP address of the current instance.

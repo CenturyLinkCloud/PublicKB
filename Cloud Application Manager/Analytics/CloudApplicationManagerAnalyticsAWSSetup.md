@@ -1,7 +1,7 @@
 {{{
   "title": "Cloud Application Manager Analytics AWS Configuration",
-  "date": "06-01-2017",
-  "author": "Chris Meyer",
+  "date": "12-078-2017",
+  "author": "Benjamin Swoboda",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -13,7 +13,7 @@ If you prefer to set-up your environment manually, you can find those setup inst
 
 ### Audience
 
-Customers responsible for AWS Accounts which have been approved by Amazon Web Services to perform a transfer into CenturyLink's care.
+Customers responsible for AWS Accounts which have been approved by Amazon Web Services to perform a transfer into CenturyLink's care. (New, Optimized accounts are automatically enrolled with Analytics.)
 
 ### Prerequisites
 
@@ -21,6 +21,8 @@ Customers responsible for AWS Accounts which have been approved by Amazon Web Se
 * The customer must have reviewed the process for transferring an [existing Amazon Web Services account](../Cloud Optimization/partner-cloud-integration-aws-existing.md)
 
 #### CenturyLink Cloud Optimization Configuration Steps:
+These enrollment steps are currently being completed automatically for Optimized providers. In rare instances, it may be necessary to handle the configuration manually.
+
 1. Open the CloudFormation template found [here](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/new?stackName=CTL-CloudOptimization-IAM-Stack&templateURL=https%3A%2F%2Fs3.us-east-2.amazonaws.com%2Fctl-cloudoptimization%2FCTLCloudOptimizationIAMPolicy.template.json).
 2. Login to the targeted AWS account, if not already.
 3. Click “Next.”
