@@ -5,7 +5,7 @@
   "attachments": [],
   "contentIsHTML": false
 }}}
-
+ 
 ### Overview
 
 As discussed in the [Service Guide](https://www.ctl.io/legal/cloud-application-manager/service-guide/), CenturyLink will provide tools and Operations Staff permissions for Amazon Web Services (AWS) accounts that we harden. The Service Guide provides a high-level overview of those permissions, describing the groups requiring permissions and the type of permissions they are expected to have.
