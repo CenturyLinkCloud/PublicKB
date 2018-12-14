@@ -19,7 +19,7 @@ One of the following use cases must have occurred successfully:
 
 #### Opting To Use Analytics for a Provider that is Not Optimized or Managed.
 
-![Analytics Toggle in Provider](../../images/CAM_COA_Analytics_Provider_Toggle.png)
+![Analytics Toggle in Provider](../../images/cloud-application-manager/CAM_COA_Analytics_Provider_Toggle.png)
 
 Switching the flag to ON at the time you start the provider means CenturyLink will read your Provider's charges in our calculation of Platform Advisory Support. A CAM administrator will have access to pricing details in that Management Site of CAM.  It will give you access to:
 
@@ -35,19 +35,19 @@ You may switch a provider from OFF to ON after it is created, but to switch from
 ![Analytics Left Nav ScreenShot](../../images/cloud-application-manager/CAM_COA.Analytics.LeftNav.12.13.18.a.png)
 
 ##### Logging into the Analytics UI
-![Analytics Site](../../images/CAM_COA.Analytics.Site.12.13.18.a.png)
+![Analytics Site](../../images/cloud-application-manager/CAM_COA.Analytics.Site.12.13.18.a.png)
 
 After logging into Cloud Application Manager you can navigate to the Analytics UI by clicking on the **Analytics** site as shown above.  
 
 ##### Accounts
 ![AnalyticsWorkspaceScreenShot](../../images/AnalyticsWorkspaceScreenShot170601.png)
 
-After logging in, the user will be able to choose from a list of accounts, for which they have [workspace access](../Core Concepts/workspaces-and-collaboration/workspaces-and-collaboration.md) and that has a valid cloud provider account. After choosing the targeted accounts analytics data will be displayed.
+After logging in, the user will be able to choose from a list of accounts, for which they have [workspace access](../Core Concepts/workspaces-and-collaboration.md) and that has a valid cloud provider account. After choosing the targeted accounts analytics data will be displayed.
 
 If a provider account is duplicated in one or more workspaces they will be highlighted accordingly.
 
 #### Adding provider to CAM
-In order to view a cloud providers analytics data a user must have administrator access to a [shared workspace](../Core Concepts/workspaces-and-collaboration/workspaces-and-collaboration.md) where a valid cloud provider has been added. You can speak to your company's Cloud Application Manager Organization Administrator to guve you access to a shared workspace that has already had the target cloud provider account added as a 'provider' or you can add valid credentials to the providers in your a workspace you can share. It is recommended not to use personal workspaces.  
+In order to view a cloud providers analytics data a user must have administrator access to a [shared workspace](../Core Concepts/workspaces-and-collaboration.md) where a valid cloud provider has been added. You can speak to your company's Cloud Application Manager Organization Administrator to guve you access to a shared workspace that has already had the target cloud provider account added as a 'provider' or you can add valid credentials to the providers in your a workspace you can share. It is recommended not to use personal workspaces.  
 
 ##### Savings
 Here your linked account will detail opportunities for you to reduce your cloud spend due to resources that are idle, unused or mis-provisioned.  
