@@ -8,18 +8,21 @@
 
 **In this article:**
 
-- [Overview](#overview)
-- [Audience](#audience)
-- [Prerequisites](#prerequisites)
-- [Getting started with Google Deployment Templates on Cloud Application Manager](#getting-started-with-google-deployment-templates-on-cloud-application-manager)
-- [Google Deployment Templates](#google-deployment-templates)
-- [Sample Template](#sample-template)
-- [Getting General Support](#getting-general-support)
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Getting started with Google Deployment Templates on Cloud Application Manager](#getting-started-with-google-deployment-templates-on-cloud-application-manager)
+* [Create a Template Box](#create-a-template-box)
+* [Google Deployment Templates](#google-deployment-templates)
+* [Box Variables](#box-variables)
+* [Output Variables](#output-variables)
+* [Resources Deployed](#resources-deployed)
+* [Sample Template](#sample-template)
+* [Getting General Support](#getting-general-support)
 
 ### Overview
 
-With Google Deployment Manager you can automate the creation and management of Google Cloud Platform resources,
-by writing flexible declarative template and configuration files.
+With Google Deployment Manager you can automate the creation and management of Google Cloud Platform resources, by writing flexible declarative template and configuration files.
 
 ### Audience
 
@@ -27,15 +30,14 @@ All Cloud Application Manager users using Google Compute providers.
 
 ### Prerequisites
 
-- An active Cloud Application Manager account
-- An existing [Google Compute Provider](../Deploying Anywhere/using-google-cloud.md) configured in Cloud Application Manager
+* An active Cloud Application Manager account
+* An existing [Google Compute Provider](../Deploying Anywhere/using-google-cloud.md) configured in Cloud Application Manager
 
 ### Getting started with Google Deployment Templates on Cloud Application Manager
 
 #### Create or Refresh Provider
 
-You need a Google Compute Provider already set up in Cloud Application Manager in order to use Deployment Manager
-feature. Go to the Provider's page and Synchronize it first.
+You need a Google Compute Provider already set up in Cloud Application Manager in order to use Deployment Manager feature. Go to the Provider's page and Synchronize it first.
 
 #### Create a Deployment Policy Box
 
@@ -44,51 +46,35 @@ You will need to select a provider if you have more than one Google Compute Prov
 
 ![New Google Deployment Policy Box dialog](../../images/cloud-application-manager/google-deployment-manager/new_deployment_policy.png)
 
-A **Default Zone** can be configured in the *Code* tab of the Policy Box. For your convenience, the value of
-*Default Zone* property is automatically exposed to any Instances deployed with this Policy, as a `zone` variable.
-Of course its value can be overridden as a Template variable.
+A **Default Zone** can be configured in the *Code* tab of the Policy Box. For your convenience, the value of *Default Zone* property is automatically exposed to any Instances deployed with this Policy, as a `zone` variable. Of course its value can be overridden as a Template variable.
 
-#### Create a Template Box
+### Create a Template Box
 
 Go to *Boxes -> New -> Template* and select *Google Deployment Template* as type. Fill the usual parameters.
 
-For Google Deployment template boxes you can include multiple template files and variables.
-If there are multiple template files for a Template Box, the first one on the top of the list is marked as the
-**main template**. The main template can be changed by re-ordering the template files by dragging and moving
-them with the mouse, or long-pressing and dragging on a touch screen.
+For Google Deployment template boxes you can include multiple template files and variables. If there are multiple template files for a Template Box, the first one on the top of the list is marked as the **main template**. The main template can be changed by re-ordering the template files by dragging and moving them with the mouse, or long-pressing and dragging on a touch screen.
 
 ![Google Deployment Manager Template Box](../../images/cloud-application-manager/google-deployment-manager/template_box.png)
 
-At least one template file is required to **Deploy** a Template Box. *New Template* dialog can either
-create a blank template,
-upload a template file from disk,
-or import template files from remote URL.
+At least one template file is required to **Deploy** a Template Box. *New Template* dialog can either:
 
-If the URL is a GitHub repository, the contents of that file or directory is automatically imported.
-If a template file with the same name already exists, it won't get overwritten, but duplicate names will block
-the deployment, so you need to delete old version template files manually.
+* Create a blank template
+* Upload a template file from disk
+* Import template files from remote URL
 
-Note that files from remote URLs can also be referenced from template files, and they get downloaded and parsed by
-Google.
+If the URL is a GitHub repository, the contents of that file or directory is automatically imported. If a template file with the same name already exists, it won't get overwritten, but duplicate names will block the deployment, so you need to delete old version template files manually.
+
+Note that files from remote URLs can also be referenced from template files, and they get downloaded and parsed by Google.
 
 ### Google Deployment Templates
 
-Check the [Google Cloud Documentation](https://cloud.google.com/deployment-manager/docs/configuration/)
-to learn more about Deployment Template files.
+Check the [Google Cloud Documentation](https://cloud.google.com/deployment-manager/docs/configuration/) to learn more about Deployment Template files.
 
-**Warning:** Please bear in mind that referencing resources with the same name from multiple Template Boxes and
-Google Deployment Manager Templates in general are very dangerous and can lead to undesired consequences.
+**Warning:** Please bear in mind that referencing resources with the same name from multiple Template Boxes and Google Deployment Manager Templates in general are very dangerous and can lead to undesired consequences.
 
-If you happen to reference resources with the same name in multiple Deployment Instances, for example having
-a hard-coded name in a Deployment Template File and deploying it multiple times, the same resource is
-going to be modified by multiple instances at a time, which will lead to undesired consequences and
-a messed up state of resources. You can even accidentally delete a resource by terminating a deployed Instance,
-while a different deployment still uses the very same resource. Other times the termination of the Instance
-might get blocked, because it can not clean up a resource it has deployed,
-if a different instance has already deleted it.
+If you happen to reference resources with the same name in multiple Deployment Instances, for example having a hard-coded name in a Deployment Template File and deploying it multiple times, the same resource is going to be modified by multiple instances at a time, which will lead to undesired consequences and a messed up state of resources. You can even accidentally delete a resource by terminating a deployed Instance, while a different deployment still uses the very same resource. Other times the termination of the Instance might get blocked, because it can not clean up a resource it has deployed, if a different instance has already deleted it.
 
-A good practice to avoid these scenarios is to prefix the name of each resource with the **name of the deployment**,
-which happens to be the *service-id* in Cloud Application Manager.
+A good practice to avoid these scenarios is to prefix the name of each resource with the **name of the deployment**, which happens to be the *service-id* in Cloud Application Manager.
 
 ```Jinja
 resources:
@@ -101,11 +87,9 @@ resources:
       .....
 ```
 
-#### Box Variables
+### Box Variables
 
-Box variables are exposed as *properties* for the templates, and can be referenced like `\{{ properties["zone"] }}`.
-The *zone* variable is automatically crated at deployment time unless the Box defines one, and has the value of
-*Default Zone* property defined in the Deployment Policy.
+Box variables are exposed as *properties* for the templates, and can be referenced like `\{{ properties["zone"] }}`. The *zone* variable is automatically crated at deployment time unless the Box defines one, and has the value of *Default Zone* property defined in the Deployment Policy.
 
 Google also defines some useful environment variables automatically:
 
@@ -122,15 +106,11 @@ Google also defines some useful environment variables automatically:
 
 Variables can be referenced like `\{{ properties["machineType"] }}` in **Jinja** template files.
 
-Variables can be used only with *Jinja* and *Python* type template files.
-**Yaml** template files have to be renamed to *jinja* to use variables with them.
-If the main template file is a **.yaml*, it is automatically renamed as **.jinja* at deployment time.
+Variables can be used only with *Jinja* and *Python* type template files. **Yaml** template files have to be renamed to *jinja* to use variables with them. If the main template file is a **.yaml*, it is automatically renamed as **.jinja* at deployment time.
 
-#### Output Variables
+### Output Variables
 
-The corresponding feature is called *Outputs* in
-[Google's Documentation](https://cloud.google.com/deployment-manager/docs/configuration/expose-information-outputs).
-Any Outputs defined in templates are going to end up as output variables in Cloud Application Manager.
+The corresponding feature is called *Outputs* in [Google's Documentation](https://cloud.google.com/deployment-manager/docs/configuration/expose-information-outputs). Any Outputs defined in templates are going to end up as output variables in Cloud Application Manager.
 
 ```Jinja
 outputs:
@@ -144,10 +124,9 @@ outputs:
 
 ![Lifecycle Editor with template and output variables](../../images/cloud-application-manager/google-deployment-manager/lifecycle_editor.png)
 
-#### Resources Deployed
+### Resources Deployed
 
-The resources that have been created by the deployment are going to populate the *Resources* tab of the Instance,
-and will be deleted when the instance is terminated.
+The resources that have been created by the deployment are going to populate the *Resources* tab of the Instance, and will be deleted when the instance is terminated.
 
 ![Resources deployed with Google Deployment Manager](../../images/cloud-application-manager/google-deployment-manager/resources.png)
 
