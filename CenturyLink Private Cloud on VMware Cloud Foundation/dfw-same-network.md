@@ -47,29 +47,35 @@ By default, Web-Server and RHEL7-AH1 have access to DB-Server.
 3. In the Distributed Firewall page, click the + button. Then configure the rule as follows:
 
   * __Name:__ Allow Web - DB
-  * __Source:__ Click the __+__ button in the Source column, change the __Browse objects of type__ to __Virtual Machines__, then select __Web-Server__ (you can type the name in the Filter... field - this is case-sensitive), click the right-arrow, then click __KEEP__.
-  * __Destination:__ Click the __+__ button in the Destination column, change the __Browse objects of type__ to __Virtual Machines__, then select __DB-Server__ (you can type the name in the Filter... field - this is case-sensitive), click the right-arrow, then click __KEEP__.
-  * __Service:__ Click the __IP__ button in the Service column, leave Protocol as __TCP__, and type in __443__ for the Source and Destination Port, then click __KEEP__. We'll also add TCP port 22 so we can show access with SSH.
+  * __Source:__ Click the __+__ button in the Source column, change the __Browse objects of type__ to __Virtual Machines__, then select __Web-Server__ (you can type the name in the Filter... field - this is case-sensitive), click the right-arrow, then click __KEEP__
+  * __Destination:__ Click the __+__ button in the Destination column, change the __Browse objects of type__ to __Virtual Machines__, then select __DB-Server__ (you can type the name in the Filter... field - this is case-sensitive), click the right-arrow, then click __KEEP__
+  * __Service:__ Any
   * __Action:__ Allow
-  * __Direction:__ In
+  * __Direction:__ In/Out
   * __Packet Type:__ Any
-  * __Applied To:__ Click the __+__ button in the Applied To column, change the __Browse objects of type__ to __Org Vdcs__, then select <your Org VDC> (you can type the name in the Filter... field - this is case-sensitive), click the right-arrow, then click __KEEP__.
+  * __Applied To:__ Click the __+__ button in the Applied To column, change the __Browse objects of type__ to __Org Vdc Networks__, then select org001-orgvdc-network (you can type the name in the Filter... field - this is case-sensitive), click the right-arrow, then click __KEEP__
 
 5. Click __Save changes__
 
-6. Now we will add a rule to deny all other traffic to the DB-Server.
+  __Now, we will add a rule to deny all other traffic to the DB-Server.__
 
 7. In the Distributed Firewall page, click the + button.
 
   * __Name:__ Deny all others to DB
-  * __Source:__ Any
-  * __Destination:__ Click the __+__ button in the Destination column, change the __Browse objects of type__ to __Virtual Machines__, then select __DB-Server__ (you can type the name in the Filter... field - this is case-sensitive), click the right-arrow, then click __KEEP__.
+  * __Source:__ Click the __+__ button in the Applied To column, change the __Browse objects of type__ to __Org Vdc Networks__, then select org001-orgvdc-network (you can type the name in the Filter... field - this is case-sensitive), click the right-arrow, then click __KEEP__
+  * __Destination:__ Click the __+__ button in the Destination column, change the __Browse objects of type__ to __Virtual Machines__, then select __DB-Server__ (you can type the name in the Filter... field - this is case-sensitive), click the right-arrow, then click __KEEP__
   * __Service:__ Any
   * __Action:__ Deny
   * __Direction:__ In/Out
   * __Packet Type:__ Any
-  * __Applied To:__ Click the __+__ button in the Applied To column, change the __Browse objects of type__ to __Org Vdc Networks__, then select <your Org VDC> (you can type the name in the Filter... field - this is case-sensitive), click the right-arrow, then click __KEEP__.
+  * __Applied To:__ Click the __+__ button in the Applied To column, change the __Browse objects of type__ to __Org Vdc Networks__, then select org001-orgvdc-network (you can type the name in the Filter... field - this is case-sensitive), click the right-arrow, then click __KEEP__
 
 8. Click __Save changes__
 
-Let's test this ...
+__Let's test this ...__
+
+Web-Server should have access to DB-Server, and RHEL7-AH1 should not have access to DB-Server.
+
+![DFW](../images/dccf/dfw5.png)
+
+![DFW](../images/dccf/dfw6.png)
