@@ -1,6 +1,6 @@
 {{{
   "title": "Micro-segmentation with Distributed Firewall - Same Network",
-  "date": "12-13-2018",
+  "date": "12-17-2018",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -9,37 +9,67 @@
 }}}
 
 ### Description
-In this KB article, we walk through how to enable Distributed Firewall for CenturyLink Private Cloud on VMware Cloud Foundation.
+In this KB article, we walk through how to use the Distributed Firewall (DFW) that comes with CenturyLink Private Cloud on VMware Cloud Foundation (CPC on vCF). In this particular use case, we have 3 VMs that reside on the same virtual network, and we want to ensure that traffic is not allowed between certain VMs on the same network. We will use micro-segmentation with DFW to do this.
 
 ### Prerequisites
 * Your base URL, and user credentials for CenturyLink Private Cloud on VMware Cloud Foundation
-*
+* 2 VMs on the same network
+* DFW should be enabled for your environment. If it is not, please refer to [Enabling the Distributed Firewall](dfw-enabling.md).
+
+### Environment/Use Case
+
+For the purposes of this KB, we have the following environment:
+
+* __Server:__ DB-Server - RHEL 7 (192.168.1.23)
+* __Server:__ Web-Server - RHEL 7 (192.168.1.25)
+* __Server:__ RHEL7-AH1 - RHEL 7 (192.168.1.65)
+* __Network:__ Org VDC Network - (org001-orgvdc-network - 192.168.1.0/24)
+* __VDC:__ Org VDC (org001-vdc)
+
+By default, Web-Server and RHEL7-AH1 have access to DB-Server.
+
+![DFW](../images/dccf/dfw-ssh-before1.png)
+
+![DFW](../images/dccf/dfw-ssh-before2.png)
 
 ### Steps
 
-1. Go to https://www.ctl.io/cloud-application-manager/ and Log In to your account. In the __Cloud Application Manager__ page, click on __Providers__ on the left side.
+1. Log In to your CPC on vCF environment.
 
-![CAM Provider](../images/dccf/cam-provider1.png)
+2. Click the __Administration__ tab. In the left side pane, under __Cloud Resources__, select __Virtual Datacenters__, then right-click your Virtual Datacenter, and select __Manage Firewall...__
 
-2. Click __New__ and select __CenturyLink Private Cloud on VMware Cloud Foundation__ from the __Provider__ drop down list.
+  ![DFW](../images/dccf/dfw1.png)
 
-![CAM Provider](../images/dccf/cam-provider2.png)
+  A new window will open. If you get a message stating Distributed Firewall is not enabled for this Org VDC, please follow the steps outlined in the [Enabling the Distributed Firewall](dfw-enabling.md) KB article.
 
-3. Fill in the details:
-  * Name: Enter a name for the Provider.
-  * Description: (Optional).
-  * Enable Managed Services: Enable if you want Managed OS and Applications.
-  * URL: Your Base URL (example - https://S123456ch3a.vcf.ctl.io).
-  * Organization: Your Organization (displayed in the top left corner when logged in to CenturyLink Private Cloud on VMware Cloud Foundation).
-  * Username: CenturyLink Private Cloud on VMware Cloud Foundation user account.
-  * Password: Password for above account.
+  __Now, let's create a rule to Allow traffic from Web-Server to DB-Server__
 
-4. Click __Save__.  
+3. In the Distributed Firewall page, click the + button. Then configure the rule as follows:
 
-![CAM Provider](../images/dccf/cam-provider3.png)
+  * __Name:__ Allow Web - DB
+  * __Source:__ Click the __+__ button in the Source column, change the __Browse objects of type__ to __Virtual Machines__, then select __Web-Server__ (you can type the name in the Filter... field - this is case-sensitive), click the right-arrow, then click __KEEP__.
+  * __Destination:__ Click the __+__ button in the Destination column, change the __Browse objects of type__ to __Virtual Machines__, then select __DB-Server__ (you can type the name in the Filter... field - this is case-sensitive), click the right-arrow, then click __KEEP__.
+  * __Service:__ Click the __IP__ button in the Service column, leave Protocol as __TCP__, and type in __443__ for the Source and Destination Port, then click __KEEP__. We'll also add TCP port 22 so we can show access with SSH.
+  * __Action:__ Allow
+  * __Direction:__ In
+  * __Packet Type:__ Any
+  * __Applied To:__ Click the __+__ button in the Applied To column, change the __Browse objects of type__ to __Org Vdcs__, then select <your Org VDC> (you can type the name in the Filter... field - this is case-sensitive), click the right-arrow, then click __KEEP__.
 
-5. The Provider will synchronize. Once completed, you can begin using Cloud Application Manager with CenturyLink Private Cloud on VMware Cloud Foundation.
+5. Click __Save changes__
 
-![CAM Provider](../images/dccf/cam-provider4.png)
+6. Now we will add a rule to deny all other traffic to the DB-Server.
 
-For additional information on using Cloud Application Manager, please refer to the [Knowledge Base](../Cloud Application Manager/Getting Started/#1).
+7. In the Distributed Firewall page, click the + button.
+
+  * __Name:__ Deny all others to DB
+  * __Source:__ Any
+  * __Destination:__ Click the __+__ button in the Destination column, change the __Browse objects of type__ to __Virtual Machines__, then select __DB-Server__ (you can type the name in the Filter... field - this is case-sensitive), click the right-arrow, then click __KEEP__.
+  * __Service:__ Any
+  * __Action:__ Deny
+  * __Direction:__ In/Out
+  * __Packet Type:__ Any
+  * __Applied To:__ Click the __+__ button in the Applied To column, change the __Browse objects of type__ to __Org Vdc Networks__, then select <your Org VDC> (you can type the name in the Filter... field - this is case-sensitive), click the right-arrow, then click __KEEP__.
+
+8. Click __Save changes__
+
+Let's test this ...
