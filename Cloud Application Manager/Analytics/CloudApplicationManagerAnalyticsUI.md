@@ -14,7 +14,7 @@ This document describes how to gain access to Analytics and provides a breakdown
 ### Prerequisites
 One of the following use cases must have occurred successfully:
 * The provider is enabled for [Managed Services](https://www.ctl.io/knowledge-base/cloud-application-manager/managed-services/#1)
-* The provider is enabled for [Cloud Optimization](https://www.ctl.io/cloud-application-manager/cloud-optimization)
+* The provider is enabled for [Cloud Optimization](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/#1)
 * The provider is no Optimized or Managed, but enabled for Analytics. (See below)
 
 #### Opting To Use Analytics for a Provider that is Not Optimized or Managed.
