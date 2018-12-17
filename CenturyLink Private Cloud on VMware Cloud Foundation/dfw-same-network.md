@@ -76,6 +76,6 @@ __Let's test this ...__
 
 Web-Server should have access to DB-Server, and RHEL7-AH1 should not have access to DB-Server.
 
-![DFW](../images/dccf/dfw5.png)
-
 ![DFW](../images/dccf/dfw6.png)
+
+![DFW](../images/dccf/dfw5.png)
