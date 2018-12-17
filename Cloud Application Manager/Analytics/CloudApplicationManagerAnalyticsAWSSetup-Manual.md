@@ -1,15 +1,18 @@
 {{{
   "title": "Cloud Optimization AWS Configuration - Manual",
-  "date": "09-08-2017",
-  "author": "Chris Meyer",
+  "date": "12-13-2017",
+  "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
 ### Overview
-This process details the steps needed to manually configure your AWS account for Cloud Application Manager Analytics functionality.
+This process details steps one would perform to manually configure AWS accounts for Cloud Application Manager Analytics functionality. Manual configuration is not typically necessary. Automation will deliver these steps when Managed Services Anywhere, Optimization, or Bring-Your-Own Cloud Analytics are enabled.
 
 If you prefer the set-up of your environment to be automated, you can find that procedure [here](CloudApplicationManagerAnalyticsAWSSetup.md).
+
+### Prerequisites
+It is recommended the user or role performing these steps have full IAM permissions for IAM policies and Roles.
 
 #### Login to your AWS Account
 1. Login to the target AWS account [here](https://console.aws.amazon.com/iam).
@@ -47,6 +50,7 @@ If you prefer the set-up of your environment to be automated, you can find that 
 
 
 ##### CenturyLink Cloud Optimization IAM Policy
+
 ```
 
 {
