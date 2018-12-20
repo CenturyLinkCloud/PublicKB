@@ -51,9 +51,6 @@
 
 * [**MongoDB**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-mongodb-blueprint.md) - A cross-platform, NoSQL-style, document-oriented database. MongoDB’s structure is JSON-like, making integration of unstructured data in certain types of applications easier and faster.
 
-* [**Vision Solutions - DoubleTake**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-blueprint.md) - Best-of-breed technology helping customers address the business challenge of adopting cloud-based disaster recovery strategies and performing near-zero downtime migrations without risk across physical, virtual or cloud server platforms.
-
-
 ### Open Source Contributions
 
 Selected highlights include:

@@ -36,7 +36,7 @@ Cloud Application Manager users with organization administration access (for org
 
 ### Prerequisites
 
-* Access to the dashboard of Cloud Application Manager, Application site.
+* Access to the dashboard of Cloud Application Manager, [Applications site](https://cam.ctl.io/#/dashboard).
 
 ### Workspace scope
 

@@ -121,19 +121,6 @@ The answer varies depending on the workload and your requirements. Along those l
 * Other resources:
   * [Getting Started with CommVault Storage Blueprint](../Ecosystem Partners/Marketplace Guides/getting-started-with-commvault-storage-blueprint.md)
 
-#### Double Take, from Vision Solutions
-* When to use it: Disaster Recovery, with an RTO of 4 hours; High Availability (HA) versions of the product, with an RTO of minutes, are also available. Further, a managed service for DR is also available.
-* Requirements: These are detailed on [this excellent Knowledge Base article CenturyLink Cloud Guide to Double Take DR](../Servers/centurylink-cloud-guide-to-doubletake-dr.md)
-* Cost: Pricing is available upon request
-* Licensing: Bring Your Own License, available from Vision Solutions; usage-based pricing may also be available in the coming months.
-* Availability: GA
-* Deployment Time: Days
-* Support Model: Software is supported by Vision Solutions; CenturyLink Cloud supports the underlying infrastructure via our standard SLAs
-* To Get Started: Contact Vision Solutions directly via email at [CenturyLinkInfo@visionsolutions.com](mailto:CenturyLinkInfo@visionsolutions.com); evaluation licenses are available.
-* Other resources:
-  * [Getting Started with the Double Take Blueprint](../Ecosystem Partners/Marketplace Guides/getting-started-with-double-take-blueprint.md)
-  * [Setting up disaster recovery using Visions Solutions Double-Take Availability](../Servers/setting-up-disaster-recovery-using-visions-solutions-double-take-availability.md)
-  * [CenturyLink Cloud Guide to Double Take DR](../Servers/centurylink-cloud-guide-to-doubletake-dr.md)
 
 #### Managed Backup
 * When to use it: File-based backup, using the Symantec NetBackup offering
