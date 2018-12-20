@@ -34,9 +34,9 @@ By default, Web-Server and RHEL7-AH1 have access to DB-Server.
 
 ### Steps
 
-1. Log In to your CPC on vCF environment.
+* Log In to your CPC on vCF environment.
 
-2. Click the __Administration__ tab. In the left side pane, under __Cloud Resources__, select __Virtual Datacenters__, then right-click your Virtual Datacenter, and select __Manage Firewall...__
+* Click the __Administration__ tab. In the left side pane, under __Cloud Resources__, select __Virtual Datacenters__, then right-click your Virtual Datacenter, and select __Manage Firewall...__
 
   ![DFW](../images/dccf/dfw1.png)
 
@@ -44,7 +44,7 @@ By default, Web-Server and RHEL7-AH1 have access to DB-Server.
 
   __Now, let's create a rule to Allow traffic from Web-Server to DB-Server__
 
-3. In the Distributed Firewall page, click the + button. Then configure the rule as follows:
+* In the Distributed Firewall page, click the + button. Then configure the rule as follows:
 
   * __Name:__ Allow Web - DB
   * __Source:__ Click the __+__ button in the Source column, change the __Browse objects of type__ to __Virtual Machines__, then select __Web-Server__ (you can type the name in the Filter... field - this is case-sensitive), click the right-arrow, then click __KEEP__
@@ -55,11 +55,11 @@ By default, Web-Server and RHEL7-AH1 have access to DB-Server.
   * __Packet Type:__ Any
   * __Applied To:__ Click the __+__ button in the Applied To column, change the __Browse objects of type__ to __Org Vdc Networks__, then select org001-orgvdc-network (you can type the name in the Filter... field - this is case-sensitive), click the right-arrow, then click __KEEP__
 
-5. Click __Save changes__
+* Click __Save changes__
 
   __Now, we will add a rule to deny all other traffic to the DB-Server.__
 
-7. In the Distributed Firewall page, click the + button.
+* In the Distributed Firewall page, click the + button.
 
   * __Name:__ Deny all others to DB
   * __Source:__ Click the __+__ button in the Applied To column, change the __Browse objects of type__ to __Org Vdc Networks__, then select org001-orgvdc-network (you can type the name in the Filter... field - this is case-sensitive), click the right-arrow, then click __KEEP__
@@ -70,7 +70,7 @@ By default, Web-Server and RHEL7-AH1 have access to DB-Server.
   * __Packet Type:__ Any
   * __Applied To:__ Click the __+__ button in the Applied To column, change the __Browse objects of type__ to __Org Vdc Networks__, then select org001-orgvdc-network (you can type the name in the Filter... field - this is case-sensitive), click the right-arrow, then click __KEEP__
 
-8. Click __Save changes__
+* Click __Save changes__
 
 __Let's test this ...__
 
