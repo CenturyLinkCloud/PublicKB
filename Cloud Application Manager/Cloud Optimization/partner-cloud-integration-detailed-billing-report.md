@@ -51,9 +51,9 @@ Example: A customer thinks they may have $5 of EC2 usage from January. On Februa
 
 ![Usage History Sequence](../../images/cloud-application-manager/Usage_History_Sequence.1.png)
 
-You may select a line item and it will provide detail into all the services, by region, that contributed charges to that line item.
 
-**Service and Region Details:** Details for vendor-provided, resold services are provided so you can see the charges associated per service, per account, per region. You may see how they are grouped according to Centurylink's consolidated billing policy.
+
+**Service and Region Details:** You may select a line item drop-down and it will provide detail into all the services, by region, that contributed charges to that line item, according to Centurylink's [consolidated billing]((partner-cloud-integration-consolidated-billing.md) policy.
 
 
 ![Select an Account](../../images/cloud-application-manager/CAM_COA_DetailedBilling_3b.png)
