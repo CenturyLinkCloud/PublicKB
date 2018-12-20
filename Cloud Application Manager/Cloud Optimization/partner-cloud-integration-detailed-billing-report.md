@@ -15,7 +15,7 @@ Usage History is designed primarily for the purpose of explaining your invoice. 
 * Provide an understanding of the differences between CenturyLink's billing cycle and vendor billing cycles.
 * Provide some flexibility in how information is presented.
 
-Optimizing Accounts allows a Cloud Application Manager user to receive [consolidated bills](partner-cloud-integration-consolidated-billing.md).  
+Optimizing Accounts allows a Cloud Application Manager user to receive [consolidated bills](partner-cloud-integration-consolidated-billing.md) and therefore review usage within Usage History. 
 
 ### Audience
 
@@ -53,7 +53,7 @@ Example: A customer thinks they may have $5 of EC2 usage from January. On Februa
 
 
 
-**Service and Region Details:** You may select a line item drop-down and it will provide detail into all the services, by region, that contributed charges to that line item, according to Centurylink's [consolidated billing]((partner-cloud-integration-consolidated-billing.md) policy.
+**Service and Region Details:** You may select a line item drop-down and it will provide detail into all the services, by region, that contributed charges to that line item, according to Centurylink's [consolidated billing](partner-cloud-integration-consolidated-billing.md) policy.
 
 
 ![Select an Account](../../images/cloud-application-manager/CAM_COA_DetailedBilling_3b.png)
@@ -82,7 +82,7 @@ Letter In Image | Name  | Description  | Notes
 --- | --- | --- | ---
  A  | Usage Dates  | Range of billing cycle selected for the .csv | Only one month at a time is provided, but using multiple exports, one could organize the data in a variety of ways.
  B  | Usage Total  | Total of all CAM-related charges  |   
- C  | Item Description  | The Description of the Cloud Application Manager line item that appear on your  [invoice](partner-cloud-integration-consolidated-billing.md).   |   
+ C  | Item Description  | The Description of the Cloud Application Manager line item that appear on your invoice.   |   
  D  | Item Detail  | Supporting line items used to explain charges. They roll up under the Item description lines. See "Service and Region Details" above.   |   
  E  | Alias  | CAM-generated unique ID for each provider  | You may use this to group charges however you like.  
  F  | Account  | Where relevant, whatever ID the vendor uses to identify an account associated with the item detail.  |  
