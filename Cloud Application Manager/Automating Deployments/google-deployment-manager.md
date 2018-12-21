@@ -3,7 +3,7 @@
 "author": "Dénes Pál",
 "attachments": [],
 "contentIsHTML": false,
-"keywords": ["google deployment manager", "template box", "cloud application manager", "deployment templates", "cam"]
+"keywords": ["google deployment manager", "template box", "cloud application manager", "deployment templates", "cam", "alm", "application lifecycle management"]
 }}}
 
 **In this article:**
