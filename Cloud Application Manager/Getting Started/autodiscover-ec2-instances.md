@@ -45,7 +45,7 @@ The following types of instances can be registered into *Cloud Application Manag
 
 ### Register AWS EC2 instances in Cloud Application Manager
 
-To see the full registration process in detail, please visit [Register an Existing Instance](https://www.ctl.io/register-existing-instance/#registering-an-instance).
+To see the full registration process in detail, please visit [Register an Existing Instance](./register-existing-instance.md).
 
 ### Contacting Cloud Application Manager Support
 
