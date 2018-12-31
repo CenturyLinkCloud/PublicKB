@@ -1,13 +1,13 @@
 {{{
  "title": "Software as a Service (SaaS) Integration API",
- "date": "01-01-2018",
+ "date": "01-01-2019",
  "author": "Jim Phillips",
  "attachments": [],
- "contentIsHTML": false
+ "contentIsHTML": false,
+ "sticky": true
  }}}
 
-
-### Overview
+ ### Overview
 
 CenturyLink has created multiple opportunities for software vendors to integrate with the Cloud Marketplace. Each of these methods is designed for the provider to be as independent as possible as they work through the integration process.  To be included in the Cloud Marketplace, a SaaS provider must implement one of these methods. During the Marketplace Provider Onboarding Program, we will discuss which integration type is the best fit.
 
