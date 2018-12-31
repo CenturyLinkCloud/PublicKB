@@ -12,7 +12,7 @@
  * Monthly
  * Annual - The Marketplace does not support annual billing, however, we can take an annual charge and divide it by twelve and charge the customer that value monthly. Also, term commits can be implemented to a product.
  * One-Time
- * Usage Based, for more information view the Usage Based billing [KB](usage-based-billing.md)
+ * Usage Based
  * Delayed Billing -- Unless Delayed billing is assigned to a SKU, billing will invoke immediately.
 
  There are several options for delayed billing they are as follows:
