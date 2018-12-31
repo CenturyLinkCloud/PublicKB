@@ -1,6 +1,6 @@
 {{{
  "title": "Software as a Service (SaaS) Integration API",
- "date": "09-26-2017",
+ "date": "01-01-2018",
  "author": "Jim Phillips",
  "attachments": [],
  "contentIsHTML": false
@@ -68,7 +68,13 @@ All returned data will be stored for future reference.
 
 ##### Delayed Billing Start
 
-Some providers require manual work before a customer begins use of the products.  To accommodate this, we have implemented delayed billing options, available for each defined SKU.  The options are to start billing immediately, at a specified time, or manually.  Most SKUs will start billing immediately (upon the customer purchase).
+Some providers require manual work before a customer begins use of the products.  To accommodate this, we have implemented delayed billing options, available for each defined SKU. You must notify a CenturyLink Marketplace representative of which billing model you want assigned to each SKU.
+
+The options are to start billing are:
+ * Immediately
+ * Expected Delay -- Billing starts with the set delay. The provider will be able to adjust the actual billing start date through the 'Deployments' page.
+ * Scheduled Next Month -- Billing starts on the 1 of the month following the purchase date. The provider will be able to adjust the actual billing start date through the 'Deployments' page.
+ * Manually -- The provider must proactively start billing manually through the 'Deployments' page, or an API call.
 
 SKUs with a delayed timeframe (e.g. 3 days or 1 week), will automatically start billing at the scheduled time.  You will be able to update the scheduled time through the provider portal in case you experience delays.
 
