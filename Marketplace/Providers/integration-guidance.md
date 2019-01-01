@@ -1,6 +1,6 @@
 {{{
 "title": "Integration Guidance",
-"date": "07-29-2018",
+"date": "01-01-2019",
 "author": "Brandy Smith",
 "attachments": [],
 "contentIsHTML": false
@@ -27,7 +27,7 @@ While there is no exact criteria for the software that is eligible to be integra
 * System Integrators
 * Independent Software Vendors (ISVs)
 * Virtual Appliance
-* Subscription Basee
+* Subscription Based
 
 
 #### Software as a Service (SaaS)
