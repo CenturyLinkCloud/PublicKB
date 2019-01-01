@@ -1,6 +1,6 @@
 {{{
 "title": "Getting Started Guide: Marketplace & Provider Portal",
-"date": "10-01-2018",
+"date": "01-01-2019",
 "author": "Brandy Smith",
 "attachments": [],
 "contentIsHTML": false,
@@ -11,7 +11,7 @@ The Provider Portal (PP) is an application that allows CenturyLink Cloud Provide
 
 ### Signing In
 
-Sign into the [Provider Portal](https://provider-portal.ctl.io/#/login) using your credentials. You will be redirected to the Welcome screen. **New** You can now log in using your Google credentials.
+Sign into the [Provider Portal](https://provider-portal.ctl.io/#/login) using your CenturyLink Cloud credentials. You will be redirected to the Welcome screen. **New** You can now log in using your Google credentials.
 
 ![EPP1](../../images/EPP1.png)
 
@@ -41,6 +41,10 @@ The company logo, content that is provided in the **Description** field and prod
 This is a sample of the customer view of your Company Information on the Marketplace:
 
 ![EPP](../../images/EPPnew.png)
+
+### Remit Address
+
+You will need to provide the remit address information for your company so that CenturyLink can remunerate payments for Marketplace subscriptions.
 
 ### Marketplace Provider Agreement (MPA)
 

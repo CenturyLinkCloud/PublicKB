@@ -1,6 +1,6 @@
 {{{
 "title": "Marketplace Onboarding Resources",
-"date": "12-07-2017",
+"date": "01-01-2019",
 "author": "Brandy Smith",
 "attachments": [],
 "contentIsHTML": false,
@@ -15,7 +15,7 @@ Once you have created a CenturyLink Cloud account, or provided a Marketplace rep
 
 The Provider Portal provides you with multiple resources.
 
-The portal is where you will accept the Marketplace Agreement, create and setup your product, and more. For more information on how to setup your product, please see the [Getting Started Guide: Marketplace & Provider Portal](getting-started-guide-marketplace-ecosystem-provider-portal.md).
+The portal is where you will accept the Marketplace Agreement, create and setup your product (in staging environment), and more. For more information on how to setup your product, please see the [Getting Started Guide: Marketplace & Provider Portal](getting-started-guide-marketplace-ecosystem-provider-portal.md).
 
 Once your product has been published, the Provider Portal contains reports that will:
 
