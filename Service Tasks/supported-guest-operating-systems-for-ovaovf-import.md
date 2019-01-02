@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-CenturyLink Cloud customers may wish to import OVA/OVF Guest Operating Systems to the platform via a [Service Task](//www.ctl.io/products/support/service-tasks.md). Customers frequently request a list of the supported Guest Operating Systems the CenturyLink Cloud supports for Import and this KB is meant to address this query.
+CenturyLink Cloud customers may wish to import OVA/OVF Guest Operating Systems to the platform via a [Service Task](//www.ctl.io/products/support/service-tasks). Customers frequently request a list of the supported Guest Operating Systems the CenturyLink Cloud supports for Import and this KB is meant to address this query.
 
 Ensure your OVF meets requirements for import they are listed here in the KB under Service tasks > Best Practices and preparation for a virtual machine OVF import.
 

@@ -45,7 +45,7 @@ There are three different submenu options under Instances:
 
 * **Unregistered**: shows only unregistered instances, which are the ones accessible into all the defined providers that were not deployed through Cloud Application Manager. They are discovered in the synchronization event of a provider and are classified by Type and Subtype.
   * Type: One of Compute, Network, Database, Storage or Other
-  * Subtype: this is the instance class, specific to each provider type. For example, for AWS type providers we can see VPC or Application Load Balancers (for Network type instances), and S3 or Elastic Block Storages (for Storage type instances) and for an Azure provider we could see Virtual Networks or Application Gateways (in Network type instances) and Queue or BLOB (in Storage type instances). You can check the [full list of Azure resources being displayed here](./using-microsoft-azure.md#azure-native-resources).
+  * Subtype: this is the instance class, specific to each provider type. For example, for AWS type providers we can see VPC or Application Load Balancers (for Network type instances), and S3 or Elastic Block Storages (for Storage type instances) and for an Azure provider we could see Virtual Networks or Application Gateways (in Network type instances) and Queue or BLOB (in Storage type instances). You can check the [full list of Azure resources being displayed here](using-microsoft-azure.md#azure-native-resources).
 
   You can also select a specific state among the available ones (Active, Inactive) to show only the instance in the selected state.
 
