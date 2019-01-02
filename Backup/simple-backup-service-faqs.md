@@ -139,7 +139,7 @@ A: Yes, in the restore section there is an option to perform a full restore, or 
 
 **Q: Can restores be performed to another server?**
 
-A: A self-service feature is on the SBS roadmap. If a restore to an alternate server is required, please create a [support request](https://www.ctl.io/knowledge-base/support/how-do-i-report-a-support-issue/#exceptions).
+A: Yes, please follow the steps provided in [this kb](restore-to-alternate-server.md).
 
 **Q: How is the “Backup Date” determined for Restore Points?**
 
