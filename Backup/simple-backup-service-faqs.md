@@ -139,7 +139,7 @@ A: Yes, in the restore section there is an option to perform a full restore, or 
 
 **Q: Can restores be performed to another server?**
 
-A: Yes, please follow the steps outlined in this [KB article](https://www.ctl.io/knowledge-base/backup/restore-to-alternate-server/).
+A: Yes, please follow the steps outlined in this [KB article](restore-to-alternate-server.md).
 
 **Q: How is the “Backup Date” determined for Restore Points?**
 
