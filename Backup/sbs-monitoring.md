@@ -14,4 +14,4 @@ To get started simply navigate to the Monitoring tab in the Simple Backup UI, ad
 
 ![](../images/backup/monitoring/monitoring_email.png)
 
-We also have realtime monitoring available through Webhooks. Please see our [Webhooks KB article](./webhooks) for more information.
+We also have realtime monitoring available through Webhooks. Please see our [Webhooks KB article](webhooks.md) for more information.
