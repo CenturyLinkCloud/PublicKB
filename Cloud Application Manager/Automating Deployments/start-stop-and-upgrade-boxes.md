@@ -1,71 +1,101 @@
-{{{ "title": "Install, Configure, and Other Events",
+{{{ 
+"title": "Box events. Install, Configure, and others",
 "date": "09-01-2016",
 "author": "",
+"date": "12-28-2018",
+"author": "Julio Castanar",
+"keywords": ["cam","alm","boxes", "box", "events", "event types", "install", "configure", "start", "stop", "dispose", 
+                "event execution order", "pre-event types", "event error codes", "windows return codes"],
 "attachments": [],
 "contentIsHTML": false
 }}}
 
-**In this article:**
+### Table of Contents
 
-* Box events
-* Event types
-* Event execution order
-* Event error codes
-* Windows return codes
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Event types](#Event-Types)
+    * [Install](#Install)
+    * [Configure](#Configure)
+    * [Start](#Start)
+    * [Stop](#Stop)
+    * [Dispose](#Dispose)
+* [Event execution order](#Event-execution-order)
+    * [pre-event types](#pre-event-types)
+* [Event error codes](#Event-error-codes)
+* [Windows return codes](#Windows-return-codes)
 
-### Box Events
+### Overview
 
-The lifecycle of a service or application is managed virtually by box events like install, configure, start, stop, and dispose. Each event corresponds to its event script type on the box. Cloud Application Manager supports writing event scripts in all languages supported by the base Linux and Windows base images. These include Bash, PowerShell, Salt, Ansible, Chef, and Puppet.
+This article is meant to assist Cloud Application Manager customers who want to create and manage boxes. It talks about **Box Events**. 
+
+The lifecycle of a service or application is managed virtually by box events like install, configure, start, stop, and dispose. Each event corresponds to its event script type on the box. Cloud Application Manager supports writing event scripts in all languages supported by the Linux and Windows base images. These include Bash, PowerShell, Salt, Ansible, Chef, and Puppet.
 
 The Cloud Application Manager agent executes and stores the output of the event scripts in a default directory in the virtual machine instance: /var/elasticbox/<instance_id> where instance_id is the ID of the instance. You can refer to this directory as ${folder} in the event scripts to move the output of the executed scripts elsewhere.
+
+### Audience
+
+Cloud Application Manager Users
+
+### Prerequisites
+
+* Access to [Applications site](https://cam.ctl.io/#/boxes) (Application Lifecycle Management module) of Cloud Application Manager as an authorized user of an active Cloud Application Manager account.
 
 ### Event Types
 
 There are five types of events on a box. Each event executes depending on the [action](https://www.ctl.io/api-docs/cam/#application-lifecycle-management-instances-api) triggered on a box instance.
 
-**Install**
+#### Install
 
-This installs the box. It’s run when you click deploy on a box and also when you click reinstall on an instance. Use it for install or upgrade tasks like setting up a Java, Ruby, or Python runtime environment.
+This installs the box. It’s run when you click deploy on a box and also when you click reinstall on an instance.  
+Use it for install or upgrade tasks like setting up a Java, Ruby, or Python runtime environment.
 
-**Configure**
+#### Configure
 
-This handles the initial install and is run after install events. It’s also run when you click Reconfigure on an instance. Use it to reboot the virtual server (using the server command line), start the server from the Cloud Application Manager instance page, and add or remove instance nodes when managed through AWS auto scaling. The event must contain tasks that occur multiple times over the life of a box instance, such as configuring and maintaining connectivity between application tiers.
+This handles the initial install and is run after install events. It’s also run when you click Reconfigure on an instance.  
+Use it to reboot the virtual server (using the server command line), start the server from the Cloud Application Manager instance page, and add or remove instance nodes when managed through AWS auto scaling.  
+The event must contain tasks that occur multiple times over the life of a box instance, such as configuring and maintaining connectivity between application tiers.
 
-**Start**
+#### Start
 
 This starts a service. It’s run after configure events and is also triggered when you click Power On on an instance or when the virtual server reboots. The event must contain tasks to start a service.
 
-**Stop**
+#### Stop
 
 This cleanly shuts down a service. It’s run when you click Shut Down on an instance. The event must contain tasks to cleanly shutdown a service.
 
-**Dispose**
+#### Dispose
 
-It’s run when you click Terminate on a successfully deployed instance. The event must contain tasks that clean up the instance before it’s deleted. Examples include de-registering agents and collecting logs and stateful data.
+It’s run when you click Terminate on a successfully deployed instance. The event must contain tasks that clean up the instance before it’s deleted.  
+Examples include de-registering agents and collecting logs and stateful data.
 
 ### Event Execution Order
 
-Cloud Application Manager executes events in the order they’re displayed in the box events section. For example, this box nests a git box which in turn nests a git repo box. If we expand the events, we can see the order in which the scripts execute at deploy time.
+Cloud Application Manager executes events in the order they’re displayed in the box events section.  
+For example, this box nests a git box which in turn nests a git repo box. If we expand the events, we can see the order in which the scripts execute at deployment time.
 
 ![installconfigureandotherevents1.png](../../images/cloud-application-manager/installconfigureandotherevents1.png)
 
-See how each event has a pre-event type. The install has pre_install, configure has pre_configure, and so on. Pre-events fulfill certain conditions before performing the next step. For example, you may want use the pre-event to install dependencies or download files or create folders and directories. Pre-events always run before child box events.
+#### pre-event types
+Note how each event has a pre-event type. The install has pre_install, configure has pre_configure, and so on. Pre-events fulfill certain conditions before performing the next step.  
+For example, you may want to use the pre-event to install dependencies or download files or create folders and directories. Pre-events always run before child box events.
 
 ### Event Error Codes
 
 It’s good practice to use exit error codes in events to indicate if a task ran successfully or not on an instance. For example, you can return a 1 to indicate an error and write what caused the error to the instance logs.
 
-In both Windows and Linux event shell scripts, Cloud Application Manager understands three types of exit codes that affect the instance state.
+In both, Windows and Linux event shell scripts, Cloud Application Manager understands three types of exit codes that affect the instance state.
 
 | Use Code | To indicate | Description | Instance State |
 |----------|-------------|-------------|----------------|
 | 0 | Success | Script returns a zero. | Instance is online and available. |
 | Non-zero | Failure | Cloud Application Manager fails the event script that returned non-zero. | Instance is unavailable. |
-| 100 | Reboot | Indicates that you want to reboot the service or virtual machine. The agent goes into sleep mode waiting for the reboot to complete. To reboot, run the reboot command for the OS type. For example, in Linux it is reboot, in Windows PowerShell it is Restart-computer. | Instance state unaffected. |
+| 100 | Reboot | Indicates that you want to reboot the service or virtual machine. The agent goes into sleep mode waiting for the reboot to complete.<br/>To reboot, run the reboot command for the OS type.<br/>For example, in Linux it's to reboot, in Windows PowerShell means Restart-computer. | Instance state unaffected. |
 
 **Examples**
 
-This sample shell script checks if a puppet configuration file has executed successfully. If not, the snippet returns the standard error code 1 to indicate an error. The error message from the echo command is recorded in the instance logs. sdsdds
+This sample shell script checks if a puppet configuration file has executed successfully. If not, the snippet returns the standard error code 1 to indicate an error. The error message from the echo command is recorded in the instance logs.
 
 ```
 puppetfile=`curl -k -s $PUPPET_DEFAULT`
@@ -81,7 +111,7 @@ exit 1
 fi
 ```
 
-Here’s another script sample that uses the 0 exit code to indicate that the command completed successfully when connectivity to the Nginx machine is active.
+Here’s another script sample that uses the 0 exit code to indicate that the command is completed successfully when connectivity to the Nginx machine is active.
 
 ```
 # Check that networking is up.
@@ -124,4 +154,4 @@ For issues related to API calls, send the request body along with details relate
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+* Windows: RDP into the instance to locate the log at \ProgramData\ElasticBox\Logs\elasticbox-agent.log
