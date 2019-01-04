@@ -1,7 +1,7 @@
 {{{
   "title": "Managed OS - Operating System Patching & Update Processes",
   "date": "01-04-2018",
-  "modified by": "Gavin Lai",
+  "author": "Modified by Gavin Lai",
   "attachments": [],
   "contentIsHTML": false
 }}}
