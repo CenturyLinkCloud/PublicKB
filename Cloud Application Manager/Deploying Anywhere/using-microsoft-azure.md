@@ -7,8 +7,6 @@
 "contentIsHTML": false
 }}}
 
-### Using Microsoft Azure
-
 **In this article:**
 
 * [Overview](#overview)
@@ -16,6 +14,7 @@
 * [Registering Your Microsoft Azure Subscription (ARM) in Cloud Application Manager](#registering-your-microsoft-azure-subscription-arm-in-cloud-application-manager)
 * [Deploying Instances in Azure](#deploying-instances-in-azure)
 * [Registering Existing Instances from your Azure Account](#registering-existing-instances-from-your-azure-account)
+* [Azure Native Resources](#azure-native-resources)
 * [Shutdown and Terminate Instances in Azure](#shutdown-and-terminate-instances-in-azure)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
@@ -61,17 +60,17 @@ You need an Microsoft Azure subscription to be able to consume Azure services. F
 
     In order to allow automatic deletion, you must add the Company Administrator Role to the App. https://docs.microsoft.com/en-us/powershell/module/msonline/add-msolrolemember?view=azureadps-1.0 :
 
-~~~
-$tenantGuid = ‘YOUR-TENANT-ID’
-$user = ‘YOUR_USER@YOUR-DOMAIN.onmicrosoft.com'
-$password = 'YOUR PASSWORD'
-$appID = ‘YOUR-APP-ID’
-$Creds = New-Object System.Management.Automation.PsCredential($user, (ConvertTo-SecureString $password -AsPlainText -Force))
-Connect-MSOLSERVICE -Credential $Creds
-$msSP = Get-MsolServicePrincipal -AppPrincipalId $appID -TenantID $tenantGuid
-$objectId = $msSP.ObjectId
-Add-MsolRoleMember -RoleName "Company Administrator" -RoleMemberType ServicePrincipal -RoleMemberObjectId $objectId
-~~~
+    ~~~powershell
+    $tenantGuid = 'YOUR-TENANT-ID'
+    $user = 'YOUR_USER@YOUR-DOMAIN.onmicrosoft.com'
+    $password = 'YOUR PASSWORD'
+    $appID = 'YOUR-APP-ID'
+    $Creds = New-Object System.Management.Automation.PsCredential($user, (ConvertTo-SecureString $password -AsPlainText -Force))
+    Connect-MSOLSERVICE -Credential $Creds
+    $msSP = Get-MsolServicePrincipal -AppPrincipalId $appID -TenantID $tenantGuid
+    $objectId = $msSP.ObjectId
+    Add-MsolRoleMember -RoleName "Company Administrator" -RoleMemberType ServicePrincipal -RoleMemberObjectId $objectId
+    ~~~
 
 8. Navigate to *Subscriptions* panel.
 9. In the *Overview* tab an **Subscription ID** is listed.  Copy and take note of this value for later.
@@ -282,6 +281,40 @@ As part of the result of synchronization process you can find a list of availabl
 
 We strongly recommend synchronize your Azure provider before you try to register the virtual machine. This due to such instance may be registered by another user before you try to register it. This way you can avoid this kind of problems.
 
+### Azure Native Resources
+
+After the synchronization process, you will also find in the Instances page a list of Azure resources that already exist in your account. You can also register virtual machine type instances from here.
+
+![Microsoft Azure - Unregistered instances](../../images/cloud-application-manager/microsoft-azure/unregistered-instances.png)
+
+These resources can be filtered by the following types and subtypes:
+
+* **Compute**
+  * ScaleSet
+  * Virtual machine
+* **Network**
+  * Load balancer
+  * Security groups
+  * Network interface
+  * Virtual networks
+  * IP address
+  * VPN
+  * Application gateway
+  * Local gateway
+  * Express gateway
+* **Storage**
+  * File
+  * BLOB
+  * Table
+  * Queue
+* **Database**
+  * Sql Server
+  * Managed Sql Server
+  * MySQL
+  * PostgreSQL
+  * CosmosDB     
+
+
 ### Shutdown and Terminate Instances in Azure
 
 #### Shutdown Instance
@@ -303,4 +336,4 @@ For issues related to API calls, send the request body along with details relate
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
 
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+* Windows: RDP into the instance to locate the log at /ProgramData/ElasticBox/Logs/elasticbox-agent.log

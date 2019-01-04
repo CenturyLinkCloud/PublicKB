@@ -122,11 +122,11 @@ There are no A10 license costs included.  The cost to deploy the A10 vThunder Pa
 #### Process to request credit for Service Task fee
 Follow this process to request credit on your account to re-imburse any expense to deploy the Partner Template:
 
-* Please copy and paste the email below and send it to [ecosystem@ctl.io](mailto:ecosystem@ctl.io).
+* Please copy and paste the email below and send it to [ECOSystem@centurylink.com](mailto:ECOSystem@centurylink.com).
 
 ----
 
-TO: Ecosystem@CTL.io
+TO: ECOSystem@centurylink.com
 
 EMAIL SUBJECT:   Requesting Credit for A10 vThunder Partner Template Deployment
 

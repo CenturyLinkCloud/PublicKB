@@ -13,7 +13,7 @@ CenturyLink Cloud offers customers a wide range of load balancing solutions in o
 
 ### Comparison Matrix
 
-**Feature**|**LBaaS<br>(Legacy)**|**LBaaS**|**Citrix VPX<sup>4</sup><br>(Dedicated)**|**[Marketplace](../Ecosystem Partners/Partner Integration Resources/ecosystem-program-resources.md)**
+**Feature**|**LBaaS<br>(Legacy)**|**LBaaS**|**Citrix VPX<sup>4</sup><br>(Dedicated)**|**Marketplace**
 -----------|---------------------|---------|-----------------------------------------|-------------
 Control Integration<sup>1</sup>|Yes|Yes|No|No
 High Availability|Yes|Yes|Optional|Optional
@@ -52,6 +52,5 @@ The links below provide supporting material that can assist a customer with furt
 
 * [Citrix Netscaler VPX Documentation](http://docs.citrix.com/en-us/netscaler/11-1.html)
 * [Citrix Netscaler VPX Editions](//www.citrix.com/products/netscaler-adc/platforms.html#editions)
-* [CenturyLink Ecosystem Partners](../Ecosystem Partners/General/ecosystem-partner-list.md)
 * [CenturyLink Pricing Catalog](//www.ctl.io/pricing/)
 * [CenturyLink Cloud Legal Documentation (SLA, Service Guide etc)](//www.ctl.io/legal/)

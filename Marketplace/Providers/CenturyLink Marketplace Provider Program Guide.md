@@ -1,17 +1,17 @@
 {{{
 "title": "CenturyLink Marketplace Provider Program Guide",
-"date": "01-28-2018",
+"date": "01-01-2019",
 "author": "Brandy Smith",
 "attachments": [],
 "contentIsHTML": false,
 "sticky": true
 }}}
 
-The CenturyLink Marketplace Provider Program Guide is designed to outline the process expectations for technology companies seeking to integrate their products and services into the CenturyLink Marketplace. Providers who enter this program and meet the certification requirements will be eligible to have their approved technology listed in the CenturyLink Marketplace. To express interest in joining the program, prospective Providers can visit the [CenturyLink Marketplace Provider Program](https://www.ctl.io/marketplace-program/) web page, reach out to their sales account manager directly, or email the [Marketplace team](mailto:Marketplace@ctl.io).
+The CenturyLink Marketplace Provider Program Guide is designed to outline the process expectations for technology companies seeking to integrate their products and services into the CenturyLink Marketplace. Providers who enter this program and meet the certification requirements will be eligible to have their approved technology listed in the CenturyLink Marketplace. To express interest in joining the program, prospective Providers can visit the [CenturyLink Marketplace Provider Program](https://www.ctl.io/marketplace-program/) web page, reach out to their sales account manager directly, or email the [Marketplace team](mailto:Marketplace@centurylink.com).
 
 ### Audience
 
-* CenturyLink Marketplace Applicant, Candidate and Provider firms
+* CenturyLink Marketplace Applicant, Candidate, and Provider firms
 * CenturyLink Employees
 
 The CenturyLink Marketplace Provider Program is designed to provide additional value within CenturyLink’s enterprise cloud computing platform and other strategic CenturyLink products and offerings, through partnerships with innovative technology and service providers. The CenturyLink Marketplace provides an online catalog of installable software and solutions, allowing consumers to browse and purchase in a self-service, low friction consumption model. The Marketplace also provides a quick and easy way for CenturyLink sales force to help customers purchase solutions.
@@ -68,7 +68,7 @@ The provider is responsible for completing the following steps to allow for thei
 2) Review and acceptance of the CenturyLink Marketplace Agreement(MPA), which is available [here](https://www.ctl.io/legal/marketplace/), within the Provider Portal.  
 MPA Legal guidance can be found [here](marketplace-provider-agreement-guidance.md).
 While the Marketplace team is available to discuss the MPA with potential providers to provide clarification on any aspects of the agreement, we will not accept red lines or amendments to the MPA.
-The Marketplace was built as a pre-approved commercialization contract vehicle, it is meant to provide low-friction on-boarding of providers and fast procurement time for sales and customers. The process of involving both the provider and CenturyLink legal teams to review, edit, approve, and execute red lines to the MPA adds friction to the process and breaks the scalability of the intended model.
+The Marketplace was built as a pre-approved commercialization contract vehicle, it is meant to provide low-friction onboarding of providers and fast procurement time for sales and customers. The process of involving both the provider and CenturyLink legal teams to review, edit, approve, and execute red lines to the MPA adds friction to the process and breaks the scalability of the intended model.
 
 ### Certification
 
