@@ -127,6 +127,10 @@ Logs can be viewed at the following locations:
 
 A: The SBS agent on the server transfers backup data to one of six different backup storage regions, each built on top of cloud object storage. CenturyLink sources this object storage from a combination of its own cloud platform, as well as 3rd party cloud providers such as Amazon Web Services. For more information, see our [How It Works](simple-backup-service-how-it-works.md) KB article.
 
+**Q: Can I check the status of my backups?**
+
+A: Yes, please see [Reports kb](reports.md) for details.
+
 ### Restores
 
 **Q: What does an "IN_PROGRESS" status restore mean?**
@@ -171,6 +175,10 @@ A: Common causes of obscured restore files:
 **Q: How do I stop an in-progress restore from completing?**
 
 A: Restarting the Simple Backup Service on the server will stop all running restore task(s). See [Restarting Simple Backup Service](restarting-simple-backup-service.md) for steps to restart in Linux and Windows.
+
+**Q: Can I check the status of my restores?**
+
+A: Yes, please see [Reports kb](reports.md) for details.
 
 ### Policies
 
