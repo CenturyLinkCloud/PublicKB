@@ -12,7 +12,6 @@ Some important details about our locations are listed below. You can also refer 
 ---------------------------------|------------|--------------------|--------------------
 US West (Seattle) - WA1|Internap|3355 S 120th Place<br>Seattle, WA 98168|[provider details](http://www.internap.com/data-centers/data-center-locations/seattle/)
 US West (Santa Clara) - UC1|Cyxtera (SC8)|4700 Old Ironsides<br>Santa Clara, CA 95054|[provider details](https://www.cyxtera.com/images/sc8-santa-clara-ca-colocation-datasheet-ss111864.pdf)
-US Central (Salt Lake City) - UT1 (New VM provisioning disabled at this location due to capacity constraints.)|Flexential|572 Delong St.<br>Salt Lake City, UT 84104-3901|[provider details](https://www.flexential.com/data-centers/utah/downtown-salt-lake-city-data-center)
 US Central (Chicago) - IL1|Equinix|1905 Lunt Ave.<br>Elk Grove, IL 60007|[provider details](https://www.equinix.com/locations/united-states-colocation/chicago-data-centers)
 US East (New York) - NY1|Equinix|755 Secaucus Rd.<br>Secaucus, NJ 07094|[provider details](https://www.equinix.com/locations/united-states-colocation/new-york-data-centers)
 US East (Sterling) - VA1<br>US East (Sterling) - VA2|Cyxtera (DC2)|45901 Nokes Blvd<br>Sterling Virginia, 20166|[provider details](https://www.cyxtera.com/images/dc2-sterling-va-colocation-datasheet-ss111857.pdf)
