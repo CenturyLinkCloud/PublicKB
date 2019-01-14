@@ -1,13 +1,11 @@
 {{{
 "title": "Using AWS",
-"date": "09-24-2018",
-"author": "Guillermo Sanchez",
+"date": "28-12-2018",
+"author": "Guillermo Sanchez, Julio Castanar",
 "keywords": ["aws", "ecs", "deploy"],
 "attachments": [],
 "contentIsHTML": false
 }}}
-
-### Using AWS
 
 **In this article:**
 
@@ -15,9 +13,10 @@
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
 * [Connect Your AWS Account in Cloud Application Manager](#connect-your-aws-account-in-cloud-application-manager)
-* [Choosing the right policy](#choosing-the-right-policy)
+* [Create a custom AWS Policy](#create-a-custom-aws-policy)
+* [Create an IAM Role with the Policy chosen](#create-an-iam-role-with-the-policy-chosen)
 * [Add Custom AMIs in Cloud Application Manager](#add-custom-amis-in-cloud-application-manager)
-* [Deploy to Your AWS Account](#deploy-to-your-aws-account)
+* [Deploy to your AWS Account](#deploy-to-your-aws-account)
 * [EC2 (Linux and Windows)](#ec2-linux-and-windows)
 * [AWS ECS](#aws-ecs)
 * [Shutdown and Terminate Instances in AWS](#shutdown-and-terminate-instances-in-aws)
@@ -28,7 +27,7 @@
 This article is meant to assist users of Cloud Application Manager to learn how to deploy any workload to AWS from Cloud Application Manager as follows.
 
 * For EC2 (Linux and Windows) use [deployment policies](../Automating Deployments/deploymentpolicy-box.md). Select a policy when you launch workloads from boxes.
-* For any other AWS service, configure a custom [CloudFormation box](../Automating Deployments/template-box.md).
+* For any other AWS service, configure a custom [CloudFormation box](../Automating Deployments/template-box.md), selecting as provider `AWS Provider`.
 
 Cloud Application Manager orchestrates with AWS APIs in the backend to provision, install, and manage the lifecycle of your workloads based on the box configuration.
 
@@ -47,65 +46,94 @@ Before you deploy in AWS, you need to connect your AWS account in Cloud Applicat
 
 <iframe frameborder="0" height="316" src="//player.vimeo.com/video/126177639" width="561"></iframe>
 
-### Choosing the right policy
+*You can open it in a new window clicking on `vimeo` with the right button. Then select enter full screen icon at the bottom right corner*.
+
+### Create a custom AWS Policy
+
+1. Go to [AWS Services console](https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3Fstate%3DhashArgs%2523%26isauthcode%3Dtrue&client_id=arn%3Aaws%3Aiam%3A%3A015428540659%3Auser%2Fhomepage&forceMobileApp=0) and login into your account.  
+You can reach this console from AWS Console link at Provider AWS management page in Cloud Application Manager too.
+
+2. Create a custom AWS Policy.  
+Go to top Services menu and in Security, Identity, & Compliance section, select IAM. Then select Policies in the left side menu.
+
+![AWS Console Policies](../../images/aws-console/aws-console-policies.png)
+
+3. Click on Crete policy button and select Create your own policy.  
+   There are several ways of adding a policy. Here we will descript how to use a script.  
+   Select JSON tab in new Amazon Create policy page and continues editing the script we show in the next section [Choosing the right policy](#choosing-the-right-policy).
+
+![AWS Console Policies](../../images/aws-console/aws-console-json.png)
+
+4. When edited, click on review policy and if there are no errors you will be prompted to give a name and a description for this policy. After it, save changes clicking on create policy at the bottom of the page.
+
+![AWS Console Review](../../images/aws-console/aws-console-review.png)
+
+In this example we give the name *ElasticBox_Policy*. It will be used later.
+
+#### Choosing the right policy
 
 The AWS IAM Policy regulates what Cloud Application Manager is allowed to do and see from your account. Depending on your usage you might want to restrict more or less the operations allowed.
 
 To be able to deploy AWS CloudFormation you will need to have the appropriated permissions in the policy, so you should give access to the services you are planning to use.
 
-For example, if you are planning to deploy RDS and ElastiCache from CloudFormation templates, it useful to give the permissions for: rds:\* and elasticache:\*
+For example, if you are planning to deploy RDS and ElastiCache from CloudFormation templates, it useful to give the permissions for them likes in the next lines:  
+
+```
+"rds:*",
+"elasticache:*"
+```
 
 Here is an example of a common policy that give access to some AWS services but not all:
 
 ```json
 {
-"Version": "2012-10-17",
-"Statement": [
-{
-    "Action": [
-        "autoscaling:*",
-        "cloudformation:*",
-        "cloudwatch:DescribeAlarms",
-        "dynamodb:*",
-        "ec2:*",
-        "ecs:ListClusters",
-        "elasticache:*",
-        "elasticloadbalancing:*",
-        "iam:CreateUser",
-        "iam:DeleteUser",
-        "iam:ListAccessKeys",
-        "iam:ListUserPolicies",
-        "iam:ListServerCertificates",
-        "iam:PutUserPolicy",
-        "iam:GetUser",
-        "iam:CreateAccessKey",
-        "iam:DeleteUserPolicy",
-        "iam:DeleteAccessKey",
-        "iam:PassRole",
-        "iam:ListRoles",
-        "iam:ListInstanceProfilesForRole",
-        "iam:CreatePolicy",
-        "iam:DeletePolicy",
-        "iam:CreateRole",
-        "iam:DeleteRole",
-        "iam:AttachRolePolicy",
-        "iam:DetachRolePolicy",
-        "rds:*",
-        "route53:*",
-        "route53domains:*",
-        "s3:*",
-        "sns:*",
-        "ce:*",
-        "support:*",
-        "sts:AssumeRole"
-    ],
-    "Sid": "Stmt1378777340000",
-    "Resource": [
-        "*"
-    ],
-    "Effect": "Allow"
-}
-]
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "autoscaling:*",
+                "cloudformation:*",
+                "cloudwatch:DescribeAlarms",
+                "dynamodb:*",
+                "ec2:*",
+                "ecs:ListClusters",
+                "elasticache:*",
+                "elasticloadbalancing:*",
+                "iam:CreateUser",
+                "iam:DeleteUser",
+                "iam:ListAccessKeys",
+                "iam:ListUserPolicies",
+                "iam:ListServerCertificates",
+                "iam:PutUserPolicy",
+                "iam:GetUser",
+                "iam:CreateAccessKey",
+                "iam:DeleteUserPolicy",
+                "iam:DeleteAccessKey",
+                "iam:PassRole",
+                "iam:ListRoles",
+                "iam:ListInstanceProfilesForRole",
+                "iam:CreatePolicy",
+                "iam:DeletePolicy",
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:AttachRolePolicy",
+                "iam:DetachRolePolicy",
+                "rds:*",
+                "route53:*",
+                "route53domains:*",
+                "s3:*",
+                "sns:*",
+                "ce:*",
+                "support:*",
+                "sts:AssumeRole"
+            ],
+            "Sid": "Stmt1378777340000",
+            "Resource": [
+                "*"
+            ],
+            "Effect": "Allow"
+        }
+    ]
 }
 ```
 
@@ -115,195 +143,228 @@ If you are not planning to use CloudFormation template boxes and you want to use
 
 ```json
 {
-"Version": "2012-10-17",
-"Statement": [
-{
-    "Action": [
-        "autoscaling:CreateAutoScalingGroup",
-        "autoscaling:CreateLaunchConfiguration",
-        "autoscaling:DeleteAutoScalingGroup",
-        "autoscaling:DeleteLaunchConfiguration",
-        "autoscaling:DescribeScalingActivities",
-        "autoscaling:DescribeAutoScalingGroups",
-        "autoscaling:DescribeAutoScalingInstances",
-        "autoscaling:DescribeLaunchConfigurations",
-        "autoscaling:ResumeProcesses",
-        "autoscaling:SuspendProcesses",
-        "autoscaling:TerminateInstanceInAutoScalingGroup",
-        "autoscaling:UpdateAutoScalingGroup",
-        "cloudformation:CreateStack",
-        "cloudformation:DeleteStack",
-        "cloudformation:DescribeStackEvents",
-        "cloudformation:DescribeStackResource",
-        "cloudformation:DescribeStackResources",
-        "cloudformation:DescribeStacks",
-        "cloudformation:GetTemplate",
-        "cloudformation:ListStacks",
-        "cloudformation:ListStackResources",
-        "cloudformation:UpdateStack",
-        "cloudformation:ValidateTemplate",
-        "cloudwatch:DescribeAlarms",
-        "dynamodb:CreateTable",
-        "dynamodb:DeleteTable",
-        "dynamodb:DescribeTable",
-        "dynamodb:ListTables",
-        "ec2:AssociateAddress",
-        "ec2:AttachVolume",
-        "ec2:AllocateAddress",
-        "ec2:AuthorizeSecurityGroupEgress",
-        "ec2:AuthorizeSecurityGroupIngress",
-        "ec2:CopyImage",
-        "ec2:CreateImage",
-        "ec2:CreateSecurityGroup",
-        "ec2:CreateSnapshot",
-        "ec2:CreateSubnet",
-        "ec2:CreateTags",
-        "ec2:CreateVolume",
-        "ec2:DeleteSecurityGroup",
-        "ec2:DeleteSubnet",
-        "ec2:DeleteTags",
-        "ec2:DeleteVolume",
-        "ec2:DescribeAccountAttributes",
-        "ec2:DescribeAddresses",
-        "ec2:DescribeAvailabilityZones",
-        "ec2:DescribeImageAttribute",
-        "ec2:DescribeImages",
-        "ec2:DescribeInstanceAttribute",
-        "ec2:DescribeInstanceStatus",
-        "ec2:DescribeInstances",
-        "ec2:DescribeKeyPairs",
-        "ec2:DescribePlacementGroups",
-        "ec2:DescribeRegions",
-        "ec2:DescribeSecurityGroups",
-        "ec2:DescribeSubnets",
-        "ec2:DescribeTags",
-        "ec2:DescribeVolumeAttribute",
-        "ec2:DescribeVolumeStatus",
-        "ec2:DescribeVolumes",
-        "ec2:DescribeVpcAttribute",
-        "ec2:DescribeVpcs",
-        "ec2:DescribeVpnConnections",
-        "ec2:DetachVolume",
-        "ec2:RebootInstances",
-        "ec2:RegisterImage",
-        "ec2:ReleaseAddress",
-        "ec2:RevokeSecurityGroupEgress",
-        "ec2:RevokeSecurityGroupIngress",
-        "ec2:RunInstances",
-        "ec2:StartInstances",
-        "ec2:StopInstances",
-        "ec2:TerminateInstances",
-        "ecs:ListClusters",
-        "elasticache:*",
-        "elasticloadbalancing:ConfigureHealthCheck",
-        "elasticloadbalancing:CreateLoadBalancer",
-        "elasticloadbalancing:CreateLoadBalancerPolicy",
-        "elasticloadbalancing:DeleteLoadBalancer",
-        "elasticloadbalancing:DeleteLoadBalancerPolicy",
-        "elasticloadbalancing:DeregisterInstancesFromLoadBalancer",
-        "elasticloadbalancing:DescribeInstanceHealth",
-        "elasticloadbalancing:DescribeLoadBalancerPolicies",
-        "elasticloadbalancing:DescribeLoadBalancers",
-        "elasticloadbalancing:DescribeTargetGroups",
-        "elasticloadbalancing:DescribeTargetHealth",
-        "elasticloadbalancing:ModifyLoadBalancerAttributes",
-        "elasticloadbalancing:RegisterInstancesWithLoadBalancer",
-        "elasticloadbalancing:RegisterTargets",
-        "elasticloadbalancing:SetLoadBalancerPoliciesOfListener",
-        "iam:CreateUser",
-        "iam:DeleteUser",
-        "iam:ListAccessKeys",
-        "iam:ListUserPolicies",
-        "iam:ListServerCertificates",
-        "iam:PutUserPolicy",
-        "iam:GetUser",
-        "iam:CreateAccessKey",
-        "iam:DeleteUserPolicy",
-        "iam:DeleteAccessKey",
-        "iam:PassRole",
-        "iam:ListRoles",
-        "iam:ListInstanceProfilesForRole",
-        "iam:CreatePolicy",
-        "iam:DeletePolicy",
-        "iam:CreateRole",
-        "iam:DeleteRole",
-        "iam:AttachRolePolicy",
-        "iam:DetachRolePolicy",
-        "rds:AuthorizeDBSecurityGroupIngress",
-        "rds:AddTagsToResource",
-        "rds:CreateDBInstance",
-        "rds:CreateDBSecurityGroup",
-        "rds:CreateDBSnapshot",
-        "rds:DeleteDBInstance",
-        "rds:DeleteDBSecurityGroup",
-        "rds:DeleteDBSnapshot",
-        "rds:DescribeDBInstances",
-        "rds:DescribeDBParameterGroups",
-        "rds:DescribeDBParameters",
-        "rds:DescribeDBSecurityGroups",
-        "rds:DescribeDBSnapshots",
-        "rds:DescribeDBEngineVersions",
-        "rds:DescribeDBSubnetGroups",
-        "rds:DescribeOptionGroups",
-        "rds:ModifyDBInstance",
-        "rds:ModifyDBSubnetGroup",
-        "rds:RebootDBInstance",
-        "rds:RemoveTagsFromResource",
-        "rds:RestoreDBInstanceFromDBSnapshot",
-        "rds:RevokeDBSecurityGroupIngress",
-        "s3:CreateBucket",
-        "s3:DeleteBucket",
-        "s3:DeleteBucketPolicy",
-        "s3:GetBucketAcl",
-        "s3:GetBucketCORS",
-        "s3:GetBucketLocation",
-        "s3:ListAllMyBuckets",
-        "s3:ListBucket",
-        "s3:PutBucketAcl",
-        "s3:PutBucketCORS",
-        "s3:PutBucketPolicy",
-        "s3:PutBucketTagging",
-        "ce:GetCostAndUsage",
-        "ce:GetReservationUtilization",
-        "ce:GetDimensionValues",
-        "ce:GetTags",
-        "support:*",
-        "sts:AssumeRole"
-    ],
-    "Sid": "Stmt1378777340000",
-    "Resource": [
-        "*"
-    ],
-    "Effect": "Allow"
-}
-]
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "autoscaling:CreateAutoScalingGroup",
+                "autoscaling:CreateLaunchConfiguration",
+                "autoscaling:DeleteAutoScalingGroup",
+                "autoscaling:DeleteLaunchConfiguration",
+                "autoscaling:DescribeScalingActivities",
+                "autoscaling:DescribeAutoScalingGroups",
+                "autoscaling:DescribeAutoScalingInstances",
+                "autoscaling:DescribeLaunchConfigurations",
+                "autoscaling:ResumeProcesses",
+                "autoscaling:SuspendProcesses",
+                "autoscaling:TerminateInstanceInAutoScalingGroup",
+                "autoscaling:UpdateAutoScalingGroup",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:DescribeStackResource",
+                "cloudformation:DescribeStackResources",
+                "cloudformation:DescribeStacks",
+                "cloudformation:GetTemplate",
+                "cloudformation:ListStacks",
+                "cloudformation:ListStackResources",
+                "cloudformation:UpdateStack",
+                "cloudformation:ValidateTemplate",
+                "cloudwatch:DescribeAlarms",
+                "dynamodb:CreateTable",
+                "dynamodb:DeleteTable",
+                "dynamodb:DescribeTable",
+                "dynamodb:ListTables",
+                "ec2:AssociateAddress",
+                "ec2:AttachVolume",
+                "ec2:AllocateAddress",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:CopyImage",
+                "ec2:CreateImage",
+                "ec2:CreateSecurityGroup",
+                "ec2:CreateSnapshot",
+                "ec2:CreateSubnet",
+                "ec2:CreateTags",
+                "ec2:CreateVolume",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DeleteSubnet",
+                "ec2:DeleteTags",
+                "ec2:DeleteVolume",
+                "ec2:DescribeAccountAttributes",
+                "ec2:DescribeAddresses",
+                "ec2:DescribeAvailabilityZones",
+                "ec2:DescribeImageAttribute",
+                "ec2:DescribeImages",
+                "ec2:DescribeInstanceAttribute",
+                "ec2:DescribeInstanceStatus",
+                "ec2:DescribeInstances",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribePlacementGroups",
+                "ec2:DescribeRegions",
+                "ec2:DescribeSecurityGroups",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeTags",
+                "ec2:DescribeVolumeAttribute",
+                "ec2:DescribeVolumeStatus",
+                "ec2:DescribeVolumes",
+                "ec2:DescribeVpcAttribute",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeVpnConnections",
+                "ec2:DetachVolume",
+                "ec2:RebootInstances",
+                "ec2:RegisterImage",
+                "ec2:ReleaseAddress",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:RunInstances",
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:TerminateInstances",
+                "ecs:ListClusters",
+                "elasticache:*",
+                "elasticloadbalancing:ConfigureHealthCheck",
+                "elasticloadbalancing:CreateLoadBalancer",
+                "elasticloadbalancing:CreateLoadBalancerPolicy",
+                "elasticloadbalancing:DeleteLoadBalancer",
+                "elasticloadbalancing:DeleteLoadBalancerPolicy",
+                "elasticloadbalancing:DeregisterInstancesFromLoadBalancer",
+                "elasticloadbalancing:DescribeInstanceHealth",
+                "elasticloadbalancing:DescribeLoadBalancerPolicies",
+                "elasticloadbalancing:DescribeLoadBalancers",
+                "elasticloadbalancing:DescribeTargetGroups",
+                "elasticloadbalancing:DescribeTargetHealth",
+                "elasticloadbalancing:ModifyLoadBalancerAttributes",
+                "elasticloadbalancing:RegisterInstancesWithLoadBalancer",
+                "elasticloadbalancing:RegisterTargets",
+                "elasticloadbalancing:SetLoadBalancerPoliciesOfListener",
+                "iam:CreateUser",
+                "iam:DeleteUser",
+                "iam:ListAccessKeys",
+                "iam:ListUserPolicies",
+                "iam:ListServerCertificates",
+                "iam:PutUserPolicy",
+                "iam:GetUser",
+                "iam:CreateAccessKey",
+                "iam:DeleteUserPolicy",
+                "iam:DeleteAccessKey",
+                "iam:PassRole",
+                "iam:ListRoles",
+                "iam:ListInstanceProfilesForRole",
+                "iam:CreatePolicy",
+                "iam:DeletePolicy",
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:AttachRolePolicy",
+                "iam:DetachRolePolicy",
+                "rds:AuthorizeDBSecurityGroupIngress",
+                "rds:AddTagsToResource",
+                "rds:CreateDBInstance",
+                "rds:CreateDBSecurityGroup",
+                "rds:CreateDBSnapshot",
+                "rds:DeleteDBInstance",
+                "rds:DeleteDBSecurityGroup",
+                "rds:DeleteDBSnapshot",
+                "rds:DescribeDBInstances",
+                "rds:DescribeDBParameterGroups",
+                "rds:DescribeDBParameters",
+                "rds:DescribeDBSecurityGroups",
+                "rds:DescribeDBSnapshots",
+                "rds:DescribeDBEngineVersions",
+                "rds:DescribeDBSubnetGroups",
+                "rds:DescribeOptionGroups",
+                "rds:ModifyDBInstance",
+                "rds:ModifyDBSubnetGroup",
+                "rds:RebootDBInstance",
+                "rds:RemoveTagsFromResource",
+                "rds:RestoreDBInstanceFromDBSnapshot",
+                "rds:RevokeDBSecurityGroupIngress",
+                "s3:CreateBucket",
+                "s3:DeleteBucket",
+                "s3:DeleteBucketPolicy",
+                "s3:GetBucketAcl",
+                "s3:GetBucketCORS",
+                "s3:GetBucketLocation",
+                "s3:ListAllMyBuckets",
+                "s3:ListBucket",
+                "s3:PutBucketAcl",
+                "s3:PutBucketCORS",
+                "s3:PutBucketPolicy",
+                "s3:PutBucketTagging",
+                "ce:GetCostAndUsage",
+                "ce:GetReservationUtilization",
+                "ce:GetDimensionValues",
+                "ce:GetTags",
+                "support:*",
+                "sts:AssumeRole"
+            ],
+            "Sid": "Stmt1378777340000",
+            "Resource": [
+                "*"
+            ],
+            "Effect": "Allow"
+        }
+    ]
 }
 ```
 
-#### Create an IAM Role with the Policy chosen
+### Create an IAM Role with the Policy chosen
 
-1. Create a custom AWS policy and copy, paste the permissions chosen before and name it CAM_Policy. You can edit these permissions before if some deployment fails because of the lack of permissions.
+1. Once you created a custom AWS policy (in the example "*ElasticBox_Policy*") go to main left side menu and select Roles option.
 
-2. Create an IAM role by clicking the create role button.  Then select the **Another AWS Account tab**. Provide the information below
+    Create an IAM role by clicking the create role button.  Then select the **Another AWS Account tab**. Provide the information below
 
    * **Account ID**: 540339316802
    * **External ID**: elasticbox
    * **Require MFA**: Leave unselected
 
-   Then, add the policy you created (**CAM_Policy**) as well as the policy called **ReadOnlyAccess**.
+    ![AWS Console Review](../../images/aws-console/aws-console-role.png)
 
-3. Register the IAM role in Cloud Application Manager.
+2.  Add the policy you created (**ElasticBox_Policy**) as well as the policy called **ReadOnlyAccess**.
+
+   ![AWS Console Review](../../images/aws-console/aws-console-role-2.png)
+
+3. Optionally give some tags
+
+   ![AWS Console Review](../../images/aws-console/aws-console-role-3.png)
+
+
+4. Register the IAM role in Cloud Application Manager.  
+   Give a role name, verify that appears the two policies selected before and click on Create Role
+
    * **Important:** If you use Cloud Application Manager as an appliance, connect to your AWS account using the secret and key credentials.
+
+   ![AWS Console Review](../../images/aws-console/aws-console-role-4.png)
+
+After you create this Role, it is attached to the policies selected (in the example, *ElasticBox_Policy*). You can check it accesing to the Policy detail. Select in the main left side menu Policies, search your Policy and click on it to see detail.  
+The tab *Policy usage* shows you the permissions attached to your policy. Here you can see the Role created before or attach a new Role created previously. 
+
+   ![AWS Console Policy](../../images/aws-console/aws-console-policies-2.png)
+
+**Note** in the policy detail the **Policy ARN** id you will use to reference this Policy from Cloud Application Manager.  Copy it clicking on the right icon.
 
 ### Add Custom AMIs in Cloud Application Manager
 
-By default, Cloud Application Manager makes the latest AWS Linux and Windows AMIs along with any custom AMIs available in your AWS account. You can add others by clicking **New** and entering the AMI number.
+Returning to Cloud Application Manager, we first must add this new Provider to Providers list.  
+
+1. Go to Providers in the left side menu of Cloud Application Manager
+2. Click on New and give a name to AWS Provider. Then paste the ARN id copied before.
+
+![CAM aws-deploy-config.png](../../images/cloud-application-manager/aws-deployment-add.png)
+ 
+When porvider is created all its default resources are synchronized. If provider already exists, you can force changes within AWS Provider clicking on Sync button.
+
+![CAM aws-deploy-config.png](../../images/cloud-application-manager/aws-deployment-config.png)
+
+Afterwards, we can see previously added configuration in AWS Provider. By default, Cloud Application Manager makes the latest AWS Linux and Windows AMIs along with any custom AMIs available in your AWS account.  
+You can remove some of them from the view if you won't use them by clicking on the trash icon.  
+You can add others by clicking **New** and entering the AMI number.
 
 ![aws-machine-image-1.png](../../images/cloud-application-manager/aws-machine-image-1.png)
 
 **Note:** For this to work you may have go to the AWS marketplace and accept the license agreement for that AMI. Although most AMIs come pre-installed with [cloud-init](https://cloudinit.readthedocs.org/en/latest/), some may not, in which case you must install it. Cloud Application Manager requires cloud-init to bootstrap the Cloud Application Manager agent.
 
-### Deploy to Your AWS Account
+### Deploy to your AWS Account
 
 When you deploy a box, we show [deployment policies](../Automating Deployments/deploymentpolicy-box.md) whose claims match the required tags of the box.
 
@@ -316,17 +377,17 @@ RDS, DynamoDB, and Memcached are CloudFormation boxes. To deploy to an RDS servi
 **Note:** If your AWS account has new AMIs, key pairs, security groups, and the like, you must sync with the AWS account in Cloud Application Manager to pick up all the changes.
 
 ### EC2 (Linux and Windows)
-To deploy workloads to an EC2 instance, create a [deployment policy](../Automating Deployments/deploymentpolicy-box.md) for an AWS account or use the one your admin shared with you.
+To deploy workloads to an EC2 instance, create a [deployment policy](../Automating Deployments/deploymentpolicy-box.md) and select Virtual or Phisical Machine for an AWS account or use the one your admin shared with you. 
 
-![aws-deployment-policy-2.png](../../images/cloud-application-manager/aws-deployment-policy-3.png)
+![aws-deployment-policy-3.png](../../images/cloud-application-manager/aws-deployment-policy-3.png)
 
-**Deployment**
+#### Deployment
 
 | Deployment Option | Description |
 |-------------------|-------------|
 | Provider | This shows the name or GUID of the AWS provider account in Cloud Application Manager. If you don’t have access to the provider account, you see the GUID. |
 
-**Resource**
+#### Resource
 
 | Deployment Option | Description |
 |-------------------|-------------|
@@ -338,7 +399,7 @@ To deploy workloads to an EC2 instance, create a [deployment policy](../Automati
 | Instances | Select the number of instances to launch. |
 | Delegate Management | Only visible if this feature is available in your account. Delegate the instance management to CenturyLink. For more information see [Managed Services Anywhere](../Managed Services/getting-started-with-cam-enable-managed-provider.md)|
 
-**Placement**
+#### Placement
 
 | Deployment Option | Description |
 |-------------------|-------------|
@@ -346,7 +407,7 @@ To deploy workloads to an EC2 instance, create a [deployment policy](../Automati
 | Autoscaling | Turn on to allow AWS to automatically scale to the number of instances you specified (under Instances). |
 | Availability Zone | Select an availability zone, such as us-east-1a if deploying in EC2 or select a subnet if deploying in your VPC. |
 
-**Network**
+#### Network
 
 | Deployment Option | Description |
 |-------------------|-------------|
@@ -354,13 +415,13 @@ To deploy workloads to an EC2 instance, create a [deployment policy](../Automati
 | Placement Group |	Select an existing placement group from AWS to cluster instances for high network performance. Some instances can get 10 Gbps connectivity depending on their instance type. To learn more, see the [AWS docs](//docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html). To let Cloud Application Manager view and direct the instance to the placement group, update the Cloud Application Manager IAM role policy with the [listed permissions](using-your-aws-account.md). |
 | Elastic IP |	When launching to AWS, select Elastic IP to allocate a fresh static IP address from the EC2 or VPC pool and associate it to the instance depending on whether you’re deploying to EC2 classic or your VPC. If you’re using dynamic DNS to assign an IP address in EC2 or want to allow internet traffic to communicate with your instance in a non default VPC, then use Elastic IPs to guarantee public access. **Note:** You can’t autoscale the instance when you choose an Elastic IP for it. For more information, see the [AWS help](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html). |
 
-**Other**
+#### Other
 
 | Deployment Option | Description |
 |-------------------|-------------|
 | Elastic Block Store | Instance types come with a default root device volume. To get storage on top of the default volume, add EBS volumes under Elastic Block Store. |
 | Target Groups | This allows you to attach an instance to both types of load balancers automatically. |
-| Classic Load Balancer |  n addition to the Application Load Balancer and the Network Load Balancer, Cloud Application Manager also support the Classic Load Balancers. |
+| Classic Load Balancer |  In addition to the Application Load Balancer and the Network Load Balancer, Cloud Application Manager also support the Classic Load Balancers. |
 
 ![aws-depprofile-elasticblockstore-settings-3.png](../../images/cloud-application-manager/aws-depprofile-elasticblockstore-settings-3.png)
 
@@ -370,7 +431,7 @@ Select from General Purpose (SSD), Provisioned IOPS (SSD) or Magnetic volume typ
 
 Follow these steps to add more volumes.
 
-#### Steps
+#### Adding Volumes
 
 Configure volumes. Select a [type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html), [device mapping](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-device-mapping-concepts.html), size, and IOPS where available.
 
@@ -380,15 +441,15 @@ Configure volumes. Select a [type](https://docs.aws.amazon.com/AWSEC2/latest/Use
 | Provisioned IOPS (SSD) | Critical business applications and large databases like MongoDB, Microsoft SQL Server, MySQL, PostgreSQL, and Oracle. | 10 GiB to 1024 GiB | Set the IOPS as a ratio of the volume size. For example, to get 3000 IOPS, the volume must be sized at least 100 GiB. Volumes perform up to 4000 maximum IOPS. |
 | Magnetic (standard) | Workloads with lowest storage cost and infrequent data access. | 1 GiB to 1024 GiB | Cannot set value as it’s default. Volumes average 100 IOPS and can burst to hundreds of IOPS. |
 
-Add volumes. Click **Add** to register each volume in the instance deployment profile.
+Click **Add** to register each volume in the instance deployment profile.
 When you save the profile and launch instances with additional volumes, we create and attach them to the instance. However, you still need to format the volumes before using them.
 **Note:** At this time, you cannot encrypt the volumes or take volume snapshots through Cloud Application Manager.
 
-**Auto Scaling**
+#### Auto Scaling
 
 Turn on to allow AWS to automatically scale to the number of instances you specified (under Instances). Cloud Application Manager creates a launch configuration and an auto scaling group that lets AWS scale an instance up or down based on CPU usage. If the usage reaches the 80 percent threshold, AWS launches a new instance. The number of instances launched is limited to the maximum number specified under Instances.
 
-**Load Balancing**
+#### Load Balancing
 
 Load balancing evenly distributes load to your application instances hosted on EC2 or a VPC across all availability zones in a region.
 AWS supports three kinds of load balancers, classic load balancer, application load balancer and network load balancer.
@@ -397,7 +458,7 @@ Both Application Load Balancers and Network Load Balancers send their traffic to
 
 ![aws-deppolicy-loadbalancing-target-group.png](../../images/cloud-application-manager/aws-deppolicy-loadbalancing-target-group.png)
 
-**Classic load balancers**
+#### Classic load balancers
 
 In addition to the Application Load Balancer and the Network Load Balancer, Cloud Application Manager also support the Classic Load Balancers. When you enable and configure it for an instance, Cloud Application Manager automatically sets up the classic load balancing.
 
@@ -419,17 +480,15 @@ To deploy workloads to an ECS instances:
 
 **Note:** This documentation assumes that you have an ECS cluster already deployed in your AWS account. If you don’t have one, you can deploy a [CloudFormation Box](../Automating Deployments/template-box.md) using this [CloudFormation template](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-ecs.html) as blueprint. After the instance is deployed, don’t forget to synchronize the provider in order to fetch the latest changes.
 
-#### Deployment Policy
-
 Create a new policy box of type “Amazon EC2 Container Service” or use the one your admin shared with you.
 
-**Deployment**
+#### Deployment
 
 | Deployment Option | Description |
 |-------------------|-------------|
 | Provider | This shows the name or GUID of the AWS provider account in Cloud Application Manager . If you don’t have access to the provider account, you see the GUID. |
 
-**Resource**
+#### Resource
 
 | Deployment Option | Description |
 |-------------------|-------------|
@@ -440,7 +499,7 @@ Create a new policy box of type “Amazon EC2 Container Service” or use the on
 | IAM Role | Select one to assign an existing IAM role to the instance. This allows the instance to make and accept API requests securely using the permissions defined by the role. To let Cloud Application Manager view and pass the existing role to the instance, update the Cloud Application Manager IAM role policy with the listed permissions. To learn more about IAM roles, see the [AWS docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#permission-to-pass-iam-roles).|
 | Instances | Select the number of instances to launch. |
 
-**Network**
+#### Network
 
 | Deployment Option | Description |
 |-------------------|-------------|
@@ -449,7 +508,7 @@ Create a new policy box of type “Amazon EC2 Container Service” or use the on
 
 #### Image Lifecycle
 
-**Build the Image**
+##### Build the Image
 
 Use the ebcli to build the image.
 
@@ -487,7 +546,7 @@ Syntax:
 ebcli post “<docker image>”
 ```
 
-##### Deploy the Instance
+#### Deploy the Instance
 
 Deploy the instance as you would do for a regular deployment, but instead, select the previously created deployment profile. The box will be deployed as a container within the ECS cluster selected in the Deployment Policy.
 
@@ -529,4 +588,4 @@ For issues related to API calls, send the request body along with details relate
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
 
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+* Windows: RDP into the instance to locate the log at \ProgramData\ElasticBox\Logs\elasticbox-agent.log
