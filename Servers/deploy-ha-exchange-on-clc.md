@@ -16,13 +16,13 @@ Exchange 2013 requires an Active Directory environment.  AD can easily be automa
 
 ### Design
 
-Our design for a basic Exchange 2013 DR/HA environment will involve 3 datacenters and 3 servers.  For example, UT1 is our primary/active Exchange datacenter; IL1 is our secondary/passive Exchange datacenter, and NY1 will hold the file share witness (FSW) for the Exchange Database Availability Group (DAG).
+Our design for a basic Exchange 2013 DR/HA environment will involve 3 datacenters and 3 servers.  For example, UC1 is our primary/active Exchange datacenter; IL1 is our secondary/passive Exchange datacenter, and NY1 will hold the file share witness (FSW) for the Exchange Database Availability Group (DAG).
 
 ![Archictecture Diagram](../images/deploy-ha-exchange-on-clc-1.png)
 
 ### CLC Server Creation
 
-Create an Exchange server in UT1 & another in IL1 with the [CLC create server wizard](../Servers/creating-a-new-enterprise-cloud-server.md).  Since both servers will host the Client Access and Mailbox roles, you will want to start them with at least 2CPU/16GB of RAM each.  Join both servers to Active Directory.  Create the 3rd server in NY1 for the FSW – this can be done with minimal resources, such as 1CPU/2GB of RAM, and should also be domain joined.
+Create an Exchange server in UC1 & another in IL1 with the [CLC create server wizard](../Servers/creating-a-new-enterprise-cloud-server.md).  Since both servers will host the Client Access and Mailbox roles, you will want to start them with at least 2CPU/16GB of RAM each.  Join both servers to Active Directory.  Create the 3rd server in NY1 for the FSW – this can be done with minimal resources, such as 1CPU/2GB of RAM, and should also be domain joined.
 
 ![Server Menu](../images/deploy-ha-exchange-on-clc-2.png)
 
@@ -40,15 +40,15 @@ Each server will need to be able to communicate with the subnet that the other t
 
 The end result should have a firewall policy for the following:
 
-* UT1 subnet <> IL1 subnet
-* UT1 subnet <> NY1 subnet
+* UC1 subnet <> IL1 subnet
+* UC1 subnet <> NY1 subnet
 * IL1 subnet <> NY1 subnet
 
 ![Network Menu](../images/deploy-ha-exchange-on-clc-6.png)
 
 ### Exchange Installation
 
-Install Exchange 2013 on both servers in UT1/IL1 using the [setup wizard](https://technet.microsoft.com/en-us/library/bb124778%28v=exchg.150%29.aspx) from Exchange software and be sure to select Client Access/Mailbox roles for both servers.  Next, configure Exchange 2013 [mail flow and client access](https://technet.microsoft.com/en-us/library/jj218640(v=exchg.150\).aspx).  The specifics of the installation and configuration parameters depend on your particular environment. To make your Exchange externally available, you will need to create DNS records on an external DNS provider:
+Install Exchange 2013 on both servers in UC1/IL1 using the [setup wizard](https://technet.microsoft.com/en-us/library/bb124778%28v=exchg.150%29.aspx) from Exchange software and be sure to select Client Access/Mailbox roles for both servers.  Next, configure Exchange 2013 [mail flow and client access](https://technet.microsoft.com/en-us/library/jj218640(v=exchg.150\).aspx).  The specifics of the installation and configuration parameters depend on your particular environment. To make your Exchange externally available, you will need to create DNS records on an external DNS provider:
 
 * Autodiscover SRV record
 * A record for OWA
@@ -94,16 +94,16 @@ New-DatabaseAvailabilityGroup -Name EmailDAG -WitnessServer NY1COSGFSW01 -Witnes
 ```
 
 ```
-Add-DatabaseAvailabilityGroupServer -Identity EmailDAG -MailboxServer UT1COSGMBX01
+Add-DatabaseAvailabilityGroupServer -Identity EmailDAG -MailboxServer UC1COSGMBX01
 ```
 
 ```
 Add-DatabaseAvailabilityGroupServer -Identity EmailDAG -MailboxServer IL1COSGMBX01
 ```
 
-Note the following – the witness server is specified to be the NY1 FSW server & and the folder is specified.  The DAG IP Addresses are NOT the IP addresses of each Exchange server; rather, they are the cluster IP’s – one in each datacenter (UT1/IL1).  When the DAG is active in one datacenter, it will use that cluster IP.
+Note the following – the witness server is specified to be the NY1 FSW server & and the folder is specified.  The DAG IP Addresses are NOT the IP addresses of each Exchange server; rather, they are the cluster IP’s – one in each datacenter (UC1/IL1).  When the DAG is active in one datacenter, it will use that cluster IP.
 
-An alternative file share witness can also be configured when creating the DAG – and that should reside in IL1 or UT1.  It can only be manually activated in the event of a failure in NY1.  It is also highly recommended to turn on DAC mode for the DAG.
+An alternative file share witness can also be configured when creating the DAG – and that should reside in IL1 or UC1.  It can only be manually activated in the event of a failure in NY1.  It is also highly recommended to turn on DAC mode for the DAG.
 
 ```
 Set-DatabaseAvailabilityGroup  -Identity EmailDAG -DatacenterActivationMode DagOnly
@@ -113,9 +113,9 @@ We can [create a few databases](https://technet.microsoft.com/en-us/library/aa99
 
 ### Disaster Recovery Scenarios
 
-If the IL1 datacenter has an outage or failure, Exchange will not be affected.  All databases will be mounted in the primary datacenter, UT1.  Exchange will also prevent databases from being mounted in IL1 when the datacenter returns, due to quorum majority (UT1 MBX server + NY1 FSW are 2 votes; IL1 MBX server is 1 vote).  Client Access will not be affected as it was pointed at UT1 and not IL1.
+If the IL1 datacenter has an outage or failure, Exchange will not be affected.  All databases will be mounted in the primary datacenter, UC1.  Exchange will also prevent databases from being mounted in IL1 when the datacenter returns, due to quorum majority (UC1 MBX server + NY1 FSW are 2 votes; IL1 MBX server is 1 vote).  Client Access will not be affected as it was pointed at UC1 and not IL1.
 
-If the UT1 datacenter has an outage or failure, Exchange will automatically fail over databases to IL1 (speed determined by the settings on MountDialOverride).  Client Access will also failover to IL1 once the specified time period for ping or SSL tests has been reached, and your external DNS provider fails over DNS records to the IL1 public IP’s.  Exchange will also prevent databases from being mounted in UT1 when the datacenter returns, due to quorum majority (IL1 MBX server + NY1 FSW are 2 votes; UT1 MBX server is 1 vote).
+If the UC1 datacenter has an outage or failure, Exchange will automatically fail over databases to IL1 (speed determined by the settings on MountDialOverride).  Client Access will also failover to IL1 once the specified time period for ping or SSL tests has been reached, and your external DNS provider fails over DNS records to the IL1 public IP’s.  Exchange will also prevent databases from being mounted in UC1 when the datacenter returns, due to quorum majority (IL1 MBX server + NY1 FSW are 2 votes; UC1 MBX server is 1 vote).
 
 If the NY1 datacenter has an outage or failure, Exchange will run normally.  All that would be needed in this scenario would be to manually activate the alternate FSW using the Set-DatabaseAvailabilityGroup cmdlet in Exchange Management Shell.
 
