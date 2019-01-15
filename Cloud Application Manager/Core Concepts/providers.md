@@ -51,7 +51,9 @@ Cloud Application Manager integrates with many popular clouds. Here is a full li
 | [SoftLayer](../Deploying Anywhere/using-softlayer.md)                                                               | ✓                      | ✓                           |
 | [vCloud Air and vCloud Director](../Deploying Anywhere/orchestrating-vcloud-air-vcloud-director-deployments.md)     | ✓                      | ✓                           |
 | [VMware vCenter](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md)                              | ✓                      | ✓                           |
-
+| Bring Your Own Cloud                                                              | ✓                      | ✓                           |
+| Analytics     | ✓                      | ✓                           |
+| Managed Services Anywhere                           | ✓                      | ✓                           |
 ### Contacting Cloud Application Manager Support
 
 We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
