@@ -47,7 +47,7 @@ Go ahead and click **New**, which will show a pop-up modal. Here, enter a name a
 
 ![msa-managed-mongodb-watcher-policies-new.png](../../images/managed-services-anywhere/msa-managed-mongodb-watcher-policies-new.png)
 
-Here's our new policy with no checks currently. I'll just be adding a simple check. Go ahead and create all of the necessary checks for your application. Reference Watcher documentation for further information.
+Here's our new policy with no checks currently. I'll just be adding a simple check. Go ahead and create all of the necessary checks for your application. The Check Catalog is accessible from within the Policies tab of the Monitoring Site and provides a list of all the current check types that could be configured.
 
 ![msa-managed-mongodb-watcher-nochecks.png](../../images/managed-services-anywhere/msa-managed-mongodb-watcher-nochecks.png)
 
