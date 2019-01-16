@@ -24,7 +24,7 @@
 
 This article is meant to assist Cloud Application Manager customers who wants to review and use the box catalog.  
 
-The Cloud Application Manager catalog is a collection of boxes and services for **public use** by any Cloud Application Manager user. 
+The Cloud Application Manager catalog is a collection of boxes and services for **public use** by any Cloud Application Manager user of any organization. 
 
 
 
@@ -41,31 +41,32 @@ All Cloud Application Manager users
 
 Catalog consists of public boxes and services grouped by categories. 
 
-A publisher creates a box and can made it public requesting publish it and assigning it a category.  
-Once supervised and aproved, a box will be shown in public catalog.
+A publisher creates a box and can make it public by requesting to publish it and by assigning it a category.  
+Once reviewed and approved, the box will be included into the public catalog.
+
 
 These boxes can be script boxes or information boxes.  
-Catalog script boxes can be deployed by anyone who needs perform what actions are define for this box.  
-Catalog information boxes use to display links to provider subscription or to documentation about how to install and configure a box.
+Catalog script boxes can be deployed by anyone who wants to provision an instance with the box provided functionality.  
+Catalog information boxes provide a description of a service or component and display a link to access more information on how to use or subscribe for that service or component.
 
-The publisher decides which scripts in a catalog box are public or private. A public script can be taken as an example to watch its code and create our new script boxes.
+The publisher decides if the scripts in a catalog box are hidden or visible (open source). When the scripts are public, they are displayed in the box details and can be then edited through the instance lifecycle editor when the box has been deployed. Any open source catalog box can also be cloned and used as a baseline for our own box implementation.
 
-Catalog page displays all elements added to public catalog. These elements are shown to all Cloud Application Manager users.
-You can see all catalog categories or one by one. To show all boxes in one category select it in the left side menu or click on *select all* at the right side for every category line when all categories option is selected.  
+Catalog page displays all boxes added to the public catalog. These boxes are shown to all Cloud Application Manager users in all organizations.  
+You can see all catalog categories or one by one. To show all boxes in one category select it in the left side menu or click on *select all* at the right side for every category line when the `All` categories option is selected.  
 
-![CAM catalog menu](../../images/cloud-application-manager/getting-started-login-9.png)
+![Cloud Application Manager catalog menu](../../images/cloud-application-manager/getting-started-login-9.png)
 
-The following sections show some categories in Catalog. New categories could be added at any time: 
+The following sections explain some categories in Catalog. Due to the dynamic nature of the Catalog, actual available categories and boxes may vary: 
 
 #### Featured
 
 This category shows relevant elements used in public catalog. 
 
-![CAM catalog featured](../../images/cloud-application-manager/catalog/cam-catalog-featured.png)
+![Cloud Application Manager catalog featured](../../images/cloud-application-manager/catalog/cam-catalog-featured.png)
 
 **Examples**:
 
-SharePoint Farm, JBoss Sample Application, Wordpress, MongoDB Server, etc, ...
+SharePoint Farm, JBoss Sample Application, etc.
 
 #### Managed Services Anywhere
 
@@ -73,60 +74,60 @@ Principally this category groups boxes used to perform services in server machin
 
 Of special interest is ** CenturyLink Management Appliance ** which is a public box and you can see its code. In a few steps you can deploy an appliance in a region
 
-![CAM catalog Managed Services Anywhere](../../images/cloud-application-manager/catalog/cam-catalog-managed-services.png)
+![Cloud Application Manager catalog Managed Services Anywhere](../../images/cloud-application-manager/catalog/cam-catalog-managed-services.png)
 
 **Examples**:
 
-CenturyLink Managed SQL Server, CenturyLink Managed IIS, CenturyLink Managed Apache HTTP Server, CenturyLink Managed Tomcat, CenturyLink Management Appliance, Managed Application Windows, etc, ...
+CenturyLink Managed SQL Server, CenturyLink Managed IIS, CenturyLink Managed Apache HTTP Server, CenturyLink Managed Tomcat, CenturyLink Management Appliance, Managed Application Windows, etc.
 
 #### Plugins
 
 Mainly, in this category you will find information boxes for some applications or scripts that provide utilities and functions to your environment.
 
-![CAM catalog Managed Services Anywhere](../../images/cloud-application-manager/catalog/cam-catalog-plugins.png)
+![Cloud Application Manager catalog Managed Services Anywhere](../../images/cloud-application-manager/catalog/cam-catalog-plugins.png)
 
 **Examples**:
 
-Jenkins CI plugin, Jenkins Kubernetes CI plugin, etc, ...
+Jenkins CI plugin, Jenkins Kubernetes CI plugin, etc.
 
 #### Services
 
-Here are shown boxes from different providers of cloud services. External partners use to offer here their services configuration to be automatized. 
+Here you can find boxes explaining some available cloud services in Cloud Application Manager. External partners can use this category to offer their services through the Catalog as a marketplace. 
 
-![CAM catalog Managed Services Anywhere](../../images/cloud-application-manager/catalog/cam-catalog-services.png)
+![Cloud Application Manager Catalog Services](../../images/cloud-application-manager/catalog/cam-catalog-services.png)
 
 **Examples**:
 
-Amazon Web Services, Microsoft Azure, CenturyLink Simple Backup Service, etc, ...
+Amazon Web Services, Microsoft Azure, CenturyLink Simple Backup Service, etc.
 
 #### Other
 
 This category includes all the other boxes not included in a specific category.
 
-![CAM catalog other](../../images/cloud-application-manager/catalog/cam-catalog-other.png)
+![Cloud Application Manager catalog other](../../images/cloud-application-manager/catalog/cam-catalog-other.png)
 
 **Examples**:
 
-Oracle Database Service, Memcached Service
+Oracle Database Service, Memcached Service, etc.
 
 ### Publish and add content to the catalog
 
 A user can also [request to publish](../Tutorials/publish-script-box.md) one of his defined boxes to this public catalog, to make it available for all Cloud Application Manager users from all organizations, by sending a Publish box request from a box version. 
 
-This feature can be used as a **marketplace** by Cloud Application Manager customers willing to provide their applications and  services through the Cloud Application Manager catalog to any other customer.
+This feature can be used as a **marketplace** by Cloud Application Manager customers willing to provide their applications and services through the Cloud Application Manager catalog to any other customer.
 
-Published box in Catalog can be public (shows its code to other users and cloning it is allowed) or private (scripts code is hidden). A published box can have different versions.
+Published box in Catalog can be public (shows its code to the user, allows editing the code through the Lifecycle Editor when deployed and allows cloning of the box) or private (scripts code is hidden, cloning of the box is not allowed). A published box can have different versions.
 
 ### Catalog elements usage
 
 A catalog element is a **Script Box**, so you can perform the same functions as described in [boxes](boxes.md).  
-You can create an instance of this catalog box deploying it. Besides you can share, edit its configuration, clone it (if it has a public scope) and deleted it in the same way as you do with boxes.
+You can create an instance of this catalog box by deploying it. Besides that, you can clone it if it was published as open source.
 
-![CAM catalog usage script](../../images/cloud-application-manager/catalog/cam-catalog-usage1.png)
+![Cloud Application Manager catalog usage script](../../images/cloud-application-manager/catalog/cam-catalog-usage1.png)
 
-Other elements in catalog are **information boxes**. They provide documentation only. Clicking on them show information regarding how to use them and several links to Provider documentation and suscription scripts.
+Other elements in the Catalog are **information boxes**. They provide documentation only. Clicking on them show information regarding how to use them and a link to additional information or subscription details.
 
-![CAM catalog usage info](../../images/cloud-application-manager/catalog/cam-catalog-usage2.png)
+![Cloud Application Manager catalog usage info](../../images/cloud-application-manager/catalog/cam-catalog-usage2.png)
 
 ### Contacting Cloud Application Manager Support
 
