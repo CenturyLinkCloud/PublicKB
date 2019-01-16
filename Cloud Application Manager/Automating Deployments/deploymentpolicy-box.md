@@ -10,11 +10,11 @@
 
 ### Table of Contents
 
+* [Table of Contents](#table-of-contents)
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
 * [Deployment Policy Boxes](#deployment-policy-boxes)
-* [Create a Deployment Policy](#create-a-deployment-policy)
 * [Give Access to the Policy](#give-access-to-the-policy)
 * [Control Box Deployments with Admin Boxes](#control-box-deployments-with-admin-boxes)
 * [Creating and Executing an Admin Box](#creating-and-executing-an-admin-box)
@@ -34,18 +34,18 @@ Cloud Application Manager customers.
 
 ### Deployment Policy Boxes
 
-Give access to cloud provider infrastructure using a deployment policy box. Policies help allocate cloud resources securely rather than giving access to the entire cloud provider. As IT operations, you have control over what and how much resources deployments consume.  
+Give access to cloud provider infrastructure using a **deployment policy box**. Policies help allocate cloud resources securely rather than giving access to the entire cloud provider. As IT operations, you have control over what and how much resources deployments consume.  
 Customize policies to support specific deployment scenarios. For example, you may want to provide a small instance type of a certain Linux distribution in a policy to launch development environments.
 
 #### Create a Deployment Policy
 
 1. [Log in](https://cam.ctl.io/login) to Cloud Application Manager Application site.
 
-2. On the Boxes page, click **New** > **Deployment Policy**. Here select a type of deployment policy box.
+2. On the Boxes page, click **New** > **Deployment Policy**. Select here a type of deployment policy box.
 
     ![New deployment policy box](../../images/cloud-application-manager/deploymentpolicyboxes1.png)
 
-    Then select a cloud provider added before in Cloud Application Manager, give the box a meaningful name to identify it in the box service catalog and optionally specify other [metadata](../Core Concepts/boxes.md#box-metadata). Save to continue.
+    Then select a cloud provider added before in Cloud Application Manager, give the box a meaningful name to identify it among your boxes and optionally specify other [metadata](../Core Concepts/boxes.md#box-metadata) such as claims. Click save to continue.
 
     ![New virtual of physical machine policy box](../../images/cloud-application-manager/deploymentpolicyboxes2.png)
 
@@ -53,7 +53,7 @@ Customize policies to support specific deployment scenarios. For example, you ma
     ![New virtual of physical machine policy box](../../images/cloud-application-manager/deploymentpolicyboxes2b.png)
 
     Select the resource, network, region, and other deployment settings from the cloud provider.  
-    See the provider help for details:
+    See the provider help for more details:
 
     * [CenturyLink Cloud](../Deploying Anywhere/using-centurylink-cloud.md)
     * [CenturyLink DCC](../Deploying Anywhere/using-dcc.md)
@@ -79,12 +79,13 @@ Give access to other individuals or team workspaces by clicking on the pencil of
 
 ![Share deployment policy box](../../images/cloud-application-manager/deploymentpolicyboxes-share.png)
 
-
 | Share Access | Description |
 |--------------|-------------|
 | **Is Owner** | Rename or delete the policy metadata and edit the policy settings if you have edit access to the provider registered in Cloud Application Manager. |
 | **Can Edit** | Change the policy box metadata and edit the policy settings if you have edit access to the provider. |
 | **Can View** | Consume the policy to deploy boxes. |
+
+For more information about sharing, see [sharing boxes, instances and providers](../Core Concepts/workspaces-and-collaboration.md#sharing-boxes-instances-and-providers).
 
 ### Control Box Deployments with Admin Boxes
 
