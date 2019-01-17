@@ -1,7 +1,7 @@
 {{{
 "title": "Providers",
-"date": "10-17-2018",
-"author": "",
+"date": "01-17-2019",
+"author": "Michael Matsche",
 "keywords": ["cam", "alm", "providers", "centuryLink-cloud", "clc", "aws", "azure", "google-cloud", "gcp", "cloudstack", "dimension-data", "openstack", "rackspace", "softlayer", "vcloud", "vmware"],
 "attachments": [],
 "contentIsHTML": false
