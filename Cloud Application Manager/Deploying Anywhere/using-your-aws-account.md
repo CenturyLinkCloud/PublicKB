@@ -1,6 +1,6 @@
 {{{
 "title": "Using AWS",
-"date": "28-12-2018",
+"date": "12-28-2018",
 "author": "Guillermo Sanchez, Julio Castanar",
 "keywords": ["aws", "ecs", "deploy"],
 "attachments": [],
@@ -12,7 +12,7 @@
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
-* [Connect Your AWS Account in Cloud Application Manager](#connect-your-aws-account-in-cloud-application-manager)
+* [Connect your AWS Account in Cloud Application Manager](#connect-your-aws-account-in-cloud-application-manager)
 * [Create a custom AWS Policy](#create-a-custom-aws-policy)
 * [Create an IAM Role with the Policy chosen](#create-an-iam-role-with-the-policy-chosen)
 * [Add Custom AMIs in Cloud Application Manager](#add-custom-amis-in-cloud-application-manager)
@@ -40,35 +40,32 @@ All Cloud Application Manager users who wants to deploy workloads into AWS.
 * Access to Cloud Application Manager [Management site](https://account.cam.ctl.io/#/providers?type=Amazon-Web-Services).
 * The user must have an existing AWS account or should be an Administrator of the organization in Cloud Application Manager to [create](../Cloud Optimization/partner-cloud-integration-aws-new.md) or [bring](../Cloud Optimization/partner-cloud-integration-aws-existing.md) an AWS account to be managed by CenturyLink.
 
-### Connect Your AWS Account in Cloud Application Manager
+### Connect your AWS Account in Cloud Application Manager
 
-Before you deploy in AWS, you need to connect your AWS account in Cloud Application Manager. Watch this video for details.
+Before you deploy in AWS, you need to connect your AWS account in Cloud Application Manager. The following steps walks you through this process. 
 
-<iframe frameborder="0" height="316" src="//player.vimeo.com/video/126177639" width="561"></iframe>
-
-*You can open it in a new window clicking on `vimeo` with the right button. Then select enter full screen icon at the bottom right corner*.
 
 ### Create a custom AWS Policy
 
-1. Go to [AWS Services console](https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3Fstate%3DhashArgs%2523%26isauthcode%3Dtrue&client_id=arn%3Aaws%3Aiam%3A%3A015428540659%3Auser%2Fhomepage&forceMobileApp=0) and login into your account.  
-You can reach this console from AWS Console link at Provider AWS management page in Cloud Application Manager too.
+1. Go to [AWS Services console](https://console.aws.amazon.com) and login into your account.  
+You can reach this console from the **AWS Console** button located in your AWS Provider details page in Cloud Application Manager and you will be directly logged in.
 
 2. Create a custom AWS Policy.  
-Go to top Services menu and in Security, Identity, & Compliance section, select IAM. Then select Policies in the left side menu.
+Go to top **Services** menu and in Security, Identity, & Compliance section, select **IAM**. Then select **Policies** in the left side menu.
 
 ![AWS Console Policies](../../images/aws-console/aws-console-policies.png)
 
-3. Click on Crete policy button and select Create your own policy.  
-   There are several ways of adding a policy. Here we will descript how to use a script.  
-   Select JSON tab in new Amazon Create policy page and continues editing the script we show in the next section [Choosing the right policy](#choosing-the-right-policy).
+3. Click on **Crete policy** button and select Create your own policy.  
+   There are several ways to add a policy. Here we will describe how to use a JSON snippet.  
+   Select **JSON** tab in new Amazon Create policy page and continue editing the snippet displayed below in [Choosing the right policy](#choosing-the-right-policy).
 
 ![AWS Console Policies](../../images/aws-console/aws-console-json.png)
 
-4. When edited, click on review policy and if there are no errors you will be prompted to give a name and a description for this policy. After it, save changes clicking on create policy at the bottom of the page.
+4. When edited, click on **Review policy** and if there are no errors you will be prompted to give a name and a description for this policy. Save changes clicking on **Create policy** at the bottom of the page.
 
 ![AWS Console Review](../../images/aws-console/aws-console-review.png)
 
-In this example we give the name *ElasticBox_Policy*. It will be used later.
+In this example we give the name *CAM_Policy*. It will be used later.
 
 #### Choosing the right policy
 
@@ -76,14 +73,14 @@ The AWS IAM Policy regulates what Cloud Application Manager is allowed to do and
 
 To be able to deploy AWS CloudFormation you will need to have the appropriated permissions in the policy, so you should give access to the services you are planning to use.
 
-For example, if you are planning to deploy RDS and ElastiCache from CloudFormation templates, it useful to give the permissions for them likes in the next lines:  
+For example, if you are planning to deploy RDS and ElastiCache from CloudFormation templates, it useful to give the permissions for them like in the next lines:  
 
-```
+```json
 "rds:*",
 "elasticache:*"
 ```
 
-Here is an example of a common policy that give access to some AWS services but not all:
+Here is a complete example of a common policy that give access to some AWS services but not all:
 
 ```json
 {
@@ -308,25 +305,27 @@ If you are not planning to use CloudFormation template boxes and you want to use
 }
 ```
 
+**Note:** You can edit these permissions or add new ones anytime later if you find that an operation in Cloud Application Manager fails because of the lack of any permission.
+
 ### Create an IAM Role with the Policy chosen
 
-1. Once you created a custom AWS policy (in the example "*ElasticBox_Policy*") go to main left side menu and select Roles option.
+1. Once you have created a custom AWS policy (in the example "*CAM_Policy*") go to main left side menu and select **Roles** option.
 
-    Create an IAM role by clicking the create role button.  Then select the **Another AWS Account tab**. Provide the information below
+    Create an **IAM role** by clicking the create role button.  Then select the **Another AWS Account tab**. Provide the information below
 
    * **Account ID**: 540339316802
    * **External ID**: elasticbox
    * **Require MFA**: Leave unselected
 
-    ![AWS Console Review](../../images/aws-console/aws-console-role.png)
+    ![AWS Console Role create](../../images/aws-console/aws-console-role.png)
 
-2.  Add the policy you created (**ElasticBox_Policy**) as well as the policy called **ReadOnlyAccess**.
+2. Add the policy you created **CAM_Policy** as well as the policy called **ReadOnlyAccess**.
 
-   ![AWS Console Review](../../images/aws-console/aws-console-role-2.png)
+    ![AWS Console Role permissions](../../images/aws-console/aws-console-role-2.png)
 
 3. Optionally give some tags
 
-   ![AWS Console Review](../../images/aws-console/aws-console-role-3.png)
+   ![AWS Console Role tags](../../images/aws-console/aws-console-role-3.png)
 
 
 4. Register the IAM role in Cloud Application Manager.  
@@ -334,33 +333,36 @@ If you are not planning to use CloudFormation template boxes and you want to use
 
    * **Important:** If you use Cloud Application Manager as an appliance, connect to your AWS account using the secret and key credentials.
 
-   ![AWS Console Review](../../images/aws-console/aws-console-role-4.png)
+   ![AWS Console Role Review](../../images/aws-console/aws-console-role-4.png)
 
-After you create this Role, it is attached to the policies selected (in the example, *ElasticBox_Policy*). You can check it accesing to the Policy detail. Select in the main left side menu Policies, search your Policy and click on it to see detail.  
-The tab *Policy usage* shows you the permissions attached to your policy. Here you can see the Role created before or attach a new Role created previously. 
+After you create this Role, it is attached to the policies selected (in the example, *CAM_Policy* and *ReadOnlyAccess*). You can check it by accesing to the Policy details. Select in the main left side menu **Policies**, search your Policy and click on it to see detail.  
 
-   ![AWS Console Policy](../../images/aws-console/aws-console-policies-2.png)
+The tab *Policy usage* shows you the permissions attached to your policy. Here you can see the Role created before or attach an existing Role. 
 
-**Note** in the policy detail the **Policy ARN** id you will use to reference this Policy from Cloud Application Manager.  Copy it clicking on the right icon.
+   ![AWS Console Policy permissions](../../images/aws-console/aws-console-policies-2.png)
+
+**Note** in the policy detail, the **Policy ARN** id will be used to reference this Policy from Cloud Application Manager.  Copy it by clicking on the copy icon right to the policy ARN value.
 
 ### Add Custom AMIs in Cloud Application Manager
 
-Returning to Cloud Application Manager, we first must add this new Provider to Providers list.  
+Going back to Cloud Application Manager, you must first add your account as a new Provider to Providers list.  
 
-1. Go to Providers in the left side menu of Cloud Application Manager
-2. Click on New and give a name to AWS Provider. Then paste the ARN id copied before.
+1. Go to **Providers** in the left side menu of Cloud Application Manager
+2. Click on **New** and give a name to your AWS Provider. Then, paste the **ARN id** copied before.
 
-![CAM aws-deploy-config.png](../../images/cloud-application-manager/aws-deployment-add.png)
+![New AWS Provider role ARN](../../images/cloud-application-manager/aws-deployment-add.png)
  
-When porvider is created all its default resources are synchronized. If provider already exists, you can force changes within AWS Provider clicking on Sync button.
+When the provider is created all its default resources are synchronized. If the provider already exists, you can synchronize its resources by clicking on the **Sync** button.
 
-![CAM aws-deploy-config.png](../../images/cloud-application-manager/aws-deployment-config.png)
+![Provider details page](../../images/cloud-application-manager/aws-deployment-config.png)
 
-Afterwards, we can see previously added configuration in AWS Provider. By default, Cloud Application Manager makes the latest AWS Linux and Windows AMIs along with any custom AMIs available in your AWS account.  
-You can remove some of them from the view if you won't use them by clicking on the trash icon.  
-You can add others by clicking **New** and entering the AMI number.
+Afterwards, we can see previously added configuration in AWS Provider. By default, Cloud Application Manager adds the latest AWS Linux and Windows AMIs along with any custom AMIs available in your AWS account.
 
-![aws-machine-image-1.png](../../images/cloud-application-manager/aws-machine-image-1.png)
+You can remove some of them from the view if you won't use them by clicking on the trash icon on each one.
+
+You can add others by clicking **New** and entering the AMI identifier.
+
+![Add machine image](../../images/cloud-application-manager/aws-machine-image-1.png)
 
 **Note:** For this to work you may have go to the AWS marketplace and accept the license agreement for that AMI. Although most AMIs come pre-installed with [cloud-init](https://cloudinit.readthedocs.org/en/latest/), some may not, in which case you must install it. Cloud Application Manager requires cloud-init to bootstrap the Cloud Application Manager agent.
 
@@ -379,7 +381,7 @@ RDS, DynamoDB, and Memcached are CloudFormation boxes. To deploy to an RDS servi
 ### EC2 (Linux and Windows)
 To deploy workloads to an EC2 instance, create a [deployment policy](../Automating Deployments/deploymentpolicy-box.md) and select Virtual or Phisical Machine for an AWS account or use the one your admin shared with you. 
 
-![aws-deployment-policy-3.png](../../images/cloud-application-manager/aws-deployment-policy-3.png)
+![Deployment Policy Details](../../images/cloud-application-manager/aws-deployment-policy-3.png)
 
 #### Deployment
 
@@ -419,11 +421,11 @@ To deploy workloads to an EC2 instance, create a [deployment policy](../Automati
 
 | Deployment Option | Description |
 |-------------------|-------------|
-| Elastic Block Store | Instance types come with a default root device volume. To get storage on top of the default volume, add EBS volumes under Elastic Block Store. |
+| Elastic Block Storage | Instance types come with a default root device volume. To get storage on top of the default volume, add EBS volumes under Elastic Block Store. |
 | Target Groups | This allows you to attach an instance to both types of load balancers automatically. |
 | Classic Load Balancer |  In addition to the Application Load Balancer and the Network Load Balancer, Cloud Application Manager also support the Classic Load Balancers. |
 
-![aws-depprofile-elasticblockstore-settings-3.png](../../images/cloud-application-manager/aws-depprofile-elasticblockstore-settings-3.png)
+![Elastic Block Storage options](../../images/cloud-application-manager/aws-depprofile-elasticblockstore-settings-3.png)
 
 Select from General Purpose (SSD), Provisioned IOPS (SSD) or Magnetic volume types. Optionally, EBS-optimize them to dedicate I/O throughput from the instance to the volumes. Check **EBS Optimized** for any of the supported instance types: m3.xlarge, m3.2xlarge, c3.xlarge, c3.2xlarge, c3.4xlarge, g2.2xlarge, r3.xlarge, r3.2xlarge.
 
