@@ -67,7 +67,7 @@ Fill mandatory fields (with an *) and define some basic metadata described below
 ### Box management
 Once you create a box, you can configure and manage it in this panel:<br/>
 
-![core-concepts-boxes1.png](../../images/cloud-application-manager/core-concepts-boxes1.png)
+![Box management page core concepts](../../images/cloud-application-manager/core-concepts-boxes1.png)
 
 
 #### Box Functions

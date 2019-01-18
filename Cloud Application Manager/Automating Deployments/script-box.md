@@ -25,11 +25,13 @@ It explains how to use the Script box. The Script box is the type you most commo
 
 ### Audience
 
-Cloud Application Manager Users
+Cloud Application Manager Users using Application Lifecycle Management (ALM) features.
 
 ### Prerequisites
 
 * Access to [Applications site](https://cam.ctl.io/#/boxes) (Application Lifecycle Management module) of Cloud Application Manager as an authorized user.
+
+* A provider already configured in Cloud Application Manager. See [administering providers](../Administering Your Organization/admin-overview.md#Providers).
 
 ### Creating Your First Script Box
 
@@ -38,7 +40,7 @@ Save to continue. Configure the deployment using [events](start-stop-and-upgrade
 
 When ready to test the configuration, click **Deploy**. Under the Deployment Box, search or select a deployment policy. Policies whose claims match the script box requirements will appear here.
 
-Can not find the one you need? Then click on **Create a new implementation policy box**.
+Can not find the one you need? Then click on **Create a new deployment policy box**.
 
 The easiest way to understand script boxes is to build one. Follow this tutorial to build a simple box that says [Hello World](../Getting Started/getting-started-with-hello-world.md).
 
@@ -48,25 +50,25 @@ Let’s build on top of the [Hello World](../Getting Started/getting-started-wit
 
 Create a new Script box and call it Greeting. Tag that it needs Linux. To learn more, see requirements and auto updates under [Box Basics](../Core Concepts/boxes.md).
 
-![scriptboxes1.png](../../images/cloud-application-manager/scriptboxes1.png)
+![New Script Box](../../images/cloud-application-manager/scriptboxes1.png)
 
 Now, in the code section, add a new variable of type **Box**. This allows the greeting box to consume the services of another. Click **New** in the variable section and add a box variable as shown. Set the variable name to GREETER and for the value, select the **Hello World** box.
 
-![scriptboxes2.png](../../images/cloud-application-manager/scriptboxes2.png)
+![New box type varible](../../images/cloud-application-manager/scriptboxes2.png)
 
 Now that Hello World is nested in the Greeting box, we can replace Hello World box variables with values we want. To do this, expand the GREETER variable and edit (click the pencil icon) the GREETING sub variable.
 
-![scriptboxes3.png](../../images/cloud-application-manager/scriptboxes3.png)
+![Box Management page code section](../../images/cloud-application-manager/scriptboxes3.png)
 
 Edit this to say hello to someone else.
 
-![scriptboxes4.png](../../images/cloud-application-manager/scriptboxes4.png)
+![Editing a variable](../../images/cloud-application-manager/scriptboxes4.png)
 
 We have overwritten the original value of the GREETING variable from the Hello World box. To go back to its original value, we can click the trash can icon at the right of the pencil icon.
 
 **Note:** You can quickly tell which variables values are overridden because they change from italicized to regular text.
 
-![scriptboxes5.png](../../images/cloud-application-manager/scriptboxes5.png)
+![Changed variables in Box management code view](../../images/cloud-application-manager/scriptboxes5.png)
 
 See what we did? We consumed a box configuration and changed deployment values of the child box within the context of the parent. Remember that the original child box definition of Hello World, in this case, is not affected. When you deploy the Greeting box in this example, it also deploys the Hello World box in the same instance.
 

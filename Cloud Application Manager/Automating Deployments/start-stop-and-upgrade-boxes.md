@@ -10,21 +10,15 @@
 "contentIsHTML": false
 }}}
 
-### Table of Contents
-
+**In this article:**
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
-* [Event types](#Event-Types)
-    * [Install](#Install)
-    * [Configure](#Configure)
-    * [Start](#Start)
-    * [Stop](#Stop)
-    * [Dispose](#Dispose)
-* [Event execution order](#Event-execution-order)
-    * [pre-event types](#pre-event-types)
-* [Event error codes](#Event-error-codes)
-* [Windows return codes](#Windows-return-codes)
+* [Event Types](#event-types)
+* [Event Execution Order](#event-execution-order)
+* [Event Error Codes](#event-error-codes)
+* [Windows Return Codes](#windows-return-codes)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
 
@@ -36,11 +30,13 @@ The Cloud Application Manager agent executes and stores the output of the event 
 
 ### Audience
 
-Cloud Application Manager Users
+Cloud Application Manager Users using Application Lifecycle Management (ALM) features.
 
 ### Prerequisites
 
 * Access to [Applications site](https://cam.ctl.io/#/boxes) (Application Lifecycle Management module) of Cloud Application Manager as an authorized user of an active Cloud Application Manager account.
+
+* A provider already configured in Cloud Application Manager. See [administering providers](../Administering Your Organization/admin-overview.md#Providers).
 
 ### Event Types
 
@@ -75,7 +71,7 @@ Examples include de-registering agents and collecting logs and stateful data.
 Cloud Application Manager executes events in the order they’re displayed in the box events section.  
 For example, this box nests a git box which in turn nests a git repo box. If we expand the events, we can see the order in which the scripts execute at deployment time.
 
-![installconfigureandotherevents1.png](../../images/cloud-application-manager/installconfigureandotherevents1.png)
+![Events Execution Order](../../images/cloud-application-manager/installconfigureandotherevents1.png)
 
 #### pre-event types
 Note how each event has a pre-event type. The install has pre_install, configure has pre_configure, and so on. Pre-events fulfill certain conditions before performing the next step.  
@@ -85,7 +81,7 @@ For example, you may want to use the pre-event to install dependencies or downlo
 
 It’s good practice to use exit error codes in events to indicate if a task ran successfully or not on an instance. For example, you can return a 1 to indicate an error and write what caused the error to the instance logs.
 
-In both, Windows and Linux event shell scripts, Cloud Application Manager understands three types of exit codes that affect the instance state.
+In both Windows and Linux event shell scripts, Cloud Application Manager understands three types of exit codes that affect the instance state.
 
 | Use Code | To indicate | Description | Instance State |
 |----------|-------------|-------------|----------------|

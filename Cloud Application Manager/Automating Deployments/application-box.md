@@ -44,7 +44,7 @@ An application box defines a topology. A topology is a list of boxes and all the
 
 Next figure shows the topology of an Applicaction box and all the instances deployed with it.
 
-![application-boxes-1.png](../../images/cloud-application-manager/application-boxes-1.png)
+![Box Topology and instances deployed](../../images/cloud-application-manager/application-boxes-1.png)
 
 Using applcation boxes makes deploying several instances fast and prevent errors. The instances deployed can be managed separately if needed, allowing you to adapt each running application as needed. Each box in the topology includes the information needed to deploy it as an instance.
 
@@ -52,11 +52,11 @@ Using applcation boxes makes deploying several instances fast and prevent errors
 
 To create an application box just go to the boxes page and click new and select application box.
 
-![application-boxes-2.png](../../images/cloud-application-manager/application-boxes-2.png)
+![Create an Application Box](../../images/cloud-application-manager/application-boxes-2.png)
 
 You only need to configure the name of the application box.
 
-![application-boxes-3.png](../../images/cloud-application-manager/application-boxes-3.png)
+![New Application Box data](../../images/cloud-application-manager/application-boxes-3.png)
 
 
 ### Application box topology
@@ -71,7 +71,7 @@ For every box, you can define:
 * The requirements needed to be fulfilled by its policy box
 * The value of each variable of the box
 
-![application-boxes-4.png](../../images/cloud-application-manager/application-boxes-4.png)
+![Application Box definition](../../images/cloud-application-manager/application-boxes-4.png)
 
 This is equivalent to the values you need to provide to deploy that box as an instance, except the policy box and requirements. When you deploy other types of boxes, you must select one policy box for an instance. The box includes a list of requirements that must appear as claims in the Policy box.
 
@@ -81,7 +81,7 @@ For example, if you want to deploy an application across regions, you could add 
 
 After adding all the boxes to the topology, you can deploy the application box clicking on deploy and all the configuration will be deployed for you.
 
-![application-boxes-5.png](../../images/cloud-application-manager/application-boxes-5.png)
+![Application Box Topology](../../images/cloud-application-manager/application-boxes-5.png)
 
 ### Contacting Cloud Application Manager Support
 
