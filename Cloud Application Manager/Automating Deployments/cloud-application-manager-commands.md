@@ -1,21 +1,42 @@
-{{{ "title": "Cloud Application Manager Commands",
-"date": "09-01-2016",
-"author": "",
+{{{ 
+"title": "Cloud Application Manager Commands",
+"date": "12-28-2018",
+"author": "Julio Castanar",
+"keywords": ["cam","alm","boxes", "box", "command", "set", "config", "notify"],
 "attachments": [],
 "contentIsHTML": false
 }}}
 
 **In this article:**
 
-The Set and Config commands are useful to generate dynamic values for the variables in your box at deploy time. The notify command is useful to allow other instances to react to those changes.
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Set Command](#set-command)
+* [Config Command](#config-command)
+* [Notify Command](#notify-command)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
-* Set command
-* Config command
-* Notify command
+### Overview
+
+This article is meant to assist Cloud Application Manager customers who want to create and manage box scripts.  
+It explains how to use the **Commands** in scripts.  
+The Set and Config commands are useful to generate dynamic values for the variables in your box at deployment time.  
+The notify command is useful to allow other instances to react to those changes.
+
+
+### Audience
+
+Cloud Application Manager Users using Application Lifecycle Management features.
+
+### Prerequisites
+
+* Access to [Applications site](https://cam.ctl.io/#/boxes) (Application Lifecycle Management module) of Cloud Application Manager as an authorized user of an active Cloud Application Manager account.
 
 ### Set Command
 
-Use the command to programmatically set the value of variables you don’t know beforehand, like authentication keys. Do this in the parent box to set the values of its variables or of variables in the child box scripts.
+Use the command to programmatically set the value of variables you don’t know beforehand, like authentication keys.  
+Do this in the parent box to set the values of its variables or of variables in the child box scripts.
 
 **Syntax**
 
@@ -37,7 +58,7 @@ elasticbox set <childbox_variable_name>.<variable_name> <variable_value> -box <b
 
 **Example**
 
-This event script uses the Set command to generate a dynamic string based on the password, address, and username variables. At deploy time, when the script is executed, the resulting value stored in MONGODB_CONNECTION_STRING is used to log in to the MongoDB instance.
+This event script uses the Set command to generate a dynamic string based on the password, address, and username variables. At deployment time, when the script is executed, the resulting value stored in MONGODB_CONNECTION_STRING is used to log in to the MongoDB instance.
 
 ```
 elasticbox set MONGODB_CONNECTION_STRING "mongodb://$user:$pass@$address.public:27017/elasticbox?safe=true"
@@ -95,16 +116,16 @@ end
 #end
 ```
 
-In order for Cloud Application Manager to act on this file at deploy time, use cURL or WGET commands in an event script on the Chef box to download the file into the virtual machine. Then, pass the file through the Config command in the event script so that Cloud Application Manager executes the Chef box variables in it.
+In order for Cloud Application Manager to act on this file at deployment time, use cURL or WGET commands in an event script on the Chef box to download the file into the virtual machine. Then, pass the file through the Config command in the event script so that Cloud Application Manager executes the Chef box variables in it.
 
-**Here the Config Command is run on the file:**
+***Here the Config Command is run on the file:***
 
 ```
 curl -ks ${CHEF_DEFAULT_RB} | elasticbox config -o
 cookbooks/${CHEF_COOKBOOK_NAME}/recipes/default.rb
 ```
 
-At deploy time, Cloud Application Manager runs the Config command on the CHEF_DEFAULT_RB file, replaces the variables with actual deploying values, and stores the file as default.rb in the specified path on the virtual machine.
+At deployment time, Cloud Application Manager runs the Config command on the CHEF_DEFAULT_RB file, replaces the variables with actual deploying values, and stores the file as default.rb in the specified path on the virtual machine.
 
 ### Notify Command
 
@@ -124,7 +145,8 @@ The most common use is to send a notification after executing one or several `el
 
 **Example**
 
-A common pattern is to have variables that symbolize the state of the instance and use `elasticbox notify` to specify that status. For example, you could have a REPLICA_SET_READY variable. When the MongoDB replica set is initialized you set it to true in the instance and execute `elasticbox notify`. All instances binding to the previous one can check the variable REPLICA_SET_READY and execute some configurations if the value is true. If it is not true then it can skip that configuration, and they will be reconfigured (and that code executed) by that instance when the service is ready.
+A common pattern is to have variables that symbolize the state of the instance and use `elasticbox notify` to specify that status.  
+For example, you could have a REPLICA_SET_READY variable. When the MongoDB replica set is initialized you set it to true in the instance and execute `elasticbox notify`. All instances binding to the previous one can check the variable REPLICA_SET_READY and execute some configurations if the value is true. If it is not true then it can skip that configuration, and they will be reconfigured (and that code executed) by that instance when the service is ready.
 
 ### Contacting Cloud Application Manager Support
 
@@ -134,4 +156,4 @@ For issues related to API calls, send the request body along with details relate
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+* Windows: RDP into the instance to locate the log at \ProgramData\ElasticBox\Logs\elasticbox-agent.log
