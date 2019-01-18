@@ -53,7 +53,7 @@ Note a couple of things about instances you deploy on CenturyLink Cloud through 
 | Group |	Select placement group for the new instance. |
 | Template | Select from a list of CenturyLink Cloud Linux or Windows images. Images are specific to the box service type, that is, Linux or Windows. |
 | Instances | Specify the number of instances to provision. |
-| Admin/root Password | Choose Admin/root password for your instance. |
+| Admin/root Password | Choose the Administrator user password for Windows instance or the root password for Linux instance. This Password can be left empty, then a random password will be generated. When specified, this password will show up in CLC portal. |
 | Confirm Password | Confirm the password. |
 
 
