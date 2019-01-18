@@ -54,6 +54,10 @@ Through the Control Portal you are able to power the Bare Metal server on or off
 
 Through the Control Portal customers can add **a single public ip address** to a bare metal server. Customers who require multiple public IP addresses should consider using a Virtual Machine delivery model or [submit a feature request.](../Support/how-do-i-submit-a-feature-request.md)
 
+**Can Blueprint jobs from the available options in the Blueprint Library be run against Bare Metal servers?**
+
+No, Blueprint functionality is not supported.
+
 **What are the best suited workloads for this new server class?**
 
 Any applications not well-suited to virtualization whether it be performance or licensing restrictions related, database and application workloads where consistent performance is critical, grid or HPC (High Performance Computing), data analytics, caching and indexing.
