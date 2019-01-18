@@ -171,5 +171,10 @@ Some functions within the Control Portal and associated APIs are only applicable
   <td>x</td>
   <td>x</td>
 </tr>
+<tr>
+<td>Blueprints</td>
+<td>x</td>
+<td> </td>
+</tr>
 
 </table>
