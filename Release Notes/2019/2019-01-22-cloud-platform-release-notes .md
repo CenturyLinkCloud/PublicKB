@@ -1,5 +1,5 @@
 {{{
-"title": "Cloud Platform - Release Notes: January 8, 2019",
+"title": "Cloud Platform - Release Notes: January 22, 2019",
 "date": "01-22-2019",
 "author": "Andy Watson",
 "attachments": [],
