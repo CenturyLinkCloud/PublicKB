@@ -41,38 +41,32 @@ All users with Cloud Application Manager access.
 * The user should be at the organization level scope to access the Settings 
 * Access to Cloud Application Manager, [Monitoring site](https://monitoring.cam.ctl.io/) options in the left side menu.
 
-### Landing page
+### Navigation
 
-When you access the Cloud Application Manager Management Site, you will land in the Events tab by default. The Event tab provides a view of events that may be a warning or a critical to your infrastructure based policy checks. 
+When you first access the Cloud Application Manager Monitoring Site, you will land on the Events tab by default. The lefthand navigation contains each of the Monitoring Site components:
+
+* Dashboards
+* Events
+* Policies
+* Agents
+* Suppressions
+* Graph
+
 
 ![Monitoring site - Landing site](../../images/cloud-application-manager/msa/monitoring-landing-page.png)
 
-In the overview pane you can access to each of the sites by clicking the icon cards. In above figure you can see: 
-* [Management](https://www.ctl.io/knowledge-base/cloud-application-manager/administering-your-organization/admin-overview/), 
-* [Applications](https://www.ctl.io/knowledge-base/cloud-application-manager/getting-started/getting-started-login-quick-tour/),
-* [Analytics](https://www.ctl.io/knowledge-base/cloud-application-manager/analytics/#1), 
-* [Network Exchange](https://www.ctl.io/knowledge-base/network/#1) 
 
-### Providers
+### Dashboards
+The Dashboards tabs allows customers to view multple cloud native monitoring data for Microsoft Azure & Amazon Web Services (AWS) providers. 
 
-Providers contents can be reached from both, Management site and Application site.  
-Providers page contains all providers your Organization can manage and how are they configured.  
+Providers must be configered through Managed Services Anywhere. If you have no Providers configured, you can click on the Add AWS Dashboard or Add Azure Dashboard. Click the "Getting Started with Managed Services Anywhere" link for step by step instructions.
+LINK TO KB Article: https://www.ctl.io/knowledge-base/cloud-application-manager/managed-services/getting-started-with-cam-enable-managed-provider/
 
-![Providers list](../../images/cloud-application-manager/admin-overview4.png)
 
-* Connect to a provider to orchestrate deployments. Click **New** to add AWS, Azure, CenturyLink Cloud, vSphere, Google Cloud, OpenStack, CloudStack, etc...
-* Locate a provider through search or by type.
-* Sync or delete provider accounts using the gear icon actions.
+### Events
 
-See [Providers](../Core Concepts/providers.md) documentation to get knowledge about every available provider and its features.
+The Event tab provides a view of events that may be a warning or a critical to your infrastructure based policy checks. Each event shows the Agent, Agent Status (warning and critical,) the Check Type with outpout as well as the Count and date and time of Last Occurrence.
 
-### Users
-
-Here you can add, edit, delete, reset password, activate or deactivate users in your Organization
-
-![Organization Users](../../images/cloud-application-manager/admin-overview3.png)
-
-Start learning how to [create Cloud Application Manager users](../Getting Started/getting-started-create-user.md)
 
 ### Activity
 
