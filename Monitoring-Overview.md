@@ -22,7 +22,7 @@
 
 ### Overview
 
-Cloud Application Manager **Monitoring site** is where you can view metrics on providers and administer monitoring checks and policies for systems and services.  
+Cloud Application Manager **Monitoring Site** is where you can view metrics on providers and administer monitoring checks and policies for systems and services.  
 
 * In the Dashboards page you will view AWS and Azure metrics along with Watcher agent metrics. 
 * The Events page will display any active events within the selected context (Org/CostCenter/Workspace).
@@ -39,11 +39,11 @@ All users with Cloud Application Manager access.
 
 * The user must have access to the workspace where the monitored assets are configured.
 * The user should be at the organization level scope to access the Settings 
-* Access to Cloud Application Manager, [Monitoring site](https://monitoring.cam.ctl.io/) options in the left side menu.
+* Access to Cloud Application Manager, [Monitoring Site](https://monitoring.cam.ctl.io/) options in the left side menu.
 
 ### Navigation
 
-When you first access the Cloud Application Manager Monitoring Site, you will land on the Events tab by default. The lefthand navigation contains each of the Monitoring Site components:
+When you first access the Cloud Application Manager Monitoring Site, you will land on the **Events** tab by default. The lefthand navigation contains each of the Monitoring Site components:
 
 * Dashboards
 * Events
@@ -57,54 +57,52 @@ When you first access the Cloud Application Manager Monitoring Site, you will la
 
 
 ### Dashboards
-The Dashboards tabs allows customers to view multple cloud native monitoring data for Microsoft Azure & Amazon Web Services (AWS) providers. 
+The **Dashboards** tabs allows customers to view multple cloud native monitoring data for Microsoft Azure & Amazon Web Services (AWS) providers. 
 
-Providers must be configered through Managed Services Anywhere. If you have no Providers configured, you can click on the Add AWS Dashboard or Add Azure Dashboard. Click the "Getting Started with Managed Services Anywhere" link for step by step instructions.
+Providers must be configered through **Managed Services Anywhere**. If you have no Providers configured, you can click on the **Add AWS Dashboard** or **Add Azure Dashboard**. Click the **"Getting Started with Managed Services Anywhere"** link for step by step instructions.
 LINK TO KB Article: https://www.ctl.io/knowledge-base/cloud-application-manager/managed-services/getting-started-with-cam-enable-managed-provider/
 
 
 ### Events
 
-The Event tab provides a view of events that may be a warning or a critical to your infrastructure based policy checks. 
+The **Events** tab provides a view of events that may be a warning or critical to your infrastructure based policy checks. 
 
-Each event shows the Agent, Check, Info, and Options for the Event
+Each event shown contains the **Agent**, **Check**, **Info**, and **Options** for the Event.
 
-Agent
+**Agent**
 * Agent Hostname
 * IP Address
-* Status - Critical or Warning
+* Status - *Critical or Warning*
 
-Check reporting an Event
-* Name of and outout
+**Check reporting Event**
+* Name and output
 
-Info
+**Info**
 * Count of consecutive times the check was reported
 * Last Occurence Date and time
 
-Options
+**Options** (gear icon)
 * Suppress Agent - suppresses all further Events from the Agent
 * Suppress Check - suppresses all further Events from the Check 
 * Delete Event - delete the reported Event and reset count
 
-### Activity
+### Policies
 
-Activity contains logs for all management events in your Organization.  
+The **Policies** tab provides a list of policies setup for by your organization by Scope. Your current selected Workspace defines the Organization, Cost Center, and Workspace MINDY.
+Policies are a collection of checks that can be configured and applied to one or more agents. 
 
-![Activity page](../../images/cloud-application-manager/admin-overview5.png)
+* Global - Monitoring Specific 
+* Organization - exists in CAM
+* Cost Center - exists in CAM
+* Workspace - exists in CAM
+* Provider- exists in CAM
+* Agent - Monitoring Specific
 
-* Allows you to see (based on your scope and permissions) all of the relevant activity that has occurred in the platform, the type of event and the user that performed the event.
-* Filter through activity by type of event or switch between all activity or current scope.
-![Activity page, Filter dropdown](../../images/cloud-application-manager/activity-filter-list2.png)
+You can add a new policy by clicking New or view Check Catalog. 
 
-    * **Provider**, this option filters the result and shows only the provider's activity.
-    * **Settings**, this option filters the result and shows only the activities that are related to settings.
-    * **User**, this option filters the result and shows only the user management activity.
-      
-        > **note that you can combine these filters with each other on your own will.**
-        
-* Search by user name or action to narrow the results, or click on certain actions to navigate to the affected resource.
+### Agents
 
-### Settings
+The **Agents** tab provides a view of the existing Agents listed with the Name, Operating System, Agent Version, Support ID, Status, and 
 
 You can configure all parameters regarding your organization in the **Settings** page of Management site.
 
