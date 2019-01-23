@@ -9,10 +9,6 @@
 Slave nodes run Jenkins tasks on remote machines in any cloud. If you configure cloud plugins like AWS to launch slaves and then write command line scripts to set up slave build environments then Cloud Application Manager and the Cloud Application Manager Jenkins plugin can save you the hassle of both tasks.
 By configuring the slave node once in Cloud Application Manager, you can reuse it across development, testing, staging, and production. Using Cloud Application Manager, you can launch slaves on any OS, flavor, and cloud.
 
-[comment]: <> (Remove due to EB reference: As an example, watch this video on how we use Jenkins slaves to run tests for a sample JBoss app.)
-
-[comment]: <> (Remove due to EB reference: <iframe src="//player.vimeo.com/video/113452091" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>)
-
 **In this article:**
 * Configure a Slave
 * Configure Jenkins to build with slaves using Cloud Application Manager
