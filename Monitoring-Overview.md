@@ -106,57 +106,32 @@ You can add a new policy by clicking **New** or view categories by clicking **Ch
 
 The **Agents** tab provides a view of the existing monitored Agents for the selected Workspace. Agents are listed by **Name**, **Operating System**, **Agent Version**, **Support ID**, **Status**, and **Config**.
 
-* Name 
-* Operation System 
-* Agent Version
-* Support ID
-* Status
-* Config
+* Name - Hostname of Host VM
+* Operating System - Deployed Operating System of Host VM
+* Agent Version - Version of the running Agent
+* Support ID - Unique Identifier for CenturyLink Operations Center
+* Status - State of the Agent *(Online or Offline)*
+* Config - Depicts availability of updates for the Agent
 
-To view individual Agent specific details to that server, click the highlighted Agent.
+To view an individual Agent specific details to that server, click the highlighted Agent.
 
-You can also click the gear icon on the top right corner to **Refresh Facts** or **Refresh Config** for all listed Agents.
+You can also click the gear icon on the top right corner to **Refresh Facts** or **Refresh Config** for selected Agent(s) listed.
 
 ### Suppressions
 
 The **Suppressions** tab provides a view of the server(s) of which Events have been suppressed. 
 
-*Please note: Servers listed on the Suppressions tab will not have monitored events sent to our Operations Center for investigtaion and resolution.*
+*Please note: Servers or Checks listed on the Suppressions tab will not have monitored events sent to our Operations Center for investigtaion and resolution.*
+
+### Graph
+
+The **Graph** tab allows the capability to create a custom graph of selecetd Metrics from a selected Source (Agent or Provider.) 
+
+To create a graph, click in the **Select Source** section and select a source from the drop down then click in the **Select Metrics** section to select a source from the drop down. Multiple Sources and Metrics can be chosen and will be shown with an overlay.
+
+For the Chart type, you can click the radio button next to Line Chart, Area Chart, or Multi-Bar Chart.
+
+To view metrics from a certain date or time, click and make your selections in the **From** and **Until** sections. Results will then populate in the graph below and continue to refresh the data until you exit the tab. 
 
 
 
-
-#### Shortcut to access Settings from context switcher
-
-1. Access to the context switcher drop-down, located at the top navigation bar. 
-2. Click on **Organizations** tab.
-
-   ![Change CAM Workspace Scope](../../images/cloud-application-manager/admin-overview2.png)
-
-3. Click on the **edit/pencil button**, located in the top right of the organization card. 
-
-### Billing
-
-Billing contents are only reachable from Management site left side navigation menu and administrator users.  
-Billing allows you to access Cloud Application Manager billing section to review billing details in your Organization.  
-
-![Billing Dashboard](../../images/cloud-application-manager/billing/billing-dashboard.png)
-
-Billing section plots three options:
-
-* **Dashboard** where several bar graphs show billed amount with different filters.
-* **Usage History** where you can see a list with the previous months billing summary.
-* **Pricing** displays the price list of the different Cloud Application Manager products and services.
-
-See [Billing](../Billing/billing-menu.md) documentation to get knowledge about billing features.
-
-### Contacting Cloud Application Manager Support
-
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
-
-For issues related to API calls, send the request body along with details related to the issue.
-
-In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
-
-* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at \ProgramData\ElasticBox\Logs\elasticbox-agent.log
