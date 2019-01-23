@@ -43,7 +43,7 @@ All users with Cloud Application Manager access.
 
 ### Landing page
 
-When you access the Cloud Application Manager through Management Site, you will land in the Overview page where you can find your available products.
+When you access the Cloud Application Manager Management Site, you will land in the Events tab by default. The Event tab provides a view of events that may be a warning or a critical to your infrastructure based policy checks. 
 
 ![Monitoring site - Landing site](../../images/cloud-application-manager/msa/monitoring-landing-page.png)
 
