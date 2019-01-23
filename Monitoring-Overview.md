@@ -88,9 +88,11 @@ Each event shown contains the **Agent**, **Check**, **Info**, and **Options** fo
 
 ### Policies
 
-The **Policies** tab provides a list of policies setup for by your organization by Scope. Your current selected Workspace defines the Organization, Cost Center, and Workspace MINDY.
 Policies are a collection of checks that can be configured and applied to one or more agents. 
 
+The **Policies** tab provides a list of policies setup for by your organization by Scope. Your current selected Workspace defines the Organization, Cost Center, and Workspace as your default view. To view additional details about each Scope, you can click the arrow located to the left of each Scope.
+
+Scopes:
 * Global - Monitoring Specific 
 * Organization - exists in CAM
 * Cost Center - exists in CAM
@@ -98,23 +100,31 @@ Policies are a collection of checks that can be configured and applied to one or
 * Provider- exists in CAM
 * Agent - Monitoring Specific
 
-You can add a new policy by clicking New or view Check Catalog. 
+You can add a new policy by clicking **New** or view categories by clicking **Check Catalog**. 
 
 ### Agents
 
-The **Agents** tab provides a view of the existing Agents listed with the Name, Operating System, Agent Version, Support ID, Status, and 
+The **Agents** tab provides a view of the existing monitored Agents for the selected Workspace. Agents are listed by **Name**, **Operating System**, **Agent Version**, **Support ID**, **Status**, and **Config**.
 
-You can configure all parameters regarding your organization in the **Settings** page of Management site.
+* Name 
+* Operation System 
+* Agent Version
+* Support ID
+* Status
+* Config
 
-When you [log in](../Getting Started/getting-started-login-quick-tour.md) to Cloud Application Manager as an administrator you will land at the management site in the organization scope, where you can find the Settings page in the left side menu.
+To view individual Agent specific details to that server, click the highlighted Agent.
 
-  ![Organization Setting](../../images/cloud-application-manager/admin-access2.png)
+You can also click the gear icon on the top right corner to **Refresh Facts** or **Refresh Config** for all listed Agents.
 
-The Settings is where you set up your organization for everyone to use. This includes things like enabling sign-in options, turning on access to cloud providers, tagging instances users launch, integrating to custom IPAM or CMDB solutions using webhooks or a ServiceNow configured connection, and configuring admin users.
+### Suppressions
 
-These settings depend on what kind of services your Organization deploys in Cloud Application Manager.
+The **Suppressions** tab provides a view of the server(s) of which Events have been suppressed. 
 
-Many of these settings are document in the [Administering Your Organization](https://www.ctl.io/knowledge-base/cloud-application-manager/administering-your-organization/#1) section of the Knowledge Base documentation.
+*Please note: Servers listed on the Suppressions tab will not have monitored events sent to our Operations Center for investigtaion and resolution.*
+
+
+
 
 #### Shortcut to access Settings from context switcher
 
