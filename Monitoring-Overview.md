@@ -65,8 +65,26 @@ LINK TO KB Article: https://www.ctl.io/knowledge-base/cloud-application-manager/
 
 ### Events
 
-The Event tab provides a view of events that may be a warning or a critical to your infrastructure based policy checks. Each event shows the Agent, Agent Status (warning and critical,) the Check Type with outpout as well as the Count and date and time of Last Occurrence.
+The Event tab provides a view of events that may be a warning or a critical to your infrastructure based policy checks. 
 
+Each event shows the Agent, Check, Info, and Options for the Event
+
+Agent
+* Agent Hostname
+* IP Address
+* Status - Critical or Warning
+
+Check reporting an Event
+* Name of and outout
+
+Info
+* Count of consecutive times the check was reported
+* Last Occurence Date and time
+
+Options
+* Suppress Agent - suppresses all further Events from the Agent
+* Suppress Check - suppresses all further Events from the Check 
+* Delete Event - delete the reported Event and reset count
 
 ### Activity
 
