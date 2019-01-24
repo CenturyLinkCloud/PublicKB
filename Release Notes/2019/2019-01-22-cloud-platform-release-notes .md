@@ -12,7 +12,7 @@
 
 ##### Replay Welcome Tour
 
-Cloud application Manager users now have the ability to replay the welcome tour that was only available when accessing the application for the first time. The option to replay the welcome tour is available in the user menu when accessing through the Management or Applications sites.  Users can select the dropdown next to the user name and select the "Play Welcome Tour" option to replay the welcome tour.
+Cloud Application Manager (CAM) users now have the ability to replay the welcome tour that was only available when accessing the application for the first time. The option to replay the welcome tour is available in the user menu when accessing through the Management or Applications sites.  Users can select the dropdown next to the user name and select the "Play Welcome Tour" option to replay the welcome tour.
 
 ##### WebPack Technology for Loading Static Resources
 
@@ -22,7 +22,7 @@ Cloud Application Manager now implements a new way of loading static resources t
 
 ##### Analytics Available for Any Type of AWS or Azure Provider
 
-For Azure, CenturyLink now extends our Analytics offering to unmanaged, un-hardened providers. This functionality is in addition to recently-announced functionality for AWS providers. On these "Bring Your Own Cloud" providers, administrators will see an "Analytics" option, capable of activating Analytics capabilities before or after a provider has been launched. When activated, CenturyLink will read your Provider's charges in our calculation of Platform Advisory Support. A CAM administrator has access to pricing details in the Management Site of CAM.
+For Azure, CenturyLink now extends our Analytics offering to unmanaged providers that are sourced by the customer. This functionality is in addition to the same recently-announced functionality for AWS providers. On these "Bring Your Own Cloud" Providers, administrators will see an "Analytics" option, capable of activating Cloud Optimization & Analytics capabilities before or after a Provider has been launched. Once Cloud Optimization & Analytics is activated for a customer-sourced Provider, CenturyLink will begin including that Provider's charges in the monthly basis for Platform Advisory Support. All CAM administrators have access to pricing details in the Management Site of CAM.
 
 
 #### [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/)
