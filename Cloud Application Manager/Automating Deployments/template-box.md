@@ -3,7 +3,7 @@
 "author": "Cristina Torres, Amalia Garcia de Mirasierra",
 "attachments": [],
 "contentIsHTML": false,
-"keywords": ["arm","azure resource manager", "terraform", "aws","cloud formation","template box", "google deployment manager",  "cloud application manager", "deployment templates", "cam", "alm", "application lifecycle management"]
+"keywords": ["arm","azure resource manager", "terraform", "aws","cloudformation","template box", "google deployment manager",  "cloud application manager", "deployment templates", "cam", "alm", "application lifecycle management"]
 }}}
 **In this article:**
 
@@ -16,10 +16,9 @@
 * [Deploy Using Google Templates](#deploy-using-google-templates)
 * [Getting General Support](#getting-general-support)
 
-
 ### Overview
 
-This article is meant to assist users of Cloud Application Manager willing to use Cloud Application Manager template boxes to create, edit or deploy templates.
+This article is meant to assist users of Cloud Application Manager willing to use Template Boxes to create, edit or deploy any of the template technologies supported by Cloud Application Manager.
 
 ### Audience
 
@@ -28,7 +27,7 @@ All users of Cloud Application Manager who wants to define and use Template Boxe
 ### Prerequisites
 
 * An active *Cloud Application Manager* account
-* Having configured a provider of any type supported by the template boxes you will use
+* Having configured a provider of any type supported by the template boxes type that you will use
 
 ### Deploy Using CloudFormation Templates
 
