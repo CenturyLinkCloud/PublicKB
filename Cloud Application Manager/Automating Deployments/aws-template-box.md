@@ -1,9 +1,9 @@
-{{{ "title": "Template Boxes",
+{{{ "title": "CloudFormation Template Boxes",
 "date": "12-21-2018",
 "author": "Cristina Torres, Amalia Garcia de Mirasierra",
 "attachments": [],
 "contentIsHTML": false,
-"keywords": ["aws","cloud formation", "template box", "cloud application manager", "cf templates", "cam", "alm", "application lifecycle management"]
+"keywords": ["aws","cloudformation", "template box", "cloud application manager", "cf templates", "cam", "alm", "application lifecycle management"]
 }}}
 **In this article:**
 
@@ -17,7 +17,7 @@
 
 ### Overview
 
-This article is meant to assist users of Cloud Application Manager willing to use Cloud Application Manager template boxes to create or edit AWS Cloud Formation templates.
+This article is meant to assist users of Cloud Application Manager willing to use Template Boxes to create or edit AWS CloudFormation templates.
 
 ### Audience
 

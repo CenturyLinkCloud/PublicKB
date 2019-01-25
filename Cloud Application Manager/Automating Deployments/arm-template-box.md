@@ -1,4 +1,4 @@
-{{{ "title": "Template Boxes",
+{{{ "title": "Azure Resource Manager Template Boxes",
 "date": "12-21-2018",
 "author": "Cristina Torres, Amalia Garcia de Mirasierra",
 "attachments": [],
