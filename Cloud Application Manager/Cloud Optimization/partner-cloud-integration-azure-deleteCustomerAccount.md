@@ -30,7 +30,7 @@ Submit a support request to remove your Azure Customer Account. To submit a supp
     * EMEA: 00800 72884743
     * Asia Pacific: +65 6768 8099
 * Email incident@CenturyLink.com
-* Submit a support request via SavvisStation Portal
+* Submit a support request via the Managed Services Portal. https://managedsupport.ctl.io
 
 Please provide the following information for the delete:
 
