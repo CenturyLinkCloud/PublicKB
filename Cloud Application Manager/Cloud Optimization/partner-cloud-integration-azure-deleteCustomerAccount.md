@@ -20,6 +20,9 @@ You will need to have followed optimized a Microsoft Azure customer account at s
 
 You will need to delete the associated Azure provider at some point, before or after submitting the request described below.
 
+If you are moving to another CSP partner, please review the article from [Microsoft](https://docs.microsoft.com/en-us/azure/cloud-solution-provider/customer-management/switch-subscription-to-different-csp-partner) and complete the form as much as you are able. Depending on which country you are located, some of the information from CenturLink will vary.    
+
+
 ### Important Information
 
 Submit a support request to remove your Azure Customer Account. To submit a support request, you may do so via the following methods:
@@ -37,3 +40,18 @@ Please provide the following information for the delete:
 * Your first and last name (must be a user registered with CenturyLink for the account)
 * Your company's name
 * Your request to delete your Azure Customer account and your reason for the request.
+* If you are transferring to a new CSP, request that CenturyLink provide the following information so that you can complete the form.
+
+CSP Partner name     
+CSP Microsoft ID      
+Country/Region      
+Address Line 1      
+Address Line 2      
+City
+State/Province
+Zip/Postal code      
+Email address     
+Contact name (last and first name)
+Phon
+Fax  
+
