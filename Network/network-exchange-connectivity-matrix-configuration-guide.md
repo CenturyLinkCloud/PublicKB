@@ -19,7 +19,7 @@ North<br>America|Santa Clara, CA|SC8<br>SC9|SC8<br>SC9|UC1|SC9
 North<br>America|Seattle, WA|SE2|SE2|WA1
 North<br>America|Sterling, VA|DC2<br>DC3<br>DC4|DC2<br>DC3<br>DC4|VA1|DC3<br>DC4
 North<br>America|Toronto, CA|TR1|TR1|CA3
-North<br>America|Weehawken, NJ|NJ2<br>NJ2X|NJ2<br>NJ2X|NY1
+North<br>America|Weehawken, NJ|NJ2<br>NJ2X|NJ2<br>NJ2X|NY1|NJ2
 Europe|Frankfurt, DE|FR6|FR6|DE1<br>DE3
 Europe|London, UK (Reading)|LO6|LO6|GB1|LO6
 Europoe|London, UK (Slough)|LO1|LO1|GB3|LO1
