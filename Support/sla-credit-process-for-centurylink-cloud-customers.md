@@ -19,7 +19,7 @@ You will need to log into [credit.ctl.io](https://credit.ctl.io) using your Cont
 
 ### How do I know the status of my SLA Credit request?
 
-Once you have submitted an SLA Credit through Credit.ctl.io, it will be shown as Claimed. The claim is then routed to our CenturyLink Cloud Billing team for review. After the CenturyLink Cloud Billing team has reviewed and approved your SLA Credit claim, it will reflect the status Pending. Lastly, it is assigned to the Finance team for official approval. If the SLA Credit claim is approved, it will reflect the status Posted in the SLA Credit Tool.
+Once you have submitted an SLA Credit through Credit.ctl.io, it will be shown as Claimed. The claim is then routed to our Finance team for review. After our Finance team has reviewed and approved your SLA Credit claim, it will reflect the status Posted.
 
 ### How will I know if my SLA Credit is approved or denied?
 
