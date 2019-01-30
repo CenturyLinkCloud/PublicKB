@@ -56,7 +56,7 @@ Provide any details for the instance in the fields provided.
 
 Click **Register** to register the instance.
 
-If you didn't provide the *Private Key*, *Windows Username* and *Password* fields, or the instance IP address is not accesible from the internet, *Cloud Application Manager* returns an error message because the agent installation script that allows *Cloud Application Manager* to register the instance is not yet executed on this instance. You can then proceed to the manual instalation process described below.
+If you did not provide the *Private Key*, *Windows Username* and *Password* fields, or the instance IP address is not accesible from the internet, an error message is returned because the agent installation script that allows *Cloud Application Manager* to register the instance has not been executed on it yet. You can then proceed to the manual instalation process described below.
 
 ### Install the Agent Installation Script manually
 

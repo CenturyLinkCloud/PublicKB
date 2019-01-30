@@ -296,7 +296,7 @@ As part of the result of synchronization process you can find a list of availabl
 
 ![Microsoft Azure - Available instances](../../images/cloud-application-manager/microsoft-azure/available-instances-9.png)
 
-You should first synchronize your Azure provider before trying to register the virtual machine, so you get the current available instances that can be registered along with their statuses.
+You should first synchronize your Azure provider before trying to register the virtual machine in order to get the current available instances that can be registered along with their statuses.
 
 ### Azure Native Resources
 

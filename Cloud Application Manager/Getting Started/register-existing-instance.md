@@ -111,7 +111,7 @@ Then, follow the steps of the [Registration process](#registration-process) belo
 
     ![Unsuccessful registering](../../images/cloud-application-manager/register/aws-registerInstance-failed.png)
 
-* Go to the instance details where you should find the command to execute into the instance to manually register it:
+* Go to the instance details where you should find the command to be executed into the instance to manually register it:
 
     ![Detail of Unsuccessful registered instance](../../images/cloud-application-manager/register/aws-registerInstance-failedDetails.png)
 
