@@ -107,11 +107,11 @@ Then, follow the steps of the [Registration process](#registration-process) belo
 
     ![Register Instance Successful](../../images/cloud-application-manager/register/clc-registerInstance-successfully.png)
 
-* If an Unsuccessful Registration occurred:
+* If an Unsuccessful Registration occurred, either if the credentials are not valid or the instance IP address is not accessible through the internet:
 
     ![Unsuccessful registering](../../images/cloud-application-manager/register/aws-registerInstance-failed.png)
 
-* Go to the instance details:
+* Go to the instance details where you should find the command to be executed into the instance to manually register it:
 
     ![Detail of Unsuccessful registered instance](../../images/cloud-application-manager/register/aws-registerInstance-failedDetails.png)
 
