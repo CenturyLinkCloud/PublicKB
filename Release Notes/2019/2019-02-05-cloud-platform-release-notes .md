@@ -16,7 +16,7 @@
 The Management Site and Billing Tab are accessible to Cost Center administrators, but only their scope of provider data is viewable in Dashboard, Pricing, and Usage History.
 
 #### [Usage History Update](../../Cloud Application Manager/Cloud Optimization/partner-cloud-integration-detailed-billing-report.md)
-Within a single month's detail billing, now you will find the ability to export even more detail regarding the behavior of AWS Reserved Instance discounts in your accounts. Behavior is consistent with the [AWS Reserved Instance Strategy](../cloud-application-manager/cloud-optimization/partner-cloud-integration-aws-ri.md).
+Within a single month's detail billing, now you will find the ability to export even more detail regarding the behavior of AWS Reserved Instance discounts in your accounts. Behavior is consistent with the [AWS Reserved Instance Strategy](../../Cloud Application Manager/Cloud Optimization/partner-cloud-integration-aws-ri.md).
 
 
 
