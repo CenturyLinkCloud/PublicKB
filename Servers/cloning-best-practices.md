@@ -28,3 +28,5 @@ It is important to understand the changes enacted by a clone job, to minimize co
  - Text files stored on user's Desktops will NOT be carried over in the Clone if they are stored on the C Drive of a windows virtual machine
 
 - When a clone is requested for a server with multiple NICs, the newly cloned machine will only have a single NIC.
+
+- Cloning is a function of Control and requires certain ports to be open on the source server to work properly. Please review our kb on the topic of [Required ports for Control functionality](required-ports-to-allow-control-functionality.md) for more information.

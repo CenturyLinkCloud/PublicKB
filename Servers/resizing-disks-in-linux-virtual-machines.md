@@ -33,4 +33,4 @@ Once complete, you can test using the following commands:
 
   ![Resizing disks in Linux Virtual Machines](../images/resizing-disks-in-linux-virtual-machines6.png)
   
-Related: [Manually expanding file system on Linux machines.](../Servers/manually-expanding-file-system-on-linux-machines.md#part-3-moving-and-expanding-drives-on-older-partitioned-images)
+Related: [Manually expanding file system on Linux machines.](./manually-expanding-file-system-on-linux-machines.md#part-3-moving-and-expanding-drives-on-older-partitioned-images)

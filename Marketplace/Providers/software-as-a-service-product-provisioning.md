@@ -1,6 +1,6 @@
 {{{
 "title": "Software as a Service Product Provisioning",
-"date": "09-06-2017",
+"date": "01-01-2019",
 "author": "Brandy Smith",
 "attachments": [],
 "contentIsHTML": false
@@ -48,7 +48,7 @@ The next step is to create the Product Provisioning within the Provider Portal f
 
   ![SaaS5.png](../../images/SaaS6.png)
 
-12. The **Product SKU Conditions** field is optional.  By default, all Product SKUs associated with the product will generate billing when the end user provisions the product.  Setting a condition allows you to choose which SKUs will be active, based on a user's selection.  Please note, setting a SKU condition is only available for **Selection** type inputs.
+12. The **Product SKU Conditions** field is optional.  By default, all Product SKUs associated with the product will generate billing immediately when the end user provisions the product.  Setting a condition allows you to choose which SKUs will be active, based on a user's selection.  Please note, setting a SKU condition is only available for **Selection** type inputs and if SKU will have delayed billing it must be set up that why by a CenturyLink Marketplace representative.  
 
 13. Below the **Example API Request** box, there is the option to preview and save your work. Be sure to click **SAVE** before leaving the SaaS tab!
 
