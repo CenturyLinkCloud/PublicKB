@@ -1,0 +1,65 @@
+{{{
+"title": "Configure Actions for Monitoring Events",
+"date": "2-2-2019",
+"author": "Thomas Broadwell",
+"keywords": ["cam", "details", "settings", "watcher", "monitoring", "actions",
+"webhooks", "slack", "setting"],
+"attachments": [],
+"contentIsHTML": false
+}}}
+
+**In this article:**
+
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Action Details](#action-details)
+* [Configure Actions](#configure-actions)
+* [Manage Clouds](#manage-clouds)
+* [Manage Tags](#manage-tags)
+* [Manage Webhooks](#manage-webhooks)
+* [Manage Authentication](#manage-authentication)
+* [Manage Theme](#manage-theme)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
+
+
+### Overview
+
+This article describes the use of Actions within the Cloud Application Manager Monitoring site.
+
+### Audience
+
+All users with Cloud Application Manager access.
+
+### Prerequisites
+
+* Access to Cloud Application Manager Monitoring site, [Monitoring site](https://monitoring.cam.ctl.io/).
+* The CAM account used must have User or higher permissions to the workspace in order to modify Actions. 
+
+
+### Action Details
+
+The Actions feature within the Cloud Application Manager's Monitoring site allows for various Actions to be executed in response to monitoring events that occur within your infrastructure. Actions can be applied at all scope levels: Organization, Cost Center, Workspace, Provider and an individual agent.
+
+* **Netcool** – will send the details of an Alert to Netcool for WebTop display
+* **Slack** - will send the details of an Alert to a channel within a Slack Instance
+* **WebHook** – will send details of an Alert to a configured WebHook
+
+### Configure Actions
+
+After selecting the Actions tab from the left hand navigation bar, the Actions 
+
+
+
+
+
+
+### Contacting Cloud Application Manager Support
+
+We're sorry you're having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
+
+For issues related to API calls, send the request body along with details related to the issue.
+
+In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
+* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
