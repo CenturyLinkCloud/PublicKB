@@ -31,7 +31,7 @@ The heart of the CenturyLink Cloud Platform is the ability to create and manage 
     * CPU, RAM & Storage up to [the platform maximums](../Servers/cloud-server-instance-size-and-performance.md). Virtual server configurations can be modified after deployment.
     * Enable a [CPU autoscale](../General/Autoscale/creating-and-applying-autoscale-policies.md) policy if desired.
     * Select a [Network](../Network/creating-and-deleting-vlans.md) for your virtual machine.
-    * Set a primary and secondary dns server.
+    * Set a primary and secondary dns server. (CenturyLink provides the following default DNS servers: 172.17.1.26 and 172.17.1.27)
     * Enable a Time to Live (TTL) if desired for your virtual machine to be destroyed.
 
     ![create server resources](../images/creating-a-new-enterprise-cloud-server-03.png)

@@ -1,10 +1,12 @@
-{{{ "title": "Using Google Deployment Manager with Cloud Application Manager",
+{{{ "title": "Google Deployment Manager Template Boxes",
 "date": "11-29-2018",
 "author": "Dénes Pál",
 "attachments": [],
 "contentIsHTML": false,
-"keywords": ["google deployment manager", "template box", "cloud application manager", "deployment templates", "cam"]
+"keywords": ["google deployment manager", "template box", "cloud application manager", "deployment templates", "cam", "alm", "application lifecycle management"]
 }}}
+
+### Using Google Deployment Manager with Cloud Application Manager
 
 **In this article:**
 
