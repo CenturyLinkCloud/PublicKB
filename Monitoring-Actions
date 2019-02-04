@@ -35,7 +35,7 @@ All users with Cloud Application Manager access.
 
 * Access to Cloud Application Manager Monitoring site, [Monitoring site](https://monitoring.cam.ctl.io/).
 * The CAM account used must have User or higher permissions to the workspace in order to modify Actions. 
-
+*
 
 ### Action Details
 
@@ -48,18 +48,36 @@ The Actions feature within the Cloud Application Manager's Monitoring site allow
 ### Configure Actions
 
 After selecting the Actions tab from the left hand navigation bar, the Actions 
+1. Click on the Actions tab from the left hand Navigation bar
+2. Next, click "New" to create a new Action
+3. Select your Action type (CTL Netcool, Slack, or Webhook) and follow the prompts to configure the Action
+4. Save Action
+5. Select or Create a Policy to apply the Action 
 
 
+**Netcool Actions**
+For Netcool Actions you will be required to add a Description of the Action as well as selecting the Scope and Agents to be configured with the Action.
+You have the option to enable the Action now or unselect to enable at a later time. 
+Lastly, you'll need to enter the Manager and click **Save Action**.
 
+**Slack Actions**
+For Slack Ations you will need to first need to setup a Slack App prior configuring this Action in the Monitoring Site.
+Incoming-Webhook URL (https://cl-cloud.slack.com/apps/A0F7XDUAZ-incoming-webhooks)
 
+Note the Slack options to send an alert to a specific channel, to you directly, or create a new channel. 
+Once you have completed the Integrations Settings in Slack, you'll need to copy the Webhook URL from Slack in order to complete the Slack Action Type setup. 
 
+On the Slack Action Type Configuration Screen you will be required to add a Description of the Action as well as selecting the Scope and Agents to be configured with the Action. 
+You have the option to enable the Action now or unselect to enable at a later time. Next you'll need to enter the Webhool URL from Slack. There are additional optional configurations such as the Icon URL, Slack Bot Name, Slack Channel, and Custom Slack Icon (Emoji Icon.)
+Click **Save Action** to complete the new Action type.
 
-### Contacting Cloud Application Manager Support
+**Webhool Actions**
+For Webhook Ations you may need to set up a URL on a server to receive incoming messages prior to configuring this Action in the Monitoring Site.
 
-We're sorry you're having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
+Once you have setup the URL on your server, you'll need to copy the Webhook URL in order to complete the Action Type setup. 
 
-For issues related to API calls, send the request body along with details related to the issue.
+On the Webhook Action Type Configuration Screen you will be required to add a Description of the Action as well as selecting the Scope and Agents to be configured with the Action. 
+You have the option to enable the Action now or unselect to enable at a later time. Next you'll need to enter the Webhool URL.
+Click **Save Action** to complete the new Action type.
 
-In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
-* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+Policy 
