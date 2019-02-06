@@ -57,7 +57,7 @@ Customize policies to support specific deployment scenarios. For example, you ma
 
     * [CenturyLink Cloud](../Deploying Anywhere/using-centurylink-cloud.md)
     * [CenturyLink DCC](../Deploying Anywhere/using-dcc.md)
-    * [CenturyLink Private Cloud on VMware Cloud Foundation](https://www.ctl.io/knowledge-base/centurylink-private-cloud-on-vmware-cloud-foundation/)
+    * [CenturyLink Private Cloud on VMware Cloud Foundation](../Deploying Anywhere/using-private-cloud-on-vmware-cloud-foundation.md)
     * [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md)
     * Amazon Web Services GovCloud (Same documentation as [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md))
     * [CloudStack](../Deploying Anywhere/using-cloudstack.md)
@@ -71,6 +71,8 @@ Customize policies to support specific deployment scenarios. For example, you ma
     * [VMware vCenter](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md)
 
     **Note:** If you’re deploying to public cloud providers like AWS or Google Compute, you’ll most likely be charged by the cloud provider for the virtual infrastructure you provision. Familiarize yourself with their pricing model as Cloud Application Manager assumes no responsibility for costs incurred.
+
+    **Note:** Instance Protection Flags will prevent the instance to be manually shut-down or terminated if enabled. They will be inherited in any instance deployed through this Deployment Policy box. [More information about Instance Protection flags](../Deploying Anywhere/deploying-managing-instances.md)
 
 ### Give Access to the Policy
 
