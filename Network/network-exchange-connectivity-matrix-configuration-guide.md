@@ -1,7 +1,7 @@
 {{{
   "title": "Network Exchange Availability Matrix and Configuration Guide",
   "date": "2-11-2019",
-  "author": "Marco Paolillo",
+  "author": "Jason Holland",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
