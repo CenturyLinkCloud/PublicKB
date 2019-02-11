@@ -36,4 +36,4 @@ A: DDOS mitigation services are not included in the standard platform services. 
 
 **Q: Are there other CenturyLink services available to provide a more robust security posture on the platform?**
 
-A: Yes, CenturyLink offers a wide range of [DDOS Mitigation](http://www.centurylink.com/business/security/ddos-mitigation-service.html), [IPS](https://www.ctl.io/intrusion-prevention-service/) and other network security services available.  Customers should contact a CenturyLink sales resource to review add-on security products.
+A: Yes, CenturyLink offers a wide range of [DDOS Mitigation](https://www.centurylink.com/business/security/ddos-and-web-application.html), [IPS](https://www.ctl.io/intrusion-prevention-service/) and other network security services available.  Customers should contact a CenturyLink sales resource to review add-on security products.
