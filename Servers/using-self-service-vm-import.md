@@ -37,3 +37,4 @@
 
 10. Upon successful import, your VM will appear in your chosen data center and group location within a few hours.
   * **Note**: Exact timing for the availability of your new VM in the Control Portal depends on several factors, so there is not standard availability time for imported VMs.
+  * **Note**:If your OVA import fails with any of the following errros: "Invalid Ovf manifest entry", "The OVF package is invalid and cannot be deployed" or "The following manifest file entry (line 1) is invalid: SHA256 (xxxxxxx.ovf)" please see the following article for resolution: https://kb.vmware.com/s/article/2151537.
