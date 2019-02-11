@@ -76,3 +76,6 @@
 
 <p>Q: &nbsp;What is the Source IP time-out value?</p>
 <p>A: &nbsp;The Time-out value is 2 minutes</p>
+
+<p>Q: &nbsp;How many load balancer pools may I deploy?</p>
+<p>A: &nbsp;5 be default.  More can be alloted by contacting help@ctl.io.</p>
