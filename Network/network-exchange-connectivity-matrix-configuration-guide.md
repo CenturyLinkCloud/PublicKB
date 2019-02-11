@@ -1,6 +1,6 @@
 {{{
   "title": "Network Exchange Availability Matrix and Configuration Guide",
-  "date": "10-05-2018",
+  "date": "2-11-2019",
   "author": "Marco Paolillo",
   "attachments": [],
   "related-products" : [],
@@ -12,19 +12,19 @@
 
 The table, below, documents the metropolitan areas where Network Exchange is offered and the type and identity of Endpoints that are available there for inclusion into an Exchange. Please note any constraints in the following section.
 
-Region|Metro Area|Colocation/<br>Dedicated<br>Access|Managed<br>Hosting<br>via Han|CenturyLink<br>Cloud|CenturyLink<br>Private Cloud<br>on VMWare<br>Cloud Foundation|
+Region|Metro Area|Colocation/<br>Dedicated<br>Access|Managed<br>Hosting<br>via Han|CenturyLink<br>Cloud|CenturyLink<br>Private Cloud<br>on VMWare<br>Cloud Foundation|AWS|IQ+
 --------|---------|---------------------------|---------------|-----------------|----------------
-North<br>America|Chicago, IL|CH3|CH3|IL1|CH3
-North<br>America|Santa Clara, CA|SC8<br>SC9|SC8<br>SC9|UC1|SC9
-North<br>America|Seattle, WA|SE2|SE2|WA1
-North<br>America|Sterling, VA|DC2<br>DC3<br>DC4|DC2<br>DC3<br>DC4|VA1|DC3<br>DC4
-North<br>America|Toronto, CA|TR1|TR1|CA3
-North<br>America|Weehawken, NJ|NJ2<br>NJ2X|NJ2<br>NJ2X|NY1|NJ2
-Europe|Frankfurt, DE|FR6|FR6|DE1<br>DE3
-Europe|London, UK (Reading)|LO6|LO6|GB1|LO6
-Europoe|London, UK (Slough)|LO1|LO1|GB3|LO1
-Asia<br>Pacific|Singapore, SG|SG2|SG2|SG1|SG2
-Asia<br>Pacific|Sydney, AU|SY7|SY7|AU1
+North<br>America|Chicago, IL|CH3|CH3|IL1|CH3|CH3|CH3
+North<br>America|Santa Clara, CA|SC8<br>SC9|SC8<br>SC9|UC1|SC9|SC8<br>SC9|SC8<br>SC9
+North<br>America|Seattle, WA|SE2|SE2|WA1||SE2
+North<br>America|Sterling, VA|DC2<br>DC3<br>DC4|DC2<br>DC3<br>DC4|VA1|DC3<br>DC4|DC2<br>DC3<br>DC4|DC2<br>DC3<br>DC4
+North<br>America|Toronto, CA|TR1|TR1|CA3|||TR1
+North<br>America|Weehawken, NJ|NJ2<br>NJ2X|NJ2<br>NJ2X|NY1|NJ2|NJ2<br>NJ2X|NJ2<br>NJ2X
+Europe|Frankfurt, DE|FR6|FR6|DE1<br>DE3|||FR6
+Europe|London, UK (Reading)|LO6|LO6|GB1|LO6||L06
+Europoe|London, UK (Slough)|LO1|LO1|GB3|LO1|L01|L01
+Asia<br>Pacific|Singapore, SG|SG2|SG2|SG1|SG2||SG2
+Asia<br>Pacific|Sydney, AU|SY7|SY7|AU1|||SY7
 
 ### Configuration Guide
 
