@@ -33,7 +33,7 @@ Please take a look at the link below to download the latest available release
 * [Ubuntu-16.vhdx](https://download.safehaven.ctl.io/SH-5.0.0/Ubuntu-16.vhdx): Hyper-V image for SRN/CMS appliances in a private Hyper-V envrionment
 * [Debian Package for CMS/SRN](https://download.safehaven.ctl.io/SH-5.1.4/safehaven-5.1.4.deb): to be used in the cluster installer
 * [GUI Package](https://download.safehaven.ctl.io/SH-5.1.4/SafeHavenConsole-5.1.4.zip): zip file containing the JRE, runs on any Windows platform
-  * [SafeHavenClient.5.1.3_win64.jar](https://download.safehaven.ctl.io/SH-5.1.4/SafeHavenClient.5.1.4_win64.jar): the Java application that requires an existing 64bit JRE-8 to run on a Windows OS
+  * [SafeHavenClient.5.1.4_win64.jar](https://download.safehaven.ctl.io/SH-5.1.4/SafeHavenClient.5.1.4_win64.jar): the Java application that requires an existing 64bit JRE-8 to run on a Windows OS
 * Windows Downloads:
   * [Driver Installer](https://download.safehaven.ctl.io/SH-5.1.4/safehaven_windows_driver-5.1.4.exe)
   * [MakeStub.exe](https://download.safehaven.ctl.io/SH-5.1.4/MakeStub-5.1.4.exe)
