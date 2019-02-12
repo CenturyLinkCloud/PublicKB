@@ -3,8 +3,7 @@
   "date": "08-07-2018",
   "author": "Shi Jin",
   "attachments": [],
-  "contentIsHTML": false,
-  "sticky": true
+  "contentIsHTML": false
 }}}
 
 ### Release Notes

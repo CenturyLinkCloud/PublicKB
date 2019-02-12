@@ -14,6 +14,7 @@
 * [Registering Your Microsoft Azure Subscription (ARM) in Cloud Application Manager](#registering-your-microsoft-azure-subscription-arm-in-cloud-application-manager)
 * [Deploying Instances in Azure](#deploying-instances-in-azure)
 * [Registering Existing Instances from your Azure Account](#registering-existing-instances-from-your-azure-account)
+* [Azure Native Resources](#azure-native-resources)
 * [Shutdown and Terminate Instances in Azure](#shutdown-and-terminate-instances-in-azure)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
@@ -156,6 +157,23 @@ On the other hand, you could remove it from available images using the "Trash" i
 
 ![Microsoft Azure - Delete OS image](../../images/cloud-application-manager/microsoft-azure/delete-os-image-11.png)
 
+Some publishers require that you accept their own terms and conditions before you deploy their images from Azure Marletplace. These terms may be accepted directly on the Azure portal after a first deployment, so they will appear as already approved if the image is added to CAM after that. The terms apply whether you deploy the image as an individual CAM instance or though an [ARM template](#microsoft-azure-arm-template-deployment-options).
+
+Images with required, not yet accepted legal terms will have an icon and the text *not accepted* next to their description.
+
+![Microsoft Azure - Marketplace image with pending legal terms](../../images/cloud-application-manager/microsoft-azure/os-image-unaccepted-terms.png)
+
+To accept the legal terms, click on the icon and review the terms on the dialog (you may need to download a file containing the terms). If you decide to accept the terms, click on the checkbox, then click **Accept**.
+
+![Microsoft Azure - Accept publisher terms dialog](../../images/cloud-application-manager/microsoft-azure/os-image-accept-terms-dialog.png)
+
+Once the legal terms are accepted, a green check will appear next to the image description.
+
+![Microsoft Azure - Marketplace image with approved legal terms](../../images/cloud-application-manager/microsoft-azure/os-image-accepted-terms.png)
+
+Removing these images does not revert the agreement. If they are later re-added to CAM, they will show the status of the agreement at that point.
+
+
 #### Microsoft Azure Compute Deployment Options
 
 To deploy a virtual machine with compute services you can edit one of windows or RHEL policy boxes or create a new one. Then you can save your changes and click **Deploy**.
@@ -278,7 +296,41 @@ As part of the result of synchronization process you can find a list of availabl
 
 ![Microsoft Azure - Available instances](../../images/cloud-application-manager/microsoft-azure/available-instances-9.png)
 
-We strongly recommend synchronize your Azure provider before you try to register the virtual machine. This due to such instance may be registered by another user before you try to register it. This way you can avoid this kind of problems.
+You should first synchronize your Azure provider before trying to register the virtual machine in order to get the current available instances that can be registered along with their statuses.
+
+### Azure Native Resources
+
+After the synchronization process, you will also find in the Instances page a list of Azure resources that already exist in your account. You can also register virtual machine type instances from here.
+
+![Microsoft Azure - Unregistered instances](../../images/cloud-application-manager/microsoft-azure/unregistered-instances.png)
+
+These resources can be filtered by the following types and subtypes:
+
+* **Compute**
+  * ScaleSet
+  * Virtual machine
+* **Network**
+  * Load balancer
+  * Security groups
+  * Network interface
+  * Virtual networks
+  * IP address
+  * VPN
+  * Application gateway
+  * Local gateway
+  * Express gateway
+* **Storage**
+  * File
+  * BLOB
+  * Table
+  * Queue
+* **Database**
+  * Sql Server
+  * Managed Sql Server
+  * MySQL
+  * PostgreSQL
+  * CosmosDB     
+
 
 ### Shutdown and Terminate Instances in Azure
 

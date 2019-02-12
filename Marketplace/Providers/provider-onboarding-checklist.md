@@ -1,6 +1,6 @@
 {{{
 "title": "Marketplace Onboarding Checklist",
-"date": "12-07-2017",
+"date": "01-01-2019",
 "author": "Brandy Smith",
 "attachments": [],
 "contentIsHTML": false
@@ -16,9 +16,7 @@ The CenturyLink Marketplace allows customers to purchase software from an extens
 
 * There is no cost associated with creating or maintaining your account.
 
-* You will immediately receive a $500 credit.
-
-* Additionally, as part of the Marketplace Provider program, you will receive an additional $2,000/month stipend for the creation & maintenance of your solution on CenturyLink Cloud.
+* Once the MPA has been agreed to by a Provider representative, the CenturyLink Cloud (CLC) account receive a Marketplace Provider credit to cover any integration costs accrued on the account.
 
 * You will be emailed your username & password for CenturyLink Cloud. You must login into the CenturyLink Cloud Portal to change your password.
 
@@ -48,7 +46,7 @@ We update the guide monthly with any updates that have been released. If for som
 
 * Once the product content has been completed, you can request your product to be published. This option is at the bottom of the product page on the Provider Portal.
 
-* Products will only be published once the technical and billing integration is completed, tested, and approved by a CenturyLink Marketplace team member.
+* Products will only be published once the technical and billing integration is completed, tested, and approved by a CenturyLink Marketplace team member. Product creation is done in the staging environment of the Provider Portal to allow for testing. To create products you will log into the staging environment here: https://provider-portal.staging.ctl.io/#/login. You will login with your same CenturyLink Cloud credentials for both production and staging.
 
 Technical and billing portions of the integration with the Marketplace can vary widely based on provider & are not included in this checklist. Members of the CenturyLink Platform Enablement Team will work with the provider’s technical teams to design the integrations.
 

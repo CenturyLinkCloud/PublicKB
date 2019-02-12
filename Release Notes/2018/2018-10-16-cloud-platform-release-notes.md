@@ -14,7 +14,7 @@
 
 **Context switching enhancements**
 
-We have made enhancements to the context switching behavior to ease management and navigation across sites. When an administrator logs in to Management site, the default scope will be Organization scope. Typically, this role is more focused on managing organization-wide settings, so users will have all these settings accessible whenever they log in. Other user roles will still land in their default personal workspace context. Also, the current context is kept when users switch between Management and Application sites, so users will maintain the same context scope they were working on when they switch between Application site and Managed site.
+We have made enhancements to the context switching behavior to ease management and navigation across sites. When an administrator logs in to [Management site](https://account.cam.ctl.io/#/overview), the default scope will be Organization scope. Typically, this role is more focused on managing organization-wide settings, so users will have all these settings accessible whenever they log in. Other user roles will still land in their default personal workspace context. Also, the current context is kept when users switch between Management and Applications sites, so users will maintain the same context scope they were working on when they switch between [Applications site](https://cam.ctl.io/#/dashboard) and [Management site](https://account.cam.ctl.io/#/overview).
 
 #### [Cloud Optimization](https://www.ctl.io/cloud-application-manager/cloud-optimization/)
 

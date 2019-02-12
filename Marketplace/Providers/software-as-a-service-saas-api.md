@@ -1,13 +1,13 @@
 {{{
  "title": "Software as a Service (SaaS) Integration API",
- "date": "09-26-2017",
+ "date": "01-01-2019",
  "author": "Jim Phillips",
  "attachments": [],
- "contentIsHTML": false
+ "contentIsHTML": false,
+ "sticky": true
  }}}
 
-
-### Overview
+ ### Overview
 
 CenturyLink has created multiple opportunities for software vendors to integrate with the Cloud Marketplace. Each of these methods is designed for the provider to be as independent as possible as they work through the integration process.  To be included in the Cloud Marketplace, a SaaS provider must implement one of these methods. During the Marketplace Provider Onboarding Program, we will discuss which integration type is the best fit.
 
@@ -68,7 +68,13 @@ All returned data will be stored for future reference.
 
 ##### Delayed Billing Start
 
-Some providers require manual work before a customer begins use of the products.  To accommodate this, we have implemented delayed billing options, available for each defined SKU.  The options are to start billing immediately, at a specified time, or manually.  Most SKUs will start billing immediately (upon the customer purchase).
+Some providers require manual work before a customer begins use of the products.  To accommodate this, we have implemented delayed billing options, available for each defined SKU. You must notify a CenturyLink Marketplace representative of which billing model you want assigned to each SKU.
+
+The options are to start billing are:
+ * Immediately
+ * Expected Delay -- Billing starts with the set delay. The provider will be able to adjust the actual billing start date through the 'Deployments' page.
+ * Scheduled Next Month -- Billing starts on the 1 of the month following the purchase date. The provider will be able to adjust the actual billing start date through the 'Deployments' page.
+ * Manually -- The provider must proactively start billing manually through the 'Deployments' page, or an API call.
 
 SKUs with a delayed timeframe (e.g. 3 days or 1 week), will automatically start billing at the scheduled time.  You will be able to update the scheduled time through the provider portal in case you experience delays.
 
@@ -107,7 +113,7 @@ An example JSON payload the ```/start-billing/``` API is provided below.
 
 ##### Usage-Based Product SKUs
 
-Some of your products may include [Usage-based billing](usage-based-billing.md).  Upon provisioning, you are required to track each customer's usage and report it to CenturyLink by the end of each month.  You may report usage for a customer at any time during the month, but keep in mind that every usage report sent is added to the customer's billing.  As such, it is **highly recommended** that you send a single month's usage at the end of each month for each customer.
+Some of your products may include Usage-based billing.  Upon provisioning, you are required to track each customer's usage and report it to CenturyLink by the end of each month.  You may report usage for a customer at any time during the month, but keep in mind that every usage report sent is added to the customer's billing.  As such, it is **highly recommended** that you send a single month's usage at the end of each month for each customer.
 
 The cutoff time to bill the customer for the current month is 3:45pm (CST) on the last day of each month.  Any usages reported after 6:00pm (CST) on the last day of the month will be applied to the next month's bill for the customer.  To allow time for processing, Please do not send usage reporting between 3:45pm (CST) and 6:00pm (CST) on the last day of the month.  
 

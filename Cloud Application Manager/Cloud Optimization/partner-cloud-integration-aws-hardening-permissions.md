@@ -1,11 +1,11 @@
 {{{
   "title": "Partner Cloud Integration: CenturyLink Permissions and Access for Optimized AWS Accounts",
-  "date": "10-11-18",
+  "date": "12-04-18",
   "author": "Benjamin Swoboda",
   "attachments": [],
   "contentIsHTML": false
 }}}
-
+ 
 ### Overview
 
 As discussed in the [Service Guide](https://www.ctl.io/legal/cloud-application-manager/service-guide/), CenturyLink will provide tools and Operations Staff permissions for Amazon Web Services (AWS) accounts that we harden. The Service Guide provides a high-level overview of those permissions, describing the groups requiring permissions and the type of permissions they are expected to have.
@@ -53,7 +53,23 @@ Overrides can be be performed by customer users with appropriate permissions or 
 Change Requests may result in exceptions to hardening. Please read the "Change Request" sections below. If you submit one and it is accepted, CAM will not be able to overwrite those changes as a result of future hardening attempts.
 
 
+**Customer Admin User / Group**
+* **IAM GroupName**: `yourCompanyName`Group
+* **Admin User's IAM Name**: `yourCompanyName`Admin
+* **Attached Policy Names**: CTLCustomerPolicy, AdministratorAccess
+* **Targeted groups/tools/users**: The first Administrator who created a new AWS account via Cloud Application Manager, plus any further users placed in that group.
+* **Intent**: To be able to provide the first administrator as many permissions as possible so that they can begin to set up the new account.
+* **Change Requests**: The policies will be applied by default to this group for any new accounts created by CenturyLink. If you would like  to add further restrictions to the group and the users it contains, the customer retains all permissions to do so.
+* **Policy Summary**
+- Restricts the ability to link or unlink from an organization.
+- Restricts deleting CenturyLink-defined IAM policies, roles and additional sundry functions (such as MFA/SAML deletion).
+- Billing/Usage/Budgeting aspects of the portal are restricted to prevent confusion due to CenturyLink consolidated billing. (Optimized accounts have access to this data through Cloud Application Manager's Analytics tools.)
+- Full administrator access to all other aspects of the account which are not restricted by other policies.
+
+
+
 **Customer Role**
+* **Role Name**: CTLCustomerRole
 * **Attached Policy Names**: CTLCustomerPolicy
 * **Targeted groups/tools/users**: Any customer user. This policy is applied to all customer IAM Groups.
 * **Intent**: To be added to existing customer IAM groups or given to new customer groups. This policy allows the user to manipulate all services within AWS, but restricts certain views and actions that would confuse or cause conflict in an Optimized account.
@@ -63,20 +79,20 @@ Change Requests may result in exceptions to hardening. Please read the "Change R
   - Restricts deleting CenturyLink-defined IAM policies, roles and additional sundry functions (such as MFA/SAML deletion).
   - Billing/Usage/Budgeting aspects of the portal are restricted to prevent confusion due to CenturyLink consolidated billing. (Optimized accounts have access to this data through Cloud Application Manager's Analytics tools.)
 
-  **CenturyLink Operations Role**
-  * **Attached Policy Names**: ReadOnlyAccess, CTLOperationsPolicy, CAMOpsOverridePolicy
-  * **Targeted groups/tools/users**: CenturyLink Support Staff and tools
-  * **Intent**: To allow Operations rights of least privilege, with flexibility
-  * **Change Requests**: Both the customer and Operations can modify CAMOpsOverridePolicy to change permissions and restrictions of Operations
-  * **Policy Summary**
+**CenturyLink Operations Role**
+* **Role Name**: CTLOperationsRole
+* **Attached Policy Names**: ReadOnlyAccess, CTLOperationsPolicy, CAMOpsOverridePolicy
+* **Targeted groups/tools/users**: CenturyLink Support Staff and tools
+* **Intent**: To allow Operations rights of least privilege, with flexibility
+* **Change Requests**: Both the customer and Operations can modify CAMOpsOverridePolicy to change permissions and restrictions of Operations
+* **Policy Summary**
   - ReadOnlyAccess: Allows ReadOnlyAccess
   - CTLOperationsPolicy: Allows ability to create and update most IAM concepts while preventing them from making changes to other IAM dependencies of CAM.
   - CAMOpsOverridePolicy: See "Hardening, Re-Hardening, Overrides, and Exceptions" above.
 
 
-
-
 **CenturyLink Developer Role**
+* **Role Name**: CTLDeveloperRole
 * **Attached Policy Names**: CTLDeveloperPolicy
 * **Role Name**: CTLDeveloperRole
 * **Targeted groups/tools/users**:Cloud Application Manager's Optimization tool. A limited number of CenturyLink developers have access to the tool.
@@ -86,6 +102,7 @@ Change Requests may result in exceptions to hardening. Please read the "Change R
   - Full access
 
 **CenturyLink Lambda Role**
+* **Role Name**: CTLAccountControlsLambdaRole
 * **Attached Policy Names**: CTLAccountControlsLambdaPolicy
 * **Targeted groups/tools/users**: Newly created IAM users that are not in IAM Groups
 * **Intent**: Our hardening applies continuous auto-remediation steps to ensure your accounts are protected. IAM users who are not placed within a group will have all their permissions removed, so it is recommended that you move all IAM users to an IAM group. Once they are placed in a group, permissions can be applied again. Newly created IAM groups will automatically have the CTLCustomerPolicy applied. These steps are taken to ensure a seamless experience between Cloud Application Manager and your AWS account. This also allows CenturyLink to ensure that your account continues to meet best practice security guidelines.
@@ -95,6 +112,7 @@ Change Requests may result in exceptions to hardening. Please read the "Change R
 
 
 **CenturyLink Analytics Role**
+* **Role Name**: CTLCloudOptimizationRole
 * **Policy Name**: CTLCloudOptimization
 * **Targeted groups/tools/users**: Cloud Optimization and Analytics tool
 * **Intent**: To enable Analytics tools and allow customer users transparency into usage and best practices.
@@ -103,6 +121,7 @@ Change Requests may result in exceptions to hardening. Please read the "Change R
   - Get, List, and Describe capabilities for AWS Certificate Manager, Cloud Formation, CloudFront, Cloud HSM, CloudSearch, CloutTrail, CloudWatch, Config, Data Pipeline, Direct Connect, Dynamo DB, EC2, ECS, Elasticache, Elastic Beanstalk, EFS, ELB, Elastic Map Reduce, Elastisearch, Glacier, IAM, Kinesis, key Management Service, Lambda, RDS, Redshift, Route 53, S3, Simple Email Service, Simple DB, Support, Simple Workflow Service, Simple Notification Service, Simple Queue Service, Storage Gateway, and Workspaces.
 
 **Cloud Application Manager Role**
+* **Role Name**: CTLCAMRole (Note that the difference in nomenclature from this one that is automatically applied and the one described when users create it manually for [the standard CAM policy](../Deploying Anywhere/using-your-aws-account.md).)
 * **Attached Policy Names**: CTLCAMPolicy, ReadOnlyAccess, CAMOverridePolicy
 * **Targeted groups/tools/users**: Cloud Application Manager, Monitoring Service
 * **Intent**: To permit Cloud Application Manager's [application lifecycle management (ALM)](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) capabilities and to enable [Monitoring](../Monitoring/CAMMonitoringUI.md).
@@ -117,6 +136,7 @@ Change Requests may result in exceptions to hardening. Please read the "Change R
   - CAMOverridePolicy: See "Hardening, Re-Hardening, Overrides, and Exceptions" above.
 
 **Cloud Integration Admin Role**
+* **Role Name**: CTLCINTAdminRole
 * **Attached Policy Names**: CTLCustNoSupportPolicy, CTLCAMPolicy, CAMOverridePolicy, CTLCustomerPolicy, ReadOnlyAccess
 * **Targeted groups/tools/users**: Administrator users of CAM Optimized Providers.
 * **Intent**: To permit these users as much freedom as possible.
@@ -128,6 +148,7 @@ Change Requests may result in exceptions to hardening. Please read the "Change R
   - CTLCAMPolicy: See "Cloud Application Manager Role" above
 
 **CAM User Read-only Role**
+* **Role Name**: CTLCAMUserReadRole
 * **Attached Policy Names**: ReadOnlyAccess
 * **Targeted groups/tools/users**: Users of CAM for whom providers are shared, but administrative access is not given. This is not specific to Optimized providers. When providers are Optimized, the Cloud Integration Read-Only Role is used.
 * **Intent**: To permit these users to see but not alter any resources in the AWS Console when they click the provider's "AWS Console" button
@@ -136,6 +157,7 @@ Change Requests may result in exceptions to hardening. Please read the "Change R
   - Read-only access.
 
 **Cloud Integration User Read-only Role**
+* **Role Name**: CTLCINTReadRole
 * **Attached Policy Names**: ReadOnlyAccess, CTLCustomerPolicy, CTLCustNoSupportPolicy
 * **Targeted groups/tools/users**: Users of CAM for whom Optimized providers are shared, but administrative access is not given.
 * **Intent**: To permit these users to see but not alter any resources in the AWS Console when they click the provider's "AWS Console" button
@@ -146,8 +168,8 @@ Change Requests may result in exceptions to hardening. Please read the "Change R
   - CTLCustNoSupportPolicy: Deny support permissions (please contact CenturyLink with support requests.)
 
 **CenturyLink Service Management Policy**
+* **Role Name**: CTLServiceManagementRole
 * **Policy Name**: CTLServiceManagmentPolicy
-* **Role Name**: CTLServiceManagmentRole
 * **Targeted groups/tools/users**: Service Management Staff
 * **Intent**:This is not an immediate part of any Optimization scenario but it is enabled by Cloud Application Manager's Account Optimization. Access to a customer's account via this role is only given to a CenturyLink representative when the customer has purchased Service Management from CenturyLink.
 * **Change Requests**: This policy is not currently activated by default, just created. If you need permissions changed, please submit a ticket describing the change you would like.

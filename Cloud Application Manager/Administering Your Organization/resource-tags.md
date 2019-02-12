@@ -1,12 +1,30 @@
 {{{
 "title": "Tag Instances",
-"date": "10-30-2017",
-"author": "",
+"date": "10-30-2018",
+"author": "Arya Roudi",
+"keywords": ["cam", "tags", "settings", "organization tag", "organization tag", "reporting"],
 "attachments": [],
 "contentIsHTML": false
 }}}
 
-### Tag Instances
+**In this article:**
+
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Preset or Custom Tags](#preset-or-custom-tags)
+* [Applying Tags for Your Organization](#applying-tags-for-your-organization)
+* [Reporting on Cloud Application Manager Tags](#reporting-on-cloud-application-manager-tags)
+* [Reporting on AWS](#reporting-on-aws)
+* [Reporting on Google Cloud](#reporting-on-google-cloud)
+* [Reporting on OpenStack](#reporting-on-openstack)
+* [Reporting on vSphere](#reporting-on-vsphere)
+* [Reporting on CloudStack](#reporting-on-cloudstack)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
+
+
+### Overview
+
 Tags give information about an instance deployed through Cloud Application Manager. They let you report on provider resources consumed by Cloud Application Manager users. They inform what box, provider, user, workspace, and such from Cloud Application Manager were involved in deploying an instance.
 
 As an Cloud Application Manager administrator, you get to apply 10 tags for your organization. From the [Settings](admin-overview.md), once you can add preset or custom tags, they’re applied to the provider when a user launches an instance to any public or private cloud such as AWS, vSphere, Google Cloud, Azure, OpenStack, and CloudStack. They are applied on instances launched in Linux, Windows, CloudFormation, and RDS services.
@@ -17,19 +35,23 @@ Cloud Application Manager supports tagging in the Enterprise Edition (SaaS & Vir
 
 In the Settings for your organization, you can add tags under Settings > Tags.
 
-### In this article
-* Preset or Custom Tags
-* Applying Tags for Your Organization
-* Reporting on Cloud Application Manager Tags
-   * AWS
-   * Google Cloud
-   * OpenStack
-   * vSphere
-   * CloudStack
+### Audience
+
+All users with Cloud Application Manager organization administrator access.
+
+### Prerequisites
+
+* Access to Cloud Application Manager, [Management site](https://account.cam.ctl.io/#/settings).
+
+* The user must be an Administrator of the organization in Cloud Application Manager.
+
+* The user should be at the organization level scope to access the Settings option in the left side menu.
+
 
 ### Preset or Custom Tags
 A tag consists of a key and a value. You can tag with a custom or preset value.
-![admin-tags1.png](../../images/cloud-application-manager/admin-tags1.png)
+
+![Setting Add Tags](../../images/cloud-application-manager/admin-tags1.png)
 
 * **Custom** - Enter any value that’s meaningful to categorize instances, like department name.
 * **Preset** - Choose from preset values such as box name, environment, and so on. Preset values give specific information about an instance. Choose a value from this table.
@@ -71,7 +93,7 @@ One of the chief benefits of tagging is that you can report and analyze how Clou
 
 Refer to the following sections to view or manage the tags applied on a box instance launched in a specific cloud provider.
 
-### AWS
+### Reporting on AWS
 In addition to preset and custom tags, Cloud Application Manager tags instances with CloudFormation labels. Tags currently don’t apply to Elastic Block Store, and Virtual Private Cloud instances. To report on tagged instances deployed in AWS, see [this article](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/usage-reports.html#usage-reports-prereqs).
 
 **Steps**
@@ -82,9 +104,10 @@ In addition to preset and custom tags, Cloud Application Manager tags instances 
 3. Click **Services > EC2 > Instances.**
 
 4. Select an instance and click the **Tags** tab to manage the applied tags.
-   ![admin-tags3.png](../../images/cloud-application-manager/admin-tags3.png)
 
-### Google Cloud
+   ![AWS Edit Tags In Instances](../../images/cloud-application-manager/admin-tags3.png)
+
+### Reporting on Google Cloud
 
 **Steps**
 1. [Log in to the Google Cloud Console](https://console.developers.google.com/).
@@ -92,9 +115,9 @@ In addition to preset and custom tags, Cloud Application Manager tags instances 
 2. Under projects, select the project where Cloud Application Manager instances are deployed.
 
 3. Under Compute Engine, click **VM instances** and manage the tags applied under Custom metadata.
-   ![admin-tags4.png](../../images/cloud-application-manager/admin-tags4.png)
+   ![Google Compute Engine VM Instances](../../images/cloud-application-manager/admin-tags4.png)
 
-### OpenStack
+### Reporting on OpenStack
 
 **Steps**
 1. Log in to your OpenStack dashboard.
@@ -102,9 +125,10 @@ In addition to preset and custom tags, Cloud Application Manager tags instances 
 2. Select the project to which Cloud Application Manager instances are deployed.
 
 3. Under **Instances**, select the instance whose tags you want to view. The tags are listed under Meta.
-   ![admin-tags5.png](../../images/cloud-application-manager/admin-tags5.png)
 
-### vSphere
+   ![Openstack Manage Tag](../../images/cloud-application-manager/admin-tags5.png)
+
+### Reporting on vSphere
 
 **Steps**
 1. Log in to your VMware vSphere thin client for vCenter 5.0 or later.
@@ -112,9 +136,10 @@ In addition to preset and custom tags, Cloud Application Manager tags instances 
 2. Locate the virtual machine launched through Cloud Application Manager in vSphere. Use the Service ID of the instance in Cloud Application Manager to find it.
 
 3. Under **Custom Fields**, the tags applied to the instance are listed.
-   ![admin-tags6.png](../../images/cloud-application-manager/admin-tags6.png)
 
-### CloudStack
+   ![Add Tag Instance vSphere](../../images/cloud-application-manager/admin-tags6.png)
+
+### Reporting on CloudStack
 
 **Steps**
 1. Log in to your CloudStack management console.
@@ -122,7 +147,7 @@ In addition to preset and custom tags, Cloud Application Manager tags instances 
 2. Under Instances, select the instance launched through Cloud Application Manager. Use its Cloud Application Manager Service ID to find it.
 
 3. In the instance Details tab, scroll down to see the tags applied.
-   ![admin-tags7.png](../../images/cloud-application-manager/admin-tags7.png)
+   ![Create Tag In Cloudstack](../../images/cloud-application-manager/admin-tags7.png)
 
 ### Contacting Cloud Application Manager Support
 

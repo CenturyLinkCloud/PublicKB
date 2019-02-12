@@ -14,4 +14,4 @@ To get started simply navigate to the Monitoring tab in the Simple Backup UI, ad
 
 ![](../images/backup/monitoring/monitoring_email.png)
 
-We are currently working on monitoring notifications through web-hooks, so keep an eye on our release notes and this article for more information when it becomes available!
+We also have realtime monitoring available through Webhooks. Please see our [Webhooks KB article](webhooks.md) for more information.
