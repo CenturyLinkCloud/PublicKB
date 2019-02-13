@@ -9,7 +9,7 @@
 ### Overview
 This process details steps one would perform to manually configure AWS accounts for Cloud Application Manager Analytics functionality. These steps are not typically necessary. Automation will deliver these steps when Managed Services Anywhere, Optimization, or Bring-Your-Own Cloud Analytics are enabled.
 
-The following process automates the configuration of your AWS account for Cloud Application Manager Analytics functionality by using native AWS CloudFormation functionality. You can inspect the code snippet [here](https://s3.us-east-2.amazonaws.com/ctl-cloudoptimization/CTLCloudOptimizationIAMPolicy.template.json).
+The following process automates the configuration of your AWS account for Cloud Application Manager Analytics functionality by using native AWS CloudFormation functionality. 
 
 If you prefer to set-up your environment manually, you can find those setup instructions [here](CloudApplicationManagerAnalyticsAWSSetup-Manual.md).  
 
