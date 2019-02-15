@@ -1,0 +1,277 @@
+Using the BitBucket Juniper SRX config repository
+
+Audience
+
+Customer Care and Network Engineers
+
+Prerequisites
+
+Slack account
+Connection to T3N VPN
+TACACS Account
+
+Overview
+
+Every 5 minutes the Juniper SRX config is checked by the Slack ToolBot code. If the Slack Toolbot detects a SRX config update or cluster status change, it sends a Slack message with the commit details to the channel #cc-net-monitor and saves the changes in an XML file on the BitBucket server website. Careful review of the config file changes can allow you to reconstruct a Juniper SRX root cause or possible bug. You can also view the Juniper SRX config change timeline, and optionally restore the config file to a prior date and time.
+
+View Juniper SRX Config Repository Messages
+Step 1
+In the Slack Channel #cc-net-monitor determine the date and time of the Juniper SRX configuration change you wish to view.
+
+Step 2
+Click on the red id link # in a Slack message (you must be connected to T3N VPN to access the SRX config BitBucket repository website) to go to the exact configuration change for the timestamp noted, this will open the Juniper SRX BitBucket website and show you the text of that specific config change at the time it was noted in the repository.
+
+*Note the repository website will display the config file changes in the form of a unix diff (showing the text before and after the change).
+
+Example of a commit Slack Message:
+
+inculert APP [9:34 PM]
+ad0bb7f61ac ptrw committed to VA2-EFW on 2019-02-10 05:31:23 UTC
+
+Example of the commit message details. The red text with the "-" is the config file lines that were removed, the "+" are the config file lines that were added to the SRX config:
+
+*Also note Juniper SRX Alarms are captured via ToolBot running the 'show chassis cluster status' command, so when a chassis status alarm occurs on the Juniper SRX it will also be logged to the BitBucket repository and to the Slack channel as a message.
+
+Example of Juiper SRX Slack Alarm message:
+
+inculert APP [2:49 PM]
+f106b0b9e11 :warning: GB1-EFW system alarms change on 2019-02-08 22:49:15 UTC
+
+*The process to view the Juniper SRX Alarms is the same as viewing a Toolbot Juniper SRX commit Slack message above.
+
+Juniper Rollback Command (not recommended):
+
+Juniper Junos automatically archives the previous active configuration by design when a new change is commited. Junos will store up to 50 archive configurations. The archive feature is useful for trying to revert a recent configuration change on a Junos device. For example, if you suspect a recent VPN configuration change broke something on a Junos device VPN configuration, you could potentially restore the configuration archive. This is a common tool used in troubleshooting when you don't know what configuration change occured but you know it happened recently on this device. This process will revert the current active Juniper Junos configuration and restore an older archive of the configuration to the Juniper device.
+
+WARNING - The rollback command is not recommended and introduces a high probability the restored config will be missing configuration items. The fact the Juniper SRX config is updated very routinely via users and automation makes the rollback command process a very risky option. The rollback command should be a last resort and using it incorrectly can lead to an outage or broken Juniper SRX configuration. Please check with a Juniper SME before proceeding with the rollback command.
+
+For example, if the custom removed VPN Juniper configuration would look like this in the XML within the Slack messsage:
+
+<policy>
+<name>el1-azure-vpn5</name>
+<mode>main</mode>
+<proposals>c-p1-psk-aes256-g2-sha-28800</proposals>
+<pre-shared-key>
+<ascii-text>/* SECRET-DATA */</ascii-text>
+</pre-shared-key>
+</policy>
+
+<gateway>
+
+<name>el1-azure-vpn5</name>
+<ike-policy>el1-azure-vpn5</ike-policy>
+<address>40.68.37.246</address>
+<no-nat-traversal />
+<external-interface>reth3.998</external-interface>
+<version>v2-only</version>
+</gateway>
+
+<vpn>
+
+<name>el1-azure-vpn5</name>
+
+<bind-interface>st0.12</bind-interface>
+
+<ike>
+<gateway>el1-azure-vpn5</gateway>
+<proxy-identity>
+<local>10.60.77.0/24</local>
+<remote>172.16.24.0/21</remote>
+<service>any</service>
+</proxy-identity>
+<ipsec-policy>c-p2-esp-aes256-sha-3600-no</ipsec-policy>
+</ike>
+<establish-tunnels>immediately</establish-tunnels>
+</vpn>
+<security-zone>
+<name>el1-azure-vpn5</name>
+<interfaces>
+<name>st0.12</name>
+<host-inbound-traffic>
+<system-services>
+<name>ping</name>
+</system-services>
+<system-services>
+<name>traceroute</name>
+</system-services>
+</host-inbound-traffic>
+</interfaces>
+</security-zone>
+<filter>
+<name>el1-wan</name>
+<term>
+<name>1</name>
+<from>
+<source-address>
+<name>10.60.77.0/24</name>
+</source-address>
+<destination-address>
+<name>172.16.0.0/21</name>
+</destination-address>
+<destination-address>
+<name>172.16.16.0/21</name>
+</destination-address>
+<destination-address>
+<name>172.16.32.0/21</name>
+</destination-address>
+<destination-address>
+<name>172.16.72.0/21</name>
+</destination-address>
+<destination-address>
+<name>172.16.88.0/21</name>
+</destination-address>
+<destination-address>
+<name>172.16.112.0/21</name>
+</destination-address>
+<destination-address>
+<name>172.16.128.0/21</name>
+</destination-address>
+<destination-address>
+<name>172.16.24.0/21</name>
+</destination-address>
+</from>
+<then>
+<routing-instance>
+<routing-instance-name>el1-wan</routing-instance-name>
+</routing-instance>
+</then>
+</term>
+<term>
+<name>2</name>
+<from>
+<source-address>
+<name>10.60.77.0/24</name>
+</source-address>
+<destination-address>
+<name>172.16.8.0/21</name>
+</destination-address>
+</from>
+<then>
+<routing-instance>
+<routing-instance-name>el1-wan</routing-instance-name>
+</routing-instance>
+</then>
+</term>
+<term>
+<name>3</name>
+<then>
+<accept />
+</then>
+</term>
+</filter>
+To restore this config, you would run these commands:
+
+set interfaces st0 unit 34 family inet
+
+set security ike policy el1-azure-vpn5 mode main
+
+set security ike policy el1-azure-vpn5 proposals c-p1-psk-aes256-g2-sha-28800
+
+set security ike policy el1-azure-vpn5 pre-shared-key ascii-text "SECRET-DATA"
+
+set security ike gateway el1-azure-vpn5 ike-policy el1-azure-vpn5
+
+set security ike gateway el1-azure-vpn5 address 40.68.37.246
+
+set security ike gateway el1-azure-vpn5 dead-peer-detection
+
+set security ike gateway el1-azure-vpn5 no-nat-traversal
+
+set security ike gateway el1-azure-vpn5 external-interface reth3.998
+
+set security ipsec vpn el1-azure-vpn5 bind-interface st0.12
+
+set security ipsec vpn el1-azure-vpn5 ike gateway el1-azure-vpn5
+
+set security ipsec vpn el1-azure-vpn5 ike ipsec-policy c-p1-psk-aes256-g2-sha-28800
+
+set security ipsec vpn el1-azure-vpn5 traffic-selector cust-vpn-ts-1 local-ip 10.255.10.223/32
+
+set security ipsec vpn el1-azure-vpn5traffic-selector cust-vpn-ts-1 remote-ip 208.78.140.29/32
+
+set security ipsec vpn cust-vpn traffic-selector cust-vpn-ts-2 local-ip 10.255.10.229/32
+
+set security ipsec vpn cust-vpn traffic-selector cust-vpn-ts-2 remote-ip 208.78.140.29/32
+
+set security ipsec vpn cust-vpn traffic-selector cust-vpn-ts-3 local-ip 10.255.10.223/32
+
+set security ipsec vpn cust-vpn traffic-selector cust-vpn-ts-3 remote-ip 208.78.140.30/32
+
+set security ipsec vpn cust-vpn traffic-selector cust-vpn-ts-4 local-ip 10.255.10.229/32
+
+set security ipsec vpn cust-vpn traffic-selector cust-vpn-ts-4 remote-ip 208.78.140.30/32
+
+set security ipsec vpn cust-vpn establish-tunnels immediately
+
+set security nat static rule-set cust-vpn-nat from routing-instance cust-vpn
+
+set security nat static rule-set cust-vpn-nat rule cust-vpn-nat-1 match destination-address 10.255.10.229/32
+
+set security nat static rule-set cust-vpn-nat rule cust-vpn-nat-1 then static-nat prefix 10.127.224.14/32
+
+set security nat static rule-set cust-vpn-nat rule cust-vpn-nat-1 then static-nat prefix routing-instance default
+
+set security nat static rule-set cust-vpn-nat rule cust-vpn-nat-2 match destination-address 10.255.10.223/32
+
+set security nat static rule-set cust-vpn-nat rule cust-vpn-nat-2 then static-nat prefix 10.127.224.15/32
+
+set security nat static rule-set cust-vpn-nat rule cust-vpn-nat-2 then static-nat prefix routing-instance default
+
+set security policies from-zone cust to-zone cust-vpn policy cust-vpn-ob-1 match source-address 10.127.224.14/32
+
+set security policies from-zone cust to-zone cust-vpn policy cust-vpn-ob-1 match source-address 10.127.224.15/32
+
+set security policies from-zone cust to-zone cust-vpn policy cust-vpn-ob-1 match destination-address 208.78.140.29/32
+
+set security policies from-zone cust to-zone cust-vpn policy cust-vpn-ob-1 match destination-address 208.78.140.30/32
+
+set security policies from-zone cust to-zone cust-vpn policy cust-vpn-ob-1 match application any
+
+set security policies from-zone cust to-zone cust-vpn policy cust-vpn-ob-1 then permit
+
+set security policies from-zone cust-vpn to-zone cust policy cust-vpn-ib-1 match source-address 208.78.140.29/32
+
+set security policies from-zone cust-vpn to-zone cust policy cust-vpn-ib-1 match source-address 208.78.140.30/32
+
+set security policies from-zone cust-vpn to-zone cust policy cust-vpn-ib-1 match destination-address 10.127.224.14/32
+
+set security policies from-zone cust-vpn to-zone cust policy cust-vpn-ib-1 match destination-address 10.127.224.15/32
+
+set security policies from-zone cust-vpn to-zone cust policy cust-vpn-ib-1 match application any
+
+set security policies from-zone cust-vpn to-zone cust policy cust-vpn-ib-1 then permit
+
+set security zones security-zone cust-vpn interfaces st0.34 host-inbound-traffic system-services ping
+
+set security zones security-zone cust-vpn interfaces st0.34 host-inbound-traffic system-services traceroute
+
+set interfaces reth1 unit 2824 family inet filter input cust-vpn
+
+set firewall filter cust-vpn term 1 from destination-address 208.78.140.29/32
+
+set firewall filter cust-vpn term 1 from destination-address 208.78.140.30/32
+
+set firewall filter cust-vpn term 1 then routing-instance cust-vpn
+
+set firewall filter cust-vpn term 2 then accept
+
+set routing-instances cust-vpn instance-type virtual-router
+
+set routing-instances cust-vpn interface st0.34
+
+set routing-instances cust-vpn routing-options static route 208.78.140.29/32 next-hop st0.34
+
+set routing-instances cust-vpn routing-options static route 10.127.224.0/24 next-table inet.0
+
+set routing-instances cust-vpn routing-options static route 208.78.140.30/32 next-hop st0.34
+
+Reference links:
+
+The BitBucket Juniper SRX config repository is available via the T3N VPN on this internal website:
+http://ccbbs.t3n.dom/projects/net/repos/srx
+
+Toolbot SRX Clusters Configuration 
+https://support.ctl.io/hc/en-us/articles/360014032212-SRX-Clusters-Configurations
+
+Public SRX BitBucket website:
+http://ccbbs.t3n.dom/repos?visibility=public
