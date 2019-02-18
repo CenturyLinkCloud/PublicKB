@@ -1,5 +1,5 @@
 {{{
-"title": "Login and Quick Tour",
+"title": "Application site. Login and Quick Tour",
 "date": "09-01-2016",
 "author": "",
 "attachments": [],
@@ -18,7 +18,8 @@
 * [Quick tour](#quick-tour)
 
  ### Overview
- This article makes a quick tour on login page and the panel after login to the platform in Applications site.
+ This article makes a quick tour on login page and the panel after login to the platform in **Applications site**.  
+ If you want to administer your organization go to [Management site](../Administering Your Organization/admin-overview.md)
  
  ### Audience
  All users with Cloud Application Manager access.

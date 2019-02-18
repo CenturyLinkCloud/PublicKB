@@ -74,7 +74,7 @@ Network Exchange provides the user with near total control of connection setup a
 
 **Q: I'm a Cloud Network Service (CNS) customer. How does Network Exchange affect my CNS service?**
 
-**A:** Network Exchange is a new service, indepdendent of Cloud Network Service. It will be operated in parallel with CNS and eventually replace it. Currently, no time frame exists for a required migration from CNS to Network Exchange. CenturyLink can provide a migration path from CNS to Network Exchange and guide customers through the process. Several CNS customers have self-selected to migrate due to the ability of Network Exchange to allow for the self-management of connections between multiple Endpoints rather than relying on CenturyLink to manage each CNS connection between two data sources. 
+**A:** Network Exchange is a new service, indepdendent of Cloud Network Service. It will be operated in parallel with CNS and eventually replace it. Currently, no time frame exists for a required migration from CNS to Network Exchange. CenturyLink can provide a migration path from CNS to Network Exchange and guide customers through the process. Several CNS customers have self-selected to migrate due to the ability of Network Exchange to allow for the self-management of connections between multiple Endpoints rather than relying on CenturyLink to manage each CNS connection between two data sources. Please be aware that if you have an existing MPLS/CNS/HNS connection, deployment of NetX may override your existing routes.  This can occur as NetX depolys a default route of (0.0.0.0/0) which could override any custom firewall setting previously configured.
 
 **Q: I'm a Cloud Network Service (CNS) customer. Can I use Network Exchange at the same time as CNS?**
 
