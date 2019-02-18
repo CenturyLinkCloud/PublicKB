@@ -1,6 +1,6 @@
 {{{
   "title": "Network Exchange Availability Matrix and Configuration Guide",
-  "date": "2-11-2019",
+  "date": "2-18-2019",
   "author": "Jason Holland",
   "attachments": [],
   "related-products" : [],
@@ -12,8 +12,8 @@
 
 The table, below, documents the metropolitan areas where Network Exchange is offered and the type and identity of Endpoints that are available there for inclusion into an Exchange. Please note any constraints in the following section.
 
-Region|Metro Area|Colocation/<br>Dedicated<br>Access|Managed<br>Hosting<br>via Han|CenturyLink<br>Cloud|CenturyLink<br>Private Cloud<br>on VMWare<br>Cloud Foundation|AWS|IQ+
---------|---------|---------------------------|---------------|-----------------|----------------
+Region|Metro Area|Colocation/<br>Dedicated<br>Access|Managed<br>Hosting<br>via Han|CenturyLink<br>Cloud|CenturyLink<br>Private Cloud<br>on VMWare<br>Cloud Foundation|AWS|IQ+|
+--------|---------|---------------------------|---------------|-----------------|----------------|----------------|----------------
 North<br>America|Chicago, IL|CH3|CH3|IL1|CH3|CH3|CH3
 North<br>America|Santa Clara, CA|SC8<br>SC9|SC8<br>SC9|UC1|SC9|SC8<br>SC9|SC8<br>SC9
 North<br>America|Seattle, WA|SE2|SE2|WA1||SE2
