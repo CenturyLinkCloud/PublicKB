@@ -41,7 +41,7 @@ There are three different submenu options under Instances:
 
 * **All**: shows all type of instances, either registered or unregistered.
 
-* **Registered**: shows only registered instances, which are the ones deployed through or imported into Cloud Application Manager. In these instances, you can do lifecycle management by executing lifecycle events or using the lifecycle editor to change variables, event scripts or box versions of the instance. You can also select a specific state among the available ones (Online, Unavailable, Processing, Shutdown, Terminated) to show only the instance in the selected state.
+* **Registered**: shows only registered instances, which are the ones deployed through or imported into Cloud Application Manager. In these instances, you can do lifecycle management by executing lifecycle events or using the lifecycle editor to change variables, event scripts or box versions of the instance. You can also select a specific state among the available ones (Online, Unavailable, Processing, Not Responding, Unknown, Shutdown, Terminated) to show only the instance in the selected state.
 
 * **Unregistered**: shows only unregistered instances, which are the ones accessible into all the defined providers that were not deployed through Cloud Application Manager. They are discovered in the synchronization event of a provider and are classified by Type and Subtype.
   * Type: One of Compute, Network, Database, Storage or Other
