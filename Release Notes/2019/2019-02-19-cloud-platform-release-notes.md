@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-### Announcements (8)
+### Announcements (7)
 
 #### CenturyLink Cloud
 
