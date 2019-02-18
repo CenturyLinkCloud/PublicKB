@@ -1,7 +1,7 @@
 {{{ "title": "Deploying and Managing Instances",
-"date": "11-27-2018",
-"author": "Guillermo Sánchez",
-"keywords": ["cam", "instances", "lifecycle", "deploy", "deployment-policy"],
+"date": "02-07-2019",
+"author": "Guillermo Sánchez and Óscar Hafner",
+"keywords": ["cam", "instances", "lifecycle", "deploy", "deployment-policy", "instance-protection", "shutdown-protection", "terminate-protection"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -14,6 +14,7 @@
 * [Instances page](#instances-page)
 * [Deploying a New Instance](#deploying-a-new-instance)
 * [Scheduling Instances](#scheduling-instances)
+* [Protecting Instance Shutdown/Termination](#protecting-instance-shutdown/termination)
 * [Handling Instance Lifecycle States](#handling-instance-lifecycle-states)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
@@ -141,6 +142,63 @@ Follow these steps to schedule an instance.
   **Note:** Even if you don’t schedule an instance at the time of deploying, you can do so later. Once online, you can go to an instance page and in **Edit Details**, set the schedule.
 
   Besides the user interface, you can automatically schedule instances using the instances API with a [POST or PUT](https://www.ctl.io/api-docs/cam/#application-lifecycle-management-instances-api) request.
+
+### Protecting Instance Shutdown/Termination
+
+Avoid accidental operations on particular instances. *Instance Protection Flag* allows to protect an instance for manual **shutdown** or **termination**. The instance will still be affected by *scheduled termination or shutdown* configured values if any.
+
+*Instance Protection feature* prevents the user to perform shutdown/terminate operations on API/UI level, also affecting at **provider level** if implements this feature. 
+
+*Instance Protection feature* can be set at **Deployment Policy Level** or **Instance Deployment Level**. 
+
+Follow these steps to enable instance protection on any **deployment policy** box:
+
+1. From the boxes page, click **New**
+2. Select **Deployment Policy**
+
+![Deployment Policy Box Dialog](../../images/cloud-application-manager/protecting-instance-deployment-policy-1.png)
+
+3. In the New or Edit Deployment Policy Box dialog, enable the **Manual Shutdown Protection** or **Manual Terminate Protection** toggle under **expiration** dropdown.
+4. When done, click **Save**
+
+**Note:** Instances deployed through this box will inherit the protection configuration flags
+
+![Instance Deployment (Inherit) Dialog](../../images/cloud-application-manager/protecting-instance-deployment-inherited-2.png)
+
+Follow these steps to protect an instance at **deployment** time:
+
+**Steps**
+1. From the instances page, click **New**.
+2. Select a box you want to deploy.
+3. Select a deployment policy box from availables in policy dropdown. 
+4. In the New Instance dialog, enable the **Manual Shutdown Protection** or **Manual Terminate Protection** toggles under **Expiration** dropdown.
+
+![Instance Deployment Dialog](../../images/cloud-application-manager/protecting-instance-deployment-3.png)
+
+5. When done, click **Deploy**
+
+
+**Note:** If policy box used for deployment has **Manual Shutdown Protection** or **Manual Terminate Protection** enabled, it will be inherited by the current instance preventing the user to disable them.
+
+#### Instance protection on registered instances
+
+Some providers allows to enable Instance Protection. CAM Instance Registering track these configurations in order to configure internally when instances are imported.
+If provider implements Instance Protection, Register Instance wizard will show Protection Flags Status acording with provider protection setup.
+
+**Note:** Currently, Only implemented with Amazon Web Services (AWS)
+
+#### Instance protection on available providers.
+
+#### Amazon Web Services
+
+**Deployed Instances**
+
+Instances deployed in AWS will sync CAM **Manual Terminate Protection** with DisableApiTermination flag in EC2 instances. Changes done from CAM will be reflected in AWS Instance Properties. Changes done from AWS Console, won't be reflected in CAM.
+
+**Note:** *ec2:ModifyInstanceAttribute* permission must be enabled in order to modify Instance Flag
+
+**Unregistered Instances**
+Instances imported from AWS will inherit DisableApiTermination flag into **Manual Terminate Protection** flag. Flag status is provided when provider is syncronized, so changes are not reflected in CAM until **Sync** operation has been done.
 
 ### Handling Instance Lifecycle States
 
