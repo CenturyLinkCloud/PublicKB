@@ -25,9 +25,13 @@ Cloud Application Manager was using certain Google+ API on its OAuth integration
 
 #### [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/)
 
-##### Support For Proxy In Agent Connection
+##### Support for Proxy in Agent Connection
 
 Application Lifecycle Management now supports configuring a proxy for the agent to contact back to Cloud Application Manager. The user will have the ability to set up the proxy address and port values in any deployment policy configuration. These values will be used by the agent installed on the machine to contact Cloud Application Manager back, so it enables certain network restricted use cases to be supported and managed by Cloud Application Manager. The new proxy support in agent connection feature will be available for all provider types, such as AWS, Azure, CenturyLink Cloud, CenturyLink Private Cloud on VMWare Cloud Foundation, CenturyLink DCC, Google Cloud, IBM Cloud, vCloud and vCenter environments, etc.
+
+##### Manual Terminate and Shutdown protection
+
+Application Lifecycle Management now allows users to prevent the manual **shutdown** or **termination** of an instance.  Users can enable manual termination protection in any deployment policy box, set it at deployment time for the instance, or change its values through the Lifecycle Editor of any deployed instance. Once enabled, the user will not be allowed to manually shut down or terminate the instance unless the protection toggle is disabled. The instance will still be affected by *scheduled termination or shutdown* configured values.
 
 ##### Link To Provider Details Page
 
