@@ -143,7 +143,7 @@ If you want to deploy the same Template Box into the same namespace multiple tim
 apiVersion: v1
 kind: Service
 metadata:
-  name: frontend-{{ service}}
+  name: frontend-\{{ service}}
 ...
 ```
 
