@@ -56,6 +56,16 @@ Below this components you can find the corresponding list or graph of instances,
 
 In the instances list, any Compute type unregistered instance can be registered (imported) into Cloud Application Manager to enable lifecycle management on it (an icon button allowing it will appear at the end of its row), so it will be shown from them on as a registered instance in the corresponding views. The Unregistered Instances tab in the provider details page remains unchanged showing only compute registerable instances. If you want to bulk register (import) several instances from the same provider, use this feature from there instead, where bulk register is also available as a bulk action.
 
+#### Instance states
+
+* **Online**: last lifecycle operation succeeded and the instance is up and running.
+* **Unavailable**: last lifecycle operation has failed, see instance logs for more details. The instance may not be accessible. 
+* **Processing**: when a lifecycle operation is being executed. The instance is not ready yet.
+* **Not Responding**: the Cloud Application Manager instance agent has not contacted back for at least 10 minutes. The instance may have been changed from outside of Cloud Application Manager, and could be stopped, deleted or just the agent is not running.
+* **Unknown**: Cloud Application Manager cannot determinate the state of the instance. The instance has several machines and someones are in the Not Responding state and some others in any other state.
+* **Shutdown**: the instance is shut down and cannot be used. The instance can be restarted at any time.
+* **Terminated**: the instance has been removed from the underlying provider and it is no longer available. Cloud Application Manager keep the instance data and its logs, that will be removed if you *delete* the instance.
+
 #### Instance view types
 
 In the top right corner of the Instances page there are several icons to select the type of view that is being shown:
