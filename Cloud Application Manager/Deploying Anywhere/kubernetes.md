@@ -149,7 +149,7 @@ metadata:
 
 The ***New Template*** dialog offers you the following options:
 
-- Create a blank template by specifying its filename (please follow ***.yaml** convention)
+- Create a blank template by specifying its filename (please follow ** *.yaml** convention)
 - Upload a template file from disk
 - Download a template from remote URL
 - Import templates from a GitHub repository
