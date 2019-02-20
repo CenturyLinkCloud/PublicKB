@@ -14,7 +14,7 @@
 * [Instances page](#instances-page)
 * [Deploying a New Instance](#deploying-a-new-instance)
 * [Scheduling Instances](#scheduling-instances)
-* [Protecting Instance Shutdown/Termination](#protecting-instance-shutdown/termination)
+* [Protecting Instance Shutdown or Termination](#protecting-instance-shutdown-or-termination)
 * [Handling Instance Lifecycle States](#handling-instance-lifecycle-states)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
@@ -28,7 +28,8 @@ Cloud Application Manager customers.
 
 ### Prerequisites
 
-An active Cloud Application Manager account.
+* An active Cloud Application Manager account.
+* A provider already configured and synchronized
 
 ### Instances page
 
@@ -95,12 +96,12 @@ An instance is an instantiated version of a box launched to provider’s virtual
 1. Click **Instances** > **New**
 2. Select a box. You can search and look through the tabs.
 
-  ![Explore to select box from catalog](../../images/cloud-application-manager/deploy-instance-selectboxfromcatalog-1.png)
+    ![Explore to select box from catalog](../../images/cloud-application-manager/deploy-instance-selectboxfromcatalog-1.png)
 
-  * **Boxes**. Shows boxes you created in your workspace.
-  * **Explore**. Shows default boxes available to all Cloud Application Manager users. These include service boxes such as Linux Compute, Windows Compute; includes AWS services like MySQL Database, Oracle Database, DynamoDB, PostgreSQL Database, and S3 bucket; and includes the Azure Microsoft SQL Database service. You can directly launch an instance to these database services. While you can’t modify those boxes, you can combine them with other boxes to build multi-tiered applications.
+     * **Boxes**. Shows boxes you created in your workspace.
+     * **Explore**. Shows default boxes available to all Cloud Application Manager users. These include service boxes such as Linux Compute, Windows Compute; includes AWS services like MySQL Database, Oracle Database, DynamoDB, PostgreSQL Database, and S3 bucket; and includes the Azure Microsoft SQL Database service. You can directly launch an instance to these database services. While you can’t modify those boxes, you can combine them with other boxes to build multi-tiered applications.
 
-  **Note:** Don’t find a box you’re looking for? Check if you’re in the right workspace. Remember that you may not have access if the box is no longer shared with you.
+    **Note:** Don’t find a box you’re looking for? Check if you’re in the right workspace. Remember that you may not have access if the box is no longer shared with you.
 
 3. In the New Instance dialog, specify the instance name and deployment policy.
 
@@ -110,12 +111,12 @@ An instance is an instantiated version of a box launched to provider’s virtual
 
 4. In the New Instance dialog, pass deployment parameters under **Variables**. Before launching, you can override and provide fresh values.
 
-  ![Providing default configuration values to new instances](../../images/cloud-application-manager/instance-provideconfigurationvalues-2.png)
+    ![Providing default configuration values to new instances](../../images/cloud-application-manager/instance-provideconfigurationvalues-2.png)
 
-  * Listed here are all the variables defined in the main box as well as those within nested boxes or box type variables.
-  * Required variables are marked with an asterisk. To see all variables including optional ones, click Show More.
-  * When a variable is required, you must specify its value to launch an instance of the box. If optional, you can launch without giving values, and do it later in the [lifecycle editor](../Core Concepts/lifecycle-editor.md).
-  * [Binding type variables](../Automating Deployments/parameterizing-boxes-with-variables.md) are also listed here. Depending on how it’s defined in the box, you can select as its value any instance or that of a specific box type deploying or active in the workspace.
+     * Listed here are all the **variables** defined in the main box as well as those within nested boxes or box type variables.
+     * **Required variables** are marked with an asterisk. To see all variables including optional ones, click Show More.
+     * When a variable is required, you must specify its value to launch an instance of the box. If optional, you can launch without giving values, and do it later in the [lifecycle editor](../Core Concepts/lifecycle-editor.md).
+     * [Binding type variables](../Automating Deployments/parameterizing-boxes-with-variables.md) are also listed here. Depending on how it’s defined in the box, you can select as its value any instance or that of a specific box type deploying or active in the workspace.
 
 ### Scheduling Instances
 
@@ -126,24 +127,25 @@ We notify you of instances about to expire in 24 hours by email at around 12 AM 
 Follow these steps to schedule an instance.
 
 **Steps**
+
 1. From the Instances page, click **New**.
 2. Select a box you want to deploy.
 3. In the New Instance dialog, select the **Shutdown** or **Terminate** operation from the **Expiration** drop-down.  
   Select **Always on** if you don’t want to schedule anything. Shutdown powers off the instance while Terminate deletes the instance on the provider’s side.
 
-  ![Instance expiration operation](../../images/cloud-application-manager/schedule-instance-chooseoperation-6-2.png)
+    ![Instance expiration operation](../../images/cloud-application-manager/schedule-instance-chooseoperation-6-2.png)
 
 4. For the selected operation, set a predefined or custom UTC schedule.
 
-  ![Scheduling shutdown for new instances](../../images/cloud-application-manager/schedule-instance-selectschedule-7-2.png)
+    ![Scheduling shutdown for new instances](../../images/cloud-application-manager/schedule-instance-selectschedule-7-2.png)
 
 5. When done, click **Deploy**.
 
-  **Note:** Even if you don’t schedule an instance at the time of deploying, you can do so later. Once online, you can go to an instance page and in **Edit Details**, set the schedule.
+**Note:** Even if you don’t schedule an instance at the time of deploying, you can do so later. Once online, you can go to an instance page and in **Edit Details**, set the schedule.
 
-  Besides the user interface, you can automatically schedule instances using the instances API with a [POST or PUT](https://www.ctl.io/api-docs/cam/#application-lifecycle-management-instances-api) request.
+Besides the user interface, you can automatically schedule instances using the instances API with a [POST or PUT](https://www.ctl.io/api-docs/cam/#application-lifecycle-management-instances-api) request.
 
-### Protecting Instance Shutdown/Termination
+### Protecting Instance Shutdown or Termination
 
 Avoid accidental operations on particular instances. *Instance Protection Flag* allows to protect an instance for manual **shutdown** or **termination**. The instance will still be affected by *scheduled termination or shutdown* configured values if any.
 
@@ -156,7 +158,7 @@ Follow these steps to enable instance protection on any **deployment policy** bo
 1. From the boxes page, click **New**
 2. Select **Deployment Policy**
 
-![Deployment Policy Box Dialog](../../images/cloud-application-manager/protecting-instance-deployment-policy-1.png)
+    ![Deployment Policy Box Dialog](../../images/cloud-application-manager/protecting-instance-deployment-policy-1.png)
 
 3. In the New or Edit Deployment Policy Box dialog, enable the **Manual Shutdown Protection** or **Manual Terminate Protection** toggle under **expiration** dropdown.
 4. When done, click **Save**
@@ -168,15 +170,15 @@ Follow these steps to enable instance protection on any **deployment policy** bo
 Follow these steps to protect an instance at **deployment** time:
 
 **Steps**
+
 1. From the instances page, click **New**.
 2. Select a box you want to deploy.
-3. Select a deployment policy box from availables in policy dropdown. 
+3. Select a deployment policy box from availables in policy dropdown.
 4. In the New Instance dialog, enable the **Manual Shutdown Protection** or **Manual Terminate Protection** toggles under **Expiration** dropdown.
 
-![Instance Deployment Dialog](../../images/cloud-application-manager/protecting-instance-deployment-3.png)
+    ![Instance Deployment Dialog](../../images/cloud-application-manager/protecting-instance-deployment-3.png)
 
 5. When done, click **Deploy**
-
 
 **Note:** If policy box used for deployment has **Manual Shutdown Protection** or **Manual Terminate Protection** enabled, it will be inherited by the current instance preventing the user to disable them.
 
@@ -187,17 +189,16 @@ If provider implements Instance Protection, Register Instance wizard will show P
 
 **Note:** Currently, Only implemented with Amazon Web Services (AWS)
 
-#### Instance protection on available providers.
+#### Instance protection on AWS instances
 
-#### Amazon Web Services
-
-**Deployed Instances**
+##### Deployed Instances
 
 Instances deployed in AWS will sync CAM **Manual Terminate Protection** with DisableApiTermination flag in EC2 instances. Changes done from CAM will be reflected in AWS Instance Properties. Changes done from AWS Console, won't be reflected in CAM.
 
 **Note:** *ec2:ModifyInstanceAttribute* permission must be enabled in order to modify Instance Flag
 
-**Unregistered Instances**
+##### Unregistered Instances
+
 Instances imported from AWS will inherit DisableApiTermination flag into **Manual Terminate Protection** flag. Flag status is provided when provider is syncronized, so changes are not reflected in CAM until **Sync** operation has been done.
 
 ### Handling Instance Lifecycle States
