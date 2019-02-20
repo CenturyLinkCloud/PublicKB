@@ -52,19 +52,6 @@
 ### Documentation (1)
 * [**Expanded API documentation**](http://www.ctl.io/api-docs/v2/) - New Knowledge Base articles for CenturyLink Cloud's V2 API have been added [here](http://www.ctl.io/api-docs/v2/). New actions covered include [Set Server Disks](http://www.ctl.io/api-docs/v2/#servers-set-server-disks), [Set Server CPU/Memory](http://www.ctl.io/api-docs/v2/#servers-set-server-cpumemory), and [Set Server Credentials](http://www.ctl.io/api-docs/v2/#servers-set-server-credentials), among others.
 
-
-### Ecosystem - New Blueprints (4)
-
-* [**Dynatrace**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-dynatrace-blueprints.md) – Application Performance Monitoring (APM) software for today's most challenging web, cloud, mobile, enterprise and Big Data applications worldwide.
-
-
-* [**Datastax**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-datastax-blueprint.md) - Enterprise–grade Cassandra solution, enabling customer big data analytics workloads.
-
-
-* [**Acumatica**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-acumatica-erp-blueprint.md) - Cloud–based accounting and ERP software for the small to midsize business looking to streamline management processes and unlock business potential.
-
-* [**Centerity**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-centerity-blueprints.md) – Enhanced monitoring solution providing server metrics and a complete business intelligence layer across  server assets in the CenturyLink Cloud.
-
 ### Open Source Contributions
 Panamax enhancements from CenturyLink Labs - Selected highlights include:
 
