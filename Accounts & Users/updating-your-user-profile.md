@@ -41,7 +41,7 @@ Additional information, such as title and phone number(s), can be provided optio
 
 Customers who have integrated CenturyLink Cloud with an authentication solution that uses Security Assertion Markup Language (SAML) may also update their SAML username through the User Profile. Find out more about using SAML for [single sign-on](../Control Portal/using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md) or [multi-factor authentication](../Control Portal/using-saml-for-multi-factor-authentication-to-centurylink-control-portal.md).  
 
-## Important Notes
+### Important Notes
 
 #### Updating a Password
 
