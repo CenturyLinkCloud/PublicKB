@@ -124,7 +124,7 @@ A Kubernetes Template Box can have multiple template files, currently only in YA
 
 It is also valid to have multiple resources defined in a single template file, separated by a line of three dashes, like in the snippet below:
 
-```Yaml
+```
 ...
             memory: 100Mi
         ports:
@@ -139,7 +139,7 @@ metadata:
 
 If you want to deploy the same Template Box into the same namespace multiple times, you need to **include Cloud Application Manager Service ID** in the name of the deployed resources, to avoid name collisions, like:
 
-```Yaml
+```
 apiVersion: v1
 kind: Service
 metadata:
@@ -149,7 +149,7 @@ metadata:
 
 The ***New Template*** dialog offers you the following options:
 
-- Create a blank template by specifying its filename (please follow ** *.yaml** convention)
+- Create a blank template by specifying its filename (please follow ***.yaml** convention)
 - Upload a template file from disk
 - Download a template from remote URL
 - Import templates from a GitHub repository
