@@ -215,6 +215,15 @@ For more information, see the [Azure help](https://docs.microsoft.com/en-us/azur
 |Security Group | Filter incoming and outgoing traffic for the virtual machine based on a set of rules. Multiple security groups in a zone can be selected for a virtual machine.  For more information, see [Security Groups](https://docs.microsoft.com/en-us/azure/virtual-network/security-overview).  This option will not appear if you choose to use a **ScaleSet** feature above, but all restrictions associated with the network and subnet above will be applied.|
 |Public IP Address | The public IP Address exposes our server to the public internet where other applications can access it. If loadbalancing is configured, a public IP will be automatically associated with it, so this option will be hidden because there is no need to associate public IPs directly with the instances. |
 
+#### Proxy
+
+![Proxy section of deployment policy](../../images/cloud-application-manager/microsoft-azure/proxy.png)
+
+| Option | Description |
+|-------------------|-------------|
+| Host |	The hostname or domain of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+| Port |  The port of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+
 #### Disks
 
 ![Microsoft Azure Deployment Options - Disks](../../images/cloud-application-manager/microsoft-azure/compute-deployment-options-disks.png)
