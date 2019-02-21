@@ -1,7 +1,7 @@
 {{{
   "title": "Partner Cloud: Getting Started With An Existing Azure Customer Account",
-  "date": "07-20-18",
-  "author": "Kevin Quaintance",
+  "date": "02-20-2019",
+  "author": "Benjamin Swoboda",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -23,6 +23,8 @@ For Azure, we are currently limited to serving billable customers who are not re
 
 * Access to Cloud Application Manager.
 
+* 
+
 * The user must be an Administrator of the organization in Cloud Application Manager.
 
 * A working knowledge of how to use [Cloud Application Manager providers](../Core Concepts/providers.md).
@@ -37,7 +39,7 @@ For Azure, we are currently limited to serving billable customers who are not re
 
 Cloud Application Manager Provider Verbiage | Description | Related Links
 --- | --- | ---
-Use an existing Azure customer account | This is not an optimized option. Customer pays Amazon for usage. | [Click here](../../Cloud Application Manager/Deploying Anywhere/using-microsoft-azure.md)
+Use an existing Azure customer account | This is not an optimized option. Customer pays Microsoft for usage. | [Click here](../../Cloud Application Manager/Deploying Anywhere/using-microsoft-azure.md)
 Migrate my account to CenturyLink for consolidated billing and Platform Support | **This is a Cloud Optimized option.** This allows an existing customer account to move under CenturyLink's care. | This document
 Create a new Azure customer account | **This is a Cloud Optimized option.** Begins the new account creation automation, enabling the customer to immediately enter CenturyLink's care. | [Click Here](partner-cloud-integration-azure-new.md)
 
@@ -45,7 +47,7 @@ Charges for [Azure usage](partner-cloud-integration-consolidated-billing.md) wil
 
 ### Considerations
 
-* If you do not have a basic, existing Azure ARM subscription with basic Azure pricing, please contact Microsoft or CenturyLink to review whether your subscription or the resources on it can transfer wholely into CenturyLink's care or whether resources on it need to be migrated from one subscription to another (this is a meta data move only and does not cause any outage).
+* “If you do not have a basic, existing Azure ARM subscription with basic Azure pricing (such as an Enterprise Agreement), the process will require you to work with the CenturyLink Technical Account Manager assigned to you when you order CAM to move any applicable resources from your current subscription to a new one in our care. As you do this, you will lose any pricing you have currently with the Microsoft and you will be billed by CenturyLink according to the terms of your agreement with CenturyLink. Please review [this document](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-move-resources) to see whether the resources on those subscription(s) can transfer wholly into CenturyLink's care (this is a meta data move only and does not cause any outage).”
 * In a CSP environment, it is expected that customers enjoy the benefits of CenturyLink acting as liason to Microsoft and first point of contact for all Azure incidents, billing issues, and requests. Customers who gain access to Cloud Application Manager's support desk and features do so in lieu of certain Azure features which are available, such as help desk and billing consoles.
 * [Reserved Instances](partner-cloud-integration-azure-ri.md) are available through CenturyLink.
 
