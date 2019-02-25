@@ -281,7 +281,7 @@ The steps below walk through the process of building an entire SSO and SAML scen
 
 ### Updated Signing Certificate (February 2019)
 
-Customers with an existing SAML configuration as of February 1, 2019 will need to update their signing certificate for use with their IdP with the following text:
+Customers with an existing SAML configuration as of February 9, 2019 will need to update their signing certificate for use with their IdP with the following text:
 
 ```
 -----BEGIN CERTIFICATE-----
