@@ -12,7 +12,7 @@
 
 The table, below, documents the metropolitan areas where Network Exchange is offered and the type and identity of Endpoints that are available there for inclusion into an Exchange. Please note any constraints in the following section.
 
-Region|Metro Area|Colo/<br>DA|Managed<br>Hosting|CLC|CPC|AWS|IQ+|
+Region|Metro|Colo/<br>DA|Managed<br>Hosting|CLC|CPC|AWS|IQ+|
 --------|---------|---------------------------|---------------|-----------------|----------------|----------------|----------------
 North<br>America|Chicago, IL|CH3|CH3|IL1|CH3|CH3|CH3
 North<br>America|Santa Clara, CA|SC8<br>SC9|SC8<br>SC9|UC1|SC9|SC8<br>SC9|SC8<br>SC9
