@@ -110,6 +110,15 @@ The [deployment policy ](../Automating Deployments/deploymentpolicy-box.md)for G
 | Ephemeral IP | Select to assign an external IP address that traffic outside of the network use to communicate with the instance. An ephemeral IP address is assigned to the instance until the instance is terminated. If you leave the option unselected, an external IP address is not assigned to the virtual machine. As a result, outside traffic will not be able to communicate with the instance. For more information, see [Instances and Networks](https://developers.google.com/compute/docs/instances-and-network). |
 | IP Forwarding	| By default, Google Cloud checks that packets routed from the instance match source and destination IP addresses. If you don’t want Google to check this, deselect the option. To learn more, see [Networking and Firewalls](https://developers.google.com/compute/docs/networking#canipforward). |
 
+**Proxy**
+
+![Proxy section of deployment policy](../../images/cloud-application-manager/google-deployment-manager/proxy.png)
+
+| Deployment Option | Description |
+|-------------------|-------------|
+| Host |	The hostname or domain of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+| Port |  The port of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+
 **Disks**
 
 ![googlecloud-deployment-options-disks-8.png](../../images/cloud-application-manager/googlecloud-deployment-options-disks-8.png)

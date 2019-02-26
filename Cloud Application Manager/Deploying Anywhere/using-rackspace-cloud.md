@@ -47,6 +47,8 @@ Select these deployment options when you [launch a new instance](deploying-manag
 
 **Resource**
 
+![Resource section of deployment policy](../../images/cloud-application-manager/deployment-policy/rackspace-resource.png)
+
 | Option | Description |
 |--------|-------------|
 | Location | Choose a region from the drop-down to place the instance: DFW (Dallas/Fort Worth), IAD (Northern Virginia), SYD (Sydney), or Hong Kong (HKG). |
@@ -55,12 +57,29 @@ Select these deployment options when you [launch a new instance](deploying-manag
 | Keypairs | Select an SSH public key you previously uploaded for the selected region in your Rackspace Cloud console. It allows SSH access to the virtual machine. |
 |Instances | Specify the number of instances to provision.|
 
+**Volumes**
+
+![Volumes section of deployment policy](../../images/cloud-application-manager/deployment-policy/rackspace-volumes.png)
+
+Increase the instance storage and add better I/O performance for your applications by adding volumes. We attach and mount them to the instances through the OpenStack block storage service API.
 
 **Network**
+
+![Network section of deployment policy](../../images/cloud-application-manager/deployment-policy/rackspace-network.png)
 
 | Option | Description |
 |--------|-------------|
 | Floating IP Pool | Select a pool of floating IP addresses to allow public traffic to your instance, if you added it to your Rackspace Cloud account. |
+
+**Proxy**
+
+![Proxy section of deployment policy](../../images/cloud-application-manager/deployment-policy/rackspace-proxy.png)
+
+| Option | Description |
+|-------------------|-------------|
+| Host |	The hostname or domain of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+| Port |  The port of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+
 
 ### Contacting Cloud Application Manager Support
 

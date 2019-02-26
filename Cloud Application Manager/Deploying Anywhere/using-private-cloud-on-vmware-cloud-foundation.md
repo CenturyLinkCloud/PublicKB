@@ -50,6 +50,8 @@ Edit the deployment policy to set the following parameters for deploying to vClo
 
 #### Resource
 
+![Resource section of deployment policy](../../images/cloud-application-manager/deployment-policy/centurylink-dcc-f-resoure.png)
+
 | Option | Description |
 |--------|-------------|
 | Organization | Select the organization in CenturyLink Private Cloud. The organization is a virtual container for vApp templates, vApps, media images, and disks. |
@@ -60,6 +62,8 @@ Edit the deployment policy to set the following parameters for deploying to vClo
 
 #### Placement
 
+![Placement section of deployment policy](../../images/cloud-application-manager/deployment-policy/centurylink-dcc-f-placement.png)
+
 | Option | Description |
 |--------|-------------|
 | Virtual Data Center |	Select the virtual data center from vCloud Foundation. |
@@ -69,6 +73,8 @@ Edit the deployment policy to set the following parameters for deploying to vClo
 
 #### Compute
 
+![Compute section of deployment policy](../../images/cloud-application-manager/deployment-policy/centurylink-dcc-f-compute.png)
+
 | Option | Description |
 |--------|-------------|
 | Virtual CPUs | Specify the number of CPUs. |
@@ -76,7 +82,18 @@ Edit the deployment policy to set the following parameters for deploying to vClo
 
 See the [VMware Cloud Foundation](https://docs.vmware.com/en/VMware-Cloud-Foundation/3.5/com.vmware.vcf.ovdeploy.doc_35/GUID-F2DCF1B2-4EF6-444E-80BA-8F529A6D0725.html) documentation.
 
+#### Proxy
+
+![Proxy section of deployment policy](../../images/cloud-application-manager/deployment-policy/centurylink-dcc-f-proxy.png)
+
+| Option | Description |
+|-------------------|-------------|
+| Host |	The hostname or domain of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+| Port |  The port of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+
 #### Disks
+
+![Disks section of deployment policy](../../images/cloud-application-manager/deployment-policy/centurylink-dcc-f-disks.png)
 
 | Option | Description |
 |--------|-------------|

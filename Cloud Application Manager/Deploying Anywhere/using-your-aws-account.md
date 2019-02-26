@@ -381,7 +381,7 @@ RDS, DynamoDB, and Memcached are CloudFormation boxes. To deploy to an RDS servi
 ### EC2 (Linux and Windows)
 To deploy workloads to an EC2 instance, create a [deployment policy](../Automating Deployments/deploymentpolicy-box.md) and select Virtual or Phisical Machine for an AWS account or use the one your admin shared with you. 
 
-![Deployment Policy Details](../../images/cloud-application-manager/aws-deployment-policy-3.png)
+![Deployment Policy Details](../../images/cloud-application-manager/deployment-policy/aws-deployment-policy.png)
 
 #### Deployment
 
@@ -390,6 +390,8 @@ To deploy workloads to an EC2 instance, create a [deployment policy](../Automati
 | Provider | This shows the name or GUID of the AWS provider account in Cloud Application Manager. If you don’t have access to the provider account, you see the GUID. |
 
 #### Resource
+
+![Resource section of deployment policy](../../images/cloud-application-manager/deployment-policy/aws-resource.png)
 
 | Deployment Option | Description |
 |-------------------|-------------|
@@ -403,6 +405,8 @@ To deploy workloads to an EC2 instance, create a [deployment policy](../Automati
 
 #### Placement
 
+![Placement section of deployment policy](../../images/cloud-application-manager/deployment-policy/aws-placement.png)
+
 | Deployment Option | Description |
 |-------------------|-------------|
 | Network Type | Select to deploy an instance in EC2 or in a Virtual Private Cloud (VPC) that you created in AWS. |
@@ -411,13 +415,27 @@ To deploy workloads to an EC2 instance, create a [deployment policy](../Automati
 
 #### Network
 
+![Network section of deployment policy](../../images/cloud-application-manager/deployment-policy/aws-network.png)
+
 | Deployment Option | Description |
 |-------------------|-------------|
 | Security Groups |	Select security groups to route traffic to the instance. If you didn’t create a security group in AWS for EC2 or a VPC, select **Automatic** for Cloud Application Manager to create one on your behalf. |
 | Placement Group |	Select an existing placement group from AWS to cluster instances for high network performance. Some instances can get 10 Gbps connectivity depending on their instance type. To learn more, see the [AWS docs](//docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html). To let Cloud Application Manager view and direct the instance to the placement group, update the Cloud Application Manager IAM role policy with the [listed permissions](using-your-aws-account.md). |
 | Elastic IP |	When launching to AWS, select Elastic IP to allocate a fresh static IP address from the EC2 or VPC pool and associate it to the instance depending on whether you’re deploying to EC2 classic or your VPC. If you’re using dynamic DNS to assign an IP address in EC2 or want to allow internet traffic to communicate with your instance in a non default VPC, then use Elastic IPs to guarantee public access. **Note:** You can’t autoscale the instance when you choose an Elastic IP for it. For more information, see the [AWS help](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html). |
 
+#### Proxy
+
+![Proxy section of deployment policy](../../images/cloud-application-manager/deployment-policy/aws-proxy.png)
+
+| Option | Description |
+|-------------------|-------------|
+| Host |	The hostname or domain of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+| Port |  The port of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+
+
 #### Other
+
+![Other section of deployment policy](../../images/cloud-application-manager/deployment-policy/aws-others.png)
 
 | Deployment Option | Description |
 |-------------------|-------------|
