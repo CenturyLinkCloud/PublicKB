@@ -12,7 +12,7 @@ The Simple Backup Service has integrated the restore functionality directly into
 
 Performing a restore is simple, just navigate over to the new restore tab
 
-![](../images/backup/restores/restore.png)
+![](../images/backup/restores/restore2.png)
 
 * Select the backup policy and server you want to perform a restore from (Backup Policy and Server Policy).
 * Select the desired restore point.
