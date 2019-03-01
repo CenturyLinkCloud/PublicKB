@@ -14,7 +14,7 @@
 * [Instances page](#instances-page)
 * [Deploying a New Instance](#deploying-a-new-instance)
 * [Scheduling Instances](#scheduling-instances)
-* [Protecting Instance Shutdown/Termination](#protecting-instance-shutdown/termination)
+* [Protecting Instance Shutdown or Termination](#protecting-instance-shutdown-or-termination)
 * [Handling Instance Lifecycle States](#handling-instance-lifecycle-states)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
@@ -28,7 +28,8 @@ Cloud Application Manager customers.
 
 ### Prerequisites
 
-An active Cloud Application Manager account.
+* An active Cloud Application Manager account.
+* A provider already configured and synchronized
 
 ### Instances page
 
@@ -46,7 +47,7 @@ There are three different submenu options under Instances:
 
 * **Unregistered**: shows only unregistered instances, which are the ones accessible into all the defined providers that were not deployed through Cloud Application Manager. They are discovered in the synchronization event of a provider and are classified by Type and Subtype.
   * Type: One of Compute, Network, Database, Storage or Other
-  * Subtype: this is the instance class, specific to each provider type. For example, for AWS type providers we can see VPC or Application Load Balancers (for Network type instances), and S3 or Elastic Block Storages (for Storage type instances) and for an Azure provider we could see Virtual Networks or Application Gateways (in Network type instances) and Queue or BLOB (in Storage type instances). You can check the [full list of Azure resources being displayed here](using-microsoft-azure.md#azure-native-resources).
+  * Subtype: this is the instance class, specific to each provider type. For example, for AWS type providers we can see VPC or Application Load Balancers (for Network type instances), and S3 or Elastic Block Storages (for Storage type instances) and for an Azure provider we could see Virtual Networks or Application Gateways (in Network type instances) and Queue or BLOB (in Storage type instances). You can check the [full list of Azure resources being displayed here](../../Cloud Application Manager/Deploying Anywhere/using-microsoft-azure.md#azure-native-resources).
 
   You can also select a specific state among the available ones (Active, Inactive) to show only the instance in the selected state.
 
@@ -55,6 +56,16 @@ The Instances page displays on the top of the page a new button, a search field 
 Below this components you can find the corresponding list or graph of instances, depending on the view type that is selected.
 
 In the instances list, any Compute type unregistered instance can be registered (imported) into Cloud Application Manager to enable lifecycle management on it (an icon button allowing it will appear at the end of its row), so it will be shown from them on as a registered instance in the corresponding views. The Unregistered Instances tab in the provider details page remains unchanged showing only compute registerable instances. If you want to bulk register (import) several instances from the same provider, use this feature from there instead, where bulk register is also available as a bulk action.
+
+#### Instance states
+
+* **Online**: last lifecycle operation succeeded and the instance is up and running.
+* **Unavailable**: last lifecycle operation has failed, see instance logs for more details. The instance may not be accessible. 
+* **Processing**: when a lifecycle operation is being executed. The instance is not ready yet.
+* **Not Responding**: the Cloud Application Manager instance agent has not contacted back for at least 10 minutes. The instance may have been changed from outside of Cloud Application Manager, and could be stopped, deleted or just the agent is not running.
+* **Unknown**: Cloud Application Manager cannot determinate the state of the instance. The instance has several machines and someones are in the Not Responding state and some others in any other state.
+* **Shutdown**: the instance is shut down and cannot be used. The instance can be restarted at any time.
+* **Terminated**: the instance has been removed from the underlying provider and it is no longer available. Cloud Application Manager keep the instance data and its logs, that will be removed if you *delete* the instance.
 
 #### Instance view types
 
@@ -95,12 +106,12 @@ An instance is an instantiated version of a box launched to provider’s virtual
 1. Click **Instances** > **New**
 2. Select a box. You can search and look through the tabs.
 
-  ![Explore to select box from catalog](../../images/cloud-application-manager/deploy-instance-selectboxfromcatalog-1.png)
+    ![Explore to select box from catalog](../../images/cloud-application-manager/deploy-instance-selectboxfromcatalog-1.png)
 
-  * **Boxes**. Shows boxes you created in your workspace.
-  * **Explore**. Shows default boxes available to all Cloud Application Manager users. These include service boxes such as Linux Compute, Windows Compute; includes AWS services like MySQL Database, Oracle Database, DynamoDB, PostgreSQL Database, and S3 bucket; and includes the Azure Microsoft SQL Database service. You can directly launch an instance to these database services. While you can’t modify those boxes, you can combine them with other boxes to build multi-tiered applications.
+     * **Boxes**. Shows boxes you created in your workspace.
+     * **Explore**. Shows default boxes available to all Cloud Application Manager users. These include service boxes such as Linux Compute, Windows Compute; includes AWS services like MySQL Database, Oracle Database, DynamoDB, PostgreSQL Database, and S3 bucket; and includes the Azure Microsoft SQL Database service. You can directly launch an instance to these database services. While you can’t modify those boxes, you can combine them with other boxes to build multi-tiered applications.
 
-  **Note:** Don’t find a box you’re looking for? Check if you’re in the right workspace. Remember that you may not have access if the box is no longer shared with you.
+    **Note:** Don’t find a box you’re looking for? Check if you’re in the right workspace. Remember that you may not have access if the box is no longer shared with you.
 
 3. In the New Instance dialog, specify the instance name and deployment policy.
 
@@ -110,12 +121,12 @@ An instance is an instantiated version of a box launched to provider’s virtual
 
 4. In the New Instance dialog, pass deployment parameters under **Variables**. Before launching, you can override and provide fresh values.
 
-  ![Providing default configuration values to new instances](../../images/cloud-application-manager/instance-provideconfigurationvalues-2.png)
+    ![Providing default configuration values to new instances](../../images/cloud-application-manager/instance-provideconfigurationvalues-2.png)
 
-  * Listed here are all the variables defined in the main box as well as those within nested boxes or box type variables.
-  * Required variables are marked with an asterisk. To see all variables including optional ones, click Show More.
-  * When a variable is required, you must specify its value to launch an instance of the box. If optional, you can launch without giving values, and do it later in the [lifecycle editor](../Core Concepts/lifecycle-editor.md).
-  * [Binding type variables](../Automating Deployments/parameterizing-boxes-with-variables.md) are also listed here. Depending on how it’s defined in the box, you can select as its value any instance or that of a specific box type deploying or active in the workspace.
+     * Listed here are all the **variables** defined in the main box as well as those within nested boxes or box type variables.
+     * **Required variables** are marked with an asterisk. To see all variables including optional ones, click Show More.
+     * When a variable is required, you must specify its value to launch an instance of the box. If optional, you can launch without giving values, and do it later in the [lifecycle editor](../Core Concepts/lifecycle-editor.md).
+     * [Binding type variables](../Automating Deployments/parameterizing-boxes-with-variables.md) are also listed here. Depending on how it’s defined in the box, you can select as its value any instance or that of a specific box type deploying or active in the workspace.
 
 ### Scheduling Instances
 
@@ -126,24 +137,25 @@ We notify you of instances about to expire in 24 hours by email at around 12 AM 
 Follow these steps to schedule an instance.
 
 **Steps**
+
 1. From the Instances page, click **New**.
 2. Select a box you want to deploy.
 3. In the New Instance dialog, select the **Shutdown** or **Terminate** operation from the **Expiration** drop-down.  
   Select **Always on** if you don’t want to schedule anything. Shutdown powers off the instance while Terminate deletes the instance on the provider’s side.
 
-  ![Instance expiration operation](../../images/cloud-application-manager/schedule-instance-chooseoperation-6-2.png)
+    ![Instance expiration operation](../../images/cloud-application-manager/schedule-instance-chooseoperation-6-2.png)
 
 4. For the selected operation, set a predefined or custom UTC schedule.
 
-  ![Scheduling shutdown for new instances](../../images/cloud-application-manager/schedule-instance-selectschedule-7-2.png)
+    ![Scheduling shutdown for new instances](../../images/cloud-application-manager/schedule-instance-selectschedule-7-2.png)
 
 5. When done, click **Deploy**.
 
-  **Note:** Even if you don’t schedule an instance at the time of deploying, you can do so later. Once online, you can go to an instance page and in **Edit Details**, set the schedule.
+**Note:** Even if you don’t schedule an instance at the time of deploying, you can do so later. Once online, you can go to an instance page and in **Edit Details**, set the schedule.
 
-  Besides the user interface, you can automatically schedule instances using the instances API with a [POST or PUT](https://www.ctl.io/api-docs/cam/#application-lifecycle-management-instances-api) request.
+Besides the user interface, you can automatically schedule instances using the instances API with a [POST or PUT](https://www.ctl.io/api-docs/cam/#application-lifecycle-management-instances-api) request.
 
-### Protecting Instance Shutdown/Termination
+### Protecting Instance Shutdown or Termination
 
 Avoid accidental operations on particular instances. *Instance Protection Flag* allows to protect an instance for manual **shutdown** or **termination**. The instance will still be affected by *scheduled termination or shutdown* configured values if any.
 
@@ -156,7 +168,7 @@ Follow these steps to enable instance protection on any **deployment policy** bo
 1. From the boxes page, click **New**
 2. Select **Deployment Policy**
 
-![Deployment Policy Box Dialog](../../images/cloud-application-manager/protecting-instance-deployment-policy-1.png)
+    ![Deployment Policy Box Dialog](../../images/cloud-application-manager/protecting-instance-deployment-policy-1.png)
 
 3. In the New or Edit Deployment Policy Box dialog, enable the **Manual Shutdown Protection** or **Manual Terminate Protection** toggle under **expiration** dropdown.
 4. When done, click **Save**
@@ -168,15 +180,15 @@ Follow these steps to enable instance protection on any **deployment policy** bo
 Follow these steps to protect an instance at **deployment** time:
 
 **Steps**
+
 1. From the instances page, click **New**.
 2. Select a box you want to deploy.
-3. Select a deployment policy box from availables in policy dropdown. 
+3. Select a deployment policy box from availables in policy dropdown.
 4. In the New Instance dialog, enable the **Manual Shutdown Protection** or **Manual Terminate Protection** toggles under **Expiration** dropdown.
 
-![Instance Deployment Dialog](../../images/cloud-application-manager/protecting-instance-deployment-3.png)
+    ![Instance Deployment Dialog](../../images/cloud-application-manager/protecting-instance-deployment-3.png)
 
 5. When done, click **Deploy**
-
 
 **Note:** If policy box used for deployment has **Manual Shutdown Protection** or **Manual Terminate Protection** enabled, it will be inherited by the current instance preventing the user to disable them.
 
@@ -187,17 +199,16 @@ If provider implements Instance Protection, Register Instance wizard will show P
 
 **Note:** Currently, Only implemented with Amazon Web Services (AWS)
 
-#### Instance protection on available providers.
+#### Instance protection on AWS instances
 
-#### Amazon Web Services
-
-**Deployed Instances**
+##### Deployed Instances
 
 Instances deployed in AWS will sync CAM **Manual Terminate Protection** with DisableApiTermination flag in EC2 instances. Changes done from CAM will be reflected in AWS Instance Properties. Changes done from AWS Console, won't be reflected in CAM.
 
 **Note:** *ec2:ModifyInstanceAttribute* permission must be enabled in order to modify Instance Flag
 
-**Unregistered Instances**
+##### Unregistered Instances
+
 Instances imported from AWS will inherit DisableApiTermination flag into **Manual Terminate Protection** flag. Flag status is provided when provider is syncronized, so changes are not reflected in CAM until **Sync** operation has been done.
 
 ### Handling Instance Lifecycle States
