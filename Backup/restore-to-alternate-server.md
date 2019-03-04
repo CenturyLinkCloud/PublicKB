@@ -8,7 +8,7 @@
   "sticky": false
 }}}
 
-# **This document is deprecated, please see our [restore document](./restores.md) for a much simpler, UI driven way to restore to alternate servers.**
+### This document is deprecated, please see our [restore document](./restores.md) for a much simpler, UI driven way to restore to alternate servers.
 
 SBS Glossary of terms used in this document
 ====
