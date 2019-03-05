@@ -1,18 +1,12 @@
 {{{
-"title": "Cloud Platform - Release Notes: February 19, 2019",
+"title": "Cloud Platform - Release Notes: March 5, 2019",
 "date": "03-05-2019",
 "author": "John Gerger",
 "attachments": [],
 "contentIsHTML": false
 }}}
 
-### Enhancements (6)
-
-#### [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/)
-
-**Track logins via google analytics**
-
-[Cloud Application Manager](https://www.ctl.io/cloud-application-manager/) has added a Google Analytics tag to track logins into the system. This new tracking method enhances the analytics data we use to have better insights on how Cloud Application Manager is being used by our customers and our support staff
+### Enhancements (5)
 
 #### [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/)
 
