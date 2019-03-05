@@ -32,11 +32,11 @@ For a given check alert (event), a suppression can be configured.  Select the ge
 
 Selecting Suppress Agent or Suppress Check will cause a configuration modal to be opened.  The suppression can be configured with the length of time to suppress and will offer a  expirations from 15 minutes to 24 hours as well as "Reason for suppression."
 
-![EditSuppression](../../images/EditSuppression.png)
+![EditSuppression](../../images/EditSuppression.PNG)
 
 ##### Suppressing an Agent:
 Agents are displayed within the Agents modal by selecting **Agents** from the left side navigation bar.  Selecting an agent from the list will display the agent's details.  Select the gear icon on the right side of the agent detail and select **"Suppress"** to suppress future occurences of all alerts for this agent.  
 
-![AgentSuppression.png](../../images/AgentSuppression.png)
+![AgentSuppression.png](../../images/AgentSuppression.PNG)
 
 
