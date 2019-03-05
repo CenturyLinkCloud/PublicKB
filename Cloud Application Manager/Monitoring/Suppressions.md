@@ -30,7 +30,7 @@ For a given check alert (event), a suppression can be configured.  Select the ge
 
 ![EventSuppression.png](../../images/EventSuppression.png)
 
-Selecting Suppress Agent or Suppress Check will cause a configuration modal to be opened.  The suppression can be configured with the length of time to suppress and will offer a  expirations from 15 minutes to 24 hours as well as "Reason for suppression."
+Selecting Suppress Agent or Suppress Check will cause a configuration modal to be opened.  The suppression can be configured with the length of time to suppress and will offer a "Reason for suppression" as well.
 
 ![EditSuppression](../../images/EditSuppression.PNG)
 
