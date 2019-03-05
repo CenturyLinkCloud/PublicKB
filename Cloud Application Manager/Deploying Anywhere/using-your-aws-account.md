@@ -75,14 +75,14 @@ To be able to deploy AWS CloudFormation you will need to have the appropriated p
 
 For example, if you are planning to deploy RDS and ElastiCache from CloudFormation templates, it useful to give the permissions for them like in the next lines:  
 
-```json
+```
 "rds:*",
 "elasticache:*"
 ```
 
 Here is a complete example of a common policy that give access to some AWS services but not all:
 
-```json
+```
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -138,7 +138,7 @@ The full list of possible actions is described [here](http://docs.aws.amazon.com
 
 If you are not planning to use CloudFormation template boxes and you want to use Script Boxes and Deployment Policy Boxes, here is the minimal policy required for them to work:
 
-```json
+```
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -534,7 +534,7 @@ Use the ebcli to build the image.
 
 **Sintax**
 
-```sh
+```
 ebcli build ”<box ID>” [-t “<image name>”] [--image <image name>] [--boxes-path <boxes path>]
 ```
 
@@ -552,7 +552,7 @@ Use the docker client to push the image to your favorite docker registry. If you
 
 Syntax:
 
-```sh
+```
 docker push “<image name>”
 ```
 
@@ -562,7 +562,7 @@ Use the ebcli to post the image to your box
 
 Syntax:
 
-```sh
+```
 ebcli post “<docker image>”
 ```
 
