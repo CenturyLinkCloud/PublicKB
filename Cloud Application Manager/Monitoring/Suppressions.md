@@ -32,12 +32,12 @@ Once you click Suppress Agent or Check you will be taken to a new pop up.  You c
 
 ![SuppressionLeftNav](../../images/SuppressionLeftNav.PNG)
 
-**Suppressing an Agent:**
+**Suppressing an Agent: **
 Agents are displayed within the Agents modal by selecting **Agents** from the left side navigation bar.  Selecting an agent from the list will display the agent's details.  Select the gear icon on the right side of the agent detail and select **"Suppress"** to suppress future occurences of all alerts for this agent.  
 
 ![AgentSuppression.png](../../images/AgentSuppression.png)
 
-**View configured suppressesions:**
+**View configured suppressesions: **
 Here you will see the serer, the check type, and the reason.
 
 ![SuppressionsPage](../../images/SuppressionsPage.png)
