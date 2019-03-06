@@ -18,6 +18,7 @@
 * [Add Custom AMIs in Cloud Application Manager](#add-custom-amis-in-cloud-application-manager)
 * [Deploy to your AWS Account](#deploy-to-your-aws-account)
 * [EC2 (Linux and Windows)](#ec2-linux-and-windows)
+* [Deployment Information](#deployment-information)
 * [AWS ECS](#aws-ecs)
 * [Shutdown and Terminate Instances in AWS](#shutdown-and-terminate-instances-in-aws)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
@@ -489,6 +490,39 @@ To set up, add a new listener or select an existing one. Then specify the protoc
 When deploying via AWS, we register the instance to the load balancer and automatically create a security group for the load balancer so that it can communicate with the instance through the protocols and ports you set in the deployment profile.
 
 **Note:** Since you more frequently update or replace applications than load balancers, we recommend you reuse existing load balancers in production environments. This will help retain DNS settings that forward traffic to the instance.
+
+### Deployment Information
+
+Once your instance has been deployed, you can access its information by clicking on it in the instances list view and accessing to the instance details page. The right side of the screen displays instance deployment information. _Not all the following attributes apply to every type of instance, so some of them might not appear_:
+
+|       Attribute      | Description |
+|----------------------|-------------|
+|Support ID            | This ID relates this instance in case you ask for support regarding it. There might be more than one ID in case this CAM instance is associated with more than one machine. |
+|Policy                | Cloud Application Manager [Policy Box](../Automating Deployments/deploymentpolicy-box.md) used to deploy this instance. It links directly to the deployment policy box page. |
+|ID                    | Internal instance identifier. |
+|Service ID            | ID for the service this instance uses. |
+|Service               | Type of service included in this instance. It can be an operating system, an application, a script, etc. |
+|Hostname              | Hostname of the instance. |
+|Provider              | [Provider](../Core Concepts/providers.md) in which this instance is deployed. |
+|Provider Instance ID  | AWS instance ID or IDs. If the user has enough rights, it shows a link to the resource or resources in the AWS console. |
+|Proxy                 | Proxy used by the instance agent in case it is configured. |
+|Region                | AWS Region in which this instance is deployed. |
+|Availability Zone     | AWS Availability zone|
+|Instance Type         | AWS Instance type. |
+|AMI ID                | AMI ID from the AWS repository. |
+|Network Type          | EC2 Classic or the Virtual private cloud to which this instance belongs to. |
+|Placement group       | _[AWS docs](//docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)_|
+|Load Balancer         | Name of the load balancer that distributes the load across all availability zones in the region. |
+|Autoscaling           | Yes or no. |
+|Elastic Block Storage | Yes or no. |
+|Elastic IP            | Yes or no. |
+|KeyPair               | Name of the key pair that can be used to access the instance. |
+|IAM Role              | IAM Role associated with the instance. |
+|Managed               | Yes if the management of the instances has been delegated to CenturyLink. |
+|Security Groups       | Name of the security groups associated with this instance. |
+|Target Groups         | Name of the groups used to attach an instance to both types of load balancers automatically. |
+|Instances             | Number of AWS instances associated with this CAM instance through a load balancer. |
+|Max Instances         | Max number of AWS instances that the load balancer can launch at the same time. |
 
 ### AWS ECS
 
