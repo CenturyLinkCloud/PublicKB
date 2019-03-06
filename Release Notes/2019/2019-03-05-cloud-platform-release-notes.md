@@ -12,7 +12,7 @@
 
 **Exclude Lifecycle Management option on Deployment Policy Boxes**
 
-[Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) now supports a new Exclude Lifecycle Management toggle in Virtual Machine type Deployment Policy Boxes for all major cloud providers. When the user enable this toggle, the Cloud Application Manager agent will not be installed into the deployed machine, so the instance will be free of any foreign code. The user will be only able to stop/start or terminate these instances, but will also have the option to later enable lifecycle management on this type of instances that will install the agent and allow full management features.
+[Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) now supports a new Exclude Lifecycle Management toggle in Virtual Machine type Deployment Policy Boxes for all major cloud providers. When the user enables this toggle, the Cloud Application Manager agent will not be installed into the deployed machine, so the instance will be free of any foreign code. The user will be only able to stop/start or terminate these instances, but will also have the option to later enable lifecycle management on this type of instances that will install the agent and allow full management features.
 
 **Display box version in activity log**
 
@@ -20,7 +20,7 @@
 
 **Auto-register ARM VM resources in managed providers**
 
-[Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) now includes the feature to auto-register VM instances that were deployed as part of a Azure ARM template deployment. The compute instances and ScalingSets included into the template box will be automatically registered in Cloud Application Manager and the make managed process will be executed on them.
+[Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) now includes the feature to auto-register VM instances that were deployed as part of an Azure ARM template deployment. The compute instances and ScalingSets included into the template box will be automatically registered in Cloud Application Manager and the make managed process will be executed on them.
 
 **New Cloud Formation types supported**
 
