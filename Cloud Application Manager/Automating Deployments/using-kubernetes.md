@@ -104,7 +104,7 @@ The ***New Template*** dialog offers you the following options:
 
 ![Importing Kubernetes templates from a Github repository](../../images/cloud-application-manager/kubernetes/new_template_dialog.png)
 
-If the URL is a GitHub repository, the files from that directory are automatically imported, provided the filename ends to `.yaml` . If a template file with the same name already exists, it won't get overwritten, but duplicate template names will block the deployment, so you need to delete one of those templates to continue.
+If the URL is a GitHub repository, the files from that directory are automatically imported, provided the filename ends to `.yaml` . If there is already a template file with that name, it won't get overwritten, but duplicate names will block adding new templates, so one of them has to be deleted first in order to continue.
 
 ### Deploying Kubernetes Template Boxes
 
