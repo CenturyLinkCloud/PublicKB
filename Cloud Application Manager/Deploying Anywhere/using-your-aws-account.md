@@ -55,7 +55,7 @@ Go to top **Services** menu and in Security, Identity, & Compliance section, sel
 
 ![AWS Console Policies](../../images/aws-console/aws-console-policies.png)
 
-3. Click on **Crete policy** button and select Create your own policy.  
+3. Click on **Create policy** button and select Create your own policy.  
    There are several ways to add a policy. Here we will describe how to use a JSON snippet.  
    Select **JSON** tab in new Amazon Create policy page and continue editing the snippet displayed below in [Choosing the right policy](#choosing-the-right-policy).
 
