@@ -85,7 +85,7 @@ metadata:
 
 Kubernetes templates shall not include a *namespace* property in their metadata. Since the namespace is determined and forced by the Deployment Policy Box used to deploy the Instance, the deployment will fail if the template requests a namespace different from the one set with the Policy.
 
-If you want to deploy the same Template Box multiple times with the same Deployment Policy (and hence into the same namespace), in order to avoid name collisions, you need to **include the value of Cloud Application Manager Service ID** in the name of the deployed resources, and perhaps in the labels and selectors as well. Use YAML syntax to paste the *service-id* into templates, as shown below:
+If you want to deploy the same Template Box multiple times with the same Deployment Policy (and hence into the same namespace), in order to avoid name collisions, you need to **include the value of Cloud Application Manager Service ID** in the name of the deployed resources, and perhaps in the labels and selectors as well. Use YAML syntax to paste the *Service ID* into templates, as shown below:
 
 ```
 apiVersion: v1
@@ -94,6 +94,17 @@ metadata:
   name: frontend-\{{ service }}
 ...
 ```
+
+The following Jinja variables are always available in templates:
+
+| Variable | Description |
+| --- | --- |
+| `environment` | Name of the Instance |
+| `instance` | Instance ID |
+| `service` | Service ID |
+| `tags` | List of Tags |
+| `workspace` | Workspace or Owner of the Instance |
+
 
 The ***New Template*** dialog offers you the following options:
 
