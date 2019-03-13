@@ -31,7 +31,7 @@
     * Once the job is complete, the account is ready to be used with the new password.
 
 * Unlocking Administrator Account:
-    * SSH access to the CMS machine is required.
+    * SSH access to the CMS machine using root credentials is required.
     * Once logged in via SSH the appropriate command can be entered:
         ```
         gosh user-set-password Administrator <NEW PASSWORD>
