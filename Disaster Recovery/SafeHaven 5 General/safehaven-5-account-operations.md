@@ -1,3 +1,22 @@
+{{{
+  "title": "SafeHaven 5: Account Operations",
+  "date": "03-13-2019",
+  "author": "Christian Hunt",
+  "attachments": [
+    {
+      "file_name": "SafeHaven 5.0 user view",
+      "url": "../../images/SH5.0/userops/safehaven_users.png",
+      "type": "image/png"
+    },
+    {
+      "file_name": "SafeHaven 5.0 user Set Password",
+      "url": "../../images/SH5.0/userops/safehaven_setpassword.png",
+      "type": "image/png"
+    }
+  ],
+  "contentIsHTML": false
+}}}
+
 ### Account Operations
 
 * Accounts can be created and deleted using SafeHaven
