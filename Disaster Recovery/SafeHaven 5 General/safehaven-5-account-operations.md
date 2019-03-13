@@ -17,7 +17,7 @@
 ##### Password Recovery
 * If an incorrect password is used on an account ten or more times sequentially the account will be locked.
 * Once an account has been locked it must undergo a password change to unlock the account.
-* An account can be identified as locked in SafeHaven, under the users tab, the status will read `locked`.
+* An account can be identified as locked in SafeHaven, under the users tab, the status will read `Locked`.
 * Using SafeHaven the user password can be reset by the Administrator account.
 * Administrator password recovery requires access to the CMS via SSH.
 
@@ -33,7 +33,9 @@
 * Unlocking Administrator Account:
     * SSH access to the CMS machine is required.
     * Once logged in via SSH the appropriate command can be entered:
-        * `gosh user-set-password Administrator <NEW PASSWORD>`
+        ```
+        gosh user-set-password Administrator <NEW PASSWORD>
+        ```
     * Once this action is performed and the job is completed, the new password can be used to login the Administrator.
         * It is recommended to use a temporary password when using the command as it will be plain text.
         * Change the password once again using the SafeHaven software to maintain a secure password.
