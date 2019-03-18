@@ -79,11 +79,12 @@ In YAML it is valid to define multiple documents in a single file, separated by 
 apiVersion: v1
 kind: Service
 metadata:
-  name: frontend
+  name: frontend-\{{ service }}
+  namespace: \{{ namespace }}
 ...
 ```
 
-Kubernetes templates shall not include a *namespace* property in their metadata. Since the namespace is determined and forced by the Deployment Policy Box used to deploy the Instance, the deployment will fail if the template requests a namespace different from the one set with the Policy.
+Kubernetes templates shall not include a hard-coded *namespace* property in their metadata. Since the namespace is determined and forced by the Deployment Policy Box used to deploy the Instance, the deployment will fail if the template requests a namespace different from the one set with the Policy. The namespace set in the Deployment Policy can be referred with the `namespace` variable.
 
 If you want to deploy the same Template Box multiple times with the same Deployment Policy (and hence into the same namespace), in order to avoid name collisions, you need to **include the value of Cloud Application Manager Service ID** in the name of the deployed resources, and perhaps in the labels and selectors as well. Use YAML syntax to paste the *Service ID* into templates, as shown below:
 
@@ -92,6 +93,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: frontend-\{{ service }}
+  namespace: \{{ namespace }}
 ...
 ```
 
@@ -101,6 +103,7 @@ The following Jinja variables are always available in templates:
 | --- | --- |
 | `environment` | Name of the Instance |
 | `instance` | Instance ID |
+| `namespace` | The current Namespace from Deployment Policy |
 | `service` | Service ID |
 | `tags` | List of Tags |
 | `workspace` | Workspace or Owner of the Instance |
@@ -115,7 +118,11 @@ The ***New Template*** dialog offers you the following options:
 
 ![Importing Kubernetes templates from a Github repository](../../images/cloud-application-manager/kubernetes/new_template_dialog.png)
 
-If the URL is a GitHub repository, the files from that directory are automatically imported, provided the filename ends to `.yaml` . If there is already a template file with that name, it won't get overwritten, but duplicate names will block adding new templates, so one of them has to be deleted first in order to continue.
+If the URL is a GitHub repository, the files from that directory are automatically imported, as long as the filename ends with `.yaml` 
+
+There are some sample templates to test Kubernetes deployments in [this GitHub repository](https://github.com/DenesPal/cam-examples/tree/master/templates/kubernetes).
+
+If there is already a template file with that name, it won't get overwritten, but duplicate names will block adding new templates, so one of them has to be deleted first in order to continue.
 
 ### Deploying Kubernetes Template Boxes
 
