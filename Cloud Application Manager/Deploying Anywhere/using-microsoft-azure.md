@@ -301,11 +301,16 @@ You can import existing Virtual Machines into you workspace only in one click. T
 
 #### Available Instances
 
-As part of the result of synchronization process you can find a list of available virtual machines that already exist in your account but not used yet in Cloud Application Manager. You can import an existing one clicking **Import** button.
+As part of the result of synchronization process you can find a list of available virtual machines or scalesets that already exist in your account but not used yet in Cloud Application Manager. You can import an existing one clicking **Import** button.
 
 ![Microsoft Azure - Available instances](../../images/cloud-application-manager/microsoft-azure/available-instances-9.png)
 
 You should first synchronize your Azure provider before trying to register the virtual machine in order to get the current available instances that can be registered along with their statuses.
+
+#### Managed Services Anywhere Enabled Providers
+
+If you are deploying an ARM template box into a Managed Services Anywhere enabled provider, all the created instances (VMs and VM ScaleSets) will be automatically registered and linked with the ARM instance that deployed them. In these registered instances, not all lifecycle actions will be allowed, since for them you will need to act on the parent ARM instance for the dependant linked instances to be updated.
+For more information, please refer to [Managed Providers](../Managed Services/getting-started-with-cam-enable-managed-provider.md)
 
 ### Azure Native Resources
 
