@@ -295,7 +295,6 @@ Azure ARM Templates are supported on Cloud Application Manager with Microsoft Az
    * Choose a name and description for the new instance.
    * Press **Deploy**.
 
-
 ### Registering Existing Instances from your Azure Account
 
 You can import existing Virtual Machines into you workspace only in one click. The list of available instances you can import come with your Microsoft Azure provider synchronization.
@@ -310,7 +309,7 @@ You should first synchronize your Azure provider before trying to register the v
 
 #### Managed Services Anywhere Enabled Providers
 
-If you are using a Managed Services Anywhere enabled provider in the deployment, once you deploy an ARM template, all the created instances (VMs and VM ScaleSets) will be automatically registered and linked from the UI. 
+If you are deploying an ARM template box into a Managed Services Anywhere enabled provider, all the created instances (VMs and VM ScaleSets) will be automatically registered and linked with the ARM instance that deployed them. In these registered instances, not all lifecycle actions will be allowed, since for them you will need to act on the parent ARM instance for the dependant linked instances to be updated.
 For more information, please refer to [Managed Providers](../Managed Services/getting-started-with-cam-enable-managed-provider.md)
 
 ### Azure Native Resources
