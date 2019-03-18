@@ -15,6 +15,7 @@
 * [Deploying a New Instance](#deploying-a-new-instance)
 * [Scheduling Instances](#scheduling-instances)
 * [Protecting Instance Shutdown or Termination](#protecting-instance-shutdown-or-termination)
+* [Deploying Instances without Lifecycle Management](#deploy-instances-without-lifecycle-management)
 * [Handling Instance Lifecycle States](#handling-instance-lifecycle-states)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
@@ -210,6 +211,35 @@ Instances deployed in AWS will sync CAM **Manual Terminate Protection** with Dis
 ##### Unregistered Instances
 
 Instances imported from AWS will inherit DisableApiTermination flag into **Manual Terminate Protection** flag. Flag status is provided when provider is syncronized, so changes are not reflected in CAM until **Sync** operation has been done.
+
+### Deploying Instances without Lifecycle Management
+
+*Exclude Lifecycle Management* feature can be enabled on virtual machine deployment policy boxes (with single or multiple machines) to deploy instances without Lifecycle Management support. This means that the Cloud Application Manager agent will not be installed. This feature is not supported for deployment policy boxes with auto-scaling feature enabled.
+
+Follow these steps to *Exclude Lifecycle Management* on a existing deployment policy box:
+
+1. In a existing Deployment Policy Box, under Code tab, edit the Policy by clicking on the pencil icon.
+2. In the Edit Deployment Policy Box dialog, enable the **Exclude Lifecycle Management** toggle.
+
+    ![Deployment Policy Box Dialog](../../images/cloud-application-manager/exclude-lifecycle-management.png)
+
+3. When done, click **Save**
+
+#### Enabling Lifecycle Management
+
+When an instance has been deployed with *Exclude Lifecycle Management* option set, it's possible to enable Lifecycle Management installing the Cloud Application Manager agent on all the instance machines.
+
+Follow these steps to *Enable Lifecycle Management* on an existing instance:
+
+1. In a existing Instance, under the action list dropdown, select *Enable Lifecycle Management* option.
+
+    ![Deployment Policy Box Dialog](../../images/cloud-application-manager/enable-lifecycle-management.png)
+
+2. In the Enable Lifecycle Management dialog enter the credentials and proxy configuration if needed, and click **Enable**
+
+    ![Deployment Policy Box Dialog](../../images/cloud-application-manager/enable-lifecycle-management-dialog.png)
+
+3. The Cloud Application Manager agent will then be installed on all instances machines and the full lifecycle capabilites will be available on the instance.
 
 ### Handling Instance Lifecycle States
 
