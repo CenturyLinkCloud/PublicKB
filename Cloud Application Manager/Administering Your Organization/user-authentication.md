@@ -38,7 +38,7 @@ All users with Cloud Application Manager organization administrator access.
 
 ### Single sign-on with Google, GitHub, or username, password
 
-To allow users to sign in with a Cloud Application Manager **username and password**, turn on that option under Authentication in the admin console.
+To allow users to sign in with a Cloud Application Manager **username and password**, turn on that option under Authentication in the **Settings** page in the [Management site](https://account.cam.ctl.io/#/settings).
 
 Do the same and turn on **Google** or **GitHub** to let users sign in with those credentials without having to create an account exclusively for Cloud Application Manager. When they sign in, Cloud Application Manager provisions an account based on their Google or GitHub username.
 
@@ -54,12 +54,9 @@ When users log in with SAML into Cloud Application Manager, the user is redirect
 
 Enable SAML in Cloud Application Manager to let users log in using credentials managed by a SAML identity provider.
 
-1. Sign in to Cloud Application Manager as the [default administrator](admin-access.md).
-
-2. From the user menu drop-down on the top right, select **Admin Console**.
-
-3. Under Authentication, enable SAML by turning it on.
-
+1. Sign in to Cloud Application Manager as an [administrator](admin-access.md).
+2. Navigate to the **Settings** page in the [Management site](https://account.cam.ctl.io/#/settings).
+3. Under **Authentication**, enable SAML by turning it on.
 4. Set up SAML IdP with the SP settings. This settings can be obtained clicking on "SP Metadata" download link:
 
    ![SAML authentication method](../../images/cloud-application-manager/management/settings-auth-saml.png)
@@ -68,14 +65,24 @@ Enable SAML in Cloud Application Manager to let users log in using credentials m
 
    * **Single Sign On URL.** Service Provider endpoint that will be used to interchange messages during authentication. This value can be found on AssertionConsumerService XML element on SP metadata file.
    * **Service Provider Entity ID.** This value must match with the entityID property on SP metadata file.
+   * **Service Provider X.509 Cert.** This optional value can be set to enable signing or encryption (as well as verifying signatures and decryption). This will enable SAML encryption in any message interchanged with the Service Provider.
 
-5. Finally it's needed to download the IdP Metadata file and upload on CAM admin console.
+5. Finally, the **IdP Metadata** file needs to be downloaded from the IdP and uploaded into the **Settings** page in the [Management site](https://account.cam.ctl.io/#/settings).
 
 Take into consideration that currently this is our valid **Attribute mapping list**:
 
 * **EMAIL**: 'email', 'Email', 'User.Email'.
 * **FIRST NAME**: 'firstname', 'FirstName', 'User.FirstName'.
 * **LAST NAME**: 'lastname', 'LastName', 'User.LastName'.
+* **GROUPS** (optional): 'Groups'
+
+### Working with SAML Groups
+
+When SAML is being used in your organization and you are retrieving SAML groups information, you can add SAML groups as members of a workspace, cost-center or administrators of your organization through the Cloud Application Manager web or API interface, instead of searching and adding them one by one. All SAML group members will then get automatic access to the corresponding team workspace, cost-center or organization, and thus, to all resources pertaining to that scope.
+
+![Adding a SAML group as Workspace member](../../images/cloud-application-manager/management/settings-auth-saml-group.png)
+
+This gives your developers, operations engineers, or IT admins access to the same deployment assets to do their part in automating with the necessary access levels.
 
 ### Single Sign-On with LDAP
 
@@ -121,7 +128,7 @@ When users sign in to Cloud Application Manager with their LDAP credentials, we 
 
 LDAP group members get automatic access to team workspaces in Cloud Application Manager when you enable sharing with those groups. Through the Cloud Application Manager web or API interface, you can directly add LDAP groups as members of a workspace instead of searching and adding them one by one.
 
-![Adding a group as Workspace member](../../images/cloud-application-manager/management/settings-auth-ldap-group.png)
+![Adding an LDAP group as Workspace member](../../images/cloud-application-manager/management/settings-auth-ldap-group.png)
 
 This gives your developers, operations engineers, or IT admins access to the same deployment assets to do their part in automating with necessary access levels. Follow these steps to sync with LDAP groups.
 
