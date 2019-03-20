@@ -1,7 +1,7 @@
 {{{
   "title": "Microsoft Azure Checks",
-  "date": "03-07-2018",
-  "author": "Jason Oldham",
+  "date": "03-20-2019",
+  "author": "Mindy Daugherty",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -9,29 +9,32 @@
 }}}
 
 ### Overview
-Cloud Application Manager Monitoring now allows for Microsoft Azure checks.  These checks will provide base-level infrastructure metrics and logs for Azure services.
+Cloud Application Manager Monitoring features Microsoft Azure checks.  These checks will provide base-level infrastructure metrics and logs for Azure services.
 
 ![AzureCheckCatalog](../../images/AzureCheckCatalog.PNG)
 
 #### Navigation 
 
 Left Navigation:  
-The checks live on the Policies tab (Check Catalog) in the Cloud Application Management Monitoring site.
+
+The Policies tab provides a list of available policies as well as checks currently setup for your organization.
 
 ![PolicyLeftNav](../../images/PolicyLeftNav.PNG)
 
 Adding a New Policy:
-To create a new policy, you need to click the “New” button in the upper left-hand side.  After clicking the new button, a new pop-up appears where you can name and describe your policy.
+To create a new policy, click the **New** button on the top left side of the screen and follow the prompts to complete the **Creating Policy** screen. You will be required to enter a name for the policy as well as entering a description, define the Scope and Workspace, include any filters, and add any additional labels. You will also have the option to enable the policy now or unselect and enable at a later time. Click **Save Policy**.
 
 ![CreatePolicy](../../images/CreatePolicy.PNG)
 
-From there you will be able to set up the metric or status checks you want to see.  You can also set up the servers you want to associate the checks with as well.
+Once you have saved the policy, you will now be able to edit the policy and add a check. Click **Add** on the top right corner to continue on to select the check from the Check Catalog.
 
-To add a metric check you will access the check catalog and select the category you want.  Once a category is selected a list of check types will be shown on the right-hand side. 
+SCREENSHOT - AzureMetricCheckConfig
+
+On the Check Catalog screen, select the catalog from left-hand side menu then select the check or metric from the associated list to be added to the new policy. 
 
 ![AzureCheckCatalog2](../../images/AzureCheckCatalog.PNG)
 
- To add a spcific check for Azure, you need to click on Azure Metric Check and configure it
+ To add a specific metric check for Azure, select **Azure Metric Check** and follow the prompts to configure the check. You will be required to create a name for the Metric and select the interval and occurences for the check as well a description, labels, Resource ID, Critical Over, Warning Over
 
 ![AzureCAMResource](../../images/AzureCAMResource.PNG)
 
