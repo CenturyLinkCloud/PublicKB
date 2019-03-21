@@ -85,5 +85,6 @@ Click **Save Check** to complete the process.
 ![AzureResourceFieldANNO](../../images/AzureResourceFieldANNO.TIFF)
 
 After the check has been saved, it will then appear in the list of available Policies.
+
 ![AzureCheckCompleteANNO](../../images/AzureCheckCompleteANNO.TIFF)
 
