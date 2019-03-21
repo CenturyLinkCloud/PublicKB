@@ -90,6 +90,7 @@ It is recommended the user or role performing these steps have full IAM permissi
                 "dynamodb:ListTables",
                 "dynamodb:DescribeTable",
                 "ec2:Describe*",
+                "ec2:ModifyInstanceAttribute", 
                 "ec2:GetConsoleOutput",
                 "ecs:ListClusters",
                 "ecs:DescribeClusters",

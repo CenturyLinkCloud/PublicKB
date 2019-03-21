@@ -35,24 +35,48 @@ In addition to the services list, Cloud Application Manager creates three exampl
 
 To do this, access the details by selecting "Code", then "Edit", where the following options are available:
 
+##### Order
+
+![Order section of deployment policy](../../images/cloud-application-manager/deployment-policy/centurylink-dcc-order.png)
+
 | Option | Description |
 |--------|-------------|
-| Server Type | You can choose the server type: standard or [bare metal](../../Servers/bare-metal-faq.md). |
+| Company | Select the company of your DDC provider. |
+| Billing Site | Select the billing site of your DDC provider. |
 | Datacenter | Clusters are grouped in [Datacenters](../../General/CenturyLinkCloud/centurylink-cloud-data-center-locations.md). To select a Cluster, Cloud Application Manager needs to know the Datacenter the Cluster belongs to. |
-| Group |	You can choose the group in which you want the new instance to be included. |
-| Template | The list of templates that we can use to create the VM. |
-| Delegate OS Management | Select "on" if you want to [delegate OS management](../../Managed Services/managed-operating-system-frequently-asked-questions.md). This option is off by default. |
-| Horizontal Autoscale | This option enables the configuration of a horizontal autoscale: minimum instances, metrics,  incremental or decremental scale, threshold period, or cool down period. |
+| Cluster | Select the cluster where you want to deploy. |
+| Domain | Select the domain where you want to deploy. |
+
+##### Resource
+
+![Resourse section of deployment policy](../../images/cloud-application-manager/deployment-policy/centurylink-dcc-resource.png)
+
+| Option | Description |
+|--------|-------------|
+| Machine configuration | Select the profile of the machine. |
+| OS | Select from a list of CenturyLink DCC Linux or Windows images. |
+| Language | Select the languaje of instance. |
 | Instances | Cloud Application Manager can deploy several servers at once, with the restriction that all the operations run on all the instances (start, stop, delete, and script boxes installation). |
-| CPUs | The number of CPUs. |
-| Memory | The amount of memory assigned to the Virtual Machine. |
+| VCPU | Select the number of CPUs. |
+| VRAM | Select the amount of memory assigned to the Virtual Machine. |
+| Storage | Select the disk group to use. |
+
+##### Network
+
+![Network section of deployment policy](../../images/cloud-application-manager/deployment-policy/centurylink-dcc-network.png)
+
+| Option | Description |
+|--------|-------------|
 | Network | The net segment where the VM is configured. Please note that the IP address is set automatically. The user must select a segment with available IP addresses. |
-| Disks | The volume where the OS disk was mounted. The user is responsible for assigning a segment with enough available space. Cloud Application Manager only creates the necessary disks to install the OS. If you need any extra disk, you will need to add it from CenturyLink DCC portal. |
 
+##### Proxy
 
-![centurylink-dcc-policy-box-options.png](../../images/cloud-application-manager/centurylink-dcc-policy-box-options.png)
+![Proxy section of deployment policy](../../images/cloud-application-manager/deployment-policy/centurylink-dcc-proxy.png)
 
-![centurylink-dcc-policy-box-options-2.png](../../images/cloud-application-manager/centurylink-dcc-policy-box-options-2.png)
+| Option | Description |
+|--------|-------------|
+| Host | The hostname or domain of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+| Port | The port of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
 
 **Deploying Instances from Deployment Policies**
 

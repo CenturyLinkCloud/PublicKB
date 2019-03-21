@@ -96,9 +96,6 @@ In order to deploy to a vCenter private datacenter, you must first provide infor
 
 Select deployment metadata from a deployment profile to launch VMs to your vCenter Server.
 
-![vsphere-deployment-profile-2.png](../../images/cloud-application-manager/vsphere-deployment-profile-2.png)
-
-
 **Deployment**
 
 | Deployment Option | Description |
@@ -107,6 +104,8 @@ Select deployment metadata from a deployment profile to launch VMs to your vCent
 
 
 **Resource**
+
+![Resource section of deployment policy](../../images/cloud-application-manager/deployment-policy/vcenter-resource.png)
 
 | Deployment Option | Description |
 |-------------------|-------------|
@@ -119,6 +118,8 @@ Select deployment metadata from a deployment profile to launch VMs to your vCent
 
 **Placement**
 
+![Placement section of deployment policy](../../images/cloud-application-manager/deployment-policy/vcenter-placement.png)
+
 | Deployment Option | Description |
 |-------------------|-------------|
 | Compute Resource | Place the VM in a host, cluster, vApp, or resource pool in the datacenter. Select **Any host** to place in a host Cloud Application Manager picks randomly. |
@@ -126,7 +127,19 @@ Select deployment metadata from a deployment profile to launch VMs to your vCent
 | Folder | From the folders shown, select one to place the VM. |
 
 
+**Proxy**
+
+![Proxy section of deployment policy](../../images/cloud-application-manager/deployment-policy/vcenter-proxy.png)
+
+| Option | Description |
+|-------------------|-------------|
+| Host |	The hostname or domain of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+| Port |  The port of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+
+
 **Disks dd**
+
+![Disks section of deployment policy](../../images/cloud-application-manager/deployment-policy/vcenter-disks.png)
 
 | Deployment Option | Description |
 |-------------------|-------------|

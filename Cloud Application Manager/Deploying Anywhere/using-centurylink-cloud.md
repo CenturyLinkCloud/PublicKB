@@ -46,6 +46,8 @@ Note a couple of things about instances you deploy on CenturyLink Cloud through 
 
 **Resource**
 
+![Resource section of deployment policy](../../images/cloud-application-manager/deployment-policy/resource-centurylink.png)
+
 | Option | Description |
 |--------|-------------|
 | Server Type | Select a server type, for example, standard. |
@@ -53,19 +55,32 @@ Note a couple of things about instances you deploy on CenturyLink Cloud through 
 | Group |	Select placement group for the new instance. |
 | Template | Select from a list of CenturyLink Cloud Linux or Windows images. Images are specific to the box service type, that is, Linux or Windows. |
 | Instances | Specify the number of instances to provision. |
-| Admin/root Password | Choose Admin/root password for your instance. |
+| Admin/root Password | Choose the Administrator user password for Windows instance or the root password for Linux instance. This Password can be left empty, then a random password will be generated. When specified, this password will show up in CLC portal. |
 | Confirm Password | Confirm the password. |
 
 
 **Network**
+
+![Network section of deployment policy](../../images/cloud-application-manager/deployment-policy/network-centurylink.png)
 
 | Option | Description |
 |--------|-------------|
 | Network |	Select a vLan for the new instance. |
 | Public IP	| Check the box to attach a public IP address to the new instance. |
 
+##### Proxy
+
+![Proxy section of deployment policy](../../images/cloud-application-manager/deployment-policy/proxy-centurylink.png)
+
+| Option | Description |
+|-------------------|-------------|
+| Host |	The hostname or domain of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+| Port |  The port of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+
 
 **Compute**
+
+![Compute section of deployment policy](../../images/cloud-application-manager/deployment-policy/compute-centurylink.png)
 
 | Option | Description |
 |--------|-------------|
@@ -73,6 +88,8 @@ Note a couple of things about instances you deploy on CenturyLink Cloud through 
 | Memory | Allocate RAM for the instance. You can get up to 128 GB. |
 
 **Disks**
+
+![Disks section of deployment policy](../../images/cloud-application-manager/deployment-policy/disk-centurylink.png)
 
 By default, the machine is provisioned with 17GB local disk space. You can add more disks in RAW format or Partitioned, up to 1024 GB.
 

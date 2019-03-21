@@ -1,7 +1,7 @@
 {{{
   "title": "Partner Cloud Integration",
-  "date": "3-29-2016",
-  "author": "Ben Swoboda",
+  "date": "01-17-2019",
+  "author": "Ben Swoboda (Updated by Gavin Lai)",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -78,7 +78,7 @@ For additional details on support responsibilities for our partners and their SL
   Partner | Cloud | Responsibility | Details
 --- | --- | --- | ---
 CenturyLink  | Azure and AWS |   **Azure platform-level support:** https://portal.azure.com users; Account Sign-up and Set-up; Knowledge Base and FAQs; Service availability; Billing; Subscription management; Basic Technical Support; Configuration review; Azure Control Portal; Partner cloud month-to-date totals; Partner cloud estimates; Terms and Agreements; Estimates for Month-To-Date and month-end usage | Available through Cloud Application Manager. Terms and Conditions contained therein. The easiest way to create a support ticket is through the ticketing functionality of Cloud Application Manager.
-CenturyLink | Azure and AWS  | ** Managed OS. ** For the moment, this in-depth level of support for Windows and RedHat OS-es are not available in Azure. The objective of this services is to provide Remote Administration, Monitoring, ticketing specific to the resources, and Patching for the OS. | Not yet available in Azure
+CenturyLink | Azure and AWS  | ** Managed OS. ** For the moment, this in-depth level of support for Windows and RedHat OS-es are not available in Azure. The objective of this services is to provide Remote Administration, Monitoring, ticketing specific to the resources, and Patching for the OS. | Available on both AWS and Azure
 CenturyLink IT Service Management | Azure and AWS  | **Per agreement.** Design and delivery. Potentially including application architecture, consulting services, solution design, configuration, installation and migration.| Contact your account representative.
 CenturyLink Service Management | Azure | **Per agreement** For run-state environments following design and deliver. Potentially including Account Management, Technical Account management, governance, and application management. | Contact your account representative.
 Microsoft | Azure and AWS  | **Infrastructure** Troubleshoot and provide technical guidance for customer issues escalated through CenturyLink including undocumented scenarios and service impacting events.  | [Microsoft SLA](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37)

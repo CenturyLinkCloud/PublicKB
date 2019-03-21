@@ -132,6 +132,8 @@ In case of multi-tier applications deployed to different roles, follow these tip
 
 ##### Resource
 
+![Resource section of deployment policy](../../images/cloud-application-manager/deployment-policy/azure-classic-resource.png)
+
 | Option | Description |
 |--------|-------------|
 | Role | Select Web Role or Worker Role. See [Virtual Machine Role](using-azure.md) to deploy to that instead. |
@@ -144,9 +146,20 @@ In case of multi-tier applications deployed to different roles, follow these tip
 
 ##### Network
 
+![Network section of deployment policy](../../images/cloud-application-manager/deployment-policy/azure-classic-network.png)
+
 | Option | Description |
 |--------|-------------|
 | Location | Select a virtual network, region, or affinity group to physically place the instance. <li>**Virtual Networks**. To let the instance connect to services in Azure, select a virtual private network that you previously created in your subscription. See the Azure help on [creating virtual networks](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-create-vnet-classic-portal). </li><li>**Regions**. Select a region to place the instance. </li><li>**Affinity Groups**. Select an affinity group, if you created one to keep the instance close to other regional resources in the datacenter.</li> |
+
+##### Proxy
+
+![Proxy section of deployment policy](../../images/cloud-application-manager/deployment-policy/azure-classic-proxy.png)
+
+| Option | Description |
+|-------------------|-------------|
+| Host |	The hostname or domain of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+| Port |  The port of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
 
 ##### Autoscaling Web or Worker Role Instances
 

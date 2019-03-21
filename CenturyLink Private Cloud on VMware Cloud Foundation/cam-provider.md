@@ -41,5 +41,3 @@ In this KB article, we walk through how to enable a Cloud Application Manager Pr
 * The Provider will synchronize. Once completed, you can begin using Cloud Application Manager with CenturyLink Private Cloud on VMware Cloud Foundation.
 
 ![CAM Provider](../images/dccf/cam-provider4.png)
-
-For additional information on using Cloud Application Manager, please refer to the [Knowledge Base](../Cloud Application Manager/Getting Started/#1).

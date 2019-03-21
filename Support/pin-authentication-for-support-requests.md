@@ -1,6 +1,6 @@
 {{{
   "title": "PIN Authentication for Support Requests",
-  "date": "3-16-2017",
+  "date": "2-29-2019",
   "author": "",
   "attachments": [],
   "contentIsHTML": false
@@ -14,9 +14,7 @@ To access or change your PIN follow the steps below.
 
 1. login to the [Control Portal.](//control.ctl.io)
 
-2. Once you have logged in, click your **Username** in the top right hand corner of the page and select **Your Profile.**
-
-    ![profile page link](../images/pin-authentication-for-support-requests-01.png)
+2. Once you have logged in, click your **Username** in the top right hand corner of the page and select **My Account.**
 
 3. Your PIN will be displayed on the user profile page.
 

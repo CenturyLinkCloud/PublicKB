@@ -94,6 +94,8 @@ When you’re ready to [launch an instance](deploying-managing-instances.md) in 
 
 **Resource**
 
+![Resource section of deployment policy](../../images/cloud-application-manager/deployment-policy/cloudstack-resource.png)
+
 | Option | Description |
 |--------|-------------|
 | Zone | Availability zone or region isolated for data redundancy where you want to deploy the virtual machine. For example, Zone 1. |
@@ -105,10 +107,23 @@ When you’re ready to [launch an instance](deploying-managing-instances.md) in 
 
 **Placement**
 
+![Placement section of deployment policy](../../images/cloud-application-manager/deployment-policy/cloudstack-placement.png)
+
 | Option | Description |
 |--------|-------------|
 | Network | Default guest network configuration or a pre-configured network to allow traffic to the virtual machine. Consists of the permitted CIDR block of IP addresses from where traffic to the virtual machine is allowed. For more information, see the [CloudStack help](http://docs.cloudstack.apache.org/projects/cloudstack-administration/en/4.3/networking_and_traffic.html). |
 | Security Groups |	Filter incoming and outgoing traffic for the virtual machine based on a set of rules. Multiple security groups in a zone can be selected for a virtual machine. For more information, see [Security Groups](http://docs.cloudstack.apache.org/projects/cloudstack-administration/en/4.3/networking_and_traffic.html#security-groups). |
+
+
+**Proxy**
+
+![Proxy section of deployment policy](../../images/cloud-application-manager/deployment-policy/cloudstack-proxy.png)
+
+| Option | Description |
+|-------------------|-------------|
+| Host |	The hostname or domain of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+| Port |  The port of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+
 
 ### Contacting Cloud Application Manager Support
 

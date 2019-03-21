@@ -215,6 +215,15 @@ For more information, see the [Azure help](https://docs.microsoft.com/en-us/azur
 |Security Group | Filter incoming and outgoing traffic for the virtual machine based on a set of rules. Multiple security groups in a zone can be selected for a virtual machine.  For more information, see [Security Groups](https://docs.microsoft.com/en-us/azure/virtual-network/security-overview).  This option will not appear if you choose to use a **ScaleSet** feature above, but all restrictions associated with the network and subnet above will be applied.|
 |Public IP Address | The public IP Address exposes our server to the public internet where other applications can access it. If loadbalancing is configured, a public IP will be automatically associated with it, so this option will be hidden because there is no need to associate public IPs directly with the instances. |
 
+#### Proxy
+
+![Proxy section of deployment policy](../../images/cloud-application-manager/microsoft-azure/proxy.png)
+
+| Option | Description |
+|-------------------|-------------|
+| Host |	The hostname or domain of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+| Port |  The port of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+
 #### Disks
 
 ![Microsoft Azure Deployment Options - Disks](../../images/cloud-application-manager/microsoft-azure/compute-deployment-options-disks.png)
@@ -292,11 +301,16 @@ You can import existing Virtual Machines into you workspace only in one click. T
 
 #### Available Instances
 
-As part of the result of synchronization process you can find a list of available virtual machines that already exist in your account but not used yet in Cloud Application Manager. You can import an existing one clicking **Import** button.
+As part of the result of synchronization process you can find a list of available virtual machines or scalesets that already exist in your account but not used yet in Cloud Application Manager. You can import an existing one clicking **Import** button.
 
 ![Microsoft Azure - Available instances](../../images/cloud-application-manager/microsoft-azure/available-instances-9.png)
 
-We strongly recommend synchronize your Azure provider before you try to register the virtual machine. This due to such instance may be registered by another user before you try to register it. This way you can avoid this kind of problems.
+You should first synchronize your Azure provider before trying to register the virtual machine in order to get the current available instances that can be registered along with their statuses.
+
+#### Managed Services Anywhere Enabled Providers
+
+If you are deploying an ARM template box into a Managed Services Anywhere enabled provider, all the created instances (VMs and VM ScaleSets) will be automatically registered and linked with the ARM instance that deployed them. In these registered instances, not all lifecycle actions will be allowed, since for them you will need to act on the parent ARM instance for the dependant linked instances to be updated.
+For more information, please refer to [Managed Providers](../Managed Services/getting-started-with-cam-enable-managed-provider.md)
 
 ### Azure Native Resources
 
