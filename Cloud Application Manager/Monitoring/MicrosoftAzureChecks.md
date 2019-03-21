@@ -10,10 +10,10 @@
 
 
 **In this article:**
-[Overview](#overview)
-[Prerequisites](#prerequisites)
-[Navigation](#navigation)
-[Configure Policy] (#configurepolicy)
+* [Overview](#overview)
+* [Prerequisites](#prerequisites)
+* [Navigation](#navigation)
+* [Configuration](#configuration)
 
 
 ### Overview
@@ -35,7 +35,7 @@ The Policies tab, located in the left-hand navigation pane, provides a list of a
 
 ![NavigationPolicies](../../images/NavigationPolicies.TIFF)
 
-#### Configure Policy
+#### Configuration
 
 You can select a current policy or add a new policy in order to configure the setup. 
 
