@@ -1,7 +1,7 @@
 {{{
 "title": "Using Microsoft Azure",
-"date": "09-03-2018",
-"author": "Guillermo Sanchez",
+"date": "03-28-2019",
+"author": "Guillermo Sanchez & Sergio Quintana",
 "keywords": ["microsoft", "azure", "arm"],
 "attachments": [],
 "contentIsHTML": false
@@ -12,6 +12,7 @@
 * [Overview](#overview)
 * [Before You Begin](#before-you-begin)
 * [Registering Your Microsoft Azure Subscription (ARM) in Cloud Application Manager](#registering-your-microsoft-azure-subscription-arm-in-cloud-application-manager)
+* [Enabling services](#enabling-services)
 * [Deploying Instances in Azure](#deploying-instances-in-azure)
 * [Registering Existing Instances from your Azure Account](#registering-existing-instances-from-your-azure-account)
 * [Azure Native Resources](#azure-native-resources)
@@ -125,6 +126,12 @@ During synchronization, we can get warnings about locations may be ignored becau
 The result of the synchronization process will be the creation of one ARM template box and two policy boxes (Windows and RHEL respectively) in case of exist a virtual network in our account.
 
 Samples and management appliance deployment policy could be installed too.
+
+### Enabling services
+
+*Services* tab is the right place where services such as [Managed Services Anywhere](../Managed Services/getting-started-with-cam-enable-managed-provider.md), [Automatic Discovery of Resources](../Getting Started/register-existing-instance.md#discovering-the-unregistered-instances) and [Analytics](../analytics/cloudapplicationmanageranalyticsui.md) can be enabled or disabled attending to your needs. Note that the number of active services will be shown next to the tab's name.
+
+![Services tab](../../images/cloud-application-manager/Services-tab-Azure.png)
 
 ### Deploying Instances in Azure
 

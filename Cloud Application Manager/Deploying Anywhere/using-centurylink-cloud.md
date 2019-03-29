@@ -1,20 +1,25 @@
 {{{
 "title": "Using CenturyLink Cloud",
-"date": "09-01-2016",
-"author": "",
+"date": "03-29-2019",
+"author": "Sergio Quintana",
+"keywords": ["cam", "cloud application manager", "centurylink", "clc"],
 "attachments": [],
 "contentIsHTML": false
 }}}
 
 
-### Using CenturyLink Cloud
-
-Automate application deployments through Cloud Application Manager when you launch to Linux or Windows virtual servers in the CenturyLink Cloud public cloud. Cloud Application Manager simplifies deployments with a dedicated focus on applications rather than infrastructure.
-
 **In this article:**
 
-* Register CenturyLink Cloud provider in Cloud Application Manager
-* Deploy to CenturyLink Cloud from Cloud Application Manager
+* [Overview](#overview)
+* [Register CenturyLink Cloud Provider in Cloud Application Manager](#register-centurylink-cloud-provider-in-cloud-application-manager)
+* [Deploy to CenturyLink Cloud from Cloud Application Manager](#deploy-to-centurylink-cloud-from-cloud-application-manager)
+* [Enabling services](#enabling-services)
+* [Shutdown and Terminate Instances in CenturyLink Cloud](#shutdown-and-terminate-instances-in-centurylink-cloud)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
+
+### Overview
+
+Automate application deployments through Cloud Application Manager when you launch to Linux or Windows virtual servers in the CenturyLink Cloud public platform. Cloud Application Manager simplifies deployments with a dedicated focus on applications rather than infrastructure.
 
 ### Register CenturyLink Cloud Provider in Cloud Application Manager
 
@@ -92,6 +97,12 @@ Note a couple of things about instances you deploy on CenturyLink Cloud through 
 ![Disks section of deployment policy](../../images/cloud-application-manager/deployment-policy/disk-centurylink.png)
 
 By default, the machine is provisioned with 17GB local disk space. You can add more disks in RAW format or Partitioned, up to 1024 GB.
+
+### Enabling services
+
+*Services* tab is the right place where services such as [Managed Services Anywhere](../Managed Services/getting-started-with-cam-enable-managed-provider.md), [Automatic Discovery of Resources](../Getting Started/register-existing-instance.md#discovering-the-unregistered-instances) and [Analytics](../analytics/cloudapplicationmanageranalyticsui.md) can be enabled or disabled attending to your needs. Note that the number of active services will be shown next to the tab's name.
+
+![Services tab](../../images/cloud-application-manager/Services-tab-CLC.png)
 
 ### Shutdown and Terminate Instances in CenturyLink Cloud
 
