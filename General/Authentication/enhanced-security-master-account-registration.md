@@ -7,7 +7,7 @@
 }}}
 ### Description
 
-As part of our efforts to increase the security of your accounts using the SavvisStation Portal and Private Cloud (DCC), you will need to go through a one-time setup to create a new Master Account.  Once setup is complete, for your security, you will receive a one-time prompt to provide credentials for your services to link them to your master account; as a result, you will be able to navigate between them without re-authenticating going forward. Other security improvements include optional multi-factor authentication through your smart phone (soft token) and the ability to set up multiple security questions for account validation and retrieval purposes.
+As part of our efforts to increase the security of your accounts using the SavvisStation Portal and Private Cloud (DCC), you will need to go through a one-time setup to create a new Master Account.  You may also choose to use a Master Account to log into Cloud Application Manager.  Once setup is complete, for your security, you will receive a one-time prompt to provide credentials for your services to link them to your master account; as a result, you will be able to navigate between them without re-authenticating going forward. Other security improvements include optional multi-factor authentication through your smart phone (soft token) and the ability to set up multiple security questions for account validation and retrieval purposes.
 
 This article steps you through creating a master account.
 
@@ -83,7 +83,7 @@ For more information, please review the [account linking and unlinking guide](en
 ### FAQ  
 **Q: What services does Enhanced Security currently work with?**
 
-A: Currently Enhanced Security works with our Managed Hosting and Private Cloud services.  This list will be expanded in the future.
+A: Currently Enhanced Security works with our SavvisStation (Managed Hosting), Private Cloud (Dedicated Cloud Compute), and Cloud Application Manager services.  This list will be expanded in the future.
 
 **Q: Which browsers are currently supported?**
 
