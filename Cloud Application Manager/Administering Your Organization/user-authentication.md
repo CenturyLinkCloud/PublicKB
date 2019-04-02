@@ -213,6 +213,8 @@ When CenturyLink Master Account authentication method has been used, you can als
 
 ![CenturyLink Cloud Master Account link in user menu dropdown](../../images/cloud-application-manager/management/auth-sso-link.png)
 
+For more information about CenturyLink Master Account please refer to [Enhanced Security: Master Account](../../knowledge-base/general/authentication/enhanced-security-master-account-registration.md)
+
 ### Contacting Cloud Application Manager Support
 
 We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
