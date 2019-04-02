@@ -9,11 +9,11 @@
 
 ### Announcements (6)
 
-#### [CenturyLink Private Cloud on VMware Cloud Foundation](/centurylink-private-cloud-on-vmware-cloud-foundation/)
+#### [CenturyLink Private Cloud on VMware Cloud Foundation](https://www.ctl.io/centurylink-private-cloud-on-vmware-cloud-foundation/)
 
 All new customer builds from this point forward will include vCloud Director 9.5.
 
-#### [Cloud Application Manager](/cloud-application-manager/)
+#### [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/)
 
 ##### Support for CenturyLink Master Account login method
 
@@ -37,11 +37,11 @@ Cloud Application Manager has redesigned the user interface formerly used to ena
 
 ### Bug Fixes (4)
 
-#### [CenturyLink Public Cloud](/cloud-platform/)
+#### [CenturyLink Public Cloud](https://www.ctl.io/cloud-platform/)
 
 Fixed bug for API Endpoint /v2/servers/{accountAlias}/{serverName} which allowed the server to be retrieved when providing an incorrect accountAlias as long as it was in the same account hierarchy as the user requesting the data.
 
-#### [Dedicated Cloud Compute (DCC)](/dedicated-cloud-compute/)
+#### [Dedicated Cloud Compute (DCC)](https://www.ctl.io/dedicated-cloud-compute/)
 
 * Updated query so users are able to view clusters with pending AIPs
 * Added logic to address change tier memory calculation
