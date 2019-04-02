@@ -1,20 +1,26 @@
 {{{
 "title": "Enable User Authentication",
-"date": "10-30-2018",
-"author": "Arya Roudi",
-"keywords": ["cam", "authentication", "sso", "oauth", "google", "github", "saml", "ldap", "clc"],
+"date": "04-02-2018",
+"author": "Arya Roudi & Guillermo Sánchez",
+"keywords": ["cam", "authentication", "sso", "oauth", "google", "github", "saml", "ldap", "clc", "centurylink", "master account"],
 "attachments": [],
 "contentIsHTML": false
 }}}
 
 **In this article:**
-
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
 * [Single sign-on with Google, GitHub, or username, password](#single-sign-on-with-google-github-or-username-password)
 * [Single Sign-On with SAML](#single-sign-on-with-saml)
+* [Setting up a SAML IdP](#setting-up-a-saml-idp)
+* [Working with SAML Groups](#working-with-saml-groups)
 * [Single Sign-On with LDAP](#single-sign-on-with-ldap)
+* [Setting Up LDAP in Cloud Application Manager](#setting-up-ldap-in-cloud-application-manager)
+* [Syncing with LDAP Groups](#syncing-with-ldap-groups)
+* [Giving LDAP Accounts Admin Access](#giving-ldap-accounts-admin-access)
+* [Single Sign-On with CenturyLink Cloud](#single-sign-on-with-centurylink-cloud)
+* [Single Sign-On with CenturyLink Master Account](#single-sign-on-with-centurylink-master-account)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
@@ -30,11 +36,8 @@ All users with Cloud Application Manager organization administrator access.
 ### Prerequisites
 
 * Access to Cloud Application Manager, [Management site](https://account.cam.ctl.io/#/settings).
-
 * The user must be an Administrator of the organization in Cloud Application Manager.
-
 * The user should be at the organization level scope to access the Settings option in the left side menu.
-
 
 ### Single sign-on with Google, GitHub, or username, password
 
@@ -184,6 +187,32 @@ When CenturyLink Cloud authentication method is enabled, you can also see and ed
 
 ![CenturyLink Cloud username in My Account](../../images/cloud-application-manager/management/auth-clc-account.png)
 
+### Single Sign-On with CenturyLink Master Account
+
+If CenturyLink Master Account authentication method is enabled, any user with CenturyLink Master Account credentials may log in to Cloud Application Manager using his CenturyLink Master Account. This will also let users with additional CenturyLink products supporting this authentication method to use Single Sign-On method within Cloud Application Manager and these other additional products.
+
+#### Steps
+
+1. Sign in to Cloud Application Manager as an [administrator](admin-access.md).
+
+2. Navigate to the **Settings** page in the [Management site](https://account.cam.ctl.io/#/settings).
+
+3. Under **Authentication**, **CenturyLink Master Account** should be enabled.
+
+4. Any user who wants to log in into the organization will see a new button to sign in with his CenturyLink Master Account credentials.
+
+    ![CenturyLink Master Account sign in button](../../images/cloud-application-manager/management/auth-sso.png)
+
+5. When clicking the button, the user will be redirected to the CenturyLink Master Account page asking for credentials.
+
+    ![CenturyLink Master Account sign in](../../images/cloud-application-manager/management/auth-sso-signin.png)
+
+    The username provided will be linked to the user account if not already. You can also link your Cloud Application Manager account from the CenturyLink Master Account user interface directly, from the Account Linking section.
+
+When CenturyLink Master Account authentication method has been used, you can also see the link to "My CenturyLink Master Account" page in the **user** menu dropdown:
+
+![CenturyLink Cloud Master Account link in user menu dropdown](../../images/cloud-application-manager/management/auth-sso-link.png)
+
 ### Contacting Cloud Application Manager Support
 
 We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
@@ -191,5 +220,6 @@ We’re sorry you’re having an issue in [Cloud Application Manager](https://ww
 For issues related to API calls, send the request body along with details related to the issue.
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+* Windows: RDP into the instance to locate the log at \ProgramData\ElasticBox\Logs\elasticbox-agent.log
