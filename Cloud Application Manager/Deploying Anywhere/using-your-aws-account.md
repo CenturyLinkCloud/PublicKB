@@ -1,7 +1,7 @@
 {{{
 "title": "Using AWS",
-"date": "12-28-2018",
-"author": "Guillermo Sanchez, Julio Castanar",
+"date": "03-25-2019",
+"author": "Julio Castanar & Sergio Quintana",
 "keywords": ["aws", "ecs", "deploy"],
 "attachments": [],
 "contentIsHTML": false
@@ -15,7 +15,9 @@
 * [Connect your AWS Account in Cloud Application Manager](#connect-your-aws-account-in-cloud-application-manager)
 * [Create a custom AWS Policy](#create-a-custom-aws-policy)
 * [Create an IAM Role with the Policy chosen](#create-an-iam-role-with-the-policy-chosen)
+* [Creating a new AWS provider in Cloud Application Manager](#creating-a-new-aws-provider-in-cloud-application-manager)
 * [Add Custom AMIs in Cloud Application Manager](#add-custom-amis-in-cloud-application-manager)
+* [Enabling services](#enabling-services)
 * [Deploy to your AWS Account](#deploy-to-your-aws-account)
 * [EC2 (Linux and Windows)](#ec2-linux-and-windows)
 * [Deployment Information](#deployment-information)
@@ -34,7 +36,7 @@ Cloud Application Manager orchestrates with AWS APIs in the backend to provision
 
 ### Audience
 
-All Cloud Application Manager users who wants to deploy workloads into AWS.
+All Cloud Application Manager users who want to deploy workloads into AWS.
 
 ### Prerequisites
 
@@ -344,7 +346,7 @@ The tab *Policy usage* shows you the permissions attached to your policy. Here y
 
 **Note** in the policy detail, the **Policy ARN** id will be used to reference this Policy from Cloud Application Manager.  Copy it by clicking on the copy icon right to the policy ARN value.
 
-### Add Custom AMIs in Cloud Application Manager
+### Creating a new AWS provider in Cloud Application Manager
 
 Going back to Cloud Application Manager, you must first add your account as a new Provider to Providers list.  
 
@@ -357,6 +359,8 @@ When the provider is created all its default resources are synchronized. If the 
 
 ![Provider details page](../../images/cloud-application-manager/aws-deployment-config.png)
 
+### Add Custom AMIs in Cloud Application Manager
+
 Afterwards, we can see previously added configuration in AWS Provider. By default, Cloud Application Manager adds the latest AWS Linux and Windows AMIs along with any custom AMIs available in your AWS account.
 
 You can remove some of them from the view if you won't use them by clicking on the trash icon on each one.
@@ -366,6 +370,12 @@ You can add others by clicking **New** and entering the AMI identifier.
 ![Add machine image](../../images/cloud-application-manager/aws-machine-image-1.png)
 
 **Note:** For this to work you may have go to the AWS marketplace and accept the license agreement for that AMI. Although most AMIs come pre-installed with [cloud-init](https://cloudinit.readthedocs.org/en/latest/), some may not, in which case you must install it. Cloud Application Manager requires cloud-init to bootstrap the Cloud Application Manager agent.
+
+### Enabling services
+
+*Services* tab is the right place where services such as [Managed Services Anywhere](../Managed Services/getting-started-with-cam-enable-managed-provider.md), [Automatic Discovery of Resources](../Getting Started/register-existing-instance.md#discovering-the-unregistered-instances) and [Analytics](../analytics/cloudapplicationmanageranalyticsui.md) can be enabled or disabled attending to your needs. Note that the number of active services will be shown next to the tab's name.
+
+![Services tab](../../images/cloud-application-manager/Services-tab-AWS.png)
 
 ### Deploy to your AWS Account
 

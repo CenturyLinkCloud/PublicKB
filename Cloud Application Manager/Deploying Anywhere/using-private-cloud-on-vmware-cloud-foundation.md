@@ -1,7 +1,7 @@
 {{{
 "title": "Using CenturyLink Private Cloud on VMware Cloud Foundation",
-"date": "01-23-2019",
-"author": "Julio Castanar",
+"date": "04-02-2019",
+"author": "Julio Castanar & Sergio Quintana",
 "keywords": ["cam","centurylink private cloud", "cpc on vcf", "vmware cloud foundation", "deploy", "provider"],
 "attachments": [],
 "contentIsHTML": false
@@ -12,6 +12,7 @@
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
 * [Register CenturyLink Private Cloud on VMware Cloud Foundation as Provider](#register-centurylink-private-cloud-on-vmware-cloud-foundation-as-provider)
+* [Enabling services](#enabling-services)
 * [Deploy to CenturyLink Private Cloud from Cloud Application Manager](#deploy-to-centurylink-private-cloud-from-cloud-application-manager)
 * [Naming vCloud resources](#naming-vcloud-resources)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
@@ -34,6 +35,12 @@ All Cloud Application Manager users who wants to deploy workloads into CenturyLi
 To enable a Cloud Application Manager Provider for CenturyLink Private Cloud on VMware Cloud Foundation™ see the example [Configure a Provider for Cloud Application Manager](../../CenturyLink Private Cloud on VMware Cloud Foundation/cam-provider.md).
 
 ![CenturyLink Private Cloud on VMware Cloud Foundation add Provider](../../images/dccf/cam-provider3.png)
+
+### Enabling services
+
+*Services* tab is the right place where services such as [Managed Services Anywhere](../Managed Services/getting-started-with-cam-enable-managed-provider.md), [Automatic Discovery of Resources](../Getting Started/register-existing-instance.md#discovering-the-unregistered-instances) and [Analytics](../analytics/cloudapplicationmanageranalyticsui.md) can be enabled or disabled attending to your needs. Note that the number of active services will be shown next to the tab's name.
+
+![Services tab](../../images/cloud-application-manager/Services-tab-DCCf.png)
 
 ### Deploy to CenturyLink Private Cloud from Cloud Application Manager
 
