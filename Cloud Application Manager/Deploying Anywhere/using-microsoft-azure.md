@@ -10,6 +10,8 @@
 **In this article:**
 
 * [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
 * [Before You Begin](#before-you-begin)
 * [Registering Your Microsoft Azure Subscription (ARM) in Cloud Application Manager](#registering-your-microsoft-azure-subscription-arm-in-cloud-application-manager)
 * [Enabling services](#enabling-services)
@@ -22,6 +24,15 @@
 ### Overview
 
 There are two different flavors of Azure and Cloud Application Manager has providers for both. This document is in reference to Microsoft Azure.
+
+### Audience
+
+All Cloud Application Manager users who want to deploy workloads into Microsoft Azure.
+
+### Prerequisites
+
+* Access to Cloud Application Manager [Management site](https://account.cam.ctl.io/#/providers?type=Microsoft-Azure).
+* The user must have an existing Microsoft Azure account or should be an Administrator of the organization in Cloud Application Manager to [create](../Cloud Optimization/partner-cloud-integration-azure-new.md) or [bring](../Cloud Optimization/partner-cloud-integration-azure-existing.md) a Microsoft Azure account to be managed by CenturyLink.
 
 *Name** | **URL of Portal** | **Name of Related Cloud Application Manager Provider** | **KB article**
 --- | --- | --- | ---

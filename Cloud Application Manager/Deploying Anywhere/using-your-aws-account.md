@@ -36,7 +36,7 @@ Cloud Application Manager orchestrates with AWS APIs in the backend to provision
 
 ### Audience
 
-All Cloud Application Manager users who wants to deploy workloads into AWS.
+All Cloud Application Manager users who want to deploy workloads into AWS.
 
 ### Prerequisites
 

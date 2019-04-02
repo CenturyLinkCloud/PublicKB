@@ -11,6 +11,8 @@
 **In this article:**
 
 * [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
 * [Register CenturyLink Cloud Provider in Cloud Application Manager](#register-centurylink-cloud-provider-in-cloud-application-manager)
 * [Deploy to CenturyLink Cloud from Cloud Application Manager](#deploy-to-centurylink-cloud-from-cloud-application-manager)
 * [Enabling services](#enabling-services)
@@ -20,6 +22,15 @@
 ### Overview
 
 Automate application deployments through Cloud Application Manager when you launch to Linux or Windows virtual servers in the CenturyLink Cloud public platform. Cloud Application Manager simplifies deployments with a dedicated focus on applications rather than infrastructure.
+
+### Audience
+
+All Cloud Application Manager users who want to deploy workloads into CLC.
+
+### Prerequisites
+
+* Access to Cloud Application Manager [Management site](https://account.cam.ctl.io/#/providers?type=CenturyLink).
+* The user must have an existing CLC account or should be an Administrator of the organization in Cloud Application Manager to create or bring a CLC account to be managed by CenturyLink.
 
 ### Register CenturyLink Cloud Provider in Cloud Application Manager
 
