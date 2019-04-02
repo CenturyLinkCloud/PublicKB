@@ -33,7 +33,7 @@ Cloud Application Manager now adds support to configure multiple ServiceNow inst
 
 ##### User Interface Redesign for Provider Services
 
-Cloud Application Manager has redesigned the user interface formerly used to enable services such as [Managed Services Anywhere](../../Cloud Application Manager/Managed Services/getting-started-with-cam-enable-managed-provider.md), [Automatic Discovery of Resources](../../Cloud Application Manager/Getting Started/register-existing-instance.md#discovering-the-unregistered-instances) and [Analytics](../../Cloud Application Manager/analytics/cloudapplicationmanageranalyticsui.md). The services toggles that were available in the Edit Provider dialog has been moved to a new tab called Services in the provider details page, where you can manage them and see additional details such as the status of your Managed Services Anywhere enabled locations.
+Cloud Application Manager has redesigned the user interface formerly used to enable services such as [Managed Services Anywhere](../../Cloud Application Manager/Managed Services/getting-started-with-cam-enable-managed-provider.md), [Automatic Discovery of Resources](../../Cloud Application Manager/Getting Started/register-existing-instance/#discovering-the-unregistered-instances) and [Analytics](../../Cloud Application Manager/analytics/cloudapplicationmanageranalyticsui.md). The services toggles that were available in the Edit Provider dialog has been moved to a new tab called Services in the provider details page, where you can manage them and see additional details such as the status of your Managed Services Anywhere enabled locations.
 
 ### Bug Fixes (4)
 
