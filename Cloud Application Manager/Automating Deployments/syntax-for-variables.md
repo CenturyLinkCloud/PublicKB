@@ -107,7 +107,7 @@ To set or change variable values in the *parent box* event scripts, follow this 
     elasticbox set `<boxtype_variable_name>.<variable_name> <variable_value>`
     ```
 
-For examples, see the [Set Command](../../cloud-application-manager-commands.md).
+For examples, see the [Set Command](../../Cloud Application Manager/Automating Deployments/cloud-application-manager-commands.md).
 
 ### Syntax for System Variables
 
