@@ -17,7 +17,7 @@
   <li>Have an open ticket in the CenturyLink Cloud support queue</li>
 </ul>
 <h3>CenturyLink Cloud status updates</h3>
-<p>The CenturyLink Cloud support and operations staff will provide updates in the open ticket regarding the issue. Ticket updates will be done in accordance with the ticket priority. More information about the ticket priority can be found here: &nbsp;https://www.ctl.io/knowledge-base/support/ticket-prioritization-matrix/</p>
+<p>The CenturyLink Cloud support and operations staff will provide updates in the open ticket regarding the issue. Ticket updates will be done in accordance with the [ticket priority](./ticket-prioritization-matrix.md)</p>
 
 <h3>Q &amp; A</h3>
 <div>
