@@ -58,9 +58,13 @@ Windows instances deployed from the Cloud Application Manager Appliance (run the
 
 ```
 
-If problem persists connect to the instance over SSH or RDP and grab a copy of the agent /var/log/elasticbox/elasticbox-agent.log in the case of Linux or ProgramData\ElasticBox\elasticbox-agent.log in the case of Windows (please not that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected please and [Contact support](mailto:incident@CenturyLink.com)
+If the problem persists connect to the instance over SSH or RDP and grab a copy of the agent /var/log/elasticbox/elasticbox-agent.log in the case of Linux or ProgramData\ElasticBox\elasticbox-agent.log in the case of Windows (please note that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected please attach it when [Contacting support](mailto:incident@CenturyLink.com)
 
 **Solution 2**
+
+Check agent proxy settings (if configured to use one) at /usr/elasticbox/elasticbox.conf in linux or ProgramFiles\ElasticBox\Agent\elasticbox.conf in windows. If proxy is used for agent, make sure its working correctly and provide stable connectivity to CAM/Appliance servers.
+
+**Solution 3**
 
 Make sure the communication from CAM Agent to CAM servers works correctly.
 
@@ -81,7 +85,8 @@ ping -c3 10.0.0.1
 
 If the above command does not get a reply, please take the corrective actions inside the VM, routers and firewalls to allow unrestricted communication between agent and CAM servers or CAM appliance.
 
-If the connectivity seems to be working as expected and the problem persists, connect to the instance over SSH or RDP and grab a copy of the agent /var/log/elasticbox/elasticbox-agent.log in the case of Linux or ProgramData\ElasticBox\elasticbox-agent.log in the case of Windows (please not that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected please and [Contact support](mailto:incident@CenturyLink.com)
+If the connectivity seems to be working as expected and the problem persists, connect to the instance over SSH or RDP and grab a copy of the agent /var/log/elasticbox/elasticbox-agent.log in the case of Linux or ProgramData\ElasticBox\elasticbox-agent.log in the case of Windows (please not that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected please and attach it when [Contacting support](mailto:incident@CenturyLink.com)
+
 
 ### Instance is Stuck Deploying
 
@@ -110,9 +115,13 @@ An instance can’t update its state because the Cloud Application Manager agent
 
 3. If problem persists, check connectivity between the Instance and CAM Servers/Appliance.
 
-If the connectivity seems to be working as expected and the problem persists, connect to the instance over SSH or RDP and grab a copy of the agent /var/log/elasticbox/elasticbox-agent.log in the case of Linux or ProgramData\ElasticBox\elasticbox-agent.log in the case of Windows (please not that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected please and [Contact support](mailto:incident@CenturyLink.com)
+If the connectivity seems to be working as expected and the problem persists, connect to the instance over SSH or RDP and grab a copy of the agent /var/log/elasticbox/elasticbox-agent.log in the case of Linux or ProgramData\ElasticBox\elasticbox-agent.log in the case of Windows (please not that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected please and attach it when [Contacting support](mailto:incident@CenturyLink.com)
 
 **Solution 2**
+
+Check agent proxy settings (if configured to use one) at /usr/elasticbox/elasticbox.conf in linux or ProgramFiles\ElasticBox\Agent\elasticbox.conf in windows. If proxy is used for agent, make sure its working correctly and provide stable connectivity to CAM/Appliance servers.
+
+**Solution 3**
 
 Make sure the communication from CAM Agent to CAM servers works correctly.
 
@@ -135,7 +144,7 @@ If the above command does not get a reply, please take the corrective actions in
 
 3. In Cloud Application Manager, open the lifecycle editor of the instance and click **Reinstall**. The instance should reflect the proper status.
 
-If the connectivity seems to be working as expected and the problem persists, connect to the instance over SSH or RDP and grab a copy of the agent /var/log/elasticbox/elasticbox-agent.log in the case of Linux or ProgramData\ElasticBox\elasticbox-agent.log in the case of Windows (please not that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected please and [Contact support](mailto:incident@CenturyLink.com)
+If the connectivity seems to be working as expected and the problem persists, connect to the instance over SSH or RDP and grab a copy of the agent /var/log/elasticbox/elasticbox-agent.log in the case of Linux or ProgramData\ElasticBox\elasticbox-agent.log in the case of Windows (please not that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected please and attach it when [Contacting support](mailto:incident@CenturyLink.com)
 
 **Cause 2**
 
@@ -191,7 +200,7 @@ Something causes the agent to hang even though it’s running on the instance.
 
 2. Redeploy the instance from the lifecycle editor in Cloud Application Manager. The agent should start deploying.
 
-3. If problem persists connect to the instance over SSH or RDP and grab a copy of the agent /var/log/elasticbox/elasticbox-agent.log in the case of Linux or ProgramData\ElasticBox\elasticbox-agent.log in the case of Windows (please not that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected please and  [Contact support](mailto:incident@CenturyLink.com)
+3. If problem persists connect to the instance over SSH or RDP and grab a copy of the agent /var/log/elasticbox/elasticbox-agent.log in the case of Linux or ProgramData\ElasticBox\elasticbox-agent.log in the case of Windows (please not that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected please and attach it when [Contacting support](mailto:incident@CenturyLink.com)
 
 ### Catalog Box deployment not working
 
