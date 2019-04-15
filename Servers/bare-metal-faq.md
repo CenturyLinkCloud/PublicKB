@@ -72,7 +72,7 @@ It is the responsibility of the customer to maintain any data recovery or restor
 
 **How is hardware support and replacement handled for Bare Metal servers?**
 
-CenturyLink is responsible for all hardware replacement for Bare Metal servers.  Physical hardware support for servers is only available occurs during core business hours (M-F 9AM - 5PM) in the time zone the datacenter.
+CenturyLink is responsible for all hardware replacement for Bare Metal servers.  Physical hardware support for servers is only available during core business hours (M-F 9AM - 5PM) in the time zone the datacenter.
 
 For servers located in VA1 or GB3 only the following SLA will apply:
 * In the case where a server becomes completely unavailable the process to replace the server will begin immediately with consent from the customer. For additional service level details please reference the Bare Metal servers SLA on the [SLA page](https://www.ctl.io/legal/sla/).
