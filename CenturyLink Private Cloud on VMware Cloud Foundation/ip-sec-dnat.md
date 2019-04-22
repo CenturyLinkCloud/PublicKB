@@ -37,22 +37,22 @@ You must configure at least one IPSec VPN site on the NSX Edge before enabling t
 * A new window will pop up. Follow the steps below:   
 
 *	Add IPsec VPN:
-  * Enabled: Click slider to enable
-  * Enable perfect forward secrecy (PFS): default
-  * Name: Name your IPSec VPN
-  * Local Id: Your Local Id
-  * Local Endpoint: IP address of Edge Gateway
-  * Local Subnets: Your Local Subnets
-  * Peer Id: Your Peer Id
-  * Peer Endpoint: IP address of Peer
-  * Peer Subnets: Your Peer Subnets
-  * Encryption Algorithm: Must match with peer
-  * Authentication: Must match with peer
-  * Change Shared Key:
-  * Pre-Shared Key: Shared Key
-  * Display Shared Key:
-  * Diffie-Hellman Group: Must match with peer
-  * Extension:
+    * Enabled: Click slider to enable
+    * Enable perfect forward secrecy (PFS): default
+    * Name: Name your IPSec VPN
+    * Local Id: Your Local Id
+    * Local Endpoint: IP address of Edge Gateway
+    * Local Subnets: Your Local Subnets
+    * Peer Id: Your Peer Id
+    * Peer Endpoint: IP address of Peer
+    * Peer Subnets: Your Peer Subnets
+    * Encryption Algorithm: Must match with peer
+    * Authentication: Must match with peer
+    * Change Shared Key:
+    * Pre-Shared Key: Shared Key
+    * Display Shared Key:
+    * Diffie-Hellman Group: Must match with peer
+    * Extension:
 
   ![IPSec VPN](../images/dccf/edge-gws5.png)
 
