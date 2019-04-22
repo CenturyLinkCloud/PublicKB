@@ -1,7 +1,7 @@
 {{{
-  "title": "Micro-segmentation with Distributed Firewall - Same Network",
+  "title": "Micro-segmentation with Distributed Firewall - Same Network - Flex UI",
   "date": "12-17-2018",
-  "author": "Hannah Melvin",
+  "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -36,9 +36,9 @@ By default, Web-Server and RHEL7-AH1 have access to DB-Server.
 
 * Log In to your CPC on vCF environment.
 
-* Click __Datacenters__ from the menu dropdown. Select your Datacenter. Select __Security__ in the left side-panel. Select the datacenter, the click __Configure Services__
+* Click the __Administration__ tab. In the left side pane, under __Cloud Resources__, select __Virtual Datacenters__, then right-click your Virtual Datacenter, and select __Manage Firewall...__
 
-  ![DFW](../images/dccf/dfw1-html5.png)
+  ![DFW](../images/dccf/dfw1.png)
 
   A new window will open. If you get a message stating Distributed Firewall is not enabled for this Org VDC, please follow the steps outlined in the [Enabling the Distributed Firewall](dfw-enabling.md) KB article.
 
