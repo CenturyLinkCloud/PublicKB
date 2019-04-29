@@ -1,7 +1,7 @@
 {{{
   "title": "Configuring SSL VPN-Plus",
-  "date": "5-17-2018",
-  "author": "Anthony Hakim",
+  "date": "4-29-2019",
+  "author": "Hannah Melvin",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -16,21 +16,21 @@ Once you are done with this configuration, take a look at [How to Securely Conne
 ### Steps
 * Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment.
 
-  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../images/dccf/login-to-dcc-f.png)
+  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../images/dccf/login-html5.png)
 
-* Once logged in, click __Administration__ at the top.
+* Once logged in, click __Datacenters__ in the menu at the top. Then select the Datacenter to open.
 
-  ![SSL VPN-Plus](../images/dccf/configuring-sslvpn-plus1.png)
+  ![SSL VPN-Plus](../images/dccf/configuring-sslvpn-plus1-html5.png)
 
-* Double-click your Org VDC to open.
+* Click __Edges__ in the menu on the left side of the screen.
 
-  ![SSL VPN-Plus](../images/dccf/configuring-sslvpn-plus2.png)
+  ![SSL VPN-Plus](../images/dccf/configuring-sslvpn-plus2-html5.png)
 
-* In the __org001-vdc__ page (your name may vary), click on the __Edge Gateways__ tab, then right-click your __tenant-edge-0__, then select __Edge Gateway Services...__ A new tab will open.
+* Select the Edge Gateway, then click __Configure Services__. A popup will appear.
 
-  ![SSL VPN-Plus](../images/dccf/configuring-sslvpn-plus3.png)
+  ![SSL VPN-Plus](../images/dccf/configuring-sslvpn-plus3-html5.png)
 
-* In the new Edge Gateway Services tab, click on the SSL VPN-Plus tab.
+* In the new Edge Gateway Services popup, click on the SSL VPN-Plus tab.
 
   ![SSL VPN-Plus](../images/dccf/configuring-sslvpn-plus4.png)
 
