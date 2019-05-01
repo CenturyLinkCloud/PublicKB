@@ -1,7 +1,7 @@
 {{{
 "title": "Using AWS",
-"date": "12-28-2018",
-"author": "Guillermo Sanchez, Julio Castanar",
+"date": "03-25-2019",
+"author": "Julio Castanar & Sergio Quintana",
 "keywords": ["aws", "ecs", "deploy"],
 "attachments": [],
 "contentIsHTML": false
@@ -15,9 +15,12 @@
 * [Connect your AWS Account in Cloud Application Manager](#connect-your-aws-account-in-cloud-application-manager)
 * [Create a custom AWS Policy](#create-a-custom-aws-policy)
 * [Create an IAM Role with the Policy chosen](#create-an-iam-role-with-the-policy-chosen)
+* [Creating a new AWS provider in Cloud Application Manager](#creating-a-new-aws-provider-in-cloud-application-manager)
 * [Add Custom AMIs in Cloud Application Manager](#add-custom-amis-in-cloud-application-manager)
+* [Enabling services](#enabling-services)
 * [Deploy to your AWS Account](#deploy-to-your-aws-account)
 * [EC2 (Linux and Windows)](#ec2-linux-and-windows)
+* [Deployment Information](#deployment-information)
 * [AWS ECS](#aws-ecs)
 * [Shutdown and Terminate Instances in AWS](#shutdown-and-terminate-instances-in-aws)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
@@ -33,7 +36,7 @@ Cloud Application Manager orchestrates with AWS APIs in the backend to provision
 
 ### Audience
 
-All Cloud Application Manager users who wants to deploy workloads into AWS.
+All Cloud Application Manager users who want to deploy workloads into AWS.
 
 ### Prerequisites
 
@@ -55,7 +58,7 @@ Go to top **Services** menu and in Security, Identity, & Compliance section, sel
 
 ![AWS Console Policies](../../images/aws-console/aws-console-policies.png)
 
-3. Click on **Crete policy** button and select Create your own policy.  
+3. Click on **Create policy** button and select Create your own policy.  
    There are several ways to add a policy. Here we will describe how to use a JSON snippet.  
    Select **JSON** tab in new Amazon Create policy page and continue editing the snippet displayed below in [Choosing the right policy](#choosing-the-right-policy).
 
@@ -343,7 +346,7 @@ The tab *Policy usage* shows you the permissions attached to your policy. Here y
 
 **Note** in the policy detail, the **Policy ARN** id will be used to reference this Policy from Cloud Application Manager.  Copy it by clicking on the copy icon right to the policy ARN value.
 
-### Add Custom AMIs in Cloud Application Manager
+### Creating a new AWS provider in Cloud Application Manager
 
 Going back to Cloud Application Manager, you must first add your account as a new Provider to Providers list.  
 
@@ -356,6 +359,8 @@ When the provider is created all its default resources are synchronized. If the 
 
 ![Provider details page](../../images/cloud-application-manager/aws-deployment-config.png)
 
+### Add Custom AMIs in Cloud Application Manager
+
 Afterwards, we can see previously added configuration in AWS Provider. By default, Cloud Application Manager adds the latest AWS Linux and Windows AMIs along with any custom AMIs available in your AWS account.
 
 You can remove some of them from the view if you won't use them by clicking on the trash icon on each one.
@@ -365,6 +370,12 @@ You can add others by clicking **New** and entering the AMI identifier.
 ![Add machine image](../../images/cloud-application-manager/aws-machine-image-1.png)
 
 **Note:** For this to work you may have go to the AWS marketplace and accept the license agreement for that AMI. Although most AMIs come pre-installed with [cloud-init](https://cloudinit.readthedocs.org/en/latest/), some may not, in which case you must install it. Cloud Application Manager requires cloud-init to bootstrap the Cloud Application Manager agent.
+
+### Enabling services
+
+*Services* tab is the right place where services such as [Managed Services Anywhere](../Managed Services/getting-started-with-cam-enable-managed-provider.md), [Automatic Discovery of Resources](../Getting Started/register-existing-instance.md#discovering-the-unregistered-instances) and [Analytics](../analytics/cloudapplicationmanageranalyticsui.md) can be enabled or disabled attending to your needs. Note that the number of active services will be shown next to the tab's name.
+
+![Services tab](../../images/cloud-application-manager/Services-tab-AWS.png)
 
 ### Deploy to your AWS Account
 
@@ -489,6 +500,39 @@ To set up, add a new listener or select an existing one. Then specify the protoc
 When deploying via AWS, we register the instance to the load balancer and automatically create a security group for the load balancer so that it can communicate with the instance through the protocols and ports you set in the deployment profile.
 
 **Note:** Since you more frequently update or replace applications than load balancers, we recommend you reuse existing load balancers in production environments. This will help retain DNS settings that forward traffic to the instance.
+
+### Deployment Information
+
+Once your instance has been deployed, you can access its information by clicking on it in the instances list view and accessing to the instance details page. The right side of the screen displays instance deployment information. _Not all the following attributes apply to every type of instance, so some of them might not appear_:
+
+|       Attribute      | Description |
+|----------------------|-------------|
+|Support ID            | This ID relates this instance in case you ask for support regarding it. There might be more than one ID in case this CAM instance is associated with more than one machine. |
+|Policy                | Cloud Application Manager [Policy Box](../Automating Deployments/deploymentpolicy-box.md) used to deploy this instance. It links directly to the deployment policy box page. |
+|ID                    | Internal instance identifier. |
+|Service ID            | ID for the service this instance uses. |
+|Service               | Type of service included in this instance. It can be an operating system, an application, a script, etc. |
+|Hostname              | Hostname of the instance. |
+|Provider              | [Provider](../Core Concepts/providers.md) in which this instance is deployed. |
+|Provider Instance ID  | AWS instance ID or IDs. If the user has enough rights, it shows a link to the resource or resources in the AWS console. |
+|Proxy                 | Proxy used by the instance agent in case it is configured. |
+|Region                | AWS Region in which this instance is deployed. |
+|Availability Zone     | AWS Availability zone|
+|Instance Type         | AWS Instance type. |
+|AMI ID                | AMI ID from the AWS repository. |
+|Network Type          | EC2 Classic or the Virtual private cloud to which this instance belongs to. |
+|Placement group       | _[AWS docs](//docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)_|
+|Load Balancer         | Name of the load balancer that distributes the load across all availability zones in the region. |
+|Autoscaling           | Yes or no. |
+|Elastic Block Storage | Yes or no. |
+|Elastic IP            | Yes or no. |
+|KeyPair               | Name of the key pair that can be used to access the instance. |
+|IAM Role              | IAM Role associated with the instance. |
+|Managed               | Yes if the management of the instances has been delegated to CenturyLink. |
+|Security Groups       | Name of the security groups associated with this instance. |
+|Target Groups         | Name of the groups used to attach an instance to both types of load balancers automatically. |
+|Instances             | Number of AWS instances associated with this CAM instance through a load balancer. |
+|Max Instances         | Max number of AWS instances that the load balancer can launch at the same time. |
 
 ### AWS ECS
 

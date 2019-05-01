@@ -1,7 +1,7 @@
 {{{
 "title": "Using Microsoft Azure",
-"date": "09-03-2018",
-"author": "Guillermo Sanchez",
+"date": "03-28-2019",
+"author": "Guillermo Sanchez & Sergio Quintana",
 "keywords": ["microsoft", "azure", "arm"],
 "attachments": [],
 "contentIsHTML": false
@@ -10,8 +10,11 @@
 **In this article:**
 
 * [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
 * [Before You Begin](#before-you-begin)
 * [Registering Your Microsoft Azure Subscription (ARM) in Cloud Application Manager](#registering-your-microsoft-azure-subscription-arm-in-cloud-application-manager)
+* [Enabling services](#enabling-services)
 * [Deploying Instances in Azure](#deploying-instances-in-azure)
 * [Registering Existing Instances from your Azure Account](#registering-existing-instances-from-your-azure-account)
 * [Azure Native Resources](#azure-native-resources)
@@ -21,6 +24,15 @@
 ### Overview
 
 There are two different flavors of Azure and Cloud Application Manager has providers for both. This document is in reference to Microsoft Azure.
+
+### Audience
+
+All Cloud Application Manager users who want to deploy workloads into Microsoft Azure.
+
+### Prerequisites
+
+* Access to Cloud Application Manager [Management site](https://account.cam.ctl.io/#/providers?type=Microsoft-Azure).
+* The user must have an existing Microsoft Azure account or should be an Administrator of the organization in Cloud Application Manager to [create](../Cloud Optimization/partner-cloud-integration-azure-new.md) or [bring](../Cloud Optimization/partner-cloud-integration-azure-existing.md) a Microsoft Azure account to be managed by CenturyLink.
 
 *Name** | **URL of Portal** | **Name of Related Cloud Application Manager Provider** | **KB article**
 --- | --- | --- | ---
@@ -125,6 +137,12 @@ During synchronization, we can get warnings about locations may be ignored becau
 The result of the synchronization process will be the creation of one ARM template box and two policy boxes (Windows and RHEL respectively) in case of exist a virtual network in our account.
 
 Samples and management appliance deployment policy could be installed too.
+
+### Enabling services
+
+*Services* tab is the right place where services such as [Managed Services Anywhere](../Managed Services/getting-started-with-cam-enable-managed-provider.md), [Automatic Discovery of Resources](../Getting Started/register-existing-instance.md#discovering-the-unregistered-instances) and [Analytics](../analytics/cloudapplicationmanageranalyticsui.md) can be enabled or disabled attending to your needs. Note that the number of active services will be shown next to the tab's name.
+
+![Services tab](../../images/cloud-application-manager/Services-tab-Azure.png)
 
 ### Deploying Instances in Azure
 
@@ -301,11 +319,16 @@ You can import existing Virtual Machines into you workspace only in one click. T
 
 #### Available Instances
 
-As part of the result of synchronization process you can find a list of available virtual machines that already exist in your account but not used yet in Cloud Application Manager. You can import an existing one clicking **Import** button.
+As part of the result of synchronization process you can find a list of available virtual machines or scalesets that already exist in your account but not used yet in Cloud Application Manager. You can import an existing one clicking **Import** button.
 
 ![Microsoft Azure - Available instances](../../images/cloud-application-manager/microsoft-azure/available-instances-9.png)
 
 You should first synchronize your Azure provider before trying to register the virtual machine in order to get the current available instances that can be registered along with their statuses.
+
+#### Managed Services Anywhere Enabled Providers
+
+If you are deploying an ARM template box into a Managed Services Anywhere enabled provider, all the created instances (VMs and VM ScaleSets) will be automatically registered and linked with the ARM instance that deployed them. In these registered instances, not all lifecycle actions will be allowed, since for them you will need to act on the parent ARM instance for the dependant linked instances to be updated.
+For more information, please refer to [Managed Providers](../Managed Services/getting-started-with-cam-enable-managed-provider.md)
 
 ### Azure Native Resources
 

@@ -32,7 +32,7 @@ Cloud Application Manager Users using Application Lifecycle Management (ALM) fea
 
 * Access to [Applications site](https://cam.ctl.io/#/boxes) (Application Lifecycle Management module) of Cloud Application Manager as an authorized user of an active Cloud Application Manager account.
 
-* A box already configured in Cloud Application Manager. See [administering providers](../Administering Your Organization/admin-overview.md#Providers).
+* A box already configured in Cloud Application Manager. See [administering providers](../Administering Your Organization/admin-overview.md).
 
 ### Syntax for Binding Type Variables
 
@@ -107,7 +107,7 @@ To set or change variable values in the *parent box* event scripts, follow this 
     elasticbox set `<boxtype_variable_name>.<variable_name> <variable_value>`
     ```
 
-For examples, see the [Set Command](cloud-application-manager-commands.md#set-command).
+For examples, see the [Set Command](../../Cloud Application Manager/Automating Deployments/cloud-application-manager-commands.md).
 
 ### Syntax for System Variables
 
