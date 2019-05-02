@@ -1,65 +1,14 @@
 {{{
 "title": "Software as a Service (SaaS) Integration Methods",
-"date": "03-01-2017",
-"author": "Rich DuBose",
+"date": "05-01-2019",
+"author": "Brandy Smith",
 "attachments": [],
 "contentIsHTML": false
 }}}
 
 ### Overview
 
-Software Providers that are classified as Software as a Service (SaaS) generally will not be required to work with our Ecosystem Team to automate a deployment into a customer's infrastructure. However, SaaS Providers will need to implement one of the integration types below. During the Marketplace Provider Onboarding Program, we will discuss which integration type is the best fit.
-
-### Integration Types
-
-#### Tracking Pixel
-
-**Overview**
-
-The tracking pixel option allows CenturyLink to monitor demand & accounts created by the CenturyLink Cloud Marketplace drives to your organizations website & product.
-
-Below is a JavaScript tracking pixel that may be used to integrate with the CenturyLink Cloud Marketplace. You will need the Provider Key that you were provided during onboarding with the tracking pixel. If you were not provided a Provider Key or require a new one to be issued, contact us at [Marketplace@centurylink.com](mailto:Marketplace@centurylink.com).
-
-**JavaScript Tracking Pixel**
-```
-'use strict';
-const request = require('request'),
-  ONRAMP_BASE_URL = process.env.ONRAMP_BASE_URL,
-  ONRAMP_URL = ONRAMP_BASE_URL + '/api/SaasTrackings';
-
-function createSaasTracking(partnerKey, serviceName, customerId, purchasedAt) {
-  let options = {
-    body: {
-      partnerKey: partnerKey,
-      serviceName: serviceName,
-      customerId: customerId,
-      purchasedAt: purchasedAt
-    },
-    qs: {},
-    method: 'POST',
-    timeout: 60000,
-    simple: false,
-    json: true
-  };
-
-  request(ONRAMP_URL, options, function (error, response, body) {
-    if (error) {
-      console.error('error:', error);
-      process.exit(1);
-    }
-    console.log('statusCode:', response && response.statusCode);
-    console.log('body:', body);
-  });
-}
-
-if (process.argv.length < 4) {
-  console.error('error - missing parameter.');
-  console.error('usage:', process.argv[1], 'partner-key service-name customer-id paurchased-at');
-  process.exit(1);
-}
-
-createSaasTracking(process.argv[2], process.argv[3], process.argv[4], process.argv[5]);
-```
+Software Providers that are classified as Software-as-a-Service (SaaS) will need to build out API's to integrate with the Marketplace. Below is a high level overview of the various integration paths available. The technical documentation can be found [here](./software-as-a-service-saas-api.md).
 
 #### API
 
@@ -106,7 +55,6 @@ The status codes your API will need to return are:
 
 ##### Update Subscription
 
-** JP - we only have an API for usage-based billing.  subscription-based automatically bills each month.  -- we may need a new endpoint to terminate a subscription /JP**
 
 *The full endpoint for the* ```/update-subscription/``` *is not published in this article for security reasons. Your organization will be provided documentation for the endpoint during onboarding*
 
