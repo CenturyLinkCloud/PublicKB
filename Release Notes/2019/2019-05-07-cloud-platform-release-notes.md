@@ -56,11 +56,11 @@ A new feature has been on the Events Tab that includes a toggle to hide/unhide E
 
 When adding a new Policy or Event, the Scope will no longer pre-populate a Workspace-Level Scope and will be required for the User to select during the creation of the Policy.
 
-![Events1.PNG](../../images/release-notes/2019/policy1.png)
-![Events2.PNG](../../images/release-notes/2019/policy2.png)
+![Policy1.PNG](../../images/release-notes/2019/policy1.png)
+![Policy2.PNG](../../images/release-notes/2019/policy2.png)
 
 ##### Access Denied Fixed for Orphaned Watcher Agents
 
 A fix was put in place to remove the error message when attempting to clean up orphaned Watcher Agents.
 
-![Events1.PNG](../../images/release-notes/2019/watcher1.png)
+![Watcher1.PNG](../../images/release-notes/2019/watcher1.png)
