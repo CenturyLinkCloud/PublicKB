@@ -15,7 +15,7 @@
 
 ##### New Azure Government provider type
 
-Cloud Application Manager now supports a new type of provider to manage Azure Government subscriptions. With this new provider type, users can create and manage Azure Government resources in its defined subscription, in the same way, they create and manage resources in a regular Azure subscription. The Azure Government provider type is currently supporting all US Azure Government regions.
+Cloud Application Manager now supports a new type of provider to manage Azure Government subscriptions. With this new provider type, users can create and manage Azure Government resources in its defined subscription, in the same way, they create and manage resources in a regular Azure subscription. The Azure Government provider type is currently supported for BYO scenarios in all US Azure Government regions.
 
 ##### Support for aborting running event scripts
 
@@ -24,9 +24,9 @@ Application Lifecycle Management now supports to abort running event scripts. Wh
 ##### New option to specify public box visibility
 
 Application Lifecycle Management now includes a new field to specify how the user wants to publish a box. In the request to publish a box dialog, a new field "Visibility Type" was added to specify whether the box should be published as:
-1. Open: box will be made public as open-source
-2. Execute: box will be made public as execute-only, so it will only be deployable and only public variables will be visible.
-3. Closed: box will be used to embed into other boxes as box variables, but event code will be hidden. Only public variables will be visible.
+1. **Open**: box will be made public as open-source
+2. **Execute**: box will be made public as execute-only, so it will only be deployable and only public variables will be visible.
+3. **Closed**: box will be used to embed into other boxes as box variables, but event code will be hidden. Only public variables will be visible.
 
 ##### New Cloud Formation type supported
 
