@@ -45,7 +45,7 @@ You must configure at least one IPSec VPN site on the NSX Edge before enabling t
     * Local Subnets: Your Local Subnets
     * Peer Id: Your Peer Id
     * Peer Endpoint: IP address of Peer
-    * Peer Subnets: Your Peer Subnets
+    * Peer Subnets: Your Peer Subnetsx
     * Encryption Algorithm: Must match with peer
     * Authentication: Must match with peer
     * Change Shared Key:

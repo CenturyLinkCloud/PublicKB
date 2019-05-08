@@ -1,6 +1,6 @@
 {{{
   "title": "Adding to your Catalog",
-  "date": "5-17-2018",
+  "date": "5-8-2019",
   "author": "Hannah Melvin",
   "attachments": [],
   "related-products" : [],

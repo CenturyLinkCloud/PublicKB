@@ -1,6 +1,6 @@
 {{{
   "title": "Enabling the Distributed Firewall",
-  "date": "12-13-2018",
+  "date": "5-7-2019",
   "author": "Hannah Melvin",
   "attachments": [],
   "related-products" : [],
@@ -33,4 +33,4 @@ In this KB article, we walk through how to enable Distributed Firewall for Centu
 
 OR
 
-1. Call 1.888.638.6771 to speak with a Specialist. 
+1. Call 1.888.638.6771 to speak with a Specialist.

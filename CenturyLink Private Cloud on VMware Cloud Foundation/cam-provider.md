@@ -30,7 +30,7 @@ In this KB article, we walk through how to enable a Cloud Application Manager Pr
   * Description: (Optional).
   * Enable Managed Services: Enable if you want Managed OS and Applications.
   * URL: Your Base URL (example - https://S123456ch3a.vcf.ctl.io).
-  * Organization: Your Organization (displayed in the top left corner when logged in to CenturyLink Private Cloud on VMware Cloud Foundation).
+  * Organization: Your Organization (displayed in the top left corner when logged in to CenturyLink Private Cloud on VMware Cloud Foundation). Please note this is case sensitive. 
   * Username: CenturyLink Private Cloud on VMware Cloud Foundation user account.
   * Password: Password for above account.
 

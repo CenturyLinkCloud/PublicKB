@@ -1,6 +1,6 @@
 {{{
   "title": "Micro-segmentation with Distributed Firewall - Same Network",
-  "date": "12-17-2018",
+  "date": "5-7-2019",
   "author": "Hannah Melvin",
   "attachments": [],
   "related-products" : [],
@@ -36,7 +36,7 @@ By default, Web-Server and RHEL7-AH1 have access to DB-Server.
 
 * Log In to your CPC on vCF environment.
 
-* Click __Datacenters__ from the menu dropdown. Select your Datacenter. Select __Security__ in the left side-panel. Select the datacenter, the click __Configure Services__
+* Click __Datacenters__ from the menu dropdown. Select your Datacenter. Select __Security__ in the left side-panel. Select the datacenter, the click __Configure Services__.
 
   ![DFW](../images/dccf/dfw1-html5.png)
 
