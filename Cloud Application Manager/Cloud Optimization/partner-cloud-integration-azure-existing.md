@@ -60,7 +60,7 @@ NOTE: If the customer is already partnered with another provider, they may need 
 
 1. Log into Cloud Application Manager.
 2. Select the Management site
-3. If you are a Cost Center Admin, change your scope to a correct cost center scope for which you want the provuder to be associated.
+3. If you are a Cost Center Admin, change your scope to a correct cost center scope for which you want the provider to be associated.
 4. Click Provider and Select New
 5. In the Provider drop-down, select "Microsoft Azure" 
 
