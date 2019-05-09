@@ -1,5 +1,5 @@
 {{{
-  "title": "Partner Cloud Integration: CenturyLink Permissions and Access for Optimized AWS Accounts",
+  "title": "Partner Cloud Integration: CenturyLink Permissions and Access for Integrated AWS Accounts",
   "date": "12-04-18",
   "author": "Benjamin Swoboda",
   "attachments": [],
@@ -8,11 +8,11 @@
  
 ### Overview
 
-As discussed in the [Service Guide](https://www.ctl.io/legal/cloud-application-manager/service-guide/), CenturyLink will provide tools and Operations Staff permissions for Amazon Web Services (AWS) accounts that we harden. The Service Guide provides a high-level overview of those permissions, describing the groups requiring permissions and the type of permissions they are expected to have.
+As discussed in the [Service Guide](https://www.ctl.io/legal/cloud-application-manager/service-guide/), CenturyLink will provide billing and support functions for Amazon Web Services (AWS) accounts that are integrated with Cloud Application Manager. The Service Guide provides a high-level overview of those permissions, describing the groups requiring permissions and the type of permissions they are expected to have.
 
 ### Audience
 
-Account users that have or are considering CenturyLink Optimization of AWS Accounts. This is for all new AWS accounts created through Cloud Application Manager and any existing account moving into CenturyLink's care.
+Account users that have or are considering CenturyLink Optimization of AWS Accounts. This is for all new AWS accounts created through Cloud Application Manager ("greenfield") and any existing account moving into CenturyLink's care ("brownfield").
 
 ### Prerequisites
 
@@ -46,7 +46,7 @@ The following categories explain how CenturyLink automatically provides or restr
 All policies summarized in this document result from intensive consultation with AWS MSP specialists, and are designed to be in accordance with partner requirements and suggested best practices. All policies have been reviewed and approved by the vendor and third-party auditors.
 
 #### Hardening, Re-Hardening, Overrides, and Exceptions
-The following IAM hardening roles and policies are applied at the time the account is optimized. Additionally, CenturyLink will occasionally re-apply these policies. The entire process is applied to any optimized account to which CAM still has administrative rights. Any deviations from the standard will be overwritten except where there are overrides or customizations.
+The following IAM hardening roles and policies are applied at the time the account is integrated with Cloud Application Manager. Additionally, CenturyLink will occasionally re-apply these policies. The entire process is applied to any integrated account to which CAM still has administrative rights. Any deviations from the standard will be overwritten except where there are overrides or customizations.
 
 Overrides can be be performed by customer users with appropriate permissions or by CenturyLink Support Staff. Where the CAMOverridePolicy and CAMOpsOverridePolicy are used, users may modify permissions of CAM, Admin Users, and CenturyLink CenturyLink Support Staff via the AWS IAM Console. These policies will not be overwritten when account hardening is re-applied. Please be aware that these polices may be applied to several roles.
 
@@ -63,7 +63,7 @@ Change Requests may result in exceptions to hardening. Please read the "Change R
 * **Policy Summary**
 - Restricts the ability to link or unlink from an organization.
 - Restricts deleting CenturyLink-defined IAM policies, roles and additional sundry functions (such as MFA/SAML deletion).
-- Billing/Usage/Budgeting aspects of the portal are restricted to prevent confusion due to CenturyLink consolidated billing. (Optimized accounts have access to this data through Cloud Application Manager's Analytics tools.)
+- Billing/Usage/Budgeting aspects of the portal are restricted to prevent confusion due to CenturyLink consolidated billing. (Integrated accounts have access to this data through Cloud Application Manager's Analytics tools.)
 - Full administrator access to all other aspects of the account which are not restricted by other policies.
 
 
@@ -72,12 +72,12 @@ Change Requests may result in exceptions to hardening. Please read the "Change R
 * **Role Name**: CTLCustomerRole
 * **Attached Policy Names**: CTLCustomerPolicy
 * **Targeted groups/tools/users**: Any customer user. This policy is applied to all customer IAM Groups.
-* **Intent**: To be added to existing customer IAM groups or given to new customer groups. This policy allows the user to manipulate all services within AWS, but restricts certain views and actions that would confuse or cause conflict in an Optimized account.
+* **Intent**: To be added to existing customer IAM groups or given to new customer groups. This policy allows the user to manipulate all services within AWS, but restricts certain views and actions that would confuse or cause conflict in an Integrated account.
 * **Change Requests**: This will be applied by default, but CenturyLink can work with you to ensure that the policy does not impact existing functionality. If there are any concerns or desired exceptions regarding these policies, please submit a ticket and one of our Product Team members will be glad to discuss it with you.
 * **Policy Summary**
   - Restricts the ability to link or unlink from an organization.
   - Restricts deleting CenturyLink-defined IAM policies, roles and additional sundry functions (such as MFA/SAML deletion).
-  - Billing/Usage/Budgeting aspects of the portal are restricted to prevent confusion due to CenturyLink consolidated billing. (Optimized accounts have access to this data through Cloud Application Manager's Analytics tools.)
+  - Billing/Usage/Budgeting aspects of the portal are restricted to prevent confusion due to CenturyLink consolidated billing. (Integrated accounts have access to this data through Cloud Application Manager's Analytics tools.)
 
 **CenturyLink Operations Role**
 * **Role Name**: CTLOperationsRole
