@@ -55,11 +55,15 @@ Fill out the **Request Description** field with your request. The request descri
 The options are:
 
 a. Update Billable Items
+
 b. Terminate Billable Items
+
 c. Add Billable Items *Additional charges may apply to certain selections*
 
 Ex. I am requesting an Update Billable Items to downgrade from 100 to 80 license seats.
+
 Ex. I am requesting to Terminate Billable Items.
+
 Ex. I am requesting to Add Billable Items to my subscription. Please add 10 license seats.
 
 3. Lastly, you will check the billable item(s) that you are wanting to update from the dropdown list that matches the update option that you are requesting.
