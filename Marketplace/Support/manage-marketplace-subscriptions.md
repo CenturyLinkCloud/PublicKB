@@ -28,7 +28,7 @@ All subscriptions are shown at the Subscription Order level. By clicking the **+
 
 **Managing Subscriptions:** There are two actions that can be executed in the Marketplace Manager; **Update** and **Terminate**.
 
-###Update Request
+### Update Request
 
 The **Update** button allows customers to update their Marketplace subscriptions.
 
@@ -43,7 +43,7 @@ Ex. Customer has a 100 license seat subscription and wants to downgrade to an 80
 The downgrade option can also be used if a customer wants to terminate only some of the billable items for the subscription:
 Ex. Customer has a subscription that has a core product with multiple add-ons and customer wants to terminate one or all of the add-ons but NOT the core product.
 
-####Steps to Make an Update Request
+#### Steps to Make an Update Request
 
 1. To update a subscription click on the **Update** button. The form below will populate.
 
@@ -70,10 +70,11 @@ Ex. I am requesting to Add Billable Items to my subscription. Please add 10 lice
 
 5. The Provider of the Service for which you requested an update will contact you via email. They will communicate to you when your request has been fulfilled, including when the new functionality and updated billing will begin.
 
-###Terminate
+### Terminate
+
 The **Terminate** button allows customers to terminate their Marketplace subscriptions that do NOT have an active term commit associated with them. If there is an active term commit associated with the subscription, the terminate button will not populate for that subscription until 30 days prior to the end of the term commit date. For subscriptions with term commits, you will be notified via email 30 days prior to your term commit end date. If you choose to keep the service no action is needed on your part. The subscription will auto-renew for the same terms. If you wish to terminate the subscription, you must do so via the Terminate request prior to the term commit end date.
 
-####Steps to Make a Terminate Request
+#### Steps to Make a Terminate Request
 
 1. To make a termination request for a subscription, click on the **Terminate** button. The form below will populate.
 
@@ -89,6 +90,3 @@ Ex. I am requesting termination of my subscription.
 5. The Provider of the Subscription for which you requested a termination will contact you via email. They will communicate to you when your termination request has been fulfilled with the date that billing will end.
 
 If you have questions about your Marketplace subscription or how to use the Marketplace Manager, please reach out to the [Marketplace team](mailto:Marketplace@centurylink.com). If you have a support based question or issue please review the Marketplace[Support KB](./software-support.md).
-
-
-  
