@@ -88,7 +88,7 @@ Ex. I am requesting termination of my subscription.
 
 5. The Provider of the Subscription for which you requested a termination will contact you via email. They will communicate to you when your termination request has been fulfilled with the date that billing will end.
 
-If you have questions about your Marketplace subscription or how to use the Marketplace Manager, please reach out to the [Marketplace team](mailto:Marketplace@centurylink.com). If you have a support based question or issue please review the Marketplace[Support KB](/software-support.md).
+If you have questions about your Marketplace subscription or how to use the Marketplace Manager, please reach out to the [Marketplace team](mailto:Marketplace@centurylink.com). If you have a support based question or issue please review the Marketplace[Support KB](../../software-support.md).
 
 
   
