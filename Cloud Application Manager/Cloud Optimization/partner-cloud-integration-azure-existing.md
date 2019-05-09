@@ -23,9 +23,7 @@ For Azure, we are currently limited to serving billable customers who are not re
 
 * Access to Cloud Application Manager.
 
-* 
-
-* The user must be an Administrator of the organization in Cloud Application Manager.
+* The user must be an Administrator of the organization or Cost Center admin in Cloud Application Manager.
 
 * A working knowledge of how to use [Cloud Application Manager providers](../Core Concepts/providers.md).
 
@@ -61,20 +59,21 @@ NOTE: If the customer is already partnered with another provider, they may need 
   ![Office 365 Administrator](../../images/cloud-application-manager/CINT_Office365Admin.png)
 
 1. Log into Cloud Application Manager.
-2. Select the Providers tab
-3. Select New
-4. In the Provider drop-down, select "Microsoft Azure"
+2. Select the Management site
+3. If you are a Cost Center Admin, change your scope to a correct cost center scope for which you want the provider to be associated.
+4. Click Provider and Select New
+5. In the Provider drop-down, select "Microsoft Azure" 
 
   ![Microsoft Azure Provider](../../images/cloud-application-manager/CINT_New_ARM1.3.png)
-5. Provide a name for the provider is in line with the name of the Subscription to ensure you have a quick understanding which provider is associated with a Subscription.
-6. Select the "Migrate my account to CenturyLink for consolidated billing and Platform Support" option. (If the user cannot see this option, they are not an organization Administrator.)
+6. Provide a name for the provider is in line with the name of the Subscription to ensure you have a quick understanding which provider is associated with a Subscription.
+7. Select the "Migrate my account to CenturyLink for consolidated billing and Platform Support" option. (If the user cannot see this option, they are not an organization Administrator.)
   ![Create New Azure Account](../../images/cloud-application-manager/CINT_Existing_ARM1.2.png)
-7. Determine to which email you want the partner request email sent.
-8. Enter the primary Azure domain name for your subscription. This allows us to recognize your subscription once it migrates into our care. Typically, this domain is easy to determine. If your username to portal.azure.com is <yourname>@1234.onmicrosoft.com, then your primary domain is "1234.onmicrosoft.com". If you are still not certain, please submit a support ticket to discuss.
-9. Accept the Terms and Conditions
-10. The user will receive an email shortly with a link that will need to be clicked by the existing Azure Administrator. Once clicked, they will be directed to an Office 365 sign in page. (Please contact Microsoft if you are not clear who this is.)
+8. Determine to which email you want the partner request email sent.
+9. Enter the primary Azure domain name for your subscription. This allows us to recognize your subscription once it migrates into our care. Typically, this domain is easy to determine. If your username to portal.azure.com is <yourname>@1234.onmicrosoft.com, then your primary domain is "1234.onmicrosoft.com". If you are still not certain, please submit a support ticket to discuss.
+10. Accept the Terms and Conditions
+11. The user will receive an email shortly with a link that will need to be clicked by the existing Azure Administrator. Once clicked, they will be directed to an Office 365 sign in page. (Please contact Microsoft if you are not clear who this is.)
   ![Office 365 Administrator](../../images/cloud-application-manager/CINT_Office365_Accept.png)
-11. The Azure Admin will need to log in with Azure domain credentials. They will be directed to a page where they must accept Terms and Conditions and authorize CenturyLink.
+12. The Azure Admin will need to log in with Azure domain credentials. They will be directed to a page where they must accept Terms and Conditions and authorize CenturyLink.
 
   ![Office 365 authorize](../../images/cloud-application-manager/CINT_Office365_AuthorizeCSP.png)
 
