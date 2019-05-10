@@ -14,7 +14,7 @@ We have integrated with Microsoft Azure and Amazon Web Services.
 
 ### Audience
 
-All of our customers are invited to use Cloud Application Manager's Cloud Optimization capabilities.
+All of our customers are invited to use Cloud Application Manager's portfolio of Cloud Optimization capabilities. Cloud Integration is a very important component of Cloud Optimization.
 
 For Azure, we are currently limited to serving customers who are not resellers (or customers or resellers) with offices within the United States the United Kingdom, and Canada.
 For Amazon Web Services we are currently limited to serving customers who are not resellers (or customers or resellers) with offices within the United States and the United Kingdom.
@@ -34,8 +34,8 @@ For each CLC account hoping to integrate with Azure, both CenturyLink's and vend
 ### Important Information
 
 
-Current features of Partner Cloud Optimization include:
-* **Mapping Partner Cloud Accounts and Subscriptions with CAM Provider:** CAM will automatically be integrated with credentials for your Optimized cloud account. This allows you to quickly experience the benefits of Application Lifecycle Management.
+Current features of Partner Cloud Integration include:
+* **Mapping Partner Cloud Accounts and Subscriptions with CAM Provider:** CAM will automatically be integrated with credentials for your Integrated cloud account. This allows you to quickly experience the benefits of Application Lifecycle Management.
 * **Analytics:** Your will have the ability to review cost [analysis and best practice recommendations]( https://www.ctl.io/knowledge-base/cloud-application-manager/analytics/cloudapplicationmanageranalyticsui/)
 * **Integrated Billing:** All invoices will be shown as described in the [Consolidated Billing article](partner-cloud-integration-consolidated-billing.md). If you require more explanation regarding charges, Cloud Application Manager also provides [detailed reports of Usage History](partner-cloud-integration-detailed-billing-report.md).
 * **Month-To-Date Totals:** Accumulated usage in partner clouds will be available in Cloud Application Manager.
@@ -59,7 +59,7 @@ Please see our Knowledge Base articles detailing [Azure  support](partner-cloud-
 For additional details on support responsibilities for our partners and their SLAs we support, please see the table below.
 
 **Additional Support and Management:**
-* The true strength of Cloud Optimization is that it opens to door for trained, CenturyLink resources to do work for you on your behalf, in AWS and Azure. If you are interested in contracting with CenturyLink to provide design, implementation, or ongoing, additional support, request an engagement with your sales representative.
+* The true strength of Cloud Integration is that it opens to door for trained, CenturyLink resources to do work for you on your behalf, in AWS and Azure. If you are interested in contracting with CenturyLink to provide design, implementation, or ongoing, additional support, request an engagement with your sales representative.
 
 **Partner Pricing Details:**
 * **Azure:** Pricing available to CenturyLink customers is shown [here](https://www.ctl.io/pricing). Partners changes prices regularly.  If your organization has agreements with Microsoft or AWS which differ from what is shown, please submit a ticket for review. We are constantly working to increase the scope of what is offered through our partners and it is likely we have plans to offer what you require.
@@ -67,7 +67,7 @@ For additional details on support responsibilities for our partners and their SL
 **Availability Restrictions**
 * **General:**
 
-  Cloud Optimization is currently not available for resellers. Our automation prevents offering this service to resellers or customers of resellers. If you would like us to review your particular use case, please submit a support ticket with your contact details so we can discuss your scenario.
+  Cloud Integration is currently not available for resellers. Our automation prevents offering this service to resellers or customers of resellers. If you would like us to review your particular use case, please submit a support ticket with your contact details so we can discuss your scenario.
 
   Please see above for the geographic territories that are allowed.
 
