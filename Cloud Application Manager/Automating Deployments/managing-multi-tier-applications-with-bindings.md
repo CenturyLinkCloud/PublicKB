@@ -9,12 +9,13 @@
 }}}
 
 **In this article:**
+
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
-* [What are bindings?](#what-are-bindings)
-* [Which instances does a binding connect to?](#which-instances-does-a-binding-connect-to)
-* [How to use the bindings in configuration?](#how-to-use-the-bindings-in-configuration)
+* [What are bindings](#what-are-bindings)
+* [Which instances does a binding connect to](#which-instances-does-a-binding-connect-to)
+* [How to use the bindings in configuration](#how-to-use-the-bindings-in-configuration)
 * [Bindings automatic reconfiguration](#bindings-automatic-reconfiguration)
 * [Using bindings in three steps](#using-bindings-in-three-steps)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
@@ -26,7 +27,6 @@ It explains how to use the **Bindings**.
 
 Bindings glue together different parts of a multi-tier application over the network. These components can be parts of an application stack, a load balancing pool, cluster, and more. Bindings enable services to auto-discover and connect dynamically at scale. They also reconfigure the instances that need it to keep their configuration up to date.
 
-
 ### Audience
 
 Cloud Application Manager Users using Application Lifecycle Management (ALM) features.
@@ -35,15 +35,16 @@ Cloud Application Manager Users using Application Lifecycle Management (ALM) fea
 
 * Access to [Applications site](https://cam.ctl.io/#/boxes) (Application Lifecycle Management module) of Cloud Application Manager as an authorized user of an active Cloud Application Manager account.
 
-### What are bindings?
+### What are bindings
 
 Bindings are [variables](parameterizing-boxes-with-variables.md) that you can add to boxes. They represent a connection from the deployed box to other instances. Bindings are used to customize your event scripts or configuration files to work with the other instances.
 
-### Which instances does a binding connect to?
+### Which instances does a binding connect to
 
 The instances where a binding variable points to are defined by the criteria you configure. You refine the criteria by setting a specific box type for the binding and specifying tags to match.  
 
 A target instance will be in the binding of the origin instance if:
+
 * The instance is shared in the workspace owner of the origin instance.
 * It has connection information available, this usually means that the addresses are available.
 * The target instance is not terminated.
@@ -54,9 +55,9 @@ Here is how the binded instances show after the instance is online.
 
 ![Binding large scale deployments](../../images/cloud-application-manager/bindinglargescaledeployments1.png)
 
-### How to use the bindings in configuration?
+### How to use the bindings in configuration
 
-The bindings information is provided in the event scripts (except the install scripts) and configuration files (via `elasticbox conf`). 
+The bindings information is provided in the event scripts (except the install scripts) and configuration files (via `elasticbox conf`).
 
 A binding is a jinja2 list which contains many information of the target instance to be used. The most commonly used information are addresses and variables.
 
@@ -104,7 +105,8 @@ There are three steps to make bindings work. Say a Node.js application needs Mon
 #### 1. Define Binding Variables
 
 Binding variables are [defined in box automation](parameterizing-boxes-with-variables.md). In this example, we defined two binding variables:
-* One in the Nginx loadbalancer box to connect to Node.js application instances, 
+
+* One in the Nginx loadbalancer box to connect to Node.js application instances,
 * another in the Node.js application box to connect to the MongoDB database.
 
 In both cases, the bindings point to a box type, which allow the services to bind only to instances of the box type at deployment time.
@@ -117,7 +119,7 @@ In both cases, the bindings point to a box type, which allow the services to bin
 
 To establish connectivity to a remote service, we must configure the bindings in the box. We do so in the box configure script.  
 
-Here’s an example to connect the Nginx loadbalancer to the Node.js application instances. We configure the bindings as follows: 
+Here’s an example to connect the Nginx loadbalancer to the Node.js application instances. We configure the bindings as follows:
 In the Nginx loadbalancer box configure script, we run the Cloud Application Manager config command to execute a file variable (ngix.conf) that has the connection string.
 
 ![Editing configure binding script in box Node](../../images/cloud-application-manager/bindinglargescaledeployments4.png)
@@ -156,5 +158,6 @@ We’re sorry you’re having an issue in [Cloud Application Manager](https://ww
 For issues related to API calls, send the request body along with details related to the issue.
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
 * Windows: RDP into the instance to locate the log at \ProgramData\ElasticBox\Logs\elasticbox-agent.log
