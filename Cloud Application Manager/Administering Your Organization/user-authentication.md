@@ -1,20 +1,26 @@
 {{{
 "title": "Enable User Authentication",
-"date": "10-30-2018",
-"author": "Arya Roudi",
-"keywords": ["cam", "authentication", "sso", "oauth", "google", "github", "saml", "ldap", "clc"],
+"date": "04-02-2018",
+"author": "Arya Roudi & Guillermo Sánchez",
+"keywords": ["cam", "authentication", "sso", "oauth", "google", "github", "saml", "ldap", "clc", "centurylink", "master account"],
 "attachments": [],
 "contentIsHTML": false
 }}}
 
 **In this article:**
-
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
 * [Single sign-on with Google, GitHub, or username, password](#single-sign-on-with-google-github-or-username-password)
 * [Single Sign-On with SAML](#single-sign-on-with-saml)
+* [Setting up a SAML IdP](#setting-up-a-saml-idp)
+* [Working with SAML Groups](#working-with-saml-groups)
 * [Single Sign-On with LDAP](#single-sign-on-with-ldap)
+* [Setting Up LDAP in Cloud Application Manager](#setting-up-ldap-in-cloud-application-manager)
+* [Syncing with LDAP Groups](#syncing-with-ldap-groups)
+* [Giving LDAP Accounts Admin Access](#giving-ldap-accounts-admin-access)
+* [Single Sign-On with CenturyLink Cloud](#single-sign-on-with-centurylink-cloud)
+* [Single Sign-On with CenturyLink Master Account](#single-sign-on-with-centurylink-master-account)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
@@ -30,15 +36,12 @@ All users with Cloud Application Manager organization administrator access.
 ### Prerequisites
 
 * Access to Cloud Application Manager, [Management site](https://account.cam.ctl.io/#/settings).
-
 * The user must be an Administrator of the organization in Cloud Application Manager.
-
 * The user should be at the organization level scope to access the Settings option in the left side menu.
-
 
 ### Single sign-on with Google, GitHub, or username, password
 
-To allow users to sign in with a Cloud Application Manager **username and password**, turn on that option under Authentication in the admin console.
+To allow users to sign in with a Cloud Application Manager **username and password**, turn on that option under Authentication in the **Settings** page in the [Management site](https://account.cam.ctl.io/#/settings).
 
 Do the same and turn on **Google** or **GitHub** to let users sign in with those credentials without having to create an account exclusively for Cloud Application Manager. When they sign in, Cloud Application Manager provisions an account based on their Google or GitHub username.
 
@@ -54,12 +57,9 @@ When users log in with SAML into Cloud Application Manager, the user is redirect
 
 Enable SAML in Cloud Application Manager to let users log in using credentials managed by a SAML identity provider.
 
-1. Sign in to Cloud Application Manager as the [default administrator](admin-access.md).
-
-2. From the user menu drop-down on the top right, select **Admin Console**.
-
-3. Under Authentication, enable SAML by turning it on.
-
+1. Sign in to Cloud Application Manager as an [administrator](admin-access.md).
+2. Navigate to the **Settings** page in the [Management site](https://account.cam.ctl.io/#/settings).
+3. Under **Authentication**, enable SAML by turning it on.
 4. Set up SAML IdP with the SP settings. This settings can be obtained clicking on "SP Metadata" download link:
 
    ![SAML authentication method](../../images/cloud-application-manager/management/settings-auth-saml.png)
@@ -68,14 +68,24 @@ Enable SAML in Cloud Application Manager to let users log in using credentials m
 
    * **Single Sign On URL.** Service Provider endpoint that will be used to interchange messages during authentication. This value can be found on AssertionConsumerService XML element on SP metadata file.
    * **Service Provider Entity ID.** This value must match with the entityID property on SP metadata file.
+   * **Service Provider X.509 Cert.** This optional value can be set to enable signing or encryption (as well as verifying signatures and decryption). This will enable SAML encryption in any message interchanged with the Service Provider.
 
-5. Finally it's needed to download the IdP Metadata file and upload on CAM admin console.
+5. Finally, the **IdP Metadata** file needs to be downloaded from the IdP and uploaded into the **Settings** page in the [Management site](https://account.cam.ctl.io/#/settings).
 
 Take into consideration that currently this is our valid **Attribute mapping list**:
 
 * **EMAIL**: 'email', 'Email', 'User.Email'.
 * **FIRST NAME**: 'firstname', 'FirstName', 'User.FirstName'.
 * **LAST NAME**: 'lastname', 'LastName', 'User.LastName'.
+* **GROUPS** (optional): 'Groups'
+
+### Working with SAML Groups
+
+When SAML is being used in your organization and you are retrieving SAML groups information, you can add SAML groups as members of a workspace, cost-center or administrators of your organization through the Cloud Application Manager web or API interface, instead of searching and adding them one by one. All SAML group members will then get automatic access to the corresponding team workspace, cost-center or organization, and thus, to all resources pertaining to that scope.
+
+![Adding a SAML group as Workspace member](../../images/cloud-application-manager/management/settings-auth-saml-group.png)
+
+This gives your developers, operations engineers, or IT admins access to the same deployment assets to do their part in automating with the necessary access levels.
 
 ### Single Sign-On with LDAP
 
@@ -121,7 +131,7 @@ When users sign in to Cloud Application Manager with their LDAP credentials, we 
 
 LDAP group members get automatic access to team workspaces in Cloud Application Manager when you enable sharing with those groups. Through the Cloud Application Manager web or API interface, you can directly add LDAP groups as members of a workspace instead of searching and adding them one by one.
 
-![Adding a group as Workspace member](../../images/cloud-application-manager/management/settings-auth-ldap-group.png)
+![Adding an LDAP group as Workspace member](../../images/cloud-application-manager/management/settings-auth-ldap-group.png)
 
 This gives your developers, operations engineers, or IT admins access to the same deployment assets to do their part in automating with necessary access levels. Follow these steps to sync with LDAP groups.
 
@@ -177,6 +187,34 @@ When CenturyLink Cloud authentication method is enabled, you can also see and ed
 
 ![CenturyLink Cloud username in My Account](../../images/cloud-application-manager/management/auth-clc-account.png)
 
+### Single Sign-On with CenturyLink Master Account
+
+If CenturyLink Master Account authentication method is enabled, any user with CenturyLink Master Account credentials may log in to Cloud Application Manager using his CenturyLink Master Account. This will also let users with additional CenturyLink products supporting this authentication method to use Single Sign-On method within Cloud Application Manager and these other additional products.
+
+#### Steps
+
+1. Sign in to Cloud Application Manager as an [administrator](admin-access.md).
+
+2. Navigate to the **Settings** page in the [Management site](https://account.cam.ctl.io/#/settings).
+
+3. Under **Authentication**, **CenturyLink Master Account** should be enabled.
+
+4. Any user who wants to log in into the organization will see a new button to sign in with his CenturyLink Master Account credentials.
+
+    ![CenturyLink Master Account sign in button](../../images/cloud-application-manager/management/auth-sso.png)
+
+5. When clicking the button, the user will be redirected to the CenturyLink Master Account page asking for credentials.
+
+    ![CenturyLink Master Account sign in](../../images/cloud-application-manager/management/auth-sso-signin.png)
+
+    The username provided will be linked to the user account if not already. You can also link your Cloud Application Manager account from the CenturyLink Master Account user interface directly, from the Account Linking section.
+
+When CenturyLink Master Account authentication method has been used, you can also see the link to "My CenturyLink Master Account" page in the **user** menu dropdown:
+
+![CenturyLink Cloud Master Account link in user menu dropdown](../../images/cloud-application-manager/management/auth-sso-link.png)
+
+For more information about CenturyLink Master Account please refer to [Enhanced Security: Master Account](../../General/Authentication/enhanced-security-master-account-registration.md)
+
 ### Contacting Cloud Application Manager Support
 
 We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
@@ -184,5 +222,6 @@ We’re sorry you’re having an issue in [Cloud Application Manager](https://ww
 For issues related to API calls, send the request body along with details related to the issue.
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+* Windows: RDP into the instance to locate the log at \ProgramData\ElasticBox\Logs\elasticbox-agent.log

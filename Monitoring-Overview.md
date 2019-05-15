@@ -52,10 +52,6 @@ When you first access the Cloud Application Manager Monitoring Site, you will la
 * Suppressions
 * Graph
 
-
-![Monitoring site - Landing site](../../images/cloud-application-manager/msa/monitoring-landing-page.png)
-
-
 ### Dashboards
 The **Dashboards** tabs allows customers to view multple cloud native monitoring data for Microsoft Azure & Amazon Web Services (AWS) providers. 
 

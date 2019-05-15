@@ -80,11 +80,10 @@ Your aggregated charges for all the services from any of your Cloud Optimized ac
 * Update to Previous Month Microsoft Azure Services SaaS
 * Update to Previous Month Microsoft Azure Services IaaS
 
+*Exchange Rates*
 
-  *Exchange Rates*
+The way CenturyLink handles Monthly Usage billing for non-US customers is obtain the current exchange rate of the day of the update, not necessarily the rate for the day associated with the retrieved data (see table above).
 
-  The way CenturyLink handles Monthly Usage billing for non-US customers is obtain the current exchange rate of the day of the update, not necessarily the rate for the day associated with the retrieved data (see table above).
+The way CenturyLink handles Reconciliation billing for non-US customers is to obtain the exchange rate for the first day of the month for which the Reconciliation data is available, not the rate for any day associated with the month of the retrieved data.
 
-  The way CenturyLink handles Reconciliation billing for non-US customers is to obtain the exchange rate for the first day of the month for which the Reconciliation data is available, not the rate for any day associated with the month of the retrieved data.
-
-  The way CenturyLink temporarily handles arrears billing for non-US customers is to hold onto a record of all usage until the 27th of the month following the month of actual usage. We then use the conversion rate on the 27th to convert the usage to USD in order for it to be to processed. If you informed CenturyLink that you wanted your invoices to be in your country's currency, that charge will be converted to your currency again on the last day of the month, using that date's exchange rate. CenturyLink makes no guarantee the exchange rates will be the same on the 27th and last days of the month.
+The way CenturyLink temporarily handles arrears billing for non-US customers is to hold onto a record of all usage until the 27th of the month following the month of actual usage. We then use the conversion rate on the 27th to convert the usage to USD in order for it to be to processed. If you informed CenturyLink that you wanted your invoices to be in your country's currency, that charge will be converted to your currency again on the last day of the month, using that date's exchange rate. CenturyLink makes no guarantee the exchange rates will be the same on the 27th and last days of the month.
