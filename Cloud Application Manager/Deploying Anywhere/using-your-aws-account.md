@@ -1,6 +1,6 @@
 {{{
 "title": "Using AWS",
-"date": "03-25-2019",
+"date": "05-17-2019",
 "author": "Julio Castanar & Sergio Quintana",
 "keywords": ["aws", "ecs", "deploy"],
 "attachments": [],
@@ -514,7 +514,7 @@ Once your instance has been deployed, you can access its information by clicking
 |Service               | Type of service included in this instance. It can be an operating system, an application, a script, etc. |
 |Hostname              | Hostname of the instance. |
 |Provider              | [Provider](../Core Concepts/providers.md) in which this instance is deployed. |
-|Provider Instance ID  | AWS instance ID or IDs. If the user has enough rights, it shows a link to the resource or resources in the AWS console. |
+|Provider Instance ID  | AWS instance ID or IDs. If the user has enough rights, it shows a link to the resource or resources in the AWS console. Clicking this link will register and show the action in both instance’s and provider's activity logs. |
 |Proxy                 | Proxy used by the instance agent in case it is configured. |
 |Region                | AWS Region in which this instance is deployed. |
 |Availability Zone     | AWS Availability zone|
