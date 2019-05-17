@@ -267,6 +267,10 @@ This virtually powers on your instance. It’s useful in case you’ve shut the 
 
 This runs the stop scripts from your box instance and cleanly shuts down the OS. It’s useful if your instance does not need to be up 24/7. As some cloud providers only charge for running instances, this can save money.
 
+**Abort**
+
+If the instance is running an event script, then this action aborts the event script being executed and leaves the instance in an unavailable state. This allows the user to recover the control of an instance stuck in a script execution not returning the control to Cloud Application Manager and fix the issue before retrying to run the event script.
+
 **Terminate**
 
 This executes the dispose scripts from your box instance and then deletes the virtual infrastructure. You can’t revert the action and since you can lose data, be sure that you want to perform this action in the first place.
