@@ -1,7 +1,7 @@
 {{{
 "title": "Providers",
-"date": "10-17-2018",
-"author": "",
+"date": "05-20-2019",
+"author": "Guillermo Sánchez",
 "keywords": ["cam", "alm", "providers", "centuryLink-cloud", "clc", "aws", "azure", "google-cloud", "gcp", "cloudstack", "dimension-data", "openstack", "rackspace", "softlayer", "vcloud", "vmware"],
 "attachments": [],
 "contentIsHTML": false
@@ -13,6 +13,8 @@
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
 * [Providers](#providers)
+* [Providers page](#providers-page)
+* [Supported provider types](#supported-provider-types)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
@@ -31,7 +33,19 @@ An active Cloud Application Manager account.
 
 A provider is a public or private cloud account you register in Cloud Application Manager. Cloud Application Manager interfaces with the provider account’s API to provision and orchestrate deployments automatically. Before you can deploy workloads from Cloud Application Manager, you need to register a provider first.
 
-#### Supported provider types
+### Providers page
+
+When you click the **Providers** option in the left side menu you will see the providers list you have access to with some basic information for each provider such as its name, synchronization status, when it was last modified, the account alias and the owner who created it.
+
+![Providers list](../../images/cloud-application-manager/core-concepts/providers-list.png)
+
+You can create new providers by clicking on the **New** button, type something in the search field to search for a provider in the list or filter by the workspace they belong to.
+
+Every provider in the list have a gear icon from which you can synchronize or delete the provider. If you click on any of the provider listed, you will get to the provider details page, where you can find more information and interact with it.
+
+If you select several providers by clicking on the check box on the provider line item (or clicking the check box in the header line which will select all), the **Bulk Actions** button dropdown will appear next to the *New* provider button, allowing to sync or delete the selected providers in bulk mode.
+
+### Supported provider types
 
 Cloud Application Manager integrates with many popular clouds. Here is a full list of clouds Cloud Application Manager supports and their availability by Edition:
 
