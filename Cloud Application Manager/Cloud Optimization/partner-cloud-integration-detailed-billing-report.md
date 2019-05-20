@@ -15,7 +15,7 @@ Usage History is designed primarily for the purpose of explaining your invoice. 
 * Provide an understanding of the differences between CenturyLink's billing cycle and vendor billing cycles.
 * Provide some flexibility in how information is presented.
 
-Optimizing Accounts allows a Cloud Application Manager user to receive [consolidated bills](partner-cloud-integration-consolidated-billing.md) and therefore review usage within Usage History. 
+Integrated Accounts allow a Cloud Application Manager user to receive [consolidated bills](partner-cloud-integration-consolidated-billing.md) and therefore review usage within Usage History. 
 
 ### Audience
 
@@ -30,7 +30,7 @@ Cloud Application Manager organization administrator access.
 
 
 * To gain access to the information, in the top navigation bar change the "Site" to Management.
-* Make certain the context is that of your organization, not a Cost Center or Workspace.
+* Make certain the context is that of your Organization, not a Cost Center or Workspace.
 * Select "Billing", then "Usage History."
 * Select a month.
 

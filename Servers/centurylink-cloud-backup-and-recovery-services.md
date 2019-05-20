@@ -63,6 +63,7 @@ Managed Backup is a superior alternative to many do-it-yourself options. Why? No
 * Supported Operating Systems:
   * Managed Microsoft Windows Server 2008 R2
   * Managed Microsoft Windows Server 2012 R2
+  * Managed Microsoft Windows Server 2016
   * Managed Red Hat Enterprise Linux 5
   * Managed Red Hat Enterprise Linux 6
   * Managed Red Hat Enterprise Linux 7
@@ -85,5 +86,5 @@ The CenturyLink Marketplace Provider Program is designed to provide additional v
 **Product**|**Availability**|**Data Storage**|**Cost Model**|**Integration**|**Support**
 -----------|----------------|-------------------|----------------|--------------|---------------|-----------
 Simple Backup Service|<ul><li>Global</li><li>Virtual and Bare Metal Servers</li></ul>|<ul><li>Supports data sovereignty</li><li>Stored in customer selected Geo-redundant Object Storage</li><li>Built-in Encryption</li></ul>|Pay as you go (per GB)|<ul><li>Self-Service & API Accessible</li><li>File System Agent</li><li>Supports all Operating System Templates on the platform</li></ul>|CenturyLink Provided Support
-Managed Backup|<ul><li>Six Locations</li><li>**Managed** Virtual Servers</li></ul>|<ul><li>Supports data sovereignty</li><li>Digital Vaulting to specific locations</li><li>Built-in Encryption</li></ul>|Tiered pricing model based on average protected storage|<ul><li>Customer provisioned, CenturyLink Managed</li><li>File System Agent</li><li>Supports **Managed** Windows 2008/2012 R2 and RHEL 5/6/7</li></ul>|CenturyLink Provided Support
+Managed Backup|<ul><li>Six Locations</li><li>**Managed** Virtual Servers</li></ul>|<ul><li>Supports data sovereignty</li><li>Digital Vaulting to specific locations</li><li>Built-in Encryption</li></ul>|Tiered pricing model based on average protected storage|<ul><li>Customer provisioned, CenturyLink Managed</li><li>File System Agent</li><li>Supports **Managed** Windows 2008/2012 R2/2016 and RHEL 5/6/7</li></ul>|CenturyLink Provided Support
 Marketplace Provider Program Partners|<ul><li>Global</li><li>Virtual and Bare Metal Servers</li></ul>|<ul><li>Supports data sovereignty</li><li>Stored in customer selected Geo-redundant Object Storage</li><li>Customer Defined Encryption</li></ul>|Bring your own license (BYOL)|<ul><li>Customer provisioned and Operated</li><li>File System, Hypervisor & Hot Backup Agents</li><li>Supports all Operating System Templates on the platform</li></ul>|Partner Provided Software Support

@@ -1,7 +1,7 @@
 {{{
   "title": "Enabling the Distributed Firewall",
-  "date": "12-13-2018",
-  "author": "Anthony Hakim",
+  "date": "5-7-2019",
+  "author": "Hannah Melvin",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -16,13 +16,9 @@ In this KB article, we walk through how to enable Distributed Firewall for Centu
 
 ### Steps
 
-1. Log In to your CPC on vCF environment.
+1. Visit https://managedservices.ctl.io/msp/.
 
-2. Click on **Help** in the upper right corner, then click **Support**.
-
-  ![DFW](../images/dccf/dfw-enable1.png)
-
-3. You will be taken to the **Managed Support Portal**. Click **Create** and select the following options:
+2. You will be taken to the **Managed Support Portal**. Click **Create** and select the following options:
 
   * What Product is this for? **Cloud**
   * Which Cloud Product? **CenturyLink Private Cloud on VMware Cloud Foundation (Formerly DCC Foundation)**
@@ -33,4 +29,8 @@ In this KB article, we walk through how to enable Distributed Firewall for Centu
   * Priority: Select the appropriate priority (**P2 Standard or P3 Standard**).
   * Click on the **submit** button.
 
-4. You will be contacted by CenturyLink to coordinate the change request.
+3. You will be contacted by CenturyLink to coordinate the change request.
+
+OR
+
+1. Call 1.888.638.6771 to speak with a Specialist.

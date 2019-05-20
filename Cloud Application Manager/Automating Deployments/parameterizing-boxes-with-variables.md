@@ -78,9 +78,11 @@ Boxes can have versions, which are snapshots of stable configuration. When you s
 Here you have a box variable called INSTALLER that points to the Package Installer box as shown.
 
 You can access all the variables of the Package Installer box with this syntax:
+
 ```
 `\{{ BOX_VARIABLE_NAME.VARIABLE_NAME }}`
 ```
+
 You can also override their values within the context of the parent box.
 
 For example, to access the UPGRADE_ON_INSTALL variable in the Package Installer box from an event script in the parent box, you can do as follows:
@@ -127,7 +129,8 @@ In this example, for a binding called bindingA, we can get the connection data f
 ```
 
 To get value of a variable named connection_string, we apply this Jinja to look up the binding to the first deployed instance:
-``` 
+
+```
 `\{{ bindingA[0].connection_string }}`
 ```
 

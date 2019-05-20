@@ -53,7 +53,7 @@ If you have an existing provider in *Cloud Application Manager*, the next time y
 
 #### When enabling Automatic Discovery of Resources
 
-You can enable the *Automatic Discovery of Resources* toggle in the provider details dialog.
+You can enable the *Automatic Discovery of Resources* toggle in the provider *Services* tab.
 
 ![Edit Provider - Auto Discovery of Resources](../../images/cloud-application-manager/register/clc-registerInstance-autoSync.png)
 

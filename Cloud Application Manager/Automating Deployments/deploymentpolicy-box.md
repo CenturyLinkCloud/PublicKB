@@ -15,6 +15,7 @@
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
 * [Deployment Policy Boxes](#deployment-policy-boxes)
+* [Claims and Requirements](#claims-and-requirements)
 * [Give Access to the Policy](#give-access-to-the-policy)
 * [Control Box Deployments with Admin Boxes](#control-box-deployments-with-admin-boxes)
 * [Creating and Executing an Admin Box](#creating-and-executing-an-admin-box)
@@ -45,9 +46,12 @@ Customize policies to support specific deployment scenarios. For example, you ma
 
     ![New deployment policy box](../../images/cloud-application-manager/deploymentpolicyboxes1.png)
 
-    Then select a cloud provider added before in Cloud Application Manager, give the box a meaningful name to identify it among your boxes and optionally specify other [metadata](../Core Concepts/boxes.md#box-metadata) such as claims. Click save to continue.
+    Then select a cloud provider added before in Cloud Application Manager, give the box a meaningful name to identify it among your boxes and optionally specify other [metadata](../Core Concepts/boxes.md#box-metadata).
+    You can also specify *claims* related to the policy. For more information see [Claims and Requirements](#claims-and-requirements)
 
-    ![New virtual of physical machine policy box](../../images/cloud-application-manager/deploymentpolicyboxes2.png)
+![New virtual of physical machine policy box](../../images/cloud-application-manager/deploymentpolicyboxes2.png)
+
+After setting up the policy, click save to continue.
 
 3. In the recently created Deployment Policy Box, under **Code** tab, select **Edit** in **Policy** section to customize the policy.  
     ![New virtual of physical machine policy box](../../images/cloud-application-manager/deploymentpolicyboxes2b.png)
@@ -73,6 +77,12 @@ Customize policies to support specific deployment scenarios. For example, you ma
     **Note:** If you’re deploying to public cloud providers like AWS or Google Compute, you’ll most likely be charged by the cloud provider for the virtual infrastructure you provision. Familiarize yourself with their pricing model as Cloud Application Manager assumes no responsibility for costs incurred.
 
     **Note:** Instance Protection Flags will prevent the instance to be manually shut-down or terminated if enabled. They will be inherited in any instance deployed through this Deployment Policy box. [More information about Instance Protection flags](../Deploying Anywhere/deploying-managing-instances.md)
+
+### Claims and Requirements
+
+Claims help define which features or traits the policy offer, allowing the user to declare which kind of functionality the deployment policy box provides. This is a simple mechanism to define custom labeled features. These claims are matched with the **Requirements** of the box during the deployment.
+
+For example, user can set a **'linux'** claim to ensure that boxes deployed with the requirement **'linux'** are matched. At deployment time selectable deployment policies will be filtered based on the requirements of the box to be deployed.  
 
 ### Give Access to the Policy
 

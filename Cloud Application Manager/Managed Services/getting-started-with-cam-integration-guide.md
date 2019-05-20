@@ -123,7 +123,7 @@ And you can see that I have populated the **configure** event with some code.  B
 
 > Bash Example:
 
-```shell
+```
 username="{{ mongo.username }}"
 password="{{ mongo.password }}"
 log_path="{{ mongo.LOG_PATH }}"
@@ -139,7 +139,7 @@ elasticbox set app.vars.APPLICATION_CONFIG "$config"
 
 > Powershell Example (if this were windows):
 
-```powershell
+```
 $username = "{{ mongo.username }}"
 $password = "{{ mongo.password }}"
 $log_path = "{{ mongo.LOG_PATH }}"

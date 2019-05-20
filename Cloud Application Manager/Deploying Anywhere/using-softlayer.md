@@ -49,6 +49,8 @@ Note a couple of things about instances you deploy on SoftLayer through Cloud Ap
 
 **Resource**
 
+![Resource section of deployment policy](../../images/cloud-application-manager/deployment-policy/ibm-cloud-resource.png)
+
 | Option | Description |
 |--------|-------------|
 | Cores | Select virtual CPUs for the instance. For dedicated processing speed that others don’t share, choose private. You can get up to 8 private cores and up to 16 public. |
@@ -60,15 +62,30 @@ Note a couple of things about instances you deploy on SoftLayer through Cloud Ap
 
 **Block Devices**
 
+![Block devices section of deployment policy](../../images/cloud-application-manager/deployment-policy/ibm-cloud-block-devices.png)
+
 By default, the machine is provisioned with 25GB local disk space. You can increase local system or portable SAN disk space. Get up to 400 local disk space or up to 2.1 TB of SAN storage
 
 
 **Network**
 
+![Network section of deployment policy](../../images/cloud-application-manager/deployment-policy/ibm-cloud-network.png)
+
 | Option | Description |
 |--------|-------------|
 | Datacenter | Select a location to place the instance. |
 | Uplink Port Speed	| Optionally, upgrade the speed of the instance network port. By default, it is 10 Mbps. But you can upgrade to 100 or 1000 Mbps for private use, meaning no one else shares the network interface card port. |
+
+
+**Proxy**
+
+![Proxy section of deployment policy](../../images/cloud-application-manager/deployment-policy/ibm-cloud-proxy.png)
+
+| Option | Description |
+|-------------------|-------------|
+| Host |	The hostname or domain of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+| Port |  The port of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+
 
 ### Contacting Cloud Application Manager Support
 

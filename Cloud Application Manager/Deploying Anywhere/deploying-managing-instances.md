@@ -15,6 +15,7 @@
 * [Deploying a New Instance](#deploying-a-new-instance)
 * [Scheduling Instances](#scheduling-instances)
 * [Protecting Instance Shutdown or Termination](#protecting-instance-shutdown-or-termination)
+* [Deploying Instances without Lifecycle Management](#deploy-instances-without-lifecycle-management)
 * [Handling Instance Lifecycle States](#handling-instance-lifecycle-states)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
@@ -47,7 +48,7 @@ There are three different submenu options under Instances:
 
 * **Unregistered**: shows only unregistered instances, which are the ones accessible into all the defined providers that were not deployed through Cloud Application Manager. They are discovered in the synchronization event of a provider and are classified by Type and Subtype.
   * Type: One of Compute, Network, Database, Storage or Other
-  * Subtype: this is the instance class, specific to each provider type. For example, for AWS type providers we can see VPC or Application Load Balancers (for Network type instances), and S3 or Elastic Block Storages (for Storage type instances) and for an Azure provider we could see Virtual Networks or Application Gateways (in Network type instances) and Queue or BLOB (in Storage type instances). You can check the [full list of Azure resources being displayed here](using-microsoft-azure.md#azure-native-resources).
+  * Subtype: this is the instance class, specific to each provider type. For example, for AWS type providers we can see VPC or Application Load Balancers (for Network type instances), and S3 or Elastic Block Storages (for Storage type instances) and for an Azure provider we could see Virtual Networks or Application Gateways (in Network type instances) and Queue or BLOB (in Storage type instances). You can check the [full list of Azure resources being displayed here](../../Cloud Application Manager/Deploying Anywhere/using-microsoft-azure.md#azure-native-resources).
 
   You can also select a specific state among the available ones (Active, Inactive) to show only the instance in the selected state.
 
@@ -211,6 +212,35 @@ Instances deployed in AWS will sync CAM **Manual Terminate Protection** with Dis
 
 Instances imported from AWS will inherit DisableApiTermination flag into **Manual Terminate Protection** flag. Flag status is provided when provider is syncronized, so changes are not reflected in CAM until **Sync** operation has been done.
 
+### Deploying Instances without Lifecycle Management
+
+*Exclude Lifecycle Management* feature can be enabled on virtual machine deployment policy boxes (with single or multiple machines) to deploy instances without Lifecycle Management support. This means that the Cloud Application Manager agent will not be installed. This feature is not supported for deployment policy boxes with auto-scaling feature enabled.
+
+Follow these steps to *Exclude Lifecycle Management* on a existing deployment policy box:
+
+1. In a existing Deployment Policy Box, under Code tab, edit the Policy by clicking on the pencil icon.
+2. In the Edit Deployment Policy Box dialog, enable the **Exclude Lifecycle Management** toggle.
+
+    ![Deployment Policy Box Dialog](../../images/cloud-application-manager/exclude-lifecycle-management.png)
+
+3. When done, click **Save**
+
+#### Enabling Lifecycle Management
+
+When an instance has been deployed with *Exclude Lifecycle Management* option set, it's possible to enable Lifecycle Management installing the Cloud Application Manager agent on all the instance machines.
+
+Follow these steps to *Enable Lifecycle Management* on an existing instance:
+
+1. In a existing Instance, under the action list dropdown, select *Enable Lifecycle Management* option.
+
+    ![Deployment Policy Box Dialog](../../images/cloud-application-manager/enable-lifecycle-management.png)
+
+2. In the Enable Lifecycle Management dialog enter the credentials and proxy configuration if needed, and click **Enable**
+
+    ![Deployment Policy Box Dialog](../../images/cloud-application-manager/enable-lifecycle-management-dialog.png)
+
+3. The Cloud Application Manager agent will then be installed on all instances machines and the full lifecycle capabilites will be available on the instance.
+
 ### Handling Instance Lifecycle States
 
 Instance actions (on the instances page or the lifecycle editor) trigger deployment-related event scripts from your box. Take these actions to start, stop, terminate an instance, and even perform upgrades or make changes to your live instance.
@@ -236,6 +266,10 @@ This virtually powers on your instance. It’s useful in case you’ve shut the 
 **Shut Down**
 
 This runs the stop scripts from your box instance and cleanly shuts down the OS. It’s useful if your instance does not need to be up 24/7. As some cloud providers only charge for running instances, this can save money.
+
+**Abort**
+
+If the instance is running an event script, then this action aborts the event script being executed and leaves the instance in an unavailable state. This allows the user to recover the control of an instance stuck in a script execution not returning the control to Cloud Application Manager and fix the issue before retrying to run the event script.
 
 **Terminate**
 

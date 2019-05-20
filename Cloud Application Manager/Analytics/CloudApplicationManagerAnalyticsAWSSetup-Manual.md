@@ -1,6 +1,6 @@
 {{{
   "title": "Cloud Optimization AWS Configuration - Manual",
-  "date": "12-13-2017",
+  "date": "04-22-2019",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
@@ -57,7 +57,6 @@ It is recommended the user or role performing these steps have full IAM permissi
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "FullPolicy",
             "Action": [
                 "acm:DescribeCertificate",
                 "acm:ListCertificates",
@@ -89,8 +88,8 @@ It is recommended the user or role performing these steps have full IAM permissi
                 "directconnect:DescribeVirtualInterfaces",
                 "dynamodb:ListTables",
                 "dynamodb:DescribeTable",
+                "dynamodb:ListTagsOfResource",
                 "ec2:Describe*",
-                "ec2:ModifyInstanceAttribute", 
                 "ec2:GetConsoleOutput",
                 "ecs:ListClusters",
                 "ecs:DescribeClusters",
@@ -122,6 +121,7 @@ It is recommended the user or role performing these steps have full IAM permissi
                 "glacier:GetJobOutput",
                 "iam:Get*",
                 "iam:List*",
+                "iam:GenerateCredentialReport",
                 "iot:DescribeThing",
                 "iot:ListThings",
                 "iam:GenerateCredentialReport",
@@ -132,7 +132,6 @@ It is recommended the user or role performing these steps have full IAM permissi
                 "kms:Describe*",
                 "kms:Get*",
                 "kms:List*",
-                "kms:ListResourceTags",
                 "lambda:ListFunctions",
                 "lambda:ListTags",
                 "rds:Describe*",
@@ -151,6 +150,8 @@ It is recommended the user or role performing these steps have full IAM permissi
                 "s3:GetBucketNotification",
                 "s3:GetLifecycleConfiguration",
                 "s3:GetObject",
+                "s3:GetObjectMetadata",
+                "s3:GetNotificationConfiguration",
                 "s3:List*",
                 "ses:ListIdentities",
                 "ses:GetSendStatistics",
@@ -168,6 +169,7 @@ It is recommended the user or role performing these steps have full IAM permissi
                 "sns:GetSubscriptionAttributes",
                 "sns:ListTopics",
                 "sns:ListSubscriptionsByTopic",
+                "sns:GetSnsTopic",
                 "ssm:List*",
                 "sqs:ListQueues",
                 "sqs:GetQueueAttributes",
@@ -175,14 +177,15 @@ It is recommended the user or role performing these steps have full IAM permissi
                 "storagegateway:List*",
                 "workspaces:DescribeWorkspaceDirectories",
                 "workspaces:DescribeWorkspaceBundles",
-                "workspaces:DescribeWorkspaces"
+                "workspaces:DescribeWorkspaces",
+                "Organizations:List*",
+                "Organizations:Describe*"
             ],
+            "Resource": "*",
             "Effect": "Allow",
-            "Resource": "*"
+            "Sid": "FullPolicy"
         },
         {
-            "Sid": "CloudWatchLogsSpecific",
-            "Effect": "Allow",
             "Action": [
                 "logs:GetLogEvents",
                 "logs:DescribeLogGroups",
@@ -190,7 +193,9 @@ It is recommended the user or role performing these steps have full IAM permissi
             ],
             "Resource": [
                 "arn:aws:logs:*:*:*"
-            ]
+            ],
+            "Effect": "Allow",
+            "Sid": "CloudWatchLogsSpecific"
         }
     ]
 }
