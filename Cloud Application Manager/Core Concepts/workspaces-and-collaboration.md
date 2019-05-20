@@ -19,6 +19,7 @@
 * [Organizations](#organizations)
 * [Switching and Managing Workspaces, Cost Centers and Organizations](#switching-and-managing-workspaces-cost-centers-and-organizations)
 * [Sharing Boxes, Instances, and Providers](#sharing-boxes-instances-and-providers)
+* [Sharing with people or groups across Organizations](#sharing-with-people-or-groups-across-organizations)
 * [Getting General Support](#getting-general-support)
 
 ### Overview
@@ -159,6 +160,80 @@ Also you may give view access to make an instance available for others to use, s
 #### Sharing Providers
 
 Sharing providers has its benefits. You can give view access to company-approved providers and let users deploy to that particular provider. When teams deploy to a shared provider, you can track org-wide usage and compliance cohesively. Provider accounts can be shared only in the Enterprise Edition.
+
+### Sharing with people or groups across Organizations
+
+#### Sharing team workspaces
+
+To share a team workspace with other Organizations, you should be an administrator of the organization, administrator of cost center where the team workspace belongs to, or you should be the administrator of the team workspaces. In this article, we consider that the user is an organization administrator.
+
+In order to share a team workspace across organizations you have to follow the next steps:
+
+1. If the organization you want to share with is not yet visible in the *Organizations* section of the Workspace settings page, you should send a request to [support](mailto:incident@CenturyLink.com) requesting the organization you want to share with to be federated with your own organization.
+
+2. Once the support team federates the organization you want to share with, it should appear in the workspace settings menu. Click on the pencil button in the corresponding workspace tile on the context switcher to access its settings.
+
+  ![Setting team workspaces](../../images/core-concepts/setting-team-workspace.png)
+
+3. In the Organizations section, you can allow **Share** the team workspace with any organization that is federated with your organization.
+
+  ![Sharing workspace with an organization](../../images/core-concepts/to-share-organization.png)
+
+  Click the 'Share' button of the organization where the user or group you want to share with belongs.
+
+  ![Confirm you want to share the team workspace](../../images/core-concepts/confirm-to-share.png)
+
+  Click Share in the confirmation dialog.
+
+4. Now you can add any user or group from the organization you share with to the **Members** section of the workspace. The users or groups of that organization will appear in the look ahead as any other member of your organization.
+
+  ![Allow a user access to the team workspaces](../../images/core-concepts/allow-user-can-see-team-workspace.png)
+
+  By default, any member is added with the *User* role, but you can change it to the appropriate role. For more information, please refer to [Sharing and collaboration](#workspaces)
+
+  ![Add user with appropiate role](../../images/core-concepts/user-role.png)
+
+  Please, note that every member on the list has the name of the organization they belong to below the member name, along with its email address.
+
+5. Now the user that has been added can see the team workspace and access it with the corresponding role that has been assigned to him in the workspace.
+
+  ![User can see the team workspace](../../images/core-concepts/user-can-see-team-workspace.png)
+
+#### A particular user stop sharing team workspaces
+
+To stop sharing a team workspace with other Organizations, you should be an administrator of the organization, administrator of cost center where the team workspace belongs to, or you should be the administrator of the team workspaces. In this article, we consider that the user is an organization administrator.
+
+In order stop sharing a team workspace across organizations you have to follow the next steps:
+
+1. Go to team workspace settings.
+
+2. Remove the user from the member's list.
+
+  ![Remove user](../../images/core-concepts/remove-an-user.png)
+
+  Click **Remove** in the confirmation dialog.
+
+  ![Confirm remove user](../../images/core-concepts/confirm-to-remove-user.png)
+
+3. From then on, the user will not see the team workspace anymore.
+
+  ![The user don't see the team workspaces](../../images/core-concepts/user-not-see-team-workspace.png)
+
+#### Stop sharing team workspaces
+
+To revoke access of sharing a team workspace with other Organizations, you should be an administrator of the organization, administrator of cost center where the team workspace belongs to, or you should be the administrator of team workspaces. In this article, we consider that the user is an organization administrator.
+
+To revoke access to sharing a team workspace you have to follow the next steps:
+
+When you want to revoke access, you have to ensure there are no members from the organization you want to remove access. If there are any, please remove them first by following the above steps. Once there is no members from the organization, just press the 'Revoke Access' button in the Organizations section of the Workspace settings page.
+
+  ![Revoke Access](../../images/core-concepts/revoke-access.png)
+
+Click **Revoke Access** in the confirmation dialog.
+
+  ![Confirm revoke access](../../images/core-concepts/confirm-revoke.png)
+
+At this moment, no user nor group of that organization will be available to be added as member to the workspace.
 
 ### Getting General Support
 
