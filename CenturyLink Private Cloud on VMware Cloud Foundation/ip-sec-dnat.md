@@ -16,49 +16,43 @@ You must configure at least one IPSec VPN site on the NSX Edge before enabling t
 
 * Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment with an Org Admin Account
 
-  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../images/dccf/login-to-dcc-f.png)
+  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../images/dccf/login-html5.png)
 
-* Once logged in, click __Administration__ at the top.
+* Once logged in, click __Datacenters__ in the ,menu at the top and then select your Datacenter.
 
-  ![IPSec VPN](../images/dccf/configuring-sslvpn-plus1.png)
+  ![IPSec VPN](../images/dccf/configuring-sslvpn-plus1-html5.png)
 
-* Double-click your Org VDC to open.
+* Click on __Edges__ in the panel on the left side.
 
-  ![IPSec VPN](../images/dccf/configuring-sslvpn-plus2.png)
+  ![IPSec VPN](../images/dccf/configuring-sslvpn-plus2-html5.png)
 
-* In the __org001-vdc__ page, click on the __Edge Gateways__ tab, then right-click your __org001-edge__, then select __Properties...__
+* Select your Edge Gateway, and take note of the (Public) IP Address for the Edge Gateway. Click __Configure Services__ at the top of the screen.
 
-  ![IPSec VPN](../images/dccf/edge-gws1.png)
+  ![IPSec VPN](../images/dccf/edge-gws1-html5.png)
 
-* Select the Configure IP Settings tab, and take note of the (Public) IP Address for the Edge Gateway.
+* Select the __VPN__ tab, then __IPsecVPN Sites__. Click the __+__ icon to add IPsec VPN Sites (this is a prerequisite to enable IPsec VPN Services).
 
-  ![IPSec VPN](../images/dccf/edge-gws2.png)
+  ![IPSec VPN](../images/dccf/edge-gws2-html5.png)
 
-* Right-click your __org001-edge__, then select __Edge Gateway Services...__ A new tab will open.
-
-  ![IPSec VPN](../images/dccf/edge-gws3.png)
-
-* Select the VPN tab, then __IPSec VPN Sites__, Click __+__ sign to add IPsec VPN Sites (this is a prerequisite to enable IPsec VPN Services).
-
-  ![IPSec VPN](../images/dccf/edge-gws4.png)
+* A new window will pop up. Follow the steps below:   
 
 *	Add IPsec VPN:
-  * Enabled: Click slider to enable
-  * Enable perfect forward secrecy (PFS): default
-  * Name: Name your IPSec VPN
-  * Local Id: Your Local Id
-  * Local Endpoint: IP address of Edge Gateway
-  * Local Subnets: Your Local Subnets
-  * Peer Id: Your Peer Id
-  * Peer Endpoint: IP address of Peer
-  * Peer Subnets: Your Peer Subnets
-  * Encryption Algorithm: Must match with peer
-  * Authentication: Must match with peer
-  * Change Shared Key:
-  * Pre-Shared Key: Shared Key
-  * Display Shared Key:
-  * Diffie-Hellman Group: Must match with peer
-  * Extension:
+    * Enabled: Click slider to enable
+    * Enable perfect forward secrecy (PFS): default
+    * Name: Name your IPSec VPN
+    * Local Id: Your Local Id
+    * Local Endpoint: IP address of Edge Gateway
+    * Local Subnets: Your Local Subnets
+    * Peer Id: Your Peer Id
+    * Peer Endpoint: IP address of Peer
+    * Peer Subnets: Your Peer Subnetsx
+    * Encryption Algorithm: Must match with peer
+    * Authentication: Must match with peer
+    * Change Shared Key:
+    * Pre-Shared Key: Shared Key
+    * Display Shared Key:
+    * Diffie-Hellman Group: Must match with peer
+    * Extension:
 
   ![IPSec VPN](../images/dccf/edge-gws5.png)
 
