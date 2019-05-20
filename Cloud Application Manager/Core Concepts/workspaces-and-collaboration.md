@@ -1,7 +1,7 @@
 {{{
 "title": "Workspaces, Cost Centers, Organizations and Sharing",
-"date": "09-01-2016",
-"author": "",
+"date": "05-20-2019",
+"author": "Denes Pal & Sergio Quintana",
 "attachments": [],
 "contentIsHTML": false,
 "sticky": true,
@@ -17,10 +17,7 @@
 * [Workspaces](#workspaces)
 * [Cost Center](#cost-center)
 * [Organizations](#organizations)
-* [Favorites](#favorites)
 * [Switching and Managing Workspaces, Cost Centers and Organizations](#switching-and-managing-workspaces-cost-centers-and-organizations)
-* [Create Workspace flow](#create-workspace-flow)
-* [Create Cost Center flow](#create-cost-center-flow)
 * [Sharing Boxes, Instances, and Providers](#sharing-boxes-instances-and-providers)
 * [Getting General Support](#getting-general-support)
 
@@ -86,45 +83,13 @@ All Cost Centers and Workspaces belong to an Organization.
 
 The administrators of an Organization can change many settings that affect the whole organizations. See more details [here](../Administering Your Organization/admin-overview.md).
 
-### Favorites
-
-The Favorites section contains a list of any workspace, cost center or organization that the user added for easier or more convenient access to. To add to this section, simply click the Star icon in the upper left hand corner of any of the aforementioned spaces. The star will become dark grey to indicate that the space has been successfully added. Clicking the Star icon again, which then turns the color to white, will remove the space from the Favorites section.
-
 ### Switching and Managing Workspaces, Cost Centers and Organizations
 
 You can use the Context Switcher in the top of the screen to access different Workspaces, Cost Centers and Organizations to which you have access.
 
 This allows you to filter and search for the right scope to the work you need to do. The Instances, Boxes and Providers available to you will change to reflect the selected scope. For example, if you select a Cost Center, you can see all Instances, Boxes and Providers that are in Workspaces belonging to that Cost Center.
 
-#### Context Switcher - Workspaces view
-
-![Context Switcher - Workspaces view](../../images/cloud-application-manager/workspace-and-sharing1.png)
-
-#### Context Switcher - Cost Center View
-
-![Context Switcher - Cost Center View](../../images/cloud-application-manager/workspace-and-sharing2.png)
-
-#### Context Switcher - Organization view
-
-![Context Switcher - Organization view](../../images/cloud-application-manager/workspace-and-sharing3.png)
-
-#### Workspace Switcher - Favorites view
-
-![Workspace Switcher - Favorites view](../../images/cloud-application-manager/workspace-and-sharing11.png)
-
-The Context Switcher also offer the option to create Workspaces and Cost Centers.
-
-### Create Workspace flow
-
-Create workspace flow will ask users to select the Cost Center the workspace belongs to. Once created, the Cost Center cannot be changed.
-
-![Create Workspace](../../images/cloud-application-manager/workspace-and-sharing4.png)
-
-### Create Cost Center flow
-
-Create Cost Center flow will ask users to select the Organization the Cost Center belongs to. It will usually be only one organization to select. Once created, the Cost Center cannot change Organization.
-
-![Create Cost Center](../../images/cloud-application-manager/workspace-and-sharing5.png)
+There is more information about Context Switcher [here](context-switcher.md).
 
 ### Sharing Boxes, Instances, and Providers
 
