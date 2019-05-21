@@ -48,7 +48,7 @@ The **tiles view** displays a big icon, name, type and the owner of the box. Whe
 
 ![Box page in list view](../../images/cloud-application-manager/core-concepts/boxes-list.png)
 
-The **list view** displays for each element a small icon, name, type, when it was last modified, the owner and two action buttons for each box. You can order by any column by clickin on its header and f you select any of the boxes in the list, a *Bulk actions* button appears, so that selected boxes can be updated all at once.
+The **list view** displays for each element a small icon, name, type, when it was last modified, the owner and two action buttons for each box. You can order by any column by clicking on its header and, if you select any of the boxes in the list, a *Bulk actions* button appears so that selected boxes can be updated all at once.
 
 The *gear icon* action button allows you to manage the box by performing additional actions such as sharing the box, editing its details, cloning or deleting it. These options will be available depending on your access permissions onto the box.
 
@@ -56,11 +56,11 @@ You can also use the *filters* above to narrow down the boxes being displayed by
 
 There are several types of boxes to address for your specific automation use case:
 
-* [Application boxes](../Automating Deployments/application-box.md) allows to configure several boxes to deploy an application with a single click.
+* [Application boxes](../Automating Deployments/application-box.md) allow to configure several boxes to deploy an application with a single click.
 * [Script boxes](../Automating Deployments/script-box.md) let users automate using Bash, PowerShell, Salt, Ansible, Puppet, or Chef.
 * [Container boxes](../Automating Deployments/docker-container-service.md) let users automate using container technology like Docker.
-* [Template boxes](../Automating Deployments/template-box.md) allows to automate using AWS CloudFormation, ARM, Google Deployments, Kubernetes or Terraform templates.
-* [Deployment Policy boxes](../Automating Deployments/deploymentpolicy-box.md) provides the ability to select and share infrastructure resources, networking, and more from a cloud provider.
+* [Template boxes](../Automating Deployments/template-box.md) allow to automate using AWS CloudFormation, ARM, Google Deployments, Kubernetes or Terraform templates.
+* [Deployment Policy boxes](../Automating Deployments/deploymentpolicy-box.md) provide the ability to select and share infrastructure resources, networking, and more from a cloud provider.
 
 In the left side menu you can click on any of these types to filter by it on the view.
 
