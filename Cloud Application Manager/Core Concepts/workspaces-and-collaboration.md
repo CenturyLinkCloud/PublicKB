@@ -8,21 +8,21 @@
 "keywords": ["workspaces", "organizations", "cost centers", "context switcher", "sharing", "user levels", "creating"]
 }}}
 
-### In this article:
+**In this article:**
 
-- [Overview](#overview)
-- [Audience](#audience)
-- [Prerequisites](#prerequisites)
-- [Introduction](#introduction)
-- [Workspaces](#workspaces)
-- [Cost Center](#cost-center)
-- [Organizations](#organizations)
-- [Favorites](#favorites)
-- [Switching and Managing Workspaces, Cost Centers and Organizations](#switching-and-managing-workspaces-cost-centers-and-organizations)
-- [Create Workspace flow](#create-workspace-flow)
-- [Create Cost Center flow](#create-cost-center-flow)
-- [Sharing Boxes, Instances, and Providers](#sharing-boxes-instances-and-providers)
-- [Getting General Support](#getting-general-support)
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Introduction](#introduction)
+* [Workspaces](#workspaces)
+* [Cost Center](#cost-center)
+* [Organizations](#organizations)
+* [Favorites](#favorites)
+* [Switching and Managing Workspaces, Cost Centers and Organizations](#switching-and-managing-workspaces-cost-centers-and-organizations)
+* [Create Workspace flow](#create-workspace-flow)
+* [Create Cost Center flow](#create-cost-center-flow)
+* [Sharing Boxes, Instances, and Providers](#sharing-boxes-instances-and-providers)
+* [Getting General Support](#getting-general-support)
 
 ### Overview
 
@@ -132,9 +132,9 @@ Create Cost Center flow will ask users to select the Organization the Cost Cente
 
 When you create a box, launch an instance, or add a provider, they are created in the Workspace that you have selected in the Context Switcher. You can control how others use it by giving them view or edit access. Edit access gives users the same level of access as the owner but they cannot delete the asset.
 
-When you share with a user, the asset will appear in his personal workspace with the permission given.
-
-If you decide to share with a team workspace, all the users on the workspace with the right permissions will be able to access the asset.
+* When you share with a user, the asset will appear in his personal workspace with the permission given.
+* When you share with a SAML or LDAP group, all users pertaining to that group will be able to access the asset
+* If you decide to share with a team workspace, all the users on the workspace with the right permissions will be able to access the asset.
 
 When you share with a Workspace, all workspace members get access according to their role.
 
