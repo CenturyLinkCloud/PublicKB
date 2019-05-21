@@ -1,7 +1,7 @@
 {{{
 "title": "Workspaces, Cost Centers, Organizations and Sharing",
 "date": "05-20-2019",
-"author": "Denes Pal & Sergio Quintana",
+"author": "Denes Pal and Sergio Quintana",
 "attachments": [],
 "contentIsHTML": false,
 "sticky": true,
