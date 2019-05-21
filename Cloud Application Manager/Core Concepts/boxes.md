@@ -44,29 +44,29 @@ When you click on the **Boxes** left side menu the boxes page appears displaying
 
 ![Box page in tiles view](../../images/cloud-application-manager/core-concepts/boxes-tiles.png)
 
-The **tiles view** displays a big icon, name, type and the owner of the box. When you hover on a tile, two action buttons appear allowing you to deploy or manage the box. You can short the tiles by name (default), last modified or owner by selecting one of these values in the *Short by* dropdown located on the top-right corner of the page, next to the change view mode button.
+The **tiles view** displays a big icon, name, type and the owner of the box. When you hover on a tile, two action buttons appear allowing you to deploy or manage the box. You can sort the tiles by name (default), last modified or owner by selecting one of these values in the *Sort by* dropdown located on the top-right corner of the page, next to the change view mode button.
 
 ![Box page in list view](../../images/cloud-application-manager/core-concepts/boxes-list.png)
 
-The **list view** displays a small icon, name, type, when it was last modified, the owner and the two action buttons for each box. You can order by any column by clickin on its header. If you select any of the boxes in the list, a *Bulk actions* button appears where you can update the selected boxes all at once.
+The **list view** displays for each element a small icon, name, type, when it was last modified, the owner and two action buttons for each box. You can order by any column by clickin on its header and f you select any of the boxes in the list, a *Bulk actions* button appears, so that selected boxes can be updated all at once.
 
-The *gear icon* action button allows you to manage the box by performing additional actions such as share the box, edit its details, clone or delete. These options will be available depending on your access permissions onto the box.
+The *gear icon* action button allows you to manage the box by performing additional actions such as sharing the box, editing its details, cloning or deleting it. These options will be available depending on your access permissions onto the box.
 
 You can also use the *filters* above to narrow down the boxes being displayed by the workspace they belong to or the tags they have associated.
 
 There are several types of boxes to address for your specific automation use case:
 
-* [Application boxes](../Automating Deployments/application-box.md) - Configure several boxes to deploy an application with a single click.
-* [Script boxes](../Automating Deployments/script-box.md) - Automate using Bash, PowerShell, Salt, Ansible, Puppet, or Chef.
-* [Container boxes](../Automating Deployments/docker-container-service.md) - Automate using container technology like Docker.
-* [Template boxes](../Automating Deployments/template-box.md) - Automate using AWS CloudFormation templates, ARM templates or Terraform templates.
-* [Deployment Policy boxes](../Automating Deployments/deploymentpolicy-box.md) - Select and share infrastructure resources, networking, and more from a cloud provider.
+* [Application boxes](../Automating Deployments/application-box.md) allows to configure several boxes to deploy an application with a single click.
+* [Script boxes](../Automating Deployments/script-box.md) let users automate using Bash, PowerShell, Salt, Ansible, Puppet, or Chef.
+* [Container boxes](../Automating Deployments/docker-container-service.md) let users automate using container technology like Docker.
+* [Template boxes](../Automating Deployments/template-box.md) allows to automate using AWS CloudFormation, ARM, Google Deployments, Kubernetes or Terraform templates.
+* [Deployment Policy boxes](../Automating Deployments/deploymentpolicy-box.md) provides the ability to select and share infrastructure resources, networking, and more from a cloud provider.
 
 In the left side menu you can click on any of these types to filter by it on the view.
 
 ### New Box
 
-To create a new box, click **New** button in the **Boxes** page. Select a box type to match your automation:
+To create a new box, click on the **New** button in the **Boxes** page. Select a box type to match your automation:
 
 * [Application](../Automating Deployments/application-box.md)
 * [Script](../Automating Deployments/script-box.md)

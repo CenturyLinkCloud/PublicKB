@@ -306,7 +306,7 @@ Many of the instance actions can be applied in bulk to several instances at once
 
 ![Bulk actions menu](../../images/cloud-application-manager/deploying-anywhere/bulk-actions.png)
 
-The **Bulk Actions** button dropdown appears next to the *New* instance button once you select any instance in the list and, depending on your selection, the common actions allowed in all selected instances will be available in the dropdown. For example, if you select a few instances all in *Online* state, you will have all the applicable lifecycle actions available (**Reinstall**, **Reconfigure**, **Shutdown**, **Terminate**, **Force Terminate**) and any other additional option such as *Update Instance*, but if you also include an *Unavailable* instance in your selection among the *Online* ones, the only available lifecycle option will be **Force Terminate**.
+The **Bulk Actions** button dropdown appears next to the *New* instance button once you select any instance in the list and, depending on your selection, the common actions allowed in all selected instances will be available in the dropdown. For example, if you select a few instances, all in *Online* state, you will have all the applicable lifecycle actions available (**Reinstall**, **Reconfigure**, **Shutdown**, **Terminate**, **Force Terminate**) and any other additional option such as *Update Instance*; but if you also include an *Unavailable* instance in your selection among the *Online* ones, the only available lifecycle option will be **Force Terminate**.
 
 ### Contacting Cloud Application Manager Support
 

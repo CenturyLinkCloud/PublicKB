@@ -39,11 +39,11 @@ When you click the **Providers** option in the left side menu you will see the p
 
 ![Providers list](../../images/cloud-application-manager/core-concepts/providers-list.png)
 
-You can create new providers by clicking on the **New** button, type something in the search field to search for a provider in the list or filter by the workspace they belong to.
+You can create new providers by clicking on the **New** button, type something in the search field to look for a provider in the list or filter by the workspace they belong to.
 
-Every provider in the list have a gear icon from which you can synchronize or delete the provider. If you click on any of the provider listed, you will get to the provider details page, where you can find more information and interact with it.
+Every provider in the list have a gear icon from which you can synchronize or delete the provider. If you click on any of the provider listed, you will get to its details page, where you can find more information and interact with it.
 
-If you select several providers by clicking on the check box on the provider line item (or clicking the check box in the header line which will select all), the **Bulk Actions** button dropdown will appear next to the *New* provider button, allowing to sync or delete the selected providers in bulk mode.
+If you select several providers by clicking on the checkbox on the provider line item (or clicking the checkbox in the header line which will select all), the **Bulk Actions** button dropdown will appear next to the *New* provider button, allowing to sync or delete the selected providers in bulk mode.
 
 ### Supported provider types
 
