@@ -14,19 +14,19 @@ In this KB article, we demonstrate how to add a new user as an OrgAdmin to your 
 ### Steps to Add a New User as an Org Admin
 * Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment.
 
-  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../images/dccf/login-html5.png)
+  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
 * Once logged in, click on the menu icon at the top of the screen. Select __Administration__ in the dropdown menu.
 
-  ![Catalog](../images/dccf/adding-org-admin1.png)
+  ![Catalog](../../images/dccf/adding-org-admin1.png)
 
 * On the Users page, click __New__ to add a new user.
 
-  ![Catalog](../images/dccf/adding-org-admin2.png)
+  ![Catalog](../../images/dccf/adding-org-admin2.png)
 
 * A __New User__ window will pop up. Enter the user's credentials and password, then be sure "Enable" is checked to activate the user account. Under __Role__, select __CPCVCP Organization Administrator__. Continue filling out the user's contact info if needed. Please note, only fields with a red asterisk are required. When finished, click __Save__.
 
-   ![Catalog](../images/dccf/adding-org-admin3.png)
+   ![Catalog](../../images/dccf/adding-org-admin3.png)
 
 * The new user will appear in the user list.
 
@@ -34,16 +34,16 @@ In this KB article, we demonstrate how to add a new user as an OrgAdmin to your 
 
 * Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment.
 
-  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../images/dccf/login-html5.png)
+  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
 * Once logged in, click on the menu icon at the top of the screen. Select __Administration__ in the dropdown menu.
 
-  ![Catalog](../images/dccf/adding-org-admin1.png)
+  ![Catalog](../../images/dccf/adding-org-admin1.png)
 
 * On the Users page, select the user who's role you need to change from the list, then click __Edit__.
 
-  ![Catalog](../images/dccf/adding-org-admin4.png)
+  ![Catalog](../../images/dccf/adding-org-admin4.png)
 
 * From the __Available Roles__ dropdown menu, select __CPCVCF Organization Adminitrator__. Then click __Save__.
 
-  ![Catalog](../images/dccf/adding-org-admin5.png)
+  ![Catalog](../../images/dccf/adding-org-admin5.png)

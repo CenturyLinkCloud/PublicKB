@@ -1,5 +1,5 @@
 {{{
-  "title": "Micro-segmentation with Distributed Firewall - Same Network - Flex UI",
+  "title": "Micro-segmentation with Distributed Firewall - Same Network (Flex UI)",
   "date": "12-17-2018",
   "author": "Anthony Hakim",
   "attachments": [],
@@ -28,9 +28,9 @@ For the purposes of this KB, we have the following environment:
 
 By default, Web-Server and RHEL7-AH1 have access to DB-Server.
 
-![DFW](../images/dccf/dfw-ssh-before1.png)
+![DFW](../../images/dccf/dfw-ssh-before1.png)
 
-![DFW](../images/dccf/dfw-ssh-before2.png)
+![DFW](../../images/dccf/dfw-ssh-before2.png)
 
 ### Steps
 
@@ -38,7 +38,7 @@ By default, Web-Server and RHEL7-AH1 have access to DB-Server.
 
 * Click the __Administration__ tab. In the left side pane, under __Cloud Resources__, select __Virtual Datacenters__, then right-click your Virtual Datacenter, and select __Manage Firewall...__
 
-  ![DFW](../images/dccf/dfw1.png)
+  ![DFW](../../images/dccf/dfw1.png)
 
   A new window will open. If you get a message stating Distributed Firewall is not enabled for this Org VDC, please follow the steps outlined in the [Enabling the Distributed Firewall](dfw-enabling.md) KB article.
 
@@ -76,6 +76,6 @@ __Let's test this ...__
 
 Web-Server should have access to DB-Server, and RHEL7-AH1 should not have access to DB-Server.
 
-![DFW](../images/dccf/dfw6.png)
+![DFW](../../images/dccf/dfw6.png)
 
-![DFW](../images/dccf/dfw5.png)
+![DFW](../../images/dccf/dfw5.png)

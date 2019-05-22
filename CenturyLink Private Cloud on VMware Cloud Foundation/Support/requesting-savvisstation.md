@@ -14,4 +14,4 @@ In this KB article, we demonstrate how to request a SavvisStation portal account
 ### Steps to Add a New User as an Org Admin
 * Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment.
 
-  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../images/dccf/login-html5.png)
+  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)

@@ -28,9 +28,9 @@ For the purposes of this KB, we have the following environment:
 
 By default, Web-Server and RHEL7-AH1 have access to DB-Server.
 
-![DFW](../images/dccf/dfw-ssh-before1.png)
+![DFW](../../images/dccf/dfw-ssh-before1.png)
 
-![DFW](../images/dccf/dfw-ssh-before2.png)
+![DFW](../../images/dccf/dfw-ssh-before2.png)
 
 ### Steps
 
@@ -38,7 +38,7 @@ By default, Web-Server and RHEL7-AH1 have access to DB-Server.
 
 * Click __Datacenters__ from the menu dropdown. Select your Datacenter. Select __Security__ in the left side-panel. Select the datacenter, the click __Configure Services__.
 
-  ![DFW](../images/dccf/dfw1-html5.png)
+  ![DFW](../../images/dccf/dfw1-html5.png)
 
   A new window will open. If you get a message stating Distributed Firewall is not enabled for this Org VDC, please follow the steps outlined in the [Enabling the Distributed Firewall](dfw-enabling.md) KB article.
 
@@ -76,6 +76,6 @@ __Let's test this ...__
 
 Web-Server should have access to DB-Server, and RHEL7-AH1 should not have access to DB-Server.
 
-![DFW](../images/dccf/dfw6.png)
+![DFW](../../images/dccf/dfw6.png)
 
-![DFW](../images/dccf/dfw5.png)
+![DFW](../../images/dccf/dfw5.png)

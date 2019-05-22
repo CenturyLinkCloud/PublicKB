@@ -59,34 +59,34 @@ The following NAT rules are required on the Tenant (source) side of the connecti
 * Log in to the vSphere Web Client, using the FQDN, as an administrator
 * In the vSphere Web Client, right-click on the vCenter Server, and select Deploy OVF Template...
 
-  ![Migration Tool](../images/dccf/extender1.png)
+  ![Migration Tool](../../images/dccf/extender1.png)
 
   Note: You can also use the File menu to select Deploy OVF Template...
 
 * On the Select template page, click Browse..., select the downloaded vCloud Extender OVA file
 * Click Next
 
-  ![Migration Tool](../images/dccf/extender2.png)
+  ![Migration Tool](../../images/dccf/extender2.png)
 
 * On the Review details page, review your selections
 * Click Next
 
-  ![Migration Tool](../images/dccf/extender3.png)
+  ![Migration Tool](../../images/dccf/extender3.png)
 
 * On the Accept license agreement page, click Accept
 * Click Next
 
-  ![Migration Tool](../images/dccf/extender4.png)
+  ![Migration Tool](../../images/dccf/extender4.png)
 
 * On the Select name and folder page, enter the VM Name, select the Datacenter
 * Click Next
 
-  ![Migration Tool](../images/dccf/extender5.png)
+  ![Migration Tool](../../images/dccf/extender5.png)
 
 * On the Select a resource page, make the appropriate selection
 * Click Next
 
-  ![Migration Tool](../images/dccf/extender6.png)
+  ![Migration Tool](../../images/dccf/extender6.png)
 
 * On the Select storage page, choose the following:
   * Select virtual disk format: Thin provision
@@ -94,14 +94,14 @@ The following NAT rules are required on the Tenant (source) side of the connecti
 * Select your appropriate datastore
 * Click Next
 
-  ![Migration Tool](../images/dccf/extender7.png)
+  ![Migration Tool](../../images/dccf/extender7.png)
 
 * On the Setup networks page, choose the following:
   * Select your appropriate destination network
   * (IP Allocation Settings) IP protocol: IPv4
 * Click Next
 
-  ![Migration Tool](../images/dccf/extender8.png)
+  ![Migration Tool](../../images/dccf/extender8.png)
 
 * On the Customize template page, choose the following (Application):
   * Deployment Type: cx-connector
@@ -109,7 +109,7 @@ The following NAT rules are required on the Tenant (source) side of the connecti
   * Initial root password: Set and confirm a password
   * NTP Server: Enter the IP address of your NTP server
 
-    ![Migration Tool](../images/dccf/extender9a.png)
+    ![Migration Tool](../../images/dccf/extender9a.png)
 
 * On the Customize template page, choose the following (Networking Properties):
   * Default Gateway: Enter the IP address of your default gateway
@@ -120,13 +120,13 @@ The following NAT rules are required on the Tenant (source) side of the connecti
   * Network 1 Netmask: Enter the network mask address for this interface
 * Click Next
 
-    ![Migration Tool](../images/dccf/extender9b.png)  
+    ![Migration Tool](../../images/dccf/extender9b.png)  
 
 * Review your settings
 * Select Power on after deployment
 * Click Finish
 
-  ![Migration Tool](../images/dccf/extender10.png)
+  ![Migration Tool](../../images/dccf/extender10.png)
 
 ### VCD Extender Configuration
 After completing the Installation Process, you will need to perform the following steps to configure vCD Extender to enable it for migration.
@@ -140,13 +140,13 @@ Verify that the vCloud Director Extender On-Premise Appliance VM is powered on.
 
   **Note:** Use the password that you set during the vCloud Director Extender On-Premise Appliance installation.
 
-  ![Migration Tool](../images/dccf/extender11.png)
+  ![Migration Tool](../../images/dccf/extender11.png)
 
 * Click Setup Wizard
 
   **Note:** Run the Setup wizard for your first-time configuration to install Replicator
 
-  ![Migration Tool](../images/dccf/extender12.png)
+  ![Migration Tool](../../images/dccf/extender12.png)
 
 * On the On-Prem vCenter page, enter the following:
   * Name: Enter the on-premise vCenter Server Name
@@ -158,18 +158,18 @@ Verify that the vCloud Director Extender On-Premise Appliance VM is powered on.
   * Password: Enter the administrator password
   * Click Next
 
-    ![Migration Tool](../images/dccf/extender13a.png)
+    ![Migration Tool](../../images/dccf/extender13a.png)
 
-    ![Migration Tool](../images/dccf/extender13b.png)
+    ![Migration Tool](../../images/dccf/extender13b.png)
 
 * On the Register Plugin with vCenter Server page, register with a valid version number
 
   **Note:** This process registers vCloud Director Extender as a plug-in to the on-premise vCenter Server.
 * Click Next
 
-  ![Migration Tool](../images/dccf/extender14a.png)
+  ![Migration Tool](../../images/dccf/extender14a.png)
 
-  ![Migration Tool](../images/dccf/extender14b.png)
+  ![Migration Tool](../../images/dccf/extender14b.png)
 
 * On the Replicator page, enter the following:
   * Name: Enter a name for the replicator
@@ -186,13 +186,13 @@ Verify that the vCloud Director Extender On-Premise Appliance VM is powered on.
   * Netmask: Enter your Netmask
   * Click Next
 
-    ![Migration Tool](../images/dccf/extender15a.png)
+    ![Migration Tool](../../images/dccf/extender15a.png)
 
-    ![Migration Tool](../images/dccf/extender15b.png)
+    ![Migration Tool](../../images/dccf/extender15b.png)
 
   * After the Replicator is created, click Next
 
-    ![Migration Tool](../images/dccf/extender15c.png)
+    ![Migration Tool](../../images/dccf/extender15c.png)
 
 * On the Activate Replicator page, enter the following:
   * Root Password: Set and confirm a password
@@ -203,16 +203,16 @@ Verify that the vCloud Director Extender On-Premise Appliance VM is powered on.
   * Management vCenter SSO Password: Enter the administrator password
   * Public Endpoint URL (optional): Enter the Public Endpoint URL and Port
 
-    ![Migration Tool](../images/dccf/extender16a.png)
+    ![Migration Tool](../../images/dccf/extender16a.png)
 
   * After the Replicator is Activated, click next
 
-    ![Migration Tool](../images/dccf/extender16b.png)
+    ![Migration Tool](../../images/dccf/extender16b.png)
 
 * To complete the setup wizard, click Next and Finish
   **Note:** In the Management vCenter tab, the on-premise vCenter Server details appear. In the Replicators tab, you can see the details for the deployed Replicator appliance.
 
-  ![Migration Tool](../images/dccf/extender17.png)
+  ![Migration Tool](../../images/dccf/extender17.png)
 
 ### Connect to a Provider Cloud (CenturyLink Private Cloud on VMware Cloud Foundation)
 Before you can initiate migration jobs with vCloud Director Extender, you must set up a connection to a Provider Cloud
@@ -225,11 +225,11 @@ If you haven't configured the pre-requisite NAT firewall rules as indicated at t
 
   **Note:** You will need to logout of the vSphere Web Client to see the vCloud Director Extender plug-in in the vCenter UI.
 
-  ![Migration Tool](../images/dccf/extender18.png)
+  ![Migration Tool](../../images/dccf/extender18.png)
 
 * In the Provider Clouds tab, click Add a Provider Cloud.
 
-  ![Migration Tool](../images/dccf/extender19.png)
+  ![Migration Tool](../../images/dccf/extender19.png)
 
 * Enter a Provider Cloud Name.
 * Enter your Provider Cloud URL.
@@ -240,6 +240,6 @@ If you haven't configured the pre-requisite NAT firewall rules as indicated at t
 * Review the hosts certificates information and click Trust Certificates.
 * Click Add.
 
-  ![Migration Tool](../images/dccf/extender20.png)
+  ![Migration Tool](../../images/dccf/extender20.png)
 
 Now that you're done setting up your environment, you are ready to proceed to the next step - [Migrating VMs into CenturyLink Private Cloud on VMware Cloud Foundation](using-migration-tool.md).

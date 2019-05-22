@@ -1,5 +1,5 @@
 {{{
-  "title": "Enabling the Distributed Firewall",
+  "title": "Enabling the Distributed Firewall (Flex UI)",
   "date": "12-13-2018",
   "author": "Anthony Hakim",
   "attachments": [],
@@ -20,7 +20,7 @@ In this KB article, we walk through how to enable Distributed Firewall for Centu
 
 2. Click on **Help** in the upper right corner, then click **Support**.
 
-  ![DFW](../images/dccf/dfw-enable1.png)
+  ![DFW](../../images/dccf/dfw-enable1.png)
 
 3. You will be taken to the **Managed Support Portal**. Click **Create** and select the following options:
 
