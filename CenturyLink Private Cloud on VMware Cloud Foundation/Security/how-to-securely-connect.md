@@ -9,7 +9,7 @@
 }}}
 
 ### Description
-This KB article assumes that you've created a new virtual server on CenturyLink Private Cloud on VMware Cloud Foundation™. If not, follow this guide to [Create a Server](creating-a-server.md), then return to this guide.
+This KB article assumes that you've created a new virtual server on CenturyLink Private Cloud on VMware Cloud Foundation™. If not, follow this guide to [Create a Server](../General/creating-a-server.md), then return to this guide.
 
 Now what? How do you securely connect to your servers? This KB article describes how to use SSL VPN-Plus to securely connect to your servers.
 

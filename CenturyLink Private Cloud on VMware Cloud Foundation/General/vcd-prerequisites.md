@@ -13,7 +13,7 @@ In this KB article, we walk through the prerequisites needed to enable functiona
 
 Basic functionality includes everything except the the ability to upload OVF packages and/or ISO images into your CenturyLink Private Cloud on VMware Cloud Foundation Catalog, which is also covered in this KB, but is typically not required for all users.
 
-For more information on adding to your Catalog, take a look at this KB article - [Adding to your Catalog in CenturyLink Private Cloud on VMware Cloud Foundation](add-to-catalog.md).
+For more information on adding to your Catalog, take a look at this KB article - [Adding to your Catalog in CenturyLink Private Cloud on VMware Cloud Foundation](../Catalog/add-to-catalog.md).
 
 ### Supported Browsers
 The vCloud Director Web Console is compatible with recent versions of Google Chrome, Mozilla Firefox, and Microsoft Internet Explorer.
