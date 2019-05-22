@@ -1,7 +1,7 @@
 {{{ "title": "Deploying and Managing Instances",
-"date": "02-07-2019",
+"date": "05-20-2019",
 "author": "Guillermo Sánchez and Óscar Hafner",
-"keywords": ["cam", "instances", "lifecycle", "deploy", "deployment-policy", "instance-protection", "shutdown-protection", "terminate-protection"],
+"keywords": ["cam", "instances", "lifecycle", "deploy", "deployment-policy", "instance-protection", "shutdown-protection", "terminate-protection", "bulk-actions"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -15,8 +15,9 @@
 * [Deploying a New Instance](#deploying-a-new-instance)
 * [Scheduling Instances](#scheduling-instances)
 * [Protecting Instance Shutdown or Termination](#protecting-instance-shutdown-or-termination)
-* [Deploying Instances without Lifecycle Management](#deploy-instances-without-lifecycle-management)
+* [Deploying Instances without Lifecycle Management](#deploying-instances-without-lifecycle-management)
 * [Handling Instance Lifecycle States](#handling-instance-lifecycle-states)
+* [Managing multiple instances with bulk actions](#managing-multiple-instances-with-bulk-actions)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
@@ -61,7 +62,7 @@ In the instances list, any Compute type unregistered instance can be registered 
 #### Instance states
 
 * **Online**: last lifecycle operation succeeded and the instance is up and running.
-* **Unavailable**: last lifecycle operation has failed, see instance logs for more details. The instance may not be accessible. 
+* **Unavailable**: last lifecycle operation has failed, see instance logs for more details. The instance may not be accessible.
 * **Processing**: when a lifecycle operation is being executed. The instance is not ready yet.
 * **Not Responding**: the Cloud Application Manager instance agent has not contacted back for at least 10 minutes. The instance may have been changed from outside of Cloud Application Manager, and could be stopped, deleted or just the agent is not running.
 * **Unknown**: Cloud Application Manager cannot determinate the state of the instance. The instance has several machines and someones are in the Not Responding state and some others in any other state.
@@ -160,9 +161,9 @@ Besides the user interface, you can automatically schedule instances using the i
 
 Avoid accidental operations on particular instances. *Instance Protection Flag* allows to protect an instance for manual **shutdown** or **termination**. The instance will still be affected by *scheduled termination or shutdown* configured values if any.
 
-*Instance Protection feature* prevents the user to perform shutdown/terminate operations on API/UI level, also affecting at **provider level** if implements this feature. 
+*Instance Protection feature* prevents the user to perform shutdown/terminate operations on API/UI level, also affecting at **provider level** if implements this feature.
 
-*Instance Protection feature* can be set at **Deployment Policy Level** or **Instance Deployment Level**. 
+*Instance Protection feature* can be set at **Deployment Policy Level** or **Instance Deployment Level**.
 
 Follow these steps to enable instance protection on any **deployment policy** box:
 
@@ -251,53 +252,61 @@ Go to the Admin Console to [manage several instances](../Administering Your Orga
 
   ![Instance actions menu](../../images/cloud-application-manager/instance-states-8-2.png)
 
-**Reconfigure**
+#### Reconfigure
 
 This executes the configure events from the box.
 
-**Reinstall**
+#### Reinstall
 
 This re-runs the install scripts from your boxes onto the existing virtual infrastructure. This is useful if you made changes to your scripts within this instance, say to upgrade the instance to a new box version. A reconfigure automatically follows the reinstall.
 
-**Power On**
+#### Power On
 
 This virtually powers on your instance. It’s useful in case you’ve shut the instance down. After powering on, the configure and start scripts from the box execute.
 
-**Shut Down**
+#### Shut Down
 
 This runs the stop scripts from your box instance and cleanly shuts down the OS. It’s useful if your instance does not need to be up 24/7. As some cloud providers only charge for running instances, this can save money.
 
-**Abort**
+#### Abort
 
 If the instance is running an event script, then this action aborts the event script being executed and leaves the instance in an unavailable state. This allows the user to recover the control of an instance stuck in a script execution not returning the control to Cloud Application Manager and fix the issue before retrying to run the event script.
 
-**Terminate**
+#### Terminate
 
 This executes the dispose scripts from your box instance and then deletes the virtual infrastructure. You can’t revert the action and since you can lose data, be sure that you want to perform this action in the first place.
 
-**Force Terminate**
+#### Force Terminate
 
 If a Terminate fails for some reason (maybe a broken dispose script), then this forcibly deletes the virtual infrastructure. If you previously terminated or deleted an instance from the provider’s side, the instance may linger in Force Terminate in Cloud Application Manager. Give it a couple of minutes then try to force-terminate again.
 
-**Force Online**
+#### Force Online
 
 Allow user with "Admin" role to reset the state of an instance in case it went into the "unavailable" state when the last attempted operation was Reconfigure or Reinstall.
 
-**Delete**
+#### Delete
 
 Click the delete icon after you Terminate or Force Terminate an instance. Until then, the box instance page and logs are retained in the Cloud Application Manager database. However, delete completely removes the box instance page.
 
-**Clone**
+#### Clone
 
 This creates a new instance with the selected instance’s settings, but you can modify all of them before launch the new deployment.
 
-**Update Instance**
+#### Update Instance
 
 This lets you modify the box version; you can select one of the other box versions. After choosing the new version, the instance is going to be reinstalled.
 
-**Edit Details**
+#### Edit Details
 
 This shows the instance’s details that you can modify. These details are: icon, name, description, tags, expiration, updates (available for box versions only) and automatic reconfigure.
+
+### Managing multiple instances with bulk actions
+
+Many of the instance actions can be applied in bulk to several instances at once.
+
+![Bulk actions menu](../../images/cloud-application-manager/deploying-anywhere/bulk-actions.png)
+
+The **Bulk Actions** button dropdown appears next to the *New* instance button once you select any instance in the list and, depending on your selection, the common actions allowed in all selected instances will be available in the dropdown. For example, if you select a few instances, all in *Online* state, you will have all the applicable lifecycle actions available (**Reinstall**, **Reconfigure**, **Shutdown**, **Terminate**, **Force Terminate**) and any other additional option such as *Update Instance*; but if you also include an *Unavailable* instance in your selection among the *Online* ones, the only available lifecycle option will be **Force Terminate**.
 
 ### Contacting Cloud Application Manager Support
 
