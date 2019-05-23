@@ -16,23 +16,23 @@ You must configure at least one IPSec VPN site on the NSX Edge before enabling t
 
 * Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment with an Org Admin Account
 
-  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../images/dccf/login-html5.png)
+  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
 * Once logged in, click __Datacenters__ in the ,menu at the top and then select your Datacenter.
 
-  ![IPSec VPN](../images/dccf/configuring-sslvpn-plus1-html5.png)
+  ![IPSec VPN](../../images/dccf/configuring-sslvpn-plus1-html5.png)
 
 * Click on __Edges__ in the panel on the left side.
 
-  ![IPSec VPN](../images/dccf/configuring-sslvpn-plus2-html5.png)
+  ![IPSec VPN](../../images/dccf/configuring-sslvpn-plus2-html5.png)
 
 * Select your Edge Gateway, and take note of the (Public) IP Address for the Edge Gateway. Click __Configure Services__ at the top of the screen.
 
-  ![IPSec VPN](../images/dccf/edge-gws1-html5.png)
+  ![IPSec VPN](../../images/dccf/edge-gws1-html5.png)
 
 * Select the __VPN__ tab, then __IPsecVPN Sites__. Click the __+__ icon to add IPsec VPN Sites (this is a prerequisite to enable IPsec VPN Services).
 
-  ![IPSec VPN](../images/dccf/edge-gws2-html5.png)
+  ![IPSec VPN](../../images/dccf/edge-gws2-html5.png)
 
 * A new window will pop up. Follow the steps below:   
 
@@ -45,7 +45,7 @@ You must configure at least one IPSec VPN site on the NSX Edge before enabling t
     * Local Subnets: Your Local Subnets
     * Peer Id: Your Peer Id
     * Peer Endpoint: IP address of Peer
-    * Peer Subnets: Your Peer Subnetsx
+    * Peer Subnets: Your Peer Subnets
     * Encryption Algorithm: Must match with peer
     * Authentication: Must match with peer
     * Change Shared Key:
@@ -54,11 +54,11 @@ You must configure at least one IPSec VPN site on the NSX Edge before enabling t
     * Diffie-Hellman Group: Must match with peer
     * Extension:
 
-  ![IPSec VPN](../images/dccf/edge-gws5.png)
+  ![IPSec VPN](../../images/dccf/edge-gws5.png)
 
 *	Click Keep
 *	In the __IPSec VPN Configuration__ page, select the __Activation Status__ tab, and enable __IPsec VPN Service Status__
 
-  ![IPSec VPN](../images/dccf/edge-gws6.png)
+  ![IPSec VPN](../../images/dccf/edge-gws6.png)
 
 *	Configure the Peer/Remote Site.
