@@ -37,13 +37,13 @@ In large-scale, complex deployments where tens or hundreds of distributed applic
 
 ### Versioning a Box
 
-A box must be versioned to push its updates automatically to live instances deployed from it. To create a version, navigate to the box and click the **Versions** tab.
+A box must be versioned to push its updates, either manually or automatically, to live instances deployed from it. To create a version, navigate to the box and click the **Versions** tab.
 
-![version-control-and-auto-updates-1.png](../../images/cloud-application-manager/version-control-and-auto-updates-1.png)
+![Version control - Box overview](../../images/cloud-application-manager/version-control-and-auto-updates-1.png)
 
 Click **New Version** and save with an appropriate version number.
 
-![version-control-and-auto-updates-2.png](../../images/cloud-application-manager/version-control-and-auto-updates-2.png)
+![Version control - New version dialog](../../images/cloud-application-manager/version-control-and-auto-updates-2.png)
 
 * Use **Major** to indicate deeper changes. For example, you may alter the box configuration with different child boxes, variables or a binding.
 * Use **Minor** to indicate small changes. For example, instead of using apt-get you now install and compile software from a Git repo.
@@ -57,50 +57,52 @@ Major, minor, and patch follow semantic versioning standards. Cloud Application 
 
 * Latest is the highest version number of a box. When you deploy from Instances page, you always get the latest version.
 * Draft indicates changes not yet saved to the box. When you deploy from the box page, you typically deploy the draft version.
-* Current refers to a specific version restored to the box. If you want to restore a box version you have to do it from the **Versions** tab. Select the gear icon and click on **Restore**.
+* Current refers to a specific restored version of the box. If you want to restore a box version you have to do it from the **Versions** tab. Select the gear icon and click on **Restore**.
 
-![version-control-and-auto-updates-3.png](../../images/cloud-application-manager/version-control-and-auto-updates-3.png)
+![Version control - Restore option](../../images/cloud-application-manager/version-control-and-auto-updates-3.png)
 
 ### Updating Instances Automatically or Manually
 
 When launching an instance, choose the level of auto-update you’re comfortable applying. Go with **All Updates** if you are not concerned about big or small configuration changes. Otherwise, choose **Minor and Patch Updates** or **Patch Updates**, which make sure the configuration remains unchanged, for the most part.
 
-**Note:** This option is available for box versions only.
+When a new version of the box is created, instances which are eligible for automatic update (if the type of version created matches the auto-update policy chosen at deployment time) will be updated with the new version of the box, and a reinstall action will be automatically triggered to apply the new version changes.
 
-![version-control-and-auto-updates-4.png](../../images/cloud-application-manager/version-control-and-auto-updates-4.png)
+**Note:** This option is available for versioned boxes only.
+
+![Version control - Automatic Updates](../../images/cloud-application-manager/version-control-and-auto-updates-4.png)
 
 Don't worry if you don’t set instances to auto-update. A visual cue on the Instances page reminds you when changes are available from the related box.
 
-![version-control-and-auto-updates-5.png](../../images/cloud-application-manager/version-control-and-auto-updates-5.png)
+![Version control - Box updates available](../../images/cloud-application-manager/version-control-and-auto-updates-5.png)
 
 You can always manually update from Instances page. Select the instance and under the Bulk Actions or the gear icon of the instance, click **Update Instance**.
 
-![version-control-and-auto-updates-6.png](../../images/cloud-application-manager/version-control-and-auto-updates-6.png)
+![Version control - Update instance option](../../images/cloud-application-manager/version-control-and-auto-updates-6.png)
 
 From here, you can update the instance with a specific version. An update always triggers a [reinstall operation](../Deploying Anywhere/deploying-managing-instances.md).
 
-![version-control-and-auto-updates-7.png](../../images/cloud-application-manager/version-control-and-auto-updates-7.png)
+![Version control - Update instance modal](../../images/cloud-application-manager/version-control-and-auto-updates-7.png)
 
 **Note:** When deploying a box from Instances page, you consume the latest configuration of the parent and child boxes unless you chose a specific version for the child boxes. To deploy a different version of the parent box, launch it from the box page. From the **Versions** tab > gear icon, click **Deploy** on a selected version.
 
 ### Managing box versions
 
-Box versions can be managed in different ways. To see these options, go to **Versions** tab and click the gear icon.
+Box versions can be managed in different ways. To see these options, go to **Versions** tab in the box details page and click the gear icon.
 
-![version-control-and-auto-updates-8.png](../../images/cloud-application-manager/version-control-and-auto-updates-8.png)
+![Version control - Box version options](../../images/cloud-application-manager/version-control-and-auto-updates-8.png)
 
 1. **Delete**: You can delete the selected box version. Please be aware that clicking on this option deletes the version without a warning popup.
 2. **Deploy**: You can deploy the selected box version.
 3. **Diff**: You can see the updates made to each box version from the **Versions** tab. Select the gear icon and click on **Diff**.
 
-![version-control-and-auto-updates-9.png](../../images/cloud-application-manager/version-control-and-auto-updates-9.png)
+![Version control - Diff view](../../images/cloud-application-manager/version-control-and-auto-updates-9.png)
 
 4. **Restore**: You can restore your box to its previous version. The version you are working on now will become the current version.
 5. **Publish box**: This option changes the privacy settings of the box, making it public after being published. To execute this change filling a request form is necessary. Please note that only those fields marked with an asterisk are mandatory.
 
-![version-control-and-auto-updates-10.png](../../images/cloud-application-manager/version-control-and-auto-updates-10.png)
+    For more information on how to publish a box see this [tutorial](../Tutorials/publish-script-box.md).
 
-For more information on how to publish a box see this [tutorial](../Tutorials/publish-script-box.md).
+![Version control - Publish box request form](../../images/cloud-application-manager/version-control-and-auto-updates-10.png)
 
 ### Contacting Cloud Application Manager Support
 
