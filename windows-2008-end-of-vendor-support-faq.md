@@ -1,5 +1,5 @@
 {{{
-  "title": "Windows 2008 Server 2008/2008R2 End of Vendor Support FAQ",
+  "title": "Windows Server 2008/2008R2 End of Vendor Support FAQ",
   "date": "05-23-2019",
   "author": "Brandy Smith",
   "attachments": [],
@@ -40,7 +40,7 @@ The options listed are the top recommended options to ensure the highest level o
 
 CenturyLink understands that these options may not be viable for all customer environment and encourage customers to reach out to their CenturyLink sales representative to discuss their options and help create a plan that best fits their unique business needs.
 
-![Options_across_CenturyLink_Platforms](./images/options-across-centurylink-platforms.png)
+![Options_across_CenturyLink_Platforms](/knowledge-base/images/options-across-centurylink-platforms.png)
 
 ### Frequently Asked Questions
 
