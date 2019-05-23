@@ -13,12 +13,12 @@ In this KB article, we demonstrate how to provision a new virtual server in Cent
 
 Once you've gone through this KB article and created a new virtual server, you can follow these guides to learn how to [Configure SSL VPN-Plus](../Security/configuring-sslvpn-plus.md) and [How to Securely Connect](../Security/how-to-securely-connect.md) to your CenturyLink Private Cloud on VMware Cloud Foundation environment.
 
-Note: This KB assumes you have followed the KB article on [Adding to your Catalog](../General/add-to-catalog.md) in CenturyLink Private Cloud on VMware Cloud Foundation.
+Note: This KB assumes you have followed the KB article on [Adding to your Catalog](../Catalog/add-to-catalog.md) in CenturyLink Private Cloud on VMware Cloud Foundation.
 
 ### Steps
 * Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment.
 
-  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../images/dccf/login-to-dcc-f.png)
+  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../../images/dccf/login-to-dcc-f.png)
 
 * Once logged in, you will see the __Quick Access__ page. The easiest way to create a virtual server is to click __Add vApp from Catalog__.
 
