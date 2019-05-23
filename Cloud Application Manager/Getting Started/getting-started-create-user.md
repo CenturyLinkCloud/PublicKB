@@ -19,6 +19,7 @@
 * [User Management options](#user-management-options)
 * [Creating Cloud Application Manager Users](#creating-cloud-application-manager-users)
 * [Logging In to Cloud Application Manager](#logging-in-to-cloud-application-manager)
+* [Troubleshoot login mechanisms](#troubleshoot-login-mechanisms)
 * [Getting General Support](#getting-general-support)
 
 ### Overview
@@ -92,6 +93,20 @@ You have a few options:
 
 ![Getting Started - Login page](../../images/cloud-application-manager/getting-started-login-1.png)
 
+For more information, you can see [authentication options of your Organization](../../Administering Your Organization/user-authentication.md)
+
+### Troubleshoot login mechanisms
+
+When the credentials are authenticated by CAM and there is any issue, an error message is shown to indicate the cause of the issue.
+
+![Example of CAM error](../../images/cloud-application-manager/management/cam-error.png)
+
+If you are using an authentication method other than username and password (this is the only one internal to Cloud Application Manager), the issue will probably come from the authentication system being used, so the authentication server used is the one returning the error. For example if you are using SAML with an incorrect username and/or password, the SAML server returns:
+
+
+![Example SAML error](../../images/cloud-application-manager/management/saml-error.png)
+
+If the server is down or having an issue, then the message will reflect that, but this does not mean that Cloud Application Manager is down. In that case, if you have any other authentication method set, you can try it to workaround the issue with your first authentication method choice, and still be able to log in into Cloud Application Manager and work normally.
 ___
 
 ### Getting General Support
