@@ -37,7 +37,7 @@ For Azure, we are currently limited to serving billable customers who are not re
 
 Cloud Application Manager Provider Verbiage | Description | Related Links
 --- | --- | ---
-Use an existing Azure customer account | This is not an optimized option. Customer pays Microsoft for usage. | [Click here](../../Cloud Application Manager/Deploying Anywhere/using-microsoft-azure.md)
+Use an existing **Microsoft Azure** customer account | This is not an optimized option. Customer pays Microsoft for usage. | [Click here](../../Cloud Application Manager/Deploying Anywhere/using-microsoft-azure.md)
 Migrate my account to CenturyLink for consolidated billing and Platform Support | **This is a Cloud Integration option.** This allows an existing customer account to move under CenturyLink's care. | This document
 Create a new Azure customer account | **This is a Cloud Integration option.** Begins the new account creation automation, enabling the customer to immediately enter CenturyLink's care. | [Click Here](partner-cloud-integration-azure-new.md)
 

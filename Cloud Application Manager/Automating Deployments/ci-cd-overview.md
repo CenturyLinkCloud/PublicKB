@@ -2,7 +2,7 @@
 "title": "Overview of the Jenkins Cloud Application Manager Plugin",
 "date": "05-16-2019",
 "author": "Julio Castanar",
-"keywords": ["cam","cloud application manager", "Jenkins", "plugin" ],
+"keywords": ["cam","cloud application manager", "Jenkins", "plugin", "CI/CD", "continuous integration and deployment" ],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -12,6 +12,8 @@
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
+* [Audience](#audience-1)
+* [Prerequisites](#prerequisites-1)
 * [Supported CI/CD scenarios](#supported-cicd-scenarios)
 * [Next steps in CI/CD with Cloud Application Manager and Jenkins](#next-steps-in-cicd-with-cloud-application-manager-and-jenkins)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
@@ -35,6 +37,24 @@ Here is a typical continuous integration and deployment (CI/CD) workflow that st
 
 If you use Jenkins to continuously test and integrate code changes in development, staging, or production, and you also use Cloud Application manager, you’d want to use the [Jenkins Cloud Application Manager plugin](https://wiki.jenkins-ci.org/display/JENKINS/ElasticBox+CI) to fully automate touchless deployments.
 
+
+### Prerequisites
+
+* You must have a Cloud Application Manager Account
+* You must install in your Jenkins server the [Jenkins Cloud Application Manager plugin](https://wiki.jenkins-ci.org/display/JENKINS/ElasticBox+CI)
+
+1. Developers submit changes to repository. 
+2. Jenkins server has SCM, GitHub (or other repository), Jenkins Cloud Application Manager and other plugins installed. 
+3. Pull request changes event in repository triggers build job execution.
+4. Jenkins Cloud Application Manager plugin deploys to your app from boxes to any cloud or infrastructure
+5. Next jobs in Jenkins project test the deployment environment, verify and finally merge changes
+6. Now merge event triggers build release job execution
+7. Jenkins Cloud Application Manager plugin deploys to your new release and reconfigures your app
+
+
+### Audience
+
+If you use Jenkins to continuously test and integrate code changes in development, staging, or production, you’d want to use the [Jenkins Cloud Application Manager plugin](https://wiki.jenkins-ci.org/display/JENKINS/ElasticBox+CI) to fully automate touchless deployments.
 
 ### Prerequisites
 

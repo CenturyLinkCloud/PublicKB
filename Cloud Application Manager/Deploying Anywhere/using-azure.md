@@ -6,8 +6,6 @@
 "contentIsHTML": false
 }}}
 
-### Using Azure
-
 **In this article:**
 
 * [Overview](#overview)
@@ -136,7 +134,7 @@ In case of multi-tier applications deployed to different roles, follow these tip
 
 | Option | Description |
 |--------|-------------|
-| Role | Select Web Role or Worker Role. See [Virtual Machine Role](using-azure.md) to deploy to that instead. |
+| Role | Select Web Role or Worker Role. See [Virtual Machine Role](using-azure.md#virtual-machine-role) to deploy to that instead. |
 | OS Family | Select the guest OS to run in the worker role instance. Note that Windows 2008 images are not synced at this time because the Cloud Application Manager agent doesn’t work on them. |
 | OS Version | Select the guest OS version to run in the worker role instance. You can select a specific version or go with latest. If you choose latest, the OS is automatically upgraded to the latest version. |
 | Size | Select a size to set the number of CPU cores, memory, and disk size to store your OS files, process temporary memory, and store application data. For more information, see the [Azure help](https://azure.microsoft.com/documentation/articles/cloud-services-sizes-specs/). Note that D-Series sizes use solid-state drive disks. |

@@ -55,7 +55,8 @@ ___
 
 ### Add a provider and deployment policy
 
-You’ve configured the Hello World box. To deploy, you first need to connect to a cloud provider like [AWS](../Deploying Anywhere/using-your-aws-account.md), [Google Cloud](../Deploying Anywhere/using-google-cloud.md), [vSphere](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md), [OpenStack](../Deploying Anywhere/using-openstack-cloud.md), [CloudStack](../Deploying Anywhere/using-cloudstack.md), or [Azure](../Deploying Anywhere/using-azure.md) to launch the box using their services. For this walkthrough, we’ll use AWS.
+You’ve configured the Hello World box. To deploy, you first need to connect to a cloud provider like [AWS](../Deploying Anywhere/using-your-aws-account.md), [Google Cloud](../Deploying Anywhere/using-google-cloud.md), [vSphere](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md), [OpenStack](../Deploying Anywhere/using-openstack-cloud.md), [CloudStack](../Deploying Anywhere/using-cloudstack.md), Classic [Azure](../Deploying Anywhere/using-azure.md), or [Microsoft Azure](../Deploying Anywhere/using-microsoft-azure.md) to launch the box using their services.  
+For this walkthrough, we’ll use AWS.
 
 **Add a provider**
 
