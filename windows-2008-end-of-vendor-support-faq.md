@@ -40,7 +40,7 @@ The options listed are the top recommended options to ensure the highest level o
 
 CenturyLink understands that these options may not be viable for all customer environment and encourage customers to reach out to their CenturyLink sales representative to discuss their options and help create a plan that best fits their unique business needs.
 
-![options-across-centurylink-platforms](images/options-across-centurylink-platforms.png)
+![options-across-centurylink-platforms](./images/options-across-centurylink-platforms.png)
 
 ### Frequently Asked Questions
 
