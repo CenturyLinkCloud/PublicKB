@@ -42,13 +42,21 @@ Cloud Application Manager lets you share three types of assets: boxes, instances
 
 In Cloud Application Manager, you can organize users to grant them access to several assets at the same time. Users might be members of Workspaces, Cost Centers and Organizations.
 
+These **contexts** have a hierarchical structure of scope levels in Cloud Application Manager. An **Organization** groups a set of Cost Centers. A **Cost Center** includes  Workspaces and finally, a **Workspace** includes several assets: *Instances, Boxes, and Providers*.
+
 When you first sign in to Cloud Application Manager, you only have a personal workspace called My Workspace. After that you can be invited as member to other Workspaces, Cost Centers or Organizations.
 
 ### Workspaces
 
-Workspaces are the most common way to have users collaborating on a set of instances, boxes and providers.
+Workspaces are the most common way to have users collaborating on a set of instances, boxes and providers with certain access permissions.
+
+#### Context elements
+
+Workspace is the context where three types of assets are included: boxes, instances and providers.
 
 To have instances, boxes or providers available in a workspaces, create them inside it or share them with the workspace with the appropriate level of permission.
+
+#### Members roles. Sharing and collaboration
 
 At the same time, workspaces have members. The members of the workspaces are users or groups of users (for example, LDAP Groups).
 
@@ -58,11 +66,13 @@ The different levels are:
 
 1. **Visitor:**  A visitor member can see instances, boxes and providers, but he cannot edit them. Use this role to monitor share what is happening on a workspace without worrying about the user potentially breaking something.
 
-2. **User:** A user member can see and edit instances, see boxes, but he cannot see providers. He is allowed to deploy instances. Use this role for people who will apply fixes and who need to deploy instances but shouldn’t edit boxes without supervision. For example, developers can user the User rights to deploy testing environments.
+2. **User:** A user member can see and edit instances, see boxes, but he cannot see providers. He is allowed to deploy instances. Use this role for people who will apply fixes and who need to deploy instances but shouldn’t edit boxes without supervision. For example, developers can use the User rights to deploy testing environments.
 
 3. **Author:** An author member can see and edit instances and boxes, and see providers. He cannot edit a provider but he can author new policy boxes. This is a common role for people who are creating boxes and managing the environment, but shouldn’t be changing the credentials or adding new members.
 
 4. **Administrator:** An administrator member can see and edit instances, boxes and providers. In addition, he can change permission of other members and other settings. He has the highest permissions of all members. Use this for team leaders of the workspace.
+
+#### Workspace permissions in Federated Organizations
 
 If your organization is federated to other organizations, you can share the workspace with other organizations. When you federate a workspace, administrators of the other organization can access the workspace and you can add members of the other organization to the workspace. This is useful to get support from the Cloud Application Manager team support, you can federate a workspace with us to give us access to the assets to diagnose a support ticket.
 
@@ -70,7 +80,14 @@ If you want to use this feature in different ways, please [contact us](mailto:in
 
 ### Cost Center
 
-All workspaces belong to a Cost Center that is assigned when it’s created.
+A Cost Center is a context used to manage several Workspaces in the same manner.
+
+#### Context elements
+
+A Cost Center groups a set of Workspaces.  
+All workspaces belong to a Cost Center that is assigned when they are created.
+
+#### Members and permissions
 
 Being a member of a Cost Center allows you to manage all assets of all the workspaces belonging to it as if you were an Administrator of those workspaces.
 
@@ -80,26 +97,39 @@ Users who manage a big team or several project are usually Cost Center administr
 
 ### Organizations
 
+An Organization is the highest scope level used to manage several Cost Centers and the Workspaces they include.
+
+#### Context elements
+
+An Organization includes a set of Cost Centers. A default Cost Center is created whenever a new Organization is created in Cloud Application Manager. Organization administrators can create as many Cost Center as they want to align with their organization structure.
+
 All Cost Centers and Workspaces belong to an Organization.
 
-The administrators of an Organization can change many settings that affect the whole organizations. See more details [here](../Administering Your Organization/admin-overview.md).
+#### Members and permissions
+
+The administrators of an Organization can change many settings that affect the whole organization.  
+See more details [here](../Administering Your Organization/admin-overview.md).
+
+#### Organization Federation
+
+You can share a workspace of your Organization with other organization so that your assets are accessible to the administrators of the other organization. In this case, your Organization is federated.
 
 ### Switching and Managing Workspaces, Cost Centers and Organizations
 
 You can use the Context Switcher in the top of the screen to access different Workspaces, Cost Centers and Organizations to which you have access.
 
-This allows you to filter and search for the right scope to the work you need to do. The Instances, Boxes and Providers available to you will change to reflect the selected scope. For example, if you select a Cost Center, you can see all Instances, Boxes and Providers that are in Workspaces belonging to that Cost Center.
+![Managing workspaces cost centers and Organizations](../../images/core-concepts/setting-team-workspace.png)
 
-There is more information about Context Switcher [here](context-switcher.md).
+This allows you to filter and search for the right scope to the work you need to do. The *Instances*, *Boxes* and *Providers* available to you will change to reflect the selected scope. For example, if you select a Cost Center, you can see all Instances, Boxes and Providers that are in all Workspaces belonging to that Cost Center.
+
+See more information about [**Context Switcher**](context-switcher.md).
 
 ### Sharing Boxes, Instances, and Providers
-
-#### Sharing
 
 When you create a box, launch an instance, or add a provider, they are created in the Workspace that you have selected in the Context Switcher. You can control how others use it by giving them view or edit access. Edit access gives users the same level of access as the owner but they cannot delete the asset.
 
 * When you share with a user, the asset will appear in his personal workspace with the permission given.
-* When you share with a SAML or LDAP group, all users pertaining to that group will be able to access the asset
+* When you share with a SAML or LDAP group, all users who belong to that group will be able to access the asset
 * If you decide to share with a team workspace, all the users on the workspace with the right permissions will be able to access the asset.
 
 When you share with a Workspace, all workspace members get access according to their role.
@@ -110,15 +140,15 @@ A workspace is a shared environment in which members of that workspace can acces
 
 Say you have a Jenkins box that integrates and stages code for testing. You want to collaborate with other Jenkins experts to make the box configuration highly usable. So you give their workspace edit access. Next, the QA team needs this box to deploy and run tests, so you give their workspace view access. Now the QA team can deploy Jenkins instances, but as you’d expect, they aren’t allowed to change the underlying Jenkins box definition.
 
-Notice that providers and policy boxes cannot be shared with workspaces that are not in the same Cost Center.
+**Notice** that providers and policy boxes cannot be shared with workspaces that are not in the same Cost Center.
 
-#### Steps
+#### Sharing with other users
 
 1. From the box, instance, or provider detail page, click **Share**.
 
     ![workspace-and-sharing6.png](../../images/cloud-application-manager/workspace-and-sharing6.png)
 
-2. In the sharing dialog, type the name of the users or workspaces you want to share with and select them.
+2. In the sharing dialog, start typing the name of the users or workspaces you want to share with and select them.
 
     ![workspace-and-sharing7.png](../../images/cloud-application-manager/workspace-and-sharing7.png)
 
@@ -134,7 +164,9 @@ To discontinue sharing with a user or workspace, open the sharing dialog, and re
 
 #### Transfer Ownership
 
-Sometimes, because your role in the organization changes, you may want to transfer an asset you own to another user or workspace. To change owners, open the sharing dialog, and make another user or workspace the owner. An asset can only have one owner at a time.
+Sometimes, because your role in the organization changes, you may want to transfer an asset you own to another user or workspace. To change owners, open the sharing dialog, and make another user or workspace the owner.  
+
+An asset can only have one owner at a time.
 
 ![workspace-and-sharing10.png](../../images/cloud-application-manager/workspace-and-sharing10.png)
 
@@ -159,7 +191,8 @@ Also you may give view access to make an instance available for others to use, s
 
 #### Sharing Providers
 
-Sharing providers has its benefits. You can give view access to company-approved providers and let users deploy to that particular provider. When teams deploy to a shared provider, you can track org-wide usage and compliance cohesively. Provider accounts can be shared only in the Enterprise Edition.
+Sharing providers has its benefits. You can give view access to company-approved providers and let users deploy to that particular provider. When teams deploy to a shared provider, you can track org-wide usage and compliance cohesively.  
+Provider accounts can be shared only in the Enterprise Edition.
 
 ### Sharing with people or groups across Organizations
 
@@ -189,11 +222,11 @@ In order to share a team workspace across organizations you have to follow the n
 
   ![Allow a user access to the team workspaces](../../images/core-concepts/allow-user-can-see-team-workspace.png)
 
-  By default, any member is added with the *User* role, but you can change it to the appropriate role. For more information, please refer to [Sharing and collaboration](#workspaces)
+  By default, any member is added with the *User* role, but you can change it to the appropriate role. For more information about roles, please refer to [Workspaces - Sharing and collaboration](#Workspaces)
 
   ![Add user with appropiate role](../../images/core-concepts/user-role.png)
 
-  Please, note that every member on the list has the name of the organization they belong to below the member name, along with its email address.
+Please, note that every member on the list has the name of the organization they belong to below the member name, along with its email address.
 
 5. Now the user that has been added can see the team workspace and access it with the corresponding role that has been assigned to him in the workspace.
 
