@@ -78,11 +78,11 @@ Once ServiceNow CMDB integration has been configured, the following behavior wil
 
 When a new instance is deployed in Cloud Application Manager the following fields will be sent to ServiceNow CMDB in one new cmdb_ci entity:
 
-* “name”: name of the instance in CAM
-* “short_description”: type of service
-* “attributes”: provider type, provider managed_os, provider description, provider name and service type.
-* “comments”: Instance name and instance Id
-* “correlation_id”: Instance Id
+* **“name”**: name of the instance in CAM
+* **“short_description”**: type of service
+* **“attributes”**: provider type, provider managed_os, provider description, provider name and service type.
+* **“comments”**: Instance name and instance Id
+* **“correlation_id”**: Instance Id
 
 The instance activity log will show that the instance deployment was registered into ServiceNow CMDB:
 

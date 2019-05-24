@@ -71,7 +71,7 @@ In this example, Infoblox provides a static IP and domain name for every instanc
 
    This box installs Python, Python dependencies, and the Apache web server.
 
-   ```bash
+   ```
    #!/bin/bash
 
    yum -y install httpd mod_wsgi python-virtualenv
@@ -85,7 +85,7 @@ In this example, Infoblox provides a static IP and domain name for every instanc
 
    The box configures Apache using the virtual.conf file variable. To create the web service endpoint, it runs the webhook.py script from a file variable.
 
-   ```bash
+   ```
    #!/bin/bash
 
    mkdir -p /var/www/webhook
@@ -96,7 +96,7 @@ In this example, Infoblox provides a static IP and domain name for every instanc
 
    Here’s the Python script to create the web service endpoint:
 
-   ```python
+   ```
    #!/usr/bin/python
    # -*- coding: utf-8 -*-
 

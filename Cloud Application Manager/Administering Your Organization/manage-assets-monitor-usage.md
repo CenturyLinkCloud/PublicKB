@@ -82,6 +82,8 @@ Take a look at all tags in the organization under **Tags** in the admin console.
 
 View all webhooks available in the organization under **Webhooks**. In order to add a new webhook, click **Add** and fill in the URL.
 
+To get more information about webhooks, please read [this](webhooks.md) article.
+
 ![Organization Settings - Manage Webhooks](../../images/cloud-application-manager/admin-assets5.png)
 
 ### Manage ITSM Integrations

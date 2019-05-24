@@ -34,7 +34,7 @@ All users with Cloud Application Manager organization administrator access.
 ### Giving Admin Access
 
 1. Log in to Cloud Application Manager as the default administrator.
-2. Access to the Context Switcher drop-down located in the top navigation menu, open it and click on **Organizations**.
+2. Access to the [Context Switcher](../Core Concepts/context-switcher.md) drop-down located in the top navigation menu, open it and click on **Organizations**.
    ![Context Switcher Organizations Option](../../images/cloud-application-manager/admin-access1.png)
 
 3. Once you are in the Organization scope, you will have access to the **Settings** tab in the principal navigation menu.
@@ -45,7 +45,7 @@ All users with Cloud Application Manager organization administrator access.
 
 To revoke administrator privileges for a given user, just click the X button next to his or her name under **Administrators**.
 
-Administrators can manage several org-wide settings that include [user authentication](user-authentication.md), the [Cloud Application Manager appliance](../Appliance/appliance-overview.md), [provider access](provider-access.md), [admin boxes](../Automating Deployments/deploymentpolicy-box.md), [webhooks](webhooks.md), and [instance tags](resource-tags.md). To get an approach of things they can do, see [Overview](admin-overview.md).
+Administrators can manage several org-wide settings that include [user authentication](user-authentication.md), the [Cloud Application Manager appliance](../Appliance/appliance-overview.md), [provider access](provider-access.md), [admin boxes](../Automating Deployments/deploymentpolicy-box.md), [webhooks](webhooks.md), and [instance tags](resource-tags.md). To get an approach of the actions they can do, see [Overview](admin-overview.md).
 
 ### Contacting Cloud Application Manager Support
 

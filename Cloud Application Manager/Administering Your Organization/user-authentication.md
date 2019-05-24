@@ -155,7 +155,7 @@ This gives your developers, operations engineers, or IT admins access to the sam
 
 ### Giving LDAP Accounts Admin Access
 
-Is good practice to give an LDAP user in your organization administrative access to Cloud Application Manager, and set aside the default administrator account to use in case of emergency. After you set up LDAP, give the LDAP user admin access as follows:
+It is a good practice to give an LDAP user in your organization administrative access to Cloud Application Manager, and set aside the default administrator account to use in case of emergency. After you set up LDAP, give the LDAP user admin access as follows:
 
 #### Steps
 

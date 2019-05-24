@@ -94,6 +94,8 @@ Only Cloud Application Manager users in the administrator role can apply tags. F
 
 One of the main benefits of tagging is that you can report and analyze how Cloud Application Manager resources are consumed throughout your organization. Currently, the reporting capabilities depend on what your cloud provider natively supports.
 
+It is also interesting to comment that [Analytics](../Analytics/CloudApplicationManagerAnalyticsUI.md) site within Cloud Application Manager can also benefit from tagging.
+
 Refer to the following sections to view or manage the tags applied on a box instance launched in a specific cloud provider.
 
 ### Reporting on AWS
