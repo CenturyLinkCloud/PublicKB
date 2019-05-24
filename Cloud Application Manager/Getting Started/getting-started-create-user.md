@@ -79,7 +79,7 @@ Depending on the state of the user, the options may change.
 
   ![Options of the user-invited state](../../images/cloud-application-manager/management/options-invited-users.png)
 
-If the user state is blocked, then available options are:
+* If the user state is **blocked**, then available options are:
 
   ![Options of the user-blocked state](../../images/cloud-application-manager/management/options-blocked-users.png)
 
