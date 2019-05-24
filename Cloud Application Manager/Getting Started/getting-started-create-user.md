@@ -104,7 +104,7 @@ When the credentials are authenticated by CAM and there is any issue, an error m
 If you are using an authentication method other than username and password (this is the only one internal to Cloud Application Manager), the issue will probably come from the authentication system being used, so the authentication server used is the one returning the error. For example if you are using SAML with an incorrect username and/or password, the SAML server returns:
 
 
-![Example SAML error](../../images/cloud-application-manager/management/saml-error.png)
+![Example SAML login error message](../../images/cloud-application-manager/management/saml-error.png)
 
 If the server is down or having an issue, then the message will reflect that, but this does not mean that Cloud Application Manager is down. In that case, if you have any other authentication method set, you can try it to workaround the issue with your first authentication method choice, and still be able to log in into Cloud Application Manager and work normally.
 ___
