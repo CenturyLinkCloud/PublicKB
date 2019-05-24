@@ -71,7 +71,7 @@ Depending on the state of the user, the options may change.
 
   ![Options of the user-active state](../../images/cloud-application-manager/management/options-active-users.png)
 
-If the user state is deactivated, then available options are:
+* If the user state is **deactivated**, then available options are:
 
   ![Options of the user-deactivated state](../../images/cloud-application-manager/management/options-deactivated-users.png)
 
