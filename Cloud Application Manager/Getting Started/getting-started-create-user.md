@@ -95,7 +95,7 @@ You have a few options:
 
 For more information, you can see [authentication options of your Organization](../../Administering Your Organization/user-authentication.md)
 
-### Troubleshoot login mechanisms
+### Troubleshooting login mechanisms
 
 When the credentials are authenticated by CAM and there is any issue, an error message is shown to indicate the cause of the issue.
 
