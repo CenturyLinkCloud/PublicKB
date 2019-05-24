@@ -65,6 +65,24 @@ Each user in the users list has an associated gear button that provides the abil
 * **Activate User**: to enable a deactivated user
 * **Delete User**: to remove the user from the system. If the user has existing assets (instances, boxes or providers) the confirmation pop-up window will ask the administrator to select a target workspace where the user assets will be transferred to.
 
+Depending on the state of the user, the options may change. 
+
+* If the user state is **active**, then available options are:
+
+  ![Options of the user-active state](../../images/cloud-application-manager/management/options-active-users.png)
+
+* If the user state is **deactivated**, then available options are:
+
+  ![Options of the user-deactivated state](../../images/cloud-application-manager/management/options-deactivated-users.png)
+
+* If the user state is **invited**, then available options are:
+
+  ![Options of the user-invited state](../../images/cloud-application-manager/management/options-invited-users.png)
+
+* If the user state is **blocked**, then available options are:
+
+  ![Options of the user-blocked state](../../images/cloud-application-manager/management/options-blocked-users.png)
+
 ### Creating Cloud Application Manager Users
 
 From the User Management page, the administrator can press the **New** button to create new users into the organization.
