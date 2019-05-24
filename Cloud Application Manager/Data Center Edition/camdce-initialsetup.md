@@ -1,24 +1,49 @@
 {{{
-"title": "Setting Up Cloud Application Manager for Use",
-"date": "09-01-2016",
-"author": "",
+"title": "Setting Up Cloud Application Manager Data Center Edition for Use",
+"date": "05-24-2019",
+"author": "Diego Sanjuan",
+"keywords": ["cam", "cloud application manager", "Data Center edition", "appliance", "setup", "ssh", "key", "smtp", "ntp", "password"],
 "attachments": [],
 "contentIsHTML": false
 }}}
 
-### Setting Up Cloud Application Manager for Use
-Once you install the appliance, set it up for others in your organization to use. At the least, assign a friendly hostname or vanity URL to point users to Cloud Application Manager. Optionally, configure other settings such as add SSH keys to access the appliance, sync NTP system time, enable outbound email notifications, or switch to a new device to store appliance and Cloud Application Manager data.
 
 **In this article:**
-* Initial Cloud Application Manager Setup
-* Changing the Cloud Application Manager Hostname
-* Changing the Appliance Admin Account Password
-* Adding your SSH Key (optional)
-* Changing NTP Time Zone (optional]
-* Enabling SMTP Outbound Email (optional)
-* Switching Appliance Device Root Storage
 
-### Initial Cloud Application Manager Setup
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Initial Cloud Application Manager Data Center Edition Setup](#initial-cloud-application-manager-data-center-edition-setup)
+* [Changing Cloud Application Manager Data Center Edition Hostname](#changing-cloud-application-manager-data-center-edition-hostname)
+* [Changing Cloud Application Manager Data Center Edition Admin Account Password](#changing-cloud-application-manager-data-center-edition-admin-account-password)
+* [Adding your SSH Key (optional)](#adding-your-ssh-key-optional)
+* [Changing NTP Time Zone (optional)](#changing-ntp-time-zone-optional)
+* [Enabling SMTP Outbound Email (optional)](#enabling-smtp-outbound-email-optional)
+* [Switching Cloud Application Manager Data Center Edition Device Root Storage](#switching-cloud-application-manager-data-center-edition-device-root-storage)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
+
+
+### Overview
+
+
+This article shows how to do initial setup of Cloud Application Manager Data Center Edition (referred to as appliance from now on). Once you install the appliance, set it up for others in your organization to use. At the least, assign a friendly hostname or vanity URL to point users to Cloud Application Manager. Optionally, configure other settings such as add SSH keys to access the appliance, NTP time servers and zone, enable outbound email notifications using SMTP, or switch to a new device to store appliance and Cloud Application Manager data.
+
+
+### Audience
+
+
+All Cloud Application Manager users who wants to deploy and do the initial setup of a Cloud Application Manager Data Center Edition.
+
+
+### Prerequisites
+
+
+* Your Cloud Application Manager Data Center Edition (appliance) should be properly deployed and running in your preffered platform. You can refer to the [Cloud Application Manager Data Center Edition documentation](camdce-overview.md).
+* You need to have access to HTTPS (443) port of the appliance to access its setup console.
+
+
+### Initial Cloud Application Manager Data Center Edition Setup
+
 
 **Steps**
 
@@ -54,7 +79,10 @@ Once you install the appliance, set it up for others in your organization to use
 
    Log back in as the appliance admin using the credentials in step 1. Add your new user account as an administrator in the Admin Console. Going forward, use this admin account to manage the appliance and settings for your organization.
 
-### Changing the Cloud Application Manager Hostname
+
+### Changing the Cloud Application Manager Data Center Edition Hostname
+
+
 Hostname is a friendly name for the Cloud Application Manager IP address for example, yourcompany.com:80 or name.example.com:443. The hostname should point to the IP address of the appliance virtual machine. To allow users to connect, also make sure your network firewall allows inbound traffic to the appliance IP address via TCP ports 80, 443, 5671, and 5672.
 ![appliance-setup4.png](../../images/cloud-application-manager/appliance-setup4.png)
 
@@ -72,7 +100,10 @@ Hostname is a friendly name for the Cloud Application Manager IP address for exa
 
    **IMPORTANT:** When you change the hostname, any instances you launched previously can potentially become unavailable if the appliance obtains its IP address dynamically. To avoid this, set a static address for the appliance.
 
-### Changing the Appliance Admin Account Password
+
+### Changing Cloud Application Manager Data Center Edition Admin Account Password
+
+
 Change the appliance admin account password to keep it secure.
 ![appliance-setup5.png](../../images/cloud-application-manager/appliance-setup5.png)
 
@@ -80,7 +111,10 @@ Change the appliance admin account password to keep it secure.
 
 ![appliance-setup7.png](../../images/cloud-application-manager/appliance-setup7.png)
 
+
 ### Adding Your SSH Key (Optional)
+
+
 Allow SSH access to the appliance virtual machine for the appliance admin account. You can SSH into the appliance virtual machine only using the keys you add here. SSH access is helpful if you want to look at logs and such.
 ![appliance-setup8.png](../../images/cloud-application-manager/appliance-setup8.png)
 
@@ -91,7 +125,10 @@ Allow SSH access to the appliance virtual machine for the appliance admin accoun
 4. If you don’t have one already, generate a key using ssh-keygen -t rsa and paste in the public key.
 5. When done, scroll down and click **Save Settings**.
 
+
 ### Changing NTP Time Zone (Optional)
+
+
 This shows the network time protocol (NTP) setting on the appliance. By default, it’s set to the time zone of the host running the appliance. You can optionally change the NTP server and time zone. The appliance uses this to determine the timestamp in logs.
 ![appliance-setup9.png](../../images/cloud-application-manager/appliance-setup9.png)
 
@@ -107,7 +144,10 @@ This shows the network time protocol (NTP) setting on the appliance. By default,
 | Secondary <br> NTP Server | Optional. URL or IP address of the secondary NTP server. |
 | Time Zone | Appliance host system time zone. |
 
+
 ### Enabling SMTP Outbound Email (Optional)
+
+
 We recommend that you specify SMTP server settings to be able to auto send outbound email notifications in Cloud Application Manager. The no-reply address is used in the From field. Under Email, click **ON** to enable outbound email.
 ![appliance-setup10.png](../../images/cloud-application-manager/appliance-setup10.png)
 
@@ -127,7 +167,10 @@ We recommend that you specify SMTP server settings to be able to auto send outbo
 | SMTP Password | Enter the password for the SMTP username. |
 | TLS/SSL | Set to **ON** if emails are encrypted using TLS or SSL. |
 
-### Switching Appliance Device Root Storage
+
+### Switching Cloud Application Manager Data Center Edition Device Root Storage
+
+
 When you install the appliance, the appliance VM by default gets 100 GB of virtual disk space. For more storage or faster performance, attach a new disk to the VM and make that the primary appliance storage. Do this before you start using Cloud Application Manager. Here are the steps.
 
 **Steps**
@@ -139,7 +182,9 @@ When you install the appliance, the appliance VM by default gets 100 GB of virtu
 
 When you switch the disk, the appliance reboots and becomes unavailable for a few minutes. In that time, it copies over existing data from the other disk like specific appliance settings, logs, the database, and the saved state of RabbitMQ. It also copies all the generated data to the second disk. When the appliance VM is back online, you can start using Cloud Application Manager.
 
+
 ### Contacting Cloud Application Manager Support
+
 
 We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
@@ -147,4 +192,5 @@ For issues related to API calls, send the request body along with details relate
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+* Windows: RDP into the instance to locate the log at C:\ProgramData\ElasticBox\Logs\elasticbox-agent.log
+
