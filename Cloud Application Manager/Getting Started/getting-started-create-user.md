@@ -99,7 +99,7 @@ For more information, you can see [authentication options of your Organization](
 
 When the credentials are authenticated by CAM and there is any issue, an error message is shown to indicate the cause of the issue.
 
-![Example of CAM error](../../images/cloud-application-manager/management/cam-error.png)
+![Example of CAM login error message](../../images/cloud-application-manager/management/cam-error.png)
 
 If you are using an authentication method other than username and password (this is the only one internal to Cloud Application Manager), the issue will probably come from the authentication system being used, so the authentication server used is the one returning the error. For example if you are using SAML with an incorrect username and/or password, the SAML server returns:
 
