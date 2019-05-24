@@ -65,7 +65,9 @@ Each user in the users list has an associated gear button that provides the abil
 * **Activate User**: to enable a deactivated user
 * **Delete User**: to remove the user from the system. If the user has existing assets (instances, boxes or providers) the confirmation pop-up window will ask the administrator to select a target workspace where the user assets will be transferred to.
 
-Depending on the state of the user options can be changed. If the user state is active, then available options are:
+Depending on the state of the user, the options may change. 
+
+* If the user state is **active**, then available options are:
 
   ![Options of the user-active state](../../images/cloud-application-manager/management/options-active-users.png)
 
