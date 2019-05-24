@@ -93,7 +93,7 @@ You have a few options:
 
 ![Getting Started - Login page](../../images/cloud-application-manager/getting-started-login-1.png)
 
-For more information, you can see [authentication options of your Organization](../../Administering Your Organization/user-authentication.md)
+For more information, you can see [authentication options of your Organization](../Administering Your Organization/user-authentication.md)
 
 ### Troubleshooting login mechanisms
 
