@@ -19,8 +19,8 @@
 * [Organizations](#organizations)
 * [Switching and Managing Workspaces, Cost Centers and Organizations](#switching-and-managing-workspaces-cost-centers-and-organizations)
 * [Sharing Boxes, Instances, and Providers](#sharing-boxes-instances-and-providers)
-* [Federated Organizations](#federated-organizations)
-* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
+* [Sharing with people or groups across Organizations](#sharing-with-people-or-groups-across-organizations)
+* [Getting General Support](#getting-general-support)
 
 ### Overview
 
@@ -101,7 +101,8 @@ An Organization is the highest scope level used to manage several Cost Centers a
 
 #### Context elements
 
-An Organization groups a set of Cost Centers.  
+An Organization includes a set of Cost Centers. A default Cost Center is created whenever a new Organization is created in Cloud Application Manager. Organization administrators can create as many Cost Center as they want to align with their organization structure.
+
 All Cost Centers and Workspaces belong to an Organization.
 
 #### Members and permissions
@@ -164,6 +165,7 @@ To discontinue sharing with a user or workspace, open the sharing dialog, and re
 #### Transfer Ownership
 
 Sometimes, because your role in the organization changes, you may want to transfer an asset you own to another user or workspace. To change owners, open the sharing dialog, and make another user or workspace the owner.  
+
 An asset can only have one owner at a time.
 
 ![workspace-and-sharing10.png](../../images/cloud-application-manager/workspace-and-sharing10.png)
@@ -192,9 +194,7 @@ Also you may give view access to make an instance available for others to use, s
 Sharing providers has its benefits. You can give view access to company-approved providers and let users deploy to that particular provider. When teams deploy to a shared provider, you can track org-wide usage and compliance cohesively.  
 Provider accounts can be shared only in the Enterprise Edition.
 
-### Federated Organizations
-
-Federated Organizations allows you to share team workspaces with people or groups across Organizations
+### Sharing with people or groups across Organizations
 
 #### Sharing team workspaces
 
@@ -232,13 +232,11 @@ Please, note that every member on the list has the name of the organization they
 
   ![User can see the team workspace](../../images/core-concepts/user-can-see-team-workspace.png)
 
-#### Stop sharing in a Federated Organization
+#### A particular user stop sharing team workspaces
 
 To stop sharing a team workspace with other Organizations, you should be an administrator of the organization, administrator of cost center where the team workspace belongs to, or you should be the administrator of the team workspaces. In this article, we consider that the user is an organization administrator.
 
-#### Remove a particular user from a Federated Organization
-
-In order stop sharing with an user of a team workspace across organizations you have to follow the next steps:
+In order stop sharing a team workspace across organizations you have to follow the next steps:
 
 1. Go to team workspace settings.
 
@@ -254,7 +252,9 @@ In order stop sharing with an user of a team workspace across organizations you 
 
   ![The user don't see the team workspaces](../../images/core-concepts/user-not-see-team-workspace.png)
 
-#### Stop sharing team workspaces with a Federated Organization
+#### Stop sharing team workspaces
+
+To revoke access of sharing a team workspace with other Organizations, you should be an administrator of the organization, administrator of cost center where the team workspace belongs to, or you should be the administrator of team workspaces. In this article, we consider that the user is an organization administrator.
 
 To revoke access to sharing a team workspace you have to follow the next steps:
 
@@ -268,12 +268,22 @@ Click **Revoke Access** in the confirmation dialog.
 
 At this moment, no user nor group of that organization will be available to be added as member to the workspace.
 
-### Contacting Cloud Application Manager Support
+### Getting General Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
+Customers can contact the CenturyLink Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
 
-For issues related to API calls, send the request body along with details related to the issue.
+#### Contact:
 
-In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
-* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+1. **Phone:** 888-638-6771
+
+2. **Email:** incident@centurylink.com
+
+3. **Create Ticket in Cloud Application Manager:** Directly within the platform, users can “Create Ticket” by clicking on the “?” symbol in upper right corner near the users log-in profile icon.  This takes users directly to the Managed Servicers Portal where they can open, track and review status of issues that have been raised with the support desk.  Additionally, this is how a TAM can be engaged as well.
+
+#### Instructions:
+
+1. Provide your name
+2. CAM account name
+3. A brief description of your request or issue for case recording purposes
+
+The support desk will escalate the information to the Primary TAM and transfer the call if desired.
