@@ -26,6 +26,8 @@ In this article, we use Git as the SCM.
 For CI, the plugin launches code updates on to build environments in any cloud through Cloud Application Manager.  
 For CD, it runs automation and lifecycle operations for workloads defined in Cloud Application Manager boxes in the Jenkins job build steps.
 
+To add Cloud Application Manager build steps in Jenkins jobs, go to the job page. Under Build, click **Add build step** and select an Cloud Application Manager deploy, manage, or update step.
+
 ### Audience
 
 If you use Cloud Application Manager and you also use Jenkins to continuously test and integrate code changes in development, staging, or production, you’d want to use the [Jenkins Cloud Application Manager plugin](https://wiki.jenkins-ci.org/display/JENKINS/ElasticBox+CI) to fully automate touchless deployments.
@@ -34,10 +36,6 @@ If you use Cloud Application Manager and you also use Jenkins to continuously te
 
 * You must have an active Cloud Application Manager Account
 * A [Jenkins server with the GitHub and Cloud Application Manager plugins](jenkins-cloud-application-manager-setup.md).
-
-To add Cloud Application Manager build steps in Jenkins jobs, go to the job page. Under Build, click **Add build step** and select an Cloud Application Manager deploy, manage, or update step.
-
-
 
 ### Manage GitHub Pull Requests
 The plugin simplifies the GitHub pull request lifecycle for workloads run through Cloud Application Manager. While you need the GitHub plugin to provide the repository, project URL, and access credentials, you don’t need the GitHub pull request builder plugin, which is a lot of work to setup.
