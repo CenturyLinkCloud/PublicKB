@@ -14,6 +14,7 @@
 * [Prerequisites](#prerequisites)
 * [Connect your Microsoft Azure Account in Cloud Application Manager](#connect-your-microsoft-azure-account-in-cloud-application-manager)
 * [Access to Microsoft Azure Services console with a Microsoft Azure subscription](#access-to-microsoft-azure-services-console-with-a-microsoft-azure-subscription)
+* [Microsoft Azure Provider credentials](#microsoft-azure-provider-credentials)
 * [Creating a new Microsoft Azure provider in Cloud Application Manager](#creating-a-new-microsoft-azure-provider-in-cloud-application-manager)
 * [Enabling services](#enabling-services)
 * [Deploying Instances in Azure](#deploying-instances-in-azure)
@@ -54,7 +55,7 @@ Login to the [Microsoft Azure portal](https://portal.azure.com/) using your Micr
 
 If you already have a Microsoft Azure Provider in your Cloud Application Manager, you can reach this portal from the **Portal Access** button located in the Microsoft Azure Provider details page and you will be directly logged in.  
 
-![Microsoft Azure Portal Access from CAM](../../images/microsoft-azure-console/ms-azurE-access-from-cam.png)
+![Microsoft Azure Portal Access from CAM](../../images/microsoft-azure-console/ms-azure-access-from-cam.png)
 
 **Note**: This button is only available when provider has been sychronized.  
 Then if you have permissions, you will see a temporay credentials dialog you must use to login in [Microsoft Azure portal](https://portal.azure.com/). Be sure to logout from previous session in this portal. Remember that these temporal credentials only lasts one hour, then you must run this process again.
@@ -146,7 +147,7 @@ Return to the *Azure Active Directory* panel, select *App Registrations* then *C
     * Expires: **Never**
 3.  Upon saving a **Client secret** value will be generated. Copy and keep the key (aka the **Secret**) value as you won't see it anymore once you navigate away.
 
-#### Microsoft Azure Provider credentials
+### Microsoft Azure Provider credentials
 
 Input your Microsoft Azure Provider for an existing account as listed below:  
 * Subscription ID: **_Azure Subscription ID_**
