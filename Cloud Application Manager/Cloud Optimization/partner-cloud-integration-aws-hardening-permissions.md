@@ -94,7 +94,6 @@ Change Requests may result in exceptions to hardening. Please read the "Change R
 **CenturyLink Developer Role**
 * **Role Name**: CTLDeveloperRole
 * **Attached Policy Names**: CTLDeveloperPolicy
-* **Role Name**: CTLDeveloperRole
 * **Targeted groups/tools/users**:Cloud Application Manager's Optimization tool. A limited number of CenturyLink developers have access to the tool.
 * **Intent**: The Optimization tool should be able to configure customer accounts, affect IAM permissions, and swiftly remediate any issues.
 * **Change Requests**: Because CenturyLink must maintain administrative access, no changes can be made at this time. Please see the [Service Guide](https://www.ctl.io/legal/cloud-application-manager/service-guide/) for details.

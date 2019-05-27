@@ -65,7 +65,7 @@ Customize policies to support specific deployment scenarios. For example, you ma
     * [CloudStack](../Deploying Anywhere/using-cloudstack.md)
     * Dimension Data
     * [Google Cloud](../Deploying Anywhere/using-google-cloud.md)
-    * [Microsoft Azure](../Deploying Anywhere/using-azure.md)
+    * [Microsoft Azure](../Deploying Anywhere/using-microsoft-azure.md)
     * [OpenStack Cloud](../Deploying Anywhere/using-openstack-cloud.md)
     * [Rackspace Cloud](../Deploying Anywhere/using-rackspace-cloud.md)
     * [SoftLayer](../Deploying Anywhere/using-softlayer.md)

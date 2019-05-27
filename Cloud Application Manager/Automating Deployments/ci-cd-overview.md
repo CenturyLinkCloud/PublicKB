@@ -2,7 +2,7 @@
 "title": "Overview of the Jenkins Cloud Application Manager Plugin",
 "date": "05-16-2019",
 "author": "Julio Castanar",
-"keywords": ["cam","cloud application manager", "Jenkins", "plugin" ],
+"keywords": ["cam","cloud application manager", "Jenkins", "plugin", "CI/CD", "continuous integration and deployment" ],
 "attachments": [],
 "contentIsHTML": false
 }}}
