@@ -15,7 +15,7 @@
 
 ##### Re-Hardening of Integrated, AWS Accounts
 
-Because AWS has added multiple, new regions since accounts were created, integrated accounts have been updated to ensure all regions gain the full benefit of security and compliance logging, per [this Knowledge Base article](../Cloud Application Manager/Cloud Optimization/partner-cloud-integration-aws-hardening-permissions.md).
+Because AWS has added multiple, new regions since accounts were created, integrated accounts have been updated to ensure all regions gain the full benefit of security and compliance logging, per [this Knowledge Base article](../../Cloud Application Manager/Cloud Optimization/partner-cloud-integration-aws-hardening-permissions.md).
 
 #### [Managed Services Anywhere](https://www.ctl.io/cloud-application-manager/managed-services-anywhere/)
 
