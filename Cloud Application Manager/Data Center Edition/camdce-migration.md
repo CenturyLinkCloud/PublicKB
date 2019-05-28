@@ -1,12 +1,46 @@
 {{{
-"title": "Deploy the New Appliance and Import the Data from the Prior Version",
-"date": "09-01-2016",
-"author": "",
+"title": "Deploy the New Version of Cloud Application Manager Data Center Edition and Import the Data from the Prior Version",
+"date": "05-24-2019",
+"author": "Diego Sanjuan",
+"keywords": ["cam", "cloud application manager", "Data Center edition", "appliance", "migration", "upgrade", "storage"],
 "attachments": [],
 "contentIsHTML": false
 }}}
 
-### Deploy the New Appliance and Import the Data from the Prior Version
+
+**In this article:**
+
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Steps](#steps)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
+
+
+### Overview
+
+
+This article shows how to do deploy the New Cloud Application Manager Data Center Edition (appliance) and Import the Data from the Prior Version appliance
+
+
+### Audience
+
+
+All Cloud Application Manager Data Center Edition users who wants to upgrade to a New version of Cloud Application Manager Data Center Edition (appliance).
+
+
+### Prerequisites
+
+
+**Before starting upgrade process you should request an updated OVA by [contacting support](mailto:incident@CenturyLink.com))**
+
+* Your Cloud Application Manager Data Center Edition (appliance) should be properly deployed and running in your preffered platform. You can refer to the [Cloud Application Manager Data Center Edition documentation](camdce-overview.md).
+* You need to have access to HTTPS (443) port of the appliance to access its setup console.
+
+
+### Steps
+
+
 For the upgrade process to the new virtual appliance, please follow the steps below to guarantee a smooth completion of the whole process.
 
 1. Shutdown and backup your Cloud Application Manager appliance with your preferred method, i.e., clone.
@@ -19,7 +53,7 @@ For the upgrade process to the new virtual appliance, please follow the steps be
    * When done, click **Save Settings**.
    **Note:** When switching the virtual disk, the appliance will reboot and become unavailable for a few minutes. This is expected as the existing data (appliance settings, logs, database and the most recent saved state) is being copied. **When the virtual appliance is back online, you can start using Cloud Application Manager**.
 
-3. Deploy the new appliance using this new [OVA](https://s3-us-west-1.amazonaws.com/elasticbox-appliance/2.0.124/ebx-appliance-2.0.124.ova) (without powering on).
+3. Deploy the new appliance using the new OVA (without powering on) received from support.
 4. Shutdown the new appliance if it is powered on.
 5. Move/Copy the vhd file of the hard disk previously attached (from Step 2) into the virtual machine’s folder of the new deployed appliance.
 6. Attach the moved or copied hard disk to the new appliance.
@@ -29,7 +63,9 @@ For the upgrade process to the new virtual appliance, please follow the steps be
 
 In case you experience any issues, [contact support](mailto:incident@CenturyLink.com)). We will walk you through the appliance upgrading process.
 
+
 ### Contacting Cloud Application Manager Support
+
 
 We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
@@ -37,4 +73,4 @@ For issues related to API calls, send the request body along with details relate
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+* Windows: RDP into the instance to locate the log at C:\ProgramData\ElasticBox\Logs\elasticbox-agent.log

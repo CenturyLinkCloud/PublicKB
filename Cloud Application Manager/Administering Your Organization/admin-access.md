@@ -45,7 +45,7 @@ All users with Cloud Application Manager organization administrator access.
 
 To revoke administrator privileges for a given user, just click the X button next to his or her name under **Administrators**.
 
-Administrators can manage several org-wide settings that include [user authentication](user-authentication.md), the [Cloud Application Manager appliance](../Appliance/appliance-overview.md), [provider access](provider-access.md), [admin boxes](../Automating Deployments/deploymentpolicy-box.md), [webhooks](webhooks.md), and [instance tags](resource-tags.md). To get an approach of the actions they can do, see [Overview](admin-overview.md).
+Administrators can manage several org-wide settings that include [user authentication](user-authentication.md), the [Cloud Application Manager Data Center Edition](../Data Center Edition/camdce-overview.md), [provider access](provider-access.md), [admin boxes](../Automating Deployments/deploymentpolicy-box.md), [webhooks](webhooks.md), and [instance tags](resource-tags.md). To get an approach of the actions they can do, see [Overview](admin-overview.md).
 
 ### Contacting Cloud Application Manager Support
 

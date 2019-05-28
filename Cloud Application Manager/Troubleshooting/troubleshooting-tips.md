@@ -228,7 +228,7 @@ When you configure the hostname, SSL certificate, or block device for the applia
 
 **Solution**
 
-[Contact support](mailto:incident@CenturyLink.com). We will walk you through recovering the appliance. Send us the appliance ID, version number shown at the top of the [setup console](../Appliance/appliance-initialsetup.md). And send us the logs you can download from the Logs section of the appliance setup console.
+[Contact support](mailto:incident@CenturyLink.com). We will walk you through recovering the appliance. Send us the appliance ID, version number shown at the top of the [setup console](../Data Center Edition/camdce-initialsetup.md). And send us the logs you can download from the Logs section of the appliance setup console.
 
 Logs help us debug your appliance issues. The .log files include recent audit information like who did what, user connections, and contain the logs of all the services. If possible, copy the logs from /data/logs away from the Appliance and have them ready for the CAM support team.
 

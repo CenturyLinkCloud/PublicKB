@@ -134,7 +134,7 @@ An instance is an instantiated version of a box launched to provider’s virtual
 
 Save on compute and hosting costs by scheduling instances at launch time. Rather than remember to turn off a machine manually, schedule it to stop automatically at your convenience. When launching, you can schedule an instance to shut down or terminate at a given UTC time.
 
-We notify you of instances about to expire in 24 hours by email at around 12 AM UTC. From the email, you can navigate to the instance page and change the schedule if you like. If you don’t get this email, check your email spam filters or check if [SMTP outbound is on](../Appliance/appliance-initialsetup.md) in the setup console for the Cloud Application Manager appliance.
+We notify you of instances about to expire in 24 hours by email at around 12 AM UTC. From the email, you can navigate to the instance page and change the schedule if you like. If you don’t get this email, check your email spam filters or check if [SMTP outbound is on](../Data Center Edition/camdce-initialsetup.md) in the setup console for the Cloud Application Manager appliance.
 
 Follow these steps to schedule an instance.
 
