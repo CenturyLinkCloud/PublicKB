@@ -40,7 +40,7 @@ Using Cloud Application Manager, you can launch slaves on any OS, flavor, and cl
 
 ![Jenkins slaves config detail.png](../../images/cloud-application-manager/integrate-jenkins/slaves/eb-slaves17-slave-config-detail.png)
 
-You can see a complete guide to use it in the [Launching Slaves via Cloud Application Manager](#jenkins-cloud-application-manager-slaves.md) article.
+You can see a complete guide to use it in the [Launching Slaves via Cloud Application Manager](./jenkins-cloud-application-manager-slaves.md) article.
 
 
 ### Deploy Box
@@ -49,7 +49,7 @@ In a Jenkins project you can add a build step that uses the Cloud Application Ma
 
 ![job-deploy-box.png](../../images/cloud-application-manager/integrate-jenkins/ci-cd/cicd-02-job-deploy-box.png)
 
-You can see a complete example showing how to do this in [Jenkins CI/CD setting up - Deploy Box build step](./setting-up-ci-cd.md#deploy-box-configurations-from-cloud-application-manager)
+You can see a complete example showing how to do this in [Jenkins CI/CD setting up - Deploy Box build step](./setting-up-ci-cd.md)
 
 ### Manage Instance
 
@@ -57,7 +57,7 @@ In a Jenkins project you can add a build step that runs automation and lifecycle
  
 ![manage-operations.png](../../images/cloud-application-manager/integrate-jenkins/ci-cd/cicd-09-manage-operations.png)
 
-You can see a complete example showing how to do this in [Jenkins CI/CD setting up - Manage instances build step](./setting-up-ci-cd.md#manage-instance-lifecycle-through-cloud-application-manager)
+You can see a complete example showing how to do this in [Jenkins CI/CD setting up - Manage instances build step](./setting-up-ci-cd.md)
 
 ### Update Box
 
@@ -65,7 +65,7 @@ In a Jenkins project you can add a build step that uses the Cloud Application Ma
 
 ![update-box-build.png](../../images/cloud-application-manager/integrate-jenkins/ci-cd/cicd-12-update-box-build.png)
 
-You can see a complete example showing how to do this in [Jenkins CI/CD setting up - Update Box build step](./setting-up-ci-cd.md#update-box-file-variables)
+You can see a complete example showing how to do this in [Jenkins CI/CD setting up - Update Box build step](./setting-up-ci-cd.md)
 
 ### Contacting Cloud Application Manager Support
 
