@@ -6,8 +6,6 @@
 "contentIsHTML": false
 }}}
 
-### Using Azure
-
 **In this article:**
 
 * [Overview](#overview)
@@ -118,7 +116,7 @@ In case of multi-tier applications deployed to different roles, follow these tip
 
 * To allow traffic to web role instances, we automatically open HTTP port 80 for both public (input) and private (internal) endpoints. We also open any other ports that you define on the box.
 * To allow traffic to worker role instances, you have to first define port variables on the box, which we open for both public (input) and private (internal) endpoints.
-* To allow web and worker role instances to communicate with each other, make sure they’re deployed to the same availability set. Configure [bindings](../Automating Deployments/managing-multi-tier-applications.md) to connect their boxes. Then print '\{{ bindingname.address }}:\{{bindingname.port}}' in a configure event script to connect by querying the instance IP address and port.
+* To allow web and worker role instances to communicate with each other, make sure they’re deployed to the same availability set. Configure [bindings](../Automating Deployments/managing-multi-tier-applications-with-bindings.md) to connect their boxes. Then print '\{{ bindingname.address }}:\{{bindingname.port}}' in a configure event script to connect by querying the instance IP address and port.
 
 ![azure-webworkerroles-depprofile-7.png](../../images/cloud-application-manager/azure-webworkerroles-depprofile-7.png)
 
@@ -136,7 +134,7 @@ In case of multi-tier applications deployed to different roles, follow these tip
 
 | Option | Description |
 |--------|-------------|
-| Role | Select Web Role or Worker Role. See [Virtual Machine Role](using-azure.md) to deploy to that instead. |
+| Role | Select Web Role or Worker Role. See [Virtual Machine Role](#virtual-machine-role) to deploy to that instead. |
 | OS Family | Select the guest OS to run in the worker role instance. Note that Windows 2008 images are not synced at this time because the Cloud Application Manager agent doesn’t work on them. |
 | OS Version | Select the guest OS version to run in the worker role instance. You can select a specific version or go with latest. If you choose latest, the OS is automatically upgraded to the latest version. |
 | Size | Select a size to set the number of CPU cores, memory, and disk size to store your OS files, process temporary memory, and store application data. For more information, see the [Azure help](https://azure.microsoft.com/documentation/articles/cloud-services-sizes-specs/). Note that D-Series sizes use solid-state drive disks. |

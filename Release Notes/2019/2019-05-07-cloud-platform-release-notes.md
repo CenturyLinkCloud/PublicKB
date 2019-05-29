@@ -41,7 +41,7 @@ Application Lifecycle Management now supports a new Google Cloud Platform region
 
 ##### Optimized AWS in EMEA
 
-The user experience for the Analytics site has been improved for both new and existing customers. At the time your analytics-enabled provider is created  automation will deliver correct Analytics permissions. Your CAM user will inherit those permissions simply by signing into our Analytics site or by clicking the "sync user" button. If you are an existing Analytics user and want to ensure Analytics permissions are correct, first synchronize the provider in the Management site and then navigate to the Analytics site.
+CenturyLink has been authorized by AWS to support consolidated billing and management of accounts for customers headquartered within most European countries. A CenturyLink representative should be contacted for a detailed list of geographic, sector, and feature availability.
 
 #### [Managed Services Anywhere](https://www.ctl.io/cloud-application-manager/managed-services-anywhere/)
 

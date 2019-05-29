@@ -16,7 +16,7 @@
 * [Deploy to CenturyLink Private Cloud from Cloud Application Manager](#deploy-to-centurylink-private-cloud-from-cloud-application-manager)
 * [Naming vCloud resources](#naming-vcloud-resources)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
-  
+
 ### Overview
 
 This article is meant to assist users of Cloud Application Manager to learn how to deploy CenturyLink Private Cloud on VMware Cloud Foundation Provider.
@@ -32,7 +32,7 @@ All Cloud Application Manager users who wants to deploy workloads into CenturyLi
 
 ### Register CenturyLink Private Cloud on VMware Cloud Foundation as Provider
 
-To enable a Cloud Application Manager Provider for CenturyLink Private Cloud on VMware Cloud Foundation™ see the example [Configure a Provider for Cloud Application Manager](../../CenturyLink Private Cloud on VMware Cloud Foundation/cam-provider.md).
+To enable a Cloud Application Manager Provider for CenturyLink Private Cloud on VMware Cloud Foundation™ see the example [Configure a Provider for Cloud Application Manager](../../CenturyLink Private Cloud on VMware Cloud Foundation/General/cam-provider.md).
 
 ![CenturyLink Private Cloud on VMware Cloud Foundation add Provider](../../images/dccf/cam-provider3.png)
 
@@ -44,7 +44,7 @@ To enable a Cloud Application Manager Provider for CenturyLink Private Cloud on 
 
 ### Deploy to CenturyLink Private Cloud from Cloud Application Manager
 
-Create a [deployment policy](../Automating Deployments/deploymentpolicy-box.md) to encapsulate parameters required to deploy Linux or Windows vApps through the CenturyLink Private Cloud on VMware Cloud Foundation provider 
+Create a [deployment policy](../Automating Deployments/deploymentpolicy-box.md) to encapsulate parameters required to deploy Linux or Windows vApps through the CenturyLink Private Cloud on VMware Cloud Foundation provider
 
 ![CenturyLink Private Cloud on VMware Cloud Foundation Policy Box](../../images/cloud-application-manager/deploying-anywhere/cpc-vcf/cpc-vcf-policy.png)
 

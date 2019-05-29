@@ -1,6 +1,6 @@
 {{{
 "title": "Using AWS",
-"date": "03-25-2019",
+"date": "05-17-2019",
 "author": "Julio Castanar & Sergio Quintana",
 "keywords": ["aws", "ecs", "deploy"],
 "attachments": [],
@@ -13,6 +13,7 @@
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
 * [Connect your AWS Account in Cloud Application Manager](#connect-your-aws-account-in-cloud-application-manager)
+* [Access to AWS Services console with an AWS account](#access-to-aws-services-console-with-an-aws-account)
 * [Create a custom AWS Policy](#create-a-custom-aws-policy)
 * [Create an IAM Role with the Policy chosen](#create-an-iam-role-with-the-policy-chosen)
 * [Creating a new AWS provider in Cloud Application Manager](#creating-a-new-aws-provider-in-cloud-application-manager)
@@ -47,24 +48,50 @@ All Cloud Application Manager users who want to deploy workloads into AWS.
 
 Before you deploy in AWS, you need to connect your AWS account in Cloud Application Manager. The following steps walks you through this process. 
 
+### Access to AWS Services console with an AWS account
+
+Go to [AWS Services console](https://console.aws.amazon.com) and login into your account.  
+
+If you already have an AWS Provider in your Cloud Application Manager, you can reach this console from the **AWS Console** button located in the AWS Provider details page and you will be directly logged in.
+
+![AWS Console access from CAM](../../images/aws-console/aws-console-access-from-cam.png)
+
+#### Roles and Permissions
+
+Once you init a session in AWS Services console, depending on the login account used you will get a role and different access privileges. These privileges apply to actions your instances in Cloud Application Manager can perform.  
+
+All created IAM users must be placed in a group in order to apply permissions. The newly created IAM groups will automatically have the **CTLCustomerPolicy** applied. 
+
+| Role | Intent |
+|-----------|--------|
+| Customer Admin User / Group<br/>`<yourCompanyName>Group` | To be able to provide the first administrator as many permissions as possible so that they can begin to set up the new account. |
+| Customer Role<br/>`CTLCustomerRole` | To be added to existing customer IAM groups or given to new customer groups. This policy allows the user to manipulate all services within AWS, but restricts certain views and actions that would confuse or cause conflict in an Integrated account. |
+| CenturyLink Operations Role<br/>`CTLOperationsRole` | To allow Operations rights of least privilege, with flexibility. |
+| CenturyLink Developer Role<br/>`CTLDeveloperRole` | The Optimization tool should be able to configure customer accounts, affect IAM permissions, and swiftly remediate any issues. |
+| CenturyLink Lambda Role<br/>`CTLCustomerPolicy` | IAM users who are not placed within a group will have all their permissions removed, so it is recommended that you move all IAM users to an IAM group. Newly created IAM groups will automatically have the CTLCustomerPolicy applied. |
+| CenturyLink Analytics Role<br/>`CTLCloudOptimizationRole` | To enable Analytics tools and allow customer users transparency into usage and best practices. |
+| Cloud Application Manager Role<br/>`CTLCAMRole` | To permit Cloud Application Manager's [application lifecycle management (ALM)](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) capabilities and to enable [Monitoring](../Monitoring/CAMMonitoringUI.md). |
+| Cloud Integration Admin Role<br/>`CTLCINTAdminRole` | To permit these users as much freedom as possible. |
+| CAM User Read-only Role<br/>`CTLCAMUserReadRole` | To permit these users to see but not alter any resources in the AWS Console when they click the provider's "AWS Console" button. |
+| Cloud Integration User Read-only Role<br/>`CTLCINTReadRole` | To permit these users to see but not alter any resources in the AWS Console when they click the provider's "AWS Console" button. |
+| CenturyLink Service Management Policy<br/>`CTLServiceManagementRole` | This is not an immediate part of any Optimization scenario but it is enabled by Cloud Application Manager's Account Optimization. Access to a customer's account via this role is only given to a CenturyLink representative when the customer has purchased Service Management from CenturyLink. |
+
+See in detail the definition of these [roles and permissions](../Cloud Optimization/partner-cloud-integration-aws-hardening-permissions.md). 
 
 ### Create a custom AWS Policy
 
-1. Go to [AWS Services console](https://console.aws.amazon.com) and login into your account.  
-You can reach this console from the **AWS Console** button located in your AWS Provider details page in Cloud Application Manager and you will be directly logged in.
-
-2. Create a custom AWS Policy.  
+1. Create a custom AWS Policy.  
 Go to top **Services** menu and in Security, Identity, & Compliance section, select **IAM**. Then select **Policies** in the left side menu.
 
 ![AWS Console Policies](../../images/aws-console/aws-console-policies.png)
 
-3. Click on **Create policy** button and select Create your own policy.  
+2. Click on **Create policy** button and select Create your own policy.  
    There are several ways to add a policy. Here we will describe how to use a JSON snippet.  
    Select **JSON** tab in new Amazon Create policy page and continue editing the snippet displayed below in [Choosing the right policy](#choosing-the-right-policy).
 
 ![AWS Console Policies](../../images/aws-console/aws-console-json.png)
 
-4. When edited, click on **Review policy** and if there are no errors you will be prompted to give a name and a description for this policy. Save changes clicking on **Create policy** at the bottom of the page.
+3. When edited, click on **Review policy** and if there are no errors you will be prompted to give a name and a description for this policy. Save changes clicking on **Create policy** at the bottom of the page.
 
 ![AWS Console Review](../../images/aws-console/aws-console-review.png)
 
@@ -514,7 +541,7 @@ Once your instance has been deployed, you can access its information by clicking
 |Service               | Type of service included in this instance. It can be an operating system, an application, a script, etc. |
 |Hostname              | Hostname of the instance. |
 |Provider              | [Provider](../Core Concepts/providers.md) in which this instance is deployed. |
-|Provider Instance ID  | AWS instance ID or IDs. If the user has enough rights, it shows a link to the resource or resources in the AWS console. |
+|Provider Instance ID  | AWS instance ID or IDs. If the user has enough rights, it shows a link to the resource or resources in the AWS console. Clicking this link will register and show the action in both instance’s and provider's activity logs. |
 |Proxy                 | Proxy used by the instance agent in case it is configured. |
 |Region                | AWS Region in which this instance is deployed. |
 |Availability Zone     | AWS Availability zone|

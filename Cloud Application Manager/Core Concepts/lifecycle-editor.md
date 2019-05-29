@@ -42,6 +42,10 @@ Edit the box configuration of a running instance by modifying its event scripts 
 2. Make event script changes in the event tab. The tab shows an asterisk to indicate any unsaved changes.
 3. When done, click **Save**.
 
+If you make event script changes in the event tab and try to close editor (without pressing the 'Save' button), a confirmation dialog will warn you about the pending changes. If you want to keep the changes press the 'Save' button on the dialog.
+
+![Save the changes when close Editor](../../images/cloud-application-manager/lifecycle-editor-3-1.png)
+
 **Changing Variable Values**
 
 You can redeploy an instance with different parameters by changing the [variable](../Automating Deployments/parameterizing-boxes-with-variables.md) values.
@@ -49,6 +53,10 @@ You can redeploy an instance with different parameters by changing the [variable
 * To edit variable values, click on the input box and type or select the new value.
 
 ![lifecycle-editor-4.png](../../images/cloud-application-manager/lifecycle-editor-4.png)
+
+If you make event script changes in the event tab and try to close editor (without pressing the 'Save' button), a confirmation dialog will warn you about the pending changes. If you want to keep the changes press the 'Save' button on the dialog.
+
+![Save the changes when close Editor](../../images/cloud-application-manager/lifecycle-editor-4-1.png)
 
 * To edit file type variables, click on the pencil icon and make variable script changes in the variable tab. The tab shows an asterisk to indicate any unsaved changes, click **Save** to save any changes made.
 
@@ -65,6 +73,10 @@ When an instance depends on another box or service–like a load balancer, cachi
 2. Type the new values, you will see a few suggestions where to choose from, but you can also type your own values. To save the changes click on **Save** button.
 
 ![lifecycle-editor-7.png](../../images/cloud-application-manager/lifecycle-editor-7.png)
+
+If you make event script changes in the event tab and try to close editor (without pressing the 'Save' button), a confirmation dialog will warn you about the pending changes. If you want to keep the changes press the 'Save' button on the dialog.
+
+![Save the changes when close Editor](../../images/cloud-application-manager/lifecycle-editor-7-1.png)
 
 **Adding Events or Variables**
 

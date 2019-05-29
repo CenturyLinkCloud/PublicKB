@@ -38,7 +38,7 @@ The Cloud Application Manager Monitoring dashboard allows customers to view clou
 #### Assumptions:
 
 •	User is setup as an admin in the workspace.  
-•	Auzre provider is configured in Cloud Application Manager Provider console [Using Microsoft Azure](https://www.ctl.io/knowledge-base/cloud-application-manager/deploying-anywhere/using-microsoft-azure/ "Using Microsoft Azure")
+•	Microsoft Azure provider is configured in Cloud Application Manager Provider console [Using Microsoft Azure](https://www.ctl.io/knowledge-base/cloud-application-manager/deploying-anywhere/using-microsoft-azure/)
 
 #### Navigation 
 
