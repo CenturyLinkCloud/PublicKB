@@ -34,7 +34,6 @@ You can choose to Enable Managed Services on the provider at this time and by do
 * Select the Provider on which MSA is to be enabled from the **Providers** tab.
 
   ![GettingStarted1.png](../../images/cloud-application-manager/GettingStarted1.png)
-  images/cloud-application-manager/GettingStarted1.png
 
 * Next click on **Services** to open and configure available services. To enable Managed Services Anywhere, toggle the “Enable Services Anywhere’ button from **OFF** to **ON**.
 
