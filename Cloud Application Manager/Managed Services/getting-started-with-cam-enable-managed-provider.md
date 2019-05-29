@@ -72,7 +72,7 @@ Continue to add additional Regions or select **Apply** and confirm changes.
  
 ![GettingStarted7.png](../../images/cloud-application-manager/GettingStarted7.png)
  
-![GettingStartedConfirmed.png](../../images/cloud-application-manager/GettingStartedConfirmed.png)
+![GettingStartedConfirm.png](../../images/cloud-application-manager/GettingStartedConfirm.png)
  
  
 **AWS:** By default AWS creates a default VPC and Default network in each region.  To avoid the cost of unnecessary VMs in regions where no workloads are deployed, CenturyLink enables the ability to select those regions where workloads exist for the AWS account configured in the provider.  
@@ -96,7 +96,8 @@ Select the Subnet and click **Add**. Note that the **Management Appliance** fiel
 Continue to add additional Regions or select **Apply** and confirm changes.
 
 ![GettingStarted11.png](../../images/cloud-application-manager/GettingStarted11.png)
-![GettingStartedConfirmed.png](../../images/cloud-application-manager/GettingStartedConfirmed.png)
+
+![GettingStartedConfirm.png](../../images/cloud-application-manager/GettingStartedConfirm.png)
 
 When selecting “Create New VPC,” the Subnet field will show “No items found” but will create a public and private Subnet once created. Click **Add** to continue.
 
