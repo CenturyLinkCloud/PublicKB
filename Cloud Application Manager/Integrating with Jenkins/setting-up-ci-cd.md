@@ -77,7 +77,7 @@ Select a box to deploy for instance.
 
 ![job-deploy-box.png](../../images/cloud-application-manager/integrate-jenkins/ci-cd/cicd-02-job-deploy-box.png)
 
-* **Cloud** - Select the [Cloud Application Manager account](./jenkins-cloud-application-manager-slaves.md#configure-access-to-your-cloud-application-manager-account) you registered on the Jenkins server system configuration.
+* **Cloud** - Select the [Cloud Application Manager account](./jenkins-cloud-application-manager-slaves.md) you registered on the Jenkins server system configuration.
 * **Workspace** - Choose the Cloud Application Manager workspace from where you want to deploy the box.
 * **Box** - Choose the box in your workspace you want to deploy.
 * **Version** - Choose **Cloud Application Manager automatic version** to deploy a default box. For any other box, select Latest or a version from the drop-down.
