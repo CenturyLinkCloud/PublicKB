@@ -2,7 +2,7 @@
 
   "title": "Most Recent SafeHaven Release Updates",
 
-  "date": "09-05-2018",
+  "date": "05-02-2019",
 
   "author": "Shi Jin",
 
@@ -20,7 +20,7 @@ This article provides information about the **Most Recent SafeHaven Release Upda
 
 * Latest SafeHaven-4 product line:  [SafeHaven 4.0.5](../SafeHaven 4/safehaven-4.0.5-release.md) released on March 6, 2018
 
-* Latest SafeHaven-5 product line: [SafeHaven 5.1.3](../SafeHaven 5 General/SafeHaven5.1.3-Release-Notes.md) released on October 29, 2018
+* Latest SafeHaven-5 product line: [SafeHaven 5.1.5](../SafeHaven 5 General/SafeHaven5.1.5-Release-Notes.md) released on May 2, 2019
 
 
 
@@ -28,6 +28,8 @@ This article provides information about the **Most Recent SafeHaven Release Upda
 
 |Release Date|Link to Release Notes|
 |---|---|
+|May 2, 2019|[SafeHaven 5.1.5](../SafeHaven 5 General/SafeHaven5.1.5-Release-Notes.md)|
+|Feburary 12, 2019|[SafeHaven 5.1.4](../SafeHaven 5 General/SafeHaven5.1.4-Release-Notes.md)|
 |October 29, 2018|[SafeHaven 5.1.3](../SafeHaven 5 General/SafeHaven5.1.3-Release-Notes.md)|
 |September 5, 2018|[SafeHaven 5.1.2](../SafeHaven 5 General/SafeHaven5.1.2-Release-Notes.md)|
 |August 7, 2018|[SafeHaven 5.1.1](../SafeHaven 5 General/SafeHaven5.1.1-Release-Notes.md)|

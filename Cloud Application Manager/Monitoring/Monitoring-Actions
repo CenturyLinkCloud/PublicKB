@@ -1,0 +1,105 @@
+{{{
+"title": "Configure Actions for Monitoring Events",
+"date": "3-5-2019",
+"author": "Mindy Daugherty",
+"keywords": ["cam", "details", "settings", "watcher", "monitoring", "actions",
+"webhooks", "slack", "setting"],
+"attachments": [],
+"contentIsHTML": false
+}}}
+
+**In this article:**
+
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Action Details](#action-details)
+* [Configure Actions](#configure-actions)
+* [Manage Clouds](#manage-clouds)
+* [Manage Tags](#manage-tags)
+* [Manage Webhooks](#manage-webhooks)
+* [Manage Authentication](#manage-authentication)
+* [Manage Theme](#manage-theme)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
+
+
+### Overview
+
+This article describes the use of Actions within the Cloud Application Manager Monitoring site.
+
+### Audience
+
+All users with Cloud Application Manager access.
+
+### Prerequisites
+
+* Access to Cloud Application Manager Monitoring site, [Monitoring site](https://monitoring.cam.ctl.io/).
+* The CAM account used must have User or higher permissions to the workspace in order to modify Actions. 
+
+
+### Action Details
+
+The Actions feature within the Cloud Application Manager's Monitoring site allows for various Actions to be executed in response to monitoring events that occur within your infrastructure. Actions can be applied at all scope levels: Organization, Cost Center, Workspace, Provider and an individual agent.
+
+![Actions](https://github.com/mindyctlcam/PublicKB/blob/master/images/Actions.png)
+
+* **Netcool** – will send the details of an Alert to Netcool for WebTop display
+* **Slack** - will send the details of an Alert to a channel within a Slack Instance
+* **WebHook** – will send details of an Alert to a configured WebHook
+
+
+### Configure Actions
+
+After selecting the Actions tab from the left hand navigation bar, the Actions 
+1. Click on the Actions tab from the left hand Navigation bar
+2. Next, click "New" to create a new Action
+3. Select your Action type and follow the prompts to configure the Action
+4. Save Action
+5. Select or Create a Policy to apply the Action 
+
+
+**Netcool Actions**
+![Netcool Actions] (https://github.com/mindyctlcam/PublicKB/blob/master/images/CTL%20Netcool%20Action.png)
+
+For Netcool Actions you will be required to add a Description of the Action as well as selecting the Scope and Agents to be configured with the Action.
+You have the option to enable the Action now or unselect to enable at a later time. 
+Lastly, you'll need to enter the Manager and click **Save Action**.
+
+
+**Slack Actions**
+![Slack Actions](https://github.com/mindyctlcam/PublicKB/blob/master/images/Slack%20Action.png)
+
+For Slack Actions you will need to first need to setup a Slack App prior configuring this Action in the Monitoring Site.
+Incoming-Webhook URL (https://cl-cloud.slack.com/apps/A0F7XDUAZ-incoming-webhooks)
+
+Note the Slack options to send an alert to a specific channel, to you directly, or create a new channel. 
+Once you have completed the Integrations Settings in Slack, you'll need to copy the Webhook URL from Slack in order to complete the Slack Action Type setup. 
+
+On the Slack Action Type Configuration Screen, you will be required to add a Description of the Action as well as selecting the Scope and Agents to be configured with the Action. 
+You have the option to enable the Action now or unselect to enable at a later time. Next, you'll need to enter the Webhook URL from Slack. There are additional optional configurations such as the Icon URL, Slack Bot Name, Slack Channel, and Custom Slack Icon (Emoji Icon.)
+Click **Save Action** to complete the new Action type.
+
+**Webhook Actions**
+![Webhook Actions](https://github.com/mindyctlcam/PublicKB/blob/master/images/Webhook%20Action.png)
+
+For Webhook Actions you may need to set up a URL on a server to receive incoming messages prior to configuring this Action in the Monitoring Site.
+
+Once you have setup the URL on your server, you'll need to copy the Webhook URL in order to complete the Action Type setup. 
+
+On the Webhook Action Type Configuration Screen you will be required to add a Description of the Action as well as selecting the Scope and Agents to be configured with the Action. 
+You have the option to enable the Action now or unselect to enable at a later time. Next, you'll need to enter the Webhook URL.
+Click **Save Action** to complete the new Action type.
+
+**SMTP Email Actions**
+![SMTP Email Actions](https://github.com/mindyctlcam/PublicKB/blob/master/images/SMTP%20Action.png)
+For SMTP Email Action types, you will need to have an already configured outbound SMTP server. 
+
+On the SMTP Email Action Type Configuration Screen, you will be required to add a Description of the Action as well as selecting the Scope and Agents to be configured with the Action.
+You have the option to enable the Action now or unselect to enable at a later time. 
+
+In the next session you'll need to enter the SMTP Host Server URL as well as the preferred SMTP Port. Next, enter the Username and Password for the SMTP Host. Select the “Use SSL” checkbox if you wish to enable SSL. 
+
+Note: For integration with Amazon Simple Email Service (SES,) the “Use SSL” checkbox must be selected.
+
+Lastly, enter the From and To email address. 
+Click **Save Action** to complete the new Action type.

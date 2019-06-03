@@ -3,6 +3,7 @@
 "date": "09-01-2019",
 "author": "Arya Roudi, Julio Castanar",
 "keywords": ["cam administration", "management", "overview", "cam", "cam organization", "settings", "manage users", "manage providers", "management activity", "billing"],
+"sticky": true,
 "attachments": [],
 "contentIsHTML": false
 }}}

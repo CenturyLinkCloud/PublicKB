@@ -32,7 +32,7 @@ Cloud Application Manager Users using Application Lifecycle Management (ALM) fea
 
 * Access to [Applications site](https://cam.ctl.io/#/boxes) (Application Lifecycle Management module) of Cloud Application Manager as an authorized user of an active Cloud Application Manager account.
 
-* A box already configured in Cloud Application Manager. See [administering providers](../Administering Your Organization/admin-overview.md#Providers).
+* A box already configured in Cloud Application Manager. See [administering providers](../Administering Your Organization/admin-overview.md).
 
 ### Syntax for Binding Type Variables
 
@@ -50,11 +50,13 @@ To get values from bindings in the *parent box* event scripts, follow this synta
     Here “n” refers to a particular instance associated with the binding.
 
 * Returns the public address of the instance to which the binding points:
+
     ```
     `\{{ binding_variable_name.address.public }}`
     ```
 
 * Returns the private address of the instance to which the binding points:
+
     ```
     `\{{ binding_variable_name.address.private }}` 
     ```
@@ -62,7 +64,8 @@ To get values from bindings in the *parent box* event scripts, follow this synta
 To get values from bindings in *child boxes*, follow this syntax.
 
 * Gives the value of the variable in a bound box in the box type variable.
-    ``` 
+
+    ```
     `\{{ boxtype_variable_name.binding_variable_name.variable }}`
     ```
 
@@ -73,15 +76,19 @@ Use other variable types to get or set dynamic configuration values when deployi
 To get variables values in the *parent box* event scripts, follow this syntax:
 
 * Returns the value of the variable.
+
     ```
     `\{{ variable_name }}`
     ```
+
 * Returns the value of the variable in the box type variable. This is how you get values of variables in *child boxes*.
+
     ```
     `\{{ boxtype_variable_name.variable_name }}`
     ```
 
     **Note:** There’s no limit to the number of child boxes boxes you can traverse. For example, to get the value of a variable from a box nested two levels deep, use this syntax:
+
     ```
     `\{{ boxtype_variable_name.boxtype_variable_name.variable_name }}`
     ```
@@ -89,14 +96,18 @@ To get variables values in the *parent box* event scripts, follow this syntax:
 To set or change variable values in the *parent box* event scripts, follow this syntax with the set command. 
 
 * Sets the value of the variable:
+
     ```
     `<variable_name> <variable_value>`
     ```
+
 * Sets the value of the variable in the box type variable. This is how you set values for variables in child boxes:
+
     ```
     elasticbox set `<boxtype_variable_name>.<variable_name> <variable_value>`
     ```
-For examples, see the [Set Command](cloud-application-manager-commands.md#set-command).
+
+For examples, see the [Set Command](../../Cloud Application Manager/Automating Deployments/cloud-application-manager-commands.md).
 
 ### Syntax for System Variables
 
@@ -133,5 +144,6 @@ We’re sorry you’re having an issue in [Cloud Application Manager](https://ww
 For issues related to API calls, send the request body along with details related to the issue.
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
 * Windows: RDP into the instance to locate the log at \ProgramData\ElasticBox\Logs\elasticbox-agent.log

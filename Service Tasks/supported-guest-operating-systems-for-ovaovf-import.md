@@ -1,39 +1,21 @@
 {{{
   "title": "Supported Guest Operating Systems for OVA/OVF Import",
-  "date": "11-24-2015",
-  "author": "Jacob Malmad",
+  "date": "03-20-2019",
+  "author": "Matthew Ordman",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
 ### Overview
-CenturyLink Cloud customers may wish to import OVA/OVF Guest Operating Systems to the platform via a [Service Task](//www.ctl.io/products/support/service-tasks). Customers frequently request a list of the supported Guest Operating Systems the CenturyLink Cloud supports for Import and this KB is meant to address this query.
-
-Ensure your OVF meets requirements for import they are listed here in the KB under Service tasks > Best Practices and preparation for a virtual machine OVF import.
+CenturyLink Cloud customers may wish to import OVA/OVF Guest Operating Systems to the platform via a [Service Task](//www.ctl.io/products/support/service-tasks). Customers frequently request a list of the Supported Guest Operating Systems that CenturyLink Cloud supports for Import and this KB addresses that.
 
 ### Prerequisites
 * A CenturyLink Cloud Account
+* Meets requirments for Import (https://www.ctl.io/knowledge-base/service-tasks/best-practices-and-preparation-for-a-virtual-machineovfova-import/)
+* OVF must be on the Supported Operating Systems List (https://www.ctl.io/knowledge-base/support/supported-operating-systems/)
 
 ### Exclusions
 * Industry packaged Virtual Appliances from vendors, including but not limited to, Citrix VPX, F5 VE, SoftNAS, should be vetted with CenturyLink Cloud Sales to validate compatibility. Many Virtual Appliances are part of our ecosystem program and have been validated.  The support of these packaged virtual appliances are not the focus of this article.
-
-### Supported Operating Systems List
-* CentOS 5 | 64-bit
-* CentOS 6 | 64-bit
-* CentOS 7 | 64-bit
-* Debian 6 | 64-bit
-* Debian 7 | 64-bit
-* RedHat Enterprise Linux 5 | 64-bit
-* RedHat Enterprise Linux 6 | 64-bit
-* RedHat Enterprise Linux 7 | 64-bit
-* Ubuntu 12 LTS | 64-bit
-* Ubuntu 14 LTS | 64-bit
-* Ubuntu 16 LTS | 64-bit
-* Windows 2008 R2 Enterprise | 64-bit
-* Windows 2008 R2 Standard | 64-bit
-* Windows 2008 R2 Datacenter Edition | 64-bit
-* Windows 2012 Datacenter Edition | 64-bit
-* Windows 2012 R2 Datacenter Edition | 64-bit
 
 ### Frequently Asked Questions
 

@@ -73,7 +73,7 @@ For every box, you can define:
 
 ![Application Box definition](../../images/cloud-application-manager/application-boxes-4.png)
 
-This is equivalent to the values you need to provide to deploy that box as an instance, except the policy box and requirements. When you deploy other types of boxes, you must select one policy box for an instance. The box includes a list of requirements that must appear as claims in the Policy box.
+This is equivalent to the values you need to provide to deploy that box as an instance, except the policy box and requirements. When you deploy other types of boxes, you must select one policy box for an instance. The box includes a list of requirements that must appear as claims in the Policy box. For more information see [Claims and Requirements](../Automating Deployments/deploymentpolicy-box.md#claims-and-requirements)
 
 In Application boxes, a policy box is automatically selected for each box in the topology. If you need different boxes of the topology to have different policies, you can simply add restrictions in the Requirements field.
 
