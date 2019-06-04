@@ -1,11 +1,36 @@
 {{{ "title": "Using the VMware vCenter Private Datacenter",
-"date": "09-01-2016",
-"author": "",
+"date": "05-06-2019",
+"author": "CenturyLink",
+"keywords": ["cam", "cloud application manager", "vmware", "vsphere"],
 "attachments": [],
 "contentIsHTML": false
 }}}
 
+**In this article:**
+- [Overview](#overview)
+- [Audience](#audience)
+- [Prerequisites](#prerequisites)
+- [Using the VMware vCenter Private Datacenter](#using-the-vmware-vcenter-private-datacenter)
+- [Prerequisites](#prerequisites-1)
+- [Minimum User Permissions](#minimum-user-permissions)
+- [Bootstrapping VM Templates with the Cloud Application Manager Agent](#bootstrapping-vm-templates-with-the-cloud-application-manager-agent)
+- [Registering Your vCenter in Cloud Application Manager](#registering-your-vcenter-in-cloud-application-manager)
+- [Deploying in Your vCenter](#deploying-in-your-vcenter)
+- [Getting General Support](#getting-general-support)
 
+### Overview
+
+This article is meant to assist users of Cloud Application Manager to configure a VMware vCenter provider and deploy virtual machines on it.
+
+### Audience
+
+All users of Cloud Application Manager using VMware vCenter providers.
+
+### Prerequisites
+
+* An active *Cloud Application Manager* account
+* Access and credentials to a VMware vCenter infrastructure.
+  
 ### Using the VMware vCenter Private Datacenter
 
 **In this article:**
@@ -88,9 +113,11 @@ In order to deploy to a vCenter private datacenter, you must first provide infor
 2. Select **VMware vSphere**.
 
 3. Enter the endpoint URL for the vCenter server and a username, password to the vCenter API.
-   * **Note:** The endpoint URL must be in the form of **https://<servername>** or **https://<ipaddress>**. Be sure to use https and not http.
+   * **Note:** The endpoint URL can be a hostname or an IP address, and has to be prefixed with **https://**. Be sure to use https and not http.
 
-   ![add-vsphere-provider-1.png](../../images/cloud-application-manager/add-vsphere-provider-1.png)
+   ![Creating a new vSphere provider](../../images/cloud-application-manager/add-vsphere-provider-1.png)
+
+By default, newly created providers use the recent implementation of vSphere client, while existing providers stick to a legacy implementation. A toggle labeled **Legacy Mode** is introduced to migrate away from legacy mode, or to turn back to it, in case an unforseen regression would appear with the upgrade. We recommend all our customers to use the recent implementation, and to migrate away from the legacy implementation as possible.
 
 ### Deploying in Your vCenter
 
@@ -145,12 +172,22 @@ Select deployment metadata from a deployment profile to launch VMs to your vCent
 |-------------------|-------------|
 | Disks	| By default, an instance gets the template disk. For more storage, increase the template disk size and add up to seven more disks.<li>You can’t remove the template disk, but you can adjust its size. Type in the new size and press enter to save changes.</li><li>To add a disk, select a datastore from available ones in the datacenter. Specify the size in gigabytes, and click **Add**. Each disk can be up to 62 TB, disk can be up to 62 TB, but if the datastore doesn’t have such capacity, the instance won’t deploy.</li><li>Note that additional disks communicate through the same controller as the template disk.</li> |
 
-### Contacting Cloud Application Manager Support
+### Getting General Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
+Customers can contact the CenturyLink Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
 
-For issues related to API calls, send the request body along with details related to the issue.
+#### Contact:
 
-In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
-* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+1. **Phone:** 888-638-6771
+
+2. **Email:** incident@centurylink.com
+
+3. **Create Ticket in Cloud Application Manager:** Directly within the platform, users can “Create Ticket” by clicking on the “?” symbol in upper right corner near the users log-in profile icon.  This takes users directly to the Managed Servicers Portal where they can open, track and review status of issues that have been raised with the support desk.  Additionally, this is how a TAM can be engaged as well.
+
+#### Instructions:
+
+1. Provide your name
+2. Cloud Application Manager account name
+3. A brief description of your request or issue for case recording purposes
+
+The support desk will escalate the information to the Primary TAM and transfer the call if desired.
