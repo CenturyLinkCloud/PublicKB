@@ -16,8 +16,7 @@ We have integrated with Microsoft Azure and Amazon Web Services.
 
 All of our customers are invited to use Cloud Application Manager's portfolio of Cloud Optimization capabilities. Cloud Integration is a very important component of Cloud Optimization.
 
-For Azure, we are currently limited to serving customers who are not resellers (or customers or resellers) with offices within the United States the United Kingdom, and Canada.
-For Amazon Web Services we are currently limited to serving customers who are not resellers (or customers or resellers) with offices within the United States and the United Kingdom.
+We are currently limited to serving customers who meet the conditions of our [Supplemental Terms](https://www.ctl.io/legal/cloud-application-manager/supplemental-terms/).
 
 ### Prerequisites
 
