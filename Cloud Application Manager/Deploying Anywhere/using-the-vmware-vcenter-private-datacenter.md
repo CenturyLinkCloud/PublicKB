@@ -1,7 +1,7 @@
 {{{ "title": "Using the VMware vCenter Private Datacenter",
 "date": "05-06-2019",
 "author": "CenturyLink",
-"keywords": ["cam", "cloud application manager", "vmware", "vsphere"],
+"keywords": ["cam", "cloud application manager", "vmware", "vsphere", "vcenter"],
 "attachments": [],
 "contentIsHTML": false
 }}}
