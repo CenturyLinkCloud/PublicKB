@@ -10,17 +10,17 @@
 - [Overview](#overview)
 - [Audience](#audience)
 - [Prerequisites](#prerequisites)
-- [Using the VMware vCenter Private Datacenter](#using-the-vmware-vcenter-private-datacenter)
-- [Prerequisites](#prerequisites-1)
-- [Minimum User Permissions](#minimum-user-permissions)
-- [Bootstrapping VM Templates with the Cloud Application Manager Agent](#bootstrapping-vm-templates-with-the-cloud-application-manager-agent)
-- [Registering Your vCenter in Cloud Application Manager](#registering-your-vcenter-in-cloud-application-manager)
+- [Required Permissions](#required-permissions)
+- [Bootstrapping virtual machine templates with the Cloud Application Manager Agent](#bootstrapping-virtual-machine-templates-with-the-cloud-application-manager-agent)
+- [Registering a vCenter provider in Cloud Application Manager](#registering-a-vcenter-provider-in-cloud-application-manager)
 - [Deploying in Your vCenter](#deploying-in-your-vcenter)
 - [Getting General Support](#getting-general-support)
+  - [Contact:](#contact)
+  - [Instructions:](#instructions)
 
 ### Overview
 
-This article is meant to assist users of Cloud Application Manager to configure a VMware vCenter provider and deploy virtual machines on it.
+This article is meant to assist users of Cloud Application Manager to configure a VMware vCenter provider and deploy virtual machines with it.
 
 ### Audience
 
@@ -29,28 +29,15 @@ All users of Cloud Application Manager using VMware vCenter providers.
 ### Prerequisites
 
 * An active *Cloud Application Manager* account
-* Access and credentials to a VMware vCenter infrastructure.
-  
-### Using the VMware vCenter Private Datacenter
+* Access and credentials to a VMware vCenter 5.5 or later.
+* A virtual machine template (Linux or Windows) on the vCenter server. Virtual machine templates has to be bootstrapped with the Cloud Application Manager Agent.
+* If the vCenter is behind a firewall, has to be open on the firewall:
+	* 443/TCP incoming to vCenter server: for Cloud Application Manager to make API calls on vCenter.
+	* 443/TCP outgoing: to allow Cloud Application Manager Agents running on the deployed virtual machines to connect back to Cloud Application Manager.
 
-**In this article:**
+### Required Permissions
 
-* Prerequisites
-* Registering your vCenter in Cloud Application Manager
-* Deploying in your vCenter
-
-### Prerequisites
-
-* vCenter server is version 5.0 or later.
-* vCenter has at least one Windows or Linux template to connect your account successfully in Cloud Application Manager.
-* vCenter templates are bootstrapped with the Cloud Application Manager agent.
-* If your vCenter datacenter is behind a firewall, open the following ports to allow Cloud Application Manager users, the Cloud Application Manager agent, and instances to communicate with each other.
-	* Ports 443: Allows users behind a firewall to access Cloud Application Manager and allow the vCenter VMs to talk to Cloud Application Manager.
-	* Port 8085: Allows Cloud Application Manager to communicates over this port with vCenter, sync with vCenter configuration, and run instance operations on virtual machines.
-
-### Minimum User Permissions
-
-A vCenter user needs minimum rights to be able to authenticate, deploy and manage instances through Cloud Application Manager. Although these are for vCenter 5.5, similar permissions apply for earlier versions.
+A vCenter user needs at least the following permissions be able to authenticate, deploy and manage instances through Cloud Application Manager. Although this list was compiled for vCenter 5.5, similar permissions apply for later versions.
 
 | Assign access for | With privileges |
 |-------------------|-----------------|
@@ -66,14 +53,15 @@ A vCenter user needs minimum rights to be able to authenticate, deploy and manag
 | Virtual machine (Inventory) | <li>Create from existing</li><li>Create new</li><li>Remove</li> |
 | Virtual machine (Provisioning) | <li>Customize</li><li>Deploy template</li><li>Modify customization specification</li><li>Read customization specifications</li> |
 
-### Bootstrapping VM Templates with the Cloud Application Manager Agent
+### Bootstrapping virtual machine templates with the Cloud Application Manager Agent
 
 vCenter templates need elasticbox-init to allow the Cloud Application Manager agent to execute box scripts at deploy time.
 
 **Linux**
+
 Follow these steps to install elasticbox-init on a Linux template.
 
-**Steps**
+
 1. Log in to the vSphere client and open the Linux virtual machine.
 
 2. SSH into the virtual machine.
@@ -92,7 +80,6 @@ Follow these steps to install elasticbox-init on a Linux template.
 
 Follow these steps to run a script that creates a scheduled task on a Windows Server 2012 template. When you deploy, Cloud Application Manager clones this template and installs the agent using the scheduled task.
 
-**Steps**
 1. Log in to the Windows Server 2012 virtual machine template using remote desktop protocol (RDP).
 
 2. [Install the VMware tools](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1018377).
@@ -103,11 +90,12 @@ Follow these steps to run a script that creates a scheduled task on a Windows Se
 
 4. Right-click the script and click **Run PowerShell**.
 
-### Registering Your vCenter in Cloud Application Manager
+### Registering a vCenter provider in Cloud Application Manager
 
 In order to deploy to a vCenter private datacenter, you must first provide information to connect. Currently, Cloud Application Manager only supports the vCenter API for vSphere.
 
 **Steps**
+
 1. In Cloud Application Manager, click **Providers** > **New Provider**.
 
 2. Select **VMware vSphere**.
