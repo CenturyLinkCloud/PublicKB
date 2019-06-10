@@ -16,7 +16,7 @@
 * [Chat Support](#chat-support)
 * [Chat System Requirements](#chat-system-requirements)
 * [Phone Support](#phone-support)
-* [Latin America] (#latin-america)
+* [Latin America](#latin-america)
 * [FAQ](#faq)
 
 ### Overview
