@@ -44,7 +44,7 @@ Enter the desired value for this new key and select the check mark to the right 
 
 ![update-value-of-var.PNG](../../images/cloud-application-manager/update-value-of-var.pnPNGg)
 
-The new Var (name : value pair) will be updated with the input vale and visible within the vars structure.
+The new Var (name : value pair) will be updated with the input value and visible within the vars structure.
 
 ![new-var-value-configured.PNG](../../images/cloud-application-manager/new-var-value-configured.PNG)
 
