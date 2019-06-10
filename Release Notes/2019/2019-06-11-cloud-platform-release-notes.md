@@ -7,7 +7,7 @@
 "contentIsHTML": false
 }}}
 
-### Announcements (6)
+### Announcements (7)
 
 #### [CenturyLink Private Cloud on VMware Cloud Foundation](https://www.ctl.io/centurylink-private-cloud-on-vmware-cloud-foundation/)
 
@@ -24,6 +24,12 @@ On May 14, 2019, Microsoft announced CVE-2019-0708, a critical flaw in Remote De
 If you have Remote Desktop Services enabled and a public IP, you are at a high risk of being compromised and need to update all machines running Windows 2008 or older ASAP. At the very least, please disable Remote Desktop Services if you can until the updates are performed.  
 
 In all cases, CenturyLink recommends that you to install the updates for this vulnerability as soon as possible.  Where able, migrate applications to a newer version of Windows as Windows 2008 is going end of support Jan 2020.  For responses to FAQs regarding Windows 2008 support please see [this Knowledge Base article](../../Support/windows-2008-end-of-vendor-support-faq.md).
+
+##### Important Notice Regarding End of Sale for CenturyLink Cloud Managed Backup
+
+Beginning June 25, CenturyLink Cloud Managed Backup will no longer be available for purchase. There is no action necessary for current CenturyLink Cloud Managed Backup customers. The features and functionality of the Cloud Managed Backup offer will not change.
+ 
+We appreciate you choosing CenturyLink as your Cloud Provider. At CenturyLink, it is our mission to offer products and services that help our customers navigate the digital transformation path; allowing them to focus on what is important &mdash; growing their business and taking care of their customers. 
 
 #### [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/)
 
