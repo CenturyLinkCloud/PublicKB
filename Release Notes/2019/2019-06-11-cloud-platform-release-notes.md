@@ -1,6 +1,6 @@
 {{{
 "title": "Cloud Platform - Release Notes: June 11, 2019",
-"date": "05-28-2019",
+"date": "06-11-2019",
 "author": "Marco Paolillo",
 "keywords":["centurylink", "cam", "ams", "msa", "analytics"],
 "attachments": [],
@@ -27,7 +27,7 @@ In all cases, CenturyLink recommends that you to install the updates for this vu
 
 ##### Important Notice Regarding End of Sale for CenturyLink Cloud Managed Backup
 
-Beginning June 25, CenturyLink Cloud Managed Backup will no longer be available for purchase. There is no action necessary for current CenturyLink Cloud Managed Backup customers. The features and functionality of the Cloud Managed Backup offer will not change.
+Beginning June 25, [CenturyLink Cloud Managed Backup](https://www.ctl.io/managed-services/backup/) will no longer be available for purchase. There is no action necessary for current CenturyLink Cloud Managed Backup customers. The features and functionality of the Cloud Managed Backup offer will not change.
  
 We appreciate you choosing CenturyLink as your Cloud Provider. At CenturyLink, it is our mission to offer products and services that help our customers navigate the digital transformation path; allowing them to focus on what is important &mdash; growing their business and taking care of their customers. 
 
