@@ -1,6 +1,6 @@
 {{{ "title": "Using the VMware vCenter Private Datacenter",
 "date": "05-06-2019",
-"author": "CenturyLink",
+"author": "Dénes Pál",
 "keywords": ["cam", "cloud application manager", "vmware", "vsphere", "vcenter"],
 "attachments": [],
 "contentIsHTML": false
@@ -15,8 +15,6 @@
 - [Registering a vCenter provider in Cloud Application Manager](#registering-a-vcenter-provider-in-cloud-application-manager)
 - [Deploying in Your vCenter](#deploying-in-your-vcenter)
 - [Getting General Support](#getting-general-support)
-  - [Contact:](#contact)
-  - [Instructions:](#instructions)
 
 ### Overview
 
@@ -29,7 +27,7 @@ All users of Cloud Application Manager using VMware vCenter providers.
 ### Prerequisites
 
 * An active *Cloud Application Manager* account
-* Access and credentials to a VMware vCenter 5.5 or later.
+* Access and credentials to a **VMware vCenter version 5.5 or later**.
 * A virtual machine template (Linux or Windows) on the vCenter server. Virtual machine templates has to be bootstrapped with the Cloud Application Manager Agent.
 * If the vCenter is behind a firewall, has to be open on the firewall:
 	* 443/TCP incoming to vCenter server: for Cloud Application Manager to make API calls on vCenter.
