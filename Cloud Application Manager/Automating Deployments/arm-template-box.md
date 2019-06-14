@@ -26,11 +26,11 @@ All users of Cloud Application Manager who wants to define and use ARM Template 
 ### Prerequisites
 
 * An active *Cloud Application Manager* account
-* An existing *Azure* subscription configured in a [Microsoft Azure](../Deploying Anywhere/using-microsoft-azure.md) provider.
+* An existing *Microsoft Azure* subscription configured in a [Microsoft Azure](../Deploying Anywhere/using-microsoft-azure.md) provider.
 
 ### Create an Azure Resource Manager Template and Launch a Stack
 
-The Azure Resource Manager Template box consists mainly of a template where you describe all the AWS resources you need to run your application. Cloud Application Manager parses the template and automatically shows input parameters under a section called Variables. This enables you to customize a template easily.
+The Azure Resource Manager Template box consists mainly of a template where you describe all the Azure resources you need to run your application. Cloud Application Manager parses the template and automatically shows input parameters under a section called Variables. This enables you to customize a template easily.
 
 We use a sample Wordpress template to show how to create and launch a Azure Resource Manager template in Cloud Application Manager.
 
@@ -107,7 +107,7 @@ Please, check with Azure documentation to know which live updates are allowed an
 
 ### Connect to Other Azure Resource Manager Boxes over Bindings
 
-Large Azure Resource Manager deployments are challenging to manage in a single template. To simplify, break the template into smaller, manageable ARM boxes and connect them with [bindings](managing-multi-tier-applications.md). Then use [text expressions](parameterizing-boxes-with-variables.md) to call the bindings. When you do, they’re added to the parameter section of the template. At deploy time, the Azure Resource Manager service calls the binding to connect and pass values between boxes.
+Large Azure Resource Manager deployments are challenging to manage in a single template. To simplify, break the template into smaller, manageable ARM boxes and connect them with [bindings](managing-multi-tier-applications-with-bindings.md). Then use [text expressions](parameterizing-boxes-with-variables.md) to call the bindings. When you do, they’re added to the parameter section of the template. At deploy time, the Azure Resource Manager service calls the binding to connect and pass values between boxes.
 
 To illustrate, we create a second Azure Resource Manager box to scale the WordPress blog instance automatically when past its load limit. In the following steps, we add a binding and call it to connect the WordPress box to the autoscaling box.
 
@@ -119,22 +119,22 @@ To illustrate, we create a second Azure Resource Manager box to scale the WordPr
 
      ![New variable](../../images/cloud-application-manager/template-box/armboxes22.png)
 
-     ### Getting General Support
+### Getting General Support
 
-     Customers can contact the CenturyLink Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
+Customers can contact the CenturyLink Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
 
-     #### Contact:
+#### Contact:
 
-     1. **Phone:** 888-638-6771
+1. **Phone:** 888-638-6771
 
-     2. **Email:** incident@centurylink.com
+2. **Email:** incident@centurylink.com
 
-     3. **Create Ticket in Cloud Application Manager:** Directly within the platform, users can “Create Ticket” by clicking on the “?” symbol in upper right corner near the users log-in profile icon.  This takes users directly to the Managed Servicers Portal where they can open, track and review status of issues that have been raised with the support desk.  Additionally, this is how a TAM can be engaged as well.
+3. **Create Ticket in Cloud Application Manager:** Directly within the platform, users can “Create Ticket” by clicking on the “?” symbol in upper right corner near the users log-in profile icon.  This takes users directly to the Managed Servicers Portal where they can open, track and review status of issues that have been raised with the support desk.  Additionally, this is how a TAM can be engaged as well.
 
-     #### Instructions:
+#### Instructions:
 
-     1. Provide your name
-     2. Cloud Application Manager account name
-     3. A brief description of your request or issue for case recording purposes
+1. Provide your name
+2. Cloud Application Manager account name
+3. A brief description of your request or issue for case recording purposes
 
-     The support desk will escalate the information to the Primary TAM and transfer the call if desired.
+The support desk will escalate the information to the Primary TAM and transfer the call if desired.

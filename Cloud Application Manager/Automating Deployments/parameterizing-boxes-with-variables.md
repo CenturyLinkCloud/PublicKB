@@ -110,7 +110,7 @@ To define a binding, add a variable of type Binding. Then set its criteria in on
 
 ##### Connect instances at deploy time using bindings
 
-To connect instances at deploy time using bindings, see [binding](managing-multi-tier-applications.md) document.
+To connect instances at deploy time using bindings, see [binding](managing-multi-tier-applications-with-bindings.md) document.
 
 ##### Getting Binding Connection Data
 

@@ -43,6 +43,10 @@ It is recommended to create a separate *service account* for Cloud Application M
 
 There is an [excellent guide](https://kubernetes.io/docs/tasks/tools/install-kubectl/) on how to **install kubectl**.
 
+#### Minimum cluster size on Google GKS
+
+It is recommended to use at lease two `n1-standard-1` (1 vCPU, 3.75 GB memory) nodes for a GKS cluster. Giving too little compute resources would lead to the GKS engine failing to schedule vital Kubernetes components. Cloud Application Manager is only able to synchronize with a healthy Kubernetes cluster.
+
 ### Configuring kubectl
 
 #### Configuring kubectl for Amazon EKS
