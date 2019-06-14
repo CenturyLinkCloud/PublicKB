@@ -8,7 +8,9 @@
 
   "attachments": [],
 
-  "contentIsHTML": false
+  "contentIsHTML": false,
+
+  "sticky": true
 
 }}}
 
