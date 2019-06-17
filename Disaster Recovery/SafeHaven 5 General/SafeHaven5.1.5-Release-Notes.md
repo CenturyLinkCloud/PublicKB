@@ -4,7 +4,7 @@
   "author": "Shi Jin",
   "attachments": [],
   "contentIsHTML": false,
-  "sticky": true
+  "sticky": false
 }}}
 
 ### Release Notes
