@@ -31,25 +31,6 @@
 * __AppFog Limited Beta.__ Beta access for AppFog continues to be available. Based on Cloud Foundry v2, this new platform for applications makes it easier for developers to build and scale cloud-native applications. To sign-up, visit [the AppFog product page](//www.ctl.io/appfog/).
 
 
-### Ecosystem: New Blueprints (4)
-
-* [__SoftNAS.__](../../Ecosystem Partners/Marketplace Guides/getting-started-with-softnas-cloud-file-gateway-appliance.md)
-SoftNAS is one of the most popular storage technologies in the cloud.  This Partner Template, available via Service Task, provides CenturyLink customers with an enterprise-grade, software-defined, NAS storage gateway to safely and reliably operate their business-critical IT systems and storage folders inside CenturyLink Cloud.
-
-* [__Mojang Minecraft PE.__](../../Ecosystem Partners/Marketplace Guides/getting-started-with-minecraft-pe-server-blueprint.md)
-Even though our global cloud platform is able to scale to various enterprise workloads, it doesn’t mean we can’t use it to have a little bit of fun.  This blueprint rolls out a Mojang Minecraft Pocket Edition (PE) server that supports iOS and Android gameplay on various personal computing devices.  This solution is a great way to build a safe, customized gaming environment for the family while teaching young engineers how the cloud actually works.
-
-
-### Open Source Contributions (2)
-
-* [__Lorry.io.__](https://lorry.io/) Lorry.io is a CenturyLink Labs open-source project for creating, validating and sharing Docker Compose YAML files. Docker-compose.yml files are used to define and run complex applications with Docker and Docker Compose. Lorry.io can also import Panamax templates and convert them into docker-compose.yml files. For more information, [read this blog post](//www.ctl.io/developers/blog/post/lorry-io-pathway-to-docker-composable-apps) and [browse the wiki here](//github.com/CenturyLinkLabs/lorry).
-
-* **Updates:**
-
-  * [ImageLayers.io](//www.imagelayers.io/) v1.0.2: Support for Mobile views, social sharing buttons and ability to select specific tag for badging images. Learn more on the [ImageLayers wiki](//github.com/CenturyLinkLabs/imagelayers-graph).
-  * [Panamax](//www.panamax.io/) (v0.6.3) now supports cAdvisor 0.13.0 and CoreOS 647.2.0.
-
-
 ### Bug Fixes (4)
 
 * __Roles: Server Scheduler.__ A user with this role can schedule a power op, but they cannot perform a power op from server details. Now, when a user confirms the action, the user is redirected to the queue request and the request is processed.
