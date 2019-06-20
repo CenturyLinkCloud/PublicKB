@@ -25,9 +25,9 @@ Updating Base on all SRNs...
 CMS IP is  54.218.253.206
 ...
 ```
-This script will update the base os package on each SRN sequentially. It takes a couple of minutes to upgrade on SRN. If there are many SRNs, this process may take some time. Please be patient. You can also ignore the outputs.
+This script will update the base os package on each SRN sequentially. It takes a couple of minutes to upgrade one SRN. If there are many SRNs, this process may take some time. Please be patient. You can also ignore the outputs.
 
-Note that we have to re-login to GUI after this.
+Note that we have to re-login to the cluster using the GUI after this.
 
 In order to confirm the change, ssh into the SRN as root and run `dpkg -l |grep safehaven` and you should see something like
 ```
