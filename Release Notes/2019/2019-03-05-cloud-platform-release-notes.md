@@ -1,24 +1,18 @@
 {{{
-"title": "Cloud Platform - Release Notes: February 19, 2019",
+"title": "Cloud Platform - Release Notes: March 5, 2019",
 "date": "03-05-2019",
 "author": "John Gerger",
 "attachments": [],
 "contentIsHTML": false
 }}}
 
-### Enhancements (6)
-
-#### [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/)
-
-**Track logins via google analytics**
-
-[Cloud Application Manager](https://www.ctl.io/cloud-application-manager/) has added a Google Analytics tag to track logins into the system. This new tracking method enhances the analytics data we use to have better insights on how Cloud Application Manager is being used by our customers and our support staff
+### Enhancements (5)
 
 #### [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/)
 
 **Exclude Lifecycle Management option on Deployment Policy Boxes**
 
-[Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) now supports a new Exclude Lifecycle Management toggle in Virtual Machine type Deployment Policy Boxes for all major cloud providers. When the user enable this toggle, the Cloud Application Manager agent will not be installed into the deployed machine, so the instance will be free of any foreign code. The user will be only able to stop/start or terminate these instances, but will also have the option to later enable lifecycle management on this type of instances that will install the agent and allow full management features.
+[Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) now supports a new Exclude Lifecycle Management toggle in Virtual Machine type Deployment Policy Boxes for all major cloud providers. When the user enables this toggle, the Cloud Application Manager agent will not be installed into the deployed machine, so the instance will be free of any foreign code. The user will be only able to stop/start or terminate these instances, but will also have the option to later enable lifecycle management on this type of instances that will install the agent and allow full management features.
 
 **Display box version in activity log**
 
@@ -26,7 +20,7 @@
 
 **Auto-register ARM VM resources in managed providers**
 
-[Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) now includes the feature to auto-register VM instances that were deployed as part of a Azure ARM template deployment. The compute instances and ScalingSets included into the template box will be automatically registered in Cloud Application Manager and the make managed process will be executed on them.
+[Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) now includes the feature to auto-register VM instances that were deployed as part of an Azure ARM template deployment. The compute instances and ScalingSets included into the template box will be automatically registered in Cloud Application Manager and the make managed process will be executed on them.
 
 **New Cloud Formation types supported**
 

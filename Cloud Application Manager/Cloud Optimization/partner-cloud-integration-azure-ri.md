@@ -8,12 +8,12 @@
 
 ### Overview
 
-CenturyLink [Cloud Application Manager's](https://www.ctl.io/cloud-application-manager/) Cloud Optimization offers [consolidated billing](partner-cloud-integration-consolidated-billing.md)to make payments easy. Part of consolidated billing and Partner Requirements require Azure Virtual Machine [Reserved Instances](https://docs.microsoft.com/en-us/partner-center/develop/purchase-azure-reservations).
+CenturyLink [Cloud Application Manager's](https://www.ctl.io/cloud-application-manager/) Cloud Integration offers [consolidated billing](partner-cloud-integration-consolidated-billing.md)to make payments easy. Part of consolidated billing and Partner Requirements require Azure Virtual Machine [Reserved Instances](https://docs.microsoft.com/en-us/partner-center/develop/purchase-azure-reservations).
 
 
 ### Audience
 
-Users of accounts that already have or are considering CenturyLink Optimization of Azure. This is for all new standard Azure accounts created through Cloud Application Manager and any existing account moving into CenturyLink's care who have bought Azure Virtual Machine Reserved Instances.
+Users of accounts that already have or are considering Cloud Application Manager's Integration of Azure. This is for all new standard Azure accounts created through Cloud Application Manager and any existing account moving into CenturyLink's care who have bought Azure Virtual Machine Reserved Instances.
 
 
 ### Prerequisites

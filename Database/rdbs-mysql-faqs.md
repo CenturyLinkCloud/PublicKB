@@ -68,5 +68,9 @@ A: For disaster recovery purposes, backups are held offsite at least 350 miles a
 
 A: Yes. Your database instance is on a dedicated VM and there are no restrictions for any management utilities. In fact, we expect that much of the database management will be accomplished using MySQL Command Line Interface or a MySQL client of your choice.
 
+**Q: Can I use MyISAM?**
+
+A: Because MyISAM locks tables, it is not reccomended. InnoDB is the default and should be used when possible in order to avoid issues with tables being locked.
+
 ### Feedback
 If you have questions or feedback, please submit them to our team by emailing <a href="mailto:rdbs-help@ctl.io">rdbs-help@ctl.io</a>.

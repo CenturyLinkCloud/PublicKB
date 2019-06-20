@@ -16,6 +16,7 @@
 * [Chat Support](#chat-support)
 * [Chat System Requirements](#chat-system-requirements)
 * [Phone Support](#phone-support)
+* [Latin America](#latin-america)
 * [FAQ](#faq)
 
 ### Overview
@@ -96,6 +97,44 @@ Hong Kong|+852 58032338
 Australia|+61 7 4410 3380
 Singapore|+65 3158 9575
 Japan|+81-3-4540-3776
+
+### Latin America
+Customers in these countries in Latin America can contact support via email or phone:
+
+  **Argentina:** <docbaires@centurylink.com>
+  Local toll free: 0800 800 5383
+  +54 11 5170 5383
+  After language selection press 3
+  
+  **Brasil:** <operacao@centurylink.com>
+  Local toll free: 0800 887 3333
+  +55 11 3957 2288
+  After language selection press 3
+  
+  **Chile:** <docsantiago@centurylink.com>
+  Local toll free: 800 360 303
+  +56 2 2422 5856
+  After language selection press 3
+  
+  **Colombia:** <datacentercolombia@centurylink.com>
+  Local toll free: 01800 011 7997
+  +57 1 611 9013
+  After language selection press 3
+  
+  **Ecuador:** <docquito@centurylink.com>
+  Local toll free: 1800 400 408
+  +59 3 2400 5080
+  After language selection press 3
+  
+  **Perú:** <doclima@centurylink.com>
+  Local toll free: 0800 7 0662
+  +51 1 705 5777
+  After language selection press 3
+  
+  **Venezuela:** <operadoresdc@centurylink.com>
+  Local toll free: 0800 285 8300
+  +58 212 204 9301
+  After language selection press 3
 
 ### FAQ
 

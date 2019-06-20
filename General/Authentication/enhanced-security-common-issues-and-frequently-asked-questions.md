@@ -8,7 +8,7 @@
 
 ### Description
 
-As part of our efforts to increase the security of your accounts using the SavvisStation Portal and Private Cloud (DCC), you will need to go through a one-time setup to create a new Master Account. Once setup is complete, for your security, you will receive a one-time prompt to provide credentials for your services to link them to your Master Account; as a result, you will be able to navigate between them without re-authenticating going forward. Other security improvements include optional multi-factor authentication through your smart phone (soft token) and the ability to set up multiple security questions for account validation and retrieval purposes.
+As part of our efforts to increase the security of your accounts using the SavvisStation Portal and Private Cloud (DCC), you will need to go through a one-time setup to create a new Master Account.  You may also choose to use a Master Account to log into Cloud Application Manager. Once setup is complete, for your security, you will receive a one-time prompt to provide credentials for your services to link them to your Master Account; as a result, you will be able to navigate between them without re-authenticating going forward. Other security improvements include optional multi-factor authentication through your smart phone (soft token) and the ability to set up multiple security questions for account validation and retrieval purposes.
 
 This article will walk you through some of the common issues, and what steps you can take to resolve them. It will also discuss how to ensure you are engaging the correct support team depending on your issue. Lastly, we will answer some of the frequently asked questions.
 
@@ -44,8 +44,9 @@ If the above issues did not help you, you can reach out to our support teams, de
 
 ### Contacting the Client Response Center  
 The Client Response Center can assist you with issues regarding the following applications:
-* SavvisStation Portal
+* SavvisStation Portal (Managed Hosting)
 * Private Cloud (Dedicated Cloud Compute)
+* Cloud Application Manager
 * Support (managedsupport.ctl.io)
 
 _Note: If you are unable to reach any of the above applications due to issues with your Master Account or multi-factor authentication, [contact the customer care team.](#contacting-the-customer-care-team)_
@@ -66,7 +67,7 @@ The new support solution is offering a faster and more consistent experience, in
 
 **Q: What services does Enhanced Security currently work with?**
 
-A: Currently Enhanced Security works with our Managed Hosting and Private Cloud services. This list will be expanded in the future.
+A: Currently Enhanced Security works with our SavvisStation (Managed Hosting), Private Cloud (Dedicated Cloud Compute), and Cloud Application Manager services. This list will be expanded in the future.
 
 **Q: How do I create my Enhanced Security Master Account?**
 
@@ -98,7 +99,7 @@ Safari|Latest Version
 Microsoft Edge|Latest Version
 Internet Explorer|11
 
-**Q: Can I link multiple SavvisStation or Private Cloud accounts to one Master Account?**
+**Q: Can I link multiple SavvisStation, Private Cloud or Cloud Application Manager accounts to one Master Account?**
 
 A: At this time, you can only link one of each type of account to a Master Account. If you have multiple accounts you wish to use, simply skip checking the "Link this account" check box when logging into the service. You will always need to use your Master Account credentials and ALSO enter your SavvisStation/Private Cloud credentials each time you want to log into the service under this method.
 

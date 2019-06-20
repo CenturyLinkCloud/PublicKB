@@ -1,7 +1,7 @@
 {{{
   "title": "Partner Cloud: Getting Started With A New AWS Customer Account",
   "date": "07-20-18",
-  "author": "Kevin Quaintance",
+  "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
 }}}

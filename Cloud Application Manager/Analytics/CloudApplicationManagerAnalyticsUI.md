@@ -21,14 +21,14 @@ One of the following use cases must have occurred successfully:
 
 ![Analytics Toggle in Provider](../../images/cloud-application-manager/CAM_COA_Analytics_Provider_Toggle.png)
 
-Switching the flag to ON at the time you start the provider means CenturyLink will read your Provider's charges in our calculation of Platform Advisory Support. A CAM administrator will have access to pricing details in that Management Site of CAM.  It will give you access to:
+Switching the flag to ON after you start the provider means CenturyLink will read your Provider's charges in our calculation of Platform Advisory Support. A CAM administrator will have access to pricing details in that Management Site of CAM.  It will give you access to:
 
 * All the reporting described in this document
 * An assigned TAM that will cover your Provider environment in addition to the CAM tools and features like Application Lifecycle Management and Analytics.
 
-Switching the flag to OFF at the time you start the provider means Platform Advisory Support only covers your ALM instance fees.
+Leaving the flag OFF at the time you start the provider means Platform Advisory Support only covers your ALM instance fees.
 
-You may switch a provider from OFF to ON after it is created, but to switch from ON to OFF please submit a support ticket.
+To switch from ON to OFF please submit a support ticket.
 
 ### The Analytics Site
 
