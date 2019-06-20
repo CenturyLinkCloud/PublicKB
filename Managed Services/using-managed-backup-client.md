@@ -6,6 +6,10 @@
   "contentIsHTML": true
 }}}
 
+**Managed Backup went End of Sale 6/25/19, all existing subscriptions will still continue to function**
+
+**You will not be able to add Managed Backup to new servers, but it can be removed from existing servers**
+
 <h2>Overview</h2>
 <p>While Control Portal allows for turning Managed Backup on and off for a given server, getting details about the status of recent backups or changing the target of the backups using an exclusions list are not yet supported through this interface. This functionality is provided, however, by the Netbackup Client installed on the server itself. After gaining access to the server remotely through either RDP on Windows or SSH on Linux, you can use the following instructions to review status or set paths for exclusion. For help using the Netbackup Client for exclusions or viewing status, you may also contact the CenturyLink Client Service Center at 1-888-638-6771.</p>
 <h2>Using Netbackup Client</h2>
