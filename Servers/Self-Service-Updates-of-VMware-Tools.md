@@ -25,30 +25,8 @@ If you would like to update the version of VMware Tools on your servers, this is
 * Customers are advised to [Create a snapshot](creating-and-managing-server-snapshots.md) if possible prior to any changes.
 * Customers should plan a maintenance window for their systems to perform a reboot post update.
 
-### Detailed Steps for Windows Servers using Automation
 
-1. Validate automation can be leveraged for your Windows Operating system. The list of supported operating systems are:
-
-    * Windows Server 2012 Datacenter Edition
-    * Windows Server 2012 R2 Datacenter Edition
-    * Windows Server 2016 Datacenter Edition
-
-    Customers who consume an unsupported operating system should use the manual update method shown later in this article.
-
-2. Within the [Control Portal](https://control.ctl.io/) navigate to **Orchestration > Runner** in the menu.
-
-    ![Runner menu in portal](../images/Self-Service-Updates-of-VMware-Tools-01.png)
-
-3. Select the **Update VMware Tools on Windows** Runner job by using the **Search** function or browsing the directory of public jobs.
-
-    ![vmware tools runner job](../images/Self-Service-Updates-of-VMware-Tools-02.png)
-
-
-4. Review the **Update VMware Tools on Windows** runner job supported operating systems and step-by-step instructions carefully.
-
-5. Select **Run** and populate the Runner job with the location, servers and other choices in the job. Optionally, use the scheduler to set the update to occur as a specific date/time.
-
-### Detailed Steps for Windows Servers using manual methodology
+### Detailed Steps for Windows Servers
 To update VMware Tools for Windows, you can download them from VMware's website and run the .exe installer. You can run the installer interactively or silently. It is recommended that you reboot after installation.
 
 1. [Download the latest version from VMware's website](https://packages.vmware.com/tools/releases/latest/windows/x64/index.html)
