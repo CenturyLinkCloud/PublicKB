@@ -39,7 +39,7 @@ Application Lifecycle Management now extends its Terraform template support to t
 
 Managed Services Anywhere now includes support for additional operating systems:  CentOS 6 & 7 and Ubuntu 14, 16 and 18.  Customers deploying these Operating Systems on MSA enabled providers, will now enjoy all the benefits of [Managed Services Anywhere](https://www.ctl.io/legal/cloud-application-manager/service-guide/) on those OSes.
 
-## Announcements (2)
+### Announcements (2)
 
 #### [Public Cloud IaaS](https://www.ctl.io/cloud-platform/)
 
@@ -49,7 +49,7 @@ This communication is an important announcement regarding the end of sale for Ce
 
 Effective today, 06/25/2019 CenturyLink Cloud Managed Backup is no longer available for purchase. There is no action necessary for current CenturyLink Cloud Managed Backup customers. The features and functionality of the Cloud Managed Backup offer will not change, and all existing subscriptions will still continue to function. You will not be able to add Managed Backup to new servers, but it can be removed from existing servers.
 
-##### Managed Backup
+##### Windows 2008 Vulnerability
 
 Microsoft announced CVE-2019-0708, a critical flaw in Remote Desktop Services that enables unauthenticated remote code execution in May.  As part our ongoing efforts to improve security and availability of all CenturyLink Cloud resources, we have patched Windows 2008 images so that all net new VM's will adhere to the latest updates.
 
