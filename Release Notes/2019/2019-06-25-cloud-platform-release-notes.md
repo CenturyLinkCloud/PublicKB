@@ -49,7 +49,7 @@ This communication is an important announcement regarding the end of sale for Ce
 
 Effective today, 06/25/2019 CenturyLink Cloud Managed Backup is no longer available for purchase. There is no action necessary for current CenturyLink Cloud Managed Backup customers. The features and functionality of the Cloud Managed Backup offer will not change, and all existing subscriptions will still continue to function. You will not be able to add Managed Backup to new servers, but it can be removed from existing servers.
 
-##### Managed Backup
+##### Windows 2008 Vulnerability
 
 Microsoft announced CVE-2019-0708, a critical flaw in Remote Desktop Services that enables unauthenticated remote code execution in May.  As part our ongoing efforts to improve security and availability of all CenturyLink Cloud resources, we have patched Windows 2008 images so that all net new VM's will adhere to the latest updates.
 
