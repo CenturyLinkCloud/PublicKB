@@ -39,7 +39,7 @@ Application Lifecycle Management now extends its Terraform template support to t
 
 Managed Services Anywhere now includes support for additional operating systems:  CentOS 6 & 7 and Ubuntu 14, 16 and 18.  Customers deploying these Operating Systems on MSA enabled providers, will now enjoy all the benefits of [Managed Services Anywhere](https://www.ctl.io/legal/cloud-application-manager/service-guide/) on those OSes.
 
-## Announcements (2)
+### Announcements (2)
 
 #### [Public Cloud IaaS](https://www.ctl.io/cloud-platform/)
 
