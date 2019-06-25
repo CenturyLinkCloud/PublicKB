@@ -7,14 +7,14 @@
 }}}
 **In this article:**
 
-* [Overview](#overview)
-* [Audience](#audience)
-* [Prerequisites](#prerequisites)
-* [Deploy Using CloudFormation Templates](#deploy-using-cloudformation-templates)
-* [Deploy Using Azure Resource Manager Templates](#deploy-using-azure-resource-manager-templates)
-* [Deploy Using Terraform Templates](#deploy-using-terraform-templates)
-* [Deploy Using Google Templates](#deploy-using-google-templates)
-* [Getting General Support](#getting-general-support)
+- [Overview](#overview)
+- [Audience](#audience)
+- [Prerequisites](#prerequisites)
+- [Deploy Using CloudFormation Templates](#deploy-using-cloudformation-templates)
+- [Deploy Using Azure Resource Manager Templates](#deploy-using-azure-resource-manager-templates)
+- [Deploy Using Terraform Templates](#deploy-using-terraform-templates)
+- [Deploy Using Google Templates](#deploy-using-google-templates)
+- [Getting General Support](#getting-general-support)
 
 ### Overview
 
@@ -59,13 +59,20 @@ For more information, go to [ARM templates](../Automating Deployments/arm-templa
 
 ### Deploy Using Terraform Templates
 
-The Cloud Application Manager Terraform Template box allows you to apply any Terraform configuration files on Amazon Web Services, Microsoft Azure, Google Cloud Platform and CenturyLink Cloud using Cloud Application Manager.
+A Terraform Template box allows you to apply a **Terraform version 0.11** configuration consisting of one or many files on the following Providers:
+-  Amazon Web Services
+-  CenturyLink Cloud
+-  CenturyLink Private Cloud on VMware Cloud Foundation
+-  Google Cloud Platform
+-  Microsoft Azure
+-  VMware vCenter/vSphere
+-  VMware vCloud Director
 
 This feature provides you with the ability to use the power of Cloud Application Manager (instance history, Lifecycle Editor, bindings, box versioning) combined with any service supported by Terraform.
 
-To learn more about:
+#### To learn more about Terraform
 
-In order to understand Terraform configurations see [here](https://www.terraform.io/docs/configuration/index.html).
+In order to understand Terraform's configurations language see [Terraform 0.11 documentation here](https://www.terraform.io/docs/configuration-0-11/index.html). Currently Cloud Application Manager can deploy **Terraform version 0.11** templates.
 
 For more information on how to use Terraform with Cloud Application Manager, go to [Terraform templates](../Automating Deployments/terraform-template-box.md).
 

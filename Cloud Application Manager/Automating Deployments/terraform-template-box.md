@@ -7,17 +7,17 @@
 }}}
 **In this article:**
 
-* [Overview](#overview)
-* [Audience](#audience)
-* [Prerequisites](#prerequisites)
-* [Create a Terraform Template and apply configuration](#create-a-terraform-template-and-apply-configuration)
-* [Update a Terraform configuration in Real-Time](#update-a-terraform-configuration-in-real-time)
-* [Connect to Other Cloud Application Manager Boxes over Bindings](#connect-to-other-cloud-application-manager-boxes-over-bindings)
-* [Getting General Support](#getting-general-support)
+- [Overview](#overview)
+- [Audience](#audience)
+- [Prerequisites](#prerequisites)
+- [Create a Terraform Template and apply configuration](#create-a-terraform-template-and-apply-configuration)
+- [Update a Terraform configuration in Real-Time](#update-a-terraform-configuration-in-real-time)
+- [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
+- [Getting General Support](#getting-general-support)
 
 ### Overview
 
-This article is meant to assist users of Cloud Application Manager willing to use Cloud Application Manager template boxes to create or edit Terraform templates.
+This article is meant to assist users of Cloud Application Manager willing to use Cloud Application Manager template boxes to create or edit **Terraform version 0.11** templates.
 
 ### Audience
 
@@ -26,13 +26,22 @@ All users of Cloud Application Manager who wants to define and use Terraform Tem
 ### Prerequisites
 
 * An active *Cloud Application Manager* account
-* Having configured a provider of type [*AWS*](../Deploying Anywhere/using-your-aws-account.md), [Microsoft Azure](../Deploying Anywhere/using-microsoft-azure.md), [Google](../Deploying Anywhere/using-google-cloud.md) or [CenturyLink Cloud](../Deploying Anywhere/using-centurylink-cloud.md)
+* Having configured a provider with type of either
+  * [AWS](../Deploying Anywhere/using-your-aws-account.md)
+  * [Microsoft Azure](../Deploying Anywhere/using-microsoft-azure.md)
+  * [Google Cloud](../Deploying Anywhere/using-google-cloud.md)
+  * [CenturyLink Cloud](../Deploying Anywhere/using-centurylink-cloud.md)
+  * [CenturyLink Private Cloud on VMware Cloud Foundation](../Deploying Anywhere/using-private-cloud-on-vmware-cloud-foundation.md)
+  * [VMware vCenter/vSphere](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md)
+  * [VMware vCloud Director](../Deploying Anywhere/orchestrating-vcloud-air-vcloud-director-deployments.md)
 
 ### Create a Terraform Template and apply configuration
 
 The Terraform Template box consists mainly on a list of template files where you describe all the cloud resources you need to run your application. Cloud Application Manager parses the templates and automatically shows input parameters under a section called Variables. This enables you to customize a template easily.
 
 We use a sample Basic Two-Tier Architecture in Google Cloud with Terraform templates to show how to create and launch a Terraform box template in Cloud Application Manager.
+
+Cloud Application Manager supports Terraform configuration **version 0.11**.
 
 **Step 1. Create the template**
 
@@ -90,12 +99,13 @@ We use a sample Basic Two-Tier Architecture in Google Cloud with Terraform templ
         * `ssh-keys = "root:${file("${var.public_key_file}")}"`
         * `source = "${var.install_script}"`
 
-    * Deployment policy info as variables. When a Terraform box is deployed on Google or Amazon provider, the location selected on the Policy box is available as Terraform variables to be used in templates:
+    * Deployment policy configuration as variables: When a Terraform box is deployed on Google or Amazon provider, the location selected on the Policy box is available as Terraform variables to be used in templates:
 
         * Variables available on Google: `${var.provider_google_region}` and `${var.provider_google_zone}`
         * Variables available on Amazon: `${var.provider_aws_region}`
 
-**Note:** As you’re authoring, it’s important to check that the template is valid. While Cloud Application Manager validates the correctness of format and the template syntax correctness, we can’t know whether resources specified are available in the provider used or whether property values of a resource are valid. For that level of checking, it’s best to test launch the Terraform box instance from Cloud Application Manager and refine the template in real-time.
+**Note:** As you’re authoring, it’s important to check that the template is valid. While Cloud Application Manager validates the correctness of format and the template syntax correctness, we can’t know whether resources specified are available in the provider used or whether property va
+lues of a resource are valid. For that level of checking, it’s best to test launch the Terraform box instance from Cloud Application Manager and refine the template in real-time.
 
 
 ### Update a Terraform configuration in Real-Time
