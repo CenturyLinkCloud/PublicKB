@@ -45,6 +45,11 @@ Please take a look at the link below to download the latest available release
 
 Please note that you can check the md5 checksum against the file named [MD5SUM-5.2.0.txt](https://download.safehaven.ctl.io/SH-5.2.0/MD5SUM-5.2.0.txt).
 
+### Hotfix-1
+
+A hotfix was released on June 25, 2019 for the SafeHaven cluster management software that addresses a harmless network reconnection bug that may in some cases make the protection groups show as inactive too often. The two download links are
+* [Debian Package for CMS/SRN](https://download.safehaven.ctl.io/SH-5.2.0/safehaven-5.2.0-hotfix1.deb): to be used in the cluster installer
+* [SafeHavenClient.5.2.0-hotfix1_win64.jar](https://download.safehaven.ctl.io/SH-5.2.0/SafeHavenClient.5.2.0-hotfix1_win64.jar): the Java application that requires an existing 64bit JRE-8 to run on a Windows OS
 
 ### Documentations
 [SafeHaven Inventory Sheet](https://download.safehaven.ctl.io/SH-5-Docs/SafeHaven-Inventory-Sheet-Azure.xlsm)
