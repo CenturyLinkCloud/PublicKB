@@ -105,7 +105,6 @@ Cloud Application Manager currently supports Terraform configuration **version 0
 
 **Note:** As you’re authoring, it’s important to check that the template is valid. While Cloud Application Manager validates the correctness of format and the template syntax correctness, we can’t know whether resources specified are available in the provider used or whether property values of a resource are valid. For that level of checking, it’s best to test launch the Terraform box instance from Cloud Application Manager and refine the template in real-time.
 
-
 ### Update a Terraform configuration in Real-Time
 
 Once live, you can continue to make changes to your Terraform configuration templates from the instance lifecycle editor and test in real-time. Follow these steps.
