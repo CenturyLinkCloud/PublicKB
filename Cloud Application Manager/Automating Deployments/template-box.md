@@ -1,5 +1,5 @@
 {{{ "title": "Template Boxes",
-"date": "12-21-2018",
+"date": "06-26-2019",
 "author": "Cristina Torres, Amalia Garcia de Mirasierra",
 "attachments": [],
 "contentIsHTML": false,

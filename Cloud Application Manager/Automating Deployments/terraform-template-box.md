@@ -1,5 +1,5 @@
 {{{ "title": "Terraform Template Boxes",
-"date": "12-21-2018",
+"date": "06-26-2019",
 "author": "Cristina Torres, Amalia Garcia de Mirasierra",
 "attachments": [],
 "contentIsHTML": false,
@@ -12,7 +12,6 @@
 * [Prerequisites](#Prerequisites)
 * [Create a Terraform Template and apply configuration](#Create-a-Terraform-Template-and-apply-configuration)
 * [Update a Terraform configuration in Real-Time](#Update-a-Terraform-configuration-in-Real-Time)
-* [Contacting Cloud Application Manager Support](#Contacting-Cloud-Application-Manager-Support)
 * [Getting General Support](#Getting-General-Support)
 
 ### Overview
@@ -122,17 +121,6 @@ Once live, you can continue to make changes to your Terraform configuration temp
 4. Update the template configuration files and apply configurations. You can change any section of the Terraform template files or rewrite it entirely. When ready to apply the configuration with Terraform, click **Reconfigure**.
 
 5. (Optional) Push updates back to the Terraform box. When you’re satisfied changing and testing the template files in the instance, you can push it back to the Terraform box as a version. To do this, click **New** under Versions tabs. This allows you or others in the future to choose a version that best suits your deployment.
-
-
-### Contacting Cloud Application Manager Support
-
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
-
-For issues related to API calls, send the request body along with details related to the issue.
-
-In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
-* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at \ProgramData\ElasticBox\Logs\elasticbox-agent.log
 
 ### Getting General Support
 
