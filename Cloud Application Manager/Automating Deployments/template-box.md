@@ -72,7 +72,7 @@ This feature provides you with the ability to use the power of Cloud Application
 
 #### To learn more about Terraform
 
-In order to understand Terraform's configurations language see [Terraform 0.11 documentation here](https://www.terraform.io/docs/configuration-0-11/index.html). Currently Cloud Application Manager can deploy **Terraform version 0.11** templates.
+In order to understand Terraform's configurations language see [Terraform 0.11 documentation here](https://www.terraform.io/docs/configuration-0-11/index.html). Currently, Cloud Application Manager supports the deployment of **Terraform version 0.11** templates.
 
 For more information on how to use Terraform with Cloud Application Manager, go to [Terraform templates](../Automating Deployments/terraform-template-box.md).
 
