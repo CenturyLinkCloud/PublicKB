@@ -41,7 +41,7 @@ The Terraform Template box consists mainly on a list of template files where you
 
 We use a sample Basic Two-Tier Architecture in Google Cloud with Terraform templates to show how to create and launch a Terraform box template in Cloud Application Manager.
 
-Cloud Application Manager supports Terraform configuration **version 0.11**.
+Cloud Application Manager currently supports Terraform configuration **version 0.11**.
 
 **Step 1. Create the template**
 
