@@ -7,13 +7,13 @@
 }}}
 **In this article:**
 
-- [Overview](#overview)
-- [Audience](#audience)
-- [Prerequisites](#prerequisites)
-- [Create a Terraform Template and apply configuration](#create-a-terraform-template-and-apply-configuration)
-- [Update a Terraform configuration in Real-Time](#update-a-terraform-configuration-in-real-time)
-- [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
-- [Getting General Support](#getting-general-support)
+* [Overview](#Overview)
+* [Audience](#Audience)
+* [Prerequisites](#Prerequisites)
+* [Create a Terraform Template and apply configuration](#Create-a-Terraform-Template-and-apply-configuration)
+* [Update a Terraform configuration in Real-Time](#Update-a-Terraform-configuration-in-Real-Time)
+* [Contacting Cloud Application Manager Support](#Contacting-Cloud-Application-Manager-Support)
+* [Getting General Support](#Getting-General-Support)
 
 ### Overview
 
@@ -27,13 +27,13 @@ All users of Cloud Application Manager who wants to define and use Terraform Tem
 
 * An active *Cloud Application Manager* account
 * Having configured a provider of either one of these types:
-  * [AWS](../Deploying Anywhere/using-your-aws-account.md)
-  * [Microsoft Azure](../Deploying Anywhere/using-microsoft-azure.md)
-  * [Google Cloud](../Deploying Anywhere/using-google-cloud.md)
-  * [CenturyLink Cloud](../Deploying Anywhere/using-centurylink-cloud.md)
-  * [CenturyLink Private Cloud on VMware Cloud Foundation](../Deploying Anywhere/using-private-cloud-on-vmware-cloud-foundation.md)
-  * [VMware vCenter/vSphere](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md)
-  * [VMware vCloud Director](../Deploying Anywhere/orchestrating-vcloud-air-vcloud-director-deployments.md)
+  - [AWS](../Deploying Anywhere/using-your-aws-account.md)
+  - [Microsoft Azure](../Deploying Anywhere/using-microsoft-azure.md)
+  - [Google Cloud](../Deploying Anywhere/using-google-cloud.md)
+  - [CenturyLink Cloud](../Deploying Anywhere/using-centurylink-cloud.md)
+  - [CenturyLink Private Cloud on VMware Cloud Foundation](../Deploying Anywhere/using-private-cloud-on-vmware-cloud-foundation.md)
+  - [VMware vCenter/vSphere](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md)
+  - [VMware vCloud Director](../Deploying Anywhere/orchestrating-vcloud-air-vcloud-director-deployments.md)
 
 ### Create a Terraform Template and apply configuration
 
@@ -104,8 +104,7 @@ Cloud Application Manager currently supports Terraform configuration **version 0
         * Variables available on Google: `${var.provider_google_region}` and `${var.provider_google_zone}`
         * Variables available on Amazon: `${var.provider_aws_region}`
 
-**Note:** As you’re authoring, it’s important to check that the template is valid. While Cloud Application Manager validates the correctness of format and the template syntax correctness, we can’t know whether resources specified are available in the provider used or whether property va
-lues of a resource are valid. For that level of checking, it’s best to test launch the Terraform box instance from Cloud Application Manager and refine the template in real-time.
+**Note:** As you’re authoring, it’s important to check that the template is valid. While Cloud Application Manager validates the correctness of format and the template syntax correctness, we can’t know whether resources specified are available in the provider used or whether property values of a resource are valid. For that level of checking, it’s best to test launch the Terraform box instance from Cloud Application Manager and refine the template in real-time.
 
 
 ### Update a Terraform configuration in Real-Time

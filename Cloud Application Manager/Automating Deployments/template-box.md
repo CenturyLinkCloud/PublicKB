@@ -7,14 +7,14 @@
 }}}
 **In this article:**
 
-- [Overview](#overview)
-- [Audience](#audience)
-- [Prerequisites](#prerequisites)
-- [Deploy Using CloudFormation Templates](#deploy-using-cloudformation-templates)
-- [Deploy Using Azure Resource Manager Templates](#deploy-using-azure-resource-manager-templates)
-- [Deploy Using Terraform Templates](#deploy-using-terraform-templates)
-- [Deploy Using Google Templates](#deploy-using-google-templates)
-- [Getting General Support](#getting-general-support)
+* [Overview](#Overview)
+* [Audience](#Audience)
+* [Prerequisites](#Prerequisites)
+* [Deploy Using CloudFormation Templates](#Deploy-Using-CloudFormation-Templates)
+* [Deploy Using Azure Resource Manager Templates](#Deploy-Using-Azure-Resource-Manager-Templates)
+* [Deploy Using Terraform Templates](#Deploy-Using-Terraform-Templates)
+* [Deploy Using Google Templates](#Deploy-Using-Google-Templates)
+* [Getting General Support](#Getting-General-Support)
 
 ### Overview
 
@@ -60,13 +60,13 @@ For more information, go to [ARM templates](../Automating Deployments/arm-templa
 ### Deploy Using Terraform Templates
 
 A Terraform Template box allows you to apply a **Terraform version 0.11** configuration consisting of one or many files on the following Providers:
--  Amazon Web Services
--  CenturyLink Cloud
--  CenturyLink Private Cloud on VMware Cloud Foundation
--  Google Cloud Platform
--  Microsoft Azure
--  VMware vCenter/vSphere
--  VMware vCloud Director
+*  Amazon Web Services
+*  CenturyLink Cloud
+*  CenturyLink Private Cloud on VMware Cloud Foundation
+*  Google Cloud Platform
+*  Microsoft Azure
+*  VMware vCenter/vSphere
+*  VMware vCloud Director
 
 This feature provides you with the ability to use the power of Cloud Application Manager (instance history, Lifecycle Editor, bindings, box versioning) combined with any service supported by Terraform.
 
