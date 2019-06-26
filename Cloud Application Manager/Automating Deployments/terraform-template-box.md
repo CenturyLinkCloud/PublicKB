@@ -26,7 +26,7 @@ All users of Cloud Application Manager who wants to define and use Terraform Tem
 ### Prerequisites
 
 * An active *Cloud Application Manager* account
-* Having configured a provider with type of either
+* Having configured a provider of either one of these types:
   * [AWS](../Deploying Anywhere/using-your-aws-account.md)
   * [Microsoft Azure](../Deploying Anywhere/using-microsoft-azure.md)
   * [Google Cloud](../Deploying Anywhere/using-google-cloud.md)
