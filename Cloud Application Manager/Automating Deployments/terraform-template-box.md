@@ -7,12 +7,12 @@
 }}}
 **In this article:**
 
-* [Overview](#Overview)
-* [Audience](#Audience)
-* [Prerequisites](#Prerequisites)
-* [Create a Terraform Template and apply configuration](#Create-a-Terraform-Template-and-apply-configuration)
-* [Update a Terraform configuration in Real-Time](#Update-a-Terraform-configuration-in-Real-Time)
-* [Getting General Support](#Getting-General-Support)
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Create a Terraform Template and apply configuration](#create-a-terraform-template-and-apply-configuration)
+* [Update a Terraform configuration in Real-Time](#update-a-terraform-configuration-in-real-time)
+* [Getting General Support](#getting-general-support)
 
 ### Overview
 

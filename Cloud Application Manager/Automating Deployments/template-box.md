@@ -7,14 +7,14 @@
 }}}
 **In this article:**
 
-* [Overview](#Overview)
-* [Audience](#Audience)
-* [Prerequisites](#Prerequisites)
-* [Deploy Using CloudFormation Templates](#Deploy-Using-CloudFormation-Templates)
-* [Deploy Using Azure Resource Manager Templates](#Deploy-Using-Azure-Resource-Manager-Templates)
-* [Deploy Using Terraform Templates](#Deploy-Using-Terraform-Templates)
-* [Deploy Using Google Templates](#Deploy-Using-Google-Templates)
-* [Getting General Support](#Getting-General-Support)
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Deploy Using CloudFormation Templates](#deploy-using-cloudformation-templates)
+* [Deploy Using Azure Resource Manager Templates](#deploy-using-azure-resource-manager-templates)
+* [Deploy Using Terraform Templates](#deploy-using-terraform-templates)
+* [Deploy Using Google Templates](#deploy-using-google-templates)
+* [Getting General Support](#getting-general-support)
 
 ### Overview
 
