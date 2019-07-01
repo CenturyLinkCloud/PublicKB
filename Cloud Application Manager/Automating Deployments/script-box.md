@@ -1,7 +1,7 @@
 {{{
 "title": "Script Boxes",
-"date": "12-28-2018",
-"author": "Julio Castanar",
+"date": "07-02-2019",
+"author": "Julio Castanar and Oscar Hafner",
 "keywords": ["cam","alm","boxes", "box", "script box", "child box", "overrriden variable"],
 "attachments": [],
 "contentIsHTML": false
@@ -13,6 +13,7 @@
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
 * [Creating Your First Script Box](#creating-your-first-script-box)
+* [Attach script-events to Script Box](#attach-script-events-to-script-box)
 * [Adding Child Script Boxes](#adding-child-script-boxes)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
@@ -43,6 +44,22 @@ When ready to test the configuration, click **Deploy**. Under the Deployment Box
 Can not find the one you need? Then click on **Create a new deployment policy box**.
 
 The easiest way to understand script boxes is to build one. Follow this tutorial to build a simple box that says [Hello World](../Getting Started/getting-started-with-hello-world.md).
+
+### Attach script-events to Script Box
+
+Script boxes allow you to include scripts attached to the different lifecycle events (install, configure, start, stop, dispose). These scripts can be edited using UI editor. You can use any scripting language you prefer, as long as it is supported by the underlying instance you deploy the box to.
+
+![Create script-event](../../images/cloud-application-manager/box-script/lifecycle-event1.png)
+
+![Script editor](../../images/cloud-application-manager/box-script/lifecycle-event2.png)
+
+you have finished editing and have saved your script, you can specify a custom timeout value in minutes for the script execution. Once you reach this value, it will trigger the abort action of the script execution. You can specify a timeout value for any script to add to the box.
+
+![Add custom timeout](../../images/cloud-application-manager/box-script/lifecycle-event-timeout1.png)
+
+Once defined, the timeout values will be propagated to all instances deployed through this box. Values in the instance can be later modified through the Lifecycle editor without affecting the box used to deploy it.
+
+![Script with custom timeout](../../images/cloud-application-manager/box-script/lifecycle-event-timeout2.png)
 
 ### Adding Child Script Boxes
 
