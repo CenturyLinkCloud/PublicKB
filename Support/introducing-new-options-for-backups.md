@@ -121,19 +121,5 @@ The answer varies depending on the workload and your requirements. Along those l
 * Other resources:
   * [Getting Started with CommVault Storage Blueprint](../Ecosystem Partners/Marketplace Guides/getting-started-with-commvault-storage-blueprint.md)
 
-
-#### Managed Backup
-* When to use it: File-based backup, using the Symantec NetBackup offering
-* Requirements: Virtual machines running in supported locations (UC1, VA1, IL1, GB3, SG1, CA3)
-* Cost: Tiered pricing
-* Availability: GA, in selected sites
-* Deployment Time: Self-service, if you have a Master Service Agreement in place with CenturyLink. Refer to [the FAQs to learn more](../Managed Services/managed-backup-frequently-asked-questions.md).
-* Support Model: Supported by CenturyLink (since the product is integrated into the Control Portal)
-* To Get Started: Contact Vision Solutions directly via email at [CenturyLinkInfo@visionsolutions.com](mailto:CenturyLinkInfo@visionsolutions.com); evaluation licenses are available.
-* Other resources:
-  * [Managed Backup - Product Page](https://www.ctl.io/managed-services/backup/)
-  * [Enabling & Disabling Managed Backup](../Managed Services/enabling-and-disabling-managed-backup.md)
-  * [Managed Backup FAQs](../Managed Services/managed-backup-frequently-asked-questions.md)
-
 ### Summary
 This information should give you a good starting point to investigate specialized solutions that can meet your business requirements. If there’s more details or information you would require, please let us know via [help@ctl.io](mailto:help@ctl.io).

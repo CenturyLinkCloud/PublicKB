@@ -49,25 +49,6 @@ From there, Simple Backup Service does the rest for you—data is automatically 
 * Keep backups efficient, by specifying only the file paths you need. Only files in those paths will be backed up. Configure folders to exclude as well.
 * Supports both virtual machines and Bare Metal cloud servers on the CenturyLink Platform.
 
-### [Managed Backup](//www.ctl.io/managed-services/backup/)
-For workloads requiring advanced backup capabilities, CenturyLink offers Managed Backup services featuring Symantec NetBackup. Quickly provision servers with advanced backup features with a single click. The service includes: file and folder level backups and restores, encryption at rest, 2-week retention periods and replication to a secondary site.
-
-Managed Backup is a superior alternative to many do-it-yourself options. Why? No significant work is required by users, no wasted spend on infrastructure, and no need to write any code or connect to APIs. In addition, there are no setup fees and no bandwidth charges for the service.
-
-**Managed Backup Highlights**
-* Self-Service: Upon creation of a server, or even after a server has already been provisioned, managed backup services can be turned on and off. The backup service runs automatically from there.
-* Restore: Restores can be performed at the file and folder level. And data can be restored from any daily backup performed in the current 14 day window.
-* Encryption: Data is encrypted at rest on backup infrastructure using the Blowfish algorithm.
-* NetBackup Agent Access: Manage the details of your backups from the NetBackup agent, with restores available upon request.
-* Digital Offsite Vaulting (“DOV”): Data is backed up at a secondary facility, offering geographic diversity for enterprise systems. Using DOV, data is transferred and retained at a CenturyLink data center different than where the data backup originated (this is done via a secure, private CenturyLink network connection). Customer data is retained on disk for two weeks, with other options available upon request.
-* Supported Operating Systems:
-  * Managed Microsoft Windows Server 2008 R2
-  * Managed Microsoft Windows Server 2012 R2
-  * Managed Microsoft Windows Server 2016
-  * Managed Red Hat Enterprise Linux 5
-  * Managed Red Hat Enterprise Linux 6
-  * Managed Red Hat Enterprise Linux 7
-* [Available Locations](../General/CenturyLinkCloud/centuryLink-cloud-feature-availability-matrix.md)
 
 ### [Marketplace Provider Program Partners](//www.ctl.io/marketplace/program)
 The CenturyLink Marketplace Provider Program is designed to provide additional value within CenturyLink’s enterprise cloud computing platform through partnerships with innovative cloud technology and service providers. By integrating their technology into CenturyLink Cloud, our technology partners can take advantage of a differentiated, digital route-to-market: presented as part of a enterprise-grade automation platform which powers one of the largest pools of IT infrastructure in the world.

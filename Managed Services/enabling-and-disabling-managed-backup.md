@@ -6,6 +6,10 @@
   "contentIsHTML": false
 }}}
 
+**Managed Backup went End of Sale 6/25/19, all existing subscriptions will still continue to function**
+
+**You will not be able to add Managed Backup to new servers, but it can be removed from existing servers**
+
 ### Description
 The Managed Backup service can be configured on new or existing managed servers. For more information on what Managed Backup provides, review the [Managed Backup FAQ](../Managed Services/managed-backup-frequently-asked-questions.md). The steps below walk through how to configure Managed Backup in both scenarios.
 
