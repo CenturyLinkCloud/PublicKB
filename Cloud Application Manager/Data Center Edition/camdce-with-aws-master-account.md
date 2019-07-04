@@ -24,7 +24,7 @@
 ### Overview
 
 
-This article shows how to leverage a Master Account as the only authentication principal for AWS accounts in Cloud Application Manager Data Center Edition. Once this is enabled, AWS providers are identified only by a role ARN instead of by key and secret. It is then possible then to manage AWS accounts from Cloud Application Manager without creating account-specific credentials: AWS will authenticate only the master account, and grant privileges on the managed account based on the ARN role. 
+This article shows how to leverage a Master Account as the only authentication principal for AWS accounts in Cloud Application Manager Data Center Edition. Once this is enabled, AWS providers are identified only by a role ARN instead of by key and secret. It is then possible to manage AWS accounts from Cloud Application Manager without creating account-specific credentials: AWS will authenticate only the master account, and grant privileges on the managed account based on the ARN role. 
 
 There are two methods to achieve this: custom Master Account credentials and EC2 Instance Roles. In the former you specify the key and secret of an API-ready user of the master account. EC2 Instance Roles ease credential management and increase security for applications running in EC2 instances because AWS handles key expiration and renewal automatically. You can learn more about them in [the AWS documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html).
 
