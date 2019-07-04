@@ -50,7 +50,7 @@ If you make event script changes in the event tab and try to close editor (witho
 
 You can set up a maximum execution timeout in an event script of the instance in order to control long-lasting executions. Execution timeout can also be defined in [Script boxes](../Automating Deployments/script-box.md).
 
-If a script has an execution timeout,a clock icon will be shown next to the event name.
+If a script has an execution timeout, a clock icon will be shown next to the event name.
 
 ![Event with defined timeout in lifecycle editor](../../images/cloud-application-manager/lifecycle-editor/event-timeout-1.png)
 
