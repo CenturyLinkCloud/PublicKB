@@ -9,16 +9,16 @@
 
 **In this article:**
 
-- [Overview](#Overview)
-- [Audience](#Audience)
-- [Prerequisites](#Prerequisites)
-- [Additional information](#Additional-information)
-- [Create the Policy for the Master Account role](#Create-the-Policy-for-the-Master-Account-role)
-- [Method 1: create the user and API credentials](#Method-1-create-the-user-and-API-credentials)
-- [Method 2: create the EC2 Instance Role](#Method-2-create-the-EC2-Instance-Role)
-- [Enable the Master Account on Cloud Application Manager](#Enable-the-Master-Account-on-Cloud-Application-Manager)
-- [Create a Policy and Role for the managed account](#Create-a-Policy-and-Role-for-the-managed-account)
-- [Create a Cloud Application Manager AWS Provider](#Create-a-Cloud-Application-Manager-AWS-Provider)
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Additional information](#additional-information)
+* [Create the Policy for the Master Account role](#create-the-policy-for-the-master-account-role)
+* [Method 1: create the user and API credentials](#method-1-create-the-user-and-api-credentials)
+* [Method 2: create the EC2 Instance Role](#method-2-create-the-ec2-instance-role)
+* [Enable the Master Account on Cloud Application Manager](#enable-the-master-account-on-cloud-application-manager)
+* [Create a Policy and Role for the managed account](#create-a-policy-and-role-for-the-managed-account)
+* [Create a Cloud Application Manager AWS Provider](#create-a-cloud-application-manager-aws-provider)
 
 
 ### Overview
@@ -26,13 +26,15 @@
 
 This article shows how to leverage a Master Account as the only authentication principal for AWS accounts in Cloud Application Manager Data Center Edition. Once this is enabled, AWS providers are identified only by a role ARN instead of by key and secret. It is then possible to manage AWS accounts from Cloud Application Manager without creating account-specific credentials: AWS will authenticate only the master account, and grant privileges on the managed account based on the ARN role. 
 
-There are two methods to achieve this: custom Master Account credentials and EC2 Instance Roles. In the former you specify the key and secret of an API-ready user of the master account. EC2 Instance Roles ease credential management and increase security for applications running in EC2 instances because AWS handles key expiration and renewal automatically. You can learn more about them in [the AWS documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html).
+There are two methods to achieve this: 
+- **Custom Master Account credentials**: This method lets you specify the key and secret of an API-ready user of the master account. This user will then impersonate the ARN defined in the managed account. This method is available in all deployments of Cloud Application Manager Data Center Edition.
+- **EC2 Instance Roles**:  These roles ease credential management and increase security for applications running in EC2 instances because AWS handles key expiration and renewal automatically. This method is only available when Cloud Application Manager Data Center Edition has been deployed as an EC2 instance. The master account will be the one hosting it. The role assigned to the EC2 instance must allow impersonation on the managed account. You can learn more about EC2 Instance Roles in [the AWS documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html).
 
 
 ### Audience
 
 
-All Cloud Application Manager users who wants to deploy workloads into AWS from a Cloud Application Manager appliance.
+All Cloud Application Manager users who wants to deploy workloads into AWS from a Cloud Application Manager Data Center Edition.
 
 
 ### Prerequisites
