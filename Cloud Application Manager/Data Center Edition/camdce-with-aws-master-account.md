@@ -185,7 +185,7 @@ At this point, you can create AWS providers that will use this feature. Let's cr
 ### Create a Policy and Role for the managed account
 
 
-The next step involes creating a Policy and Role that will grant access to AWS resources. For Cloud Application Manager instances running as EC2 AWS instances, this role can be located in the same account as instance or in a separate one.
+The next step involves creating a Policy and Role that will grant access to AWS resources. For a Cloud Application Manager appliance running as an EC2 AWS instance, this role can be located in the same account as the instance or in a separate one.
 
 1. First, create a Policy as specified in the first section of [Using AWS](../Deploying Anywhere/using-your-aws-account.md). This policy limits the available actions on the AWS resources that Cloud Application Manager will be able to perform. Please refer to this Knowledge Base page for updated details on required policy settings.
 
