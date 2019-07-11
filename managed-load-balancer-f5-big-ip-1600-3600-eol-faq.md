@@ -8,7 +8,7 @@
 "sticky": true
 }}}
 
-### Frequently Ask Questions for Managed Load Balancer F5 BIG IP 1600 and 3600 Devices End-of-Live and End-of-Vendor Support (EVS)
+### Frequently Asked Questions for Managed Load Balancer F5 BIG IP 1600 and 3600 Devices End-of-Live and End-of-Vendor Support (EVS)
 
 As a service provider, CenturyLink continuously evaluates and updates its product catalog in order to provide competitive services. This includes the offerings from third-party vendors that are the basis for or Components of CenturyLink products. For our Managed Load Balancer service, certain models of the **F5 Big IP Local Traffic Manager are currently End-of-Sale** and will go **End-of-Vendor Support (EVS) on 10/1/2021**.
 
