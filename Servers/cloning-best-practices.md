@@ -30,3 +30,5 @@ It is important to understand the changes enacted by a clone job, to minimize co
 - When a clone is requested for a server with multiple NICs, the newly cloned machine will only have a single NIC.
 
 - Cloning is a function of Control and requires certain ports to be open on the source server to work properly. Please review our kb on the topic of [Required ports for Control functionality](required-ports-to-allow-control-functionality.md) for more information.
+
+- To avoid version conflicts during the cloning process, keep source servers up to date by following our [Self-Service Updates of VMWare Tools](Self-Service-Updates-of-VMware-Tools.md) kb.
