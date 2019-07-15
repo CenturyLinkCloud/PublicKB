@@ -8,7 +8,7 @@
 
 <p>In the event a network performance issue is suspected, tools such as WinMTR (or MTR for Linux) can help isolate where a degradation might be occurring between two systems. That said, the instructions below provide a step-by-step guide how to utilize WinMTR
   to troubleshoot a potential issue:</p>
-<p>1. Download the latest version of WinMTR from http://winmtr.net/download-winmtr/ and extract the WinMTR.exe file to your desktop (or a location on your hard drive).</p>
+<p>1. Download the latest version of WinMTR and extract the WinMTR.exe file to your desktop (or a location on your hard drive).</p>
 <p>2. Start the WinMTR executable, enter an IP address or a domain name (e.g., google.com) within the "Host" window, and then select "Start". Note, here is a legend what each column indicates to its corresponding row or hop/node:
   <br />Hostname — IP address or domain name of the hop. "No response from host" value may indicate blocking of ICMP packages on this hop
   <br />Nr — Order number of the hop in a route
