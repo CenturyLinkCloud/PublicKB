@@ -8,7 +8,7 @@
 "sticky": true
 }}}
 
-### Frequently Ask Questions for Dedicated Switch Juniper EX4500 Device End-of-Life and End-of-Vendor Support (EVS)
+### Frequently Asked Questions for Dedicated Switch Juniper EX4500 Device End-of-Life and End-of-Vendor Support (EVS)
 
 As a service provider, CenturyLink continuously evaluates and updates its product catalog in order to provide competitive services. This includes the offerings from third-party vendors that are the basis for or Components of CenturyLink products. For our Dedicated Switch service, certain models of the Juniper EX4200 switch are currently End of Sale and will go **End-of-Vendor Support (EVS) on May 1, 2021**.
 
