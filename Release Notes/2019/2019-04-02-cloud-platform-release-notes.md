@@ -25,7 +25,7 @@ Cloud Application Manager improved its SAML support to include encryption and SA
 
 ##### EC2 instance role support in Cloud Application Manager Data Center Edition
 
-Cloud Application Manager Data Center Edition now supports leveraging an EC2 Instance Role as an authorization mechanism for all AWS API calls the appliance performs. EC2 Instance Roles ease credential management and increase security for applications running in EC2 instances, so this feature only applies to appliances running as AWS EC2 Instances. Once set, you will only be able to configure new AWS providers using an IAM Role. For more information, refer to [Cloud Application Manager Data Center Edition with EC2 Instance Role](../../Cloud Application Manager/Data Center Edition/camdce-with-ec2-instance-role.md)
+Cloud Application Manager Data Center Edition now supports leveraging an EC2 Instance Role as an authorization mechanism for all AWS API calls the appliance performs. EC2 Instance Roles ease credential management and increase security for applications running in EC2 instances, so this feature only applies to appliances running as AWS EC2 Instances. Once set, you will only be able to configure new AWS providers using an IAM Role. For more information, refer to [Cloud Application Manager Data Center Edition with EC2 Instance Role](../../Cloud Application Manager/Data Center Edition/camdce-with-aws-master-account.md)
 
 ##### Support for multiple ServiceNow instances
 
