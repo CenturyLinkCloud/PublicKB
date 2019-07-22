@@ -8,7 +8,7 @@
 
 ### Description
 
-As part of our efforts to increase the security of your accounts using the SavvisStation Portal and Private Cloud (DCC), you will need to go through a one-time setup to create a new Master Account.  You may also choose to use a Master Account to log into Cloud Application Manager. Once setup is complete, for your security, you will receive a one-time prompt to provide credentials for your services to link them to your Master Account; as a result, you will be able to navigate between them without re-authenticating going forward. Other security improvements include optional multi-factor authentication through your smart phone (soft token) and the ability to set up multiple security questions for account validation and retrieval purposes.
+As part of our efforts to increase the security of your accounts using the SavvisStation Portal and Private Cloud (DCC), you will need to go through a one-time setup to create a new Master Account.  You may also choose to use a Master Account to log into Cloud Application Manager or CenturyLink Cloud (Public Cloud). Once setup is complete, for your security, you will receive a one-time prompt to provide credentials for your services to link them to your Master Account; as a result, you will be able to navigate between them without re-authenticating going forward. Other security improvements include optional multi-factor authentication through your smart phone (soft token) and the ability to set up multiple security questions for account validation and retrieval purposes.
 
 This article will walk you through some of the common issues, and what steps you can take to resolve them. It will also discuss how to ensure you are engaging the correct support team depending on your issue. Lastly, we will answer some of the frequently asked questions.
 
@@ -67,7 +67,7 @@ The new support solution is offering a faster and more consistent experience, in
 
 **Q: What services does Enhanced Security currently work with?**
 
-A: Currently Enhanced Security works with our SavvisStation (Managed Hosting), Private Cloud (Dedicated Cloud Compute), and Cloud Application Manager services. This list will be expanded in the future.
+A: Currently Enhanced Security works with our SavvisStation (Managed Hosting), Private Cloud (Dedicated Cloud Compute), Cloud Application Manager, and CenturyLink Cloud (Public Cloud) services. This list will be expanded in the future.
 
 **Q: How do I create my Enhanced Security Master Account?**
 
