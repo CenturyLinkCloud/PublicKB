@@ -8,7 +8,7 @@
 "sticky": true
 }}}
 
-### Communication: FAQs
+### DCO Program Communication: FAQs
 
 **Q: Are managed services still available to my colocation space?**
 
@@ -16,7 +16,7 @@
 
 **Q: What are my options as a managed hosting customer?**
 
-A: There is no option to not move equipment in any facilities that are impacted by this program. CenturyLink will make this move as painless as possible for all customers and is offering free Design and Transition services as well as white gloving of your environment to the CenturyLink managed space. Our engineers will work with you on scheduling specific windows to make this move easy and in a controlled manner.  
+**A:** There is no option to not move equipment in any facilities that are impacted by this program. CenturyLink will make this move as painless as possible for all customers and is offering free Design and Transition services as well as white gloving of your environment to the CenturyLink managed space. Our engineers will work with you on scheduling specific windows to make this move easy and in a controlled manner.  
 
 **Q: Will my IP space change?** 
 
@@ -40,4 +40,4 @@ A: There is no option to not move equipment in any facilities that are impacted 
 
 **Q: I have colocation space that also connects to CenturyLink Managed services cage in this facility. Will those connections be impacted?**
 
-**>A:** In these cases, CenturyLink will have to make new cross connect runs to your colocation space from the new location these services are being moved to. Due to Cyxtera rules, CenturyLink must provide those links via the Eco-System connect handoffs they’ve established within the impacted data centers. During the migration program, CenturyLink will run the necessary connections to the meet me room to facilitate the new handoffs. Once the migrations are complete, CenturyLink will work with the customer to schedule the best times to cut over to these new connections.
+**A:** In these cases, CenturyLink will have to make new cross connect runs to your colocation space from the new location these services are being moved to. Due to Cyxtera rules, CenturyLink must provide those links via the Eco-System connect handoffs they’ve established within the impacted data centers. During the migration program, CenturyLink will run the necessary connections to the meet me room to facilitate the new handoffs. Once the migrations are complete, CenturyLink will work with the customer to schedule the best times to cut over to these new connections.
