@@ -9,14 +9,15 @@
 
 **In this article:**
 
-* [Overview](#overview)
-* [Audience](#audience)
-* [Prerequisites](#prerequisites)
-* [Providers](#providers)
-* [Providers page](#providers-page)
-* [Synchronization process](#synchronization-process)
-* [Supported provider types](#supported-provider-types)
-* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
+- [Overview](#overview)
+- [Audience](#audience)
+- [Prerequisites](#prerequisites)
+- [Providers](#providers)
+- [Providers page](#providers-page)
+- [Synchronization process](#synchronization-process)
+- [Supported provider types](#supported-provider-types)
+- [Exporting the List of Providers](#exporting-the-list-of-providers)
+- [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 
 ### Overview
@@ -113,6 +114,24 @@ Cloud Application Manager integrates with many popular clouds. Here is a full li
 | [SoftLayer](../Deploying Anywhere/using-softlayer.md)                                                               | ✓                      | ✓                           |
 | [vCloud Air and vCloud Director](../Deploying Anywhere/orchestrating-vcloud-air-vcloud-director-deployments.md)     | ✓                      | ✓                           |
 | [VMware vCenter](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md)                              | ✓                      | ✓                           |
+
+### Exporting the List of Providers
+
+Near the top right of the screen, there is a button: **Detail Export**.
+
+![Detail Export menu button](../../images/cloud-application-manager/deploying-anywhere/detail-export-providers-00.png)
+
+Clicking this button toggles a drop-down menu with two options:
+- Export to CSV
+- Export to PDF
+
+![Detail Export menu](../../images/cloud-application-manager/deploying-anywhere/detail-export-providers-01.png)
+
+When one of these options is selected, a file is downloaded to your system and saved based on your browser's settings (by default, in the Downloads folder). The file will be named _providers.csv_ or _providers.pdf_; or, if a file by that name already exists, the name will be modified according to your operating system rules (e.g., _providers (1).csv_).
+
+Please note that **all** providers in the current scope are exported, not necessarily just the ones you see in the list. The current scope is either the currently selected workspace, or the cost center, or the organization. For a workspace, all the providers that are shared with the workspace are also included.
+
+All the columns in the providers list will be included in the exported file, along with some additional ones such as _creation time_, _cost center_ and _organization name_.
 
 
 ### Contacting Cloud Application Manager Support
