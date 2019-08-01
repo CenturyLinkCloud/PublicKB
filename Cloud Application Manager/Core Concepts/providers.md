@@ -101,7 +101,7 @@ Cloud Application Manager integrates with many popular clouds. Here is a full li
 | --------------------------------------------------------------------------------------------------------------------- | :--------------------: | :-------------------------: |
 | [CenturyLink Cloud](../Deploying Anywhere/using-centurylink-cloud.md)                                               | ✓                      | ✓                           |
 | [CenturyLink DCC](../Deploying Anywhere/using-dcc.md)                                                               | ✓                      | ✓                           |
-| [CenturyLink Private Cloud on VMware Cloud Foundation](https://www.ctl.io/knowledge-base/centurylink-private-cloud-on-vmware-cloud-foundation//general/#1) | ✓                      | ✓                           |
+| [CenturyLink Private Cloud on VMware Cloud Foundation](../../CenturyLink Private Cloud on VMware Cloud Foundation/General/#1) | ✓                      | ✓                           |
 | [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md)                                              | ✓                      | ✓                           |
 | Amazon Web Services GovCloud (Same documentation as [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md)) | ✓              | ✓                           |
 | [CloudStack](../Deploying Anywhere/using-cloudstack.md)                                                             | ✓                      | ✓                           |
