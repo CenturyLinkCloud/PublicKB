@@ -343,7 +343,7 @@ Clicking this button toggles a drop-down menu with two options:
 
 When one of these options is selected, a file is downloaded to your system and saved based on your browser's settings (by default, in the Downloads folder). The file will be named _instances.csv_ or _instances.pdf_; or, if a file by that name already exists, the name will be modified according to your operating system rules (e.g., _instances (1).csv_).
 
-Please note that **all** instances in the current scope are exported, not necessarily just the ones you see in the list. The current scope is either the currently selected workspace, or the cost center, or the organization. For a workspace, all the instances that are shared with the workspace are also included.
+Please note that **all** instances in the current scope are exported, not necessarily just the ones you see in the list (no applied filters are considered). The current scope is either the currently selected workspace, or the cost center, or the organization selected in the context switcher. For a workspace, all the instances that are shared with the workspace are also included.
 
 All the columns in the instances list will be included in the exported file, along with some additional ones such as _instance id_, _service type_, _hostname_, _creation time_ and _organization name_.
 
