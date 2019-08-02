@@ -316,8 +316,8 @@ Near the top right of the screen, there is a button: **Detail Export**.
 ![Detail Export menu button](../../images/cloud-application-manager/deploying-anywhere/detail-export-instances-00.png)
 
 Clicking this button toggles a drop-down menu with two options:
-- Export to CSV
-- Export to PDF
+* Export to CSV
+* Export to PDF
 
 ![Detail Export menu](../../images/cloud-application-manager/deploying-anywhere/detail-export-instances-01.png)
 
