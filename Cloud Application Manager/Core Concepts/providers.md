@@ -1,7 +1,7 @@
 {{{
 "title": "Providers",
-"date": "05-23-2019",
-"author": "Diego Sanjuan, Guillermo Sánchez",
+"date": "08-01-2019",
+"author": "Diego Sanjuan, Guillermo Sánchez, Victor Shulman",
 "keywords": ["cam", "alm", "providers", "centuryLink-cloud", "clc", "aws", "azure", "google-cloud", "gcp", "cloudstack", "dimension-data", "openstack", "rackspace", "softlayer", "vcloud", "vmware"],
 "attachments": [],
 "contentIsHTML": false
@@ -9,15 +9,15 @@
 
 **In this article:**
 
-- [Overview](#overview)
-- [Audience](#audience)
-- [Prerequisites](#prerequisites)
-- [Providers](#providers)
-- [Providers page](#providers-page)
-- [Synchronization process](#synchronization-process)
-- [Supported provider types](#supported-provider-types)
-- [Exporting the List of Providers](#exporting-the-list-of-providers)
-- [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Providers](#providers)
+* [Providers page](#providers-page)
+* [Synchronization process](#synchronization-process)
+* [Supported provider types](#supported-provider-types)
+* [Exporting the List of Providers](#exporting-the-list-of-providers)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 
 ### Overview

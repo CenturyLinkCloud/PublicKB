@@ -1,6 +1,6 @@
 {{{ "title": "Deploying and Managing Instances",
-"date": "05-20-2019",
-"author": "Guillermo Sánchez and Óscar Hafner",
+"date": "08-01-2019",
+"author": "Guillermo Sánchez, Óscar Hafner, Victor Shulman",
 "keywords": ["cam", "instances", "lifecycle", "deploy", "deployment-policy", "instance-protection", "shutdown-protection", "terminate-protection", "bulk-actions"],
 "attachments": [],
 "contentIsHTML": false
@@ -8,38 +8,18 @@
 
 **In this article:**
 
-- [Overview](#overview)
-- [Audience](#audience)
-- [Prerequisites](#prerequisites)
-- [Instances page](#instances-page)
-  - [Instance states](#instance-states)
-  - [Instance view types](#instance-view-types)
-  - [Instance view filters](#instance-view-filters)
-- [Deploying a New Instance](#deploying-a-new-instance)
-- [Scheduling Instances](#scheduling-instances)
-- [Protecting Instance Shutdown or Termination](#protecting-instance-shutdown-or-termination)
-  - [Instance protection on registered instances](#instance-protection-on-registered-instances)
-  - [Instance protection on AWS instances](#instance-protection-on-aws-instances)
-    - [Deployed Instances](#deployed-instances)
-    - [Unregistered Instances](#unregistered-instances)
-- [Deploying Instances without Lifecycle Management](#deploying-instances-without-lifecycle-management)
-  - [Enabling Lifecycle Management](#enabling-lifecycle-management)
-- [Handling Instance Lifecycle States](#handling-instance-lifecycle-states)
-  - [Reconfigure](#reconfigure)
-  - [Reinstall](#reinstall)
-  - [Power On](#power-on)
-  - [Shut Down](#shut-down)
-  - [Abort](#abort)
-  - [Terminate](#terminate)
-  - [Force Terminate](#force-terminate)
-  - [Force Online](#force-online)
-  - [Delete](#delete)
-  - [Clone](#clone)
-  - [Update Instance](#update-instance)
-  - [Edit Details](#edit-details)
-- [Managing multiple instances with bulk actions](#managing-multiple-instances-with-bulk-actions)
-- [Exporting the List of Instances](#exporting-the-list-of-instances)
-- [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Instances page](#instances-page)
+* [Deploying a New Instance](#deploying-a-new-instance)
+* [Scheduling Instances](#scheduling-instances)
+* [Protecting Instance Shutdown or Termination](#protecting-instance-shutdown-or-termination)
+* [Deploying Instances without Lifecycle Management](#deploying-instances-without-lifecycle-management)
+* [Handling Instance Lifecycle States](#handling-instance-lifecycle-states)
+* [Managing multiple instances with bulk actions](#managing-multiple-instances-with-bulk-actions)
+* [Exporting the List of Instances](#exporting-the-list-of-instances)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
 
