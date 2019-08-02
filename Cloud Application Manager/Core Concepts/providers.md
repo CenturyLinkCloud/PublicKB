@@ -129,7 +129,7 @@ Clicking this button toggles a drop-down menu with two options:
 
 When one of these options is selected, a file is downloaded to your system and saved based on your browser's settings (by default, in the Downloads folder). The file will be named _providers.csv_ or _providers.pdf_; or, if a file by that name already exists, the name will be modified according to your operating system rules (e.g., _providers (1).csv_).
 
-Please note that **all** providers in the current scope are exported, not necessarily just the ones you see in the list. The current scope is either the currently selected workspace, or the cost center, or the organization. For a workspace, all the providers that are shared with the workspace are also included.
+Please note that **all** providers in the current scope are exported, not necessarily just the ones you see in the list (no applied filters are considered). The current scope is either the currently selected workspace, or the cost center, or the organization selected in the context switcher. For a workspace, all the providers that are shared with the workspace are also included.
 
 All the columns in the providers list will be included in the exported file, along with some additional ones such as _creation time_, _cost center_ and _organization name_.
 
