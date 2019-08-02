@@ -43,7 +43,4 @@ It is assumed here that the user has an AWS account and a VPC created which has 
 
 **NOTE:** The default root password for the CMS will be provided upon SafeHaven License Request. **It is STRONGLY recommended to change the default root password for security purposes.**
 
-### Video Tutorial
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eisNuJiHF2g" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-
 **Next Step** is to [Create DR SRN in AWS](Create DR SRN in AWS.md)
