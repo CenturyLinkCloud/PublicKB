@@ -30,10 +30,4 @@ Users may not choose to perform Network Isolation incase of an actual Failover e
 7. You can go to the **Active iSCSI Sessions** tab to monitor the booting procedure, once the RDP port is open, you can log in to the recovery server to verdify the data consistancy.
 
 The procedure is same for CLC/VMWare/Manual sites as source datacenters.
-
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4RrPItZQXSU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</p>
-
 **NOTE: Failover can be a disruptive operation if not done properly**.

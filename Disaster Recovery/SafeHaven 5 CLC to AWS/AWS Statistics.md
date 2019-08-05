@@ -25,7 +25,3 @@ There are 4 panels under this tab:
 2. AMIs: This panel shows the information of AMIs in AWS SafeHaven created for the Protection Group
 3. AWS Snapshots: Shows the information AWS snapshots created for the Protection Group
 4. AWS Instances: Shows the information of the AWS instances per the Protected Server inside a Protection Group
-
-
-### Video Tutorial
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HNQDGJS3lTo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>

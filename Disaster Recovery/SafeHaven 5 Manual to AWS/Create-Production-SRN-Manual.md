@@ -50,10 +50,4 @@ This article assumes that the user has login access to the Manual Production Sit
 **Note**: Please assign a static IP address to the VM.
 You have now completed the deployment of SRN in a Manual Site.
 
-### Video Tutorial (SRN in CenturyLink Private Cloud on VMware Cloud Foundation)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dMrEwtQm1I0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-### Video Tutorial (SRN in Hyper-V)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PmtNmA8hB58" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
 **Next Step** is to [Create CMS in AWS](../SafeHaven 5 CLC to AWS/Create CMS in AWS.md)

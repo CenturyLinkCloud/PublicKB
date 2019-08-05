@@ -72,9 +72,4 @@ For example, if you added a 17GB disk in step 1, then please add a second raw di
 
 9. Verify the Protection Group summary, and click **Create**.
 
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MhANG2fdiKA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</p>
-
 **Next Step** is to [Install Scripts and Start Replication for Linux Protection Group](../SafeHaven 5 CLC to AWS/Install Scripts and Start Replication for Linux Protection Group.md)
