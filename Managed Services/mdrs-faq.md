@@ -14,7 +14,6 @@ The Managed Disaster Recovery Services (MDRS) offer a fully-managed disaster rec
 * Regular testing
 * Regular audits
 * At-time-of-disaster failover services
-* Post-disaster failback services
 * Runbook development and maintenance
 
 **What does the installation and configuration service include?**
@@ -109,7 +108,7 @@ Generally speaking, the customer is responsible for the following:
 * Agrees to meet implementation requirements and standards for on-going support requirements.
 * Ensures that production and disaster recovery environments provisioned with servers, local incremental and replica storage, network connectivity, CPU, memory, other infrastructure components and replication are operational.
 * Identifies and provides CenturyLink with access to all relevant customer-controlled information, resources, and locations required.
-* Purchases the CenturyLink DR Manager, which coordinates the DR implementation, daily maintenance, test, audit, ATOD, and failback procedures.
+* Purchases the CenturyLink DR Manager, which coordinates the DR implementation, daily maintenance, test, audit, and ATOD procedures.
 * Purchases and uses the CenturyLink Cloud as a recovery data center.
 
 Specific details of customer responsibility can be found in the *Managed Disaster Recovery Services Guide*.
