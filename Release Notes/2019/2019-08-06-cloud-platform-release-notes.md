@@ -1,6 +1,6 @@
 {{{
 "title": "Cloud Platform - Release Notes: August 6, 2019",
-"date": "07-23-2019",
+"date": "08-06-2019",
 "author": "Gary Lazaroff",
 "keywords":["centurylink", "cam", "alm", "optimization"],
 "attachments": [],
