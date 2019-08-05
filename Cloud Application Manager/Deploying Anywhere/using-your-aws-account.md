@@ -46,37 +46,11 @@ All Cloud Application Manager users who want to deploy workloads into AWS.
 
 ### Connect your AWS Account in Cloud Application Manager
 
-Before you deploy in AWS, you need to connect your AWS account in Cloud Application Manager. The following steps walks you through this process. 
+Before you deploy in AWS, you need to connect your AWS account in Cloud Application Manager. The following steps walks you through this process.
 
 ### Access to AWS Services console with an AWS account
 
 Go to [AWS Services console](https://console.aws.amazon.com) and login into your account.  
-
-If you already have an AWS Provider in your Cloud Application Manager, you can reach this console from the **AWS Console** button located in the AWS Provider details page and you will be directly logged in.
-
-![AWS Console access from CAM](../../images/aws-console/aws-console-access-from-cam.png)
-
-#### Roles and Permissions
-
-Once you init a session in AWS Services console, depending on the login account used you will get a role and different access privileges. These privileges apply to actions your instances in Cloud Application Manager can perform.  
-
-All created IAM users must be placed in a group in order to apply permissions. The newly created IAM groups will automatically have the **CTLCustomerPolicy** applied. 
-
-| Role | Intent |
-|-----------|--------|
-| Customer Admin User / Group<br/>`<yourCompanyName>Group` | To be able to provide the first administrator as many permissions as possible so that they can begin to set up the new account. |
-| Customer Role<br/>`CTLCustomerRole` | To be added to existing customer IAM groups or given to new customer groups. This policy allows the user to manipulate all services within AWS, but restricts certain views and actions that would confuse or cause conflict in an Integrated account. |
-| CenturyLink Operations Role<br/>`CTLOperationsRole` | To allow Operations rights of least privilege, with flexibility. |
-| CenturyLink Developer Role<br/>`CTLDeveloperRole` | The Optimization tool should be able to configure customer accounts, affect IAM permissions, and swiftly remediate any issues. |
-| CenturyLink Lambda Role<br/>`CTLCustomerPolicy` | IAM users who are not placed within a group will have all their permissions removed, so it is recommended that you move all IAM users to an IAM group. Newly created IAM groups will automatically have the CTLCustomerPolicy applied. |
-| CenturyLink Analytics Role<br/>`CTLCloudOptimizationRole` | To enable Analytics tools and allow customer users transparency into usage and best practices. |
-| Cloud Application Manager Role<br/>`CTLCAMRole` | To permit Cloud Application Manager's [application lifecycle management (ALM)](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) capabilities and to enable [Monitoring](../Monitoring/CAMMonitoringUI.md). |
-| Cloud Integration Admin Role<br/>`CTLCINTAdminRole` | To permit these users as much freedom as possible. |
-| CAM User Read-only Role<br/>`CTLCAMUserReadRole` | To permit these users to see but not alter any resources in the AWS Console when they click the provider's "AWS Console" button. |
-| Cloud Integration User Read-only Role<br/>`CTLCINTReadRole` | To permit these users to see but not alter any resources in the AWS Console when they click the provider's "AWS Console" button. |
-| CenturyLink Service Management Policy<br/>`CTLServiceManagementRole` | This is not an immediate part of any Optimization scenario but it is enabled by Cloud Application Manager's Account Optimization. Access to a customer's account via this role is only given to a CenturyLink representative when the customer has purchased Service Management from CenturyLink. |
-
-See in detail the definition of these [roles and permissions](../Cloud Optimization/partner-cloud-integration-aws-hardening-permissions.md). 
 
 ### Create a custom AWS Policy
 
@@ -385,6 +359,14 @@ Going back to Cloud Application Manager, you must first add your account as a ne
 When the provider is created all its default resources are synchronized. If the provider already exists, you can synchronize its resources by clicking on the **Sync** button.
 
 ![Provider details page](../../images/cloud-application-manager/aws-deployment-config.png)
+
+### Access to AWS Services console from within Cloud Application Manager
+
+Once you already have an AWS Provider in your Cloud Application Manager account, either one you have created or a provider shared with you with write access, you can reach the AWS services console from the **AWS Console** button located in the AWS Provider details page and you will be directly logged in.
+
+![AWS Console access from CAM](../../images/aws-console/aws-console-access-from-cam.png)
+
+The role configured in the provider for the AWS account will be the one assumed when accessing the AWS console through this button.
 
 ### Add Custom AMIs in Cloud Application Manager
 
