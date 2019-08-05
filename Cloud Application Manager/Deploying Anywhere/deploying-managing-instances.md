@@ -1,6 +1,6 @@
 {{{ "title": "Deploying and Managing Instances",
-"date": "05-20-2019",
-"author": "Guillermo Sánchez and Óscar Hafner",
+"date": "08-01-2019",
+"author": "Guillermo Sánchez, Óscar Hafner, Victor Shulman",
 "keywords": ["cam", "instances", "lifecycle", "deploy", "deployment-policy", "instance-protection", "shutdown-protection", "terminate-protection", "bulk-actions"],
 "attachments": [],
 "contentIsHTML": false
@@ -18,6 +18,7 @@
 * [Deploying Instances without Lifecycle Management](#deploying-instances-without-lifecycle-management)
 * [Handling Instance Lifecycle States](#handling-instance-lifecycle-states)
 * [Managing multiple instances with bulk actions](#managing-multiple-instances-with-bulk-actions)
+* [Exporting the List of Instances](#exporting-the-list-of-instances)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
@@ -307,6 +308,24 @@ Many of the instance actions can be applied in bulk to several instances at once
 ![Bulk actions menu](../../images/cloud-application-manager/deploying-anywhere/bulk-actions.png)
 
 The **Bulk Actions** button dropdown appears next to the *New* instance button once you select any instance in the list and, depending on your selection, the common actions allowed in all selected instances will be available in the dropdown. For example, if you select a few instances, all in *Online* state, you will have all the applicable lifecycle actions available (**Reinstall**, **Reconfigure**, **Shutdown**, **Terminate**, **Force Terminate**) and any other additional option such as *Update Instance*; but if you also include an *Unavailable* instance in your selection among the *Online* ones, the only available lifecycle option will be **Force Terminate**.
+
+### Exporting the List of Instances
+
+Near the top right of the screen, there is a button: **Detail Export**.
+
+![Detail Export menu button](../../images/cloud-application-manager/deploying-anywhere/detail-export-instances-00.png)
+
+Clicking this button toggles a drop-down menu with two options:
+* Export to CSV
+* Export to PDF
+
+![Detail Export menu](../../images/cloud-application-manager/deploying-anywhere/detail-export-instances-01.png)
+
+When one of these options is selected, a file is downloaded to your system and saved based on your browser's settings (by default, in the Downloads folder). The file will be named _instances.csv_ or _instances.pdf_; or, if a file by that name already exists, the name will be modified according to your operating system rules (e.g., _instances (1).csv_).
+
+Please note that **all** instances in the current scope are exported, not necessarily just the ones you see in the list (no applied filters are considered). The current scope is either the currently selected workspace, or the cost center, or the organization selected in the context switcher. For a workspace, all the instances that are shared with the workspace are also included.
+
+All the columns in the instances list will be included in the exported file, along with some additional ones such as _instance id_, _service type_, _hostname_, _creation time_ and _organization name_.
 
 ### Contacting Cloud Application Manager Support
 
