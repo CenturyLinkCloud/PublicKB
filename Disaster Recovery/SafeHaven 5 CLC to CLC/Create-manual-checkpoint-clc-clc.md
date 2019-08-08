@@ -28,9 +28,3 @@ Protection Group has completed initial replication.
 3. Click **Create**.
 4. The **Manual Checkpoint** job will appear at the bottom of the screen.
 5. Once **Create Image** job is complete, click on **Checkpoint History** to view the checkpoint. (This may take a few minutes/hours depending on the EBS Snapshot and AMI creation process.)
-
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OG60GTH7rUw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</p>
-
