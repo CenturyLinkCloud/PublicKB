@@ -10,7 +10,7 @@
 This article explains how to check replication status for protection groups from the SafeHaven console and production server.
 
 ### Assumptions
-This article assumes that a SafeHaven cluster has already been created successfully. Both production and recovery SRNs are registered and peered with storage pools claimed correctly. Initial replication has been started on the Windows Production Servers.
+This article assumes a SafeHaven cluster has already been created successfully. Both production and recovery SRNs are registered and peered with storage pools claimed correctly. Initial replication has been started on the Windows Production Servers.
 
 ### Check Replication Status for a Windows Server
 1. RDP to the Production Windows server you are protecting. Open a command prompt with admin privileges, and change the directory to C:\Program Files\SafeHaven\tools
