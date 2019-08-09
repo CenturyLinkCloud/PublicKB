@@ -28,10 +28,6 @@ Before enabling the periodic checkpoints please make sure that the replication i
 7. Wait for a few checkpoints to show up in the **Checkpoint History** tab before proceeding with any recovery operation like Test-Failover or Failover.
 
 **Note**: The procedure is same for VMWare/Manual sites as source datacenters.
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B8VxbbKT094" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</p>
 
 **Next Step** is to [Configure Email Alerts](Configure Email Alerts.md).
 
