@@ -12,6 +12,9 @@ With the release of [SafeHaven 5.2.0](SafeHaven5.2.0-Release-Notes.md), there is
 
 **Please note that the procedure described in this document is for EXPERTS only**. If there is any doubt, please contact SafeHaven support by creating a ticket with help@ctl.io
 
+#### Special Note about WAN Sync Throttle
+Upon SBD upgrade, all PGs will be reset back to the default 2MB/s WAN sync throttle settings. So it is recommended to take note of the existing WAN sync throttle settings for all PGs before the upgrade so that these settings can be manully changed back to the desired settings after the SBD ugprade.
+
 ### Upgrade procedure (experts only)
 #### 1. Upgrade Syntropy to 5.2.0 using GUI
 Do it in the same way used in all upgrades
