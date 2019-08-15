@@ -11,7 +11,7 @@ Please note that all releases mentioned in this page works with a SafeHaven-5 cl
 
 ### v1.7.0, released on August 15, 2019
 Download: https://download.safehaven.ctl.io/SH-5-Linux/safehaven_linux_onboarding_scripts_v1.7.0_2019-08-15.tar.gz
-MD5SUM: `d090ec01533c981d13c2d6c360889070`
+MD5SUM: `707813eb2425bdce89506c3e4c160c95`
 Changes:
 * New support to Ubuntu-18.04
 * Support newer kernel versions of Ubuntu-14.04
