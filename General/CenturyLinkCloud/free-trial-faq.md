@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Free Trial Frequently Asked Questions",
-  "date": "04-02-2018",
+  "date": "08-20-2019",
   "author": "Anthony Hakim, Lyza Latham",
   "attachments": [],
   "related-products" : [],
@@ -30,11 +30,17 @@ When your trial is exhausted, you will be billed on a monthly basis for consumpt
 
 ### How long does it take to get a free trial account activated?
 
-After you have entered the verification code, provided a valid credit card (Visa or Mastercard only - American Express, Discover, and pre-paid credit cards are not accepted), and completed the activation form, your account will be created instantly. You will then receive an email with your account details. 
+After you have entered the verification code, provided a valid credit card (Visa or Mastercard only - American Express, Discover, and pre-paid credit cards are not accepted), and completed the activation form, your account will be created instantly. You will then receive an email with your account details.
 
 ### Is there an expiration time on the free trial?
 
 Yes. The trial credits will expire after 90 days.
+
+### What if I want to access public cloud servers in Latin America?
+
+Access to CenturyLink Cloud in Latin America is limited to accounts that are initiated through a regional CenturyLink Sales Representative.
+
+To engage this team, send an email with your request, and a regional Sales Representative will respond. Or, call during business hours of Monday through Friday, 09:00 to 17:00, Argentina Standard Time. For contact information, see [CenturyLink Cloud Availability in Latin America](http://www.ctl.io/blog/post/cloud-availability-latin-america/). 
 
 ### What if my trial account signup is unsuccessful?
 
