@@ -1,6 +1,6 @@
 {{{
   "title": "Upgrade from SafeHaven 5.1 to 5.2",
-  "date": "06-20-2019",
+  "date": "08-15-2019",
   "author": "Shi Jin",
   "attachments": [],
   "contentIsHTML": false,
@@ -8,14 +8,17 @@
 }}}
 
 ### Context
-With the release of [SafeHaven 5.2.0](SafeHaven5.2.0-Release-Notes.md), there is manual procedure to upgrade from previous SafeHaven-5.1.* versions.
+With the release of [SafeHaven 5.2.0](SafeHaven5.2.0-Release-Notes.md), there is manual procedure to upgrade from previous SafeHaven-5.1.* versions. Note that this procedure works for upgrades to all Safehaven-5.2.* versions.
 
 **Please note that the procedure described in this document is for EXPERTS only**. If there is any doubt, please contact SafeHaven support by creating a ticket with help@ctl.io
 
+#### Special Note about WAN Sync Throttle
+Upon SBD upgrade, all PGs will be reset back to the default 2MB/s WAN sync throttle settings. So it is recommended to take note of the existing WAN sync throttle settings for all PGs before the upgrade so that these settings can be manully changed back to the desired settings after the SBD ugprade.
+
 ### Upgrade procedure (experts only)
-#### 1. Upgrade Syntropy to 5.2.0 using GUI
+#### 1. Upgrade Syntropy to 5.2.* using GUI
 Do it in the same way used in all upgrades
-#### 2. Upgrade Base OS to 5.2.0 using CLI on CMS 
+#### 2. Upgrade Base OS to 5.2.* using CLI on CMS 
 First, ssh to the CMS as the `root` user.
 
 Then run the following command in the `/root/BaseImageConfigurators` folder:
