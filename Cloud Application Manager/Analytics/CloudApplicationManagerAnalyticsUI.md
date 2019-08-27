@@ -19,7 +19,7 @@ One of the following use cases must have occurred successfully:
 
 ### Important Information
 * After you activate Analytics for providers for which you pay the vendor directly, CenturyLink will read your Provider's charges in our calculation of Platform Advisory Support
-* For AWS, these are the scenarios where Analytics can provide cost and usage data: 1) accounts which are not members of AWS Organizations 2) accounts which are members of AWS organizations and the CAM admin has also set up an Analyzed provider for the Master Payer of that organization. 
+* For AWS, these are the scenarios where Analytics can provide cost and usage data: 1) accounts which are not members of AWS Organizations 2) accounts which are members of AWS organizations and the CAM admin has also set up an Analyzed provider for the Master Payer of that organization. 3) Accounts that have been integrated into CAM Consolidated billing.
 * In the second scenario above, CAM will read usage for the entire organization and apply that to Platform Advisory Support even if all the accounts in the organization have not all been associated to CAM Providers.
 * For AWS scenarios where Analytics does not see cost and usage data, it will still offer features including Inventory and Best Practices.
 
