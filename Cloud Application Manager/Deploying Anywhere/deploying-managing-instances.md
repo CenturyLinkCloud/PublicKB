@@ -89,14 +89,15 @@ There is a filter icon button next to the view types icon that makes visible all
 
 ![Instances view filters](../../images/cloud-application-manager/instances/instance-filters.png)
 
-These filters are dynamically filled with the valid values, allow multiple selections in values and are respectively:
+These filters are dynamically filled with the valid values, are hidden if there are no values in the current view and also allow multiple selections in values to be shown. The available filters are:
 
-* **Cost Center**: Filter by cost centers responsible for instances
+* **Cost Center**: Filter by cost centers responsible for instances. This filter is only available if you are at the Organization level scope.
 * **Workspace**: filter by any accessible workspace containing instances
 * **Providers**: filter by available provider types or providers
 * **Types**: filter by available types or subtypes
 * **Location**: filter by available location, including Global
 * **Tags**: filter by defined tags in instances
+* **Service Types**: filter by available service types (i.e., Linux Compute, Windows Compute, Azure Resource Manager Service, CloudFormation Service, etc.)
 
 Some of the filters, such as Providers and types, have two level of filtering (i.e., provider type and provider), allowing a mixed selection of levels. For example, you can select AWS provider type to show all AWS providers instances, and a specific Microsoft Azure provider to also show this provider instances in the same view.
 
