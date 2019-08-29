@@ -1,7 +1,7 @@
 {{{
   "title": "Hairpin NAT",
-  "date": "2-26-2016",
-  "author": "Chris Little",
+  "date": "8-29-2019",
+  "author": "Stephe Akers",
   "attachments": [],
   "contentIsHTML": false
 }}}
