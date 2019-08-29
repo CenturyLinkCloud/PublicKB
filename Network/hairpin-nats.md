@@ -38,15 +38,19 @@ If you have CLC Private IPs in the source traffic restriction list and traffic i
 
 #### Question: Am I using Hairpin NAT?
 
-Answer: A typical scenario for Hairpin NAT would be when a DNS name is referenced by a CLC server that does not have a public IP address.  The server would access xyz.com which resolves to a CLC hosted public address.  CenturyLink Cloud recommends that a private DNS be used for CLC servers which can be used to provide the internal IP which does not need to traverse the edge.
+**Answer:** A typical scenario for Hairpin NAT would be when a DNS name is referenced by a CLC server that does not have a public IP address.  The server would access xyz.com which resolves to a CLC hosted public address.  CenturyLink Cloud recommends that a private DNS be used for CLC servers which can be used to provide the internal IP which does not need to traverse the edge.
 
 #### Question: Should I use Hairpin NAT?
-Answer: CenturyLink Cloud recommends that the internal IP address should be used as it will take a more optimal path and not need to be processed by the edge network infrastructure.  Typically a DNS server internal to your account can be used to reference the internal CLC address.
+**Answer:** CenturyLink Cloud recommends that the internal IP address should be used as it will take a more optimal path and not need to be processed by the edge network infrastructure.  Typically a DNS server internal to your account can be used to reference the internal CLC address.
 
 #### Question: Do I need to include IPs from my Site to Site IPSec VPN, CNS or NetX link in the public IPs source traffic restriction list?
 
-Answer: No. There is no path/route on those links to a server's public IP.  All communications over these types of links is to the private address of the VM. 
+**Answer:** No. There is no path/route on those links to a server's public IP.  All communications over these types of links is to the private address of the VM. 
 
 #### Question: I have CLC private IPs in my source traffic restriction list to allow for Hairpin NAT and I cannot reach the public IP anymore.
 
-Answer: This is due to a CLC infrastructure upgrade to the edge routing infrastructure that changed the behavior of the Hairpin NAT.  You will need to either add a public IP to the source CLC server and include the newly added public IP in the source traffic restriction list or you can bypass Hairpin Nat by using the private IP of the destination instead of the public IP.
+**Answer:** This is due to a CLC infrastructure upgrade to the edge routing infrastructure that changed the behavior of the Hairpin NAT.  You will need to either add a public IP to the source CLC server and include the newly added public IP in the source traffic restriction list or you can bypass Hairpin Nat by using the private IP of the destination instead of the public IP.
+
+#### Question: I have a Site to Site VPN, does it use hairpin NAT?
+
+**Answer:** No.  Site to Site VPNs are not set up to communicate with CLC public IPs.  Custom VPNs can replicate CLC public IPs, however this processing is completely separate from hairpin NAT.
