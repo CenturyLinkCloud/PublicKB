@@ -41,7 +41,7 @@ If you have CLC Private IPs in the source traffic restriction list and traffic i
 Answer: A typical scenario for Hairpin NAT would be when a DNS name is referenced by a CLC server that does not have a public IP address.  The server would access xyz.com which resolves to a CLC hosted public address.  CenturyLink Cloud recommends that a private DNS be used for CLC servers which can be used to provide the internal IP which does not need to traverse the edge.
 
 #### Question: Should I use Hairpin NAT?
-Answer: CenturyLink Cloud recommends that the internal IP address should be used as it will take more optimal path and not need to be processed by the edge network infrastructure.  Typically a DNS server internal to your account can be used to reference the internal CLC address.
+Answer: CenturyLink Cloud recommends that the internal IP address should be used as it will take a more optimal path and not need to be processed by the edge network infrastructure.  Typically a DNS server internal to your account can be used to reference the internal CLC address.
 
 #### Question: Do I need to include IPs from my Site to Site IPSec VPN, CNS or NetX link in the public IPs source traffic restriction list?
 
