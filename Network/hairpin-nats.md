@@ -19,7 +19,7 @@ CenturyLink Cloud supports Hairpinning/Hairpin NAT services at a platform level 
 Hairpin NAT optimizes the path that traffic takes between servers within CenturyLink Cloud.  When a cloud server initiates traffic to a public IP address that is hosted in the same datacenter, the hairpin functionality keeps the traffic internal to the datacenter edge network infrastructure as it does not need to be forwarded to the internet.  Therefore a cloud server can communicate with another cloud server in the same datacenter using the private or public IP.
 
 Hairpin flow example - Destination server 10.10.20.x with public IP 65.x.x.x
-1. CLC server 10.20.30.x sends a packet to 65.x.x.x 
+1. CLC server 10.20.30.x sends a packet to 65.x.x.x
 2. Edge infrastructure notes that 65.x.x.x has a NAT to 10.10.20.x and forwards the packet to 10.10.20.x
 
 ### Restricting source traffic and Hairpin NAT
@@ -45,7 +45,7 @@ If you have CLC Private IPs in the source traffic restriction list and traffic i
 
 #### Question: Do I need to include IPs from my Site to Site IPSec VPN, CNS or NetX link in the public IPs source traffic restriction list?
 
-**Answer:** No. There is no path/route on those links to a server's public IP.  All communications over these types of links are to the private address of the VM. 
+**Answer:** No. There is no path/route on those links to a server's public IP.  All communications over these types of links are to the private address of the VM.
 
 #### Question: I have CLC private IPs in my source traffic restriction list to allow for Hairpin NAT and I cannot reach the public IP anymore.
 
