@@ -86,22 +86,6 @@
   * __Server Group Defaults.__ Sets the default settings to be used when building servers in a group.
     - https://www.ctl.io/api-docs/v2/#groups-set-group-defaults
 
-### Ecosystem (3)
-
-* __Appcito.__ [Appcito](http://www.appcito.com) CAFE (Cloud Application Front End) is an easy-to-deploy, unified and cloud-native service that enables cloud application teams to select and deploy enterprise grade L4 to L7 application network services.  This cloud-native, proxy-based service gateway improves application delivery with a web-scale solution for load balancing, application security and continuous availability.
-
-* __CloudFuze.__ [CloudFuze](https://www.cloudfuze.com/), provides management tools for cloud-based file and storage services.  Their integration allows customers of CenturyLink’s cloud platform to utilize one tool to track and manage information residing in diverse cloud file-sharing services with a common management framework.
-Start controlling your storage sprawl by [deploying CloudFuze](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-cloudfuze-blueprint/) on CenturyLink today.
-
-* __bplmager.__ Many [Marketplace Provider Program](https://www.ctl.io/marketplace/program/) partners use the power of CenturyLink [Cloud Blueprints](https://www.ctl.io/cloud-platform/cloud-orchestration/) to configure ready-to-use solutions that CenturyLink customers can quickly discover and deploy.  However, many partners rely on the virtual appliance model (.AMI, .ISO, .OVF) to package and deploy their software for cloud consumption which had previously only been available on the CenturyLink Cloud platform as a [Service Task](https://www.ctl.io/service-tasks/).  
-
-  The [CenturyLink bpImager](https://www.ctl.io/knowledge-base/ecosystem-partners/partner-integration-resources/bpimager-appliance-requirements/) solution, now in beta release, offers a set of integration tools that can convert many common virtual appliance formats into a Blueprint deployment model. This reduces the barrier to integration for many Marketplace Provider Program partners. Some examples of partners who are already taking advantage:
-
-  * __CloudBolt.__ [CloudBolt](http://www.cloudbolt.io) is an intuitive cloud management platform (CMP) that delivers automated provisioning, unified IT management, chargeback/showback reporting, and interactive service catalogs for user self-service. It integrates both new and existing virtualization and private cloud environments with public clouds, automation scripting tools, and domain‐specific technologies.  CloudBolt has integrated a [resource handler](http://docs.cloudbolt.io/resource-handlers.html) for CenturyLink Cloud, which streamlines the discovery of services after users get started with the [CloudBolt blueprint](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-cloudbolt-appliance/).
-
-  * __OpenVPN Access Server.__ [OpenVPN Access Server](https://openvpn.net) is a full-featured, software-based, virtual private networking solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments. OpenVPN Access Server supports a wide range of configurations, including secure and granular remote access to internal network and/ or private cloud network resources and applications with fine-grained access control.  [Build your secure link to the cloud today](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-openvpnas-appliance/) using OpenVPN AS.
-
-  * __SoftNAS.__ [SoftNAS](https://www.softnas.com) is one of the most popular storage technologies in the cloud.  This virtual appliance template is [now available via Cloud Blueprint](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-softnas-cloud-file-gateway-appliance/), providing CenturyLink customers with an enterprise-grade, software-defined, network-attached storage gateway to safely and reliably operate their business-critical IT systems and storage folders inside CenturyLink Cloud.
 
 ### Open Source Contributions (3)
 

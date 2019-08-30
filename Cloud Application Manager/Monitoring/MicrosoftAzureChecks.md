@@ -18,12 +18,12 @@
 ### Overview
 The Check Catalog is library that contains the available Checks (metric or status) that can be added to Policies within the Cloud Application Manager. The following document covers the available configurable Microsoft Azure checks.
 
-### Prerequisites
+### Prerequisites 
 User must have access to Cloud Application Manager Monitoring Site, the workspace where the monitoring assets are configured, and should be at the organization level scope to access Settings.
 
-User must also have access to the organization’s Azure account in order to obtain necessary information for the setup of an Azure check.
+User must also have access to the organization’s Azure account in order to obtain necessary information for the setup of an Azure check. 
 
-### Navigation
+### Navigation 
 
 Left Navigation:  
 

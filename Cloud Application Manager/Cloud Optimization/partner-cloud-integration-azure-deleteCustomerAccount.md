@@ -40,6 +40,8 @@ Please provide the following information for the delete:
 * Your first and last name (must be a user registered with CenturyLink for the account)
 * Your company's name
 * Your request to delete your Azure Customer account and your reason for the request.
+* If you are not transferring to a new CSP and expect to pay Microsoft directly, you will be required to transfer resources to new Subscriptions. After you create one new subscription outside the CSP for each that is inside the CSP, please provide a mapping of how you want the resources to transfer. 
+* If you are not transferring to a new CSP and expect to pay Microsoft directly, please provide contact information for whomever your CenturyLink TAM should work with to ensure that all the resources have migrated.
 * If you are transferring to a new CSP, request that CenturyLink provide the following information so that you can complete the form.
 
 CSP Partner name     

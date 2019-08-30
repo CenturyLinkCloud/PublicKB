@@ -11,7 +11,6 @@
     "Database",
     "Dedicated Cloud Compute",
     "Disaster Recovery",
-    "Ecosystem Partners",
     "General",
     "Managed Services",
     "Marketplace",

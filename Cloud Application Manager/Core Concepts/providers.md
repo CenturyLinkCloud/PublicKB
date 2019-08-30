@@ -1,7 +1,7 @@
 {{{
 "title": "Providers",
-"date": "05-23-2019",
-"author": "Diego Sanjuan, Guillermo Sánchez",
+"date": "08-01-2019",
+"author": "Diego Sanjuan, Guillermo Sánchez, Victor Shulman",
 "keywords": ["cam", "alm", "providers", "centuryLink-cloud", "clc", "aws", "azure", "google-cloud", "gcp", "cloudstack", "dimension-data", "openstack", "rackspace", "softlayer", "vcloud", "vmware"],
 "attachments": [],
 "contentIsHTML": false
@@ -16,6 +16,7 @@
 * [Providers page](#providers-page)
 * [Synchronization process](#synchronization-process)
 * [Supported provider types](#supported-provider-types)
+* [Exporting the List of Providers](#exporting-the-list-of-providers)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 
@@ -101,7 +102,7 @@ Cloud Application Manager integrates with many popular clouds. Here is a full li
 | --------------------------------------------------------------------------------------------------------------------- | :--------------------: | :-------------------------: |
 | [CenturyLink Cloud](../Deploying Anywhere/using-centurylink-cloud.md)                                               | ✓                      | ✓                           |
 | [CenturyLink DCC](../Deploying Anywhere/using-dcc.md)                                                               | ✓                      | ✓                           |
-| [CenturyLink Private Cloud on VMware Cloud Foundation](https://www.ctl.io/knowledge-base/centurylink-private-cloud-on-vmware-cloud-foundation//general/#1) | ✓                      | ✓                           |
+| [CenturyLink Private Cloud on VMware Cloud Foundation](../../CenturyLink Private Cloud on VMware Cloud Foundation/General/#1) | ✓                      | ✓                           |
 | [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md)                                              | ✓                      | ✓                           |
 | Amazon Web Services GovCloud (Same documentation as [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md)) | ✓              | ✓                           |
 | [CloudStack](../Deploying Anywhere/using-cloudstack.md)                                                             | ✓                      | ✓                           |
@@ -113,6 +114,24 @@ Cloud Application Manager integrates with many popular clouds. Here is a full li
 | [SoftLayer](../Deploying Anywhere/using-softlayer.md)                                                               | ✓                      | ✓                           |
 | [vCloud Air and vCloud Director](../Deploying Anywhere/orchestrating-vcloud-air-vcloud-director-deployments.md)     | ✓                      | ✓                           |
 | [VMware vCenter](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md)                              | ✓                      | ✓                           |
+
+### Exporting the List of Providers
+
+Near the top right of the screen, there is a button: **Detail Export**.
+
+![Detail Export menu button](../../images/cloud-application-manager/deploying-anywhere/detail-export-providers-00.png)
+
+Clicking this button toggles a drop-down menu with two options:
+* Export to CSV
+* Export to PDF
+
+![Detail Export menu](../../images/cloud-application-manager/deploying-anywhere/detail-export-providers-01.png)
+
+When one of these options is selected, a file is downloaded to your system and saved based on your browser's settings (by default, in the Downloads folder). The file will be named _providers.csv_ or _providers.pdf_; or, if a file by that name already exists, the name will be modified according to your operating system rules (e.g., _providers (1).csv_).
+
+Please note that **all** providers in the current scope are exported, not necessarily just the ones you see in the list (no applied filters are considered). The current scope is either the currently selected workspace, or the cost center, or the organization selected in the context switcher. For a workspace, all the providers that are shared with the workspace are also included.
+
+All the columns in the providers list will be included in the exported file, along with some additional ones such as _creation time_, _cost center_ and _organization name_.
 
 
 ### Contacting Cloud Application Manager Support

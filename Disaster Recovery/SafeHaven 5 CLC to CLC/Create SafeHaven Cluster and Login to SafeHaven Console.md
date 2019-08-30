@@ -10,7 +10,7 @@
 This article explains how to deploy a SafeHaven Cluster. Once the cluster is deployed, a user can log in to SafeHaven Console to access their SafeHaven Environment and start the DR setup.
 
 ### Assumptions
-1. CMS server has been created 
+1. CMS server has been created
 2. The CMS server is reachable from the PC/machine you are running the SafeHaven Console on.
 3. The CMS server has internet access.
 
@@ -30,19 +30,19 @@ Download the **GUI Package** from the **Download Links** section of the most rec
    a. Enter **CMS Hostname**.
     
    b. **CMS Access IP** (used to connect to the SafeHaven Console GUI) and **CMS Service IP** (used for communication between CMS 		and SRN's). Typically the CMS Private IP address is entered in these fields although they can differ in some cases. You can get this information from the CMS Server deployed in the recovery datacenter which is CLC in this case.
-    
+
    c. Set the **Administrator Password** (Password required to login to the SafeHaven Console GUI to manage the DR environment and 	initiate recovery operations).  
-    
+
    d. Enter the **CMS root password**. You can get this information from the CMS Server deployed in the recovery datacenter which 		is CLC in this case.
-    
+
     **NOTE**: Best practice is to use different passwords for Administrator and root user.
-    
+
    e. Click on **Validate CMS Access** to confirm connectivity to the CMS.
 
-   f. Copy the **Debian Package for CMS/SRN** link from the **Download Links** section of the most recent SafeHaven release notes. 
-   In this case, it is  [SafeHaven 5.0 Release Notes](../SafeHaven 5 General/SafeHaven5.0.0-Release-Notes.md) and enter it in the **SafeHaven distribution URL** field. 
-   
-   **NOTE**:Please contact your CenturyLink Cloud Onboarding Resource if you have any questions regarding the latest version of **Debian 
+   f. Copy the **Debian Package for CMS/SRN** link from the **Download Links** section of the most recent SafeHaven release notes.
+   In this case, it is  [SafeHaven 5.0 Release Notes](../SafeHaven 5 General/SafeHaven5.0.0-Release-Notes.md) and enter it in the **SafeHaven distribution URL** field.
+
+   **NOTE**:Please contact your CenturyLink Cloud Onboarding Resource if you have any questions regarding the latest version of **Debian
    Package for CMS/SRN**. Do not modify the Service Port (TCP), Heartbeat Port (UDP), Installation ID.
 
 5. Click **Next**
@@ -60,8 +60,3 @@ Download the **GUI Package** from the **Download Links** section of the most rec
 3. Click **Log In**.
 2. **Install** the SSL Certificate (This will require Administrator rights).
 3. The **SafeHaven Cluster** will appear and you can start configuring it.
-
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/f3EZhkA39ak" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</p>
