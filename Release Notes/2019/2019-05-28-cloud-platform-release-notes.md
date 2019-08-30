@@ -47,10 +47,10 @@ Managed Services Anywhere has been updated to handle VMs built with ephemeral st
 
 Application Lifecycle Management will enhance log trace for each access to the AWS console through the recently added Provider Instance ID link on the instance details page. This type of access was already been registered in the Provider activity log, but it has been improved with the instance id that is being accessed, as well as including it into the instance activity log. This way any AWS console access will be displayed either by instance activity log or by provider activity log, improving auditability and facilitating any issue troubleshooting.
 
-##### New Cloud Formation types supported
+##### New CloudFormation types supported
 
-Application Lifecycle Management now supports additional Cloud Formation types to be used in Cloud Formation template boxes. These additional types are:
-"AWS::Glue::DataCatalogEncryptionSettings", "AWS::Glue::SecurityConfiguration", "AWS::MediaStore::Container", "AWS::ApiGatewayV2::ApiMapping" and "AWS::ApiGatewayV2::DomainName".  The user can now use these new resource types in the template definition of any Cloud Formation template box or update the template file of any existing template instance adding any of these types of resource and reconfigure the instance to use it.
+Application Lifecycle Management now supports additional CloudFormation types to be used in CloudFormation template boxes. These additional types are:
+"AWS::Glue::DataCatalogEncryptionSettings", "AWS::Glue::SecurityConfiguration", "AWS::MediaStore::Container", "AWS::ApiGatewayV2::ApiMapping" and "AWS::ApiGatewayV2::DomainName".  The user can now use these new resource types in the template definition of any CloudFormation template box or update the template file of any existing template instance adding any of these types of resource and reconfigure the instance to use it.
 
 ##### Support for new AWS instance types
 
@@ -59,11 +59,10 @@ Application Lifecycle Management now supports two new Amazon Web Services instan
 #### [CenturyLink Public Cloud](https://www.ctl.io/dedicated-cloud-compute/)
 
 #### OS Templates
+
 RHEL 6 & 7 have been updated and the latest revisions are now available on the CLC Platform.  RHEL 6 in now on revision 6.8 and RHEL 7 is on 7.2.  This update was completed as part of our ongoing efforts to improve security and availability of all CenturyLink Cloud resources.
 
 ### Bug Fixes (2)
-
-#### [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/)
 
 #### [Analytics](https://www.ctl.io/cloud-application-manager/cloud-optimization/)
 

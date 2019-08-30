@@ -19,16 +19,16 @@ Cloud application Manager recently released the new Kubernetes provider type. Th
 
 ##### Add link to resource in AWS console from instance details page
 
-Application Lifecycle Management now includes a link in the instances details page that points to the resource in the AWS console. This link will appear next to the Provider Instance ID value in the instance details page if the user has enough rights to access the AWS console (the user has write access to the provider). If the instance has multiple machines, the link will display all those machine list in AWS console through a filter. If the instance is a Cloud Formation template, the link will display the Cloud Formation stack in the AWS console.
+Application Lifecycle Management now includes a link in the instances details page that points to the resource in the AWS console. This link will appear next to the Provider Instance ID value in the instance details page if the user has enough rights to access the AWS console (the user has write access to the provider). If the instance has multiple machines, the link will display all those machine list in AWS console through a filter. If the instance is a CloudFormation template, the link will display the CloudFormation stack in the AWS console.
 
 ##### Support for new Google Cloud Platform region
 
 Application Lifecycle Management now supports a new Google Cloud Platform region: Europe West 6 (europe-west6) and its corresponding zones. Once you synchronize your Google Cloud provider in Cloud Application Manager, you will be able to select in your Deployment Policy boxes the zones corresponding to the new region.
 
-##### New Cloud Formation types supported
+##### New CloudFormation types supported
 
-Application Lifecycle Management now supports additional Cloud Formation types to be used in Cloud Formation template boxes. These additional types are all related to AWS IoT GreenGrass: 
-"AWS::Greengrass::ConnectorDefinition", "AWS::Greengrass::ConnectorDefinitionVersion", "AWS::Greengrass::CoreDefinition", "AWS::Greengrass::CoreDefinitionVersion", "AWS::Greengrass::DeviceDefinition", "AWS::Greengrass::DeviceDefinitionVersion", "AWS::Greengrass::FunctionDefinition", "AWS::Greengrass::FunctionDefinitionVersion", "AWS::Greengrass::Group", "AWS::Greengrass::GroupVersion", "AWS::Greengrass::LoggerDefinition", "AWS::Greengrass::LoggerDefinitionVersion", "AWS::Greengrass::ResourceDefinition", "AWS::Greengrass::ResourceDefinitionVersion", "AWS::Greengrass::SubscriptionDefinition" and "AWS::Greengrass::SubscriptionDefinitionVersion". The user can now use these new resource types in the template definition of any Cloud Formation template box or update the template file of any existing template instance and reconfigure it to use the new resource types.
+Application Lifecycle Management now supports additional CloudFormation types to be used in CloudFormation template boxes. These additional types are all related to AWS IoT GreenGrass: 
+"AWS::Greengrass::ConnectorDefinition", "AWS::Greengrass::ConnectorDefinitionVersion", "AWS::Greengrass::CoreDefinition", "AWS::Greengrass::CoreDefinitionVersion", "AWS::Greengrass::DeviceDefinition", "AWS::Greengrass::DeviceDefinitionVersion", "AWS::Greengrass::FunctionDefinition", "AWS::Greengrass::FunctionDefinitionVersion", "AWS::Greengrass::Group", "AWS::Greengrass::GroupVersion", "AWS::Greengrass::LoggerDefinition", "AWS::Greengrass::LoggerDefinitionVersion", "AWS::Greengrass::ResourceDefinition", "AWS::Greengrass::ResourceDefinitionVersion", "AWS::Greengrass::SubscriptionDefinition" and "AWS::Greengrass::SubscriptionDefinitionVersion". The user can now use these new resource types in the template definition of any CloudFormation template box or update the template file of any existing template instance and reconfigure it to use the new resource types.
 
 #### [Analytics](https://www.ctl.io/knowledge-base/cloud-application-manager/analytics/#1)
 

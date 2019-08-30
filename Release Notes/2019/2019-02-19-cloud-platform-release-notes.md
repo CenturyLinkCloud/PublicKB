@@ -37,12 +37,12 @@ Application Lifecycle Management now allows users to prevent the manual **shutdo
 
 Cloud Application Manager now includes a link to the provider details page on the Instances page, view by provider. The user can now go through this link to the provider details page while browsing the instances in the view by provider. This view of the instances page already presented the instances grouped by the provider, with a dropdown to collapse or expand each provider instances. Now it includes an icon after the provider name that will navigate to the provider details page when clicked.
 
-##### New Cloud Formation Types Supported
+##### New CloudFormation Types Supported
 
-Application Lifecycle Management now supports additional Cloud Formation types to be used in Cloud Formation template boxes. These additional types are:  
+Application Lifecycle Management now supports additional CloudFormation types to be used in CloudFormation template boxes. These additional types are:  
 "AWS::ApiGatewayV2::Api", "AWS::ApiGatewayV2::Authorizer", "AWS::ApiGatewayV2::Deployment", "AWS::ApiGatewayV2::Integration", "AWS::ApiGatewayV2::IntegrationResponse", "AWS::ApiGatewayV2::Model", "AWS::ApiGatewayV2::Route", "AWS::ApiGatewayV2::RouteResponse", "AWS::ApiGatewayV2::Stage", "AWS::FSx::FileSystem", "AWS::KinesisAnalyticsV2::Application", AWS::KinesisAnalyticsV2::ApplicationCloudWatchLoggingOption", 
 "AWS::KinesisAnalyticsV2::ApplicationOutput" and "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource".  
-The user can now use these new resource types in the template definition of any Cloud Formation template box or update the template file of any existing template instance and reconfigure it to use the new resource types.
+The user can now use these new resource types in the template definition of any CloudFormation template box or update the template file of any existing template instance and reconfigure it to use the new resource types.
 
 ##### Support For New AWS Instance Types
 
