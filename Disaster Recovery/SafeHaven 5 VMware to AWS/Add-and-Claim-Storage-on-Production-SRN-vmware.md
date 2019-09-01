@@ -44,11 +44,6 @@ This article assumes that the user has already registered the SRN within the Saf
 
 4. Depending on the protection group architecture, the user can claim another disk following a similar procedure and can either **Create a new Storage Pool** or **Add to an existing Storage Pool**.
 
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VlOcxORVAkI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</p>
-
 For **Windows** Protection Group, **Next Step** is to [Create Windows Protection Group, Install LRA and Start Replication](../SafeHaven 5 CLC to AWS/Create-Windows-Protection-Group-Install-LRA-and-Start-Replication.md)
 
 For **Linux** Protection Group, **Next Step** is to [Create Linux Protection Group](../SafeHaven 5 CLC to AWS/Create Linux Protection Group.md)

@@ -12,7 +12,7 @@
 
 ##### Site Update
 
-Cloud Application Manager now includes a new Overview page in the Management site where you can see at a glance the products you have available and the additional products that may enhance your Cloud Management experience through Cloud Application Manager. This new Overview page will be the landing page for all users login to Cloud Application Manager. Also, Applications site has removed some of the menu options that were already available through the Management site, such as Users, Settings and Billing. To access these options you should navigate to Management site to find them at organization scope.
+Cloud Application Manager now includes a new Overview page in the [Management site](https://account.cam.ctl.io/#/overview) where you can see at a glance the products you have available and the additional products that may enhance your Cloud Management experience through Cloud Application Manager. This new Overview page will be the landing page for all users login to Cloud Application Manager, Management site. Also, [Applications site](https://cam.ctl.io/#/dashboard) has removed some of the menu options that were already available through the Management site, such as Users, Settings and Billing. To access these options you should navigate to [Management site](https://account.cam.ctl.io/#/overview) to find them at organization scope.
 
 ##### Optimized AWS Provider Updates
 

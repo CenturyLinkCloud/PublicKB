@@ -35,7 +35,7 @@ Given that it is required to have the bring your own IP range on CLC and AWS, a 
 By manipulating the routing tables of the subnets on AWS we can failover/test failover instances without impacting the production environment and keeping the multi-tier application isolated. For CLC there is no setup required other than the VPN configuration.
 
 For AWS:
-vgw-xxxxxx    	VPN between CLS and AWS
+vgw-xxxxxx    	VPN between CLC and AWS
 pcx-yyyyyy	VPC Peering between Main and BYOIP VPCs
 igw-zzzzzz	Internet Gateway
 

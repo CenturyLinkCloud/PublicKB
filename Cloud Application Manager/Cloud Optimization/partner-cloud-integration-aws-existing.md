@@ -1,7 +1,7 @@
 {{{
   "title": "Partner Cloud: Getting Started With An Existing AWS Customer Account",
-  "date": "07-20-18",
-  "author": "Kevin Quaintance",
+  "date": "05-10-19",
+  "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -9,7 +9,7 @@
 
 ### Overview
 
-[Cloud Application Manager's](https://www.ctl.io/cloud-application-manager/) Cloud Optimization gives users the ability to benefit from CenturyLink's partnerships with other cloud providers. CenturyLink assumes the billing for these accounts and takes responsibility for platform support. Users may also benefit from Security hardening and cost Optimization. To migrate an existing AWS account, customers must gain approval from AWS (Please contact your CenturyLink representative for more details). Existing Accounts which are transferred into CenturyLink's care (a result of an approved account transfer process agreement with AWS) also need to consider the permissions they are required to give CenturyLink.  This document covers using Cloud Optimization with existing Amazon Web Services accounts.
+[Cloud Application Manager's](https://www.ctl.io/cloud-application-manager/) Cloud Integration gives users the ability to benefit from CenturyLink's partnerships with other cloud providers. CenturyLink assumes the billing for these accounts and takes responsibility for platform support. Users may also benefit from Security hardening and potential cost Optimization. To migrate an existing AWS account, customers must gain approval from AWS (Please contact your CenturyLink representative for more details). Existing Accounts which are transferred into CenturyLink's care (a result of an approved account transfer process agreement with AWS) also need to consider the permissions they are required to give CenturyLink.  This document covers using Cloud Integration with existing Amazon Web Services accounts.
 
 ### Audience
 
@@ -41,7 +41,7 @@ All accounts coming to CenturyLink will be fully hardened. Your CAM organization
 
 Below is a table that will help you understand the permissions you will provide to CenturyLink. Below the table are steps to provide the level of access you have decided upon.
 
-  Cloud Optimization Option | Benefits | IAM Permissions given to CenturyLink | Automated changes |
+  Cloud Integration Option | Benefits | IAM Permissions given to CenturyLink | Automated changes |
   --- | --- | --- | ---
   Full Hardening | All the benefits listed above, plus AWS-recommendations within the account for security, compliance, and support. | Admin | All the automated changes above for the purpose of [support](). Creates IAM Policies and Roles for CenturyLink Operations Staff to give them access to your account. Configures a secure password policy. Sets up an S3 audit bucket for CloudTrail and activates CloudTrail on that bucket, auditing all buckets in the linked account. Sets up the AWS Config service for regular compliance monitoring. Performs the steps [here](../Deploying Anywhere/using-your-aws-account.md), providing standard permissions to Cloud Application Manager and syncs the provider.
 
@@ -49,10 +49,10 @@ More details regarding these roles and permissions are [here](partner-cloud-inte
 
 **Consolidated Billing Considerations**
 
-* **Data changes** Optimized accounts have access to use Cloud Application Manager's [Analytics](../Analytics/CloudApplicationManagerAnalyticsUI.md) and [Monitoring](../Monitoring/cammonitoringui.md) tools for usage details that would have been provided by AWS Billing Services such as Cost Explorer and to offer our customers visibility into the status of their environment.
+* **Data changes** Integrated accounts have access to use Cloud Application Manager's [Analytics](../Analytics/CloudApplicationManagerAnalyticsUI.md) and [Monitoring](../Monitoring/cammonitoringui.md) tools for usage details that would have been provided by AWS Billing Services such as Cost Explorer and to offer our customers visibility into the status of their environment.
 * **Historical Usage Data** Such as that had been used by AWS Cost Explorer - will be lost when accounts migrate under a new Master Payer. CenturyLink recommends Customers download all necessary usage data to a safe repository prior to completing the following steps.
-* **Data Access** Customers will not be given access to consolidated data within the CenturyLink-owned Master Payers. Optimized accounts have access to use Cloud Application Manager's [Analytics](../Analytics/CloudApplicationManagerAnalyticsUI.md) tool for usage details.
-* **Tagging Changes.** The quantity of unique [Cost Allocation tag keys](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) available to Customers, such as those used for AWS Cost Explorer, are limited. Customers can have (hypothetically) an unlimited quantity of unique Cost Allocation tag values. If you have concerns, please contact your sales representative or submit a support ticket prior to migration to discuss your Cost Allocation tagging requirements.
+* **Data Access** Customers will not be given access to consolidated data within the CenturyLink-owned Master Payers. Integrated accounts have access to use Cloud Application Manager's [Analytics](../Analytics/CloudApplicationManagerAnalyticsUI.md) tool for usage details.
+* **Tagging Changes.** Because cost allocation tags are part of the aforementioned AWS billing data, all historical cost allocation tag data is lost when accounts move to Cloud Application Manager. The tags will go inactive, but are not deleted. CenturyLink will need to re-activate them on behalf of Customers. The quantity of unique [Cost Allocation tag keys](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) available to Customers, such as those used for AWS Cost Explorer, are limited. Customers can have (hypothetically) an unlimited quantity of unique Cost Allocation tag values. If you depend upon your cost allocation tags, please contact your sales representative or submit a support ticket prior to migration to discuss your Cost Allocation tagging requirements. When they are activated, they do not retroactively populate data into billing tables, so please be prompt in having this discussion.
 * **Reserved Instances**
   * Purchased prior to transferring to CenturyLink must always stay with the account at which they were purchased.  If the Customer purchased Reserved Instances from a Master Payer they own, they can still use them.
   * Customers may contact CenturyLink if they wish to have their Reserved Instance limit increased.
@@ -166,7 +166,7 @@ After your account becomes a member of the CenturyLink-owned AWS organization, c
 
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
+If you are experiencing an issue with [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/), please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 

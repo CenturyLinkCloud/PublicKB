@@ -32,8 +32,8 @@ This article assumes that the user has already registered the SRNs within the Sa
 
    If the production/source VM is a **Windows machine**:  
   **For a local cache based Windows Protection Group(recommended):** 
-    The disk size should be **10% of total provisioned storage**   
-    For example, If Production VMs disk size is 60 GB, add a 6GB disk to the Production SRN.  
+    The disk size should be **10% of total provisioned storage**, plus **1GB for metadata**   
+    For example, If Production VMs disk size is 60 GB, add a 7GB disk to the Production SRN.  
 
    **For a Replica based Windows Protection Group(recommended):**    
    The disk size should be **125% of total provisioned storage**, and **6GB per Protection group** for Failback Test Failover.

@@ -19,9 +19,9 @@ This article assumes that:
 2. Linux PG initial sync is completed and there are clean 0 sized checkpoint(s) for Test Failover
 
 ### Configure the recovery server
-A recovery server boots off of disks of the DR SRN when a test failover/ failover operation is issued. 
+A recovery server boots off of disks of the DR SRN when a test failover/ failover operation is issued.
 1. Right click on the Linux PG, select **Test Failover** from the drop-down menu
-2. Select the desired checkpoint and lick on next
+2. Select the desired checkpoint and click on next
 3. Once **Test Failover** and **Power on** are completed, click on next.
 4. Confirm the right PG is selected and click on **Next**
 5. SSH into the Recovery Linux Server.
@@ -43,15 +43,10 @@ A recovery server boots off of disks of the DR SRN when a test failover/ failove
    ```
  **Note**: The above script will download some packages required for the replication.
    - **Please enter the iSCSI Target Server IP Address at this site:**  
-     Please put the Local iSCSI IP Address of the Recovery SRN in CenturyLink Cloud Prouction Datacenter here.
+     Please put the Local iSCSI IP Address of the Recovery SRN in CenturyLink Cloud Production Datacenter here.
 9. Shut down the Recovery server.
     ```
     shutdown -h now
     ```
 10. Go back to SafeHaven Console Test Failover wizard, check both **MakeStub tool complete** and **Reboot & verify complete** boxes, then click on **Finish**.
 11. Click on **Delete and Finish** button to exit the wizard, Wait till the job to complete.
-
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kJI63oXwmrg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</p>

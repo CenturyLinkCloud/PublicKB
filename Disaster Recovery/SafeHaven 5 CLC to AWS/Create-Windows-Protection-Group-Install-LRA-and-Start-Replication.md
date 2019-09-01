@@ -32,7 +32,7 @@ This article assumes that:
 3. **Select the servers** from the production datacenter that you want to include in the Protection Group.  Remember that it is perfectly acceptable to select just one server for inclusion in the Protection Group. Click **Next**.  
 **NOTE**: VSS Checkpoints are not available if you select multiple Windows to create a single Protection Group.
 
-4. Choose a name for the Protection Group and click **Next**. 
+4. Choose a name for the Protection Group and click **Next**.
 
 5. Next, the SafeHaven software provides a suitable default size for the Disk Cache. You can modify this should you choose.  
 
@@ -49,7 +49,7 @@ Method 2. Manual LRA Installation and Manually Start Initial Replication
 
 ### METHOD 1
 #### Automatic/Ansible LRA installation and Automatically Start Initial Replication
-1. Once the Protection Group is created and its status is **Ready** on the Properties tab, right click on it and click **Install Local Replication Agent**.
+1. Once the Protection Group is created and its status is **Running** on the Properties tab, right click on it and click **Install Local Replication Agent**.
 2. First select the VM you need to install LRA on, then click **Next**.
 3. Next you will need to provide the credentials for each protected VM, and acknowledge that you understand that :  
     a. Each selected virtual server will automatically reboot during the process.  
@@ -60,12 +60,6 @@ Method 2. Manual LRA Installation and Manually Start Initial Replication
 4. Once it says **Completed** under **Install LRA**, click **Next**. Next, click **Finish** to end the wizard.
 
 **The initial replication of the production windows server is started automatically as part of the installation process.**
-
-### Video Tutorial
-**Automatic LRA Installation**
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Bqcwy0OvjGI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</p>
 
 **NOTE**: Follow the steps below incase the user prefers to install the LRA and start the replication manually.
 
@@ -101,11 +95,5 @@ Method 2. Manual LRA Installation and Manually Start Initial Replication
 7. Click **Finish** to end the wizard.
 
 The initial replication of the production windows VM will start now. Close the command prompt window if required.
-
-### Video Tutorial
-**Manual LRA Installation**
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Si5ATSx0fiI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</p>  
 
 Once the Protection Group is created successfully, **Next** step is to [Modify WAN Replication Rate](Modify WAN Replication Rate.md) and [check replication status](Check Replication Status.md)

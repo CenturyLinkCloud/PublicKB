@@ -48,7 +48,7 @@ GB3 - Great Britain (Slough)<br>VA1 - US East (Sterling)<br>UC1 - US West (Santa
 
 The operating system drop-down menu will automatically show supported, Managed OS options. Choose your version, and then proceed with the remainder of the server creation process.
 
-After creating a VM for management or after deploying the blueprint to convert an existing VM to a managed one, the VM will be 'Under Construction' while background processes are completed. You will not have access to the server during that time. Please allow up to a 60 minutes. If there are any issues beyond that time, contact us via email <a href="mailto:request@centurylink.com">request@centurylink.com</a> or by phone at the following numbers.
+After creating a VM for management or after deploying the blueprint to convert an existing VM to a managed one, the VM will be 'Under Construction' while background processes are completed. You will not have access to the server during that time. Please allow up to 2 hours for the process to complete. If there are any issues beyond that time, contact us via email <a href="mailto:request@centurylink.com">request@centurylink.com</a> or by phone at the following numbers.
 
 * In the US: 888.638.6771
 * UK: +44.118.322.6100

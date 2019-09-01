@@ -1,6 +1,6 @@
 {{{
 "title": "Software as a Service (SaaS) Integration - Tracking Pixel",
-"date": "03-01-2017",
+"date": "01-01-2019",
 "author": "Rich DuBose",
 "attachments": [],
 "contentIsHTML": false
@@ -8,17 +8,17 @@
 
 ### Overview
 
-CenturyLink has created multiple opportunities for software vendors to integrate with the Cloud Marketplace. Each of these methods is designed for the provider to be as independent as possible as they work through the integration process.  To be included in the Cloud Marketplace, a SaaS provider must implement one of these methods. During the Marketplace Provider Onboarding Program, we will discuss which integration type is the best fit. 
+CenturyLink has created multiple opportunities for software vendors to integrate with the Cloud Marketplace. Each of these methods is designed for the provider to be as independent as possible as they work through the integration process.  To be included in the Cloud Marketplace, a SaaS provider must implement one of these methods. During the Marketplace Provider Onboarding Program, we will discuss which integration type is the best fit.
 
 ### Integration Types
 
 #### Tracking Pixel
 
-**Overview** 
+**Overview**
 
 The tracking pixel option allows CenturyLink to monitor demand & accounts created by the CenturyLink Cloud Marketplace drives to your organizations website & product.
 
-Below is a JavaScript tracking pixel that may be used to integrate with the CenturyLink Cloud Marketplace. You will need the Provider Key that you were provided during onboarding with the tracking pixel. If you were not provided a Provider Key or require a new one to be issued, contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
+Below is a JavaScript tracking pixel that may be used to integrate with the CenturyLink Cloud Marketplace. You will need the Provider Key that you were provided during onboarding with the tracking pixel. If you were not provided a Provider Key or require a new one to be issued, contact us at [Marketplace@centurylink.com](mailto:Marketplace@centurylink.com).
 
 **JavaScript Tracking Pixel**
 ```

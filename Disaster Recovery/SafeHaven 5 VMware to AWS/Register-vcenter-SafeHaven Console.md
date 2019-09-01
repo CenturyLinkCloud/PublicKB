@@ -37,9 +37,4 @@ Each AWS Region is treated as a separate Datacenter within a SafeHaven Cluster.
 
 **Properties Panel** shows the Amazon Cloud information.
 
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kmtrlYN5OGU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</p>
-
 **Next Step** is to [Register SRN within SafeHaven Console](../SafeHaven 5 CLC to AWS/Register SRN within SafeHaven Console.md)

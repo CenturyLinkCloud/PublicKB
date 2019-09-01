@@ -131,12 +131,12 @@ There are no Fortinet license costs included. The cost to deploy the Fortinet Pa
 ### To Request a Credit for the Service Task Fee
 Request a credit on your account to reimburse any expense to deploy the partner template.
 
-Please copy and paste the email below and send it to [ecosystem@ctl.io](mailto:ecosystem@ctl.io).
+Please copy and paste the email below and send it to [ECOSystem@centurylink.com](mailto:ECOSystem@centurylink.com).
 
 ```
 ----
 
-TO: Ecosystem@CTL.io
+TO: ECOSystem@centurylink.com
 
 EMAIL SUBJECT:   Requesting Credit for Fortinet Partner Template Deployment
 

@@ -10,10 +10,10 @@
 This article explains how to check replication status for protection groups from the SafeHaven console and production server.
 
 ### Assumptions
-This article assumes that a SafeHaven cluster has already been created successfully. Both production and recovery SRNs are registered and peered with storage pools claimed correctly. Initial replication has been started on the Windows Production Servers.
+This article assumes a SafeHaven cluster has already been created successfully. Both production and recovery SRNs are registered and peered with storage pools claimed correctly. Initial replication has been started on the Windows Production Servers.
 
 ### Check Replication Status for a Windows Server
-1. RDP to the Production Windows server you are protecting. Open a command prompt with admin priviledges, and change the directory to C:\Program Files\SafeHaven\tools
+1. RDP to the Production Windows server you are protecting. Open a command prompt with admin privileges, and change the directory to C:\Program Files\SafeHaven\tools
 ```
 cd C:\Program Files\SafeHaven\tools
 ```
@@ -25,7 +25,7 @@ C:\Program Files\SafeHaven\tools>DgSyncEx.exe
 ```
 DgSyncEx>list
 ```
-4. Monitor the local replication by looking at the Progess% for each source disk. We require each disk to have progress % of 100 before configuring checkpoints.
+4. Monitor the local replication by looking at the Progress% for each source disk. We require each disk to have progress % of 100 before configuring checkpoints.
 
 ![Upgrade](../../images/SH5.0/create_PR_SRN_in_CLC/winrep1.PNG)
 
@@ -40,15 +40,9 @@ cat running_rsync2iscsi.sh.log
 
 ![Upgrade](../../images/SH5.0/create_PR_SRN_in_CLC/linrep1.PNG)
 
-### Monitor the Unsyncronized Data for Protection Groups
-Monitor the WAN replication by logging into the SafeHaven console, click on the Protection Group and monitor the **Unsyncronized Data** count in the **Properties** panel.
+### Monitor the Unsynchronized Data for Protection Groups
+Monitor the WAN replication by logging into the SafeHaven console, click on the Protection Group and monitor the **Unsynchronized Data** count in the **Properties** panel.
 
 ![Upgrade](../../images/SH5.0/create_PR_SRN_in_CLC/unsynceddata.PNG)
 
-### Video Tutorial
-
-#### Check Replication Status for Windows
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Bczh8PkN-N8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-Once the WAN replication completes and the Unsyncronized data count is close to 0 bytes, **next step** is to [Configure Checkpoints](Configure Checkpoints.md)
-
+Once the WAN replication completes and the Unsynchronized data count is close to 0 bytes, **next step** is to [Configure Checkpoints](Configure Checkpoints.md)

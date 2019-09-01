@@ -1,7 +1,7 @@
 {{{
   "title": "Resizing Disks in Linux Virtual Machines",
-  "date": "09-23-2015",
-  "author": "Anthony Hakim",
+  "date": "02-10-2019",
+  "author": "Christian Presley",
   "attachments": []
 }}}
 
@@ -32,3 +32,5 @@ The resize disk request will be submitted to the queue.
 Once complete, you can test using the following commands:
 
   ![Resizing disks in Linux Virtual Machines](../images/resizing-disks-in-linux-virtual-machines6.png)
+  
+Related: [Manually expanding file system on Linux machines.](./manually-expanding-file-system-on-linux-machines.md)

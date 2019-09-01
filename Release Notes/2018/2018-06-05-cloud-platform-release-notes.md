@@ -37,7 +37,7 @@ For each CAM Customer, Administrators of the first, Optimized Azure Subscription
 
 #### CAM Platform: New Applications Site
 
-We have made some changes to the scope of our Management Site. All the functionality related to Application Lifecycle Management has been moved to a new site called "Applications." Management functions like managing providers, users, settings and viewing activity logs and billing information remain in the "Management" site. "Applications" will still be the default site that users will land on at log on. They can switch to the Management site to perform any management activities. This will provide a clear distinction between management activities and application related activities thus allowing the users who are interested in each of those activities to easily navigate and remain within their realm.
+We have made some changes to the scope of our [Management site](https://account.cam.ctl.io/#/overview). All the functionality related to Application Lifecycle Management has been moved to a new site called [Applications site](https://cam.ctl.io/#/dashboard). Management functions like managing providers, users, settings and viewing activity logs and billing information remain in the "Management" site. "Applications" site will still be the default site that users will land on at log on. They can switch to the [Management site](https://account.cam.ctl.io/#/overview) to perform any management activities. This will provide a clear distinction between management activities and application related activities thus allowing the users who are interested in each of those activities to easily navigate and remain within their realm.
 
 ### Bug Fixes (2)
 

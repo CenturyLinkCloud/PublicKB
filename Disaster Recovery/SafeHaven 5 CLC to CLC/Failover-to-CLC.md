@@ -27,6 +27,6 @@ Users may not choose to perform Network Isolation incase of an actual Failover e
 
 3. Wait till **Failover** and **Power On** complete, click on **Finish** to close the wizard.
 
-7. You can go to the **Active iSCSI Sessions** tab to monitor the booting procedure, once the RDP port is open, you can log in to the recovery server to verdify the data consistancy.
+7. You can go to the **Active iSCSI Sessions** tab to monitor the booting procedure, once the RDP port is open, you can log in to the recovery server to verify the data consistency.
 
 The procedure is same for VMWare/Manual sites as source datacenters.

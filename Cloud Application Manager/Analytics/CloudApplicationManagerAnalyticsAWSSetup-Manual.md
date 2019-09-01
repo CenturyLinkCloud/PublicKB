@@ -1,15 +1,18 @@
 {{{
   "title": "Cloud Optimization AWS Configuration - Manual",
-  "date": "09-08-2017",
-  "author": "Chris Meyer",
+  "date": "04-22-2019",
+  "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
 ### Overview
-This process details the steps needed to manually configure your AWS account for Cloud Application Manager Analytics functionality.
+This process details steps one would perform to manually configure AWS accounts for Cloud Application Manager Analytics functionality. Manual configuration is not typically necessary. Automation will deliver these steps when Managed Services Anywhere, Optimization, or Bring-Your-Own Cloud Analytics are enabled.
 
 If you prefer the set-up of your environment to be automated, you can find that procedure [here](CloudApplicationManagerAnalyticsAWSSetup.md).
+
+### Prerequisites
+It is recommended the user or role performing these steps have full IAM permissions for IAM policies and Roles.
 
 #### Login to your AWS Account
 1. Login to the target AWS account [here](https://console.aws.amazon.com/iam).
@@ -47,13 +50,13 @@ If you prefer the set-up of your environment to be automated, you can find that 
 
 
 ##### CenturyLink Cloud Optimization IAM Policy
+
 ```
 
 {
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "FullPolicy",
             "Action": [
                 "acm:DescribeCertificate",
                 "acm:ListCertificates",
@@ -85,6 +88,7 @@ If you prefer the set-up of your environment to be automated, you can find that 
                 "directconnect:DescribeVirtualInterfaces",
                 "dynamodb:ListTables",
                 "dynamodb:DescribeTable",
+                "dynamodb:ListTagsOfResource",
                 "ec2:Describe*",
                 "ec2:GetConsoleOutput",
                 "ecs:ListClusters",
@@ -117,6 +121,7 @@ If you prefer the set-up of your environment to be automated, you can find that 
                 "glacier:GetJobOutput",
                 "iam:Get*",
                 "iam:List*",
+                "iam:GenerateCredentialReport",
                 "iot:DescribeThing",
                 "iot:ListThings",
                 "iam:GenerateCredentialReport",
@@ -127,7 +132,6 @@ If you prefer the set-up of your environment to be automated, you can find that 
                 "kms:Describe*",
                 "kms:Get*",
                 "kms:List*",
-                "kms:ListResourceTags",
                 "lambda:ListFunctions",
                 "lambda:ListTags",
                 "rds:Describe*",
@@ -146,6 +150,8 @@ If you prefer the set-up of your environment to be automated, you can find that 
                 "s3:GetBucketNotification",
                 "s3:GetLifecycleConfiguration",
                 "s3:GetObject",
+                "s3:GetObjectMetadata",
+                "s3:GetNotificationConfiguration",
                 "s3:List*",
                 "ses:ListIdentities",
                 "ses:GetSendStatistics",
@@ -163,6 +169,7 @@ If you prefer the set-up of your environment to be automated, you can find that 
                 "sns:GetSubscriptionAttributes",
                 "sns:ListTopics",
                 "sns:ListSubscriptionsByTopic",
+                "sns:GetSnsTopic",
                 "ssm:List*",
                 "sqs:ListQueues",
                 "sqs:GetQueueAttributes",
@@ -170,14 +177,15 @@ If you prefer the set-up of your environment to be automated, you can find that 
                 "storagegateway:List*",
                 "workspaces:DescribeWorkspaceDirectories",
                 "workspaces:DescribeWorkspaceBundles",
-                "workspaces:DescribeWorkspaces"
+                "workspaces:DescribeWorkspaces",
+                "Organizations:List*",
+                "Organizations:Describe*"
             ],
+            "Resource": "*",
             "Effect": "Allow",
-            "Resource": "*"
+            "Sid": "FullPolicy"
         },
         {
-            "Sid": "CloudWatchLogsSpecific",
-            "Effect": "Allow",
             "Action": [
                 "logs:GetLogEvents",
                 "logs:DescribeLogGroups",
@@ -185,7 +193,9 @@ If you prefer the set-up of your environment to be automated, you can find that 
             ],
             "Resource": [
                 "arn:aws:logs:*:*:*"
-            ]
+            ],
+            "Effect": "Allow",
+            "Sid": "CloudWatchLogsSpecific"
         }
     ]
 }

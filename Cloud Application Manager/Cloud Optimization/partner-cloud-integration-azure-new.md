@@ -37,7 +37,7 @@ For Azure, we are currently limited to serving billable customers who are not re
 
 Cloud Application Manager Provider Verbiage | Description | Related Links
 --- | --- | ---
-Use an existing Azure customer account | This is not an optimized option. Customer pays Amazon for usage. | [Click here](../../Cloud Application Manager/Deploying Anywhere/using-microsoft-azure.md)
+Use an existing **Microsoft Azure** customer account | This is not an optimized option. Customer pays Amazon for usage. | [Click here](../../Cloud Application Manager/Deploying Anywhere/using-microsoft-azure.md)
 Migrate my account to CenturyLink for consolidated billing and Platform Support | **This is a Cloud Optimized option.** This allows an existing customer account to move under CenturyLink's care. | [Click Here](partner-cloud-integration-azure-existing.md)
 Create a new Azure customer account and Subscription or a new subscription for an existing account | **This is a Cloud Optimized option.** Begins the new account creation automation, enabling the customer to immediately enter CenturyLink's care. | This document
 
@@ -78,9 +78,14 @@ Please expect at least a two-minute wait while our automated process performs th
 
 ![Azure Deployment Policies ](../../images/cloud-application-manager/CAM_COA_AzureDeploymentPolicy.png)
 
+**ADMIN Accounts**
+For each CAM Customer, administrators of the first, Optimized Azure Subscription will receive Admin credentials and login URL. This can be obtained through the Edit screen of the Optimized, Azure provider. The admin user will receive the Owner role for that first subscription and *all future subscriptions created via Cloud Application Manager*.   If that Cloud Application Manager user also launches other Azure providers, their existing Azure user will also get the Owner role on the new subscriptions. A new Azure user will not be created.
+
+![Admin Credentials](../../images/Admin-Creds.png) 
+
 ### Contacting Cloud Application Manager Support
 
-We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
+If you are experiencing an issue with [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/), please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
 For issues related to API calls, send the request body along with details related to the issue.
 
