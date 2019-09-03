@@ -1,27 +1,25 @@
 {{{
 "title": "Cloud Platform - Release Notes: September 3, 2019",
 "date": "09-03-2019",
-"author": "Christine Knobbe",
+"author": "Jason Holland",
 "keywords":["centurylink", "cam", "alm", "optimization"],
 "attachments": [],
 "contentIsHTML": false
 }}}
 
-### Enhancements (1)
+### Enhancements (6)
 
 #### [Managed Services Anywhere](https://www.ctl.io/managed-services-anywhere/)
 
 ##### Monitoring checks updates for AWS RDS
 
-Updated Watcher checks for AWS services in order to allow monitoring of newer AWS RDS instances through Watcher.
-
-### Announcements (2)
+Watcher checks for AWS services have been updated to allow monitoring of newer AWS RDS instances through Watcher.
 
 #### [Cloud Application Manager Platform](https://www.ctl.io/cloud-application-manager/)
 
-##### Discover our new branding styles in the portal!
+##### New branding styles added to portal
 
-The Cloud Application Manager user interface has been updated with the latest CenturyLink branding styles. Users will be delighted with the new modern design in all Cloud Application Manager sites, such as the inverse, black-colored top navigation bar, CenturyLink mint green highlights, and updated action button colors, among others.
+The Cloud Application Manager user interface has been updated with the latest CenturyLink branding styles in all Cloud Application Manager sites. New styles include the inverse, black top navigation bar, CenturyLink mint green highlights, and updated action button colors, among others.
 
 #### [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/)
 
