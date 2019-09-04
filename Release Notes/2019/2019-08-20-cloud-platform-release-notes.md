@@ -13,17 +13,14 @@
 
 ##### Kubernetes provider support for shared clusters
 
-Cloud Application Manager now supports the Kubernetes provider type to be connected to s shared cluster where the user has access only to a limited set of namespaces. A list of allowed namespaces can be given on the provider configuration dialogue. Multiple namespaces can be specified as a comma-space separated list. The user should have the same permissions in all of them; the permissions that will be used for all namespaces will be retrieved from the first one on the list.
+Cloud Application Manager now supports the Kubernetes provider type to be connected to a shared cluster where the user has access only to a limited set of namespaces. A list of allowed namespaces can be given on the provider configuration dialogue. Multiple namespaces can be specified as a comma-space separated list. The user should have the same permissions in all of them; the permissions that will be used for all namespaces will be retrieved from the first one on the list.
 
 #### [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/)
 
-##### Instances page now displays CenturyLink network resources
-
-Application Lifecycle Management Instances page will now list CenturyLink network resources, such as Virtual Networks and VPNs. These resources will be shown as unregistered instances with some basic information for each type such as subtype, data center, status, name, and description. If you have an existing CenturyLink Cloud provider already set up, you need to synchronize it for these resources to be discovered. More types of native resources from CenturyLink Cloud will come soon to the Cloud Application Manager instances page.
-
 ##### New CloudFormation types supported
 
-Application Lifecycle Management now supports additional CloudFormation types to be used in Cloud Formation template boxes. These additional types are:
+Application Lifecycle Management now supports additional CloudFormation types to be used in CloudFormation template boxes. These additional types are:
+
 * "AWS::CloudWatch::AnomalyDetector"
 * "AWS::CodeStar::GitHubRepository"
 * "AWS::IoTEvents::DetectorModel"

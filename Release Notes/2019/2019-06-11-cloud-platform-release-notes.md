@@ -43,13 +43,13 @@ Cloud Application Manager is switching to the more recent implementation of the 
 
 Application Lifecycle Management has implemented a procedure to automatically abort events that have been processing for 72 hours (3 days). In addition to the abort event action recently added to the UI and API, an instance will now not be kept stuck forever while executing an event and the execution will be aborted automatically. Similarly to what it happens when a user aborts the event manually, the activity log will reflect when the event is automatically aborted and the instance will transition to Unavailable state.
 
-##### New Cloud Formation types supported
+##### New CloudFormation types supported
 
-Application Lifecycle Management now supports additional Cloud Formation types to be used in Cloud Formation template boxes. These additional types are:
+Application Lifecycle Management now supports additional CloudFormation types to be used in CloudFormation template boxes. These additional types are:
 
 "AWS::Backup::BackupPlan", "AWS::Backup::BackupSelection", "AWS::Backup::BackupVault", "AWS::PinpointEmail::ConfigurationSet", "AWS::PinpointEmail::ConfigurationSetEventDestination", "AWS::PinpointEmail::DedicatedIpPool", "AWS::PinpointEmail::Identity", "AWS::Transfer::Server", "AWS::Transfer::User", "AWS::WAFRegional::GeoMatchSet", "AWS::WAFRegional::RateBasedRule" and "AWS::WAFRegional::RegexPatternSet".
 
-Users can now use these new resource types in the template definition of any Cloud Formation template box or update any existing template instance and Reconfigure to use them.
+Users can now use these new resource types in the template definition of any CloudFormation template box or update any existing template instance and Reconfigure to use them.
 
 
 #### [Cloud Optimization and Analytics](https://www.ctl.io/cloud-application-manager/cloud-optimization/)

@@ -24,14 +24,13 @@ Cloud Application Manager now implements a new way of loading static resources t
 
 For Azure, CenturyLink now extends our Analytics offering to unmanaged providers that are sourced by the customer. This functionality is in addition to the same recently-announced functionality for AWS providers. On these "Bring Your Own Cloud" Providers, administrators will see an "Analytics" option, capable of activating Cloud Optimization & Analytics capabilities before or after a Provider has been launched. Once Cloud Optimization & Analytics is activated for a customer-sourced Provider, CenturyLink will begin including that Provider's charges in the monthly basis for Platform Advisory Support. All CAM administrators have access to pricing details in the Management Site of CAM.
 
-
 #### [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/)
 
-##### New Cloud Formation Types Supported
+##### New CloudFormation Types Supported
 
-Application Lifecycle Management now supports additional Cloud Formation types to be used in Cloud Formation template boxes. These additional types are:
+Application Lifecycle Management now supports additional CloudFormation types to be used in CloudFormation template boxes. These additional types are:
 "AWS::Route53Resolver::ResolverRuleAssociation", "AWS::DocDB::DBCluster", "AWS::DocDB::DBClusterParameterGroup", "AWS::DocDB::DBInstance" and
-"AWS::DocDB::DBSubnetGroup". The user can now use these new resource types in the template definition of any Cloud Formation template box or update the template file of any existing template instance and reconfigure it to use the new resource types.
+"AWS::DocDB::DBSubnetGroup". The user can now use these new resource types in the template definition of any CloudFormation template box or update the template file of any existing template instance and reconfigure it to use the new resource types.
 
 ### Bug Fixes (1)
 
