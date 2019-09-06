@@ -1,6 +1,6 @@
 {{{
   "title": "CenturyLink Cloud Optimization Introduction",
-  "date": "12-13-18",
+  "date": "09-05-19",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
