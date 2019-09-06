@@ -50,6 +50,8 @@ When you first sign in to Cloud Application Manager, you only have a personal wo
 
 Workspaces are the most common way to have users collaborating on a set of instances, boxes and providers with certain access permissions.
 
+For a video tutorial and step-by-step instructions for using Workspaces, please see our [Getting Started Guide](https://www.ctl.io/guides/cloud-application-manager/getting-started-workspace-cloud-application-manager/).
+
 #### Context elements
 
 Workspace is the context where three types of assets are included: boxes, instances and providers.
