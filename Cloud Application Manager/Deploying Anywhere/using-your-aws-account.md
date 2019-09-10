@@ -504,7 +504,7 @@ In addition to the Application Load Balancer and the Network Load Balancer, Clou
 
 To set up, add a new listener or select an existing one. Then specify the protocol and ports through which traffic flows from the client to the load balancer node (front-end) and from the load balancer to the instance (backend). To allow traffic over HTTPS, SSL, you must [upload a certificate](https://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/US_SettingUpLoadBalancerHTTPS.html) to AWS. The default settings require that your EC2 servers are active and accept requests via the port specified for the load balancing listener. Accepted ports are 25, 80, 443, and 1024 to 65535.
 
-![aws-deppolicy-loadbalancing-autoscaling-4.png](../../images/cloud-application-manager/aws-deppolicy-loadbalancing-autoscaling-4.png)
+![aws-deppolicy-loadbalancing-autoscaling](../../images/cloud-application-manager/aws-deppolicy-loadbalancing-autoscaling-4.png)
 
 When deploying via AWS, we register the instance to the load balancer and automatically create a security group for the load balancer so that it can communicate with the instance through the protocols and ports you set in the deployment profile.
 
