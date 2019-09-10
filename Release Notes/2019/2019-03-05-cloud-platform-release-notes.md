@@ -22,10 +22,10 @@
 
 [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) now includes the feature to auto-register VM instances that were deployed as part of an Azure ARM template deployment. The compute instances and ScalingSets included into the template box will be automatically registered in Cloud Application Manager and the make managed process will be executed on them.
 
-**New Cloud Formation types supported**
+**New CloudFormation types supported**
 
-[Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) now supports additional Cloud Formation types to be used in Cloud Formation template boxes. These additional types are:
-"AWS::RAM::ResourceShare", "AWS::RoboMaker::Fleet", "AWS::RoboMaker::Robot", "AWS::RoboMaker::RobotApplication", AWS::RoboMaker::RobotApplicationVersion", "AWS::RoboMaker::SimulationApplication" and "AWS::RoboMaker::SimulationApplicationVersion". The user can now use these new resource types in the template definition of any Cloud Formation template box or update the template file of any existing template instance and reconfigure it to use the new resource types.
+[Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) now supports additional CloudFormation types to be used in CloudFormation template boxes. These additional types are:
+"AWS::RAM::ResourceShare", "AWS::RoboMaker::Fleet", "AWS::RoboMaker::Robot", "AWS::RoboMaker::RobotApplication", AWS::RoboMaker::RobotApplicationVersion", "AWS::RoboMaker::SimulationApplication" and "AWS::RoboMaker::SimulationApplicationVersion". The user can now use these new resource types in the template definition of any CloudFormation template box or update the template file of any existing template instance and reconfigure it to use the new resource types.
 
 #### [Public Cloud IaaS](//www.ctl.io/product-overview/#)
 

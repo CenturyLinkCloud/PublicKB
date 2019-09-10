@@ -27,10 +27,10 @@ In addition, it's possible to specify the timeout for an instance. This can be d
 
 Application Lifecycle Management now extends its Terraform template support to the VMware vCenter provider type. In addition to the existing support for AWS, Azure, Google Cloud, CenturyLink Cloud, vCloud and CenturyLink Private Cloud on vCloud Foundation provider types, the VMware vCenter provider type is now eligible for deploying a Terraform template box when configuring a Terraform deployment policy box.
 
-##### New Cloud Formation types supported
+##### New CloudFormation types supported
 
-Application Lifecycle Management now supports additional Cloud Formation types to be used in Cloud Formation template boxes. These additional types are:
+Application Lifecycle Management now supports additional CloudFormation types to be used in CloudFormation template boxes. These additional types are:
 
 "AWS::Config::RemediationConfiguration", "AWS::MediaLive::Channel", "AWS::MediaLive::Input", "AWS::MediaLive::InputSecurityGroup", "AWS::SecurityHub::Hub" and "AWS::ServiceCatalog::StackSetConstraint".
 
-Users can now use these new resource types in the template definition of any Cloud Formation template box or update any existing template instance to use it.
+Users can now use these new resource types in the template definition of any CloudFormation template box or update any existing template instance to use it.

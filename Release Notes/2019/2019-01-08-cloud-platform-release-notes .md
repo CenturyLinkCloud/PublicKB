@@ -38,15 +38,15 @@ For AWS providers, CenturyLink now extends our Analytics offering to unmanaged, 
 
 ##### Autoregister CloudFormation VM Resources in Managed Providers
 
-Application Lifecycle Management recently included the ability to register virtual machine instances that were deployed by a Cloud Formation template box from Cloud Application Manager. It now includes auto-registering of those instances whenever the template box is deployed in a managed provider. This allows compute instances included into the template box to be automatically registered in Cloud Application Manager and the Make Managed process to be executed on them.
+Application Lifecycle Management recently included the ability to register virtual machine instances that were deployed by a CloudFormation template box from Cloud Application Manager. It now includes auto-registering of those instances whenever the template box is deployed in a managed provider. This allows compute instances included into the template box to be automatically registered in Cloud Application Manager and the Make Managed process to be executed on them.
 
 ##### Group Instances with Unaccessible Providers in Instances Provider View
 
 Application Lifecycle Management now displays under an "Other providers" group the instances that belong to a provider that the user has no access to in the providers list view of the instances page. A user can share an instance with another user, without sharing the provider where that instance is hosted, so that the target user only has visibility of the instance itself, without knowing any details about the provider. The Providers View on the Instances page groups instances by the provider to which they belong, and now groups instances without a known provider under the new "Other providers" group.
 
-##### New Cloud Formation Types Supported
+##### New CloudFormation Types Supported
 
-Application Lifecycle Management now supports additional Cloud Formation types to be used in Cloud Formation template boxes. These additional types are: "AWS::IoTAnalytics::Channel", "AWS::IoTAnalytics::Dataset", "AWS::IoTAnalytics::Datastore", "AWS::IoTAnalytics::Pipeline" and "AWS::AmazonMQ::ConfigurationAssociation". The user can now use these new resource types in the template definition of any Cloud Formation template box or update the template file of any existing template instance and reconfigure it to use the new resource types.
+Application Lifecycle Management now supports additional CloudFormation types to be used in CloudFormation template boxes. These additional types are: "AWS::IoTAnalytics::Channel", "AWS::IoTAnalytics::Dataset", "AWS::IoTAnalytics::Datastore", "AWS::IoTAnalytics::Pipeline" and "AWS::AmazonMQ::ConfigurationAssociation". The user can now use these new resource types in the template definition of any CloudFormation template box or update the template file of any existing template instance and reconfigure it to use the new resource types.
 
 ##### Support for Custom Machine Images on Azure Providers
 

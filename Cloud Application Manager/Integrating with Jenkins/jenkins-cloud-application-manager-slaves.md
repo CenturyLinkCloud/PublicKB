@@ -15,6 +15,7 @@
 * [Configure the Slave Deployment Policy](#configure-the-slave-deployment-policy)
 * [Configure Jenkins Server to Build with Slaves Using Cloud Application Manager](#configure-jenkins-server-to-build-with-slaves-using-cloud-application-manager)
 * [Find a Slave from Cloud Application Manager](#find-a-slave-from-cloud-application-manager)
+* [Launch Slave Build Environments with Jenkins and Cloud Application Manager](#launch-slave-build-environments)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
@@ -62,7 +63,7 @@ Perform the following steps:
 #### 4. Configure the box event scripts.  
    Under Code > Events, add an *install*, *start*, and *stop* script. Copy, paste each script below and save:
 
-##### Install event. 
+##### Install event.
 This script installs the latest version of Java if unavailable and downloads the slave agent from the Jenkins server.
 
    ```
@@ -128,7 +129,7 @@ Perform the following steps:
 #### 1. Create a Deployment Policy box.  
 
 On the Boxes page, click New > Deployment Policy. In the dialog, select a provider account, and name the policy.  
-Under Claims, type or select a linux tag. 
+Under Claims, type or select a linux tag.
    * Claim tags define the policy at a high level. It defines the type of platform, flavor, image, and so on. When configuring the slave in Jenkins, you provide this claim tag to deploy the slave. The claim tag must match the requirement tag in the Jenkins slave box.
 
   ![add-policy-box](../../images/cloud-application-manager/integrate-jenkins/slaves/eb-slaves05-add-policy-box.png)
@@ -144,16 +145,16 @@ Make sure you select a Debian Ubuntu Linux image, select a firewall rule that al
 
 ### Configure Jenkins Server to Build with Slaves Using Cloud Application Manager
 
-Run Jenkins jobs using slaves launched via Cloud Application Manager on any cloud. 
+Run Jenkins jobs using slaves launched via Cloud Application Manager on any cloud.
 - Be sure to [connect your Cloud Application Manager account](jenkins-cloud-application-manager-setup.md) in Jenkins before setting up the slave.
 - Install [ElasticBox plugin](https://plugins.jenkins.io/elasticbox) on your Jenkins server. You can find more information [here](https://plugins.jenkins.io/elasticbox).
 
 
 #### Configure access to your Cloud Application Manager account
 
-1. Go to Manage Jenkins > Configure System page at **http://\<your Jenkins host\>/configure.** 
+1. Go to Manage Jenkins > Configure System page at **http://\<your Jenkins host\>/configure.**
 
-2. Under **Cloud** select **Add a new cloud** and choose the **ElastciBox** option.  
+2. Under **Cloud** select **Add a new cloud** and choose the **ElasticBox** option.  
    You must have installed  **ElasticBox plugin** before. See above.
 
 ![cloud-plugins](../../images/cloud-application-manager/integrate-jenkins/slaves/eb-slaves08-cloud-plugins.png)
@@ -170,7 +171,7 @@ Run Jenkins jobs using slaves launched via Cloud Application Manager on any clou
 
 	 Set **Min. No. of Instances** to 0 when you don’t want to keep idle slaves alive.  
     Set **Max. No. of Instances** to the number of slaves you want at any given time to run Jenkins jobs.
- 
+
    Add a **label** to identify the slave to Jenkins. Use underscores or dashes, but not spaces.  
    **IMPORTANT**: When you create a build job (as we’ll do in the next section), you can provide this label to make Jenkins select this type of slave for executing the job.
 
@@ -227,7 +228,7 @@ Follow these steps to locate slaves launched via Cloud Application Manager in ca
 
 	![jenkins-slaves-active](../../images/cloud-application-manager/integrate-jenkins/slaves/eb-slaves14-jenkins-slaves-active.png)
 
-2. Click the slave if active in the left pane. It’s typically named as <Jenkins slave box environment name——–ID>. 
+2. Click the slave if active in the left pane. It’s typically named as <Jenkins slave box environment name——–ID>.
    Detailed information regarding this slave is shown. Here’s an example.
 
    ![jenkins-slave-info](../../images/cloud-application-manager/integrate-jenkins/slaves/eb-slaves15-jenkins-slave-info.png)
@@ -238,6 +239,9 @@ Follow these steps to locate slaves launched via Cloud Application Manager in ca
 
 4. Notice the Cloud Application Manager link to the slave instance. Click to open the slave instance in Cloud Application Manager. From there, you can debug the slave in the lifecycle editor or check the logs.
 
+### Launch Slave Build Environments
+
+Ease the pain of setting up build environments for every cloud and every project by automating builds using Jenkins slaves powered by Cloud Application Manager. [This video tutorial](https://www.ctl.io/guides/cloud-application-manager/slave-build-environments-with-jenkins-and-cloud-application-manager/) with step-by-step instructions walks you through the process with a typical ticketing SaaS App based on JBoss.
 
 ### Contacting Cloud Application Manager Support
 

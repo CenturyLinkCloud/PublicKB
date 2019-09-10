@@ -58,8 +58,8 @@ Application Lifecycle Management has added the ability to detect whether an inst
 
 Application Lifecycle Management now supports registering an AWS CloudFormation stack as a template instance as a whole. The user will now see the CloudFormation stacks either on the Instances page, All or Unregistered views, or on the Unregistered Instances tab of the provider details page, and will have the option to register it. Once registered, the instance will be shown on the registered instances view as a CloudFormation template instance, and it will display its deployed resources in the Resources tab of the instance details page.
 
-#### New Cloud Formation type supported
+#### New CloudFormation type supported
 
-Application Lifecycle Management now supports an additional Cloud Formation type to be used in Cloud Formation template boxes. This additional type is: 
-"AWS::OpsWorksCM::Server". The user can now use this new resource types in the template definition of any Cloud Formation template box or update the template file of any existing template instance adding this type of resource and reconfigure the instance to use it.
+Application Lifecycle Management now supports an additional CloudFormation type to be used in CloudFormation template boxes. This additional type is: 
+"AWS::OpsWorksCM::Server". The user can now use this new resource types in the template definition of any CloudFormation template box or update the template file of any existing template instance adding this type of resource and reconfigure the instance to use it.
 
