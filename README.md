@@ -43,8 +43,10 @@ The repository is organized by category, and each folder represents a category. 
 1. Create a [pull request](https://help.github.com/articles/creating-a-pull-request) to merge your changes into the `master` branch.
   * [Create a pull request using Github for Windows](https://github.com/blog/1969-create-pull-requests-in-github-for-windows)
   * [Create a pull request using Github for Mac](https://github.com/blog/1946-create-pull-requests-with-github-for-mac)
+  * For CenturyLink internal users, notifications for the pull request, including requested changes, will be sent to [MS Teams](https://teams.microsoft.com/l/channel/19%3a5c80a93c8b854e279de7adff53f061a7%40thread.skype/Public%2520KB%2520Review?groupId=eab2e1cd-8f6e-44c2-9c12-e4e25437502e&tenantId=72b17115-9915-42c0-9f1b-4f98e5a4bcd2)
 
-    **Note:** If you are uploading a KB and its associated images/attachments, it should all be part of one pull request. Do not upload the article and the images/attachments in separate pull requests.
+    **Important Note:** If you are uploading a KB and its associated images/attachments, it should all be part of one pull request. Do not upload the article and the images/attachments in separate pull requests.  If separate, the commit analyzer (see below) will fail, and we will not be able to merge.
+
 
 1. This repository contains a [commit analyzer](https://github.com/CenturyLinkCloud/KB-Commit-Analyzer) that runs against each file in the repository validating that the following are true:
 
