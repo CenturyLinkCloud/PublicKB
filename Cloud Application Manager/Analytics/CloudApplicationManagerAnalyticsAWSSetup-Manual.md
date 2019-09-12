@@ -1,6 +1,6 @@
 {{{
   "title": "Cloud Optimization AWS Configuration - Manual",
-  "date": "04-22-2019",
+  "date": "09-12-2019",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
@@ -44,9 +44,9 @@ It is recommended the user or role performing these steps have full IAM permissi
 13. Click "Create Role."
 
 #### Retrieve ARN role
-1. Select the CenturyLink Cloud Optimization AMI Role.
+1. Select the CenturyLink Cloud Optimization IAM Role.
 2. Record listed ARN.
-3. Send ARN to your on-boarding representative.
+3. Send ARN to your Technical Account Manager or on-boarding representative.
 
 
 ##### CenturyLink Cloud Optimization IAM Policy
