@@ -46,7 +46,7 @@ It is recommended the user or role performing these steps have full IAM permissi
 #### Retrieve ARN role
 1. Select the CenturyLink Cloud Optimization IAM Role.
 2. Record listed ARN.
-3. Send ARN to your Technical Accoint Manager or on-boarding representative.
+3. Send ARN to your Technical Account Manager or on-boarding representative.
 
 
 ##### CenturyLink Cloud Optimization IAM Policy
