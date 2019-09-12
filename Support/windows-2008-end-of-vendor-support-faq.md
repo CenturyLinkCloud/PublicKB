@@ -53,11 +53,11 @@ CenturyLink Private Cloud on VMware Cloud Foundation**
 
 CenturyLink Dedicated Cloud Compute**
 
-CenturyLink Cloud Virtual Machines: Managed OS** - Yes, but only until 12/31/2019
+CenturyLink Cloud Virtual Machines: Managed OS** - Yes, but only until 9/01/2019
 
-CenturyLink Cloud Virtual Machines** - Yes, but only until 12/31/2019
+CenturyLink Cloud Virtual Machines** - Yes, but only until 09/01/2019
 
-CenturyLink Bare Metal Servers** - Yes, but only until 12/31/2019
+CenturyLink Bare Metal Servers** - Yes, but only until 09/01/2019
 
 **Q: Can I order a new W2008 server prior to Jan 2020?**
 
