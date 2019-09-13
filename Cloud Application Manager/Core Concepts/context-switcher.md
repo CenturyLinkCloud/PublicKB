@@ -83,7 +83,7 @@ Every organization, as seen in the previous image, has several elements: name an
 
 This view introduces a left side panel where all the organizations the user has access to are listed, so it can be used as a filter. By default, the *All* option is selected, so every cost center depending on that organizations will be displayed in the main view. Selecting another organization, therefore, will show only its associated cost centers.
 
-![Context Switcher - Cost Centers View](../../images/cloud-application-manager/context-switcher-cc-view.png)
+![Context Switcher - Cost Centers View](../../images/cloud-application-manager/context-switcher-general.png)
 
 As happened with organizations, a cost center will not only display its name and icon, the favorite star and the editing pencil button (when hovered), but also the icon of the organization it belongs to (bottom left) and the number of members it has (bottom right).
 

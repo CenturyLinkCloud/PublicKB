@@ -88,7 +88,7 @@ When an instance depends on another box or service–like a load balancer, cachi
 
 If you make event script changes in the event tab and try to close editor (without pressing the 'Save' button), a confirmation dialog will warn you about the pending changes. If you want to keep the changes press the 'Save' button on the dialog.
 
-![Save the changes when close Editor](../../images/cloud-application-manager/lifecycle-editor-7-1.png)
+![Save the changes when close Editor](../../images/cloud-application-manager/lifecycle-editor-4-1.png)
 
 **Adding Events or Variables**
 
