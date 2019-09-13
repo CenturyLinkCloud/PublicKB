@@ -53,7 +53,7 @@ A tag consists of a key and a value. You can add a tag with a custom or preset v
 ![Setting Add Tags](../../images/cloud-application-manager/admin-tags1.png)
 
 * **Custom** - Enter any value that’s meaningful to categorize instances, like department name.
-* **Preset** - Choose from preset values such as box name, environment, etc. Preset values give specific information about an instance. Choose a value from this table.
+* **Preset** - Choose from preset values such as box name, instance name, provider name, workspace ID, etc. Preset values give specific information about an instance. Choose a value from this table.
 
 | Preset Value | Description |
 |--------------|-------------|
@@ -68,6 +68,7 @@ A tag consists of a key and a value. You can add a tag with a custom or preset v
 | User ID | A unique ID to identify the Cloud Application Manager user. |
 | Workspace ID | Unique workspace ID where the instance was deployed. |
 | Workspace name | Name of the workspace the instance was deployed from. |
+| Origin | The Cloud Application Manager environment URL the instance was deployed from. |
 
 ### Applying Tags for your Organization
 
