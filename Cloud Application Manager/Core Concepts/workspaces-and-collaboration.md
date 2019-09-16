@@ -162,7 +162,7 @@ Say you have a Jenkins box that integrates and stages code for testing. You want
 
 To discontinue sharing with a user or workspace, open the sharing dialog, and remove them.
 
-![workspace-and-sharing9.png](../../images/cloud-application-manager/workspace-and-sharing9.png)
+![workspace-and-sharing9.png](../../images/cloud-application-manager/workspace-and-sharing8.png)
 
 #### Transfer Ownership
 
@@ -170,7 +170,7 @@ Sometimes, because your role in the organization changes, you may want to transf
 
 An asset can only have one owner at a time.
 
-![workspace-and-sharing10.png](../../images/cloud-application-manager/workspace-and-sharing10.png)
+![workspace-and-sharing10.png](../../images/cloud-application-manager/workspace-and-sharing8.png)
 
 #### Sharing Boxes
 
