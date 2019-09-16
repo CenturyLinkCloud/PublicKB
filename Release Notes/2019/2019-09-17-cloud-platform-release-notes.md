@@ -1,5 +1,5 @@
 {{{
-"title": "Cloud Platform - Release Notes: September 3, 2019",
+"title": "Cloud Platform - Release Notes: September 17, 2019",
 "date": "09-17-2019",
 "author": "Anthony Hakim",
 "keywords":["centurylink", "cam", "alm", "optimization"],
@@ -7,7 +7,7 @@
 "contentIsHTML": false
 }}}
 
-### Announcements (1)
+### Announcements (5)
 
 #### Application Lifecycle Management
 
