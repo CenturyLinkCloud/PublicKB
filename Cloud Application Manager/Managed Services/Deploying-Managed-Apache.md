@@ -42,11 +42,11 @@ Cloud Application Manager’s Managed Services Anywhere (MSA) allows customers t
 
 ### Installation Features
 * Prepare Server for Application Service (OS Specific Parameters)
-* Install Apache Httpd
+* Install Apache Http Server
 * Install PHP, Ruby on Rails, Express, AngularJS and Node.JS
 * Install OpenSSL
 * Install CenturyLink Monitoring
-* Perform Quality Assurance against Apache Httpd Installation/Hardening
+* Perform Quality Assurance against Apache Http Server Installation/Hardening
 
 ### Configuration
 * Configure Site Connectivity (Virtual Hosts, TCP Port, IP Address and SSL Certificate allocation)
@@ -68,7 +68,7 @@ Cloud Application Manager’s Managed Services Anywhere (MSA) allows customers t
 
 Deploying Managed Apache to your provider with CenturyLink Cloud Application Manager:
 
-1. In Catalog, select the Managed Services Anywhere subcategory and then select the “CenturyLink Managed Apache httpd".  Deploy CenturyLink Managed Apache instance.
+1. In Catalog, select the Managed Services Anywhere subcategory and then select the “CenturyLink Managed Apache Http Server".  Deploy CenturyLink Managed Apache instance.
 
   ![MgdApache0.PNG](../../images/cloud-application-manager/MgdApache0.PNG)
 
