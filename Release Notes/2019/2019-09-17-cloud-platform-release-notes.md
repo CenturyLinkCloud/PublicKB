@@ -13,7 +13,7 @@
 
 ##### New Origin preset tag
 
-Application Lifecycle Management now supports a new preset tag called Origin, which refers to the Cloud Application Manager environment URL that triggers a deployment. For more information about preset tags, [please refer to:](../../Cloud Application Manager/Administering Your Organization/resource-tags.md)
+Application Lifecycle Management now supports a new preset tag called Origin, which refers to the Cloud Application Manager environment URL that triggers a deployment. For more information about preset tags, please refer to this [KB article](../../Cloud Application Manager/Administering Your Organization/resource-tags.md)
 
 ##### Support for the AWS Europe (Stockholm) region
 
