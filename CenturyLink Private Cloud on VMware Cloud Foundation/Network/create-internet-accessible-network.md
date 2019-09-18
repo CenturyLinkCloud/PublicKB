@@ -1,6 +1,6 @@
 {{{
   "title": "Create Internet Accessible Network",
-  "date": "9-17-2019",
+  "date": "9-18-2019",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -9,7 +9,11 @@
 }}}
 
 ### Description
-In this KB article, we walk through how to create a new software-defined network in CenturyLink Private Cloud on VMware Cloud Foundation (CPC on vCF). In this particular use case, we would like to allow this network to have Outbound Internet.
+In this KB article, we walk through how to create a new software-defined network in CenturyLink Private Cloud on VMware Cloud Foundation (CPC on vCF). In this particular use case, we would like to allow this network to have Outbound Internet., and will do the following:
+
+1. Create the Network
+2. Create a Firewall Rule to allow Outbound Internet Access for the Network
+3. Create a Source NAT Rule to allow Outbound Internet Access for the Network
 
 ### Steps
 
@@ -63,7 +67,7 @@ In this KB article, we walk through how to create a new software-defined network
 
     ![Network](../../images/dccf/network7.png)
 
-##### Create the Firewall Rule to allow Internet Access for the Network
+##### Create the Firewall Rule to allow Outbound Internet Access for the Network
 
 * In vCloud Director, under Networking, click Edges, select your Edge (siteID-edge-0) and click CONFIGURE SERVICES
 
@@ -90,7 +94,7 @@ Enter the following for the New Rule:
   ![Network](../../images/dccf/network11.png)
 
 
-##### Create a Source NAT Rule to allow Internet Access for the Network
+##### Create a Source NAT Rule to allow Outbound Internet Access for the Network
 
 * In the Edge Gateway - siteID-edge-0 page, click NAT, then click + SNAT RULE (under NAT 44 Rules)
 
