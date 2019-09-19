@@ -33,13 +33,13 @@ Make sure the communication from CAM Agent to CAM servers works correctly.
 
 1. Connect to the instance by SSH or RDP.
 
-2. Run a ping command to check basic connectivity:
+2. Run a command to check basic connectivity, such as the following or an equivalent one:
 
-```
-ping -c3 cam.ctl.io
-```
+    ```
+    telnet cam.ctl.io 443
+    ```
 
-If the above command does not get a reply, please take the corrective actions inside the VM, routers and firewalls to allow unrestricted communication between agent and CAM servers. Ensure that the port 443 is open for the CAM agent to connect back successfully to CAM servers.
+If the above command does not get a reply, please take the corrective actions inside the VM, routers and firewalls to allow unrestricted communication between agent and CAM servers.
 
 If the connectivity seems to be working as expected and the problem persists, connect to the instance over SSH or RDP and grab a copy of the agent `/var/log/elasticbox/elasticbox-agent.log` in the case of Linux or `ProgramData\ElasticBox\elasticbox-agent.log` in the case of Windows (please note that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected please attach it when [Contacting support](mailto:incident@CenturyLink.com)
 
@@ -110,17 +110,15 @@ Make sure the communication from CAM Agent to CAM servers works correctly.
 
 1. Connect to the instance by SSH or RDP.
 
-2. Run a ping command to check basic connectivity:
+2. Run a command to check basic connectivity, such as the following or an equivalent one:
 
-```
-ping -c3 cam.ctl.io
-```
+    ```
+    telnet cam.ctl.io 443
+    ```
 
-If the above command does not get a reply, please:
+3. Take the corrective actions inside the VM, routers and firewalls to allow unrestricted communication between agent and CAM servers.
 
-1. Take the corrective actions inside the VM, routers and firewalls to allow unrestricted communication between agent and CAM servers. Ensure that the port 443 is open for the CAM agent to connect back successfully to CAM servers.
-
-2. In Cloud Application Manager, open the lifecycle editor of the instance and click **Reinstall**. The instance should reflect the proper status.
+4. In Cloud Application Manager, open the lifecycle editor of the instance and click **Reinstall**. The instance should reflect the proper status.
 
 If the connectivity seems to be working as expected and the problem persists, connect to the instance over SSH or RDP and grab a copy of the agent `/var/log/elasticbox/elasticbox-agent.log` in the case of Linux or `ProgramData\ElasticBox\elasticbox-agent.log` in the case of Windows (please note that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected please attach it when [Contacting support](mailto:incident@CenturyLink.com)
 
@@ -241,15 +239,15 @@ Make sure the communication from the instance to be register to CAM servers work
 
 1. Connect to the instance by SSH or RDP.
 
-2. Run a ping command to check basic connectivity:
+2. Run a command to check basic connectivity, such as the following or an equivalent one:
 
     ```
-    ping -c3 cam.ctl.io
+    telnet cam.ctl.io 443
     ```
 
 If the above command does not get a reply, please:
 
-1. Take the corrective actions inside the VM, routers and firewalls to allow unrestricted communication between the instance and CAM servers. Ensure that the port 443 is open for the CAM agent to connect back successfully to CAM servers.
+1. Take the corrective actions inside the VM, routers and firewalls to allow unrestricted communication between the instance and CAM servers.
 
 2. In Cloud Application Manager, open the instance details page and click **Retry import** if available, or **Cancel import** and start the import process again. The instance should now finish the registration process successfully.
 
@@ -265,6 +263,6 @@ Check if ElasticBox bootstrap logs (`C:\program files\elastic Box` in Windows) h
 2019-09-05 17:45:07Z Exception setting "SecurityProtocol": "Cannot convert null to type "System.Net.SecurityProtocolType" due to invalid enumeration values. Specify one of the following enumeration values and try again. The possible enumeration values are "Ssl3, Tls"."
 ```
 
-This message confirms that the TLS 1.2 protocol required version is not supported in the instance. Upgrade the .Net Framework version for this issue to be addressed.
+This message confirms that the TLS 1.2 protocol required is not supported by the environment executing the script. Upgrade the environment to a version that supports TLS 1.2 to address this issue (for example, for older Windows environments this might require to upgrade the .Net Framework version that the script uses).
 
 If the TLS 1.2 support seems to be available in the instance and the problem persists, connect to the instance over SSH or RDP and grab a copy of the agent `/var/log/elasticbox/elasticbox-agent.log` in the case of Linux or `ProgramData\ElasticBox\elasticbox-agent.log` in the case of Windows (please note that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected please attach it when [Contacting support](mailto:incident@CenturyLink.com)
