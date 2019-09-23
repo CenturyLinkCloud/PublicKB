@@ -154,7 +154,7 @@ The changes to be applied to the sharing list appear highlighted with a dotted b
 
 ### Sharing notifications
 
-The users that have been added to the sharing list of a resource, either a provider, box or instance, will see when accessing through the UI a notification badge consisting on a red dot that may include a number if several resources are available there. This badge will appear in several places to make him aware of the new resource he has access to:
+A notification badge consisting on a red dot will appear on the UI for those users users that have been added to the sharing list of a resource (i.e. provider, box or instance). The badge includes a number when one or more new resources may be available there. It will appear in several places to make the user aware of the new resource he has access to:
 
 1. When opening the context switcher, the workspaces with newly accessible resources will present the badge, with a number representing the total newly accessible resources
 
@@ -188,7 +188,7 @@ There is also a new bell icon in the top navigation bar that provides an option 
 
 Say you have a Jenkins box that integrates and stages code for testing. You want to collaborate with other Jenkins experts to make the box configuration highly usable. So you give their workspace edit access. Next, the QA team needs this box to deploy and run tests, so you give their workspace view access. Now the QA team can deploy Jenkins instances, but as you’d expect, they aren’t allowed to change the underlying Jenkins box definition.
 
-**Notice** that providers and policy boxes cannot be shared with workspaces that are not in the same Cost Center. This avoids users outside of the Cost Center to deploy instances that will increase the cost associated with the Cost Center.
+**Notice** that providers and policy boxes cannot be shared with workspaces that are not in the same Cost Center. This avoids users outside of one Cost Center to deploy instances that will increase the cost associated with another Cost Center.
 
 #### Sharing with other users
 
