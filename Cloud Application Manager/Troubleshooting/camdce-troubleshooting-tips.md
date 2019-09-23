@@ -1,13 +1,13 @@
 {{{
-"title": "Troubleshooting Tips",
-"date": "09-06-2019",
-"author": "Juan Morra and Guillermo Sanchez",
+"title": "Cloud Application Manager Data Center Edition Troubleshooting Tips",
+"date": "09-09-2019",
+"author": "Guillermo Sanchez",
 "attachments": [],
-"keywords": ["cam","troubleshooting", "tips", "cloud application manager"],
+"keywords": ["cam","troubleshooting", "tips", "cloud application manager", "appliance", "data center edition", "dce"],
 "contentIsHTML": false
 }}}
 
-### Tips on Troubleshooting Cloud Application Manager issues
+### Tips on Troubleshooting Cloud Application Manager Data Center Edition issues
 
 Check the proposed solutions to common issues before you contact Cloud Application Manager support in the event of a problem.
 
@@ -18,6 +18,7 @@ Check the proposed solutions to common issues before you contact Cloud Applicati
 * [Instance is Still Terminating](#instance-is-still-terminating)
 * [Instance Hangs at the Install Cloud Application Manager Agent Step](#instance-hangs-at-the-install-cloud-application-manager-agent-step)
 * [Catalog Box deployment not working](#catalog-box-deployment-not-working)
+* [Cloud Application Manager Appliance is Unavailable](#cloud-application-manager-appliance-is-unavailable)
 * [Resource sharing problems](#resource-sharing-problems)
 * [Instance fails to register in Cloud Application Manager](#instance-fails-to-register-in-cloud-application-manager)
 
@@ -25,27 +26,29 @@ Check the proposed solutions to common issues before you contact Cloud Applicati
 
 **Cause**
 
-When you trigger a lifecycle operation on an instance, it goes into a processing state and does not finish. This can be caused due to the agent not having direct connectivity with the Cloud Application Manager backend server, the proxy configuration is wrong or the proxy is not responding (if the agent is configured to use it), or the agent is not running properly or has been stopped. This problem can affect instances launched through the Cloud Application Manager web interface, the API, or directly using the agent command.
+When you trigger a lifecycle operation on an instance, it goes into a processing state and does not finish. This can be caused due to the agent not having direct connectivity with the Cloud Application Manager Data Center Edition (CAM appliance), or the agent is not running properly or has been stopped. This problem can affect instances launched through the Cloud Application Manager web interface, the API, or directly using the agent command.
 
 **Solution 1**
 
-Make sure the communication from CAM Agent to CAM servers works correctly.
+Make sure the communication from CAM Agent to CAM appliance works correctly.
 
 1. Connect to the instance by SSH or RDP.
 
 2. Run a command to check basic connectivity, such as the following or an equivalent one:
 
     ```
-    telnet cam.ctl.io 443
+    telnet 10.0.0.1 443
     ```
 
-If the above command does not get a reply, please take the corrective actions inside the VM, routers and firewalls to allow unrestricted communication between agent and CAM servers.
+    **Note:** Replace 10.0.0.1 with your appliance IP or hostname.
+
+If the above command does not get a reply, please take the corrective actions inside the VM, routers and firewalls to allow unrestricted communication between agent and CAM appliance. Ensure that the port 443 is open in the CAM appliance for the CAM agent to connect back successfully.
 
 If the connectivity seems to be working as expected and the problem persists, connect to the instance over SSH or RDP and grab a copy of the agent `/var/log/elasticbox/elasticbox-agent.log` in the case of Linux or `ProgramData\ElasticBox\elasticbox-agent.log` in the case of Windows (please note that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected please attach it when [Contacting support](mailto:incident@CenturyLink.com)
 
 **Solution 2**
 
-Check agent proxy settings (if configured to use one) at `/usr/elasticbox/elasticbox.conf` in linux or `ProgramFiles\ElasticBox\Agent\elasticbox.conf` in windows. If proxy is used for agent, make sure its working correctly and provide stable connectivity to CAM servers.
+Check agent proxy settings (if configured to use one) at `/usr/elasticbox/elasticbox.conf` in linux or `ProgramFiles\ElasticBox\Agent\elasticbox.conf` in windows. If proxy is used for agent, make sure its working correctly and provide stable connectivity to CAM appliance.
 
 **Solution 3**
 
@@ -55,18 +58,18 @@ Install the agent on the instance to bring it online. Then re-run the lifecycle 
 
 2. Install the agent. The command uses the token of the older agent to connect to the instance.
 
-    Linux instances deployed from the Cloud Application Manager cloud service:
+    Linux instances deployed from the Cloud Application Manager Appliance:
 
     ```
-    curl -sSL https://cam.ctl.io | sudo bash
+    curl -ks 10.0.0.1 | sudo bash
     ```
 
-    Windows instances deployed from the Cloud Application Manager cloud service (run the command as a PowerShell administrator):
+    **Note:** Replace 10.0.0.1 with your appliance IP or hostname.
+
+    Windows instances deployed from the Cloud Application Manager Appliance (run the command as a PowerShell administrator):
 
     ```
-    [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
-    (New-Object Net.WebClient).DownloadString("https://cam.ctl.io") | iex
-
+    (New-Object Net.WebClient).DownloadString("http://10.0.0.1") | iex
     ```
 
 If the problem persists connect to the instance over SSH or RDP and grab a copy of the agent `/var/log/elasticbox/elasticbox-agent.log `in the case of Linux or `ProgramData\ElasticBox\elasticbox-agent.log` in the case of Windows (please note that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected, please attach it when [Contacting support](mailto:incident@CenturyLink.com)
@@ -96,29 +99,33 @@ An instance can’t update its state because the Cloud Application Manager agent
 
 2. In Cloud Application Manager, open the lifecycle editor of the instance and click **Reinstall**. The instance should reflect the proper status.
 
-3. If problem persists, check connectivity between the Instance and CAM Servers.
+3. If problem persists, check connectivity between the Instance and the CAM appliance.
 
 If the connectivity seems to be working as expected and the problem persists, connect to the instance over SSH or RDP and grab a copy of the agent `/var/log/elasticbox/elasticbox-agent.log` in the case of Linux or `ProgramData\ElasticBox\elasticbox-agent.log` in the case of Windows (please note that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected please attach it when [Contacting support](mailto:incident@CenturyLink.com)
 
 **Solution 2**
 
-Check agent proxy settings (if configured to use one) at `/usr/elasticbox/elasticbox.conf` in linux or `ProgramFiles\ElasticBox\Agent\elasticbox.conf` in windows. If proxy is used for agent, make sure its working correctly and provide stable connectivity to CAM servers.
+Check agent proxy settings (if configured to use one) at `/usr/elasticbox/elasticbox.conf` in linux or `ProgramFiles\ElasticBox\Agent\elasticbox.conf` in windows. If proxy is used for agent, make sure its working correctly and provide stable connectivity to the CAM appliance.
 
 **Solution 3**
 
-Make sure the communication from CAM Agent to CAM servers works correctly.
+Make sure the communication from CAM Agent to CAM appliance works correctly.
 
 1. Connect to the instance by SSH or RDP.
 
 2. Run a command to check basic connectivity, such as the following or an equivalent one:
 
     ```
-    telnet cam.ctl.io 443
+    telnet 10.0.0.1 443
     ```
 
-3. Take the corrective actions inside the VM, routers and firewalls to allow unrestricted communication between agent and CAM servers.
+    **Note:** Replace 10.0.0.1 with your appliance IP or hostname.
 
-4. In Cloud Application Manager, open the lifecycle editor of the instance and click **Reinstall**. The instance should reflect the proper status.
+If the above command does not get a reply, please:
+
+1. Take the corrective actions inside the VM, routers and firewalls to allow unrestricted communication between agent and the CAM appliance. Ensure that the port 443 is open in the CAM appliance for the CAM agent to connect back successfully.
+
+2. In Cloud Application Manager, open the lifecycle editor of the instance and click **Reinstall**. The instance should reflect the proper status.
 
 If the connectivity seems to be working as expected and the problem persists, connect to the instance over SSH or RDP and grab a copy of the agent `/var/log/elasticbox/elasticbox-agent.log` in the case of Linux or `ProgramData\ElasticBox\elasticbox-agent.log` in the case of Windows (please note that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected please attach it when [Contacting support](mailto:incident@CenturyLink.com)
 
@@ -195,6 +202,18 @@ The Catalog public boxes are provided as templates for quickstart deploying comm
 
 We encourage you to [Contact support](mailto:incident@CenturyLink.com) to alert us of the broken box. In the meantime, you can define the install in a box using bash commands like apt-get, wget, cURL, and more.
 
+### Cloud Application Manager Appliance is Unavailable
+
+**Cause**
+
+When you configure the hostname, SSL certificate, or block device for the appliance, there’s a chance that the appliance may become unavailable. This issue can happen because you set the hostname incorrectly, upload a non-matching SSL certificate and key, or the block device gets corrupt, runs out of space or dismounts from the system. As a result, the appliance fails to reboot. Instance operations fail, and the appliance can’t reach deployed instances properly.
+
+**Solution**
+
+[Contact support](mailto:incident@CenturyLink.com). We will walk you through recovering the appliance. Send us the appliance ID, version number shown at the top of the [setup console](../Data Center Edition/camdce-initialsetup.md). And send us the logs you can download from the Logs section of the appliance setup console.
+
+Logs help us debug your appliance issues. The `.log` files include recent audit information like who did what, user connections, and contain the logs of all the services. If possible, copy the logs from `/data/logs` away from the CAM Appliance and have them ready for the CAM support team.
+
 ### Resource sharing problems
 
 When trying to share a resource (Provider, Box, Instance) the desired user or team can't be found in the users list or the ownership of the resource cant be transfered to another user/team.
@@ -235,29 +254,31 @@ An instance registration (import) is waiting for the CAM agent to install, but t
 
 **Solution 1**
 
-Make sure the communication from the instance to be register to CAM servers works correctly.
+Make sure the communication from the instance to be register to CAM appliance works correctly.
 
 1. Connect to the instance by SSH or RDP.
 
 2. Run a command to check basic connectivity, such as the following or an equivalent one:
 
     ```
-    telnet cam.ctl.io 443
+    telnet 10.0.0.1 443
     ```
+
+    **Note:** Replace 10.0.0.1 with your appliance IP or hostname.
 
 If the above command does not get a reply, please:
 
-1. Take the corrective actions inside the VM, routers and firewalls to allow unrestricted communication between the instance and CAM servers.
+1. Take the corrective actions inside the VM, routers and firewalls to allow unrestricted communication between the instance and the CAM appliance. Ensure that the port 443 is open in the CAM appliance for the CAM agent to connect back successfully.
 
 2. In Cloud Application Manager, open the instance details page and click **Retry import** if available, or **Cancel import** and start the import process again. The instance should now finish the registration process successfully.
 
-If the connectivity seems to be working as expected and the problem persists, connect to the instance over SSH or RDP and grab a copy of the agent `/var/log/elasticbox/elasticbox-agent.log` in the case of Linux or `ProgramData\ElasticBox\elasticbox-agent.log` in the case of Windows (please note that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected please  attach it when [Contacting support](mailto:incident@CenturyLink.com)
+If the connectivity seems to be working as expected and the problem persists, connect to the instance over SSH or RDP and grab a copy of the agent `/var/log/elasticbox/elasticbox-agent.log` in the case of Linux or `ProgramData\ElasticBox\elasticbox-agent.log` in the case of Windows (please note that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected please attach it when [Contacting support](mailto:incident@CenturyLink.com)
 
 **Solution 2**
 
 The CAM agent might be stopped and not able to complete the registration process due to the instance SSL stack not supporting TLS 1.2 at minimum. This might happen in old Windows machines using a .Net Framework version earlier than 4.5 (in the 4.5 version you have to opt-in to use it, while in versions 4.6 and above it is the default).
 
-Check if ElasticBox bootstrap logs (`C:\program files\elastic Box` in Windows) have something such as:
+Check if ElasticBox logs (`C:\program files\elastic Box` in Windows) have something such as:
 
 ```
 2019-09-05 17:45:07Z Exception setting "SecurityProtocol": "Cannot convert null to type "System.Net.SecurityProtocolType" due to invalid enumeration values. Specify one of the following enumeration values and try again. The possible enumeration values are "Ssl3, Tls"."
