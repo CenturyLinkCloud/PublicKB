@@ -37,7 +37,7 @@ The DCC UI have been updated to display Virtual Intelligent Hosting Instance (VI
 
 #### Redhat Upgrades 
 
-##### Red Hat 6 & Red Hat 7 Upgards
+##### Red Hat 6 & Red Hat 7 Upgrades
 
 The CenturyLink Cloud team is providing notice regarding a technology update for Red Hat 6 & Red Hat 7 machines on all CenturyLink Cloud accounts. In an effort to provide the quality service our customers expect from CenturyLink, we will be automatically updating all Red Hat 6 & Red Hat 7 machines to point to the new RHUI 3.X which will allow customers to continue to receive crucial Red Hat package updates. 
 
