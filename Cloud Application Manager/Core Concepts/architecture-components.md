@@ -36,7 +36,7 @@ This article is meant to assist users of Cloud Application Manager to learn abou
 ### Audience
 
 
-All Cloud Application Manager users who want to learn about Cloud Application Manager component's architecture and its connectivity requirements.
+All Cloud Application Manager users who want to learn about Cloud Application Manager components' architecture and their connectivity requirements.
 
 
 ![Cloud Application Manager Components](../../images/cloud-application-manager/components.png)
@@ -45,15 +45,32 @@ All Cloud Application Manager users who want to learn about Cloud Application Ma
 ### CAM Agents
 
 
-Are responsible of execute event scripts in virtual machines deployed using script boxes and return their execution results. Also provide to backend network information about virtual machine regularly to inform user about virtual machine availability.
+All communication between CAM agents (EB or Watcher) and the CAM services must utilize the TLS protocol.  Minimum supported version is TLS 1.2.
 
-Agent is bootstrapped and installed, in each virtual machine registered in CAM, making use of diverse execution mechanisms provided by public and private cloud providers. i.e. in AWS cloud init is used for download and install it.
+#### Application Lifecycle Editor (EB Agent)
 
-Cloud Application Manager agent is written in python and it requires in linux machines to have python installed, and at least version 2.7.x to work properly.
 
-Agents require outbound connectivity to [https://cam.ctl.io](https://cam.ctl.io) to be able to call back and communicate results and request more work to be done on its virtual machine.
+The EB agent is responsible for executing event scripts in virtual machines deployed using script boxes and return their execution results. The agent also regularly provides information to the CAM backend about the virtual machine to inform user about virtual machine availability.
+
+The EB Agent is bootstrapped and installed in each virtual machine registered in CAM, making use of diverse execution mechanisms provided by public and private cloud providers. i.e. Cloud Init, Python, .net, etc. The version of these execution mechanisms must support TLS 1.2 or newer.
+
+The EB agent is written in python and it requires, in linux machines, that they have python installed, minimum version 2.7.x, to work properly.
+
+Agents require outbound connectivity to [https://cam.ctl.io](https://cam.ctl.io) to be able to call back and communicate results and request more work to be done on its virtual machine. 
 
 Cloud Application Manager agent supports proxy configuration to call back when it's deployed in constrained/secured environments.
+
+### MSA Monitoring (Watcher Agent)
+
+The Watcher agents are deployed to each CAM registered VM that is under management.  The deployment of the Watcher agent is initiated on any new CAM registered VM running a manageable OS (RHEL 6&7, CentOS 6&7, Ubuntu 14, 16 & 18, Windows 2k08R2, 2k12 and 2k16).  
+
+The Watcher agent executes scripts (checks) on workloads and provides the results to the Monitoring infrastructure within CenturyLink. 
+
+The Monitoring infrastructure provides a [repository of checks](https://watcher.ctl.io/docs/check_types/) that may be applicable to agents, stores metric data from checks and processes check results to identify actionable events. 
+
+Agents require outbound connectivity to [https://cam.ctl.io](https://cam.ctl.io) and https://\*.watcher.ctl.io to be able to call back and communicate results and request more work to be done on its virtual machine.  The Watcher agent utilizes ports 80, 443 and 5671 which must be allowed outbound access.
+
+Secure, public internet connections are used for the transfer of metric data between the agent and the Monitoring infrastructure via TLS 1.2. Network transactions are initiated by the agent and outbound only. 
 
 
 ### Websockets
@@ -77,16 +94,22 @@ We have asynchronous and persistent long-running workflows which are responsible
 ### Connectivity and required firewall rules
 
 
-Allow Income traffic to 443 (https) port (OPEN) to your Cloud Application Manager Data Center Edition (appliance) for UI, API calls and CAM agents requests
+Allow Incoming traffic to port 443 (https) (OPEN) to your Cloud Application Manager Data Center Edition (appliance) for UI, API calls and CAM agents requests.
 
-Allow Outcome traffic to 443 (https) port from virtual machines network or its VPC so CAM agents are able to communicate with Cloud Application Manager SaaS or onpremises Appliance
+Allow Outgoing traffic on port 443 (https) from the virtual machines' network or VPC so CAM agents are able to communicate with Cloud Application Manager SaaS or onpremises Appliance.
 
-Also, if you are using private cloud providers, take into account that to use some of them Cloud Application Manager requires more ports to be open so it could communicate with their API and metadata endpoints to request new deployments or retrieve metadata and configuration parameters:
+Where MSA is enabled, allow Outgoing traffic on ports 80, 443, 5671 and UDP destination ports 500 and 4500 from the virtual machines network or VPC so CAM agents are able to communicate with the Monitoring infrastructure within CLC.  
+
+MSA enabled environments must also allow intranetwork communication on ports 21, 22, 443, 445, 3389 and 5985-5986 on the virtual machines network or VPC so that Remote Administration connections may be made by CenturyLink Operations. 
+
+For private cloud providers, take into account that to use some of their offerings, Cloud Application Manager requires more ports to be open for communication with the providers' API and metadata endpoints to request new deployments or retrieve metadata and configuration parameters:
 
 |  PROVIDER     |  PORTS                                                                |
 |---------------|-----------------------------------------------------------------------|
 | VMWARE vCenter| INCOME ports to be OPEN: 443 ssl, 8085                                |
 | OpenStack     | INCOME ports to be OPEN: 443 ssl, 5000, 35357, 8774, 8776, 9292, 8004 |
+
+It is also expected that customers' cloud environments have access to repositories for updating software packages i.e. yum and apt repositories.  
 
 
 ### Contacting Cloud Application Manager Support
