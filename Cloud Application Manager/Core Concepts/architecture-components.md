@@ -98,9 +98,9 @@ Allow Incoming traffic to port 443 (https) (OPEN) to your Cloud Application Mana
 
 Allow Outgoing traffic on port 443 (https) from the virtual machines' network or VPC so CAM agents are able to communicate with Cloud Application Manager SaaS or onpremises Appliance.
 
-Where MSA is enabled, allow Outgoing traffic on ports 80, 443, 5671 and UDP destination ports 500 and 4500 from the virtual machines network or VPC so CAM agents are able to communicate with the Monitoring infrastructure within CLC.  
+Where MSA is enabled, allow Outgoing traffic on ports 80, 443, 5671 and UDP destination ports 500 and 4500 from the virtual machines network or VPC so Watcher agents are able to communicate with the Monitoring infrastructure within CLC.  
 
-MSA enabled environments must also allow intranetwork communication on ports 21, 22, 443, 445, 3389 and 5985-5986 on the virtual machines network or VPC so that Remote Administration connections may be made by CenturyLink Operations. 
+MSA enabled environments must also allow intranetwork communication on ports 21, 22, 443, 445, 3389 and 5985-5986 on the virtual machines network or VPC so that Remote Administration connections may be made by CenturyLink Operations. A secure, reverse tunnel is established between CenturyLink and the MSA enabled environment by which CenturyLink Operations may securely administer customer VMs. 
 
 For private cloud providers, take into account that to use some of their offerings, Cloud Application Manager requires more ports to be open for communication with the providers' API and metadata endpoints to request new deployments or retrieve metadata and configuration parameters:
 
