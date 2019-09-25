@@ -34,3 +34,16 @@ Managed Services Anywhere has provided a public website that provides details of
 ##### DCC UI
 
 The DCC UI have been updated to display Virtual Intelligent Hosting Instance (VIHI) CPU and Memory utilization metrics, similar to the VM metrics displayed in SavvisStation Portal Compute Dashboard.
+
+#### Redhat Upgrades 
+
+##### Red Hat 6 & Red Hat 7 Upgrades
+
+The CenturyLink Cloud team is providing notice regarding a technology update for Red Hat 6 & Red Hat 7 machines on all CenturyLink Cloud accounts. In an effort to provide the quality service our customers expect from CenturyLink, we will be automatically updating all Red Hat 6 & Red Hat 7 machines to point to the new RHUI 3.X which will allow customers to continue to receive crucial Red Hat package updates. 
+
+On October 2, 2019, beginning at 10am CST, the CenturyLink Cloud team will begin the updates. The updates are anticipated to take around five hours, however during the update, Customers’ virtual machines will have full accessibility and no reboot is needed. 
+
+There is no action required on your part to perform the update, however, if you would like to perform the update before the automated upgrade, you can do so by running the Blueprint “Upgrade to RHUI 3” on your Red Hat machines. 
+
+That Blueprint can be found by following this link and logging into your CenturyLink Cloud account: https://control.ctl.io/Blueprints/Browser/Details/16667.  
+ 
