@@ -28,9 +28,9 @@ This article is meant to assist users of Cloud Application Manager to learn abou
 
 * **CAM agents** - functions, interactions, installation, and requirements
 * **Websockets** - functions, interactions
-* API Services - functions, interactions
-* Orchestration Workflow - functions, interactions
-* Connectivity and Required Firewall Rules
+* **API Services** - functions, interactions
+* **Orchestration Workflow** - functions, interactions
+* **Connectivity and Required Firewall Rules**
 
 
 ### Audience
