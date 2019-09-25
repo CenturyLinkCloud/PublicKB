@@ -68,7 +68,7 @@ The Watcher agent executes scripts (checks) on workloads and provides the result
 
 The Monitoring infrastructure provides a [repository of checks](https://watcher.ctl.io/docs/check_types/) that may be applicable to agents, stores metric data from checks and processes check results to identify actionable events. 
 
-Agents require outbound connectivity to [https://cam.ctl.io](https://cam.ctl.io) and https://\*.watcher.ctl.io to be able to call back and communicate results and request more work to be done on its virtual machine.  The Watcher agent utilizes ports 80, 443 and 5671 which must be allowed outbound access.
+Agents require outbound connectivity to [https://cam.ctl.io](https://cam.ctl.io) and https://\*.watcher.ctl.io to be able to call back and communicate results and request more work to be done on its virtual machine.  
 
 Secure, public internet connections are used for the transfer of metric data between the agent and the Monitoring infrastructure via TLS 1.2. Network transactions are initiated by the agent and outbound only. 
 
