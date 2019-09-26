@@ -29,4 +29,4 @@ This article is meant to assist users of Managed Services Anywhere (MSA) in the 
 
 All Managed Services Anywhere (MSA) customers or those interested in enabling MSA within their Cloud Application Manager Providers.
 
-![Managed Services Anywhere Network Diagram](../../images/cloud-application-manager/MSAnetwork.png)
+![Managed Services Anywhere Network Diagram](../../images/cloud-application-manager/MSAnetwork_9-26-19.png)
