@@ -54,7 +54,7 @@ The ALM agent (a.k.a. EB agent) is responsible for executing event scripts in vi
 
 The ALM Agent is bootstrapped and installed in each virtual machine registered in CAM, making use of diverse execution mechanisms provided by public and private cloud providers. i.e. Cloud Init, Python, .Net, etc. The version of these execution mechanisms must support TLS 1.2 or newer.
 
-The EB agent is written in python and it requires, in linux machines, that they have python installed, minimum version 2.7.x, to work properly.
+The ALM agent is written in Python and it is a pre-requisite in Linux machines. They should have Python version 2.7.x installed to work properly.
 
 Agents require outbound connectivity to [https://cam.ctl.io](https://cam.ctl.io) to be able to call back and communicate results and request more work to be done on its virtual machine. 
 
