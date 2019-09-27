@@ -56,7 +56,7 @@ The ALM Agent is bootstrapped and installed in each virtual machine registered i
 
 The ALM agent is written in Python and it is a pre-requisite in Linux machines. They should have Python version 2.7.x installed to work properly.
 
-Agents require outbound connectivity to [https://cam.ctl.io](https://cam.ctl.io) to be able to call back and communicate results and request more work to be done on its virtual machine. 
+Agents require outbound connectivity to [https://cam.ctl.io](https://cam.ctl.io), either directly or through a proxy, to be able to call back and communicate results and request more work to be done on its virtual machine. 
 
 Cloud Application Manager agent supports proxy configuration to call back when it's deployed in constrained/secured environments.
 
