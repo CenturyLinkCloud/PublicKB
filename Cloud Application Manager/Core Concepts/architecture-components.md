@@ -45,7 +45,7 @@ All Cloud Application Manager users who want to learn about Cloud Application Ma
 ### Cloud Application Manager Agents
 
 
-All communication between CAM agents (EB or Watcher) and the CAM services must utilize the TLS protocol.  Minimum supported version is TLS 1.2.
+All communication between Cloud Application Manager (CAM) agents (ALM or Watcher) and the CAM services must utilize the TLS protocol.  Minimum supported version is TLS 1.2.
 
 #### Application Lifecycle Editor (EB Agent)
 
