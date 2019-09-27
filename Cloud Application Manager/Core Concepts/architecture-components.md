@@ -52,7 +52,7 @@ All communication between Cloud Application Manager (CAM) agents (ALM or Watcher
 
 The ALM agent (a.k.a. EB agent) is responsible for executing event scripts in virtual machines deployed using script boxes and return their execution results. The agent also regularly provides information to the CAM backend about the virtual machine to inform user about virtual machine availability.
 
-The EB Agent is bootstrapped and installed in each virtual machine registered in CAM, making use of diverse execution mechanisms provided by public and private cloud providers. i.e. Cloud Init, Python, .net, etc. The version of these execution mechanisms must support TLS 1.2 or newer.
+The ALM Agent is bootstrapped and installed in each virtual machine registered in CAM, making use of diverse execution mechanisms provided by public and private cloud providers. i.e. Cloud Init, Python, .Net, etc. The version of these execution mechanisms must support TLS 1.2 or newer.
 
 The EB agent is written in python and it requires, in linux machines, that they have python installed, minimum version 2.7.x, to work properly.
 
