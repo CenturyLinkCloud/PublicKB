@@ -47,7 +47,7 @@ All Cloud Application Manager users who want to learn about Cloud Application Ma
 
 All communication between Cloud Application Manager (CAM) agents (ALM or Watcher) and the CAM services must utilize the TLS protocol.  Minimum supported version is TLS 1.2.
 
-#### Application Lifecycle Editor (EB Agent)
+#### Application Lifecycle Management agent (ALM Agent)
 
 
 The EB agent is responsible for executing event scripts in virtual machines deployed using script boxes and return their execution results. The agent also regularly provides information to the CAM backend about the virtual machine to inform user about virtual machine availability.
