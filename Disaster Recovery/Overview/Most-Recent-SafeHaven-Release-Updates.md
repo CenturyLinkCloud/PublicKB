@@ -2,13 +2,15 @@
 
   "title": "Most Recent SafeHaven Release Updates",
 
-  "date": "03-06-2018",
+  "date": "08-15-2019",
 
-  "author": "Mahima Kumar",
+  "author": "Shi Jin",
 
   "attachments": [],
 
-  "contentIsHTML": false
+  "contentIsHTML": false,
+
+  "sticky": true
 
 }}}
 
@@ -19,12 +21,23 @@ This article provides information about the **Most Recent SafeHaven Release Upda
 ### Most Recent SafeHaven Releases
 
 * Latest SafeHaven-4 product line:  [SafeHaven 4.0.5](../SafeHaven 4/safehaven-4.0.5-release.md) released on March 6, 2018
-* Latest SafeHaven-5 product line: [SafeHaven 5.0.1](../SafeHaven 5 General/SafeHaven5.0.1-Release-Notes.md) released on March 27, 2018
+
+* Latest SafeHaven-5 product line: [SafeHaven 5.2.1](../SafeHaven 5 General/SafeHaven5.2.1-Release-Notes.md) released on August 15, 2019
+
+
 
 ### SafeHaven-5 Releases History
 
 |Release Date|Link to Release Notes|
 |---|---|
+|August 15, 2019|[SafeHaven 5.2.1](../SafeHaven 5 General/SafeHaven5.2.1-Release-Notes.md)|
+|June 13, 2019|[SafeHaven 5.2.0](../SafeHaven 5 General/SafeHaven5.2.0-Release-Notes.md)|
+|May 2, 2019|[SafeHaven 5.1.5](../SafeHaven 5 General/SafeHaven5.1.5-Release-Notes.md)|
+|Feburary 12, 2019|[SafeHaven 5.1.4](../SafeHaven 5 General/SafeHaven5.1.4-Release-Notes.md)|
+|October 29, 2018|[SafeHaven 5.1.3](../SafeHaven 5 General/SafeHaven5.1.3-Release-Notes.md)|
+|September 5, 2018|[SafeHaven 5.1.2](../SafeHaven 5 General/SafeHaven5.1.2-Release-Notes.md)|
+|August 7, 2018|[SafeHaven 5.1.1](../SafeHaven 5 General/SafeHaven5.1.1-Release-Notes.md)|
+|June 22, 2018|[SafeHaven 5.1.0](../SafeHaven 5 General/SafeHaven5.1.0-Release-Notes.md)|
 |March 27, 2018|[SafeHaven 5.0.1](../SafeHaven 5 General/SafeHaven5.0.1-Release-Notes.md)|
 |December 29, 2017| [SafeHaven 5.0.0](../SafeHaven 5 General/SafeHaven5.0.0-Release-Notes.md)|
 

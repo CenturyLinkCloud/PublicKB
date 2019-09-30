@@ -15,7 +15,10 @@
 </ul>
 <h3>Prerequisites</h3>
 <ul>
-  <li>Windows 2008 or Windows 2012 Operating System</li>
+  <li>Windows Server 2008 R2</li>
+  <li>Windows Server 2012</li>
+  <li>Windows Server 2012 R2</li>
+  <li>Windows Server 2016</li>
   <li>The administrator password stored in the Control Portal (Administrative Credentials) must match the Operating System administrator password for automated diskpart functions.</li>
 </ul>
 <h3>Exceptions</h3>

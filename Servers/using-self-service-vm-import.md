@@ -8,7 +8,7 @@
 
 **Note**: this feature only supports OVFs exported from VMware environments, and certain operating systems. Virtual appliances and OVFs from other hypervisors should be imported as a service task.
 
-1. Ensure your OVF meets requirements for import – [they are listed here](../Servers/self-service-vm-import-ovf-requirements.md).
+1. Ensure your OVF meets requirements for import they are listed here in the KB under Service tasks > Best Practices and preparation for a virtual machine OVF import.
 
 2. Connect to your CenturyLink Cloud FTP server; [instructions detailed here](../Control Portal/ftp-users-in-control-portal.md).
   * **Note**: You can import VMs to any available data center in your account; the OVF file is simply stored in your home data center FTP account for initial processing.
@@ -37,3 +37,4 @@
 
 10. Upon successful import, your VM will appear in your chosen data center and group location within a few hours.
   * **Note**: Exact timing for the availability of your new VM in the Control Portal depends on several factors, so there is not standard availability time for imported VMs.
+  * **Note**:If your OVA import fails with any of the following errros: "Invalid Ovf manifest entry", "The OVF package is invalid and cannot be deployed" or "The following manifest file entry (line 1) is invalid: SHA256 (xxxxxxx.ovf)" please see the following article for resolution: https://kb.vmware.com/s/article/2151537.

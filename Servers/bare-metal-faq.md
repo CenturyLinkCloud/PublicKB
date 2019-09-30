@@ -54,6 +54,10 @@ Through the Control Portal you are able to power the Bare Metal server on or off
 
 Through the Control Portal customers can add **a single public ip address** to a bare metal server. Customers who require multiple public IP addresses should consider using a Virtual Machine delivery model or [submit a feature request.](../Support/how-do-i-submit-a-feature-request.md)
 
+**Can Blueprint jobs from the available options in the Blueprint Library be run against Bare Metal servers?**
+
+No, Blueprint functionality is not supported.
+
 **What are the best suited workloads for this new server class?**
 
 Any applications not well-suited to virtualization whether it be performance or licensing restrictions related, database and application workloads where consistent performance is critical, grid or HPC (High Performance Computing), data analytics, caching and indexing.
@@ -68,7 +72,7 @@ It is the responsibility of the customer to maintain any data recovery or restor
 
 **How is hardware support and replacement handled for Bare Metal servers?**
 
-CenturyLink is responsible for all hardware replacement for Bare Metal servers.  We monitor the Bare Metal servers underlying hardware using agentless SNMP monitoring via iLO.  If an incident is detected a ticket for investigation is automatically generated and the customer is notified.
+CenturyLink is responsible for all hardware replacement for Bare Metal servers.  Physical hardware support for servers is only available during core business hours (M-F 9AM - 5PM) in the time zone of the datacenter.
 
 For servers located in VA1 or GB3 only the following SLA will apply:
 * In the case where a server becomes completely unavailable the process to replace the server will begin immediately with consent from the customer. For additional service level details please reference the Bare Metal servers SLA on the [SLA page](https://www.ctl.io/legal/sla/).

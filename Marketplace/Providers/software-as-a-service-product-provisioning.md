@@ -1,6 +1,6 @@
 {{{
 "title": "Software as a Service Product Provisioning",
-"date": "09-06-2017",
+"date": "01-01-2019",
 "author": "Brandy Smith",
 "attachments": [],
 "contentIsHTML": false
@@ -14,7 +14,7 @@ The next step is to create the Product Provisioning within the Provider Portal f
 
 ### Product Provisioning
 
-1. Log into the [Provider Portal](https://provider-portal.ctl.io), using your CenturyLink Cloud credentials.
+1. Product creation and Provisioning is done in the staging environment of the Provider Portal to allow for testing. To create products you will log into the staging environment here: https://provider-portal.staging.ctl.io/#/login. You will login with your same CenturyLink Cloud credentials for both production and staging.
 
 2. If a product tile has yet to be created, you can do so by following the steps outlined in the [Getting Started Guide](getting-started-guide-marketplace-ecosystem-provider-portal.md).
 
@@ -48,10 +48,12 @@ The next step is to create the Product Provisioning within the Provider Portal f
 
   ![SaaS5.png](../../images/SaaS6.png)
 
-12. The **Product SKU Conditions** field is optional.  By default, all Product SKUs associated with the product will generate billing when the end user provisions the product.  Setting a condition allows you to choose which SKUs will be active, based on a user's selection.  Please note, setting a SKU condition is only available for **Selection** type inputs.
+12. The **Product SKU Conditions** field is optional.  By default, all Product SKUs associated with the product will generate billing immediately when the end user provisions the product.  Setting a condition allows you to choose which SKUs will be active, based on a user's selection.  Please note, setting a SKU condition is only available for **Selection** type inputs and if SKU will have delayed billing it must be set up that why by a CenturyLink Marketplace representative.  
 
 13. Below the **Example API Request** box, there is the option to preview and save your work. Be sure to click **SAVE** before leaving the SaaS tab!
 
   ![SaaS6.png](../../images/SaaS5.png)
 
-For any questions, please contact us at [Marketplace@ctl.io](mailto:marketplace@ctl.io).
+Please review the Marketplace [Billing KB](marketplace-supported-billing-models.md) for information on the Billing and SKU creation process.
+
+For any questions, please contact us at [Marketplace@centurylink.com](mailto:Marketplace@centurylink.com).

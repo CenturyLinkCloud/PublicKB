@@ -30,7 +30,7 @@ On the Boxes page, click **New > Script** box. Under Requirements, select Linux 
 
 **Add a greeting variable**
 
-Configure the box to install a greeting in the virtual environment. To store your Hello World greeting, under Configuration > Variables, create a text variable called **Greeting** and enter **Hello World** as its value and save.
+Configure the box to install a greeting in the virtual environment. To store your Hello World greeting, under Code > Variables, click the **New** button, then create a text variable called **Greeting** and enter **Hello World** as its value and save.
 
 **Note**: Add a port variable with a value of 22 if you plan to SSH into the Hello World instance after deploying.
 
@@ -38,7 +38,7 @@ Configure the box to install a greeting in the virtual environment. To store you
 
 **Automate the box install**
 
-To install the greeting on the instance, add an install event. Under **Configuration > Events > install**, click **install**.
+To install the greeting on the instance, add an install event. Under **Code > Events > install**, click **install**.
 
 ![getting-started-hello-3.png](../../images/cloud-application-manager/getting-started-hello-3.png)
 
@@ -55,7 +55,8 @@ ___
 
 ### Add a provider and deployment policy
 
-You’ve configured the Hello World box. To deploy, you first need to connect to a cloud provider like [AWS](../Deploying Anywhere/using-your-aws-account.md), [Google Cloud](../Deploying Anywhere/using-google-cloud.md), [vSphere](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md), [OpenStack](../Deploying Anywhere/using-openstack-cloud.md), [CloudStack](../Deploying Anywhere/using-cloudstack.md), or [Azure](../Deploying Anywhere/using-azure.md) to launch the box using their services. For this walkthrough, we’ll use AWS.
+You’ve configured the Hello World box. To deploy, you first need to connect to a cloud provider like [AWS](../Deploying Anywhere/using-your-aws-account.md), [Google Cloud](../Deploying Anywhere/using-google-cloud.md), [vSphere](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md), [OpenStack](../Deploying Anywhere/using-openstack-cloud.md), [CloudStack](../Deploying Anywhere/using-cloudstack.md), or [Microsoft Azure](../Deploying Anywhere/using-microsoft-azure.md) to launch the box using their services.  
+For this walkthrough, we’ll use AWS.
 
 **Add a provider**
 

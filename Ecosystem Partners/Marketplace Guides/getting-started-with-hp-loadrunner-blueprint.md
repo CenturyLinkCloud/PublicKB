@@ -46,9 +46,6 @@ After reading this article, the user should feel comfortable getting started usi
 
 After executing the steps in this Getting Started document, the users will have a functioning HPE LoadRunner, the market leader for load and performance testing solution upon which they can start testing real business processes that users would perform in production, at massive scale using the LoadRunner software as their single load testing tool.
 
-### How-To Video
-<iframe width="854" height="480" src="https://www.youtube.com/embed/XEHdSSgPY2E" frameborder="0" allowfullscreen></iframe>
-
 ### Detailed Steps to deploy HPE LoadRunner Blueprint
 1. Locate the Blueprint in the Blueprint Library.
    * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.

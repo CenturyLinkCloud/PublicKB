@@ -31,7 +31,7 @@
     </p>
   </li>
   <li><strong>Specify custom port (ranges) on edge firewall.&nbsp;</strong>Instead of being constrained to the most common ports for the public firewall, customers can now specify custom ports or port ranges for their public IP addresses. Note that this capability
-    will be available for servers in all data centers EXCEPT WA1 and UT1.
+    will be available for servers in all data centers EXCEPT WA1.
     <p><img src="https://t3n.zendesk.com/attachments/token/p1fod3ppzlic3ik/?name=release08-05_05.png" alt="release08-05_05.png" />
     </p>
   </li>

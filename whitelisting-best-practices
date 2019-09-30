@@ -1,0 +1,19 @@
+{{{
+  "title": "Whitelisting Best Practices",
+  "date": "09-04-2019",
+  "author": "Ben Heisel",
+  "attachments": [],
+  "related-products" : [],
+  "contentIsHTML": false,
+  "sticky": true
+}}}
+
+### General Notes & Best Practices
+
+* Each data center provides a shared NAT pool for internet bound traffic from servers that do not have a public IP assigned. The shared NAT pool is subject to change without notification. As the NAT pool is subject to change, and for best security practices, we do not recommend using the shared NAT if you are whitelisting CenturyLink Cloud traffic at remote locations.
+* If you are whitelisting a CenturyLink Cloud server traffic we recommend assigning a [dedicated public IP](../Network/how-to-add-public-ip-to-virtual-machine.md).
+* Use of a dedicated IP will also reduce exposure to Denial of Service (DoS) attacks that may occur more frequently to shared service IPs.
+* Our [Hairpin NAT](../Network/hairpin-nats.md) article may also be relevant if you are whitelisting traffic within CenturyLink Cloud.
+* [Public IP pricing](//https://www.ctl.io/pricing/)
+
+If you have additional questions please submit a support request to help@ctl.io.

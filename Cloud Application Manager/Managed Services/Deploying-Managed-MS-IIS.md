@@ -10,8 +10,8 @@
 
 * [Introduction](#introduction)
 * [Overview](#overview)
-* [Supported Versions](#supported-versions)
-* [Supported Editions](#supported-editions)
+* [Supported Installation Types](#supported-installation-types)
+* [Supported Options](#supported-options)
 * [Supported Operating Systems](#supported-operating-systems)
 * [License](#license)
 * [Installation Features](#installation-features)
@@ -26,7 +26,7 @@ Internet Information Services (IIS, formerly Internet Information Server) is an 
 ### Overview
 Cloud Application Manager’s Managed Services Anywhere (MSA) allows customers to depend on CenturyLink to manage cloud deployed workloads, relieving themselves of the burdens of day to day monitoring, patching and Operational activities.  Through Cloud Application Manager's Managed Service Anywhere (MSA), a customer can provision a VM instance running Apache within any MSA enabled provider and because Managed Services has been enabled on the provider, CenturyLink will manage both the Operating System and IIS.
 
-### Supported Installation types
+### Supported Installation Types
 *  Basic
 *  Full
 *  ASP.NET
@@ -68,35 +68,35 @@ Cloud Application Manager’s Managed Services Anywhere (MSA) allows customers t
 ### Deploying Managed MS IIS
 
 Deploying Managed MS IIS to your provider with CenturyLink Cloud Application Manager:
-1.	In Boxes, Deployment Policies, search for “SAMPLE Managed IIS”
-2.	Select SAMPLE Managed IIS Deployment Policy
+1. In Boxes, Deployment Policies, search for “SAMPLE Managed IIS”
+2. Select SAMPLE Managed IIS Deployment Policy
 
   ![MgdIIS0.PNG](../../images/cloud-application-manager/MgdIIS0.PNG)
 The Sample Deployment policy is generated when the provider is made managed.  This policy's default configuration may be changed to suit the environment in which it is being installed.
 
-3.	Select the Configure (Gear) dropdown
-4.	Select “Clone”:
-5.	Modify the Cloned Deployment Policy with your details (Icon, Name, Description)
-6.	Select Save
+3. Select the Configure (Gear) dropdown
+4. Select “Clone”:
+5. Modify the Cloned Deployment Policy with your details (Icon, Name, Description)
+6. Select Save
 
   ![MgdIIS1.PNG](../../images/cloud-application-manager/MgdIIS1.PNG)
 
-7.	Edit your new Deployment Policy with your environment specific details (Resource, Placement and Network) and Save.
+7. Edit your new Deployment Policy with your environment specific details (Resource, Placement and Network) and Save.
 **NOTE:  The CenturyLink recommended Instance type is selected in the SAMPLE Managed IIS deployment policy.  Modification of this Instance type may result in significant performance issues.**
 **Disk configuration settings should remain as configured in SAMPLE Managed IIS deployment policy.**
 
   ![MgdIIS2.PNG](../../images/cloud-application-manager/MgdIIS2.PNG) ![MgdIIS3.PNG](../../images/cloud-application-manager/MgdIIS3.PNG)
 
-8.	In Catalog, select the Managed Services Anywhere subcategory and then select the “CenturyLink Managed IIS”.  Deploy CenturyLink Managed IIS instance.
+8. In Catalog, select the Managed Services Anywhere subcategory and then select the “CenturyLink Managed IIS”.  Deploy CenturyLink Managed IIS instance.
 
   ![MgdIIS4.PNG](../../images/cloud-application-manager/MgdIIS4.PNG)
 
-9.	Update the Details of the instance that is to be deployed, selecting the appropriate Deployment Policy for your desired environment and the Features you would like enabled.
+9. Update the Details of the instance that is to be deployed, selecting the appropriate Deployment Policy for your desired environment and the Features you would like enabled.
 
   ![MgdIIS5.PNG](../../images/cloud-application-manager/MgdIIS5.PNG)
   ![MgdIIS6.PNG](../../images/cloud-application-manager/MgdIIS6.PNG)
 
-10.	Select Deploy
+10. Select Deploy
 
 
 

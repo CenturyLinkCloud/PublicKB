@@ -6,6 +6,13 @@ Welcome to the [CenturyLink Cloud](http://www.ctl.io) Knowledge Base (KB) reposi
 
 If you are new to Git and Github, we highly recommend spending 5 minutes reading this great article on [Understanding the Github Flow](https://guides.github.com/introduction/flow/). This repo follows the Github Flow.
 
+# NEW FEATURE - Markdown Checker
+
+Before submitting your PR, validate the markdown in https://onramp.ctl.io/#!/markdownChecker
+
+The Github file preview does not render markdown exactly the same as we do in ctl.io/knowledge-base/.  The OnRamp Markdown Checker will show you how your KB article will be rendered in ctl.io.  This is especially useful if you have a table in your article.
+
+Please note, the preview in the OnRamp markdown checker **only** displays the html conversion view.  It does not give the same styles view (colors, font, etc.) at this time.
 
 # Overview
 
@@ -25,6 +32,8 @@ The repository is organized by category, and each folder represents a category. 
 
 1. Once your branch has been created, make your changes (add, edit, delete) to your KB article in your favorite Markdown editor (we like [Atom](https://atom.io/)).
 
+1. Validate the markdown to HTML conversion in https://onramp.ctl.io/#!/markdownChecker
+
 1. Commit your change(s) locally to your fork/branch.
 
 1. Push or sync your commit(s) to the remote repository on Github.
@@ -34,8 +43,10 @@ The repository is organized by category, and each folder represents a category. 
 1. Create a [pull request](https://help.github.com/articles/creating-a-pull-request) to merge your changes into the `master` branch.
   * [Create a pull request using Github for Windows](https://github.com/blog/1969-create-pull-requests-in-github-for-windows)
   * [Create a pull request using Github for Mac](https://github.com/blog/1946-create-pull-requests-with-github-for-mac)
+  * For CenturyLink internal users, notifications for the pull request, including requested changes, will be sent to [MS Teams](https://teams.microsoft.com/l/channel/19%3a5c80a93c8b854e279de7adff53f061a7%40thread.skype/Public%2520KB%2520Review?groupId=eab2e1cd-8f6e-44c2-9c12-e4e25437502e&tenantId=72b17115-9915-42c0-9f1b-4f98e5a4bcd2)
 
-    **Note:** If you are uploading a KB and its associated images/attachments, it should all be part of one pull request. Do not upload the article and the images/attachments in separate pull requests.
+    **Important Note:** If you are uploading a KB and its associated images/attachments, it should all be part of one pull request. Do not upload the article and the images/attachments in separate pull requests.  If separate, the commit analyzer (see below) will fail, and we will not be able to merge.
+
 
 1. This repository contains a [commit analyzer](https://github.com/CenturyLinkCloud/KB-Commit-Analyzer) that runs against each file in the repository validating that the following are true:
 

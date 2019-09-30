@@ -13,6 +13,10 @@
   "sticky": false
 }}}
 
+**Managed Backup went End of Sale 6/25/19, all existing subscriptions will still continue to function**
+
+**You will not be able to add Managed Backup to new servers, but it can be removed from existing servers**
+
 **Q: What is included in the Managed Backup service?**
 
 A: Managed Backup makes CenturyLink's backup solution available in the CenturyLink Cloud. Customers can deploy the new managed backup service on existing virtual machines in the CenturyLink Cloud, as well as on new VMs. By default, all servers with Managed Backup enabled have their volumes backed up nightly. The backup data is stored for two weeks in the same data center as the virtual machine **and** in a remote data center – this offers geographic redundancy. Customers also get 24x7 support from managed backup engineers to help troubleshoot any backup issues or change configurations such as schedules or retention policies. This support staff is available by contacting the CenturyLink Client Service Center at 1-888-638-6771.
@@ -100,7 +104,7 @@ A: Hot backup is not offered in Managed Backup.  Managed Backup is for file/fold
 
 For SQL, Mysql , Oracle and other databases, a suggested method is to put the data to a file/folder for inclusion in the backups.
 
-To safely backup and restore Microsoft Exchange mailbox data CenturyLink Cloud customers must implementation and operate their own solution.  Using 3rd party backup clients allows customers to perform recovery of message/mailbox (Exchange) data, define retention periods and backup frequency.  Customers can speak to a CenturyLink Cloud sales representative for guidance.
+To safely backup and restore Microsoft Exchange mailbox data CenturyLink Cloud customers must implement and operate their own solution.  Using 3rd party backup clients allows customers to perform recovery of message/mailbox (Exchange) data, define retention periods and backup frequency.  Customers can speak to a CenturyLink Cloud sales representative for guidance.
 
 **Q: Where are my offsite vault copies stored?**
 

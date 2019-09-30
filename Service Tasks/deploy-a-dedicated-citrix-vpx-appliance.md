@@ -13,7 +13,7 @@ This Knowledge Base article will guide a customer through the process of deployi
 
 **Q: How is a Dedicated Citrix VPX Priced?**
 
-**A:** Refer to our [Pricing Catalog](https://www.ctl.io/pricing) under Load Balancing for Citrix VPX License fees. These fees include **only** the license costs on a monthly basis. Compute usage for each appliance is based on a **2vCPU/2GB RAM/20GB Storage** Virtual Machine size.  Customers can leverage our [Price Estimator Online](https://www.ctl.io/estimator/) to determine this cost based on location. When using **Highly Available** configurations **both** licensing and compute costs will be **multiplied 2x**.
+**A:** Refer to our [Pricing Catalog](https://www.ctl.io/pricing) under Load Balancing for Citrix VPX License fees. These fees include **only** the license costs on a monthly basis. Compute usage for each appliance is based on a **2vCPU/2GB RAM/20GB Storage** Virtual Machine size.  Customers can leverage our [Online Price Estimator](https://www.ctl.io/estimator/) to determine this cost based on location. When using **Highly Available** configurations **both** licensing and compute costs will be **multiplied 2x**.
 
 ### Deploy a Load Balancing VLAN
 
@@ -36,7 +36,7 @@ In order to properly process your request to deploy Citrix VPX device(s) custome
 * The number of VIP's you'd like reserved in the network for load balancing. The support team can later reserve more via a ticket. Generally, our team will reserve 10 VIPs out of the box unless stated otherwise.
 * [Indicate which of the (6) dedicated load balancer types you wish to purchase.](http://www.ctl.io/load-balancing/#Pricing)
 * Indicate the Quantity of devices you wish to purchase.  **If you require Highly Available Load Balancers 2 units must be purchased.**
-* Indicate the VPX build version you wish to leverage:  10.5, 11, 11.1 or **12<sup>new!</sup>**
+* Indicate the VPX build version you wish to leverage:  10.5, 11, 11.1, 12 or **12.1<sup>new!</sup>**
 * [Provide your pin](../Support/pin-authentication-for-support-requests.md)
 
 ### Accessing the VPX Appliance(s)

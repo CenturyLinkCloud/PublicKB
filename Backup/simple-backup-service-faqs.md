@@ -1,6 +1,6 @@
 {{{
   "title": "Simple Backup Service FAQs",
-  "date": "11-17-2017",
+  "date": "02-27-2019",
   "author": "John Gerger",
   "attachments": [],
   "related-products" : [],
@@ -43,7 +43,7 @@ A: All Operating Systems that are currently buildable in the CenturyLink Cloud C
 
 **Q: How can I use Simple Backup Service on a server that doesn't have internet access?**
 
-A: Simple Backup Service requires consistent internet connectivity to install, update, backup, and restore. If consistent internet connectivity is not an option, please review our [Managed Backup](https://www.ctl.io/managed-services/backup/) offering.
+A: Simple Backup Service requires consistent internet connectivity to install, update, backup, and restore.
 
 **Q: What happens when my server is paused, which pauses the agent, or losses connectivity?**
 
@@ -105,7 +105,7 @@ A: An "IN_PROGRESS" status for a backup job means the data is actively being tra
 
 **Q: How do you handle backing up open files?**
 
-A: For Windows, Open file backups are supported through VSS snapshots for any VSS compliant applications running on the Windows server. you can enable VSS backups on specific backup policies for Windows servers by checking the "Create VSS Snapshot" checkbox. This can be done when creating the policy, or by editing an existing policy.
+A: For Windows, Open file backups are supported through VSS snapshots for any VSS compliant applications running on the Windows server. You can enable VSS backups on specific backup policies for Windows servers by checking the "Create VSS Snapshot" checkbox. This can be done when creating the policy, or by editing an existing policy.
 
 ![](../images/backup/faq/vss.png)
 
@@ -113,15 +113,23 @@ For Linux, open files will not be backed up and a “Partial_Success” will be 
 
 **Q: How can I confirm that my backups were successful?**
 
-A: In the backup section of the control portal, under the backup policy in question there is a column that shows the last successful backup time for every server on the policy. Alternately, there are two places in the backup agent that show the status of your backups. First, in the Backup Jobs section, which shows all backups executed by this particular agent. Second, for additional information, selecting “Restore” from the Policy Details page will drill down into greater detail about backups for the specific Policy. Details include Backup Date, Status, and Protected Data (GBs).
+A: There are multiple ways to check the statuses of your backups. The CenturyLink Cloud Simple Backup control portal has an Activites tab that provides a quick, at a glance view of your recent backups. You can also use the [reporting functionality](./reports.md), as well as [monitoring functionality](./sbs-monitoring.md) to provide a deeper view into your backup landscape.
 
 **Q: For a "Failed" or "Partial_Success" backup status, can I see which files failed and why?**
 
-A: Yes, see the sbs-backup-files-failed.csv file located on your system for details.
+A: Yes, see the sbs-backup-files-failed.csv file located on your system's backup agent's log directory for details.
+
+Logs can be viewed at the following locations:
+  * Linux: /var/lib/simple-backup-service
+  * Windows: C:\Windows\System32\config\systemprofile\appdata\local\simplebackupservice
 
 **Q: Where are my backups actually stored?**
 
 A: The SBS agent on the server transfers backup data to one of six different backup storage regions, each built on top of cloud object storage. CenturyLink sources this object storage from a combination of its own cloud platform, as well as 3rd party cloud providers such as Amazon Web Services. For more information, see our [How It Works](simple-backup-service-how-it-works.md) KB article.
+
+**Q: Can I check the status of my backups?**
+
+A: Yes, you can check the Activities tab for an at a glance view of your most recent jobs, or the [reports documentation](reports.md) for in depth details of your backup jobs.
 
 ### Restores
 
@@ -135,7 +143,7 @@ A: Yes, in the restore section there is an option to perform a full restore, or 
 
 **Q: Can restores be performed to another server?**
 
-A: A self-service feature is on the SBS roadmap. If a restore to an alternate server is required, please create a [support request](https://www.ctl.io/knowledge-base/support/how-do-i-report-a-support-issue/#exceptions).
+A: Yes, please follow the steps outlined in the [restore documentation](./restores.md).
 
 **Q: How is the “Backup Date” determined for Restore Points?**
 
@@ -168,6 +176,10 @@ A: Common causes of obscured restore files:
 
 A: Restarting the Simple Backup Service on the server will stop all running restore task(s). See [Restarting Simple Backup Service](restarting-simple-backup-service.md) for steps to restart in Linux and Windows.
 
+**Q: Can I check the status of my restores?**
+
+A: Yes, you can check the Activities tab for an at a glance view of your most recent jobs, or the [reports documentation](reports.md) for in depth details of your restore jobs.
+
 ### Policies
 
 **Q: Can I adjust the storage region of a server?**
@@ -198,6 +210,20 @@ A: Currently, the most efficient method of viewing all the policies applied to a
   2. Click a policy to drill into the policy details to view all associated servers.
   3. Click a server to view all applied policies.
 
+### Scheduling
+
+**Q: What scheduling configurations are available?**
+
+A: You can configure a backup schedule on an hourly, daily, weekly, monthly or yearly basis.
+
+**Q: Can I set the hour of the day to backup?**
+
+A: Yes, all options except for hourly allow you to specify at what hour you want the backup to start.
+
+**Q: Can I specify a time for backups to NOT happen?**
+
+A: No, you can not currently specify a blackout period for backups.
+
 ### Frequency
 
 **Q: Where has the frequency setting gone when creating a new policy?**
@@ -223,20 +249,6 @@ A: Yes. From the Backup Agent, click the **Backup** button from the Home Dashboa
 **Q: Can I schedule backups to execute at a specific time in the day?**
 
 A: YES! This is part of our new Scheduling feature; for more details, please see the [getting started guide](getting-started-with-simple-backup.md)
-
-### Scheduling
-
-**Q: What scheduling configurations are available?**
-
-A: You can configure a backup schedule on an hourly, daily, weekly, monthly or yearly basis.
-
-**Q: Can I set the hour of the day to backup?**
-
-A: Yes, all options except for hourly allow you to specify at what hour you want the backup to start.
-
-**Q: Can I specify a time for backups to NOT happen?**
-
-A: No, you can not currently specify a blackout period for backups.
 
 ### Retention
 

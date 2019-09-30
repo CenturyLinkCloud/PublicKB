@@ -7,18 +7,18 @@
 }}}
 
 ### Article Overview
-This article explains how to attach storage on a single SRN in DCC Foundation. After the SRN has been registered with the SafeHaven Console, the next step is to attach storage to it before creating Protection Groups.
+This article explains how to attach storage on a single SRN in CenturyLink Private Cloud on VMware Cloud Foundation. After the SRN has been registered with the SafeHaven Console, the next step is to attach storage to it before creating Protection Groups.
 
 **NOTE**: For ease of management and troubleshooting it is recommended that the user creates one Storage Pool per Protection Group.
 
 ### Requirements
-1. Access to the Production SRN in DCC-Foundation.
+1. Access to the Production SRN in CenturyLink Private Cloud on VMware Cloud Foundation.
 2. Access to the SafeHaven Cluster
 
 ### Assumptions
 This article assumes that the user has already registered the SRN within the SafeHaven Console and wants to add storage to the SRN before creating Protection Groups.
 
-### Add storage to the Production SRN in DCC Foundation
+### Add storage to the Production SRN in CenturyLink Private Cloud on VMware Cloud Foundation
 
 1. Login to DCC portal. Confirm the Storage requirements for the Production Server (in this case Windows). Click the production VM, and go to **Hardware** tab to see the total provisioned storage. Based on the Production Server O.S. Type and [Storage Requirements](../SafeHaven 5 CLC to AWS/Determine Storage Requirements.md), calculate the amount of storage that needs to be added.
 
@@ -32,7 +32,7 @@ This article assumes that the user has already registered the SRN within the Saf
 
 1. Right click the SRN VM, and click **Settings**.
 2. Click on **SCSI Controller** on the left, select **Hard Drive** and click **Add**.
-3. Select **Virtual hard disk**, and click **New**. 
+3. Select **Virtual hard disk**, and click **New**.
 4. At the first page of the wizard, click **Next**.
 5. For **disk format**, select **VHDX**. Click **Next**.
 6. Select **Fixed size** for best IO performance.
@@ -50,11 +50,6 @@ This article assumes that the user has already registered the SRN within the Saf
 3. If this is the first storage device you are claiming, then select the Storage Device you want to claim and select **Create a New Storage Pool for the Device**. Fill in the **Storage Pool Name** and click **Claim**.
 
 4. Depending on the protection group architecture, the user can claim another disk following a similar procedure and can either **Create a new Storage Pool** or **Add to an existing Storage Pool**.
-
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RauSUvUXaQE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</p>
 
 For **Windows** Protection Group, **Next Step** is to [Create Windows Protection Group, Install LRA and Start Replication](../SafeHaven 5 CLC to AWS/Create-Windows-Protection-Group-Install-LRA-and-Start-Replication.md)
 

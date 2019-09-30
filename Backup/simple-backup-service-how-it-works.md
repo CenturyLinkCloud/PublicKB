@@ -1,6 +1,6 @@
 {{{
   "title": "Simple Backup How It Works",
-  "date": "9-12-2017",
+  "date": "2-27-2019",
   "author": "John Gerger",
   "attachments": [],
   "related-products" : [],
@@ -56,7 +56,7 @@ Upon installation the agent initially conducts a full backup as indicated by the
 As mentioned above, all data is transferred to Objected Storage when the backup agent gets installed on the server. Incremental backups occur according to the schedule defined in the backup policy and cover the added, changed, or deleted files and folders specifically. This model has the same level of customer data protection as a constant full backup. It offers the benefits of reduced backup speed, minimized data transfer cost, and minimized storage cost. The bottom line is a fast, reliable, and affordable backup solution.
 
 ### Backup Duration
-The length of time needed to complete the backup varies. Several factors come into play such as whether it's the initial backup, a subsequent incremental backup, the number of files and folders, files sizes, other processes running on the server, bandwidth, ingest rates into Object Storage, or region and distance to the target storage, etc. 
+The length of time needed to complete the backup varies. Several factors come into play such as whether it's the initial backup, a subsequent incremental backup, the number of files and folders, files sizes, other processes running on the server, bandwidth, ingest rates into Object Storage, or region and distance to the target storage, etc.
 
 ### Active/Inactive Policy vs. Active/Inactive Server
 You can enable or disable a server or policy as needed. An inactive policy essentially disables all servers associated with the policy, while the server status only refers to the specified server. An inactive policy status overrides an active server status. Here are the state definitions:
@@ -69,7 +69,7 @@ You can enable or disable a server or policy as needed. An inactive policy essen
 If the backup agent is unable to communicate with the SBS infrastructure, data will not be set to expire. The feature ensures that data is safe and restorable in the case of server failure or Internet connectivity issues. Servers removed from a policy are treated as if the server status is set to inactive and the retention period starts.
 
 ### Restoration
-A new restoration point is created at the completion of every backup, full or incremental. The restore point contains a backup date and time stamp which is actually the point-in-time that the backup job completed. Executing a restore is easy. You manage restoration points through the backup agent's UI. Select the "point-in-time" backup event, specify a destination directory, and optionally specify the exact file(s) or directories to restore and click **restore**. That's it! Your data is restored automatically within minutes. You can also delete restoration points that are no longer needed.
+A new restoration point is created at the completion of every backup, full or incremental. The restore point contains a backup date and time stamp which is actually the point-in-time that the backup job completed. Executing a restore is easy, see our [restore guide](./restores.md) for more information.
 
 In order to prevent the accidental overwriting of data, a new directory is created under the restoration path you provide. The directory uses the restoration point ID as the name and contains all of the restored data.
 

@@ -1,74 +1,122 @@
 {{{
 "title": "Setting Up Jenkins with Cloud Application Manager",
-"date": "09-01-2016",
-"author": "",
+"date": "05-16-2019",
+"author": "Gavin Lai and Julio Castanar",
+"keywords": ["cam","cloud application manager", "jenkins", "plugin", "jenkins box", "jenkins server"],
 "attachments": [],
 "contentIsHTML": false
 }}}
 
-To continuously integrate and deploy through Cloud Application Manager, you need a Jenkins server set up to work with your source control management system (SCM) and the [Cloud Application Manager plugin](https://wiki.jenkins-ci.org/display/JENKINS/ElasticBox+CI).
-
-If GitHub is your SCM, follow these sections to integrate Jenkins, GitHub plugins, and Cloud Application Manager.
-
 **In this article:**
 
-* Install Jenkins with Cloud Application Manager and Git plugins
-* Connect Cloud Application Manager in Jenkins
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Create a Jenkins Server Box](#create-a-jenkins-server-box)
+* [Deploy the Jenkins Server Box](#deploy-the-jenkins-server-box)
+* [Connect Cloud Application Manager in Jenkins](#connect-cloud-application-manager-in-jenkins)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
-### Install Jenkins with Cloud Application Manager and Git Plugins
+### Overview
 
-Follow these steps to build and deploy Jenkins server from a box. The box installs the latest open source Jenkins server with GitHub plugins, dependencies, and the Cloud Application Manager plugin.
+To continuously integrate and deploy through Cloud Application Manager, you need a Jenkins server set up to work with your source control management system (SCM) and the [Cloud Application Manager plugin](https://wiki.jenkins-ci.org/display/JENKINS/ElasticBox+CI).
+
+If GitHub is your SCM, these sections document how to integrate Jenkins, GitHub plugins, and Cloud Application Manager.
+
+To **install Jenkins with Cloud Application Manager and Git Plugins** follow the steps in this page to build and deploy Jenkins server from a box. The box installs the latest open source Jenkins server with GitHub plugins, dependencies, and the Cloud Application Manager plugin.
 
 **IMPORTANT:** Since the Jenkins server box is Debian based, remember to deploy it on a Debian Ubuntu Linux image.
 
+
+### Audience
+
+If you use Jenkins to continuously test and integrate code changes in development, staging, or production, you’d want to use the [Jenkins Cloud Application Manager plugin](https://wiki.jenkins-ci.org/display/JENKINS/ElasticBox+CI) to fully automate touchless deployments.
+
+### Prerequisites
+
+* Access to Cloud Application Manager, [Applications site](https://cam.ctl.io/login).
+* GitHub account token access
+
+
 ### Create a Jenkins Server Box
 
-**Steps**
+Access to Cloud Application Manager with your account
 
-1. On the Boxes page, click **New Box**. Enter these details and save.
+Perform the following steps:
 
-	![integrate-jenkins1](../../images/cloud-application-manager/integrate-jenkins1.png)
+#### 1. Create a new Box
+On the Boxes page, click **New Box** and select Script type. Enter these details and save.
 
-2. Add the following variables to store Jenkins server deployment values.
+![CAM jenkins server script box](../../images/cloud-application-manager/integrate-jenkins/cam-setup/img01-jenkins-server-box.png)
+
+#### 2. Setup Box variables
+
+Go to Code page in that box and add the following variables to store Jenkins server deployment values.
+Next table shows necessary variables to congfig Jenkins Server Box. 
+
+| Name | Type | Description |
+|------|------|-------------|
+| GIT_REPOSITORY_URL | Text | Provide your own Git repository. |
+| GITHUB_ACCESS_TOKEN | Text | Your GitHub access credentials. |
+| GITHUB_PROJECT_URL | Text | your GitHub project URL. |
+| GITHUB_USER |	Text | your GitHub username. |
+| HTTP | Port | port on the Jenkins server to allow Internet traffic. |
+| PLUGINS |	Text | Jenkins plugin dependencies separated by space. |
+| GITHUB_PLUGIN_CONFIG | File | plugin that triggers GitHub to push pull requests. |
+| MERGE_JOB | File | merge build job template. |
+
+![CAM jenkins server box code - adding variables](../../images/cloud-application-manager/integrate-jenkins/cam-setup/img02-code-vars-add.png)
+
+Use the *New* button, to add a variable and fill in it as indicated below:  
+    - select the appropriate variable type,  
+    - fill in the name of the variable in uppercase,  
+    - leave their value empty by default and mark the required checkbox. Their value will be requested at deploy time   
+    - pay attention to the [visibility](../Automating Deployments/parameterizing-boxes-with-variables.md) field to protect your variable privacy (Public, Private or Internal).
+
    * Provide your own Git repository through a text variable called GIT_REPOSITORY_URL.
 
-	![integrate-jenkins2](../../images/cloud-application-manager/integrate-jenkins2.png)
+     ![CAM jenkins server box var-git-repository](../../images/cloud-application-manager/integrate-jenkins/cam-setup/img03-var-git-repository.png)
 
    * Pass the GitHub access token in a text variable.
 
-   ![integrate-jenkins3](../../images/cloud-application-manager/integrate-jenkins3.png)
+     ![CAM jenkins server box var-git-access-token](../../images/cloud-application-manager/integrate-jenkins/cam-setup/img04-var-git-access-token.png)
 
-   To get it, sign in to your [GitHub account](https://github.com/). Under settings, go to **Developer settings** > **Personal access tokens** > **Generate new token**. Describe why you need the token.
+---   
 
-   ![integrate-jenkins3-2](../../images/cloud-application-manager/integrate-jenkins3-2.png)
+##### Get GitHub Access Token
 
-	 Under scope, select **repo** and **repo: status**. Then click **Generate Token**. Copy and paste it as shown.
+To get it, sign in to your [GitHub account](https://github.com/). In the upper right corner, select in the user menu the settings option. Under settings, go to **Developer settings** > **Personal access tokens** > **Generate new token**. Describe why you need the token (for instance: *"CAM Jenkins Server"*).
+
+![Github get token](../../images/cloud-application-manager/integrate-jenkins/cam-setup/img41-github-get-token.png)
+
+Under scope, select **repo** and **repo: status**. Then click **Generate Token**. Copy and paste it as shown.
+
+---
 
    * Provide your GitHub project URL in a text variable called GITHUB_PROJECT_URL.
 
-   ![integrate-jenkins4](../../images/cloud-application-manager/integrate-jenkins4.png)
+   ![CAM jenkins server box var-git-project-url](../../images/cloud-application-manager/integrate-jenkins/cam-setup/img05-var-git-project-url.png)
 
    * Provide your GitHub username as a text variable called GITHUB_USER.
 
-   ![integrate-jenkins5](../../images/cloud-application-manager/integrate-jenkins5.png)
+   ![CAM jenkins server box var-git-user](../../images/cloud-application-manager/integrate-jenkins/cam-setup/img06-var-git-user.png)
 
    * Open HTTP port 8080 on the Jenkins server through a port variable called HTTP to allow Internet traffic.
 
-   ![integrate-jenkins6](../../images/cloud-application-manager/integrate-jenkins6.png)
+   ![CAM jenkins server box var-http-port](../../images/cloud-application-manager/integrate-jenkins/cam-setup/img07-var-http-port.png)
 
-   * Refer to the Cloud Application Manager, Git, and GitHub plugin dependencies in a text variable called PLUGINS.
+   * Refer to the Cloud Application Manager, Git, and GitHub plugin dependencies in a text variable called PLUGINS.  
 Enter this value:
 
-   ```
-   elasticbox git github
+```
+        elasticbox git github
+```
 
-   ```
+   ![CAM jenkins server box var-plugins](../../images/cloud-application-manager/integrate-jenkins/cam-setup/img08-var-plugins.png)
 
-   ![integrate-jenkins7](../../images/cloud-application-manager/integrate-jenkins7.png)
+   * Add a plugin that triggers GitHub to push pull requests. Name this variable as GITHUB_PLUGIN_CONFIG
 
-   * Add a plugin that triggers GitHub to push pull requests.
-
-   ![integrate-jenkins8](../../images/cloud-application-manager/integrate-jenkins8.png)
+   ![CAM jenkins server box var-git-plugin-config](../../images/cloud-application-manager/integrate-jenkins/cam-setup/img09-var-git-plugin-config.png)
 
    Copy, paste this script in a text file, save in XML, and upload to a file variable called GITHUB_PLUGIN_CONFIG.
 
@@ -87,7 +135,7 @@ Enter this value:
    ```
    * Add the merge build job template as a file variable called MERGE_JOB.
 
-   ![integrate-jenkins9](../../images/cloud-application-manager/integrate-jenkins9.png)
+   ![CAM jenkins server box var-merge-job](../../images/cloud-application-manager/integrate-jenkins/cam-setup/img10-var-merge-job.png)
 
    Copy, paste the script in a text file, save in XML, and upload as shown.
 
@@ -137,7 +185,7 @@ Enter this value:
 
    * Add the pull request job template as a file variable called PULL_REQUEST_JOB.
 
-   ![integrate-jenkins10](../../images/cloud-application-manager/integrate-jenkins10.png)
+   ![CAM jenkins server box var-pull-request-job](../../images/cloud-application-manager/integrate-jenkins/cam-setup/img11-var-pull-request-job.png)
 
    Copy, paste the script in a text file, save in XML, and upload as shown.
 
@@ -189,8 +237,11 @@ Enter this value:
   </project>
   ```
 
-3. Add the following events to install Jenkins server and the plugins.
-   * Install Jenkins. Copy, paste the script in the pre_install event and save.
+#### 3. Add the following events to install Jenkins server and the plugins.
+
+##### pre_install event
+
+Install Jenkins. Copy, paste the script in the **pre_install** event and save.
 
    ```
    #/bin/bash
@@ -206,12 +257,14 @@ Enter this value:
    # Install Jenkins and Git
    curl -ks https://jenkins-ci.org/debian-stable/jenkins-ci.org.key | apt-key -y add -
    echo deb http://pkg.jenkins-ci.org/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list
-
+	 apt-get install default-jre -y
    apt-get -y update
-   apt-get -y --force-yes install jenkins git
+   apt-get -y --allow-unauthenticated install jenkins git
    ```
 
-   * Install the plugins, the build job templates, and configure GitHub plugins with username, access token, and repository URL. Copy, paste the script in the configure event and save.
+##### configure event
+
+Install the plugins, the build job templates, and configure GitHub plugins with username, access token, and repository URL. Copy, paste the script in the **configure** event and save.
 
    ```
    #!/bin/bash
@@ -269,13 +322,13 @@ Enter this value:
 
 Select a Debian Ubuntu Linux image when deploying the Jenkins server box. You can launch to any public or private cloud provider, or to your own infrastructure. Here we deploy to Google Cloud.
 
-**Before You Begin**
+#### Before You Begin
 
 Configure your cloud provider network to allow Internet traffic to the Jenkins server. Make the instance IP address public and set the firewall port to 8080. Additionally, open another port to let Jenkins slaves talk to the server. Assign this port any number you like.
 
 Here we configure the Google Cloud network to allow Internet traffic through port 8080 and Jenkins slave traffic through port 55555.
 
-![integrate-jenkins11](../../images/cloud-application-manager/integrate-jenkins11.png)
+   ![Configure cloud provider firewall](../../images/cloud-application-manager/integrate-jenkins/cam-setup/img21-deploy-firewall.png)
 
 1. Log in to the [Google Cloud console](https://console.developers.google.com/apis/library).
 
@@ -287,7 +340,7 @@ Here we configure the Google Cloud network to allow Internet traffic through por
 
 5. Sync your provider account in Cloud Application Manager to fetch the rule.
 
-**Steps to deploy Jenkins server**
+#### Steps to deploy Jenkins server
 
 1. Sign in to Cloud Application Manager.
 
@@ -297,13 +350,13 @@ Here we configure the Google Cloud network to allow Internet traffic through por
 
 4. Go to the new deployment policy box and modify it.
 
-![integrate-jenkins12](../../images/cloud-application-manager/integrate-jenkins12.png)
+   ![CAM jenkins server deploy-policy edit](../../images/cloud-application-manager/integrate-jenkins/cam-setup/img22-deploy-new-policy.png)
 
 5. In the policy, select a Debian Ubuntu Linux image. Although a g1.small machine type will do, select n1-standard-2 to deploy faster.
 
 6. Under **Network**, select the firewall rule from Google Cloud. Select **Ephemeral IP** to make the instance IP address public.
 
-![integrate-jenkins13](../../images/cloud-application-manager/integrate-jenkins13.png)
+   ![CAM jenkins server deploy-policy config](../../images/cloud-application-manager/integrate-jenkins/cam-setup/img23-deploy-edit-policy.png)
 
 7. Click on **Save** to save the changes.
 
@@ -325,13 +378,16 @@ In your Jenkins server management interface, follow these steps to register your
 
 **Note:** Set the Jenkins server URL to make Jenkins server links work in auto-posted messages on GitHub pull requests. Go to Manage Jenkins > Configure System. Under **Jenkins URL**, set the URL and save.
 
-**Steps**
+#### Steps
 
 1. Under Jenkins > Manage Jenkins > Configure System > Cloud, click **Add a new cloud** and select **Cloud Application Manager**. Enter details as given:
-   * **Description**. Enter information to identify your Cloud Application Manager account in Jenkins jobs.
-   * **End Point URL**. Enter a custom URL if using Cloud Application Manager as an appliance.
-   * **Max. No. of Instances**. This is the total number of instances Jenkins will launch through your account. We recommend at least 5.
-   * **Authentication Token**. [Get a token](https://www.ctl.io/api-docs/cam/#getting-started-api-overview-and-access) and paste it here. If you use username, password to access Cloud Application Manager, get one by clicking **Get Authentication Token**.
+
+    | Name | Description |
+    |------|-------------|
+    | Description | Enter information to identify your Cloud Application Manager account in Jenkins jobs. |
+    | End Point URL | Enter a custom URL if using Cloud Application Manager as an appliance. |
+    | Max. No. of Instances | This is the total number of instances Jenkins will launch through your account. We recommend at least 5. |
+    | Authentication Token | [Get a token](https://www.ctl.io/api-docs/cam/#getting-started-api-overview-and-access) and paste it here. If you use username, password to access Cloud Application Manager, get one by clicking **Get Authentication Token**. |
 
 2. Click **Verify Authentication Token** to see if Jenkins can connect to Cloud Application Manager.
 

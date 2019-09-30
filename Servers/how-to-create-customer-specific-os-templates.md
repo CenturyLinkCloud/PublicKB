@@ -15,6 +15,7 @@ CenturyLink Cloud customers may choose to create their own baseline OS templates
 ### Exclusions
 
 * The Convert to Template option is unsupported for customers who leverage virtual machines with the multi-vNIC feature
+* Text files stored on user's Desktops will NOT be carried over in the Clone if they are stored on the C Drive of a windows virtual machine
 
 ### Important Notices
 
@@ -24,7 +25,7 @@ Customers creating OS Templates for Windows Servers should carefully review the 
 
 ### Steps
 
-1. Use the [Create Server](../Servers/creating-a-new-enterprise-cloud-server.md) Control Portal function to deploy a baseline operating system supported on the CenturyLink Cloud platform. Alternatively, customers can elect to import a server template in the form of an OVF file. If the image to import meets the [requirements for self-service VM import](../Servers/self-service-vm-import-ovf-requirements.md), this can be done by following the steps outlined in [Using Self-Service VM Import](../Servers/using-self-service-vm-import.md). Otherwise, CenturyLink Cloud provides [service tasks](//www.ctl.io/products/support/service-tasks) to perform custom imports and customers can engage this group for fees.
+1. Use the [Create Server](../Servers/creating-a-new-enterprise-cloud-server.md) Control Portal function to deploy a baseline operating system supported on the CenturyLink Cloud platform. Alternatively, customers can elect to import a server template in the form of an OVF file. CenturyLink Cloud provides [service tasks](//www.ctl.io/products/support/service-tasks) to perform custom imports and customers can engage this group for fees.
 
 2. Login to the newly created OS Instance and apply the customization or packages that should be part of the Template. We recommend after all changes are made a clean reboot of the OS prior to proceeding to step #3.
 
@@ -52,7 +53,7 @@ Customers creating OS Templates for Windows Servers should carefully review the 
 
 **Q: I've created a custom template in Data Center A, but when I try to create a VM from the template in Data Center B it's not showing?**
 
-A: Customer created templates do not replicate to all data centers out of the box today. If you need templates copied to other data centers please [open a support request](../Support/how-do-i-report-a-support-issue.md).  Copying templates to a different account will incur a [VM Transfer](https://www.ctl.io/service-tasks/#vm-transfer) fee.
+A: Customer created templates do not replicate to all data centers out of the box today. If you need templates copied to other data centers within the same account alias please [open a support request](../Support/how-do-i-report-a-support-issue.md).  Copying templates to a different account alias will incur a [VM Transfer](https://www.ctl.io/service-tasks/#vm-transfer) fee.
 
 **Q: I've created a custom template in my account, but when I try to create a VM from the template in my _sub_ accounts, it's not showing?**
 
@@ -60,8 +61,8 @@ A: Make sure that when you perform the convert to template function that you are
 
 **Q: What fees are associated with use of custom OS templates?**
 
-A: Templates are stored in a group called 'Templates' within the server groups area of Control. Template storage is billed on a per GB basis as Standard Storage. Rates are available from your Sales Representative. 
+A: Templates are stored in a group called 'Templates' within the server groups area of Control. Template storage is billed on a per GB basis as Standard Storage. Rates are available from your Sales Representative.
 
 **Q: What format should my virtual machine use if I choose to leverage  self-service import?**
 
-A: Self-service import requires the use of the OVF format for importing. See the [requirements for self-service VM import](../Servers/self-service-vm-import-ovf-requirements.md) for more information.
+A: Self-service import requires the use of the OVF format for importing.

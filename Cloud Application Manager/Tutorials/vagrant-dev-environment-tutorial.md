@@ -221,7 +221,7 @@ This installs MySQL server and creates a database.
     #
     # * Logging and Replication
     #
-    # Both location gets rotated by the cronjob.
+    # Both location gets rotated by the crontab.
     # Be aware that this log type is a performance killer.
     # As of 5.1 you can enable the log at runtime!
     #general_log_file        = /var/log/mysql/mysql.log
@@ -308,7 +308,7 @@ This box installs a development environment with the sample Rails app, runtimes,
 1. Create a new box called **Rails Dev Env** based on Linux Compute.
 
 2. Add the following variables:
-    * Box variable called mysql that points to the** MySQL Ubuntu** box
+    * Box variable called mysql that points to the **MySQL Ubuntu** box
     * Box variable called rails that points to the **Rails with GitHub** box
 
 3. Expand the rails box variable all the way down to the ruby box. Set RVM_RUBY_VERSION to **ruby-2.0.0-p576**.

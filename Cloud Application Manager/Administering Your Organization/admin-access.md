@@ -1,29 +1,51 @@
 {{{
 "title": "Give Admin Access to Cloud Application Manager",
-"date": "09-01-2016",
-"author": "",
+"date": "05-22-2019",
+"keywords":["cam", "cloud application manager", "cam manage organization", "admin access", "manage admin access", "organization", "settings", "administrator"],
+"author": "Arya Roudi and Sergio Quintana",
 "attachments": [],
 "contentIsHTML": false
 }}}
 
-### Give Admin Access to Cloud Application Manager
+**In this article:**
+
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Giving Admin Access](#giving-admin-access)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
+
+### Overview
+
 When you sign up for the Cloud Application Manager Enterprise Edition, you get a default administrator account that lets you globally manage settings for all Cloud Application Manager users in your organization. Besides the default account, you can give any Cloud Application Manager user administrator access through the admin console under Organization > Administrators.
 
-**To Give Admin Access**
+### Audience
+
+All users with Cloud Application Manager organization administrator access.
+
+### Prerequisites
+
+* Access to Cloud Application Manager, [Management site](https://account.cam.ctl.io/#/settings).
+  
+* The user must be an Administrator of the organization in Cloud Application Manager.
+  
+* The user should be at the organization level scope to access the **Settings** option on the left side menu. Accessing that option is also possible through the pencil button of an organization element in the Context Switcher.
+
+### Giving Admin Access
+
 1. Log in to Cloud Application Manager as the default administrator.
-2. Access to the menu located in the top left, open it and click on **Organizations**.
-   ![admin-access1.png](../../images/cloud-application-manager/admin-access1.png)
+2. Access to the [Context Switcher](../Core Concepts/context-switcher.md) drop-down located in the top navigation menu, open it and click on **Organizations**.
+   ![Context Switcher Organizations Option](../../images/cloud-application-manager/admin-access1.png)
 
 3. Once you are in the Organization scope, you will have access to the **Settings** tab in the principal navigation menu.
-   ![admin-access2.png](../../images/cloud-application-manager/admin-access2.png)
+   ![Organization Settings Menu](../../images/cloud-application-manager/admin-access2.png)
 
-4. Under Administrators section, click **Add** and type the user’s name in the search field and select to save them.
-   ![admin-access3.png](../../images/cloud-application-manager/admin-access3.png)
+4. Under Administrators section click **Add**, then type the user’s name in the search field and, if found, select it in the drop-down. This process can be repeated until all desired users are selected so, at the end, just saving the new values is left.
+   ![Organization Settings Add Administrator](../../images/cloud-application-manager/admin-access3.png)
 
+To revoke administrator privileges for a given user, just click the X button next to his or her name under **Administrators**.
 
-To revoke administrator privileges for a user, click X against their name under **Administrators**.
-
-Administrators can manage several org-wide settings that include [user authentication](user-authentication.md), the [Cloud Application Manager appliance](../Appliance/appliance-overview.md), [provider access](provider-access.md), [admin boxes](../Automating Deployments/deploymentpolicy-box.md), [webhooks](webhooks.md), and [instance tags](resource-tags.md). To get a good idea of things you can do, see [Overview](admin-overview.md).
+Administrators can manage several org-wide settings that include [user authentication](user-authentication.md), the [Cloud Application Manager Data Center Edition](../Data Center Edition/camdce-overview.md), [provider access](provider-access.md), [admin boxes](../Automating Deployments/deploymentpolicy-box.md), [webhooks](webhooks.md), and [instance tags](resource-tags.md). To get an approach of the actions they can do, see [Overview](admin-overview.md).
 
 ### Contacting Cloud Application Manager Support
 

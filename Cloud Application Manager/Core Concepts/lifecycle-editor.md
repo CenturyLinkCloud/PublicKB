@@ -1,7 +1,7 @@
 {{{
 "title": "Lifecycle Editor",
-"date": "09-01-2016",
-"author": "",
+"date": "03-07-2019",
+"author": "Oscar Hafner and CenturyLink",
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -22,11 +22,11 @@ The Lifecycle Editor offers a single, unified interface to test and refine your 
 
 Right after you launch an instance, the Lifecycle Editor is available on the instance profile page. To get to it, click an instance from the Instances page as shown.
 
-![lifecycle-editor-1.png](../../images/cloud-application-manager/lifecycle-editor-1.png)
+![Access to an instance](../../images/cloud-application-manager/lifecycle-editor-1.png)
 
 The instance profile page shows the activity feed of the instance during its entire lifecycle and lets you take actions on the instance. Click the Lifecycle Editor to edit and make changes on the running instance.
 
-![lifecycle-editor-2.png](../../images/cloud-application-manager/lifecycle-editor-2.png)
+![Access to lifecycle editor](../../images/cloud-application-manager/lifecycle-editor-2.png)
 
 ### Modifying a Box Instance
 
@@ -36,11 +36,27 @@ Edit the box configuration of a running instance by modifying its event scripts 
 
 [Events](../Automating Deployments/start-stop-and-upgrade-boxes.md) let you control the lifecycle of your application in the virtual infrastructure. Change them to modify how your application behaves.
 
-![lifecycle-editor-3.png](../../images/cloud-application-manager/lifecycle-editor-3.png)
+![Edit an event in lifecycle editor](../../images/cloud-application-manager/lifecycle-editor-3.png)
 
 1. To edit an event, traverse the box topology, and select the event. In this example, we selected the pre_install event of the NodeJS box.
 2. Make event script changes in the event tab. The tab shows an asterisk to indicate any unsaved changes.
 3. When done, click **Save**.
+
+If you make event script changes in the event tab and try to close editor (without pressing the 'Save' button), a confirmation dialog will warn you about the pending changes. If you want to keep the changes press the 'Save' button on the dialog.
+
+![Save the changes when close Editor](../../images/cloud-application-manager/lifecycle-editor-3-1.png)
+
+**Edit Event Timeout**
+
+You can set up a maximum execution timeout in an event script of the instance in order to control long-lasting executions. Execution timeout can also be defined in [Script boxes](../Automating Deployments/script-box.md).
+
+If a script has an execution timeout, a clock icon will be shown next to the event name.
+
+![Event with defined timeout in lifecycle editor](../../images/cloud-application-manager/lifecycle-editor/event-timeout-1.png)
+
+The action menu allows you to set or modify the timeout value for the instance, without affecting the source box configuration.
+
+![Set or modify execution timeout in lifecycle editor](../../images/cloud-application-manager/lifecycle-editor/event-timeout-2.png)
 
 **Changing Variable Values**
 
@@ -48,11 +64,15 @@ You can redeploy an instance with different parameters by changing the [variable
 
 * To edit variable values, click on the input box and type or select the new value.
 
-![lifecycle-editor-4.png](../../images/cloud-application-manager/lifecycle-editor-4.png)
+![Edit variable value in lifecycle editor](../../images/cloud-application-manager/lifecycle-editor-4.png)
+
+If you make event script changes in the event tab and try to close editor (without pressing the 'Save' button), a confirmation dialog will warn you about the pending changes. If you want to keep the changes press the 'Save' button on the dialog.
+
+![Save the changes when close Editor](../../images/cloud-application-manager/lifecycle-editor-4-1.png)
 
 * To edit file type variables, click on the pencil icon and make variable script changes in the variable tab. The tab shows an asterisk to indicate any unsaved changes, click **Save** to save any changes made.
 
-![lifecycle-editor-5.png](../../images/cloud-application-manager/lifecycle-editor-5.png)
+![Edit file type variable](../../images/cloud-application-manager/lifecycle-editor-5.png)
 
 **Changing Binding Variable Values**
 
@@ -60,11 +80,15 @@ When an instance depends on another box or service–like a load balancer, cachi
 
 1. To edit the binding variable, delete de tags you want to change.
 
-![lifecycle-editor-6.png](../../images/cloud-application-manager/lifecycle-editor-6.png)
+![Edit bind variable](../../images/cloud-application-manager/lifecycle-editor-6.png)
 
 2. Type the new values, you will see a few suggestions where to choose from, but you can also type your own values. To save the changes click on **Save** button.
 
-![lifecycle-editor-7.png](../../images/cloud-application-manager/lifecycle-editor-7.png)
+![Binding tags suggestions](../../images/cloud-application-manager/lifecycle-editor-7.png)
+
+If you make event script changes in the event tab and try to close editor (without pressing the 'Save' button), a confirmation dialog will warn you about the pending changes. If you want to keep the changes press the 'Save' button on the dialog.
+
+![Save the changes when close Editor](../../images/cloud-application-manager/lifecycle-editor-4-1.png)
 
 **Adding Events or Variables**
 
@@ -75,15 +99,15 @@ If you want to create a new event:
 1. Click **New**.
 2. Click **New Event**.
 
-![lifecycle-editor-8.png](../../images/cloud-application-manager/lifecycle-editor-8.png)
+![Add new event](../../images/cloud-application-manager/lifecycle-editor-8.png)
 
 3. Select the parent package.
 
-![lifecycle-editor-9.png](../../images/cloud-application-manager/lifecycle-editor-9.png)
+![New event > Select Parent](../../images/cloud-application-manager/lifecycle-editor-9.png)
 
-4. Select the event type.
+1. Select the event type.
 
-![lifecycle-editor-10.png](../../images/cloud-application-manager/lifecycle-editor-10.png)
+![New event > Select Event Type](../../images/cloud-application-manager/lifecycle-editor-10.png)
 
 5. Click **Save**.
 
@@ -92,11 +116,11 @@ If you want to create a new variable:
 1. Click **New**.
 2. Click **New Variable**.
 
-![lifecycle-editor-11.png](../../images/cloud-application-manager/lifecycle-editor-11.png)
+![Add new variable](../../images/cloud-application-manager/lifecycle-editor-11.png)
 
 3. Complete all the [variable](../Automating Deployments/parameterizing-boxes-with-variables.md) values.
 
-![lifecycle-editor-12.png](../../images/cloud-application-manager/lifecycle-editor-12.png)
+![New variable > Properties](../../images/cloud-application-manager/lifecycle-editor-12.png)
 
 4. Click **Save**.
 
@@ -108,7 +132,7 @@ In this example, we click **Reinstall** to run install type events in the virtua
 
 **Note:** When an action is triggered, the instance is in the process of changing state. During this time, it’s in view-only mode and you can’t edit its configuration. But, you can view logs. Once the scripts are executed, you can go back to editing the instance.
 
-![lifecycle-editor-13.png](../../images/cloud-application-manager/lifecycle-editor-13.png)
+![Execute an event on selected Box](../../images/cloud-application-manager/lifecycle-editor-13.png)
 
 ### Viewing Instance Logs
 
@@ -116,7 +140,7 @@ The logs panel presents the standard output of event scripts that were executed 
 
 Click **Logs** to monitor the progress on the instance while its being re-installed and reconfigured.
 
-![lifecycle-editor-14.png](../../images/cloud-application-manager/lifecycle-editor-14.png)
+![Log Monitor Enabled](../../images/cloud-application-manager/lifecycle-editor-14.png)
 
 ### Versioning with Push and Pull
 
@@ -124,7 +148,7 @@ Changes you make in the Lifecycle Editor are local to the instance and are not p
 
 Additionally you can also pull a version from the box definition. This is useful if you wish to revert to a different version or want to upgrade an instance to the latest version of a box.
 
-![lifecycle-editor-15.png](../../images/cloud-application-manager/lifecycle-editor-15.png)
+![Box Push and Pull](../../images/cloud-application-manager/lifecycle-editor-15.png)
 
 * Push creates a new version of the box in the box catalog based on the changes made in the Lifecycle Editor. This updates both the event scripts of that box as well as the variable contents.
 * Pull copies the version you select of the box from the box catalog and brings it onto the box instance. This is useful for either upgrading an instance to a new version of a box or for reverting changes.

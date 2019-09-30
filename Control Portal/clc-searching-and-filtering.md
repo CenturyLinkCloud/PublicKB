@@ -9,7 +9,7 @@
 ### Article Overview
 There are several ways to perform searching tasks within the CenturyLink Cloud Control Portal. These include methods to search for servers, groups, metadata related to descriptions and custom fields, as well as filtering infrastructure or other lists for specific items.
 
-### Filtering Infrastructure & AppFog Lists
+### Filtering Infrastructure Lists
 At times it may want to filter your list of Infrastructure down to particular items so you can focus on them. This can be accomplished by using the **Filter** option located at the top of your lists.
 
 This example filters on servers with **SRN** in the name. Note that the filter applies across all of your infrastructure, even to servers that are spread across multiple data centers (within the same account).

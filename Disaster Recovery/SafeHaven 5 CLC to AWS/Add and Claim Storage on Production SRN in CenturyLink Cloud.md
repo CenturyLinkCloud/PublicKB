@@ -27,7 +27,7 @@ This article assumes that the user has already registered the SRN within the Saf
 
 4. Add required storage and **apply**. Wait for the job to complete.
 
-**NOTE**: There is no need to allocate storage for the SRN on AWS, depending on the size of your Protection Group SafeHaven will automatically create the EBS volumes to meet the requirements.
+**NOTE**: There is no need to allocate storage for the SRN in AWS or Azure, depending on the size of your Protection Group SafeHaven will automatically create the volumes to meet the requirements.
 
 ### Claim storage pool for CenturyLink Cloud Production SRN
 1. Once the storage has been attached to the SRN, the next step is to login to the **SafeHaven Console**.
@@ -37,11 +37,6 @@ This article assumes that the user has already registered the SRN within the Saf
 3. If this is the first storage device you are claiming, then select the Storage Device you want to claim and select **Create a New Storage Pool for the Device**. Fill in the **Storage Pool Name** and click **Claim**.
 
 4. Depending on the protection group architecture, the user can claim another disk following a similar procedure and can either **Create a new Storage Pool** or **Add to an existing Storage Pool**.
-
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CjH_Pts0tuk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</p>
 
 For **Windows** Protection Group, **Next Step** is to [Create Windows Protection Group, Install LRA and Start Replication](Create-Windows-Protection-Group-Install-LRA-and-Start-Replication.md)
 

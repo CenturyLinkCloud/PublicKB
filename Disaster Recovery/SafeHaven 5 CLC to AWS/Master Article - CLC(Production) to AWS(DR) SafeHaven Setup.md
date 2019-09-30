@@ -11,7 +11,7 @@
 This article explains how to setup SafeHaven at a high level and use SafeHaven for recovery with all the KB article links in order for CLC(Production) to AWS(DR) use case.
 
 ### Prequisites
-1. **CLC to AWS Site-to-site VPN** - Please make sure that a VPN exists between the CLC and AWS accounts. Please click [**here for the clc to aws site-to-site VPN KB article**] (../SafeHaven 5 General/aws-clc-site-to-site.md).
+1. **CLC to AWS Site-to-site VPN** - Please make sure that a VPN exists between the CLC and AWS accounts. Please click [**here for the clc to aws site-to-site VPN KB article**](../SafeHaven 5 General/aws-clc-site-to-site.md).
 
 2. **Network and Ports requirements** - There are certain ports which need to be allowed in between the Production and DR vlans for SafeHaven to work. Please click [**here for Safehaven 5 Network and Ports requirements**](../SafeHaven 5 General/SafeHaven-5.0-Network and Port Requirements.md)
 

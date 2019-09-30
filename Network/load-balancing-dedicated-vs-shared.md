@@ -15,6 +15,7 @@
     <li>If a customer wants to use a Load Balancer to access an internal VIP over their site to site VPN they must use a dedicated Load Balancer. It is not possible to access an internal VIP on the the Shared Load Balancer over a site to site VPN.</li>
     <li>All shared Load Balancers are in a High Availability pair. If either node goes down there will be no downtime. Dedicated Load Balancers can be put in a HA pair by request.</li>
     <li>MIP's are not accessible from within the datacenter. If you need to reach a public IP from both inside and outside the datacenter, you need to use the Shared Load Balancer.</li>
+    <li>Dedicated Load balancer support is limited in that Customer Care engineers will confirm the infrastructure state and virtual machine state for the dedicated load balancer, though customers are responsible for all Day 1, 2 and N operational support.</li>
     <li>Tracking a Dedicated Load Balancer license expiration date is performed by the customer, please reference our <a href="dedicated-load-balancer-license-management.md">License Management Article</a>.</li>
   </ul>
 </div>

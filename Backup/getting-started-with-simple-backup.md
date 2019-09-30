@@ -1,6 +1,6 @@
 {{{
   "title": "Getting Started With Simple Backup",
-  "date": "6-27-2017",
+  "date": "2-27-2019",
   "author": "John Gerger",
   "attachments": [],
   "related-products" : [],
@@ -49,7 +49,9 @@ The following provides steps to get started:
 
    ![](../images/backup/getting-started/image6.png)
 
-8. Accessing the agent on your server allows you to view details, execute a backup, or execute a restore.
+8. Restores can now be performed directly from the control portal. Please see our [restore documentation](./restores.md) for detailed documentation, or below for the agent based restore process.
+
+9. Accessing the agent on your server allows you to view details, execute a backup, or execute a restore.
    * To access the agent directly, connect to your server, launch a browser, navigate to `http://localhost:15915`, and view the [Agent Security KB](sbs-agent-security.md) to obtain credentials.
    * Alternatively, you can also [configure the agent for remote access](sbs-agent-security.md) and connect to the agent from your local computer browser if you have a VPN configured to connect into your servers; the address would be `http://<your servers IP address>:15915` (e.g., `http://10.11.12.13:15915`).
    * [Installing RDP for Linux](linux-rdp.md) also enables agent access.
@@ -60,16 +62,16 @@ The following provides steps to get started:
    firewall-cmd --reload
    ```
 
-9. From the Agent Home Dashboard, you can view policy details by clicking the Policy name.
+10. From the Agent Home Dashboard, you can view policy details by clicking the Policy name.
    ![](../images/backup/getting-started/image8.png)
 
-10. In the Policy Details screen, click **Restore** to view a list a restore points.
+11. In the Policy Details screen, click **Restore** to view a list a restore points.
    ![](../images/backup/getting-started/image9.png)
 
-11. Select a timestamp to execute a restore. Each restore point represents a backup.
+12. Select a timestamp to execute a restore. Each restore point represents a backup.
    ![](../images/backup/getting-started/image10.png)
 
-12. Enter a destination folder for the restore, then click **Restore**. Note that if the folder does not exist, it will be created automatically. Once the restore is complete, the user can do as they wish with the files.
+13. Enter a destination folder for the restore, then click **Restore**. Note that if the folder does not exist, it will be created automatically. Once the restore is complete, the user can do as they wish with the files.
    ![](../images/backup/getting-started/image11.png)
 
 ### Restore Using API

@@ -1,7 +1,7 @@
 {{{
   "title": "Managed OS - Operating System Patching & Update Processes",
-  "date": "11-25-2014",
-  "author": "Jared Ruckle",
+  "date": "01-04-2018",
+  "author": "Modified by Gavin Lai",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -17,7 +17,7 @@ If you extend your domain into CenturyLink Cloud as a managed domain then we wil
 
 ### Self-Service Patching
 
-Although the [Automated Patching](../Servers/patching-as-a-service.md) service is available for any server - whether managed or unmanaged - it is recommended that clients planning to update managed devices should work with the Client Service Center to schedule a maintenance activity for Standard, Managed Patching because it is included with managed servers.
+It is recommended that clients planning to update managed devices work with the Client Service Center to schedule a maintenance activity for Standard, Managed Patching because it is included with managed servers.
 
 ### Standard, Managed Patching
 
@@ -25,7 +25,7 @@ Whether the process for scheduling patching maintenance actions is initiated by 
 
 #### Customer Requesitioned Patching
 
-As part of our managed cloud service, CenturyLink will work with your designated contact to install patches in agreed-upon maintenance windows.  Please contact the CenturyLink Client Service Center at 1-888-638-6771 and choose menu option 2 to submit your request for a maintenance activity.
+As part of our managed cloud service, CenturyLink will work with your designated contact to install patches in agreed-upon maintenance windows.  Please contact the CenturyLink Client Service Center at 1-888-638-6771 and choose menu option 1 to submit your request for a maintenance activity.
 
 Since CenturyLink is often not responsible for the customer’s entire application tier, CenturyLink cannot be responsible for any adverse effects from patches that are installed at the request of the customer.
 

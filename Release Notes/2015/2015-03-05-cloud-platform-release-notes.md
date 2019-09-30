@@ -31,15 +31,13 @@
 ![Left Navigation](../../images/left-nav-01.png)
 
 
-### Online Tools (4)
+### Online Tools (3)
 
-* **Cloud Cost Estimator now open source.** Understand and model cloud costs in more depth by viewing and modifying the code behind the [CenturyLink Cloud Cost Estimator](http://www.ctl.io/estimator). Details are available in this [blog post](http://www.ctl.io/blog/post/cloud-services-estimator-now-open-source), and the Github repository can be found [here](http://www.github.com/CenturyLinkCloud/PriceEstimator).
-
-* **Map of CenturyLink data centers and services.** View CenturyLink's portfolio of capabilities by data center using an [interactive map](http://www.ctl.io/data-centers) online.  The tool supports multiple layers of filtering, as well as standard online map controls.
+* **Map of CenturyLink data centers and services.** View CenturyLink's portfolio of capabilities by data center using an [interactive map](http://www.ctl.io/data-centers/) online.  The tool supports multiple layers of filtering, as well as standard online map controls.
 
 ![Online Map of Services & Locations](../../images/datacenter-capabilities-map-01.png)
 
-* **CenturyLinkCloud.com is now multi-language.** Browse http://www.ctl.io in multiple languages, including German, Japanese, English (UK), English (Canada), and Canadian French. To change the language, simply navigate to the bottom right of any page on the site.
+* **ctl.io is now multi-language.** Browse http://www.ctl.io in multiple languages, including German, Japanese, English (UK), English (Canada), and Canadian French. To change the language, simply navigate to the bottom right of any page on the site.
 
 ![Multi-language Site](../../images/multilanguage-website-01.png)
 * **New Knowledge Base.** The CenturyLink Cloud [Knowledge Base](http://www.ctl.io/knowledge-base) has been re-designed to be even easier to use. These enhancements include improved organization, layout, and search capabilities.
@@ -53,19 +51,6 @@
 
 ### Documentation (1)
 * [**Expanded API documentation**](http://www.ctl.io/api-docs/v2/) - New Knowledge Base articles for CenturyLink Cloud's V2 API have been added [here](http://www.ctl.io/api-docs/v2/). New actions covered include [Set Server Disks](http://www.ctl.io/api-docs/v2/#servers-set-server-disks), [Set Server CPU/Memory](http://www.ctl.io/api-docs/v2/#servers-set-server-cpumemory), and [Set Server Credentials](http://www.ctl.io/api-docs/v2/#servers-set-server-credentials), among others.
-
-
-### Ecosystem - New Blueprints (4)
-
-* [**Dynatrace**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-dynatrace-blueprints.md) – Application Performance Monitoring (APM) software for today's most challenging web, cloud, mobile, enterprise and Big Data applications worldwide.
-
-
-* [**Datastax**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-datastax-blueprint.md) - Enterprise–grade Cassandra solution, enabling customer big data analytics workloads.
-
-
-* [**Acumatica**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-acumatica-erp-blueprint.md) - Cloud–based accounting and ERP software for the small to midsize business looking to streamline management processes and unlock business potential.
-
-* [**Centerity**](../../Ecosystem Partners/Marketplace Guides/getting-started-with-centerity-blueprints.md) – Enhanced monitoring solution providing server metrics and a complete business intelligence layer across  server assets in the CenturyLink Cloud.
 
 ### Open Source Contributions
 Panamax enhancements from CenturyLink Labs - Selected highlights include:
