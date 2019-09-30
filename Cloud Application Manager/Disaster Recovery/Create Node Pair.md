@@ -1,0 +1,30 @@
+{{{
+  "title": "Create Node Pair",
+  "date": "09-26-2019",
+  "author": "Sharon Wang",
+  "attachments": [],
+  "contentIsHTML": false
+}}}
+
+### Requirements
+* Registered CLC and AWS as Providers
+
+### How to create Node Pair
+1. Click on **Disaster Recovery** on the navigation bar, then click on the button **New** to create a new pair.
+![image](https://user-images.githubusercontent.com/20582531/65722771-357c3b00-e06a-11e9-9ffd-9b4386eb679c.png)
+
+2. Click on ** Start**
+ ![image](https://user-images.githubusercontent.com/20582531/65722732-1bdaf380-e06a-11e9-8542-4d9f06389baa.png)
+3. Fill in the information of the Node Pair:
+ a. Choose an Icon if needed
+ b. Give this Node Pair a name 
+ c. Choose Production Provider
+ d. Choose Recovery Provider
+ e. Click on Next
+![image](https://user-images.githubusercontent.com/20582531/65728950-cd355580-e079-11e9-8ed3-97d58e72d642.png)
+3. Fill in the detailed information of each Provider:
+ a. Decide the maximum servers to protect
+ b. Choose where to deploy your Prod node
+ c. Choose where to deploy your Recovery node
+ d. Click on Create
+![image](https://user-images.githubusercontent.com/20582531/65723513-c7d10e80-e06b-11e9-9f9c-2e91dd5580bc.png)
