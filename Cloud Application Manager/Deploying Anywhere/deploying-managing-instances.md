@@ -215,6 +215,18 @@ Instances deployed in AWS will sync CAM **Manual Terminate Protection** with Dis
 
 Instances imported from AWS will inherit DisableApiTermination flag into **Manual Terminate Protection** flag. Flag status is provided when provider is syncronized, so changes are not reflected in CAM until **Sync** operation has been done.
 
+#### Instance protection on Google Cloud Platform instances
+
+##### Deployed Instances
+
+Instances deployed in Google Cloud Platform will sync CAM **Manual Terminate Protection** with DeletionProtection flag in GCP instances. Changes done from CAM will be reflected in GCP Instance Properties. Changes done from GCP Console, won't be reflected in CAM.
+
+**Note:** *compute.instances.create* permission or one of the roles *compute.admin* or *compute.instanceAdmin.v1* must be enabled in order to modify Instance Flag
+
+##### Unregistered Instances
+
+Instances imported from GCP will inherit DeletionProtection flag into **Manual Terminate Protection** flag. Flag status is provided when provider is syncronized, so changes are not reflected in CAM until **Sync** operation has been done.
+
 ### Deploying Instances without Lifecycle Management
 
 *Exclude Lifecycle Management* feature can be enabled on virtual machine deployment policy boxes (with single or multiple machines) to deploy instances without Lifecycle Management support. This means that the Cloud Application Manager agent will not be installed. This feature is not supported for deployment policy boxes with auto-scaling feature enabled.
