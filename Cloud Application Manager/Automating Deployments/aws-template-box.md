@@ -57,9 +57,9 @@ We use a sample Wordpress template to show how to create and launch a CloudForma
 
 1. Start with a [sample AWS CloudFormation template](https://aws.amazon.com/cloudformation/aws-cloudformation-templates/) and click the pencil to modify. Here we use the sample WordPress template.
 
-     ![Example AWS template](../../images/cloud-application-manager/template-box/cloudformationboxes3.png)
+    ![Example AWS template](../../images/cloud-application-manager/template-box/cloudformationboxes3.png)
 
-	 **Note:** CloudFormation templates have their own taxonomy you must follow. Although a template typically has several sections, only Resources is required. For information and examples on how to declare each section, see [Template Anatomy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html) and [Template Reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-reference.html).
+    **Note:** CloudFormation templates have their own taxonomy you must follow. Although a template typically has several sections, only Resources is required. For information and examples on how to declare each section, see [Template Anatomy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html) and [Template Reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-reference.html).
 
 2. Customize input parameters. Although optional, if you have them in the template, they’re automatically shown under Variables. You can customize several parameters as in this example.
 
@@ -67,13 +67,13 @@ We use a sample Wordpress template to show how to create and launch a CloudForma
 
    Other example is:
 
-     ![Variables of AWS Template](../../images/cloud-application-manager/template-box/cloudformationboxes4.png)
+    ![Variables of AWS Template](../../images/cloud-application-manager/template-box/cloudformationboxes4.png)
 
-	 You can customize further by adding parameters under Variables. In this example, we added an Options variable to set the database engine version at deploy time. When we save the variable, notice how it’s automatically added as a parameter to the template in the correct JSON format.
+    You can customize further by adding parameters under Variables. In this example, we added an Options variable to set the database engine version at deploy time. When we save the variable, notice how it’s automatically added as a parameter to the template in the correct JSON format.
 
-	 ![Variables of AWS Template](../../images/cloud-application-manager/template-box/cloudformationboxes5.png)
+    ![Variables of AWS Template](../../images/cloud-application-manager/template-box/cloudformationboxes5.png)
 
-	 Variables in CloudFormation boxes:
+    Variables in CloudFormation boxes:
 
     * The template accepts only String, Number, or CommaDelimitedList types. So any variables you add to the box are converted to one of these types. Text, file, password, URL, and email variables are treated as string parameters. Number and port variables are treated as number parameters.
 
@@ -103,7 +103,7 @@ We use a sample Wordpress template to show how to create and launch a CloudForma
 
     **Note:** When launched successfully, website URL is available in the instance lifecycle editor. Click **Lifecycle Editor** on the instance page and look under WebsiteURL.
 
-	![LifecycleEditor](../../images/cloud-application-manager/template-box/cloudformationboxes7.png)
+    ![LifecycleEditor](../../images/cloud-application-manager/template-box/cloudformationboxes7.png)
 
 #### Update a CloudFormation Stack in Real-Time
 
@@ -141,7 +141,7 @@ To illustrate, we create a second CloudFormation box to scale the WordPress blog
 
 2. Go to the WordPress box and add a binding to the Autoscaling box.
 
-	 ![Ceate new variable in tempplate](../../images/cloud-application-manager/template-box/cloudformationboxes12.png)
+    ![Ceate new variable in tempplate](../../images/cloud-application-manager/template-box/cloudformationboxes12.png)
 
 3. When the WordPress box is deployed, the autoscalebinding variable must be matched with the Autoscaling Instance.
 
@@ -149,7 +149,7 @@ To illustrate, we create a second CloudFormation box to scale the WordPress blog
 
 4. The relationship created by the binding is showed in the grid view.
 
-    ![cloudformationboxes14.png](../../images/cloud-application-manager/template-box/cloudformationboxes14.png)
+    ![Grid view](../../images/cloud-application-manager/template-box/cloudformationboxes14.png)
 
 If some value of the binding is used in the WordPress box configuration, a text expression variable type must be created.
 
