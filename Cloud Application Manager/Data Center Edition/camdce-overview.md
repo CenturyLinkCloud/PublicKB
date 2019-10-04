@@ -52,7 +52,7 @@ All Cloud Application Manager Data Center Edition users who wants to deploy/inst
 Appliance is supported when deployed on these platforms:
 * [Installing Cloud Application Manager Data Center Edition in vCenter](camdce-vsphere.md)
 * [Installing Cloud Application Manager Data Center Edition in Openstack](camdce-openstack.md)
-* [Installing Cloud Application Manager Data Center Edition in AWS](camdce-with-ec2-instance-role.md)
+* [Installing Cloud Application Manager Data Center Edition in AWS](camdce-with-aws-master-account.md)
 
 
 ### Next Steps

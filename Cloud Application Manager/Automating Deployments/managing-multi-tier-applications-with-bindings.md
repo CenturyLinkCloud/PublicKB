@@ -18,6 +18,7 @@
 * [How to use the bindings in configuration](#how-to-use-the-bindings-in-configuration)
 * [Bindings automatic reconfiguration](#bindings-automatic-reconfiguration)
 * [Using bindings in three steps](#using-bindings-in-three-steps)
+* [Getting Started Guide](#getting-started-guide)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
@@ -150,6 +151,10 @@ In this example, we ask the Nginx loadbalancer to bind to instances tagged 'prod
 As another example, here we launch the Node.js application specifying its binding connection to MongoDB instances tagged 'production' and 'mongodb'. Importantly, we also tagged the Node.js instance as 'production' and 'nodejs' so that Nginx can bind to it.
 
 ![Tag Bindings between Node and MongoDB](../../images/cloud-application-manager/bindinglargescaledeployments7.png)
+
+### Getting Started Guide
+
+Cloud Application Manager integrates microservice automation, configuration management, and many tools for single-click deployments. This [video tutorial](https://www.ctl.io/guides/cloud-application-manager/use-cloud-application-manager-for-large-scale-continuous-deployments-to-hybrid-clouds/) with step-by-step instructions shows continuous deployment of a multi-tier Node.js application to hybrid clouds.
 
 ### Contacting Cloud Application Manager Support
 

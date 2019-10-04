@@ -26,7 +26,7 @@ A) Managed Operating System of Microsoft Windows and RedHat Enterprise Linux
 
 B) Managed Applications (Microsoft SQL Server, Microsoft IIS Web Server, Oracle MySQL Enterprise Edition, Apache Web Server, Apache Tomcat)
 
-C) AWS Services (Amazon EC2, VPC, Relational Database Services, EBS, S3, ELB, Route 53, ElastiCache, CloudFront, Management Tools, Cloud Formation, Direct Connect, Cloud Watch, Cloud Trail, Trusted Advisor, Cert Manager, Organizations, Auto Scale, Directory Services, IAM)
+C) AWS Services (Amazon EC2, VPC, Relational Database Services, EBS, S3, ELB, Route 53, ElastiCache, CloudFront, Management Tools, CloudFormation, Direct Connect, Cloud Watch, Cloud Trail, Trusted Advisor, Cert Manager, Organizations, Auto Scale, Directory Services, IAM)
 
 D) Azure Services (Virtual Machines, Virtual Network, VPN Gateway, Security Groups, ExpressRoute, IP Addresses, Blob Storage, Queue Storage, Disk Storage
 

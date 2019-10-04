@@ -24,14 +24,15 @@ Application Lifecycle Management now supports to abort running event scripts. Wh
 ##### New option to specify public box visibility
 
 Application Lifecycle Management now includes a new field to specify how the user wants to publish a box. In the request to publish a box dialog, a new field "Visibility Type" was added to specify whether the box should be published as:
+
 1. **Open**: box will be made public as open-source
 2. **Execute**: box will be made public as execute-only, so it will only be deployable and only public variables will be visible.
 3. **Closed**: box will be used to embed into other boxes as box variables, but event code will be hidden. Only public variables will be visible.
 
-##### New Cloud Formation type supported
+##### New CloudFormation type supported
 
-Application Lifecycle Management now supports an additional Cloud Formation type to be used in Cloud Formation template boxes. This additional type is:
-"AWS::EC2::CapacityReservation". The user can now use this new resource types in the template definition of any Cloud Formation template box or update the template file of any existing template instance adding this type of resource and reconfigure the instance to use it.
+Application Lifecycle Management now supports an additional CloudFormation type to be used in CloudFormation template boxes. This additional type is:
+"AWS::EC2::CapacityReservation". The user can now use this new resource types in the template definition of any CloudFormation template box or update the template file of any existing template instance adding this type of resource and reconfigure the instance to use it.
 
 ##### Support for new Google Cloud Platform region
 

@@ -1,6 +1,6 @@
 {{{ "title": "Deploying and Managing Instances",
-"date": "05-20-2019",
-"author": "Guillermo Sánchez and Óscar Hafner",
+"date": "08-28-2019",
+"author": "Guillermo Sánchez, Óscar Hafner, Victor Shulman, and Yongjie Liang",
 "keywords": ["cam", "instances", "lifecycle", "deploy", "deployment-policy", "instance-protection", "shutdown-protection", "terminate-protection", "bulk-actions"],
 "attachments": [],
 "contentIsHTML": false
@@ -18,6 +18,7 @@
 * [Deploying Instances without Lifecycle Management](#deploying-instances-without-lifecycle-management)
 * [Handling Instance Lifecycle States](#handling-instance-lifecycle-states)
 * [Managing multiple instances with bulk actions](#managing-multiple-instances-with-bulk-actions)
+* [Exporting the List of Instances](#exporting-the-list-of-instances)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
@@ -49,7 +50,7 @@ There are three different submenu options under Instances:
 
 * **Unregistered**: shows only unregistered instances, which are the ones accessible into all the defined providers that were not deployed through Cloud Application Manager. They are discovered in the synchronization event of a provider and are classified by Type and Subtype.
   * Type: One of Compute, Network, Database, Storage or Other
-  * Subtype: this is the instance class, specific to each provider type. For example, for AWS type providers we can see VPC or Application Load Balancers (for Network type instances), and S3 or Elastic Block Storages (for Storage type instances) and for an Azure provider we could see Virtual Networks or Application Gateways (in Network type instances) and Queue or BLOB (in Storage type instances). You can check the [full list of Microsoft Azure resources being displayed here](../../Cloud Application Manager/Deploying Anywhere/using-microsoft-azure.md#azure-native-resources).
+  * Subtype: this is the instance class, specific to each provider type. For example, for AWS type providers we can see VPC or Application Load Balancers (for Network type instances), and S3 or Elastic Block Storages (for Storage type instances) and for an Azure provider we could see Virtual Networks or Application Gateways (in Network type instances) and Queue or BLOB (in Storage type instances). You can check the [full list of Microsoft Azure resources being displayed here](../../Cloud Application Manager/Deploying Anywhere/using-microsoft-azure.md#azure-native-resources) and [full list of CenturyLink Cloud resources being displayed here](../../Cloud Application Manager/Deploying Anywhere/using-centurylink-cloud.md#centuryLink-cloud-native-resources).
 
   You can also select a specific state among the available ones (Active, Inactive) to show only the instance in the selected state.
 
@@ -88,14 +89,15 @@ There is a filter icon button next to the view types icon that makes visible all
 
 ![Instances view filters](../../images/cloud-application-manager/instances/instance-filters.png)
 
-These filters are dynamically filled with the valid values, allow multiple selections in values and are respectively:
+These filters are dynamically filled with the valid values, are hidden if there are no values in the current view and also allow multiple selections in values to be shown. The available filters are:
 
-* **Cost Center**: Filter by cost centers responsible for instances
+* **Cost Center**: Filter by cost centers responsible for instances. This filter is only available if you are at the Organization level scope.
 * **Workspace**: filter by any accessible workspace containing instances
 * **Providers**: filter by available provider types or providers
 * **Types**: filter by available types or subtypes
 * **Location**: filter by available location, including Global
 * **Tags**: filter by defined tags in instances
+* **Service Types**: filter by available service types (i.e., Linux Compute, Windows Compute, Azure Resource Manager Service, CloudFormation Service, etc.)
 
 Some of the filters, such as Providers and types, have two level of filtering (i.e., provider type and provider), allowing a mixed selection of levels. For example, you can select AWS provider type to show all AWS providers instances, and a specific Microsoft Azure provider to also show this provider instances in the same view.
 
@@ -307,6 +309,24 @@ Many of the instance actions can be applied in bulk to several instances at once
 ![Bulk actions menu](../../images/cloud-application-manager/deploying-anywhere/bulk-actions.png)
 
 The **Bulk Actions** button dropdown appears next to the *New* instance button once you select any instance in the list and, depending on your selection, the common actions allowed in all selected instances will be available in the dropdown. For example, if you select a few instances, all in *Online* state, you will have all the applicable lifecycle actions available (**Reinstall**, **Reconfigure**, **Shutdown**, **Terminate**, **Force Terminate**) and any other additional option such as *Update Instance*; but if you also include an *Unavailable* instance in your selection among the *Online* ones, the only available lifecycle option will be **Force Terminate**.
+
+### Exporting the List of Instances
+
+Near the top right of the screen, there is a button: **Detail Export**.
+
+![Detail Export menu button](../../images/cloud-application-manager/deploying-anywhere/detail-export-instances-00.png)
+
+Clicking this button toggles a drop-down menu with two options:
+* Export to CSV
+* Export to PDF
+
+![Detail Export menu](../../images/cloud-application-manager/deploying-anywhere/detail-export-instances-01.png)
+
+When one of these options is selected, a file is downloaded to your system and saved based on your browser's settings (by default, in the Downloads folder). The file will be named _instances.csv_ or _instances.pdf_; or, if a file by that name already exists, the name will be modified according to your operating system rules (e.g., _instances (1).csv_).
+
+Please note that **all** instances in the current scope are exported, not necessarily just the ones you see in the list (no applied filters are considered). The current scope is either the currently selected workspace, or the cost center, or the organization selected in the context switcher. For a workspace, all the instances that are shared with the workspace are also included.
+
+All the columns in the instances list will be included in the exported file, along with some additional ones such as _instance id_, _service type_, _hostname_, _creation time_ and _organization name_.
 
 ### Contacting Cloud Application Manager Support
 

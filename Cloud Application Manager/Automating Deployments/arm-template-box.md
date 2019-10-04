@@ -13,6 +13,7 @@
 * [Create an Azure Resource Manager Template and Launch a Stack](#create-an-azure-resource-manager-template-and-launch-a-stack)
 * [Update an Azure Resource Manager Stack in Real-Time](#update-an-azure-resource-manager-stack-in-real-time)
 * [Connect to Other Azure Resource Manager Boxes over Bindings](#connect-to-other-azure-resource-manager-boxes-over-bindings)
+* [Getting Started Guide](#getting-started-guide)
 * [Getting General Support](#getting-general-support)
 
 ### Overview
@@ -118,6 +119,10 @@ To illustrate, we create a second Azure Resource Manager box to scale the WordPr
 2. Add a binding to the Azure Resource Manager box.
 
      ![New variable](../../images/cloud-application-manager/template-box/armboxes22.png)
+
+### Getting Started Guide
+
+This [video tutorial](https://www.ctl.io/guides/cloud-application-manager/using-arm-templates-cloud-application-manager/) with step-by-step instructions will show you how you can use an ARM template to manipulate resources within an existing Microsoft Azure Customer. 
 
 ### Getting General Support
 

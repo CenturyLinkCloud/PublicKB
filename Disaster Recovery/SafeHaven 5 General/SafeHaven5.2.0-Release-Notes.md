@@ -13,7 +13,7 @@
 - Release Date: June 13, 2019
 
 ### New Features and Enhancements
-This is new minor released based on [SafeHaven 5.2.0](SafeHaven5.2.0-Release-Notes.md) with the following improvements:
+This is new minor released based on [SafeHaven 5.1.5](SafeHaven5.1.5-Release-Notes.md) with the following improvements:
 - New SafeHaven Replication Node (SRN) Linux kernel module for WAN replication (SBD) that fixes a rare data corruption case
 - New SRN base package that 
   - uses an updated version of the Ansible library for automated driver installation or makestub
@@ -25,6 +25,7 @@ This is new minor released based on [SafeHaven 5.2.0](SafeHaven5.2.0-Release-Not
 * SafeHaven-5.0.1 and SafeHaven-5.1.* can be upgraded to 5.2.0 using the GUI but the SRN kernel and base package needs manual upgrade
   * Note that even though it is possible to just upgrade the debian package using the GUI without updating the kernel and base package, it is highly recommended to update the kernel and base package to benefit from the bug fix and also avoid complications on technical support
   * It is recommended that customers obtain help from the SafeHaven support team to perform the kernel and base package upgrade. Please create tickets via help@ctl.io
+  * Only **expert** users may follow this [Upgrade procedure for SafeHaven 5.2.0](SH-5.1-Upgrade-5.2.md) on their own
 
 ### SafeHaven Most Recent Releases
 Please take a look at the link below to download the latest available release  
@@ -44,6 +45,11 @@ Please take a look at the link below to download the latest available release
 
 Please note that you can check the md5 checksum against the file named [MD5SUM-5.2.0.txt](https://download.safehaven.ctl.io/SH-5.2.0/MD5SUM-5.2.0.txt).
 
+### Hotfix-1
+
+A hotfix was released on June 25, 2019 for the SafeHaven cluster management software that addresses a harmless network reconnection bug that may in some cases make the protection groups show as inactive too often. The two download links are
+* [Debian Package for CMS/SRN](https://download.safehaven.ctl.io/SH-5.2.0/safehaven-5.2.0-hotfix1.deb): to be used in the cluster installer
+* [SafeHavenClient.5.2.0-hotfix1_win64.jar](https://download.safehaven.ctl.io/SH-5.2.0/SafeHavenClient.5.2.0-hotfix1_win64.jar): the Java application that requires an existing 64bit JRE-8 to run on a Windows OS
 
 ### Documentations
 [SafeHaven Inventory Sheet](https://download.safehaven.ctl.io/SH-5-Docs/SafeHaven-Inventory-Sheet-Azure.xlsm)
