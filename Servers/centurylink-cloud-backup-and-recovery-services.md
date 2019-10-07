@@ -1,7 +1,7 @@
 {{{
   "title": "CenturyLink Cloud Backup Services",
-  "date": "3-22-2016",
-  "author": "Chris Little",
+  "date": "10-08-2019",
+  "author": "CenturyLink Cloud",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
@@ -49,6 +49,8 @@ From there, Simple Backup Service does the rest for you—data is automatically 
 * Keep backups efficient, by specifying only the file paths you need. Only files in those paths will be backed up. Configure folders to exclude as well.
 * Supports both virtual machines and Bare Metal cloud servers on the CenturyLink Platform.
 
+### Managed Backup
+Managed Backup went End of Sale 6/25/19. However, all existing subscriptions will still continue to function. While you may not add Managed Backup to new servers, it can be removed from existing servers.
 
 ### [Marketplace Provider Program Partners](//www.ctl.io/marketplace/program)
 The CenturyLink Marketplace Provider Program is designed to provide additional value within CenturyLink’s enterprise cloud computing platform through partnerships with innovative cloud technology and service providers. By integrating their technology into CenturyLink Cloud, our technology partners can take advantage of a differentiated, digital route-to-market: presented as part of a enterprise-grade automation platform which powers one of the largest pools of IT infrastructure in the world.
@@ -61,11 +63,9 @@ The CenturyLink Marketplace Provider Program is designed to provide additional v
 * Implement your own Encryption standards
 * Advanced feature sets such as Hot backup agents for MS SQL and Hyper-V Integration on Bare Metal
 
-
 ### Comparison Matrix
 
 **Product**|**Availability**|**Data Storage**|**Cost Model**|**Integration**|**Support**
 -----------|----------------|-------------------|----------------|--------------|---------------|-----------
 Simple Backup Service|<ul><li>Global</li><li>Virtual and Bare Metal Servers</li></ul>|<ul><li>Supports data sovereignty</li><li>Stored in customer selected Geo-redundant Object Storage</li><li>Built-in Encryption</li></ul>|Pay as you go (per GB)|<ul><li>Self-Service & API Accessible</li><li>File System Agent</li><li>Supports all Operating System Templates on the platform</li></ul>|CenturyLink Provided Support
-Managed Backup **End of Sale 6/25/19; all existing subscriptions continue to function.** |<ul><li>Six Locations</li><li>**Managed** Virtual Servers</li></ul>|<ul><li>Supports data sovereignty</li><li>Digital Vaulting to specific locations</li><li>Built-in Encryption</li></ul>|Tiered pricing model based on average protected storage|<ul><li>Customer provisioned, CenturyLink Managed</li><li>File System Agent</li><li>Supports **Managed** Windows 2008/2012 R2/2016 and RHEL 5/6/7</li></ul>|CenturyLink Provided Support
 Marketplace Provider Program Partners|<ul><li>Global</li><li>Virtual and Bare Metal Servers</li></ul>|<ul><li>Supports data sovereignty</li><li>Stored in customer selected Geo-redundant Object Storage</li><li>Customer Defined Encryption</li></ul>|Bring your own license (BYOL)|<ul><li>Customer provisioned and Operated</li><li>File System, Hypervisor & Hot Backup Agents</li><li>Supports all Operating System Templates on the platform</li></ul>|Partner Provided Software Support
