@@ -43,7 +43,7 @@ A: All Operating Systems that are currently buildable in the CenturyLink Cloud C
 
 **Q: How can I use Simple Backup Service on a server that doesn't have internet access?**
 
-A: Simple Backup Service requires consistent internet connectivity to install, update, backup, and restore. If consistent internet connectivity is not an option, please review our [Managed Backup](https://www.ctl.io/managed-services/backup/) offering.
+A: Simple Backup Service requires consistent internet connectivity to install, update, backup, and restore.
 
 **Q: What happens when my server is paused, which pauses the agent, or losses connectivity?**
 

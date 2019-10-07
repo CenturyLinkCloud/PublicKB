@@ -1,6 +1,6 @@
 {{{
   "title": "Partner Cloud: Getting Started With An Existing Azure Customer Account",
-  "date": "05-10-2019",
+  "date": "07-26-2019",
   "author": "Benjamin Swoboda",
   "attachments": [],
   "contentIsHTML": false
@@ -77,9 +77,11 @@ NOTE: If the customer is already partnered with another provider, they may need 
 
   ![Office 365 authorize](../../images/cloud-application-manager/CINT_Office365_AuthorizeCSP.png)
 
-12. This is all it takes to move your Azure "Customer" tenant into CenturyLink's care. In some cases, work may need to be done to move your Azure Subscription(s) as well. This may require that your Azure Administrator give Owner access to a CenturyLink-generated user on the Subscription(s). If that is true, CenturyLink representatives will contact you guide you through this Microsoft-approved process.
+12. This is all it takes to move your Azure "Customer" tenant into CenturyLink's care. 
 
-13. CenturyLink will work with you to enable Cloud Application Manager to work on your behalf.
+13. Work will then need to be done to move resources onto new, Azure Subscription(s) as well. This requires that your Azure Administrator give Owner access to a CenturyLink-generated user on the Subscription(s). This will likely be your Technical Account Manager.
+
+14. CenturyLink will work with you to enable Cloud Application Manager to work on your behalf.
 
 In the end, the following will have occurred:
 

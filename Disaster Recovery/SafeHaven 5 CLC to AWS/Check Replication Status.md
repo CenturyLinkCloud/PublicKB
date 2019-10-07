@@ -40,15 +40,9 @@ cat running_rsync2iscsi.sh.log
 
 ![Upgrade](../../images/SH5.0/create_PR_SRN_in_CLC/linrep1.PNG)
 
-### Monitor the Unsyncronized Data for Protection Groups
-Monitor the WAN replication by logging into the SafeHaven console, click on the Protection Group and monitor the **Unsyncronized Data** count in the **Properties** panel.
+### Monitor the Unsynchronized Data for Protection Groups
+Monitor the WAN replication by logging into the SafeHaven console, click on the Protection Group and monitor the **Unsynchronized Data** count in the **Properties** panel.
 
 ![Upgrade](../../images/SH5.0/create_PR_SRN_in_CLC/unsynceddata.PNG)
 
-### Video Tutorial
-
-#### Check Replication Status for Windows
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Bczh8PkN-N8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-Once the WAN replication completes and the Unsyncronized data count is close to 0 bytes, **next step** is to [Configure Checkpoints](Configure Checkpoints.md)
-
+Once the WAN replication completes and the Unsynchronized data count is close to 0 bytes, **next step** is to [Configure Checkpoints](Configure Checkpoints.md)

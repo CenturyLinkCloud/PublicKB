@@ -1,7 +1,7 @@
 {{{
   "title": "Supported Operating Systems",
-  "date": "9-13-2017",
-  "author": "Chris Little",
+  "date": "09-11-2019",
+  "author": "Matthew Ordman",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -12,7 +12,7 @@ The following operating systems are supported in CenturyLink Cloud:
 
 Virtual Machines|Bare Metal
 ----------------|----------
-CentOS 6<br>CentOS 7<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>RedHat Enterprise Linux 6<br>RedHat Enterprise Linux 7<br>Ubuntu 14<br>Ubuntu 16<br>Ubuntu 18<br>Windows Server 2008 R2 Standard<br>Windows Server 2008 R2 Enterprise<br>Windows Server 2008 R2 Datacenter Edition<br>Windows Server 2012 Datacenter Edition<br>Windows Server 2012 R2 Datacenter Edition<br>Windows Server 2016 Datacenter Edition|Windows 2012 R2 Standard Edition<br>Windows 2012 R2 Datacenter Edition<br>Red Hat Enterprise Linux 6<br>Red Hat Enterprise Linux 7<br>CentOS 6<br>CentOS 7<br>Ubuntu 14<br>Ubuntu 16
+CentOS 6<br>CentOS 7<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>RedHat Enterprise Linux 6<br>RedHat Enterprise Linux 7<br>Ubuntu 14<br>Ubuntu 16<br>Ubuntu 18<br>Windows Server 2012 Datacenter Edition<br>Windows Server 2012 R2 Datacenter Edition<br>Windows Server 2016 Datacenter Edition<br>Windows Server 2019 Datacenter Edition|Windows 2012 R2 Standard Edition<br>Windows 2012 R2 Datacenter Edition<br>Red Hat Enterprise Linux 6<br>Red Hat Enterprise Linux 7<br>CentOS 6<br>CentOS 7<br>Ubuntu 14<br>Ubuntu 16
 
 **NOTE: Only the 64-bit version of each OS is supported**
 

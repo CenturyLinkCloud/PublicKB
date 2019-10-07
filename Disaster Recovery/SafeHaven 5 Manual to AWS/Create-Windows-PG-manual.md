@@ -37,7 +37,7 @@ This article assumes that:
    Expand the VM to edit disk layout. You can select an existing disk and change its size to match the production server.   
    If the production VM has more than 1 disks, click **add disk** to add more disks.  
    Click **Next**  
-   
+
    **Note**: Make sure that disk layout matches the production VM.
 
 6. Select the **storage pool** for cache. Click Next.  
@@ -64,12 +64,6 @@ Method 2. Manual LRA Installation and Manually Start Initial Replication
 4. Once it says **Completed** under **Install LRA**, click **Next**. Next, click **Finish** to end the wizard.
 
 **The initial replication of the production windows server is started automatically as part of the installation process.**
-
-### Video Tutorial
-**Automatic LRA Installation**
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EQSU1LPpR_Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</p>
 
 **NOTE**: Follow the steps below incase the user prefers to install the LRA and start the replication manually.
 
@@ -105,11 +99,5 @@ Method 2. Manual LRA Installation and Manually Start Initial Replication
 7. Click **Finish** to end the wizard.
 
 The initial replication of the production windows VM will start now. Close the command prompt window if required.
-
-### Video Tutorial
-**Manual LRA Installation**
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3-2YbGiatnI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</p>  
 
 Once the Protection Group is created successfully, **Next** step is to [Modify WAN Replication Rate](../SafeHaven 5 CLC to AWS/Modify WAN Replication Rate.md) and [check replication status](../SafeHaven 5 CLC to AWS/Check Replication Status.md)

@@ -48,7 +48,7 @@ Download the **GUI Package** from the **Download Links** section of the most rec
 
    f. Copy the **Debian Package for CMS/SRN** link from the **Download Links** section of the most recent SafeHaven release notes : [Most Recent SafeHaven Release Updates](../Overview/Most-Recent-SafeHaven-Release-Updates.md). Enter it in the **SafeHaven distribution URL** field.
 
-   **NOTE**:Please contact your CenturyLink Cloud Resource if you have any questions regarding the latest version of **Debian 
+   **NOTE**:Please contact your CenturyLink Cloud Resource if you have any questions regarding the latest version of **Debian
    Package for CMS/SRN**. Do not modify the Service Port (TCP), Heartbeat Port (UDP), Installation ID.
 
 5. Click **Next**
@@ -66,10 +66,5 @@ Download the **GUI Package** from the **Download Links** section of the most rec
 3. Click **Log In**.
 2. **Install** the SSL Certificate (This will require Administrator rights).
 3. The **SafeHaven Cluster** will appear and you can start configuring it.
-
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/f3EZhkA39ak" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</p>
 
 **Next Step** is to [Register Datacenters within a SafeHaven Console.md](Register Datacenters within a SafeHaven Console.md)

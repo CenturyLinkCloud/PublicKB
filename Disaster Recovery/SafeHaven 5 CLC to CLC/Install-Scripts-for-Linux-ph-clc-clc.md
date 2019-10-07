@@ -47,9 +47,4 @@ This article assumes that a Linux Protection group has been successfully created
 
 5. Once the replication completes, the user can type **crontab -l** to see the hourly Rsync job that is running in the background. User can modify the crontab interval as well as exclude certain files/folders from Rsync replication.
 
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0x9CRRQkZ0I" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</p>
-
 **Next Step** is to [Modify WAN Replication Rate](Modify WAN Replication Rate.md)

@@ -33,10 +33,4 @@ Before enabling the email alerts please make sure that the Protection Groups are
 **NOTE**: If the test email is not received, please re-configure the e-mail notifications settings to work.
 The procedure is same for CLC/VMWare/Manual sites as the source datacenters.
 
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/u0J_-fyzzAE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
- </p>  
- 
 **Next Step** is to [Test Failover to AWS](Test Failover to AWS.md). User can also choose to [Create Manual Checkpoint](Create Manual Checkpoint.md)
-

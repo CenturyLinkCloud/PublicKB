@@ -1,7 +1,7 @@
 {{{
 "title": "Using CenturyLink Cloud",
-"date": "03-29-2019",
-"author": "Sergio Quintana",
+"date": "08-28-2019",
+"author": "Sergio Quintana, and Yongjie Liang",
 "keywords": ["cam", "cloud application manager", "centurylink", "clc"],
 "attachments": [],
 "contentIsHTML": false
@@ -14,6 +14,7 @@
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
 * [Register CenturyLink Cloud Provider in Cloud Application Manager](#register-centurylink-cloud-provider-in-cloud-application-manager)
+* [CenturyLink Cloud Native Resources](#centuryLink-cloud-native-resources)
 * [Deploy to CenturyLink Cloud from Cloud Application Manager](#deploy-to-centurylink-cloud-from-cloud-application-manager)
 * [Enabling services](#enabling-services)
 * [Shutdown and Terminate Instances in CenturyLink Cloud](#shutdown-and-terminate-instances-in-centurylink-cloud)
@@ -43,6 +44,23 @@ You need a [CenturyLink Cloud account](//www.ctl.io/) to be able to deploy from 
 2. Enter the CenturyLink username and password as shown and save.
 
    ![centurylink-add-provider-credentials-1.png](../../images/cloud-application-manager/centurylink-add-provider-credentials-1.png)
+
+### CenturyLink Cloud Native Resources
+
+After the synchronization process, you will also find in the Instances page a list of CenturyLink Cloud resources that already exist in your account. You can also register virtual machine type instances from here.
+
+![CenturyLink Cloud - Unregistered instances](../../images/cloud-application-manager/deploying-anywhere/clc-unregistered-instances.png)
+
+These resources can be filtered by the following types and subtypes:
+
+* **Compute**
+  * Vitual Machine
+* **Database**
+  * Relational Database
+* **Network**
+  * Virtual Network
+  * Load Balancer
+  * VPN
 
 ### Deploy to CenturyLink Cloud from Cloud Application Manager
 

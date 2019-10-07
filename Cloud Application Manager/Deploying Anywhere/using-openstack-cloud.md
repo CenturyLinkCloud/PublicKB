@@ -121,6 +121,10 @@ Increase the instance storage and add better I/O performance for your applicatio
 
 These are dependencies defined on the box. To deploy the box dependencies on the instance, specify their values in the deployment profile. To deploy database boxes (ex: MongoDB) especially, you must set the username, password, and optionally a port to allow database connections. In general, specify the port to allow traffic into the instance.
 
+### Getting Started Guide
+
+For a video tutorial and step-by-step instructions for installing the Cloud Application Manager Virtual Appliance in OpenStack, please see our [Getting Started Guide](https://www.ctl.io/guides/cloud-application-manager/installing-cloud-application-manager-virtual-appliance-in-openstack/).
+
 ### Contacting Cloud Application Manager Support
 
 We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.

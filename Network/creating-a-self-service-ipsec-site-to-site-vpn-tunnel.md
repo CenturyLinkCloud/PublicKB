@@ -27,6 +27,9 @@
   </li>
 </ul>
 <h3>Detailed Steps</h3>
+<ul>
+  <li><strong>Note:</strong> When making an update to an existing tunnel, a renegotiation may occur depending on what is updated. Making any changes to the Phase1 or Phase2 values will reset the tunnel. Changes to the tunnel encrypted subnets on either side will only affect those subnets modified.</li>
+  </ul>
 <ol>
   <li>Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Network** > **VPN**.</li>
 <p>2. Select the create point to point VPN button</p>

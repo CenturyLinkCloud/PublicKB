@@ -13,7 +13,8 @@ In this KB article, we walk through how to enable a Cloud Application Manager Pr
 
 ### Prerequisites
 * You must have a Cloud Application Manager Account
-* Your base URL, and user credentials for CenturyLink Private Cloud on VMware Cloud Foundation
+* Your base URL, Organization, and user credentials for CenturyLink Private Cloud on VMware Cloud Foundation
+__Note:__ The Organization name is __case sensitive__.
 
 ### Steps
 
@@ -26,13 +27,13 @@ In this KB article, we walk through how to enable a Cloud Application Manager Pr
 ![CAM Provider](../../images/dccf/cam-provider2.png)
 
 * Fill in the details:
-  * Name: Enter a name for the Provider.
-  * Description: (Optional).
-  * Enable Managed Services: Enable if you want Managed OS and Applications.
-  * URL: Your Base URL (example - https://S123456ch3a.vcf.ctl.io).
-  * Organization: Your Organization (displayed in the top left corner when logged in to CenturyLink Private Cloud on VMware Cloud Foundation. If using VCD 9.5 or higher with the HTML5 UI, the organization will be displayed in the center towards the top of the screen). Please note this is case sensitive.
-  * Username: CenturyLink Private Cloud on VMware Cloud Foundation user account.
-  * Password: Password for above account.
+  * __Name:__ Enter a name for the Provider.
+  * __Description:__ (Optional).
+  * __Enable Managed Services:__ Enable if you want Managed OS and Applications.
+  * __URL:__ Your Base URL (example - https://S123456ch3a.vcf.ctl.io).
+  * Organization: Your Organization (displayed in the top left corner when logged in to CenturyLink Private Cloud on VMware Cloud Foundation. If using VCD 9.5 or higher with the HTML5 UI, the organization will be displayed in the center towards the top of the screen). __Note:__ The Organization name is __case sensitive__.
+  * __Username:__ CenturyLink Private Cloud on VMware Cloud Foundation user account.
+  * __Password:__ Password for above account.
 
 * Click __Save__.  
 

@@ -23,7 +23,7 @@ This article assumes that:
 
 2. In the Navigation Tree, right click the **SRN** you want to add storage to, and click **Edit Settings**.
 
-Add two raw disks 
+Add two raw disks
 **First RAW disk**: Add a single **raw disk** amounting to "100% of the total used storage(full copy of data)" on Production Linux Server.
 For example, if the VM that needs to be protected has 3 disks of size 1GB, 2GB and 14GB, then add a 17GB raw disk to the production SRN.
 
@@ -38,7 +38,7 @@ For example, if you added a 17GB disk in step 1, then please add a second raw di
 
 6. Keep the default **Virtual Device Node**, that is SCSI(0:1). Click **Next**.
 
-7. Click **Finish**. Repeat steps 3 to 7 to add a second disk. 
+7. Click **Finish**. Repeat steps 3 to 7 to add a second disk.
 
 8. Click **Ok** on the main edit settings window. This successfully adds 2 hard disks to the SRN
 
@@ -70,10 +70,5 @@ For example, if you added a 17GB disk in step 1, then please add a second raw di
 8. Please read the acknowledgement, and check the box.
 
 9. Verify the Protection Group summary, and click **Create**.
-
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/q0cuQLlK9dU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</p>
 
 **Next Step** is to [Install Scripts and Start Replication for Linux Protection Group](../SafeHaven 5 CLC to AWS/Install Scripts and Start Replication for Linux Protection Group.md)

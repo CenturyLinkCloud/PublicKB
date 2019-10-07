@@ -1,7 +1,7 @@
 {{{
   "title": "How do I submit a Feature Request?",
-  "date": "9-21-2016",
-  "author": "Erik Jensen",
+  "date": "07-23-2019",
+  "author": "Matthew Ordman",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -16,25 +16,15 @@ Write up a Feature Request and email it to [features@ctl.io](mailto:features@ctl
 
 Feature Requests are evaluated every two weeks and if accepted, are added to the product backlog. Those who submit features will receive email notifications to let them know when the feature request has been evaluated.
 
-### Submitting a Feature Request via UserVoice
-
-UserVoice is an industry-leading tool for creating and voting on product feature ideas. CenturyLink Cloud is leveraging UserVoice to give higher visibility to our product roadmap, while giving customers and partners the opportunity to help prioritize features.
-
-To get an invite to UserVoice:
-
-* Send us an email request via [features@ctl.io](mailto:features@ctl.io) to be added to UserVoice.
-* Register for a [UserVoice account](../Support/uservoice-frequently-asked-questions.md) using your business email address.
-* Create new feature requests, or vote and comment on existing ones.
-* Track the progress of features through the pipeline and see when they are released.
-
-Read more about CenturyLink Cloud and UserVoice [here](../Support/uservoice-frequently-asked-questions.md).
-
-### Submitting feature Requests via the Control Portal
+### Submit a Feature Request via the Control Portal
 
 * Click the question mark in the upper-right corner of the Control Portal
-* Click “Submit Feature Idea"
-* Fill in your feature idea, then click "Submit Idea"
+* Click “Submit Feedback"
+* Enter your Information
+* Select "CenturyLink Cloud (CLC)"
+* Enter your request in the comments field
+* Click "Submit"
 
-### Checking status of a request after submission
+### Check status of a request after submission
 
 Check out [this KB](../Support/i-just-submitted-a-feature-request-now-what.md) for more information.
