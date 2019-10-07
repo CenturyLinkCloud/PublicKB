@@ -96,7 +96,7 @@ Some of the reasons for Resource Alerts are:
 6. Once you have configured your alert, save it and make sure that you turn on the alert by moving the slider **ON**
 
 
-#####Alert Results
+##### Alert Results
 
 The Advanced Analytics tool will send your alerts in the notification format and parameters that you configured in the Built-in and Custom Alerts tab, such as email, Slack, or SNS. It also provides you with a comprehensive and searchable list of all your alert results. To get your results, go to the left navigation pane, and choose either Cost > Alerts > Results or Security > Alerts > (CloudTrail or Resources) > Results.
 
