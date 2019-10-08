@@ -85,6 +85,7 @@ Cloud Application Manager uses websockets protocol for agent's communication and
 Cloud Application Manager services provide necessary endpoints which are used by Cloud Application Manager UI when requesting operations and retrieving data items. These endpoints are also used by Cloud Application Manager command line tool [ebcli](../Tutorials/ebcli-tutorial.md) to list, provision and manage the lifecycle of your workloads based on box configuration.
 
 [CAM API REST](https://www.ctl.io/api-docs/cam/)
+
 [MSA API REST](https://monitoring.cam.ctl.io/docs/swagger/)
 
 
