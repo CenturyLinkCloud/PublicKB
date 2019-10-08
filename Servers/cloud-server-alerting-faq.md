@@ -25,15 +25,19 @@
 
 <p><strong>Q: How do I create alert policies in the Control Portal?</strong>
 </p>
-<p>A: Visit the&nbsp;<strong>Alerts</strong> page using the main navigation menu, then choose&nbsp;<strong>create alert policy</strong>. Provide a name for the policy and a specific utilization threshold for CPU/memory/storage that should trigger an alert.
-  <br
-  /><img src="https://t3n.zendesk.com/attachments/token/dluhifjpnr6kuw7/?name=monitoringfaq01.png" alt="monitoringfaq01.png" />
+<p>A: Visit the&nbsp;<strong>Infrastructure </strong> page using the main navigation menu, then choose&nbsp;<strong>Policies</strong>. Provide a name for the policy and a specific utilization threshold for CPU/memory/storage that should trigger an alert.
+  <br />
+  /><![Alert1](../../images/Alert1.png)>
+  
+ Once in the <strong>Alert Policies</strong> submenu, click "+ alert policy" and provide a name for the policy and a specific utilization threshold for CPU/memory/storage that should trigger an alert.
+   <br/>
+  /><![Alert3](../../images/Alert3.png)>
 </p>
 
 <p><strong>Q: Where do I add alert policies to a server?</strong>
 </p>
 <p>A: Alert policies are added to each server. Visit the server's settings and select the <strong>Alerts&nbsp;</strong>tab. Choose existing policies to add to the server. Changes take effect instantly.
-  <br /><img src="https://t3n.zendesk.com/attachments/token/xfz5vwn3a0lgfir/?name=monitoringfaq02.png" alt="monitoringfaq02.png" />
+  <br />/><![Alert4](../../images/Alert4.png)>
 </p>
 
 <p><strong>Q: What kind of emails do I receive when an alert occurs?</strong>
