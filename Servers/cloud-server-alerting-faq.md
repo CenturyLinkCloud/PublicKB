@@ -26,17 +26,17 @@ The CenturyLink Cloud has updated the Server Alerting capabilities which offer a
 
 **A:** Visit the **Infrastructure** page using the main navigation menu, then choose **Policies**. Provide a name for the policy and a specific utilization threshold for CPU/memory/storage that should trigger an alert.
 
-![Alert1](../../images/Alert1.png)
+![Alert1](../images/Alert1.png)
 
 Once in the **Alert Policies** submenu, click "+ alert policy" and provide a name for the policy and a specific utilization threshold for CPU/memory/storage that should trigger an alert.
 
-![Alert3](../../images/Alert3.png)
+![Alert3](../images/Alert3.png)
 
 **Q: Where do I add alert policies to a server?**
 
 **A:** Alert policies are added to each server. Visit the server's settings and select the **Alerts** tab. Choose existing policies to add to the server. Changes take effect instantly.
 
-![Alert4](../../images/Alert4.png)
+![Alert4](../images/Alert4.png)
 
 **Q: What kind of emails do I receive when an alert occurs?**
 
