@@ -1,7 +1,7 @@
 {{{
 "title": "Architecture components",
-"date": "05-22-2019",
-"author": "Diego Sanjuan",
+"date": "10-4-2019",
+"author": "Diego Sanjuan & Thomas Broadwell",
 "attachments": [],
 "contentIsHTML": false,
 "keywords": ["cam", "cloud application manager", "architecture", "components", "agents", "websockets", "workflow", "services"]
