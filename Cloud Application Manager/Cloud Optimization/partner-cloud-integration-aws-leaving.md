@@ -43,7 +43,7 @@ Be certain your Accounts Payable team is aware of this transition. Immediately a
 
 **Ticket Information**
 
-You can help determine how to fill in the blanks by reading the rest of this document. We recommend you create this ticket at least two weeks prior to the end of the contract.
+You can help determine how to fill in the blanks by reading the rest of this document. We recommend you create this ticket at least two weeks prior to the end of the contract. Please direct the ticket towards the "CAM_CloudIntegration" group.
 
 ```
 This is a request to meet with my CenturyLink account representative and potentially a member of the Cloud Application Manager Product team.
