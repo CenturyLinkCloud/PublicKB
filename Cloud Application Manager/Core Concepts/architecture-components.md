@@ -1,7 +1,7 @@
 {{{
 "title": "Architecture components",
-"date": "05-22-2019",
-"author": "Diego Sanjuan",
+"date": "10-4-2019",
+"author": "Diego Sanjuan & Thomas Broadwell",
 "attachments": [],
 "contentIsHTML": false,
 "keywords": ["cam", "cloud application manager", "architecture", "components", "agents", "websockets", "workflow", "services"]
@@ -28,32 +28,49 @@ This article is meant to assist users of Cloud Application Manager to learn abou
 
 * **CAM agents** - functions, interactions, installation, and requirements
 * **Websockets** - functions, interactions
-* API Services - functions, interactions
-* Orchestration Workflow - functions, interactions
-* Connectivity and Required Firewall Rules
+* **API Services** - functions, interactions
+* **Orchestration Workflow** - functions, interactions
+* **Connectivity and Required Firewall Rules**
 
 
 ### Audience
 
 
-All Cloud Application Manager users who want to learn about Cloud Application Manager component's architecture and its connectivity requirements.
+All Cloud Application Manager users who want to learn about Cloud Application Manager components' architecture and their connectivity requirements.
 
 
 ![Cloud Application Manager Components](../../images/cloud-application-manager/components.png)
 
 
-### CAM Agents
+### Cloud Application Manager Agents
 
 
-Are responsible of execute event scripts in virtual machines deployed using script boxes and return their execution results. Also provide to backend network information about virtual machine regularly to inform user about virtual machine availability.
+All communication between Cloud Application Manager (CAM) agents (ALM or Watcher) and the CAM services must utilize the TLS protocol.  Minimum supported version is TLS 1.2.
 
-Agent is bootstrapped and installed, in each virtual machine registered in CAM, making use of diverse execution mechanisms provided by public and private cloud providers. i.e. in AWS cloud init is used for download and install it.
+#### Application Lifecycle Management agent (ALM Agent)
 
-Cloud Application Manager agent is written in python and it requires in linux machines to have python installed, and at least version 2.7.x to work properly.
 
-Agents require outbound connectivity to [https://cam.ctl.io](https://cam.ctl.io) to be able to call back and communicate results and request more work to be done on its virtual machine.
+The ALM agent (a.k.a. EB agent) is responsible for executing event scripts in virtual machines deployed using script boxes and return their execution results. The agent also regularly provides information to the CAM backend about the virtual machine to inform user about virtual machine availability.
+
+The ALM Agent is bootstrapped and installed in each virtual machine registered in CAM, making use of diverse execution mechanisms provided by public and private cloud providers. i.e. Cloud Init, Python, .Net, etc. The version of these execution mechanisms must support TLS 1.2 or newer.
+
+The ALM agent is written in Python and it is a pre-requisite in Linux machines. They should have Python version 2.7.x installed to work properly.
+
+Agents require outbound connectivity to [https://cam.ctl.io](https://cam.ctl.io), either directly or through a proxy, to be able to call back and communicate results and request more work to be done on its virtual machine. 
 
 Cloud Application Manager agent supports proxy configuration to call back when it's deployed in constrained/secured environments.
+
+#### MSA Monitoring (Watcher Agent)
+
+The Watcher agents are deployed to each CAM registered VM that is under management.  The deployment of the Watcher agent is initiated on any new CAM registered VM running a manageable OS (RHEL 6&7, CentOS 6&7, Ubuntu 14, 16 & 18, Windows 2k08R2, 2k12 and 2k16).  
+
+The Watcher agent executes scripts (checks) on workloads and provides the results to the Monitoring infrastructure within CenturyLink. 
+
+The Monitoring infrastructure provides a [repository of checks](https://watcher.ctl.io/docs/check_types/) that may be applicable to agents, stores metric data from checks and processes check results to identify actionable events. 
+
+Agents require outbound connectivity to [https://cam.ctl.io](https://cam.ctl.io) and https://\*.watcher.ctl.io to be able to call back and communicate results and request more work to be done on its virtual machine.  
+
+Secure, public internet connections are used for the transfer of metric data between the agent and the Monitoring infrastructure via TLS 1.2. Network transactions are initiated by the agent and outbound only. 
 
 
 ### Websockets
@@ -65,7 +82,11 @@ Cloud Application Manager uses websockets protocol for agent's communication and
 ### API Services
 
 
-Our services provide necessary [CAM API REST](https://www.ctl.io/api-docs/cam/) endpoints which are used by Cloud Application Manager UI when requesting operations and retrieving data items. These endpoints are also used by Cloud Application Manager command line tool [ebcli](../Tutorials/ebcli-tutorial.md) to list, provision and manage the lifecycle of your workloads based on box configuration.
+Cloud Application Manager services provide necessary endpoints which are used by Cloud Application Manager UI when requesting operations and retrieving data items. These endpoints are also used by Cloud Application Manager command line tool [ebcli](../Tutorials/ebcli-tutorial.md) to list, provision and manage the lifecycle of your workloads based on box configuration.
+
+[CAM API REST](https://www.ctl.io/api-docs/cam/)
+
+[MSA API REST](https://monitoring.cam.ctl.io/docs/swagger/)
 
 
 ### Orchestration Workflow
@@ -77,16 +98,24 @@ We have asynchronous and persistent long-running workflows which are responsible
 ### Connectivity and required firewall rules
 
 
-Allow Income traffic to 443 (https) port (OPEN) to your Cloud Application Manager Data Center Edition (appliance) for UI, API calls and CAM agents requests
+Allow Incoming traffic to port 443 (https) (OPEN) to your Cloud Application Manager Data Center Edition (appliance) for UI, API calls and CAM agents requests.
 
-Allow Outcome traffic to 443 (https) port from virtual machines network or its VPC so CAM agents are able to communicate with Cloud Application Manager SaaS or onpremises Appliance
+Allow Outgoing traffic on port 443 (https) from the virtual machines' network or VPC so CAM agents are able to communicate with Cloud Application Manager SaaS or onpremises Appliance.
 
-Also, if you are using private cloud providers, take into account that to use some of them Cloud Application Manager requires more ports to be open so it could communicate with their API and metadata endpoints to request new deployments or retrieve metadata and configuration parameters:
+Where MSA is enabled, allow Outgoing traffic on ports 80, 443, 5671 and UDP destination ports 500 and 4500 from the virtual machines network or VPC so Watcher agents are able to communicate with the Monitoring infrastructure within CLC.  See [MSA Networking](https://www.ctl.io/knowledge-base/cloud-application-manager/managed-services/msa-networking/) knowledgebase article for more information on MSA networking and requirements.
+
+MSA enabled environments must also allow intranetwork communication for FTP, SSH, ICMP, HTTP(S), Microsoft AD/SMB, RDP and WinRM HTTP(S) on the virtual machine's network or VPC so that Remote Administration connections may be made by CenturyLink Operations. A secure, reverse tunnel is established between CenturyLink and the MSA enabled environment by which CenturyLink Operations may securely administer customer VMs.  
+
+As features are added, other protocols necessary for the operation of the solution may be required.  It is recommended that unfettered outbound access on the virtual machines' network or VPC be made available to account for these potential changes. 
+
+For private cloud providers, take into account that to use some of their offerings, Cloud Application Manager requires more ports to be open for communication with the providers' API and metadata endpoints to request new deployments or retrieve metadata and configuration parameters:
 
 |  PROVIDER     |  PORTS                                                                |
 |---------------|-----------------------------------------------------------------------|
 | VMWARE vCenter| INCOME ports to be OPEN: 443 ssl, 8085                                |
 | OpenStack     | INCOME ports to be OPEN: 443 ssl, 5000, 35357, 8774, 8776, 9292, 8004 |
+
+It is also expected that customers' cloud environments have access to repositories for updating software packages i.e. yum and apt repositories.  
 
 
 ### Contacting Cloud Application Manager Support
