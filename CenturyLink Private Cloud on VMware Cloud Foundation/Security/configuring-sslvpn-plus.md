@@ -9,7 +9,7 @@
 }}}
 
 ### Description
-You have this new CenturyLink Private Cloud on VMware Cloud Foundation™ environment, but how do you securely connect to your servers? Some customers have the option of using a site-to-site VPN tunnel, MPLS, CNS, etc. If your company doesn't have these options available, follow the steps below to configure SSL VPN-Plus with the suggested settings, so that you can provide secure access to your environment.
+You have this new CenturyLink Private Cloud on VMware Cloud Foundation™ environment, but how do you securely connect to your servers? Some customers have the option of using a site-to-site VPN tunnel, MPLS, Cloud Network Service, etc. If your company doesn't have these options available, follow the steps below to configure SSL VPN-Plus with the suggested settings, so that you can provide secure access to your environment.
 
 Once you are done with this configuration, take a look at [How to Securely Connect](how-to-securely-connect.md) for the client portion of this.
 
