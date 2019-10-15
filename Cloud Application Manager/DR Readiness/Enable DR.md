@@ -1,5 +1,4 @@
 {{{
-
   "title": "Enable DR",
 
   "date": "09-26-2019",
@@ -9,7 +8,6 @@
   "attachments": [],
 
   "contentIsHTML": false
-
 }}}
 
 
