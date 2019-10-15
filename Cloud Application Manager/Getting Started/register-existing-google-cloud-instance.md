@@ -1,7 +1,7 @@
 {{{
 "title": "Register an Existing Google Cloud Instance",
 "date": "09-30-2019",
-"author": "Efren Rey",
+"author": "Efren Rey and Guillermo Sanchez",
 "keywords": ["cam", "instances", "register", "google"],
 "attachments": [],
 "contentIsHTML": false
@@ -14,7 +14,7 @@
 * [Prerequisites](#prerequisites)
 * [Find a Google Cloud instance](#find-a-google-cloud-instance)
 * [Register the instance](#register-the-instance)
-* [Install the Agent Installation Script manually](#install-the-agent-installation-script-manually)
+* [Execute the Agent Installation Script manually](#execute-the-agent-installation-script-manually)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
@@ -29,7 +29,7 @@ Users who want to register their *Google Cloud* instances into *Cloud Applicatio
 ### Prerequisites
 
 * A *Google Cloud* machine
-* An active *Cloud Application Manager* account 
+* An active *Cloud Application Manager* account
 * An existing *Google Cloud* account with active instances
 
 ### Find a Google Cloud instance
@@ -49,29 +49,29 @@ Provide any details for the instance in the fields provided.
 ![Register Instance](../../images/cloud-application-manager/register/cam-register-existing-google-cloud-instance-2.png)
 
 The automatic registration process will require reboot the virtual machines, or regenerated in case of an scaling group.
-To avoid that restarts, the *Install Agent Manually* togle can be enabled to install manually the CAM agent.
+To avoid the restart operation, the *Install Agent Manually* toggle can be enabled to install manually the Cloud Application Manager (CAM) agent.
 
 Click **Register** to register the instance.
 
-If *Install Agent Manually* togle was enabled, then an error message is returned because the agent installation script that allows *Cloud Application Manager* to register the instance has not been executed on it yet. You can then proceed to the manual instalation process described below.
+If *Install Agent Manually* toggle was enabled, then an error message is returned because the agent installation script that allows *Cloud Application Manager* to register the instance has not been executed on it yet. You can then proceed to the manual installation process described below to fix the issue.
 
-### Install the Agent Installation Script manually
+### Execute the Agent Installation Script manually
 
-Copy the agent installation script provided in the **Activity** tab in the log details.
+Copy the agent installation script provided under the **Activity** tab, in the log details section of the instance details page. This script is unique for each instance.
 
 ![Copy agent installation script](../../images/cloud-application-manager/register/cam-register-existing-google-cloud-instance-3.png)
 
-Log-in to the instance residing in your *Google Cloud* provider.
+Log-in to the instance residing in your **Google Cloud** provider.
 
 Execute the agent installation script.
 
 ![Execute agent installation script](../../images/cloud-application-manager/register/cam-register-existing-google-cloud-instance-4.png)
 
-Once the script is executed, the instance will be available in *Cloud Application Manager*.
+Once the script is executed, the instance will be available in *Cloud Application Manager* as a registered instance.
 
 ![Cloud Application Manager Available](../../images/cloud-application-manager/register/cam-register-existing-google-cloud-instance-5.png)
 
-You can now use lifecycle application management features on this instance in *Cloud Application Manager*.
+Now you can use application lifecycle management features on this instance from within *Cloud Application Manager*.
 
 ### Contacting Cloud Application Manager Support
 
@@ -82,4 +82,4 @@ For issues related to API calls, send the request body along with details relate
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
 
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
+* Windows: RDP into the instance to locate the log at \ProgramData\ElasticBox\Logs\elasticbox-agent.log
