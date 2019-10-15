@@ -54,13 +54,11 @@ You can learn more about the new offer and view pricing on the [Cloud Load Balan
 
 #### [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/)
 
-##### Cloud Application Manager Platform
-
-###### Spanish and Portuguese supported in new branding styles emails
+##### Spanish and Portuguese supported in new branding styles emails
 
 Following the Cloud Application Manager branding styles update, Cloud Application Manager emails (new user, reset password, sharing notification, etc.) have also been updated. These emails also show our internationalization efforts, so Spanish and Portuguese translations have been added. Users receiving emails from Cloud Application Manager will now find translated versions below the English version.
 
-###### Upgraded VMWare vCloud API support
+##### Upgraded VMWare vCloud API support
 
 Cloud Application Manager has extended vCloud API support to newer versions (v31 and v32) to provide long-term support for current and upcoming releases of VMWare vCloud products. CenturyLink Private Cloud on vCloud Foundation providers will also benefit from this extended support for its current 9.7 version as well as for future product releases.
 
