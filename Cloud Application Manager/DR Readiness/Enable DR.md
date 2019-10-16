@@ -1,26 +1,32 @@
 {{{
   "title": "Enable DR",
-
   "date": "09-26-2019",
-
   "author": "Sharon Wang",
-
   "attachments": [],
-
   "contentIsHTML": false
 }}}
 
+**In this article:**
 
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Enable DR](#enable-dr)
 
-### Requirements
+### Overview <a name="overview"></a>
 
-2. Created a Windows server on CLC as the production server
+This article is meant to assist users of Cloud Application Manager willing to use Disaster Recovery feature, trying to enable Disaster Recovery from CAM portal
 
-3. Already created a node pair
+### Audience <a name="audience"></a>
 
+All users of Cloud Application Manager who wants to use Disaster Recovery feature.
 
+### Prerequisites <a name="prerequisites"></a>
 
-### How to enable DR
+* A production server on CLC 
+* An existing node pair
+
+### Enable DR <a name="enable-dr"></a>
 
 1. Navigate to the production windows server, click on **Enable DR**
 
@@ -37,11 +43,7 @@
 ![image](https://user-images.githubusercontent.com/20582531/65724636-14b5e480-e06e-11e9-959b-c3c258aec9d1.png)
 
 3. Fill in the detailed information of each Provider:
-
- a. Decide the maximum servers to protect
-
- b. Choose where to deploy your Prod node
-
- c. Choose where to deploy your Recovery node
-
- d. Click on Create
+ * Decide the maximum servers to protect
+ * Choose where to deploy your Prod node
+ * Choose where to deploy your Recovery node
+ * Click on Create
