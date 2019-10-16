@@ -6,10 +6,26 @@
   "contentIsHTML": false
 }}}
 
-### Requirements
-2. The production server is protected and 100% synced
+**In this article:**
 
-### Test Failover
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Test Failover](#Test-Failover)
+
+### Overview <a name="overview"></a>
+
+This article is meant to assist users of Cloud Application Manager willing to use Disaster Recovery feature, trying to initiate Test Failover Operation
+
+### Audience <a name="audience"></a>
+
+All users of Cloud Application Manager who wants to use Disaster Recovery feature.
+
+### Prerequisites <a name="prerequisites"></a>
+
+* The production server is protected and 100% synced
+
+### Test Failover <a name="Test-Failover"></a>
 1. Navigate to the production windows server. Make sure BECR is running and you have last checkpoint taken, click on **Test Failover**
 ![image](https://user-images.githubusercontent.com/20582531/65725336-9ce8b980-e06f-11e9-9018-d9edaec3d888.png)
 
