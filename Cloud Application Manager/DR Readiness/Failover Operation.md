@@ -38,3 +38,5 @@ All users of Cloud Application Manager who wants to use Disaster Recovery featur
 ![image](https://user-images.githubusercontent.com/20582531/65725624-5a73ac80-e070-11e9-8fe6-2c04a24c2bb4.png)
 4. Once the Recovery server is deployed, you will be able to see the Failover instance on Instances tab
 ![image](https://user-images.githubusercontent.com/20582531/65725661-6cede600-e070-11e9-9555-b54cbb60eb15.png)
+
+If you have additional questions, please [contact CLoud Application Manager Support](mailto:incident@CenturyLink.com)
