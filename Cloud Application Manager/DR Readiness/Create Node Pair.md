@@ -11,24 +11,24 @@
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
-* [Create a Node Pair](#create-node-pair)
+* [Create a Node Pair](#create-a-node-pair)
 
-### Overview <a name="overview"></a>
+### Overview 
 
 This article is meant to assist users of Cloud Application Manager willing to use Disaster Recovery feature, trying to create new Replication Node Pairs
 
-### Audience <a name="audience"></a>
+### Audience
 
 All users of Cloud Application Manager who wants to use Disaster Recovery feature.
 
-### Prerequisites <a name="prerequisites"></a>
+### Prerequisites
 
 * An active *Cloud Application Manager* account
 * An existing *AWS* account configured in an [*AWS*](../Deploying Anywhere/using-your-aws-account.md) provider.
 * Both CLC and AWS providers are registered
 
  
-### Create a Node Pair <a name="create-node-pair"></a>
+### Create a Node Pair
 1. Click on **Disaster Recovery** on the navigation bar, then click on the button **New** to create a new pair.
 ![image](https://user-images.githubusercontent.com/20582531/65722771-357c3b00-e06a-11e9-9ffd-9b4386eb679c.png)
 
