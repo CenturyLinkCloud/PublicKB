@@ -14,7 +14,7 @@
 * [Prerequisites](#prerequisites)
 * [Enable Disaster Recovery](#Enable-Disaster-Recovery)
 
-### Overview <a name="overview"></a>
+### Overview 
 
 This article is meant to assist users of Cloud Application Manager willing to use Disaster Recovery feature, trying to enable Disaster Recovery Feature for an organization
 
@@ -22,13 +22,13 @@ This article is meant to assist users of Cloud Application Manager willing to us
 
 All users of Cloud Application Manager who wants to use Disaster Recovery feature.
 
-### Prerequisites <a name="prerequisites"></a>
+### Prerequisites
 
 * Access to CAM portal
 * Access to Production provider account (in this case CLC)
 * Access to Recovery provider account (in this case AWS)
 
-### Enable Disaster Recovery <a name="Enable-Disaster-Recovery"></a>
+### Enable Disaster Recovery 
 
 Disaster Recovery Feature is not enaled for the customers by default, please send a request to incident@centurylink.com to enable the feature.
 
