@@ -31,10 +31,6 @@ Upgrades to vCF 3.5 allow customers access to features, such as:
 
 ##### Cloud Application Manager – Disaster Recovery (DR)
 
-One-click DR using CAM
-  - CAM customers can protect their workload from CLC to AWS, CLC to Azure, AWS to Azure or Azure to AWS.
-  - Once the workload is protected, customers are allowed to perform recovery operations like Test-Failover/Failover to recover their workload to the supported clouds.
-
 DR-Readiness feature for MSA
   - DR-Readiness feature allows existing MSA customers to order white glove DR implementation
   - Customers can click on "enable DR" for their MSA-enabled networks from under CAM services.
