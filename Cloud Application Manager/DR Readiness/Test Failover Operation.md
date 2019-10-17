@@ -40,3 +40,5 @@ All users of Cloud Application Manager who wants to use Disaster Recovery featur
 ![image](https://user-images.githubusercontent.com/20582531/65725483-02d54100-e070-11e9-9261-186b0187ea4a.png)
 5. You Can delete the Test Failover clone by simply deleted by Terminating it:
 ![image](https://user-images.githubusercontent.com/20582531/65725517-197b9800-e070-11e9-93c8-40738fc04c1a.png)
+
+If you have additional questions, please [contact CLoud Application Manager Support](mailto:incident@CenturyLink.com)
