@@ -13,20 +13,20 @@
 * [Prerequisites](#prerequisites)
 * [Enable DR](#enable-dr)
 
-### Overview <a name="overview"></a>
+### Overview 
 
 This article is meant to assist users of Cloud Application Manager willing to use Disaster Recovery feature, trying to enable Disaster Recovery from CAM portal
 
-### Audience <a name="audience"></a>
+### Audience 
 
 All users of Cloud Application Manager who wants to use Disaster Recovery feature.
 
-### Prerequisites <a name="prerequisites"></a>
+### Prerequisites 
 
 * A production server on CLC 
 * An existing node pair
 
-### Enable DR <a name="enable-dr"></a>
+### Enable DR 
 
 1. Navigate to the production windows server, click on **Enable DR**
 
