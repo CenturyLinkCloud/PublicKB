@@ -30,17 +30,17 @@ All users of Cloud Application Manager who wants to use Disaster Recovery featur
 
 1. Navigate to the production windows server, click on **Enable DR**
 
-![image](https://user-images.githubusercontent.com/20582531/65724457-ae30c680-e06d-11e9-9ee5-099dca8f5ff4.png)
+![image](../../images/cloud-application-manager/dr-readiness/enable_dr_1.png)
 
 
 
 2. Click on ** Start**
 
-![image](https://user-images.githubusercontent.com/20582531/65724487-bdb00f80-e06d-11e9-8f90-ff22b48eecd8.png)
+![image](../../images/cloud-application-manager/dr-readiness/enable_dr_2.png)
 
 3. Check the box to approve the reboot then click on **Initiate Protection**
 
-![image](https://user-images.githubusercontent.com/20582531/65724636-14b5e480-e06e-11e9-959b-c3c258aec9d1.png)
+![image](../../images/cloud-application-manager/dr-readiness/enable_dr_3.png)
 
 3. Fill in the detailed information of each Provider:
  * Decide the maximum servers to protect
