@@ -1,5 +1,5 @@
 {{{
-  "title": "Getting Started with Managed Active Directory",
+  "title": "Getting Started with Managed Active Directory on CenturyLink Cloud",
   "date": "6-13-2016",
   "author": "Thomas Broadwell",
   "attachments": [],
@@ -29,7 +29,7 @@
 <p><img src="https://t3n.zendesk.com/attachments/token/LJNTQK4qwNc3EPuVAwsA8QaSx/?name=Queue.jpg" alt="Queue.jpg" />
 </p>
 
-<p><strong>Q: How is the CenturyLink Cloud Managed Active Directory priced? </strong>
+<p><strong>Q: How is Managed Active Directory on CenturyLink Cloud priced? </strong>
 </p>
 <p>A: CenturyLink Cloud Managed Active Directory is priced hourly.</p>
 <p><strong>Q: What Versions of Managed Active Directory are supported? </strong>
@@ -42,3 +42,10 @@
 <p><strong>Q: Can *un-managed* Microsoft Active Directory be converted to *Managed* (or vice versa)?</strong>
 </p>
 <p>A: This capability is not available at this time.</p>
+<p><strong>Q: Why can't I order new instances of Managed Microsoft Active Directory from within the CenturyLink Cloud portal?</strong>
+</p>
+<p>A: We have discontinued the consumption of Managed Active Directory from within the CenturyLink Cloud control portal. Existing CenturyLink Cloud users of this service may continue to use provisioned instances, but new customers of Managed Active Directory must consume it as part of <a href="https://www.ctl.io/managed-services-anywhere/">Managed Services Anywhere</a>.</p>
+<p><strong>Q: What if I'm looking for Managed Active Directory on other platforms? </strong>
+</p>
+<p>A: Managed Active Directory is just one of many services available with <a href="https://www.ctl.io/managed-services-anywhere/">Managed Services Anywhere</a>.</p>
+
