@@ -30,22 +30,22 @@ All users of Cloud Application Manager who wants to use Disaster Recovery featur
  
 ### Create a Node Pair
 1. Click on **Disaster Recovery** on the navigation bar, then click on the button **New** to create a new pair.
-![image](../../images/cloud-application-manager/dr-readiness/node_pair_1.png)
+![create_new_pair](../../images/cloud-application-manager/dr-readiness/node_pair_1.png)
 
 2. Click on **Start**
- ![image](../../images/cloud-application-manager/dr-readiness/node_pair_2.png)
+ ![create_new_pair](../../images/cloud-application-manager/dr-readiness/node_pair_2.png)
 3. Fill in the information of the Node Pair:  
  a. Choose an Icon if needed  
  b. Give this Node Pair a name   
  c. Choose Production Provider  
  d. Choose Recovery Provider  
  e. Click on Next  
-![image](../../images/cloud-application-manager/dr-readiness/node_pair_3.png)
+![create_new_pair](../../images/cloud-application-manager/dr-readiness/node_pair_3.png)
 3. Fill in the detailed information of each Provider:  
  a. Decide the maximum servers to protect  
  b. Choose where to deploy your Prod node 
  c. Choose where to deploy your Recovery node  
  d. Click on Create  
-![image](../../images/cloud-application-manager/dr-readiness/node_pair_4.png)
+![create_new_pair](../../images/cloud-application-manager/dr-readiness/node_pair_4.png)
 
 If you have additional questions, please [contact CLoud Application Manager Support](mailto:incident@CenturyLink.com)
