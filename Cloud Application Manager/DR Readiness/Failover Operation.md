@@ -27,7 +27,7 @@ All users of Cloud Application Manager who wants to use Disaster Recovery featur
 
 ### Failover 
 1. Navigate to the production windows server. Make sure BECR is running and you have last checkpoint taken, click on **Test Failover**
-![image](../../images/cloud-application-manager/dr-readiness/failover_1.png)
+![failover](../../images/cloud-application-manager/dr-readiness/failover_1.png)
 3. Fill in the detailed information of Test Failover instance:
  a. Choose a desired checkpoint
  b. Choose the **Instance Type**
@@ -35,8 +35,8 @@ All users of Cloud Application Manager who wants to use Disaster Recovery featur
  d. Choose the **subnet**
  e. Choose a **Security Group**
  e. Click on ** Failover**
-![image](../../images/cloud-application-manager/dr-readiness/failover_2.png)
+![failover](../../images/cloud-application-manager/dr-readiness/failover_2.png)
 4. Once the Recovery server is deployed, you will be able to see the Failover instance on Instances tab
-![image](../../images/cloud-application-manager/dr-readiness/failover_3.png)
+![failover](../../images/cloud-application-manager/dr-readiness/failover_3.png)
 
 If you have additional questions, please [contact CLoud Application Manager Support](mailto:incident@CenturyLink.com)
