@@ -41,7 +41,11 @@ You need a [CenturyLink Cloud account](//www.ctl.io/) to be able to deploy from 
 
 1. In Cloud Application Manager, go to **Providers** > **New Provider** and select **CenturyLink.**
 
-2. Enter the CenturyLink username and password as shown and save.
+2. Enter the CenturyLink username and password as shown
+
+3: Enter a account alias for the CLC sub account you wish to register as or leave empty to use default
+
+4: Save.
 
    ![centurylink-add-provider-credentials-1.png](../../images/cloud-application-manager/centurylink-add-provider-credentials-1.png)
 
