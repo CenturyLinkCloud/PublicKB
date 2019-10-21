@@ -62,6 +62,16 @@ These resources can be filtered by the following types and subtypes:
   * Load Balancer
   * VPN
 
+### CenturyLink Sub-Accounts 
+
+Also after the synchronization process, you will have the list sub-accounts under this provider account located in the provider page in the sub-accounts section.
+
+![CenturyLink Cloud - Sub-Accounts](../../images/cloud-application-manager/deploying-anywhere/centurylink-sub-accounts.png)
+
+You may register a sub account as a provider by selecting the check boxes and using **Bulk Actions** or clicking the down arrow on the right of the sub account.
+
+![CenturyLink Cloud - Sub-Accounts](../../images/cloud-application-manager/deploying-anywhere/centurylink-sub-accounts-register.png)
+
 ### Deploy to CenturyLink Cloud from Cloud Application Manager
 
 Select from the following deployment profile options to launch workloads on Linux or Windows machines.
