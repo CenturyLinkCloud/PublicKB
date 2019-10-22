@@ -1,7 +1,7 @@
 {{{
 "title": "Using CenturyLink Cloud",
-"date": "08-28-2019",
-"author": "Sergio Quintana, and Yongjie Liang",
+"date": "10-22-2019",
+"author": "Sergio Quintana, Yongjie Liang, Zachary McMaster",
 "keywords": ["cam", "cloud application manager", "centurylink", "clc"],
 "attachments": [],
 "contentIsHTML": false
@@ -15,6 +15,7 @@
 * [Prerequisites](#prerequisites)
 * [Register CenturyLink Cloud Provider in Cloud Application Manager](#register-centurylink-cloud-provider-in-cloud-application-manager)
 * [CenturyLink Cloud Native Resources](#centuryLink-cloud-native-resources)
+* [CenturyLink Sub-Accounts] (#centuryLink-sub-accounts)
 * [Deploy to CenturyLink Cloud from Cloud Application Manager](#deploy-to-centurylink-cloud-from-cloud-application-manager)
 * [Enabling services](#enabling-services)
 * [Shutdown and Terminate Instances in CenturyLink Cloud](#shutdown-and-terminate-instances-in-centurylink-cloud)

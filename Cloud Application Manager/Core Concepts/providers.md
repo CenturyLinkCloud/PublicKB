@@ -1,6 +1,6 @@
 {{{
 "title": "Providers",
-"date": "08-01-2019",
+"date": "10-22-2019",
 "author": "Diego Sanjuan, Guillermo Sánchez, Victor Shulman, Zachary McMaster",
 "keywords": ["cam", "alm", "providers", "centuryLink-cloud", "clc", "aws", "azure", "google-cloud", "gcp", "cloudstack", "dimension-data", "openstack", "rackspace", "softlayer", "vcloud", "vmware"],
 "attachments": [],
