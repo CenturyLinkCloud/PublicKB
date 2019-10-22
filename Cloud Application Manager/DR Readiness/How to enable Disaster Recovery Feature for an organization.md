@@ -32,4 +32,4 @@ All users of Cloud Application Manager who wants to use Disaster Recovery featur
 
 Disaster Recovery Feature is not enaled for the customers by default, please send a request to incident@centurylink.com to enable the feature.
 
-If you have additional questions, please [contact CLoud Application Manager Support](mailto:incident@CenturyLink.com)
+If you have additional questions, please [contact Cloud Application Manager Support](mailto:incident@CenturyLink.com)
