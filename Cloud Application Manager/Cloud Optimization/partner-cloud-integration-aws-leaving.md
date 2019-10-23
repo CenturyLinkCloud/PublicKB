@@ -58,6 +58,9 @@ Who do you want to handle removing your member accounts from our AWS organizatio
 If your company, identify any AWS Users needing permissions:
 Do you wish to continue using CAM for ALM?:
 Special Considerations:
+
+Please direct this ticket towards the CAM_CloudIntegration group
+
 ```
 
 **Gain Legal Approval**
