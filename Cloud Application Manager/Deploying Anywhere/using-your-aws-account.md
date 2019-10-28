@@ -345,14 +345,14 @@ The tab *Policy usage* shows you the permissions attached to your policy. Here y
 
    ![AWS Console Policy permissions](../../images/aws-console/aws-console-policies-2.png)
 
-**Note** in the policy detail, the **Policy ARN** id will be used to reference this Policy from Cloud Application Manager.  Copy it by clicking on the copy icon right to the policy ARN value.
+**Note**: the **Role ARN** id will be used to reference this Role from Cloud Application Manager.  Copy the role ARN id to your clipboard to have it available for the next step.
 
 ### Creating a new AWS provider in Cloud Application Manager
 
 Going back to Cloud Application Manager, you must first add your account as a new Provider to Providers list.  
 
 1. Go to **Providers** in the left side menu of Cloud Application Manager
-2. Click on **New** and give a name to your AWS Provider. Then, paste the **ARN id** copied before.
+2. Click on **New** and give a name to your AWS Provider. Then, paste the **Role ARN id** copied before.
 
 ![New AWS Provider role ARN](../../images/cloud-application-manager/aws-deployment-add.png)
  

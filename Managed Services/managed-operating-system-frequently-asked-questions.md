@@ -1,6 +1,6 @@
 ﻿{{{
   "title": "Managed Operating System - Frequently Asked Questions",
-  "date": "08-30-2018",
+  "date": "10-29-2019",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false,
@@ -11,7 +11,7 @@ Here are a few frequently asked questions for our [CenturyLink Cloud Managed Ope
 
 **What is included in the Managed OS service?**
 
-CenturyLink’s Managed OS service helps you spend less time on the IT tasks that don’t contribute immediately to your daily goals. To this end, here are the tasks performed on your behalf with our managed OS service:
+CenturyLink’s Managed OS service helps you spend less time on the IT tasks that don’t contribute immediately to your daily goals. To this end, here are the tasks performed on your behalf with our Managed OS service:
 
 * Vendor Management – CenturyLink maintains ownership and management responsibility for your OS, freeing you from managing OS-level functions, SPLAs and license keys.
 * Access Management – We take responsibility for user policies, administration and password management enforcement.
@@ -40,27 +40,19 @@ Please review the articles dedicated to:
 * [making a new server a managed server](../Managed Services/created-a-managed-server-now-what.md)
 * [converting an existing server to a managed server](../Managed Services/converting-unmanaged-virtual-machines-to-managed.md)
 
+**Why don’t I see an option for Managed OS in the CenturyLink Cloud Control Panel?**
 
-**What if I don’t see an option for Managed OS in the CenturyLink Cloud Control Panel?**
+We have discontinued the consumption of Managed OS from within the CenturyLink Cloud Control Portal. Existing CenturyLink Cloud users of this service may continue to use provisioned instances, but new customers of Managed OS must consume it as part of a [Managed Services Anywhere](//www.ctl.io/managed-services-anywhere/) package.
 
-There could be a few causes:
+**What if I'm looking for Managed OS on other platforms?**
 
-* Be sure you are creating the server in a data center that supports managed services.
-* It is possible your company has not yet executed a Master Services Agreement (MSA) with CenturyLink. To obtain a MSA – or if you believe you should already have one in place – please contact a CenturyLink Sales Representative toll free at:
-
-    * United States: 1-800-871-9244
-    * Canada: 1-877-387-3764
-    * Europe, Middle East &amp; Africa: +44 (0) 118 309 4886
-    * Japan: +81 3 6435 9658
-    * Hong Kong: +852 2190 8798
-    * Singapore: +65 6768 8098
+Managed OS is just one of many services available with [Managed Services Anywhere](//www.ctl.io/managed-services-anywhere/).
 
 **What are the network requirements for making a managed vm?**
 
 In order for the Make Managed blueprint to succeed, the server in question has to be able to connect to an api endpoint, as well as the internal network specific to the Managed Server service in a given datacenter. If the blueprint fails due to an error indicating a network issue, customers should check the firewall settings on the server they want to make managed, making them more permissive to allow the blueprint to complete successfully. You can work with the Managed Services team to have firewall settings configured as desired after a successful conversion.
 
-Additionally, if a customer has a Cloud Network Service (CNS) set up, and the server they would like to make managed is in a vlan that is part of this configuration, we will need to assist with updating the configuration to allow traffic from the management network over this connection. Submit a ticket to help@ctl.io with details of both the blueprint error and the CNS connection and our engineers will be happy to assist.
-
+Additionally, if a customer has a Cloud Network Service set up, and the server they would like to make managed is in a vlan that is part of this configuration, we will need to assist with updating the configuration to allow traffic from the management network over this connection. Submit a ticket to help@ctl.io with details of both the blueprint error and the Cloud Network Service connection and our engineers will be happy to assist.
 
 **Is there anything that I cannot do in the Control Portal with a managed VM?**
 
@@ -70,7 +62,7 @@ A managed server cannot be cloned, archived, or converted to a template. You can
 
 To access your managed VM, you will need your Local Account server name and password, unless you have created a Managed Active Directory Domain or are using a CenturyLink Shared Active Directory Domain.
 
-The Local Account user name is the full server name, and the password credential is available in your CenturyLink Cloud Control Portal using the “<em>click to authenticate</em>” link on the server overview page. **Please note that the user name and password for your Server is not the same user name and password for the Cloud Control Portal.**
+The Local Account user name is the full server name, and the password credential is available in your CenturyLink Cloud Control Portal using the “*click to authenticate*” link on the server overview page. **Please note that the user name and password for your Server is not the same user name and password for the Cloud Control Portal.**
 
 Once you have obtained your password, you may access Windows environments using Remote Desktop and RHEL environments using SSH. For more detailed information about accessing your server for the first time, please see the articles for [Windows Server](managed-windows-server-connecting-to-your-server-with-remote-desktop.md) or [RHEL](managed-red-hat-connecting-to-your-server-with-ssh.md).
 
@@ -83,7 +75,6 @@ If you connect and find that the system disconnects you immediately, you should 
 **How can I have my VM patched?**
 
 An important component of OS administration and management is keeping the system up-to-date. Please see the [patching article](../Managed Services/managed-os-operating-system-patching-and-update-processes.md) for more details.
-
 
 **How can I transfer files to my server using Remote Desktop?**
 
@@ -108,18 +99,17 @@ The CenturyLink Client Service Center is available to assist you with any issues
 * UK: +44.118.322.6100
 * Singapore: +65.6305.8099
 
-
 **How is Managed Support different than Platform Support?**
 
 Your [Platform support](https://www.ctl.io/support/) options are distinct from Managed Support for a variety of reasons. You will find that public, platform support handles issues below the Operating System layer and some form of it is provided, regardless what flavor you choose, regardless what data center you choose. However, Managed Support is provided at your option within specific data centers for specific Operating Systems and Applications on CenturyLink Cloud (as well as other managed hosting products in the broader [CenturyLink Product Catalog](http://www.centurylink.com/business/enterprise/). Different teams with different skills sets are required and different methods are employed by each team.
 
-The contact methods described above will connect you with the Managed Support teams as quickly as possible. If you contact the NOC for an issue regarding a Managed Server that is not related to the platform, you will be politely asked to use the aforementioned contact methods. If you wish to contact the Managed Support team for a platform issue, please review this [support article](../Support/how-do-i-report-a-support-issue.md) for guidance. 
+The contact methods described above will connect you with the Managed Support teams as quickly as possible. If you contact the NOC for an issue regarding a Managed Server that is not related to the platform, you will be politely asked to use the aforementioned contact methods. If you wish to contact the Managed Support team for a platform issue, please review this [support article](../Support/how-do-i-report-a-support-issue.md) for guidance.
 
 **How can I remove Managed Services from a VM?**
 
 Currently, the only way to remove Managed Services from a VM once it has been deployed is to delete the VM and to create a new server that is unmanaged. This process should be followed for managed operating systems as well as for managed applications.
 
-**How can I tell my *managed* VMs from my <em>unmanaged</em> VMs in the CenturyLink Cloud Control portal?**
+**How can I tell my _managed_ VMs from my _unmanaged_ VMs in the CenturyLink Cloud Control portal?**
 
 Managed VMs will be noted with a green CenturyLink logo in front of the server name. This notation is intended to make it easier to locate managed VMs from within a list of all Cloud VMs you have created.
 
@@ -136,9 +126,9 @@ CenturyLink has two shared Managed Active Directory environments, one of which y
 
 **Can I join Managed Servers to my own domain?**
 
-Yes, customers may elect to join a Managed Server to their own domain instead of a CenturyLink Shared Active Directory Domain.  As a pre-requisite to joining Managed Servers to a <em>dedicated</em> customer domain, you must first deploy [Managed Active Directory](getting-started-with-managed-active-directory.md) in the CenturyLink Cloud. 
+Yes, customers may elect to join a Managed Server to their own domain instead of a CenturyLink Shared Active Directory Domain.  As a pre-requisite to joining Managed Servers to a *dedicated* customer domain, you must first deploy [Managed Active Directory](getting-started-with-managed-active-directory.md) in the CenturyLink Cloud.
 
-**Can *un-managed* Servers be converted to *Managed* (or vice versa)?**
+**Can _unmanaged_ Servers be converted to _Managed_ (or vice versa)?**
 
 Servers **can** be converted from unmanaged to managed by executing the "Managed RHEL for CPI" (for Red Hat servers) or "Managed WIN for CPI" (for Windows servers) Blueprints in the library. Customers **cannot** go from a managed server to an unmanaged server.
 

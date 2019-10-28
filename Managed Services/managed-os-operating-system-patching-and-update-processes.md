@@ -1,15 +1,16 @@
 {{{
   "title": "Managed OS - Operating System Patching & Update Processes",
-  "date": "01-04-2018",
+  "date": "10-29-2019",
   "author": "Modified by Gavin Lai",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
+**Note:** CenturyLink has discontinued consumption of Managed OS from within the CenturyLink Cloud Control Portal. Existing CenturyLink Cloud users of this service may continue to use provisioned instances, but new customers of Managed OS must consume it as part of a [Managed Services Anywhere](//www.ctl.io/managed-services-anywhere/) package.
+
 ### Overview
 
 CenturyLink provides reactive and self-service patching to servers with both standard and managed customer operating systems. For managed servers, patches and updates are available upon request to ensure no patches are applied without customer knowledge and consent, effectively reducing risks to application and data integrity. Data and/or reports are available you in different ways, depending on the solution used.
-
 
 ### Group Policies
 
@@ -23,16 +24,15 @@ It is recommended that clients planning to update managed devices work with the 
 
 Whether the process for scheduling patching maintenance actions is initiated by customers or CenturyLink, keeping the system up-to-date is an important component of OS administration and management. This includes discussion of potential impact on specific applications, communication strategies, health checks, suppression of monitoring alerts, and fallback planning.
 
-#### Customer Requesitioned Patching
+#### Customer Requisitioned Patching
 
-As part of our managed cloud service, CenturyLink will work with your designated contact to install patches in agreed-upon maintenance windows.  Please contact the CenturyLink Client Service Center at 1-888-638-6771 and choose menu option 1 to submit your request for a maintenance activity.
+As part of our managed cloud service, CenturyLink will work with your designated contact to install patches in agreed-upon maintenance windows. Please contact the CenturyLink Client Service Center at 1-888-638-6771 and choose menu option 1 to submit your request for a maintenance activity.
 
 Since CenturyLink is often not responsible for the customer’s entire application tier, CenturyLink cannot be responsible for any adverse effects from patches that are installed at the request of the customer.
 
-#### CenturyLink Requesitioned Patching
+#### CenturyLink Requisitioned Patching
 
 This includes keeping the system current with all patches to help prevent security compromises or operational reliability issues. CenturyLink will, from time to time, schedule the installation of system patches as deemed appropriate by our Solution Engineers. We will schedule the installation with you in advance. This will allow both parties to prepare for the patching, as well as provide ample time for discussion.
-
 
 ### Advanced Patching
 
