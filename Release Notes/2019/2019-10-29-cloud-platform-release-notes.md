@@ -17,7 +17,7 @@ Cloud Application Manager now supports CenturyLink Cloud (CLC) subaccounts. A ne
 
 #### [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/)
 
-#### Added support for manual registration in vCloud based provider types
+##### Added support for manual registration in vCloud based provider types
 
 Cloud Application Manager has added the feature to manually register vCloud or CenturyLink Private Cloud on vCloud Foundation compute instances. There is now a toggle when registering an instance to make it automatic, that allows Cloud Application Manager to take care of all the registration process, although this requires a restart of the machine, or to make it manual, that will show a command snippet for the user to manually execute inside the machine for it to be registered without requiring restart.
 
