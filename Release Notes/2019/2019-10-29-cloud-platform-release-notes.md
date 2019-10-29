@@ -9,7 +9,7 @@
 
 ### Announcements (2)
 
-## Cloud Application Manager Platform
+#### [Cloud Application Manager Platform](https://www.ctl.io/cloud-application-manager/)
 
 #### CenturyLink Cloud subaccount support
 
