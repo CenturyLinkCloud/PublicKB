@@ -7,14 +7,13 @@
 "contentIsHTML": false
 }}}
 
-
 ### Announcements (2)
 
 #### [Cloud Application Manager Platform](https://www.ctl.io/cloud-application-manager/)
 
-##### CenturyLink Cloud subaccount support
+##### CenturyLink Cloud sub-accounts support
 
-Cloud Application Manager now supports CenturyLink Cloud (CLC) subaccounts. A new tab with the subaccounts defined per provider has been added in the CLC provider details page. From there you can register the first level of subaccounts as new providers in Cloud Application manager, either individually by clicking on the register icon on each line or in bulk by selecting them and clicking on the register option in the bulk actions dropdown. It is also possible to specify the account alias that needs to be registered when defining a new CLC provider, if the credentials provided have access to that account (either they are defined in that account or in a parent account). 
+Cloud Application Manager now supports CenturyLink Cloud (CLC) sub-accounts. Users will now be able to see sub-accounts of the configured account, under a separate tab within the Provider details. From there, users can register the first level of sub-accounts as new providers in Cloud Application manager, either individually by clicking on the register icon on each line or in bulk by selecting multiple sub-accounts and registering in bulk. With this change, users also have an option to specify the account alias when creating a new CLC provider.
 
 #### [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/)
 
