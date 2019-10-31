@@ -33,6 +33,8 @@ CenturyLink's Relational Database service is a database-as-a-service that provid
     - Storage can be scaled up, but cannot be scaled down through the API or UI.
     - New applicable hourly charges apply after successful resize.
 
+**Note:** All changes to the RDBS instance will be locked until the change operations have completed.
+
 **If you have questions or feedback, please submit them to our team by emailing [rdbs-help@ctl.io][4].**
 
 [1]: https://control.ctl.io

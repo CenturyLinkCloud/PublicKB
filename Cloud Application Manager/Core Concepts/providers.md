@@ -1,7 +1,7 @@
 {{{
 "title": "Providers",
-"date": "08-01-2019",
-"author": "Diego Sanjuan, Guillermo Sánchez, Victor Shulman",
+"date": "10-22-2019",
+"author": "Diego Sanjuan, Guillermo Sánchez, Victor Shulman, Zachary McMaster",
 "keywords": ["cam", "alm", "providers", "centuryLink-cloud", "clc", "aws", "azure", "google-cloud", "gcp", "cloudstack", "dimension-data", "openstack", "rackspace", "softlayer", "vcloud", "vmware"],
 "attachments": [],
 "contentIsHTML": false
@@ -75,6 +75,7 @@ This metadata includes required infrastructure data as follows:
 * Available load balancers and target groups
 * Unregistered native resources are discovered and displayed in the Instances page with some basic information.
 * Unregistered virtual machines and autoscaling groups which are already provisioned in your cloud account in order to allow you to register them if you want to do so. These are listed in Unregistered tab of your provider. Discovery of these unregistered virtual machines can be done atomatically if you selected so in your provider Services tab: [Automatic Discovery of Resources](https://www.ctl.io/knowledge-base/cloud-application-manager/getting-started/register-existing-instance/#discovering-the-unregistered-instances)
+* Sub-Accounts this is a CLC only feature, They are displayed on the provider page under the sub-accounts section.  You may register a sub account as a provider in this section.  If you have no sub accounts please sync the provider
 
 You can request Cloud Application Manager to update provider's metadata clicking on Sync button when needed. i.e. after adding new images or firewall rules in your provider account, you need to synchronize your provider in order to select one of newly added resources.
 

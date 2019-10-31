@@ -13,7 +13,7 @@
   "sticky": false
 }}}
 
-**Managed Backup went End of Sale 6/25/19, all existing subscriptions will still continue to function**
+**Managed Backup went End of Sale 6/25/19. All existing subscriptions will still continue to function**
 
 **You will not be able to add Managed Backup to new servers, but it can be removed from existing servers**
 
@@ -25,17 +25,9 @@ A: Managed Backup makes CenturyLink's backup solution available in the CenturyLi
 
 A: From the Control Portal menu, select “Create Server.” You will then be prompted to select the data center, group membership, and other VM properties. Select a data center that supports Managed Backup (an updated list is [available here](//www.ctl.io/managed-services/backup/)), and then click the “managed server” element to “Yes.” Once this is selected, you will see the option for "managed backup" appear. Set this to yes, and the operating system drop-down menu will then automatically refresh to show available options. Choose your version, and then proceed with the remainder of the server creation process. You may also [review a more detailed walkthrough of enabling (and disabling) Managed Backup on a server](../Managed Services/enabling-and-disabling-managed-backup.md).
 
-**Q: What if I don’t see an option for Managed Backup in the CenturyLink Cloud Control Panel?**
+**Why don’t I see an option for Managed Backup in the CenturyLink Cloud Control Panel?**
 
-A: There could be a few causes:
-* Be sure you are creating the server in a data center that supports the managed backup service (an updated list is [available here](//www.ctl.io/managed-services/backup/)).
-* It is possible your company has not yet executed a Master Services Agreement (MSA) with CenturyLink Technology Solutions. To obtain a MSA – or if you believe you should already have one in place – please contact a CenturyLink Sales Representative toll free at:
-    * United States: 1-888-638-6771
-    * Canada: 1-877-387-3764
-    * Europe, Middle East and Africa: +44 (0) 118 309 4886
-    * Japan: +81 3 5214 0180
-    * Hong Kong: +852 3079 4461
-    * Singapore: +65 6591 8824
+We discontinued consumption from within the CenturyLink Cloud Control Portal when Managed Backup went End of Sale on June 25, 2019. All existing subscriptions will still continue to function, but you cannot add Managed Backup to new servers. It can be removed from existing servers.
 
 **Q: How much does the Managed Backup service cost? Why is the cost not included in the estimates shown in Control Portal?**
 
