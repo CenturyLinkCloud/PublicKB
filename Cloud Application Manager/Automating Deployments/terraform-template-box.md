@@ -1,9 +1,9 @@
 {{{ "title": "Terraform Template Boxes",
-"date": "06-26-2019",
-"author": "Cristina Torres, Amalia Garcia de Mirasierra",
+"date": "11-04-2019",
+"author": "Amalia Garcia de Mirasierra and Guillermo Sanchez",
 "attachments": [],
 "contentIsHTML": false,
-"keywords": ["terraform", "template box", "cloud application manager", "cam", "alm", "application lifecycle management"]
+"keywords": ["terraform", "template box", "cloud application manager", "cam", "alm", "application lifecycle management", "auto-register"]
 }}}
 **In this article:**
 
@@ -11,6 +11,7 @@
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
 * [Create a Terraform Template and apply configuration](#create-a-terraform-template-and-apply-configuration)
+* [Auto-register compute instances into Managed Services Anywhere Enabled Providers](#auto-register-compute-instances-into-managed-services-anywhere-enabled-providers)
 * [Update a Terraform configuration in Real-Time](#update-a-terraform-configuration-in-real-time)
 * [Getting General Support](#getting-general-support)
 
@@ -26,13 +27,13 @@ All users of Cloud Application Manager who wants to define and use Terraform Tem
 
 * An active *Cloud Application Manager* account
 * Having configured a provider of either one of these types:
-  - [AWS](../Deploying Anywhere/using-your-aws-account.md)
-  - [Microsoft Azure](../Deploying Anywhere/using-microsoft-azure.md)
-  - [Google Cloud](../Deploying Anywhere/using-google-cloud.md)
-  - [CenturyLink Cloud](../Deploying Anywhere/using-centurylink-cloud.md)
-  - [CenturyLink Private Cloud on VMware Cloud Foundation](../Deploying Anywhere/using-private-cloud-on-vmware-cloud-foundation.md)
-  - [VMware vCenter/vSphere](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md)
-  - [VMware vCloud Director](../Deploying Anywhere/orchestrating-vcloud-air-vcloud-director-deployments.md)
+  * [AWS](../Deploying Anywhere/using-your-aws-account.md)
+  * [Microsoft Azure](../Deploying Anywhere/using-microsoft-azure.md)
+  * [Google Cloud](../Deploying Anywhere/using-google-cloud.md)
+  * [CenturyLink Cloud](../Deploying Anywhere/using-centurylink-cloud.md)
+  * [CenturyLink Private Cloud on VMware Cloud Foundation](../Deploying Anywhere/using-private-cloud-on-vmware-cloud-foundation.md)
+  * [VMware vCenter/vSphere](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md)
+  * [VMware vCloud Director](../Deploying Anywhere/orchestrating-vcloud-air-vcloud-director-deployments.md)
 
 ### Create a Terraform Template and apply configuration
 
@@ -63,7 +64,6 @@ Cloud Application Manager currently supports Terraform configuration **version 0
     **Note:** When you import from a file or a URL, make sure its content is formatted in Terraform format (HCL or JSON syntax) and follows the Terraform template conventions.
 
     In this walkthrough, we import a [sample Basic Two-Tier Architecture in Google Cloud templates](https://github.com/terraform-providers/terraform-provider-google/tree/2.0.0/examples/two-tier) from a GitHub repository URL. When we save, all the Terraform configuration files from the repository URL are ported over.
-
 
 **Step 2. Author the template**
 
@@ -104,6 +104,12 @@ Cloud Application Manager currently supports Terraform configuration **version 0
         * Variables available on Amazon: `${var.provider_aws_region}`
 
 **Note:** As you’re authoring, it’s important to check that the template is valid. While Cloud Application Manager validates the correctness of format and the template syntax correctness, we can’t know whether resources specified are available in the provider used or whether property values of a resource are valid. For that level of checking, it’s best to test launch the Terraform box instance from Cloud Application Manager and refine the template in real-time.
+
+### Auto-register compute instances into Managed Services Anywhere Enabled Providers
+
+If you are deploying an Terraform template box into a Managed Services Anywhere enabled provider, all the created compute instances (VMs and VM ScaleSets) will be automatically registered and linked with the Terraform instance that deployed them. In these registered instances, not all lifecycle actions will be allowed, since for the rest of them you will need to act on the parent Terraform instance for the dependant linked instances to be updated.
+
+For more information, please refer to [Managed Providers](../Managed Services/getting-started-with-cam-enable-managed-provider.md)
 
 ### Update a Terraform configuration in Real-Time
 

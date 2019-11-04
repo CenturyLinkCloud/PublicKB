@@ -60,13 +60,14 @@ For more information, go to [ARM templates](../Automating Deployments/arm-templa
 ### Deploy Using Terraform Templates
 
 A Terraform Template box allows you to apply a **Terraform version 0.11** configuration consisting of one or many files on the following Providers:
-*  Amazon Web Services
-*  CenturyLink Cloud
-*  CenturyLink Private Cloud on VMware Cloud Foundation
-*  Google Cloud Platform
-*  Microsoft Azure
-*  VMware vCenter/vSphere
-*  VMware vCloud Director
+
+* Amazon Web Services
+* CenturyLink Cloud
+* CenturyLink Private Cloud on VMware Cloud Foundation
+* Google Cloud Platform
+* Microsoft Azure
+* VMware vCenter/vSphere
+* VMware vCloud Director
 
 This feature provides you with the ability to use the power of Cloud Application Manager (instance history, Lifecycle Editor, bindings, box versioning) combined with any service supported by Terraform.
 
