@@ -107,7 +107,11 @@ Cloud Application Manager currently supports Terraform configuration **version 0
 
 ### Auto-register compute instances into Managed Services Anywhere Enabled Providers
 
-If you are deploying an Terraform template box into a Managed Services Anywhere enabled provider, all the created compute instances (VMs and VM ScaleSets) will be automatically registered and linked with the Terraform instance that deployed them. In these registered instances, not all lifecycle actions will be allowed, since for the rest of them you will need to act on the parent Terraform instance for the dependant linked instances to be updated.
+If you are deploying an Terraform template box into a Managed Services Anywhere enabled provider, all the created compute instances (virtual machines, VMs) will be automatically registered and linked with the Terraform instance that deployed them. The vApp containing the VM will also be tagged with any [Cloud Tag](../Administering Your Organization/resource-tags.md) that has been set in the the organization settings.
+
+Please note that for the auto-registration process to complete, a restart of the VM will be performed once it is provisioned.
+
+In the auto-registered instances, not all lifecycle actions will be allowed, since for the rest of them you will need to act on the parent Terraform instance for the dependant linked instances to be updated.
 
 For more information, please refer to [Managed Providers](../Managed Services/getting-started-with-cam-enable-managed-provider.md)
 
@@ -124,6 +128,8 @@ Once live, you can continue to make changes to your Terraform configuration temp
 3. On the instance page, click **Lifecycle Editor**.
 
 4. Update the template configuration files and apply configurations. You can change any section of the Terraform template files or rewrite it entirely. When ready to apply the configuration with Terraform, click **Reconfigure**.
+
+    **Note**: there are some update operations that are destructive in Terraform. For example, changing the customization script of a VM will cause it to be destroyed and re-created when performing the **Reconfigure** operation.
 
 5. (Optional) Push updates back to the Terraform box. When you’re satisfied changing and testing the template files in the instance, you can push it back to the Terraform box as a version. To do this, click **New** under Versions tabs. This allows you or others in the future to choose a version that best suits your deployment.
 

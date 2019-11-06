@@ -162,7 +162,7 @@ If some value of the binding is used in the WordPress box configuration, a text 
 
 Under Variables, click **New** and select the text expression variable type. Enter this connection string: `\{{ autoscalebinding.address }}`
 
-![cloudformationboxes15.png](../../images/cloud-application-manager/template-box/cloudformationboxes15.png)
+![Binding variable value](../../images/cloud-application-manager/template-box/cloudformationboxes15.png)
 
 The expression can contain any string value or variables from templates. It can also contain system variables like instance, username, addresses. In general, follow this syntax: `\{{ binding_name.variable_name }}`
 
