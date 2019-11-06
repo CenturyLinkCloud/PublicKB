@@ -1,9 +1,9 @@
 {{{ "title": "Azure Resource Manager Template Boxes",
-"date": "12-21-2018",
-"author": "Cristina Torres, Amalia Garcia de Mirasierra",
+"date": "11-04-2019",
+"author": "Amalia Garcia de Mirasierra and Guillermo Sanchez",
 "attachments": [],
 "contentIsHTML": false,
-"keywords": ["arm","azure resource manager", "template box", "cloud application manager", "deployment templates", "cam", "alm", "application lifecycle management"]
+"keywords": ["arm","azure resource manager", "template box", "cloud application manager", "deployment templates", "cam", "alm", "application lifecycle management", "auto-register"]
 }}}
 **In this article:**
 
@@ -11,6 +11,7 @@
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
 * [Create an Azure Resource Manager Template and Launch a Stack](#create-an-azure-resource-manager-template-and-launch-a-stack)
+* [Auto-register compute instances into Managed Services Anywhere Enabled Providers](#auto-register-compute-instances-into-managed-services-anywhere-enabled-providers)
 * [Update an Azure Resource Manager Stack in Real-Time](#update-an-azure-resource-manager-stack-in-real-time)
 * [Connect to Other Azure Resource Manager Boxes over Bindings](#connect-to-other-azure-resource-manager-boxes-over-bindings)
 * [Getting Started Guide](#getting-started-guide)
@@ -98,6 +99,12 @@ We use a sample Wordpress template to show how to create and launch a Azure Reso
 
     ![Lifecycle Editor of the ARM Instance](../../images/cloud-application-manager/template-box/armboxes21.png)
 
+### Auto-register compute instances into Managed Services Anywhere Enabled Providers
+
+If you are deploying an ARM template box into a Managed Services Anywhere enabled provider, all the created compute instances (VMs and VM ScaleSets) will be automatically registered and linked with the ARM instance that deployed them. In these registered instances, not all lifecycle actions will be allowed, since for the rest of them you will need to act on the parent ARM instance for the dependant linked instances to be updated.
+
+For more information, please refer to [Managed Providers](../Managed Services/getting-started-with-cam-enable-managed-provider.md)
+
 ### Update an Azure Resource Manager Stack in Real-Time
 
 In the LCE, you can update the template and variables to change your current deployment.
@@ -122,7 +129,7 @@ To illustrate, we create a second Azure Resource Manager box to scale the WordPr
 
 ### Getting Started Guide
 
-This [video tutorial](https://www.ctl.io/guides/cloud-application-manager/using-arm-templates-cloud-application-manager/) with step-by-step instructions will show you how you can use an ARM template to manipulate resources within an existing Microsoft Azure Customer. 
+This [video tutorial](https://www.ctl.io/guides/cloud-application-manager/using-arm-templates-cloud-application-manager/) with step-by-step instructions will show you how you can use an ARM template to manipulate resources within an existing Microsoft Azure Customer.
 
 ### Getting General Support
 
