@@ -1,0 +1,42 @@
+{{{
+"title": "Cloud Platform - Release Notes: November 12, 2019",
+"date": "11-12-2019",
+"author": "Christal Clark",
+"keywords":["centurylink", "cam", "alm", "optimization"],
+"attachments": [],
+"contentIsHTML": false
+}}}
+
+### Enhancements (4)
+
+#### [CenturyLink Private Cloud on VMware Cloud Foundation](https://www.ctl.io/centurylink-private-cloud-on-vmware-cloud-foundation/) (CPC on vCF)
+
+##### Support for multiple clusters
+
+Customers who order multiple CPC on vCF clusters can manage these multiple clusters within a single vCD UI.
+
+##### OPtion for GPU add-on
+
+Customers can order a GPU Add-on option for CPC on vCF new or existing clusters, providing support for VDI, Digital Imaging and High Performance Gaming use cases.
+
+#### [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/)
+
+##### Azure deployment policies search field for size and image dropdowns
+
+Application Lifecycle Management has added a search field to the size and image dropdowns of the Azure deployment policy properties. These two dropdowns have a high number of options, so it was difficult to locate a specific one among all of them. The search field allows the user to filter the displayed options so that it is easier to locate and select the required ones.
+
+Additionally, the size description has been extended with the corresponding CPU and memory values to facilitate the selection of the appropriate one.
+
+##### Notice of Completion: Migration for CenturyLink Cloud Shared Load Balancer Customers to Cloud Load Balancing-as-a-Service
+
+Application Lifecycle Management now supports additional CloudFormation types to be used in CloudFormation template boxes. These additional types are:
+
+* "AWS::Pinpoint::EmailTemplate"
+* "AWS::Pinpoint::PushTemplate"
+* "AWS::Pinpoint::SmsTemplate"
+* "AWS::CodeStarNotifications::NotificationRule"
+* "AWS::MediaConvert::JobTemplate"
+* "AWS::MediaConvert::Preset"
+* "AWS::MediaConvert::Queue"
+
+ Users can now use these new resource types in the template definition of any CloudFormation template box or update any existing template instance to use it.
