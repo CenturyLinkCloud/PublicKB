@@ -31,7 +31,7 @@ Additionally, the size description has been extended with the corresponding CPU 
 
 Application Lifecycle Management now includes the feature to auto-register VM instances that were deployed as part of a Terraform template deployment in a vCloud-based managed provider. Compute instances included into the Terraform template box resources will be automatically registered in Cloud Application Manager and the "make managed" process will be executed on them. This is currently supported for CenturyLink Private Cloud on vCloud Foundation and VMWare vCloud Director provider types.
 
-##### Notice of Completion: Migration for CenturyLink Cloud Shared Load Balancer Customers to Cloud Load Balancing-as-a-Service
+##### New CloudFormation types supported
 
 Application Lifecycle Management now supports additional CloudFormation types to be used in CloudFormation template boxes. These additional types are:
 
