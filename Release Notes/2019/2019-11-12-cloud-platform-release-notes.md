@@ -7,7 +7,7 @@
 "contentIsHTML": false
 }}}
 
-### Enhancements (4)
+### Enhancements (5)
 
 #### [CenturyLink Private Cloud on VMware Cloud Foundation](https://www.ctl.io/centurylink-private-cloud-on-vmware-cloud-foundation/) (CPC on vCF)
 
@@ -15,7 +15,7 @@
 
 Customers who order multiple CPC on vCF clusters can manage these multiple clusters within a single vCD UI.
 
-##### OPtion for GPU add-on
+##### Option for GPU add-on
 
 Customers can order a GPU Add-on option for CPC on vCF new or existing clusters, providing support for VDI, Digital Imaging and High Performance Gaming use cases.
 
@@ -27,7 +27,11 @@ Application Lifecycle Management has added a search field to the size and image 
 
 Additionally, the size description has been extended with the corresponding CPU and memory values to facilitate the selection of the appropriate one.
 
-##### Notice of Completion: Migration for CenturyLink Cloud Shared Load Balancer Customers to Cloud Load Balancing-as-a-Service
+##### Auto-register Terraform VM resources in managed providers
+
+Application Lifecycle Management now includes the feature to auto-register VM instances that were deployed as part of a Terraform template deployment in a vCloud-based managed provider. Compute instances included into the Terraform template box resources will be automatically registered in Cloud Application Manager and the "make managed" process will be executed on them. This is currently supported for CenturyLink Private Cloud on vCloud Foundation and VMWare vCloud Director provider types.
+
+##### New CloudFormation types supported
 
 Application Lifecycle Management now supports additional CloudFormation types to be used in CloudFormation template boxes. These additional types are:
 
