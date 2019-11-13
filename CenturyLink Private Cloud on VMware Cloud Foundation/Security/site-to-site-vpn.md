@@ -20,19 +20,19 @@ This KB article steps through the process to stand up a Site-to-Site VPN between
 * Peer subnets in CIDR format (local networks to be accessible to IPsec VPN on the CLC side)
 
 ### Steps
-* Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment.
+Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment.
 
   ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
-* Once logged in, click __Edges__ in the menu on the left side of the screen, select the Edge Gateway, then click __Configure Services__. A popup will appear.
+Once logged in, click __Edges__ in the menu on the left side of the screen, select the Edge Gateway, then click __Configure Services__. A popup will appear.
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn1.png)
 
-* In the new Edge Gateway Services popup, click on the __VPN__ tab, select __IPsec VPN Sites__, then click the __+__ button to add a new configuration.
+In the new Edge Gateway Services popup, click on the __VPN__ tab, select __IPsec VPN Sites__, then click the __+__ button to add a new configuration.
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn2.png)
 
-* In the __Edit IPsec VPN__ page:
+In the __Edit IPsec VPN__ page:
  - __Enabled:__ (Checked)
  - __Enable perfect forward secrecy (PFS):__ (Checked)
  - __Name:__ (Preferred name)
@@ -54,47 +54,47 @@ This KB article steps through the process to stand up a Site-to-Site VPN between
  - __IKE Responder Only:__ (Default)
  - __Session Type:__ Policy Based Session
 
- Click __KEEP__
+Click __KEEP__
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn3.png)
 
-* In the __IPsec VPN Configuration__ page, click __Save changes__.
+In the __IPsec VPN Configuration__ page, click __Save changes__.
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn4.png)
 
-* In the __IPsec VPN Configuration__ page, click the __Activation Status__ tab, then click the slider to enable the __IPsec VPN Service Status__. Click __Save changes__.
+In the __IPsec VPN Configuration__ page, click the __Activation Status__ tab, then click the slider to enable the __IPsec VPN Service Status__. Click __Save changes__.
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn5.png)
 
-* Login to your CenturyLink Cloud environment.
+Login to your CenturyLink Cloud environment.
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn6.png)
 
-* On the left pane, click __Network__, then select __Site-To-Site VPN__.
+In the left pane, click __Network__, then select __Site-To-Site VPN__.
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn7.png)
 
-* In the __Site-to-Site VPN__ page, click on the __+ site to site vpn__ button.
+In the __Site-to-Site VPN__ page, click on the __+ site to site vpn__ button.
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn8.png)
 
-* In the __Create Site-to-Site VPN__ page, select your __Control Portal Site__, then click on the __add network block__ button.
+In the __Create Site-to-Site VPN__ page, select your __Control Portal Site__, then click on the __add network block__ button.
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn9.png)
 
-* In the __Select Destination Network or Subnet__ page, select your __network, subnet size__ and __starting ip address__, then click __add network block__.
+In the __Select Destination Network or Subnet__ page, select your __network, subnet size__ and __starting ip address__, then click __add network block__.
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn10.png)
 
-* In __Create Site-to-Site VPN__ page, in the __Your Site__ section, enter your __Site Name, Device Type and VPN Peer IPv4 Address__, then click on the __add network block__ button.
+In __Create Site-to-Site VPN__ page, in the __Your Site__ section, enter your __Site Name, Device Type and VPN Peer IPv4 Address__, then click on the __add network block__ button.
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn11.png)
 
-* Upon clicking the __add network block__ button above, a new field appears named __Tunnel Encrypted Subnets__. Enter your local network subnet block (on the CPC on vCF side). Click __next: phase 1__.
+Upon clicking the __add network block__ button above, a new field appears named __Tunnel Encrypted Subnets__. Enter your local network subnet block (on the CPC on vCF side). Click __next: phase 1__.
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn12.png)
 
-* In the __Phase 1 (IKE)__ page, enter as follows:
+In the __Phase 1 (IKE)__ page, enter as follows:
   - __IKE Protocol:__ IKEv1
   - __Protocol Mode:__ Main
   - __Encryption Algorithm:__ AES-256
@@ -105,21 +105,21 @@ This KB article steps through the process to stand up a Site-to-Site VPN between
   - __DPD State:__ On
   - __NAT-T State:__ Default
 
-  Click __next: phase 2__
+Click __next: phase 2__
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn13.png)
 
-* In the __Phase 2 (IPSEC)__ page, enter as follows:
+In the __Phase 2 (IPSEC)__ page, enter as follows:
   - __IPSEC Protocol:__ ESP
   - __Encryption Algorithm:__ AES-256
   - __Hashing Algorithm:__ SHA1 (96)
   - __PFS Enabled:__ On, Group 2
   - __Lifetime Value:__ 1 hour
 
-  Click __finish__
+Click __finish__
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn14.png)
 
-* Once completed, you will be presented with the summary page.
+Once completed, you will be presented with the summary page.
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn15.png)
