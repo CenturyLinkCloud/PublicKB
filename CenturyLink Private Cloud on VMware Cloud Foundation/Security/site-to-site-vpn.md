@@ -18,6 +18,7 @@ This KB article steps through the process to stand up a Site-to-Site VPN between
 * Local Subnets in CIDR format (local networks to be accessible to IPsec VPN on the CPC on vCF side)
 * Peer Endpoint (Public IP for IPsec VPN on the CLC side)
 * Peer subnets in CIDR format (local networks to be accessible to IPsec VPN on the CLC side)
+* Firewall ports IP Protocol ID 50 (ESP), UDP Port 500 (IKE), and UDP Port 4500 are configured on both ends
 
 ### Steps
 Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment.
@@ -28,7 +29,7 @@ Once logged in, click __Edges__ in the menu on the left side of the screen, sele
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn1.png)
 
-In the new Edge Gateway Services popup, click on the __VPN__ tab, select __IPsec VPN Sites__, then click the __+__ button to add a new configuration.
+In the __Edge Gateway__ popup, click on the __VPN__ tab, select __IPsec VPN Sites__, then click the __+__ button to add a new configuration.
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn2.png)
 
