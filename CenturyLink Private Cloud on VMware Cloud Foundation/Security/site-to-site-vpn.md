@@ -78,7 +78,7 @@ In the __Site-to-Site VPN__ page, click on the __+ site to site vpn__ button.
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn8.png)
 
-In the __Create Site-to-Site VPN__ page, select your __Control Portal Site__, then click on the __add network block__ button.
+In the __Create Site-to-Site VPN__ page, select your __Control Portal Site__ (CLC data center), then click on the __add network block__ button.
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn9.png)
 
@@ -123,3 +123,5 @@ Click __finish__
 Once completed, you will be presented with the summary page.
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn15.png)
+
+To test the Site-To-Site VPN, try pinging the gateway of a tunneled subnet of the other side i.e. ping from a VM in CLC on the 10.100.67.0/24 network to the gateway on the CPC on vCF side - 10.23.30.1.
