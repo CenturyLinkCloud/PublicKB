@@ -29,7 +29,7 @@ Additionally, the size description has been extended with the corresponding CPU 
 
 ##### Auto-register Terraform VM resources in managed providers
 
-Application Lifecycle Management now includes the feature to auto-register VM instances that were deployed as part of a Terraform template deployment in a vCloud-based managed provider. Compute instances included into the Terraform template box resources will be automatically registered in Cloud Application Manager and the "make managed" process will be executed on them. This is currently supported for CenturyLink Private Cloud on vCloud Foundation and VMWare vCloud Director provider types.
+Application Lifecycle Management now allows users to auto-register VM instances that were deployed as part of a Terraform template deployment in a vCloud-based managed provider. Compute instances included into the Terraform template box resources will be automatically registered in Cloud Application Manager and if the provider has Managed Services Anywhere (MSA) enabled, those instances will be configured for MSA. This feature is currently supported for CenturyLink Private Cloud on vCloud Foundation and VMWare vCloud Director provider types.
 
 ##### New CloudFormation types supported
 
