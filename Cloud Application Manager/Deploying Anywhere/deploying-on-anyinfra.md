@@ -39,7 +39,6 @@ You can launch boxes on any infrastructure by running the Cloud Application Mana
 
 ![Deploy via my server diagram](../../images/cloud-application-manager/deploy-via-myserver-1.png)
 
-The preferred method to register any infrastructure in CAM, is to register it into a provider, instead of a stand-alone instance. To learn more about registering your servers to a provider, please review the [Using Compute Instances ](./using-compute-instances.md)
 
 ### How to Deploy with the Cloud Application Manager Agent
 
