@@ -29,7 +29,9 @@ All users of Cloud Application Manager who wants to register their stand-alone m
 
 ### Create a Provider
 
-Select **Compute Instances** from the Provider list and give it a name, then click on **Save**
+The preferred method to register any infrastructure in CAM, is to register it into a provider, instead of a stand-alone instance. To learn more about registering your servers as a stand-alone instance, please review the [Deploying Anywhere](./deploying-on-anyinfra.md)
+
+To create a new provider, select **Compute Instances** from the Provider list and give it a name, then click on **Save**
 
 ![centurylink-add-provider.png](../../images/cloud-application-manager/deploying-anywhere/compute-instances/compute_instances_1.png)
 
