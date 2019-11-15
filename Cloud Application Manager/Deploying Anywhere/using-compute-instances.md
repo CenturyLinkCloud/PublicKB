@@ -51,7 +51,7 @@ Once the script is completed, you can see the server registered:
 
 ![register-a-server-5.png](../../images/cloud-application-manager/deploying-anywhere/compute-instances/compute_instances_6.png)
 
-To learn more about Cloud application manager Self Register Instances, please review the [Self Register Instances](../GettingStarted/self-register-instances.md/orchestrating-vcloud-air-vcloud-director-deployments.md)
+To learn more about Cloud application manager Self Register Instances, please review the [Self Register Instances](../Getting%20Started/self-register-instances.md)
 
 ### Contacting Cloud Application Manager Support
 
