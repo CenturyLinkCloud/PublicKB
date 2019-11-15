@@ -100,21 +100,21 @@ Cloud Application Manager integrates with many popular clouds. Here is a full li
 
 | Clouds                                                                                                                | Enterprise <br> (Saas) | Enterprise <br> (Appliance) |
 | --------------------------------------------------------------------------------------------------------------------- | :--------------------: | :-------------------------: |
-| [CenturyLink Cloud](../Deploying Anywhere/using-centurylink-cloud.md)                                               | ✓                      | ✓                           |
-| [CenturyLink DCC](../Deploying Anywhere/using-dcc.md)                                                               | ✓                      | ✓                           |
-| [CenturyLink Private Cloud on VMware Cloud Foundation](../../CenturyLink Private Cloud on VMware Cloud Foundation/General/#1) | ✓                      | ✓                           |
-| [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md)                                              | ✓                      | ✓                           |
-| Amazon Web Services GovCloud (Same documentation as [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md)) | ✓              | ✓                           |
-| [CloudStack](../Deploying Anywhere/using-cloudstack.md)                                                             | ✓                      | ✓                           |
+| [CenturyLink Cloud](../Deploying%20Anywhere/using-centurylink-cloud.md)                                               | ✓                      | ✓                           |
+| [CenturyLink DCC](../Deploying%20Anywhere/using-dcc.md)                                                               | ✓                      | ✓                           |
+| [CenturyLink Private Cloud on VMware Cloud Foundation](../../Deploying%20Anywhere/using-private-cloud-on-vmware-cloud-foundation.md) | ✓                      | ✓                           |
+| [Amazon Web Services](../Deploying%20Anywhere/using-your-aws-account.md)                                              | ✓                      | ✓                           |
+| Amazon Web Services GovCloud (Same documentation as [Amazon Web Services](../Deploying%20Anywhere/using-your-aws-account.md)) | ✓              | ✓                           |
+| [CloudStack](../Deploying%20Anywhere/using-cloudstack.md)                                                             | ✓                      | ✓                           |
 | Dimension Data                                                                                                      | ✓                      | ✓                           |
-| [Google Cloud](../Deploying Anywhere/using-google-cloud.md)                                                         | ✓                      | ✓                           |
-| [Microsoft Azure](../Deploying Anywhere/using-microsoft-azure.md)                                                             | ✓                      | ✓                           |
-| [OpenStack Cloud](../Deploying Anywhere/using-openstack-cloud.md)                                                   | ✓                      | ✓                           |
-| [Rackspace Cloud](../Deploying Anywhere/using-rackspace-cloud.md)                                                   | ✓                      | ✓                           |
-| [SoftLayer](../Deploying Anywhere/using-softlayer.md)                                                               | ✓                      | ✓                           |
-| [vCloud Air and vCloud Director](../Deploying Anywhere/orchestrating-vcloud-air-vcloud-director-deployments.md)     | ✓                      | ✓                           |
-| [VMware vCenter](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md)                              | ✓                      | ✓                           |
-
+| [Google Cloud](../Deploying%20Anywhere/using-google-cloud.md)                                                         | ✓                      | ✓                           |
+| [Microsoft Azure](../Deploying%20Anywhere/using-microsoft-azure.md)                                                             | ✓                      | ✓                           |
+| [OpenStack Cloud](../Deploying%20Anywhere/using-openstack-cloud.md)                                                   | ✓                      | ✓                           |
+| [Rackspace Cloud](../Deploying%20Anywhere/using-rackspace-cloud.md)                                                   | ✓                      | ✓                           |
+| [SoftLayer](../Deploying%20Anywhere/using-softlayer.md)                                                               | ✓                      | ✓                           |
+| [vCloud Air and vCloud Director](../Deploying%20Anywhere/orchestrating-vcloud-air-vcloud-director-deployments.md)     | ✓                      | ✓                           |
+| [VMware vCenter](../Deploying%20Anywhere/using-the-vmware-vcenter-private-datacenter.md)                              | ✓                      | ✓                           |
+| [Compute Instances](../Deploying%20Anywhere/using-compute-instances.md)                                                               | ✓                      | ✓                           |
 ### Exporting the List of Providers
 
 Near the top right of the screen, there is a button: **Detail Export**.
