@@ -51,6 +51,8 @@ New AWS Accounts will automatically be Optimized.
 
 * **Reserved Instances**
   * Customers may contact CenturyLink if they wish to have their Reserved Instance limit increased.
+  
+* **Cost Allocation Tags** Some features of CAM's Analytics tool rely upon cost allocation tags. As the reseller, CenturyLink is responsible for cost allocation tag approval. Please submit a support ticket with a list of the proposed tag keys which you need to have approved. When they are activated it will take up to 24 hours for AWS to begin writing the tags to the billing files. AWS will not retroactively populate data into billing tables, so please submit this ticket as soon as possible. 
 
 ### Steps
 
