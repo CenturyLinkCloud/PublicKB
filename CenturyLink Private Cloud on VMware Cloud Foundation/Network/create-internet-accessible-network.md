@@ -25,89 +25,88 @@ Click __Datacenters__ from the menu dropdown. Select your Datacenter. Select __N
 
   ![Network](../../images/dccf/network1.png)
 
-In the New Organization VDC Network page:
+In the __New Organization VDC Network__ page:
 
-1. Network Type: Select Routed and click NEXT
+__Network Type:__ Select Routed and click __NEXT__
 
-    ![Network](../../images/dccf/network2.png)
+  ![Network](../../images/dccf/network2.png)
 
-2. General:
-  * Name: Enter your network name
-  * Gateway CIDR: (i.e. 10.20.30.1/24)
-  * Description: Optional
-  * Shared: Default setting
-  * Click NEXT
+__General:__
+  * __Name:__ Enter your network name
+  * __Gateway CIDR:__ (i.e. 10.20.30.1/24)
+  * __Description:__ Optional
+  * __Shared:__ Default setting
+  * Click __NEXT__
 
-    ![Network](../../images/dccf/network3.png)
+  ![Network](../../images/dccf/network3.png)
 
-3. Edge Connection:
+__Edge Connection:__
   * Select your Edge
-  * Interface Type: Select Distributed
-  * Guest VLAN Allowed: Keep default selection
-  * Click NEXT
+  * __Interface Type:__ Select Distributed
+  * __Guest VLAN Allowed:__ Keep default selection
+  * Click __NEXT__
 
-    ![Network](../../images/dccf/network4.png)
+  ![Network](../../images/dccf/network4.png)
 
-4. Static IP Pools:
+__Static IP Pools:__
   * Enter an IP range (i.e. 10.20.30.50-10.20.30.200)
-  * Click ADD
-  * Click NEXT
+  * Click __ADD__
+  * Click __NEXT__
 
-    ![Network](../../images/dccf/network5.png)
+  ![Network](../../images/dccf/network5.png)
 
-5. DNS
-  * Primary DNS: (i.e. 8.8.8.8)
-  * Secondary DNS: (i.e. 8.8.4.4)
-  * DNS suffix: As needed
-  * Click NEXT
+__DNS:__
+  * __Primary DNS:__ (i.e. 8.8.8.8)
+  * __Secondary DNS:__ (i.e. 8.8.4.4)
+  * __DNS suffix:__ As needed
+  * Click __NEXT__
 
-    ![Network](../../images/dccf/network6.png)
+  ![Network](../../images/dccf/network6.png)
 
-6. Ready to Complete
-  * Review your selections and click FINISH
+__Ready to Complete:__
+  * Review your selections and click __FINISH__
 
-    ![Network](../../images/dccf/network7.png)
+  ![Network](../../images/dccf/network7.png)
 
 ##### Create the Firewall Rule to allow Outbound Internet Access for the Network
 
-* In vCloud Director, under Networking, click Edges, select your Edge (siteID-edge-0) and click CONFIGURE SERVICES
+In vCloud Director, under __Networking__, click __Edges__, select your Edge (siteID-edge-0) and click __CONFIGURE SERVICES__
 
   ![Network](../../images/dccf/network8.png)
 
-* In the Edge Gateway - siteID-edge-0 page, ensure Firewall is selected, then click + to add a New Rule
+In the Edge Gateway - siteID-edge-0 page, ensure __Firewall__ is selected, then click + to add a New Rule
 
   ![Network](../../images/dccf/network9.png)
 
-* Enter the following for the New Rule:
+Enter the following for the New Rule:
 
-  * Name: Outbound 10.20.30.0 network
-  * Type: User (by default)
-  * Source: Click IP, enter 10.20.30.0/24 and click KEEP
+  * __Name:__ Outbound 10.20.30.0 network
+  * __Type:__ User (by default)
+  * __Source:__ Click IP, enter 10.20.30.0/24 and click KEEP
 
-    ![Network](../../images/dccf/network10.png)
+  ![Network](../../images/dccf/network10.png)
 
-  * Destination: Any (by default) - varies by requirements
-  * Service: Any (by default) - varies by requirements
-  * Action: Accept
-  * Enable logging: Unchecked (by default) - varies by requirements
-  * Click Save changes
+  * __Destination:__ Any (by default) - varies by requirements
+  * __Service:__ Any (by default) - varies by requirements
+  * __Action:__ Accept
+  * __Enable logging:__ Unchecked (by default) - varies by requirements
+  * Click __Save changes__
 
-    ![Network](../../images/dccf/network11.png)
-
+  ![Network](../../images/dccf/network11.png)
 
 ##### Create a Source NAT Rule to allow Outbound Internet Access for the Network
 
-* In the Edge Gateway - siteID-edge-0 page, click NAT, then click + SNAT RULE (under NAT 44 Rules)
+In the Edge Gateway - siteID-edge-0 page, click __NAT__, then click __+ SNAT RULE__ (under NAT 44 Rules)
 
   __Note:__ You will need to make a note of the Public IP that is listed under Translated in order to create this SNAT rule.
 
   ![Network](../../images/dccf/network12.png)
 
-* Enter the following for the New Rule:
+Enter the following for the New Rule:
 
-  * Applied On: Public-1
-  * Original Source IP/Range: 10.20.30.0/24
-  * Translated Source IP/Range: This is the Public IP you recorded from the note above
-  * Click KEEP
+  * __Applied On:__ Public-1
+  * __Original Source IP/Range:__ 10.20.30.0/24
+  * __Translated Source IP/Range:__ This is the Public IP you recorded from the note above
+  * Click __KEEP__
 
-    ![Network](../../images/dccf/network13.png)
+  ![Network](../../images/dccf/network13.png)

@@ -1,7 +1,7 @@
 {{{
 "title": "Using CenturyLink Cloud",
-"date": "08-28-2019",
-"author": "Sergio Quintana, and Yongjie Liang",
+"date": "10-22-2019",
+"author": "Sergio Quintana, Yongjie Liang, Zachary McMaster",
 "keywords": ["cam", "cloud application manager", "centurylink", "clc"],
 "attachments": [],
 "contentIsHTML": false
@@ -15,6 +15,7 @@
 * [Prerequisites](#prerequisites)
 * [Register CenturyLink Cloud Provider in Cloud Application Manager](#register-centurylink-cloud-provider-in-cloud-application-manager)
 * [CenturyLink Cloud Native Resources](#centuryLink-cloud-native-resources)
+* [CenturyLink Sub-Accounts](#centuryLink-sub-accounts)
 * [Deploy to CenturyLink Cloud from Cloud Application Manager](#deploy-to-centurylink-cloud-from-cloud-application-manager)
 * [Enabling services](#enabling-services)
 * [Shutdown and Terminate Instances in CenturyLink Cloud](#shutdown-and-terminate-instances-in-centurylink-cloud)
@@ -41,7 +42,11 @@ You need a [CenturyLink Cloud account](//www.ctl.io/) to be able to deploy from 
 
 1. In Cloud Application Manager, go to **Providers** > **New Provider** and select **CenturyLink.**
 
-2. Enter the CenturyLink username and password as shown and save.
+2. Enter the CenturyLink username and password as shown
+
+3. Enter a account alias for the CLC sub account you wish to register as or leave empty to use default
+
+4. Save
 
    ![centurylink-add-provider-credentials-1.png](../../images/cloud-application-manager/centurylink-add-provider-credentials-1.png)
 
@@ -61,6 +66,16 @@ These resources can be filtered by the following types and subtypes:
   * Virtual Network
   * Load Balancer
   * VPN
+
+### CenturyLink Sub-Accounts 
+
+Also after the synchronization process, you will have the list sub-accounts under this provider account located in the provider page in the sub-accounts section.
+
+![CenturyLink Cloud - Sub-Accounts](../../images/cloud-application-manager/deploying-anywhere/centurylink-sub-accounts.png)
+
+You may register a sub account as a provider by selecting the check boxes and using **Bulk Actions** or clicking the down arrow on the right of the sub account.
+
+![CenturyLink Cloud - Sub-Accounts](../../images/cloud-application-manager/deploying-anywhere/centurylink-sub-accounts-register.png)
 
 ### Deploy to CenturyLink Cloud from Cloud Application Manager
 

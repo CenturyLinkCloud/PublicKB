@@ -43,7 +43,7 @@ If you have CLC Private IPs in the source traffic restriction list and traffic i
 #### Question: Should I use Hairpin NAT?
 **Answer:** CenturyLink Cloud recommends that the internal IP address should be used as it will take a more optimal path and not need to be processed by the edge network infrastructure.  Typically a DNS server internal to your account can be used to reference the internal CLC address.
 
-#### Question: Do I need to include IPs from my Site to Site IPSec VPN, CNS or NetX link in the public IPs source traffic restriction list?
+#### Question: Do I need to include IPs from my Site-to-Site IPSec VPN, Cloud Network Service or Network Exchange link in the public IPs source traffic restriction list?
 
 **Answer:** No. There is no path/route on those links to a server's public IP.  All communications over these types of links are to the private address of the VM.
 
