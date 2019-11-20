@@ -79,3 +79,8 @@ Below, each action available in the Control Portal is explained and demonstrated
    * To delete the user from the grantee list, click the red **x** to the right of the record.
    * Changes made to a bucket are instantly committed. For instance, if you add **All Users** with read permissions, then the buckets (and contained objects) are immediately available to anyone.
    * Likewise, if you use a 3rd party tool to manage Object Storage, changes to the grantee list are instantly visible in the Control Portal.
+
+#### Delete Object storage buckets
+1. Ensure the bucket is empty (required for deletion).
+2. Select the bucket and click the red "delete" button in the upper right corner.
+
