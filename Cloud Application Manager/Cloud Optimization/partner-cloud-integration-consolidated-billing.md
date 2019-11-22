@@ -1,6 +1,6 @@
 {{{
   "title": "Partner Cloud: Consolidated Billing",
-  "date": "07-12-2018",
+  "date": "11-20-2019",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
@@ -8,9 +8,10 @@
 
 ### Overview
 
-Cloud Optimization offers consolidated billing to make payments easy. Standard Consolidated billing includes usage discounts and simplified invoices.
+Cloud Optimization and Analytics offers consolidated billing to make payments easy. Standard Consolidated billing is simplified, compared to vendor invoices, and can offer efficiency rebates.
 
-If you require more detail into your billing, that is also offered with [Analytics](../Analytics/CloudApplicationManagerAnalyticsUI.md)
+
+If you require detail into your usage before the invoice is available, that is offered with [Analytics](../Analytics/CloudApplicationManagerAnalyticsUI.md)
 
 ### Audience
 
@@ -27,18 +28,18 @@ All of our customers are invited to use Cloud Optimization via Cloud Application
 
 When a customer migrates an existing AWS account to CenturyLink, the customer will receive 2 bills for the first month.
 
-The customer will still receive a bill from AWS for the month that the customer was migrated. AWS will send a bill that cover the usage from the beginning of the month to the time that the account was transferred to CenturyLink. CenturyLink will send a bill from the time the account was transferred till the end of the month.
+The customer will still receive a bill from AWS for the month that the customer was migrated. AWS will send a bill that covers the usage from the beginning of the month to the time that the account was transferred to CenturyLink. CenturyLink will send a bill from the time the account was transferred till the end of the month.
 
-For tax purposes, CenturyLink defines most services either as IaaS or SaaS.
+For competitive pricing and tax purposes, CenturyLink defines most services either as IaaS or SaaS.
 
 The patterns of estimates and billing are currently as follows:
 
-Pattern | Description | Timing | Retrieved Data | Availability
+Pattern | Description | Timing | Retrieved Data | Status
 --- | --- | --- | --- | ---
-Daily Updates | Once per day, CenturyLink provides an updated estimate for all aggregated usage via Cloud Application Manager | The updates occur approximately 3pm UTC (10am Central) | AWS: All data available since the last update; Azure: All data from one day ago, 5am UTC to 4:59 UTC (12:00am to 11:59 Central). | These updates are made for Optimized Amazon Web Services and Optimized Microsoft Azure accounts.
-Monthly Usage | On the last day of the month, CenturyLink will take the most updated estimate from the vendor for your Optimized accounts and apply that to your CenturyLink invoice. This will, by necessity, exclude a few hours of the month's usage. | The last update will occur at approximately 3pm UTC (10am Central). Your CenturyLink invoice is normally available on the first day of the new month. | AWS: All data available since the last update; Azure: All data from one day ago, 5am UTC to 4:59 UTC (12:00am to 11:59 Central).   | These updates are made for Optimized Amazon Web Services accounts and Optimized Microsoft Azure accounts.
-Reconciliation Usage | Reconciliation charges account for any difference between what CenturyLink charged in monthly usage and what our partners show on finalized invoices. | Reconciliation charges appear on CenturyLink invoices one month in arrears.  | All usage and fees from the previous month are considered in our calculations. |These updates are made for Optimized Amazon Web Services accounts and Optimized Microsoft Azure accounts.
-Arrears Usage | Instead of basing invoices off of estimates and reconciling one month later, CenturyLink waits until the vendor's invoice has been finalized before collecting the usage data and providing an invoice.  | Your entire month's usage will be will be billed one month in arrears |  All usage and fees from the previous month are considered in our calculations.  | No partners, currently
+Arrears Usage | Instead of basing invoices off of estimates and reconciling one month later, CenturyLink waits until the vendor's invoice has been finalized before collecting the usage data and providing an invoice.  | Your entire month's usage will be will be billed two months in arrears |  All usage and fees from the previous month are considered in our calculations.  | Usage from 11/1/2019 onward 
+Monthly Usage | On the last day of the month, CenturyLink will take the most updated estimate from the vendor for your Optimized accounts and apply that to your CenturyLink invoice. This will, by necessity, exclude a few hours of the month's usage. | The last update will occur at approximately 3pm UTC (10am Central). Your CenturyLink invoice is normally available on the first day of the new month. | AWS: All data available since the last update; Azure: All data from one day ago, 5am UTC to 4:59 UTC (12:00am to 11:59 Central).   | Standard until 11/1/2019
+Reconciliation Usage | Reconciliation charges account for any difference between what CenturyLink charged in monthly usage and what our partners show on finalized invoices. | Reconciliation charges appear on CenturyLink invoices one month in arrears.  | All usage and fees from the previous month are considered in our calculations. | Standard until 11/1/2019
+
 
 **Understanding Optimization Charges on Your Invoice**
 
@@ -48,8 +49,7 @@ More complete information about your Cloud Application Manager invoice should be
 
 Your aggregated charges for all the services from any of your Cloud Optimized accounts  will appear as Cloud Application Manager line items, labeled as the following.
 
-**Monthly Usage**
-
+**Arrears Usage**
 *AWS*
 * Integrated AWS Services IaaS
 * Integrated AWS Services SaaS
@@ -63,6 +63,10 @@ Your aggregated charges for all the services from any of your Cloud Optimized ac
 * Integrated Microsoft Azure Services IaaS
 * Integrated Microsoft Azure Services SaaS
 
+
+**Monthly Usage**
+
+This will appear the same as arrears, but the entirity of the month's usage will not be shown.
 
 **Reconciliation**
 
