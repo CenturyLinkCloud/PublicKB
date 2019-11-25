@@ -104,7 +104,7 @@ Cloud Application Manager integrates with many popular clouds. Here is a full li
 | [SoftLayer](../Deploying Anywhere/using-softlayer.md)                                                               | ✓                      | ✓                           |
 | [vCloud Air and vCloud Director](../Deploying Anywhere/orchestrating-vcloud-air-vcloud-director-deployments.md)     | ✓                      | ✓                           |
 | [VMware vCenter](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md)                              | ✓                      | ✓                           |
-| [Compute Instances](../Deploying Anywhere/using-compute-instances.md)                                                               | ✓                      | ✓                           |
+
 ### Exporting the List of Providers
 
 Near the top right of the screen, there is a button: **Detail Export**.
