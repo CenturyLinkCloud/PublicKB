@@ -38,7 +38,7 @@ To create a new provider, select **Compute Instances** from the Provider list an
 **Note**: Unlike other provider types, this one does not require any synchronization process and it does not support deployment policies either, since there is no direct deployment support on it.
 
 ### Register a Server
-You can launch boxes on any infrastructure by running the Cloud Application Manager agent. The agent is required to execute box variables and scripts and run lifecycle operations. Once the provider is created, users can register VMs or physical machines to this Provider by clicking **Self-Register Scripts**
+You can launch boxes on any infrastructure by running the Cloud Application Manager agent. The agent is required to execute scripts, manage box variables and run lifecycle operations. Once the provider is created, users can register VMs or physical machines to this Provider by using the code snippet provided by clicking **Self-Register Scripts**
 
 ![register-a-server-1.png](../../images/cloud-application-manager/deploying-anywhere/compute-instances/compute_instances_2.png)
 
