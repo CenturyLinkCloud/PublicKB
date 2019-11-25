@@ -1,3 +1,5 @@
+{{{
+"title": "Using Compute Instances",
 "date": "11-05-2019",
 "author": "Sharon Wang",
 "attachments": [],
@@ -26,7 +28,6 @@ All users of Cloud Application Manager who wants to register their stand-alone m
 * An active **Cloud Application Manager** account
 * Any infrastructure capable of running Cloud Application Manager Agent.
 
-
 ### Create a Provider
 
 The preferred method to register any infrastructure in CAM, is to register it into a provider, instead of a stand-alone instance. To learn more about registering your servers as a stand-alone instance, please review the [Deploying Anywhere](./deploying-on-anyinfra.md)
@@ -45,15 +46,17 @@ You can launch boxes on any infrastructure by running the Cloud Application Mana
 There are 2 scripts for Windows and Linux OS. In this article, we use Windows server as an example:
 ![register-a-server-2.png](../../images/cloud-application-manager/deploying-anywhere/compute-instances/compute_instances_3.png)
 
+**Note**: If the proxy is specified, the snippet with be updated dynamically with its values to allow the machine to contact back to Cloud Application Manager.
+
 Copy the script and run on the Windows server we have on CLC to trigger the self-register process:
 ![register-a-server-3.png](../../images/cloud-application-manager/deploying-anywhere/compute-instances/compute_instances_4.png)
 
-Once the script is completed, you can see the server registered:
+The provider activity log will show an activity when an instance is asking to be registered in the provider. Once the script is completed, you can see the server registered:
 ![register-a-server-4.png](../../images/cloud-application-manager/deploying-anywhere/compute-instances/compute_instances_5.png)
 
 ![register-a-server-5.png](../../images/cloud-application-manager/deploying-anywhere/compute-instances/compute_instances_6.png)
 
-To learn more about Cloud application manager Self Register Instances, please review the [Self Register Instances](../Getting%20Started/self-register-instances.md)
+To learn more about Cloud application manager Self Register Instances, please review the [Self Register Instances](../Getting Started/self-register-instances.md)
 
 ### Contacting Cloud Application Manager Support
 
