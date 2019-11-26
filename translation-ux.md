@@ -1,6 +1,6 @@
 {{{
 "title": "Site Translation Scope",
-"date": "111-26-2019",
+"date": "11-26-2019",
 "author": " ",
 "attachments": [],
 "related-products" : [],
