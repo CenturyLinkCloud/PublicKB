@@ -1,6 +1,6 @@
 {{{
 "title": "Site Translation Scope",
-"date": "12-03-2019",
+"date": "111-26-2019",
 "author": " ",
 "attachments": [],
 "related-products" : [],
@@ -27,7 +27,7 @@ Answer: Translations on this website are a work in progress. Articles and pages 
 
 ### Français
 
-**Question : Lorsque je sélectionne la langue de mon choix dans la liste déroulante, seul le contenu de ce site m’est présenté dans la langue de mon choix. Pourquoi donc? Est-ce un bug?**
+**Question: Lorsque je sélectionne la langue de mon choix dans la liste déroulante, seul le contenu de ce site m’est présenté dans la langue de mon choix. Pourquoi donc? Est-ce un bug?**
 
 Réponse: Les traductions sur ce site sont un travail en cours. Les articles et les pages ne sont traduits que lorsqu'un besoin spécifique est identifié, tel que le lancement d'un certain produit dans une nouvelle région. Par conséquent, si vous sélectionnez une langue autre que l'anglais dans le menu déroulant, vous ne pourrez afficher qu'une partie du contenu du site dans la langue de votre choix. Nous comprenons que cela peut causer une certaine confusion et nous nous en excusons. Notre portefeuille de produits et leur disponibilité changent constamment, et nous faisons de notre mieux pour que tout reste à jour. Si vous avez des questions sur les produits et services disponibles dans votre région, vous pouvez contacter directement votre représentant CenturyLink.
 
