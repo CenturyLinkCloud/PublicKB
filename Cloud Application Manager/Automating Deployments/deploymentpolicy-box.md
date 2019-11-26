@@ -60,6 +60,7 @@ Customize policies to support specific deployment scenarios. For example, you ma
     * [CenturyLink Cloud](../Deploying Anywhere/using-centurylink-cloud.md)
     * [CenturyLink DCC](../Deploying Anywhere/using-dcc.md)
     * [CenturyLink Private Cloud on VMware Cloud Foundation](../Deploying Anywhere/using-private-cloud-on-vmware-cloud-foundation.md)
+    * [CenturyLink DEC3](../Deploying Anywhere/using-centurylink-dec3.md)
     * [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md)
     * Amazon Web Services GovCloud (Same documentation as [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md))
     * [CloudStack](../Deploying Anywhere/using-cloudstack.md)
