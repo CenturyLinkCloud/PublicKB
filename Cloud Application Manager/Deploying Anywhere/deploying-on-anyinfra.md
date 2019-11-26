@@ -35,6 +35,8 @@ Cloud Application Manager users willing to register any infrastructure into it.
 
 ### Bring your own infrastructure
 
+The preferred method to register any infrastructure in CAM, is to register it into a provider, instead of a stand-alone instance. To learn more about registering your servers into a compute instances provider, please review the [Using Compute Instances](./using-compute-instances.md) article.
+
 You can launch boxes on any infrastructure by running the Cloud Application Manager agent. The agent is required to execute box variables and scripts and run lifecycle operations. To install the agent, you run a Bash command. The infrastructure can be a virtual machine in your laptop, physical machines on premise, a datacenter, or any cloud provider environment. We support running it on Linux distributions Debian 6 and 7, Ubuntu 12.04 and 14.04, RedHat 6.x, CentOS 6.x, and any AWS Linux AMI. No matter where you choose to deploy, boxes launch consistently as they would on any cloud provider.
 
 ![Deploy via my server diagram](../../images/cloud-application-manager/deploy-via-myserver-1.png)
