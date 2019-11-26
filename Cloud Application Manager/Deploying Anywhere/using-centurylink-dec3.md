@@ -67,7 +67,7 @@ Edit the deployment policy to set the following parameters for deploying to Cent
 
 | Option | Description |
 |--------|-------------|
-| Catalog Item | Select the template from the catalog to be used for deployment. VMs imported as OVFs then uploaded as templates are also listed. |
+| Catalog Item | Select the template from the catalog to be used for deployment. |
 | Instances | Specify the number of instances to spawn from the same template. |
 
 #### Compute
