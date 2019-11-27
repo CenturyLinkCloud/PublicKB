@@ -7,9 +7,6 @@
 "contentIsHTML": false
 }}}
 
-
-### Enahancements(0)
-
 ### Announcements(1)
 
 #### [CenturyLink Private Cloud on VMware Cloud Foundation](https://www.ctl.io/centurylink-private-cloud-on-vmware-cloud-foundation/) (CPC on vCF)
