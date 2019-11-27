@@ -2,7 +2,7 @@
 "title": "Using CenturyLink DEC3",
 "date": "11-20-2019",
 "author": "Guillermo Sanchez",
-"keywords": ["cam","centurylink dec 3", "dec iii", "vrealize", "deploy", "provider"],
+"keywords": ["cam","centurylink dec3", "dec iii", "vrealize", "deploy", "provider"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -14,8 +14,8 @@
 * [Prerequisites](#prerequisites)
 * [Connect CenturyLink DEC3 environment in Cloud Application Manager](#connect-centurylink-dec3-environment-in-cloud-application-manager)
 * [Deploy to CenturyLink DEC3 from Cloud Application Manager](#deploy-to-centurylink-dec3-from-cloud-application-manager)
-* [Naming vCloud resources ???](#naming-vcloud-resources-)
 * [Discovering and Registering Existing instances](#discovering-and-registering-existing-instances)
+* [Accessing the DEC3 native console](#accessing-the-dec3-native-console)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
@@ -109,6 +109,16 @@ Edit the deployment policy to set the following parameters for deploying to Cent
 When you configure your CenturyLink DEC3 provider in Cloud Application Manager, the synchronization process will discover the existing instances in your account. You will see these instances in the **Unregistered Instances** tab in the provider details page or in the **Unregistered** resources in the instances page.
 
 For more information about the registration process, also known as import instance process, refer to how to [Register an Existing Instance](../Getting Started/register-existing-instance.md)
+
+### Accessing the DEC3 native console
+
+Once your provider is synchronized, you will be able to access the DEC3 native console through the button available in the provider details page:
+
+![CenturyLink DEC3 console button](../../images/cloud-application-manager/deploying-anywhere/dec3/dec3-console-button.png)
+
+When you click on the button, a new window or tab will open in your browser with the access page of your DEC3 console:
+
+![CenturyLink DEC3 console page](../../images/cloud-application-manager/deploying-anywhere/dec3/dec3-console-page.png)
 
 ### Contacting Cloud Application Manager Support
 
