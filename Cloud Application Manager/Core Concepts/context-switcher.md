@@ -3,8 +3,9 @@
 "date": "05-20-2019",
 "author": "Sergio Quintana",
 "attachments": [],
-"contentIsHTML": false,
-"keywords": ["cam", "cloud application manager", "workspaces", "organizations", "cost centers", "context switcher", "scope switcher"]
+"keywords": ["cam", "cloud application manager", "workspaces", "organizations", "cost centers", "context switcher", "scope switcher"],
+"sticky": true,
+"contentIsHTML": false
 }}}
 
 **In this article:**
@@ -19,7 +20,7 @@
 
 ### Overview
 
-This article is meant to give a definition of Cloud Application Manager’s Context Switcher and an explanation of its features. Before reading this article, a previous knowledge of [organizations, cost centers and workspaces](workspaces-and-collaboration.md) is recommended. 
+This article is meant to give a definition of Cloud Application Manager’s Context Switcher and an explanation of its features. Before reading this article, a previous knowledge of [organizations, cost centers and workspaces](workspaces-and-collaboration.md) is recommended.
 
 ### Audience
 
@@ -59,13 +60,13 @@ This will let users search for a concrete scope they have access to. It is impor
 
 #### Selection menu
 
-There are several selectable options here depending on user's permissions (organization administrators can see **Organizations** and **Cost Centers** tabs while cost center administrators could only see their associated cost centers), and apart from the different kinds of scopes (Organizations, Cost Centers and Workspaces), there is also a **Favorites** tab, which shows together those scopes (of any kind) marked as favorites by the user. 
+There are several selectable options here depending on user's permissions (organization administrators can see **Organizations** and **Cost Centers** tabs while cost center administrators could only see their associated cost centers), and apart from the different kinds of scopes (Organizations, Cost Centers and Workspaces), there is also a **Favorites** tab, which shows together those scopes (of any kind) marked as favorites by the user.
 
 ![Context Switcher - Selection Menu](../../images/cloud-application-manager/context-switcher-selection-menu.png)
 
 #### Main view
 
-When a scope type is selected, the main view displays all available scopes of the selected kind for a given user. It is important to comment that all resources are held at workspace level, and due to the hierarchical structure scopes have (an Organization contains Cost Centers, which in turn contain Worskpaces), when a  higher-tier scope is selected, it will allow accessing to all its lower-tier resources. 
+When a scope type is selected, the main view displays all available scopes of the selected kind for a given user. It is important to comment that all resources are held at workspace level, and due to the hierarchical structure scopes have (an Organization contains Cost Centers, which in turn contain Worskpaces), when a  higher-tier scope is selected, it will allow accessing to all its lower-tier resources.
 
 That said, depending on the kind of selected scope some differences arise:
 
@@ -95,12 +96,12 @@ The most complete view corresponds to workspaces’ because it includes, apart f
 
 ![Context Switcher - Workspaces View](../../images/cloud-application-manager/context-switcher-ws-view.png)
 
-It is important to remark that workspaces can be divided into personal and team workspaces. 
+It is important to remark that workspaces can be divided into personal and team workspaces.
 
 * **Personal workspaces** are associated to a given user and cannot be created manually. They are the private space for users to hold their own resources.
 * **Team workspaces** can be easily created (if the user has proper permissions) and many users can be added to them as members with different access rights. A team workspace serves as a collaborative space where users can share their resources and collaborate on them.
 
-A personal workspace shows its name and user’s avatar, apart from its associated organization and cost center, and the star button to be marked (or unmarked) as a favorite; while a team workspace differs in displaying the team’s icon, as well as the number of members added to that workspace, and and provides the pencil button while hovering over the scope to access the workpsace settings. But, unlike what happened with other scope types there are several kinds of members for a team workspace (Visitor, User, Author and Administrator), being only those holding an Administrator role the ones with edit settings permissions. 
+A personal workspace shows its name and user’s avatar, apart from its associated organization and cost center, and the star button to be marked (or unmarked) as a favorite; while a team workspace differs in displaying the team’s icon, as well as the number of members added to that workspace, and and provides the pencil button while hovering over the scope to access the workpsace settings. But, unlike what happened with other scope types there are several kinds of members for a team workspace (Visitor, User, Author and Administrator), being only those holding an Administrator role the ones with edit settings permissions.
 
 ![Context Switcher - Workspaces Detail](../../images/cloud-application-manager/context-switcher-ws-detail.png)
 

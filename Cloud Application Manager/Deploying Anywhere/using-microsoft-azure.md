@@ -4,6 +4,7 @@
 "author": "Guillermo Sanchez & Sergio Quintana",
 "keywords": ["microsoft", "azure", "arm"],
 "attachments": [],
+"sticky": true,
 "contentIsHTML": false
 }}}
 
