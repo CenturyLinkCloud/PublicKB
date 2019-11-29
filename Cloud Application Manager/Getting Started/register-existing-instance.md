@@ -4,6 +4,7 @@
 "author": "Guillermo Sanchez & Sergio Quintana",
 "keywords": ["cam", "instances", "auto-discovery", "register"],
 "attachments": [],
+"sticky": true,
 "contentIsHTML": false
 }}}
 
@@ -18,7 +19,7 @@
 
 ### Overview
 
-*Cloud Application Manager* can auto-discover existing instances that have been provisioned directly using the provider console outside of *Cloud Application Manager*. With this capability, even if some of your teams are using the provider's console to provision instances, you can import them into *Cloud Application Manager* and manage their lifecycle as well as view them as part of the *Cloud Reports*. 
+*Cloud Application Manager* can auto-discover existing instances that have been provisioned directly using the provider console outside of *Cloud Application Manager*. With this capability, even if some of your teams are using the provider's console to provision instances, you can import them into *Cloud Application Manager* and manage their lifecycle as well as view them as part of the *Cloud Reports*.
 It is important to realize that discovered instances will exist only as an instance. In addition, *Cloud Application Manager* does not create a corresponding *Deployment Policy* as part of registration process.
 
 You can check the full process by watching the following video:
@@ -94,7 +95,7 @@ Then, follow the steps of the [Registration process](#registration-process) belo
 * The next step of the bulk import will allow you to set the properties for each instance to be registered:
 
     ![Register Instances](../../images/cloud-application-manager/register/clc-registerInstances-dialog.png)
-    
+
 * If you are registering a single instance, a single step dialog appears asking for information to complete the register process:
 
     ![Register Instance](../../images/cloud-application-manager/register/clc-registerInstance-dialog.png)
@@ -139,7 +140,7 @@ Then, follow the steps of the [Registration process](#registration-process) belo
 
     ![Start elasticbox agent](../../images/cloud-application-manager/register/aws-registerInstance-success.png)
 
-The previous process was done using a *CenturyLink Cloud* provider but, depending on the provider or the used *OS* it may be necessary to perform additional steps after or before the ones stated above. 
+The previous process was done using a *CenturyLink Cloud* provider but, depending on the provider or the used *OS* it may be necessary to perform additional steps after or before the ones stated above.
 Please, visit these links for further information:
 
 * [Auto-discover AWS EC2 instances](./autodiscover-ec2-instances.md)
