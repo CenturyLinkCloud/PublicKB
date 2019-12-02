@@ -11,11 +11,11 @@
 **In this article:**
 
 * [English](#english)
-* [Français](#français)
+* [Français](#francais)
 * [Deutsch](#deutsch)
-* [Español](#español)
-* [Português](#português)
-* [简体中文](#简体中文)
+* [Español](#espanol)
+* [Português](#portugues)
+* [简体中文](#chinese)
 
 ### English
 
@@ -55,7 +55,7 @@ Responda: As traduções neste site são um trabalho em andamento. Os artigos e 
 
 ---
 
-### 简体中文
+### Chinese (简体中文)
 
 **问题：当我在下拉菜单中选择我的首选语言时，此网站只会以我选择的语言向我展示部份内容。 这是什某原因呢？ 这是系统的漏洞吗**
 
