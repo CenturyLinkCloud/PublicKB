@@ -4,6 +4,7 @@
 "author": "Julio Castanar and Oscar Hafner",
 "keywords": ["cam","alm","boxes", "box", "script box", "child box", "overrriden variable"],
 "attachments": [],
+"sticky": true,
 "contentIsHTML": false
 }}}
 
@@ -17,12 +18,11 @@
 * [Adding Child Script Boxes](#adding-child-script-boxes)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
-
 ### Overview
 
-This article is meant to assist Cloud Application Manager customers who want to [create and manage boxes](../Core Concepts/boxes.md).<br/>
-It explains how to use the Script box. The Script box is the type you most commonly use to define deployments. It accepts commands in Bash, PowerShell, Salt, Ansible, Chef, or Puppet. Cloud Application Manager provides Chef and Puppet public boxes to install and run recipes or manifests locally.
+This article is meant to assist Cloud Application Manager customers who want to [create and manage boxes](../Core Concepts/boxes.md).
 
+It explains how to use the Script box. The Script box is the type you most commonly use to define deployments. It accepts commands in Bash, PowerShell, Salt, Ansible, Chef, or Puppet. Cloud Application Manager provides Chef and Puppet public boxes to install and run recipes or manifests locally.
 
 ### Audience
 
@@ -36,7 +36,8 @@ Cloud Application Manager Users using Application Lifecycle Management (ALM) fea
 
 ### Creating Your First Script Box
 
-On the Boxes page, click **New** > **Script**. Enter a name, optionally a description and other [metadata](../Core Concepts/boxes.md#box-metadata).<br/> 
+On the Boxes page, click **New** > **Script**. Enter a name, optionally a description and other [metadata](../Core Concepts/boxes.md#box-metadata).
+
 Save to continue. Configure the deployment using [events](start-stop-and-upgrade-boxes.md) and [variables](parameterizing-boxes-with-variables.md).
 
 When ready to test the configuration, click **Deploy**. Under the Deployment Box, search or select a deployment policy. Policies whose claims match the script box requirements will appear here.
@@ -96,5 +97,6 @@ We’re sorry you’re having an issue in [Cloud Application Manager](https://ww
 For issues related to API calls, send the request body along with details related to the issue.
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
 * Windows: RDP into the instance to locate the log at \ProgramData\ElasticBox\Logs\elasticbox-agent.log

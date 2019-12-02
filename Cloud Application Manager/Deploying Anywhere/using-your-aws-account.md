@@ -4,6 +4,7 @@
 "author": "Julio Castanar & Sergio Quintana",
 "keywords": ["aws", "ecs", "deploy"],
 "attachments": [],
+"sticky": true,
 "contentIsHTML": false
 }}}
 

@@ -1,16 +1,18 @@
-{{{ 
+{{{
 "title": "Parameterizing Boxes with Variables",
 "date": "09-01-2016",
 "author": "",
 "date": "12-28-2018",
 "author": "Julio Castanar",
-"keywords": ["cam","alm","boxes", "box", "variable", "requiered", "visibility", "variable type", "box type", 
+"keywords": ["cam","alm","boxes", "box", "variable", "requiered", "visibility", "variable type", "box type",
             "binding type", "port type", "text type", "file type", "options type", "password type", "number type"],
 "attachments": [],
+"sticky": true,
 "contentIsHTML": false
 }}}
 
 **In this article:**
+
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
@@ -66,7 +68,7 @@ Stack as many child boxes as you like, as long as they match the parent box Wind
 
 ![Adding Box type variable](../../images/cloud-application-manager/parameterizingboxeswithvariables1.png)
 
-##### Parent box visibility into child boxes:
+##### Parent box visibility into child boxes
 
 * When you stack a child box, you consume its variables and scripts in the parent box.
 * You can’t change child box configuration in the parent box, but you can change variable values and scripts to suit the parent box deployment.
@@ -122,7 +124,7 @@ In this example, for a binding called bindingA, we can get the connection data f
 
 ```
 {% for binding in bindingA %}
-        server \{{ binding.address.private or binding.address.public }}:\{{ binding.http or   
+        server \{{ binding.address.private or binding.address.public }}:\{{ binding.http or
                     binding.https or fallback_binding_port }};
 {% endfor %}
 }
@@ -159,6 +161,7 @@ More on text expressions:
 * Text expressions save you the trouble of storing and passing strings in event scripts. They let you manage box configuration changes in one place instead of in several scripts.
 * CloudFormation templates don’t allow event scripts. So when binding from CloudFormation boxes, use text expressions to store binding variable references.
 * To refer to variables, follow this Jinja syntax. You can traverse any number of child boxes.
+
     ```
   * Parent box variables: `\{{ variable_name }}`
   * Child box variables one level deep: `\{{ child_box.variable_name }}`
@@ -176,9 +179,11 @@ More on text expressions:
 
 * Here’s another example of two CloudFormation boxes that connect over a binding using a text expression:  
     An EC2 box binds to a security group CloudFormation box through a binding called CFBinding. To pass the binding connection string, the EC2 box has a text expression set to
+
     ```
     `\{{ CFBinding.InstanceID }}`
     ```
+
     Here, CFBinding refers to the security group CloudFormation box where InstanceId is a variable. As a result when deployed, the EC2 box launches a Linux instance in a security group using CloudFormation.
 
 #### File Type
@@ -264,5 +269,6 @@ We’re sorry you’re having an issue in [Cloud Application Manager](https://ww
 For issues related to API calls, send the request body along with details related to the issue.
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
 * Windows: RDP into the instance to locate the log at \ProgramData\ElasticBox\Logs\elasticbox-agent.log
