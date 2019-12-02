@@ -7,18 +7,18 @@
 "contentIsHTML": false
 }}}
 
-### Announcements(2)
+### Announcements (4)
 
-#### CenturyLink Private Cloud on VMware Cloud Foundation(CPC on vCF)
+#### [CenturyLink Private Cloud on VMware Cloud Foundation](https://www.ctl.io/centurylink-private-cloud-on-vmware-cloud-foundation/) (CPC on vCF)
 
 ##### Branding Update
-We are ready to roll out our new branding for the HTML5 interface for vCD. This will be included with all new builds and added to our upgrade process for our existing customers.
+We are ready to roll out our new branding for the HTML5 interface for vCD. This will be included with all new builds and added to our upgrade process for existing customers.
 
-#### Cloud Application Manager Platform
+#### [Cloud Application Manager Platform](https://www.ctl.io/cloud-application-manager/)
 
 ##### Billing simplification
 
-As a result of the billing simplification initiative, Cloud Application Manager is removing the invoice line-items regarding past-month updates. To avoid these updates, we will bill all the Cloud Application Manager vendor related usages in arrears, so that your Dec invoice will only include updates from October usage, and the actual Cloud Application Manager November usage will be charged in your next Jan'2020 invoice. Cloud Application Manager billing usage history will reflect the changes to the invoice and has removed the billing cycle dropdown as a consequence of this billing simplification.
+As a result of the billing simplification initiative, Cloud Application Manager is removing the invoice line-items regarding past-month updates. To avoid these updates, we will bill all the Cloud Application Manager vendor related usages in arrears, so that your December invoice will only include updates from October usage, and the actual Cloud Application Manager November usage will be charged on your January 2020 invoice. Cloud Application Manager billing usage history will reflect the changes to the invoice and has removed the billing cycle dropdown as a consequence of this billing simplification.
 
 ##### New provider type for Compute instances
 
