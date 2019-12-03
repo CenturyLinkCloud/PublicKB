@@ -12,7 +12,7 @@
 This guide provides a list of the Operating Systems and Control Portal actions that affect the power state of a server on the CenturyLink Cloud.
 
 ### Supported Operating Systems
-Please see the [supported operating system KB](.../support/supported-operating-systems.md)
+Please see the [supported operating system KB](https://www.ctl.io/knowledge-base/support/supported-operating-systems/)
 
 ### Actions That Affect Specific Operating System Templates
 
