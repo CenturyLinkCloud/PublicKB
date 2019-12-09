@@ -1,6 +1,6 @@
 {{{
   "title": "Actions That Change Server Power State",
-  "date": "11-25-2019",
+  "date": "12-01-2019",
   "author": "Matthew Ordman",
   "attachments": [],
   "related-products" : [],
@@ -18,8 +18,8 @@ Please see the [supported operating system KB](https://www.ctl.io/knowledge-base
 
 **Action**|**Scale Up**|**Scale Down**
 ----------|------------|--------------
-Change amount of RAM|CentOS 6<br>CentOS 7<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>RedHat Enterprise Linux 6<br>RedHat Enterprise Linux 7<br>Ubuntu 12<br>Ubuntu 14<br>Ubuntu 16|CentOS 6<br>CentOS 7<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>RedHat Enterprise Linux 6<br>RedHat Enterprise Linux 7<br>Ubuntu 12<br>Ubuntu 14<br>Ubuntu 16<br>Windows Server 2012<br>Windows Server 2012 R2<br>Windows Server 2016
-Change number of vCPUs|CentOS 6<br>CentOS 7<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>Ubuntu 16|CentOS 6<br>CentOS 7<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>RedHat Enterprise Linux 6<br>RedHat Enterprise Linux 7<br>Ubuntu 12<br>Ubuntu 14<br>Ubuntu 16<br>Windows Server 2012<br>Windows Server 2012 R2<br>Windows Server 2016
+Change amount of RAM|CentOS 6<br>CentOS 7<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>RedHat Enterprise Linux 6<br>RedHat Enterprise Linux 7<br>Ubuntu 12<br>Ubuntu 14<br>Ubuntu 16|CentOS 6<br>CentOS 7<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>RedHat Enterprise Linux 6<br>RedHat Enterprise Linux 7<br>Ubuntu 12<br>Ubuntu 14<br>Ubuntu 16<br>Windows Server 2012<br>Windows Server 2012 R2<br>Windows Server 2016<br>Windows Server 2019
+Change number of vCPUs|CentOS 6<br>CentOS 7<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>Ubuntu 16|CentOS 6<br>CentOS 7<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>RedHat Enterprise Linux 6<br>RedHat Enterprise Linux 7<br>Ubuntu 12<br>Ubuntu 14<br>Ubuntu 16<br>Windows Server 2012<br>Windows Server 2012 R2<br>Windows Server 2016<br>Windows Server 2019
 
 ### Actions That Affect **ALL** Operating System Templates
 
