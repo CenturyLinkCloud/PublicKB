@@ -17,6 +17,6 @@ Information held on a blockchain exists as a shared and continually reconciled d
 
 ### Blockchain In Action
 
-[![blockchain-demo](../../images/blockchain-demo.png)](https://www.ctl.io/blockchain/demo)
+[![blockchain-demo](https://staging.ctl.io/assets/images/blockchain-demo.png)](https://www.ctl.io/blockchain/demo)
 
 Click on the icon for an interactive demonstration of CenturyLink Blockchain.
