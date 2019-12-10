@@ -1,9 +1,10 @@
-{{{ 
+{{{
 "title": "Application Boxes",
 "date": "12-28-2018",
 "author": "Julio Castanar",
 "keywords": ["cam","alm","boxes", "box", "application box", "topology"],
 "attachments": [],
+"sticky": true,
 "contentIsHTML": false
 }}}
 
@@ -19,10 +20,11 @@
 
 ### Overview
 
-This article is meant to assist Cloud Application Manager customers who want to [create and manage boxes](../Core Concepts/boxes.md).<br/>
-It explains how to use the Application box which deploys several instances that an application executes.<br/>
-An application box defines a topology of [Script boxes](script-box.md), [Template boxes](template-box.md) and [Container boxes](docker-container-service.md).
+This article is meant to assist Cloud Application Manager customers who want to [create and manage boxes](../Core Concepts/boxes.md).
 
+It explains how to use the Application box which deploys several instances that an application executes.
+
+An application box defines a topology of [Script boxes](script-box.md), [Template boxes](template-box.md) and [Container boxes](docker-container-service.md).
 
 ### Audience
 
@@ -58,11 +60,10 @@ You only need to configure the name of the application box.
 
 ![New Application Box data](../../images/cloud-application-manager/application-boxes-3.png)
 
-
 ### Application box topology
-Once the application box is created, contained topology is showed.
-A topology is a description of the required boxes and how they will be deployed as instances. 
-You can add new boxes from the code section page (see first figure above).<br/>
+
+Once the application box is created, contained topology is showed. A topology is a description of the required boxes and how they will be deployed as instances. You can add new boxes from the code section page (see first figure above).
+
 For every box, you can define:
 
 * The name of the resulting instance
@@ -90,5 +91,6 @@ We’re sorry you’re having an issue in [Cloud Application Manager](https://ww
 For issues related to API calls, send the request body along with details related to the issue.
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
 * Windows: RDP into the instance to locate the log at \ProgramData\ElasticBox\Logs\elasticbox-agent.log

@@ -4,6 +4,7 @@
 "author": "Guillermo Sánchez and Sergio Quintana",
 "attachments": [],
 "keywords": ["cam", "cloud application manager", "version control", "version", "auto-updates", "update"],
+"sticky": true,
 "contentIsHTML": false
 }}}
 
@@ -53,7 +54,7 @@ Click **New Version** and save with an appropriate version number.
 
 Major, minor, and patch follow semantic versioning standards. Cloud Application Manager does not check for the quality or correctness of changes between versions. It’s up to the box composer to test changes be they minor, patch, or major. Versioning semantics helps others consuming the box decide the level of updates they are comfortable pushing to their instances.
 
-**Draft, current, latest**
+#### Draft, current, latest
 
 * Latest is the highest version number of a box. When you deploy from Instances page, you always get the latest version.
 * Draft indicates changes not yet saved to the box. When you deploy from the box page, you typically deploy the draft version.
@@ -95,7 +96,7 @@ Box versions can be managed in different ways. To see these options, go to **Ver
 2. **Deploy**: You can deploy the selected box version.
 3. **Diff**: You can see the updates made to each box version from the **Versions** tab. Select the gear icon and click on **Diff**.
 
-![Version control - Diff view](../../images/cloud-application-manager/version-control-and-auto-updates-9.png)
+    ![Version control - Diff view](../../images/cloud-application-manager/version-control-and-auto-updates-9.png)
 
 4. **Restore**: You can restore your box to its previous version. The version you are working on now will become the current version.
 5. **Publish box**: This option changes the privacy settings of the box, making it public after being published. To execute this change filling a request form is necessary. Please note that only those fields marked with an asterisk are mandatory.
@@ -111,5 +112,6 @@ We’re sorry you’re having an issue in [Cloud Application Manager](https://ww
 For issues related to API calls, send the request body along with details related to the issue.
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
 * Windows: RDP into the instance to locate the log at ProgramData/ElasticBox/Logs/elasticbox-agent.log

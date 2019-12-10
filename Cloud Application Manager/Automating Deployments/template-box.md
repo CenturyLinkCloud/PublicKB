@@ -2,8 +2,9 @@
 "date": "06-26-2019",
 "author": "Cristina Torres, Amalia Garcia de Mirasierra",
 "attachments": [],
-"contentIsHTML": false,
-"keywords": ["arm","azure resource manager", "terraform", "aws","cloudformation","template box", "google deployment manager",  "cloud application manager", "deployment templates", "cam", "alm", "application lifecycle management"]
+"keywords": ["arm","azure resource manager", "terraform", "aws","cloudformation","template box", "google deployment manager",  "cloud application manager", "deployment templates", "cam", "alm", "application lifecycle management"],
+"sticky": true,
+"contentIsHTML": false
 }}}
 **In this article:**
 
