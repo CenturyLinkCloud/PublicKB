@@ -54,7 +54,7 @@ A VMC user needs at least the following permissions be able to authenticate, dep
 
 VMC templates need elasticbox-init to allow the Cloud Application Manager agent to execute box scripts at deploy time.
 
-**Linux**
+#### Linux
 
 Follow these steps to install elasticbox-init on a Linux template.
 
