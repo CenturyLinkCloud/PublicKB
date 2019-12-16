@@ -73,7 +73,7 @@ Follow these steps to install elasticbox-init on a Linux template.
 
    * **Note:** If running Cloud Application Manager as an appliance, replace cam.ctl.io with the appliance hostname or IP address.
 
-**Windows**
+#### Windows
 
 Follow these steps to run a script that creates a scheduled task on a Windows Server 2012 template. When you deploy, Cloud Application Manager clones this template and installs the agent using the scheduled task.
 
