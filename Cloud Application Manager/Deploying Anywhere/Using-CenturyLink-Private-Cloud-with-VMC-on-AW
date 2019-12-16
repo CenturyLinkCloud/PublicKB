@@ -29,7 +29,7 @@ All users of Cloud Application Manager using CenturyLink Private Cloud with VMC 
 * An active *Cloud Application Manager* account
 * Access and credentials to a **CenturyLink Private Cloud with VMC on AWS**.
 * A virtual machine template (Linux or Windows) on the VMC. Virtual machine templates have to be bootstrapped with the Cloud Application Manager Agent.
-* If the VMC is behind a firewall, has to be open on the firewall:
+* If the VMC is behind a firewall, the following ports have to be open on the firewall:
 	* 443/TCP incoming to VMC server: for Cloud Application Manager to make API calls on VMC.
 	* 443/TCP outgoing: to allow Cloud Application Manager Agents running on the deployed virtual machines to connect back to Cloud Application Manager.
 
