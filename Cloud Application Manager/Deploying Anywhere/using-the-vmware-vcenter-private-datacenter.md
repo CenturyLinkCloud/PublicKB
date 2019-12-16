@@ -160,7 +160,7 @@ Select deployment metadata from a deployment profile to launch VMs to your vCent
 You can also register you exsiting instances to CAM portal. First click on **Unregistered Instances** Tab, here you can see all the exsting instances in you vCenter that you can import into your CAM portal.
 
 Simply select one server and click on the down arrow button on the right side.
-![register_to_vcnter1](../../images/cloud-application-manager/deploying-anywhere/register_to_vcnter1.png)
+![Register a vCenter instance](../../images/cloud-application-manager/deploying-anywhere/register_to_vcnter1.png)
 
 Choose a name for this server and click on **Register**
 ![register_to_vcnter1](../../images/cloud-application-manager/deploying-anywhere/register_to_vcnter2.png)
