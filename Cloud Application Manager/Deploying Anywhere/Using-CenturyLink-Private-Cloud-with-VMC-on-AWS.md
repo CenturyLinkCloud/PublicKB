@@ -8,13 +8,14 @@
 
 **In this article:**
 * [Overview](#overview)
-- [Audience](#audience)
-- [Prerequisites](#prerequisites)
-- [Required Permissions](#required-permissions)
-- [Bootstrapping virtual machine templates with the Cloud Application Manager Agent](#bootstrapping-virtual-machine-templates-with-the-cloud-application-manager-agent)
-- [Registering a VMC provider in Cloud Application Manager](#registering-a-vmc-provider-in-cloud-application-manager)
-- [Registering Instances to Your VMC Provider](#registering-instances-to-your-vmc-provider)
-- [Getting General Support](#getting-general-support)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Required Permissions](#required-permissions)
+* [Bootstrapping virtual machine templates with the Cloud Application Manager Agent](#bootstrapping-virtual-machine-templates-with-the-cloud-application-manager-agent)
+* [Registering a VMC provider in Cloud Application Manager](#registering-a-vmc-provider-in-cloud-application-manager)
+* [Registering Instances to Your VMC Provider](#registering-instances-to-your-vmc-provider)
+* [Deploying in Your VMC](#deploying-in-your-vmc)
+* [Getting General Support](#getting-general-support)
 
 ### Overview
 
@@ -69,7 +70,7 @@ Follow these steps to install elasticbox-init on a Linux template.
 
    ```
 	 curl -L https://cam.ctl.io/agent/linux/vsphere/template_customization_script.sh | sudo bash
-	 ```
+   ```
 
    * **Note:** If running Cloud Application Manager as an appliance, replace cam.ctl.io with the appliance hostname or IP address.
 
@@ -109,13 +110,21 @@ You can also register you exsiting instances to CAM portal. First click on **Unr
 Simply select one server and click on the down arrow button on the right side.
 ![register_to_vcnter1](../../images/cloud-application-manager/deploying-anywhere/register_to_vmc1.png)
 
-Choose a name for this server and click on **Register**
+Name instance to be registered and click on **Register**
 ![register_to_vcnter1](../../images/cloud-application-manager/deploying-anywhere/register_to_vmc2.png)
 
 Connect to server and execute the script below with admin privileges.
 ![register_to_vcnter1](../../images/cloud-application-manager/deploying-anywhere/register_to_vmc3.png)
 
 After running the script you should be able to see the instance has been registered successfully.
+
+### Deploying in Your VMC
+
+You can deploy new instances to your VMC provider from CAM portal, for detailed steps, please check [Using the vmware vCenter Private Datacenter.md](../using-the-vmware-vcenter-private-datacenter.md) 
+
+### Getting General Support
+
+Customers can contact the CenturyLink Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
 
 #### Contact:
 
