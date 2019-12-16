@@ -166,7 +166,7 @@ Choose a name for this server and click on **Register**
 ![register_to_vcnter1](../../images/cloud-application-manager/deploying-anywhere/register_to_vcnter2.png)
 
 Connect to server and execute the script below with admin privileges.
-![register_to_vcnter1](../../images/cloud-application-manager/deploying-anywhere/register_to_vcnter3.png)
+![Script to register the instance](../../images/cloud-application-manager/deploying-anywhere/register_to_vcnter3.png)
 
 After running the script you should be able to see the instance has been registered successfully.
 
