@@ -34,7 +34,7 @@ To learn about Azure hosting services, see the [Azure help](https://azure.micros
 
 ### Before You Begin
 
-This Classic Azure provider support is offered through Cloud Application Manager for managing existing Classic Azure subscriptions, and should not be used for new environments, that should be using Microsoft's recommended Azure Resource Manager deployment model with its corresponding [Microsoft Azure]((using-microsoft-azure.md)) provider type.
+This Classic Azure provider support is offered through Cloud Application Manager for managing existing Classic Azure subscriptions, and should not be used for new environments, that should be using Microsoft's recommended Azure Resource Manager deployment model with its corresponding [Microsoft Azure](using-microsoft-azure.md) provider type.
 
 ### Benefits of Deploying to Azure Using Cloud Application Manager
 
