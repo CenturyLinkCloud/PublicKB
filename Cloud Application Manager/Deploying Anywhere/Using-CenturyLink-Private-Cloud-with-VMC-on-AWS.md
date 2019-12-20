@@ -111,7 +111,7 @@ Simply select one server and click on the down arrow button on the right side.
 ![register_to_vcnter1](../../images/cloud-application-manager/deploying-anywhere/register_to_vmc1.png)
 
 Name instance to be registered and click on **Register**
-![register_to_vcnter1](../../images/cloud-application-manager/deploying-anywhere/register_to_vmc2.png)
+![Name instance to be registered](../../images/cloud-application-manager/deploying-anywhere/register_to_vmc2.png)
 
 Connect to server and execute the script below with admin privileges.
 ![register_to_vcnter1](../../images/cloud-application-manager/deploying-anywhere/register_to_vmc3.png)
