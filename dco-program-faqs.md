@@ -12,7 +12,7 @@
 
 **Q: Are managed services still available to my colocation space?**
 
-**A:** For customers with colocation space provided directly by Cyxtera, with CenturyLink managed services provided to that space, these services will still be available. What may be impacted is the way CenturyLink hands off services to your cage (i.e., fiber options only instead of copper). However, this will be dependent on distance limitations and any necessary cross connect fees to facilitate that connectivity.
+**A:** For customers with colocation space, with CenturyLink managed services provided to that space, these services will still be available. What may be impacted is the way CenturyLink hands off services to your cage (i.e., fiber options only instead of copper). However, this will be dependent on distance limitations and any necessary cross connect fees to facilitate that connectivity.
 
 **Q: What are my options as a managed hosting customer?**
 
@@ -40,4 +40,4 @@
 
 **Q: I have colocation space that also connects to CenturyLink Managed services cage in this facility. Will those connections be impacted?**
 
-**A:** In these cases, CenturyLink will have to make new cross connect runs to your colocation space from the new location these services are being moved to. Due to Cyxtera rules, CenturyLink must provide those links via the Eco-System connect handoffs they’ve established within the impacted data centers. During the migration program, CenturyLink will run the necessary connections to the meet me room to facilitate the new handoffs. Once the migrations are complete, CenturyLink will work with the customer to schedule the best times to cut over to these new connections.
+**A:** In these cases, CenturyLink will have to make new cross connect runs to your colocation space from the new location these services are being moved to. CenturyLink must provide those links via the Eco-System connect handoffs they’ve established within the impacted data centers. During the migration program, CenturyLink will run the necessary connections to the meet me room to facilitate the new handoffs. Once the migrations are complete, CenturyLink will work with the customer to schedule the best times to cut over to these new connections.
