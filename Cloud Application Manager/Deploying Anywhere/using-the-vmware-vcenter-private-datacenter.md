@@ -162,7 +162,7 @@ You can also register you exsiting instances to CAM portal. First click on **Unr
 Simply select one server and click on the down arrow button on the right side.
 ![Register a vCenter instance](../../images/cloud-application-manager/deploying-anywhere/register_to_vcnter1.png)
 
-Choose a name for this server and click on **Register**
+Choose a name for this instance and click on **Register**
 ![register_to_vcnter1](../../images/cloud-application-manager/deploying-anywhere/register_to_vcnter2.png)
 
 Connect to server and execute the script below with admin privileges.
