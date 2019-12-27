@@ -31,6 +31,7 @@ All Cloud Application Manager users who wants to deploy workloads into CenturyLi
 
 * You must have a Cloud Application Manager Account
 * Your base URL, and user credentials for CenturyLink Private Cloud on VMware Cloud Foundation
+* [Install VMware tools](https://pubs.vmware.com/vcd-51/index.jsp?topic=%2Fcom.vmware.vcloud.users.doc_51%2FGUID-9BB72070-65E9-4458-84C3-05D8247C7343.html) on vApp templates in the catalog. This doesn’t apply to public vApp templates, which already have them.
 
 ### Register CenturyLink Private Cloud on VMware Cloud Foundation as Provider
 
