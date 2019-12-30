@@ -101,7 +101,7 @@ In order to deploy to a VMC on AWS, you must first provide information to connec
 3. Enter the endpoint URL for the VMC server and a username, password to the VMC API.
    * **Note:** The endpoint URL can be a hostname or an IP address, and has to be prefixed with **https://**. Be sure to use https and not http.
 
-   ![Creating a new VMC provider](../../images/cloud-application-manager/VMC01.png)
+   ![Creating a new VMC provider](../../images/cloud-application-manager/deploying-anywhere/VMC01.png)
 
 ### Registering Instances to Your VMC Provider
 
@@ -120,7 +120,7 @@ After running the script you should be able to see the instance has been registe
 
 ### Deploying in Your VMC
 
-You can deploy new instances to your VMC provider from CAM portal, for detailed steps, please check [Using the vmware vCenter Private Datacenter.md](../using-the-vmware-vcenter-private-datacenter.md) 
+You can deploy new instances to your VMC provider from CAM portal, for detailed steps, please check [Using the vmware vCenter Private Datacenter.md](../using-the-vmware-vcenter-private-datacenter.md)
 
 ### Getting General Support
 
