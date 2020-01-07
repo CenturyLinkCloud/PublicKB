@@ -53,9 +53,14 @@ When you first sign in to Cloud Application Manager, you only have a personal wo
 
 Workspaces are the most common way to have users collaborating on a set of instances, boxes and providers with certain access permissions.
 
+It is important to remark that workspaces can be divided into **personal** and **team** workspaces.
+
+* **Personal workspaces** are associated to a given user and cannot be created manually. They are the private space for users to hold their own resources.
+* **Team workspaces** can be easily created (if the user has proper permissions) and many users can be added to them as members with different access rights. A team workspace serves as a collaborative space where users can share their resources and collaborate on them.
+
 For a video tutorial and step-by-step instructions for using Workspaces, please see our [Getting Started Guide](https://www.ctl.io/guides/cloud-application-manager/getting-started-workspace-cloud-application-manager/).
 
-#### Context elements
+#### Context elements of workspaces
 
 Workspace is the context where three types of assets are included: boxes, instances and providers.
 
@@ -63,7 +68,7 @@ To have instances, boxes or providers available in a workspaces, create them ins
 
 #### Members roles. Sharing and collaboration
 
-At the same time, workspaces have members. The members of the workspaces are users or groups of users (for example, LDAP Groups).
+At the same time, team workspaces have members. The members of the workspaces are users or groups of users (for example, LDAP Groups).
 
 Each member can have a level of permission that will allow him to see different assets in the workspace.
 
@@ -87,12 +92,12 @@ If you want to use this feature in different ways, please [contact us](mailto:in
 
 A Cost Center is a context used to manage several Workspaces in the same manner.
 
-#### Context elements
+#### Context elements of Cost Centers
 
-* A Cost Center groups a set of Workspaces. 
+* A Cost Center groups a set of Workspaces.
 * All workspaces belong to a Cost Center that is assigned when they are created.
 
-#### Members and permissions
+#### Members and permissions of Cost Centers
 
 Being a member of a Cost Center allows you to manage all assets of all the workspaces belonging to it as if you were an Administrator of those workspaces.
 
@@ -104,14 +109,14 @@ Users who manage a big team or several project are usually Cost Center administr
 
 An Organization is the highest scope level used to manage several Cost Centers and the Workspaces they include.
 
-#### Context elements
+#### Context elements of Organizations
 
-* An Organization includes a set of Cost Centers. 
+* An Organization includes a set of Cost Centers.
 * A default Cost Center is created whenever a new Organization is created in Cloud Application Manager.
 * Organization administrators can create as many Cost Center as they want to align with their organization structure.
 * All Cost Centers and Workspaces belong to an Organization.
 
-#### Members and permissions
+#### Members and permissions of Organizations
 
 The administrators of an Organization can change many settings that affect the whole organization.  
 See more details [here](../Administering Your Organization/admin-overview.md).
