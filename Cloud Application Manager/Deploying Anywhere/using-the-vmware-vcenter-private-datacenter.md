@@ -8,15 +8,15 @@
 
 **In this article:**
 
-- [Overview](#overview)
-- [Audience](#audience)
-- [Prerequisites](#prerequisites)
-- [Required Permissions](#required-permissions)
-- [Bootstrapping virtual machine templates with the Cloud Application Manager Agent](#bootstrapping-virtual-machine-templates-with-the-cloud-application-manager-agent)
-- [Registering a vCenter provider in Cloud Application Manager](#registering-a-vcenter-provider-in-cloud-application-manager)
-- [Deploying in Your vCenter](#deploying-in-your-vcenter)
-- [Registering Instances to Your vCenter Provider](#registering-instances-to-your-vcenter-provider)
-- [Getting General Support](#getting-general-support)
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Required Permissions](#required-permissions)
+* [Bootstrapping virtual machine templates with the Cloud Application Manager Agent](#bootstrapping-virtual-machine-templates-with-the-cloud-application-manager-agent)
+* [Registering a vCenter provider in Cloud Application Manager](#registering-a-vcenter-provider-in-cloud-application-manager)
+* [Deploying in Your vCenter](#deploying-in-your-vcenter)
+* [Registering Instances to Your vCenter Provider](#registering-instances-to-your-vcenter-provider)
+* [Getting General Support](#getting-general-support)
 
 ### Overview
 
@@ -100,7 +100,7 @@ In order to deploy to a vCenter private datacenter, you must first provide infor
 2. Select **VMware vSphere**.
 
 3. Enter the endpoint URL for the vCenter server and a username, password to the vCenter API.
-   * **Note:** The endpoint URL can be a hostname or an IP address, and has to be prefixed with **https://**. Be sure to use https and not http.
+   * **Note:** The endpoint URL can be a hostname or an IP address, and has to be prefixed with **<https://>**. Be sure to use https and not http.
 
    ![Creating a new vSphere provider](../../images/cloud-application-manager/add-vsphere-provider-1.png)
 
@@ -163,7 +163,7 @@ Simply select one server and click on the down arrow button on the right side.
 ![Register a vCenter instance](../../images/cloud-application-manager/deploying-anywhere/register_to_vcnter1.png)
 
 Choose a name for this instance and click on **Register**
-![register_to_vcnter1](../../images/cloud-application-manager/deploying-anywhere/register_to_vcnter2.png)
+![Name instance to be registered](../../images/cloud-application-manager/deploying-anywhere/register_to_vcnter2.png)
 
 Connect to server and execute the script below with admin privileges.
 ![Script to register the instance](../../images/cloud-application-manager/deploying-anywhere/register_to_vcnter3.png)
