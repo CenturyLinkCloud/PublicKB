@@ -1,12 +1,13 @@
 {{{ "title": "Using the CenturyLink Private Cloud with VMC on AWS",
-"date": "12-05-2019",
-"author": "Sharon Wang",
+"date": "01-08-2020",
+"author": "Guillermo Sanchez",
 "keywords": ["cam", "cloud application manager", "vmware", "aws", "vmc", "cpc", "centurylink private cloud"],
 "attachments": [],
 "contentIsHTML": false
 }}}
 
 **In this article:**
+
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
@@ -31,18 +32,19 @@ All users of Cloud Application Manager using CenturyLink Private Cloud with VMC 
 * Access and credentials to a **CenturyLink Private Cloud with VMC on AWS**.
 * A virtual machine template (Linux or Windows) on the VMC. Virtual machine templates have to be bootstrapped with the Cloud Application Manager Agent.
 * If the VMC is behind a firewall, the following ports have to be open on the firewall:
-	* 443/TCP incoming to VMC server: for Cloud Application Manager to make API calls on VMC.
-	* 443/TCP outgoing: to allow Cloud Application Manager Agents running on the deployed virtual machines to connect back to Cloud Application Manager.
+  * **443/TCP incoming to VMC server**: for Cloud Application Manager to make API calls on VMC.
+  * **443/TCP outgoing**: to allow Cloud Application Manager Agents running on the deployed virtual machines to connect back to Cloud Application Manager.
 
 ### Required Permissions
 
-A VMC user needs at least the following permissions be able to authenticate, deploy and manage instances through Cloud Application Manager. 
+A VMC user needs at least the following permissions be able to authenticate, deploy and manage instances through Cloud Application Manager.
+
 | Assign access for | With privileges |
 |-------------------|-----------------|
 | Datastore | <li>Allocate space</li><li>Browse datastore</li> |
-| Global |	Cancel task |
+| Global | Cancel task |
 | Manage custom attributes | Set custom attribute |
-| Network |	Assign network |
+| Network | Assign network |
 | Resource | Assign virtual machine to resource pool |
 | Scheduled task | <li>Create tasks</li><li>Run task</li> |
 | Tasks | <li>Create tasks</li> |
@@ -59,7 +61,6 @@ VMC templates need elasticbox-init to allow the Cloud Application Manager agent 
 
 Follow these steps to install elasticbox-init on a Linux template.
 
-
 1. Log in to the VMC client and open the Linux virtual machine.
 
 2. SSH into the virtual machine.
@@ -69,7 +70,7 @@ Follow these steps to install elasticbox-init on a Linux template.
 4. Run this command with root privileges to install elasticbox-init:
 
    ```
-	 curl -L https://cam.ctl.io/agent/linux/vsphere/template_customization_script.sh | sudo bash
+   curl -L https://cam.ctl.io/agent/linux/vsphere/template_customization_script.sh | sudo bash
    ```
 
    * **Note:** If running Cloud Application Manager as an appliance, replace cam.ctl.io with the appliance hostname or IP address.
@@ -90,7 +91,7 @@ Follow these steps to run a script that creates a scheduled task on a Windows Se
 
 ### Registering a CenturyLink Private Cloud with VMC on AWS provider in Cloud Application Manager
 
-In order to deploy to a VMC on AWS, you must first provide information to connect. 
+In order to deploy to a VMC on AWS, you must first provide information to connect.
 
 **Steps**
 
@@ -99,7 +100,7 @@ In order to deploy to a VMC on AWS, you must first provide information to connec
 2. Select **CenturyLink Private Cloud with VMC on AWS**.
 
 3. Enter the endpoint URL for the VMC server and a username, password to the VMC API.
-   * **Note:** The endpoint URL can be a hostname or an IP address, and has to be prefixed with **https://**. Be sure to use https and not http.
+   * **Note:** The endpoint URL can be a hostname or an IP address, and has to be prefixed with **<https://>**. Be sure to use https and not http.
 
    ![Creating a new VMC provider](../../images/cloud-application-manager/deploying-anywhere/VMC01.png)
 
@@ -108,19 +109,19 @@ In order to deploy to a VMC on AWS, you must first provide information to connec
 You can also register you exsiting instances to CAM portal. First click on **Unregistered Instances** Tab, here you can see all the exsting instances in you VMC that you can import into your CAM portal.
 
 Simply select one server and click on the down arrow button on the right side.
-![register_to_vcnter1](../../images/cloud-application-manager/deploying-anywhere/register_to_vmc1.png)
+![Register a vCenter instance](../../images/cloud-application-manager/deploying-anywhere/register_to_vmc1.png)
 
 Name instance to be registered and click on **Register**
 ![Name instance to be registered](../../images/cloud-application-manager/deploying-anywhere/register_to_vmc2.png)
 
 Connect to server and execute the script below with admin privileges.
-![register_to_vcnter1](../../images/cloud-application-manager/deploying-anywhere/register_to_vmc3.png)
+![Script to register a vCenter instance](../../images/cloud-application-manager/deploying-anywhere/register_to_vmc3.png)
 
 After running the script you should be able to see the instance has been registered successfully.
 
 ### Deploying in Your VMC
 
-You can deploy new instances to your VMC provider from CAM portal, for detailed steps, please check [Using the vmware vCenter Private Datacenter.md](../using-the-vmware-vcenter-private-datacenter.md)
+You can deploy new instances to your VMC provider from CAM portal, for detailed steps, please check [Using the vmware vCenter Private Datacenter.md](using-the-vmware-vcenter-private-datacenter.md)
 
 ### Getting General Support
 
