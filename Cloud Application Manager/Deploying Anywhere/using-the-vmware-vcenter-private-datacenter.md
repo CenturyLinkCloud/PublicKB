@@ -8,14 +8,15 @@
 
 **In this article:**
 
-* [Overview](#overview)
-* [Audience](#audience)
-* [Prerequisites](#prerequisites)
-* [Required Permissions](#required-permissions)
-* [Bootstrapping virtual machine templates with the Cloud Application Manager Agent]*#bootstrapping-virtual-machine-templates-with-the-cloud-application-manager-agent)
-* [Registering a vCenter provider in Cloud Application Manager](#registering-a-vcenter-provider-in-cloud-application-manager)
-* [Deploying in Your vCenter](#deploying-in-your-vcenter)
-* [Getting General Support](#getting-general-support)
+- [Overview](#overview)
+- [Audience](#audience)
+- [Prerequisites](#prerequisites)
+- [Required Permissions](#required-permissions)
+- [Bootstrapping virtual machine templates with the Cloud Application Manager Agent](#bootstrapping-virtual-machine-templates-with-the-cloud-application-manager-agent)
+- [Registering a vCenter provider in Cloud Application Manager](#registering-a-vcenter-provider-in-cloud-application-manager)
+- [Deploying in Your vCenter](#deploying-in-your-vcenter)
+- [Registering Instances to Your vCenter Provider](#registering-instances-to-your-vcenter-provider)
+- [Getting General Support](#getting-general-support)
 
 ### Overview
 
@@ -153,6 +154,21 @@ Select deployment metadata from a deployment profile to launch VMs to your vCent
 | Deployment Option | Description |
 |-------------------|-------------|
 | Disks | By default, an instance gets the template disk. For more storage, increase the template disk size and add up to seven more disks.<li>You can’t remove the template disk, but you can adjust its size. Type in the new size and press enter to save changes.</li><li>To add a disk, select a datastore from available ones in the datacenter. Specify the size in gigabytes, and click **Add**. Each disk can be up to 62 TB, disk can be up to 62 TB, but if the datastore doesn’t have such capacity, the instance won’t deploy.</li><li>Note that additional disks communicate through the same controller as the template disk.</li> |
+
+### Registering Instances to Your vCenter Provider
+
+You can also register you exsiting instances to CAM portal. First click on **Unregistered Instances** Tab, here you can see all the exsting instances in you vCenter that you can import into your CAM portal.
+
+Simply select one server and click on the down arrow button on the right side.
+![Register a vCenter instance](../../images/cloud-application-manager/deploying-anywhere/register_to_vcnter1.png)
+
+Choose a name for this instance and click on **Register**
+![register_to_vcnter1](../../images/cloud-application-manager/deploying-anywhere/register_to_vcnter2.png)
+
+Connect to server and execute the script below with admin privileges.
+![Script to register the instance](../../images/cloud-application-manager/deploying-anywhere/register_to_vcnter3.png)
+
+After running the script you should be able to see the instance has been registered successfully.
 
 ### Getting General Support
 
