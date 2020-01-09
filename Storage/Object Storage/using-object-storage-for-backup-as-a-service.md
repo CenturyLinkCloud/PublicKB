@@ -26,7 +26,7 @@ CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storag
 ### Prerequisites
 * A CenturyLink Cloud Account
 * Cloudberry Backup software licenses and installation
-* [An object storage user and bucket for backups is created in the CenturyLink Cloud Control Portal.](../Storage/Object Storage/using-object-storage-from-the-control-portal.md)
+* [An object storage user and bucket for backups is created in the CenturyLink Cloud Control Portal.](../Object Storage/using-object-storage-from-the-control-portal.md)
 * The source VM or Server has internet access
 
 ### Cloudberry Ultimate Edition capabilities
@@ -45,7 +45,7 @@ CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storag
 
   ![Cloudberry Ultimate - select CenturyLink](../../images/cloudberrylab/cloudberrylab-select-cloud-storage-centurylink-focused.jpg)
 
-2. Populate the S3 Compatible Account information with your CenturyLink Cloud [Object Storage Access Key, Secret Key, Service Point and bucket name.](../Storage/Object Storage/using-object-storage-from-the-control-portal.md) [All service points are listed here.](//www.ctl.io/knowledge-base/storage/object-storage/object-storage-regions-and-service-points/)
+2. Populate the S3 Compatible Account information with your CenturyLink Cloud [Object Storage Access Key, Secret Key, Service Point and bucket name.](../Object Storage/using-object-storage-from-the-control-portal.md) [All service points are listed here.](//www.ctl.io/knowledge-base/storage/object-storage/object-storage-regions-and-service-points/)
 
   ![Cloudberry Ultimate - set up CenturyLink account](../../images/cloudberrylab/cloudberrylab-centurylink-storage-account-configuration.jpg)
 

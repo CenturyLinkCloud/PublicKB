@@ -16,4 +16,4 @@ You send a request to Object Storage and receive the following error message in 
 The error is generated when the request limit has been exceeded.
 
 ### Resolution
-Review our [request rate and performance considerations article](../Storage/Object Storage/request-rate-and-performance-considerations.md) to look over design patterns you can implement to eliminate these errors and scale more efficiently. We recommend that you ensure your application properly handles this response and automatically scales the request rate back.
+Review our [request rate and performance considerations article](../Object Storage/request-rate-and-performance-considerations.md) to look over design patterns you can implement to eliminate these errors and scale more efficiently. We recommend that you ensure your application properly handles this response and automatically scales the request rate back.
