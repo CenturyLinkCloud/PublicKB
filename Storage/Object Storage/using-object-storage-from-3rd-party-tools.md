@@ -31,7 +31,7 @@ CenturyLink Cloud now has a robust, geo-distributed Object Storage service capab
 4. Capture the [service point for object storage](https://www.ctl.io/knowledge-base/storage/object-storage/object-storage-regions-and-service-points/).
 
 5. Back in Explorer for Amazon S3, click **File > New S3 Compatible Account**. Choose the **CenturyLink** menu option in order to add the connection details for Object Storage.
-   ![new s3 compatible account](../images/using-object-storage-from-3rd-party-tools-01.png)
+   ![new s3 compatible account](../../images/using-object-storage-from-3rd-party-tools-01.png)
 
 6. Specify name, service point, access, and secret keys to register the new CenturyLink account.
    ![s3 compatible account input](../../images/using-object-storage-from-3rd-party-tools-02.png)
@@ -71,7 +71,7 @@ CenturyLink Cloud now has a robust, geo-distributed Object Storage service capab
 
   1. For creating connections later, replace steps the previous 2 steps with this: Click the **Open Connection** icon (upper left corner) in order to configure the connection details for your Object Storage bucket. Select **S3 (Amazon Simple Storage)** from the drop down. In the **Server** field, enter the name of the **Service point**. Leave Port field set to **443**. Populate the **Username** field with your **Access Key ID** and populate the **Password** field with your **Secret Access key**.
 
-   ![cyberduck setup connection](.././images/cyberduck-setup-connection.png)
+   ![cyberduck setup connection](../../images/cyberduck-setup-connection.png)
 
 8. After you have configured the Object Storage connection, CyberDuck will list the available buckets at that **Connection**. You can double-click on a bucket to upload files or even drag-and-drop files into the bucket.
 
