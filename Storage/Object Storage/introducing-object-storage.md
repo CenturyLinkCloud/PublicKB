@@ -19,7 +19,7 @@ A: CenturyLink Cloud Object Storage is based on a popular software package with 
 
 **Q: What are the key vocabulary terms for Object Storage?**
 
-A: Object Storage is deployed in a series of "regions" which include data centers for each CenturyLink Cloud geography (a full list of available regions is [here](https://www.ctl.io/knowledge-base/object-storage/object-storage-regions-and-service-points/)). Object Storage uses "buckets" to hold "objects." Buckets are flat (no hierarchy) and can contain an unlimited number of objects and unlimited amount of storage. "Access Control Lists" (ACLs) describe permissions to a bucket and the objects within it. Object Storage "users" have an "access key ID" and "secret access key" which act as the user's username and password for accessing storage.
+A: Object Storage is deployed in a series of "regions" which include data centers for each CenturyLink Cloud geography (a full list of available regions is [here](object-storage-regions-and-service-points.md)). Object Storage uses "buckets" to hold "objects." Buckets are flat (no hierarchy) and can contain an unlimited number of objects and unlimited amount of storage. "Access Control Lists" (ACLs) describe permissions to a bucket and the objects within it. Object Storage "users" have an "access key ID" and "secret access key" which act as the user's username and password for accessing storage.
 
 **Q: How do Object Storage users relate to CenturyLink Cloud users?**
 

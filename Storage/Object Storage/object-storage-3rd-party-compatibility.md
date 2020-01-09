@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-[CenturyLink's Next Generation Object Storage](//www.ctl.io/object-storage/) offers enterprise-grade object storage. Our cloud servers store and manage your files in a highly-scalable, fault-tolerant distributed datastore. Customers may wish to leverage 3rd party tools and product suites with our storage platform and we have assembled a list of the known compatible products below.
+[CenturyLink's Next Generation Object Storage](//www.ctl.io/storage/object-storage/) offers enterprise-grade object storage. Our cloud servers store and manage your files in a highly-scalable, fault-tolerant distributed datastore. Customers may wish to leverage 3rd party tools and product suites with our storage platform and we have assembled a list of the known compatible products below.
 
 ### Important Note
 These 3rd party tools provide a vast array of features and capabilities. To that end, some features in the packages are not compatible with the service catalogs of all cloud providers including CenturyLink Cloud's platform. **Compatibility simply means the tool or software package can read/write to the storage endpoint.**  

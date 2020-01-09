@@ -14,7 +14,7 @@ CenturyLink Cloud [Object Storage](http://www.ctl.io/object-storage) is an ideal
 
 ### Prerequisites
 * Have users and buckets created in Object Storage.
-* See the KB article [Using Object Storage from the Control Portal](https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/) for a walkthrough of users and buckets.
+* See the KB article [Using Object Storage from the Control Portal](https://www.ctl.io/knowledge-base/storage/object-storage/using-object-storage-from-the-control-portal/) for a walkthrough of users and buckets.
 
 ### Using the Object Storage REST API from .NET
 The CenturyLink Cloud Object Storage service offers an Amazon S3-compatible web services endpoint. The endpoint has the same authentication, resources, and payloads as defined in the [Amazon S3 documentation](http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html). The steps below show how to consume Object Storage from a custom .NET application. **Note** that the [source code for this sample application](https://github.com/Tier3/Examples/tree/master/ObjectStorage/Tier3.ObjectStorageViaAPI.DotNet) can be downloaded from GitHub.
@@ -26,7 +26,7 @@ Log into the Control Portal to acquire your user credentials.
 
 2. Click the user name associated with the buckets (or has access to an individual bucket) that you want to access. Locate and record the **access key id** and the **secret access key** values. These act as your credentials for all API operations.
 
-   ![Access Keys](../images/kb-object-storage-access-keys.png)
+   ![Access Keys](../../images/kb-object-storage-access-keys.png)
 
 3. Create a new Visual Studio project. In this example, the project is a **Console** application.
 

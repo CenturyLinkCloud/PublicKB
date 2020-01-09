@@ -46,7 +46,7 @@ Once S3CMD has been installed, it must be configured to use CenturyLink Cloud’
 2. You need both your **access Key ID** and your **secret access key**. You can find them by clicking **Services > Object Storage**.
 
 3. On the Object Storage page, click the **Users** tab and then the appropriate username.
-   ![Access Keys](../images/kb-object-storage-access-keys.png)
+   ![Access Keys](../../images/kb-object-storage-access-keys.png)
 
 4. Enter your encryption password.
 
@@ -126,7 +126,7 @@ To begin using S3CMD, you need to create an Object Storage user and a bucket, wh
 2. Click the **User** tab and then **create user**.
 
 3. Fill out the required fields.
-   ![Create User](../images/kb-object-storage-create-user.png)
+   ![Create User](../../images/kb-object-storage-create-user.png)
 
 4. Click **save**.
 
@@ -134,7 +134,7 @@ To begin using S3CMD, you need to create an Object Storage user and a bucket, wh
 
 6. Enter the **bucket name**. Select the **owner** from the drop-down menu. Then, select a **region**.
    * You can add additional users or modify the permissions after creating the bucket. Simply click the bucket name.
-   ![Create Bucket](../images/kb-object-storage-create-bucket.png)
+   ![Create Bucket](../../images/kb-object-storage-create-bucket.png)
 
 7. Click **save**.
 

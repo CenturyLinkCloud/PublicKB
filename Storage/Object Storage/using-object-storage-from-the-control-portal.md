@@ -17,20 +17,20 @@ Below, each action available in the Control Portal is explained and demonstrated
 
 ### Create Object Storage Users
 1. From the Navigation Menu, click **Services > Object Storage**.
-   ![Navigation Menu ](../images/using-object-storage-from-the-control-portal-01.png)  
+   ![Navigation Menu ](../../images/using-object-storage-from-the-control-portal-01.png)  
 
 2. On the Object Storage page, click the **Users** tab.
-   ![User Tab](../images/using-object-storage-from-the-control-portal-02.png)  
+   ![User Tab](../../images/using-object-storage-from-the-control-portal-02.png)  
 
 3. Click **create user** and enter the user's details.
    * The **name** field should contain a friendly alphanumeric identifier for the user.
    * Enter an **email** address for the user. Note that this value must be unique across the platform and can't be reused. The account cannot be deleted and the email address cannot be changed. We recommend using a distribution email address, rather than the email address of a single person. If needed, we will use this email address to reach out to the technical contacts who manage the bucket.
-  ![Create User](../images/using-object-storage-from-the-control-portal-03.png)  
+  ![Create User](../../images/using-object-storage-from-the-control-portal-03.png)  
 
 4. Click **save**.
 
 5. Click the created user record to view the **access key id** and **secret access key** values which act as the username and password for this Object Storage user.
-   ![using-object-storage-from-the-control-portal-04](../images/using-object-storage-from-the-control-portal-04.png)  
+   ![using-object-storage-from-the-control-portal-04](../../images/using-object-storage-from-the-control-portal-04.png)  
 
 ### Reset Object Storage User Secret Key
 1. Navigate to the record for the chosen Object Storage user.
@@ -48,7 +48,7 @@ Below, each action available in the Control Portal is explained and demonstrated
    * The name has to start and end with lowercase letters or numbers, and can only contain lowercase letters, numbers, and dashes. This value must be unique globally. If the name of the bucket is not unique, you receive an alert asking you to choose a new bucket name.
    * Select an **owner** from from the drop-down arrow. The owner is an important decision as the API retrieves lists of buckets by the owner name.
    * Select an Object Storage region from the drop-down arrow.
-   ![using-object-storage-from-the-control-portal-07](../images/using-object-storage-from-the-control-portal-07.png)  
+   ![using-object-storage-from-the-control-portal-07](../../images/using-object-storage-from-the-control-portal-07.png)  
 
 4. Click **save** to create the bucket.
 
@@ -62,13 +62,13 @@ Below, each action available in the Control Portal is explained and demonstrated
 6. Click the bucket name to view the details of the bucket.
    * This page shows read-only details such as the bucket name, owner, region and API URL.
    * It also contains the list of active permissions associated with the bucket.
-   ![Bucket Info](../images/using-object-storage-from-the-control-portal-09.png)  
+   ![Bucket Info](../../images/using-object-storage-from-the-control-portal-09.png)  
 
 #### Manage Object Storage Permissions
 1. View the details for an individual bucket.
 
 2. Click the **permissions** section to the customize permissions.
-   ![using-object-storage-from-the-control-portal-10](../images/using-object-storage-from-the-control-portal-10.png)  
+   ![using-object-storage-from-the-control-portal-10](../../images/using-object-storage-from-the-control-portal-10.png)  
 
 3. Click **add grantee** to update the Access Control List (ACL) for the bucket.
    * The drop-down list shows all Users in this account, and two built-in Groups: **All Users** and **Authenticated Users**.
@@ -83,4 +83,3 @@ Below, each action available in the Control Portal is explained and demonstrated
 #### Delete Object storage buckets
 1. Ensure the bucket is empty (required for deletion).
 2. Select the bucket and click the red "delete" button in the upper right corner.
-
