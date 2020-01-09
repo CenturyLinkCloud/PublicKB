@@ -27,7 +27,7 @@ s3fs is a FUSE filesystem that allows you to mount a S3 compatible bucket as a l
 
 -   Identify a CentOS Linux platform that you would like to have s3fs installed
 
--   Understanding the functions of Object Storage (beyond the scope of this article), to learn more, please see this [knowledge article](../Object Storage/introducing-object-storage.md)
+-   Understanding the functions of Object Storage (beyond the scope of this article), to learn more, please see this [knowledge article](../Storage/Object Storage/introducing-object-storage.md)
 
 -   Ability to install packages on the server
 
@@ -105,7 +105,7 @@ The parameters required for this script are:
 ![s3fs parameters](../images/s3fs/s3fs-parameters.png)
 
 ### Testing
-- Test the installation with the command below. For the current list of Object Storage end points, please see [this knowledge article](../Object Storage/object-storage-regions-and-service-points.md):
+- Test the installation with the command below. For the current list of Object Storage end points, please see [this knowledge article](../Storage/Object Storage/object-storage-regions-and-service-points.md):
 
     ```
     s3fs mybucket:/ /path_to_mountpoint -o passwd_file=/path_to_password_file/password_s3fs -o url=https://canada.os.ctl.io/

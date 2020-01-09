@@ -135,7 +135,7 @@ Follow these steps to access and use the CloudBerry software.
 
   ![Cloudberry Lab - service endpoint for CenturyLink](../../images/cloudberrylab/cloudberrylab-centurylink-endpoint.jpg)
 
-  The list of service points are available [in our knowledgebase.](../../Object Storage/object-storage-regions-and-service-points.md)
+  The list of service points are available [in our knowledgebase.](../../Storage/Object Storage/object-storage-regions-and-service-points.md)
 
 11.	Go back to the buckets window and choose the tab “Users”.
 
