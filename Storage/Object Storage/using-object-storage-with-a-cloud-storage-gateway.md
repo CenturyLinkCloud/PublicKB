@@ -12,12 +12,12 @@ CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storag
 There are many Cloud Storage Gateway appliances on the market today. In this Knowledge Base article we will focus on [TwinStrata](http://www.twinstrata.com/). The TwinStrata CloudArray provides customers various delivery models for the CloudArray product and Cloud Storage. Customers should validate with their Cloud Storage Gateway provider the support of an S3 compatible Object Storage.
 
 ### Supporting Information
-Information and details around the CenturyLink Cloud Object Storage can be found in our [Knowledge Base](https://www.ctl.io/knowledge-base/object-storage/). It is also important to note that CenturyLink Cloud provides no support for any 3rd party Cloud Storage Gateways. We are simply providing cloud based storage for use with these Cloud Storage Gateways.  
+Information and details around the CenturyLink Cloud Object Storage can be found in our [Knowledge Base](https://www.ctl.io/knowledge-base/storage/object-storage/). It is also important to note that CenturyLink Cloud provides no support for any 3rd party Cloud Storage Gateways. We are simply providing cloud based storage for use with these Cloud Storage Gateways.  
 
 ### Prerequisites
 * CenturyLink Cloud Account
 * TwinStrata CloudArray Virtual or Physical Appliance Base Configuration
-* An object storage user is created in the CenturyLink Cloud Control Portal. See this [Knowledge Base](https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/) article.
+* An object storage user is created in the CenturyLink Cloud Control Portal. See this [Knowledge Base](https://www.ctl.io/knowledge-base/storage/object-storage/using-object-storage-from-the-control-portal/) article.
 * The Cloud Storage Gateway has internet access ports as defined by the TwinStrata Installation Documentation.
 
 ### Configuring CenturyLink Cloud as a Cloud Provider
@@ -28,7 +28,7 @@ Information and details around the CenturyLink Cloud Object Storage can be found
    ![cloud_providers_02.png](https://t3n.zendesk.com/attachments/token/zgglh9shasiukpo/?name=cloud+providers+02.png0)
 
 3. Enter the details required to connect to the selected Cloud Provider.
-   * For the node, [all service points are listed here](https://www.ctl.io/knowledge-base/object-storage/object-storage-regions-and-service-points/).
+   * For the node, [all service points are listed here](https://www.ctl.io/knowledge-base/storage/object-storage/object-storage-regions-and-service-points/).
    * Provide the **access key id** and **secret access key** for the user created in the prerequisites .
    * Encryption, Compression, and SSL are recommended.
    ![cloud_providers_03.png](https://t3n.zendesk.com/attachments/token/1awhhwleoylupqf/?name=cloud+providers+03.png)
