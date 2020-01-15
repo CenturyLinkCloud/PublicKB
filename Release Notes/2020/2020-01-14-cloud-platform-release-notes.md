@@ -7,36 +7,32 @@
 "contentIsHTML": false
 }}}
 
-### Enhancements
+### Announcements
 
-#### CenturyLink Private Cloud on VMware Cloud Foundation (CPC on vCF)
+#### Cloud Application Manager Platform
 
-##### **Multiple Cluster Support**
-Customers who order multiple CPC on vCF clusters can manage these multiple clusters within a single vCD UI.
+##### Support for Portuguese and Spanish accents and special characters
 
-##### **GPU Add-on**
-Customers can order a GPU Add-on option for CPC on vCF new or existing clusters, providing support for VDI, Digital Imaging and High Performance Gaming use cases.
+Cloud Application Manager now supports the usage of Portuguese and Spanish accents and special characters. Users can now name their resources with these types of characters, and also use them in most of the providers, boxes and instance attributes such as description, readme, claims and requirements, as well as in users' first and last names.
 
 #### Application Lifecycle Management
 
-##### Azure deployment policies search field for size and image dropdowns
+##### Extended event execution audit trail
 
-Application Lifecycle Management has added a search field to the size and image dropdowns of the Azure deployment policy properties. These two dropdowns have a high number of options, so it was difficult to locate a specific one among all of them. The search field allows the user to filter the displayed options so that it is easier to locate and select the required ones. Additionally, the size description has been extended with the corresponding CPU and memory values to facilitate the selection of the appropriate one.
+Application Lifecycle Management has extended the event execution audit trail. Apart from the event execution output results that are being already logged in the instance activity page, this feature will add the logging of all the scripts source code that is being executed on an instance, including the variable substitutions that were made before running it. This feature is not enabled by default in an organization. For that reason, an organization administrator should request the enablement of it via a support ticket. 
 
-##### Auto-register Terraform VM resources in managed providers
+##### Register-only instances
 
-Application Lifecycle Management now includes the feature to auto-register VM instances that were deployed as part of a Terraform template deployment in a vCloud-based managed provider. The compute instances included into the Terraform template box resources will be automatically registered in Cloud Application Manager and the make managed process will be executed on them. This is currently supported for CenturyLink Private Cloud on vCloud Foundation and VMWare vCloud Director provider types.
+Application Lifecycle Management has added the ability to restrict the execution of any script in registered instances. When this feature is enabled, the instances being registered (imported) can be considered as registered-only instances, since there is no option to update nor modify the instance. If the imported instance is hosted into a managed provider, only the make managed process scripts and subsequent updates to this process will be allowed to be executed. This feature is not enabled by default in an organization. For that reason, an organization administrator should request the enablement of it via a support ticket. 
+
+##### Added bulk delete option in boxes list page
+
+Application Lifecycle Management has added the ability to bulk delete boxes in the boxes list view. Users can select several boxes in the list and if they have the necessary permissions to delete them, they can click on the Delete Boxes option in the Bulk Actions dropdown menu to remove them.
+
+##### Added support for Ubuntu 18 and Windows 2019 in CLC-based deployment policies
+
+Application Lifecycle Management now supports Ubuntu 18 and Windows 2019 OS-based images to be used in CLC deployment policies. Users should synchronize their CLC providers in order to gather information about the available images for these operating system versions to allow the selection of these as templates for their deployment policies.
 
 ##### New CloudFormation types supported
 
-Application Lifecycle Management now supports additional CloudFormation types to be used in CloudFormation template boxes. 
-These additional types are: 
-* "AWS::Pinpoint::EmailTemplate"
-* "AWS::Pinpoint::PushTemplate"
-* "AWS::Pinpoint::SmsTemplate"
-* "AWS::CodeStarNotifications::NotificationRule"
-* "AWS::MediaConvert::JobTemplate"
-* "AWS::MediaConvert::Preset"
-* "AWS::MediaConvert::Queue" 
-
-Users can now use these new resource types in the template definition of any CloudFormation template box or update any existing template instance to use it.
+Application Lifecycle Management now supports additional CloudFormation types to be used in CloudFormation template boxes. These additional types are: "AWS::CodeBuild::ReportGroup" and "AWS::EC2::GatewayRouteTableAssociation". Users can now use these new resource types in the template definition of any CloudFormation template box or update any existing template instance to use it.
