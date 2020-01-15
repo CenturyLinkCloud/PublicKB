@@ -30,10 +30,11 @@ SafeHaven supports VMware vSphere based virtual Windows and Linux servers. The f
 |-------------------------|:----------------:|:----------------------:|
 | Windows 2008 Server R1/R2 (64 bit) | X | X |
 | Windows 2012 Server R1/R2 (64 bit) | X | X |
-| Ubuntu 12/14/16 |   | X |
-| RHEL 5/6/7 |   | X |
-| CentOS 5/6/7 |   | X |
-| openSUSE 11/13 |   | X |
+| Windows 2016 Server R1/R2 (64 bit) | X | X |
+| Ubuntu 14/16 |   | X |
+| RHEL 6/7 |   | X |
+| CentOS 6/7 |   | X |
+
 
 **What are the supported hosting platforms?**
 
@@ -60,27 +61,16 @@ The customer is given administrative control to the SafeHaven solution via the S
 **What types of monitoring take place on servers?**
 
 Servers are monitored 24 X 7 X 365. CenturyLink monitors SafeHaven nodes, protection groups, protected Windows servers, and recovered Windows servers. No monitors are deployed on Linux production servers. The following monitoring probes are in place for SafeHaven servers:
-* SafeHaven
-* RabbitMQ
-* SCST
-* Apache
-* SSH
-* SBD Module
-* CPU
-* Memory
-* Disk space
-* RPO
-* PG
-* CMS service
+* Replication Nodes
+* Replication Service
+* Recovery Point Objective
+* Checkpoints status
+* Cluster health
 
 The following monitoring probes are in place for Windows production servers:
-* Replication process
-* Replication service CPU usage
-* Replication service memory usage
-* Local replication completion
-* SafeHaven installation folder size
-* System event log
-* LRA replication status
+* Replication service status
+* Replication status
+* Recovery Point Objective
 * Connection to local replication disk
 
 For detailed monitor information and frequency intervals, refer to the *Managed Disaster Recovery Services Guide*.
@@ -91,7 +81,7 @@ Audit services identify new servers, disks, applications, deletions, and network
 
 **What types of test services are covered?**
 
-SafeHaven test failover is a bubble test in which the CenturyLink managed recovery servers and the corresponding primary servers are isolated. Tests and alterations on the recovery data center are not routed back to a production data center, thus avoiding any disruptions. Critical applications are also started by CenturyLink on recovery servers during testing.
+SafeHaven test failover is a bubble test in which the CenturyLink managed recovery servers are brought up in an isolated network. Tests and alterations on the recovery data center are not routed back to a production data center, thus avoiding any disruptions. Critical applications are also started by CenturyLink on recovery servers during testing.
 
 **How often does CenturyLink conduct failover testing?**
 
