@@ -29,7 +29,7 @@ Application Lifecycle Management has added the ability to restrict the execution
 
 Application Lifecycle Management has added the ability to bulk delete boxes in the boxes list view. Users can select several boxes in the list and if they have the necessary permissions to delete them, they can click on the Delete Boxes option in the Bulk Actions dropdown menu to remove them.
 
-##### Added support for Ubuntu 18 and Windows 2019 in CLC-based deployment policies
+##### Added support for Ubuntu 18 and Windows 2019 in CLC-based deployment policies 
 
 Application Lifecycle Management now supports Ubuntu 18 and Windows 2019 OS-based images to be used in CLC deployment policies. Users should synchronize their CLC providers in order to gather information about the available images for these operating system versions to allow the selection of these as templates for their deployment policies.
 
