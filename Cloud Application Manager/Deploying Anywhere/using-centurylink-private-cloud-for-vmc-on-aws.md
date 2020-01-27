@@ -1,7 +1,7 @@
-{{{ "title": "Using the CenturyLink Private Cloud with VMC on AWS",
+{{{ "title": "Using the CenturyLink Private Cloud for VMWare Cloud on AWS",
 "date": "01-08-2020",
 "author": "Guillermo Sanchez",
-"keywords": ["cam", "cloud application manager", "vmware", "aws", "vmc", "cpc", "centurylink private cloud"],
+"keywords": ["cam", "cloud application manager", "vmware cloud", "aws", "vmc", "cpc", "centurylink private cloud"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -20,16 +20,16 @@
 
 ### Overview
 
-This article is meant to assist users of Cloud Application Manager to configure a CenturyLink Private Cloud with VMC on AWS provider, then deploy or register a virtual machines with it.
+This article is meant to assist users of Cloud Application Manager to configure a CenturyLink Private Cloud for VMWare Cloud on AWS (CPC for VMC) provider, then deploy or register a virtual machines with it.
 
 ### Audience
 
-All users of Cloud Application Manager using CenturyLink Private Cloud with VMC on AWS providers.
+All users of Cloud Application Manager using CenturyLink Private Cloud for VMWare Cloud on AWS providers.
 
 ### Prerequisites
 
 * An active *Cloud Application Manager* account
-* Access and credentials to a **CenturyLink Private Cloud with VMC on AWS**.
+* Access and credentials to a **CenturyLink Private Cloud for VMWare Cloud on AWS**.
 * A virtual machine template (Linux or Windows) on the VMC. Virtual machine templates have to be bootstrapped with the Cloud Application Manager Agent.
 * If the VMC is behind a firewall, the following ports have to be open on the firewall:
   * **443/TCP incoming to VMC server**: for Cloud Application Manager to make API calls on VMC.
@@ -89,7 +89,7 @@ Follow these steps to run a script that creates a scheduled task on a Windows Se
 
 4. Right-click the script and click **Run PowerShell**.
 
-### Registering a CenturyLink Private Cloud with VMC on AWS provider in Cloud Application Manager
+### Registering a CenturyLink Private Cloud for VMWare Cloud on AWS provider in Cloud Application Manager
 
 In order to deploy to a VMC on AWS, you must first provide information to connect.
 
@@ -97,7 +97,7 @@ In order to deploy to a VMC on AWS, you must first provide information to connec
 
 1. In Cloud Application Manager, click **Providers** > **New Provider**.
 
-2. Select **CenturyLink Private Cloud with VMC on AWS**.
+2. Select **CPC for VMC** provider type.
 
 3. Enter the endpoint URL for the VMC server and a username, password to the VMC API.
    * **Note:** The endpoint URL can be a hostname or an IP address, and has to be prefixed with **<https://>**. Be sure to use https and not http.
