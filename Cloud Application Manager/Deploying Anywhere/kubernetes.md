@@ -2,8 +2,9 @@
 "date": "01-02-2019",
 "author": "Dénes Pál",
 "attachments": [],
-"contentIsHTML": false,
-"keywords": ["kubernetes", "k8s", "setup", "configuration", "cloud application manager", "provider", "Cloud Application Manager"]
+"keywords": ["kubernetes", "k8s", "setup", "configuration", "cloud application manager", "provider", "Cloud Application Manager"],
+"sticky": true,
+"contentIsHTML": false
 }}}
 
 **In this article:**
@@ -156,7 +157,7 @@ Specify the provider name and description and fill in the cluster-specific crede
 
 ![Configuring a Kubernetes Provider](../../images/cloud-application-manager/kubernetes/new_provider_dialog.png)
 
-***API Server Address*** can be an IP address or a fully qualified domain name. It is going to be prefixed with `https://` by default. In an unlikely scenario when the cluster does not support SSL, you need to prefix the address with `http://` instead. **Mind that** in case of `http://` the authentication token and password will travel the wire unencrypted. 
+***API Server Address*** can be an IP address or a fully qualified domain name. It is going to be prefixed with `https://` by default. In an unlikely scenario when the cluster does not support SSL, you need to prefix the address with `http://` instead. **Mind that** in case of `http://` the authentication token and password will travel the wire unencrypted.
 
 It is recommended to provide the ***CA Certificate*** of the cluster, otherwise it may not validate with the public Certificate Authorities, and cause an SSL connection error.
 

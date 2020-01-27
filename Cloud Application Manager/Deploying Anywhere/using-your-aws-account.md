@@ -4,6 +4,7 @@
 "author": "Julio Castanar & Sergio Quintana",
 "keywords": ["aws", "ecs", "deploy"],
 "attachments": [],
+"sticky": true,
 "contentIsHTML": false
 }}}
 
@@ -57,19 +58,19 @@ Go to [AWS Services console](https://console.aws.amazon.com) and login into your
 1. Create a custom AWS Policy.  
 Go to top **Services** menu and in Security, Identity, & Compliance section, select **IAM**. Then select **Policies** in the left side menu.
 
-![AWS Console Policies](../../images/aws-console/aws-console-policies.png)
+    ![AWS Console Policies](../../images/aws-console/aws-console-policies.png)
 
 2. Click on **Create policy** button and select Create your own policy.  
    There are several ways to add a policy. Here we will describe how to use a JSON snippet.  
    Select **JSON** tab in new Amazon Create policy page and continue editing the snippet displayed below in [Choosing the right policy](#choosing-the-right-policy).
 
-![AWS Console Policies](../../images/aws-console/aws-console-json.png)
+    ![AWS Console Policies](../../images/aws-console/aws-console-json.png)
 
 3. When edited, click on **Review policy** and if there are no errors you will be prompted to give a name and a description for this policy. Save changes clicking on **Create policy** at the bottom of the page.
 
-![AWS Console Review](../../images/aws-console/aws-console-review.png)
+    ![AWS Console Review](../../images/aws-console/aws-console-review.png)
 
-In this example we give the name *CAM_Policy*. It will be used later.
+    In this example we give the name *CAM_Policy*. It will be used later.
 
 #### Choosing the right policy
 
@@ -331,7 +332,6 @@ If you are not planning to use CloudFormation template boxes and you want to use
 
    ![AWS Console Role tags](../../images/aws-console/aws-console-role-3.png)
 
-
 4. Register the IAM role in Cloud Application Manager.  
    Give a role name, verify that appears the two policies selected before and click on Create Role
 
@@ -341,7 +341,7 @@ If you are not planning to use CloudFormation template boxes and you want to use
 
 After you create this Role, it is attached to the policies selected (in the example, *CAM_Policy* and *ReadOnlyAccess*). You can check it by accesing to the Policy details. Select in the main left side menu **Policies**, search your Policy and click on it to see detail.  
 
-The tab *Policy usage* shows you the permissions attached to your policy. Here you can see the Role created before or attach an existing Role. 
+The tab *Policy usage* shows you the permissions attached to your policy. Here you can see the Role created before or attach an existing Role.
 
    ![AWS Console Policy permissions](../../images/aws-console/aws-console-policies-2.png)
 
@@ -355,7 +355,7 @@ Going back to Cloud Application Manager, you must first add your account as a ne
 2. Click on **New** and give a name to your AWS Provider. Then, paste the **Role ARN id** copied before.
 
 ![New AWS Provider role ARN](../../images/cloud-application-manager/aws-deployment-add.png)
- 
+
 When the provider is created all its default resources are synchronized. If the provider already exists, you can synchronize its resources by clicking on the **Sync** button.
 
 ![Provider details page](../../images/cloud-application-manager/aws-deployment-config.png)
@@ -399,7 +399,8 @@ RDS, DynamoDB, and Memcached are CloudFormation boxes. To deploy to an RDS servi
 **Note:** If your AWS account has new AMIs, key pairs, security groups, and the like, you must sync with the AWS account in Cloud Application Manager to pick up all the changes.
 
 ### EC2 (Linux and Windows)
-To deploy workloads to an EC2 instance, create a [deployment policy](../Automating Deployments/deploymentpolicy-box.md) and select Virtual or Phisical Machine for an AWS account or use the one your admin shared with you. 
+
+To deploy workloads to an EC2 instance, create a [deployment policy](../Automating Deployments/deploymentpolicy-box.md) and select Virtual or Phisical Machine for an AWS account or use the one your admin shared with you.
 
 ![Deployment Policy Details](../../images/cloud-application-manager/deployment-policy/aws-deployment-policy.png)
 
@@ -439,9 +440,9 @@ To deploy workloads to an EC2 instance, create a [deployment policy](../Automati
 
 | Deployment Option | Description |
 |-------------------|-------------|
-| Security Groups |	Select security groups to route traffic to the instance. If you didn’t create a security group in AWS for EC2 or a VPC, select **Automatic** for Cloud Application Manager to create one on your behalf. |
-| Placement Group |	Select an existing placement group from AWS to cluster instances for high network performance. Some instances can get 10 Gbps connectivity depending on their instance type. To learn more, see the [AWS docs](//docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html). To let Cloud Application Manager view and direct the instance to the placement group, update the Cloud Application Manager IAM role policy with the [listed permissions](using-your-aws-account.md). |
-| Elastic IP |	When launching to AWS, select Elastic IP to allocate a fresh static IP address from the EC2 or VPC pool and associate it to the instance depending on whether you’re deploying to EC2 classic or your VPC. If you’re using dynamic DNS to assign an IP address in EC2 or want to allow internet traffic to communicate with your instance in a non default VPC, then use Elastic IPs to guarantee public access. **Note:** You can’t autoscale the instance when you choose an Elastic IP for it. For more information, see the [AWS help](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html). |
+| Security Groups | Select security groups to route traffic to the instance. If you didn’t create a security group in AWS for EC2 or a VPC, select **Automatic** for Cloud Application Manager to create one on your behalf. |
+| Placement Group | Select an existing placement group from AWS to cluster instances for high network performance. Some instances can get 10 Gbps connectivity depending on their instance type. To learn more, see the [AWS docs](//docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html). To let Cloud Application Manager view and direct the instance to the placement group, update the Cloud Application Manager IAM role policy with the [listed permissions](using-your-aws-account.md). |
+| Elastic IP | When launching to AWS, select Elastic IP to allocate a fresh static IP address from the EC2 or VPC pool and associate it to the instance depending on whether you’re deploying to EC2 classic or your VPC. If you’re using dynamic DNS to assign an IP address in EC2 or want to allow internet traffic to communicate with your instance in a non default VPC, then use Elastic IPs to guarantee public access. **Note:** You can’t autoscale the instance when you choose an Elastic IP for it. For more information, see the [AWS help](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html). |
 
 #### Proxy
 
@@ -449,9 +450,8 @@ To deploy workloads to an EC2 instance, create a [deployment policy](../Automati
 
 | Option | Description |
 |-------------------|-------------|
-| Host |	The hostname or domain of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+| Host | The hostname or domain of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
 | Port |  The port of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
-
 
 #### Other
 
@@ -597,7 +597,7 @@ ebcli build ”<box ID>” [-t “<image name>”] [--image <image name>] [--box
 |-------------------|-------------|
 | -t | Name of the image to be build. |
 | –image | Name of the base image to be used. E.g. ubuntu:14.04 or Centos. |
-| –boxes-path |	Path where the boxes are located. |
+| –boxes-path | Path where the boxes are located. |
 
 ##### Push the Image
 

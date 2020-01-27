@@ -3,6 +3,7 @@
 "author": "Guillermo Sánchez, Efren Rey, Victor Shulman, and Yongjie Liang",
 "keywords": ["cam", "instances", "lifecycle", "deploy", "deployment-policy", "instance-protection", "shutdown-protection", "terminate-protection", "bulk-actions"],
 "attachments": [],
+"sticky": true,
 "contentIsHTML": false
 }}}
 
@@ -108,7 +109,7 @@ Some of the filters, such as Providers and types, have two level of filtering (i
 
 An instance is an instantiated version of a box launched to provider’s virtual infrastructure or your own. Follow these steps to launch one.
 
-**Steps**
+#### Steps
 
 1. Click **Instances** > **New**
 2. Select a box. You can search and look through the tabs.
@@ -143,7 +144,7 @@ We notify you of instances about to expire in 24 hours by email at around 12 AM 
 
 Follow these steps to schedule an instance.
 
-**Steps**
+#### Steps to schedule an instance
 
 1. From the Instances page, click **New**.
 2. Select a box you want to deploy.
@@ -186,7 +187,7 @@ Follow these steps to enable instance protection on any **deployment policy** bo
 
 Follow these steps to protect an instance at **deployment** time:
 
-**Steps**
+#### Steps to protect an instance
 
 1. From the instances page, click **New**.
 2. Select a box you want to deploy.

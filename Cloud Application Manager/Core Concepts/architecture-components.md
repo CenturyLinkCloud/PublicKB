@@ -1,10 +1,11 @@
 {{{
 "title": "Architecture components",
-"date": "10-4-2019",
+"date": "11-12-2019",
 "author": "Diego Sanjuan & Thomas Broadwell",
 "attachments": [],
-"contentIsHTML": false,
-"keywords": ["cam", "cloud application manager", "architecture", "components", "agents", "websockets", "workflow", "services"]
+"keywords": ["cam", "cloud application manager", "architecture", "components", "agents", "websockets", "workflow", "services"],
+"sticky": true,
+"contentIsHTML": false
 }}}
 
 **In this article:**
@@ -60,7 +61,12 @@ The Monitoring infrastructure provides a [repository of checks](https://watcher.
 
 Agents require outbound connectivity to [https://cam.ctl.io](https://cam.ctl.io) and https://\*.watcher.ctl.io to be able to call back and communicate results and request more work to be done on its virtual machine.
 
-Secure, public internet connections are used for the transfer of metric data between the agent and the Monitoring infrastructure via TLS 1.2. Network transactions are initiated by the agent and outbound only.
+Secure, public internet connections are used for the transfer of metric data between the agent and the Monitoring infrastructure via TLS 1.2. Network transactions are initiated by the agent and outbound only.  These transactions are secured in multiple ways:
+
+* Private RSA key is created for each Watcher agent and used for TCP (Layer4) connection to the Monitoring infrastructure message bus
+* Username & Passwords are established for each Watcher agent and used for connection to the Monitoring infrastructure message bus
+* Encrypted agent signatures are used bi-directionally for Agent submittals to the Monitoring infrastructure and Monitoring Infrastructure responses (Check/Metric configuration updates) to the Watcher agent.
+* Server-side access control/permissioning of the Watcher agent deployed to the host (monitored instance)
 
 ### Websockets
 

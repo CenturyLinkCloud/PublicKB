@@ -4,9 +4,9 @@
 "author": "Sergio Quintana, Yongjie Liang, Zachary McMaster",
 "keywords": ["cam", "cloud application manager", "centurylink", "clc"],
 "attachments": [],
+"sticky": true,
 "contentIsHTML": false
 }}}
-
 
 **In this article:**
 
@@ -38,7 +38,7 @@ All Cloud Application Manager users who want to deploy workloads into CLC.
 
 You need a [CenturyLink Cloud account](//www.ctl.io/) to be able to deploy from Cloud Application Manager. When you have an account, follow these steps to register it in Cloud Application Manager to automate your deployments.
 
-**Steps**
+#### Steps
 
 1. In Cloud Application Manager, go to **Providers** > **New Provider** and select **CenturyLink.**
 
@@ -67,7 +67,7 @@ These resources can be filtered by the following types and subtypes:
   * Load Balancer
   * VPN
 
-### CenturyLink Sub-Accounts 
+### CenturyLink Sub-Accounts
 
 Also after the synchronization process, you will have the list sub-accounts under this provider account located in the provider page in the sub-accounts section.
 
@@ -86,14 +86,13 @@ Note a couple of things about instances you deploy on CenturyLink Cloud through 
 * Instance name. Each instance is assigned a name that has the format of DatacenterFirst_six_letters_of_instance_nameCounter. i.e., UC1CITTPUBLIC01 for an instance deployed on UC1 (US West - Santa Clara) of a box called Public Proxy.
 * Instance Description. Depending on the number of instances you spin up through Cloud Application Manager, each instance is assigned a description that has the format of dasherized-instance-name-datacenter-service_ID-machine-number.
 
-**Deployment**
+#### Deployment
 
 | Option | Description |
 |--------|-------------|
 | Provider |  Select a CenturyLink Cloud account registered in Cloud Application Manager. |
 
-
-**Resource**
+#### Resource
 
 ![Resource section of deployment policy](../../images/cloud-application-manager/deployment-policy/resource-centurylink.png)
 
@@ -101,33 +100,31 @@ Note a couple of things about instances you deploy on CenturyLink Cloud through 
 |--------|-------------|
 | Server Type | Select a server type, for example, standard. |
 | Datacenter | Select a location to place the instance, for example, UC1. |
-| Group |	Select placement group for the new instance. |
+| Group | Select placement group for the new instance. |
 | Template | Select from a list of CenturyLink Cloud Linux or Windows images. Images are specific to the box service type, that is, Linux or Windows. |
 | Instances | Specify the number of instances to provision. |
 | Admin/root Password | Choose the Administrator user password for Windows instance or the root password for Linux instance. This Password can be left empty, then a random password will be generated. When specified, this password will show up in CLC portal. |
 | Confirm Password | Confirm the password. |
 
-
-**Network**
+#### Network
 
 ![Network section of deployment policy](../../images/cloud-application-manager/deployment-policy/network-centurylink.png)
 
 | Option | Description |
 |--------|-------------|
-| Network |	Select a vLan for the new instance. |
-| Public IP	| Check the box to attach a public IP address to the new instance. |
+| Network | Select a vLan for the new instance. |
+| Public IP | Check the box to attach a public IP address to the new instance. |
 
-##### Proxy
+#### Proxy
 
 ![Proxy section of deployment policy](../../images/cloud-application-manager/deployment-policy/proxy-centurylink.png)
 
 | Option | Description |
 |-------------------|-------------|
-| Host |	The hostname or domain of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+| Host | The hostname or domain of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
 | Port |  The port of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
 
-
-**Compute**
+#### Compute
 
 ![Compute section of deployment policy](../../images/cloud-application-manager/deployment-policy/compute-centurylink.png)
 
@@ -136,7 +133,7 @@ Note a couple of things about instances you deploy on CenturyLink Cloud through 
 | CPUs | Select virtual CPUs for the instance. You can get up to 16 cores. |
 | Memory | Allocate RAM for the instance. You can get up to 128 GB. |
 
-**Disks**
+#### Disks
 
 ![Disks section of deployment policy](../../images/cloud-application-manager/deployment-policy/disk-centurylink.png)
 
@@ -150,13 +147,13 @@ By default, the machine is provisioned with 17GB local disk space. You can add m
 
 ### Shutdown and Terminate Instances in CenturyLink Cloud
 
-**Shutdown Instance**
+#### Shutdown Instance
 
 Initiates a graceful shutdown of the corresponding server or servers. Like the “off” power command, all memory and CPU charges cease, monitors are disabled, and the machine is left in a powered off state. Any licensing charges (if applicable) and storage charges continue accruing.
 
 More information [here](https://www.ctl.io/guides/servers/server-power-operations/).
 
-**Terminate Instance**
+#### Terminate Instance
 
 The server is terminated and any disks are also deleted. The charges stop.
 
@@ -169,5 +166,6 @@ We’re sorry you’re having an issue in [Cloud Application Manager](https://ww
 For issues related to API calls, send the request body along with details related to the issue.
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
 * Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log

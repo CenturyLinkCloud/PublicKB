@@ -1,9 +1,10 @@
 {{{
 "title": "Using Microsoft Azure",
-"date": "03-28-2019",
+"date": "12-18-2019",
 "author": "Guillermo Sanchez & Sergio Quintana",
-"keywords": ["microsoft", "azure", "arm"],
+"keywords": ["microsoft", "azure", "arm", "resource manager"],
 "attachments": [],
+"sticky": true,
 "contentIsHTML": false
 }}}
 
@@ -26,12 +27,14 @@
 ### Overview
 
 There are two different flavors of Azure and Cloud Application Manager has providers for both.  
-This document is in reference to **Microsoft Azure**.
+This document is in reference to **Microsoft Azure** or **Azure Resource Manager** deployment model.
 
-**Name** | **URL of Portal** | **Name of Related Cloud Application Manager Provider** | **KB article**
+**Name** | **URL of Portal** | **Name of Provider** | **KB article**
 --- | --- | --- | ---
-Classic Azure | https://manage.windowsazure.com | Classic Azure | [Using Classic Azure](using-azure.md)
-Microsoft Azure | https://portal.azure.com | Microsoft Azure  | This document
+Classic Azure | <https://manage.windowsazure.com> | Classic Azure | [Using Classic Azure](using-azure.md) (1)
+Microsoft Azure | <https://portal.azure.com> | Microsoft Azure  | This document
+
+(1) Please note that Microsoft no longer recommends the usage of the Classic Azure deployment model, which has been superseded by the Resource Manager model. For more information see [this Microsoft article](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-deployment-model).
 
 ### Audience
 
@@ -48,17 +51,32 @@ Each of Cloud Application Manager's Microsoft Azure Providers gives you the opti
 
 If you want to learn how to use the New Account feature, please visit [Partner Cloud: Getting Started With a New Azure Customer](../Cloud Optimization/partner-cloud-integration-azure-new.md). The rest of this article assumes you will be using an existing, Azure Customer Account without any integration with CenturyLink.
 
+#### Creating your own Azure Subscription
+
+If you want to create your own Azure subscription, follow these steps:
+
+1. Sign in to your [account](https://portal.azure.com/).
+
+2. Open Subscriptions.
+
+3. Click on **Add** subscription.
+   ![Azure add new subscription](../../images/cloud-application-manager/azure-add-new-subscription-1.png)
+
+4. You can use the free trial version or select and purchase a payment plan.
+
+   * **Note:** Cloud Application Manager is not responsible for any costs incurred through deploying to Azure. For more information, see [Azure pricing](https://azure.microsoft.com/en-us/pricing/calculator/?scenario=virtual-machines).
+
 ### Access to Microsoft Azure Services console with a Microsoft Azure subscription
 
-You need an Microsoft Azure subscription to be able to consume Azure services. Follow these steps to create one.
 Login to the [Microsoft Azure portal](https://portal.azure.com/) using your Microsoft Azure Account.
 
 If you already have a Microsoft Azure Provider in your Cloud Application Manager, you can reach this portal from the **Portal Access** button located in the Microsoft Azure Provider details page and you will be directly logged in.  
 
 ![Microsoft Azure Portal Access from CAM](../../images/microsoft-azure-console/ms-azure-access-from-cam.png)
 
-**Note**: This button is only available when provider has been sychronized.  
-Then if you have permissions, you will see a temporay credentials dialog you must use to login in [Microsoft Azure portal](https://portal.azure.com/). Be sure to logout from previous session in this portal. Remember that these temporal credentials only lasts one hour, then you must run this process again.
+**Note**: This button is only available when provider has been sychronized.
+
+Then if you have permissions, you will see a temporary credentials dialog you must use to login in [Microsoft Azure portal](https://portal.azure.com/). Be sure to logout from previous session in this portal. Remember that these temporal credentials only lasts one hour, then you must run this process again.
 
 #### Application ID (Client) and Directory ID (Tenant)
 
@@ -66,28 +84,27 @@ Once in Microsoft Azure Portal you can reach different sections using the upper 
 
 ![MS Azure Services menus](../../images/microsoft-azure-console/ms-azure-new-steps.png)
 
-
 1. Go to *Azure Active Directory* in the left menu, and then *Properties* in the Manage segment of the second menu pane.
 2. Copy and take note of the Directory ID field for later. It is known as **Directory (tenant) ID**  
 3. Next select *App registrations*, within the Azure Active Directory menu pane
 4. Create a *New Application Registration* with the following values:
     * Name: **CenturyLink-CAM**
     * Supported account types: **My organization only**
-    * Redirect URL: **web - https://localhost/logon**
+    * Redirect URL: **web - `https://localhost/logon`**
 5. Upon registering a line with this applicattion will be added to list. Click on it and see its details.
 6. Copy and take note of **Application (Client) ID** that have been generated.
-   
+
 #### Roles and Permissions
 
 1. For allowing the support personnel to access with a temporary user to your account in case they need to troubleshoot any support issue, you need to grant some permissions on the application you just created.  
-To do so, on the details page fo the application you just created, click on API permissions > Add a permission 
+To do so, on the details page fo the application you just created, click on API permissions > Add a permission
 
     ![MS Azure Services add permission](../../images/microsoft-azure-console/ms-azure-add-permissions.png)
 
     In Microsoft APIs tab, in the Commonly used Microsoft APIs section, select the **Microsoft Graph**  
 
     ![MS Azure Services Microsoft Graph API](../../images/microsoft-azure-console/ms-azure-api-ms-graph.png)
-    
+
     Now choose the **Application permissions** type and select in the Directory segment:
 
        * Read and write directory Data      (Directory.ReadWrite.All)
@@ -108,48 +125,51 @@ To do so, on the details page fo the application you just created, click on API 
 
 In order to allow automatic deletion, you must [add the Company Administrator Role to the App](https://docs.microsoft.com/en-us/powershell/module/msonline/add-msolrolemember?view=azureadps-1.0). To accomplish it, you must execute the next script from a [Windows PowerShell console](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/starting-windows-powershell?view=powershell-6):
 
-~~~powershell
-$tenantGuid = 'YOUR-TENANT-ID'
-$user = 'YOUR_USER@YOUR-DOMAIN.onmicrosoft.com'
-$password = 'YOUR PASSWORD'
-$appID = 'YOUR-APP-ID'
-$Creds = New-Object System.Management.Automation.PsCredential($user, (ConvertTo-SecureString $password -AsPlainText -Force))
-Connect-MSOLSERVICE -Credential $Creds
-$msSP = Get-MsolServicePrincipal -AppPrincipalId $appID -TenantID $tenantGuid
-$objectId = $msSP.ObjectId
-Add-MsolRoleMember -RoleName "Company Administrator" -RoleMemberType ServicePrincipal -RoleMemberObjectId $objectId
-~~~
+    $tenantGuid = 'YOUR-TENANT-ID'
+    $user = 'YOUR_USER@YOUR-DOMAIN.onmicrosoft.com'
+    $password = 'YOUR PASSWORD'
+    $appID = 'YOUR-APP-ID'
+    $Creds = New-Object System.Management.Automation.PsCredential($user, (ConvertTo-SecureString $password -AsPlainText -Force))
+    Connect-MSOLSERVICE -Credential $Creds
+    $msSP = Get-MsolServicePrincipal -AppPrincipalId $appID -TenantID $tenantGuid
+    $objectId = $msSP.ObjectId
+    Add-MsolRoleMember -RoleName "Company Administrator" -RoleMemberType ServicePrincipal -RoleMemberObjectId $objectId
 
 #### Subscriptions
-Navigate to *Subscriptions* panel. Use search tool and introduce "Subscriptions" 
-1.  Select in the Subscriptions list the subscription item for your provider in Cloud Application Manager.
-2.  In the *Overview* tab, a **Subscription ID** is listed.  Copy and take note of this value for later.
+
+Navigate to *Subscriptions* panel. Use search tool and introduce "Subscriptions"
+
+1. Select in the Subscriptions list the subscription item for your provider in Cloud Application Manager.
+2. In the *Overview* tab, a **Subscription ID** is listed.  Copy and take note of this value for later.
 
     ![MS Azure Services legacy APIs](../../images/microsoft-azure-console/ms-azure-subscription-overview.png)
 
-3.  Select *Access Control (IAM)* tab and then select the *Add* button at the top of screen.  
-4.  When creating the new role, do so with the following values:
+3. Select *Access Control (IAM)* tab and then select the *Add* button at the top of screen.  
+4. When creating the new role, do so with the following values:
     * Role: **Owner** (If you do not see the Owner role, you will need to talk to your administrator.)
     * Assign Access to: **Azure AD user, group or application**
     * Select: **CenturyLink-CAM**
-5.  Now select *Resource providers* tab (dowm in the Settings Tabs segment) in your subscription and **Register** the following providers:
+5. Now select *Resource providers* tab (dowm in the Settings Tabs segment) in your subscription and **Register** the following providers:
     * *Microsoft.Compute*
     * *Microsoft.Network*
     * *Microsoft.Storage*
 
     For more information about Resource providers, please refer to [Microsoft Azure help](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services#portal)
 
-#### Secret    
+#### Secret
+
 Return to the *Azure Active Directory* panel, select *App Registrations* then *CenturyLink-CAM* and finally *Certificates & Secrets*.  
+
 1. Add a new client secret
-2.  Set a Key with the following values:
+2. Set a Key with the following values:
     * Description: **CAM-App-Key**
     * Expires: **Never**
-3.  Upon saving a **Client secret** value will be generated. Copy and keep the key (aka the **Secret**) value as you won't see it anymore once you navigate away.
+3. Upon saving a **Client secret** value will be generated. Copy and keep the key (aka the **Secret**) value as you won't see it anymore once you navigate away.
 
 ### Microsoft Azure Provider credentials
 
-Input your Microsoft Azure Provider for an existing account as listed below:  
+Input your Microsoft Azure Provider for an existing account as listed below:
+
 * Subscription ID: **_Azure Subscription ID_**
 * Application ID: **_Application (Client) ID_**
 * Secret: **_Secret Key value_**
@@ -166,7 +186,7 @@ Registering Your Microsoft Azure Subscription (ARM) in Cloud Application Manager
    ![Microsoft Azure - Add Provider](../../images/cloud-application-manager/microsoft-azure/add-provider-1.png)
 
 2. Fill the form with Subscription ID, Application ID, Secret and Tenant obtained in previous section and save.
-   
+
    ![Microsoft Azure - Credentials](../../images/cloud-application-manager/microsoft-azure/credentials-2.png)
 
 Once pressed the save button our new provider starts to synchronize with our azure account from which you will get the following information:
@@ -179,7 +199,6 @@ Once pressed the save button our new provider starts to synchronize with our azu
 During synchronization, we can get warnings about locations may be ignored because there are no associated virtual networks to them. This is because Cloud Application Manager does not create virtual networks but requires one in the deployment operation of one virtual machine.
 
 ![Microsoft Azure - During sync](../../images/cloud-application-manager/microsoft-azure/during-sync.png)
-
 
 The result of the synchronization process will be the creation of one ARM template box and two policy boxes (Windows and RHEL respectively) in case of exist a virtual network in our account.
 
@@ -238,7 +257,6 @@ Once the legal terms are accepted, a green check will appear next to the image d
 
 Removing these images does not revert the agreement. If they are later re-added to CAM, they will show the status of the agreement at that point.
 
-
 #### Microsoft Azure Compute Deployment Options
 
 To deploy a virtual machine with compute services you can edit one of windows or RHEL policy boxes or create a new one. Then you can save your changes and click **Deploy**.
@@ -286,7 +304,7 @@ For more information, see the [Azure help](https://docs.microsoft.com/en-us/azur
 
 | Option | Description |
 |-------------------|-------------|
-| Host |	The hostname or domain of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+| Host | The hostname or domain of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
 | Port |  The port of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
 
 #### Disks
@@ -372,11 +390,6 @@ As part of the result of synchronization process you can find a list of availabl
 
 You should first synchronize your Azure provider before trying to register the virtual machine in order to get the current available instances that can be registered along with their statuses.
 
-#### Managed Services Anywhere Enabled Providers
-
-If you are deploying an ARM template box into a Managed Services Anywhere enabled provider, all the created instances (VMs and VM ScaleSets) will be automatically registered and linked with the ARM instance that deployed them. In these registered instances, not all lifecycle actions will be allowed, since for them you will need to act on the parent ARM instance for the dependant linked instances to be updated.
-For more information, please refer to [Managed Providers](../Managed Services/getting-started-with-cam-enable-managed-provider.md)
-
 ### Azure Native Resources
 
 After the synchronization process, you will also find in the Instances page a list of Azure resources that already exist in your account. You can also register virtual machine type instances from here.
@@ -408,8 +421,7 @@ These resources can be filtered by the following types and subtypes:
   * Managed Sql Server
   * MySQL
   * PostgreSQL
-  * CosmosDB     
-
+  * CosmosDB
 
 ### Shutdown and Terminate Instances in Azure
 

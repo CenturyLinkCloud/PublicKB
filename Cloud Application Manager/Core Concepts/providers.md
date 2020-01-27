@@ -19,30 +19,21 @@
 * [Exporting the List of Providers](#exporting-the-list-of-providers)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
-
 ### Overview
-
 
 Providers is part of the basics of Cloud Application Manager. This article is meant to assist Cloud Application Manager customers who are starting using the plataform.
 
-
 ### Audience
-
 
 All Cloud Application Manager customers.
 
-
 ### Prerequisites
-
 
 An active Cloud Application Manager account.
 
-
 ### Providers
 
-
 A provider is a public or private cloud account you register in Cloud Application Manager. Cloud Application Manager interfaces with the provider account’s API to provision and orchestrate deployments automatically. Before you can deploy workloads from Cloud Application Manager, you need to register a provider first.
-
 
 ### Providers page
 
@@ -56,15 +47,14 @@ Every provider in the list have a gear icon from which you can synchronize or de
 
 If you select several providers by clicking on the checkbox on the provider line item (or clicking the checkbox in the header line which will select all), the **Bulk Actions** button dropdown will appear next to the *New* provider button, allowing to sync or delete the selected providers in bulk mode.
 
-
 ### Synchronization process
-
 
 Cloud Application Manager requires to gather specific information of your cloud providers to be able to provision and orchestrate deployments automatically. The basic synchronization of a provider created from an existing account is a read only process which do not change anything in your cloud account.
 
 After you register a provider, Cloud Application Manager uses API calls to retrieve metadata which describes available infrastructure options, quotas, your custom configuration and images or templates to store it with the purpose of provide such customized options to you when you are creating or editing a deployment policy box.
 
 This metadata includes required infrastructure data as follows:
+
 * Available regions or datacenters
 * Available networks and subnetworks
 * Allowed connectivity options with public or private ip and firewall rules
@@ -84,6 +74,7 @@ All synchronization process is logged and you can audit it in the **Logs** tab o
 In case you are using aditional services like Managed Services Anywhere or Analytics or your provider is optimized the synchronization process will include also some configuration steps which will create required infrastructure and configurations in your account to allow CenturyLink to provide such services.
 
 These required configuration include these steps:
+
 * Access Account
 * Configure IAM
 * Secure account
@@ -93,28 +84,27 @@ These required configuration include these steps:
 
 All detailed events and any issue detected during synchronization process will be logged and you can audit the logs of the complete process in logs tab of the provider.
 
-
 ### Supported provider types
-
 
 Cloud Application Manager integrates with many popular clouds. Here is a full list of clouds Cloud Application Manager supports and their availability by Edition:
 
-| Clouds                                                                                                                | Enterprise <br> (Saas) | Enterprise <br> (Appliance) |
-| --------------------------------------------------------------------------------------------------------------------- | :--------------------: | :-------------------------: |
-| [CenturyLink Cloud](../Deploying Anywhere/using-centurylink-cloud.md)                                               | ✓                      | ✓                           |
-| [CenturyLink DCC](../Deploying Anywhere/using-dcc.md)                                                               | ✓                      | ✓                           |
-| [CenturyLink Private Cloud on VMware Cloud Foundation](../../CenturyLink Private Cloud on VMware Cloud Foundation/General/#1) | ✓                      | ✓                           |
-| [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md)                                              | ✓                      | ✓                           |
-| Amazon Web Services GovCloud (Same documentation as [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md)) | ✓              | ✓                           |
-| [CloudStack](../Deploying Anywhere/using-cloudstack.md)                                                             | ✓                      | ✓                           |
-| Dimension Data                                                                                                      | ✓                      | ✓                           |
-| [Google Cloud](../Deploying Anywhere/using-google-cloud.md)                                                         | ✓                      | ✓                           |
-| [Microsoft Azure](../Deploying Anywhere/using-microsoft-azure.md)                                                             | ✓                      | ✓                           |
-| [OpenStack Cloud](../Deploying Anywhere/using-openstack-cloud.md)                                                   | ✓                      | ✓                           |
-| [Rackspace Cloud](../Deploying Anywhere/using-rackspace-cloud.md)                                                   | ✓                      | ✓                           |
-| [SoftLayer](../Deploying Anywhere/using-softlayer.md)                                                               | ✓                      | ✓                           |
-| [vCloud Air and vCloud Director](../Deploying Anywhere/orchestrating-vcloud-air-vcloud-director-deployments.md)     | ✓                      | ✓                           |
-| [VMware vCenter](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md)                              | ✓                      | ✓                           |
+| Clouds                 | Enterprise <br> (Saas) | Enterprise <br> (Appliance) |
+| ---------------------- | :--------------------: | :-------------------------: |
+| [CenturyLink Cloud](../Deploying Anywhere/using-centurylink-cloud.md) | ✓ | ✓ |
+| [CenturyLink DCC](../Deploying Anywhere/using-dcc.md)                 | ✓ | ✓ |
+| [CenturyLink Private Cloud on VMware Cloud Foundation](../Deploying Anywhere/using-private-cloud-on-vmware-cloud-foundation.md)| ✓ | ✓ |
+| [CenturyLink DEC3](../Deploying Anywhere/using-centurylink-dec3.md)| ✓ | ✓ |
+| [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md) | ✓ | ✓ |
+| Amazon Web Services GovCloud<br>(Same documentation as [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md)) | ✓ | ✓ |
+| [CloudStack](../Deploying Anywhere/using-cloudstack.md)          | ✓ | ✓ |
+| Dimension Data                                                   | ✓ | ✓ |
+| [Google Cloud](../Deploying Anywhere/using-google-cloud.md)      | ✓ | ✓ |
+| [Microsoft Azure](../Deploying Anywhere/using-microsoft-azure.md)| ✓ | ✓ |
+| [OpenStack Cloud](../Deploying Anywhere/using-openstack-cloud.md)| ✓ | ✓ |
+| [Rackspace Cloud](../Deploying Anywhere/using-rackspace-cloud.md)| ✓ | ✓ |
+| [SoftLayer](../Deploying Anywhere/using-softlayer.md)            | ✓ | ✓ |
+| [vCloud Air and vCloud Director](../Deploying Anywhere/orchestrating-vcloud-air-vcloud-director-deployments.md) | ✓ | ✓ |
+| [VMware vCenter](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md)                      | ✓ | ✓ |
 
 ### Exporting the List of Providers
 
@@ -123,6 +113,7 @@ Near the top right of the screen, there is a button: **Detail Export**.
 ![Detail Export menu button](../../images/cloud-application-manager/deploying-anywhere/detail-export-providers-00.png)
 
 Clicking this button toggles a drop-down menu with two options:
+
 * Export to CSV
 * Export to PDF
 
@@ -134,9 +125,7 @@ Please note that **all** providers in the current scope are exported, not necess
 
 All the columns in the providers list will be included in the exported file, along with some additional ones such as _creation time_, _cost center_ and _organization name_.
 
-
 ### Contacting Cloud Application Manager Support
-
 
 We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
 
@@ -144,5 +133,5 @@ For issues related to API calls, send the request body along with details relate
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
 
-* Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
-* Windows: RDP into the instance to locate the log at C:\ProgramData\ElasticBox\Logs\elasticbox-agent.log
+* Linux: SSH and locate the log at `/var/log/elasticbox/elasticbox-agent.log`
+* Windows: RDP into the instance to locate the log at `C:\ProgramData\ElasticBox\Logs\elasticbox-agent.log`

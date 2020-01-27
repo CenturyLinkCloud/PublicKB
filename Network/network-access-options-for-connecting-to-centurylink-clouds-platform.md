@@ -49,8 +49,4 @@
     <p>Customers who reside in the same data centers as CenturyLink Cloud (please see the following URL for the complete list of CenturyLink Cloud's data center locations: <a href="https://www.ctl.io/data-centers/">https://www.ctl.io/data-centers/</a>. You can leverage <a href="https://www.ctl.io/knowledge-base/network/intra-data-center-cross-connects-options-with-centurylink-cloud/">Intra-Data Center Cross Connects</a> that will allow direct connectivity between the CenturyLink Cloud cage(s) and a customer’s infrastructure in that same facility. This direct connectivity will allow for fast, low-latency secure connections for the perfect combination of private and enterprise-grade public cloud for those enterprises who want to securely extend their network into the cloud. These intra-facility cross-connects can be configured through the CenturyLink Cloud Help Desk. More details of that process can be found here:&nbsp;<a href="https://www.ctl.io/knowledge-base/network/intra-data-center-cross-connects-options-with-centurylink-cloud/">https://www.ctl.io/knowledge-base/network/intra-data-center-cross-connects-options-with-centurylink-cloud/</a>
     </p>
   </li>
-  <li>
-    <p>Customers who have applications hosted in CenturyLink datacenters, running on the value-added service network known as the Hosted Area Network (HAN) also have the option of buying a managed link into the cloud that bypasses the Internet. This
-      product is known as Cloud Network Service (CNS) and it can be ordered by contacting your CenturyLink account executive.</p>
-  </li>
 </ol>

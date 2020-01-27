@@ -7,14 +7,16 @@
 }}}
 
 **In this article:**
-- [Overview](#overview)
-- [Audience](#audience)
-- [Prerequisites](#prerequisites)
-- [Required Permissions](#required-permissions)
-- [Bootstrapping virtual machine templates with the Cloud Application Manager Agent](#bootstrapping-virtual-machine-templates-with-the-cloud-application-manager-agent)
-- [Registering a vCenter provider in Cloud Application Manager](#registering-a-vcenter-provider-in-cloud-application-manager)
-- [Deploying in Your vCenter](#deploying-in-your-vcenter)
-- [Getting General Support](#getting-general-support)
+
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Required Permissions](#required-permissions)
+* [Bootstrapping virtual machine templates with the Cloud Application Manager Agent](#bootstrapping-virtual-machine-templates-with-the-cloud-application-manager-agent)
+* [Registering a vCenter provider in Cloud Application Manager](#registering-a-vcenter-provider-in-cloud-application-manager)
+* [Deploying in Your vCenter](#deploying-in-your-vcenter)
+* [Registering Instances to Your vCenter Provider](#registering-instances-to-your-vcenter-provider)
+* [Getting General Support](#getting-general-support)
 
 ### Overview
 
@@ -30,8 +32,8 @@ All users of Cloud Application Manager using VMware vCenter providers.
 * Access and credentials to a **VMware vCenter version 5.5 or later**.
 * A virtual machine template (Linux or Windows) on the vCenter server. Virtual machine templates has to be bootstrapped with the Cloud Application Manager Agent.
 * If the vCenter is behind a firewall, has to be open on the firewall:
-	* 443/TCP incoming to vCenter server: for Cloud Application Manager to make API calls on vCenter.
-	* 443/TCP outgoing: to allow Cloud Application Manager Agents running on the deployed virtual machines to connect back to Cloud Application Manager.
+  * 443/TCP incoming to vCenter server: for Cloud Application Manager to make API calls on vCenter.
+  * 443/TCP outgoing: to allow Cloud Application Manager Agents running on the deployed virtual machines to connect back to Cloud Application Manager.
 
 ### Required Permissions
 
@@ -40,9 +42,9 @@ A vCenter user needs at least the following permissions be able to authenticate,
 | Assign access for | With privileges |
 |-------------------|-----------------|
 | Datastore | <li>Allocate space</li><li>Browse datastore</li> |
-| Global |	Cancel task |
+| Global | Cancel task |
 | Manage custom attributes | Set custom attribute |
-| Network |	Assign network |
+| Network | Assign network |
 | Resource | Assign virtual machine to resource pool |
 | Scheduled task | <li>Create tasks</li><li>Run task</li> |
 | Tasks | <li>Create tasks</li> |
@@ -55,10 +57,9 @@ A vCenter user needs at least the following permissions be able to authenticate,
 
 vCenter templates need elasticbox-init to allow the Cloud Application Manager agent to execute box scripts at deploy time.
 
-**Linux**
+#### Linux
 
 Follow these steps to install elasticbox-init on a Linux template.
-
 
 1. Log in to the vSphere client and open the Linux virtual machine.
 
@@ -69,12 +70,12 @@ Follow these steps to install elasticbox-init on a Linux template.
 4. Run this command with root privileges to install elasticbox-init:
 
    ```
-	 curl -L https://cam.ctl.io/agent/linux/vsphere/template_customization_script.sh | sudo bash
-	 ```
+   curl -L https://cam.ctl.io/agent/linux/vsphere/template_customization_script.sh | sudo bash
+   ```
 
    * **Note:** If running Cloud Application Manager as an appliance, replace cam.ctl.io with the appliance hostname or IP address.
 
-**Windows**
+#### Windows
 
 Follow these steps to run a script that creates a scheduled task on a Windows Server 2012 template. When you deploy, Cloud Application Manager clones this template and installs the agent using the scheduled task.
 
@@ -99,7 +100,7 @@ In order to deploy to a vCenter private datacenter, you must first provide infor
 2. Select **VMware vSphere**.
 
 3. Enter the endpoint URL for the vCenter server and a username, password to the vCenter API.
-   * **Note:** The endpoint URL can be a hostname or an IP address, and has to be prefixed with **https://**. Be sure to use https and not http.
+   * **Note:** The endpoint URL can be a hostname or an IP address, and has to be prefixed with **<https://>**. Be sure to use https and not http.
 
    ![Creating a new vSphere provider](../../images/cloud-application-manager/add-vsphere-provider-1.png)
 
@@ -109,14 +110,13 @@ By default, newly created providers use the recent implementation of vSphere cli
 
 Select deployment metadata from a deployment profile to launch VMs to your vCenter Server.
 
-**Deployment**
+#### Deployment
 
 | Deployment Option | Description |
 |-------------------|-------------|
 | Provider | Select a vCenter account registered in Cloud Application Manager. |
 
-
-**Resource**
+#### Resource
 
 ![Resource section of deployment policy](../../images/cloud-application-manager/deployment-policy/vcenter-resource.png)
 
@@ -128,35 +128,47 @@ Select deployment metadata from a deployment profile to launch VMs to your vCent
 | Customization | This is optional. Apply a custom specification to the instance. It usually has settings to configure the OS and network. |
 | Instances | Select the number of machines to provision. |
 
-
-**Placement**
+#### Placement
 
 ![Placement section of deployment policy](../../images/cloud-application-manager/deployment-policy/vcenter-placement.png)
 
 | Deployment Option | Description |
 |-------------------|-------------|
 | Compute Resource | Place the VM in a host, cluster, vApp, or resource pool in the datacenter. Select **Any host** to place in a host Cloud Application Manager picks randomly. |
-| Network |	Select the network for the instance. |
+| Network | Select the network for the instance. |
 | Folder | From the folders shown, select one to place the VM. |
 
-
-**Proxy**
+#### Proxy
 
 ![Proxy section of deployment policy](../../images/cloud-application-manager/deployment-policy/vcenter-proxy.png)
 
 | Option | Description |
 |-------------------|-------------|
-| Host |	The hostname or domain of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+| Host | The hostname or domain of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
 | Port |  The port of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
 
-
-**Disks dd**
+#### Disks
 
 ![Disks section of deployment policy](../../images/cloud-application-manager/deployment-policy/vcenter-disks.png)
 
 | Deployment Option | Description |
 |-------------------|-------------|
-| Disks	| By default, an instance gets the template disk. For more storage, increase the template disk size and add up to seven more disks.<li>You can’t remove the template disk, but you can adjust its size. Type in the new size and press enter to save changes.</li><li>To add a disk, select a datastore from available ones in the datacenter. Specify the size in gigabytes, and click **Add**. Each disk can be up to 62 TB, disk can be up to 62 TB, but if the datastore doesn’t have such capacity, the instance won’t deploy.</li><li>Note that additional disks communicate through the same controller as the template disk.</li> |
+| Disks | By default, an instance gets the template disk. For more storage, increase the template disk size and add up to seven more disks.<li>You can’t remove the template disk, but you can adjust its size. Type in the new size and press enter to save changes.</li><li>To add a disk, select a datastore from available ones in the datacenter. Specify the size in gigabytes, and click **Add**. Each disk can be up to 62 TB, disk can be up to 62 TB, but if the datastore doesn’t have such capacity, the instance won’t deploy.</li><li>Note that additional disks communicate through the same controller as the template disk.</li> |
+
+### Registering Instances to Your vCenter Provider
+
+You can also register you exsiting instances to CAM portal. First click on **Unregistered Instances** Tab, here you can see all the exsting instances in you vCenter that you can import into your CAM portal.
+
+Simply select one server and click on the down arrow button on the right side.
+![Register a vCenter instance](../../images/cloud-application-manager/deploying-anywhere/register_to_vcnter1.png)
+
+Choose a name for this instance and click on **Register**
+![Name instance to be registered](../../images/cloud-application-manager/deploying-anywhere/register_to_vcnter2.png)
+
+Connect to server and execute the script below with admin privileges.
+![Script to register the instance](../../images/cloud-application-manager/deploying-anywhere/register_to_vcnter3.png)
+
+After running the script you should be able to see the instance has been registered successfully.
 
 ### Getting General Support
 
