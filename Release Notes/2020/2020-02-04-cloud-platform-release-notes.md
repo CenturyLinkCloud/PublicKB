@@ -15,7 +15,7 @@
 
 ###### New Provider Type for CenturyLink Private Cloud for VMWare Cloud on AWS
 
-Cloud Application Manager now supports the CenturyLink Private Cloud for VMWare Cloud on AWS (CPC for VMC) provider type. Any existing CPC for VMC environment can now be registered as a provider in Cloud Application Manager provider. This will enable the deployment of new instances as well as the discovery and register of existing instances already available in the CPC for VMC environment. For additional information please read [Using CPC for VMC](../../Cloud Application Manager/Deploying Anywhere/using-centurylink-private-cloud-with-vmc-on-aws.md)
+Cloud Application Manager now supports the CenturyLink Private Cloud for VMWare Cloud on AWS (CPC for VMC) provider type. Any existing CPC for VMC environment can now be registered as a provider in Cloud Application Manager provider. This will enable the deployment of new instances as well as the discovery and register of existing instances already available in the CPC for VMC environment. For additional information please read [Using CPC for VMC](../../Cloud Application Manager/Deploying Anywhere/Using-CenturyLink-Private-Cloud-with-VMC-on-AWS.md)
 
 ##### Cloud Optimization
 
