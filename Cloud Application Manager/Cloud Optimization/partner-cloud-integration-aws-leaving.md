@@ -1,6 +1,6 @@
 {{{
   "title": "Partner Cloud: AWS Customers Leaving CenturyLink",
-  "date": "05-07-2018",
+  "date": "10-30-2018",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
@@ -17,7 +17,7 @@ AWS Customers of CenturyLink whose contract has ended.
 
 ### Prerequisites
 
-*  Pay off all previous invoices
+*  Pay off all existing invoices. See below regarding the last invoice.
 
 * Contact with your CenturyLink account representative.
 
@@ -33,17 +33,19 @@ AWS Customers of CenturyLink whose contract has ended.
 
 ### Important Information
 
-Your departure will be aided by creating a support ticket. Please review the following information to help you create the content of that ticket. Then send in the ticket and contact AWS for the legal process to begin. Three parties must sign: your company, AWS, and CenturyLink. A template for the ticket is below. You do not need to know exactly what date you will be leaving when you create the ticket.
+Because we bill in arrears, expect to receive at least one more invoice from CenturyLink after your departure.
 
-Prior to the expiration of a contract for Cloud Application Manager 1.0, you should schedule time to work with CenturyLink to 1) leave the CenturyLink-governed AWS Organization 2) obtain the root account credentials from CenturyLink. 3) Remove CenturyLink access. The goal is to perform those steps on the day of your departure, but it is reasonable to expect it within two weeks.
+Your departure will be aided by creating a support ticket. Please review the following information to help you create the content of that ticket. Then send in the ticket for the legal process to begin. Three parties must sign: your company, AWS, and CenturyLink. A template for the ticket is below. You do not need to know exactly what date you will be leaving when you create the ticket.
 
-Be certain your Accounts Payable team is aware of this transition. Immediately after leaving the CenturyLink organization, all usage on the account is Payable to AWS. If you leave in the middle of the month, you should expect a prorated invoice from both AWS, CenturyLink, and potentially another reseller partner.
+You should schedule time to work with CenturyLink to 1) leave the CenturyLink-governed AWS Organization 2) obtain the root account credentials from CenturyLink. 3) Remove CenturyLink access. The goal is to perform those steps on the day of your departure, but it is reasonable to expect it within two weeks.
+
+Be certain your Accounts Payable team is aware of this transition. Immediately after leaving the CenturyLink organization, all usage on the account is Payable to AWS. If you leave in the middle of the month, you should expect a prorated invoice from both AWS, CenturyLink, and - if you are moving to another reseller - another reseller partner.
 
 ### Preparation
 
 **Ticket Information**
 
-You can help determine how to fill in the blanks by reading the rest of this document. We recommend you create this ticket at least two weeks prior to the end of the contract.
+You can help determine how to fill in the blanks by reading the rest of this document. We recommend you create this ticket at least two weeks prior to the end of the contract. 
 
 ```
 This is a request to meet with my CenturyLink account representative and potentially a member of the Cloud Application Manager Product team.
@@ -58,11 +60,10 @@ Who do you want to handle removing your member accounts from our AWS organizatio
 If your company, identify any AWS Users needing permissions:
 Do you wish to continue using CAM for ALM?:
 Special Considerations:
+
+Please direct this ticket towards the CAM_CloudIntegration group
+
 ```
-
-**Gain Legal Approval**
-
-After you send in the ticket described above, contact AWS for the legal process to begin. Arrangements will be made for three parties to grant permission: your company, AWS, and CenturyLink.
 
 **Prepare payment for accounts with expired credit cards and new accounts created with CenturyLink**
 
@@ -74,11 +75,11 @@ Since you received invoices through CenturyLink you were not required to have a 
 
 If you will be departing CenturyLink's organization to join another AWS organization, we recommend you have the other organization send invitations to you within fifteen days of your target date so that invitation will be queued up and ready when you depart. You can then handle everything at once. If that is not possible, then the most efficient way to schedule it is just to ask a CenturyLink admin to revoke your membership for all your accounts at once.
 
-leaving the CenturyLink-governed AWS Organization will be handled by someone with the appropriate permissions. Either someone with root access to the account or one of your IAM users with the appropriate permissions. (Having one of your IAM users do it will require CenturyLink to change your IAM policy before you depart.)
+Allowing your accounts to depart from the CenturyLink-governed AWS Organization will be handled by someone with the appropriate permissions. Either someone with root access to the account or one of your IAM users with the appropriate permissions. (Having one of your IAM users do it will require CenturyLink to change your IAM policy before you depart.)
 
 A CenturyLink administrator can remove membership from your org for all your accounts out at once.
 
-Obtaining the root account credentials must be done with your company's security in mind.  It is best if you coordinate that transition via phone to prevent security gaps. It will first require CenturyLink to remove Multi-Factor Authentication and change the email and password for the root account.
+Obtaining the root account credentials must be done with your company's security in mind.  It is best if you coordinate that transition via phone or another secure method to prevent security gaps. It will first require CenturyLink to remove Multi-Factor Authentication and change the email and password for the root account.
 
 
 

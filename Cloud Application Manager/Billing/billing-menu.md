@@ -1,8 +1,9 @@
 {{{
 "title": "Billing menu",
-"date": "07-10-2018",
+"date": "11-29-2019",
 "author": "Guillermo Sanchez",
 "attachments": [],
+"keywords": ["cam", "cloud application manager", "billing", "usage history"],
 "contentIsHTML": false
 }}}
 
@@ -28,14 +29,15 @@ All users with Cloud Application Manager organization or cost center administrat
 ### Prerequisites
 
 * Access to Cloud Application Manager, [Management site](https://account.cam.ctl.io/#/billing).
-
 * The user must be an Administrator of the organization or the cost center in Cloud Application Manager.
-
 * The user should be at the organization or the cost center level scope to access the Billing option in the left side menu.
 
 ### Billing Dashboard
 
-When you click on **Billing** in the left side menu you will land into a dashboard page, where a bar graph with the billed amount for the previous months will be shown. You can change the range of months being shown in the bars graph by selecting a different value in the date filter and you can also select the consumption categories you want to display with the consumption category type filter.
+When you click on **Billing** in the left side menu you will land into a dashboard page, where a bar graph with the billed amount for the previous months will be shown.
+
+* You can change the range of months being shown in the bars graph by selecting a different value in the date filter dropdown.
+* You can also select the consumption categories you want to display with the consumption category type filter dropdown.
 
 The bar graph shows the billed amount at the chosen scope. If the scope is cost center, the graph only shows the billed amount associated with this scope. If you are in the organization scope, the graph shows the billed amount for the whole organization.
 
@@ -45,7 +47,7 @@ The bar graph shows the billed amount at the chosen scope. If the scope is cost 
 
 When you click on **Usage History** option under the **Billing** left menu item, you will be able to review your detailed billing information.
 
-When you enter this page, you can see a list with the previous months billing summary, including the period of usage and the total credit and debit amounts for each month.
+When you enter this page, you can see a list with the previous months billing summary, including the invoice date, the period of usage and the total credit and debit amounts for each month.
 
 ![Billing Usage History](../../images/cloud-application-manager/billing/billing-usage-history-summary.png)
 

@@ -13,23 +13,23 @@ CenturyLink Cloud offers customers a wide range of load balancing solutions in o
 
 ### Comparison Matrix
 
-**Feature**|**LBaaS<br>(Legacy)**|**LBaaS**|**Citrix VPX<sup>4</sup><br>(Dedicated)**|**Marketplace**
------------|---------------------|---------|-----------------------------------------|-------------
-Control Integration<sup>1</sup>|Yes|Yes|No|No
-High Availability|Yes|Yes|Optional|Optional
-Mode/Port|TCP/80<br>TCP/443|HTTP<br>TCP/Any|Any|Any
-Method|Round Robin<br>Least Connection|Round Robin<sup>6</sup><br>Least Connection<sup>6</sup><br>SourceIP<sup>6</sup><br>URL Hash<sup>6</sup>|[Listing](http://docs.citrix.com/en-us/netscaler/11-1/load-balancing/load-balancing-customizing-algorithms.html)|Varies by<br>Vendor
-Persistence|SourceIP|SourceIP|[Listing](http://docs.citrix.com/en-us/netscaler/11-1/load-balancing/load-balancing-persistence/persistence.html)|Varies by<br>Vendor
-Health Checks|No|[Yes](../General/LBaaS/getting-started-with-load-balancer-as-a-service.md)|Yes|Yes
-SSL Offloading|No|No|Yes|Yes
-WAF|No|No|Optional|Optional
-Global Server Load Balancing|No|No|Optional|Optional
-GeoIP Filtering|No|No|Yes|Yes
-[SLA](//www.ctl.io/legal/sla/)<sup>2</sup>|Yes|Yes|Limited|Limited
-[Support](../Support/how-do-i-report-a-support-issue.md)<sup>3</sup>|Yes|Yes|Limited|Limited
-Lifecycle Management<sup>7</sup>|Day 0<br>Day 2<br>Day N|Day 0<br>Day 2<br>Day N|Day 0|Day 0
-[Locations](../General/CenturyLinkCloud/centurylink-cloud-data-center-locations.md)|None|VA1<br>VA2<br>UC1<br>WA1<br>IL1<br>NY1<br>CA1<br>CA2<br>CA3<br>GB1<br>GB3<br>SG1<br>DE1<br>DE3<br>AU1|Any|Any
-OSI Model<sup>5</sup>|Layer 4|Layer 4|Layer 4<br>Layer 7|Layer 4<br>Layer 7
+**Feature**|**LBaaS**|**Citrix VPX<sup>4</sup><br>(Dedicated)**|**Marketplace**
+-----------|---------|-----------------------------------------|-------------
+Control Integration<sup>1</sup>|Yes|No|No
+High Availability|Yes|Optional|Optional
+Mode/Port|HTTP<br>TCP/Any|Any|Any
+Method|Round Robin<sup>6</sup><br>Least Connection<sup>6</sup><br>SourceIP<sup>6</sup><br>URL Hash<sup>6</sup>|[Listing](http://docs.citrix.com/en-us/netscaler/11-1/load-balancing/load-balancing-customizing-algorithms.html)|Varies by<br>Vendor
+Persistence|SourceIP|[Listing](http://docs.citrix.com/en-us/netscaler/11-1/load-balancing/load-balancing-persistence/persistence.html)|Varies by<br>Vendor
+Health Checks|[Yes](../General/LBaaS/getting-started-with-load-balancer-as-a-service.md)|Yes|Yes
+SSL Offloading|No|Yes|Yes
+WAF|No|Optional|Optional
+Global Server Load Balancing|No|Optional|Optional
+GeoIP Filtering|No|Yes|Yes
+[SLA](//www.ctl.io/legal/sla/)<sup>2</sup>|Yes|Limited|Limited
+[Support](../Support/how-do-i-report-a-support-issue.md)<sup>3</sup>|Yes|Limited|Limited
+Lifecycle Management<sup>7</sup>|Day 0<br>Day 2<br>Day N|Day 0|Day 0
+[Locations](../General/CenturyLinkCloud/centurylink-cloud-data-center-locations.md)|VA1<br>VA2<br>UC1<br>WA1<br>IL1<br>NY1<br>CA1<br>CA2<br>CA3<br>GB1<br>GB3<br>SG1<br>DE1<br>DE3<br>AU1|Any|Any
+OSI Model<sup>5</sup>|Layer 4|Layer 4<br>Layer 7|Layer 4<br>Layer 7
 
 <sup>1: Control Integration at a minimum allows a customer to implement the service on-demand, operate it via self-service in the UX (or using API) with a pay as you go model.</sup>
 

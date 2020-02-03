@@ -42,6 +42,7 @@ These are the Provider types supporting self-registration of virtual machines:
 
 * Amazon AWS/EC2
 * CenturyLink Cloud
+* Google Cloud Platform
 
 ### Supported instance types
 

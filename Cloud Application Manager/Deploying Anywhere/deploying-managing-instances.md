@@ -1,8 +1,9 @@
 {{{ "title": "Deploying and Managing Instances",
-"date": "08-28-2019",
-"author": "Guillermo Sánchez, Óscar Hafner, Victor Shulman, and Yongjie Liang",
+"date": "10-01-2019",
+"author": "Guillermo Sánchez, Efren Rey, Victor Shulman, and Yongjie Liang",
 "keywords": ["cam", "instances", "lifecycle", "deploy", "deployment-policy", "instance-protection", "shutdown-protection", "terminate-protection", "bulk-actions"],
 "attachments": [],
+"sticky": true,
 "contentIsHTML": false
 }}}
 
@@ -15,6 +16,9 @@
 * [Deploying a New Instance](#deploying-a-new-instance)
 * [Scheduling Instances](#scheduling-instances)
 * [Protecting Instance Shutdown or Termination](#protecting-instance-shutdown-or-termination)
+* [Instance protection on registered instances](#instance-protection-on-registered-instances)
+* [Instance protection on AWS instances](#instance-protection-on-aws-instances)
+* [Instance protection on Google Cloud Platform instances](#instance-protection-on-google-cloud-platform-instances)
 * [Deploying Instances without Lifecycle Management](#deploying-instances-without-lifecycle-management)
 * [Handling Instance Lifecycle States](#handling-instance-lifecycle-states)
 * [Managing multiple instances with bulk actions](#managing-multiple-instances-with-bulk-actions)
@@ -105,7 +109,7 @@ Some of the filters, such as Providers and types, have two level of filtering (i
 
 An instance is an instantiated version of a box launched to provider’s virtual infrastructure or your own. Follow these steps to launch one.
 
-**Steps**
+#### Steps
 
 1. Click **Instances** > **New**
 2. Select a box. You can search and look through the tabs.
@@ -140,7 +144,7 @@ We notify you of instances about to expire in 24 hours by email at around 12 AM 
 
 Follow these steps to schedule an instance.
 
-**Steps**
+#### Steps to schedule an instance
 
 1. From the Instances page, click **New**.
 2. Select a box you want to deploy.
@@ -183,7 +187,7 @@ Follow these steps to enable instance protection on any **deployment policy** bo
 
 Follow these steps to protect an instance at **deployment** time:
 
-**Steps**
+#### Steps to protect an instance
 
 1. From the instances page, click **New**.
 2. Select a box you want to deploy.
@@ -196,24 +200,34 @@ Follow these steps to protect an instance at **deployment** time:
 
 **Note:** If policy box used for deployment has **Manual Shutdown Protection** or **Manual Terminate Protection** enabled, it will be inherited by the current instance preventing the user to disable them.
 
-#### Instance protection on registered instances
+### Instance protection on registered instances
 
 Some providers allows to enable Instance Protection. CAM Instance Registering track these configurations in order to configure internally when instances are imported.
 If provider implements Instance Protection, Register Instance wizard will show Protection Flags Status acording with provider protection setup.
 
-**Note:** Currently, Only implemented with Amazon Web Services (AWS)
+### Instance protection on AWS instances
 
-#### Instance protection on AWS instances
-
-##### Deployed Instances
+#### Instances deployed on AWS
 
 Instances deployed in AWS will sync CAM **Manual Terminate Protection** with DisableApiTermination flag in EC2 instances. Changes done from CAM will be reflected in AWS Instance Properties. Changes done from AWS Console, won't be reflected in CAM.
 
 **Note:** *ec2:ModifyInstanceAttribute* permission must be enabled in order to modify Instance Flag
 
-##### Unregistered Instances
+#### AWS Unregistered Instances
 
 Instances imported from AWS will inherit DisableApiTermination flag into **Manual Terminate Protection** flag. Flag status is provided when provider is syncronized, so changes are not reflected in CAM until **Sync** operation has been done.
+
+### Instance protection on Google Cloud Platform instances
+
+#### Instances deployed on Google Cloud Platform
+
+Instances deployed in Google Cloud Platform (GCP) will sync Cloud Application Manager's **Manual Terminate Protection** toggle with DeletionProtection flag in GCP instances. Changes done from Cloud Application Manager (CAM) will be reflected in GCP Instance Properties. Changes done from GCP Console, won't be reflected in CAM.
+
+**Note:** *compute.instances.create* permission or one of the roles *compute.admin* or *compute.instanceAdmin.v1* must be enabled in order to modify Instance Flag
+
+#### GCP Unregistered Instances
+
+Instances imported from GCP will inherit DeletionProtection flag into **Manual Terminate Protection** toggle in Cloud Application Manager. Flag status is obtained when the provider is syncronized, so the changes performed in GCP Console are not reflected in Cloud Application Manager until **Sync** operation has been done.
 
 ### Deploying Instances without Lifecycle Management
 
@@ -317,6 +331,7 @@ Near the top right of the screen, there is a button: **Detail Export**.
 ![Detail Export menu button](../../images/cloud-application-manager/deploying-anywhere/detail-export-instances-00.png)
 
 Clicking this button toggles a drop-down menu with two options:
+
 * Export to CSV
 * Export to PDF
 

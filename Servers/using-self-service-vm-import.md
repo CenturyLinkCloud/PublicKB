@@ -1,14 +1,14 @@
 {{{
   "title": "Using Self-Service VM Import",
-  "date": "08-17-2016",
-  "author": "Gavin Lai",
+  "date": "11-25-2019",
+  "author": "Matthew Ordman",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-**Note**: this feature only supports OVFs exported from VMware environments, and certain operating systems. Virtual appliances and OVFs from other hypervisors should be imported as a service task.
+**Note**: this feature only supports OVFs exported from VMware environments, and [supported operating systems](../Support/supported-operating-systems.md). Virtual appliances and OVFs from other hypervisors should be imported as a [service task](https://www.ctl.io/centurylink-public-cloud/service-tasks/).
 
-1. Ensure your OVF meets requirements for import they are listed here in the KB under Service tasks > Best Practices and preparation for a virtual machine OVF import.
+1. Ensure your OVF meets the requirements for import that are listed here in our [Best Practices and preparation for a virtual machine OVF import KB](../Service Tasks/best-practices-and-preparation-for-a-virtual-machineovfova-import.md).
 
 2. Connect to your CenturyLink Cloud FTP server; [instructions detailed here](../Control Portal/ftp-users-in-control-portal.md).
   * **Note**: You can import VMs to any available data center in your account; the OVF file is simply stored in your home data center FTP account for initial processing.

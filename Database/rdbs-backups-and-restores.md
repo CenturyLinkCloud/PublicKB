@@ -25,6 +25,8 @@ When a database is deleted, we automatically take one last backup for you.
 
 The last valid backup will be kept for 3 months.  This is to help safeguard people from themselves.  And allows you a very easy way to recover if you choose to.  If you know for sure you won't use it you can manually delete that backup.
 
+**Note:** All changes to the RDBS instance will be locked while the backup/restore operation is in progress.
+
 ### Data Sovereignty
 The below details where backups are held in relation to the datacenter location of the primary instance. **Please note that for CA3 instances, our current backup strategy does not provide us an off-site location in Canada, so backups are being held in North America.**
 

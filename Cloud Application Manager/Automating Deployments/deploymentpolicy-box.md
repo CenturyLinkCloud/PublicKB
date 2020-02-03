@@ -3,6 +3,7 @@
 "author": "Julio Castanar and Sergio Quintana",
 "keywords": ["cam", "deployment-policy", "provider", "policy-box", "share access", "admin-box", "event type"],
 "attachments": [],
+"sticky": true,
 "contentIsHTML": false
 }}}
 
@@ -60,6 +61,7 @@ Customize policies to support specific deployment scenarios. For example, you ma
     * [CenturyLink Cloud](../Deploying Anywhere/using-centurylink-cloud.md)
     * [CenturyLink DCC](../Deploying Anywhere/using-dcc.md)
     * [CenturyLink Private Cloud on VMware Cloud Foundation](../Deploying Anywhere/using-private-cloud-on-vmware-cloud-foundation.md)
+    * [CenturyLink DEC3](../Deploying Anywhere/using-centurylink-dec3.md)
     * [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md)
     * Amazon Web Services GovCloud (Same documentation as [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md))
     * [CloudStack](../Deploying Anywhere/using-cloudstack.md)
@@ -151,5 +153,6 @@ We’re sorry you’re having an issue in [Cloud Application Manager](https://ww
 For issues related to API calls, send the request body along with details related to the issue.
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
 * Windows: RDP into the instance to locate the log at \ProgramData\ElasticBox\Logs\elasticbox-agent.log

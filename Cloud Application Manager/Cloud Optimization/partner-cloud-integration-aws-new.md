@@ -1,6 +1,6 @@
 {{{
   "title": "Partner Cloud: Getting Started With A New AWS Customer Account",
-  "date": "07-20-18",
+  "date": "10-21-18",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
@@ -15,7 +15,7 @@ Part of [Cloud Application Manager's](https://www.ctl.io/cloud-application-manag
 
 All of our customers are invited to use Cloud Optimization via Cloud Application Manager.
 
-For Amazon Web Services, we are currently limited to serving billable customers who are not resellers (or customers of resellers) with offices within the United States. See our [Service Guide](https://www.ctl.io/legal/cloud-application-manager/supplemental-terms/) for a current list of countries we support.  Also, this offering is not for CenturyLink employees. If you need special considerations for setting up an account, please email [cloudintegration@ctl.io](mailto:cloudintegration@ctl.io).
+For Amazon Web Services, see our [Service Guide](https://www.ctl.io/legal/cloud-application-manager/supplemental-terms/) for a current list of countries we support.  Also, this offering is not for CenturyLink employees. If you need special considerations for setting up an account, please email [request@centurylink.com](mailto:request@centurylink.com).
 
 ### Prerequisites
 
@@ -27,7 +27,7 @@ For Amazon Web Services, we are currently limited to serving billable customers 
 
 * An understanding of the features and benefits of [Partner Cloud Integration](partner-cloud-integration.md)
 
-* For each CenturyLink Cloud account integrated with Amazon Web Services, both CenturyLink's AWS Terms and Conditions for the relevant territory must be accepted. These will be presented to any user attempting to create a new "Amazon Web Services" provider in Cloud Application Manager. See our [Service Guide](https://www.ctl.io/legal/cloud-application-manager/supplemental-terms/) for a current list of countries we support.
+* For each CenturyLink Cloud account integrated with Amazon Web Services, both CenturyLink's AWS Terms and Conditions for the relevant territory must be accepted. These will be presented to any user attempting to create a new "Amazon Web Services" provider in Cloud Application Manager.
 
 ### Important Information
 
@@ -51,12 +51,12 @@ New AWS Accounts will automatically be Optimized.
 
 * **Reserved Instances**
   * Customers may contact CenturyLink if they wish to have their Reserved Instance limit increased.
+  
+* **Cost Allocation Tags** Some features of CAM's Analytics tool rely upon cost allocation tags. As the reseller, CenturyLink is responsible for cost allocation tag approval. Please submit a support ticket with a list of the proposed tag keys which you need to have approved. When they are activated it will take up to 24 hours for AWS to begin writing the tags to the billing files. AWS will not retroactively populate data into billing tables, so please submit this ticket as soon as possible. 
 
 ### Steps
 
 The following steps will walk through how to set up a new Cloud Application Manager provider that has been designed to create an Amazon Web Services Customer account within the scope of CenturyLink's responsibility.
-
-Videos of these steps can be found [here](https://www.ctl.io/guides/).
 
 1. Log into Cloud Application Manager.
 2. Select the Providers tab
@@ -68,7 +68,7 @@ Videos of these steps can be found [here](https://www.ctl.io/guides/).
 
 5. Provide a name for the provider that identifies it for your purposes
 
-6. Select the "Create a new AWS account with CenturyLink Cloud Optimization" option. (If the user cannot see this option, they are not an organization Administrator.)
+6. Select the "Create a new AWS account with CenturyLink Cloud Optimization" option. (If the user cannot see this option, they are not an Administrator.)
 
   ![Create New AWS Account](../../images/cloud-application-manager/CINT_New_AWS1.1.png)
 

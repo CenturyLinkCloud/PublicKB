@@ -49,7 +49,7 @@ CenturyLink is now able to sell service to customers who have a geographic prefe
 
 CenturyLink Cloud Object Storage delivers robust, geo-based services capable of storing any type of digital content. Perfect for data backups, media distribution, and file transfers, the CenturyLink Cloud Object Storage is Amazon S3-compatible and accessible from the CenturyLink Cloud Control Portal or via API calls.
 
-For additional details, see our [Product Page](https://www.ctl.io/object-storage/) and [Product Knowledge Base Page](../../Object Storage).
+For additional details, see our [Product Page](https://www.ctl.io/object-storage/) and [Product Knowledge Base Page](../../Storage/Object Storage).
 
 ### Bare Metal Servers
 

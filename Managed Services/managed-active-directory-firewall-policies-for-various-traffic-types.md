@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p>The following tables show details to help you configure firewalls related to traffic from Active Directory.</p>
+<p>The following tables detail recommended firewall configuration related to traffic from Active Directory.</p>
 Active Directory Replication Traffic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <table>
   <tbody>

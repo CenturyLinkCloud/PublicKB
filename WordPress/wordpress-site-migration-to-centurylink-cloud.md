@@ -20,7 +20,7 @@ There is currently no automated method for migrating an existing WordPress site 
 * Working knowledge of basic WordPress functionality
 * Working knowledge of Git.
 * Working knowledge of how to [Install WordPress Plugins to CenturyLink Cloud WordPress](wordpress-plugin-installation.md)
-* Working knowledge of how to [Create a CenturyLink Object Storage Bucket](../Object Storage/using-object-storage-from-the-control-portal.md)
+* Working knowledge of how to [Create a CenturyLink Object Storage Bucket](../Storage/Object Storage/using-object-storage-from-the-control-portal.md)
 
 ### Prerequisites:
 
@@ -30,7 +30,7 @@ There is currently no automated method for migrating an existing WordPress site 
 
 ## On the source WordPress site:
 
-1. Install and activate [WP Migrate DB Pro](https://deliciousbrains.com/wp-migrate-db-pro/) on your current site 
+1. Install and activate [WP Migrate DB Pro](https://deliciousbrains.com/wp-migrate-db-pro/) on your current site
 
 2. Open WP Migrate Pro and select the settings to accept pull requests
 
@@ -49,7 +49,7 @@ There is currently no automated method for migrating an existing WordPress site 
 
 1. [Install](https://www.ctl.io/knowledge-base/wordpress/wordpress-plugin-installation/) and activate the [WP Migrate DB Pro Plugin](https://deliciousbrains.com/wp-migrate-db-pro/) on the CenturyLink hosted WordPress site.
 
-2. Open WP Migrate Pro 
+2. Open WP Migrate Pro
 
 3. Select Migrate and select Pull and insert the connection info from the current site and click the pull button
 ![](../images/wp_site_migration/wp_site_migration_01.png)
@@ -61,12 +61,12 @@ There is currently no automated method for migrating an existing WordPress site 
 
   ![](../images/wp_site_migration/wp_site_migration_04.png)
   ![](../images/wp_site_migration/wp_site_migration_05.png)
-  
+
 ## Fixing Images in Posts and Media
 
   Media content is persistently stored in CenturyLink Object Storage.
 
-1. [Configure a CenturyLink Object Storage Bucket](../Object Storage/using-object-storage-from-the-control-portal.md)
+1. [Configure a CenturyLink Object Storage Bucket](../Storage/Object Storage/using-object-storage-from-the-control-portal.md)
 
 2. Install an application for mounting Amazon Web Services (AWS) S3 Buckets
 
@@ -79,7 +79,7 @@ There is currently no automated method for migrating an existing WordPress site 
  * **Access Key:** CenturyLink Object Storage Access Key ID
  * **Secret Key:** CenturyLink Object Storage Secret Access Key ID
  * Click Login
- 
+
   ![](../images/wp_site_migration/wp_site_migration_06.png)
   ![](../images/wp_site_migration/wp_site_migration_09.png)
 
@@ -114,6 +114,3 @@ There is currently no automated method for migrating an existing WordPress site 
   ![](../images/wp_site_migration/wp_site_migration_08.png)
 
 12. The final step is to delete all of the broken images in the media center and reupload the files that are now stored in the object storage bucket.
-
-
-
