@@ -21,7 +21,7 @@
 
 ### Overview
 
-This article is meant to assist users of Cloud Application Manager to learn how to deploy CenturyLink Private Cloud on VMware Cloud Foundation Provider.
+This article is meant to assist users of Cloud Application Manager to learn how to deploy CenturyLink Private Cloud on VMware Cloud Foundation Provider (CPC on VCF).
 
 ### Audience
 
@@ -35,7 +35,7 @@ All Cloud Application Manager users who wants to deploy workloads into CenturyLi
 
 ### Register CenturyLink Private Cloud on VMware Cloud Foundation as Provider
 
-To enable a Cloud Application Manager Provider for CenturyLink Private Cloud on VMware Cloud Foundation™ see the example [Configure a Provider for Cloud Application Manager](../../CenturyLink Private Cloud on VMware Cloud Foundation/General/cam-provider.md).
+To enable a Cloud Application Manager Provider for CenturyLink Private Cloud on VMware Cloud Foundation™ (CPC on VCF) see the example [Configure a Provider for Cloud Application Manager](../../CenturyLink Private Cloud on VMware Cloud Foundation/General/cam-provider.md).
 
 ![CenturyLink Private Cloud on VMware Cloud Foundation add Provider](../../images/dccf/cam-provider3.png)
 
