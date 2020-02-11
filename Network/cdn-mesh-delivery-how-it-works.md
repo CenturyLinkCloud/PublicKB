@@ -41,3 +41,5 @@ This delivery approach allows platforms to scale naturally to audiences of pract
 - **Global Reach:** Peer-to-peer technology establishes a high-speed distributed content delivery network among viewers regardless of the proximity to the CDN, enabling reliable and high-quality video across the globe. 
 - **Scale:** CDN Mesh Delivery easily handles traffic spikes by naturally scaling to viewers. More devices mean a more powerful network, increasing your delivery capacity and video quality in a cost-effective manner.
 - **Plug-and-Play Integration:** Works with a majority of open-source and proprietary video players on the market — hls.js, dash.js, videojs, Bitmovin, TheoPlayer, JWPlayer, etc. — with support on major web and mobile platforms. This mesh network delivery is also fully compatible with broadcasters’ existing encoding, CDN, load-balancing, analytics, DRM and advertising (CSAI, SSAI) solutions.
+
+More information: [Technical Brochure](https://www.ctl.io/lp/resources/cdn-mesh-delivery-technical-brochure.pdf)
