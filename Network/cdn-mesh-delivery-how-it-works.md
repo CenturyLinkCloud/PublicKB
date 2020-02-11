@@ -27,11 +27,11 @@ In a mesh network, each device connects to other devices rather than to an Inter
 
 ![CDN Mesh Delivery](../images/network/cdn/mesh-delivery.png)
 
-1.	On starting the video, the end user starts fetching the first video segments from the CDN.
-2.	The client module connects to the distributor service that authenticates the user and returns a specific configuration which has been fine-tuned to maximize QoS and efficiency.
-3.	The client module connects to the matching service that assigns the viewer a unique ID. The device periodically requests tracks and peers throughout the session and the matching service provides an updated list of devices with which the peer should connect.
-4.	The client module connects to other devices watching the same content at the same time via the signaling service using a WebRTC connection. All WebRTC connections are fully secured via DTLS.
-5.	 Once connected, individual device limitations are accounted for so device performance and data consumption are not burdened. A minimum buffer threshold is set for end users so that if the buffer falls below the threshold, the CDN Mesh Delivery client will instantly and seamlessly fall back to CDN delivery.
+1. On starting the video, the end user starts fetching the first video segments from the CDN.
+2. The client module connects to the distributor service that authenticates the user and returns a specific configuration which has been fine-tuned to maximize QoS and efficiency.
+3. The client module connects to the matching service that assigns the viewer a unique ID. The device periodically requests tracks and peers throughout the session and the matching service provides an updated list of devices with which the peer should connect.
+4. The client module connects to other devices watching the same content at the same time via the signaling service using a WebRTC connection. All WebRTC connections are fully secured via DTLS.
+5. Once connected, individual device limitations are accounted for so device performance and data consumption are not burdened. A minimum buffer threshold is set for end users so that if the buffer falls below the threshold, the CDN Mesh Delivery client will instantly and seamlessly fall back to CDN delivery.
 
 This delivery approach allows platforms to scale naturally to audiences of practically any size, virtually anywhere, regardless of server infrastructure. CDN Mesh Delivery also allows many of the world’s largest media, internet and entertainment companies to improve video quality, scale in a cost-effective manner and future-proof their platforms from growing demand.
 
