@@ -20,7 +20,7 @@
 <h3>Detailed Steps</h3>
 <p>1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Network** > **Load Balancer**.</p>
 
-  ![Navigate to Firewall](../images/loadbalancer.png)
+  ![Navigate to Firewall](../../images/loadbalancer.png)
 
 <p>2. Select the appropriate Data Center.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/8LWLtzq0adgJ4GPLXphkQQ7AH/?name=02.png" alt="02.png" />
@@ -53,7 +53,7 @@
   <br />
   <br />
 </p>
-![](../images/LBaaS/Misc/persistence.png)
+![](../../images/LBaaS/Misc/persistence.png)
 </p>
 
 <p>Add a line item for each server that is included in this load balancing pool. Include the server's&nbsp;<strong>private&nbsp;</strong><strong>IP</strong> address (visible from the server overview page) and the port that is serving the content. To add

@@ -245,7 +245,7 @@ Once you have deployed the Primary OpenVPN Access Server (or standby node) custo
 ### Implementing High Availability
 To create an active and standby configuration using OpenVPN Access Server follow the process below:
 
-1. A **Shared Virtual IP Address** is required as part of high availability.  Customers must [Open a support ticket](../Support/how-do-i-report-a-support-issue.md) with the CenturyLink Cloud NOC to claim an **un-used** IP address on the same vlan as the OpenVPN Access Server.  You can use the following format:
+1. A **Shared Virtual IP Address** is required as part of high availability.  Customers must [Open a support ticket](../../Support/how-do-i-report-a-support-issue.md) with the CenturyLink Cloud NOC to claim an **un-used** IP address on the same vlan as the OpenVPN Access Server.  You can use the following format:
 
   ```
   NOC,
@@ -258,9 +258,9 @@ To create an active and standby configuration using OpenVPN Access Server follow
   PIN:  Your support PIN
   ```
 
-2. [Deploy a Standby OpenVPN AS Virtual Appliance.](../Ecosystem Partners/Marketplace Guides/getting-started-with-openvpnas-appliance.md) This standby node should be in the same dedicated vlan of the primary node.  
+2. [Deploy a Standby OpenVPN AS Virtual Appliance.](../../Ecosystem Partners/Marketplace Guides/getting-started-with-openvpnas-appliance.md) This standby node should be in the same dedicated vlan of the primary node.  
 
-3. Connect to [Client VPN.](../Network/how-to-configure-client-vpn.md)
+3. Connect to [Client VPN.](../CenturyLink Cloud/how-to-configure-client-vpn.md)
 
 4. SSH to the **Private IP Address** of the **Standby** OpenVPN AS Appliance and login using root.
 
@@ -360,7 +360,7 @@ To create an active and standby configuration using OpenVPN Access Server follow
     * TCP/443
     * TCP/943 (Optional if you wish to perform Web Admin on the public IP, not recommended!)
 
-    ![public IP configuration](../images/centurylink-cloud-guide-to-openvpn-access-server-04.png)
+    ![public IP configuration](../../images/centurylink-cloud-guide-to-openvpn-access-server-04.png)
 
 2. Navigate to **Configuration > Sever Network Settings** in the Web Admin UI (NOTE: Remember to use the Shared Virtual IP Address if using HA).  
 
@@ -393,7 +393,7 @@ To create an active and standby configuration using OpenVPN Access Server follow
 
 2. Choose **Save Settings**, followed by **Update Running Server.**
 
-3. Add [Intra Data Center](../CenturyLink Cloud/connecting-data-center-networks-through-firewall-policies.md) and [Cross Data Center](../Network/creating-cross-data-center-firewall-policies.md) firewall policies from the OpenVPN Access Server vlan to the vlans (networks) that house your services client vpn users will consume.  
+3. Add [Intra Data Center](../CenturyLink Cloud/connecting-data-center-networks-through-firewall-policies.md) and [Cross Data Center](../CenturyLink Cloud/creating-cross-data-center-firewall-policies.md) firewall policies from the OpenVPN Access Server vlan to the vlans (networks) that house your services client vpn users will consume.  
 
 ### Configuring LDAP Authentication
 While there are various authentication methods (Local, PAM, Radius, LDAP) this example guide will focus on using LDAP.  

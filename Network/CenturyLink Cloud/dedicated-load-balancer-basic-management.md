@@ -34,62 +34,62 @@
   <li>Navigate to Configuration > Traffic Management > Load Balancing > Servers</li>
   <li>Then click Add</li>
 </ul>
-<img src="../images/AddServer001.png">
+<img src="../../images/AddServer001.png">
 <ul>
   <li>Enter the name of the server, and the IP address of the server</li>
   <li>Then click Create</li>
 </ul>
-<img src="../images/AddServer002.png">
+<img src="../../images/AddServer002.png">
 <i>Repeat the above steps to add additional servers.</i>
 
 <h3>Create Service Group</h3>
 <ul>
   <li>Navigate to Configuration > Traffic Management > Load Balancing > Service Groups</li>
   <li>Then click Add</li>
-  <img src="../images/ServiceGroup001.png">
+  <img src="../../images/ServiceGroup001.png">
   <li>Enter the Service Group name, and select the desired Protocol</li>
   <li>Then click OK</li>
-  <img src="../images/ServiceGroup002.png">
+  <img src="../../images/ServiceGroup002.png">
   <li>Click the Server Group Member section</li>
-  <img src="../images/ServiceGroup003.png">
+  <img src="../../images/ServiceGroup003.png">
   <li>Select Server Based option</li>
   <li>Then click the arrow in the Select Server drop down</li>
-  <img src="../images/ServiceGroup004.png">
+  <img src="../../images/ServiceGroup004.png">
   <li>Click the check box for each server you want to be a member of the service group</li>
   <li>Then click Select</li>
   <i>If you do not see your server listed here, follow the steps detailed in "Add Server" section above.</i>
-  <img src="../images/ServiceGroup005.png">
+  <img src="../../images/ServiceGroup005.png">
   <li>Enter the Port that will be used to communicate for the selected member servers</li>
   <li>Then click Create</li>
-  <img src="../images/ServiceGroup006.png">
+  <img src="../../images/ServiceGroup006.png">
   <li>Click Done</li>
-  <img src="../images/ServiceGroup007.png">
+  <img src="../../images/ServiceGroup007.png">
 </ul>
 
 <h3>Create Virtual Server</h3>
 <ul>
   <li>Navigate to Configuration > Traffic Management > Load Balancing > Virtual Server</li>
   <li>Then click Add</li>
-  <img src="../images/VirtualServer000.png">
+  <img src="../../images/VirtualServer000.png">
   <li>Enter the name for the Virutal Server, select the desired Protocol, enter the IP address, and enter the Port number</li>
   <li>Then click OK</li>
   <i>The IP entered here will be the VIP for the virtual server</i>
-  <img src="../images/VirtualServer001.png">
+  <img src="../../images/VirtualServer001.png">
   <li>Click the Load Balancing Virutal Server ServiceGroup Binding section</li>
-  <img src="../images/VirtualServer002.png">
+  <img src="../../images/VirtualServer002.png">
   <li>Click the arrow in the Select Service Group Name</li>
-  <img src="../images/VirtualServer003.png">
+  <img src="../../images/VirtualServer003.png">
   <li>Click the Service Group option button</li>
   <li>Then click Select</li>
-  <img src="../images/VirtualServer004.png">
+  <img src="../../images/VirtualServer004.png">
   <li>Click Bind</li>
-  <img src="../images/VirtualServer004a.png">
+  <img src="../../images/VirtualServer004a.png">
   <li>Click Continue</li>
-  <img src="../images/VirtualServer005.png">
+  <img src="../../images/VirtualServer005.png">
   <li>Click Done</li>
-  <img src="../images/VirtualServer006.png">
+  <img src="../../images/VirtualServer006.png">
   <li>Congratulations! Your virutal server is ready</li>
-  <img src="../images/VirtualServer007.png">
+  <img src="../../images/VirtualServer007.png">
 </ul>
 
 <h3>Additional Notes</h3>

@@ -11,7 +11,7 @@ The CenturyLink Cloud Platform provides self-service tools to connect networks w
 
 ### Connecting Networks within a Single Account
 
-1. Create network VLAN(s) in the respective CenturyLink Cloud Data Center.  We recommend [applying friendly names](../Network/add-a-user-friendly-name-to-vlans.md) to Networks.
+1. Create network VLAN(s) in the respective CenturyLink Cloud Data Center.  We recommend [applying friendly names](../CenturyLink Cloud/add-a-user-friendly-name-to-vlans.md) to Networks.
 
 2. Validate the networks are in place in your CenturyLink Cloud account using the Networks menu item and selecting the appropriate Data Center.  In the sample below, a Web Services & Database Services VLAN exists in UC1.
 
@@ -71,7 +71,7 @@ The CenturyLink Cloud Platform provides self-service tools to connect networks w
 
 1. Create the appropriate Parent & Sub-Account Hierarchy.  Refer to the [Account Hierarchy Primer](../Accounts & Users/account-hierarchy-user-network-and-firewall-policy-primer.md) for more information.
 
-2. Create network VLAN(s) in the respective CenturyLink Cloud Data Center and Accounts.  We recommend [applying friendly names](../Network/add-a-user-friendly-name-to-vlans.md) to Networks.
+2. Create network VLAN(s) in the respective CenturyLink Cloud Data Center and Accounts.  We recommend [applying friendly names](../CenturyLink cloud/add-a-user-friendly-name-to-vlans.md) to Networks.
 
 3. Validate the networks are in place in your CenturyLink Cloud accounts using the Networks menu item and selecting the appropriate Data Center.  In the sample below, a Parent Web Services network & a Sub-Account DB VLAN exists in UC1 under unique Accounts.  
 

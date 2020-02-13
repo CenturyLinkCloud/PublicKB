@@ -20,7 +20,7 @@ A: Client specific reports and alerts are not available today.
 
 **Q: If a specific attack or event is detected in my environment what remediation and notification steps are taken by CenturyLink Cloud Support?**
 
-A: The remediation activities for attacks or events vary greatly depending on the source, target, number of customers affected and type of exploit.  CenturyLink Cloud resources will work closely with our customer base to take appropriate steps to resolve these events in a timely manner.  This includes, but is not limited to, isolating a specific Virtual Machine to blocking IP addresses of attack sources.    Customers are encouraged to review [our KB that covers what behavior customers can expect from CenturyLink Cloud Operations in the case of a security incident.](../Support/what-can-you-expect-from-tier-3-on-a-security-issue.md)
+A: The remediation activities for attacks or events vary greatly depending on the source, target, number of customers affected and type of exploit.  CenturyLink Cloud resources will work closely with our customer base to take appropriate steps to resolve these events in a timely manner.  This includes, but is not limited to, isolating a specific Virtual Machine to blocking IP addresses of attack sources.    Customers are encouraged to review [our KB that covers what behavior customers can expect from CenturyLink Cloud Operations in the case of a security incident.](../../Support/what-can-you-expect-from-tier-3-on-a-security-issue.md)
 
 **Q: Does CenturyLink Cloud offer deep content inspection from its built in IDS/IDP platform?**
 
