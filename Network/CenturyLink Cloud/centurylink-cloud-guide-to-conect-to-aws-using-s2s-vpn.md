@@ -36,13 +36,13 @@ This guide will walk through the different scenarios of connecting to an AWS env
 
    ![aws-clc](../../images/awsvpn/clc-aws.png)
 
-2. First is to obtain the public IP address of the CenturyLink Cloud VPN gateway, this can be obtained from CenturyLink Cloud portal under Network -> Site to Site VPN.  Detail is for the CenturyLink Cloud Site to Site VPN setup is available [here](../Network/CenturyLink Cloud/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md).
+2. First is to obtain the public IP address of the CenturyLink Cloud VPN gateway, this can be obtained from CenturyLink Cloud portal under Network -> Site to Site VPN.  Detail is for the CenturyLink Cloud Site to Site VPN setup is available [here](../CenturyLink Cloud/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md).
 
    ![aws-vpn](../../images/awsvpn/clc-s2s.png)
 
 3. The CenturyLink Cloud end point IP address will be displayed once the desired data center is chosen (see below):
 
-   ![aws-vpn](../images/awsvpn/clc-vpn-endpoint.png)
+   ![aws-vpn](../../images/awsvpn/clc-vpn-endpoint.png)
 
 4. Once the IP address is collected, the next step will be creating the VPN connection for AWS.  Depending on the situation, one of the following steps will be required in order to establish the VPN connection:
 
@@ -89,7 +89,7 @@ A quick view on the configuration on the AWS side:
 
 5. Once the VPN is created, go to the **VPN Connections** page under **VPC** of AWS portal, click on **Download Configuration**.  Pick either "Generic" or "pfSense" from the drop down menu, as both are text file configuration.  
 
-   ![clc-vpn-download](../images/awsvpn/aws-vpn-download.png)
+   ![clc-vpn-download](../../images/awsvpn/aws-vpn-download.png)
 
 Please take note of the following parameters for the CenturyLink Cloud side VPN configuration:  
 ```

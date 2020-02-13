@@ -32,7 +32,7 @@ OpenVPN Access Server is a full featured secure network tunneling VPN software s
 
 * A CenturyLink Cloud Account
 * OpenVPN AS Licenses
-* [Deploy the OpenVPN AS Virtual Appliance.](../Ecosystem Partners/Marketplace Guides/getting-started-with-openvpnas-appliance.md)  We highly recommend the OpenVPN Access Server be deployed in a [dedicated VLAN](../Network/creating-and-deleting-vlans.md) and [given a friendly name](../Network/add-a-user-friendly-name-to-vlans.md).  
+* [Deploy the OpenVPN AS Virtual Appliance.](../../Ecosystem Partners/Marketplace Guides/getting-started-with-openvpnas-appliance.md)  We highly recommend the OpenVPN Access Server be deployed in a [dedicated VLAN](../creating-and-deleting-vlans.md) and [given a friendly name](../add-a-user-friendly-name-to-vlans.md).  
 
 ### Exceptions
 
@@ -72,7 +72,7 @@ PIN:  Your support PIN
 ### Base Appliance Configuration
 Customers are encouraged to review the [full explanations](//docs.openvpn.net/how-to-tutorialsguides/virtual-platforms/deploying-openvpn-access-server-from-an-ova-template-in-a-vmware-esxi-environment/) of the server setup wizard for further details on each option.
 
-1. Connect to [Client VPN.](../Network/CenturyLink Cloud/how-to-configure-client-vpn.md)
+1. Connect to [Client VPN.](../CenturyLink Cloud/how-to-configure-client-vpn.md)
 2. SSH to the **Private IP Address** of the OpenVPN AS Appliance and login using root.
 3. Upon login you will be requested to accept the OpenVPN-AS EULA.
 
@@ -354,7 +354,7 @@ To create an active and standby configuration using OpenVPN Access Server follow
 
 ### Configure Server Network Settings
 
-1. [Add a Public IP](../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) to the **Shared Virtual IP Address** previously claimed for your failover services.  The following ports are required to deliver services:
+1. [Add a Public IP](../CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) to the **Shared Virtual IP Address** previously claimed for your failover services.  The following ports are required to deliver services:
 
     * UDP/1194
     * TCP/443
@@ -393,7 +393,7 @@ To create an active and standby configuration using OpenVPN Access Server follow
 
 2. Choose **Save Settings**, followed by **Update Running Server.**
 
-3. Add [Intra Data Center](../Network/CenturyLink Cloud/connecting-data-center-networks-through-firewall-policies.md) and [Cross Data Center](../Network/creating-cross-data-center-firewall-policies.md) firewall policies from the OpenVPN Access Server vlan to the vlans (networks) that house your services client vpn users will consume.  
+3. Add [Intra Data Center](../CenturyLink Cloud/connecting-data-center-networks-through-firewall-policies.md) and [Cross Data Center](../Network/creating-cross-data-center-firewall-policies.md) firewall policies from the OpenVPN Access Server vlan to the vlans (networks) that house your services client vpn users will consume.  
 
 ### Configuring LDAP Authentication
 While there are various authentication methods (Local, PAM, Radius, LDAP) this example guide will focus on using LDAP.  
@@ -406,7 +406,7 @@ While there are various authentication methods (Local, PAM, Radius, LDAP) this e
     * Create (or add existing) domain users to the VPN-Users Group
     * Create a VPN-Auth user with a secure password, set never to expire.  This will be used to do user/group lookups to the directory.  This is safer than using a domain administrator account.
 
-3. [Create a Firewall Rule](../Network/CenturyLink Cloud/connecting-data-center-networks-through-firewall-policies.md) between the OpenVPN AS Primary, Secondary (if using HA) & Shared Virtual IP Address (if using HA) and the Active Directory Domain Controller(s). **TIP: LDAP requires TCP/389 and UDP/389**
+3. [Create a Firewall Rule](../CenturyLink Cloud/connecting-data-center-networks-through-firewall-policies.md) between the OpenVPN AS Primary, Secondary (if using HA) & Shared Virtual IP Address (if using HA) and the Active Directory Domain Controller(s). **TIP: LDAP requires TCP/389 and UDP/389**
 
 4. Navigate to **Authentication > General** in the Web Admin UI.  Select **LDAP**, Choose **Save Settings**, followed by **Update Running Server.**
 
@@ -424,7 +424,7 @@ While there are various authentication methods (Local, PAM, Radius, LDAP) this e
 
 ### Installing SSL Web Certificates
 
-1. Connect to [Client VPN.](../Network/CenturyLink Cloud/how-to-configure-client-vpn.md)
+1. Connect to [Client VPN.](../CenturyLink Cloud/how-to-configure-client-vpn.md)
 
 2. SSH to the **Shared Virtual IP Address** (or primary node for standalone deployments) of the OpenVPN Access Server cluster and login using root.
 
