@@ -136,7 +136,7 @@ We now need to configure the VPX load balancer(s) to deliver services to 'Client
     ![add rnat ip address](../../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-18.png)
 
 ### Add Public IP to VIP for External Access
-Finally, as this use case is a public facing website we will use the [Add Public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) function of Control to perform a 1 to 1 NAT public IP to the VIP (Virtual Server) created previously on 10.100.97.103.
+Finally, as this use case is a public facing website we will use the [Add Public IP](../CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) function of Control to perform a 1 to 1 NAT public IP to the VIP (Virtual Server) created previously on 10.100.97.103.
 
 1. Navigate to the VPX in Control (TIP: if you have an HA pair the VIPs will be assigned to the primary VPX). Choose Add Public IP, select the VIP 10.100.97.103 (the virtual server created previously) and finally select HTTP(80).
 
