@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-When using the CenturyLink Cloud load balancing services customers who want to view or analyze web server logs find that these logs, by default, only show the MIP (Mapped IP) of the load balancing device as the Source IP. With this out of the box configuration web statistical analysis is impossible or not useful. 
+When using the CenturyLink Cloud load balancing services customers who want to view or analyze web server logs find that these logs, by default, only show the MIP (Mapped IP) of the load balancing device as the Source IP. With this out of the box configuration web statistical analysis is impossible or not useful.
 
 ### Audience
 CenturyLink Cloud clients who make use of the Self-Service Load Balancing services.
@@ -18,7 +18,7 @@ Only customers leveraging HTTP (tcp/80) load balancing can take advantage of thi
 ### Graphical Representation
 Below is a graphical representation of the CenturyLink Cloud Load Balancing services platform.  As shown, the web server farm receives all traffic from the Mapped IP (MIP) of the Load balancers and as a result web server logs may not be useful for web statistical analysis.
 
-![load balancing platform overview](../images/View-Source-IP-in-Web-Server-Logs-when-using-Load-Balancing.png)
+![load balancing platform overview](../../images/View-Source-IP-in-Web-Server-Logs-when-using-Load-Balancing.png)
 
 ### Solution
 CenturyLink Cloud inserts an X-Forwarded-For header that can be used to filter the original source IP on a customers web server logs. The following Knowledge Base articles from Citrix provide details for various web server platforms on how to configure Source IP logging.

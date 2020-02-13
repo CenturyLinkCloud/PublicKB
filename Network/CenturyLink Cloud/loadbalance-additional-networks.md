@@ -27,14 +27,14 @@ Dedicated Load Balancers offer the capability of load balancing traffic destined
 
   Example:  10.10.10.0 for network, 255.255.255.0 for netmask
 
-  ![LB Menu](../images/loadbalance-additional-networks-1.png)
+  ![LB Menu](../../images/loadbalance-additional-networks-1.png)
 
 6. After you have completed adding networks the RNAT page will display the networks (including the network the dedicated LB's were provisioned on):
 
-  ![LB Menu](../images/loadbalance-additional-networks-2.png)
+  ![LB Menu](../../images/loadbalance-additional-networks-2.png)
 
 ### Notes
 
 * This example was performed on Netscaler VPX version 10.5
-* Please review the [Load Balancing Comparison Matrix](../Network/load-balancing-comparison-matrix.md) the review the capabilities of dedicated vs shared load balancers
-* Tracking a Dedicated Load Balancer license expiration date is performed by the customer, please reference our [License Management Article](../Network/dedicated-load-balancer-license-management.md)
+* Please review the [Load Balancing Comparison Matrix](../CenturyLink Cloud/load-balancing-comparison-matrix.md) the review the capabilities of dedicated vs shared load balancers
+* Tracking a Dedicated Load Balancer license expiration date is performed by the customer, please reference our [License Management Article](../CenturyLink Cloud/dedicated-load-balancer-license-management.md)

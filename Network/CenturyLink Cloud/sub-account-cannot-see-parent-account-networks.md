@@ -18,10 +18,10 @@ The CenturyLink Cloud platform has the capability to share networks within a par
 
 2. Navigate to the sub-account in which you want to leverage networks from the parent account.
 
-    ![choose sub-account](../images/enable-share-parent-networks-feature-01.png)
+    ![choose sub-account](../../images/enable-share-parent-networks-feature-01.png)
 
 3. Select **Settings, Account Profile** to open the Account information page.
 
 4. Click on the **Share Parent Networks** option and toggle it to **enabled.**  Finally, **save** the change.
 
-    ![enable parent networks](../images/enable-share-parent-networks-feature-02.png)
+    ![enable parent networks](../../images/enable-share-parent-networks-feature-02.png)

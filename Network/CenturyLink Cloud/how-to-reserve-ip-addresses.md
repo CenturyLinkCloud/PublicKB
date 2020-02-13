@@ -17,11 +17,11 @@ The following steps will walk you through reserving IP addresses in the CLC Port
 
 1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Network** > **IP Addresses** and browse to your IP Address list.
 
-  ![IPADDRESS](../images/IP-Addresses-tab.png)
+  ![IPADDRESS](../../images/IP-Addresses-tab.png)
 
 2. Ensure that you are in the correct datacenter, then identify the IP addresses you wish to mark as reserved.  In this scenario, we'll be reserving 10.93.186.16 / 10.93.186.17 / 10.93.186.18
 
-  ![IPADDRESSCONFIRM](../images/how-to-reserve-ip-addresses-2.png)
+  ![IPADDRESSCONFIRM](../../images/how-to-reserve-ip-addresses-2.png)
 
 3. With your IP's noted, send an email to help@ctl.io and request for the IP's to be marked as reserved.  Don't forget to specify your account information, including your PIN and the datacenter these IP's reside in.  Utilize the following template and send the required information to help@ctl.io:
 
@@ -37,4 +37,4 @@ The following steps will walk you through reserving IP addresses in the CLC Port
 
 4. Once the reservation completion from the NOC has been completed you will see your IP's marked as claimed without any server listed for them.  Upon the next infrastructure build request the next free IP will be used, skipping those we have marked as claimed.  From here you can assign your IP's out to the solutions that require them.
 
- ![EMAILNOC](../images/how-to-reserve-ip-addresses-4.png)
+ ![EMAILNOC](../../images/how-to-reserve-ip-addresses-4.png)

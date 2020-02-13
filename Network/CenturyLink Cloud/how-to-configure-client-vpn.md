@@ -9,13 +9,13 @@
 
 Client VPN enables users to connect to their secure isolated network. Each account has their own isolated VPN service that is provided at no charge. This service is built into the platform and managed by the network operation center.
 
-The initial configuration just requires a certificate to be downloaded and used for connecting to the VPN service. You can also [configure two-factor authentication](../Network/configure-two-factor-authentication-for-client-vpn.md) to require both a username and password. To learn more about ways to connect such as persistent VPN or direct connection, please review [Network Access Options for Connecting to the CenturyLink Cloud Platform](../Network/network-access-options-for-connecting-to-centurylink-clouds-platform.md).
+The initial configuration just requires a certificate to be downloaded and used for connecting to the VPN service. You can also [configure two-factor authentication](../CenturyLink Cloud/configure-two-factor-authentication-for-client-vpn.md) to require both a username and password. To learn more about ways to connect such as persistent VPN or direct connection, please review [Network Access Options for Connecting to the CenturyLink Cloud Platform](../CenturyLink Cloud/network-access-options-for-connecting-to-centurylink-clouds-platform.md).
 
 ### Current Limitations
 
 There are only a few limitations on this service as it is based on the [OpenVPN](http://www.openvpn.net) project.
 
-- Maximum Concurrent Users: 19 (if you need more connections, review the different [Network Access Options for Connecting to the CenturyLink Cloud Platform](../Network/network-access-options-for-connecting-to-centurylink-clouds-platform.md))
+- Maximum Concurrent Users: 19 (if you need more connections, review the different [Network Access Options for Connecting to the CenturyLink Cloud Platform](../CenturyLink Cloud/network-access-options-for-connecting-to-centurylink-clouds-platform.md))
 - Maximum Connection: 1Gbps
 
 ### Getting Connected
@@ -25,10 +25,10 @@ In order to maximize resource efficiency on the platform, the Client VPN service
 #### Downloading VPN Configuration Files
 
 1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Network** > **VPN**.
-  ![](../images/network-vpn.png)
+  ![](../../images/network-vpn.png)
 
 2. On the VPN Configuration page, find the existing VPN certificate and click the "download" button. (You may also use the "create certificate" button to create separate VPN certificates for other users.)
-  ![](../images/vpn-configuration-download.png)
+  ![](../../images/vpn-configuration-download.png)
 
 #### Installing the Client
 
@@ -36,7 +36,7 @@ In order to maximize resource efficiency on the platform, the Client VPN service
 **How to Configure Client VPN – Windows**
 
 1. **Download and install the latest OpenVPN client for Windows**
-  1. Download the OpenVPN client from the [OpenVPN client](https://openvpn.net/index.php/open-source/downloads.html) website. There is currently a known issue when using OpevnVPN client version 2.4.5 with OpenVPN servers provisioned prior to June 2017, to resolve use  2.3.18-I602 64-bit release. Additional information can be found in our [Troubleshooting Article](../Network/vpn-client-connection-troubleshooting.md).
+  1. Download the OpenVPN client from the [OpenVPN client](https://openvpn.net/index.php/open-source/downloads.html) website. There is currently a known issue when using OpevnVPN client version 2.4.5 with OpenVPN servers provisioned prior to June 2017, to resolve use  2.3.18-I602 64-bit release. Additional information can be found in our [Troubleshooting Article](../CenturyLink Cloud/vpn-client-connection-troubleshooting.md).
   2. Double-click the installer and accept the UAC prompt.
   3. Accept all of the default options.
 2. **Copy the downloaded OpenVPN configuration files into place**
@@ -136,11 +136,11 @@ In order to maximize resource efficiency on the platform, the Client VPN service
 
 **Q: After I select "Connect", my OpenVPN client never establishes a connection (or the icon does not turn "green"). What could be wrong?**
 
-A: Review the tips described in [VPN Client Connection Troubleshooting](../Network/vpn-client-connection-troubleshooting.md).
+A: Review the tips described in [VPN Client Connection Troubleshooting](../CenturyLink Cloud/vpn-client-connection-troubleshooting.md).
 
 **Q: I have multiple sub accounts and want to be able to connect to each one's VPN individually. How can I do that?**
 
-A: By default, connecting to the VPN of a parent account will NOT provide access to the sub account networks as well. One option would be to [Connect Networks Across a Parent & Sub-Account Hierarchy](../Network/connecting-data-center-networks-through-firewall-policies.md).  This way, when you can log into OpenVPN on the parent account, you will be able to RDP/SSH to servers on the sub account network.  Another option would be to maintain multiple OpenVPN connections on your machine.  Please follow the steps describing how to [Connect to Multiple OpenVPN Instances](../Network/connect-to-multiple-openvpn-instances.md).
+A: By default, connecting to the VPN of a parent account will NOT provide access to the sub account networks as well. One option would be to [Connect Networks Across a Parent & Sub-Account Hierarchy](../CenturyLink Cloud/connecting-data-center-networks-through-firewall-policies.md).  This way, when you can log into OpenVPN on the parent account, you will be able to RDP/SSH to servers on the sub account network.  Another option would be to maintain multiple OpenVPN connections on your machine.  Please follow the steps describing how to [Connect to Multiple OpenVPN Instances](../CenturyLink Cloud/connect-to-multiple-openvpn-instances.md).
 
 **Q: Can I configure my VPN to require two-factor authentication?**
 
@@ -170,7 +170,7 @@ A: This is one of the most common issues with Windows and the OpenVPN client. Ma
 
 **Q: Can I use this to connect to my office?**
 
-A: You cannot use it as a direct connect. To learn more about ways to connect such as persistent VPN or direct connection, please review [Network Access Options for Connecting to the CenturyLink Cloud Platform](../Network/network-access-options-for-connecting-to-centurylink-clouds-platform.md).
+A: You cannot use it as a direct connect. To learn more about ways to connect such as persistent VPN or direct connection, please review [Network Access Options for Connecting to the CenturyLink Cloud Platform](../CenturyLink Cloud/network-access-options-for-connecting-to-centurylink-clouds-platform.md).
 
 **Q: Do I need to install an OpenVPN server?**
 
