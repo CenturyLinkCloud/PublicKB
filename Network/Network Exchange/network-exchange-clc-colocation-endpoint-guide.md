@@ -6,12 +6,12 @@
   "related-products" : [],
   "contentIsHTML": false,
   "sticky": false
-}}} 
+}}}
 
 ### Colocation Endpoint Connectivity Prerequisites
 
 * End Users must establish a CenturyLink Cloud (CLC) master account and sub-accounts, the latter to create isolation between the networking resources of the business units of their enterprise. The Exchanges created under each sub-account will be logically isolated from one another.
-* The desired colocation site must be supported within Network Exchange. See the *[Network Exchange Availability Matrix and Configuration Guide](../Network/network-exchange-connectivity-matrix-configuration-guide.md)* for supported data centers.
+* The desired colocation site must be supported within Network Exchange. See the *[Network Exchange Availability Matrix and Configuration Guide](../Network Exchange/network-exchange-connectivity-matrix-configuration-guide.md)* for supported data centers.
 
 ### Colocation Endpoint Capabilities
 
@@ -23,11 +23,11 @@ To create a dedicated virtual routing table (Dedicated VR), the VR will need to 
 
 ### Notes
 
-* Additional purchase(s) required includes Hosting Access Extension (HAE) - a cross connect - with number of orders matching the number of connections, one for a single line or two for redundant connections. The cross connects will connect Network Exchange and the End User’s equipment following the provisioning of Network Exchange. Network Exchange will provide the equipment location and ports on the Network Exchange switches to be connected to, so the connections can be completed. 
+* Additional purchase(s) required includes Hosting Access Extension (HAE) - a cross connect - with number of orders matching the number of connections, one for a single line or two for redundant connections. The cross connects will connect Network Exchange and the End User’s equipment following the provisioning of Network Exchange. Network Exchange will provide the equipment location and ports on the Network Exchange switches to be connected to, so the connections can be completed.
 * Users have a choice between a 1Gbps and 10Gbps connection. The optics used to connect to Network Exchange are one of:
   * QFX-SFP-1GE-LX SFP 1000BASE-LX Gigabit Ethernet Optics, 1,310 nm for 10 km transmission on single mode fiber-optic (SMF)
   * QFX-SFP-10GE-LR SFP+ 10GBASE-LR 10 Gigabit Ethernet Optics, 1,310 nm for 10 km transmission on single mode fiber-optic (SMF)
   * QFX-SFP-1GE-T 1000BASE-T SFP Copper SFP, Up to 100M (328 ft.) on Cat 5 unshielded twisted-pair copper cabling
-* The user will obtain the proper optics for their end of the cross connect, matching speed and type (SMF or Cat 5). 
+* The user will obtain the proper optics for their end of the cross connect, matching speed and type (SMF or Cat 5).
 * The Network Exchange fabric leverages the economics of shared networking while logically isolating network traffic between Exchanges, even within the same End User account.
-* Currently, an End User may only add the colocation endpoint(s) present in the same metropolitan area as the serving instance of Network Exchange. Where more than one colocation endpoint is served, all may be included in a given Exchange. See the *[Network Exchange Availability Matrix and Configuration Guide](../Network/network-exchange-connectivity-matrix-configuration-guide.md)* for available endpoints per metro area. 
+* Currently, an End User may only add the colocation endpoint(s) present in the same metropolitan area as the serving instance of Network Exchange. Where more than one colocation endpoint is served, all may be included in a given Exchange. See the *[Network Exchange Availability Matrix and Configuration Guide](../Network Exchange/network-exchange-connectivity-matrix-configuration-guide.md)* for available endpoints per metro area. 

@@ -39,6 +39,6 @@ IQ+: IQ+ in Cyxtera Data Centers
 * There can only be one CenturyLink Cloud (CLC) Endpoint per account alias, per data center, no matter the number of Exchanges.
 * Once bandwidth for the physical connections (cross connects) between Network Exchange and the end user network for a Colocation/Dedicated Access Endpoint has been established, it cannot be modified without a scheduled service change. Bandwidth over connections is not determined by Network Exchange, but rather, by the physical medium chosen.
 
-For more information, please see the [Network Exchange Product page](https://www.ctl.io/network-exchange/) or the [Network Exchange FAQ](../Network/network-exchange-faqs.md) page. For guidance on creating your first Exchange, see the [Network Exchange Getting Started Guide](../Network/network-exchange-getting-started-guide.md).
+For more information, please see the [Network Exchange Product page](https://www.ctl.io/network-exchange/) or the [Network Exchange FAQ](../Network Exchange/network-exchange-faqs.md) page. For guidance on creating your first Exchange, see the [Network Exchange Getting Started Guide](../Network Exchange/network-exchange-getting-started-guide.md).
 
-Please monitor Network Exchange release notes on ctl.io for news on additional features and site expansion. 
+Please monitor Network Exchange release notes on ctl.io for news on additional features and site expansion.

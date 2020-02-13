@@ -10,7 +10,7 @@
 
 ### Product Overview
 
-[Network Exchange](https://www.ctl.io/network-exchange/) provides secure, high-speed, redundant, automated network connections between disparate IT environments allowing for a true hybrid environment. Common environments include CenturyLink Cloud (CLC), CenturyLink Private Cloud on VMware Cloud Foundation (VCF), Colocation environments, CenturyLink Managed Hosting, CenturyLink Dedicated Cloud Compute, 3rd party networks and customer owned devices. Network Exchange is ideal for your hybrid environment as well as capacity augmentation or cloud bursting, data migration, and disaster recovery. 
+[Network Exchange](https://www.ctl.io/network-exchange/) provides secure, high-speed, redundant, automated network connections between disparate IT environments allowing for a true hybrid environment. Common environments include CenturyLink Cloud (CLC), CenturyLink Private Cloud on VMware Cloud Foundation (VCF), Colocation environments, CenturyLink Managed Hosting, CenturyLink Dedicated Cloud Compute, 3rd party networks and customer owned devices. Network Exchange is ideal for your hybrid environment as well as capacity augmentation or cloud bursting, data migration, and disaster recovery.
 
 An instance of Network Exchange is referred to as an Exchange. An Exchange is an interconnect between two or more IT environments. A Network Exchange customer may have one or more Exchanges. A connectivity point, such as a Colocation, in an Exchange is referred to as an Endpoint.
 
@@ -39,32 +39,32 @@ Network Exchange is offered in a fixed monthly billing model preventing customer
 	* [Network Exchange CenturyLink Cloud Endpoint Guide](network-exchange-clc-endpoint-guide.md)
 	* [Network Exchange Colocation Endpoint Guide](network-exchange-clc-colocation-endpoint-guide.md)
 	* [Network Exchange Managed Hosting via HAN Endpoint Guide](network-exchange-clc-managed-hosting-endpoint-guide.md)
-	* [Network Exchange Dedicated Access Endpoint Guide](network-exchange-clc-dedicated-access-endpoint-guide.md) 
+	* [Network Exchange Dedicated Access Endpoint Guide](network-exchange-clc-dedicated-access-endpoint-guide.md)
 	* [Network Exchange CenturyLink Private Cloud on VMWare Cloud Foundation Endpoint Guide](network-exchange-centurylink-private-cloud-endpoint-guide.md)
 
 ### Exceptions
 
-Network Exchange is designed to enable connectivity between any supported Endpoint type in any supported data center. Under certain circumstances, not all supported Endpoint types will be available at every supported data center. Any exceptions to this general rule will be noted in the Knowledge Base article [Network Exchange Availability Matrix and Configuration Guide](network-exchange-connectivity-matrix-configuration-guide.md) in the addendum. 
+Network Exchange is designed to enable connectivity between any supported Endpoint type in any supported data center. Under certain circumstances, not all supported Endpoint types will be available at every supported data center. Any exceptions to this general rule will be noted in the Knowledge Base article [Network Exchange Availability Matrix and Configuration Guide](network-exchange-connectivity-matrix-configuration-guide.md) in the addendum.
 
 ### Log-in to Network Exchange
 
 1. Navigate to the Cloud Application Manager Internet site and click on Log In and select Cloud Application Manager.
 
-![Network Exchange Portal](../images/network/netx-cam-internet-page.png)
+![Network Exchange Portal](../../images/network/netx-cam-internet-page.png)
 
 2. Login using your Cloud Application Manager or CenturyLink Cloud username and password   
-   
-![Network Exchange Portal](../images/network/netx-cam-login-with-cam-credentials.png)
-   
+
+![Network Exchange Portal](../../images/network/netx-cam-login-with-cam-credentials.png)
+
 3. In the top navigation bar, select **Network Exchange** in the Site Switcher.
-  
-![Network Exchange Portal](../images/network/netx-cam-switch-to-netx-site.png)
+
+![Network Exchange Portal](../../images/network/netx-cam-switch-to-netx-site.png)
 
 ### Creating An Exchange
 
 1. Click on the "Create an Exchange" button.
 
-![Network Exchange Portal](../images/network/netx-cam-collapse-start-creating-new-exchange.png)
+![Network Exchange Portal](../../images/network/netx-cam-collapse-start-creating-new-exchange.png)
 
 2. In the **Name Your Exchange** screen:
 
@@ -76,7 +76,7 @@ creating. This field should be utilized to differentiate amongst Exchanges.
 
 Click **Next**
 
-![Network Exchange Portal](../images/network/netx-cam-new-exchange-page-1.png)
+![Network Exchange Portal](../../images/network/netx-cam-new-exchange-page-1.png)
 
 3. In the Network Exchange **Select Endpoint 1** screen:
 
@@ -84,7 +84,7 @@ Select the Endpoint from the drop down menu for **Select Endpoint Type** from th
 
 Click **Next**.
 
-![Network Exchange Portal](../images/network/netx-cam-new-exchange-page-2.png)
+![Network Exchange Portal](../../images/network/netx-cam-new-exchange-page-2.png)
 
 **Follow the instructions for the selected endpoint type from the options, stated below**. You may add endpoints in any order and in any combination per supported configurations. The desired Exchange Ports / data center combination(s) per Exchange should be validated as a supported configuration in the Knowledge Base article [Network Exchange Configuration Guide](network-exchange-connectivity-matrix-configuration-guide.md).
 
@@ -94,17 +94,17 @@ Select **Cloud** from the **Select Endpoint Type** drop down menu.
 
 Click **Next**.
 
-    **Note:** You may cancel this operation by clicking the red X on the screen, or, by selecting the **Back** button. 
+    **Note:** You may cancel this operation by clicking the red X on the screen, or, by selecting the **Back** button.
 
-![Network Exchange Portal](../images/network/netx-cam-new-exchange-page-2.png)
+![Network Exchange Portal](../../images/network/netx-cam-new-exchange-page-2.png)
 
-Select the Provider from the **Select Provider** drop down menu. 
+Select the Provider from the **Select Provider** drop down menu.
 
 Click **Next**.
 
-    **Note:** You may cancel this operation by clicking the red X on the screen, or, by selecting the **Back** button. 
-    
-![Network Exchange Portal](../images/network/netx-cam-new-exchange-page-3.png)
+    **Note:** You may cancel this operation by clicking the red X on the screen, or, by selecting the **Back** button.
+
+![Network Exchange Portal](../../images/network/netx-cam-new-exchange-page-3.png)
 
 Enter a Description in the Description text field.
 
@@ -116,32 +116,32 @@ Select a Rate Limit from the **Select rate limit** drop down.
 
 Click **Next**.
 
-    **Note:** You may cancel this operation by clicking the red X on the screen, or, by selecting the **Back** button. 
-    
-![Network Exchange Portal](../images/network/netx-cam-new-exchange-page-4.png)
+    **Note:** You may cancel this operation by clicking the red X on the screen, or, by selecting the **Back** button.
+
+![Network Exchange Portal](../../images/network/netx-cam-new-exchange-page-4.png)
 
 ### Create a Colocation or “Dedicated Access" Endpoint
 
 Select **Colocation** or **Dedicated Access** from the **Select Endpoint Type** drop down menu.
 
-Click **Next**. 
+Click **Next**.
 	**Note:** You may cancel this operation by clicking the red X on the screen, or, by selecting the **Back** button.
 
-![Network Exchange Portal](../images/network/netx-cam-new-exchange-page-5ab.png)
+![Network Exchange Portal](../../images/network/netx-cam-new-exchange-page-5ab.png)
 
 Select the provider from the **Select Provider** drop down menu.
 
 Click **Next**.
 
     **Note:** You may cancel this operation by clicking the red X on the screen, or, by selecting the **Back** button.
-  
-![Network Exchange Portal](../images/network/netx-cam-new-exchange-page-5b.png)
+
+![Network Exchange Portal](../../images/network/netx-cam-new-exchange-page-5b.png)
 
 Enter a Description in the Description text field.
 
 Select a Data Center from the **Datacenter** drop down.
 
-Select if Redundancy is desired in the **Select redundancy type** drop down. 
+Select if Redundancy is desired in the **Select redundancy type** drop down.
 
 Select the Rate Limit and SFP Type in the **Select rate limit and SFP type** drop down.
 
@@ -149,7 +149,7 @@ Select the Routing Type: Static or BGP.
 
 Click "**Next**"
 
-![Network Exchange Portal](../images/network/netx-cam-new-exchange-page-5.png)
+![Network Exchange Portal](../../images/network/netx-cam-new-exchange-page-5.png)
 
 ### Create a Managed Hosting Endpoint
 
@@ -157,11 +157,11 @@ Select **Managed Hosting** from the **Select Endpoint Type** drop down menu.
 
 Click **Next**. You may cancel this operation by clicking the red X on the screen, or, by selecting the **Back** button.
 
-![Network Exchange Portal](../images/network/netx-cam-add-endpoint-3-to-new-exchange-page-9.png)
-   
+![Network Exchange Portal](../../images/network/netx-cam-add-endpoint-3-to-new-exchange-page-9.png)
+
 Select the **Provider** from the drop down list.
 
-![Network Exchange Portal](../images/network/netex-cam-add-endpoint-3-to-new-exchange-page-10.png)
+![Network Exchange Portal](../../images/network/netex-cam-add-endpoint-3-to-new-exchange-page-10.png)
 
 Enter a Description in the Description text field.
 
@@ -181,8 +181,8 @@ Click **Next**.
 * You may cancel this operation by clicking the red X on the screen, or, by selecting the "Back" button.
 * If this is your first endpoint, you will be prompted to enter a second endpoint. If you have entered an endpoint previously, you will be navigated to the **Review Your Request** flyout. See instructions below on how to proceed.
 
-![Network Exchange Portal](../images/network/netx-cam-add-endpoint-3-to-new-exchange-page-11.png)
-   
+![Network Exchange Portal](../../images/network/netx-cam-add-endpoint-3-to-new-exchange-page-11.png)
+
 ### Completing Your Request
 
 Upon selecting two endpoints, you will reach the “Review Your Request” flyout.
@@ -193,7 +193,7 @@ Click on “Submit”. You will be navigated to the main Network Exchange screen
 
 Note: The values displayed will reflect user selections. The image provided is for reference only.
 
-![Network Exchange Portal](../images/network/netx-cam-new-exchange-page-6-review-new-exchange.png)
+![Network Exchange Portal](../../images/network/netx-cam-new-exchange-page-6-review-new-exchange.png)
 
 ### Adding an Endpoint to an Exchange
 
@@ -201,11 +201,11 @@ Select the desired Exchange, which must have an “ACTIVE” status.
 
 Select **Add Additional Endpoint**.
 
-![Network Exchange Portal](../images/network/netx-cam-page-17.png)
+![Network Exchange Portal](../../images/network/netx-cam-page-17.png)
 
 Follow the instructions for the particular endpoint type, above. When adding an additional Endpoint, the **Review Your Request** page will contain configuration information for only the new Endpoint to be added.
 
-![Network Exchange Portal](../images/network/netx-cam-add-endpoint-3-to-new-exchange-page-12a.png)
+![Network Exchange Portal](../../images/network/netx-cam-add-endpoint-3-to-new-exchange-page-12a.png)
 
 ### Removing an Endpoint from an Exchange
 
@@ -219,7 +219,7 @@ Click **Delete Endpoint**.
 
 Click **Yes** or **No** when prompted. The status will indicate “UPDATING” during the deletion process.
 
-![Network Exchange Portal](../images/network/netx-cam-page-14-delete-an-endpoint.png)
+![Network Exchange Portal](../../images/network/netx-cam-page-14-delete-an-endpoint.png)
 
 ### Q & A
 

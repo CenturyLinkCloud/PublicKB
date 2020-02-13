@@ -15,7 +15,7 @@ The Network Exchange IQ+ Endpoint allows for automated, self-managed connectivit
 ### IQ+ Endpoint Prerequisites
 
 * An IQ+ connection into the existing shared edge switch (CPE) in a colocation data center must be present.
-* The desired site must be supported within Network Exchange. See the [Network Exchange Availability Matrix and Configuration Guide](../Network/network-exchange-connectivity-matrix-configuration-guide.md) for supported data centers.
+* The desired site must be supported within Network Exchange. See the [Network Exchange Availability Matrix and Configuration Guide](../Network Exchange/network-exchange-connectivity-matrix-configuration-guide.md) for supported data centers.
 
 ### IQ+ Endpoint Capabilities
 

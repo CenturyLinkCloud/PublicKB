@@ -11,7 +11,7 @@
 ### Managed Hosting via HAN Endpoint Connectivity Prerequisites
 
 * End Users must establish a CenturyLink Cloud (CLC) master account and sub-accounts, the latter to create isolation between the networking resources of the business units of their enterprise. The Exchanges created under each sub-account will be logically isolated from one another.
-* The desired Managed Hosting via HAN site must be supported within Network Exchange. See the [Network Exchange Availability Matrix and Configuration Guide](../Network/network-exchange-connectivity-matrix-configuration-guide.md) for supported data centers.
+* The desired Managed Hosting via HAN site must be supported within Network Exchange. See the [Network Exchange Availability Matrix and Configuration Guide](../Network Exchange/network-exchange-connectivity-matrix-configuration-guide.md) for supported data centers.
 * Two instances of Managed Hosting Network (HAN) VLAN Access are required and will be automatically ordered with this Endpoint.
 
 ### Managed Hosting via HAN Endpoint Capabilities
@@ -24,4 +24,4 @@
 
 * Managed Hosting End Users wishing to connect to Managed Hosting using direct connections should refer to the Network Exchange CenturyLink Dedicated Access Endpoint Guide.
 * The Network Exchange fabric leverages the economics of shared networking while logically isolating network traffic between Exchanges, even within the same End User account. Dedicated access to CenturyLink Cloud is not supported with Network Exchange.
-* Currently, an End User may only add the Managed Hosting endpoint(s) present in the same metropolitan area as the serving instance of Network Exchange. Where more than one Managed Hosting endpoint is served, all may be included in a given Exchange. See the [Network Exchange Availability Matrix and Configuration Guide](../Network/network-exchange-connectivity-matrix-configuration-guide.md) for more information.
+* Currently, an End User may only add the Managed Hosting endpoint(s) present in the same metropolitan area as the serving instance of Network Exchange. Where more than one Managed Hosting endpoint is served, all may be included in a given Exchange. See the [Network Exchange Availability Matrix and Configuration Guide](../Network Exchange/network-exchange-connectivity-matrix-configuration-guide.md) for more information.
