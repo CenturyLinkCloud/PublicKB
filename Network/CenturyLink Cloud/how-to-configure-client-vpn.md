@@ -144,7 +144,7 @@ A: By default, connecting to the VPN of a parent account will NOT provide access
 
 **Q: Can I configure my VPN to require two-factor authentication?**
 
-A: Yes, just follow the steps describing how to [Configure Two-Factor Authentication for Client VPN](../Network/configure-two-factor-authentication-for-client-vpn.md) to require both a username and password along with the certificate.
+A: Yes, just follow the steps describing how to [Configure Two-Factor Authentication for Client VPN](../CenturyLink Cloud/configure-two-factor-authentication-for-client-vpn.md) to require both a username and password along with the certificate.
 
 **Q: Is this service using secure SSL?**
 

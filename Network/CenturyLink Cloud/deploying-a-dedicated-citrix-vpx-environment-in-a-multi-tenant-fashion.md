@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-While the CenturyLink Cloud platform provides a [self-service load balancing service](../Network/creating-a-self-service-load-balancing-configuration.md) for public facing web applications there may be times in which this model does not meet a customers use case or technical requirements. CenturyLink Cloud customers can license Citrix VPX dedicated virtual load balancers on a monthly use basis. Internal IT personnel, partners, resellers and other ISV's may wish to deploy dedicated Citrix VPX load balancers for consumption across their application portfolio or client base in a multi-tenant fashion. Using the Citrix VPX platform in a multi-tenant fashion can avoid costs of deploying devices for every application or customer and reduce administrative overhead.
+While the CenturyLink Cloud platform provides a [self-service load balancing service](../CenturyLink Cloud/creating-a-self-service-load-balancing-configuration.md) for public facing web applications there may be times in which this model does not meet a customers use case or technical requirements. CenturyLink Cloud customers can license Citrix VPX dedicated virtual load balancers on a monthly use basis. Internal IT personnel, partners, resellers and other ISV's may wish to deploy dedicated Citrix VPX load balancers for consumption across their application portfolio or client base in a multi-tenant fashion. Using the Citrix VPX platform in a multi-tenant fashion can avoid costs of deploying devices for every application or customer and reduce administrative overhead.
 
 ### Use Case
 This KB will provide a sample use case in which a highly available pair of Citrix VPX dedicated load balancers are deployed into multi-tier account hierarchy using CenturyLink Cloud Parent and Sub-accounts. The end state will deliver load balancing services to a sub-account of the parent providing account isolation while delivering secure load balancing services.
@@ -36,16 +36,16 @@ For this use case the following information was used.
 
 ### Deploy Sub-Account Virtual Instances
 With a sub-account named 'Client A' deployed under the Parent Account, its now time to deploy virtual instances you wish to load balance in this sub-account.  In this example, we are going to deploy (2) Windows 2012 R2 Data Center Web Servers running IIS. We will also build a test HTML page to show the load balancing services are functional at the end of configuration.
-1. [Deploy a Web VLAN](../Network/creating-and-deleting-vlans.md) in the 'Client A' sub-account within the appropriate data center. Costs for VLANs can be found in our [Pricing Catalog](//www.ctl.io/pricing) or your CenturyLink Cloud MSA. Once this job completes we recommend you [apply a friendly name to this VLAN.](../Network/add-a-user-friendly-name-to-vlans.md) In this sample we used **WEB_10.100.187.0/24**.
+1. [Deploy a Web VLAN](../CenturyLink Cloud/creating-and-deleting-vlans.md) in the 'Client A' sub-account within the appropriate data center. Costs for VLANs can be found in our [Pricing Catalog](//www.ctl.io/pricing) or your CenturyLink Cloud MSA. Once this job completes we recommend you [apply a friendly name to this VLAN.](../CenturyLink Cloud/add-a-user-friendly-name-to-vlans.md) In this sample we used **WEB_10.100.187.0/24**.
 
     ![web vlan](../../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-04.png)
 
-2. [Create (2) Windows 2012 R2 Data Center Virtual Servers](../Servers/creating-a-new-enterprise-cloud-server.md) into a Group called Web Servers. These VM's should be placed in the WEB_10.100.187.0/24 VLAN.
+2. [Create (2) Windows 2012 R2 Data Center Virtual Servers](../../Servers/creating-a-new-enterprise-cloud-server.md) into a Group called Web Servers. These VM's should be placed in the WEB_10.100.187.0/24 VLAN.
 
     ![windows servers in group](../../images/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion-05.png)
 
-3. Install IIS using the [Install IIS for Windows blueprint](../Blueprints/Install-IIS-on-Windows.md)
-4. Use [Client VPN](../Network/how-to-configure-client-vpn.md) to RDP into the (2) newly created Web Servers and create a test page named **default.htm** in the IIS root folder (C:\inetpub\wwwroot). Sample basic HTML code is below:
+3. Install IIS using the [Install IIS for Windows blueprint](../../Blueprints/Install-IIS-on-Windows.md)
+4. Use [Client VPN](../CenturyLink Cloud/how-to-configure-client-vpn.md) to RDP into the (2) newly created Web Servers and create a test page named **default.htm** in the IIS root folder (C:\inetpub\wwwroot). Sample basic HTML code is below:
 
     **Web Server 1 default.htm file:**
     ```
