@@ -36,9 +36,9 @@ Required Compute:
 
 ### Postrequisite
 To access your application from a computer outside the CenturyLink Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
-* Recommended: Set up a [Load Balancer](../../Network/creating-a-self-service-load-balancing-configuration.md) for your slave nodes. Note, you'll need to gather the IP addresses of your slave nodes as well as install an http(s) server for this to be useful.
-* Optional: [VPN Access](../../Network/how-to-configure-client-vpn.md) (optional) will allow you to access the mesos masters directly for troubleshooting/logs/etc.
-* Optional: Set up a [Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) or [Load Balancer](../../Network/creating-a-self-service-load-balancing-configuration.md) on your master nodes to access Marathon publicly.
+* Recommended: Set up a [Load Balancer](../../Network/CenturyLink Cloud/creating-a-self-service-load-balancing-configuration.md) for your slave nodes. Note, you'll need to gather the IP addresses of your slave nodes as well as install an http(s) server for this to be useful.
+* Optional: [VPN Access](../../Network/CenturyLink Cloud/how-to-configure-client-vpn.md) (optional) will allow you to access the mesos masters directly for troubleshooting/logs/etc.
+* Optional: Set up a [Public IP](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) or [Load Balancer](../../Network/CenturyLink Cloud/creating-a-self-service-load-balancing-configuration.md) on your master nodes to access Marathon publicly.
 
 ### Deploying the Mesosphere Blueprint
 
@@ -105,7 +105,7 @@ To access your application from a computer outside the CenturyLink Cloud network
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access the Marathon UI
-After your Blueprint deploys successfully, connect through the [VPN](../../Network/how-to-configure-client-vpn.md) and access one of the master nodes on port 8080 in your browser. Alternatively, access a public IP set up through a [Load Balancer](../../Network/creating-a-self-service-load-balancing-configuration.md).
+After your Blueprint deploys successfully, connect through the [VPN](../../Network/CenturyLink Cloud/how-to-configure-client-vpn.md) and access one of the master nodes on port 8080 in your browser. Alternatively, access a public IP set up through a [Load Balancer](../../Network/CenturyLink Cloud/creating-a-self-service-load-balancing-configuration.md).
 
 ### Installing a custom http router
 Post this marathon job to access a basic router.

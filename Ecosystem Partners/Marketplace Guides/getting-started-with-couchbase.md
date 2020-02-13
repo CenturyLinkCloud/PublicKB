@@ -31,7 +31,7 @@ After reading this article, users should  be able to start a server running Couc
 
 ### Postrequisite
 After you successfully install a Blueprint, you will receive a notification email. If you want to access your application from a computer that is outside of the CenturyLink Cloud network, you need to perform the following steps:
-* [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the CenturyLink the Control Portal.
+* [Add a Public IP](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the CenturyLink the Control Portal.
 * Click on the Servers Public IP through the Control Portal and configure the ports. The default port for Couchbase Server is `8091`. For the additional available network ports, refer to the Couchbase Server [documentation](http://developer.couchbase.com/documentation/server/4.1/install/install-ports.html).
 
 ### Deploying the Couchbase Server Blueprint
