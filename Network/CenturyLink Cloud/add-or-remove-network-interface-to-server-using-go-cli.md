@@ -31,7 +31,7 @@ Note: Only one vNIC per VLAN is permitted.
     ```
 
 2. Run the add-secondary-network Go CLI command. Use the optional fields below if necessary.
-  * The --ip-address field is optional if you want to set a specific IP that is free in your network.  If not specified the next available IP will be used. 
+  * The --ip-address field is optional if you want to set a specific IP that is free in your network.  If not specified the next available IP will be used.
   * The --account-alias field is only required if you wish to add a network interface to a server located in a sub-account
 
     ```
@@ -47,9 +47,9 @@ Note: Only one vNIC per VLAN is permitted.
 
 3. Validate the new interface is shown in Control and the Server.
 
-    ![Control secondary interface UI](../images/add-or-remove-network-interface-to-server-using-go-cli-01.png)
+    ![Control secondary interface UI](../../images/add-or-remove-network-interface-to-server-using-go-cli-01.png)
 
-    ![Windows Adapters Added](../images/add-or-remove-network-interface-to-server-using-go-cli-02.png)
+    ![Windows Adapters Added](../../images/add-or-remove-network-interface-to-server-using-go-cli-02.png)
 
 ### Remove a Network Interface from a Server
 
@@ -68,8 +68,8 @@ Note: Only one vNIC per VLAN is permitted.
 
 2. Validate the network interface you requested be removed is in fact removed in Control and the Server.
 
-    ![Control secondary interface removed](../images/add-or-remove-network-interface-to-server-using-go-cli-03.png)
+    ![Control secondary interface removed](../../images/add-or-remove-network-interface-to-server-using-go-cli-03.png)
 
-    ![Windows Adapters removed](../images/add-or-remove-network-interface-to-server-using-go-cli-04.png)
-    
+    ![Windows Adapters removed](../../images/add-or-remove-network-interface-to-server-using-go-cli-04.png)
+
 **Note:** You can use these API calls to move a Server from one VLAN to another, however you will need to open a support ticket ([help@ctl.io](mailto:help@ctl.io) or [support website](https://support.ctl.io/access/unauthenticated?return_to=https%3A%2F%2Ft3n.zendesk.com%2Ftickets%2Fnew)) to coordinate the swap of primary and secondary designations for the NICs in Control to allow for the deletion of the secondary NIC.  Default and static routes will need to be reviewed and possibly updated to match the new primary.

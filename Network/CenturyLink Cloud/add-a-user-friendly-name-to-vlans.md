@@ -26,7 +26,7 @@ Add a User Friendly Name to VLANs
 <p><img src="https://t3n.zendesk.com/attachments/token/kgslwwecqd9brgl/?name=step03.png" alt="step03.png" />
 </p>
 <p>   Alternatively, you can input a new friendly name with the subnet included.  This allows you to see the subnet on the "create server" page as the description will not be viewable there.</p>
-<p><img src="../images/add-a-user-friendly-name-to-vlans-step03.png" alt="step03b.png" />
+<p><img src="../../images/add-a-user-friendly-name-to-vlans-step03.png" alt="step03b.png" />
 </p>
 <p>4. The newly assigned VLAN friendly name is now available and will be shown in the Control Portal.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/2d3sh0iacb4gzdn/?name=step04.png" alt="step04.png" />
