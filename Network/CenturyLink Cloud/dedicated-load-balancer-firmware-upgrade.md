@@ -22,7 +22,7 @@ To address existing bugs and bring to light set of new features periodically a n
 
 ### Preparation
 
-Two options exist to perform the upgrade. Both will require to [open a support ticket](../Support/how-do-i-report-a-support-issue.md) with the CenturyLink Cloud NOC.
+Two options exist to perform the upgrade. Both will require to [open a support ticket](../../Support/how-do-i-report-a-support-issue.md) with the CenturyLink Cloud NOC.
 
 * First option, CenturyLink NOC performs upgrade for you.
 

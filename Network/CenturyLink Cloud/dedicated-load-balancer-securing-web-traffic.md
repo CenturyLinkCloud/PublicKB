@@ -50,7 +50,7 @@ First, lets generate [Diffie-Hellman protocol](//mathworld.wolfram.com/Diffie-He
 
 The default SSL settings on your dedicated load balancer do have SSL v.3 as enabled, as well as Ephemeral RSA.
 
-![SSL Parameters](../images/ssl_parameters.png)
+![SSL Parameters](../../images/ssl_parameters.png)
 
 Both of those parameters have to be set to "disabled" in order to score higher rank on security scan.
 
@@ -91,7 +91,7 @@ Now we associate our virtual server with created cipher group.
 
 That will bring your score to "A".
 
-![SSL Score](../images/ssl_score.png)
+![SSL Score](../../images/ssl_score.png)
 
 ### Strict Transport Security
 
@@ -106,7 +106,7 @@ To achieve higher security rating we would have to configure a Strict Transport 
 
 Performing final scan will confirm that we achieved perfect security score.
 
-![SSL Score](../images/ssl_score_plus.png)
+![SSL Score](../../images/ssl_score_plus.png)
 
 ### Conclusion
 

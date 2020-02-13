@@ -8,7 +8,7 @@
 
 ### Overview
 
-CenturyLink Cloud (CLC) dedicated Load Balancers provisioned in a customer's environment are customer-managed devices, which includes management of the vendor license. Dedicated Load Balancers licenses are typically provisioned with an expiration date of one year. An expired license may impact functionality of the Load Balancer. To obtain a new license file a [Support Request](../Support/how-do-i-report-a-support-issue.md) should be submitted. Steps for installing the new license file are below.
+CenturyLink Cloud (CLC) dedicated Load Balancers provisioned in a customer's environment are customer-managed devices, which includes management of the vendor license. Dedicated Load Balancers licenses are typically provisioned with an expiration date of one year. An expired license may impact functionality of the Load Balancer. To obtain a new license file a [Support Request](../../Support/how-do-i-report-a-support-issue.md) should be submitted. Steps for installing the new license file are below.
 
 ### Audience
 
@@ -18,7 +18,7 @@ CenturyLink Cloud customers with a dedicated Citrix Netscaler Load Balancer
 
 * Must have an Admin login to your Netscaler
 * Must be able to SSH to the RNAT IP of the HA pair (typically ends with .101)
-* Basic understanding of [Basic Management Using the CLI](../Network/dedicated-load-balancer-using-cli-basic-management.md)
+* Basic understanding of [Basic Management Using the CLI](../CenturyLink Cloud/dedicated-load-balancer-using-cli-basic-management.md)
 
 ### Detailed Steps
 
@@ -82,7 +82,7 @@ There are two methods depending on if you are updating a lone LB or an HA pair. 
 
 #### HA Pair
 
-Users may need to [configure Java](../General/CenturyLinkCloud/how-to-configure-java-settings-to-access-web-user-interfaces.md) to ensure they can access the Web GUI.
+Users may need to [configure Java](../../General/CenturyLinkCloud/how-to-configure-java-settings-to-access-web-user-interfaces.md) to ensure they can access the Web GUI.
 
 1. The following steps will need to be performed on each node, starting with the secondary load balancer first.
     - For non-Windows users connect to the RNAT IP over SSH and add `.old` to the license filename, then use SCP to upload the file to `/nsconfig/license`.

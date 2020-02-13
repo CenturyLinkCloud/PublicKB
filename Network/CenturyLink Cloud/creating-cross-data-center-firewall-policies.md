@@ -61,7 +61,7 @@ In addition to being able to connect networks within a particular data center th
 
 ### Connecting Networks Across a Parent & Sub-Account Hierarchy
 
-1. Create the appropriate Parent & Sub-Account Hierarchy. Refer to the [Account Hierarchy Primer](../Accounts & Users/account-hierarchy-user-network-and-firewall-policy-primer.md) for more information. **Note**, policies between sub-accounts must be made from the shared **parent account**.
+1. Create the appropriate Parent & Sub-Account Hierarchy. Refer to the [Account Hierarchy Primer](../../Accounts & Users/account-hierarchy-user-network-and-firewall-policy-primer.md) for more information. **Note**, policies between sub-accounts must be made from the shared **parent account**.
 
 2. Create network VLAN(s) in the respective CenturyLink Cloud Data Center and Accounts.  We recommend [applying friendly names](../CenturyLink Cloud/add-a-user-friendly-name-to-vlans.md) to Networks.
 

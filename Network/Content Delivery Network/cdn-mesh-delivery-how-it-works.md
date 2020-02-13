@@ -25,7 +25,7 @@ In a mesh network, each device connects to other devices rather than to an Inter
 
 **How It Works**
 
-![CDN Mesh Delivery](../images/network/cdn/mesh-delivery.png)
+![CDN Mesh Delivery](../../imagesimages/network/cdn/mesh-delivery.png)
 
 1. On starting the video, the end user starts fetching the first video segments from the CDN.
 2. The client module connects to the distributor service that authenticates the user and returns a specific configuration which has been fine-tuned to maximize QoS and efficiency.

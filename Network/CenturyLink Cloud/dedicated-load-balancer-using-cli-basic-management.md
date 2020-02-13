@@ -61,6 +61,6 @@ This KB will go over the basics of creating a Load Balancer VIP and Services whe
 ### Additional Notes
 
 * This example was performed on Netscaler VPX version 10.5
-* For configuration with the GUI, please review [Dedicated LB Basic Management](../Network/dedicated-load-balancer-basic-management.md) for the basics of creating a Load Balancer VIP and Service Group when using Dedicated Load Balancers
-* If you begin to add additional networks to load balance in your environment, please review [Load Balance Additional Networks](../Network/loadbalance-additional-networks.md)
-* Tracking a Dedicated Load Balancer license expiration date is performed by the customer, please reference our [License Management Article](../Network/dedicated-load-balancer-license-management.md)
+* For configuration with the GUI, please review [Dedicated LB Basic Management](../CenturyLink Cloud/dedicated-load-balancer-basic-management.md) for the basics of creating a Load Balancer VIP and Service Group when using Dedicated Load Balancers
+* If you begin to add additional networks to load balance in your environment, please review [Load Balance Additional Networks](../CenturyLink Cloud/loadbalance-additional-networks.md)
+* Tracking a Dedicated Load Balancer license expiration date is performed by the customer, please reference our [License Management Article](../CenturyLink Cloud/dedicated-load-balancer-license-management.md)
