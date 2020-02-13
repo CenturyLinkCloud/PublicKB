@@ -149,4 +149,4 @@ Tier 1 broadcasters can access the following technology for live streams, catch-
 * Multi-region backend for better resilience and high availability
 * Can overcome short CDN downtimes by offloading delivery to the peer network
 
-More information: [Technical Brochure](https://www.ctl.io/lp/resources/cdn-mesh-delivery-technical-brochure.pdf)
+More information: [Technical Brochure](https://www.ctl.io/lp/resources/cdn-mesh-delivery-technical-brochure)
