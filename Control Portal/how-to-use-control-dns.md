@@ -46,7 +46,7 @@ The steps below will guide a user through configuring a domain within the Contro
 
     ![name servers updated](../images/how-to-use-control-dns-06.png)
 
-4. Navigate to DNS in the Control Portal, select your DNS zone and choose **add record.** Create your DNS records as required for your services.  To validate our configuration we simply created a sample A Record mapping www to a [public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) bound to a virtual web server.
+4. Navigate to DNS in the Control Portal, select your DNS zone and choose **add record.** Create your DNS records as required for your services.  To validate our configuration we simply created a sample A Record mapping www to a [public IP](../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) bound to a virtual web server.
 
     ![add A Record to dns](../images/how-to-use-control-dns-07.png)
 
@@ -101,7 +101,7 @@ The steps below will guide a user through configuring a **subdomain** within the
 
       ![name server additions complete for subdomain](../images/how-to-use-control-dns-13.png)
 
-4. Navigate to DNS in the Control Portal, select your DNS zone and choose **add record.** Create your DNS records as required for your services.  To validate our configuration we simply created a sample A Record mapping a virtual server name to a [public IP](../Network/how-to-add-public-ip-to-virtual-machine.md) on this new subdomain.
+4. Navigate to DNS in the Control Portal, select your DNS zone and choose **add record.** Create your DNS records as required for your services.  To validate our configuration we simply created a sample A Record mapping a virtual server name to a [public IP](../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) on this new subdomain.
 
     ![add A Record to dns for subdomain](../images/how-to-use-control-dns-14.png)
 

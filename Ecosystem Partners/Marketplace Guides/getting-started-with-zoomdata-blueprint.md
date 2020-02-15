@@ -84,7 +84,7 @@ Follow these step by step instructions to deploy Zoomdata.
 Follow these steps to access and use the Zoomdata software.
 1. Access the VM.
    * Please log in to your server using the VPN access.
-   * [Click here for VPN configuration instructions](../../Network/how-to-configure-client-vpn.md).
+   * [Click here for VPN configuration instructions](../../Network/CenturyLink Cloud/how-to-configure-client-vpn.md).
 
 ### Pricing
 The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no Zoomdata license costs or additional fees bundled in. To take advantage of the 30 day free trial, select the Zoomdata Trial Version.

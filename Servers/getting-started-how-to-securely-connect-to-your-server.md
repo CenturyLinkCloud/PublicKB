@@ -26,7 +26,7 @@ In order to connect to your shiny new virtual server, you will need to:
 You will use the OpenVPN client to securely connect to your new virtual server.
 
 For Windows:
-* Download the OpenVPN client from the [OpenVPN client](https://openvpn.net/index.php/open-source/downloads.html) website. There is currently a known issue when using OpevnVPN client version 2.4.5 with OpenVPN servers provisioned prior to June 2017, to resolve use  2.3.18-I602 64-bit release. Additional information can be found in our [Troubleshooting Article](../Network/vpn-client-connection-troubleshooting.md).
+* Download the OpenVPN client from the [OpenVPN client](https://openvpn.net/index.php/open-source/downloads.html) website. There is currently a known issue when using OpevnVPN client version 2.4.5 with OpenVPN servers provisioned prior to June 2017, to resolve use  2.3.18-I602 64-bit release. Additional information can be found in our [Troubleshooting Article](../Network/CenturyLink Cloud/vpn-client-connection-troubleshooting.md).
 * Click `Run` to begin the installation.
 
   ![Getting Started: How to securely connect to your server](../images/getting-started-how-to-securely-connect-to-your-server1.png)

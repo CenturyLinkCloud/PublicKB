@@ -57,7 +57,7 @@ export CLC_PASSWORD='<password>'
 export CLC_ALIAS='<alias>'
 ```
 
-3) Connect to CLC using VPN. To learn more about ways to connect such as persistent VPN or direct connection, please review [Network Access Options for Connecting to the CenturyLink Cloud Platform](../../Network/network-access-options-for-connecting-to-centurylink-clouds-platform.md).
+3) Connect to CLC using VPN. To learn more about ways to connect such as persistent VPN or direct connection, please review [Network Access Options for Connecting to the CenturyLink Cloud Platform](../../Network/CenturyLink Cloud/network-access-options-for-connecting-to-centurylink-clouds-platform.md).
 
 ### Node Creation
 

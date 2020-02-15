@@ -34,7 +34,7 @@ Vormetric provides enterprise encryption and key management services that enable
 ### Prerequisites
 * A CenturyLink Cloud Account
 * Vormetric DSM Licenses
-* Vormetric DSM Deployed into your account in a [dedicated network vlan](../Network/creating-and-deleting-vlans.md). Customers leveraging an account hierarchy are advised to place the DSM in the parent account as multi-tenant capabilities of the DSM allow for logical separation of policies, key, security administrators.
+* Vormetric DSM Deployed into your account in a [dedicated network vlan](../Network/CenturyLink Cloud/creating-and-deleting-vlans.md). Customers leveraging an account hierarchy are advised to place the DSM in the parent account as multi-tenant capabilities of the DSM allow for logical separation of policies, key, security administrators.
 
 ### General Notes
 * Vormetric customers should always refer to vendor product documentation and [online support](//help.vormetric.com) tools. This guide is focused on delivering CenturyLink Cloud specific considerations and steps with video tutorials for the baseline configuration of a DSM appliance.
@@ -73,7 +73,7 @@ New-NetFirewallRule -DisplayName â€œVormetric DSM to Agent" -Direction Inbound â
 
 1. Use the [Getting Started with Vormetric DSM](../Marketplace/Getting Started Guides/getting-started-vormetric-data-security-manager.md) guide to deploy your DSM Appliance into a CenturyLink Cloud Data Center.
 
-2. Connect securely via [IPSEC](../Network/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md) or [Client VPN](../Network/how-to-configure-client-vpn.md) and use SSH to login as **cliadmin**. Tip: Per the Getting Started Guide, the default password is **Vormetric123$**. It is advised you modify this as shown later in this KB.
+2. Connect securely via [IPSEC](../Network/CenturyLink Cloud/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md) or [Client VPN](../Network/CenturyLink Cloud/how-to-configure-client-vpn.md) and use SSH to login as **cliadmin**. Tip: Per the Getting Started Guide, the default password is **Vormetric123$**. It is advised you modify this as shown later in this KB.
 
     ```
     login as: cliadmin
@@ -402,7 +402,7 @@ In a single site topology, DSM high availability is provided by two (2) virtual 
 
   ![high availability single site](../images/centuryLink-cloud-guide-to-vormetric-DSM-06.png)
 
-In multisite topologies, DSM high availability spans physical locations and leverage our [Cross Data Center Firewall Services](../Network/creating-cross-data-center-firewall-policies.md). This allows DR Host Agents to maintain access to their encryption services even in the event of a total data center interruption.
+In multisite topologies, DSM high availability spans physical locations and leverage our [Cross Data Center Firewall Services](../Network/CenturyLink Cloud/creating-cross-data-center-firewall-policies.md). This allows DR Host Agents to maintain access to their encryption services even in the event of a total data center interruption.
 
   ![high availability multisite](../images/centuryLink-cloud-guide-to-vormetric-DSM-07.png)
 
@@ -427,7 +427,7 @@ DSM (Primary)|DSM (Failover)|One Way|TCP/50000
 
 5. Click **Add**. Enter the Server Name for the new failover DSM and click **OK**. The failover server is shown below the primary and the Role column entry will read Failover. The Registered and Configured checkboxes are unchecked.
 
-6. Connect securely to our **failover DSM** via [IPSEC](../Network/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md) or [Client VPN](../Network/how-to-configure-client-vpn.md) and use SSH to login as **cliadmin**.
+6. Connect securely to our **failover DSM** via [IPSEC](../Network/CenturyLink Cloud/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md) or [Client VPN](../Network/CenturyLink Cloud/how-to-configure-client-vpn.md) and use SSH to login as **cliadmin**.
 
 7. Enter the following commands:
 
@@ -500,7 +500,7 @@ DSM (Primary)|DSM (Failover)|One Way|TCP/50000
     ![high availability configured](../images/centuryLink-cloud-guide-to-vormetric-DSM-05.png)
 
 ### DSM Automatic Backup
-Set up the Automatic Backup feature to protect the configuration settings as well the encryption keys and policies. To do this, you must access a File Server (a UNIX or Windows host) that is [network accessible](../Network/connecting-data-center-networks-through-firewall-policies.md) by the DSM to store the backup files. Automatic DSM database backup is configured in the Automatic Backup window.
+Set up the Automatic Backup feature to protect the configuration settings as well the encryption keys and policies. To do this, you must access a File Server (a UNIX or Windows host) that is [network accessible](../Network/CenturyLink Cloud/connecting-data-center-networks-through-firewall-policies.md) by the DSM to store the backup files. Automatic DSM database backup is configured in the Automatic Backup window.
 
 1. Open the Automatic Backup window in the Management Console by selecting **System > Backup and Restore > Automatic Backup**.
 
