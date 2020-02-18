@@ -9,7 +9,7 @@
 
 ### Announcements (4)
 
-## [Cloud Application Manager Platform](https://www.ctl.io/cloud-application-manager/)
+#### [Cloud Application Manager Platform](https://www.ctl.io/cloud-application-manager/)
 
 #### New provider type for CenturyLink DEC 3
 
@@ -19,7 +19,7 @@ Cloud Application Manager has added the support for the CenturyLink DEC 3 provid
 
 Cloud Application Manager now includes a button in the top right corner of the Users list page of the Management site to get an export of the list of all the organization users in a CSV or PDF file format. All columns in the user list will be displayed in the exported file along with the cost center the user belongs to. This will ease reporting and auditing tasks by providing a convenient file format to be consumed as required.
 
-## Application Lifecycle Management
+#### [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/)
 
 #### Support for the GCP Asia North East (Seoul) region
 
