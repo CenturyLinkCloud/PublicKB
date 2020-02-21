@@ -13,7 +13,7 @@
 
 * [Overview](#overview)
 * [Audience](#audience)
-* [MSA Netword Architecture](#network-architecture)
+* [MSA Network Diagram](#msa-network-diagram)
 * [Connectivity and Required Firewall Rules](#connectivity-and-required-firewall-rules)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
@@ -29,7 +29,43 @@ This article is meant to assist users of Managed Services Anywhere (MSA) in the 
 
 All Managed Services Anywhere (MSA) customers or those interested in enabling MSA within their Cloud Application Manager Providers.
 
-![Managed Services Anywhere Network Diagram](../../images/cloud-application-manager/MSAnetwork_9-26-19.png)
+
+### MSA Network Diagram
+
+Network connections between customer servers, MSA management appliance, and CenturyLink.
+
+[![Managed Services Anywhere Network Diagram](../../images/cloud-application-manager/MSAnetwork_9-26-19.png)](../../images/cloud-application-manager/MSAnetwork_9-26-19.png)
+
+*Does not include traffic between other sources, such as for DNS resolution or OS updates.*
+
+### Connectivity and Required Firewall Rules
+
+
+Because of the dynamic nature of our endpoints and management appliances, we recommend allowing the following access for subnets hosting MSA management appliances
+
+
+#### External Connections from MSA Management Appliance
+
+| Description | Purpose          | Protocol | Port | Destination |
+|-------------|------------------|----------|------|-------------|
+| HTTP        | CAM Registration | TCP      | 80   | 0.0.0.0/0   |
+| HTTPS       | CAM Management   | TCP      | 443  | 0.0.0.0/0   |
+| RabbitMQ    | Monitoring       | TCP      | 5671 | 0.0.0.0/0   |
+| ISAKMP      | Remote Admin     | UDP      | 500  | 0.0.0.0/0   |
+| IPSEC       | Remote Admin     | UDP      | 4500 | 0.0.0.0/0   |
+
+
+### Internal Connections from MSA Management Appliance
+
+| Description | Purpose      | Protocol | Port | Destination                                           |
+|-------------|--------------|----------|------|-------------------------------------------------------|
+| SSH         | Remote Admin | TCP      | 22   | Internal Networks Managed by MSA Management Appliance |
+| HTTPS       | Monitoring   | TCP      | 443  | Internal Networks Managed by MSA Management Appliance |
+| SMB         | Remote Admin | TCP      | 445  | Internal Networks Managed by MSA Management Appliance |
+| RDP         | Remote Admin | TCP      | 3389 | Internal Networks Managed by MSA Management Appliance |
+| WinRM       | Remote Admin | TCP      | 5985 | Internal Networks Managed by MSA Management Appliance |
+| WinRM       | Remote Admin | TCP      | 5986 | Internal Networks Managed by MSA Management Appliance |
+
 
 
 ### Contacting Cloud Application Manager Support
