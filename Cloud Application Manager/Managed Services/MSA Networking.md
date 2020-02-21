@@ -55,7 +55,7 @@ Because of the dynamic nature of our endpoints and management appliances, we rec
 | IPSEC       | Remote Admin     | UDP      | 4500 | 0.0.0.0/0   |
 
 
-### Internal Connections from MSA Management Appliance
+#### Internal Connections from MSA Management Appliance
 
 | Description | Purpose      | Protocol | Port | Destination                                           |
 |-------------|--------------|----------|------|-------------------------------------------------------|
