@@ -41,7 +41,7 @@ Network connections between customer servers, MSA management appliance, and Cent
 ### Connectivity and Required Firewall Rules
 
 
-Because of the dynamic nature of our endpoints and management appliances, we recommend allowing the following access for subnets hosting MSA management appliances
+Because of the dynamic nature of our endpoints and management appliances, we recommend allowing the following stateful rules be applied to subnets hosting MSA management appliances
 
 
 #### External Connections from MSA Management Appliance
