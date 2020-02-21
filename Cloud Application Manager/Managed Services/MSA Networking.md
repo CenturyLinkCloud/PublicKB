@@ -67,7 +67,14 @@ Because of the dynamic nature of our endpoints and management appliances, we rec
 | WinRM       | Remote Admin | TCP      | 5986 | Internal Networks Managed by MSA Management Appliance |
 
 
+#### Internal Connections *to* MSA Management Appliance
+
+| Description | Purpose          | Protocol | Port | *Source*                                              |
+|-------------|------------------|----------|------|-------------------------------------------------------|
+| PING        | MSA Registration | ICMP     | ALL  | Internal Networks Managed by MSA Management Appliance |
+
 
 ### Contacting Cloud Application Manager Support
+
 
 We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
