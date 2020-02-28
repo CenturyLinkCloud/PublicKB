@@ -45,7 +45,6 @@ Because of the dynamic nature of our endpoints and management appliances, we rec
 
 | Description | Purpose          | Protocol | Port | Destination |
 |-------------|------------------|----------|------|-------------|
-| HTTP        | CAM Registration | TCP      | 80   | 0.0.0.0/0   |
 | HTTPS       | CAM Management   | TCP      | 443  | 0.0.0.0/0   |
 | RabbitMQ    | Monitoring       | TCP      | 5671 | 0.0.0.0/0   |
 | ISAKMP      | Remote Admin     | UDP      | 500  | 0.0.0.0/0   |
