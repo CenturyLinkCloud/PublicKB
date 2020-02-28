@@ -10,7 +10,6 @@
 
 **In this article:**
 
-
 * [Overview](#overview)
 * [Audience](#audience)
 * [MSA Network Diagram](#msa-network-diagram)
@@ -20,12 +19,10 @@
 
 ### Overview
 
-
 This article is meant to assist users of Managed Services Anywhere (MSA) in the network architecture and requirements of the MSA solution.  This document explains the network requirements of the MSA customer's environment for the purposes of preparation for MSA enablement and post enablement support.
 
 
 ### Audience
-
 
 All Managed Services Anywhere (MSA) customers or those interested in enabling MSA within their Cloud Application Manager Providers.
 
@@ -41,7 +38,7 @@ Network connections between customer servers, MSA management appliance, and Cent
 ### Connectivity and Required Firewall Rules
 
 
-Because of the dynamic nature of our endpoints and management appliances, we recommend allowing the following stateful rules be applied to subnets hosting MSA management appliances
+Because of the dynamic nature of our endpoints and management appliances, we recommend applying the following stateful rules to subnets hosting MSA management appliances
 
 
 #### External Connections from MSA Management Appliance
@@ -75,6 +72,5 @@ Because of the dynamic nature of our endpoints and management appliances, we rec
 
 
 ### Contacting Cloud Application Manager Support
-
 
 We’re sorry you’re having an issue in [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/). Please review the [troubleshooting tips](../Troubleshooting/troubleshooting-tips.md), or contact [Cloud Application Manager support](mailto:incident@CenturyLink.com) with details and screenshots where possible.
