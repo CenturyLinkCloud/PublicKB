@@ -31,7 +31,7 @@ All Managed Services Anywhere (MSA) customers or those interested in enabling MS
 
 Network connections between customer servers, MSA management appliance, and CenturyLink.
 
-[![Managed Services Anywhere Network Diagram](../../images/cloud-application-manager/MSAnetwork_9-26-19.png)](../../images/cloud-application-manager/MSAnetwork_9-26-19.png)
+![Managed Services Anywhere Network Diagram](../../images/cloud-application-manager/MSA_Network-3-3-20.png)
 
 *Does not include traffic between other sources, such as for DNS resolution or OS updates.*
 
