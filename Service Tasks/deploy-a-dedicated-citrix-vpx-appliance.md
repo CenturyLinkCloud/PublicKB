@@ -17,9 +17,9 @@ This Knowledge Base article will guide a customer through the process of deployi
 
 ### Deploy a Load Balancing VLAN
 
-* Deploy a [dedicated load balancing vlan](../Network/creating-and-deleting-vlans.md) in your account within the appropriate data center.  We recommend the VPX reside in a dedicated VLAN which allows for maximum Firewall security control and scalability of VIPs.
+* Deploy a [dedicated load balancing vlan](../Network/CenturyLink Cloud/creating-and-deleting-vlans.md) in your account within the appropriate data center.  We recommend the VPX reside in a dedicated VLAN which allows for maximum Firewall security control and scalability of VIPs.
 * Costs for VLANs can be found in our [Pricing Catalog](http://www.ctl.io/pricing) or your CenturyLink Cloud MSA.
-* Once this job completes we recommend you [apply a friendly name](../Network/add-a-user-friendly-name-to-vlans.md) to this VLAN.
+* Once this job completes we recommend you [apply a friendly name](../Network/CenturyLink Cloud/add-a-user-friendly-name-to-vlans.md) to this VLAN.
 
 In the sample below in CA3 we have a network created and named NLB_10.100.97.0/24.
 
@@ -55,6 +55,6 @@ Citrix VPX Appliances will be shown in Control
 
 ### Additional Information
 
-* [Dedicated Load Balancer Basic Management](../Network/dedicated-load-balancer-basic-management.md)
-* [Deploying a Dedicated Citrix VPX in a Multi-tenant Fashion](../Network/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion.md)
-* [Load Balancing Comparison Matrix](../Network/load-balancing-comparison-matrix.md)
+* [Dedicated Load Balancer Basic Management](../Network/CenturyLink Cloud/dedicated-load-balancer-basic-management.md)
+* [Deploying a Dedicated Citrix VPX in a Multi-tenant Fashion](../Network/CenturyLink Cloud/deploying-a-dedicated-citrix-vpx-environment-in-a-multi-tenant-fashion.md)
+* [Load Balancing Comparison Matrix](../Network/CenturyLink Cloud/load-balancing-comparison-matrix.md)

@@ -22,7 +22,7 @@ By default, anything that cannot be done via self-service or [Service Task](http
 Custom Requests are sent to a queue monitored by CenturyLink Cloud management. An executive reviews each request and approves or rejects the request after careful consideration (note that a custom request that was approved in the past MAY not get approved a second time). The result of the Custom Request review process is then communicated back to the customer.
 
 #### How long does it take for a request to get evaluated?
-There is no SLA on custom requests, but all items are typically reviewed and acted upon within 72 hours.
+There is no SLA on custom requests, but all items are typically reviewed and acted upon within 72 hours. If the request is urgent then it may be escalated using the [how do I escalate a ticket](../Support/how-do-i-escalate-a-ticket.md) process.
 
 #### What are the possible outcomes?
 After assessing the details of the Custom Request, the CenturyLink Cloud team will either accept or reject the request. If accepted, we will either perform the work outright, or based on complexity, offer to do it as part of a [Service Task](https://www.ctl.io/service-tasks/). The customer can then choose whether or not they wish to still have this work performed.

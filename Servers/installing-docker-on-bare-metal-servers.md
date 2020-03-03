@@ -34,7 +34,7 @@
 
 #### CentOS 6 and Red Hat 6
 
-1. Log into the machine via SSH as the `root` user. (Make sure you are logged into your [VPN](../Network/how-to-configure-client-vpn.md) and connecting to the machine's private IP as it is not recommended to allow SSH over a public IP.)
+1. Log into the machine via SSH as the `root` user. (Make sure you are logged into your [VPN](../Network/CenturyLink Cloud/how-to-configure-client-vpn.md) and connecting to the machine's private IP as it is not recommended to allow SSH over a public IP.)
 
         ssh root@{ip_address}
 
