@@ -13,7 +13,13 @@
 
 ##### Support for running ALM agent as a non-root account
 
-Application Lifecycle Management has added support for running the ALM agent as a non-root account in Linux-based VM instances. In the configuration tab of the provider details page, there's a new option to configure it. If the user specified does not exist, it will be created during the bootstrapping of the agent for a new instance. Users can also specify the mode in which the agent will execute any event. That is, as an admin, as the specified user, or automatic (the agent will try to execute as root if it has permissions to do so, or as the current user otherwise). These settings are applied to all instances deployed into the provider and can be overridden at instance level once it has deployed. That means that every time there is a new event to execute, the agent will use the previously chosen user and mode to perform it.
+Application Lifecycle Management has added support for running the ALM agent as a non-root account in Linux-based VM instances. Users can find the configuration under the configuration tab of the provider details page. Users can also specify the mode in which the agent will execute any event. There are three modes that the user can configure this option:
+
+1. Run as Admin
+2. Run as a specified user (If the user does not exist, user  will be created during the bootstrapping of the agent for a new instance)
+3. Automatic (Agent will try to execute as root if it has permissions to do so, otherwise, as the current user)
+
+These settings are applied to all instances deployed into the provider and can be overridden at instance level once it has deployed. Every time there is a new event to execute, the agent will use the previously chosen user and mode to perform the event.
 
 ##### Support for the GCP US west (Salt Lake City, Utah, USA) region
 
