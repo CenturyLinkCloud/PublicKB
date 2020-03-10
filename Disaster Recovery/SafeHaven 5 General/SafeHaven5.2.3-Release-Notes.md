@@ -1,6 +1,6 @@
 {{{
   "title": "SafeHaven 5.2.3 Release Notes",
-  "date": "10-25-2019",
+  "date": "03-04-2020",
   "author": "Shi Jin",
   "attachments": [],
   "contentIsHTML": false,
@@ -16,9 +16,9 @@
 
 This is patch release based on [SafeHaven 5.2.2](SafeHaven5.2.2-Release-Notes.md) with the following improvements:
 
-- Improve the cluster status report
-- Improve long term network performance by recreating tunnels upon every checkpoint
-- Support features needed by the CAM DR product
+- Improved the cluster status report
+- Improved long term network performance by recreating tunnels upon every checkpoint
+- Added features needed by the [CAM DR product](../../Cloud Application Manager/DR Readiness/Enable DR.md)
 
 ### Upgrade Path
 
