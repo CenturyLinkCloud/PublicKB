@@ -16,7 +16,7 @@
 
 This is patch release based on [SafeHaven 5.2.3](SafeHaven5.2.3-Release-Notes.md) with the following improvements:
 
-- Improve on the Windows checkpoint status report
+- Improved on the Windows checkpoint status report
 - Added features needed by the [CAM DR product](../../Cloud Application Manager/DR Readiness/Enable DR.md)
 
 ### Upgrade Path
