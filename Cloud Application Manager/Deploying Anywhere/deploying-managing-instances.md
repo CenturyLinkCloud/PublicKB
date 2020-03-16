@@ -294,11 +294,19 @@ This executes the dispose scripts from your box instance and then deletes the vi
 
 #### Force Terminate
 
-If a Terminate fails for some reason (maybe a broken dispose script), then this forcibly deletes the virtual infrastructure. If you previously terminated or deleted an instance from the provider’s side, the instance may linger in Force Terminate in Cloud Application Manager. Give it a couple of minutes then try to force-terminate again.
+If a Terminate fails for some reason (maybe a broken dispose script), then this forcibly deletes the virtual infrastructure. It will not execute the dispose scripts. You can’t revert the action and since you can lose data, be sure that you want to perform this action. If you previously terminated or deleted an instance from the provider’s side, the instance may linger in Force Terminate in Cloud Application Manager. Give it a couple of minutes then try to force-terminate again.
 
 #### Force Online
 
-Allow user with "Admin" role to reset the state of an instance in case it went into the "unavailable" state when the last attempted operation was Reconfigure or Reinstall.
+Allow users with "Admin" role to reset the state of an instance in case it went into the "unavailable" state when the last attempted operation was Reconfigure or Reinstall.
+
+#### Disconnect
+
+This operation is available for instances registered into a [Compute Instances](./using-compute-instances.md) provider. It will execute the dispose event and related scripts if available, remove the agent from the machine and remove the instance from Cloud Application Manager. The instance running state will not be affected, but it will be no longer available in Cloud Application Manager. Note that for Windows machines, the service will be stopped but not removed automatically.
+
+#### Force disconnect
+
+This operation is available for instances registered into a [Compute Instances](./using-compute-instances.md) provider. It will only remove the agent from the machine and remove the instance from Cloud Application Manager. The instance running state will not be affected, but it will be no longer available in Cloud Application Manager. Note that for Windows machines, the service will be stopped but not removed automatically.
 
 #### Delete
 
