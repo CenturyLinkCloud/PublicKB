@@ -15,7 +15,7 @@
 
 Cloud Application Manager has added the ability to search by AWS Account ID or Azure Subscription ID in the providers' page. These search field additions enable users to quickly find the provider or providers that are associated with certain AWS or Azure accounts just by typing the corresponding account ID or subscription ID in the search field of the providers' list page.
 
-#### [MSA DR-Readiness](https://www.ctl.io/managed-services-anywhere/)
+#### [MSA DR-Readiness](https://www.ctl.io/managed-services/disaster-recovery/)
 
 ##### Support for Linux Operating system
 
