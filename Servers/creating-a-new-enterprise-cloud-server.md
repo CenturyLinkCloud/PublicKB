@@ -36,7 +36,7 @@ The heart of the CenturyLink Cloud Platform is the ability to create and manage 
 
     ![create server resources](../images/creating-a-new-enterprise-cloud-server-03.png)
 
-4. Select the **Create Server** button and this will place your build into the queue.
+4. Select the **Create Server** button and this will place your build into the queue.  Under construction servers are not billed to your account.  Should the blueprint fail the machine will be automatically deleted in 14 days with zero costs incurred.
 
 ### Important Information for Windows Domain Controllers and mismatch of root/administrator password between control and server.
 
