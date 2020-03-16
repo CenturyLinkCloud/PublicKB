@@ -1,7 +1,7 @@
 {{{ "title": "Deploying and Managing Instances",
-"date": "10-01-2019",
-"author": "Guillermo Sánchez, Efren Rey, Victor Shulman, and Yongjie Liang",
-"keywords": ["cam", "instances", "lifecycle", "deploy", "deployment-policy", "instance-protection", "shutdown-protection", "terminate-protection", "bulk-actions"],
+"date": "03-17-2020",
+"author": "Yongjie Liang and Guillermo Sánchez",
+"keywords": ["cam", "instances", "lifecycle", "deploy", "deployment-policy", "instance-protection", "shutdown-protection", "terminate-protection", "bulk-actions", "lifecycle-states", "export"],
 "attachments": [],
 "sticky": true,
 "contentIsHTML": false
@@ -306,7 +306,7 @@ This operation is available for instances registered into a [Compute Instances](
 
 #### Force disconnect
 
-This operation is available for instances registered into a [Compute Instances](./using-compute-instances.md) provider. It will only remove the agent from the machine and remove the instance from Cloud Application Manager. The instance running state will not be affected, but it will be no longer available in Cloud Application Manager. Note that for Windows machines, the service will be stopped but not removed automatically.
+This operation is available for instances registered into a [Compute Instances](./using-compute-instances.md) provider. It will only remove the agent from the machine and remove the instance from Cloud Application Manager. The instance running state will not be affected, but it will be no longer available in Cloud Application Manager. Note that for Windows machines, the service will be stopped but not removed automatically. The **Force disconnect** operation can also be applied to instances in the process of being registered, if it has not been completed yet.
 
 #### Delete
 
