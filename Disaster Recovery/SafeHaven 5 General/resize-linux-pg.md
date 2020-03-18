@@ -8,7 +8,7 @@
 
 ### Outline
 
-Suppose a Linux server protected by SafeHaven-5 has been expanded, in other words running on a larger file system,  a number of steps needs to be taken in order to sure the SafeHaven protection continue to work with the enlarged system. At the high leve, the steps are
+Suppose a Linux server protected by SafeHaven-5 has been expanded, in other words running on a larger file system,  a number of steps needs to be taken in order to sure the SafeHaven protection continue to work with the enlarged system. The high-level steps are
 
 1. Using the SafeHaven GUI, [expand the SafeHaven protection group and protected disk](../SafeHaven 4/SafeHaven-4-Expand Protection Group Size.md):
   1.1 Ensure both SRNs contain sufficient free capacity in the correspondig storage pools
@@ -16,19 +16,17 @@ Suppose a Linux server protected by SafeHaven-5 has been expanded, in other word
   1.3 Enlarge the protected disk within the protection group
 
 2. On the protected Linux server itself, run as root user to
-  2.1 ensure the iSCSI Disk has been expanded
-  2.2 expand the root file system partition
-  2.3 expand the root file system
-  2.4 test to confirm
+  2.1 Ensure the iSCSI Disk has been expanded
+  2.2 Expand the root file system partition
+  2.3 Expand the root file system
+  2.4 Test to confirm
 
-
-The details of step 1 has been documented in [this KB](../SafeHaven 4/SafeHaven-4-Expand Protection Group Size.md) while the details of step 2 is documented below.
+The details of step 1 have been documented in [this KB](../SafeHaven 4/SafeHaven-4-Expand Protection Group Size.md) while the details of step 2 is documented below.
 
 ### Step 2: Resize the iSCSI Target from Protected Linux Server
 
 * This step assumes step 1 is already taken.
 * The following commands are to be run with root user privileges.
-
 
 #### 2.1 Ensure the iSCSI Disk is Expanded
 
@@ -44,12 +42,16 @@ root@WA1SHSJ-U18-01:/opt/datagardens/rootfs/mnt/fs-disk1# lsscsi -t
 [2:0:2:0]    disk    spi:2                           /dev/sdc 
 [3:0:0:0]    disk    iqn.2016-09.io.ctl:WA1SHSJ-U18-01-PG-WA1SHSJ-U18-01-external,t,0x1  /dev/sdd 
 ```
+
 In this example, the iSCSI disk path is `/dev/sdd`.
 
-Secondly, we could run the `lsblk` command to check its disk size. It is possible that the disk size is not changed until a SCSI bus rescan. In this case, we could run 
+Secondly, we could run the `lsblk` command to check its disk size. It is possible that the disk size is not changed until a SCSI bus rescan. To enforce a refresh via a SCSI bus rescan, we can run
 
 ```bash
-echo 1 > /sys/class/scsi_device/3\:0\:0\:0/device/rescan
+# Rescan all appliable SCSI buses.
+for SCSI_SCAN in /sys/class/scsi_host/host*/scan; do
+  echo "- - -" > ${SCSI_SCAN}
+done
 ```
 
 In this example, the size of `sdd` changes from 26GB to 30GB after the above rescan and we have
@@ -74,9 +76,9 @@ sr0                     11:0    1 1024M  0 rom
 
 There are two different cases depending on the DR cloud type.
 
-##### 2.2.1 For DR to VMware/CLC/vCloud: Expand Logical Volume
+##### 2.2.1 DR Sites on VMware/CLC/vCloud: Expand Logical Volume
 
-In this case, the iSCSI is partition to support logical volume manager (LVM). We could check its disk partition with the `gdisk` tool as
+In this case, the iSCSI disk is partition to support Logical Volume Manager (LVM). We could check its disk partition with the `gdisk` tool as
 
 ```bash
 root@WA1SHSJ-U18-01:/opt/datagardens/rootfs/mnt/fs-disk1# gdisk -l /dev/sdd
@@ -96,7 +98,7 @@ Disk identifier (GUID): E4D3AF94-DE60-4E74-9420-56CA8DA39F74
 Partition table holds up to 128 entries
 Main partition table begins at sector 2 and ends at sector 33
 First usable sector is 34, last usable sector is 54525918
-Partitions will be aligned on 2048-sector boundaries
+Partitions will be aligned on 2048-sector b`oundaries
 Total free space is 4061 sectors (2.0 MiB)
 
 Number  Start (sector)    End (sector)  Size       Code  Name
@@ -115,7 +117,7 @@ root@WA1SHSJ-U18-01:/opt/datagardens/rootfs/mnt/fs-disk1# pvs
 
 We could use the `parted` command to resize the partition 3.
 
-First time launching `parted /dev/sdd` will have a warning message since the disk size has changed and the GPT partition table needs fixing. Please enter `Fix` to fix it.
+First time launching `parted /dev/sdd` will have a warning message, since the disk size has changed and the GPT partition table needs to be updated. Please enter `Fix` to fix it.
 
 ```bash
 root@WA1SHSJ-U18-01:/opt/datagardens/rootfs/mnt/fs-disk1# parted /dev/sdd resizepart 3 100%
@@ -125,7 +127,7 @@ parted: invalid token: 3
 Fix/Ignore? Fix
 ```
 
-Then we can run the `resizepart` command within the parted tool to resize the partition and use the `print` command to check the size before and after the resize operation to confirm.
+Then we can run the `resizepart` command within the parted tool to resize the partition.  We use the `print` command to check the size before and after the resize operation to confirm.
 
 ```bash
 (parted) print                                                            
@@ -180,7 +182,7 @@ root@WA1SHSJ-U18-01:/opt/datagardens/rootfs/mnt/fs-disk1# lvresize -l +100%FREE 
 
 We could confirm the new size using `lsblk`.
 
-##### 2.2.2 For DR to AWS/Azure: Expand the Partition
+##### 2.2.2 DR Sites on AWS/Azure: Expand the Partition
 
 This step is similar to the above step using LVM. The only difference is that we simply need to use `parted` to resize the 4th partition and there is no need to do anything with LVM.
 
@@ -205,7 +207,7 @@ Number  Start   End     Size    File system     Name            Flags
 
 #### 2.3 Expand the root File System
 
-After resizing the underlying volume/partition, we still need to resize the file system on top of it. The actual command depends on the specific file system (the same file system used by protected root file system).
+After resizing the underlying volume/partition, we still need to resize the file system on top of it. The actual command depends on the fileystem type used by the root filesystem.
 
 * For extended file systems (ext2/3/4), we can run `resize2fs`. For example
 
@@ -213,7 +215,8 @@ After resizing the underlying volume/partition, we still need to resize the file
 resize2fs /dev/vg_iscsi18/root_lv
 ```
 
-* For RaiserFS, we could use `xfs_growfs`
+* For XFS, we could use `xfs_growfs`
+* For ReiserFS, we could use `resize_reiserfs`
 
 
 #### 2.4 Confirmation
@@ -237,3 +240,5 @@ tmpfs                            97M     0   97M   0% /run/user/0
 ```
 
 In this example, the file system mounted at `/opt/datagardens/rootfs` has grown from 23GB to 27GB.
+
+Please remember to umount the file system if it was manually mounted.
