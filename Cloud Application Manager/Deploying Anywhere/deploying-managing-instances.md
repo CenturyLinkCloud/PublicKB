@@ -302,11 +302,11 @@ Allow users with "Admin" role to reset the state of an instance in case it went 
 
 #### Disconnect
 
-This operation is available for instances registered into a [Compute Instances](./using-compute-instances.md) provider. It will execute the dispose event and related scripts if available, remove the agent from the machine and remove the instance from Cloud Application Manager. The instance running state will not be affected, but it will be no longer available in Cloud Application Manager. Note that for Windows machines, the service will be stopped but not removed automatically.
+This operation is available for instances registered into a [Compute Instances](./using-compute-instances.md) provider. It will execute the *dispose* event and related scripts if available, remove the agent from the machine and remove the instance from Cloud Application Manager. The machine running state will not be affected, but it will be no longer available in Cloud Application Manager. Note that for Windows machines, the service will be stopped but not removed automatically.
 
 #### Force disconnect
 
-This operation is available for instances registered into a [Compute Instances](./using-compute-instances.md) provider. It will only remove the agent from the machine and remove the instance from Cloud Application Manager. The instance running state will not be affected, but it will be no longer available in Cloud Application Manager. Note that for Windows machines, the service will be stopped but not removed automatically. The **Force disconnect** operation can also be applied to instances in the process of being registered, if it has not been completed yet.
+This operation is available for instances registered into a [Compute Instances](./using-compute-instances.md) provider. It will only remove the agent from the machine and remove the instance from Cloud Application Manager, not executing the *dispose* event. Even if the removal of the agent fails, the instance will be deleted from Cloud Application Manager. The machine running state will not be affected, but it will be no longer available in Cloud Application Manager. Note that for Windows machines, the service will be stopped but not removed automatically. The **Force disconnect** operation can also be applied to instances in the process of being registered, if it has not been completed yet.
 
 #### Delete
 
