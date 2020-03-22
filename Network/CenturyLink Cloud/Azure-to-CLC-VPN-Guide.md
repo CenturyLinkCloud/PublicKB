@@ -1,7 +1,7 @@
 {{{
   "title": "Azure to CenturyLink Cloud VPN Guide",
-  "date": "01-17-2018",
-  "author": "Taufique Noorani",
+  "date": "03-22-2020",
+  "author": "Ben Heisel",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": false
@@ -13,7 +13,7 @@ You can connect your Azure VNET to CenturyLink Cloud networks by using a VPN con
 ### Steps
 If you would like to use IKEv1, you can follow the guide below to configure site-to-site VPN between Azure and CenturyLink Cloud using self-service.
 1.	You can follow Azure VPN documentation to configure VPN on their end.
-2.	Once you configure Azure VPN from the documentation stated in step 1, you can follow this guide to setup VPN from CenturyLink side. 
+2.	Once you configure Azure VPN from the documentation stated in step 1, [follow this guide](../CenturyLink Cloud/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md) to setup VPN from CenturyLink side, ensuring an exact match with the Azure configuration.
 
 As IKEv2 VPN cannot be configured via Control, it would have to be done as [Service Task](https://www.ctl.io/service-tasks/#vpn-tunnels-deployment). 
 1.	You can follow Azure VPN documentation to configure VPN on their end.
