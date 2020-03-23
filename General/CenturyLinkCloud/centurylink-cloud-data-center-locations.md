@@ -18,7 +18,7 @@ US East (Sterling) - VA1<br>US East (Sterling) - VA2|Cyxtera (DC2)|45901 Nokes B
 Great Britain (Reading) - GB1|Cyxtera (L06)|Eskdale Road Winnersh Triangle<br>Wokingham, England RG41 5TS|[provider details](https://www.cyxtera.com/images/lo6-reading-england-colocation-tearsheet-ss111848.pdf)
 Great Britain (Slough) - GB3|Cyxtera (LO1)|630 Ajax Avenue<br>Slough, Berkshire, SL1 4DG|[provider details](https://www.cyxtera.com/images/lo1-slough-ss111861.pdf)
 Canada (Toronto - Mississauga) - CA3|Cyxtera (TR1)|6800 Millcreek Drive<br>Mississauga, Ontario L5N4J9|[provider details](https://www.cyxtera.com/images/tr1-toronto-canada-colocation-tearsheet-ss111866.pdf)
-Canada (Toronto - Markam) - CA2|Peer 1 Hosting|20 Pullman Court<br>Toronto, Ontario M1X 1E4|[provider details](http://www.peer1.com/infrastructure/datacenter-toronto)
+Canada (Toronto - Markam) - CA2|Aptum|20 Pullman Court<br>Toronto, Ontario M1X 1E4|[provider details](http://www.peer1.com/infrastructure/datacenter-toronto)
 Canada (Vancouver) - CA1|Cyxtera (VC1)|555 West Hastings Street<br>Vancouver, BC V6B 4N6|[provider details](https://www.cyxtera.com/images/vc1-vancouver-canada-ss111846.pdf)
 Germany (Frankfurt) - DE1|Equinix|Lärchenstrasse 110<br>65933 Frankfurt- Griesheim Germany|[provider details](https://www.equinix.com/locations/germany-colocation/frankfurt-data-centers)
 Germany (Frankfurt) - DE3|Interxion (FR6)|Landstraße 296a<br>60314 Frankfurt am Main Germany|[provider details](https://www.interxion.com/Locations/frankfurt/)
