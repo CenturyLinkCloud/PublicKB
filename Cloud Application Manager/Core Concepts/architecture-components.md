@@ -86,7 +86,7 @@ We have asynchronous and persistent long-running workflows which are responsible
 
 ### Connectivity and required firewall rules
 
-Allow Incoming traffic to port 443 (https) (OPEN) to your Cloud Application Manager Data Center Edition (appliance) for UI, API calls and CAM agents requests.
+Allow Incoming traffic to port 443 (https) (OPEN) to your Cloud Application Manager Dedicated Edition (appliance) for UI, API calls and CAM agents requests.
 
 Allow Outgoing traffic on port 443 (https) from the virtual machines' network or VPC so CAM agents are able to communicate with Cloud Application Manager SaaS or onpremises Appliance.
 

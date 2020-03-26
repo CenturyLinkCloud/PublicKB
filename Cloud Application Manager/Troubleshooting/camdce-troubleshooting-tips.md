@@ -1,5 +1,5 @@
 {{{
-"title": "Cloud Application Manager Data Center Edition Troubleshooting Tips",
+"title": "Cloud Application Manager Dedicated Edition Troubleshooting Tips",
 "date": "09-09-2019",
 "author": "Guillermo Sanchez",
 "attachments": [],
@@ -7,7 +7,7 @@
 "contentIsHTML": false
 }}}
 
-### Tips on Troubleshooting Cloud Application Manager Data Center Edition issues
+### Tips on Troubleshooting Cloud Application Manager Dedicated Edition issues
 
 Check the proposed solutions to common issues before you contact Cloud Application Manager support in the event of a problem.
 
@@ -26,7 +26,7 @@ Check the proposed solutions to common issues before you contact Cloud Applicati
 
 **Cause**
 
-When you trigger a lifecycle operation on an instance, it goes into a processing state and does not finish. This can be caused due to the agent not having direct connectivity with the Cloud Application Manager Data Center Edition (CAM appliance), or the agent is not running properly or has been stopped. This problem can affect instances launched through the Cloud Application Manager web interface, the API, or directly using the agent command.
+When you trigger a lifecycle operation on an instance, it goes into a processing state and does not finish. This can be caused due to the agent not having direct connectivity with the Cloud Application Manager Dedicated Edition (CAM appliance), or the agent is not running properly or has been stopped. This problem can affect instances launched through the Cloud Application Manager web interface, the API, or directly using the agent command.
 
 **Solution 1**
 
@@ -210,7 +210,7 @@ When you configure the hostname, SSL certificate, or block device for the applia
 
 **Solution**
 
-[Contact support](mailto:incident@CenturyLink.com). We will walk you through recovering the appliance. Send us the appliance ID, version number shown at the top of the [setup console](../Data Center Edition/camdce-initialsetup.md). And send us the logs you can download from the Logs section of the appliance setup console.
+[Contact support](mailto:incident@CenturyLink.com). We will walk you through recovering the appliance. Send us the appliance ID, version number shown at the top of the [setup console](../Dedicated Edition/camd-initialsetup.md). And send us the logs you can download from the Logs section of the appliance setup console.
 
 Logs help us debug your appliance issues. The `.log` files include recent audit information like who did what, user connections, and contain the logs of all the services. If possible, copy the logs from `/data/logs` away from the CAM Appliance and have them ready for the CAM support team.
 

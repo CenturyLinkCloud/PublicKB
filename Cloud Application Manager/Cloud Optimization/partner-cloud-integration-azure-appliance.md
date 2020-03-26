@@ -1,5 +1,5 @@
 {{{
-  "title": "Partner Cloud: Requirements for Data Center Edition",
+  "title": "Partner Cloud: Requirements for Dedicated Edition",
   "date": "02-20-2017",
   "author": "Ben Swoboda",
   "attachments": [],
@@ -8,11 +8,11 @@
 
 ### Overview
 
-Azure Cloud Integration is available to Cloud Application Manager Data Center Edition as well as the Cloud Edition. There are special connectivity requirements that must be considered.
+Azure Cloud Integration is available to Cloud Application Manager Dedicated Edition as well as the Cloud Edition. There are special connectivity requirements that must be considered.
 
 ### Audience
 
-Users or the Cloud Application Manager Data Center Edition
+Users or the Cloud Application Manager Dedicated Edition
 
 ### Prerequisites
 
