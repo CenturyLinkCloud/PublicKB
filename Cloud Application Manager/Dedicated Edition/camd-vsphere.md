@@ -20,7 +20,7 @@
 
 ### Overview
 
-This article explains that Cloud Application Manager Dedicated Edition (appliance) can run as a virtual appliance in your vCenter private cloud. Here are the requirements, high-level steps to install appliance.
+This article explains that Cloud Application Manager Dedicated Edition (appliance) can run as a virtual appliance in your vCenter private cloud. Here are the requirements, high-level steps to install the appliance.
 
 ### Audience
 

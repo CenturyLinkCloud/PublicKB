@@ -25,10 +25,10 @@ All Cloud Application Manager Dedicated Edition users who wants to upgrade Cloud
 
 ### Prerequisites
 
-* Your Cloud Application Manager Dedicated Edition (appliance) should be properly deployed and running in your preffered platform. You can refer to the [Cloud Application Manager Dedicated Edition documentation](camd-overview.md).
+* Your Cloud Application Manager Dedicated Edition (appliance) should be properly deployed and running in your preferred platform. You can refer to the [Cloud Application Manager Dedicated Edition documentation](camd-overview.md).
 * You need to have access to HTTPS (443) port of the appliance to access its setup console.
 
-### Steps to upgrade de appliance
+### Steps to upgrade the appliance
 
 ![Setup Console - Upgrade page](../../images/cloud-application-manager/appliance-upgrading1.png)
 

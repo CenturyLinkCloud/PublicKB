@@ -3,7 +3,7 @@
 "date": "09-09-2019",
 "author": "Guillermo Sanchez",
 "attachments": [],
-"keywords": ["cam","troubleshooting", "tips", "cloud application manager", "appliance", "data center edition", "dce"],
+"keywords": ["cam","troubleshooting", "tips", "cloud application manager", "appliance", "data center edition", "dce", "dedicated", "cam-d"],
 "contentIsHTML": false
 }}}
 
@@ -72,7 +72,7 @@ Install the agent on the instance to bring it online. Then re-run the lifecycle 
     (New-Object Net.WebClient).DownloadString("http://10.0.0.1") | iex
     ```
 
-If the problem persists connect to the instance over SSH or RDP and grab a copy of the agent `/var/log/elasticbox/elasticbox-agent.log `in the case of Linux or `ProgramData\ElasticBox\elasticbox-agent.log` in the case of Windows (please note that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected, please attach it when [Contacting support](mailto:incident@CenturyLink.com)
+If the problem persists connect to the instance over SSH or RDP and grab a copy of the agent `/var/log/elasticbox/elasticbox-agent.log` in the case of Linux or `ProgramData\ElasticBox\elasticbox-agent.log` in the case of Windows (please note that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected, please attach it when [Contacting support](mailto:incident@CenturyLink.com)
 
 ### Instance is Stuck Deploying
 
@@ -182,7 +182,7 @@ Something causes the agent to hang even though it’s running on the instance.
 
 2. Redeploy the instance from the lifecycle editor in Cloud Application Manager. The agent should start deploying.
 
-If the problem persists connect to the instance over SSH or RDP and grab a copy of the agent `/var/log/elasticbox/elasticbox-agent.log `in the case of Linux or `ProgramData\ElasticBox\elasticbox-agent.log` in the case of Windows (please note that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected, please attach it when [Contacting support](mailto:incident@CenturyLink.com)
+If the problem persists connect to the instance over SSH or RDP and grab a copy of the agent `/var/log/elasticbox/elasticbox-agent.log` in the case of Linux or `ProgramData\ElasticBox\elasticbox-agent.log` in the case of Windows (please note that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected, please attach it when [Contacting support](mailto:incident@CenturyLink.com)
 
 ### Catalog Box deployment not working
 

@@ -23,7 +23,9 @@
 
 ### Overview
 
-This article shows how to do initial setup of Cloud Application Manager Dedicated Edition (referred to as appliance from now on) platform. Once you install the appliance, set it up for others in your organization to use. Finally, assign a friendly hostname or vanity URL to point users to Cloud Application Manager Dedicated. Optionally, configure other settings such as add SSH keys to access the appliance, NTP time servers and zone, enable outbound email notifications using SMTP, or switch to a new device to store appliance and Cloud Application Manager data.
+This article documents the initial setup of Cloud Application Manager Dedicated Edition (referred to as 'appliance'). This covers installation of the appliance and setting it up for others in your organization to use.
+
+You can then assign a [user-friendly hostname](#changing-the-cloud-application-manager-dedicated-edition-hostname) (vanity URL) to point users wishing to access the appliance. Upon completion, *optional settings* allow you to configure [SSH keys](#adding-your-ssh-key-optional) for accessing the appliance, [time zone and NTP servers](#changing-ntp-time-zone-optional), [email notifications via SMTP](#enabling-smtp-outbound-email-optional), or using a [new device to store appliance and Cloud Application Manager data](#switching-cloud-application-manager-dedicated-edition-device-root-storage).
 
 ### Audience
 
@@ -31,7 +33,7 @@ All Cloud Application Manager users who want to deploy and do the initial setup 
 
 ### Prerequisites
 
-* Your Cloud Application Manager Dedicated Edition (appliance) should be properly deployed and running in your preffered platform. You can refer to the [Cloud Application Manager Dedicated Edition documentation](camd-overview.md).
+* Your Cloud Application Manager Dedicated Edition (appliance) should be properly deployed and running in your preferred platform. You can refer to the [Cloud Application Manager Dedicated Edition documentation](camd-overview.md).
 * You need to have access to HTTPS (443) port of the appliance to access its setup console.
 
 ### Initial Cloud Application Manager Dedicated Edition Setup
@@ -66,7 +68,7 @@ All Cloud Application Manager users who want to deploy and do the initial setup 
    Cloud Application Manager provides a default appliance admin account, which gives full access to manage the appliance and administer Cloud Application Manager settings for your organization. This is like a master key, so use it only in case of emergency. To administer the appliance and Cloud Application Manager on a regular basis, create and use a fresh admin account.
 
    * Log out of Cloud Application Manager.
-   * Browse back to the Cloud Application Manager IP address in the appliance VM console. The login page will be shown
+   * The login page will be displayed, otherwise open the Cloud Application Manager IP address shown in the appliance VM console in a web browser to access the login page.
    * Sign up for a new user account. This will serve as the new admin account.
    * Log back in as the appliance admin using the credentials in step 2, with the password that was set in step 3.
    * Add your new user account as an administrator in the Admin Console.
@@ -74,7 +76,9 @@ All Cloud Application Manager users who want to deploy and do the initial setup 
 
 ### Changing the Cloud Application Manager Dedicated Edition Hostname
 
-Hostname is a friendly name for the Cloud Application Manager IP address for example, `yourcompany.com`. The hostname should point to the IP address of the appliance virtual machine. To allow users to connect, also make sure your network firewall allows inbound traffic to the appliance IP address via TCP ports 443, 5671, and 5672.
+Hostname is a user-friendly name to refer to the IP address of the Cloud Application Manager, for example, `yourcompany.com`. The IP address of the Cloud Application Manager referred to by the hostname is that of the virtual machine running the appliance.
+
+To allow users to connect, also make sure your network firewall allows inbound traffic to the appliance IP address via TCP ports 443, 5671, and 5672.
 
 ![Setup Console - Hostname section](../../images/cloud-application-manager/appliance-setup4.png)
 
