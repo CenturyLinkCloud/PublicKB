@@ -12,16 +12,16 @@
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
-* [Steps to upgrade de appliance](#steps-to-upgrade-de-appliance)
+* [Steps to upgrade the appliance](#steps-to-upgrade-the-appliance)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
 
-This article shows how to upgrade Cloud Application Manager Dedicated Edition. It’s a pretty simple process, you just need to follow steps described in this article.
+This article shows how to upgrade Cloud Application Manager Dedicated Edition (appliance). It’s a pretty simple process, you just need to follow steps described in this article.
 
 ### Audience
 
-All Cloud Application Manager Dedicated Edition users who wants to upgrade Cloud Application Manager Dedicated Edition (appliance) to a newer release.
+All Cloud Application Manager Dedicated Edition users who wish to upgrade their appliance to a newer release.
 
 ### Prerequisites
 

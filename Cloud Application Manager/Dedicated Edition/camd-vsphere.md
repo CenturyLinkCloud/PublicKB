@@ -24,7 +24,7 @@ This article explains that Cloud Application Manager Dedicated Edition (applianc
 
 ### Audience
 
-All Cloud Application Manager Dedicated Edition users who wants to deploy Cloud Application Manager Dedicated Edition (appliance) using vCenter.
+All Cloud Application Manager (Dedicated Edition) users who wish to deploy their appliance via vCenter.
 
 ### Prerequisites
 

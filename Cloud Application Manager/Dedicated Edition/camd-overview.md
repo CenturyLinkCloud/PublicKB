@@ -29,15 +29,15 @@ Experience all the same functionality as the SaaS version, including managed ser
 
 ### Audience
 
-All Cloud Application Manager Dedicated Edition users who wants to deploy/install Cloud Application Manager Dedicated Edition (appliance).
+All Cloud Application Manager Dedicated Edition users who wish to deploy or install Cloud Application Manager as a dedicated, on-premises appliance.
 
 ### Prerequisites
 
-* You should have a Data Center or AWS account to be able to deploy appliance in your preffered platform.
+* You should have a Data Center or AWS account to be able to deploy appliance in your preferred platform.
 
 ### Supported Platforms
 
-Cloud Application Manager Dedicated edition is supported when deployed on these platforms:
+Cloud Application Manager Dedicated edition is supported on these platforms:
 
 * CenturyLink Private Cloud on VMware Cloud Foundation (CPC on VCF)
 * VMware vSphere vCenter or Cloud Foundation data centers

@@ -21,11 +21,11 @@ This article shows how to configure Cloud Application Manager Dedicated Edition 
 
 ### Audience
 
-All Cloud Application Manager Dedicated Edition users who wants to configure Cloud Application Manager Dedicated Edition (appliance) static IP address.
+All Cloud Application Manager Dedicated Edition users who wish to configure a *static IP address* for their appliance.
 
 ### Prerequisites
 
-* Your Cloud Application Manager Dedicated Edition (appliance) should be properly deployed and running in your preffered platform. You can refer to the [Cloud Application Manager Dedicated Edition documentation](camd-overview.md).
+* Your Cloud Application Manager Dedicated Edition (appliance) should be properly deployed and running in your preferred platform. You can refer to the [Cloud Application Manager Dedicated Edition documentation](camd-overview.md).
 * You need to have access to HTTPS (443) port of the appliance to access its setup console.
 
 ### Steps to configure network settings

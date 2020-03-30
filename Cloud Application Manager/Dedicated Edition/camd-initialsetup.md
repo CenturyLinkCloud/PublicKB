@@ -147,7 +147,9 @@ This shows the network time protocol (NTP) setting on the appliance. By default,
 
 ### Enabling SMTP Outbound Email (Optional)
 
-We recommend that you specify SMTP server settings to be able to auto send outbound email notifications in Cloud Application Manager. The no-reply address is used in the From field. Under Email, click **ON** to enable outbound email.
+We recommend configuring the SMTP server settings which enable you to receive automatic notifications sent by the Cloud Application Manager.
+
+Under Email, click **ON** to enable outbound email. The 'reply-to' address is used as the sender (From) field of the outgoing email.
 
 ![SMTP configuration section](../../images/cloud-application-manager/appliance-setup10.png)
 

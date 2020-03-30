@@ -8,11 +8,11 @@
 
 ### Overview
 
-Azure Cloud Integration is available to Cloud Application Manager Dedicated Edition as well as the Cloud Edition. There are special connectivity requirements that must be considered.
+Azure Cloud Integration is available for Cloud Application Manager Dedicated Edition as well as the Cloud Edition. There are special connectivity requirements that must be considered.
 
 ### Audience
 
-Users or the Cloud Application Manager Dedicated Edition
+Users of the Cloud Application Manager Dedicated Edition
 
 ### Prerequisites
 

@@ -17,17 +17,17 @@
 
 ### Overview
 
-This article shows how to do deploy the New Cloud Application Manager Dedicated Edition (appliance) and Import the Data from the Prior Version appliance
+This article shows how to do deploy the New Cloud Application Manager Dedicated Edition (appliance) and import data from a prior version of the appliance.
 
 ### Audience
 
-All Cloud Application Manager Dedicated Edition users who wants to upgrade to a New version of Cloud Application Manager Dedicated Edition (appliance).
+All Cloud Application Manager Dedicated Edition users who wish to upgrade to a new version of the appliance.
 
 ### Prerequisites
 
 **Before starting upgrade process you should request an updated OVA by [contacting support](mailto:incident@CenturyLink.com))**
 
-* Your Cloud Application Manager Dedicated Edition (appliance) should be properly deployed and running in your preffered platform. You can refer to the [Cloud Application Manager Dedicated Edition documentation](camd-overview.md).
+* Your Cloud Application Manager Dedicated Edition (appliance) should be properly deployed and running in your preferred platform. You can refer to the [Cloud Application Manager Dedicated Edition documentation](camd-overview.md).
 * You need to have access to HTTPS (443) port of the appliance to access its setup console.
 
 ### Steps
