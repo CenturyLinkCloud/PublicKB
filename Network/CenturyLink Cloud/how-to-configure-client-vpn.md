@@ -15,7 +15,7 @@ The initial configuration just requires a certificate to be downloaded and used 
 
 There are only a few limitations on this service as it is based on the [OpenVPN](http://www.openvpn.net) project.
 
-- Maximum Concurrent Users: 19 (if you need more connections, review the different [Network Access Options for Connecting to the CenturyLink Cloud Platform](../CenturyLink Cloud/network-access-options-for-connecting-to-centurylink-clouds-platform.md))
+- Maximum default concurrent users is 19.  This number can be increased to 200 via a [Service Task](https://www.ctl.io/knowledge-base/service-tasks/requesting-service-tasks-on-centurylink-cloud/) (if you need more connections, review the different [Network Access Options for Connecting to the CenturyLink Cloud Platform](../CenturyLink Cloud/network-access-options-for-connecting-to-centurylink-clouds-platform.md))
 - Maximum Connection: 1Gbps
 
 ### Getting Connected
