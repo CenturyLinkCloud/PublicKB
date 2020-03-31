@@ -1,6 +1,6 @@
 {{{
 "title": "Cloud Platform - Release Notes: March 31, 2020",
-"date": "03-17-2020",
+"date": "03-31-2020",
 "author": "Christine Sala",
 "keywords":["centurylink", "release notes", "cam", "msa", "vpn", "cloud"],
 "attachments": [],
