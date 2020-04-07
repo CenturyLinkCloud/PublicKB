@@ -40,7 +40,7 @@ For the upgrade process to the new virtual appliance, please follow the steps be
    **Note**: The virtual appliance, by default, requires 100 GB of virtual disk space. For increased storage capacity and faster performance, attach a new virtual disk to the VM which will act as the primary storage device for the appliance. **Please do this before you initiate the Cloud Application Manager service on the virtual appliance**. See steps a-d:
    * In vSphere vCenter, power off the VM and attach a second virtual disk with more CPU, RAM, and disk space. For more information, see the vCenter 5.0 and vCenter 5.5 help guide.
    * Power on the VM appliance. In the appliance **Setup Console** under **Block Device**, select the second disk as the primary appliance storage.
-   ![Block devide section](../../images/cloud-application-manager/appliance-migration1.png)
+   ![Block device section](../../images/cloud-application-manager/appliance-migration1.png)
    * When done, click **Save Settings**.
    **Note:** When switching the virtual disk, the appliance will reboot and become unavailable for a few minutes. This is expected as the existing data (appliance settings, logs, database and the most recent saved state) is being copied. **When the virtual appliance is back online, you can start using Cloud Application Manager**.
 

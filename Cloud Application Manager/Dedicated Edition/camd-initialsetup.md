@@ -70,7 +70,7 @@ All Cloud Application Manager users who want to deploy and do the initial setup 
    * Log out of Cloud Application Manager.
    * The login page will be displayed, otherwise open the Cloud Application Manager IP address shown in the appliance VM console in a web browser to access the login page.
    * Sign up for a new user account. This will serve as the new admin account.
-   * Log back in as the appliance admin using the credentials in step 2, with the password that was set in step 3.
+   * Log back in as the appliance admin using the credentials in step 1 above, with the password that was set in the second bullet of step 2 ([Change the default admin account password](#changing-cloud-application-manager-dedicated-edition-admin-account-password)).
    * Add your new user account as an administrator in the Admin Console.
    * Going forward, use this admin account to manage the appliance and settings for your organization.
 

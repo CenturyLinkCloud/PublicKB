@@ -24,7 +24,7 @@ This article explains Cloud Application Manager Dedicated Edition can run as a v
 
 ### Audience
 
-All Cloud Application Manager Dedicated Edition users who wants to deploy Cloud Application Manager Dedicated Edition (appliance) using Openstack.
+All Cloud Application Manager Dedicated Edition users who would like to deploy Cloud Application Manager Dedicated Edition (appliance) using Openstack.
 
 ### Prerequisites
 

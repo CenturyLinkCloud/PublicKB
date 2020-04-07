@@ -26,7 +26,7 @@ Check the proposed solutions to common issues before you contact Cloud Applicati
 
 **Cause**
 
-When you trigger a lifecycle operation on an instance, it goes into a processing state and does not finish. This can be caused due to the agent not having direct connectivity with the Cloud Application Manager Dedicated Edition (CAM appliance), or the agent is not running properly or has been stopped. This problem can affect instances launched through the Cloud Application Manager web interface, the API, or directly using the agent command.
+When you trigger a lifecycle operation on an instance, it goes into a processing state and does not finish. This can occur if the agent does not have direct connectivity to the Cloud Application Manager Dedicated Edition (CAM appliance), or the if the agent has been stopped or else if it is not running properly. This problem can affect instances launched through the Cloud Application Manager web interface, the API, or directly using the agent command.
 
 **Solution 1**
 

@@ -2,7 +2,7 @@
 "title": "Installing the Cloud Application Manager Dedicated Edition in vCenter",
 "date": "03-25-2020",
 "author": "Diego Sanjuan and Guillermo Sanchez",
-"keywords": ["cam", "cloud application manager", "Data Center edition", "appliance", "depoloy", "vcenter", "install", "vsphere", "dedicated", "cam-d"],
+"keywords": ["cam", "cloud application manager", "Data Center edition", "appliance", "deploy", "vcenter", "install", "vsphere", "dedicated", "cam-d"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -20,7 +20,7 @@
 
 ### Overview
 
-This article explains that Cloud Application Manager Dedicated Edition (appliance) can run as a virtual appliance in your vCenter private cloud. Here are the requirements, high-level steps to install the appliance.
+This article explains how Cloud Application Manager Dedicated Edition (appliance) can run as a virtual appliance in your vCenter private cloud. Here are the requirements and steps to install the appliance.
 
 ### Audience
 
