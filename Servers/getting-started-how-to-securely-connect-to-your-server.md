@@ -42,6 +42,9 @@ For Mac (OS X):
 
 * If prompted to enter your password, do so. Once the installation has completed, you will be prompted to either Quit or Launch Tunnelblick - click `Quit`.
 
+For Linux:
+* Follow the OpenVPN instructions [here](https://openvpn.net/vpn-server-resources/how-to-connect-to-access-server-from-a-linux-computer/)
+
 ### 2. Download and install the certificate/OpenVPN configuration
 
 Now that we have the OpenVPN client installed, we need to install the certificate/OpenVPN configuration.
