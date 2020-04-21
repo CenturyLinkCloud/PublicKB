@@ -1,13 +1,13 @@
 {{{
-"title": "Cloud Application Manager Data Center Edition Troubleshooting Tips",
+"title": "Cloud Application Manager Dedicated Edition Troubleshooting Tips",
 "date": "09-09-2019",
 "author": "Guillermo Sanchez",
 "attachments": [],
-"keywords": ["cam","troubleshooting", "tips", "cloud application manager", "appliance", "data center edition", "dce"],
+"keywords": ["cam","troubleshooting", "tips", "cloud application manager", "appliance", "data center edition", "dce", "dedicated", "cam-d"],
 "contentIsHTML": false
 }}}
 
-### Tips on Troubleshooting Cloud Application Manager Data Center Edition issues
+### Tips on Troubleshooting Cloud Application Manager Dedicated Edition issues
 
 Check the proposed solutions to common issues before you contact Cloud Application Manager support in the event of a problem.
 
@@ -26,7 +26,7 @@ Check the proposed solutions to common issues before you contact Cloud Applicati
 
 **Cause**
 
-When you trigger a lifecycle operation on an instance, it goes into a processing state and does not finish. This can be caused due to the agent not having direct connectivity with the Cloud Application Manager Data Center Edition (CAM appliance), or the agent is not running properly or has been stopped. This problem can affect instances launched through the Cloud Application Manager web interface, the API, or directly using the agent command.
+When you trigger a lifecycle operation on an instance, it goes into a processing state and does not finish. This can occur if the agent does not have direct connectivity to the Cloud Application Manager Dedicated Edition (CAM appliance), or if the agent has been stopped or else if it is not running properly. This problem can affect instances launched through the Cloud Application Manager web interface, the API, or directly using the agent command.
 
 **Solution 1**
 
@@ -72,7 +72,7 @@ Install the agent on the instance to bring it online. Then re-run the lifecycle 
     (New-Object Net.WebClient).DownloadString("http://10.0.0.1") | iex
     ```
 
-If the problem persists connect to the instance over SSH or RDP and grab a copy of the agent `/var/log/elasticbox/elasticbox-agent.log `in the case of Linux or `ProgramData\ElasticBox\elasticbox-agent.log` in the case of Windows (please note that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected, please attach it when [Contacting support](mailto:incident@CenturyLink.com)
+If the problem persists connect to the instance over SSH or RDP and grab a copy of the agent `/var/log/elasticbox/elasticbox-agent.log` in the case of Linux or `ProgramData\ElasticBox\elasticbox-agent.log` in the case of Windows (please note that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected, please attach it when [Contacting support](mailto:incident@CenturyLink.com)
 
 ### Instance is Stuck Deploying
 
@@ -182,7 +182,7 @@ Something causes the agent to hang even though it’s running on the instance.
 
 2. Redeploy the instance from the lifecycle editor in Cloud Application Manager. The agent should start deploying.
 
-If the problem persists connect to the instance over SSH or RDP and grab a copy of the agent `/var/log/elasticbox/elasticbox-agent.log `in the case of Linux or `ProgramData\ElasticBox\elasticbox-agent.log` in the case of Windows (please note that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected, please attach it when [Contacting support](mailto:incident@CenturyLink.com)
+If the problem persists connect to the instance over SSH or RDP and grab a copy of the agent `/var/log/elasticbox/elasticbox-agent.log` in the case of Linux or `ProgramData\ElasticBox\elasticbox-agent.log` in the case of Windows (please note that the folder is hidden in Windows and the exact path must be entered to navigate to the folder). Once the log file is collected, please attach it when [Contacting support](mailto:incident@CenturyLink.com)
 
 ### Catalog Box deployment not working
 
@@ -210,7 +210,7 @@ When you configure the hostname, SSL certificate, or block device for the applia
 
 **Solution**
 
-[Contact support](mailto:incident@CenturyLink.com). We will walk you through recovering the appliance. Send us the appliance ID, version number shown at the top of the [setup console](../Data Center Edition/camdce-initialsetup.md). And send us the logs you can download from the Logs section of the appliance setup console.
+[Contact support](mailto:incident@CenturyLink.com). We will walk you through recovering the appliance. Send us the appliance ID, version number shown at the top of the [setup console](../Dedicated Edition/camd-initialsetup.md). And send us the logs you can download from the Logs section of the appliance setup console.
 
 Logs help us debug your appliance issues. The `.log` files include recent audit information like who did what, user connections, and contain the logs of all the services. If possible, copy the logs from `/data/logs` away from the CAM Appliance and have them ready for the CAM support team.
 
