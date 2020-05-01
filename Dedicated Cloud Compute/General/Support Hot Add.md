@@ -28,7 +28,7 @@ Dedicated Cloud Compute customers.
 
 * Log-in to the new DCC UI. For more information, please refer to the [Logon to New UI](logon-new-UI.md) KB article.
 
-* **Create VM**: Once logged in the DCC UI, click Create > [Add Server](../create-server.md).
+**Create VM**: Once logged in the DCC UI, click Create > [Add Server](../create-server.md).
 
  * Under Resource section, select the amount of **vCPU** and **vRAM** you would like to allocate to the server(s).
  * On supported guest operating system and VMware ESXi, the Hot Add feature is **pre-enabled** . This can be changed to **NO** if Hot Add is not needed.
@@ -37,6 +37,6 @@ Dedicated Cloud Compute customers.
 
  * Move ahead with Create VM order.
 
-* **For Existing VM** : On supported guest operating system and VMware ESXi, the Hot Add feature can be **enabled/disabled** by changing the VM resource setting as shown below:
+**For Existing VM** : On supported guest operating system and VMware ESXi, the Hot Add feature can be **enabled/disabled** by changing the VM resource setting as shown below:
 
   * ![](../../images/dcc/Modify-Hot-Add.png)
