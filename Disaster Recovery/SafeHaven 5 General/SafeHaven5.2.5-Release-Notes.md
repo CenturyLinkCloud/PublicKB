@@ -10,14 +10,15 @@
 ### Release Notes
 
 - SafeHaven Version: 5.2.5
-- Release Date: Mat 2, 2020
+- Release Date: May 2, 2020
 
 ### New Features and Enhancements
 
 This is patch release based on [SafeHaven 5.2.4](SafeHaven5.2.4-Release-Notes.md) with the following improvements:
 
-- Improved on the Windows checkpoint status report
-- Added features needed by the [CAM DR product](../../Cloud Application Manager/DR Readiness/Enable DR.md)
+- Manager.exe would immediately fail if the OS disk is detected as GPT style so that we don't waste time protecting it
+- All Windows EXEs are now signed with both SHA1 and SHA256
+- The protection group resize feature has increased its reliability through changes to the SSH client configurations
 
 ### Upgrade Path
 
