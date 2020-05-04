@@ -10,7 +10,7 @@
 
 ### Description
 
-**Enable Hot Add/Plug**: Dedicated Cloud Compute (DCC) now let’s you add resources to a running virtual machine. By default, you cannot change resources ~ vCPU & vRAM to a powered on virtual machine.
+**Enable Hot Add/Plug**: Dedicated Cloud Compute (DCC) now lets you add resources to a running virtual machine. By default, you cannot change resources ~ vCPU & vRAM to a powered on virtual machine.
 
 
 ### Audience
@@ -21,7 +21,7 @@ Dedicated Cloud Compute customers.
 ### Conditions that apply
 * The ability to dynamically add/remove CPU to a virtual machine is dependent on the guest OS and ESX version. Check here to see if your VM supports Hot Add [VMware Compatibility Guide](https://www.vmware.com/resources/compatibility/search.php) and [VMware Resources](https://www.vmware.com/resources/compatibility/pdf/VMware_GOS_Compatibility_Guide.pdf).
 
-* Hot Add on [Linux 64-bit](https://kb.vmware.com/s/article/2008405) guest OS with 3GB or less.
+* Hot Add on [Linux 64-bit](https://kb.vmware.com/s/article/2008405) guest OS with 3GB vRAM or less.
 
 
 ### How to Enable/Disable Hot Add?
