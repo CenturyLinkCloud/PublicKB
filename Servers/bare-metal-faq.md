@@ -68,7 +68,7 @@ Bare Metal servers share the same network as CenturyLink Cloud virtual servers s
 
 **Since these servers use local storage, how do I avoid application failure if underlying hardware fails?**
 
-It is the responsibility of the customer to maintain any data recovery or restoration process that may be necessary in the case of a critical hardware failure. CenturyLink Simple Backup Service is integrated to all Bare Metal server configurations to protect against data loss in the event of a hardware failure. For more information on CenturyLink Simple Back Service, reference the [Simple Backup Service](https://www.ctl.io/simple-backup-service/)    
+**Important** It is the responsibility of the customer to maintain any data recovery or restoration process that may be necessary in the case of a critical hardware failure. **This is not automatically configured by default.**  CenturyLink Simple Backup Service is integrated to all Bare Metal server configurations to protect against data loss in the event of a hardware failure. For more information on CenturyLink Simple Back Service, reference the [Simple Backup Service](https://www.ctl.io/simple-backup-service/)    
 
 **How is hardware support and replacement handled for Bare Metal servers?**
 
