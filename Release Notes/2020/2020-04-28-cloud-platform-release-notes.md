@@ -7,13 +7,15 @@
 "contentIsHTML": false
 }}}
 
-### Enhancements (2)
+### Announcements (1)
 
 #### [Cloud Application Manager Platform](https://www.ctl.io/cloud-application-manager/)
 
 ##### Deprecation of VMware vCloud provider legacy mode
 
 Cloud Application Manager has deprecated the legacy mode of the VMware vCloud provider. This mode allowed customers to use old versions of vCenter as providers in Cloud Application Manager while they planned for the upgrade of their vCenter environments to newer versions. We have confirmed that no customers are still using the legacy support, so we are removing it from Cloud Application Manager. Customers can continue using vCenter with the current and newer supported versions.
+
+### Enhancements (1)
 
 #### [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/)
 

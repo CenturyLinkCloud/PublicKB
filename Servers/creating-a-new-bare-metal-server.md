@@ -7,7 +7,8 @@
 }}}
 
 ### Description
-Creating a bare metal server on CenturyLink Cloud follows a similar flow as [creating a virtual server](../Servers/creating-a-new-enterprise-cloud-server.md), with a few exceptions. The steps below demonstrate how to provision new bare metal machines in the CenturyLink Cloud. For specifications on which capabilities are supported for bare metal servers as opposed to virtual machines, you may reference the [Server Comparison Matrix](../Servers/server-comparison-matrix.md) for details. For more information on Bare Metal servers in general, please refer to the [Bare Metal FAQ](../Servers/bare-metal-faq.md).
+Creating a bare metal server on CenturyLink Cloud follows a similar flow as [creating a virtual server](../Servers/creating-a-new-enterprise-cloud-server.md), with a few exceptions. The steps below demonstrate how to provision new bare metal machines in the CenturyLink Cloud. For specifications on which capabilities are supported for bare metal servers as opposed to virtual machines, you may reference the [Server Comparison Matrix](../Servers/server-comparison-matrix.md) for details. For more information on Bare Metal servers in general, please refer to the [Bare Metal FAQ](../Servers/bare-metal-faq.md). 
+**IMPORTANT.** Please take note of the section related to data security and recovery in the event of hardware failure in the FAQ's to ensure your achitecture proposal accounts for this when creating a Bare Metal server.
 
 Once you've gone through this KB article and created a new server, you can follow this Getting Started guide to learn [how to securely connect to your new server.](../Servers/getting-started-how-to-securely-connect-to-your-server.md)
 
