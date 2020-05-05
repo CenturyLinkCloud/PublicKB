@@ -10,7 +10,7 @@
 ### Release Notes
 
 - SafeHaven Version: 5.2.3
-- Release Date: March 4, 2019
+- Release Date: March 4, 2020
 
 ### New Features and Enhancements
 
