@@ -17,7 +17,9 @@
 * [Português](#portugues)
 * [简体中文](#chinese)
 
-### English
+---
+
+### <a id="english">English</a>
 
 **Question: When I select my preferred language in the dropdown, only some of the content on this site is presented to me in my chosen language. Why is that? Is it a bug?**
 
@@ -25,7 +27,7 @@ Answer: Translations on this website are a work in progress. Articles and pages 
 
 ---
 
-### Français
+### <a id="francais">Français</a>
 
 **Question: Lorsque je sélectionne la langue de mon choix dans la liste déroulante, seul le contenu de ce site m’est présenté dans la langue de mon choix. Pourquoi donc? Est-ce un bug?**
 
@@ -33,13 +35,13 @@ Réponse: Les traductions sur ce site sont un travail en cours. Les articles et 
 
 ---
 
-### Deutsch
+### <a id="deutsch">Deutsch</a>
 
 **Frage: Wenn ich in der Dropdown-Liste meine bevorzugte Sprache auswähle, wird mir nur ein Teil des Inhalts dieser Website in der von mir ausgewählten Sprache angezeigt. Warum ist das so? Ist das ein Bug?**
 
 Antworten: Die Übersetzungen auf dieser Website sind noch in Arbeit. Artikel und Seiten werden nur übersetzt, wenn ein spezifischer Bedarf besteht, z. B. die Einführung eines bestimmten Produkts in einer neuen Region. Wenn Sie im Dropdown-Menü eine andere Sprache als Englisch auswählen, erhalten Sie daher nur einen Teil des Websiteinhalts in der von Ihnen ausgewählten Sprache angezeigt. Wir verstehen, dass dies zu Verwirrung führen kann, und entschuldigen uns dafür. Unser Produktportfolio sowie die regionale Verfügbarkeit ändern sich ständig und wir tun unser Bestes, um alle verfügbaren Informationen auf dem neuesten Stand zu halten. Wenn Sie Fragen zu den in Ihrer Region verfügbaren Produkten und Dienstleistungen haben, wenden Sie sich bitte direkt an einen CenturyLink Ansprechpartner in Ihrer Region.
 
-### Español
+### <a id="espanol">Español</a>
 
 **Pregunta: Cuando selecciono mi idioma preferido en el menú desplegable, solo parte del contenido de este sitio se me presenta en el idioma elegido. ¿Porqué es eso? ¿Es un error?**
 
@@ -47,7 +49,7 @@ Responder: Las traducciones en este sitio web son un trabajo en progreso. Los ar
 
 ---
 
-### Português
+### <a id="portugues">Português</a>
 
 **Pergunta: Quando seleciono meu idioma preferido no menu suspenso, apenas parte do conteúdo deste site é apresentado no idioma escolhido. Por que é dessa forma? Isso é um bug?**
 
@@ -55,7 +57,7 @@ Responda: As traduções neste site são um trabalho em andamento. Os artigos e 
 
 ---
 
-### Chinese (简体中文)
+### <a id="chinese">Chinese</a> (简体中文)
 
 **问题：当我在下拉菜单中选择我的首选语言时，此网站只会以我选择的语言向我展示部份内容。 这是什某原因呢？ 这是系统的漏洞吗**
 
