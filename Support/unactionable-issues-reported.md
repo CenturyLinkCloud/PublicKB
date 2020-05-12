@@ -31,4 +31,4 @@ This KB contains some of the more humorous issues that have been reported to our
 * Why can't I connect to the network?
 * Search isn't finding what I'm looking for.
 * My washing machine plays music when it completes a cycle. Can you turn that off?
-* Please change my Zoom background.
+* Please change my [Zoom](../centurylink-private-cloud-on-vmware-cloud-foundation/administration/adding-org-admin/) background.
