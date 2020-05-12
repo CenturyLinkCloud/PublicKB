@@ -70,13 +70,13 @@ If you want to create your own Azure subscription, follow these steps:
 
 Login to the [Microsoft Azure portal](https://portal.azure.com/) using your Microsoft Azure Account.
 
-If you already have a Microsoft Azure Provider in your Cloud Application Manager, you can reach this portal from the **Portal Access** button located in the Microsoft Azure Provider details page and you will be directly logged in.  
+If you already have a Microsoft Azure Provider in your Cloud Application Manager, the CenturyLink support staff can access your subscription by clicking on the **Portal Access** button located in the Microsoft Azure Provider details page.  
 
 ![Microsoft Azure Portal Access from CAM](../../images/microsoft-azure-console/ms-azure-access-from-cam.png)
 
 **Note**: This button is only available when provider has been sychronized.
 
-Then if you have permissions, you will see a temporary credentials dialog you must use to login in [Microsoft Azure portal](https://portal.azure.com/). Be sure to logout from previous session in this portal. Remember that these temporal credentials only lasts one hour, then you must run this process again.
+Then, if the user has permissions, a temporary credentials dialog will be displayed to allow the user to login in [Microsoft Azure portal](https://portal.azure.com/). Be sure to logout from previous session in this portal first. These temporary user credentials only lasts for one hour, then the user needs to run this process again.
 
 #### Application ID (Client) and Directory ID (Tenant)
 
