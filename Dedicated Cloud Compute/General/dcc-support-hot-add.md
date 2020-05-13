@@ -26,9 +26,9 @@ Dedicated Cloud Compute customers.
 
 ### How to Enable/Disable Hot Add?
 
-* Log-in to the new DCC UI. For more information, please refer to the [Logon to New UI](../../Getting Started/logon-new-UI.md) KB article.
+* Log-in to the new DCC UI. For more information, please refer to the [Logon to New UI](../Getting Started/logon-new-UI.md) KB article.
 
-**Create VM**: Once logged in the DCC UI, click Create > [Add Server](../../Getting Started/create-server.md).
+**Create VM**: Once logged in the DCC UI, click Create > [Add Server](../Getting Started/create-server.md).
 
  * Under Resource section, select the amount of **vCPU** and **vRAM** you would like to allocate to the server(s).
  * On supported guest operating system and VMware ESXi, the Hot Add feature is **pre-enabled** . This can be changed to **NO** if Hot Add is not needed.
