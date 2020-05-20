@@ -43,3 +43,7 @@ Custom IPSec VPNs that are not displayed in the Control Portal will require manu
 **Q: When is migration required?**
 
 A final migration date is not yet available, more information will be provided regarding final deadlines. Our intent is to provide as much advanced notice as possible. Migration is encouraged at the earliest possible customer convenience.
+
+**Q: My Public IP is in the range 65.151.128.0 - 65.151.255.255, is there anything I need to do?**
+
+Nothing is required, your Public IP is already in the correct range.
