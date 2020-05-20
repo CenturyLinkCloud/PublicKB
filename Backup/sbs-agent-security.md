@@ -1,6 +1,6 @@
 {{{
   "title": "SBS Agent Security Configurations",
-  "date": "03-08-2016",
+  "date": "11-8-2019",
   "author": "John Gerger",
   "attachments": [],
   "related-products" : [],

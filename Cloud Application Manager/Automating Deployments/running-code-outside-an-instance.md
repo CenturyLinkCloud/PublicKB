@@ -33,7 +33,7 @@ Although not run within the instance itself, task variables behave similarly to 
 
 ### Languages
 
-The environment supports bash, python and nodejs script. By default, however, all scripts should start as shell scripts. You may then embed code in other languages and execute it from within the shell script.
+The environment supports bash, python3 and nodejs script. By default, however, all scripts should start as shell scripts. You may then embed code in other languages and execute it from within the shell script.
 
 ### Availability and visibility
 
@@ -62,7 +62,7 @@ pythonfile=/tmp/pythontest.py
 nodefile=/tmp/nodetest.js
 
 cat <<PYTHON> $pythonfile
-#!/usr/bin/python
+#!/usr/bin/python3
 print("printing from python")
 
 PYTHON

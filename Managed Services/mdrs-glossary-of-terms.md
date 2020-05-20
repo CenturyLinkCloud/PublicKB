@@ -12,7 +12,6 @@
 
 **CenturyLink Cloud** - CenturyLink Cloud is a single cloud platform offering secure enterprise cloud services ideal for business apps, IaaS, PaaS, SaaS, DBaaS, and cloud management via an intuitive Control Portal.
 
-**CenturyLink Dedicated Cloud Compute (DCC)** - CenturyLink DCC is a dedicated, private cloud infrastructure based on VMware to provide secure virtualized hosting.
 
 **Client Server** - A Client Server is server used to launch the SafeHaven Console, which is a Graphical User Interface. It must be a Windows machine with the proper Java version installed.
 

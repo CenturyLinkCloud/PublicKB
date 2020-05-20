@@ -10,7 +10,7 @@
 
 * __Network Exchange__
 
-Network Exchange, which provides self-service, automated interconnection for application components within CenturyLink Hybrid IT environments, has been released into production in a limited availability. It is available to serve use cases that had previously been addressed with CenturyLink Cloud-Network Services (CNS) in a limited set of six data centers - LO1, TR1, NJ2, DC2, CH3 and SC8. For more information on this new product, please visit the product page at https://www.ctl.io/network-exchange and visit https://www.ctl.io/knowledge-base/network/ for KBs including the Getting Started Guide.
+Network Exchange, which provides self-service, automated interconnection for application components within CenturyLink Hybrid IT environments, has been released into production in a limited availability. It is available to serve use cases that had previously been addressed with CenturyLink Cloud-Network Services (CNS) in a limited set of six data centers - LO1, TR1, NJ2, DC2, CH3 and SC8. For more information on this new product, please visit the [product page](https://www.ctl.io/network-exchange) and visit the [Network Exchange KB](https://www.ctl.io/knowledge-base/network/network-exchange/), including the Getting Started Guide.
 
 * __Status.ctl.io__
 
@@ -64,7 +64,7 @@ Impact
 
 Support
 
-- As always if you have any questions, please feel free to write us at incident@CenturyLink.com. In addition to reaching us via email, you can now reach us via Phone at the following numbers: 
+- As always if you have any questions, please feel free to write us at incident@CenturyLink.com. In addition to reaching us via email, you can now reach us via Phone at the following numbers:
     - United States: 1-888-638-6771
     - Canada: 1-866-296-5335
     - EMEA: 00800 72884743

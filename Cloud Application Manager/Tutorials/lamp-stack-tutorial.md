@@ -4,11 +4,12 @@
 "author": "Modified by Arya Roudi, Gavin Lai",
 "keywords": ["cam", "cloud application manager", "LAMP deploy", "Tutorial", "MySQL deploy", "PHP Deploy", "AWS", "clouds"],
 "attachments": [],
+"sticky": true,
 "contentIsHTML": false
 }}}
 
-
 **In this article:**
+
 * [Overview](#overview)
 * [Prerequisites](#prerequisites)
 * [Define the LAMP Stack Database Tier](#define-the-lamp-stack-database-tier)
@@ -20,20 +21,19 @@
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
+
 In this tutorial, you configure and deploy a simple Apache, PHP, MySQL two-tier LAMP Stack app. You configure the app and database tiers separately and connect them with a binding.
 The entire quick start takes 30 minutes or less to complete. By the end, you’ll be well on your way to define and deploy multi-tier applications in Cloud Application Manager.
 
-
 ### Prerequisites
+
 * Sign in to Cloud Application Manager.
 * Optionally, get a feel for building a basic [Hello World box](../Getting Started/getting-started-with-hello-world.md).
 * [Register an AWS cloud account](../Deploying Anywhere/using-your-aws-account.md) as a provider in Cloud Application Manager.
 
 ___
 
-
 ### Define the LAMP Stack Database Tier
-
 
 #### Define Policy for MySQL
 
@@ -63,13 +63,13 @@ Select the new Box. On **code** tab, edit the policy menu. Define **Region** on 
 
 ### Define the LAMP Stack App Tier
 
-#### Step 1. Create a LAMP Stack box.
+#### Step 1. Create a LAMP Stack box
 
 On the Boxes page, click **New** > **Script**. Name it LAMP Stack. Since LAMP needs Linux, tag it under Requirements. Save. Optionally, upload a matching icon to easily identify the box in the catalog.
 
 ![New script box](../../images/cloud-application-manager/tutorial/tutorial-lamp-stack-6.png)
 
-#### Step 2. Indicate a relationship to the database tier with a binding.
+#### Step 2. Indicate a relationship to the database tier with a binding
 
  In the Code tab, on Variables, click **New**. Select **Binding**. Call it mysqlservice and bind to the MySQL DB box you created earlier.
 
@@ -81,7 +81,7 @@ Save when done to create the variable.
 
 ![Add binding variable](../../images/cloud-application-manager/tutorial/tutorial-lamp-stack-7.png)
 
-#### Step 3. Allow traffic to and from the app tier with a port variable.
+#### Step 3. Allow traffic to and from the app tier with a port variable
 
 In the Code tab, on Variables, click **New**. Select **Port**. Call it HTTP and give 80 as the value.
 
@@ -89,7 +89,7 @@ Save when done to create the variable.
 
 ![Add port variable](../../images/cloud-application-manager/tutorial/tutorial-lamp-stack-8.png)
 
-#### Step 4: Add data for the database using a file variable.
+#### Step 4: Add data for the database using a file variable
 
 Copy, paste the following code in a plain text file. Save it as Create_Sample_Database.sql. Note the .sql extension.
 
@@ -108,7 +108,7 @@ In the LAMP box Code tab, on Variables, click **New**. Select **File**. Call it 
 
 ![Add SQL file as variable](../../images/cloud-application-manager/tutorial/tutorial-lamp-stack-9.png)
 
-#### Step 5. Nest the default GitHub box to install PHP from GitHub.
+#### Step 5. Nest the default GitHub box to install PHP from GitHub
 
 In the Code tab, under Variables, click **New**. Select **Box**. Call it GIT_HUB and pick the default GitHub box as the value.
 
@@ -163,7 +163,7 @@ curl http://127.0.0.1/phpinfo.php
 rm /var/www/html/phpinfo.php
 ```
 
-#### Step 7. Add events that connect the tiers using the binding.
+#### Step 7. Add events that connect the tiers using the binding
 
 Under Events > configure, click **configure**. Copy, paste the following code and save. This puts PHP in the Apache web server’s root directory and triggers the Cloud Application Manager config command within a concatenate command to run the PHP script. This also gets credentials (public IP address, port, username, and password) of the MySQL Database Service through the binding.
 
@@ -192,7 +192,6 @@ Yay! You just defined a simple LAMP stack application and connected its tiers wi
 
 ___
 
-
 ### Deploy the LAMP Stack App
 
 To deploy the app, you need AWS as a provider because we’re using the AWS CloudFormation RDS database service. Here you’ll deploy each tier in the same region on EC2.
@@ -206,7 +205,6 @@ For this tutorial we will use an Amazon RDS (any MySQL server can be used), as t
 On the Catalog page, at the top of the page you can find a search bar, search for MySQL amazon and click on it.
 
 ![MySQL catalog](../../images/cloud-application-manager/tutorial/tutorial-lamp-stack-1.png)
-
 
 ### Define the database configuration
 
@@ -243,5 +241,6 @@ We’re sorry you’re having an issue in [Cloud Application Manager](https://ww
 For issues related to API calls, send the request body along with details related to the issue.
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
 * Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log

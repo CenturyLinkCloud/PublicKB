@@ -60,6 +60,7 @@ The following are quick tips/notes based on past experiences with customers leve
 * Due to Microsoft's licensing constraints, changing the version/edition is not possible. Customers who want to change this must create a new server and SQL instance with the version/edition desired and migrate their data.
 * To remove the SQL license from your server, it must be deleted. Customers are responsible for migrating their data prior to deleting the server. Microsoft will not accept license termination unless the VM is fully removed.
 * Licensing fee's are billed with a minimum of 4 vCPU and in 2 vCPU increments for a full month. These fee's are also billed using a high watermark model in which the maximum vCPU assigned to a server during a given month will incurr cost.
+* There is a known issue with installing SQL by Blueprint on domain-joined servers. It is recommended to install SQL on servers prior to taking the action of joining them to a domain.
 
 ### Installing Microsoft SQL Server using Execute Package
 

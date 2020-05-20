@@ -1,6 +1,6 @@
 {{{
   "title": "Supported Operating Systems",
-  "date": "09-11-2019",
+  "date": "11-25-2019",
   "author": "Matthew Ordman",
   "attachments": [],
   "contentIsHTML": false
@@ -31,6 +31,10 @@ This is listed [here](../Servers/operating-system-template-retirement-policy.md)
 ### Can I perform an in-place upgrade of the Operating System?
 
 No, in-place upgrades of the Operating System are not supported.  This means that you cannot, for example, upgrade a Windows Server 2012 Standard edition to Windows Server 2012 Datacenter edition.  It will be necessary to deploy a new server if you need a different OS edition.
+
+### Can I bring my own license?
+
+Currently, CLC does not support a Bring Your Own License model for both Windows and RedHat. If this is a need, please submit a [feature request](mailto:features@ctl.io) or contact our [support team](mailto:help@ctl.io).
 
 ### I'd like to deploy an operating system that is not supported. What are my options?
 

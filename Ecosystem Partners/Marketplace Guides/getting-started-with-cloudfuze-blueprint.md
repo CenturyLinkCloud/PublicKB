@@ -95,7 +95,7 @@ Follow these step by step instructions to deploy CloudFuze.
 ### Access and use CloudFuze
 Follow these steps to access and use the CloudFuze software.
 1. Access the VM
-   * Please, connect to your server using the VPN access [Click here for VPN configuration instructions](../../Network/how-to-configure-client-vpn.md), ssh to your server and login as root.
+   * Please, connect to your server using the VPN access [Click here for VPN configuration instructions](../../Network/CenturyLink Cloud/how-to-configure-client-vpn.md), ssh to your server and login as root.
    * To access CloudFuze, please add newly created domains (e.g., displayed in above Jump In step to view build log) in DNS server record ‘A’.
 
    ![CloudFuze Image](../../images/ecosystem-CloudFuze-7.png)

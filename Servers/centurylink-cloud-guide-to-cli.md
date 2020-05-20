@@ -127,7 +127,7 @@ optional arguments:
   --async               Return immediately after queueing long-running calls
   --quiet, -q           Supress status output (repeat up to 2 times)
   --verbose, -v         Increase verbosity
-  --format {json,table,text,csv}, -f {json,table,text,csv} 
+  --format {json,table,text,csv}, -f {json,table,text,csv}
                         Output result format (table is default)
 
 Commands:
@@ -644,7 +644,7 @@ clc server execute-package --server-ids CA2ABCDMYSQLU01 --package "package-id=fc
   ```
 
 **Adding a secondary network card on a server**
-Please refer to the [Add or Remove Network Interface to Server using Go CLI](../Network/add-or-remove-network-interface-to-server-using-go-cli.md)
+Please refer to the [Add or Remove Network Interface to Server using Go CLI](../Network/CenturyLink Cloud/add-or-remove-network-interface-to-server-using-go-cli.md)
 
 **Create firewall rule with port tcp/22 between VLANs**
 ```

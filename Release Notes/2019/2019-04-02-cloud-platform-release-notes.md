@@ -23,9 +23,9 @@ Cloud Application Manager now supports CenturyLink Master Account as an authenti
 
 Cloud Application Manager improved its SAML support to include encryption and SAML groups. An organization administrator can now specify the service provider certificate that will be used by Cloud Application Manager to sign and encrypt messages, coming from or going to, the SAML backend. In addition, when a user logs in with SAML, user's group membership will be collected if provided by the SAML backend and these groups will then be available to be included as members in any workspace, cost-center or as administrators of the organization. All SAML group members will then get automatic access to the corresponding team workspace, cost-center or organization, and thus, to all resources pertaining to that scope.
 
-##### EC2 instance role support in Cloud Application Manager Data Center Edition
+##### EC2 instance role support in Cloud Application Manager Dedicated Edition
 
-Cloud Application Manager Data Center Edition now supports leveraging an EC2 Instance Role as an authorization mechanism for all AWS API calls the appliance performs. EC2 Instance Roles ease credential management and increase security for applications running in EC2 instances, so this feature only applies to appliances running as AWS EC2 Instances. Once set, you will only be able to configure new AWS providers using an IAM Role. For more information, refer to [Cloud Application Manager Data Center Edition with EC2 Instance Role](../../Cloud Application Manager/Data Center Edition/camdce-with-aws-master-account.md)
+Cloud Application Manager Dedicated now supports leveraging an EC2 Instance Role as an authorization mechanism for all AWS API calls the appliance performs. EC2 Instance Roles ease credential management and increase security for applications running in EC2 instances, so this feature only applies to appliances running as AWS EC2 Instances. Once set, you will only be able to configure new AWS providers using an IAM Role. For more information, refer to [Cloud Application Manager Dedicated with EC2 Instance Role](../../Cloud Application Manager/Dedicated Edition/camd-with-aws-master-account.md)
 
 ##### Support for multiple ServiceNow instances
 
