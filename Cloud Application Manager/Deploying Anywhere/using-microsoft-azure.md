@@ -119,7 +119,9 @@ To do so, on the details page fo the application you just created, click on API 
 
     Finally, click **Add permissions** to apply them to your application.
 
-    ![MS Azure Services Microsoft Graph API](../../images/microsoft-azure-console/ms-azure-api-graph-permissions.png)
+The following screenshot shows all the permissions that should be granted. Use the above guidance to add anyone else that might be still missing:
+
+![MS Azure Services Microsoft Graph API](../../images/microsoft-azure-console/ms-azure-api-graph-permissions.png)
 
 #### PowerShell script for automatic deletion role
 
