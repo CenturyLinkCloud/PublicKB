@@ -1,8 +1,8 @@
 {{{
 "title": "Using Microsoft Azure",
-"date": "03-28-2019",
+"date": "12-18-2019",
 "author": "Guillermo Sanchez & Sergio Quintana",
-"keywords": ["microsoft", "azure", "arm"],
+"keywords": ["microsoft", "azure", "arm", "resource manager"],
 "attachments": [],
 "sticky": true,
 "contentIsHTML": false
@@ -27,12 +27,14 @@
 ### Overview
 
 There are two different flavors of Azure and Cloud Application Manager has providers for both.  
-This document is in reference to **Microsoft Azure**.
+This document is in reference to **Microsoft Azure** or **Azure Resource Manager** deployment model.
 
-**Name** | **URL of Portal** | **Name of Related Cloud Application Manager Provider** | **KB article**
+**Name** | **URL of Portal** | **Name of Provider** | **KB article**
 --- | --- | --- | ---
-Classic Azure | https://manage.windowsazure.com | Classic Azure | [Using Classic Azure](using-azure.md)
-Microsoft Azure | https://portal.azure.com | Microsoft Azure  | This document
+Classic Azure | <https://manage.windowsazure.com> | Classic Azure | [Using Classic Azure](using-azure.md) (1)
+Microsoft Azure | <https://portal.azure.com> | Microsoft Azure  | This document
+
+(1) Please note that Microsoft no longer recommends the usage of the Classic Azure deployment model, which has been superseded by the Resource Manager model. For more information see [this Microsoft article](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-deployment-model).
 
 ### Audience
 
@@ -49,17 +51,32 @@ Each of Cloud Application Manager's Microsoft Azure Providers gives you the opti
 
 If you want to learn how to use the New Account feature, please visit [Partner Cloud: Getting Started With a New Azure Customer](../Cloud Optimization/partner-cloud-integration-azure-new.md). The rest of this article assumes you will be using an existing, Azure Customer Account without any integration with CenturyLink.
 
+#### Creating your own Azure Subscription
+
+If you want to create your own Azure subscription, follow these steps:
+
+1. Sign in to your [account](https://portal.azure.com/).
+
+2. Open Subscriptions.
+
+3. Click on **Add** subscription.
+   ![Azure add new subscription](../../images/cloud-application-manager/azure-add-new-subscription-1.png)
+
+4. You can use the free trial version or select and purchase a payment plan.
+
+   * **Note:** Cloud Application Manager is not responsible for any costs incurred through deploying to Azure. For more information, see [Azure pricing](https://azure.microsoft.com/en-us/pricing/calculator/?scenario=virtual-machines).
+
 ### Access to Microsoft Azure Services console with a Microsoft Azure subscription
 
-You need an Microsoft Azure subscription to be able to consume Azure services. Follow these steps to create one.
 Login to the [Microsoft Azure portal](https://portal.azure.com/) using your Microsoft Azure Account.
 
-If you already have a Microsoft Azure Provider in your Cloud Application Manager, you can reach this portal from the **Portal Access** button located in the Microsoft Azure Provider details page and you will be directly logged in.  
+If you already have a Microsoft Azure Provider in your Cloud Application Manager, the CenturyLink support staff can access your subscription by clicking on the **Portal Access** button located in the Microsoft Azure Provider details page.  
 
 ![Microsoft Azure Portal Access from CAM](../../images/microsoft-azure-console/ms-azure-access-from-cam.png)
 
-**Note**: This button is only available when provider has been sychronized.  
-Then if you have permissions, you will see a temporay credentials dialog you must use to login in [Microsoft Azure portal](https://portal.azure.com/). Be sure to logout from previous session in this portal. Remember that these temporal credentials only lasts one hour, then you must run this process again.
+**Note**: This button is only available when provider has been sychronized.
+
+Then, if the user has permissions, a temporary credentials dialog will be displayed to allow the user to login in [Microsoft Azure portal](https://portal.azure.com/). Be sure to logout from previous session in this portal first. These temporary user credentials only lasts for one hour, then the user needs to run this process again.
 
 #### Application ID (Client) and Directory ID (Tenant)
 
@@ -73,7 +90,7 @@ Once in Microsoft Azure Portal you can reach different sections using the upper 
 4. Create a *New Application Registration* with the following values:
     * Name: **CenturyLink-CAM**
     * Supported account types: **My organization only**
-    * Redirect URL: **web - https://localhost/logon**
+    * Redirect URL: **web - `https://localhost/logon`**
 5. Upon registering a line with this applicattion will be added to list. Click on it and see its details.
 6. Copy and take note of **Application (Client) ID** that have been generated.
 
@@ -102,23 +119,23 @@ To do so, on the details page fo the application you just created, click on API 
 
     Finally, click **Add permissions** to apply them to your application.
 
-    ![MS Azure Services Microsoft Graph API](../../images/microsoft-azure-console/ms-azure-api-graph-permissions.png)
+The following screenshot shows all the permissions that should be granted. Use the above guidance to add anyone else that might be still missing:
+
+![MS Azure Services Microsoft Graph API](../../images/microsoft-azure-console/ms-azure-api-graph-permissions.png)
 
 #### PowerShell script for automatic deletion role
 
 In order to allow automatic deletion, you must [add the Company Administrator Role to the App](https://docs.microsoft.com/en-us/powershell/module/msonline/add-msolrolemember?view=azureadps-1.0). To accomplish it, you must execute the next script from a [Windows PowerShell console](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/starting-windows-powershell?view=powershell-6):
 
-~~~powershell
-$tenantGuid = 'YOUR-TENANT-ID'
-$user = 'YOUR_USER@YOUR-DOMAIN.onmicrosoft.com'
-$password = 'YOUR PASSWORD'
-$appID = 'YOUR-APP-ID'
-$Creds = New-Object System.Management.Automation.PsCredential($user, (ConvertTo-SecureString $password -AsPlainText -Force))
-Connect-MSOLSERVICE -Credential $Creds
-$msSP = Get-MsolServicePrincipal -AppPrincipalId $appID -TenantID $tenantGuid
-$objectId = $msSP.ObjectId
-Add-MsolRoleMember -RoleName "Company Administrator" -RoleMemberType ServicePrincipal -RoleMemberObjectId $objectId
-~~~
+    $tenantGuid = 'YOUR-TENANT-ID'
+    $user = 'YOUR_USER@YOUR-DOMAIN.onmicrosoft.com'
+    $password = 'YOUR PASSWORD'
+    $appID = 'YOUR-APP-ID'
+    $Creds = New-Object System.Management.Automation.PsCredential($user, (ConvertTo-SecureString $password -AsPlainText -Force))
+    Connect-MSOLSERVICE -Credential $Creds
+    $msSP = Get-MsolServicePrincipal -AppPrincipalId $appID -TenantID $tenantGuid
+    $objectId = $msSP.ObjectId
+    Add-MsolRoleMember -RoleName "Company Administrator" -RoleMemberType ServicePrincipal -RoleMemberObjectId $objectId
 
 #### Subscriptions
 

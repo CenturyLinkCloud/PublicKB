@@ -1,7 +1,7 @@
 {{{ "title": "Deploying and Managing Instances",
-"date": "10-01-2019",
-"author": "Guillermo Sánchez, Efren Rey, Victor Shulman, and Yongjie Liang",
-"keywords": ["cam", "instances", "lifecycle", "deploy", "deployment-policy", "instance-protection", "shutdown-protection", "terminate-protection", "bulk-actions"],
+"date": "03-17-2020",
+"author": "Yongjie Liang and Guillermo Sánchez",
+"keywords": ["cam", "instances", "lifecycle", "deploy", "deployment-policy", "instance-protection", "shutdown-protection", "terminate-protection", "bulk-actions", "lifecycle-states", "export"],
 "attachments": [],
 "sticky": true,
 "contentIsHTML": false
@@ -140,7 +140,7 @@ An instance is an instantiated version of a box launched to provider’s virtual
 
 Save on compute and hosting costs by scheduling instances at launch time. Rather than remember to turn off a machine manually, schedule it to stop automatically at your convenience. When launching, you can schedule an instance to shut down or terminate at a given UTC time.
 
-We notify you of instances about to expire in 24 hours by email at around 12 AM UTC. From the email, you can navigate to the instance page and change the schedule if you like. If you don’t get this email, check your email spam filters or check if [SMTP outbound is on](../Data Center Edition/camdce-initialsetup.md) in the setup console for the Cloud Application Manager appliance.
+We notify you of instances about to expire in 24 hours by email at around 12 AM UTC. From the email, you can navigate to the instance page and change the schedule if you like. If you don’t get this email, check your email spam filters or check if [outbound SMTP is enabled](../Dedicated Edition/camd-initialsetup.md) in the setup console of the Cloud Application Manager appliance.
 
 Follow these steps to schedule an instance.
 
@@ -294,11 +294,19 @@ This executes the dispose scripts from your box instance and then deletes the vi
 
 #### Force Terminate
 
-If a Terminate fails for some reason (maybe a broken dispose script), then this forcibly deletes the virtual infrastructure. If you previously terminated or deleted an instance from the provider’s side, the instance may linger in Force Terminate in Cloud Application Manager. Give it a couple of minutes then try to force-terminate again.
+If a Terminate fails for some reason (maybe a broken dispose script), then this forcibly deletes the virtual infrastructure. It will not execute the dispose scripts. You can’t revert the action and since you can lose data, be sure that you want to perform this action. If you previously terminated or deleted an instance from the provider’s side, the instance may linger in Force Terminate in Cloud Application Manager. Give it a couple of minutes then try to force-terminate again.
 
 #### Force Online
 
-Allow user with "Admin" role to reset the state of an instance in case it went into the "unavailable" state when the last attempted operation was Reconfigure or Reinstall.
+Allow users with "Admin" role to reset the state of an instance in case it went into the "unavailable" state when the last attempted operation was Reconfigure or Reinstall.
+
+#### Disconnect
+
+This operation is available for instances registered into a [Compute Instances](./using-compute-instances.md) provider. It will execute the *dispose* event and related scripts if available, remove the agent from the machine and remove the instance from Cloud Application Manager. The machine running state will not be affected, but it will be no longer available in Cloud Application Manager. Note that for Windows machines, the service will be stopped but not removed automatically.
+
+#### Force disconnect
+
+This operation is available for instances registered into a [Compute Instances](./using-compute-instances.md) provider. It will only remove the agent from the machine and remove the instance from Cloud Application Manager, not executing the *dispose* event. Even if the removal of the agent fails, the instance will be deleted from Cloud Application Manager. The machine running state will not be affected, but it will be no longer available in Cloud Application Manager. Note that for Windows machines, the service will be stopped but not removed automatically. The **Force disconnect** operation can also be applied to instances in the process of being registered, if it has not been completed yet.
 
 #### Delete
 

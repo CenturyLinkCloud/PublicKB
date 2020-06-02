@@ -15,12 +15,12 @@
     "Managed Services",
     "Marketplace",
     "Network",
-    "Object Storage",
     "Partners",
     "Release Notes",
     "Runner",
     "Security",
     "Servers",
-    "Service Tasks"
+    "Service Tasks",
+    "Storage"
   ]
 }}}

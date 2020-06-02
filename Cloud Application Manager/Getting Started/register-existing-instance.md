@@ -66,7 +66,7 @@ This feature is only available for Optimized or Managed providers.
 
 Instances can be registered either from the *Unregistered Instances* tab of your provider details page, where you can import a single instance or select many of them and execute a bulk register, or from the *Instances* page where you can register one instance at a time.
 
-Currently, it is not necessary anymore to be in the target workspace scope where you want to register the instance, since instance registering from a scope other than a workspace is allowed.
+It is not necessary  to be in the target workspace scope where you want to register the instance, since instance registration from a scope other than a workspace will ask for the target workspace to register the instance in.
 
 #### Register an instance or instances from the *Unregistered Instances* tab
 
@@ -144,10 +144,9 @@ The previous process was done using a *CenturyLink Cloud* provider but, dependin
 Please, visit these links for further information:
 
 * [Auto-discover AWS EC2 instances](./autodiscover-ec2-instances.md)
-
 * [Register an Existing AWS Linux instance](./register-existing-aws-linux-instance.md)
-
 * [Register an Existing AWS Windows instance](./register-existing-aws-windows-instance.md)
+* [Register an Existing GCP Windows instance](./register-existing-google-cloud-instance.md)
 
 ### Contacting Cloud Application Manager Support
 

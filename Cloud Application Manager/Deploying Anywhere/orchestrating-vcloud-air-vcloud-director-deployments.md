@@ -51,7 +51,7 @@ Follow these steps to add a provider in Cloud Application Manager that integrate
 
   * **vCloud Air**. Enter the login URL followed by the compute API endpoint in this format, `<vCloud_air_login_URL>/api/compute`.
 
-    **Example:** https://us-california-1-3.vchs.vmware.com/api/compute/
+    **Example:** <https://us-california-1-3.vchs.vmware.com/api/compute/>
 
 * **Organization**. Enter the organization name or GUID.
   * For vCloud Air, select the virtual data center to see the org name in the URL as in this example: `?orgName=c946391d-a811-40c5-b39e-df8bf2b88917`.

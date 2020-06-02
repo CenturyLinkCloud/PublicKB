@@ -1,0 +1,12 @@
+{
+  "name": "@ctl/kb",
+  "description": "Public Knowledge Base for CTL",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CenturyLinkCloud/PublicKB/tree"
+  },
+  "dependencies": {
+  }
+}

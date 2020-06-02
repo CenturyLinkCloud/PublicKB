@@ -41,7 +41,7 @@ Required Compute:
 ### Postrequisites
 
 * Java Runtime
-* [VPN Access](../../Network/how-to-configure-client-vpn.md) is required in order to administer the cluster via the GUI tool.
+* [VPN Access](../../Network/CenturyLink Cloud/how-to-configure-client-vpn.md) is required in order to administer the cluster via the GUI tool.
 
 
 ### Cluster Configuration
@@ -125,7 +125,7 @@ The SDC installer will require the IP address of the primary MDM node as well as
 
 ### Performance
 
-For optimal performance, consider using cloud or Bare Metal server types for the SDS nodes. To do so, 
+For optimal performance, consider using cloud or Bare Metal server types for the SDS nodes. To do so,
 pre-allocate these machines in a server group of your choice. Then point the cluster installer at the group.
 
 

@@ -11,7 +11,7 @@
 <ul>
   <li><strong>Firewall Policies</strong> New in this release, and <strong>currently only available for CenturyLink Cloud Administrators</strong>, firewall policies allow users to create and maintain complex intra-DC networking policies. Administrators can
     use these policies to define how network traffic should go between the vlans that exist in their primary account and various sub-accounts. <strong>In the very near future, this feature will be opened up for CenturyLink Cloud customers to use</strong>. For more
-    information, please see the following Knowledge Base articles: <a href="../../Network/creating-cross-data-center-firewall-policies.md">Connecting Data Center Networks Through Firewall Policies</a>    and <a href="../../Network/creating-bi-directional-firewall-policies.md">Creating Bi-Directional Firewall Policies</a>.</li>
+    information, please see the following Knowledge Base articles: <a href="../../Network/CenturyLink Cloud/creating-cross-data-center-firewall-policies.md">Connecting Data Center Networks Through Firewall Policies</a>    and <a href="../../Network/CenturyLink Cloud/creating-bi-directional-firewall-policies.md">Creating Bi-Directional Firewall Policies</a>.</li>
   <li><strong>"Script" Tasks on Groups</strong> This new Task can be applied in blueprints and as part of Group-level actions. It supports the execution of user-entered script statements for Windows (PowerShell and Command) and Linux (SSH). This
     allows users to quickly and easily perform group-level activities such as turning off a service or enabling a firewall rule.</li>
 </ul>

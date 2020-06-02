@@ -39,7 +39,7 @@ Additional endpoints will need to be configured based on the Storage Region sele
 
 **Q: What OSes are supported?**
 
-A: All Operating Systems that are currently buildable in the CenturyLink Cloud Control Portal are supported. Customer imported OVA/OVF OSes and 32-bit OSes are not supported.
+A: All Operating Systems that are currently buildable in the CenturyLink Cloud Control Portal are supported, with the exception of RedHat Enterprise linux 5, and Debian 6. Customer imported OVA/OVF OSes and 32-bit OSes are not supported.
 
 **Q: How can I use Simple Backup Service on a server that doesn't have internet access?**
 

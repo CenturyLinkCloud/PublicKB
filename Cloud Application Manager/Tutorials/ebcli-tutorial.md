@@ -41,7 +41,7 @@ All Cloud Application Manager users who want to control their Cloud Application 
 
 ### Prerequisites
 
-* Access to Cloud Application Manager [Site](https://cam.ctl.io/#/login) or to an on-premises Cloud Application Manager Data Center Edition (CAM appliance).
+* Access to Cloud Application Manager [Site](https://cam.ctl.io/#/login) or to an on-premises Cloud Application Manager Dedicated Edition (CAM appliance).
 * The user must have an existing account to login into using username and password or his preferred authentication mechanism.
 
 ### Installation of ebcli command line tool

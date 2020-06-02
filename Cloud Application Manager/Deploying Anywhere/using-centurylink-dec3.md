@@ -24,7 +24,7 @@ This article is meant to assist users of Cloud Application Manager to learn how 
 
 ### Audience
 
-All Cloud Application Manager users who wants to deploy workloads into a CenturyLink DEC 3 Provider.
+All Cloud Application Manager users who want to deploy workloads into a CenturyLink DEC 3 Provider.
 
 ### Prerequisites
 

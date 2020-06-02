@@ -17,7 +17,7 @@ AWS Customers of CenturyLink whose contract has ended.
 
 ### Prerequisites
 
-*  Pay off all previous invoices
+*  Pay off all existing invoices. See below regarding the last invoice.
 
 * Contact with your CenturyLink account representative.
 
@@ -32,6 +32,8 @@ AWS Customers of CenturyLink whose contract has ended.
 
 
 ### Important Information
+
+Because we bill in arrears, expect to receive at least one more invoice from CenturyLink after your departure.
 
 Your departure will be aided by creating a support ticket. Please review the following information to help you create the content of that ticket. Then send in the ticket for the legal process to begin. Three parties must sign: your company, AWS, and CenturyLink. A template for the ticket is below. You do not need to know exactly what date you will be leaving when you create the ticket.
 
