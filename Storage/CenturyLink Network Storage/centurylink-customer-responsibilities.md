@@ -16,7 +16,7 @@ This document provides an overview of CenturyLink and customer responsibilities 
 
 ### Prerequisites
 
-An understanding of how to [get started with CenturyLink Network Storage](../../getting-started-creating-cns-nodes-volumes.md).
+An understanding of how to [get started with CenturyLink Network Storage](../../Storage/CenturyLink Network Storage/getting-started-creating-cns-nodes-volumes.md).
 
 ### Important Information
 
