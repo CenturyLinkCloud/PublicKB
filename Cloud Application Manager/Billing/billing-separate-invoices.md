@@ -1,7 +1,7 @@
 {{{
 "title": "Billing invoices",
-"date": "07-10-2018",
-"author": "Guillermo Sanchez",
+"date": "06-04-2020",
+"author": "Anshul Arora",
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -19,7 +19,7 @@
 
 ### Overview
 
-This article is meant to assist Cloud Application Manager customers who want their Cloud Application Manager charges divided across multiple CenturyLink invoices to align with separate lines of business.
+This article is meant to assist customers who want their Cloud Application Manager charges divided across multiple CenturyLink invoices to align with separate lines of business.
 
 ### Audience
 
