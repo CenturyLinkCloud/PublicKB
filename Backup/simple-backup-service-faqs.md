@@ -1,6 +1,6 @@
 {{{
   "title": "Simple Backup Service FAQs",
-  "date": "06-01-2020",
+  "date": "06-08-2020",
   "author": "John Gerger",
   "attachments": [],
   "related-products" : [],
@@ -27,7 +27,7 @@
 
 A: SSH for Root is required to allow the blueprint to initially install the backup agent on the target server; it may be disabled after the initial instillation as it is not needed for the agent to function. Simple Backup Service also requires outbound internet traffic over port 443. CenturyLink Cloud VMs allow outbound traffic by default using NAT.
 
-- Alternatively, firewall rules may be configured utilizing the endpoints listed below. Additional endpoints will need to be configured based on the storage region selected as indicated in our [SBS functionality article](simple-backup-service-how-it-works).
+- Alternatively, firewall rules may be configured utilizing the endpoints listed below. Additional endpoints will need to be configured based on the storage region selected as indicated in our [SBS functionality article](simple-backup-service-how-it-works.md).
 
   ```
   up-va1.backup.ctl.io
@@ -40,7 +40,7 @@ A: SSH for Root is required to allow the blueprint to initially install the back
 
 **Q: What operating systems are supported?**
 
-A: If the server is using one of the [platform-supported operating systems](../Support/supported-operating-systems), then SBS may be installed. **NOTE:** Exceptions to this are listed below.
+A: If the server is using one of the [platform-supported operating systems](../Support/supported-operating-systems.md), then SBS may be installed. **NOTE:** Exceptions to this are listed below.
 
 - Debian 6
 - imported VMs
@@ -56,11 +56,11 @@ A: No further backups occur from the server to storage. If a backup agent is una
 
 **Q: Is SBS intended to be used for disaster recovery?**
 
-A: No. SBS only provides file-level backup protection, [excluding certain OS files](#inclusions-and-exclusions), and does not provide VM-level snapshot capability. While users can still perform [manual VM snapshots on demand](../Servers/creating-and-managing-server-snapshots) and as [scheduled tasks](../Servers/creating-a-scheduled-task), these are not considered disaster recovery solutions either. For full disaster recovery, review our [backup solutions introduction article](../Support/introducing-new-options-for-backups).
+A: No. SBS only provides file-level backup protection, [excluding certain OS files](#inclusions-and-exclusions), and does not provide VM-level snapshot capability. While users can still perform [manual VM snapshots on demand](../Servers/creating-and-managing-server-snapshots.md) and as [scheduled tasks](../Servers/creating-a-scheduled-task.md), these are not considered disaster recovery solutions either. For full disaster recovery, review our [backup solutions introduction article](../Support/introducing-new-options-for-backups.md).
 
 **Q: Does SBS support VM cloning?**
 
-A: No. Currently, SBS does not support cloning. If the agent is installed on a VM that is cloned, there can be data continuity issues between the backups of the source VM and the clone. Before cloning a VM, the SBS agent must be [uninstalled first](removing-simple-backup-service), then the agent will need to be separately installed on the clone.
+A: No. Currently, SBS does not support cloning. If the agent is installed on a VM that is cloned, there can be data continuity issues between the backups of the source VM and the clone. Before cloning a VM, the SBS agent must be [uninstalled first](removing-simple-backup-service.md), then the agent will need to be separately installed on the clone.
 
 ### Agent
 
@@ -70,7 +70,7 @@ A: Although the SBS agent will run on VMs with 1 CPU and 1 GB of memory, the ove
 
 **Q: What are the login credentials for the backup agent?**
 
-A: Please review the [SBS Agent Security Configurations article](sbs-agent-security).
+A: Please review the [SBS Agent Security Configurations article](sbs-agent-security.md).
 
 **Q: Can I change the backup agent credentials for all my instances in one place?**
 
@@ -78,7 +78,7 @@ A: Not at this time. Each properties file must be updated individually.
 
 **Q: How can I access my backup agent from a remote machine?**
 
-A: Please review the [SBS Agent Security Configurations article](sbs-agent-security).
+A: Please review the [SBS Agent Security Configurations article](sbs-agent-security.md).
 
 **Q: Where can I find the backup agent's logs on my machine?**
 
@@ -103,7 +103,7 @@ A: The agent is setup to start on boot at install time.
 
 **Q: Where do I configure backups?**
 
-A: The control portal provides backup configuration functionality. Please refer to our [Getting Started guide](getting-started-with-simple-backup) for more details. Additionally, the [backup API](//www.ctl.io/api-docs/v2/#simple-backup) may be used for advanced scripting.
+A: The control portal provides backup configuration functionality. Please refer to our [Getting Started guide](getting-started-with-simple-backup.md) for more details. Additionally, the [backup API](//www.ctl.io/api-docs/v2/#simple-backup) may be used for advanced scripting.
 
 **Q: What does an "IN PROGRESS" status backup mean?**
 
@@ -121,7 +121,7 @@ A: It depends on the OS, as listed below.
 
 **Q: How can I confirm that my backups were successful?**
 
-A: There are multiple ways to check the statuses of your backups. The CenturyLink Cloud Simple Backup control portal has an activites tab that provides a quick, at-a-glance view of your recent backups. You can also use the [reporting functionality](reports) or the [monitoring functionality](sbs-monitoring) to provide a deeper view into your backup landscape.
+A: There are multiple ways to check the statuses of your backups. The CenturyLink Cloud Simple Backup control portal has an activites tab that provides a quick, at-a-glance view of your recent backups. You can also use the [reporting functionality](reports.md) or the [monitoring functionality](sbs-monitoring.md) to provide a deeper view into your backup landscape.
 
 **Q: For a "Failed" or "Partial Success" backup status, can I see which files failed and why?**
 
@@ -132,11 +132,11 @@ A: Yes. See the sbs-backup-files-failed.csv file located on the backup agent's l
 
 **Q: Where are my backups actually stored?**
 
-A: The SBS agent on the server transfers backup data to one of six different backup storage regions, each built on top of object storage. CenturyLink Cloud sources this storage from a combination of its own cloud platform, as well as 3rd-party cloud providers such as Amazon Web Services. For more information, see our [SBS functionality article](simple-backup-service-how-it-works).
+A: The SBS agent on the server transfers backup data to one of six different backup storage regions, each built on top of object storage. CenturyLink Cloud sources this storage from a combination of its own cloud platform, as well as 3rd-party cloud providers such as Amazon Web Services. For more information, see our [SBS functionality article](simple-backup-service-how-it-works.md).
 
 **Q: Can I check the status of my backups?**
 
-A: Yes. You can check the activities tab for an at-a-glance view of your most recent jobs, or you can review the [reports documentation](reports) for in-depth details of your backup jobs.
+A: Yes. You can check the activities tab for an at-a-glance view of your most recent jobs, or you can review the [reports documentation](reports.md) for in-depth details of your backup jobs.
 
 ### Restores
 
@@ -150,7 +150,7 @@ A: Yes. In the restore section, there is an option to perform a full restore or 
 
 **Q: Can restores be performed to another server?**
 
-A: Yes. Please follow the steps outlined in the [restore documentation](restores).
+A: Yes. Please follow the steps outlined in the [restore documentation](restores.md).
 
 **Q: How is the backup date determined for Restore Points?**
 
@@ -181,11 +181,11 @@ A: Common causes of obscured restore files are as follows.
 
 **Q: How do I stop an in-progress restore from completing?**
 
-A: Restarting the Simple Backup service on the server will stop all running restore tasks. See [Restarting Simple Backup Service](restarting-simple-backup-service) for steps to restart in Linux and Windows.
+A: Restarting the Simple Backup service on the server will stop all running restore tasks. See [Restarting Simple Backup Service](restarting-simple-backup-service.md) for steps to restart in Linux and Windows.
 
 **Q: Can I check the status of my restores?**
 
-A: Yes. You can check the activities tab for an at-a-glance view of your most recent jobs, or you can review the [reports documentation](reports) for in-depth details of your restore jobs.
+A: Yes. You can check the activities tab for an at-a-glance view of your most recent jobs, or you can review the [reports documentation](reports.md) for in-depth details of your restore jobs.
 
 ### Policies
 
@@ -259,13 +259,13 @@ A: Yes. From the backup agent, select the **Backup** button from the home dashbo
 
 **Q: Can I schedule backups to execute at a specific time in the day?**
 
-A: Yes. This is part of our new scheduling feature; for more details, please see the [getting started guide](getting-started-with-simple-backup).
+A: Yes. This is part of our new scheduling feature; for more details, please see the [getting started guide](getting-started-with-simple-backup.md).
 
 ### Retention
 
 **Q: Can I completely delete my backed up files from storage, regardless of the retention period?**
 
-A: No. This is a manual process at this time. A [support request](../Support/how-do-i-report-a-support-issue/#exceptions) will need to be opened to have this performed.
+A: No. This is a manual process at this time. A [support request](../Support/how-do-i-report-a-support-issue.md/#exceptions) will need to be opened to have this performed.
 
 **Q: Why do unchanged files not follow retention?**
 
