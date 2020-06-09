@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-1. Before proceeding, ensure your OVF meets the requirements that are listed here in our [VM import preparation article](../Service Tasks/vm-import-preparation.md).
+1. Before proceeding, ensure your OVF meets the requirements that are listed here in our [VM import preparation article](../Servers/vm-import-preparation.md).
 2. Connect to your account's CenturyLink Cloud FTP site. Instructions on retrieving the connection details can be found in our [FTP users article](../Control Portal/ftp-users-in-control-portal.md).
   - You can import VMs to any available data center in your account. The OVF file is simply stored in your home data center FTP account for initial processing.
 3. In the root directory of the FTP site, create a folder named “import” if it does not already exist.
