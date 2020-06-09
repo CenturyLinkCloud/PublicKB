@@ -47,3 +47,41 @@ A final migration date is not yet available, more information will be provided r
 **Q: My Public IP is in the range 65.151.128.0 - 65.151.255.255, is there anything I need to do?**
 
 Nothing is required, your Public IP is already in the correct range.
+
+
+**Q: How Can I Migrate Existing Public IP Configuration To a New IP?**
+
+Use our API to effeciently gather existing public IP configuration and assign a new public IP with the same configuration:
+
+1. [Authenticate to the API](https://www.ctl.io/api-docs/v2/#authentication)
+2. [Get current public IP configuration](https://www.ctl.io/api-docs/v2/#firewall-get-public-ip-address)
+3. [Delete the current IP](https://www.ctl.io/api-docs/v2/#firewall-remove-public-ip-address)
+4. [Assign a new IP](https://www.ctl.io/api-docs/v2/#firewall-add-public-ip-address) using the configuration parameters gathered in step 2.
+**NOTE**, include the current internal IP in the API call to ensure the new public IP is configured with the existing internal IP rather than a new internal IP being assigned with the request. Here is a PUT call Body example:
+
+```
+{
+	"internalIPAddress": "10.91.172.12",
+	"ports": [
+		{
+            "protocol": "ICMP",
+            "port": 0
+        },
+        {
+            "protocol": "TCP",
+            "port": 802,
+            "portTo": 810
+        },
+        {
+            "protocol": "TCP",
+            "port": 9841
+        }
+    ],
+    "sourceRestrictions": [
+        {
+            "cidr": "8.8.8.8/32"
+        }
+    ]
+}
+```
+If you wish to add an additional internal IP in the migration process, review our ["How to Associate Additional Private IPs"](../Servers/how-to-associate-additional-private-ips-with-a-cloud-server.md) article. A blueprint can be deployed in the Control Portal or following this [APIv1 documentation](https://www.ctl.io/api-docs/v1/#blueprint-deploy-blueprint).
