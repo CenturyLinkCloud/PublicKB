@@ -61,8 +61,8 @@ Second, profile your applications. What level of data protection do your VMs nee
 Third, consider the following timeline to protect your VMs with the Simple Backup Service in the coming weeks:
 
 #### Week 1
-* Configure policies that match your data retention policies. You can create policies that feature 5 days of retention, as well as 14 days of retention – just like Standard and Premium.
-* Apply these policies to a few test servers, and verify that the backup frequency and retention period meet your business needs.
+* Configure policies that match your data retention policies. You can create policies that feature 5 days of retention, as well as 14 days of retention – just like Standard and Premium.
+* Apply these policies to a few test servers, and verify that the backup frequency and retention period meet your business needs.
 * Experiment with other elements of the Simple Backup UI.
 
 #### Week 2
@@ -108,18 +108,6 @@ The answer varies depending on the workload and your requirements. Along those l
 * To Get Started: Contact your account team, or [visit the product page](https://www.ctl.io/disaster-recovery/)
 * Other resources:
   * [This section of the Knowledge Base](https://www.ctl.io/knowledge-base/disaster-recovery/safehaven-3/#1) has additional articles on Safe Haven.
-
-#### CommVault
-* When to use it: Data and file backup, with many powerful features and capabilities to protect data across a variety of platforms, and to host data across a variety of storage media. OS-level images are supported.
-* Requirements: Detailed in [this Knowledge Base article: Getting Started with CommVault Storage Blueprint](../Ecosystem Partners/Marketplace Guides/getting-started-with-commvault-storage-blueprint.md)
-* Cost: Based on the amount of storage protected. Pricing is available upon request, and evaluation licenses are available. Compute resources are required to run CommVault “control” servers in CenturyLink Cloud.
-* Licensing: Bring your own license (BYOL), available from CommVault
-* Availability: GA
-* Deployment Time: Days
-* Support Model: Software is supported by CommVault; CenturyLink Cloud supports the underlying infrastructure via our standard SLAs
-* To Get Started: 30-day evaluation licenses are available, please contact your CenturyLink account team, or [CommVault for additional information](http://www.commvault.com/contact-us).
-* Other resources:
-  * [Getting Started with CommVault Storage Blueprint](../Ecosystem Partners/Marketplace Guides/getting-started-with-commvault-storage-blueprint.md)
 
 ### Summary
 This information should give you a good starting point to investigate specialized solutions that can meet your business requirements. If there’s more details or information you would require, please let us know via [help@ctl.io](mailto:help@ctl.io).
