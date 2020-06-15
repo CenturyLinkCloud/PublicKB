@@ -20,7 +20,7 @@ CenturyLink Private Cloud on VMware Cloud Foundation (CPC on VCF) customers can 
 7.	cpu.usage.maximum
 8.	disk.used.latest
 
-There are also four (4) different time Periods to choose from:
+There are also four (4) different time periods to choose from:
 
 1. 1/2 Hour
 2. Hour
