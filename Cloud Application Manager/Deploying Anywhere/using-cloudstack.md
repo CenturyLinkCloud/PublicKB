@@ -1,7 +1,7 @@
 {{{
 "title": "Using CloudStack",
 "date": "09-01-2016",
-"author": "",
+"author": "Anshul Arora",
 "attachments": [],
 "contentIsHTML": false
 }}}
