@@ -2,6 +2,7 @@
   "title": "Sign Up for Consumption Alerts",
   "date": "01-25-2016",
   "author": "Christine Parr",
+  "keywords": ["clc", "cloud", "database", "db", "dbaas", "notifications", "mssql", "rdbs", "portal"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
