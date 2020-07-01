@@ -2,6 +2,7 @@
   "title": "Network Exchange Getting Started Guide",
   "date": "07-02-2018",
   "author": "Jason Holland",
+  "keywords": ["bgp", "clc", "cpc", "cloud", "managed", "hosting", "network", "dedicated", "vlan"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

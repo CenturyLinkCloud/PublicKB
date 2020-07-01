@@ -2,6 +2,7 @@
   "title": "Network Exchange IQ+ Endpoint Guide",
   "date": "01-07-2020",
   "author": "Jason Holland",
+  "keywords": ["clc", "cloud", "network", "dedicated", "iq+", "vlan", "han"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -27,7 +28,7 @@ The Network Exchange IQ+ Endpoint allows for automated, self-managed connectivit
 ### Notes
 
 * Additional purchase(s) required includes 1 HAN VLAN 1.0 order.
-* CenturyLink Technical Implimentation (HSIE) in coordination with CenturyLink Service Delivery Coordinators (SDCs) will configure the VLAN.
+* CenturyLink Technical Implementation (HSIE) in coordination with CenturyLink Service Delivery Coordinators (SDCs) will configure the VLAN.
 * The allocated VLAN will be provided and must be used in the Network Exchange UI.  
 * Network Exchange IQ+ Endpoints are available to connect to the shared CPE only in colocation data centers.
 * The IQ+ Endpoint must be in a colocation data center in which a serving instance of Network Exchange exists.

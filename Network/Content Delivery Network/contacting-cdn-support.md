@@ -2,6 +2,7 @@
   "title": "Contacting the Content Delivery Network Support Center",
   "date": "5-28-2020",
   "author": "Jim Greene",
+  "keywords": ["cdn", support"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

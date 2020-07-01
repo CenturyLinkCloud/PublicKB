@@ -2,6 +2,7 @@
   "title": "CDN Mesh Delivery: How It Works",
   "date": "02-13-2020",
   "author": "Jim Greene",
+  "keywords": ["cdn", "content", "mesh", "media", "webrtc", "vod"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
