@@ -2,6 +2,7 @@
   "title": "Replication and Failover - MSSQL Relational DB",
   "date": "10-22-2017",
   "author": "Brian Waganer",
+  "keywords": ["clc", "cloud", "database", "db", "dbaas", "failover", "mssql", "replication", "portal"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false

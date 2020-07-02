@@ -2,6 +2,7 @@
   "title": "Resizing a Relational Database Instance",
   "date": "10-22-2017",
   "author": "Brian Waganer",
+  "keywords": ["clc", "cloud", "database", "db", "dbaas", "mysql", "rdbs", "portal"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false
