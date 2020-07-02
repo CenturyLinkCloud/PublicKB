@@ -2,6 +2,7 @@
   "title": "Removing Simple Backup Service",
   "date": "11-5-2019",
   "author": "John Gerger",
+  "keywords": ["backup", "clc", "cloud", "sbs"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

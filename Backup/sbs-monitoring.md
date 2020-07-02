@@ -2,6 +2,7 @@
   "title": "Simple Backup Monitoring",
   "date": "10-30-2019",
   "author": "John Gerger",
+  "keywords": ["backup", "clc", "cloud", "monitoring", "sbs", "webhook"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

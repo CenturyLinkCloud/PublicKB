@@ -2,6 +2,7 @@
   "title": "SBS Agent Security Configurations",
   "date": "11-8-2019",
   "author": "John Gerger",
+  "keywords": ["backup", "clc", "cloud", "restore", "sbs"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

@@ -1,15 +1,14 @@
 {{{
-  "title": "Getting Started With Simple Backup",
+  "title": "Simple Backup Service – Getting Started Guide",
   "date": "2-27-2019",
   "author": "John Gerger",
+  "keywords": ["api", "backup", "clc", "cloud", "portal", "sbs", "storage"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
   "sticky": true
 }}}
 
-Simple Backup Service – Getting Started Guide
-=============================================================
 
 Simple Backup Service (SBS) provides file level backups. This version of the UI allows users to quickly setup backups as well as perform other backup related activities. Additionally, there is no need to stand-up any additional infrastructure (servers, network, storage) because this is all part of the service. An agent will be automatically installed on the server during provisioning. Servers must have connectivity to the internet for installation of the agent, and backup functionality. Users choose which servers and data to back up, as well as the frequency of the backups and retention periods.
 
