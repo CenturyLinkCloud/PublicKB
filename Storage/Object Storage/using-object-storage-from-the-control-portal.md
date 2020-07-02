@@ -2,6 +2,7 @@
   "title": "Using Object Storage from the Control Portal",
   "date": "01-07-2015",
   "author": "Richard Seroter",
+  "keywords": ["clc", "cloud", "object", "permissions", "storage", "portal"],
   "attachments": [],
   "contentIsHTML": false
 }}}

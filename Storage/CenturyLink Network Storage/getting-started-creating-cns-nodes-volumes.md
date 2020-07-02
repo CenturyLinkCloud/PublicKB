@@ -2,6 +2,7 @@
   "title": "Getting Started: Creating CNS Nodes and Volumes",
   "date": "05-14-2020",
   "author": "Brad Lewis",
+  "keywords": ["cns", "cifs", "iscsi", "network", "nfs", "node", "peer", "portal", "storage", "volume"],
   "attachments": [],
   "contentIsHTML": false
 }}}

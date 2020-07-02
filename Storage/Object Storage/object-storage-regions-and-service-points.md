@@ -2,6 +2,7 @@
   "title": "Object Storage Regions and Service Points",
   "date": "07-10-2017",
   "author": "Daniel Stephan",
+  "keywords": ["clc", "cloud", "object", "storage", "service", "regions"],
   "attachments": [],
   "contentIsHTML": false
 }}}
