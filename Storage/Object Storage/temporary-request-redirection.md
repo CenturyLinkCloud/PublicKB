@@ -2,6 +2,7 @@
  "title": "Temporary Request Redirection",
  "date": "08-25-2015",
  "author": "Daniel Stephan",
+ "keywords": ["clc", "cloud", "object", "redirection", "storage", "s3"],"
  "attachments": [],
  "contentIsHTML": false
 }}}

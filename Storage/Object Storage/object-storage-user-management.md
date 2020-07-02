@@ -2,6 +2,7 @@
   "title": "Object Storage User Management",
   "date": "02-14-2018",
   "author": "William Schroeder",
+  "keywords": ["clc", "cloud", "object", "storage", "s3", "portal"],"
   "attachments": [],
   "contentIsHTML": false
 }}}

@@ -2,6 +2,7 @@
 "title": "CenturyLink Network Storage Glossary of Terms",
 "date": "05-28-2020",
 "author": "Jim Greene",
+"keywords": ["cns", "glossary", "network", "portal", "storage"],
 "attachments": [],
 "contentIsHTML": false
 }}}
