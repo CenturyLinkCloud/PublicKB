@@ -2,6 +2,7 @@
   "title": "Simple Backup Service FAQs",
   "date": "06-08-2020",
   "author": "John Gerger",
+  "keywords": ["backup", "clc", "cloud", "faq", "sbs"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

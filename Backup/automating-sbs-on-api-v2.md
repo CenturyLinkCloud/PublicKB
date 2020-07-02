@@ -2,6 +2,7 @@
   "title": "Automating Your Rollout of the Simple Backup Service with the CenturyLink Cloud API",
   "date": "05-16-2016",
   "author": "Matt Schwabenbauer",
+  "keywords": ["api", "backup", "clc", "cloud", "portal", "powershell", "sbs", "storage", "vm"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
