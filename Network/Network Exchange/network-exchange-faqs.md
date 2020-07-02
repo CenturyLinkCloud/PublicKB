@@ -2,6 +2,7 @@
   "title": "Network Exchange FAQs",
   "date": "06-28-2018",
   "author": "Jason Holland",
+  "keywords": ["clc", "cloud", "managed", "hosting", "network", "dedicated", "faq"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -10,9 +11,9 @@
 
 ### Product Overview
 
-[Network Exchange](https://www.ctl.io/network-exchange/) provides secure, high-speed, redundant, automated network connections between disparate IT environments allowing for a true hybrid environment. It is the preferred alternative to using the Internet or IPSec VPN for customers needing to connect two or more environments directly together. Common environments include CenturyLink Cloud (CLC), CenturyLink Private Cloud on VMware Cloud Foundation (VCF), Colocation environments, CenturyLink Managed Hosting, CenturyLink Dedicated Cloud Compute, 3rd party networks and customer owned devices. Network Exchange is ideal for your hybrid environment as well as capacity augmentation or cloud bursting, data migration, and disaster recovery. 
+[Network Exchange](https://www.ctl.io/network-exchange/) provides secure, high-speed, redundant, automated network connections between disparate IT environments allowing for a true hybrid environment. It is the preferred alternative to using the Internet or IPSec VPN for customers needing to connect two or more environments directly together. Common environments include CenturyLink Cloud (CLC), CenturyLink Private Cloud on VMware Cloud Foundation (VCF), Colocation environments, CenturyLink Managed Hosting, CenturyLink Dedicated Cloud Compute, 3rd party networks and customer owned devices. Network Exchange is ideal for your hybrid environment as well as capacity augmentation or cloud bursting, data migration, and disaster recovery.
 
-Network Exchange provides the user with near total control of connection setup and management via the Network Exchange Internet portal, combined with automation through software defined networking, and pre-deployed network infrastructure. 
+Network Exchange provides the user with near total control of connection setup and management via the Network Exchange Internet portal, combined with automation through software defined networking, and pre-deployed network infrastructure.
 
 ### Frequently Asked questions
 
@@ -46,7 +47,7 @@ Network Exchange provides the user with near total control of connection setup a
 
 **Q: What is the speed of the network?**
 
-**A:** The speed of each Endpoint connection to the Network Exchange equipment is configured independently with rate limits selected by the customer. Two rate limits exist: 10 Gbps and 1 Gbps. 
+**A:** The speed of each Endpoint connection to the Network Exchange equipment is configured independently with rate limits selected by the customer. Two rate limits exist: 10 Gbps and 1 Gbps.
 
 **Q: Am I limited to the speed I can use?**
 

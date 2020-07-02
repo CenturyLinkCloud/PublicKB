@@ -2,6 +2,7 @@
   "title": "Network Exchange Availability Matrix and Configuration Guide",
   "date": "5-20-2019",
   "author": "Jason Holland",
+  "keywords": ["clc", "cloud", "network"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

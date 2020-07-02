@@ -2,6 +2,7 @@
   "title": "Network Exchange Billing Guide",
   "date": "06-28-2018",
   "author": "Jason Holland",
+  "keywords": ["clc", "cloud", "network", "pricing"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

@@ -2,6 +2,7 @@
   "title": "Network Exchange CenturyLink Private Cloud on VMware Cloud Foundation Endpoint Guide",
   "date": "06-28-2018",
   "author": "Jason Holland",
+  "keywords": ["cpc", "cloud", "network", "vmware", "vcf"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

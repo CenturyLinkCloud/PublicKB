@@ -2,6 +2,7 @@
   "title": "Network Exchange CenturyLink Managed Hosting via HAN Endpoint Guide",
   "date": "06-28-2018",
   "author": "Jason Holland",
+  "keywords": ["bgp", "clc", "cloud", "managed", "hosting", "network", "dedicated", "vlan", "han"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
