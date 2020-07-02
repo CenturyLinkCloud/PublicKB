@@ -2,6 +2,7 @@
   "title": "FAQs: MySQL Relational DB Service",
   "date": "02-28-2016",
   "author": "Christine Parr",
+  "keywords": ["api", "clc", "cloud", "database", "db", "dbaas", "mysql", "faq"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

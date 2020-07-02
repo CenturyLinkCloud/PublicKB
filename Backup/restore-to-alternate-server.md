@@ -2,6 +2,7 @@
   "title": "Restore to Alternate Server",
   "date": "02-27-2019",
   "author": "Dan Benton",
+  "keywords": ["backup", "clc", "cloud", "restore", "sbs", "server"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

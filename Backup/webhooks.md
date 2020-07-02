@@ -2,6 +2,7 @@
   "title": "Simple Backup Webhooks",
   "date": "11-7-2019",
   "author": "John Gerger",
+  "keywords": ["backup", "clc", "cloud", "sbs", "server", "storage", "webhook"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

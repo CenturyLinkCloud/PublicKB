@@ -2,6 +2,7 @@
   "title": "Replication and Failover - MySQL Relational DB",
   "date": "01-25-2016",
   "author": "Christine Parr",
+  "keywords": ["clc", "cloud", "database", "db", "dbaas", "failover", "mysql", "replication", "portal"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false

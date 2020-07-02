@@ -2,6 +2,7 @@
   "title": "Using Object Storage from 3rd Party Tools",
   "date": "05-02-2015",
   "author": "Chris Little",
+  "keywords": ["clc", "cloud", "object", "permissions", "storage", "portal"],
   "attachments": [],
   "contentIsHTML": false
 }}}

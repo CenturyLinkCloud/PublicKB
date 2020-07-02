@@ -2,6 +2,7 @@
   "title": "CenturyLink and Customer Responsibilities for CenturyLink Network Storage",
   "date": "06-04-2020",
   "author": "Brad Lewis",
+  "keywords": ["cns", "network", "node", "portal", "service", "storage", "support", "volume"],
   "attachments": [],
   "contentIsHTML": false
 }}}
