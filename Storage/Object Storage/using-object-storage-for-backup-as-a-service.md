@@ -2,7 +2,7 @@
   "title": "Using Object Storage for Backup as a Service",
   "date": "08-14-2016",
   "author": "Evgeny Rudinsky",
-  "keywords": ["clc", "cloud", "cloudberry", "object", "permissions", "storage", "sql", "portal"],"
+  "keywords": ["clc", "cloud", "cloudberry", "object", "permissions", "storage", "sql", "portal"],
   "attachments": [],
   "contentIsHTML": false
 }}}

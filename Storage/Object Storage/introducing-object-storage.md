@@ -2,7 +2,7 @@
   "title": "Introducing Object Storage",
   "date": "10-29-2015",
   "author": "Daniel Stephan",
-  "keywords": ["clc", "cloud", "object", "storage", "portal"],"
+  "keywords": ["clc", "cloud", "object", "storage", "portal"],
   "attachments": [],
   "contentIsHTML": false
 }}}

@@ -2,7 +2,7 @@
   "title": "Using Object Storage with a Cloud Storage Gateway",
   "date": "01-07-2015",
   "author": "Chris Little",
-  "keywords": ["clc", "cloud", "object", "storage", "gateway"],"
+  "keywords": ["clc", "cloud", "object", "storage", "gateway"],
   "attachments": [],
   "contentIsHTML": false
 }}}

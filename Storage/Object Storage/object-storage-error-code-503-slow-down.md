@@ -2,7 +2,7 @@
   "title": "Object Storage Error Code: 503 Slow Down",
   "date": "2-8-2018",
   "author": "Daniel Stephan",
-  "keywords": ["clc", "cloud", "object", "storage"],"
+  "keywords": ["clc", "cloud", "object", "storage"],
   "attachments": [],
   "contentIsHTML": false
 }}}
