@@ -2,7 +2,8 @@
  "title": "CenturyLink Private Cloud on VMware Cloud Foundation FAQ",
  "date": "06-14-2018",
  "author": "Anthony Hakim",
- "attachments": [],
+ "keywords": ["cpc", "cloud", "vm", "faq", "support", "vapp", "vcloud", "vcf"],
+"attachments": [],
  "related-products" : [],
  "contentIsHTML": false
  }}}

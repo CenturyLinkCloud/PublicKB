@@ -2,7 +2,8 @@
  "title": "Glossary of Terms",
  "date": "06-07-2018",
  "author": "Anthony Hakim",
- "attachments": [],
+ "keywords": ["cpc", "cloud", "vm", "glossary", "vapp", "vcloud", "vcf"],
+"attachments": [],
  "related-products" : [],
  "contentIsHTML": false
  }}}

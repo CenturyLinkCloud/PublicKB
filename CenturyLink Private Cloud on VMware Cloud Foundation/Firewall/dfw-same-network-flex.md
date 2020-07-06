@@ -2,6 +2,7 @@
   "title": "Micro-segmentation with Distributed Firewall - Same Network (Flex UI)",
   "date": "12-17-2018",
   "author": "Anthony Hakim",
+  "keywords": ["cpc", "cloud", "vmware", "firewall", "dfw", "flex", "support", "vcf"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

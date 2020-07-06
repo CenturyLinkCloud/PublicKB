@@ -2,6 +2,7 @@
   "title": "Adding a New Organization Administrator",
   "date": "5-8-2019",
   "author": "Hannah Melvin",
+  "keywords": ["cpc", "cloud", "vmware", "admin", "vcloud", "vcf"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

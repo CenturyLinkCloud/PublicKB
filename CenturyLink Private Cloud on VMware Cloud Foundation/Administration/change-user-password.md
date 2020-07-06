@@ -2,6 +2,7 @@
   "title": "Change User Password",
   "date": "06-16-2020",
   "author": "Anthony Hakim",
+  "keywords": ["cpc", "cloud", "vmware", "admin", "password"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

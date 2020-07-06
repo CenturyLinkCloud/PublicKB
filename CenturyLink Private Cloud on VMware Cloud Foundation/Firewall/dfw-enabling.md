@@ -2,6 +2,7 @@
   "title": "Enabling the Distributed Firewall",
   "date": "5-7-2019",
   "author": "Hannah Melvin",
+  "keywords": ["cpc", "cloud", "vmware", "firewall", "support", "vcf"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
