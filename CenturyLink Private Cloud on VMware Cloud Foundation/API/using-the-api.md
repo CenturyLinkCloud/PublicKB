@@ -2,6 +2,7 @@
   "title": "Using the API",
   "date": "5-17-2018",
   "author": "Anthony Hakim",
+  "keywords": ["cpc", "cloud", "vmware", "admin", "vcloud", "vcf", "api"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

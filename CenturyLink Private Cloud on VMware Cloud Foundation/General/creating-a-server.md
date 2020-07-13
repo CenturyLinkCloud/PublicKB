@@ -2,6 +2,7 @@
   "title": "Creating a Server",
   "date": "5-6-2019",
   "author": "Hannah Melvin",
+  "keywords": ["cpc", "cloud", "vm", "server", "ssl", "vapp", "vpn", "vcf"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

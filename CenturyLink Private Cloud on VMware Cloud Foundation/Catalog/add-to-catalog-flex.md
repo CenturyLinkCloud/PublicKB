@@ -2,6 +2,7 @@
   "title": "Adding to your Catalog (Flex UI)",
   "date": "5-17-2018",
   "author": "Anthony Hakim",
+  "keywords": ["cpc", "cloud", "vmware", "catalog", "ovf", "vcloud", "vapp", "vcf"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

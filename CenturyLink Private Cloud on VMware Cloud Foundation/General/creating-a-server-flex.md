@@ -2,6 +2,7 @@
   "title": "Creating a Server (Flex UI)",
   "date": "5-17-2018",
   "author": "Anthony Hakim",
+  "keywords": ["cpc", "cloud", "vm", "server", "network", "vapp", "ssl", "vpn", "vcf"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

@@ -2,6 +2,7 @@
   "title": "Using Simple Backup Anywhere",
   "date": "05-17-2018",
   "author": "Anthony Hakim",
+  "keywords": ["cpc", "cloud", "vmware", "backup", "vcloud", "vcf"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

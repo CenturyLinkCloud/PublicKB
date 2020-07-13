@@ -2,6 +2,7 @@
   "title": "Change Password on a VM",
   "date": "11-18-2019",
   "author": "Anthony Hakim",
+  "keywords": ["cpc", "cloud", "vm", "password", "support", "vapp", "template", "vcf"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

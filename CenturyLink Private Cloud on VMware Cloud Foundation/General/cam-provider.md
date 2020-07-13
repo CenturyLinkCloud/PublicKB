@@ -2,6 +2,7 @@
   "title": "Configuring a Provider for CAM",
   "date": "9-18-2018",
   "author": "Anthony Hakim",
+  "keywords": ["cpc", "cloud", "vmware", "cam", "support", "vcf"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

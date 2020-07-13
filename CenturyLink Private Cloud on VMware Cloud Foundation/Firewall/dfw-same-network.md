@@ -2,6 +2,7 @@
   "title": "Micro-segmentation with Distributed Firewall - Same Network",
   "date": "5-7-2019",
   "author": "Hannah Melvin",
+  "keywords": ["cpc", "cloud", "vmware", "firewall", "dfw", "network", "support", "vcf"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

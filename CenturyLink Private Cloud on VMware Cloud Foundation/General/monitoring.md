@@ -2,6 +2,7 @@
   "title": "Monitoring",
   "date": "5-20-2019",
   "author": "Anthony Hakim",
+  "keywords": ["cpc", "cloud", "vm", "monitoring", "vcf"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
