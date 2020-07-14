@@ -2,6 +2,7 @@
   "title": "Enabling the Distributed Firewall (Flex UI)",
   "date": "12-13-2018",
   "author": "Anthony Hakim",
+  "keywords": ["cpc", "cloud", "vmware", "firewall", "support", "vcf"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

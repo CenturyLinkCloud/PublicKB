@@ -2,6 +2,7 @@
   "title": "Default Catalog and How to Opt Out",
   "date": "5-22-2019",
   "author": "Anthony Hakim",
+  "keywords": ["cpc", "cloud", "vmware", "catalog", "template", "vapp", "vcf"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

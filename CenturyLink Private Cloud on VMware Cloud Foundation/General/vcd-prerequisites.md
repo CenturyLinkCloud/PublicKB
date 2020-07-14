@@ -2,6 +2,7 @@
   "title": "vCloud Director Prerequisites",
   "date": "5-17-2018",
   "author": "Anthony Hakim",
+  "keywords": ["cpc", "cloud", "vm", "vapp", "vcloud", "vcf"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

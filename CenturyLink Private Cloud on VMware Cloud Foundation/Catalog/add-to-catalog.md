@@ -2,6 +2,7 @@
   "title": "Adding to your Catalog",
   "date": "5-8-2019",
   "author": "Hannah Melvin",
+  "keywords": ["cpc", "cloud", "vmware", "catalog", "ovf", "template", "vapp", "vcf"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

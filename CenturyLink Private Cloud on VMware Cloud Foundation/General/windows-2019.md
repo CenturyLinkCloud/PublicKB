@@ -2,6 +2,7 @@
   "title": "Windows 2019",
   "date": "1-2-20",
   "author": "Hannah Melvin",
+  "keywords": ["cpc", "cloud", "vm", "windows2019", "vcloud", "vcf"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
