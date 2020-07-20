@@ -1,7 +1,7 @@
 {{{
   "title": "CenturyLink Cloud Trial Frequently Asked Questions",
   "date": "06-30-2020",
-  "author": "Anthony Hakim, Lyza Latham",
+  "author": "Lyza Latham",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -22,11 +22,11 @@ When you activate your CenturyLink Cloud account, you’ll have immediate access
 
 Limits of 6 CPU, 10 GB RAM, and 200 GB Storage. There are also some limits on rapid scale-up of resources, please contact [help@ctl.io](mailto:help@ctl.io) for more details.
 
-When your trial is exhausted, you will be billed on a monthly basis for consumption of services in your account, as defined by our [Pricing Catalog](https://www.ctl.io/pricing).
+You will be billed on a monthly basis for actual consumption of services in your account, as defined by our [Pricing Catalog](https://www.ctl.io/pricing).
 
 ### How long does it take to get an account activated?
 
-After you have entered the verification code, provided a valid credit card (Visa or Mastercard only - American Express, Discover, and pre-paid credit cards are not accepted), and completed the activation form, your account will be created instantly. You will then receive an email with your account details.
+After you have entered the verification code, provided a valid credit card, and completed the activation form, your account will be created instantly. You will then receive an email with your account details.
 
 ### What if I want to access public cloud servers in Latin America?
 
