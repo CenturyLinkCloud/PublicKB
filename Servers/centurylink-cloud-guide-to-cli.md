@@ -44,7 +44,7 @@ Comparison of the two CLI tools:
 | CLI         |   Python            | Go                  |
 | ---------   | ------------------- | -----------------   |
 | API version | Mostly v1 (some v2) |         v2          |
-| Resources     |  accounts <br> billing <br> blueprints <br> groups <br> networks <br> queue <br> servers <br> users <br>         |   alert-policy <br> anti-affinity-policy <br> autoscale-policy <br> backup <br> billing <br> crossdc-firewall-policy <br> custom-fields <br> data-center <br> db <br> firewall-policy <br> group <br> ips <br> load-balancer <br> load-balancer-pool <br> login <br> network <br> os-patch <br> server <br> site-to-site-vpn <br> version <br> wait <br> webhook <br>     |
+| Resources     |  accounts <br> billing <br> blueprints <br> groups <br> networks <br> queue <br> servers <br> users <br>         |   alert-policy <br> anti-affinity-policy <br> autoscale-policy <br> backup <br> billing <br> crossdc-firewall-policy <br> custom-fields <br> data-center <br> db <br> firewall-policy <br> group <br> load-balancer <br> load-balancer-pool <br> login <br> network <br> os-patch <br> server <br> site-to-site-vpn <br> version <br> wait <br> webhook <br>     |
 
 
 
@@ -181,7 +181,6 @@ Available resources:
     db
     firewall-policy
     group
-    ips
     load-balancer
     load-balancer-pool
     login
@@ -751,18 +750,6 @@ Once created, an output similar to below would include the IP address, the certi
 or 'STORAGE_UTILIZATION' to email or SMS) for the database instance**
 ```
 clc db create-notification  --subscription-id 3185 --destination-type SMS --location xxxxxxxxx --notifications NotificationType=MEMORY_UTILIZATION
-```
-
-### Intrusion Prevention Service
-For details of Intrusion Prevention Service, please see [here](../Security/getting-started-with-ips.md).
-
-**Install Intrusion Prevention Service on a host** (`uninstall` to uninstall)
-```
-clc ips install --server-name CA3ABCDTAKE02
-```
-**Set the notification (options: Webhook, Slack, syslog and Email) with email**
-```
-clc ips set-notifications --server-name CA3ABCDTAKE02 --notification-destinations '"type-code"="EMAIL","email-address"="monitor@abcd.com"'
 ```
 
 ### Patching Service
