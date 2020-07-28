@@ -38,14 +38,14 @@ To access your application from a computer outside the CenturyLink Cloud network
 
 ### Deploying the SMSPasscode partner Template
 ### How to Deploy the Partner Image
-1. Create an email to ServiceTasks@ctl.io.
+1. Create an email to help@ctl.io.
 
 2. Copy and paste the information below into the body of the email.
 
 3. Edit the information as needed and send.
 
 ```
-  TO: ServiceTasks@ctl.io
+  TO: help@ctl.io
 
   EMAIL SUBJECT:   Ecosystem Partner Template Import Request
 
