@@ -69,14 +69,14 @@ CenturyLink Cloud Customers
 After reading this article, the user should feel comfortable getting started using Silver Peak WAN Optimization VX technology on CenturyLink Cloud. Silver Peak has provided a Virtual Appliance - what we call a Blueprint - that can be deployed to your CenturyLink Cloud account via a Service Task.
 
 ### Howe to Deploy the Partner Image
-1. Create an email to ServiceTasks@ctl.io.
+1. Create an email to help@ctl.io.
 
 2. Copy and paste the information below into the body of the email.
 
 3. Edit the information as needed and send.
 
    ```
-   TO: ServiceTasks@ctl.io
+   TO: help@ctl.io
 
    EMAIL SUBJECT:   Ecosystem Partner Template Import Request
 
