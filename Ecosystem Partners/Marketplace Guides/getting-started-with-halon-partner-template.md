@@ -45,14 +45,14 @@ Halon’s end-user console is a browser based portal and does not require extens
 * Storage: 10 GB (Minimum)
 
 ### Howe to Deploy the Partner Image
-1. Create an email to ServiceTasks@ctl.io.
+1. Create an email to help@ctl.io.
 
 2. Copy and paste the information below into the body of the email.
 
 3. Edit the information as needed and send.
 
    ```
-   TO: ServiceTasks@ctl.io
+   TO: help@ctl.io
 
    EMAIL SUBJECT:   Ecosystem Partner Template Import Request
 
