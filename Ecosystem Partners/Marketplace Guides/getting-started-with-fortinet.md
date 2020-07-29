@@ -62,7 +62,7 @@ If you are interested in seeing this type of partner template deployment as an a
 ### Deploying, Accessing, and Configuring the Fortigate Partner Template
 The Fortinet partner template deploys in a virtual appliance model, as a CenturyLink Cloud partner template.  Follow these step by step instructions to deploy a Fortinet Fortigate partner template in to your CenturyLink Cloud account.
 
-1. Open a Service Task Request Ticket via an email to [ServiceTasks@ctl.io](mailto:ServiceTasks@ctl.io). Attach your Fortinet license to the email and include the following details in the email:
+1. Open a Service Task Request Ticket via an email to [help@ctl.io](mailto:help@ctl.io). Attach your Fortinet license to the email and include the following details in the email:
 
     * CenturyLink Cloud Account Alias
     * CenturyLink Cloud Account PIN
@@ -77,7 +77,7 @@ The Fortinet partner template deploys in a virtual appliance model, as a Century
 
  ```
     ----
-    TO: ServiceTasks@ctl.io
+    TO: help@ctl.io
 
     EMAIL SUBJECT: Ecosystem Partner Template Import Request
 
