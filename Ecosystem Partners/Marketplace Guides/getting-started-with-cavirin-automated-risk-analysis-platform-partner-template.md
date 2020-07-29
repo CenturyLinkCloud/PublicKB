@@ -76,10 +76,10 @@ If you want to access your Cavirin partner template over the internet, please pe
 ### Detailed Steps to Deploy Cavirin Automated Risk Analysis Platform
 The Cavirin partner template deploys in a virtual appliance model, as a CenturyLink Cloud *Partner Template*. Follow these step by step instructions to deploy a Cavirin partner template in to your CenturyLink Cloud account:
 
-* Open a service task request ticket via email to [ServiceTasks@Tctl.io](mailto:ServiceTasks@ctl.io) with the following details. *You will need to edit some of the information below and attach your Cavirin license to the email!*
+* Open a service task request ticket via email to [help@ctl.io](mailto:help@ctl.io) with the following details. *You will need to edit some of the information below and attach your Cavirin license to the email!*
 
 ----
-TO: ServiceTasks@ctl.io
+TO: help@ctl.io
 
 EMAIL SUBJECT:   Ecosystem Partner Template Import Request
 
