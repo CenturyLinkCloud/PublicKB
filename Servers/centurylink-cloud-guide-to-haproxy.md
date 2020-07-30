@@ -32,7 +32,7 @@ together to create a high availability load balancing solution.
 
 -   Identify a Network VLAN you want the HAProxy to reside on
 
--   Understanding the functions of load balancer (beyond the scope of this article) and CenturyLink Cloud load balancing  offerings, to learn more, please see this [KB](../Network/CenturyLink Cloud/load-balancing-dedicated-vs-shared.md),
+-   Understanding the functions of load balancer (beyond the scope of this article) and CenturyLink Cloud load balancing  offerings, to learn more, please see this [KB](../Network/CenturyLink Cloud/self-service-load-balancing-faq.md),
     [general knowledge](//en.wikipedia.org/wiki/Load_balancing_%28computing%29)
      and [HAProxy documentations](//www.haproxy.org/#docs)
 
