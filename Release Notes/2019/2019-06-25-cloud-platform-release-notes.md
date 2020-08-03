@@ -15,7 +15,7 @@
 
 CenturyLink Public Cloud Platform now offers the ability to create unmanaged Windows 2019 DataCenter Edition VMs. This is part of our ongoing efforts to improve the CenturyLink Public Cloud offerings.
 
-#### [SafeHaven](https://www.ctl.io/architecture/disaster-recovery/)
+#### SafeHaven
 
 ##### 5.2.0 release
 
