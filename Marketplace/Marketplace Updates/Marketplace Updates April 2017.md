@@ -10,6 +10,6 @@ The [CenturyLink Marketplace](https://www.ctl.io/marketplace/) provides self-ser
 
 Products added to the CenturyLink Marketplace April 2017 include:
 
-* [FlexSecure Passwordless Authentication](https://www.ctl.io/marketplace/partner/ADMN//)
+* [FlexSecure Passwordless Authentication](https://www.ctl.io/marketplace/partner/ADMN/product/FlexSecure-SMB/)
 FlexSecure is a context-based Authentication-as-a-Service API platform, providing passwordless and pin-based authentication. This platform enables organizations of all sizes to choose, or mix and match, appropriate user authentication methods to protect and secure their data sources on their Cloud/Mobile/IT infrastructure.
 By adding multi-layered authentication options that may require user interaction before granting access, organizations have the ability to add significant levels of security to protect their data from hackers and prevent unauthorized access.

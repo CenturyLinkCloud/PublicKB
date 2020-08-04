@@ -266,7 +266,7 @@ A: Yes. This is part of our new scheduling feature; for more details, please see
 
 **Q: Can I completely delete my backed up files from storage, regardless of the retention period?**
 
-A: No. This is a manual process at this time. A [support request](../Support/how-do-i-report-a-support-issue.md/#exceptions) will need to be opened to have this performed.
+A: No. This is a manual process at this time. A [support request](../Support/how-do-i-report-a-support-issue.md) will need to be opened to have this performed.
 
 **Q: Why do unchanged files not follow retention?**
 

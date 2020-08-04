@@ -35,7 +35,7 @@ The [CenturyLink Marketplace](https://www.ctl.io/marketplace/) added three new c
 
 * [*OSNEXUS QuantaStor SDS EE with Gold Support*](https://www.ctl.io/marketplace/partner/ZV5T/product/QuantaStor%20SDS%20with%20Gold%20Support%20%20%28License%20Only%29/) - QuantaStor is a unified Software Defined Storage (SDS) platform designed to scale out to make storage management easy while reducing overall enterprise storage costs. This is a License Only purchase. The customer is responsible for deploying QuantaStor SDS separately on the infrastructure of their choosing.
 
-* [*Apex Datacom Call Me*](https://www.ctl.io/marketplace/partner/APEX/product/Call%20Me%20Express/) - Apex Call Me is a Click-to-Call solution that enables web marketers to convert more web visitors into customers. Apex Call Me works with any business phone system with a US or Canadian phone number.
+* *Apex Datacom Call Me* - Apex Call Me is a Click-to-Call solution that enables web marketers to convert more web visitors into customers. Apex Call Me works with any business phone system with a US or Canadian phone number.
 
 * [*Alert Logic Threat Manager with Log Review*](https://www.ctl.io/marketplace/partner/PST/product/Alert%20Logic%20Log%20Manager%20with%20Log%20Review/) - Alert Logic Threat Manager with Log Review is a cloud-based managed network intrusion detection and vulnerability assessment solution delivered as-a-service.
 
