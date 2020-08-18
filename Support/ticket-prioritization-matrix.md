@@ -103,7 +103,7 @@ Each incoming ticket is triaged and the priority evaluated according to the crit
             <td>24 hours after request</td>
             <td>Ticket entry updated daily</td>
             <td>Completed Monday - Friday 7am - 7pm Pacific Time</td>
-            <td>servicetasks@ctl.io</td>
+            <td>help@ctl.io</td>
         </tr>
     </tbody>
 </table>

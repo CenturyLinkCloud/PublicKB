@@ -30,10 +30,10 @@ For some CenturyLink Cloud Ecosystem Program members, a Virtual Appliance or "cu
 This is an easy 3 step process that enables Ecosystem Partners to provide their OVA file via FTP and then request that it be moved to the Ecosystem Partner Global Repository.
 
 #### Step 1 - Open Service Task request and ask for a FTP account to upload the image to
-Open a service task request ticket with ServiceTasks@ctl.io with the following details:
+Open a service task request ticket with help@ctl.io with the following details:
 
 ----
-TO: ServiceTasks@ctl.io
+TO: help@ctl.io
 
 SUBJECT:  Custom Image Import Request for CLC Ecosystem Partner
 
@@ -55,7 +55,7 @@ your.name.here
 Upload your OVA file via FTP to the location provided by the Service Request team. Please do not use any compression besides .zip format.
 
 #### Step 3 - Request the image to the Global Repo
-Please reply to the previous service task request email with the FTP login from ServiceTasks@ctl.io with the following details:
+Please reply to the previous service task request email with the FTP login from help@ctl.io with the following details:
 
 ----
 _REPLY TO THE PREVIOUS REQUEST EMAIL TO KEEP THE REQUEST IN ONE TICKET_

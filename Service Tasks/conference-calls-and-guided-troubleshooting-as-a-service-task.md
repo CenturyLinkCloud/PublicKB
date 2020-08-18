@@ -25,7 +25,7 @@ Please note: We request at least 1 business day of notice for scheduling trouble
 CenturyLink Cloud service task engineering supports troubleshooting of the infrastructure environment, as well as offering advice on networking and system configurations.  We do not support Operating System or Application level troubleshooting.
 
 ### Detailed Steps to Request a Conference Call Service Task
-1. Send email to ServiceTasks@ctl.io. This will automatically create a ticket for the Service Tasks team to review.
+1. Send email to help@ctl.io. This will automatically create a ticket for the Service Tasks team to review.
 
 2. You will get an acknowledgement that we have received your request. Requests are reviewed by our Service Tasks team daily.
 
