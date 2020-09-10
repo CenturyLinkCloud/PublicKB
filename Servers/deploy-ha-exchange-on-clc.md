@@ -83,7 +83,7 @@ Add-WindowsFeature FS-FileServer
 
 * Ensure that File and Print Sharing is allowed in the Windows Firewall if the firewall is enabled
 
-At this point the FSW server is ready for the DAG to be created.  As a pre-requisite for the DAG, we will need to claim the internal cluster IP’s for each datacenter by requesting a NOC ticket (You can open a ticket by simply sending an email to noc@ctl.io).  We need both IP’s to be marked as claimed in the portal so they will be unavailable for newly provisioned servers (as provision servers will use the next available IP).  Below is an example of a claimed IP which we will use for the IL1 portion of the DAG:
+At this point the FSW server is ready for the DAG to be created.  As a pre-requisite for the DAG, we will need to claim the internal cluster IP’s for each datacenter by requesting a NOC ticket (You can open a ticket by simply sending an email to help@ctl.io).  We need both IP’s to be marked as claimed in the portal so they will be unavailable for newly provisioned servers (as provision servers will use the next available IP).  Below is an example of a claimed IP which we will use for the IL1 portion of the DAG:
 
 ![IP Addresses Menu](../images/deploy-ha-exchange-on-clc-10.png)
 

@@ -130,4 +130,4 @@ Free Trial: Get started for free with Ruxit today. The first 1,000 hours of moni
 
 #### Who should I contact for support?
 * For issues related to deploying the Ruxit Blueprint on CenturyLink Cloud or with the Ruxit software, please contact [support@Ruxit.com](mailto:support@Ruxit.com).
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).

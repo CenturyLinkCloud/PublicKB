@@ -117,4 +117,4 @@ CenturyLink Cloud works with [SMS PASSCODE](https://www.smspasscode.com) to prov
 
 #### Who should I contact for support?
 * For issues related to deploying the SMS PASSCODE Template on CenturyLink Cloud, please contact support@smspasscode.com.
-* For issues related to cloud infrastructure, please open a ticket using the CenturyLink Cloud Support Process.please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure, please open a ticket using the CenturyLink Cloud Support Process.please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).

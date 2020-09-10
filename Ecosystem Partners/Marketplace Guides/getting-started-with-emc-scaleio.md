@@ -149,7 +149,7 @@ available for purchase from [EMC directly][scaleio-store].
 
 * For issues related to cloud infrastructure (VMs, network, etc.), or
   if you experience a problem deploying the installer, please open a CenturyLink Cloud Support ticket by emailing
-  [noc@ctl.io](mailto:noc@ctl.io) or
+  [help@ctl.io](mailto:help@ctl.io) or
   [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
 
 
