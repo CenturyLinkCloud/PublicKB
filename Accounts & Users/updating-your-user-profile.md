@@ -53,4 +53,4 @@ A user is assigned a PIN at the time the user profile is created. You can custom
 
 #### Deleting a User Profile
 
-A User Profile may be deleted by an account administrator, but this will cause issues if you want to reuse the same username. A custom request needs to be filed by emailing noc@ctl.io. CenturyLink Cloud management approval is required.
+A User Profile may be deleted by an account administrator, but this will cause issues if you want to reuse the same username. A custom request needs to be filed by emailing help@ctl.io. CenturyLink Cloud management approval is required.

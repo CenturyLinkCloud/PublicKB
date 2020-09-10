@@ -160,4 +160,4 @@ Thank you very much, your_name_here
 **A:**
 * For issues regarding the Fortinet appliance, the application or functionality of it, please contact Fortinet via their 24x7 Web Support: [Fortinet](//support.fortinet.com), or via Phone Support: (866) 648 4638.
 
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).

@@ -85,4 +85,4 @@ For more information about UIM, click on the following links:
 
 #### Who should I contact for support?
 * For issues related to deploying the UIM Blueprint on CenturyLink Cloud, licensing or accessing the deployed software, please visit the [CA Support Website](http://www.ca.com/us/support.aspx?intcmp=headernav).
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or through the [CenturyLink Cloud Support website](https://support.ctl.io/hc/en-us/requests/new).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or through the [CenturyLink Cloud Support website](https://support.ctl.io/hc/en-us/requests/new).
