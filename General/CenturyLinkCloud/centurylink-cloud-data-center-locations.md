@@ -1,15 +1,16 @@
 {{{
   "title": "CenturyLink Edge Computing Locations",
-  "date": "4-20-2020",
+  "date": "9-10-2020",
   "author": "David Shacochis",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-Some important details about our edge computing service locations are listed below.  
+Some important details about our expanding Edge Computing Service locations are listed below.  
 * CenturyLink Cloud (CLC) is a multi-tenant computing service that enables flexible virtual machines and other datacenter services in a pay-as-you-go model.  
 * CenturyLink Edge Compute (CEC) is a bare-metal service, launching in the 2nd half of 2020, that enables pay-as-you-go server hardware on-demand.  Over time, the CLC service will be migrated to run on CEC.
 * CenturyLink Edge Colocation is available in sites operated by CenturyLink as well as from partner facilities in a re-sale model.  Any colocation model can be on-boarded as an Edge Hosting Environment where we can support a range of hybrid infrastructure managed services.
+
 
 **CLC Data Center**|**Provider**|**Physical Address**|**More Information**
 ---------------------------------|------------|--------------------|--------------------
@@ -27,22 +28,28 @@ Germany (Frankfurt) - DE1|Equinix|Lärchenstrasse 110<br>65933 Frankfurt- Griesh
 Germany (Frankfurt) - DE3|Interxion (FR6)|Landstraße 296a<br>60314 Frankfurt am Main Germany|[provider details](https://www.interxion.com/Locations/frankfurt/)
 APAC (Singapore) - SG1|Cyxtera (SG2)|29A International Business Park<br>Jurong East Singapore 609934|[provider details](https://www.cyxtera.com/images/sg2-singapore-colocation-tearsheet-ss122015.pdf)
 Australia - AU1|NextDC (S1)|4 Eden Park Dr <br>Macquarie Park NSW 2113|[provider details](https://www.nextdc.com/data-centres/s1-sydney-data-centre)
-Brazil – BR1|CenturyLink| Rua Eid. Manssur N° 666, Parque São George, Rodovia Raposo Tavares, Km 25, Cotia, Brazil|Coming in 2020
-Argentina – AR1|CenturyLink| Av. Del Campo N°  1301, Buenos Aires, Argentina|Coming in 2020
+Brazil – BR1|CenturyLink| Rua Eid. Manssur N° 666, Parque São George, Rodovia Raposo Tavares, Km 25, Cotia, Brazil|Coming in 2021
+Argentina – AR1|CenturyLink| Av. Del Campo N°  1301, Buenos Aires, Argentina|Coming in 2021
 
 **Region**|**CEC Data Center**|**CLLI Code**|**Provider**|**Physical Address**|**More Information**
 ---------|-----------------|-----------------|-----------------|--------------------------------------------|------------------
-NA|Dallas, TX|DLLATX37|CenturyLink|3180 Irving Blvd, Dallas, TX 75247|Coming in 2020 
-NA|Denver, CO|DNVRCOCH|CenturyLink|1850 Pearl St., Denver, CO 80203|Coming in 2020 
+NA|Denver, CO|DNVTCO56|CenturyLink|1850 Pearl St., Denver, CO 80203|Coming in 2020 
+NA|Phoenix, AZ|PHNDAZ91|CenturyLink|811 S. 16th Street, Phoenix, AZ 85034|Coming in 2020
 NA|Minneapolis, MN|MNNTMNIC|CenturyLink|5480 Feltl Rd, Minnesota, MN 55343|Coming in 2020 
-NA|Nashville, TN|NSVNTNJY|CenturyLink|2208 9th Avenue North, Nashville, TN 37208|Coming in 2020 
-NA|Phoenix, AZ|PHNDAZ91|CenturyLink|811 S. 16th Street, Phoenix, AZ 85034|Coming in 2020 
-NA|Chicago, IL|BRVWILCU|CenturyLink|2101 Roberts Drive, Broadview, IL 60155|Coming in 2021 
+NA|Nashville, TN|NSVMTN17|CenturyLink|2208 9th Avenue North, Nashville, TN 37208|Coming in 2020 
+NA|Chicago, IL|BRVWILCU|CenturyLink|2101 Roberts Drive, Broadview, IL 60155|Coming in 2020 
+NA|Pittsburgh, PA|PITEPADT|CenturyLink|143 South 25th Street Pittsburgh, PA 15203|Coming in 2020 
+NA|Tampa, FL|TAMRFLWS|CenturyLink|7909 Woodland Center Blvd, Tampa, FL 33614|Coming in 2020 
+NA|Kansas City, MO|KSCBMOVS|CenturyLink|1212 East 19th Street, Kansas City, MO 64108|Coming in 2020
 NA|San Francisco, CA|EMVLCA04|CenturyLink|5000 Hollis Street, Emeryville, CA 94608|Coming in 2021 
 NA|Seattle, WA|STTNWAHO|CenturyLink|1000 Denny Way, Seattle, WA 98109|Coming in 2021 
-NA|New York, NY|MNJTNJAB|CenturyLink|4260 US Route 1 North, Monmouth Junction, NJ 08852|Coming in 2021 
-NA|Washington, DC|MCLNVA23|CenturyLink|17557 Old Meadow Road, McClean, VA 22102|Coming in 2021 
-NA|Toronto, Canada|TORVONRF|CenturyLink|8 Garramond, Toronto, Canada|Coming in 2021 
+NA|Newark, NJ|MNJTNJAB|CenturyLink|4260 US Route 1 North, Newark, NJ 08852|Coming in 2021 
+NA|Cincinnati, OH|CNCNOHBV|CenturyLink|400 Pike Street, Cincinnati, OH 45202|Coming in 2021 
+NA|Raleigh, NC|RLGHNCJV|CenturyLink|5301 Departure Drive, Raleigh, NC 27616|Coming in 2021 
+NA|Las Vegas, NV|NLVGNVBV|CenturyLink|1 Aerojet Way North, Las Vegas, NV 89030|Coming in 2021 
+NA|Salt Lake City, UT|SLKDUTTX|CenturyLink|5035 Harold Gatty Drive, Salt Lake City, UT 84116|Coming in 2021
+NA|San Antonio, TX|SNAQTXKY|CenturyLink|5130 Service Center Drive, San Antonio,	TX 78218|Coming in 2021
+NA|San Diego, CA|SNDACAGL|CenturyLink|8929 Aero Drive, San Diego, CA 92123|Coming in 2021
 LATAM|Cotia, Brazil|CTIABZAF|CenturyLink|Rua Eid. Manssur N° 666, Parque São George, Rodovia Raposo Tavares, Km 25, Cotia, Brazil|Coming in 2021 
 LATAM|Buenos Aires, Argentina|BNARAGMS|CenturyLink|Av. Del Campo N° 1301, Buenos Aires, Argentina|Coming in 2021
 
@@ -147,7 +154,7 @@ NA|Salt Lake City, UT|CenturyLink|5035 Harold Gatty Drive, Salt Lake City, UT 84
 NA|San Antonio, TX|CenturyLink|5130 Service Center Drive, San Antonio, TX 78218|Coming in 2021
 NA|Santa Maria, CA|CenturyLink|122 Helena Ave, Santa Barbara, CA 93101|Coming in 2021
 NA|Stratford, TX|CenturyLink|501 W. Texas Avenue, Stratford, TX 79084|Coming in 2021
-NA|St. Louis, MO, MO|CenturyLink|1015 Locust Street, St. Louis, MO 63101|Coming in 2021
+NA|St. Louis, MO|CenturyLink|1015 Locust Street, St. Louis, MO 63101|Coming in 2021
 NA|Savannah, GA|CenturyLink|81 Ross Rd, Savannah, GA 31405|Coming in 2021
 NA|Syracuse, NY|CenturyLink|2 Clinton Square, Syracuse, NY 13202|Coming in 2021
 NA|Tallahassee, FL|CenturyLink|619 Mabry Street, Tallahassee, FL 32304|Coming in 2021
