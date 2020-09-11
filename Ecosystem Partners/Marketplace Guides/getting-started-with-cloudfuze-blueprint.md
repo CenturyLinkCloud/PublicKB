@@ -180,4 +180,4 @@ The costs associated with this Blueprint deployment are for the CenturyLink Clou
 
 #### Who should I contact for support?
 * For issues related to deploying the CloudFuze Blueprint on CenturyLink Cloud, please contact [support@CloudFuze.com](mailto:support@CloudFuze.com) or via telephone: (888) 600-6996.
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new) .
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new) .

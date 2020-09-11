@@ -61,7 +61,7 @@ Yes, executing this Runner job will initiate on-going monthly subscriptions for 
 **Who should I contact for support?**
 
 For issues regarding the Vormetric DSM virtual appliance, please contact Vormetric: [support@vormetric.zendesk.com](mailto:support@vormetric.zendesk.com).
-For issues related to cloud infrastructure (VMs, network, etc.), please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or through the support website.
+For issues related to cloud infrastructure (VMs, network, etc.), please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or through the support website.
 
 **What is the performance impact of Vormetric encryption?**
 

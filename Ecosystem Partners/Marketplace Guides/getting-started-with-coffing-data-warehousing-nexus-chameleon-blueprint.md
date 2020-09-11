@@ -105,7 +105,7 @@ Please contact [helpdesk@coffingdw.com](mailto:helpdesk@coffingdw.com) for a tri
 
 #### Who should I contact for support?
 * For issues directly related to the Nexus Chameleon, please email [helpdesk@coffingdw.com](mailto:helpdesk@coffingdw.com). Email usually provides the quickest response, however, you may also call 1-855-333-3537 Option 3 to speak with technical support.
-* For issues related to cloud infrastructure (VM’s, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VM’s, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).
 
 #### How do I license Nexus on Window Server?
 * Nexus uses a floating license concept for licensing multiple users on Windows Server. A user, typically an administrator, will license Nexus first and create the licensing database in a folder which all server users have access to. Subsequent users will reference this database when they license Nexus. For more information on this process, please refer to [this document](http://www.coffingdw.com/data/nexus/docs/windows_server_licensing.pdf).

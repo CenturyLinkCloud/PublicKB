@@ -125,4 +125,4 @@ Existing CenturyLink Enterprise Customers can contact their Account Representati
 
 #### Who should I contact for support?
 * For issues related to deploying the Blueprint, licensing, accessing or using the Saratoga Data application, please visit the [Saratoga Data Support Website](http://www.SaratogaDataSystems.com/support).
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new)
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new)

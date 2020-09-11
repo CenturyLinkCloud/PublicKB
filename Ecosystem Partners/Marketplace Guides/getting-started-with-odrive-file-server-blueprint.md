@@ -150,4 +150,4 @@ odrive is free. Sign up at: [http://odrive.com](http://odrive.com).
 #### Who should I contact for support?
 * For issues related to deploying the odrive Blueprint on CenturyLink Cloud or linking via SFTP, Licensing, Accessing or using the deployed software, please visit the odrive Support Forum: [https://www.odrive.com/forum/](https://www.odrive.com/forum/)
 
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).

@@ -6,6 +6,7 @@
     "Blueprints",
     "CenturyLink Private Cloud on VMware Cloud Foundation",
     "Cloud Application Manager",
+    "CenturyLink Edge Services",
     "Compliance",
     "Control Portal",
     "Database",

@@ -46,7 +46,7 @@ In an effort to provide the quality service you expect from CenturyLink on the l
 
 All affected customers have been notified via email of the impending migration. CenturyLink will perform the migration and there is no anticipated impact or downtime to the service during the migration. CenturyLink Cloud Load Balancing-as-a-Service uses a multi-tenant, scalable, and programmable infrastructure presented to the customer as a service. It offers all of the same functionality as the previous offer, as well as additional features and/or functionality that include Health-check monitoring and port forwarding configurations.
 
-You can learn more about the new offer and view pricing on the [Cloud Load Balancing-as-a-Service product page](https://www.ctl.io/load-balancing/). If you have additional questions, please feel free to contact [noc@ctl.io](mailto:noc@ctl.io), or read our [Knowledge Base article](../../General/LBaaS/LBaaSFAQ.md).
+You can learn more about the new offer and view pricing on the [Cloud Load Balancing-as-a-Service product page](https://www.ctl.io/load-balancing/). If you have additional questions, please feel free to contact [help@ctl.io](mailto:help@ctl.io), or read our [Knowledge Base article](../../General/LBaaS/LBaaSFAQ.md).
 
 #### [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/)
 
