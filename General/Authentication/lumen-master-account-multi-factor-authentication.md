@@ -1,12 +1,12 @@
 {{{
-  "title": "Managed Hosting and Private Cloud: Multi-Factor Authentication",
-  "date": "6-1-2018",
-  "author": "Evan McNeill",
+  "title": "Lumen Master Account: Multi-Factor Authentication",
+  "date": "9-15-2020",
+  "author": "Daniel Stephan",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-## Managed Hosting & Private Cloud: Getting Started on Multi-factor Authentication
+## Lumen Master Account: Getting Started on Multi-factor Authentication
 ### Design
 OTP based multi-factor authentication can be enforced for multifactor required customers, optionally enabled by a user during registration, or from their account page anytime after registration.
 
@@ -39,6 +39,6 @@ If you cannot scan the QR code you can click the QR code to reveal a secret key 
 <kbd>![MFA-5.PNG](../../images/MFA-5.png)</kbd>
 
 **4:** Multi Factor Authentication OTP Code
-After registration of your Multi Factor OTP, you will be prompted to enter the 6 digit code provided on your OTP smart phone app to complete your login process.  You will be prompted to enter this code after every subsequent login with their master account.
+After registration of your Multi Factor OTP, you will be prompted to enter the 6 digit code provided on your OTP smart phone app to complete your login process.  You will be prompted to enter this code after every subsequent login with your Lumen Master Account.
 
 <kbd>![MFA-6.PNG](../../images/MFA-6.png)</kbd>
