@@ -21,12 +21,10 @@ Go to [https://www.ctl.io/](https://www.ctl.io/), and click on the "Log In" link
 
 This will redirect you to the Lumen Master Account login page.
 
-![ES-MAR-2.png](../../images/ES-MAR-2.png)
+![lma-registration-1.png](../../images/lma-registration-1.png)
 
 **2:** Email Registration  
 Enter the email address you would like to register the Lumen Master Account with and click next.  If there is no Lumen Master Account registered to the email, it will automatically redirect you to user registration.  If this email is already registered, it will take you to a login page.
-
-![ES-MAR-3.png](../../images/ES-MAR-3.png)
 
 **3:** Enter Your Contact Details  
 Enter in your first and last name in the contact details section.  You will also be automatically assigned a PIN here.  If you do not like the PIN assigned, you may change it.  
@@ -38,36 +36,36 @@ Enter in your first and last name in the contact details section.  You will also
 
 Once done, click the next button.
 
-![ES-MAR-4.png](../../images/ES-MAR-4.png)
+![lma-registration-2.png](../../images/lma-registration-2.png)
 
 **4:** Setup Your Password  
 Enter your password and confirm the password.  Set the desired password expiration date.  Once done, click the next button.
 
-![ES-MAR-5.png](../../images/ES-MAR-5.png)
+![lma-registration-3.png](../../images/lma-registration-3.png)
 
 **5:** Opt-In to Multi-Factor Authentication  
 You can choose whether to use OTP multi-factor authentication, or not.  We highly recommend utilizing the multi-factor authentication to keep your account as safe as possible.  After choosing, click the next button.
 
 If you choose to use multi-factor authentication, you will set it up the next time you sign in.
 
-![ES-MAR-6.png](../../images/ES-MAR-6.png)
+![lma-registration-4.png](../../images/lma-registration-4.png)
 
 **6:** Setup Your Security Questions  
 You must now setup 3 security questions.  You can choose from one of the pre-populated questions, or you can choose to enter in a custom question.  Once done with all 3 questions, click next.
 
-![ES-MAR-7.png](../../images/ES-MAR-7.png)
+![lma-registration-5.png](../../images/lma-registration-5.png)
 
 **7:** Verify Your Email  
 After setting up your security questions, you will be asked to provide a token sent to your email address.  Log in to your email and obtain the token.  Enter it into the text box and click the register button.
 
 After a period of time, a button will appear that will help you track your email if you did not recieve it.  This will display information regarding the email.  Some common issues are the email was not sent because it was not a valid email address, or it was blocked by the receiving email server.
 
-![ES-MAR-8.png](../../images/ES-MAR-8.png)
+![lma-registration-6.png](../../images/lma-registration-6.png)
 
 **8:** Log In With Your Lumen Master Account  
 After verifying your email, you will be redirected to a login page.  Here you will enter in the password you just set up and sign in.
 
-![ES-MAR-9.png](../../images/ES-MAR-9.png)
+![lma-registration-7.png](../../images/lma-registration-7.png)
 
 **9:** Multi-Factor Authentication  
 If you elected to use multi-factor authentication, you will now be prompted to complete the multi-factor OTP registration.
@@ -78,7 +76,7 @@ If you didn't elect to use multi-factor authentication, or after you've provided
 
 For more information, please review the [account linking and unlinking guide](lumen-master-account-linking-and-unlinking-accounts.md).
 
-![ES-MAR-10.png](../../images/ES-MAR-10.png)  
+![lma-registration-8.png](../../images/lma-registration-8.png) 
 
 ### FAQ  
 **Q: What services does the Lumen Master Account currently work with?**
