@@ -1,5 +1,5 @@
 {{{
-  "title": "Enhanced Security: Ability to Reset Account Password via SMS",
+  "title": "Lumen Master Account: Ability to Reset Account Password via SMS",
   "date": "9-7-2018",
   "author": "Daniel Stephan",
   "attachments": [],
@@ -8,27 +8,24 @@
 
 ### Description
 
-As part of our efforts to increase the security of your accounts using the SavvisStation Portal and Private Cloud (DCC), you will need to go through a one-time setup to create a new Master Account.  You may also choose to use a Master Account to log into Cloud Application Manager or CenturyLink Cloud (Public Cloud).  Once setup is complete, for your security, you will receive a one-time prompt to provide credentials for your services to link them to your master account; as a result, you will be able to navigate between them without re-authenticating going forward. Other security improvements include optional multi-factor authentication through your smart phone (soft token) and the ability to set up multiple security questions for account validation and retrieval purposes.
+As part of our efforts to increase the security of your accounts using Managed Hosting (SavvisStation Portal) and Private Cloud (DCC), you will need to go through a one-time setup to create a new Lumen Master Account.  You may also choose to use a Lumen Master Account to log into Cloud Application Manager or Public Cloud.  Once setup is complete, for your security, you will receive a one-time prompt to provide credentials for your services to link them to your Lumen Master Account; as a result, you will be able to navigate between them without re-authenticating going forward. Other security improvements include optional multi-factor authentication through your smart phone (soft token) and the ability to set up multiple security questions for account validation and retrieval purposes.
 
 When you forget your password, one of the steps is to enter in a token code.  This token code is sent via email, or if you have enabled it, via SMS.  This article shows you how to add your phone number so you can choose to send this token via SMS.
 
-This article assumes that you have [created your master account](enhanced-security-master-account-registration.md) and you have [linked an account](enhanced-security-linking-and-unlinking_accounts.md).
+This article assumes that you have [created your Lumen Master Account](lumen-master-account-registration.md) and you have [linked an account](lumen-master-account-linking-and-unlinking_accounts.md).
 
 ### Steps
-**1:** Logging in With Your Master Account   
+**1:** Logging in With Your Lumen Master Account   
 
 Go to [https://www.ctl.io/](https://www.ctl.io/), and click on the "Log In" link to the top right.  Click on Managed Hosting.  
 
 ![ES-EARAVS-1.png](../../images/ES-EARAVS-1.png)
 
-Alternatively, you can go to [https://savvisstation.savvis.com](https://savvisstation.savvis.com), which will redirect you to the same login page.  
-
 Log in with your master account.  
-
 
 **2:** Managing Your Account  
 
-Once you are in SavvisStation, go to the top right and hover over your name.  Click on "My Account".  
+Once you are in Managed Hosting (SavvisStation), go to the top right and hover over your name.  Click on "My Account".  
 
 ![ES-EARAVS-2.png](../../images/ES-EARAVS-2.png)
 
