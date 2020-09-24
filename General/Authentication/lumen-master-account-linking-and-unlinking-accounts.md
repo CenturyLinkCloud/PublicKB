@@ -22,7 +22,7 @@ Go to [https://www.ctl.io/](https://www.ctl.io/), and click on the "Log In" link
 
 Log in with your Lumen Master Account.
 
-**Please Note:** If you have not linked an account yet, you will be brought to a screen asking you to login with your Managed Hosting (SavvisStation) credentials.  You can link your Managed Hosting (SavvisStation) account and then proceed to step 2.  Otherwise, you can hover over your name at the top right, click "Manage My Account", and proceed to step 3.
+**Please Note:** If you have not linked an account yet, you can skip to step 5 to learn how to link your account.
 
 **2:** Managing Your Account  
 Once you are in Managed Hosting (SavvisStation), go to the top right and hover over your name.  Click on "My Account".  
