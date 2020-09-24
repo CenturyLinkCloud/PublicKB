@@ -16,7 +16,7 @@ This article will walk you through some of the common issues, and what steps you
 Registration Issues|Steps to Resolve|
 :---|:---|
 I cannot click next on the password creation screen.|Ensure you are creating a valid password. If the password is not valid, follow the on screen prompts to ensure the password meets all requirements.
-I am constantly receiving session timeouts when trying to create a Lumen Master Account.|Remove all cookies in the browser you are trying to register with.  Lastly, go back to the service, which should redirect you back to the Master Account screen and try to [create your Lumen Master Account again.](lumen-master-account-registration.md)
+I am constantly receiving session timeouts when trying to create a Lumen Master Account.|Remove all cookies in the browser you are trying to register with.  Lastly, go back to the service, which should redirect you back to the Lumen Master Account screen and try to [create your Lumen Master Account again.](lumen-master-account-registration.md)
 I am unable to add my phone number|Ensure you are entering in a plus sign followed by your country calling code.  Ensure the phone number after that is correct. Example for US resident: +1-555-555-5555
 Sign-In Issues|Steps to Resolve
 I am unable to login.|Verify which account is being requested. For Lumen Master Accounts, you will enter in your email first, then be taken to another screen to enter your password. If you haven't linked an account for the service you are trying to access, you will be prompted to provide credentials for that service after logging into your Lumen Master Account. This process is only needed once if you check the "link my account" button. It will state "Account Linking" at the top. The service being linked will be stated in the information tab below that. In either scenario, you can reset your password by clicking the "Forgot your password" link below the login button.
@@ -99,7 +99,7 @@ Internet Explorer|11
 
 **Q: Can I link multiple Managed Hosting (SavvisStation), Private Cloud, Public Cloud or Cloud Application Manager accounts to one Lumen Master Account?**
 
-A: At this time, you can only link one of each type of account to a Lumen Master Account. If you have multiple accounts you wish to use, simply skip checking the "Link this account" check box when logging into the service. You will always need to use your Lumen Master Account credentials and ALSO enter your Managed Hosting (SavvisStation)/Private Cloud credentials each time you want to log into the service under this method.
+A: At this time, you can only link one of each type of account to a Lumen Master Account.
 
 **Q: How can I remove or change a linked account?**
 
