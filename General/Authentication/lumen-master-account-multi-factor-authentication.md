@@ -6,12 +6,12 @@
   "contentIsHTML": false
 }}}
 
-## Lumen Master Account: Getting Started on Multi-factor Authentication
-### Design
+### Description
 OTP based multi-factor authentication can be enforced for multifactor required customers, optionally enabled by a user during registration, or from their account page anytime after registration.
 
 OTP multi-factor authentication requires the use of a smart phone and compatible smart phone app (such as Google Authenticator or OTP Auth) or browser plug-in (such as Google Authenticator for Chrome)
-### Workflow
+
+### Steps
 
 **1:** Multi-Factor Opt-in within User Registration
 
