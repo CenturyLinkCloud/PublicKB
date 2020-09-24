@@ -1,5 +1,5 @@
 {{{
-  "title": "Enhanced Security: Locating and Changing Your PIN",
+  "title": "Lumen Master Account: Locating and Changing Your PIN",
   "date": "8-20-2018",
   "author": "Daniel Stephan",
   "attachments": [],
@@ -12,23 +12,21 @@ As part of our efforts to increase the security of your accounts using the Savvi
 
 When you engage with the customer care team, there will be times when you need to provide a PIN.  This PIN provides an additional way for the customer care team to validate who you are. This allows us the ability to better protect your account and information.  You will be required to provide a PIN whenever you attempt to make account changes or request sensitive data.  This article steps you through how you can locate your PIN.  It will also show you how can change your PIN if you would like to do so.
 
-This article assumes that you have [created your master account](enhanced-security-master-account-registration.md) and you have [linked an account](enhanced-security-linking-and-unlinking-accounts.md).
+This article assumes that you have [created your Lumen Master Account](lumen-master-account-registration.md) and you have [linked an account](lumen-master-account-linking-and-unlinking-accounts.md).
 
 ### Steps
-**1:** Logging in With Your Master Account   
+**1:** Logging in With Your Lumen Master Account   
 
 Go to [https://www.ctl.io/](https://www.ctl.io/), and click on the "Log In" link to the top right.  Click on Managed Hosting.  
 
-![ES-LCYP-1.png](../../images/ES-LCYP-1.png)
-
-Alternatively, you can go to [https://savvisstation.savvis.com](https://savvisstation.savvis.com), which will redirect you to the same login page.  
+![ES-LCYP-1.png](../../images/ES-LCYP-1.png) 
 
 Log in with your master account.  
 
 
 **2:** Managing Your Account  
 
-Once you are in SavvisStation, go to the top right and hover over your name.  Click on "My Account".  
+Once you are in Managed Hosting, go to the top right and hover over your name.  Click on "My Account".  
 
 ![ES-LCYP-2.png](../../images/ES-LCYP-2.png)
 
