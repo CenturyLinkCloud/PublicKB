@@ -17,7 +17,7 @@ Please note: OTP multi-factor authentication requires the use of a smart phone a
 **1:** Go to the Lumen Master Account login page.  
 Go to [https://www.ctl.io/](https://www.ctl.io/), and click on the "Log In" link to the top right.  Click on either Managed Hosting or Private Cloud, whichever service you use.
 
-![ES-MAR-1.png](../../images/ES-MAR-1.png)
+![lma-log-in.png](../../images/lma-log-in.png)
 
 This will redirect you to the Lumen Master Account login page.
 
