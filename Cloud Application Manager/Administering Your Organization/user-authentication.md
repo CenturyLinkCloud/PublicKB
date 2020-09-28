@@ -217,7 +217,7 @@ When CenturyLink Master Account authentication method has been used, you can als
 
 ![CenturyLink Cloud Master Account link in user menu dropdown](../../images/cloud-application-manager/management/auth-sso-link.png)
 
-For more information about CenturyLink Master Account please refer to [Enhanced Security: Master Account](../../General/Authentication/enhanced-security-master-account-registration.md)
+For more information about CenturyLink Master Account please refer to [Enhanced Security: Master Account](../../General/Authentication/lumen-master-account-registration.md)
 
 ### Contacting Cloud Application Manager Support
 
