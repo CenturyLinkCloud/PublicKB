@@ -23,10 +23,8 @@ We're sorry to see you go. To make sure your off-boarding experience is as easy 
 3. Use the Control Portal or [API][4] to delete any actively billed services.
     - __Services not deleted may accrue further charges before an account is completely deleted (e.g. server storage).__ Confirmation of account closure by the CenturyLink Cloud team doesn't necessarily mean that no further charges will accumulate, so you should ensure all services have been deleted __before__ requesting account closure.
     - The account's OpenVPN server and network can't be deleted and can safely be ignored. These reside in the account's primary data center and aren't billed as they come with the account by default. The OpenVPN server will follow [platform naming conventions][5] using the name "VPN" (e.g. VA1ABCDVPN01).
-4. Submit the account closure request by navigating to the [Account Profile/Info page][6] and clicking the "request to close" link.
-    - This link immediately generates a ticket for account closure __without__ an additional confirmation prompt. If you don't receive a confirmation by a member of the CenturyLink Cloud team after 1 hour, please email [help@ctl.io][7] or [submit a separate ticket][8] to verify the closure request was sent.
+4. Please email [help@ctl.io][7] or [submit a separate ticket][8] to request the account to be closed.
     - There's no guarantee that any server data or configurations can be retrieved after this point.
-    ![Close Account][9]
 
 ### Final Invoice
 If you have completely deleted the account resources __before__ requesting account closure, you'll receive your final invoice from CenturyLink after the close of the current month.
