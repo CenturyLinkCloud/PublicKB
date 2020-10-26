@@ -2,6 +2,7 @@
   "title": "Network Exchange Dedicated Access Endpoint Guide",
   "date": "06-28-2018",
   "author": "Jason Holland",
+  "keywords": ["clc", "cloud", "network", "dedicated", "managed", "hosting"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

@@ -18,6 +18,19 @@ For CenturyLink teams to be able to offer Managed Services on customer workloads
 
 CenturyLink Management Appliance enables CenturyLink Support Engineers the ability to access customer's workloads in a secure mechanism and provide Managed Services. Additionally, outbound internet access must be available for the Management Appliance and the managed workloads.
 
+The management appliance must be installed on a Centos 7 server.
+
+#### Supported OS
+
+* RHEL 6, 7, and 8
+* CentOS 6, 7, and 8 
+* Ubuntu 14, 16 and 18
+* Windows 2k08R2, 2k12 and 2k16
+
+Note for windows servers, .NET 4.6 and powershell 3.0 must be installed, and TLS 1.2 must be supported.
+
+For all other operating systems, please consult with a sales representative.  
+
 ### Enable Managed Services on a cloud provider in Cloud Application Manager (CAM)
 
 After configuring your AWS, Azure or CenturyLink Private Cloud on VMware Cloud Foundation provider within CAM (see Providers KB article) an initial synchronization of the provider will occur (a sync can be done at any time by clicking the Sync button on the provider's Logs tab).

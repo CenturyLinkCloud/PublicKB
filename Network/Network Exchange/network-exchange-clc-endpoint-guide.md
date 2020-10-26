@@ -2,6 +2,7 @@
   "title": "Network Exchange CenturyLink Cloud Endpoint Guide",
   "date": "06-28-2018",
   "author": "Jason Holland",
+  "keywords": ["clc", "cloud", "network", "dedicated", "bgp"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

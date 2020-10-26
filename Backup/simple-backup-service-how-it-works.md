@@ -2,6 +2,7 @@
   "title": "Simple Backup How It Works",
   "date": "2-27-2019",
   "author": "John Gerger",
+  "keywords": ["backup", "clc", "cloud", "restore", "security", "sbs", "server", "storage"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

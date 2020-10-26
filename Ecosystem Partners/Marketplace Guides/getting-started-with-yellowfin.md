@@ -37,14 +37,14 @@ To access your application from a computer outside the CenturyLink Cloud network
 ### Deploying the Yellowfin 7.2 Template
 
 ### How to Deploy the Partner Image
-1. Create an email to ServiceTasks@ctl.io.
+1. Create an email to help@ctl.io.
 
 2. Copy and paste the information below into the body of the email.
 
 3. Edit the information as needed and send.
 
    ```
-  TO: ServiceTasks@ctl.io
+  TO: help@ctl.io
 
   EMAIL SUBJECT:   Ecosystem Partner Template Import Request
 
@@ -86,4 +86,4 @@ CenturyLink Cloud works with [Yellowfin](http://www.yellowfinbi.com/) to provide
 
 #### Who should I contact for support?
 * [Yellowfin Forum](http://www.yellowfinbi.com/YFForum.i4).
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).

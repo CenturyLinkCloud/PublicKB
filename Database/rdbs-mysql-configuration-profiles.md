@@ -2,6 +2,7 @@
   "title": "Using Custom MySQL Configuration Profiles",
   "date": "05-25-2016",
   "author": "Christine Parr",
+  "keywords": ["clc", "cloud", "configuration", "database", "db", "dbaas", "failover", "mysql"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false

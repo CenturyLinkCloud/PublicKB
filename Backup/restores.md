@@ -2,6 +2,7 @@
   "title": "Simple Backup Restores",
   "date": "2-27-2019",
   "author": "John Gerger",
+  "keywords": ["backup", "clc", "cloud", "restore", "sbs", "portal"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

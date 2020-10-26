@@ -1,7 +1,8 @@
 {{{
   "title": "Using Object Storage for Backup as a Service",
   "date": "08-14-2016",
-  "author": "<a href='https://twitter.com/EvgenyRudinsky'>@EvgenyRudinsky</a>",
+  "author": "Evgeny Rudinsky",
+  "keywords": ["clc", "cloud", "cloudberry", "object", "permissions", "storage", "sql", "portal"],
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -37,7 +38,7 @@ CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storag
 * [Microsoft SQL backup](#microsoft-sql-backup)
 * [Microsoft Exchange backup](#microsoft-exchange-backup)
 
-#### Configuring CentryLink Object storage
+#### Configuring CenturyLink Object storage
 
 1. Open Cloudberry Backup Ultimate Edition, select file, in the main menu select «Add New Account» and select «CentryLink» icon.
 

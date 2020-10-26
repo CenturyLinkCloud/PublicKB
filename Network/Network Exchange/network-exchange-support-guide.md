@@ -2,6 +2,7 @@
   "title": "Network Exchange Support Guide",
   "date": "06-22-2018",
   "author": "Jason Holland",
+  "keywords": ["clc", "cloud", "network", "support"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

@@ -2,6 +2,7 @@
   "title": "Request Rate and Performance Considerations",
   "date": "1-9-2020",
   "author": "CenturyLink",
+  "keywords": ["clc", "cloud", "cdn", "object", "storage", "s3", "platform"],
   "attachments": [],
   "contentIsHTML": false
 }}}

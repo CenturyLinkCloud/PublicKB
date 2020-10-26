@@ -2,14 +2,12 @@
   "title": "Backing Up Relational Databases With Simple Backup Service",
   "date": "11-12-2019",
   "author": "John Gerger",
+  "keywords": ["backup", "clc", "cloud", "sbs", "sql", "mysql", "database"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
   "sticky": false
 }}}
-
-Backing Up Relational Databases With Simple Backup Service
-==========================================================
 
 If you would like to perform a “hot” backup of a relational database running on your CenturyLink Cloud server and store it offsite using Simple Backup Service(SBS), then there are a few special considerations you’ll need to take to ensure your backups are internally consistent and not missing key data.  
 

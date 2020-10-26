@@ -19,7 +19,7 @@ Our team of network engineers has deep operational expertise to quickly and effi
 
 ### Detailed Steps to Request a Service Task
 
-1. Send email to ServiceTasks@ctl.io. This will automatically create a ticket for the Service Tasks team to review.
+1. Send email to help@ctl.io. This will automatically create a ticket for the Service Tasks team to review.
 
 2. You will get an acknowledgement that we have received your request. Requests are reviewed by our Service Tasks team daily.
 

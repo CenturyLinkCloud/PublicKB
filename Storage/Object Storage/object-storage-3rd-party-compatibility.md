@@ -2,6 +2,7 @@
   "title": "Object Storage 3rd Party Compatibility",
   "date": "07-28-2017",
   "author": "Chris Little",
+  "keywords": ["clc", "cloud", "cloudberry", "object", "storage", "portal"],
   "attachments": [],
   "contentIsHTML": false
 }}}

@@ -2,6 +2,7 @@
   "title": "Simple Backup Service FAQs",
   "date": "06-08-2020",
   "author": "John Gerger",
+  "keywords": ["backup", "clc", "cloud", "faq", "sbs"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -37,7 +38,18 @@ A: SSH for Root is required to allow the blueprint to initially install the back
   up-uc1.backup.ctl.io
   up-gb3.backup.ctl.io
   ```
+SBS Requires SFTP to Install Client Packages. Sftp service should be enabled on Linux Servers.
 
+   - To Enable sftp service on LInux Servers, 
+
+1. Edit SSH configuration file /etc/ssh/sshd_config and add the below line
+  ```
+Subsystem sftp /usr/libexec/openssh/sftp-server
+  ```
+2. save the file and restart sftp service to the changes take effect.
+  ```
+service sshd restart
+  ```
 **Q: What operating systems are supported?**
 
 A: If the server is using one of the [platform-supported operating systems](../Support/supported-operating-systems.md), then SBS may be installed. **NOTE:** Exceptions to this are listed below.
@@ -265,7 +277,7 @@ A: Yes. This is part of our new scheduling feature; for more details, please see
 
 **Q: Can I completely delete my backed up files from storage, regardless of the retention period?**
 
-A: No. This is a manual process at this time. A [support request](../Support/how-do-i-report-a-support-issue.md/#exceptions) will need to be opened to have this performed.
+A: No. This is a manual process at this time. A [support request](../Support/how-do-i-report-a-support-issue.md) will need to be opened to have this performed.
 
 **Q: Why do unchanged files not follow retention?**
 

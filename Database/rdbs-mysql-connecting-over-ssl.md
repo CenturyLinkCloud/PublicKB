@@ -2,6 +2,7 @@
   "title": "Connecting to MySQL Relational DB over SSL-enabled Connection",
   "date": "01-25-2016",
   "author": "Lane Maxwell",
+  "keywords": ["clc", "cloud", "database", "db", "dbaas", "mysql", "portal", "ssl"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false

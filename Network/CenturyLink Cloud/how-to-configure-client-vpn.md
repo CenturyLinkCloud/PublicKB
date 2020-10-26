@@ -36,7 +36,7 @@ In order to maximize resource efficiency on the platform, the Client VPN service
 **How to Configure Client VPN – Windows**
 
 1. **Download and install the latest OpenVPN client for Windows**
-  1. Download the OpenVPN client from the [OpenVPN client](https://openvpn.net/index.php/open-source/downloads.html) website. There is currently a known issue when using OpevnVPN client version 2.4.5 with OpenVPN servers provisioned prior to June 2017, to resolve use  2.3.18-I602 64-bit release. Additional information can be found in our [Troubleshooting Article](../CenturyLink Cloud/vpn-client-connection-troubleshooting.md).
+  1. Download the OpenVPN client from the [OpenVPN client](https://build.openvpn.net/downloads/releases/openvpn-install-2.3.18-I001-x86_64.exe) website. There is currently a known issue when using OpevnVPN client version 2.4.5 with OpenVPN servers provisioned prior to June 2017, to resolve use  2.3.18-I001-x86_64 bit release. Additional information can be found in our [Troubleshooting Article](../CenturyLink Cloud/vpn-client-connection-troubleshooting.md).
   2. Double-click the installer and accept the UAC prompt.
   3. Accept all of the default options.
 2. **Copy the downloaded OpenVPN configuration files into place**

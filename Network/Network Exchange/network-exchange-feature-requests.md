@@ -2,6 +2,7 @@
   "title": "Network Exchange Feature Requests",
   "date": "06-22-2018",
   "author": "Jason Holland",
+  "keywords": ["clc", "cloud", "features", "network", "support"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

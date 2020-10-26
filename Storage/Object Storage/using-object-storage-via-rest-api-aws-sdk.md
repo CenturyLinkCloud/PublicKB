@@ -2,6 +2,7 @@
   "title": "Using Object Storage via REST API, AWS SDK",
   "date": "01-07-2015",
   "author": "Richard Seroter",
+  "keywords": ["clc", "cloud", "object", "storage", "portal"],
   "attachments": [],
   "contentIsHTML": false
 }}}

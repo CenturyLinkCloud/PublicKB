@@ -32,7 +32,7 @@ together to create a high availability load balancing solution.
 
 -   Identify a Network VLAN you want the HAProxy to reside on
 
--   Understanding the functions of load balancer (beyond the scope of this article) and CenturyLink Cloud load balancing  offerings, to learn more, please see this [KB](../Network/CenturyLink Cloud/load-balancing-dedicated-vs-shared.md),
+-   Understanding the functions of load balancer (beyond the scope of this article) and CenturyLink Cloud load balancing  offerings, to learn more, please see this [KB](../Network/CenturyLink Cloud/self-service-load-balancing-faq.md),
     [general knowledge](//en.wikipedia.org/wiki/Load_balancing_%28computing%29)
      and [HAProxy documentations](//www.haproxy.org/#docs)
 
@@ -291,4 +291,4 @@ The environment can be tested by disabling httpd (or the load balanced applicati
 
 ### Support
 * For issues related to deploying HAProxy, accessing the deployed software, please visit the [HAProxy Website](//www.haproxy.org/#supp)
-* For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying any Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](//t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying any Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the CenturyLink Cloud Support website](//t3n.zendesk.com/tickets/new).

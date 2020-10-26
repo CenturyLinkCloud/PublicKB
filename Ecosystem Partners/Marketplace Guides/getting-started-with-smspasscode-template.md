@@ -38,14 +38,14 @@ To access your application from a computer outside the CenturyLink Cloud network
 
 ### Deploying the SMSPasscode partner Template
 ### How to Deploy the Partner Image
-1. Create an email to ServiceTasks@ctl.io.
+1. Create an email to help@ctl.io.
 
 2. Copy and paste the information below into the body of the email.
 
 3. Edit the information as needed and send.
 
 ```
-  TO: ServiceTasks@ctl.io
+  TO: help@ctl.io
 
   EMAIL SUBJECT:   Ecosystem Partner Template Import Request
 
@@ -117,4 +117,4 @@ CenturyLink Cloud works with [SMS PASSCODE](https://www.smspasscode.com) to prov
 
 #### Who should I contact for support?
 * For issues related to deploying the SMS PASSCODE Template on CenturyLink Cloud, please contact support@smspasscode.com.
-* For issues related to cloud infrastructure, please open a ticket using the CenturyLink Cloud Support Process.please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure, please open a ticket using the CenturyLink Cloud Support Process.please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).

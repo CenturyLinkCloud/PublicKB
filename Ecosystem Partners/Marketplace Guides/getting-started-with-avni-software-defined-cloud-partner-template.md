@@ -66,10 +66,10 @@ If you are interested in seeing this type of Partner Template deployment as an a
 ### Detailed Steps to Deploy Avni SDC
 Avni SDC deploys in a virtual appliance model, as a CenturyLink Cloud *Partner Template*. Follow these step by step instructions to deploy a Avni SDC in to your CenturyLink Cloud account:
 
-* Open a service task request ticket via email to ServiceTasks@ctl.io with the following details. **You will need to edit some of the information below**.
+* Open a service task request ticket via email to help@ctl.io with the following details. **You will need to edit some of the information below**.
 
 ----
-TO: ServiceTasks@ctl.io
+TO: help@ctl.io
 
 EMAIL SUBJECT: Ecosystem Partner Template Import Request
 
@@ -149,4 +149,4 @@ Existing CenturyLink  Customers can contact their Account Representative for hel
   * Telephone Support - (650-224-2637
   * Web Support - [http://www.avni.io](http://www.avni.io)
 
-* For issues related to CenturyLink cloud infrastructure (VMs, storage, network, etc.), or if you experience a problem deploying the partner template, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to CenturyLink cloud infrastructure (VMs, storage, network, etc.), or if you experience a problem deploying the partner template, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).

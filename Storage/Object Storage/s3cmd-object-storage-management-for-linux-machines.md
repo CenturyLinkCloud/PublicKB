@@ -2,6 +2,7 @@
   "title": "S3CMD - Object Storage Management for Linux Machines",
   "date": "10-02-2015",
   "author": "Brian Button",
+  "keywords": ["clc", "cloud", "configuration", "object", "storage", "s3cmd", "portal"],
   "attachments": [],
   "contentIsHTML": false
 }}}

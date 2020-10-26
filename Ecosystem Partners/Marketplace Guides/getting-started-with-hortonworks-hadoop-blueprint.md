@@ -141,4 +141,4 @@ The costs associated with this Blueprint deployment are for the CenturyLink Clou
 
 #### Who should I contact for support?
 * CenturyLink Cloud does not support the Hortonworks Hadoop Server software. Please contact Hortonworks for any support around Hortonworks Hadoop.
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing noc@ctl.io or [through the support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing help@ctl.io or [through the support website](https://t3n.zendesk.com/tickets/new).

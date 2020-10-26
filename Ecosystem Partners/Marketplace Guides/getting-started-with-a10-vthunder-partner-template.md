@@ -61,10 +61,10 @@ If you are interested in seeing this type of Partner Template deployment as an a
 ### Detailed Steps to Deploy A10 vThunder Appliance Partner Template
 Follow these step by step instructions to deploy a A10 vThunder Appliance in to your CenturyLink Cloud account:
 
-* Open a service task request ticket via email to ServiceTasks@ctl.io with the following details.  You will need to edit some of the information below.
+* Open a service task request ticket via email to help@ctl.io with the following details.  You will need to edit some of the information below.
 
 ----
-TO: ServiceTasks@ctl.io
+TO: help@ctl.io
 
 EMAIL SUBJECT:   Custom Image Import Request for Ecosystem Partner Template
 
@@ -151,4 +151,4 @@ You can contact A10 directly using the information below.  Existing CenturyLink 
   - Email [support@a10networks.com](mailto:support@a10networks.com)
   - Telephone: (888) 822-7210 or international (408) 325-8676
 
-* For issues related to CenturyLink cloud infrastructure (VMs, storage, network, etc.), or if you experience a problem deploying the partner template, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to CenturyLink cloud infrastructure (VMs, storage, network, etc.), or if you experience a problem deploying the partner template, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).

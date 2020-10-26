@@ -2,6 +2,7 @@
   "title": "Deleting a Relational DB Instance",
   "date": "10-22-2017",
   "author": "Brian Waganer",
+  "keywords": ["clc", "cloud", "database", "db", "dbaas", "delete"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false
