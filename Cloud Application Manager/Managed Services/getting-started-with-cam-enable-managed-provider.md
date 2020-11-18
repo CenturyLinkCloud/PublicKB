@@ -25,7 +25,7 @@ The management appliance must be installed on a Centos 7 server.
 * RHEL 6, 7, and 8
 * CentOS 6, 7, and 8 
 * Ubuntu 14, 16 and 18
-* Windows 2k08R2, 2k12 and 2k16
+* Windows 2k08R2, 2k12, 2k16, and 2k19
 
 Note for windows servers, .NET 4.6 and powershell 3.0 must be installed, and TLS 1.2 must be supported.
 
