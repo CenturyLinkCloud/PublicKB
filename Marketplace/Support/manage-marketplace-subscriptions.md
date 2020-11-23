@@ -1,22 +1,57 @@
 {{{
 "title": "Managing Your Marketplace Subscriptions",
-"date": "05-01-2019",
+"date": "11-23-2020",
 "author": "Brandy Smith",
 "attachments": [],
 "contentIsHTML": false,
 "sticky": true
 }}}
 
+**Important Update 11-23-2020** 
+
+As of December 31st 2020, Lumen Marketplace will be decommissioned. 
+This means that the Marketplace will not be accessible and no new orders will be allowed to be purchased via the Marketplace after December 31st 2020.
+Lumen will continue to support existing Marketplace customers and Partners with any Marketplace subscriptions until their term commit date. 
+Please see the section labeled **Marketplace Support** below for more details on how to get support of Marketplace offers.
+This change will not affect the customers current subscriptions, management, or billing. 
+Customers can still manage their subscriptions via the Marketplace Manager by following the steps outlined below. 
+**At this time there is no action required by customers.** 
+
+**Marketplace Customers with Term Commit Subscriptions**
+
+Customers will continue to receive email notifications when their Marketplace services are nearing renewal. 
+Prior to the renewal customers will receive instruction on how to terminate or migrate their subscription (if applicable). 
+Lumen will notify customers directly via email. 
+ 
+**Marketplace Customers with Month-to-Month Subscriptions**
+
+Customers will be able to continue with the service on a month-to-month subscription model until Lumen notifies them of their go-forward options. 
+Lumen will notify customers directly via email. 
+
+**Marketplace Support**
+
+Support for 3rd Party Products and Services provisioned through the Lumen Marketplace is rendered by the individual 3rd Party Provider. 
+The Lumen Customer Care Team is unable to provide support for 3rd Party Products and Services purchased via the Marketplace. 
+Please reach out to the vendor directly for support options. 
+If you are experiencing issues with the infrastructure that hosts your Marketplace product and/or software please open a ticket with the Lumen team at help@ctl.io. 
+
+**Questions or Concerns** 
+
+If you are a Marketplace customer or Provider and have any questions or concerns regarding this notice, please feel free to reach out to our team via email [Marketplace team](mailto:Marketplace@centurylink.com).
+
+**Managing Your Marketplace Subscriptions**
+
+
 ### Description
-In this KB article, we walk through how to manage your CenturyLink Marketplace subscriptions via the [Marketplace Manager](https://marketplace.ctl.io/). The Marketplace Manager provides CenturyLink Marketplace customers with a dashboard view into all of their Marketplace subscriptions and estimated monthly billing charges.
+In this KB article, we walk through how to manage your Marketplace subscriptions via the [Marketplace Manager](https://marketplace.ctl.io/). The Marketplace Manager provide Marketplace customers with a dashboard view into all of their Marketplace subscriptions and estimated monthly billing charges.
 
 ### Audience
 
-* CenturyLink Marketplace customer
+* Marketplace customer
 
 ### Steps to Manage Marketplace Subscriptions
 
-**Log in:** You can log in to the Marketplace Manager by going to https://marketplace.ctl.io/ and using your CenturyLink Cloud credentials to log in. You can also access the Marketplace Manager via the CenturyLink Cloud control portal at https://control.ctl.io/, and log in using your CenturyLink Cloud account credentials. Once in the CenturyLink Cloud control portal you can access the Marketplace Manager under the **Orchestration** tab, then click **Marketplace Manager.**
+**Log in:** You can log in to the Marketplace Manager by going to https://marketplace.ctl.io/ and using your Lumen Cloud credentials to log in. You can also access the Marketplace Manager via the Lumen Cloud control portal at https://control.ctl.io/, and log in using your Lumen Cloud account credentials. Once in the Lumen Cloud control portal you can access the Marketplace Manager under the **Orchestration** tab, then click **Marketplace Manager.**
 
 **Reviewing Subscriptions:** Once logged in you can view your Marketplace subscriptions, see estimated monthly charges, request updates to your subscriptions (such as upgrades or downgrades), and terminate subscriptions (if no active term commit is in place). Please note that any taxes, overage, or usage based charges associated with your order are not listed. Rather, they will be reflected on your monthly invoices when applicable.
 
@@ -93,4 +128,4 @@ Ex. I am requesting termination of my subscription.
 
 5. The Provider of the Subscription for which you requested a termination will contact you via email. They will communicate to you when your termination request has been fulfilled with the date that billing will end.
 
-If you have questions about your Marketplace subscription or how to use the Marketplace Manager, please reach out to the [Marketplace team](mailto:Marketplace@centurylink.com). If you have a support based question or issue please review the Marketplace[Support KB](./software-support.md).
+If you have questions about your Marketplace subscription or how to use the Marketplace Manager, please reach out to the [Marketplace team](mailto:Marketplace@centurylink.com). 
