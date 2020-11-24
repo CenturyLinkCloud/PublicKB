@@ -26,7 +26,7 @@ Lumen is rapidly adding Edge Computing locations across the globe to provide cus
 
 Lumen Edge locations and availability for the expanding Edge Computing Service locations across the Lumen portfolio can be found [here](/knowledge-base/general/centurylinkcloud/centurylink-cloud-data-center-locations/).
 
-##### End of Availability for Legacy Services/Features
+### End of Availability for Legacy Services/Features
 
 As we grow the Lumen platforms to provide new and robust technology offers, we are retiring some of the legacy features or offers. Below is the list of the features that will be removed from the platforms by December 31, 2020.
 If these changes directly impact customer environments, a direct email communication was or will be sent to the impacted customers outlying the change and any customer action required.  
