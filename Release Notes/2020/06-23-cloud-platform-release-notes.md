@@ -43,6 +43,6 @@ The following features and/or offers are or will soon be no longer available on 
 * Marketplace
 * Network Exchange
 * Citrix NetScaler Licensing
-* Site redirect VM storage
+* Site Redirect Service
 * Relational Database-as-a-Service
 * IPS as a Service
