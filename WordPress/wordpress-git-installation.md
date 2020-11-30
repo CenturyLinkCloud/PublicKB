@@ -8,12 +8,16 @@
 }}}
 
 
-### IMPORTANT NOTECenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.
+### IMPORTANT NOTELumen
 
+Lumen WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
+Lumen
+During the Limited Beta there is no production Service Level Agreement.
+Lumen
 ## Overview
-Git is a lightweight, opensource, version control system. Initially designed for Linux, Git has been packaged for simple implementation on most operating systems and is the software used to clone and update CenturyLink WordPress repositories.
+Git is a lightweight, opensource, version control system. Initially designed for Linux, Git has been packaged for simple implementation on most operating systems and is the software used to clone and update Lumen WordPress repositories.
 
-Git 1.7.10 or newer is required for interacting with your CenturyLink WordPress repository.  There are many methods of installing Git, and many excellent Graphical User Interfaces, but these are the most basic methods to get a working copy of Git installed on the most common operating systems.
+Git 1.7.10 or newer is required for interacting with your Lumen WordPress repository.  There are many methods of installing Git, and many excellent Graphical User Interfaces, but these are the most basic methods to get a working copy of Git installed on the most common operating systems.
 
 * [Linux - Debian/Ubuntu](#debian)
 * [Linux - Redhat/Fedora/CentOS](#redhat)

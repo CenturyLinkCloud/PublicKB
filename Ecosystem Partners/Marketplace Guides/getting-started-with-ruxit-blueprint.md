@@ -23,9 +23,9 @@ Data is good. Answers are better.
 * Sales Email - [sales@Ruxit.com](mailto:sales@Ruxit.com)
 
 ### Description
-Ruxit has integrated their technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this full-stack monitoring solution.
+Ruxit has integrated their technology with the Lumen Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this full-stack monitoring solution.
 
-Technology from Ruxit helps CenturyLink Cloud customers address the business challenge of performance issues & outages, business continuity and scaling, by implementing a SaaS based full-stack monitoring solution - now available as part of the CenturyLink Cloud Blueprint Engine.
+Technology from Ruxit helps Lumen Cloud customers address the business challenge of performance issues & outages, business continuity and scaling, by implementing a SaaS based full-stack monitoring solution - now available as part of the Lumen Cloud Blueprint Engine.
 
 ### Solution Overview
 Ruxit provides the following:
@@ -61,13 +61,13 @@ The Ruxit all-in-one approach to monitoring combines user-experience-, network-,
 Ruxit automatically measures response times and detects JavaScript errors directly in your customers’ browsers. Ruxit even monitors the performance of 3rd party calls or applications that you rely on (for example, Facebook, Twitter, or CDNs).
 
 ### Audience
-CenturyLink Cloud Users, Developers, Application Owners, Operations and Engineering
+Lumen Cloud Users, Developers, Application Owners, Operations and Engineering
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the partner technology on CenturyLink Cloud. After executing the steps in this Getting Started document, the users will have a functioning Ruxit monitoring solution.
+After reading this article, the user should feel comfortable getting started using the partner technology on Lumen Cloud. After executing the steps in this Getting Started document, the users will have a functioning Ruxit monitoring solution.
 
 ### Offer
-Ruxit has provided a Blueprint that will easily add monitoring to your whole CenturyLink cloud environment and provide you the necessary performance and health answers of your environment.
+Ruxit has provided a Blueprint that will easily add monitoring to your whole Lumen cloud environment and provide you the necessary performance and health answers of your environment.
 
 ### Prerequisite
 * For running this Blueprint you first need to sign up for a free trial for Ruxit monitoring.
@@ -117,7 +117,7 @@ Once the Blueprint completes successfully, you will receive an email stating tha
 * If they are not, please open a support ticket by contacting Ruxit support.
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no Ruxit license costs or additional fees bundled in.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. There are no Ruxit license costs or additional fees bundled in.
 
 Ruxit is the first monitoring solution to offer a pure pay-as-you-go pricing model. You can get started monitoring for as little as 15 cents an hour—and you only pay for what you use. No long-term contract or commitments. We also offer a special program for startups. Our startup package allows you to monitor up to 10 machines and 2 million user visits per month for up to 12 months.
 
@@ -129,5 +129,5 @@ Free Trial: Get started for free with Ruxit today. The first 1,000 hours of moni
 * To get your Ruxit license / Tenant ID please sign up at [http://www.Ruxit.com](http://www.Ruxit.com).
 
 #### Who should I contact for support?
-* For issues related to deploying the Ruxit Blueprint on CenturyLink Cloud or with the Ruxit software, please contact [support@Ruxit.com](mailto:support@Ruxit.com).
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to deploying the Ruxit Blueprint on Lumen Cloud or with the Ruxit software, please contact [support@Ruxit.com](mailto:support@Ruxit.com).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).

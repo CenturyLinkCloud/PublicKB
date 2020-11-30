@@ -1,5 +1,5 @@
 {{{ 
-"title": "CenturyLink Cloud Infrastructure Disclosure Confidentiality", 
+"title": "Lumen Cloud Infrastructure Disclosure Confidentiality", 
 "date": "5-21-2017", 
 "author": "Erik Jensen", 
 "attachments": [] 

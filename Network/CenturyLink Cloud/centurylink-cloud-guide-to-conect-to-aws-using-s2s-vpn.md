@@ -16,7 +16,7 @@
 ### Table of contents
 
 * [Overview](#overview)
-* [Create a Site to Site VPN in CenturyLink Cloud](#create-a-site-to-site-vpn-in-centurylink-cloud)
+* [Create a Site to Site VPN in Lumen Cloud](#create-a-site-to-site-vpn-in-centurylink-cloud)
 * [Create VPC](#create-vpc)
 * [Using CloudFormation Template](#using-cloudformation-template)
 * [VPN setup with an existing VPC](#vpn-setup-with-an-existing-vpc)
@@ -30,17 +30,17 @@
 ###  Overview
 This guide will walk through the different scenarios of connecting to an AWS environment using Site to Site VPN, including connecting to new VPC, existing VPC through console and using a basic CloudFormation template.
 
-### Create a Site to Site VPN in CenturyLink Cloud
+### Create a Site to Site VPN in Lumen Cloud
 
-1. Before creating the VPN, a network diagram below would help to identify the VLANs in CenturyLink cloud and the subnets in AWS to communicate over the site to site VPN.  
+1. Before creating the VPN, a network diagram below would help to identify the VLANs in Lumen cloud and the subnets in AWS to communicate over the site to site VPN.  
 
    ![aws-clc](../../images/awsvpn/clc-aws.png)
 
-2. First is to obtain the public IP address of the CenturyLink Cloud VPN gateway, this can be obtained from CenturyLink Cloud portal under Network -> Site to Site VPN.  Detail is for the CenturyLink Cloud Site to Site VPN setup is available [here](../CenturyLink Cloud/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md).
+2. First is to obtain the public IP address of the Lumen Cloud VPN gateway, this can be obtained from Lumen Cloud portal under Network -> Site to Site VPN.  Detail is for the Lumen Cloud Site to Site VPN setup is available [here](../CenturyLink Cloud/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md).
 
    ![aws-vpn](../../images/awsvpn/clc-s2s.png)
 
-3. The CenturyLink Cloud end point IP address will be displayed once the desired data center is chosen (see below):
+3. The Lumen Cloud end point IP address will be displayed once the desired data center is chosen (see below):
 
    ![aws-vpn](../../images/awsvpn/clc-vpn-endpoint.png)
 
@@ -72,13 +72,13 @@ A quick view on the configuration on the AWS side:
    * Click **Next**.
 
 4. Configure your VPN.  
-   * Enter **Customer Gateway IP** using the public IP of the CenturyLink VPN gateway obtained from first step.   
+   * Enter **Customer Gateway IP** using the public IP of the Lumen VPN gateway obtained from first step.   
 
    * Enter **Customer Gateway name** and **VPN Connection name**.  
 
    * Change **Routing type** to **Static**
 
-   * Enter the IP address of the CenturyLink Cloud VLAN(s) that needs to be communicated over the VLAN and paste it under **IP prefix** of Static Routes in AWS.  
+   * Enter the IP address of the Lumen Cloud VLAN(s) that needs to be communicated over the VLAN and paste it under **IP prefix** of Static Routes in AWS.  
 
    * Click **Create VPC**. This will initiate the VPC.
 
@@ -91,7 +91,7 @@ A quick view on the configuration on the AWS side:
 
    ![clc-vpn-download](../../images/awsvpn/aws-vpn-download.png)
 
-Please take note of the following parameters for the CenturyLink Cloud side VPN configuration:  
+Please take note of the following parameters for the Lumen Cloud side VPN configuration:  
 ```
   Your VPN Connection ID 		  : vpn-xxxxxxxx
   Your Virtual Private Gateway ID  : vgw-xxxxxxxx
@@ -129,16 +129,16 @@ An Alternative way to create a VPC with VPN connection is using CloudFormation t
 3. Provide  
   *	Name Tag  
   *	Virtual Private Gateway that the VPN is connecting  
-  *	Customer Gateway (New for CenturyLink Cloud)  
-  *	IP can be found in Create VPN page on CenturyLink Cloud (1 per data center)  
+  *	Customer Gateway (New for Lumen Cloud)  
+  *	IP can be found in Create VPN page on Lumen Cloud (1 per data center)  
   *	BGP ASN (leave as default)  
   *	Routing option: Static  
-  *	Enter CenturyLink Cloud Network(s) that needs to communicate with AWS environment  
+  *	Enter Lumen Cloud Network(s) that needs to communicate with AWS environment  
   *	Tunnel Options: default  
-4. Using the AWS VPN configuration file, with the information from the file, complete the VPN setup in CenturyLink Cloud Site to Site VPN setup
+4. Using the AWS VPN configuration file, with the information from the file, complete the VPN setup in Lumen Cloud Site to Site VPN setup
 
 ### VPN Configuration on CLC
-1. From CenturyLink Cloud portal under Network -> Site to Site VPN.  Detail is for the CenturyLink Cloud Site to Site VPN setup is available here. Pick the VPN endpoint that is configured as part of the AWS VPN configuration and add the CenturyLink Cloud VLAN(s) as part of the VPN setup for **VPN Peer IPv4 Address**.
+1. From Lumen Cloud portal under Network -> Site to Site VPN.  Detail is for the Lumen Cloud Site to Site VPN setup is available here. Pick the VPN endpoint that is configured as part of the AWS VPN configuration and add the Lumen Cloud VLAN(s) as part of the VPN setup for **VPN Peer IPv4 Address**.
    ![aws-vpn](../../images/awsvpn/clc-vpn-endpoint.png)
 
 2. Enter **Site Name** (this can be the AWS VPN Connection ID) and **Device Name** (can be anything or using the AWS VPN ID).  
@@ -170,11 +170,11 @@ Using the VPN configuration file downloaded to complete the next two step
 * **Lifetime Value**: 1 hour  
 
 Click **Finish**.  
-Once the CenturyLink VPN is created, check on the AWS portal and click on **VPN connections**. The tunnel should now be **UP**.  
+Once the Lumen VPN is created, check on the AWS portal and click on **VPN connections**. The tunnel should now be **UP**.  
 
 
 ### Verify AWS Route Tables
-1. Once VPN setup is completed, verify the VPC Route Tables is correct, either the default route or the CenturyLink subnets should be routed through the Virtual Private Network
+1. Once VPN setup is completed, verify the VPC Route Tables is correct, either the default route or the Lumen subnets should be routed through the Virtual Private Network
    ![aws-routing](../../images/awsvpn/aws-routing.png)
 2. Ensure Network ACL and Security Group are configured to allow traffic from the CLC network  
    ![acl](../../images/awsvpn/acl.png)  
@@ -188,4 +188,4 @@ Customers who require custom configuration can leverage our [service task](//www
 
 ### Support
 
-* For issues related to cloud infrastructure (VM's, network, etc), or if you experience a problem deploying any Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the CenturyLink Cloud Support website](//t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VM's, network, etc), or if you experience a problem deploying any Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](//t3n.zendesk.com/tickets/new).

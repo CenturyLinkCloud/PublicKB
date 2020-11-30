@@ -14,7 +14,7 @@ How to delete a server and a server API in the Control Portal.
 
 ### Audience
 
-CenturyLink Cloud Customers
+Lumen Cloud Customers
 
 ### Steps
 

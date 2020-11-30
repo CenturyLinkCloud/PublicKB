@@ -9,7 +9,7 @@
 </p>
 <hr />
 <ul>
-  <li><strong>Blueprints:<em> </em>Open admin view with resume and setting completion.&nbsp;</strong>Account administrators can now resume a failed blueprint at a particular step. This functionality has been available to CenturyLink Cloud administrators and we are now
+  <li><strong>Blueprints:<em> </em>Open admin view with resume and setting completion.&nbsp;</strong>Account administrators can now resume a failed blueprint at a particular step. This functionality has been available to Lumen Cloud administrators and we are now
     opening it up for customers as well.&nbsp;&nbsp;</li>
   <li><strong>Web Fabric: When a user creates an app with multiple instances, show in UI.</strong>&nbsp;&nbsp;While users could use the vmc tool to see the number of instances that their Web Fabric application was running on, we have now made this information
     available in the Control Portal as well.</li>

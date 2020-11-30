@@ -8,11 +8,11 @@
 
 ### Overview
 
-Partner Cloud Integration allows an Cloud Application Manager user to create AWS Customer Accounts or transfer an existing one into CenturyLink's care. If you want to stop usage and completely shut down that AWS Customer Account, you must do more than delete the provider in Cloud Application Manager. You will also need to tell CenturyLink to turn off the actual AWS account via a CTL support ticket and CTL will assist to make sure the account is removed properly.  Not following this process could cause unexpected billing charges to continue.
+Partner Cloud Integration allows an Cloud Application Manager user to create AWS Customer Accounts or transfer an existing one into Lumen's care. If you want to stop usage and completely shut down that AWS Customer Account, you must do more than delete the provider in Cloud Application Manager. You will also need to tell Lumen to turn off the actual AWS account via a CTL support ticket and CTL will assist to make sure the account is removed properly.  Not following this process could cause unexpected billing charges to continue.
 
 ### Audience
 
-All Cloud Application Manager Customers with AWS Providers supported by CenturyLink
+All Cloud Application Manager Customers with AWS Providers supported by Lumen
 
 ### Prerequisites
 
@@ -34,6 +34,6 @@ Submit a support request to remove your AWS Customer Account. To submit a suppor
 
 Please provide the following information for the delete:
 
-* Your first and last name (must be a user registered with CenturyLink for the account)
+* Your first and last name (must be a user registered with Lumen for the account)
 * Your company's name
 * If you do not already have the ability, request to delete your AWS account and your reason for the request.

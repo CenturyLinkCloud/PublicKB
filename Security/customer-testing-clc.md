@@ -12,7 +12,7 @@ There are three types of testing that we see our customers wanting or needing to
 
 ### Audience
 
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
 
@@ -28,7 +28,7 @@ CenturyLink Cloud Users
 
 Any test intended to find either limits or performance degradation points in systems.  
 
-**Required Notification:** CenturyLink does not allow customers to perform load testing except in very special, highly controlled circumstances that must be closely coordinated ahead of time.  Advance notice to the CLC help desk (in all cases) by opening a ticket at help@ctl.io and coordinating with a Customer Care Engineer during the testing.
+**Required Notification:** Lumen does not allow customers to perform load testing except in very special, highly controlled circumstances that must be closely coordinated ahead of time.  Advance notice to the CLC help desk (in all cases) by opening a ticket at help@ctl.io and coordinating with a Customer Care Engineer during the testing.
 
 Tools used for testing include: LoadRunner, NeoLoad, Rational Performance Tester, Jmeter, The Grinder, and other similar tools.
 
@@ -36,7 +36,7 @@ Tools used for testing include: LoadRunner, NeoLoad, Rational Performance Tester
 
 Any test intended to exploit known, or to find new, vulnerabilities in systems, applications or infrastructure configurations.  
 
-Note that CenturyLink does not allow customer testing of any parts of the shared infrastructure, any testing must be scoped within a customer’s own deployed solution.
+Note that Lumen does not allow customer testing of any parts of the shared infrastructure, any testing must be scoped within a customer’s own deployed solution.
 
 **Required Notification:** Advanced notice to the CLC help desk if the testing is performed on CLC infrastructure by opening a ticket at help@ctl.io.  Also, report any findings related to CLC infrastructure vulnerabilities by opening a ticket at security@ctl.io.
 
@@ -46,7 +46,7 @@ Tools used for testing include: Metasploit, ZAP, Burp Suite, protocol fuzzers, a
 
 This is a test that only looks for known vulnerabilities or configuration weaknesses in applications, systems or infrastructure, but does not actually attempt to exploit them.  
 
-Note that CenturyLink does not allow customer testing of any parts of the shared infrastructure, any testing must be scoped within a customer’s own deployed solution.
+Note that Lumen does not allow customer testing of any parts of the shared infrastructure, any testing must be scoped within a customer’s own deployed solution.
 
 **Required Notification:** Allowed in customer’s own infrastructure without advanced notice to CLC.  If CLC infrastructure is to be scanned, we request advanced notice and a report of any findings related to CLC infrastructure vulnerabilities by opening a ticket at security@ctl.io.
 

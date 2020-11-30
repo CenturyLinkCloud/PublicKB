@@ -7,16 +7,16 @@
 }}}
 
 ### Overview
-This article discusses what a Hairpin NAT is and its support within CenturyLink Cloud
+This article discusses what a Hairpin NAT is and its support within Lumen Cloud
 
 ### What is a Hairpin NAT?
 Also referred to as "hairpinning", [hairpinning](//en.wikipedia.org/wiki/Hairpinning) describes communication between two hosts behind the same NAT device using their mapped endpoint.
 
 ### Hairpinning/Hairpin NAT support
-CenturyLink Cloud supports Hairpinning/Hairpin NAT services at a platform level globally. Any **new or existing** public IP addresses are provided with this functionality.
+Lumen Cloud supports Hairpinning/Hairpin NAT services at a platform level globally. Any **new or existing** public IP addresses are provided with this functionality.
 
-### How Hairpin NAT works within CenturyLink Cloud
-Hairpin NAT optimizes the path that traffic takes between servers within CenturyLink Cloud.  When a cloud server initiates traffic to a public IP address that is hosted in the same datacenter, the hairpin functionality keeps the traffic internal to the datacenter edge network infrastructure as it does not need to be forwarded to the internet.  Therefore a cloud server can communicate with another cloud server in the same datacenter using the private or public IP.
+### How Hairpin NAT works within Lumen Cloud
+Hairpin NAT optimizes the path that traffic takes between servers within Lumen Cloud.  When a cloud server initiates traffic to a public IP address that is hosted in the same datacenter, the hairpin functionality keeps the traffic internal to the datacenter edge network infrastructure as it does not need to be forwarded to the internet.  Therefore a cloud server can communicate with another cloud server in the same datacenter using the private or public IP.
 
 Hairpin flow example - Destination server 10.10.20.x with public IP 65.x.x.x
 1. CLC server 10.20.30.x sends a packet to 65.x.x.x
@@ -29,7 +29,7 @@ Hairpin flow example - Destination server 10.10.20.x with public IP 65.x.x.x
 |CLC Public IP|CLC Public IP|Source public IP|
 |CLC Private IP|CLC public IP|Public NAT pool address range*|
 
-\*Due to security concerns with using the public NAT pool in a source traffic restriction list, CenturyLink Cloud recommends that a public IP is assigned to the source server.
+\*Due to security concerns with using the public NAT pool in a source traffic restriction list, Lumen Cloud recommends that a public IP is assigned to the source server.
 
 \*Note that CLC is performing infrastructure upgrades that change the behavior of the Private IP NAT hairpin.
 If you have CLC Private IPs in the source traffic restriction list and traffic is not passing, please contact support for assistance at help@ctl.io.
@@ -38,10 +38,10 @@ If you have CLC Private IPs in the source traffic restriction list and traffic i
 
 #### Question: Am I using Hairpin NAT?
 
-**Answer:** A typical scenario for Hairpin NAT would be when a DNS name is referenced by a CLC server that does not have a public IP address.  The server would access xyz.com which resolves to a CLC hosted public address.  CenturyLink Cloud recommends that a private DNS be used for CLC servers which can be used to provide the internal IP which does not need to traverse the edge.
+**Answer:** A typical scenario for Hairpin NAT would be when a DNS name is referenced by a CLC server that does not have a public IP address.  The server would access xyz.com which resolves to a CLC hosted public address.  Lumen Cloud recommends that a private DNS be used for CLC servers which can be used to provide the internal IP which does not need to traverse the edge.
 
 #### Question: Should I use Hairpin NAT?
-**Answer:** CenturyLink Cloud recommends that the internal IP address should be used as it will take a more optimal path and not need to be processed by the edge network infrastructure.  Typically a DNS server internal to your account can be used to reference the internal CLC address.
+**Answer:** Lumen Cloud recommends that the internal IP address should be used as it will take a more optimal path and not need to be processed by the edge network infrastructure.  Typically a DNS server internal to your account can be used to reference the internal CLC address.
 
 #### Question: Do I need to include IPs from my Site-to-Site IPSec VPN, Cloud Network Service or Network Exchange link in the public IPs source traffic restriction list?
 

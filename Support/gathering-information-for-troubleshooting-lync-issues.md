@@ -8,7 +8,7 @@
 
 <p><strong>Description (goal/purpose)</strong>
 </p>
-<p>A guide to troubleshooting Lync issues. This guide will help you gather the necessary information to open a trouble ticket with CenturyLink Cloud if you are having an issue with Lync. This information is required in order for the Managed Services team to troubleshoot
+<p>A guide to troubleshooting Lync issues. This guide will help you gather the necessary information to open a trouble ticket with Lumen Cloud if you are having an issue with Lync. This information is required in order for the Managed Services team to troubleshoot
   the issue.</p>
 <p><strong>Audience</strong>
 </p>
@@ -26,7 +26,7 @@
 </ul>
 <p><strong>Information needed:</strong>
 </p>
-<p>Prior to opening a ticket with CenturyLink Cloud, please gather the following information:</p>
+<p>Prior to opening a ticket with Lumen Cloud, please gather the following information:</p>
 <ul>
   <li><strong>Name, SIP&nbsp;Address, OS and client&nbsp;and if applicable,&nbsp;Lync Phone number</strong>
   </li>
@@ -82,5 +82,5 @@
   <br />There will typically be a searchable error in there a clue to point you further in troubleshooting.</p>
 <p><strong>Gather all the information and log files and submit a ticket.</strong>
 </p>
-<p>After you have all the above information, open a ticket with the NOC by sending an email to CenturyLink Cloud support. Existing Managed Services customers will have this address. Alternatively, Log onto the Control Portal <a href="https://control.tier3.com/">https://control.tier3.com</a>  and click Support.</p>
+<p>After you have all the above information, open a ticket with the NOC by sending an email to Lumen Cloud support. Existing Managed Services customers will have this address. Alternatively, Log onto the Control Portal <a href="https://control.tier3.com/">https://control.tier3.com</a>  and click Support.</p>
 <p>In your ticket request include all the above information and attach all log files gathered. This information will be used to troubleshoot the issue.</p>

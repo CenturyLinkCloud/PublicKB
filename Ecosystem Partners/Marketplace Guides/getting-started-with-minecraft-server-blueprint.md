@@ -16,27 +16,27 @@ Minecraft is a sandbox construction game where you can build anything you can im
 For more information, please view http://www.Minecraft.com.
 
 ### Description
-CenturyLink has created a Blueprint that makes it extremely easy to spin up a private Minecraft Server in minutes. You can start using your Minecraft server immediately after the Blueprint completes. The Blueprint will automatically install and configure Minecraft Server 1.8.3.
+Lumen has created a Blueprint that makes it extremely easy to spin up a private Minecraft Server in minutes. You can start using your Minecraft server immediately after the Blueprint completes. The Blueprint will automatically install and configure Minecraft Server 1.8.3.
 
-Advantages of running Minecraft Server in CenturyLink Cloud:
+Advantages of running Minecraft Server in Lumen Cloud:
 * Fast Provisioning - get a Minecraft server running within minutes- No long term server commitment - pay as you go each month.
 * On-Demand Scalability - Add more CPU, Disk or Memory resources on-the-fly as your worlds grow.
-* Save Money - Run your Minecraft server only when you use it. You can host a server just in the evenings or weekends with your friends and not have to pay to run it 24/7 unless you chose to. You can use the CenturyLink Cloud mobile app to start and stop your Minecraft server anytime, anywhere.
+* Save Money - Run your Minecraft server only when you use it. You can host a server just in the evenings or weekends with your friends and not have to pay to run it 24/7 unless you chose to. You can use the Lumen Cloud mobile app to start and stop your Minecraft server anytime, anywhere.
 * Fast Bandwidth - Your Minecraft server has a 2GB inbound network throughput ensuring low latency game play.
 * Easy Backups - You can easily save your worlds anytime you choose, but we've also included an automatic backup in the configuration.
 * Customizable - Customize your Minecraft server by installing any mods you want!
 * No Technical Experience Required - Don't worry about setting up the VM and software dependencies, we did that for you. Just run the Blueprint and start playing.
 * Parental Control - Control where your family plays and who they play with by having ownership of the server.
-* Secure - CenturyLink Cloud includes network security and allows you to block users from connecting to your server at a network level in addition to game whitelists.
+* Secure - Lumen Cloud includes network security and allows you to block users from connecting to your server at a network level in addition to game whitelists.
 
 ### Audience
-CenturyLink Cloud Users, Creepers and Minecrafters
+Lumen Cloud Users, Creepers and Minecrafters
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the Minecraft Server Blueprint technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the Minecraft Server Blueprint technology on Lumen Cloud.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 
 ### Postrequisite
 * Allow incoming traffic for ports 25565 so users can play on your Minecraft server. To open the firewall port, Navigate to the server in the Control Portal and click on the Public IP address. Then, add a new rule for a specific port and enter 25565. Click `Add` when done so the changes are saved.
@@ -83,7 +83,7 @@ After your Blueprint deploys successfully, please follow these instructions to a
 6. To stop the server, login to the console and shut it down. If you are not sure how to do that, consult the Minecraft documentation.
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no Mojang or Microsoft license costs or additional fees bundled in.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. There are no Mojang or Microsoft license costs or additional fees bundled in.
 
 ### Frequently Asked Questions
 
@@ -112,5 +112,5 @@ The costs associated with this Blueprint deployment are for the CenturyLink Clou
 * Please view this documentation: http://minecraft.gamepedia.com/Server.properties
 
 #### Who should I contact for support?
-* CenturyLink Cloud does not support the Minecraft Server software. Please contact Mojang for any support around Minecraft.
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket: https://t3n.zendesk.com/tickets/new.
+* Lumen Cloud does not support the Minecraft Server software. Please contact Mojang for any support around Minecraft.
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a Lumen Cloud Support ticket: https://t3n.zendesk.com/tickets/new.

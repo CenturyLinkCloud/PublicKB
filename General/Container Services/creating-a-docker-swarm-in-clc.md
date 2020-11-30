@@ -1,5 +1,5 @@
 {{{
-  "title": "Creating a Docker Swarm on CenturyLink Cloud",
+  "title": "Creating a Docker Swarm on Lumen Cloud",
   "date": "07-09-2016",
   "author": "Richard Case",
   "attachments": [],
@@ -12,17 +12,17 @@ The release of Docker Engine v1.12 introduced swarm mode for creating and managi
 
 A Swarm is a collection (cluster) of nodes running Docker Engine following a decentralized design where services can be deployed. Swarm mode includes scaling, service discovery, desired state, and many other features. For an overview of Swarm mode see: https://docs.docker.com/engine/swarm/
 
-By using our plugin for Docker Machine, users can create a Docker swarm on CenturyLink Cloud by running a small number of Docker Machine commands to create the nodes. Thus allowing for the ability to run the Docker CLI commands required to create the swarm by setting the machine context using Docker Machine.
+By using our plugin for Docker Machine, users can create a Docker swarm on Lumen Cloud by running a small number of Docker Machine commands to create the nodes. Thus allowing for the ability to run the Docker CLI commands required to create the swarm by setting the machine context using Docker Machine.
 
 ### Prerequisites
 
-The following requirements are needed to create a Docker swarm in CenturyLink Cloud.
+The following requirements are needed to create a Docker swarm in Lumen Cloud.
 
 - [Docker v1.12 or later](https://www.docker.com/products/overview)
-- [CenturyLink Cloud Docker Machine Plugin](../../Ecosystem Partners/Marketplace Guides/getting-started-with-docker-machine.md)
-- A CenturyLink Cloud account
+- [Lumen Cloud Docker Machine Plugin](../../Ecosystem Partners/Marketplace Guides/getting-started-with-docker-machine.md)
+- A Lumen Cloud account
 
-If you don’t have a CenturyLink Cloud account yet, no problem. [Sign up for a free trial](https://www.ctl.io/free-trial/).
+If you don’t have a Lumen Cloud account yet, no problem. [Sign up for a free trial](https://www.ctl.io/free-trial/).
 
 
 ### Swarm Creation
@@ -57,7 +57,7 @@ export CLC_PASSWORD='<password>'
 export CLC_ALIAS='<alias>'
 ```
 
-3) Connect to CLC using VPN. To learn more about ways to connect such as persistent VPN or direct connection, please review [Network Access Options for Connecting to the CenturyLink Cloud Platform](../../Network/CenturyLink Cloud/network-access-options-for-connecting-to-centurylink-clouds-platform.md).
+3) Connect to CLC using VPN. To learn more about ways to connect such as persistent VPN or direct connection, please review [Network Access Options for Connecting to the Lumen Cloud Platform](../../Network/CenturyLink Cloud/network-access-options-for-connecting-to-centurylink-clouds-platform.md).
 
 ### Node Creation
 
@@ -166,4 +166,4 @@ You should see output similar to the following:
 This shows various information including the status of each node and which manager has been elected the leader.
 
 ### What's Next?
-Now you have a working Docker swarm running on the CenturyLink Cloud you are ready to start managing and deploying services to the swarm. It's recommended that you follow the swarm mode tutorial from this starting point: https://docs.docker.com/engine/swarm/manage-nodes/
+Now you have a working Docker swarm running on the Lumen Cloud you are ready to start managing and deploying services to the swarm. It's recommended that you follow the swarm mode tutorial from this starting point: https://docs.docker.com/engine/swarm/manage-nodes/

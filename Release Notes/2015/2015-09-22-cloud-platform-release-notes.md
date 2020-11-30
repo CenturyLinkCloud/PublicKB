@@ -14,8 +14,8 @@
 
 ### Enhancements (9)
 
-* __Cloud Platform.__ The CenturyLink Cloud platform updates include:
-  * __Subaccounts in the Service Catalog__. Administrators now have the ability to toggle permissions for showing and hiding sub-accounts using the CenturyLink Cloud Service Catalog.
+* __Cloud Platform.__ The Lumen Cloud platform updates include:
+  * __Subaccounts in the Service Catalog__. Administrators now have the ability to toggle permissions for showing and hiding sub-accounts using the Lumen Cloud Service Catalog.
   * __Reboot Message Upon Storage Removal.__ Users that remove a storage volume from a cloud server will now see a "reboot required" message.
   * __Set Your Own Price: Default Price Sheet.__ Users with System Billing Manager privileges (or above) can now create a "default" price sheet that can then be inherited by all sub-accounts.
 
@@ -26,7 +26,7 @@
 
 * __Bare Metal.__ Administrative passwords for bare metal servers can now be updated from the Control Portal.
 
-* __Managed MySQL Version Upgrade.__ The Managed MySQL version on CenturyLink Cloud has been updated to version 5.6.24.
+* __Managed MySQL Version Upgrade.__ The Managed MySQL version on Lumen Cloud has been updated to version 5.6.24.
 
 
 * __SafeHaven.__ Stability enhancements were introduced:
@@ -43,13 +43,13 @@
 
   ![MySQL Filter Screen](../../images/2015-09-22-MySQL_filter.png)
 
-  For more information and to sign up for the beta, visit our [product page on the CenturyLink Cloud website](https://www.ctl.io/dbaas/).
+  For more information and to sign up for the beta, visit our [product page on the Lumen Cloud website](https://www.ctl.io/dbaas/).
 
 * __WordPress Limited Beta.__ The WordPress Beta is continuing to evolve based on program participant feedback and production environment learnings. A few of the recent enhancements:
-    + __Integration with CenturyLink Cloud object storage buckets.__ Users can now link CenturyLink Cloud object storage buckets to a WordPress site during site creation. This helps with persistent storage of image uploads, and other media files.
+    + __Integration with Lumen Cloud object storage buckets.__ Users can now link Lumen Cloud object storage buckets to a WordPress site during site creation. This helps with persistent storage of image uploads, and other media files.
     + __SMTP Email Support.__ Each new WordPress site now has SMTP email configured automatically to assist with administrative emails such as password resets, new accounts, and other emails sent from WordPress.
 
-  For more information and to sign up for the beta, visit our [product page on the CenturyLink Cloud website](https://www.ctl.io/wordpress/).
+  For more information and to sign up for the beta, visit our [product page on the Lumen Cloud website](https://www.ctl.io/wordpress/).
 
 * __Intrusion Prevention Limited Beta.__ The Intrusion Prevention Beta service now supports additional Windows versions. Customers can now use IPS on the following Windows operating systems:
   * Microsoft Windows Server 2008 Standard R2 (64-bit)
@@ -60,7 +60,7 @@
   * Microsoft Windows Server 2012 Datacenter (64-bit)
   * Microsoft Windows Server 2012 Datacenter R2 (64-bit)
 
-  For more information and to sign up for the beta, visit our [product page on the CenturyLink Cloud website](https://www.ctl.io/intrusion-prevention-service/).
+  For more information and to sign up for the beta, visit our [product page on the Lumen Cloud website](https://www.ctl.io/intrusion-prevention-service/).
 
 ### Online Tools (1)
 

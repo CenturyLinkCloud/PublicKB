@@ -1,5 +1,5 @@
 {{{
-  "title": "Recommended Security Practices for Using CenturyLink Cloud",
+  "title": "Recommended Security Practices for Using Lumen Cloud",
   "date": "01-06-2015",
   "author": "Steve White",
   "attachments": [],
@@ -7,10 +7,10 @@
 }}}
 
 ### Description (goal/purpose)
-The purpose of this article is to provide some general recommended security practices for customers using CenturyLink Cloud. These practices are based on common scenarios we have seen in customer environment, but is not an exhaustive list of all possible security considerations and is not intended to replace having a proper security risk assessment performed on the customer environment.
+The purpose of this article is to provide some general recommended security practices for customers using Lumen Cloud. These practices are based on common scenarios we have seen in customer environment, but is not an exhaustive list of all possible security considerations and is not intended to replace having a proper security risk assessment performed on the customer environment.
 
 ### Audience
-* All CenturyLink Cloud customers.
+* All Lumen Cloud customers.
 
 ### Impact
 Failure to properly secure systems and applications that are exposed to the public network can result in the systems being compromised, leakage of proprietary data, etc. In some cases, a compromised machine can be used by remote attackers as part of a botnet to attack other systems across the Internet.

@@ -7,7 +7,7 @@
 "sticky": true
 }}}
 
-The Provider Portal (PP) is an application that allows CenturyLink Cloud Provider Partners to manage the display of their products on the CenturyLink Marketplace. This guide is for providers who have already reviewed and completed the steps in the [Getting Started Guide: Marketplace & Provider Portal](getting-started-guide-marketplace-ecosystem-provider-portal.md).
+The Provider Portal (PP) is an application that allows Lumen Cloud Provider Partners to manage the display of their products on the Lumen Marketplace. This guide is for providers who have already reviewed and completed the steps in the [Getting Started Guide: Marketplace & Provider Portal](getting-started-guide-marketplace-ecosystem-provider-portal.md).
 
 ### Signing In
 
@@ -17,7 +17,7 @@ Sign into the [Provider Portal](https://provider-portal.ctl.io/#/login) using yo
 
 ### Provider Homepage
 
-Once logged in you will directed to your Provider Home page. The home page will have any messages that the CenturyLink Marketplace team has sent you or have been created due to an error with a product deployment. There is also a Provider Workflow which is a dashboard that shows your company-specific progress on onboarding tasks as well as product completion progress.
+Once logged in you will directed to your Provider Home page. The home page will have any messages that the Lumen Marketplace team has sent you or have been created due to an error with a product deployment. There is also a Provider Workflow which is a dashboard that shows your company-specific progress on onboarding tasks as well as product completion progress.
 You can hover over the pie charts on the dashboard for more information.
 
 ![EPP](../../images/EPPnew7.png)
@@ -36,7 +36,7 @@ Under the Reports tab, Providers can review and download monthly reports for the
 
 ### Company Information
 
-Click the **Company Information** tab. This takes you to your **Provider Details** page, which was created for you when we established your CenturyLink Marketplace profile. Here you can review, edit, update your company information, and change the logo.
+Click the **Company Information** tab. This takes you to your **Provider Details** page, which was created for you when we established your Lumen Marketplace profile. Here you can review, edit, update your company information, and change the logo.
 
 ![EPP2](../../images/EPP2.png)
 
@@ -48,7 +48,7 @@ You can sign up to be notified upon the creation of a subscription for your soft
 
 ![EPP](../../images/EPPnew3.png)
 
-The company logo, content that is provided in the **Description** field and products that are available in the CenturyLink Marketplace are what the customer will see when clicking the company name in the Marketplace.
+The company logo, content that is provided in the **Description** field and products that are available in the Lumen Marketplace are what the customer will see when clicking the company name in the Marketplace.
 
 This is a sample of the customer view of your Company Information on the Marketplace:
 
@@ -76,6 +76,6 @@ The Help tab is where Providers can go to watch tutorial videos and find links t
 * Within the Provider Portal there is a [Help](https://provider-portal.ctl.io/#/help) tab that has links and videos on how to use the provider portal.
 * Within the Provider Portal there are Green ? bubbles next to certain fields, click the ? to learn more.
 * [GitHub Markdown Editor](https://markdown-it.github.io/)
-* The CenturyLink Cloud [Marketplace](https://www.ctl.io/marketplace/)
+* The Lumen Cloud [Marketplace](https://www.ctl.io/marketplace/)
 * Marketplace Provider [Onboarding Resource Guide](onboarding-resources.md).
 * For questions or suggestions on how to make this Guide more useful, email the [Marketplace team](mailto:Marketplace@centurylink.com).

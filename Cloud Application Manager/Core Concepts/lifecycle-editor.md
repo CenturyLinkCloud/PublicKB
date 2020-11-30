@@ -1,7 +1,7 @@
 {{{
 "title": "Lifecycle Editor",
 "date": "03-07-2019",
-"author": "Oscar Hafner and CenturyLink",
+"author": "Oscar Hafner and Lumen",
 "attachments": [],
 "contentIsHTML": false
 }}}

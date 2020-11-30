@@ -9,7 +9,7 @@
   "sticky": true
 }}}
 
-CenturyLink® CDN Mesh Delivery is an advanced implementation of the WebRTC standard that enables delivery of live and video on-demand (VOD) content across a meshed topology from a CDN and between end user devices.
+Lumen® CDN Mesh Delivery is an advanced implementation of the WebRTC standard that enables delivery of live and video on-demand (VOD) content across a meshed topology from a CDN and between end user devices.
 
 Tier 1 broadcasters can access the following technology for live streams, catch-up TV, user generated content, as well as ad or subscription-based VOD content.
 

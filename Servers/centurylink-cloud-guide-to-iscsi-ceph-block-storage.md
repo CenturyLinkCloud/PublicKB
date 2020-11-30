@@ -1,5 +1,5 @@
 {{{
-  "title": "CenturyLink Cloud Guide to iSCSI Ceph Block storage",
+  "title": "Lumen Cloud Guide to iSCSI Ceph Block storage",
   "date": "01-13-2016",
   "author": "Gavin Lai",
   "attachments": [],
@@ -23,10 +23,10 @@
 
 
 ### Overview
-Ceph is a free software storage platform that stores data in a distributed cluster.  It can provide a feature rich storage platform for Object Storage, Block Storage and File system to compliment CenturyLink Cloud storage offering.  This guide is a step by step guide to set up a Ceph Block storage cluster with iSCSI gateway.
+Ceph is a free software storage platform that stores data in a distributed cluster.  It can provide a feature rich storage platform for Object Storage, Block Storage and File system to compliment Lumen Cloud storage offering.  This guide is a step by step guide to set up a Ceph Block storage cluster with iSCSI gateway.
 
 ### Prerequisites
--   Access to the CenturyLink Cloud platform as an authorized user
+-   Access to the Lumen Cloud platform as an authorized user
 -   Identify the Network VLAN(s) for the public and storage/cluster network
 -   Understanding of storage technology (for Ceph Specific knowledge, please refer to [Ceph's how to website](//docs.ceph.com/docs/master/))
 
@@ -465,4 +465,4 @@ In order to take the full advantage of the features of Ceph, please refer to the
 
 ### Support
 * For issues related to deploying Ceph, accessing the deployed software, please visit the [Ceph Website](//ceph.com/help/)
-* For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying any Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the CenturyLink Cloud Support website](//t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying any Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](//t3n.zendesk.com/tickets/new).

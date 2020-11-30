@@ -1,5 +1,5 @@
 {{{
-  "title": "CenturyLink Cloud Guide to Access Object Storage as a Filesystem Using s3fs",
+  "title": "Lumen Cloud Guide to Access Object Storage as a Filesystem Using s3fs",
   "date": "09-14-2016",
   "author": "Gavin Lai",
   "attachments": [],
@@ -19,11 +19,11 @@
 
 ### Overview
 
-s3fs is a FUSE filesystem that allows you to mount a S3 compatible bucket as a local filesystem. It stores files natively and transparently in S3 compatible Objective Storage (i.e., you can use other programs to access the same files). Maximum file size=64GB (as of this article, limited by s3fs, not CenturyLink Cloud Object Storage).  The limitations of s3fs is listed [here](//github.com/s3fs-fuse/s3fs-fuse).  For pricing of Object Storage, please see the [pricing page](//www.ctl.io/pricing).
+s3fs is a FUSE filesystem that allows you to mount a S3 compatible bucket as a local filesystem. It stores files natively and transparently in S3 compatible Objective Storage (i.e., you can use other programs to access the same files). Maximum file size=64GB (as of this article, limited by s3fs, not Lumen Cloud Object Storage).  The limitations of s3fs is listed [here](//github.com/s3fs-fuse/s3fs-fuse).  For pricing of Object Storage, please see the [pricing page](//www.ctl.io/pricing).
 
 ### Prerequisites
 
--   Access to the CenturyLink Cloud platform as an authorized user
+-   Access to the Lumen Cloud platform as an authorized user
 
 -   Identify a CentOS Linux platform that you would like to have s3fs installed
 
@@ -31,7 +31,7 @@ s3fs is a FUSE filesystem that allows you to mount a S3 compatible bucket as a l
 
 -   Ability to install packages on the server
 
--   Access to CenturyLink Cloud Object Storage
+-   Access to Lumen Cloud Object Storage
 
 ### Use Case Scenarios
 
@@ -58,7 +58,7 @@ In preparation. There are several factors need to be considered:
 
 
 ### Deployment
-There are two methods to deploy s3fs in CenturyLink Cloud, it can be done manually or using a package.
+There are two methods to deploy s3fs in Lumen Cloud, it can be done manually or using a package.
 
 **Manual deployment**
 1.  s3fs deployment is done with the following commands on the CentOS 7 server:
@@ -88,11 +88,11 @@ There are two methods to deploy s3fs in CenturyLink Cloud, it can be done manual
 
 **Execute using a package**
 
-A script (S3fs on CentOS 7) is created to speed up the deployment of s3fs on CenturyLink Cloud.  The detail of the package is available [here](//control.ctl.io/Blueprints/Packages/Details?uuid=e12db1ac-9783-45fa-b3f6-ab07c3ab195a&classification=Script&type=AccountLibrary).  The package can be install via the portal, API or CLI.  
+A script (S3fs on CentOS 7) is created to speed up the deployment of s3fs on Lumen Cloud.  The detail of the package is available [here](//control.ctl.io/Blueprints/Packages/Details?uuid=e12db1ac-9783-45fa-b3f6-ab07c3ab195a&classification=Script&type=AccountLibrary).  The package can be install via the portal, API or CLI.  
 
 For API, please refer to the [Execute Package API](//www.ctl.io/api-docs/v2/#server-actions-execute-package).  
 
-The CLI deployment can be done following the command in the [CenturyLink Cloud Guide to CLI](//www.ctl.io/knowledge-base/servers/centurylink-cloud-guide-to-cli/#advanced-usage).  
+The CLI deployment can be done following the command in the [Lumen Cloud Guide to CLI](//www.ctl.io/knowledge-base/servers/centurylink-cloud-guide-to-cli/#advanced-usage).  
 
 When using the portal, this [Knowledge article](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md)
 
@@ -132,4 +132,4 @@ The parameters required for this script are:
 
 ### Support
 * For issues related to deploying s3fs or accessing the deployed software, please visit the [s3fs Website](//github.com/s3fs-fuse/s3fs-fuse)
-* For issues related to cloud infrastructure (VM's, network, etc), or if you experience a problem deploying any Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the CenturyLink Cloud Support website](//t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VM's, network, etc), or if you experience a problem deploying any Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](//t3n.zendesk.com/tickets/new).

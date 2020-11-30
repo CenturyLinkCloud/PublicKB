@@ -19,14 +19,14 @@
 
 * __UI improvements.__ The Control Portal continues to get easier on the eye. We've made some light improvements to the UI that we think you'll appreciate.
 
-* __CenturyLink Cloud Status.__ [status.ctl.io](//status.ctl.io/) provides real-time updates on the status of CenturyLink Cloud services, and upcoming maintenance notifications. Notifications surrounding Compute, Network, and Storage are now based on what servers an account has in a specific data center, allowing our customers to get the information they need - and only the information that they need.
+* __Lumen Cloud Status.__ [status.ctl.io](//status.ctl.io/) provides real-time updates on the status of Lumen Cloud services, and upcoming maintenance notifications. Notifications surrounding Compute, Network, and Storage are now based on what servers an account has in a specific data center, allowing our customers to get the information they need - and only the information that they need.
 
-  Our KB has more [information about the CenturyLink Cloud Status service.](../../General/CenturyLinkCloud/centurylink-cloud-status-faq.md)
+  Our KB has more [information about the Lumen Cloud Status service.](../../General/CenturyLinkCloud/centurylink-cloud-status-faq.md)
 
 
 ### Notifications (2)
 
-* __New Domains.__ Effective March 5, the default CenturyLink Cloud domain was updated to control.ctl.io. The URL for SAML users has also been updated to https://[`account-alias`].cloudportal.io (where `account-alias` is your four-letter account identifier). __Please update any code that leverages the CenturyLink Cloud API to ensure that it uses the supported endpoint.__ The legacy domains will continue to operate until July 15.
+* __New Domains.__ Effective March 5, the default Lumen Cloud domain was updated to control.ctl.io. The URL for SAML users has also been updated to https://[`account-alias`].cloudportal.io (where `account-alias` is your four-letter account identifier). __Please update any code that leverages the Lumen Cloud API to ensure that it uses the supported endpoint.__ The legacy domains will continue to operate until July 15.
 
 * __AppFog Limited Beta.__ Beta access for AppFog continues to be available. Based on Cloud Foundry v2, this new platform for applications makes it easier for developers to build and scale cloud-native applications. To sign-up, visit [the AppFog product page](//www.ctl.io/appfog/).
 

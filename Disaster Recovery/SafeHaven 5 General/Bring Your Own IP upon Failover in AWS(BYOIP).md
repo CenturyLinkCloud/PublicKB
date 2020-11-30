@@ -7,7 +7,7 @@
 }}}
 
 ### Article Overview
-This article explains how to configure AWS networking in order to be able to failover servers from CenturyLink Cloud to the same IP space in AWS.
+This article explains how to configure AWS networking in order to be able to failover servers from Lumen Cloud to the same IP space in AWS.
 
 ### Requirements
 1. Having a VPN between AWS and CLC is not required for SaveHaven to work but it is in order to have AD replication working properly; domain controllers behind NAT is not a Microsoft best practice, for more information please see: https://support.microsoft.com/en-us/help/978772/description-of-support-boundaries-for-active-directory-over-nat
@@ -22,7 +22,7 @@ The following diagram illustrates the high-level network configuration of this s
 ![clc_aws_network](../../images/SH5.0/byoip/clc_aws_network.png)
 
 ### Site-to-site VPN
-On CenturyLink cloud there is only one subnet that contains the multi-tier application as well as the SafeHaven SRN. There is a VPN between subnet 10.55.220.0/24 and subnet 172.30.1.0/24 on AWS.
+On Lumen cloud there is only one subnet that contains the multi-tier application as well as the SafeHaven SRN. There is a VPN between subnet 10.55.220.0/24 and subnet 172.30.1.0/24 on AWS.
 
 ![Upgrade](../../images/SH5.0/byoip/clc_vpn_config.png)
 

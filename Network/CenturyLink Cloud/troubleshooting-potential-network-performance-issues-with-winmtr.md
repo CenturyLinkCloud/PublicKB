@@ -24,7 +24,7 @@
 <p>- If the "Sent" columns shows a higher number than the "Recv" column (e.g., Sent &nbsp;= 60 packets but Recv&nbsp;only equals 40 replies), this indicates a "packet loss" on that hop</p>
 <p>-The "Avrg" mms exceeds ~75mms and "Worst" exceeds ~200mms</p>
 
-<p>If it is believed a network problem might be present with connecting to one of your CenturyLink Cloud (CTL-C) hosts, please follow the steps above and enter the CTL-C IP address in question as the "Host". Note, if for example you are testing from a system
+<p>If it is believed a network problem might be present with connecting to one of your Lumen Cloud (CTL-C) hosts, please follow the steps above and enter the CTL-C IP address in question as the "Host". Note, if for example you are testing from a system
   that resides outside of CTL-C's platform, and you observe one of the first few hops towards the top of the WinMTR results window is problematic, the issue is likely an issue with your local network or ISP, but if the aforementioned anomalies are present
   towards the lower results, please follow these steps:</p>
 <p>A. Select "Export TEXT", enter a file name, and then save the .txt file to your hard drive.</p>

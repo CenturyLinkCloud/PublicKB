@@ -10,10 +10,10 @@
 }}}
 
 ### Description
-In this KB article, we walk through how to enable Distributed Firewall for CenturyLink Private Cloud on VMware Cloud Foundation.
+In this KB article, we walk through how to enable Distributed Firewall for Lumen Private Cloud on VMware Cloud Foundation.
 
 ### Prerequisites
-* Your base URL, and user credentials for CenturyLink Private Cloud on VMware Cloud Foundation.
+* Your base URL, and user credentials for Lumen Private Cloud on VMware Cloud Foundation.
 
 ### Steps
 
@@ -22,15 +22,15 @@ In this KB article, we walk through how to enable Distributed Firewall for Centu
 2. You will be taken to the **Managed Support Portal**. Click **Create** and select the following options:
 
   * What Product is this for? **Cloud**
-  * Which Cloud Product? **CenturyLink Private Cloud on VMware Cloud Foundation (Formerly DCC Foundation)**
+  * Which Cloud Product? **Lumen Private Cloud on VMware Cloud Foundation (Formerly DCC Foundation)**
   * What is the status? **Requesting a Change**
   * When should this change be performed? **Prioritized (Any time in the next X hours)**
-  * Change Subject: **CenturyLink Private Cloud on VMware Cloud Foundation Prioritized**
+  * Change Subject: **Lumen Private Cloud on VMware Cloud Foundation Prioritized**
   * Change Details: **Please enable Distributed Firewall in my CPC on vCF environment - `<yourURL>`**.
   * Priority: Select the appropriate priority (**P2 Standard or P3 Standard**).
   * Click on the **submit** button.
 
-3. You will be contacted by CenturyLink to coordinate the change request.
+3. You will be contacted by Lumen to coordinate the change request.
 
 OR
 

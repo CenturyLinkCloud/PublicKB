@@ -1,5 +1,5 @@
 {{{
-  "title": "Using Your Microsoft Licenses in the CenturyLink Cloud",
+  "title": "Using Your Microsoft Licenses in the Lumen Cloud",
   "date": "10-27-2015",
   "author": "Jake Malmad",
   "attachments": [],
@@ -7,22 +7,22 @@
 }}}
 
 ### Overview
-CenturyLink Cloud provides SPLA licensing as a means of delivering cost-effective, utility computing. Customers may apply Microsoft or Red Hat enterprise licenses to their Virtual Machines and are billed the corresponding amount as long as the machine is in a live state. Customers who archive their servers do not pay for licensing until the Virtual Machine is placed back into production- archiving servers is a great way to manage costs while retaining operational agility.
+Lumen Cloud provides SPLA licensing as a means of delivering cost-effective, utility computing. Customers may apply Microsoft or Red Hat enterprise licenses to their Virtual Machines and are billed the corresponding amount as long as the machine is in a live state. Customers who archive their servers do not pay for licensing until the Virtual Machine is placed back into production- archiving servers is a great way to manage costs while retaining operational agility.
 
-Certain customers may wish to leverage their existing investment in the Microsoft ecosystem. CenturyLink Cloud is an authorized Microsoft Mobility partner, and as such, customers may deploy certain licenses to the cloud with no incurred cost. To be eligible for license mobility a customer:
+Certain customers may wish to leverage their existing investment in the Microsoft ecosystem. Lumen Cloud is an authorized Microsoft Mobility partner, and as such, customers may deploy certain licenses to the cloud with no incurred cost. To be eligible for license mobility a customer:
 
 1. Must be enrolled in Microsoft Volume Licensing (VL) program such as Microsoft Enterprise Agreement (EA), Select Plus or Open License.
 2. Must have active Software Assurance (SA) coverage.
 
 Microsoft License Mobility through Software Assurance only applies to eligible products listed in the Product Use Rights (PUR) list. The PUR list is updated frequently and can be viewed [here.](//www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 
-**Windows Server, the Windows client operating system, and desktop application products are not included in License Mobility through Software Assurance.** Customers deploying to CenturyLink Cloud are required to use SPLA for all Windows Server operating systems.
+**Windows Server, the Windows client operating system, and desktop application products are not included in License Mobility through Software Assurance.** Customers deploying to Lumen Cloud are required to use SPLA for all Windows Server operating systems.
 
-Customers must maintain eligible licenses on the Authorized Mobility Partner’s (CenturyLink Cloud) IaaS Platform for a minimum period of 90 days. After the 90-day period, you can move the licensed software back to your premise or to another Authorized Mobility Partner’s server farm.
+Customers must maintain eligible licenses on the Authorized Mobility Partner’s (Lumen Cloud) IaaS Platform for a minimum period of 90 days. After the 90-day period, you can move the licensed software back to your premise or to another Authorized Mobility Partner’s server farm.
 
 ### Exceptions
 
-* Customers leveraging [CenturyLink Managed Services](//www.ctl.io/managed-services/) are not eligible for license mobility as these packages include management and software as part of the solution offering.
+* Customers leveraging [Lumen Managed Services](//www.ctl.io/managed-services/) are not eligible for license mobility as these packages include management and software as part of the solution offering.
 
 ### License Mobility verification process
 
@@ -39,4 +39,4 @@ Customers must maintain eligible licenses on the Authorized Mobility Partner’s
     * Acquire use rights to that software from the Authorized Mobility Partner (who would in turn use the SPLA program).
     * Discontinue use of the licenses in the Authorized Mobility Partner’s environment.
 
-For detailed answers or deployment assistance, please contact CenturyLink Cloud Support.
+For detailed answers or deployment assistance, please contact Lumen Cloud Support.

@@ -6,7 +6,7 @@
 }}}
 
 ### Description
-Server resource requirements change frequently as environments scale. Storage is one of the most dynamic elements, and is often resized as environments grow and change. The CenturyLink Cloud Control Portal provides a self-service function to accommodate increased storage demands _without_ the need for a reboot. Non-boot and swap disks on a Linux VM will automatically be expanded upon request. Further, their file systems grow to reflect expanded storage.
+Server resource requirements change frequently as environments scale. Storage is one of the most dynamic elements, and is often resized as environments grow and change. The Lumen Cloud Control Portal provides a self-service function to accommodate increased storage demands _without_ the need for a reboot. Non-boot and swap disks on a Linux VM will automatically be expanded upon request. Further, their file systems grow to reflect expanded storage.
 
 ### Steps
 

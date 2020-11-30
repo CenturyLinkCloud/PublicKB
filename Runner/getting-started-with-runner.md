@@ -11,11 +11,11 @@
 
 ### Audience
 
-This article is to support customers of Runner, a product that enables teams, developers, and engineers to quickly provision, interact, and modify their environments anywhere - CenturyLink Cloud, third-party cloud providers, and on-premises.
+This article is to support customers of Runner, a product that enables teams, developers, and engineers to quickly provision, interact, and modify their environments anywhere - Lumen Cloud, third-party cloud providers, and on-premises.
 
 ### Overview: What is Runner?
 
-Runner is a new product from CenturyLink that enables fast and easy automation and orchestration on the CenturyLink Platform, as well as third-party cloud providers such as Amazon’s AWS and Microsoft’s Azure and on-premises infrastructure and devices. Runner provides the ability to quickly provision and modify resources on any environment, and gives users a true hybrid-IT solution.
+Runner is a new product from Lumen that enables fast and easy automation and orchestration on the Lumen Platform, as well as third-party cloud providers such as Amazon’s AWS and Microsoft’s Azure and on-premises infrastructure and devices. Runner provides the ability to quickly provision and modify resources on any environment, and gives users a true hybrid-IT solution.
 
 ![Runner - How it works 1](../images/runner-how-it-works1.jpg)
 
@@ -39,7 +39,7 @@ The general URL format of the service is:
 
 `https://api.runner.ctl.io/{resource}/{account alias}`
 
-Note: You will need access to the CenturyLink Cloud Platform as an authorized user to be able to use Runner.
+Note: You will need access to the Lumen Cloud Platform as an authorized user to be able to use Runner.
 
 For more information on how to use Runner, please take a look at the documentation in our [Knowledge Base](https://www.ctl.io/knowledge-base/runner)
 

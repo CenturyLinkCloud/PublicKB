@@ -1,5 +1,5 @@
 {{{
-  "title": "CenturyLink Cloud Trial Frequently Asked Questions",
+  "title": "Lumen Cloud Trial Frequently Asked Questions",
   "date": "06-30-2020",
   "author": "Lyza Latham",
   "attachments": [],
@@ -10,7 +10,7 @@
 
 ### Audience
 
-Prospective Users of CenturyLink Cloud
+Prospective Users of Lumen Cloud
 
 ### How do I sign up for a trial?
 
@@ -18,7 +18,7 @@ Visit [www.ctl.io/centurylink-public-cloud/account-activation/](http://www.ctl.i
 
 ### What's included with a trial?
 
-When you activate your CenturyLink Cloud account, you’ll have immediate access to most self-service products and features, including high-performance servers, fast deployment times and intuitive management capabilities.
+When you activate your Lumen Cloud account, you’ll have immediate access to most self-service products and features, including high-performance servers, fast deployment times and intuitive management capabilities.
 
 Limits of 6 CPU, 10 GB RAM, and 200 GB Storage. There are also some limits on rapid scale-up of resources, please contact [help@ctl.io](mailto:help@ctl.io) for more details.
 
@@ -30,9 +30,9 @@ After you have entered the verification code, provided a valid credit card, and 
 
 ### What if I want to access public cloud servers in Latin America?
 
-Access to CenturyLink Cloud in Latin America is limited to accounts that are initiated through a regional CenturyLink Sales Representative.
+Access to Lumen Cloud in Latin America is limited to accounts that are initiated through a regional Lumen Sales Representative.
 
-To engage this team, send an email with your request, and a regional Sales Representative will respond. Or, call during business hours of Monday through Friday, 09:00 to 17:00, Argentina Standard Time. For contact information, see [CenturyLink Cloud Availability in Latin America](http://www.ctl.io/blog/post/cloud-availability-latin-america/).
+To engage this team, send an email with your request, and a regional Sales Representative will respond. Or, call during business hours of Monday through Friday, 09:00 to 17:00, Argentina Standard Time. For contact information, see [Lumen Cloud Availability in Latin America](http://www.ctl.io/blog/post/cloud-availability-latin-america/).
 
 ### What if my trial account signup is unsuccessful?
 

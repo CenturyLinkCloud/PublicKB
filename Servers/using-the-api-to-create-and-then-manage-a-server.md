@@ -8,7 +8,7 @@
 
 ### Description
 
-The CenturyLink Cloud API can be used to perform the same actions programmatically as you can from within the Control Portal. Oftentimes multiple API calls are required to perform a particular task, and this may include waiting for asynchronous jobs to complete. Particularly in these cases, it's important to make sure to use a very prescriptive sequence for the calls to ensure success. The below example shows one such sequence for authenticating, creating a server, updating the server information, and restarting it.
+The Lumen Cloud API can be used to perform the same actions programmatically as you can from within the Control Portal. Oftentimes multiple API calls are required to perform a particular task, and this may include waiting for asynchronous jobs to complete. Particularly in these cases, it's important to make sure to use a very prescriptive sequence for the calls to ensure success. The below example shows one such sequence for authenticating, creating a server, updating the server information, and restarting it.
 
 For more details about the specific API functions used below, you may reference the complete [API documentation](https://www.ctl.io/api-docs/v2).
 

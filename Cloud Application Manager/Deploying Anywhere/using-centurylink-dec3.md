@@ -1,8 +1,8 @@
 {{{
-"title": "Using CenturyLink DEC3",
+"title": "Using Lumen DEC3",
 "date": "11-20-2019",
 "author": "Guillermo Sanchez",
-"keywords": ["cam","centurylink dec3", "dec iii", "vrealize", "deploy", "provider"],
+"keywords": ["cam","lumen dec3", "dec iii", "vrealize", "deploy", "provider"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -12,54 +12,54 @@
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
-* [Connect CenturyLink DEC3 environment in Cloud Application Manager](#connect-centurylink-dec3-environment-in-cloud-application-manager)
-* [Deploy to CenturyLink DEC3 from Cloud Application Manager](#deploy-to-centurylink-dec3-from-cloud-application-manager)
+* [Connect Lumen DEC3 environment in Cloud Application Manager](#connect-centurylink-dec3-environment-in-cloud-application-manager)
+* [Deploy to Lumen DEC3 from Cloud Application Manager](#deploy-to-centurylink-dec3-from-cloud-application-manager)
 * [Discovering and Registering Existing instances](#discovering-and-registering-existing-instances)
 * [Accessing the DEC3 native console](#accessing-the-dec3-native-console)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
 
-This article is meant to assist users of Cloud Application Manager to learn how to deploy a CenturyLink DEC 3 Provider, available only in Latin America region.
+This article is meant to assist users of Cloud Application Manager to learn how to deploy a Lumen DEC 3 Provider, available only in Latin America region.
 
 ### Audience
 
-All Cloud Application Manager users who want to deploy workloads into a CenturyLink DEC 3 Provider.
+All Cloud Application Manager users who want to deploy workloads into a Lumen DEC 3 Provider.
 
 ### Prerequisites
 
 * You must have a Cloud Application Manager Account
-* Your base URL, and user credentials for your CenturyLink DEC 3 subscription
+* Your base URL, and user credentials for your Lumen DEC 3 subscription
 
-### Connect CenturyLink DEC3 environment in Cloud Application Manager
+### Connect Lumen DEC3 environment in Cloud Application Manager
 
-Follow these steps to add a provider in Cloud Application Manager that integrates with your CenturyLink DEC 3 environment. Each provider connects to the virtual data center in that specific location.
+Follow these steps to add a provider in Cloud Application Manager that integrates with your Lumen DEC 3 environment. Each provider connects to the virtual data center in that specific location.
 
-#### Add a provider in CenturyLink DEC3
+#### Add a provider in Lumen DEC3
 
 1. In Cloud Application Manager, on the Providers page, click **New Provider**.
 
-2. Select **CenturyLink DEC3** and fill in the required fields:
+2. Select **Lumen DEC3** and fill in the required fields:
 
     ![New DEC3 provider](../../images/cloud-application-manager/deploying-anywhere/dec3/new-dec3-provider.png)
 
-   * **URL**. Enter the URL to access the CenturyLink DEC3 portal
+   * **URL**. Enter the URL to access the Lumen DEC3 portal
    * **Tenant**. Select the tenant your environment is hosted into.
    * **Domain**. Enter the domain of your environment
-   * **Username**. Enter the username to log in to your CenturyLink DEC3 account.
-   * **Password**. Enter the password for your CenturyLink DEC3 account.
+   * **Username**. Enter the username to log in to your Lumen DEC3 account.
+   * **Password**. Enter the password for your Lumen DEC3 account.
 
-### Deploy to CenturyLink DEC3 from Cloud Application Manager
+### Deploy to Lumen DEC3 from Cloud Application Manager
 
-Create a [deployment policy](../Automating Deployments/deploymentpolicy-box.md) to encapsulate parameters required to deploy Linux or Windows instances through the CenturyLink DEC3 provider
+Create a [deployment policy](../Automating Deployments/deploymentpolicy-box.md) to encapsulate parameters required to deploy Linux or Windows instances through the Lumen DEC3 provider
 
-![New CenturyLink DEC3 Policy Box](../../images/cloud-application-manager/deploying-anywhere/dec3/new-dec3-deployment-policy.png)
+![New Lumen DEC3 Policy Box](../../images/cloud-application-manager/deploying-anywhere/dec3/new-dec3-deployment-policy.png)
 
 At deploy time, Cloud Application Manager auto provisions a vRealize instance and orchestrates workload automation on them.
 
 **Note:** Auto provisioning may fail if you specify virtual CPUs, memory, and virtual disk capacity that exceeds the limit in your virtual data center.
 
-Edit the deployment policy to set the following parameters for deploying to CenturyLink DEC3.
+Edit the deployment policy to set the following parameters for deploying to Lumen DEC3.
 
 #### Resource
 
@@ -106,7 +106,7 @@ Edit the deployment policy to set the following parameters for deploying to Cent
 
 ### Discovering and Registering Existing instances
 
-When you configure your CenturyLink DEC3 provider in Cloud Application Manager, the synchronization process will discover the existing instances in your account. You will see these instances in the **Unregistered Instances** tab in the provider details page or in the **Unregistered** resources in the instances page.
+When you configure your Lumen DEC3 provider in Cloud Application Manager, the synchronization process will discover the existing instances in your account. You will see these instances in the **Unregistered Instances** tab in the provider details page or in the **Unregistered** resources in the instances page.
 
 For more information about the registration process, also known as import instance process, refer to how to [Register an Existing Instance](../Getting Started/register-existing-instance.md)
 
@@ -114,11 +114,11 @@ For more information about the registration process, also known as import instan
 
 Once your provider is synchronized, you will be able to access the DEC3 native console through the button available in the provider details page:
 
-![CenturyLink DEC3 console button](../../images/cloud-application-manager/deploying-anywhere/dec3/dec3-console-button.png)
+![Lumen DEC3 console button](../../images/cloud-application-manager/deploying-anywhere/dec3/dec3-console-button.png)
 
 When you click on the button, a new window or tab will open in your browser with the access page of your DEC3 console:
 
-![CenturyLink DEC3 console page](../../images/cloud-application-manager/deploying-anywhere/dec3/dec3-console-page.png)
+![Lumen DEC3 console page](../../images/cloud-application-manager/deploying-anywhere/dec3/dec3-console-page.png)
 
 ### Contacting Cloud Application Manager Support
 

@@ -1,5 +1,5 @@
 {{{
-  "title": "Using SAML for Single-Sign-On to the CenturyLink Platform Control Portal with Windows 2012 R2",
+  "title": "Using SAML for Single-Sign-On to the Lumen Platform Control Portal with Windows 2012 R2",
   "date": "2/06/2019",
   "author": "Matthew Ordman",
   "attachments": [],
@@ -7,10 +7,10 @@
 }}}
 
 ### Overview
-The purpose of this guide is to provide step by step instructions for configuring Windows 2012 R2 with ADFS 3.0 to authenticate with CenturyLink Cloud SAML.  For simplicity sake, a single server will be used for directory services and certificate services.Depending on your company's requirements you may choose to use multiple servers for the various roles and services that are required. If you choose to segregate the roles and services this guide will still provide a useful instruction set for configuration guidelines.
+The purpose of this guide is to provide step by step instructions for configuring Windows 2012 R2 with ADFS 3.0 to authenticate with Lumen Cloud SAML.  For simplicity sake, a single server will be used for directory services and certificate services.Depending on your company's requirements you may choose to use multiple servers for the various roles and services that are required. If you choose to segregate the roles and services this guide will still provide a useful instruction set for configuration guidelines.
 
 ### Description
-CenturyLink Cloud supports the use of Security Assertion Markup Language (SAML) for exchanging user authentication data as XML between trusted parties. This industry standard protocol empowers our customers to use their **own** identity management system for authenticating users of the CenturyLink Cloud Control Portal.
+Lumen Cloud supports the use of Security Assertion Markup Language (SAML) for exchanging user authentication data as XML between trusted parties. This industry standard protocol empowers our customers to use their **own** identity management system for authenticating users of the Lumen Cloud Control Portal.
 
 SAML has three main parties: the user, the identity provider (IdP), and service provider (SP). The IdP is the repository that holds identity information. The SP is the party that wants to authenticate a particular user who is using an application.
 
@@ -19,26 +19,26 @@ The SAML flow occurs as shown below.
 
 Specific steps in this flow are:
 
-1. The enterprise user of the CenturyLink Cloud hits a URL that is dedicated to their account. The user is asked how they would like to log into the system and they choose SAML.
+1. The enterprise user of the Lumen Cloud hits a URL that is dedicated to their account. The user is asked how they would like to log into the system and they choose SAML.
 
-2. The web application contacts the CenturyLink Cloud SAML service to initiate the SAML message exchange.
+2. The web application contacts the Lumen Cloud SAML service to initiate the SAML message exchange.
 
-3. The CenturyLink Cloud SP sends a digitally signed SAML authentication request to the enterprise IdP. This IdP takes the user's Kerberos token and validates them as a user on the enterprise network.
+3. The Lumen Cloud SP sends a digitally signed SAML authentication request to the enterprise IdP. This IdP takes the user's Kerberos token and validates them as a user on the enterprise network.
 
-4. The IdP returns a signed (and optionally, encrypted) SAML authentication response message to the CenturyLink Cloud SP. This message includes a Name ID assertion and that value is matched to a User record in the CenturyLink Cloud.
+4. The IdP returns a signed (and optionally, encrypted) SAML authentication response message to the Lumen Cloud SP. This message includes a Name ID assertion and that value is matched to a User record in the Lumen Cloud.
 
-5. The user is logged into the CenturyLink Cloud and operates under the roles and permissions assigned to their CenturyLink Cloud user account.
+5. The user is logged into the Lumen Cloud and operates under the roles and permissions assigned to their Lumen Cloud user account.
 
-The steps below walk through the process of building an entire SSO and SAML scenario based on Microsoft Active Directory Federation Services as the IdP proxy. If you already have an identity provider, you can skip to step 3 where trust is established between CenturyLink Cloud and the IdP.
+The steps below walk through the process of building an entire SSO and SAML scenario based on Microsoft Active Directory Federation Services as the IdP proxy. If you already have an identity provider, you can skip to step 3 where trust is established between Lumen Cloud and the IdP.
 
 ### Prerequisites
-All steps in this guide require Domain Administrator permissions in Active Directory.  This guide assumes you have the Account Administrator Role in the CenturyLink Cloud Control Panel.  This guide will use a valid public domain name and valid public DNS for name resolution needs. This guide will use private SSL certificates that are signed by the Certificate Authority that is created while following this guide.  Some organizations will prefer the use of third party trusted certificates.  This guide is still applicable except you will use your already requested and signed certificates from your trusted third party source.
+All steps in this guide require Domain Administrator permissions in Active Directory.  This guide assumes you have the Account Administrator Role in the Lumen Cloud Control Panel.  This guide will use a valid public domain name and valid public DNS for name resolution needs. This guide will use private SSL certificates that are signed by the Certificate Authority that is created while following this guide.  Some organizations will prefer the use of third party trusted certificates.  This guide is still applicable except you will use your already requested and signed certificates from your trusted third party source.
 
 **Steps**
 
 **1. Provision server to act as Identity Provider.**
 
-Log into the CenturyLink Cloud Control Portal and choose to create a new Blueprint. Using the left navigation bar, choose **Orchestration** > **Design Blueprint**. 
+Log into the Lumen Cloud Control Portal and choose to create a new Blueprint. Using the left navigation bar, choose **Orchestration** > **Design Blueprint**. 
 
 1.  Using Blueprint Designer you have several choices for versioning, privacy settings, etc.  In this step you can choose the settings that are appropriate for your intended use.  There is one required field, Description.  Populate with a description that is accurate for your use.
 
@@ -60,7 +60,7 @@ On the "Customize Blueprint" step of the deployment wizard, the user is asked to
 
 ![Server Build](../images/adfs_saml_2012_05.png)
 
-After clicking "Next: Step 2" you will be taken to the "review blueprint" page. Once you have confirmed your choices, complete the deployment process by clicking "deploy blueprint", and wait for the new server to be built by the CenturyLink Cloud Blueprint engine. It may take up to 20 minutes and you can monitor progress in the queue.
+After clicking "Next: Step 2" you will be taken to the "review blueprint" page. Once you have confirmed your choices, complete the deployment process by clicking "deploy blueprint", and wait for the new server to be built by the Lumen Cloud Blueprint engine. It may take up to 20 minutes and you can monitor progress in the queue.
 
 ![Blueprint Queue](../images/adfs_saml_2012_06.png)
 
@@ -70,7 +70,7 @@ Locate the server that has been deployed by clicking "Servers" within the Contro
 
 **2. Install and configure Active Directory Federation Services.**
 
-Use the OpenVPN client software or Tunnelblick client software to connect to the CenturyLink Cloud network. Once connected, create a Remote Desktop session to your server using the private IP address recorded above. In the Server Manager, confirm the installation of DNS, Active Directory, and IIS.
+Use the OpenVPN client software or Tunnelblick client software to connect to the Lumen Cloud network. Once connected, create a Remote Desktop session to your server using the private IP address recorded above. In the Server Manager, confirm the installation of DNS, Active Directory, and IIS.
 
 ![Confirm Roles](../images/adfs_saml_2012_08.png)
 
@@ -98,7 +98,7 @@ Within IIS Manager, click on "Sites" in the left column to expand the list, sele
 
 ![Add Site Binding](../images/adfs_saml_2012_14.png)
 
-Launch Active Directory Users and Computers via the "Tools" menu and create a service account for ADFS.  This service account does not need special permissions, a normal user account is permitted.  In this example we have created an account named samldemo.  Create another account that will be used for authenticating a user against CenturyLink Cloud Control Portal.  In this example we have created an account named kellytest.  The full User Principal account name for this account is kellytest@ccts.dom. **Note: Write down these two accounts, identify which is the service account vs. the authenticating user account (will go in the "SAML username" field later on), and note the password you set for each, because you will need them both later in the instructions.**
+Launch Active Directory Users and Computers via the "Tools" menu and create a service account for ADFS.  This service account does not need special permissions, a normal user account is permitted.  In this example we have created an account named samldemo.  Create another account that will be used for authenticating a user against Lumen Cloud Control Portal.  In this example we have created an account named kellytest.  The full User Principal account name for this account is kellytest@ccts.dom. **Note: Write down these two accounts, identify which is the service account vs. the authenticating user account (will go in the "SAML username" field later on), and note the password you set for each, because you will need them both later in the instructions.**
 
 Windows 2012 has ADFS included.  Return to Server Manager to Add the "Active Directory Federation Services" Role via the "Add roles and features" wizard. Choose "Role based or feature based installation". Accept the defaults for the remaining installation choices but make sure the box is checked for "Active Directory Federation Services" on the "Server Roles" step. (see screenshot below)
 
@@ -112,9 +112,9 @@ Ensure the option "Create the first federation server in a federation server far
 
 ![ADFS Configuration](../images/adfs_saml_2012_17.png)
 
-**3. Create trust relationship with CenturyLink Cloud.**
+**3. Create trust relationship with Lumen Cloud.**
 
-Launch "AD FS Management" from Administrative "Tools" menu.  Expand "Trust Relationships", right click on "Relying Party Trusts" and select "Add Relying Party Trust", or use the right menu to do the same.  This part of the configuration uses a public certificate from CenturyLink Cloud for the local IdP so the system recognizes the SAML authentication request in order to validate the inbound signature.
+Launch "AD FS Management" from Administrative "Tools" menu.  Expand "Trust Relationships", right click on "Relying Party Trusts" and select "Add Relying Party Trust", or use the right menu to do the same.  This part of the configuration uses a public certificate from Lumen Cloud for the local IdP so the system recognizes the SAML authentication request in order to validate the inbound signature.
 
 ![Add Party Trust](../images/adfs_saml_2012_18.png)
 
@@ -122,11 +122,11 @@ Click "Start".  Select the option "Enter data about the relying party manually".
 
 ![Enter Data Manually](../images/adfs_saml_2012_19.png)
 
-Enter a display name in order to easily identify this relying party, something like "CenturyLink Cloud Control Portal".  Click "Next".  Select "AD FS Profile", click "Next". Click "Next". Click "Next".  At the Configure Identifiers step, enter the following value for "Relying party trust identifier", <code>https://alias.cloudportal.io/SAMLAuth</code>.  Substitute "alias" with your CenturyLink Cloud Control Portal alias.  In this example we will use ccts **Note that ALL values in this address are case-sensitive!** Click "Add", click "Next". Ensure "Multi-factor" is set to "disabled", click "Next".  Ensure "Permit all users" is selected, click "Next".
+Enter a display name in order to easily identify this relying party, something like "Lumen Cloud Control Portal".  Click "Next".  Select "AD FS Profile", click "Next". Click "Next". Click "Next".  At the Configure Identifiers step, enter the following value for "Relying party trust identifier", <code>https://alias.cloudportal.io/SAMLAuth</code>.  Substitute "alias" with your Lumen Cloud Control Portal alias.  In this example we will use ccts **Note that ALL values in this address are case-sensitive!** Click "Add", click "Next". Ensure "Multi-factor" is set to "disabled", click "Next".  Ensure "Permit all users" is selected, click "Next".
 
 ![Configure Identifiers](../images/adfs_saml_2012_20.png)
 
-Finish the wizard.  On the last wizard page, click the checkbox to **Open the Edit Claims Rules dialog.** Here is where we define which Active Directory values (claims) map to the SAML attributes sent back to CenturyLink Cloud.
+Finish the wizard.  On the last wizard page, click the checkbox to **Open the Edit Claims Rules dialog.** Here is where we define which Active Directory values (claims) map to the SAML attributes sent back to Lumen Cloud.
 
 ![Select Rule Template](../images/adfs_saml_2012_21.png)
 
@@ -186,19 +186,19 @@ Under "AD FS Relying Party Trusts" right click the "Relying Party Trusts" you ju
 
 ![Properties](../images/adfs_saml_2012_23.png)
 
-Switch to the **Endpoints** tab and add a **SAML Assertion Consumer** with a **POST** binding and set the URL to <code>https://alias.cloudportal.io/SAMLAuth/Post</code>. Once again, this value is case-sensitive.  Substitute "alias" with your CenturyLink Cloud Control Portal alias.  In this example we will use "ccts".  Click "Ok".
+Switch to the **Endpoints** tab and add a **SAML Assertion Consumer** with a **POST** binding and set the URL to <code>https://alias.cloudportal.io/SAMLAuth/Post</code>. Once again, this value is case-sensitive.  Substitute "alias" with your Lumen Cloud Control Portal alias.  In this example we will use "ccts".  Click "Ok".
 
 ![Add Endpoint](../images/adfs_saml_2012_24.png)
 
 Switch to the **Advanced** tab, change the **Secure Hash Algorithm** to **SHA-1**. Click "Ok".
 
-**4. Configure CenturyLink Cloud account with SAML settings.**
+**4. Configure Lumen Cloud account with SAML settings.**
 
-Log into the CenturyLink Cloud Control Portal and under **Account** menu, select the **Users** tab. Switch to the **Authentication** sub-section and check the box labeled **SAML Authentication**. This opens up a series of configuration settings.
+Log into the Lumen Cloud Control Portal and under **Account** menu, select the **Users** tab. Switch to the **Authentication** sub-section and check the box labeled **SAML Authentication**. This opens up a series of configuration settings.
 
 ![SAML Config](../images/adfs_saml_2012_25.png)
 
-For the **SSO IdP URL**,set the ADFS service URL. This includes the full public domain name of the ADFS server. In this example we are using the URL https://clcsamldemo.falconinfosec.com/adfs/ls/  For the **SLO IdP URL** set the URL as indicated in the CenturyLink Cloud Control Portal.  The URL for this test account is https://ccts.cloudportal.io/SAMLAuth/LogoutPost
+For the **SSO IdP URL**,set the ADFS service URL. This includes the full public domain name of the ADFS server. In this example we are using the URL https://clcsamldemo.falconinfosec.com/adfs/ls/  For the **SLO IdP URL** set the URL as indicated in the Lumen Cloud Control Portal.  The URL for this test account is https://ccts.cloudportal.io/SAMLAuth/LogoutPost
 
 ![SAML SSO URL](../images/adfs_saml_2012_26.png)
 
@@ -214,14 +214,14 @@ Save the file to a known location on the file system. Open the file with a text 
 
 ![Cert](../images/adfs_saml_2012_29.png)
 
-Paste this string of text into the **Signing Certificate Key** field in the CenturyLink Cloud Control Portal. Click the **Save** button and switch back to the **Users List** view. Select the user that you want to perform SSO with, and locate the **SAML Username** field. Since we chose above to use the "Active Directory User Principal Name" as the lookup value to the CenturyLink Cloud account, we must plug in the User Principal Name associated with this user.  in the example the User Principal Name is kellytest@ccts.dom.  Click "Save".
+Paste this string of text into the **Signing Certificate Key** field in the Lumen Cloud Control Portal. Click the **Save** button and switch back to the **Users List** view. Select the user that you want to perform SSO with, and locate the **SAML Username** field. Since we chose above to use the "Active Directory User Principal Name" as the lookup value to the Lumen Cloud account, we must plug in the User Principal Name associated with this user.  in the example the User Principal Name is kellytest@ccts.dom.  Click "Save".
 
 ![SAML User](../images/adfs_saml_2012_30.png)
 
 **5. Exchange SAML messages to perform Single Sign On.**
 
- Go to a web browser and plug in <code>https://alias.cloudportal.io</code>. Here you can sign in via CenturyLink Cloud Portal username and password, or choose the **Sign In Using SAML** option. If you choose the latter, then the CenturyLink Cloud SAML service redirects the browser to the URL specified in the account's **SAML SSO URL** setting.
+ Go to a web browser and plug in <code>https://alias.cloudportal.io</code>. Here you can sign in via Lumen Cloud Portal username and password, or choose the **Sign In Using SAML** option. If you choose the latter, then the Lumen Cloud SAML service redirects the browser to the URL specified in the account's **SAML SSO URL** setting.
 
 ![Sign In Page](../images/adfs_saml_2012_31.png)
 
-The user experience when clicking the Sign In Using SAML button is that the user is prompted for credentials (if the user is not hitting the website from within the domain itself) and once provided, the user is automatically logged into the CenturyLink Cloud portal. **Because they used Single Sign On and SAML, they did NOT have to enter their CenturyLink Cloud account credentials, but rather, were able to use their regular network credentials.  In this example we logged in with User Principal Name kellytest@ccts.dom that we created earlier in this guide.**
+The user experience when clicking the Sign In Using SAML button is that the user is prompted for credentials (if the user is not hitting the website from within the domain itself) and once provided, the user is automatically logged into the Lumen Cloud portal. **Because they used Single Sign On and SAML, they did NOT have to enter their Lumen Cloud account credentials, but rather, were able to use their regular network credentials.  In this example we logged in with User Principal Name kellytest@ccts.dom that we created earlier in this guide.**

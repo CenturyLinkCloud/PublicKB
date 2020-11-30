@@ -8,12 +8,12 @@
 
 ### IMPORTANT NOTE
 
-CenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
+Lumen WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
 
 During the Limited Beta there is no production Service Level Agreement.
 
 ### Overview
-CenturyLink WordPress supports custom domain name configuration after [setting up a new site](getting-started-with-wordpress-as-a-service.md).
+Lumen WordPress supports custom domain name configuration after [setting up a new site](getting-started-with-wordpress-as-a-service.md).
 
 ### Prerequisite
 
@@ -26,7 +26,7 @@ www.example.com.    CNAME   example.useast.wordpress.ctl.io.
 
 ### WordPress Custom Domain Configuration
 
-1. Browse to [wordpress.ctl.io](https://wordpress.ctl.io), login with your CenturyLink Cloud User Name and Password and click Login
+1. Browse to [wordpress.ctl.io](https://wordpress.ctl.io), login with your Lumen Cloud User Name and Password and click Login
 
   ![](../images/wp_custom_domain_configuration/wp_custom_domain_configuration_01.png)
 
@@ -72,6 +72,6 @@ www.example.com.    CNAME   example.useast.wordpress.ctl.io.
 
    Note that the `WP_SITEURL` variable defines the base URL used for the WordPress administration console, and
    `WP_HOME` defines the base URL for the general, publicly accessible site.
-10. When you are ready, you can [commit and push](wordPress-site-updates-with-git.md) your change back up to CenturyLink
+10. When you are ready, you can [commit and push](wordPress-site-updates-with-git.md) your change back up to Lumen
     Git Hosting.
 11. Your site is now using your custom domain name.

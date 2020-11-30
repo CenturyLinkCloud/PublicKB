@@ -1,5 +1,5 @@
 {{{
-  "title": "Using the CenturyLink Cloud Support web interface",
+  "title": "Using the Lumen Cloud Support web interface",
   "date": "9-22-2016",
   "author": "Erik Jensen",
   "attachments": [],
@@ -7,10 +7,10 @@
 }}}
 
 ### Description 
-The CenturyLink Cloud Support web interface enables you to view and update your support requests.
+The Lumen Cloud Support web interface enables you to view and update your support requests.
 
 ### Audience
-CenturyLink Cloud customers 
+Lumen Cloud customers 
 
 ### Prerequisites 
 Must have a username and password for [https://support.ctl.io](https://support.ctl.io) -- this credential is separate from your Control user account 
@@ -28,7 +28,7 @@ From the menu at the upper right you can select to submit a request or check you
 *Checking on existing requests*
 From the "check your existing requests" section, click on the ticket you wish to see more information about.
 From here, you can view ticket details, including: 
-* The CenturyLink Engineer that's assigned to the request  
+* The Lumen Engineer that's assigned to the request  
 * Ticket status  
 * Ticket priority (Normal or High)  
 * Comments that have been made on the request  

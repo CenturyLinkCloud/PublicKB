@@ -9,9 +9,9 @@
 <img src="../../images/ecosystem-mesosphere-logo.png" style="border:0;max-width: 300px;"/>
 
 ### Technology Profile
-Notes on installing a basic [Mesosphere](https://mesosphere.com) cluster to CenturyLink Cloud.
+Notes on installing a basic [Mesosphere](https://mesosphere.com) cluster to Lumen Cloud.
 
-This article assumes familiarity with Mesosphere and a basic working knowledge of the CenturyLink Cloud Control Portal.
+This article assumes familiarity with Mesosphere and a basic working knowledge of the Lumen Cloud Control Portal.
 
 ### Description
 This article pertains to version 0.1 of the Mesosphere Cluster blueprint and as such should be considered a technical preview. Advanced Mesosphere administration and scaling is beyond the scope of this article.
@@ -35,7 +35,7 @@ Required Compute:
 * ~10 cores, ~20GB memory, ~100GB disk
 
 ### Postrequisite
-To access your application from a computer outside the CenturyLink Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
+To access your application from a computer outside the Lumen Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
 * Recommended: Set up a [Load Balancer](../../Network/CenturyLink Cloud/creating-a-self-service-load-balancing-configuration.md) for your slave nodes. Note, you'll need to gather the IP addresses of your slave nodes as well as install an http(s) server for this to be useful.
 * Optional: [VPN Access](../../Network/CenturyLink Cloud/how-to-configure-client-vpn.md) (optional) will allow you to access the mesos masters directly for troubleshooting/logs/etc.
 * Optional: Set up a [Public IP](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) or [Load Balancer](../../Network/CenturyLink Cloud/creating-a-self-service-load-balancing-configuration.md) on your master nodes to access Marathon publicly.
@@ -84,7 +84,7 @@ To access your application from a computer outside the CenturyLink Cloud network
 
 #### Steps
 1. Deploy or Identify an Existing Server.
-   * Identify the server targeted to add as an additional slave. The target server OS should be Ubuntu 14 64-bit. The server must be a server within your CenturyLink Cloud account.
+   * Identify the server targeted to add as an additional slave. The target server OS should be Ubuntu 14 64-bit. The server must be a server within your Lumen Cloud account.
 
 2. Select 'Execute the Package on a Server Group'.
    * Packages can be executed on one more more servers in a Group. Search for the public script package named "Mesosphere Installer".
@@ -183,10 +183,10 @@ If on the initial install your apps are not running and stuck in deployment, res
 
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no Mesosphere license costs or additional fees bundled in for the Community Release.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. There are no Mesosphere license costs or additional fees bundled in for the Community Release.
 
 ### Frequently Asked Questions
 
 #### Who should I contact for support?
-* For issues related to deploying the Mesosphere Cluster Blueprint on CenturyLink Cloud, licensing or accessing the deployed software, please visit the [Mesosphere Support website](https://docs.mesosphere.com/support/).
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to deploying the Mesosphere Cluster Blueprint on Lumen Cloud, licensing or accessing the deployed software, please visit the [Mesosphere Support website](https://docs.mesosphere.com/support/).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](https://t3n.zendesk.com/tickets/new).

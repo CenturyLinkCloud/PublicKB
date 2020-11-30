@@ -23,7 +23,7 @@
 
 * __We Have Containers!__
 
-	CenturyLink Cloud now offers turn-key installations of Kubernetes, the open source Container Orchestration System. For more information, [please refer to this blog post](https://www.ctl.io/blog/post/kubernetes-on-centurylink-cloud/).
+	Lumen Cloud now offers turn-key installations of Kubernetes, the open source Container Orchestration System. For more information, [please refer to this blog post](https://www.ctl.io/blog/post/kubernetes-on-centurylink-cloud/).
 
 * __AppFog Diego Beta Release.__
 

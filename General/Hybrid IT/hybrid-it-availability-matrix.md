@@ -8,11 +8,11 @@
 
 ### Overview
 
-CenturyLink provides a vast array of Hybrid IT solutions for customers to consume on-demand and through self-service. This matrix is designed to provide a single resource to review availability of **location-specific** CenturyLink Hybrid IT solutions on a global scale.
+Lumen provides a vast array of Hybrid IT solutions for customers to consume on-demand and through self-service. This matrix is designed to provide a single resource to review availability of **location-specific** Lumen Hybrid IT solutions on a global scale.
 
 ### Exceptions
 
-* Only location-specific services are provided in this matrix. For a full list of CenturyLink Hybrid Cloud and IT products and services [visit our product catalog](//www.ctl.io/product-catalog/).
+* Only location-specific services are provided in this matrix. For a full list of Lumen Hybrid Cloud and IT products and services [visit our product catalog](//www.ctl.io/product-catalog/).
 
 ### Hardware Products
 

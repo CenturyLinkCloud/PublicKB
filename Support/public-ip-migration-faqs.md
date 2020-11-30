@@ -9,7 +9,7 @@
 
 **Important Update** 
 11-23-2020
-Lumen Public Cloud (formerly CenturyLink Public Cloud – CLC) has made the decision to not move forward with the IP Migration initiative outlined below. 
+Lumen Public Cloud (formerly Lumen Public Cloud – CLC) has made the decision to not move forward with the IP Migration initiative outlined below. 
 Instead, Lumen is pivoting to an internal platform change that will allow for better governance and security over our networks and the platform while not impacting our customers. 
 A formal communication will be sent via email to all Lumen Public Cloud customers with more information. 
 At this time there is no action required by customers. 

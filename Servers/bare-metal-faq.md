@@ -1,7 +1,7 @@
 {{{
   "title": "Bare Metal FAQ",
   "date": "2-28-2018",
-  "author": "CenturyLink",
+  "author": "Lumen",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": false
@@ -9,7 +9,7 @@
 
 ### Description
 
-CenturyLink Bare Metal servers introduce the ability to provision and manage physical machines from the CenturyLink Cloud platform in a self-service, on-demand, and highly automated fashion.
+Lumen Bare Metal servers introduce the ability to provision and manage physical machines from the Lumen Cloud platform in a self-service, on-demand, and highly automated fashion.
 
 This FAQ addresses commonly asked questions about the service. For further information on this service and how it compares to virtual servers, see [Server Comparison Matrix](../Servers/server-comparison-matrix.md).
 
@@ -62,17 +62,17 @@ No, Blueprint functionality is not supported.
 
 Any applications not well-suited to virtualization whether it be performance or licensing restrictions related, database and application workloads where consistent performance is critical, grid or HPC (High Performance Computing), data analytics, caching and indexing.
 
-**How do I connect my Bare Metal servers over the network to my CenturyLink Cloud virtual servers?**
+**How do I connect my Bare Metal servers over the network to my Lumen Cloud virtual servers?**
 
-Bare Metal servers share the same network as CenturyLink Cloud virtual servers so it's as easy as creating and connecting networks amongst all your server types.  For more information on Network features of CenturyLink Cloud platform, reference the [Network Section](https://www.ctl.io/knowledge-base/network/centurylink-cloud/) of our Knowledge Base.
+Bare Metal servers share the same network as Lumen Cloud virtual servers so it's as easy as creating and connecting networks amongst all your server types.  For more information on Network features of Lumen Cloud platform, reference the [Network Section](https://www.ctl.io/knowledge-base/network/centurylink-cloud/) of our Knowledge Base.
 
 **Since these servers use local storage, how do I avoid application failure if underlying hardware fails?**
 
-**Important** It is the responsibility of the customer to maintain any data recovery or restoration process that may be necessary in the case of a critical hardware failure. **This is not automatically configured by default.**  CenturyLink Simple Backup Service is integrated to all Bare Metal server configurations to protect against data loss in the event of a hardware failure. For more information on CenturyLink Simple Back Service, reference the [Simple Backup Service](https://www.ctl.io/simple-backup-service/)    
+**Important** It is the responsibility of the customer to maintain any data recovery or restoration process that may be necessary in the case of a critical hardware failure. **This is not automatically configured by default.**  Lumen Simple Backup Service is integrated to all Bare Metal server configurations to protect against data loss in the event of a hardware failure. For more information on Lumen Simple Back Service, reference the [Simple Backup Service](https://www.ctl.io/simple-backup-service/)    
 
 **How is hardware support and replacement handled for Bare Metal servers?**
 
-CenturyLink is responsible for all hardware replacement for Bare Metal servers.  Physical hardware support for servers is only available during core business hours (M-F 9AM - 5PM) in the time zone of the datacenter.
+Lumen is responsible for all hardware replacement for Bare Metal servers.  Physical hardware support for servers is only available during core business hours (M-F 9AM - 5PM) in the time zone of the datacenter.
 
 For servers located in VA1 or GB3 only the following SLA will apply:
 * In the case where a server becomes completely unavailable the process to replace the server will begin immediately with consent from the customer. For additional service level details please reference the Bare Metal servers SLA on the [SLA page](https://www.ctl.io/legal/sla/).
@@ -84,19 +84,19 @@ For additional service level details please reference the Bare Metal servers SLA
 
 **What are the security features available for Bare Metal servers?**
 
-Bare Metal servers can be incorporated in the same firewall policies currently available with other CenturyLink Cloud server types. Some Bare Metal servers are pre-configured with fully encrypted local storage while others are left to the users to configure. Please see additional FAQ on “storage customizations” and "configuring RAID controller" below for details on encryption and server options.
+Bare Metal servers can be incorporated in the same firewall policies currently available with other Lumen Cloud server types. Some Bare Metal servers are pre-configured with fully encrypted local storage while others are left to the users to configure. Please see additional FAQ on “storage customizations” and "configuring RAID controller" below for details on encryption and server options.
 
 **What should I do if I do not see the configuration of CPU/Memory/Storage I want?**
 
 We've initially launched with a limited number of Bare Metal server configuration types and have added new Bare Metal server configurations.  We fully expect to continue expanding upon the number of types and quantity available of each based on customer feedback.  The server configuration screen will provide an up to date indication of our available server types.  If you do not see a configuration type there that suits your needs, please submit a [Feature Request](../Support/how-do-i-submit-a-feature-request.md) including a brief explanation of your use case and the need for a particular configuration of resources.
 
-**What features do Bare Metal servers share with CenturyLink Cloud virtual servers?**
+**What features do Bare Metal servers share with Lumen Cloud virtual servers?**
 
-While there are multiple in common between the two, there are several features available on virtual servers within CenturyLink Cloud that do not apply to Bare Metal servers.  Please see the [Server Comparison Matrix](../Servers/server-comparison-matrix.md) for more detail.
+While there are multiple in common between the two, there are several features available on virtual servers within Lumen Cloud that do not apply to Bare Metal servers.  Please see the [Server Comparison Matrix](../Servers/server-comparison-matrix.md) for more detail.
 
 **Is there a term commit option available for Bare Metal servers?**
 
-Yes, customers may work with their respective Sales representative to make use of the existing Cloud Term Commit process for Bare Metal servers in the same way they would for CenturyLink Cloud virtual servers.
+Yes, customers may work with their respective Sales representative to make use of the existing Cloud Term Commit process for Bare Metal servers in the same way they would for Lumen Cloud virtual servers.
 
 **May I have console or iLO access to my Bare Metal server?**
 
@@ -130,7 +130,7 @@ DE3<br>GB1|20 core, 256 GB RAM, 2x800GB SSD + 4x4TB HDD|e6e8aa03dbeb61e25af77c61
 
 **Where are Bare Metal servers available geographically?**
 
-Bare Metal servers availability can be viewed on the [CenturyLink Cloud data centers page](https://www.ctl.io/data-centers/#/filters/Bare%20Metal).
+Bare Metal servers availability can be viewed on the [Lumen Cloud data centers page](https://www.ctl.io/data-centers/#/filters/Bare%20Metal).
 
 **What should I do if my Bare Metal server becomes unresponsive?**
 
@@ -275,9 +275,9 @@ Once you have created a virtual machine, select the VM in Hyper-V Manager, right
 
 **How do I activate my Windows VMs provisioned on a Windows 2012 Datacenter Edition Bare Metal server?**
 
-The answers will differ depending on which Windows OSes you are trying to activate.  Guest VMs running Windows 2012 R2 will automatically activate using [AVMA (Automatic Virtual Machine Activation)](https://technet.microsoft.com/en-us/library/dn303421.aspx) using the host's Hypervisor. Guest VMs running Windows 2008 R2 can activate either using Multi-Activation Keys (MAKs) obtained from Microsoft, or by using the volume license keys available on [Microsoft's site](https://technet.microsoft.com/en-us/library/jj612867.aspx?f=255&MSPPError=-2147217396) along with the CenturyLink KMS host. To use our KMS you will need to manually specify the KMS host on the guest VM.
+The answers will differ depending on which Windows OSes you are trying to activate.  Guest VMs running Windows 2012 R2 will automatically activate using [AVMA (Automatic Virtual Machine Activation)](https://technet.microsoft.com/en-us/library/dn303421.aspx) using the host's Hypervisor. Guest VMs running Windows 2008 R2 can activate either using Multi-Activation Keys (MAKs) obtained from Microsoft, or by using the volume license keys available on [Microsoft's site](https://technet.microsoft.com/en-us/library/jj612867.aspx?f=255&MSPPError=-2147217396) along with the Lumen KMS host. To use our KMS you will need to manually specify the KMS host on the guest VM.
 
-1. You will need the VM to be on a CenturyLink Cloud customer VLAN to access our KMS host and the IP/port associated.
+1. You will need the VM to be on a Lumen Cloud customer VLAN to access our KMS host and the IP/port associated.
   ```
   172.17.1.21:1688
   ```
@@ -294,10 +294,10 @@ The answers will differ depending on which Windows OSes you are trying to activa
 
 Windows VMs in a Hyper-V environment on Bare Metal servers should use IPs in the same VLAN as configured in the Control portal for the host Bare Metal server.  It is also recommended that IPs be higher in the range so VMs claiming from that same range will not encounter IP conflicts.  Additional IPs for guest VMs can be obtained by submitting a customer support request. For activation of older Windows OSes on guest VMs you will need to obtain your own MAKs and/or activation solution.
 
-**Does CenturyLink provide OS media (ISO's) for guest VMs on Windows 2012 Datacenter Edition with Hyper-V?**
+**Does Lumen provide OS media (ISO's) for guest VMs on Windows 2012 Datacenter Edition with Hyper-V?**
 
 Customers are responsible for supplying their own guest VM OS media when using the Windows 2012 Datacenter Edition virtualization features.
 
 **Can I use Runner to automate my deployment and provisioning of Bare Metal?**
 
-Yes, CenturyLink Runner is integrated with Bare Metal to automate your deployments and provisioning of your servers. For more information on how to leverage Runner on Bare Metal, reference [CenturyLink Runner](https://www.ctl.io/runner/)   
+Yes, Lumen Runner is integrated with Bare Metal to automate your deployments and provisioning of your servers. For more information on how to leverage Runner on Bare Metal, reference [Lumen Runner](https://www.ctl.io/runner/)   

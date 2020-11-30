@@ -1,5 +1,5 @@
 {{{
-  "title": "CenturyLink Cloud Use Case: Extending Customer Active Directory Infrastructure",
+  "title": "Lumen Cloud Use Case: Extending Customer Active Directory Infrastructure",
   "date": "9-24-2015",
   "author": "Jake Malmad",
   "attachments": [],
@@ -8,7 +8,7 @@
 
 ### Overview
 
-Customers of CenturyLink Cloud often already have their own Active Directory (AD) infrastructure with DNS for user logins, name resolution along with other services that AD offers. This article will explain how to extend current AD infrastructure to their cloud servers using an IPSEC VPN tunnel and/or MPLS.
+Customers of Lumen Cloud often already have their own Active Directory (AD) infrastructure with DNS for user logins, name resolution along with other services that AD offers. This article will explain how to extend current AD infrastructure to their cloud servers using an IPSEC VPN tunnel and/or MPLS.
 
 ### Audience
 

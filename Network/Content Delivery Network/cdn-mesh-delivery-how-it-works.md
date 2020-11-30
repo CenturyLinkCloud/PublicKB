@@ -9,17 +9,17 @@
   "sticky": true
 }}}
 
-CenturyLink® CDN Mesh Delivery sources video content from a Content Delivery Network and devices watching the same stream, resulting in rapid scalability and resiliency, even within hard-to-reach markets.
+Lumen® CDN Mesh Delivery sources video content from a Content Delivery Network and devices watching the same stream, resulting in rapid scalability and resiliency, even within hard-to-reach markets.
 
-By multi-sourcing content delivery from the CDN or a mesh network of devices, CenturyLink CDN Mesh Delivery dynamically determines the fastest and most efficient delivery source while offering an extra layer of flexibility, scalability and resiliency.
+By multi-sourcing content delivery from the CDN or a mesh network of devices, Lumen CDN Mesh Delivery dynamically determines the fastest and most efficient delivery source while offering an extra layer of flexibility, scalability and resiliency.
 
-A mesh network of devices creates a more powerful network, so CenturyLink's mesh delivery platform is a powerful solution. The peer-to-peer technology consistently delivers around 75 percent of total traffic, with even more during peak viewing times increasing delivery capacity.
+A mesh network of devices creates a more powerful network, so Lumen's mesh delivery platform is a powerful solution. The peer-to-peer technology consistently delivers around 75 percent of total traffic, with even more during peak viewing times increasing delivery capacity.
 
 For popular series, catch-up TV, viral social content and more CDN Mesh Delivery allows you to scale during the most demanding traffic spikes without compromising quality.
 
 **What It Is**
 
-CDN Mesh Delivery is an advanced implementation of the WebRTC standard that enables delivery of live and video on-demand (VOD) content from a CDN and between end user devices. CenturyLink’s global CDN point of presence (PoP) footprint extends to six continents and includes a mesh network topology that can deploy practically anywhere.
+CDN Mesh Delivery is an advanced implementation of the WebRTC standard that enables delivery of live and video on-demand (VOD) content from a CDN and between end user devices. Lumen’s global CDN point of presence (PoP) footprint extends to six continents and includes a mesh network topology that can deploy practically anywhere.
 Customized delivery to every device leverages user location, internet service provider, network topology, device, type of content and bitrate profiles to determine the fastest and most efficient delivery source.
 
 In a mesh network, each device connects to other devices rather than to an Internet Service Provider. Unlike networks built around a centralized hub, a mesh network consists of multiple routers that communicate with each other to deliver fast, stable WiFi.

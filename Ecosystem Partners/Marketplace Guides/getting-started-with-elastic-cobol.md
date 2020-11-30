@@ -17,7 +17,7 @@ With Elastic COBOL your mainframe applications (including CICS and JCL) execute 
 For more information, please visit [Heirloom Computing](http://www.heirloomcomputing.com).
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 Developers wishing to migrate their CICS/COBOL applications to Java
 
@@ -25,11 +25,11 @@ Developers wishing to migrate their CICS/COBOL applications to Java
 After reading this article, the user should be able to start a server running Elastic COBOL Developer, connect to that server using Remote Desktop and begin using the Eclipse based Development environment to convert COBOL code into Java code.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 * An Elastic COBOL Developer license from Heirloom Computing. See [Heirloom Computing](http://heirloomcomputing.com) for details.
 
 ### Postrequisite
-To access your application from a computer outside the CenturyLink Cloud network over the public internet, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
+To access your application from a computer outside the Lumen Cloud network over the public internet, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
 * [Add a Public IP](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
 * [Allow incoming traffic](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) for the remote desktop port by clicking on the Servers Public IP through the Control Portal and configuring appropriately.
     * The default port to access the application through Microsoft Remote Desktop is: `3389`.
@@ -81,7 +81,7 @@ After your Blueprint deploys successfully, please follow these instructions to a
 * Once you are on the Remote Desktop, use the Elastic COBOL icon on the desktop to start Elastic COBOL Developer.
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no license costs or additional fees bundled in. You will need a valid Elastic COBOL Developer license from Heirloom Computing.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. There are no license costs or additional fees bundled in. You will need a valid Elastic COBOL Developer license from Heirloom Computing.
 
 ### About Heirloom Computing
 [Heirloom Computing](http://heirloomcomputing.com) provides patented compiler technology to automatically transform mainframe applications into highly-maintainable Java source-code, with 100% accuracy, while guaranteeing the preservation of existing business logic.
@@ -89,5 +89,5 @@ The costs associated with this Blueprint deployment are for the CenturyLink Clou
 ### Frequently Asked Questions
 
 #### Who should I contact for support?
-* For issues related to deploying the Heirloom Computing Blueprint on CenturyLink Cloud, licensing or accessing the deployed software, please visit the [Heirloom Computing Support website](http://heirloomcomputing.zendesk.com).
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to deploying the Heirloom Computing Blueprint on Lumen Cloud, licensing or accessing the deployed software, please visit the [Heirloom Computing Support website](http://heirloomcomputing.zendesk.com).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](https://t3n.zendesk.com/tickets/new).

@@ -12,7 +12,7 @@
 
 IT Operations
 
-### CenturyLink Cloud does not offer console access to cloud servers. So now what?
+### Lumen Cloud does not offer console access to cloud servers. So now what?
 
 Some IT pros may be accustomed to managing environments with this capability. Here are a few ideas and strategies to help system administrators build and maintain environments without it.
  
@@ -22,6 +22,6 @@ Some IT pros may be accustomed to managing environments with this capability. He
 
 * **Treat VMs as "parts" that simply can be replaced outside of the end user purview.** Users should never even know that VMs are getting swapped in and out. [Load balancers](../../Network/CenturyLink Cloud/self-service-load-balancing-faq.md), and [database clustering](../../Servers/configuring-high-availability-on-microsoft-sql-server-databases.md) are services and approaches to consider.
 
-* **For mission critical services, always have a QA environment available for testing.** Here, developers can validate changes against a code base without touching production servers. Use automated tools that can re-build a QA environment quickly when OS-level corruption occurs in test VMs.  CenturyLink Cloud offers [Blueprints](../../Blueprints/blueprints-best-practices.md), [SDKs](https://www.ctl.io/developers/sdks-tools), and [APIs](../../Servers/using-the-api-to-create-and-then-manage-a-server.md) to help quickly re-build infrastructure environments. Our cloud services also support configuration management tools like [Chef](../../Ecosystem Partners/Marketplace Guides/getting-started-with-chef-server-blueprint.md) and [Puppet](../../Ecosystem Partners/Marketplace Guides/getting-started-with-puppet-agent.md), which can also be used to quickly build out new environments.
+* **For mission critical services, always have a QA environment available for testing.** Here, developers can validate changes against a code base without touching production servers. Use automated tools that can re-build a QA environment quickly when OS-level corruption occurs in test VMs.  Lumen Cloud offers [Blueprints](../../Blueprints/blueprints-best-practices.md), [SDKs](https://www.ctl.io/developers/sdks-tools), and [APIs](../../Servers/using-the-api-to-create-and-then-manage-a-server.md) to help quickly re-build infrastructure environments. Our cloud services also support configuration management tools like [Chef](../../Ecosystem Partners/Marketplace Guides/getting-started-with-chef-server-blueprint.md) and [Puppet](../../Ecosystem Partners/Marketplace Guides/getting-started-with-puppet-agent.md), which can also be used to quickly build out new environments.
 
-* **Operate “above the operating system”.** CenturyLink Cloud offers several services that manage the OS for administrators. In all of these scenarios, the service is available for consumption according to an SLA, and OS-level issues are not the user’s concern.
+* **Operate “above the operating system”.** Lumen Cloud offers several services that manage the OS for administrators. In all of these scenarios, the service is available for consumption according to an SLA, and OS-level issues are not the user’s concern.

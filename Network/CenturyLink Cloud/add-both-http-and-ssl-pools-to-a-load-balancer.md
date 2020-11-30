@@ -8,11 +8,11 @@
 
 ### Overview
 
-Centurylink Cloud offers a self-service load balancer in the portal.  Customers are welcome to configure and use this load balancer to distribute web traffic across multiple servers for redundancy.  This article describes how to add server pools for both HTTP and SSL traffic to one load balancer VIP.
+Lumen Cloud offers a self-service load balancer in the portal.  Customers are welcome to configure and use this load balancer to distribute web traffic across multiple servers for redundancy.  This article describes how to add server pools for both HTTP and SSL traffic to one load balancer VIP.
 
 ### Prerequisites
 
-* A Centurylink Cloud Account
+* A Lumen Cloud Account
 
 ### General Notes
 

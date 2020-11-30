@@ -20,7 +20,7 @@ CAM has made updates to the IAM Roles and Policies of its Optimized hardening pr
 
 * Admins: Any admin of an Optimized CAM provider can click the "AWS Console" button to open a window into the console where they inherit a role called the CTLCINTAdminRole. Not only does that user inherit all the permissions and restrictions given to CAM already, but read-only access into everything else. See CAMOverridePolicy below for more information.
 * Non-Admins: Any user of CAM who is not the admin but has the optimized provider shared with them can click the "AWS Console" button to open a window into the console where they inherit a read-only role called the CTLCINTReadRole. This ensures the admin can give another user visibility into the AWS Console without accidentally creating a security loophole.
-* CenturyLink Operations: Employees of CenturyLink providing platform support to you may also click the AWS Console button and inherit a role into your account called CTLOperationsRole that provides them only read-only access plus the ability to update IAM. While many of our customers want fast support, this gives you the peace of mind that you are compliant with auditors and protect your business applications.
+* Lumen Operations: Employees of Lumen providing platform support to you may also click the AWS Console button and inherit a role into your account called CTLOperationsRole that provides them only read-only access plus the ability to update IAM. While many of our customers want fast support, this gives you the peace of mind that you are compliant with auditors and protect your business applications.
 * CAMOverridePolicy: This policy allows AWS users to customize the CTLCAMRole. You may make it more or less permissive. If you have been dissatisfied with permissions given to CAM or by the Optimized CAM Provider's "AWS Console" button, updating the CAMOverridePolicy is your path for making your experience better.
 
 ![AWS Provider](../../images/AWS-Provider.jpg)
@@ -49,4 +49,4 @@ MDRS monitors the replication process and provide audit and maintenance services
 
 #### Public Cloud Infrastructure as a Service
 
-On June 21, CenturyLink Cloud announced the end of availability for the Hyperscale virtual server instance type. For more information, view [this article](//www.ctl.io/knowledge-base/servers/hyperscale-eol-faqs/) on our Knowledge Base.
+On June 21, Lumen Cloud announced the end of availability for the Hyperscale virtual server instance type. For more information, view [this article](//www.ctl.io/knowledge-base/servers/hyperscale-eol-faqs/) on our Knowledge Base.

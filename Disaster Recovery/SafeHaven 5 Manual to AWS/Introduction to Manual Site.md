@@ -13,7 +13,7 @@ This article provides information on which sites are considered as **Manual** wi
 A site in which API's are not supported by SafeHaven at the moment is treated as a Manual site. This simply means the production or recovery servers will have to be powered on/off manually instead of the automatic operations. All other operations will remain the same and ansible installation of windows agent will work as well.
 
 ### List of Manual Sites under SafeHaven
-1. CenturyLink Private Cloud on VMware Cloud Foundation
+1. Lumen Private Cloud on VMware Cloud Foundation
 2. Standalone VMware ESXi Host
 3. Physical Server
 4. Hyper V Generation 1

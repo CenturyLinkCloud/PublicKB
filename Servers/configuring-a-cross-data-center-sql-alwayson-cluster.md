@@ -6,16 +6,16 @@
   "contentIsHTML": true
 }}}
 
-<p>SQL 2012 Enterprise Edition’s AlwaysOn Availability Groups brings high availability and disaster recovery to an entirely new level for the product- gone are the days of relying on log shipping and physical clustering! With CenturyLink Cloud’s Global Data Center
+<p>SQL 2012 Enterprise Edition’s AlwaysOn Availability Groups brings high availability and disaster recovery to an entirely new level for the product- gone are the days of relying on log shipping and physical clustering! With Lumen Cloud’s Global Data Center
   footprint, it is easy to deploy a globally scaled and highly available database architecture in record time.</p>
-<p>SQL AlwaysOn Database Availability Groups require an Active Directory environment, as well as SQL 2012 Enterprise Edition- both are can easily be automated through the CenturyLink Cloud “Create Server” wizard or use of our Blueprint Library. This article assumes
+<p>SQL AlwaysOn Database Availability Groups require an Active Directory environment, as well as SQL 2012 Enterprise Edition- both are can easily be automated through the Lumen Cloud “Create Server” wizard or use of our Blueprint Library. This article assumes
   an existing AD Forest, and as such we simply add the “Join Domain” and “Install SQL” tasks on the final page of the “Create Server” walk-through:</p>
 <p>
   <a><img src="https://t3n.zendesk.com/attachments/token/zvm1xjzopu5ba52/?name=SQLAlwaysOn1.JPG" alt="SQLAlwaysOn1.JPG" />
   </a>
 </p>
-<p>Create the desired amount of servers, in the appropriate groups and&nbsp;desired data centers- in this&nbsp;example, we are using&nbsp;four servers across&nbsp;CenturyLink Cloud’s two&nbsp;Canadian data centers- Toronto and Vancouver. Our servers will need to communicate
-  with each other, while all CenturyLink Cloud data centers are equipped with 10G interconnects, we will still need to allow communication between networks and vlans.</p>
+<p>Create the desired amount of servers, in the appropriate groups and&nbsp;desired data centers- in this&nbsp;example, we are using&nbsp;four servers across&nbsp;Lumen Cloud’s two&nbsp;Canadian data centers- Toronto and Vancouver. Our servers will need to communicate
+  with each other, while all Lumen Cloud data centers are equipped with 10G interconnects, we will still need to allow communication between networks and vlans.</p>
 <p>
   <a><img src="https://t3n.zendesk.com/attachments/token/idv8oqdnpiikpir/?name=SQLAlwaysOn2FW.JPG" alt="SQLAlwaysOn2FW.JPG" />
   </a>

@@ -9,15 +9,15 @@
 ![Apex Datacom logo](../../images/ecosystem-apex-datacom-callme-logo.png)
 
 ### Partner Profile
-Apex Datacom is an ISV and long standing CenturyLink CCA partner (of 12+ years) which has deep domain expertise with CenturyLink Voice & Data services. Apex builds purpose built apps that in many cases tightly integrates the unique combination of CenturyLink Cloud and Voice & Data into easy to deploy productivity and marketing apps for businesses.
+Apex Datacom is an ISV and long standing Lumen CCA partner (of 12+ years) which has deep domain expertise with Lumen Voice & Data services. Apex builds purpose built apps that in many cases tightly integrates the unique combination of Lumen Cloud and Voice & Data into easy to deploy productivity and marketing apps for businesses.
 * Apex’s productivity and marketing apps come in different packages and editions.
-* These apps are made available as Software As A Service (SaaS) on the CenturyLink Cloud.
+* These apps are made available as Software As A Service (SaaS) on the Lumen Cloud.
 * The marketing oriented software package referenced in this Blueprint is Call Me Essential edition.
 * Main Phone: 206.521.8980
 * Apex SaaS Sales or Technical Support: [CTLcallme@apexdatacom.com](mailto:CTLcallme@apexdatacom.com)
 
 ### Description
-Call Me is an app that leverages both the CenturyLink Cloud and CenturyLink global SIP Voice network to enable any business to quickly place a widget on their website where a prospective customer can enter their phone number and connect to a sales or services specialist at that business.
+Call Me is an app that leverages both the Lumen Cloud and Lumen global SIP Voice network to enable any business to quickly place a widget on their website where a prospective customer can enter their phone number and connect to a sales or services specialist at that business.
 
 Call Me Essential Edition Overview
 * Supports any business phone line or system including cell or traditional analog or T1 phone lines.
@@ -26,28 +26,28 @@ Call Me Essential Edition Overview
 * Includes Microsoft SQL Express Edition database for call history logs for up to 12 months.
 * Customer simply adds the Call Me widget to their public website.
 * Provides the clearest call connection quality of any such service.
-* There is no restriction on where the customer site is hosted – need not be on CenturyLink Cloud.
+* There is no restriction on where the customer site is hosted – need not be on Lumen Cloud.
 * The Essential Edition Call Me ring to phone number must be in the US or Canada.
 * Call Me is provided in manner similar to an appliance where access to the machine OS is restricted.
 
 The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for the Call Me Essentials Edition solution.
 
 ### Offer
-Apex Datacom is making their technology available for CenturyLink Cloud Users to deploy to their account. Installation of the Call Me Essentials Edition Blueprint includes a license good for a free trial of up to 10 calls. In order to purchase a license or entitlement.
+Apex Datacom is making their technology available for Lumen Cloud Users to deploy to their account. Installation of the Call Me Essentials Edition Blueprint includes a license good for a free trial of up to 10 calls. In order to purchase a license or entitlement.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using Apex Call Me Essential Edition on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using Apex Call Me Essential Edition on Lumen Cloud.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
-* Requires a CenturyLink Cloud public IP (automatically added in Blueprint).
+* Access to the Lumen Cloud platform as an authorized user.
+* Requires a Lumen Cloud public IP (automatically added in Blueprint).
 * Requires the customer to enter a Public DNS in the Blueprint.
 
 ### Postrequisite
-* Use after the Free trial period will require CenturyLink SIP long distance (IPLD) account. That account can  be ordered ahead or inline by coordinating with Apex Datacom.
+* Use after the Free trial period will require Lumen SIP long distance (IPLD) account. That account can  be ordered ahead or inline by coordinating with Apex Datacom.
 
 ### Deploy Apex Datacom Call Me Essentials Edition Blueprint
 Follow these step by step instructions to deploy a single server instance of Call Me Essentials Edition.
@@ -103,9 +103,9 @@ Follow these steps to access and use the Call Me application.
 2.	Complete the Call Me Registration ASAP.
    * Once you are logged in complete the Account Registration section immediately so Apex may contact you and work to coordinate the voice long distance integration.
    * You may find the Account Information section in the middle of the My Account page. The fields marked with a red asterisk (\*) are mandatory. See image below.
-   * It is vital you fill in accurate information so Apex may contact you to order and provision as needed CenturyLink Long Distance (SIP IPLD). Click the Register button when you have completed the form.
-   * Note: even if you have existing CenturyLink long distance service Apex will still need to contact and coordinate with you to ensure CenturyLink’s SIP gateway is configured to your new Call Me server Public IP.
-   * Once CenturyLink has processed the order as noted above, Apex will update their provisioning server and send you an email at the address given in your Registration.
+   * It is vital you fill in accurate information so Apex may contact you to order and provision as needed Lumen Long Distance (SIP IPLD). Click the Register button when you have completed the form.
+   * Note: even if you have existing Lumen long distance service Apex will still need to contact and coordinate with you to ensure Lumen’s SIP gateway is configured to your new Call Me server Public IP.
+   * Once Lumen has processed the order as noted above, Apex will update their provisioning server and send you an email at the address given in your Registration.
    * You will see that the VOIP Information section below is disabled and greyed out before you register.
    ![Apex Datacom Image](../../images/ecosystem-apex-datacom-callme-a9.png)
 
@@ -167,7 +167,7 @@ Follow these steps to access and use the Call Me application.
    ![Apex Datacom Image](../../images/ecosystem-apex-datacom-callme-a16.png)
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no Apex Datacom license costs or additional fees bundled in. However, after the free trial, if you want to use the service you will need to place an order through Apex Datacom for the CenturyLink SIP long distance.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. There are no Apex Datacom license costs or additional fees bundled in. However, after the free trial, if you want to use the service you will need to place an order through Apex Datacom for the Lumen SIP long distance.
 
 ### Frequently Asked Questions
 
@@ -175,6 +175,6 @@ The costs associated with this Blueprint deployment are for the CenturyLink Clou
 When you complete your registration within the web app, Apex will be notified and reach out to you to coordinate this.
 
 #### Who should I contact for support?
-* For issues related to deploying the Call Me Essentials Blueprint on CenturyLink Cloud, please contact support [CTLcallme@apexdatacom.com](mailto:CTLcallme@apexdatacom.com).
+* For issues related to deploying the Call Me Essentials Blueprint on Lumen Cloud, please contact support [CTLcallme@apexdatacom.com](mailto:CTLcallme@apexdatacom.com).
 * For help on the Call Me Essentials app – please email [CTLcallme@apexdatacom.com](mailto:CTLcallme@apexdatacom.com) with your request and indicate a few times over the next few business days between 7am PST to 5pm in which you are available. You will need to ensure you are near a PC with internet access and are able you are able to attend a Webex walk through.
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).

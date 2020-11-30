@@ -1,5 +1,5 @@
 {{{
-  "title": "Managing and Controlling Costs in CenturyLink Cloud",
+  "title": "Managing and Controlling Costs in Lumen Cloud",
   "date": "5-26-2015",
   "author": "Chris Little",
   "attachments": [],
@@ -8,11 +8,11 @@
 
 ### Overview
 
-CenturyLink Cloud provides several tools to enable customers to maximize the benefits of cloud computing. This article will outline some of the controls available to minimize cost. These tools are: pausing, archiving, scheduled tasks, autoscale policies, time-to-live server settings, and dashboard estimates.
+Lumen Cloud provides several tools to enable customers to maximize the benefits of cloud computing. This article will outline some of the controls available to minimize cost. These tools are: pausing, archiving, scheduled tasks, autoscale policies, time-to-live server settings, and dashboard estimates.
 
 ### Audience
 
-- CenturyLink Cloud Customers
+- Lumen Cloud Customers
 
 ### Reference Material
 
@@ -50,7 +50,7 @@ Server actions can be scheduled on an individual or group level. To do so, simpl
 
 #### Autoscale
 
-The CenturyLink Cloud platform supports both vertical autoscaling of CPU capacity for servers as well as horizontal autoscaling of servers. This makes it possible to scale servers up and down (vertical) or in and out (horizontal) based on utilization, ensuring optimal deployment of resources for cloud environments under a variety of conditions.
+The Lumen Cloud platform supports both vertical autoscaling of CPU capacity for servers as well as horizontal autoscaling of servers. This makes it possible to scale servers up and down (vertical) or in and out (horizontal) based on utilization, ensuring optimal deployment of resources for cloud environments under a variety of conditions.
 
 In vertical Autoscale, servers that exceed a user-defined CPU utilization threshold will instantly scale up, and servers that go below will scale down (and reboot) during a user-defined window. In horizontal Autoscale, groups of servers that exceed a user-defined CPU/RAM utilization threshold will scale out by powering on one or more additional servers in the group, and groups of servers that go below in by powering them off.
 
@@ -58,19 +58,19 @@ Autoscale makes it possible for a server or group of servers to self-regulate an
 
 #### Time to Live
 
-When creating a new server, the CenturyLink Cloud Control user interface includes a quick and easy way to put a time limit on the duration of the server's existence. By setting the "Time to Live" policy, users can be assured that their server will not accrue charges beyond a specific length of time. This feature is especially helpful during demonstrations and illustrations of the platform's capability.
+When creating a new server, the Lumen Cloud Control user interface includes a quick and easy way to put a time limit on the duration of the server's existence. By setting the "Time to Live" policy, users can be assured that their server will not accrue charges beyond a specific length of time. This feature is especially helpful during demonstrations and illustrations of the platform's capability.
 
 ![](../images/time_to_live.png)
 
 #### Estimation Engine
 
-At the CenturyLink Cloud Dashboard and at various places within the CenturyLink Cloud Control interface, users are presented with an estimate of what their monthly charges will look like at the current rate of consumption. This estimate is continually updated as the user considers different configuration options, and instant feedback is given when considering a change. This makes it easy for CenturyLink Cloud users to instantaneously understand the financial impact of any proposed infrastructure modification.
+At the Lumen Cloud Dashboard and at various places within the Lumen Cloud Control interface, users are presented with an estimate of what their monthly charges will look like at the current rate of consumption. This estimate is continually updated as the user considers different configuration options, and instant feedback is given when considering a change. This makes it easy for Lumen Cloud users to instantaneously understand the financial impact of any proposed infrastructure modification.
 
 ![](../images/dashboard_cost.png)
 
 ### Summary
 
-The CenturyLink Cloud platform includes numerous useful tools for helping users keep their costs below a budgeted threshold.
+The Lumen Cloud platform includes numerous useful tools for helping users keep their costs below a budgeted threshold.
 - **Pausing** servers is a quick way to remove them from the CPU and RAM metering.
 - **Archiving** further reduces the cost of the cloud server by moving the device to a lower cost storage tier.
 - **Scheduled Tasks** allow users to define custom, time-oriented policies against which cost management actions can occur.

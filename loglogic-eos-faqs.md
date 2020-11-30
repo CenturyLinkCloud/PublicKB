@@ -9,15 +9,15 @@
 }}}
 
 ### Description
-This article provides an overview of the End of Sale and End of Life Announcement for TIBCO LogLogic® H4 Appliances and information on the new Log Management solution CenturyLink has replaced this service with, Security Log Monitoring 2.0.
-This document is to provide CenturyLink customers with information regarding what this means for them,  and what options are available moving forward.
-We understand that customers may not be familiar with some of the terminology around Log Management, use cases, and features; so we created support documentation below that outline the CenturyLink Security Log Monitoring 2.0, as well as an FAQ, providing answers to the most frequently asked questions.
+This article provides an overview of the End of Sale and End of Life Announcement for TIBCO LogLogic® H4 Appliances and information on the new Log Management solution Lumen has replaced this service with, Security Log Monitoring 2.0.
+This document is to provide Lumen customers with information regarding what this means for them,  and what options are available moving forward.
+We understand that customers may not be familiar with some of the terminology around Log Management, use cases, and features; so we created support documentation below that outline the Lumen Security Log Monitoring 2.0, as well as an FAQ, providing answers to the most frequently asked questions.
 
 ### About End of Sale and End of Life Announcement for TIBCO LogLogic H4 Appliances
 
 On April 29, 2019, TIBCO announced the End-of-Sale and End-of-Life for TIBCO LogLogic H4 Appliances. The individual devices for which this announcement applies is also listed below.
 
-December 31, 2020 - End of Life Date. The last date TIBCO will provide maintenance services for such equipment, including maintenance services for the equipment software. This is also the final date that CenturyLink can provide support for this offer.
+December 31, 2020 - End of Life Date. The last date TIBCO will provide maintenance services for such equipment, including maintenance services for the equipment software. This is also the final date that Lumen can provide support for this offer.
 
 **Affected Equipment SKUs**
 
@@ -39,7 +39,7 @@ End of Life (EOL) means that the vendor will discontinue all support of the prod
 
 **Q: What is Security Log Monitoring 2.0?**
 
-**A:** Security Log Monitoring 2.0 (SLM) is CenturyLink’s commercial offer to the SIEM and Event Detection and Response market; it is multi-faceted and is sold as a service, or ‘SIEM as a Service’. It is also our go-forward Log Management solution.
+**A:** Security Log Monitoring 2.0 (SLM) is Lumen’s commercial offer to the SIEM and Event Detection and Response market; it is multi-faceted and is sold as a service, or ‘SIEM as a Service’. It is also our go-forward Log Management solution.
 
 **Q: What is a SIEM; What does SLM do?**
 
@@ -54,7 +54,7 @@ End of Life (EOL) means that the vendor will discontinue all support of the prod
 *	The web portal, is highly customizable, intuitive to use, and much more interactive than the previous Log Management solution portal.
 *	There is a mobile app available for Apple IOS, and very soon (September 2019) on the Android platform that enables users to review current Incidents.
 *	There is a Cloud Security Monitoring upgrade available to help customers achieve visibility across their environments where they’ve moved to the cloud – with the same focus on illuminating those potential indicators of compromise and attack throughout their entire enterprise.
-*	There is a Security Operations Center(SOC) Monitoring option providing customers a shared team resource to provide 24x7x365 eyes-on-glass monitoring to fulfill those Tier 1 & 2 Security Operations Center(SOC) Analyst needs for initial triage and notification. This specialized team of engineers are providing this service to many Fortune 500 enterprises for other CenturyLink security products and services.
+*	There is a Security Operations Center(SOC) Monitoring option providing customers a shared team resource to provide 24x7x365 eyes-on-glass monitoring to fulfill those Tier 1 & 2 Security Operations Center(SOC) Analyst needs for initial triage and notification. This specialized team of engineers are providing this service to many Fortune 500 enterprises for other Lumen security products and services.
 
 **Q: What if customers have more questions?**
 
@@ -68,4 +68,4 @@ End of Life (EOL) means that the vendor will discontinue all support of the prod
 
 **A:**  As we are discontinuing the service, the management consoles no longer accept data when the service is halted.  All archived data will remain intact for the length of the time contractually agreed upon, but no new data will be collected, and the EOL devices will be turned down and reclaimed.
 
-CenturyLink strives to offer a vast portfolio of valued services in alignment with our vision to provide best of class services. Technology and the digital landscape are constantly evolving, and our goal at CenturyLink is to ensure that our customers have access and are informed about the most secure and up to date offers. At CenturyLink it is our mission to reduce friction along the digital transformation path for all of our customers so that they can focus on what is important — growing their business and taking care of their customers.  We look forward to assisting you with this End of Vendor Support effort and your future business needs.
+Lumen strives to offer a vast portfolio of valued services in alignment with our vision to provide best of class services. Technology and the digital landscape are constantly evolving, and our goal at Lumen is to ensure that our customers have access and are informed about the most secure and up to date offers. At Lumen it is our mission to reduce friction along the digital transformation path for all of our customers so that they can focus on what is important — growing their business and taking care of their customers.  We look forward to assisting you with this End of Vendor Support effort and your future business needs.

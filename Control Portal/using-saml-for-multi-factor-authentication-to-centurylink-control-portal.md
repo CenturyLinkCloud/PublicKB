@@ -1,5 +1,5 @@
 {{{
-  "title": "Using SAML for Multi-Factor Authentication to CenturyLink Control Portal",
+  "title": "Using SAML for Multi-Factor Authentication to Lumen Control Portal",
   "date": "UPDATED WITH SIGNING CERTIFICATE 2-9-2019",
   "author": "Matthew Ordman",
   "attachments": [],
@@ -8,13 +8,13 @@
 
 ### Description
 
-As described in [Using SAML for Single-Sign-On](../Control Portal/using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md), CenturyLink Cloud supports the use of Security Assertion Markup Language (SAML) for exchanging user authentication data as XML between trusted parties. This industry standard protocol empowers customers to use their **own** SAML-supported identity management system for authenticating users of the CenturyLink Control Portal.
+As described in [Using SAML for Single-Sign-On](../Control Portal/using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md), Lumen Cloud supports the use of Security Assertion Markup Language (SAML) for exchanging user authentication data as XML between trusted parties. This industry standard protocol empowers customers to use their **own** SAML-supported identity management system for authenticating users of the Lumen Control Portal.
 
-Now, with the addition of the **Require SAML for Login** option provided by Control Portal, customers can *force* users to authenticate through their identity providers to enable additional identity management features like multi-factor authentication (MFA) and user provisioning. This way, the CenturyLink Cloud platform can provide flexible, standards-based capabilities while allowing an organization to keep the nuts-and-bolts of their IdM configurations in their pre-existing systems.
+Now, with the addition of the **Require SAML for Login** option provided by Control Portal, customers can *force* users to authenticate through their identity providers to enable additional identity management features like multi-factor authentication (MFA) and user provisioning. This way, the Lumen Cloud platform can provide flexible, standards-based capabilities while allowing an organization to keep the nuts-and-bolts of their IdM configurations in their pre-existing systems.
 
 For more details and how SAML works in general and how to specifically setup an ADFS IdP for use with Control Portal, refer to [Using SAML for Single-Sign-On](../Control Portal/using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md).
 
-In the example below, however, we will use a separate software-as-a-service vendor as the identity provider in order to also enforce multi-factor authentication. The following steps will walk through the process of configuring the IdP to add users, enabling MFA and SAML, and configuring CenturyLink Control Portal's SAML settings to enforce the use of the IdP.
+In the example below, however, we will use a separate software-as-a-service vendor as the identity provider in order to also enforce multi-factor authentication. The following steps will walk through the process of configuring the IdP to add users, enabling MFA and SAML, and configuring Lumen Control Portal's SAML settings to enforce the use of the IdP.
 
 ### Steps
 
@@ -24,7 +24,7 @@ Though we are using OneLogin in our example here, of course the principles will 
 
 ### Configure IdP for SAML
 
-1. In the CenturyLink Cloud Control Portal, from the Account Settings page, navigate to the "Users" tab and the "Authentication" sub-menu.
+1. In the Lumen Cloud Control Portal, from the Account Settings page, navigate to the "Users" tab and the "Authentication" sub-menu.
 2. Click the "SAML 2.0 Authentication" checkbox to show all the available settings. For now, just take note of the "Relying Party Assertion Consumer Service URL" listed there. It should be in the format of <code>https://{account-alias}.cloudportal.io/SAMLAuth/Post</code>. (Highlighted in the screenshot below.)
 ![SAML Settings Blank](../images/saml-settings-blank.png)
 3. Now login to the OneLogin end-user dashboard.
@@ -32,7 +32,7 @@ Though we are using OneLogin in our example here, of course the principles will 
 ![OneLogin Add App](../images/onelogin-add-app.png)
 5. In the search field, type "onelogin saml" and select the first app that shows up. It should be called "OneLogin SAML Test (IdP)".
 ![OneLogin SAML Test](../images/onelogin-saml-test.png)
-6. Rename this app to "CenturyLink Cloud Control Portal" and click the "Save" button.
+6. Rename this app to "Lumen Cloud Control Portal" and click the "Save" button.
 ![OneLogin SAML Test](../images/onelogin-app-rename.png)
 7. Now, on the "Configuration" tab, enter the URL you copied from Step 2 in the section above into the "SAML Consumer URL" field. Optionally, you may provide other values in the additional fields if you know them. (You will find the Single Logout URL also available on the Control Portal page from Step 2 above.)
 ![OneLogin SAML Test](../images/onelogin-saml-url.png)
@@ -42,7 +42,7 @@ There are a number of other settings that OneLogin supports or that may be suppo
 
 ### Configure Control Portal SAML Settings
 
-1. While still in the OneLogin administrator interface, click on the "SSO" tab to view SAML configuration information required to plug in to the Control Portal settings. You should see a SAML 2.0 Endpoint and a X.509 Certificate. Both of these values are required to configure SAML in CenturyLink Cloud Control Portal.
+1. While still in the OneLogin administrator interface, click on the "SSO" tab to view SAML configuration information required to plug in to the Control Portal settings. You should see a SAML 2.0 Endpoint and a X.509 Certificate. Both of these values are required to configure SAML in Lumen Cloud Control Portal.
 ![Login SAML Info](../images/onelogin-saml-info.png)
 2. Back in the Control Portal Authentication settings page, check the "Require SAML for Login" option and the "Apply to all Sub Accounts" options. This will require SAML login only for this account and all sub accounts. Next, enter the SAML 2.0 Endpoint URL provided in the previous step into the "SSO IdP URL (required)" field and copy and paste the certificate value from OneLogin page into the "Signing Certificate Key" field in Control Portal. Optionally, you can configure the "SLO IdP URL" as well. Click "Save" to apply the SAML settings to control.
 ![SAML Settings Filled In](../images/saml-settings-filled-in.png)
@@ -60,7 +60,7 @@ All that's left is to provision users in the IdP and associate them with users i
 
 ### Provision User(s)
 
-There are a few different options for provisioning users to CenturyLink Cloud and no doubt the IdP you choose to use has a number of options as well. OneLogin supports both bulk user import from a flat file as well as an [API](https://onelogin.zendesk.com/hc/en-us/articles/201175524-Users-API) for creating users. CenturyLink Cloud's API also provides the capability to programmatically create users. In this example, we will assume we already have a user in the Control Portal that we want to provision to OneLogin.
+There are a few different options for provisioning users to Lumen Cloud and no doubt the IdP you choose to use has a number of options as well. OneLogin supports both bulk user import from a flat file as well as an [API](https://onelogin.zendesk.com/hc/en-us/articles/201175524-Users-API) for creating users. Lumen Cloud's API also provides the capability to programmatically create users. In this example, we will assume we already have a user in the Control Portal that we want to provision to OneLogin.
 
 You may have the opposite situation where you need to create users in Control that already exist in your IdP. Or you may not have users in either location. No matter how you choose to provision users, as you will see, the important thing is that the SAML username in Control matches the SAML username in the IdP.
 
@@ -70,7 +70,7 @@ You may have the opposite situation where you need to create users in Control th
 ![User Info Page](../images/user-info-page.png)
 3. Back in the OneLogin configuration, navigate to "Users -> All Users" from the menu and click the "New User" button to create a new user. Enter the first name, last name, and e-mail address you took note of in Step 3. All of these fields are required and as noted above, the e-mail address must match the value entered into the SAML username field in Control. You may also fill in other fields as desired. Click "Save User".
 ![OneLogin Users](../images/onelogin-user.png)
-4. Now we have to give the user access to the Control Portal SAML application. On the "Applications" tab for the user, click the "+" sign to add a new app. Select "CenturyLink Cloud Control Portal" and click "continue" then enter the user's e-mail address and click "save".
+4. Now we have to give the user access to the Control Portal SAML application. On the "Applications" tab for the user, click the "+" sign to add a new app. Select "Lumen Cloud Control Portal" and click "continue" then enter the user's e-mail address and click "save".
 ![OneLogin User App](../images/onelogin-user-application.png)
 ![OneLogin User App](../images/onelogin-user.png)
 ![OneLogin App User](../images/onelogin-app-user.png)

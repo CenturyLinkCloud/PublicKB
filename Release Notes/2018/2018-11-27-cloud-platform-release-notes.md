@@ -32,9 +32,9 @@ The user can now use these new resource types in the template definition of any 
 
 [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) now supports additional AWS instance types: m5a and r5a. Once you synchronize your AWS provider in Cloud Application Manager, you will be able to select this Instance type in your Deployment Policy boxes to provision this type of instance at deployment time.
 
-**Custom root password for CenturyLink Cloud deployment policies**
+**Custom root password for Lumen Cloud deployment policies**
 
-[Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) now supports the ability to specify a custom root password into the CenturyLink Cloud deployment policies so that the specified value will be used at deployment time to set the password for the root account of the instance. If not specified, a random password will be generated and set for the deployed instance. This password will be accessible through the CenturyLink Cloud control portal.
+[Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) now supports the ability to specify a custom root password into the Lumen Cloud deployment policies so that the specified value will be used at deployment time to set the password for the root account of the instance. If not specified, a random password will be generated and set for the deployed instance. This password will be accessible through the Lumen Cloud control portal.
 
 **Register instances deployed through a CloudFormation template instance**
 

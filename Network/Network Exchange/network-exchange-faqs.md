@@ -11,7 +11,7 @@
 
 ### Product Overview
 
-[Network Exchange](https://www.ctl.io/network-exchange/) provides secure, high-speed, redundant, automated network connections between disparate IT environments allowing for a true hybrid environment. It is the preferred alternative to using the Internet or IPSec VPN for customers needing to connect two or more environments directly together. Common environments include CenturyLink Cloud (CLC), CenturyLink Private Cloud on VMware Cloud Foundation (VCF), Colocation environments, CenturyLink Managed Hosting, CenturyLink Dedicated Cloud Compute, 3rd party networks and customer owned devices. Network Exchange is ideal for your hybrid environment as well as capacity augmentation or cloud bursting, data migration, and disaster recovery.
+[Network Exchange](https://www.ctl.io/network-exchange/) provides secure, high-speed, redundant, automated network connections between disparate IT environments allowing for a true hybrid environment. It is the preferred alternative to using the Internet or IPSec VPN for customers needing to connect two or more environments directly together. Common environments include Lumen Cloud (CLC), Lumen Private Cloud on VMware Cloud Foundation (VCF), Colocation environments, Lumen Managed Hosting, Lumen Dedicated Cloud Compute, 3rd party networks and customer owned devices. Network Exchange is ideal for your hybrid environment as well as capacity augmentation or cloud bursting, data migration, and disaster recovery.
 
 Network Exchange provides the user with near total control of connection setup and management via the Network Exchange Internet portal, combined with automation through software defined networking, and pre-deployed network infrastructure.
 
@@ -19,11 +19,11 @@ Network Exchange provides the user with near total control of connection setup a
 
 **Q: How is Network Exchange secure?**
 
-**A:** Network Exchange uses dedicated, private equipment not accessible to the public and the Internet. Additionally, Network Exchange uses virtual routing to create routing environments specific to each customer. No global routing tables are used within the Network Exchange environment. There are also firewalls within CenturyLink Cloud accounts. In some cases, depending on the opposite endpoint, there may also be other firewalls.
+**A:** Network Exchange uses dedicated, private equipment not accessible to the public and the Internet. Additionally, Network Exchange uses virtual routing to create routing environments specific to each customer. No global routing tables are used within the Network Exchange environment. There are also firewalls within Lumen Cloud accounts. In some cases, depending on the opposite endpoint, there may also be other firewalls.
 
 **Q: Can anyone use Network Exchange?**
 
-**A:** Anyone who already has or will create a CenturyLink Cloud account and has at least two valid endpoints (data sources) to connect within the same location. An example would be someone wanting to connect their CenturyLink Cloud VMs to their CenturyLink Dedicated Cloud Compute (DCC) environment.
+**A:** Anyone who already has or will create a Lumen Cloud account and has at least two valid endpoints (data sources) to connect within the same location. An example would be someone wanting to connect their Lumen Cloud VMs to their Lumen Dedicated Cloud Compute (DCC) environment.
 
 **Q: Where do I go for support of Network Exchange?**
 
@@ -35,11 +35,11 @@ Network Exchange provides the user with near total control of connection setup a
 
 **Q: Can customers build and delete their own virtual circuits within Network Exchange? Can Customer Service or someone other than the customer access Network Exchange to add or delete virtual circuits?**
 
-**A:** Customers with a valid CenturyLink Cloud account and with the appropriate permissions can create, modify, or delete an exchange. CenturyLink Customer Service has access to all exchanges by default for the purpose of assisting customers. Customers can request for this access to be blocked.
+**A:** Customers with a valid Lumen Cloud account and with the appropriate permissions can create, modify, or delete an exchange. Lumen Customer Service has access to all exchanges by default for the purpose of assisting customers. Customers can request for this access to be blocked.
 
 **Q: Is the provisioning of a Network Exchange circuit completely automated from end-to-end?**
 
-**A:** At the initial launch, Network Exchange provisioning to CenturyLink Cloud, CenturyLink Private Cloud on VCF and in the near future AWS is fully automated. The provisioning of Colocated and Dedicated Access Endpoints require physical implementation of cross connects and potentially some additional configuration. The provisioning to CenturyLink Managed Hosting Network (HAN) requires minimal manual configurations.
+**A:** At the initial launch, Network Exchange provisioning to Lumen Cloud, Lumen Private Cloud on VCF and in the near future AWS is fully automated. The provisioning of Colocated and Dedicated Access Endpoints require physical implementation of cross connects and potentially some additional configuration. The provisioning to Lumen Managed Hosting Network (HAN) requires minimal manual configurations.
 
 **Q: Is Network Exchange Layer 2 or Layer 3?**
 
@@ -59,7 +59,7 @@ Network Exchange provides the user with near total control of connection setup a
 
 **Q: How many connections can I create?**
 
-**A:** An Exchange may contain multiple instances of several Endpoint types. Specifically, an Exchange can connect to an unlimited number of Colocated and Managed Hosting environments and customer owned devices in any of the metro areas that Network Exchange is available. The exception to this is that only one CenturyLink Cloud Endpoint is allowed per account at each location Network Exchange is available. Additionally, the customer may create multiple exchanges at each location.
+**A:** An Exchange may contain multiple instances of several Endpoint types. Specifically, an Exchange can connect to an unlimited number of Colocated and Managed Hosting environments and customer owned devices in any of the metro areas that Network Exchange is available. The exception to this is that only one Lumen Cloud Endpoint is allowed per account at each location Network Exchange is available. Additionally, the customer may create multiple exchanges at each location.
 
 **Q: What is an “Exchange”?**
 
@@ -75,8 +75,8 @@ Network Exchange provides the user with near total control of connection setup a
 
 **Q: I'm a Cloud Network Services customer. How does Network Exchange affect this service?**
 
-**A:** Network Exchange is a new service, indepdendent of Cloud Network Service. It will be operated in parallel with Cloud Network Services and eventually replace it. Currently, no time frame exists for a required migration from Cloud Network Services to Network Exchange, although CenturyLink can provide a migration path to Network Exchange and guide customers through the process. Several Cloud Netork Services customers have self-selected to migrate due to the ability of Network Exchange to allow for the self-management of connections between multiple Endpoints rather than relying on CenturyLink to manage each Cloud Network Services connection between two data sources. Please be aware that if you have an existing MPLS, HNS or Cloud Network Services connection, deployment of Network Exchange may override your existing routes.  This can occur as Network Exchange depolys a default route of (0.0.0.0/0) which could override any custom firewall setting previously configured.
+**A:** Network Exchange is a new service, indepdendent of Cloud Network Service. It will be operated in parallel with Cloud Network Services and eventually replace it. Currently, no time frame exists for a required migration from Cloud Network Services to Network Exchange, although Lumen can provide a migration path to Network Exchange and guide customers through the process. Several Cloud Netork Services customers have self-selected to migrate due to the ability of Network Exchange to allow for the self-management of connections between multiple Endpoints rather than relying on Lumen to manage each Cloud Network Services connection between two data sources. Please be aware that if you have an existing MPLS, HNS or Cloud Network Services connection, deployment of Network Exchange may override your existing routes.  This can occur as Network Exchange depolys a default route of (0.0.0.0/0) which could override any custom firewall setting previously configured.
 
 **Q: I'm a Cloud Network Services customer. Can I use Network Exchange concurrently?**
 
-**A:** Yes. A customer can use both Cloud Network Services and Network Exchange at the same time so long as each is operated under it's own subaccount on CLC. Different VLANs must be used for CenturyLink Managed Hosting Area Network (HAN) endpoints.
+**A:** Yes. A customer can use both Cloud Network Services and Network Exchange at the same time so long as each is operated under it's own subaccount on CLC. Different VLANs must be used for Lumen Managed Hosting Area Network (HAN) endpoints.

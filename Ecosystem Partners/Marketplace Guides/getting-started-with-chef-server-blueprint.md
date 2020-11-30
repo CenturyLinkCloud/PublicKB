@@ -18,15 +18,15 @@
 |support@chef.io |
 
 ### Description
-Chef has integrated their technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Configuration Management solution.
+Chef has integrated their technology with the Lumen Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Configuration Management solution.
 
-Technology from Chef helps CenturyLink Cloud customers address the business challenge of Configuration Management by implementing Chef Server solution - now available as part of the CenturyLink Cloud Blueprint Engine.
+Technology from Chef helps Lumen Cloud customers address the business challenge of Configuration Management by implementing Chef Server solution - now available as part of the Lumen Cloud Blueprint Engine.
 
 ### Audience
-* CenturyLink Cloud Users
+* Lumen Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the partner technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the partner technology on Lumen Cloud.
 
 After executing the steps in this Getting Started document, the users will have a functioning Chef Server with Chef manage upon which they can start developing their configuration management solutions.
 
@@ -77,4 +77,4 @@ You receive a free 25 node license with your Chef server. If you would like more
 
 **Who should I contact for support?**
 * For issues related to deploying Chef Server, please contact support@chef.io.
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
+* For issues related to cloud infrastructure, please open a ticket using the [Lumen Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).

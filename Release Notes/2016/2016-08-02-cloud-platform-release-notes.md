@@ -7,7 +7,7 @@
 }}}
 
 ### New Features (3)
-* __New CenturyLink Cloud Data Center - VA2 US (Sterling, Virginia) Now Live.__
+* __New Lumen Cloud Data Center - VA2 US (Sterling, Virginia) Now Live.__
 
 * __Relational DB: Point in Time Restore__
 
@@ -26,18 +26,18 @@
   ![RunnerLogo](../../images/runner-logo-black-text.png)
 
 ### Enhancements (1)
-* __CenturyLink Cloud Platform: Inventory Protection__
+* __Lumen Cloud Platform: Inventory Protection__
 
-	The CenturyLink Cloud Platform has added inventory protection for our pool of available Public IP addresses. This change will help to prevent situations in which new Public IP addresses are temporarily unavailable for allocation.<p>
+	The Lumen Cloud Platform has added inventory protection for our pool of available Public IP addresses. This change will help to prevent situations in which new Public IP addresses are temporarily unavailable for allocation.<p>
 
 ### EcoSystem - New Blueprints (2)
-* Two new Blueprints now available on both CenturyLink Cloud and CenturyLink Dedicated Cloud (Intelligent Hosting)
+* Two new Blueprints now available on both Lumen Cloud and Lumen Dedicated Cloud (Intelligent Hosting)
     - __Apache Httpd 2.4 with PHP 5.6 now available for Red Hat Enterprise Linux 6, 7__
     - __IIS version 8.5 now available on Windows Server 2012 R2__
 
 ### Announcements (2)
-* __MySQL 5.7 has been certified on RHEL 5,6, and 7__ - Now available on both CenturyLink Cloud and CenturyLink Dedicated Cloud (Intelligent Hosting)
-* __Upcoming Enhancements to Authentication & Changes for Your SAML Configuration__ - In the coming months, CenturyLink Cloud will be upgrading its authentication service. Many customers will not experience any material changes as a result of this upgrade. However, customers that have enabled SAML for their CenturyLink Cloud accounts will be required to make configuration changes to ensure that authentication continues to function.  Please review this [FAQ](https://www.ctl.io/knowledge-base/support/authentication-updates-faq/)  to understand the action required on your part, if any.<p>
+* __MySQL 5.7 has been certified on RHEL 5,6, and 7__ - Now available on both Lumen Cloud and Lumen Dedicated Cloud (Intelligent Hosting)
+* __Upcoming Enhancements to Authentication & Changes for Your SAML Configuration__ - In the coming months, Lumen Cloud will be upgrading its authentication service. Many customers will not experience any material changes as a result of this upgrade. However, customers that have enabled SAML for their Lumen Cloud accounts will be required to make configuration changes to ensure that authentication continues to function.  Please review this [FAQ](https://www.ctl.io/knowledge-base/support/authentication-updates-faq/)  to understand the action required on your part, if any.<p>
 
 ### Bug Fixes (1)
 * __MySQL 5.5 build process for RHEL 7 is now fixed__

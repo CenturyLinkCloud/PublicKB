@@ -1,5 +1,5 @@
 {{{
-  "title": "Network Exchange CenturyLink Colocation Endpoint Guide",
+  "title": "Network Exchange Lumen Colocation Endpoint Guide",
   "date": "06-28-2018",
   "author": "Jason Holland",
   "keywords": ["clc", "cloud", "network", "colocation", "hae"],
@@ -11,7 +11,7 @@
 
 ### Colocation Endpoint Connectivity Prerequisites
 
-* End Users must establish a CenturyLink Cloud (CLC) master account and sub-accounts, the latter to create isolation between the networking resources of the business units of their enterprise. The Exchanges created under each sub-account will be logically isolated from one another.
+* End Users must establish a Lumen Cloud (CLC) master account and sub-accounts, the latter to create isolation between the networking resources of the business units of their enterprise. The Exchanges created under each sub-account will be logically isolated from one another.
 * The desired colocation site must be supported within Network Exchange. See the *[Network Exchange Availability Matrix and Configuration Guide](../Network Exchange/network-exchange-connectivity-matrix-configuration-guide.md)* for supported data centers.
 
 ### Colocation Endpoint Capabilities
@@ -19,7 +19,7 @@
 * Choices of 1Gbps and 10Gbps dedicated connectivity between the End User’s equipment and Network Exchange equipment.
 * Options of a single line connection or a redundant connection (two physical connections) to increase gauranteed uptime.
 * For any existing CLC accounts that wish to use Network Exchange, it is necessary to migrate them to a Dedicated VR.  Having a dedicated virtual routing table allows each customer to have their own set of IPs’ from a cloud connectivity standpoint.  A Dedicated VR is also required for automation to work when creating connectivity to the cloud.  
-To create a dedicated virtual routing table (Dedicated VR), the VR will need to be created and all existing IP blocks the customer is using will need to converge to the new VR.  To initiate this process, create a ticket with the CenturyLink Cloud help desk.  
+To create a dedicated virtual routing table (Dedicated VR), the VR will need to be created and all existing IP blocks the customer is using will need to converge to the new VR.  To initiate this process, create a ticket with the Lumen Cloud help desk.  
 * Routing Types of both BGP and Static are available.
 
 ### Notes

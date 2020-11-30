@@ -55,7 +55,7 @@ If you are using a service and it becomes unavailable, contact your account admi
 
 There are many ways to limit the services that users can or can’t see. User [roles](../../Accounts & Users/roles-faq.md) restrict access to specific areas of the cloud platform, and therefore restrict access to specific services and functionality. Additionally, some services are not available in certain datacenters, which effectively precludes users from having access to them.
 
-Suggestions for additional services that should be added to the Service Catalog are enthusiastically welcomed. Send your input to help@ctl.io or to the CenturyLink UserVoice forum. (See http://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/ for more details on submitting feature requests via UserVoice.)
+Suggestions for additional services that should be added to the Service Catalog are enthusiastically welcomed. Send your input to help@ctl.io or to the Lumen UserVoice forum. (See http://www.ctl.io/knowledge-base/support/how-do-i-submit-a-feature-request/ for more details on submitting feature requests via UserVoice.)
 
 **I want to make a service unavailable to users of my sub accounts and also make it invisible to the Account Administrators of those sub accounts. Can I do that?**
 

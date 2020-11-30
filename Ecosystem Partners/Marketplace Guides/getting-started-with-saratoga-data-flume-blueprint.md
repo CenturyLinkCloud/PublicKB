@@ -21,9 +21,9 @@ Sales Support:
 * 408-898-4307
 
 ### Description
-Saratoga Data Systems has provided their Flume accelerated file transfer technology on the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this network and security solution.
+Saratoga Data Systems has provided their Flume accelerated file transfer technology on the Lumen Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this network and security solution.
 
-Saratoga Data Systems helps CenturyLink Cloud customers address the business challenge of secure and reliable transmission of data over challenged networks by providing fast reliable file transfer using the flume client server software - now available as part of the CenturyLink Cloud Blueprint Engine.
+Saratoga Data Systems helps Lumen Cloud customers address the business challenge of secure and reliable transmission of data over challenged networks by providing fast reliable file transfer using the flume client server software - now available as part of the Lumen Cloud Blueprint Engine.
 
 ### Solution Overview
 ![Saratoga Data Flume logo](../../images/ecosystem-saratoga-data-flume-logo.png)
@@ -47,18 +47,18 @@ Flume can also optionally encrypt all communications using a selectable encrypti
 A unique feature of Flume among file transfer programs is the ability to be used in a UNIX "pipe". This means that source data can come via 'stdin' and/or output can be to 'stdout'. If either of these modes is used at the remote location, Flume allows specification of what program is to run there to either: push data to 'stdin' or pull data from 'stdout'. See the Flume User Manual for more information on this feature.
 
 ### Offer
-Saratoga Data is making their technology available for CenturyLink Cloud Users to deploy to their account.  Installation of the Flume Blueprint includes a license good for one month (depending on the actual date of deployment). In order to purchase a license or entitlement, please contact [sales@saratogadata.com](mailto:sales@saratogadata.com).
+Saratoga Data is making their technology available for Lumen Cloud Users to deploy to their account.  Installation of the Flume Blueprint includes a license good for one month (depending on the actual date of deployment). In order to purchase a license or entitlement, please contact [sales@saratogadata.com](mailto:sales@saratogadata.com).
 
 ### Audience
-CenturyLink Cloud Users with high latency, challenged links, especially remote locations and via satellite-based connections.
+Lumen Cloud Users with high latency, challenged links, especially remote locations and via satellite-based connections.
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the partner technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the partner technology on Lumen Cloud.
 
 After executing the steps in this Getting Started document, the users will have a functioning Linux operating system that includes the 'flume' software.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 * Identify a Network VLAN you want the Saratoga Data servers to reside on.
 * Possess a Flume license key.
 
@@ -114,15 +114,15 @@ For example to push data to another system (which must also have flume installed
 flume --source_file(s) --remote-host-name-or-ip:/remote/file/system/directory/
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no Saratoga Data Flume license costs or additional fees bundled in.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. There are no Saratoga Data Flume license costs or additional fees bundled in.
 
 ### Frequently Asked Questions
 
 #### Where do I obtain my Saratoga Data License or entitlements?
-Existing CenturyLink Enterprise Customers can contact their Account Representative for help obtaining a Saratoga Data license, or contact Saratoga Data directly:
+Existing Lumen Enterprise Customers can contact their Account Representative for help obtaining a Saratoga Data license, or contact Saratoga Data directly:
 - via Email: [sales@SaratogaData.com](mailto:sales@SaratogaData.com)
 - via Phone: 1-408-898-4307
 
 #### Who should I contact for support?
 * For issues related to deploying the Blueprint, licensing, accessing or using the Saratoga Data application, please visit the [Saratoga Data Support Website](http://www.SaratogaDataSystems.com/support).
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new)
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new)

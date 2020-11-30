@@ -1,5 +1,5 @@
 {{{
-  "title": "CenturyLink Cloud Feature Availability Matrix",
+  "title": "Lumen Cloud Feature Availability Matrix",
   "date": "4-24-2018",
   "author": "Chris Little",
   "attachments": [],
@@ -8,11 +8,11 @@
 
 ### Overview
 
-The CenturyLink Cloud provides a vast array of services for customers to consume on-demand and in a self-service fashion.  This matrix is designed to provide a single resource to review availability of **location specific** CenturyLink Cloud services on a global scale.
+The Lumen Cloud provides a vast array of services for customers to consume on-demand and in a self-service fashion.  This matrix is designed to provide a single resource to review availability of **location specific** Lumen Cloud services on a global scale.
 
 ### Exceptions
 
-* Only location specific services are provided in this matrix.  For a full list of CenturyLink Cloud services and features [visit our public website](//www.ctl.io)
+* Only location specific services are provided in this matrix.  For a full list of Lumen Cloud services and features [visit our public website](//www.ctl.io)
 
 ### Availability Matrix
 

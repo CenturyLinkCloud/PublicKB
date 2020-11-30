@@ -1,22 +1,22 @@
 {{{
-  "title": "CenturyLink Cloud Status FAQ",
+  "title": "Lumen Cloud Status FAQ",
   "date": "3-28-2017",
   "author": "Chris Welkenstein",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-**Q: What is CenturyLink Cloud Status?**
+**Q: What is Lumen Cloud Status?**
 
-A: Status is the tool we use to communicate the current health of our CenturyLink Cloud services. Users may navigate to status.ctl.io for a look at what is occurring now and what has happened in the past. They may also sign up for email notifications based on specific locations and services.
+A: Status is the tool we use to communicate the current health of our Lumen Cloud services. Users may navigate to status.ctl.io for a look at what is occurring now and what has happened in the past. They may also sign up for email notifications based on specific locations and services.
 
-**Q: What does this mean for users of the CenturyLink Cloud platform?**
+**Q: What does this mean for users of the Lumen Cloud platform?**
 
-A: This feature provides a self-service mechanism for staying current on cloud services status, maintenance, incident progress, and event history. Maintenance and incident emails will stop coming from noreply@status.io. All notifications will come from CenturyLink Cloud Notification at noreply@ctl.io.
+A: This feature provides a self-service mechanism for staying current on cloud services status, maintenance, incident progress, and event history. Maintenance and incident emails will stop coming from noreply@status.io. All notifications will come from Lumen Cloud Notification at noreply@ctl.io.
 
-**Q: How do I get access to CenturyLink Cloud Status updates?**
+**Q: How do I get access to Lumen Cloud Status updates?**
 
-A: You can get updates through CenturyLink Cloud Status in two ways:
+A: You can get updates through Lumen Cloud Status in two ways:
 
 1: Go to http://status.ctl.io/ at any time to see an overview of the present health of the cloud and information regarding scheduled maintenance. In the event of an incident, users can get status updates per our SLA.
 

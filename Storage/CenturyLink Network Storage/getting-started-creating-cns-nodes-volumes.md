@@ -9,7 +9,7 @@
 
 ### Introduction
 
-CenturyLink Network Storage 1.0 (CNS) is a storage offering providing customers storage volumes for storing their data. This one product offers NAS Volume (CIFS, NFS) and SAN LUNS (iSCSI) storage. Storage is available in two tiers, Performance and Standard, with Performance offering higher performance. CNS offers customers the option of replication of their storage volumes to another location.
+Lumen Network Storage 1.0 (CNS) is a storage offering providing customers storage volumes for storing their data. This one product offers NAS Volume (CIFS, NFS) and SAN LUNS (iSCSI) storage. Storage is available in two tiers, Performance and Standard, with Performance offering higher performance. CNS offers customers the option of replication of their storage volumes to another location.
 
 The customer will create one or more CNS nodes during the provisioning process. The volumes they create are exported from these nodes via the storage protocol chosen for the individual volume. A CNS node is a storage virtual machine (SVM).
 

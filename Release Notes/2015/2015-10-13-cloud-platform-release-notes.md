@@ -8,7 +8,7 @@
 
 ### New Features (8)
 
-* __Promotional usage integrated with dashboards & usage estimates:__ Users that have signed up for CenturyLink Cloud services using a promotional code via [www.ctl.io](https://www.ctl.io) will now see that promotional usage captured on the Dashboard and in account usage estimate screens.
+* __Promotional usage integrated with dashboards & usage estimates:__ Users that have signed up for Lumen Cloud services using a promotional code via [www.ctl.io](https://www.ctl.io) will now see that promotional usage captured on the Dashboard and in account usage estimate screens.
 
     ![Promo codes](../../images/2015-10-13_releasenotes8.png)
 
@@ -22,7 +22,7 @@
 
 * __Orchestrate:__
 
-  * __NY1 data center now available.__ [Orchestrate](https://www.orchestrate.io/) is now available in CenturyLink Cloud's NY1 Data Center.
+  * __NY1 data center now available.__ [Orchestrate](https://www.orchestrate.io/) is now available in Lumen Cloud's NY1 Data Center.
 
     ![Orchestrate in NY1](../../images/2015-10-13_releasenotes7.png)
 
@@ -30,7 +30,7 @@
 
   * __Search and aggregate graph relations and their properties.__ Graph relation properties are now indexed for search. They can be searched for by including "@path.kind:relationship" in queries. These relations are also available for all types of aggregations.
 
-* __SDKs: Go & Node.js.__ SDK for Node.js and CLI for Go. Use these open-source tools to work with CenturyLink Cloud APIs more effectively. Get the [Node SDK here](https://github.com/CenturyLinkCloud/clc-node-sdk); the [CLI for Go is available here](https://github.com/CenturyLinkCloud/clc-go-cli).
+* __SDKs: Go & Node.js.__ SDK for Node.js and CLI for Go. Use these open-source tools to work with Lumen Cloud APIs more effectively. Get the [Node SDK here](https://github.com/CenturyLinkCloud/clc-node-sdk); the [CLI for Go is available here](https://github.com/CenturyLinkCloud/clc-go-cli).
 
 ### Enhancements (3)
 
@@ -58,7 +58,7 @@
 
   Updated documentation for setting notification destinations can be found at https://www.ctl.io/knowledge-base/security/configuring-ips-notifications/
 
-  For more information on the IPS product or our Beta, visit our [product page on the CenturyLink Cloud website](https://www.ctl.io/intrusion-prevention-service/).
+  For more information on the IPS product or our Beta, visit our [product page on the Lumen Cloud website](https://www.ctl.io/intrusion-prevention-service/).
 
 * __MySQL DBaaS:__
 
@@ -78,7 +78,7 @@
 
 ### Ecosystem (3)
 
-* __Zoomdata:__ Zoomdata enables business users to visually consume and interact with all their data in the modern enterprise. While specifically built for modern data sources -- including Cloudera -- Zoomdata also works with relational databases and popular cloud applications. Using patented Data Sharpening and Micro-query technologies, Zoomdata empowers business users to visually consume data in seconds, even across billions of rows of data. Zoomdata brings visual analytics to all business users -- not just data analysts -- via an intuitive user interface that can be [provisioned via blueprint on the CenturyLink platform today.](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-zoomdata-blueprint/)
+* __Zoomdata:__ Zoomdata enables business users to visually consume and interact with all their data in the modern enterprise. While specifically built for modern data sources -- including Cloudera -- Zoomdata also works with relational databases and popular cloud applications. Using patented Data Sharpening and Micro-query technologies, Zoomdata empowers business users to visually consume data in seconds, even across billions of rows of data. Zoomdata brings visual analytics to all business users -- not just data analysts -- via an intuitive user interface that can be [provisioned via blueprint on the Lumen platform today.](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-zoomdata-blueprint/)
 
 * __Heirloom Computing:__ Heirloom Computing helps business applications migrate their legacy mainframe applications into an enterprise-friendly Java model while preserving business logic, thereby reducing cost and providing integration with modern systems. Through patented advanced language transformation and open architecture, Heirloom software complies and translates COBOL to Java in one-step, eliminating complexity and risk without vendor lock-in. Java programmers on our platform are empowered to [get started with Heirloom via single-click blueprint](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-elastic-cobol/), reducing their costly dependency on mainframe skill-sets.
 

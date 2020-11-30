@@ -7,9 +7,9 @@
 }}}
 
 ### Overview
-CenturyLink Cloud’s Account Hierarchy management features allows customers granular enablement and demarcation of: users, systems, groups, networks,
-billing, reporting, and/or sub-accounts that reside within the CenturyLink Cloud platform. Customers with administrator access can create and manage these attributes
-within the CenturyLink Cloud Control Portal. It is strongly recommended organizations should consider the following factors, limitations, and best practices before they
+Lumen Cloud’s Account Hierarchy management features allows customers granular enablement and demarcation of: users, systems, groups, networks,
+billing, reporting, and/or sub-accounts that reside within the Lumen Cloud platform. Customers with administrator access can create and manage these attributes
+within the Lumen Cloud Control Portal. It is strongly recommended organizations should consider the following factors, limitations, and best practices before they
 embark on leveraging the aforementioned features.
 
 ### Factors that Influence Account Configuration

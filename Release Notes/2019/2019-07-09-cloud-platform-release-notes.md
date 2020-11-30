@@ -2,7 +2,7 @@
 "title": "Cloud Platform - Release Notes: July 9, 2019",
 "date": "07-09-2019",
 "author": "Joseph Nguyen",
-"keywords":["centurylink", "cam", "alm", "optimization"],
+"keywords":["lumen", "cam", "alm", "optimization"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -13,7 +13,7 @@
 
 ##### Integrated Azure in Latin America
 
-CenturyLink has been authorized by Azure to support consolidated billing and management of accounts for customers headquartered within select countries within Latin America. A CenturyLink representative should be contacted for a detailed list of geographic, sector, and feature availability.
+Lumen has been authorized by Azure to support consolidated billing and management of accounts for customers headquartered within select countries within Latin America. A Lumen representative should be contacted for a detailed list of geographic, sector, and feature availability.
 
 #### [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/)
 
@@ -25,7 +25,7 @@ In addition, it's possible to specify the timeout for an instance. This can be d
 
 ##### Terraform template boxes on VMware vCenter providers
 
-Application Lifecycle Management now extends its Terraform template support to the VMware vCenter provider type. In addition to the existing support for AWS, Azure, Google Cloud, CenturyLink Cloud, vCloud and CenturyLink Private Cloud on vCloud Foundation provider types, the VMware vCenter provider type is now eligible for deploying a Terraform template box when configuring a Terraform deployment policy box.
+Application Lifecycle Management now extends its Terraform template support to the VMware vCenter provider type. In addition to the existing support for AWS, Azure, Google Cloud, Lumen Cloud, vCloud and Lumen Private Cloud on vCloud Foundation provider types, the VMware vCenter provider type is now eligible for deploying a Terraform template box when configuring a Terraform deployment policy box.
 
 ##### New CloudFormation types supported
 

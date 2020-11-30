@@ -8,7 +8,7 @@
 
 ### Description (goal/purpose)
 
-CenturyLink Cloud will default to having one Billing Account Number (BAN) per Hierarchy that is automatically generated upon signing up for the service. We do have the capability to separate Master and Sub-Accounts onto different BANs, if requested.
+Lumen Cloud will default to having one Billing Account Number (BAN) per Hierarchy that is automatically generated upon signing up for the service. We do have the capability to separate Master and Sub-Accounts onto different BANs, if requested.
 
 * Sub-Accounts can be billed separately from their Master Account, and separate from each other
 

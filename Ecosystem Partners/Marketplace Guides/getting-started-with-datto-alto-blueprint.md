@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-After reading this article, the reader should feel comfortable deploying the Datto Virtual ALTO to protect server data residing on CenturyLink Cloud.
+After reading this article, the reader should feel comfortable deploying the Datto Virtual ALTO to protect server data residing on Lumen Cloud.
 
 ### Partner Profile
 
@@ -24,17 +24,17 @@ http://www.datto.com/
 |Datto Channel Manager<br>Brian Buckman<br>bbuckman@datto.com<br>(312) 638-2742<br>pricing will come from your authorized MSP | 24x7 Customer Support<br> [www.datto.com/support](http://www.datto.com/support)<br>(877) 455-6015	|
 
 ### Description
-Datto has integrated their technology with the CenturyLink Cloud platform. The purpose of this Knowledge Base article is to help the reader take advantage of this integration to achieve rapid time-to-value for this data protection solution.
+Datto has integrated their technology with the Lumen Cloud platform. The purpose of this Knowledge Base article is to help the reader take advantage of this integration to achieve rapid time-to-value for this data protection solution.
 
-Technology from Datto helps CenturyLink Cloud customers address the business challenge of data protection and eliminates downtime by virtualizing systems instantly and is now available as part of the CenturyLink Cloud Blueprint Engine.
+Technology from Datto helps Lumen Cloud customers address the business challenge of data protection and eliminates downtime by virtualizing systems instantly and is now available as part of the Lumen Cloud Blueprint Engine.
 
-Customers can protect Windows and Linux operating systems and replicate data every 5 minutes to 60 minutes within the CenturyLink Cloud. Additionally, data can be replicated to the Datto cloud where customers can store data for long-term retention or failover and instantly virtualize.
+Customers can protect Windows and Linux operating systems and replicate data every 5 minutes to 60 minutes within the Lumen Cloud. Additionally, data can be replicated to the Datto cloud where customers can store data for long-term retention or failover and instantly virtualize.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using Datto technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using Datto technology on Lumen Cloud.
 
 After executing the steps in this Getting Started document, the users will have a functioning Virtual ALTO upon which they can start protecting data and virtualizing systems.
 
@@ -85,5 +85,5 @@ The costs listed in the above steps are for the infrastructure only. After deplo
 * Email your Datto Channel Manager at bbuckman@datto.com. Datto pricing will come from your authorized MSP.
 
 **Who should I contact for support?**
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
-* For issues related to deploying the ALTO Blueprints and application operation on CenturyLink Cloud, follow your existing Datto support process.
+* For issues related to cloud infrastructure, please open a ticket using the [Lumen Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
+* For issues related to deploying the ALTO Blueprints and application operation on Lumen Cloud, follow your existing Datto support process.

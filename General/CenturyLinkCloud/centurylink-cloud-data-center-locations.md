@@ -9,7 +9,7 @@ Lumen is rapidly adding Edge Computing locations across the globe to provide cus
 
 Below are tables that provide locations and availabilty for the expanding Edge Computing Service locations across the Lumen portfolio.  
 
-* **Lumen Public Cloud (LPC)**: (formerly CenturyLink Public Cloud) Multi-tenant computing service that enables flexible virtual machines and other datacenter services in a pay-as-you-go model.  
+* **Lumen Public Cloud (LPC)**: (formerly Lumen Public Cloud) Multi-tenant computing service that enables flexible virtual machines and other datacenter services in a pay-as-you-go model.  
 * **Lumen Edge Compute (LEC)**: Bare-metal compute service, launching in the 2nd half of 2020, that enables pay-as-you-go server hardware on-demand.  
 Over time, the Lumen Public Cloud service will be migrated to run on the Lumen Edge Cloud.
 * **Lumen Edge Colocation**: Sites operated by Lumen as well as from partner facilities in a re-sale model.  

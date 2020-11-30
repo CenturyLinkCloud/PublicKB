@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-CenturyLink Cloud customers may wish to add a public IP to specific virtual machine or Bare Metal server in their cloud environment to deliver services.  Public IPs are delivered using a 1 to 1 NAT model.
+Lumen Cloud customers may wish to add a public IP to specific virtual machine or Bare Metal server in their cloud environment to deliver services.  Public IPs are delivered using a 1 to 1 NAT model.
 
 ### General Notes & Best Practices
 
@@ -14,7 +14,7 @@ CenturyLink Cloud customers may wish to add a public IP to specific virtual mach
 * In its current iteration setting a source IP filter will secure all public ports, single ports or port ranges specified by the customer. Customers can leverage OS based firewall services if they wish to secure public services in a more granular fashion
 * Customers are encouraged to leverage the source IP filter unless delivering completely open public internet services to their user community.
 * Customers should avoid opening RDP or SSH to their virtual machines to the public internet. As such the following are recommended access methods.
-    1. Use the free OpenVPN client included in every CenturyLink Cloud Account. Refer to [How To Configure Client VPN](../CenturyLink Cloud/how-to-configure-client-vpn.md). This is the ideal solution for individuals who are mobile and not in fixed office or data center locations.
+    1. Use the free OpenVPN client included in every Lumen Cloud Account. Refer to [How To Configure Client VPN](../CenturyLink Cloud/how-to-configure-client-vpn.md). This is the ideal solution for individuals who are mobile and not in fixed office or data center locations.
     2. Build an IPSEC VPN Tunnel from a remote office or data center location. Refer to [Creating a Self-Service IPSEC Site-to-Site VPN Tunnel](../CenturyLink Cloud/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md). IPSEC VPN tunnels are best for remote access to Cloud Virtual Machines when administrators are in centralized offices or data centers.
     3. If either of the previous options are not feasible customers should at a minimum use the source IP filter service on the public IP and pair that with local OS firewall policies within the guest VM.
 
@@ -29,7 +29,7 @@ CenturyLink Cloud customers may wish to add a public IP to specific virtual mach
 
 3. In the Add Public IP Address form customers should populate the appropriate fields that meet their business needs. The GUI allows customers to add multiple single port, port ranges and CIDR Source IP ranges.
 
-  - Internal IP Address: by default the GUI will present the private IP address of the virtual instance currently deployed. As the CenturyLink Cloud leverages a 1 to 1 NAT the public IP will be mapped to this private IP. It is important to note that should a customer require more than 1 public IP on a virtual machine the same process applies _except_ when visiting the GUI the internal IP address field will show **Add new IP address**. During the provisioning of the 2nd Public IP, as we use 1 to 1 NAT, a new private IP will also be bound to the virtual machine.
+  - Internal IP Address: by default the GUI will present the private IP address of the virtual instance currently deployed. As the Lumen Cloud leverages a 1 to 1 NAT the public IP will be mapped to this private IP. It is important to note that should a customer require more than 1 public IP on a virtual machine the same process applies _except_ when visiting the GUI the internal IP address field will show **Add new IP address**. During the provisioning of the 2nd Public IP, as we use 1 to 1 NAT, a new private IP will also be bound to the virtual machine.
   - Public Port(s): A fixed, defined list of frequently used TCP ports customers can simple select from to save time.
   - Single Port: A specific TCP or UDP port for an application service
   - Port Range: A specific range of TCP or UDP ports for an application service
@@ -53,7 +53,7 @@ CenturyLink Cloud customers may wish to add a public IP to specific virtual mach
 
 ### Frequently Asked Questions
 
-**Q: What happens to my Public IP if I use the pause, power off or archive services in CenturyLink Cloud?**
+**Q: What happens to my Public IP if I use the pause, power off or archive services in Lumen Cloud?**
 
 A: Public IP addresses are static and using any of these features does not remove the public IP services from the server. The only time a public IP is removed from a server is a) when the server is deleted b) the customer removes the public IP in the GUI or API
 

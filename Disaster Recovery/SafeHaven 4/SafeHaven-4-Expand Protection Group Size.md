@@ -12,7 +12,7 @@ This article explains how to expand the size of a Protection Group. This can be 
 
 
 ### Edit Storage
-Go to the Centurylink Portal, select the Production SRN and click on "Edit Storage"   
+Go to the Lumen Portal, select the Production SRN and click on "Edit Storage"   
 
 ![ConfigureEmail](../../images/SH4.0/ExpandPG/expandpg1.png) 
 

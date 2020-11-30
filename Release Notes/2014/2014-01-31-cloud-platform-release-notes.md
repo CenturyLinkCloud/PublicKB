@@ -9,7 +9,7 @@
 </p>
 <hr />
 <ul>
-  <li><strong>High performing Hyperscale servers.&nbsp;</strong>The CenturyLink Cloud now offers Hyperscale servers designed for distributed workloads that require premium performance. This new instance type includes local SSD storage that delivers a minimum
+  <li><strong>High performing Hyperscale servers.&nbsp;</strong>The Lumen Cloud now offers Hyperscale servers designed for distributed workloads that require premium performance. This new instance type includes local SSD storage that delivers a minimum
     of 15,000 IOPS. Customers should use Hyperscale servers for NoSQL databases, Hadoop processing, and high performing websites. This class of server is currently available in the NY data center location.
     <br /><img src="https://t3n.zendesk.com/attachments/token/0wjmfve2bvhhswk/?name=release01_31_14_01.png" alt="release01_31_14_01.png" />
   </li>
@@ -22,6 +22,6 @@
 <ul>
   <li><strong>API users can now access custom fields in sub-accounts.&nbsp;</strong>A developer using the API to query custom fields can now access this data for servers/groups in the parent account or any child accounts.</li>
   <li><strong>Add custom description to each VLAN. </strong>VLANs now support user-friendly descriptions that make it easy to identify the role of that specific network in the topology.</li>
-  <li><strong>Inherited Global discounts.</strong>&nbsp;Discounts applied at the root parent account level can now cascade instantly to all sub-accounts. This setting can be toggled on and off by a CenturyLink Cloud administrator. Contact your account manager
+  <li><strong>Inherited Global discounts.</strong>&nbsp;Discounts applied at the root parent account level can now cascade instantly to all sub-accounts. This setting can be toggled on and off by a Lumen Cloud administrator. Contact your account manager
     for more details.</li>
 </ul>

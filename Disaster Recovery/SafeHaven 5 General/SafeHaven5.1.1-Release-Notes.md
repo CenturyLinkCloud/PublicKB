@@ -13,7 +13,7 @@
 
 ### New Features and Enhancements
 This is patch release based on [SafeHaven 5.1.0](SafeHaven5.1.0-Release-Notes.md) with the following improvements:
-- Use managed storage for Microsoft Azure, to be consistent with Azure and CenturyLink directions
+- Use managed storage for Microsoft Azure, to be consistent with Azure and Lumen directions
 - Introduce the Azure Statistics tab in the GUI
 - Allow the automatically LRA installation using a non-Administrator username
 - Fixed power operation bug in failback

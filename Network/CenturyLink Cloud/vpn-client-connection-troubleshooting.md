@@ -181,7 +181,7 @@ If you see the above error message in your OpenVPN log, it can mean a few things
 
 2. Your Windows firewall is blocking the required port. Try to disable your firewall and connect again. If you don't want to disable your firewall, you can open the required Inbound/Outbound ports. Your remote ports are unique. You can find the port numbers by following the instructions below or by contacting support.
 
-3. Your physical firewall is blocking the required port. Check with your network administrator and let them know that you need a specific Outbound TCP and UDP port number to be opened in order for OpenVPN to be able to connect to CenturyLink Cloud. You can find the port number by following the instructions below or by contacting support.
+3. Your physical firewall is blocking the required port. Check with your network administrator and let them know that you need a specific Outbound TCP and UDP port number to be opened in order for OpenVPN to be able to connect to Lumen Cloud. You can find the port number by following the instructions below or by contacting support.
 
 To find your OpenVPN port, open the configuration folder for your VPN connection (`C:\Program Files (x86)/OpenVPN/config/[VpnName]` in Windows, or inside the TBLK file using Tunnelblick on a Mac). In this folder, find the `ovpn` file and open it with Notepad or a similar text editor. Under the `proto tcp` or `proto udp` line, there is a line `remote [IPHOST] [PORT]`. The last number on this line is the port number.
 
@@ -196,7 +196,7 @@ Wed Nov 10 15:14:56 2010 us=515000 SIGUSR1[soft,auth-failure] received, process 
 Wed Nov 10 15:14:56 2010 us=515000 Restart pause, 2 second(s)
 ```
 
-You need to verify with CenturyLink Cloud or your Administrator that you are using the right credentials.
+You need to verify with Lumen Cloud or your Administrator that you are using the right credentials.
 
 #### An example of a successful login log
 

@@ -12,20 +12,20 @@
 * [Supported Managed Operating Systems](#supported-managed-operating-systems)
 * [Supported Managed Microsoft SQL Server Editions](#supported-managed-microsoft-sql-server-editions)
 * [Important Information](#important-information)
-* [Managed SQL with CenturyLink provided license](#managed-sql-with-centurylink-provided-license)
+* [Managed SQL with Lumen provided license](#managed-sql-with-centurylink-provided-license)
 * [Managed SQL with BYOL](#managed-sql-with-byol)
 * [Frequently Asked Questions](#frequently-asked-questions)
 
 ### Overview
 Microsoft SQL Server (MSSQL) is a full relational database management suite. The different editions provide specific features, which include but is not limited to: Database Services, Reporting Services, Data Analytics, and Integration Services.
 
-CenturyLink provides this Managed Service using either your own license, or a CenturyLink provided license.
+Lumen provides this Managed Service using either your own license, or a Lumen provided license.
 
 ### Socket to vCPU Allocation
 It is recommended customers review our delivery model for [Sockets to vCPU](../Servers/platform-socket-to-vcpu-allocation.md) prior to deploying Microsoft SQL Server to be fully aware of the platform default operations when allocating vCPUs for use with the database service.
 
 ### Prerequisites
-* A CenturyLink Cloud Account
+* A Lumen Cloud Account
 * [Managed Operating System Services](//www.ctl.io/managed-services/operating-system) on the Virtual Machine
 
 ### Supported Managed Microsoft SQL Server Editions for New Servers
@@ -47,7 +47,7 @@ It is recommended customers review our delivery model for [Sockets to vCPU](../S
 ### Important Information
 The cost estimate(s) do not include vendor licensing and is intended to provide an estimate of Managed Service fees.
 
-### Managed SQL with CenturyLink provided license
+### Managed SQL with Lumen provided license
 
 1. Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Orchestration** > **Blueprints Library**. Search for **MS SQL** in the Blueprint library. Then, click on the **CLC Managed MS SQL** Blueprint.
 
@@ -105,13 +105,13 @@ The cost estimate(s) do not include vendor licensing and is intended to provide 
 
 ### Frequently Asked Questions
 
-**Q: How is the CenturyLink Cloud for Managed Microsoft SQL priced?**
+**Q: How is the Lumen Cloud for Managed Microsoft SQL priced?**
 
 A: Please see [Pricing Catalog](//www.ctl.io/pricing/) for more information.
 
 **Q: How do I request MSSQL Mirroring or MSSQL AlwaysOn Configuration?**
 
-A: Database Mirroring or SQL AlwaysOn configuration are available as Service Tasks. For your existing Managed MSSQL instance(s), you can request configuration of Database Mirroring or SQL AlwaysOn by opening a Service Task ticket. You can find more information on what Service Tasks are available and how to request them in our [Requesting Service Tasks on CenturyLink Cloud](//www.ctl.io/knowledge-base/service-tasks/requesting-service-tasks-on-centurylink-cloud) article.
+A: Database Mirroring or SQL AlwaysOn configuration are available as Service Tasks. For your existing Managed MSSQL instance(s), you can request configuration of Database Mirroring or SQL AlwaysOn by opening a Service Task ticket. You can find more information on what Service Tasks are available and how to request them in our [Requesting Service Tasks on Lumen Cloud](//www.ctl.io/knowledge-base/service-tasks/requesting-service-tasks-on-centurylink-cloud) article.
 
 Service Tasks are billed at a rate of $195 per hour.
 

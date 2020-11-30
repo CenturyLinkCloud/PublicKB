@@ -1,5 +1,5 @@
 {{{
-  "title": "CenturyLink Compliance Program Availability Matrix",
+  "title": "Lumen Compliance Program Availability Matrix",
   "date": "03-22-2018",
   "author": " ",
   "attachments": [],
@@ -8,11 +8,11 @@
 
 ### Overview
 
-The CenturyLink Compliance Assurance Program achieves compliance for your data through strict adherence to required guidelines, policies and procedures.  This matrix is designed to provide a single resource to review **location specific** CenturyLink Compliance Assurance Program availability on a global scale.
+The Lumen Compliance Assurance Program achieves compliance for your data through strict adherence to required guidelines, policies and procedures.  This matrix is designed to provide a single resource to review **location specific** Lumen Compliance Assurance Program availability on a global scale.
 
 ### Exceptions
 
-* Only location specific services are provided in this matrix.  For a full list of CenturyLink Cloud services and features [visit our public website](//www.ctl.io)
+* Only location specific services are provided in this matrix.  For a full list of Lumen Cloud services and features [visit our public website](//www.ctl.io)
 
 ### Availability Matrix
 

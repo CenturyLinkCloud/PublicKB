@@ -12,11 +12,11 @@ Among EU member states, Germany has one of the strictest of policies. Each EU me
 
 The Bundesdatenschutzgesetz or BDSG, is [Germany’s Federal Data Protection Act](http://www.gesetze-im-internet.de/englisch_bdsg/). Enacted in 1970 and later amended in 1990 and 2009 as the use of information technology grew, the need for a regulatory framework was created and expanded to protect and safe guard the use of personal data.
 
-CenturyLink maintains a standard operating MSA and Annex clearly identifying scope, responsibilities and obligations enabling CenturyLink cloud customers remain in BDSG compliance. CenturyLink ensures the required technical and organizational measures are adhered to for protection of personal data against misuse and loss in accordance with the requirements of the BDSG.
+Lumen maintains a standard operating MSA and Annex clearly identifying scope, responsibilities and obligations enabling Lumen cloud customers remain in BDSG compliance. Lumen ensures the required technical and organizational measures are adhered to for protection of personal data against misuse and loss in accordance with the requirements of the BDSG.
 
-Customers contracting with CenturyLink, who are either a German company or a German branch of a multi-national company, must acknowledge and agree that, as the data controller, it is solely responsible for the lawfulness of the data processing and compliance with mandatory provisions of the German Data Protection Act.  
+Customers contracting with Lumen, who are either a German company or a German branch of a multi-national company, must acknowledge and agree that, as the data controller, it is solely responsible for the lawfulness of the data processing and compliance with mandatory provisions of the German Data Protection Act.  
 
-As the data controller, customers are required to execute a Data Protection Agreement. The DPA can be downloaded [here](https://www.ctl.io/lp/resources/CenturyLink_Cloud_German_DPA_v7_July_2016.pdf). Once complete, return an executed copy to [CenturyLink](mailto:de-dpa@centurylink.com). Customers must include an email or address that CenturyLink can return a counter-signed copy back to the customer.
+As the data controller, customers are required to execute a Data Protection Agreement. The DPA can be downloaded [here](https://www.ctl.io/lp/resources/CenturyLink_Cloud_German_DPA_v7_July_2016.pdf). Once complete, return an executed copy to [Lumen](mailto:de-dpa@centurylink.com). Customers must include an email or address that Lumen can return a counter-signed copy back to the customer.
 
 ### FAQs
 

@@ -1,14 +1,14 @@
 {{{
   "title": "Request Rate and Performance Considerations",
   "date": "1-9-2020",
-  "author": "CenturyLink",
+  "author": "Lumen",
   "keywords": ["clc", "cloud", "cdn", "object", "storage", "s3", "platform"],
   "attachments": [],
   "contentIsHTML": false
 }}}
 
 ### Overview
-CenturyLink Cloud's S3 compatible storage service provides geo-redundant storage (GRS) services to deliver or store unstructured data. In delivering this service customers may need to understand best practices and scaling considerations to maintain optimal performance of the service.
+Lumen Cloud's S3 compatible storage service provides geo-redundant storage (GRS) services to deliver or store unstructured data. In delivering this service customers may need to understand best practices and scaling considerations to maintain optimal performance of the service.
 
 ### Platform Maximums
 * 1,200 requests (Get, Put, Delete, List) over a 60 second period **per Access Key ID (user)**.
@@ -17,7 +17,7 @@ CenturyLink Cloud's S3 compatible storage service provides geo-redundant storage
 To design services to scale and performance we'll breakdown a few common types of workloads and align that with a general design best practice for the storage services.
 
 ##### GET-Intensive Workloads
-GET-intensive workloads are best served by a [Content Delivery Network](http://ctl.io/centurylink-cdn-options/) as you can distribute content to your users with low latency and a high data transfer rate. This results in significantly less direct requests to CenturyLink's storage service where a platform maximum is imposed that could impact user experience.
+GET-intensive workloads are best served by a [Content Delivery Network](http://ctl.io/centurylink-cdn-options/) as you can distribute content to your users with low latency and a high data transfer rate. This results in significantly less direct requests to Lumen's storage service where a platform maximum is imposed that could impact user experience.
 
 ##### PUT-Intensive Workloads
 PUT-intensive workloads, such as Backup to cloud methodologies, should be segmented into **unique** buckets and Access Key IDs (Users). This structure may take various forms but using the Backup to cloud approach a client would create a **new bucket and unique user** for each host/server or cloud vault repository allowing data backup jobs/agents to scale horizontally above the per access key ID (user) maximums.

@@ -7,13 +7,13 @@
 }}}
 
 ### Overview
-The CenturyLink Cloud Platform provides self-service tools to connect networks within a particular data center ("intra data center") through the use of configurable firewall policies. This is useful when a customer has multiple networks (vlans) within a particular account, or has a range of sub-accounts with their own vlans, and wants to selectively choose the traffic that can flow among them.
+The Lumen Cloud Platform provides self-service tools to connect networks within a particular data center ("intra data center") through the use of configurable firewall policies. This is useful when a customer has multiple networks (vlans) within a particular account, or has a range of sub-accounts with their own vlans, and wants to selectively choose the traffic that can flow among them.
 
 ### Connecting Networks within a Single Account
 
-1. Create network VLAN(s) in the respective CenturyLink Cloud Data Center.  We recommend [applying friendly names](../CenturyLink Cloud/add-a-user-friendly-name-to-vlans.md) to Networks.
+1. Create network VLAN(s) in the respective Lumen Cloud Data Center.  We recommend [applying friendly names](../CenturyLink Cloud/add-a-user-friendly-name-to-vlans.md) to Networks.
 
-2. Validate the networks are in place in your CenturyLink Cloud account using the Networks menu item and selecting the appropriate Data Center.  In the sample below, a Web Services & Database Services VLAN exists in UC1.
+2. Validate the networks are in place in your Lumen Cloud account using the Networks menu item and selecting the appropriate Data Center.  In the sample below, a Web Services & Database Services VLAN exists in UC1.
 
     ![validate networks](../../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-01.png)
 
@@ -35,7 +35,7 @@ The CenturyLink Cloud Platform provides self-service tools to connect networks w
 
     ![Navigate to Firewall](../../images/firewall.png)
 
-5. Select the desired CenturyLink Cloud Data Center node you wish to create an Firewall rule.  Next, choose to the Intra Data Center tab.  In this example, we used UC1.
+5. Select the desired Lumen Cloud Data Center node you wish to create an Firewall rule.  Next, choose to the Intra Data Center tab.  In this example, we used UC1.
 
     ![Intra DC Policy](../../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-06.png)
 
@@ -71,9 +71,9 @@ The CenturyLink Cloud Platform provides self-service tools to connect networks w
 
 1. Create the appropriate Parent & Sub-Account Hierarchy.  Refer to the [Account Hierarchy Primer](../../Accounts & Users/account-hierarchy-user-network-and-firewall-policy-primer.md) for more information.
 
-2. Create network VLAN(s) in the respective CenturyLink Cloud Data Center and Accounts.  We recommend [applying friendly names](../CenturyLink Cloud/add-a-user-friendly-name-to-vlans.md) to Networks.
+2. Create network VLAN(s) in the respective Lumen Cloud Data Center and Accounts.  We recommend [applying friendly names](../CenturyLink Cloud/add-a-user-friendly-name-to-vlans.md) to Networks.
 
-3. Validate the networks are in place in your CenturyLink Cloud accounts using the Networks menu item and selecting the appropriate Data Center.  In the sample below, a Parent Web Services network & a Sub-Account DB VLAN exists in UC1 under unique Accounts.  
+3. Validate the networks are in place in your Lumen Cloud accounts using the Networks menu item and selecting the appropriate Data Center.  In the sample below, a Parent Web Services network & a Sub-Account DB VLAN exists in UC1 under unique Accounts.  
 
     ![Web VLAN](../../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-15.png)
 
@@ -95,7 +95,7 @@ The CenturyLink Cloud Platform provides self-service tools to connect networks w
 
     ![Navigate to Firewall](../../images/firewall.png)
 
-6. Select the desired CenturyLink Cloud Data Center node you wish to create an Firewall rule.  Next, choose to the Intra Data Center tab and change the **destination account** to the appropriate sub-account.  In this example, in UC1 we chose a Sandbox Sub Account.  
+6. Select the desired Lumen Cloud Data Center node you wish to create an Firewall rule.  Next, choose to the Intra Data Center tab and change the **destination account** to the appropriate sub-account.  In this example, in UC1 we chose a Sandbox Sub Account.  
 
     ![Destination Account](../../images/Connecting-Data-Center-Networks-Through-Firewall-Policies-20.png)
 

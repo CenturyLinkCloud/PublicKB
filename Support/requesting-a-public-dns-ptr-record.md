@@ -8,7 +8,7 @@
 
 <p><strong>Description:</strong>
 </p>
-<p>CenturyLink Cloud supports the creation of Public&nbsp;PTR records.</p>
+<p>Lumen Cloud supports the creation of Public&nbsp;PTR records.</p>
 <p><strong>Audience:</strong>
 </p>
 <p>Customers</p>

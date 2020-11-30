@@ -2,7 +2,7 @@
 "title": "Cloud Platform - Release Notes: April 16, 2019",
 "date": "04-16-2019",
 "author": "Tessa Rodriguez",
-"keywords":["centurylink", "cam", "OS", "aws", "analytics"],
+"keywords":["lumen", "cam", "OS", "aws", "analytics"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -19,7 +19,7 @@ The user experience for the Analytics site has been improved for both new and ex
 
 #### OS Updates
 
-As part of our ongoing efforts to improve security and availability of all CenturyLink Cloud resources, the following operating systems have been patched: Windows 2012 and CentOS 6 & 7.
+As part of our ongoing efforts to improve security and availability of all Lumen Cloud resources, the following operating systems have been patched: Windows 2012 and CentOS 6 & 7.
 
 #### [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/)
 

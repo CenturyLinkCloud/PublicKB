@@ -1,5 +1,5 @@
 {{{
-  "title": "The SLA Credit Process for CenturyLink Cloud Customers",
+  "title": "The SLA Credit Process for Lumen Cloud Customers",
   "date": "10-16-2018",
   "author": "Denise Cline",
   "attachments": []
@@ -23,7 +23,7 @@ Once you have submitted an SLA Credit through Credit.ctl.io, it will be shown as
 
 ### How will I know if my SLA Credit is approved or denied?
 
-If your SLA Credit is approved by our CenturyLink Cloud Finance team it will display as Posted in the SLA Credit Tool. If your SLA Credit is not approved by our CenturyLink Cloud Finance team, you will be notified with an explanation as to why the SLA Credit was not granted at this time. For additional information pertaining to this, please submit a request to [help@ctl.io](mailto:help@ctl.io).
+If your SLA Credit is approved by our Lumen Cloud Finance team it will display as Posted in the SLA Credit Tool. If your SLA Credit is not approved by our Lumen Cloud Finance team, you will be notified with an explanation as to why the SLA Credit was not granted at this time. For additional information pertaining to this, please submit a request to [help@ctl.io](mailto:help@ctl.io).
 
 ### What happens when an SLA Credit is approved?
 

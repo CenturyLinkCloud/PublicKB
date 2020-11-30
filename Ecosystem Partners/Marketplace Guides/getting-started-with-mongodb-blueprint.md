@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-After reading this article, the reader should feel comfortable deploying the MongoDB database on CenturyLink Cloud.
+After reading this article, the reader should feel comfortable deploying the MongoDB database on Lumen Cloud.
 
 ### Partner Profile
 
@@ -21,12 +21,12 @@ http://www.mongodb.org/
 * [MongoDB Community Support ](http://www.mongodb.org/get-involved)
 
 ### Description
-MongoDB database technology has been integrated for automated deployment on the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this solution.
+MongoDB database technology has been integrated for automated deployment on the Lumen Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this solution.
 
 MongoDB is a cross-platform NoSQL document-oriented database. Its structure is JSON-like, making integration of data in certain types of applications easier and faster.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Deploying on a new server
 
@@ -68,9 +68,9 @@ The costs listed above in Steps 1 and 2 are for the infrastructure only. MongoDB
 MongoDB is Open Source community owned software with no associated cost to acquire.
 
 **Who should I contact for support?**
-MongoDB is packaged and provided by CenturyLink as a courtesy to ease startup time. All support for this Open Source software is provided by the community. Please start at http://www.mongodb.org/.
+MongoDB is packaged and provided by Lumen as a courtesy to ease startup time. All support for this Open Source software is provided by the community. Please start at http://www.mongodb.org/.
 
-For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
+For issues related to cloud infrastructure, please open a ticket using the [Lumen Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
 
 **Creating a User for your Application**
 The database server is created with the admin user as the only user. From there you will need to create a user for your Application. You can do that by executing the following from your server:

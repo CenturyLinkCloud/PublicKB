@@ -2,7 +2,7 @@
 "title": "Cloud Platform - Release Notes: June 23, 2020",
 "date": "06-23-2020",
 "author": "Marco Paolillo",
-"keywords":["centurylink", "release notes", "cam", "cpc", "msa", "cloud"],
+"keywords":["lumen", "release notes", "cam", "cpc", "msa", "cloud"],
 "attachments": [],
 "contentIsHTML": false
 }}}

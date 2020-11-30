@@ -9,13 +9,13 @@
 
 Client VPN enables users to connect to their secure isolated network. Each account has their own isolated VPN service that is provided at no charge. This service is built into the platform and managed by the network operation center.
 
-The initial configuration just requires a certificate to be downloaded and used for connecting to the VPN service. You can also [configure two-factor authentication](../CenturyLink Cloud/configure-two-factor-authentication-for-client-vpn.md) to require both a username and password. To learn more about ways to connect such as persistent VPN or direct connection, please review [Network Access Options for Connecting to the CenturyLink Cloud Platform](../CenturyLink Cloud/network-access-options-for-connecting-to-centurylink-clouds-platform.md).
+The initial configuration just requires a certificate to be downloaded and used for connecting to the VPN service. You can also [configure two-factor authentication](../CenturyLink Cloud/configure-two-factor-authentication-for-client-vpn.md) to require both a username and password. To learn more about ways to connect such as persistent VPN or direct connection, please review [Network Access Options for Connecting to the Lumen Cloud Platform](../CenturyLink Cloud/network-access-options-for-connecting-to-centurylink-clouds-platform.md).
 
 ### Current Limitations
 
 There are only a few limitations on this service as it is based on the [OpenVPN](http://www.openvpn.net) project.
 
-- Maximum Concurrent Users: 19 (if you need more connections, review the different [Network Access Options for Connecting to the CenturyLink Cloud Platform](../CenturyLink Cloud/network-access-options-for-connecting-to-centurylink-clouds-platform.md))
+- Maximum Concurrent Users: 19 (if you need more connections, review the different [Network Access Options for Connecting to the Lumen Cloud Platform](../CenturyLink Cloud/network-access-options-for-connecting-to-centurylink-clouds-platform.md))
 - Maximum Connection: 1Gbps
 
 ### Getting Connected
@@ -170,7 +170,7 @@ A: This is one of the most common issues with Windows and the OpenVPN client. Ma
 
 **Q: Can I use this to connect to my office?**
 
-A: You cannot use it as a direct connect. To learn more about ways to connect such as persistent VPN or direct connection, please review [Network Access Options for Connecting to the CenturyLink Cloud Platform](../CenturyLink Cloud/network-access-options-for-connecting-to-centurylink-clouds-platform.md).
+A: You cannot use it as a direct connect. To learn more about ways to connect such as persistent VPN or direct connection, please review [Network Access Options for Connecting to the Lumen Cloud Platform](../CenturyLink Cloud/network-access-options-for-connecting-to-centurylink-clouds-platform.md).
 
 **Q: Do I need to install an OpenVPN server?**
 

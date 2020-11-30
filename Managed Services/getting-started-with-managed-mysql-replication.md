@@ -9,7 +9,7 @@
 ### Overview
 We offer two options of MySQL replication:
 * [Master-Slave Replication](//dev.mysql.com/doc/refman/5.7/en/replication.html): Enables data from one MySQL database server (the master) to be copied (typically asyncronous) to one or more MySQL database servers (the slaves).  
-* [Master-Master Replication](//dev.mysql.com/doc/refman/5.1/en/mysql-cluster-replication-multi-master.html): Enables data from **any** Master MySQL database server to be copied (typically syncronous) to other master nodes.  **CenturyLink Cloud Managed MySQL Services only supports (2) nodes currently.**
+* [Master-Master Replication](//dev.mysql.com/doc/refman/5.1/en/mysql-cluster-replication-multi-master.html): Enables data from **any** Master MySQL database server to be copied (typically syncronous) to other master nodes.  **Lumen Cloud Managed MySQL Services only supports (2) nodes currently.**
 
 This guide provides (2) unique options and customers should evaluate their needs to decide which fits business requirements.
 
@@ -62,13 +62,13 @@ This guide provides (2) unique options and customers should evaluate their needs
 
 ### Frequently Asked Questions
 
-**Q: How is the CenturyLink Cloud for Managed Oracle MySQL Replication priced?**
+**Q: How is the Lumen Cloud for Managed Oracle MySQL Replication priced?**
 
-A: CenturyLink Cloud Managed Oracle MySQL Replication is priced per install, billed hourly depending on the version of Replication you are using. The hourly rate encompasses all servers in the replicated environment, but is in addition to the hourly rate charged for MySQL licensing and management. Refer to our [Pricing Catalog](//www.ctl.io/pricing) for more information.
+A: Lumen Cloud Managed Oracle MySQL Replication is priced per install, billed hourly depending on the version of Replication you are using. The hourly rate encompasses all servers in the replicated environment, but is in addition to the hourly rate charged for MySQL licensing and management. Refer to our [Pricing Catalog](//www.ctl.io/pricing) for more information.
 
 **Q: What Versions of Oracle MySQL Replication are supported?**
 
-A: CenturyLink Cloud Supports MySQL v5.5 and MySQL 5.6.
+A: Lumen Cloud Supports MySQL v5.5 and MySQL 5.6.
 
 **Q: What operating systems are supported for Managed Oracle MySQL Replication?**
 

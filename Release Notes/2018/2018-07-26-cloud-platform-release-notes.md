@@ -12,7 +12,7 @@
 
 ##### Control Portal Design Update
 
-We've updated CenturyLink Cloud's control portal user interface with a new look and feel. Our new aesthetic design has been applied across all of our cloud services to give users a similar experience across products.
+We've updated Lumen Cloud's control portal user interface with a new look and feel. Our new aesthetic design has been applied across all of our cloud services to give users a similar experience across products.
 
 There are no functionality or feature changes associated with this user interface update.
 
@@ -22,7 +22,7 @@ We have improved our orchestration for Virtual Machine power operations. Custome
 
 #### [Simple Backup Reporting](//www.ctl.io/simple-backup-service/)
 
-We are pleased to announce the addition of reporting functionality to the Simple Backup Service. The Simple Backup reports easily enable you to view the statuses of your backups and restores. Reports are generated in a CSV format for easy consumption, and are currently available from the Simple Backup section within CenturyLink Cloud Control Portal, as well as directly from our public API's. Please read our knowledge base articles for more information on the [reporting features](//www.ctl.io/knowledge-base/backup/reports/) and [API functionality](//www.ctl.io/api-docs/v2/#simple-backup).
+We are pleased to announce the addition of reporting functionality to the Simple Backup Service. The Simple Backup reports easily enable you to view the statuses of your backups and restores. Reports are generated in a CSV format for easy consumption, and are currently available from the Simple Backup section within Lumen Cloud Control Portal, as well as directly from our public API's. Please read our knowledge base articles for more information on the [reporting features](//www.ctl.io/knowledge-base/backup/reports/) and [API functionality](//www.ctl.io/api-docs/v2/#simple-backup).
 
 [//www.ctl.io/knowledge-base/backup/reports/](//www.ctl.io/knowledge-base/backup/reports/)
 
@@ -42,4 +42,4 @@ We are pleased to announce the addition of reporting functionality to the Simple
 
 We have removed the ability to provision Hyperscale servers from our "Create Server" page.
 
-On June 20, 2018, CenturyLink Cloud announced the retirement of our Hyperscale server type. For more information, please see our [FAQ](//www.ctl.io/knowledge-base/servers/hyperscale-eol-faqs/): [//www.ctl.io/knowledge-base/servers/hyperscale-eol-faqs/](//www.ctl.io/knowledge-base/servers/hyperscale-eol-faqs/)
+On June 20, 2018, Lumen Cloud announced the retirement of our Hyperscale server type. For more information, please see our [FAQ](//www.ctl.io/knowledge-base/servers/hyperscale-eol-faqs/): [//www.ctl.io/knowledge-base/servers/hyperscale-eol-faqs/](//www.ctl.io/knowledge-base/servers/hyperscale-eol-faqs/)

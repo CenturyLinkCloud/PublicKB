@@ -1,5 +1,5 @@
 {{{
-  "title": "Changing IP address on a CenturyLink Cloud hosted machines",
+  "title": "Changing IP address on a Lumen Cloud hosted machines",
   "date": "5-6-2014",
   "author": "Joon Park",
   "attachments": [],
@@ -11,7 +11,7 @@
 <p><strong>DESCRIPTION </strong></p>
 <p>At this time, there is no automated way of changing IP addresses via Control Portal. Even with careful planning there may be times when IP addresses will need to be modified.</p>
 <p><strong>AUDIENCE</strong></p>
-<p>Centurylink Cloud Users</p>
+<p>Lumen Cloud Users</p>
 <p><strong>PROCESS</strong></p>
 <ul>
 <li><strong>Changing IPs on the same subnet</strong>

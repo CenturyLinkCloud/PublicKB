@@ -12,7 +12,7 @@ Customers interested in quickly obtaining details of all servers in an account c
 
 ### Prerequisites
 
-* A CenturyLink Cloud Account
+* A Lumen Cloud Account
 
 ### Detailed Instructions
 

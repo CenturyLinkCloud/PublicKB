@@ -36,5 +36,5 @@ Users may not choose to perform Network Isolation incase of an actual Failover e
 
 7. Go to the AWS console and verify the newly deployed instance.
 
-**NOTE: The failed over EC2 Instance in AWS is now the production server and users can verify business continuity and take time to stabilize applications and working of their AWS environment. Email CenturyLink Team at help@ctl.io if SafeHaven assistance is required incase of a Failover event.**
+**NOTE: The failed over EC2 Instance in AWS is now the production server and users can verify business continuity and take time to stabilize applications and working of their AWS environment. Email Lumen Team at help@ctl.io if SafeHaven assistance is required incase of a Failover event.**
 The procedure is same for CLC/VMWare/Manual sites as source datacenters.

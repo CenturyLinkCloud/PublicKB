@@ -13,10 +13,10 @@
     than before!
     <br /><img src="https://t3n.zendesk.com/attachments/token/zogaza0q34w9wnl/?name=release12_20_01.png" alt="release12_20_01.png" />
   </li>
-  <li><strong>Account cleanup services for resellers.&nbsp;</strong>In order to reduce the impact of fraud and make it simpler to offer trial accounts, the CenturyLink Cloud added a new automated service that can delete all billed resources (e.g. servers,
+  <li><strong>Account cleanup services for resellers.&nbsp;</strong>In order to reduce the impact of fraud and make it simpler to offer trial accounts, the Lumen Cloud added a new automated service that can delete all billed resources (e.g. servers,
     storage, networks, load balancers) from an account upon account closure.</li>
   <li><strong>Beta release of Cloud Foundry BOSH CPI</strong>. We've completed a beta version of the <a href="http://docs.cloudfoundry.com/docs/running/bosh/">BOSH </a>Cloud Provider Interface (CPI) that lets Cloud Foundry users build and
-    manage their own PaaS on the CenturyLink Cloud. You can download the open source components from our <a href="https://github.com/Tier3/bosh">BOSH Github repository</a> and run a micro-BOSH deployment process from source code. See the
+    manage their own PaaS on the Lumen Cloud. You can download the open source components from our <a href="https://github.com/Tier3/bosh">BOSH Github repository</a> and run a micro-BOSH deployment process from source code. See the
     <a
     href="https://github.com/Tier3/bosh/wiki/Getting-Started">Getting Started Guide</a> for more info.</li>
 </ul>

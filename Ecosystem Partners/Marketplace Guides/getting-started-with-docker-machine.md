@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-After reading this article, the user should be able to provision docker-machine instances on CenturyLink Cloud.  
+After reading this article, the user should be able to provision docker-machine instances on Lumen Cloud.  
 
 ### Description
 <img src="../../images/ecosystem-docker-machine.png" style="border:0;float:right;max-width: 150px;">
@@ -19,7 +19,7 @@ The CLC driver enables the user to provision docker hosts via the docker-machine
 repo: [https://github.com/CenturyLinkCloud/docker-machine-driver-clc](https://github.com/CenturyLinkCloud/docker-machine-driver-clc)
 
 ### Audience
-Docker users interested in deploying machines on CenturyLink Cloud.
+Docker users interested in deploying machines on Lumen Cloud.
 
 ### Steps
 1. Install Docker Machine.

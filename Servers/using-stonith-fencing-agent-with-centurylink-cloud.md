@@ -1,5 +1,5 @@
 {{{
-"title": "Using a STONITH Fencing Agent with CenturyLink Cloud",
+"title": "Using a STONITH Fencing Agent with Lumen Cloud",
 "date": "04-30-2020",
 "author": "Clinton Popovich",
 "keywords": ["High availability", "Pacemaker", "Apache", "Postgres"],
@@ -17,7 +17,7 @@
 
 ### Audience
 
-System Admins and highly technical users of CenturyLink Cloud.
+System Admins and highly technical users of Lumen Cloud.
 
 ### Technical Level
 
@@ -216,7 +216,7 @@ This fencing agent was tested using [Red Hat High Availability Add-On Configurat
     docs = {}
     docs["shortdesc"] = "Fence agent for CLC"
     docs["longdesc"] = "fence_CLC is an I/O Fencing agent \
-  which can be used with the Centurylink Cloud API. \
+  which can be used with the Lumen Cloud API. \
   It logs via ssh to api.ctl.io where it does all the work. "
     docs["vendorurl"] = "http://clc.io"
     show_docs(options, docs)

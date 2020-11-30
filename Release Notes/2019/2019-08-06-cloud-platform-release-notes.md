@@ -2,7 +2,7 @@
 "title": "Cloud Platform - Release Notes: August 6, 2019",
 "date": "08-06-2019",
 "author": "Gary Lazaroff",
-"keywords":["centurylink", "cam", "alm", "optimization"],
+"keywords":["lumen", "cam", "alm", "optimization"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -33,6 +33,6 @@ Cloud Application Manager now includes a button in the top right corner of the p
 
 Application Lifecycle Manager now includes a button in the top right corner of the instances list page to allow the user to export the list of instances that are available in the current scope in a CSV or PDF file format. All columns in the instances list will be displayed in the exported file along with some additional ones such as instance-id, service type, hostname, creation time and organization name. This will ease reporting and auditing tasks by providing a convenient file format for the user to consume as required.
 
-##### Instances page now displays CenturyLink network resources
+##### Instances page now displays Lumen network resources
 
-Application Lifecycle Management's Instances page will now list CenturyLink network resources, such as Virtual Networks and VPNs. These resources will be shown as unregistered instances with some basic information for each type such as subtype, data center, status, name and description. If you have an existing CenturyLink Cloud provider already set up, you need to synchronize it for these resources to be discovered. More types of native resources from CenturyLink Cloud will come soon to the Cloud Application Manager instances page.
+Application Lifecycle Management's Instances page will now list Lumen network resources, such as Virtual Networks and VPNs. These resources will be shown as unregistered instances with some basic information for each type such as subtype, data center, status, name and description. If you have an existing Lumen Cloud provider already set up, you need to synchronize it for these resources to be discovered. More types of native resources from Lumen Cloud will come soon to the Cloud Application Manager instances page.

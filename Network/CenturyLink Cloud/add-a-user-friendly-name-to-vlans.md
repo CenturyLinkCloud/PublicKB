@@ -7,12 +7,12 @@
 }}}
 
 Add a User Friendly Name to VLANs
-<p>CenturyLink Cloud customers may wish to provide a friendly name to the VLAN(s) in their account. This feature is now available globally. This feature&nbsp;makes it easy to identify the role of that specific network in the overall Cloud topology.&nbsp;</p>
+<p>Lumen Cloud customers may wish to provide a friendly name to the VLAN(s) in their account. This feature is now available globally. This feature&nbsp;makes it easy to identify the role of that specific network in the overall Cloud topology.&nbsp;</p>
 <h3>Audience</h3>
-<p>CenturyLink Cloud Control Portal Administrators.&nbsp;&nbsp; &nbsp;</p>
+<p>Lumen Cloud Control Portal Administrators.&nbsp;&nbsp; &nbsp;</p>
 <h3>Prerequisites</h3>
 <ul>
-  <li>A CenturyLink Cloud Account</li>
+  <li>A Lumen Cloud Account</li>
   <li>Account Admin Permissions</li>
 </ul>
 <h3>Detailed Steps</h3>

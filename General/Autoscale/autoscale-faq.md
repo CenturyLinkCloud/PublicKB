@@ -8,7 +8,7 @@
 
 ### Description
 
-CenturyLink Cloud supports both vertical and horizontal autoscale policies that allow for the automatic scaling of resources based on user-defined thresholds. Based on these thresholds, vertical autoscale policies add and remove CPU allocation to and from a given server, whereas horizontal autoscale policies power on and off instances within a (load balanced) group of servers.
+Lumen Cloud supports both vertical and horizontal autoscale policies that allow for the automatic scaling of resources based on user-defined thresholds. Based on these thresholds, vertical autoscale policies add and remove CPU allocation to and from a given server, whereas horizontal autoscale policies power on and off instances within a (load balanced) group of servers.
 
 This FAQ addresses commonly asked questions about the service. For a walkthrough of this service, see the [Creating and Applying Autoscale Policies](creating-and-applying-autoscale-policies.md).
 
@@ -38,7 +38,7 @@ Note: Vertical Autoscale is not currently supported for systems running Windows 
 
 **How often are you sampling the virtual machine for utilization data points?**
 
-While the minimum threshold period for an Autoscale policy is 5 minutes, the CenturyLink Cloud platform collects data points far more frequently for each server. In fact, each 5 minute threshold period contains hundreds of data points. This ensures that your server scales because of an overall utilization trend, not just an isolated spike in utilization over a few seconds.
+While the minimum threshold period for an Autoscale policy is 5 minutes, the Lumen Cloud platform collects data points far more frequently for each server. In fact, each 5 minute threshold period contains hundreds of data points. This ensures that your server scales because of an overall utilization trend, not just an isolated spike in utilization over a few seconds.
 
 **How soon do changes to Autoscale policies take effect on any servers that use it?**
 
@@ -70,7 +70,7 @@ Only in two cases. First, if this is the first time you are applying a vertical 
 
 **How come I see a notice on my server that says it has to be rebooted one time before capacity can be added without a reboot the next time?**
 
-While certain Operating Systems support the addition of capacity without  a reboot, the hypervisor must be configured to recognize this. During the initial reboot of a server, the CenturyLink Cloud management platform configures that server to accept additional capacity (CPU or RAM) without requiring a reboot. This is a one-time event in the life of a server.
+While certain Operating Systems support the addition of capacity without  a reboot, the hypervisor must be configured to recognize this. During the initial reboot of a server, the Lumen Cloud management platform configures that server to accept additional capacity (CPU or RAM) without requiring a reboot. This is a one-time event in the life of a server.
 
 ----------
 
@@ -90,7 +90,7 @@ The load balancer pool tied to a horizontal Autoscale policy is synced to the se
 
 **Why doesn't horizontal Autoscale support provisioning and deprovisioning servers instead of just powering on and off existing ones?**
 
-We are always continuing to explore options for how to improve features and increase performance. At this time, powering on and off servers is the most efficient way for the CenturyLink Cloud platform to scale in and out based on utilization thresholds.
+We are always continuing to explore options for how to improve features and increase performance. At this time, powering on and off servers is the most efficient way for the Lumen Cloud platform to scale in and out based on utilization thresholds.
 
 **Do all the servers in my horizontal Autoscale group have to be identically configured?**
 

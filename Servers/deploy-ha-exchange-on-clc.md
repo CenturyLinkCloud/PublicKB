@@ -1,14 +1,14 @@
 {{{
-  "title": "Deploy HA Exchange on CenturyLink Cloud",
+  "title": "Deploy HA Exchange on Lumen Cloud",
   "date": "3-31-2015",
   "author": "Mark Turpin",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-### Exchange 2013 on CenturyLink Cloud – High Availability and Automatic Failover
+### Exchange 2013 on Lumen Cloud – High Availability and Automatic Failover
 
-Exchange 2013 offers excellent high availability and disaster recovery for enterprise messaging. With CenturyLink Cloud’s Global Data Center footprint, it is easy to deploy a globally scaled and highly available Exchange architecture.
+Exchange 2013 offers excellent high availability and disaster recovery for enterprise messaging. With Lumen Cloud’s Global Data Center footprint, it is easy to deploy a globally scaled and highly available Exchange architecture.
 
 ### Prerequisites
 

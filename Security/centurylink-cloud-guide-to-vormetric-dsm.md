@@ -1,5 +1,5 @@
 {{{
-  "title": "CenturyLink Cloud Guide to Vormetric DSM",
+  "title": "Lumen Cloud Guide to Vormetric DSM",
   "date": "07-22-2017",
   "author": "Chris Little",
   "attachments": [],
@@ -32,18 +32,18 @@
 Vormetric provides enterprise encryption and key management services that enable corporations to protect their data. Vormetric addresses industry compliance mandates and government regulations globally by securing data in physical, virtual, and cloud infrastructures through Data Encryption, Key Management, Access Policies, Privileged User Control, and Security Intelligence.  Customers should refer to our Knowledge Base article titled [Getting Started with Vormetric Data Security Manager](../Marketplace/Getting Started Guides/getting-started-vormetric-data-security-manager.md) for more information.
 
 ### Prerequisites
-* A CenturyLink Cloud Account
+* A Lumen Cloud Account
 * Vormetric DSM Licenses
 * Vormetric DSM Deployed into your account in a [dedicated network vlan](../Network/CenturyLink Cloud/creating-and-deleting-vlans.md). Customers leveraging an account hierarchy are advised to place the DSM in the parent account as multi-tenant capabilities of the DSM allow for logical separation of policies, key, security administrators.
 
 ### General Notes
-* Vormetric customers should always refer to vendor product documentation and [online support](//help.vormetric.com) tools. This guide is focused on delivering CenturyLink Cloud specific considerations and steps with video tutorials for the baseline configuration of a DSM appliance.
+* Vormetric customers should always refer to vendor product documentation and [online support](//help.vormetric.com) tools. This guide is focused on delivering Lumen Cloud specific considerations and steps with video tutorials for the baseline configuration of a DSM appliance.
 
 ### DNS Services
 DNS resolution is crucial to a successful implementation as all communications between the DSM and every agent, and between the DSM and failover DSM units relies on DNS resolution. Ensure assigned hostnames and DNS records exists for DSMs and server systems in all associated DNS servers and that the fully qualified domain name for the DSMs and server systems are entered in the DSM units and servers systems during the Vormetric setup and/or configuration. **DNS names are case sensitive. It is imperative that this is taken into account when registering hosts and configuring DNS services.**
 
 ### Network Connectivity
-Customers are encouraged to place their DSM in a secure isolated vlan on the CenturyLink Cloud. This provides maximum security and control of inbound and outbound TCP and UDP ports used in the delivery of encryption services.
+Customers are encouraged to place their DSM in a secure isolated vlan on the Lumen Cloud. This provides maximum security and control of inbound and outbound TCP and UDP ports used in the delivery of encryption services.
 
 ![Network Overview](../images/centuryLink-cloud-guide-to-vormetric-DSM-03.png)
 
@@ -71,7 +71,7 @@ New-NetFirewallRule -DisplayName â€œVormetric DSM to Agent" -Direction Inbound â
 
 ### Data Security Manager Configuration
 
-1. Use the [Getting Started with Vormetric DSM](../Marketplace/Getting Started Guides/getting-started-vormetric-data-security-manager.md) guide to deploy your DSM Appliance into a CenturyLink Cloud Data Center.
+1. Use the [Getting Started with Vormetric DSM](../Marketplace/Getting Started Guides/getting-started-vormetric-data-security-manager.md) guide to deploy your DSM Appliance into a Lumen Cloud Data Center.
 
 2. Connect securely via [IPSEC](../Network/CenturyLink Cloud/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md) or [Client VPN](../Network/CenturyLink Cloud/how-to-configure-client-vpn.md) and use SSH to login as **cliadmin**. Tip: Per the Getting Started Guide, the default password is **Vormetric123$**. It is advised you modify this as shown later in this KB.
 
@@ -150,8 +150,8 @@ New-NetFirewallRule -DisplayName â€œVormetric DSM to Agent" -Direction Inbound â
     Enter the host name of this computer. This will be used by Agents to talk to this Security Server.
     This Security Server host name[CA3CCVADSM01.CCVA.COM]:
     Please enter the following information for key and certificate generation.
-    What is the name of your organizational unit? []:CenturyLink Cloud
-    What is the name of your organization? []:CenturyLink
+    What is the name of your organizational unit? []:Lumen Cloud
+    What is the name of your organization? []:Lumen
     What is the name of your City or Locality? []:Bellevue
     What is the name of your State or Province? []:WA
     What is your two-letter country code? [US]:US
@@ -187,7 +187,7 @@ Customers are encouraged to review the video tutorial [Creating Domains and Admi
 
 **Create IT-as-a-Service**
 
-[CenturyLink Cloud](//www.ctl.io) makes it easy to define a master "parent" account and then spin up independent sub-accounts that are managed and billed separately. Create users, resources (servers and networks), create policies, define permissions, and select payment methods for each account and sub-account.
+[Lumen Cloud](//www.ctl.io) makes it easy to define a master "parent" account and then spin up independent sub-accounts that are managed and billed separately. Create users, resources (servers and networks), create policies, define permissions, and select payment methods for each account and sub-account.
 
 ##### Account Hierarchy Single VDS Domain
 Unified management of encryption policies and keys by Centralized IT is applied to all parts of an organization. IT controls and applies policies in line with corporate standards in a uniform approach.  This capability is a great benefit for organizations where policies apply to all parts of the product or service lines and the number of exceptions are limited.
@@ -200,7 +200,7 @@ Implement decentralized management with business or product owners of practice a
   ![Multiple VDS Domains](../images/Vormetric_VDS_Domain_Multiple.png)
 
 ### Host Agent Installation
-CenturyLink Cloud customers should leverage our automated blueprint engine to deploy Host Agents across their account hierarchy. The orchestration software makes it easy for users to deploy solutions, reducing operational support costs, and speed up time to implementation.
+Lumen Cloud customers should leverage our automated blueprint engine to deploy Host Agents across their account hierarchy. The orchestration software makes it easy for users to deploy solutions, reducing operational support costs, and speed up time to implementation.
 
 * [Deploy Vormetric Host Agent](//www.ctl.io/marketplace/partner/VRSJ/product/Vormetric%20Encryption%20Agent)
 * [Video Tutorial](//vimeo.com/136635748)
@@ -396,7 +396,7 @@ Clusters are a staple of any HA environment. DSM appliances are configured as pr
 
 Replication occurs from the primary to the failover server(s) only. It consists of the latest configuration database running on the primary server. The configuration database contains all the policies, host configurations, and keys that are used in the VDS Management Console. Log files are not a part of the information replicated.
 
-CenturyLink Cloud customers can implement DSM high availability in various approaches to meet business requirements.
+Lumen Cloud customers can implement DSM high availability in various approaches to meet business requirements.
 
 In a single site topology, DSM high availability is provided by two (2) virtual appliances in the same physical location. Host Agents maintain access to their encryption services in the event of the primary DSM appliance having an interruption.
 
@@ -454,8 +454,8 @@ DSM (Primary)|DSM (Failover)|One Way|TCP/50000
     Enter the host name of this computer. This will be used by Agents to talk to this Security Server.
     This Security Server host name[VA1CCVADSM01.CCVA.COM]:
     Please enter the following information for key and certificate generation.
-    What is the name of your organizational unit? []:CenturyLink Cloud
-    What is the name of your organization? []:CenturyLink
+    What is the name of your organizational unit? []:Lumen Cloud
+    What is the name of your organization? []:Lumen
     What is the name of your City or Locality? []:Bellevue
     What is the name of your State or Province? []:WA
     What is your two-letter country code? [US]:US
@@ -469,8 +469,8 @@ DSM (Primary)|DSM (Failover)|One Way|TCP/50000
     Primary Security Server system administrator password:xxxxxxxx
 
     This Security Server host name[VA1CCVADSM01.CCVA.COM]:
-    The name of your organizational unit:CenturyLink Cloud
-    The name of your organization:CenturyLink
+    The name of your organizational unit:Lumen Cloud
+    The name of your organization:Lumen
     The name of your City or Locality:Bellevue
     The name of your State or Province:WA
     Your two-letter country code[US]:US
@@ -517,7 +517,7 @@ Set up the Automatic Backup feature to protect the configuration settings as wel
     ![automatic backup files list](../images/centuryLink-cloud-guide-to-vormetric-DSM-15.png)
 
 ### Server Backup and Recovery
-CenturyLink Cloud customers, depending on their technical requirements, implement various backup and recovery solutions. Both the backup and restoration of encrypted data sets are handled differently depending on the solution in place.
+Lumen Cloud customers, depending on their technical requirements, implement various backup and recovery solutions. Both the backup and restoration of encrypted data sets are handled differently depending on the solution in place.
 
 **Backup Method**|**Approach**
 -----------------|------------

@@ -1,5 +1,5 @@
 {{{
-  "title": "CenturyLink Cloud Guide to Openvpn Access Server",
+  "title": "Lumen Cloud Guide to Openvpn Access Server",
   "date": "4-5-2017",
   "author": "Chris Little",
   "attachments": [],
@@ -19,7 +19,7 @@
 * [Implementing High Availability](#implementing-high-availability)
 * [Configure Server Network Settings](#configure-server-network-settings)
 * [Configuring Client VPN DHCP Pool](#configuring-client-vpn-dhcp-pool)
-* [Adding Routes to CenturyLink Cloud VLANs](#adding-routes-to-centurylink-cloud-vlans)
+* [Adding Routes to Lumen Cloud VLANs](#adding-routes-to-centurylink-cloud-vlans)
 * [Configuring LDAP Authentication](#configuring-ldap-authentication)
 * [Installing SSL Web Certificates](#installing-ssl-web-certificates)
 * [Two Factor Authentication](#two-factor-authentication)
@@ -30,7 +30,7 @@ OpenVPN Access Server is a full featured secure network tunneling VPN software s
 
 ### Prerequisites
 
-* A CenturyLink Cloud Account
+* A Lumen Cloud Account
 * OpenVPN AS Licenses
 * [Deploy the OpenVPN AS Virtual Appliance.](../../Ecosystem Partners/Marketplace Guides/getting-started-with-openvpnas-appliance.md)  We highly recommend the OpenVPN Access Server be deployed in a [dedicated VLAN](../creating-and-deleting-vlans.md) and [given a friendly name](../add-a-user-friendly-name-to-vlans.md).  
 
@@ -56,7 +56,7 @@ As part of the OpenVPN AS configuration a pool of DHCP addresses in the OpenVPN 
 * <.11 & >.230 are reserved and not permitted to be used in this pool on the platform.
 * We recommend you allocate this pool using proper CIDR.  [Cheat Sheets are available online.](//www.aelius.com/njh/subnet_sheet.html)
 
-[Open a support ticket](../../Support/how-do-i-report-a-support-issue.md) with the CenturyLink Cloud NOC.  You can use the following format:
+[Open a support ticket](../../Support/how-do-i-report-a-support-issue.md) with the Lumen Cloud NOC.  You can use the following format:
 
 ```
 NOC,
@@ -245,7 +245,7 @@ Once you have deployed the Primary OpenVPN Access Server (or standby node) custo
 ### Implementing High Availability
 To create an active and standby configuration using OpenVPN Access Server follow the process below:
 
-1. A **Shared Virtual IP Address** is required as part of high availability.  Customers must [Open a support ticket](../../Support/how-do-i-report-a-support-issue.md) with the CenturyLink Cloud NOC to claim an **un-used** IP address on the same vlan as the OpenVPN Access Server.  You can use the following format:
+1. A **Shared Virtual IP Address** is required as part of high availability.  Customers must [Open a support ticket](../../Support/how-do-i-report-a-support-issue.md) with the Lumen Cloud NOC to claim an **un-used** IP address on the same vlan as the OpenVPN Access Server.  You can use the following format:
 
   ```
   NOC,
@@ -385,9 +385,9 @@ To create an active and standby configuration using OpenVPN Access Server follow
 
 2. Choose **Save Settings**, followed by **Update Running Server.**
 
-### Adding Routes to CenturyLink Cloud VLANs
+### Adding Routes to Lumen Cloud VLANs
 
-1. Navigate to **Configuration > VPN Settings** in the Web Admin UI.  In the **Routing** section, confirm **Yes, via NAT** is selected and input the CenturyLink Cloud vlans you wish to allow Client VPN users to access once connected.  Generally, this list includes any vlans that you wish to deliver services from to end users.  CenturyLink Cloud uses /24 networks.
+1. Navigate to **Configuration > VPN Settings** in the Web Admin UI.  In the **Routing** section, confirm **Yes, via NAT** is selected and input the Lumen Cloud vlans you wish to allow Client VPN users to access once connected.  Generally, this list includes any vlans that you wish to deliver services from to end users.  Lumen Cloud uses /24 networks.
 
     ![vlan routes](../../images/centurylink-cloud-guide-to-openvpn-access-server-09.png)
 

@@ -7,11 +7,11 @@
 }}}
 
 <h3>Description</h3>
-<p>In order to build highly available web applications, CenturyLink Cloud customers can use a load balancer. While customers are free to set up a dedicated load balancer with the help of support, customers can also use a shared load balancer that is managed
+<p>In order to build highly available web applications, Lumen Cloud customers can use a load balancer. While customers are free to set up a dedicated load balancer with the help of support, customers can also use a shared load balancer that is managed
   through the Control Portal. In this KB article, we walk through the shared load balancer and how to configure pools of servers.</p>
 <h3>Audience</h3>
 <ul>
-  <li>CenturyLink Cloud customers (Application developers, system administrators)</li>
+  <li>Lumen Cloud customers (Application developers, system administrators)</li>
 </ul>
 <h3>Prerequisites</h3>
 <ul>

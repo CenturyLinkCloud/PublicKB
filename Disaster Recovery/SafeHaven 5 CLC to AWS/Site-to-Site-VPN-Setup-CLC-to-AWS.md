@@ -1,5 +1,5 @@
 {{{
-  "title": "Site to Site VPN between CenturyLink Cloud and AWS",
+  "title": "Site to Site VPN between Lumen Cloud and AWS",
   "date": "1-9-2018",
   "author": "Juan Aristizabal",
   "attachments": [],
@@ -7,9 +7,9 @@
 }}}
 
 ### Article Overview
-This article covers the steps to create Site-to-Site VPN between CenturyLink Cloud and AWS.
+This article covers the steps to create Site-to-Site VPN between Lumen Cloud and AWS.
 
-### CenturyLink Cloud Configuration Part 1
+### Lumen Cloud Configuration Part 1
 Go to the CLC portal at https://control.ctl.io and select **Site-to-Site VPN** under the **Network** tab in the left navigation panel.
 
 ![update](../../images/SH5.0/clctoawsvpn/1.png)
@@ -20,7 +20,7 @@ Click on the **+ site to site vpn** button.
 
 ![update](../../images/SH5.0/clctoawsvpn/2.png)
 
-Select the appropriate CenturyLink Cloud datacenter as the **Control Portal Site**.
+Select the appropriate Lumen Cloud datacenter as the **Control Portal Site**.
 
 ![update](../../images/SH5.0/clctoawsvpn/3.png)
 
@@ -44,7 +44,7 @@ Click on **Virtual Private Gateways** on the left and then click on the **Create
 
 ### Create a Customer Gateway:
 Click on **Customer Gateway** on the left and then click on **Create Customer Gateway**.
-Give it a **Name** that describes what connection it is creating, example: CLC CA2. Select Routing as **Static** and enter the **IP Address** obtained from the CenturyLink Cloud Configuration Part 1 above.
+Give it a **Name** that describes what connection it is creating, example: CLC CA2. Select Routing as **Static** and enter the **IP Address** obtained from the Lumen Cloud Configuration Part 1 above.
 
 ![update](../../images/SH5.0/clctoawsvpn/6.png)
 
@@ -55,7 +55,7 @@ Click on **VPN Connections** and then click on **Create VPN Connection**.
 
 Privide a **Name Tag** for the VPN connection, click on **Virtual Private Gateway** and select the **Virtual Private Gateway** that was created. Leave the **Customer Gateway** option to **Existing**, and enter the **Customer Gateway ID** that was created.
 
-For **Routing Options** select **Static**. Enter the **IP Prefixes** of the CenturyLink Cloud Network you want to connect to AWS. Leave the Tunnel options empy and click on **Create VPN Connection**
+For **Routing Options** select **Static**. Enter the **IP Prefixes** of the Lumen Cloud Network you want to connect to AWS. Leave the Tunnel options empy and click on **Create VPN Connection**
 
 Wait until the VPN is created and its state is available.
 

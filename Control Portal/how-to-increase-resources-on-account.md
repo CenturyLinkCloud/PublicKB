@@ -7,9 +7,9 @@
 }}}
 
 ### Description
-CenturyLink Cloud accounts start with a pre-defined resource (CPU, Memory, Storage, Public-IP) limit per data center. As customers grow their cloud usage, it's common to request an increase in resource limits. Other items to note about increasing resources:
+Lumen Cloud accounts start with a pre-defined resource (CPU, Memory, Storage, Public-IP) limit per data center. As customers grow their cloud usage, it's common to request an increase in resource limits. Other items to note about increasing resources:
 * Only paying customers can have their resource limits increased, unless executive approval is given.
-* A single request can be made to Customer Care without additional CenturyLink authorization, if it does not exceed 50% of the current resource limit.
+* A single request can be made to Customer Care without additional Lumen authorization, if it does not exceed 50% of the current resource limit.
 * After the first resource limit increase in a given 30-day period, each subsequent increase request is subject to an internal review prior to approval.
 
 ### Resource Notification

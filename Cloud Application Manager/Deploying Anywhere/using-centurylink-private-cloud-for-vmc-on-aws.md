@@ -1,7 +1,7 @@
-{{{ "title": "Using the CenturyLink Private Cloud for VMWare Cloud on AWS",
+{{{ "title": "Using the Lumen Private Cloud for VMWare Cloud on AWS",
 "date": "01-08-2020",
 "author": "Guillermo Sanchez",
-"keywords": ["cam", "cloud application manager", "vmware cloud", "aws", "vmc", "cpc", "centurylink private cloud"],
+"keywords": ["cam", "cloud application manager", "vmware cloud", "aws", "vmc", "cpc", "lumen private cloud"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -20,16 +20,16 @@
 
 ### Overview
 
-This article is meant to assist users of Cloud Application Manager to configure a CenturyLink Private Cloud for VMWare Cloud on AWS (CPC for VMC) provider, then deploy or register a virtual machines with it.
+This article is meant to assist users of Cloud Application Manager to configure a Lumen Private Cloud for VMWare Cloud on AWS (CPC for VMC) provider, then deploy or register a virtual machines with it.
 
 ### Audience
 
-All users of Cloud Application Manager using CenturyLink Private Cloud for VMWare Cloud on AWS providers.
+All users of Cloud Application Manager using Lumen Private Cloud for VMWare Cloud on AWS providers.
 
 ### Prerequisites
 
 * An active *Cloud Application Manager* account
-* Access and credentials to a **CenturyLink Private Cloud for VMWare Cloud on AWS**.
+* Access and credentials to a **Lumen Private Cloud for VMWare Cloud on AWS**.
 * A virtual machine template (Linux or Windows) on the VMC. Virtual machine templates have to be bootstrapped with the Cloud Application Manager Agent.
 * If the VMC is behind a firewall, the following ports have to be open on the firewall:
   * **443/TCP incoming to VMC server**: for Cloud Application Manager to make API calls on VMC.
@@ -89,7 +89,7 @@ Follow these steps to run a script that creates a scheduled task on a Windows Se
 
 4. Right-click the script and click **Run PowerShell**.
 
-### Registering a CenturyLink Private Cloud for VMWare Cloud on AWS provider in Cloud Application Manager
+### Registering a Lumen Private Cloud for VMWare Cloud on AWS provider in Cloud Application Manager
 
 In order to deploy to a VMC on AWS, you must first provide information to connect.
 
@@ -125,7 +125,7 @@ You can deploy new instances to your VMC provider from CAM portal, for detailed 
 
 ### Getting General Support
 
-Customers can contact the CenturyLink Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
+Customers can contact the Lumen Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
 
 #### Contact:
 

@@ -2,7 +2,7 @@
 "title": "Enable User Authentication",
 "date": "05-23-2019",
 "author": "Guillermo Sánchez and Sergio Quintana",
-"keywords": ["cam", "cloud application manager", "organization", "settings", "authentication", "sso", "oauth", "google", "github", "saml", "ldap", "clc", "centurylink", "master account"],
+"keywords": ["cam", "cloud application manager", "organization", "settings", "authentication", "sso", "oauth", "google", "github", "saml", "ldap", "clc", "lumen", "master account"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -20,8 +20,8 @@
 * [Setting Up LDAP in Cloud Application Manager](#setting-up-ldap-in-cloud-application-manager)
 * [Syncing with LDAP Groups](#syncing-with-ldap-groups)
 * [Giving LDAP Accounts Admin Access](#giving-ldap-accounts-admin-access)
-* [Single Sign-On with CenturyLink Cloud](#single-sign-on-with-centurylink-cloud)
-* [Single Sign-On with CenturyLink Master Account](#single-sign-on-with-centurylink-master-account)
+* [Single Sign-On with Lumen Cloud](#single-sign-on-with-centurylink-cloud)
+* [Single Sign-On with Lumen Master Account](#single-sign-on-with-centurylink-master-account)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
@@ -165,35 +165,9 @@ It is a good practice to give an LDAP user in your organization administrative a
 
 3. Make the LDAP user an [administrator](admin-access.md). From here on, use that LDAP user account to manage Cloud Application Manager.
 
-### Single Sign-On with CenturyLink Cloud
+### Single Sign-On with Lumen Cloud
 
-If you enable CenturyLink Cloud authentication method any user with CenturyLink Cloud credentials may log in to Cloud Application Manager using these credentials.
-
-#### Steps
-
-1. Sign in to Cloud Application Manager as an [administrator](admin-access.md).
-
-2. Navigate to the **Settings** page in the [Management site](https://account.cam.ctl.io/#/settings).
-
-3. Under **Authentication**, enable **CenturyLink Cloud** by turning it on.
-
-4. Any user who wants to log in into the organization will see a new button to sign in with his CenturyLink Cloud credentials.
-
-    ![CenturyLink Cloud sign in button](../../images/cloud-application-manager/management/auth-clc.png)
-
-5. When clicking the button, a new dialog appears asking for the CenturyLink Cloud credentials.
-
-    ![CenturyLink Cloud sign in](../../images/cloud-application-manager/management/auth-clc-signin.png)
-
-    Provided username will be linked to the user account, so this field will be pre-filled for that particular user for any subsequent attempt to sign in using CenturyLink Cloud credentials.
-
-When CenturyLink Cloud authentication method is enabled, you can also see and edit the corresponding linked CenturyLink Cloud username in the **My Account** dialog:
-
-![CenturyLink Cloud username in My Account](../../images/cloud-application-manager/management/auth-clc-account.png)
-
-### Single Sign-On with CenturyLink Master Account
-
-If CenturyLink Master Account authentication method is enabled, any user with CenturyLink Master Account credentials may log in to Cloud Application Manager using his CenturyLink Master Account. This will also let users with additional CenturyLink products supporting this authentication method to use Single Sign-On method within Cloud Application Manager and these other additional products.
+If you enable Lumen Cloud authentication method any user with Lumen Cloud credentials may log in to Cloud Application Manager using these credentials.
 
 #### Steps
 
@@ -201,27 +175,53 @@ If CenturyLink Master Account authentication method is enabled, any user with Ce
 
 2. Navigate to the **Settings** page in the [Management site](https://account.cam.ctl.io/#/settings).
 
-3. Under **Authentication**, **CenturyLink Master Account** should be enabled.
+3. Under **Authentication**, enable **Lumen Cloud** by turning it on.
 
-4. Any user who wants to log in into the organization will see a new button to sign in with his CenturyLink Master Account credentials.
+4. Any user who wants to log in into the organization will see a new button to sign in with his Lumen Cloud credentials.
 
-    ![CenturyLink Master Account sign in button](../../images/cloud-application-manager/management/auth-sso.png)
+    ![Lumen Cloud sign in button](../../images/cloud-application-manager/management/auth-clc.png)
 
-5. When clicking the button, the user will be redirected to the CenturyLink Master Account page asking for credentials.
+5. When clicking the button, a new dialog appears asking for the Lumen Cloud credentials.
 
-    ![CenturyLink Master Account sign in](../../images/cloud-application-manager/management/auth-sso-signin.png)
+    ![Lumen Cloud sign in](../../images/cloud-application-manager/management/auth-clc-signin.png)
 
-    The username provided will be linked to the user account if not already. You can also link your Cloud Application Manager account from the CenturyLink Master Account user interface directly, from the Account Linking section.
+    Provided username will be linked to the user account, so this field will be pre-filled for that particular user for any subsequent attempt to sign in using Lumen Cloud credentials.
 
-When CenturyLink Master Account authentication method has been used, you can also see the link to "My CenturyLink Master Account" page in the **user** menu dropdown:
+When Lumen Cloud authentication method is enabled, you can also see and edit the corresponding linked Lumen Cloud username in the **My Account** dialog:
 
-![CenturyLink Cloud Master Account link in user menu dropdown](../../images/cloud-application-manager/management/auth-sso-link.png)
+![Lumen Cloud username in My Account](../../images/cloud-application-manager/management/auth-clc-account.png)
 
-For more information about CenturyLink Master Account please refer to [Enhanced Security: Master Account](../../General/Authentication/lumen-master-account-registration.md)
+### Single Sign-On with Lumen Master Account
+
+If Lumen Master Account authentication method is enabled, any user with Lumen Master Account credentials may log in to Cloud Application Manager using his Lumen Master Account. This will also let users with additional Lumen products supporting this authentication method to use Single Sign-On method within Cloud Application Manager and these other additional products.
+
+#### Steps
+
+1. Sign in to Cloud Application Manager as an [administrator](admin-access.md).
+
+2. Navigate to the **Settings** page in the [Management site](https://account.cam.ctl.io/#/settings).
+
+3. Under **Authentication**, **Lumen Master Account** should be enabled.
+
+4. Any user who wants to log in into the organization will see a new button to sign in with his Lumen Master Account credentials.
+
+    ![Lumen Master Account sign in button](../../images/cloud-application-manager/management/auth-sso.png)
+
+5. When clicking the button, the user will be redirected to the Lumen Master Account page asking for credentials.
+
+    ![Lumen Master Account sign in](../../images/cloud-application-manager/management/auth-sso-signin.png)
+
+    The username provided will be linked to the user account if not already. You can also link your Cloud Application Manager account from the Lumen Master Account user interface directly, from the Account Linking section.
+
+When Lumen Master Account authentication method has been used, you can also see the link to "My Lumen Master Account" page in the **user** menu dropdown:
+
+![Lumen Cloud Master Account link in user menu dropdown](../../images/cloud-application-manager/management/auth-sso-link.png)
+
+For more information about Lumen Master Account please refer to [Enhanced Security: Master Account](../../General/Authentication/lumen-master-account-registration.md)
 
 ### Contacting Cloud Application Manager Support
 
-Customers can contact the CenturyLink Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
+Customers can contact the Lumen Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
 
 **Contact:**
 

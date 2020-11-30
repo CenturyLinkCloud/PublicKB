@@ -1,5 +1,5 @@
 {{{
-  "title": "Requesting Service Tasks on CenturyLink Cloud",
+  "title": "Requesting Service Tasks on Lumen Cloud",
   "date": "9-10-2015",
   "author": "Dana Bowlin",
   "attachments": [],

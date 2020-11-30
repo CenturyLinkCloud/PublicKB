@@ -7,10 +7,10 @@
 }}}
 
 ### Overview
-The CenturyLink Cloud platform has the capability to share networks within a parent account downward into sub-accounts.  This feature is disable by default but can be enabled in a self-service manner.
+The Lumen Cloud platform has the capability to share networks within a parent account downward into sub-accounts.  This feature is disable by default but can be enabled in a self-service manner.
 
 ### Audience
-* CenturyLink Cloud Users
+* Lumen Cloud Users
 
 ### Steps
 

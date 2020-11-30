@@ -10,7 +10,7 @@
 }}}
 
 ### Description
-CenturyLink Private Cloud on VMware Cloud Foundation (CPC on VCF) customers can now view eight (8) different metrics for running VMs that are within the vCloud Director (vCD) environment. Those eight metrics are:
+Lumen Private Cloud on VMware Cloud Foundation (CPC on VCF) customers can now view eight (8) different metrics for running VMs that are within the vCloud Director (vCD) environment. Those eight metrics are:
 
 1.	disk.read.average
 2.	disk.provisioned.latest

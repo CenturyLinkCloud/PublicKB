@@ -7,10 +7,10 @@
 }}}
 
 ### Description
-There are at least two different types of user credentials that you need to maintain and be aware of as a CenturyLink Cloud Control Portal user. One set of credentials is used for you or other users in your organization to gain access to the Control Portal itself. These are your CenturyLink Cloud Control Portal user credentials. You may also be responsible for maintaining a number of different administrator credentials for servers you have created within your CenturyLink Cloud account. Both credentials should use strong and secure passwords, however *they are not related to each other and should be managed and used separately.* This article discusses how to manage and use both types of credentials independently.
+There are at least two different types of user credentials that you need to maintain and be aware of as a Lumen Cloud Control Portal user. One set of credentials is used for you or other users in your organization to gain access to the Control Portal itself. These are your Lumen Cloud Control Portal user credentials. You may also be responsible for maintaining a number of different administrator credentials for servers you have created within your Lumen Cloud account. Both credentials should use strong and secure passwords, however *they are not related to each other and should be managed and used separately.* This article discusses how to manage and use both types of credentials independently.
 
 ### Audience
-CenturyLink Cloud customers
+Lumen Cloud customers
 
 ### Control Portal Credentials
 1. Control Portal credentials are maintained in your Profile, which can be accessed by clicking your user name drop-down located in the upper right corner of the Dashboard and selecting **Your Profile**.

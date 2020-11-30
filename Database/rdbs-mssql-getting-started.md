@@ -10,15 +10,15 @@
 }}}
 
 ### Audience
-This article is to support customers of Relational DB Service, CenturyLink's database-as-a-service product. These instructions are specific to getting started provisioning and using a SQL Server instance directly through the Control Portal.
+This article is to support customers of Relational DB Service, Lumen's database-as-a-service product. These instructions are specific to getting started provisioning and using a SQL Server instance directly through the Control Portal.
 
 ### Overview
-CenturyLink's Relational DB Service is a database-as-a-service product that provides access to a MSSQL database instance with SSL support, daily backups, restore functionality, logs, OS monitoring, notifications, and a replication option with manual-failover. Users can configure the amount of CPU, Memory, and Storage based on their database needs. Customers with High Available needs can choose to replicate their instance in-datacenter or cross-datacenter depending upon their HA solution. As the customer's capacity needs grow, they can easily scale their CPU, RAM, and/or Storage with the click of a button.
+Lumen's Relational DB Service is a database-as-a-service product that provides access to a MSSQL database instance with SSL support, daily backups, restore functionality, logs, OS monitoring, notifications, and a replication option with manual-failover. Users can configure the amount of CPU, Memory, and Storage based on their database needs. Customers with High Available needs can choose to replicate their instance in-datacenter or cross-datacenter depending upon their HA solution. As the customer's capacity needs grow, they can easily scale their CPU, RAM, and/or Storage with the click of a button.
 
 RelationalDB Microsoft SQL Server is created on a VM inside your account under a hidden folder.  Since this is inside your account that is why we ask what Network you want the Database(s) to be created in.
 
 ### Prerequisites
-* Access to the CenturyLink Cloud Platform as an authorized user
+* Access to the Lumen Cloud Platform as an authorized user
 
 ### Connectivity
 Since the msSQL RelationalDB databases are in your own network and don't have a Public IP address on the databases.  If you try to access them from your desktop with Microsoft SQL Server Management Studio you will first have to open your VPN to your account.  If you're just connecting to them from an application server you won't need a VPN, given your firewalls are set up correctly in CLC.
@@ -28,7 +28,7 @@ Replicated databases, just like stand-alone DBs, have their own non-public IPs. 
 
 
 ### Configuring a New MSSQL Relational DB Subscription
-1. Browse to CenturyLink Cloud’s Relational DB UI through the Control Portal by clicking on Create->Relational DB, or Services->RelationalDB, or directly at [rdbs.ctl.io](https://rdbs.ctl.io).
+1. Browse to Lumen Cloud’s Relational DB UI through the Control Portal by clicking on Create->Relational DB, or Services->RelationalDB, or directly at [rdbs.ctl.io](https://rdbs.ctl.io).
 
    ![Navigate](../images/rdbs/rdbs-navigate-to-create-page.png)
    ![Navigate](../images/rdbs/rdbs-navigate-to-summary-page.png)

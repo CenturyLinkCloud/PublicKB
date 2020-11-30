@@ -35,9 +35,9 @@ Note that we have to re-login to the cluster using the GUI after this.
 In order to confirm the change, ssh into the SRN as root and run `dpkg -l |grep safehaven` and you should see something like
 ```
 root@localhost:~# dpkg -l |grep safehaven
-ii  safehaven                          5.2.0                                      amd64        CenturyLink SafeHaven. Build 5.2.0
-ii  safehaven-base                     5.2.0                                      amd64        CenturyLink SafeHaven-Base. Build 5.2.0
-ii  safehaven-sbd                      9.0.2                                      amd64        CenturyLink SafeHaven-SBD. Built for kernel 4.4.0-34-generic and SafeHaven-5.0.1
+ii  safehaven                          5.2.0                                      amd64        Lumen SafeHaven. Build 5.2.0
+ii  safehaven-base                     5.2.0                                      amd64        Lumen SafeHaven-Base. Build 5.2.0
+ii  safehaven-sbd                      9.0.2                                      amd64        Lumen SafeHaven-SBD. Built for kernel 4.4.0-34-generic and SafeHaven-5.0.1
 ii  safehaven-scst                     3.2.0                                      amd64        Specifically built for kernel 4.4.0-34-generic
 root@localhost:~# 
 ```

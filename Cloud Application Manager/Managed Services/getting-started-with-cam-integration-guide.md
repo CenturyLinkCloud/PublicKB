@@ -8,9 +8,9 @@
 
 ### Create Managed Application in Cloud Application Manager (CAM)
 
-Learn how to create a Managed Application within CAM; one that would be supported and managed by CenturyLink.  At the time of writing this article, this is intended for internal users of CenturyLink and most specifically those familiar with Managed Services Anywhere.  As the process is refined, the creation of Managed Applications will be expanded to a wider audience. This includes customers wanting their custom applications managed by CenturyLink.
+Learn how to create a Managed Application within CAM; one that would be supported and managed by Lumen.  At the time of writing this article, this is intended for internal users of Lumen and most specifically those familiar with Managed Services Anywhere.  As the process is refined, the creation of Managed Applications will be expanded to a wider audience. This includes customers wanting their custom applications managed by Lumen.
 
-Before you start, sign up for a Cloud Application Manager account (account currently expected to be within the CenturyLink organization).
+Before you start, sign up for a Cloud Application Manager account (account currently expected to be within the Lumen organization).
 
 Then, follow these simple steps.
 
@@ -99,7 +99,7 @@ I have gone ahead and added the Managed Application script box as well as the Mo
 
 ### Pass Application Values to Managed Application Box
 
-Learn how to pass values to the Managed Application script box for making your application available for support by CenturyLink.
+Learn how to pass values to the Managed Application script box for making your application available for support by Lumen.
 
 First, I should point out the lifecycle events of a Managed Application. When a Managed Application is deployed, the Make Managed process will be triggered and executed on the compute prior to your application script box.  It is during your script box execution that the Managed Application script box will execute at both the **pre_start** and **start** lifecycle events.  The **pre_start** is simply detecting whether or not the Make Managed process for the compute was successful prior to moving forward.  If it had failed silently for some reason, the script box will be halted here.
 

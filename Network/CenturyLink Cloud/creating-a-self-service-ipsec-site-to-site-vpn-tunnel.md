@@ -7,13 +7,13 @@
 }}}
 
 <h3>Description</h3>
-<p>IPsec is a framework of open standards for ensuring private communications over public networks. It has become the most common network layer security control, typically used to create a VPN tunnel. The CenturyLink Cloud platform enables self-service
+<p>IPsec is a framework of open standards for ensuring private communications over public networks. It has become the most common network layer security control, typically used to create a VPN tunnel. The Lumen Cloud platform enables self-service
   support to configure Site-to-Site (Point-to-Point, Gateway-to-Gateway) IPsec VPN Tunnels. This model protects communications between two specific networks, such as an organization’s main office network and a branch office network, or two business
   partner’s networks.&nbsp;<strong><br /></strong>
 </p>
 <h3>Audience</h3>
 <ul>
-  <li>CenturyLink Cloud customers (system administrators) who wish to&nbsp;extend their network and/or infrastructure to the cloud platform</li>
+  <li>Lumen Cloud customers (system administrators) who wish to&nbsp;extend their network and/or infrastructure to the cloud platform</li>
 </ul>
 <h3>Prerequisites</h3>
 <ul>
@@ -96,7 +96,7 @@
 <ul>
   <li>IKEv2 VPNs</li>
   <li>Requesting an engineer to perform a live turn-up with you on a conference call</li>
-  <li>Requesting CenturyLink Cloud complete your organization's VPN information, or provide network documentation beyond what is included in this article.</li>
+  <li>Requesting Lumen Cloud complete your organization's VPN information, or provide network documentation beyond what is included in this article.</li>
   <li>Any requirement for an engineer to attend a live meeting or telephone call.</li>
   <li>NAT requirement (generally this is a requirement when the cloud servers need to be presented as a public IP address via the tunnel) - please note this is only for NAT on the encrypted network addresses. We fully support NAT-Traversal (NAT between gateways)
     with our standard configuration.</li>

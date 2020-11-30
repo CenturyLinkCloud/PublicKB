@@ -1,5 +1,5 @@
 {{{
-  "title": "CenturyLink Cloud Guide to HAProxy",
+  "title": "Lumen Cloud Guide to HAProxy",
   "date": "12-17-2015",
   "author": "Gavin Lai",
   "attachments": [],
@@ -23,16 +23,16 @@
 HAProxy is a free, open source solution offering high availability load
 balancing and proxy for TCP and HTTP-based applications. HAProxy can
 provide a feature rich alternative to the built-in load balancing
-offering from CenturyLink Cloud. HAProxy and Keepalive can be used
+offering from Lumen Cloud. HAProxy and Keepalive can be used
 together to create a high availability load balancing solution.
 
 ### Prerequisites
 
--   Access to the CenturyLink Cloud platform as an authorized user
+-   Access to the Lumen Cloud platform as an authorized user
 
 -   Identify a Network VLAN you want the HAProxy to reside on
 
--   Understanding the functions of load balancer (beyond the scope of this article) and CenturyLink Cloud load balancing  offerings, to learn more, please see this [KB](../Network/CenturyLink Cloud/self-service-load-balancing-faq.md),
+-   Understanding the functions of load balancer (beyond the scope of this article) and Lumen Cloud load balancing  offerings, to learn more, please see this [KB](../Network/CenturyLink Cloud/self-service-load-balancing-faq.md),
     [general knowledge](//en.wikipedia.org/wiki/Load_balancing_%28computing%29)
      and [HAProxy documentations](//www.haproxy.org/#docs)
 
@@ -86,7 +86,7 @@ HAProxy can be deployed in a single or HA configuration. This
 walk-through cover both single and HA configuration. HAProxy can be
 configured with a single network interface or 2 (or more) network
 interfaces, depending on the security and infrastructure requirement,
-both can be implemented in CenturyLink Cloud.
+both can be implemented in Lumen Cloud.
 
 -   Deploy a CentOS 7 server using either the [Control
     Portal](//control.ctl.io), [CLI](//github.com/CenturyLinkCloud/clc-go-cli) or [API](//www.ctl.io/developers/)
@@ -291,4 +291,4 @@ The environment can be tested by disabling httpd (or the load balanced applicati
 
 ### Support
 * For issues related to deploying HAProxy, accessing the deployed software, please visit the [HAProxy Website](//www.haproxy.org/#supp)
-* For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying any Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the CenturyLink Cloud Support website](//t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying any Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](//t3n.zendesk.com/tickets/new).

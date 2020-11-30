@@ -1,5 +1,5 @@
 {{{
-  "title": "Create SRNs in CenturyLink Cloud",
+  "title": "Create SRNs in Lumen Cloud",
   "date": "12-27-2017",
   "author": "Weiran Wang",
   "attachments": [],
@@ -7,18 +7,18 @@
 }}}
 
 ### Article Overview
-This article explains how to deploy both production site and recovery site SafeHaven Replication Node(SRN)s in CenturyLink Cloud.
-SRN resides in both production and DR datacenters and work in pairs. A single SafeHaven Cluster can have upto 64 SRN's registered. This article explains how to deploy SRN in CenturyLink Cloud Production Datacenter and Recovery Datacenter.
+This article explains how to deploy both production site and recovery site SafeHaven Replication Node(SRN)s in Lumen Cloud.
+SRN resides in both production and DR datacenters and work in pairs. A single SafeHaven Cluster can have upto 64 SRN's registered. This article explains how to deploy SRN in Lumen Cloud Production Datacenter and Recovery Datacenter.
 
 ### Requirements
-1. Login access to the CenturyLink Cloud Portal at https://control.ctl.io.
-2. Internet access on the Production and Recovery SRNs in CenturyLink Cloud once it is deployed.
+1. Login access to the Lumen Cloud Portal at https://control.ctl.io.
+2. Internet access on the Production and Recovery SRNs in Lumen Cloud once it is deployed.
 
 ### Assumptions
-This article assumes that the user has login access to the CenturyLink Cloud Portal.
+This article assumes that the user has login access to the Lumen Cloud Portal.
 
-### Deploy the SafeHaven Repliation Node(SRN) in CenturyLink Cloud
-1. Login to Centurylink Cloud portal with your ceredentials - https://control.ctl.io/
+### Deploy the SafeHaven Repliation Node(SRN) in Lumen Cloud
+1. Login to Lumen Cloud portal with your ceredentials - https://control.ctl.io/
 2. Change the subaccount if needed by clicking on top of the screen.
 3. Click on the Datacenter that is required to be the Production Datacenter.
 4. Create a Group(Optional):  

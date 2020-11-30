@@ -9,7 +9,7 @@
 }}}
 
 ## You have a shiny new virtual server - now what?
-Congratulations! You've just built a new virtual server on CenturyLink Cloud - we assume you have created a new virtual server.  If not, [follow this other guide first](../Servers/creating-a-new-enterprise-cloud-server.md), then return to this guide.
+Congratulations! You've just built a new virtual server on Lumen Cloud - we assume you have created a new virtual server.  If not, [follow this other guide first](../Servers/creating-a-new-enterprise-cloud-server.md), then return to this guide.
 
 Now what?  How do you securely connect to your server(s)?  Some customers have the option of using a site-to-site VPN tunnel, MPLS, Cloud Network Service, etc.  If your company doesn't have these options available, then follow the steps below to use OpenVPN.
 

@@ -16,7 +16,7 @@
 #### New Use Case: Use of Amazon Web Services (AWS) as a Disaster Recovery Site
 
 One of the major feature's of this release is the capability to protect production servers on **multiple hypervisors** and failover to **AWS**. Examples of validated hypervisors are:
-* VMware: including VMware based cloud platforms such as CenturyLink Cloud, CenturyLink Private Cloud on VMware Cloud Foundation (vCloud Director), etc.
+* VMware: including VMware based cloud platforms such as Lumen Cloud, Lumen Private Cloud on VMware Cloud Foundation (vCloud Director), etc.
 * Hyper-V Generation 1
 * Xen(AWS)
 * KVM
@@ -27,12 +27,12 @@ One of the major feature's of this release is the capability to protect producti
 #### Microsoft Virtual Shadow Copy (VSS) Enabled Checkpoints
 Another major feature is the introduction of Microsoft Virtual Shadow Copy (VSS) enabled checkpoint for single Windows server protection groups.
 
-**NOTE**:This feature is available for both recovery into AWS as well as CenturyLink Cloud (CLC).
+**NOTE**:This feature is available for both recovery into AWS as well as Lumen Cloud (CLC).
 
 #### Built-in network isolation capability via GUI
 Introduced built-in network isolation capability via GUI for recovery servers running on the same subnet as the recovery SRN.
 
-**NOTE**:This feature is ONLY available for Windows Production VMs when the recovery site is CenturyLink Cloud (CLC).
+**NOTE**:This feature is ONLY available for Windows Production VMs when the recovery site is Lumen Cloud (CLC).
 
 ### Upgrade Path
 This is the first major release in the SafeHaven-5 product line and there is no upgrade path from any previous SafeHaven versions. Even the appliances (CMS/SRN) used in previous versions cannot be reused in SafeHaven-5 since it uses Ubuntu-16.04 as the base OS for the first time (in comparision, SafeHaven-4 uses Ubuntu-14.04 as the base OS).

@@ -8,20 +8,20 @@
 }}}
 
 ### Cloud Storage Gateway
-CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storage with Cloud Storage Gateway appliances. A cloud storage gateway is a network appliance or server which resides at the customer premises and translates cloud storageAPIs such as SOAP or REST to block-based storage protocols such as iSCSI or file-based interfaces such as NFS or CIFS. Unlike the cloud storage services which they complement, cloud storage gateways use standard network protocols which integrate with existing applications. Cloud storage gateways can also serve as intermediaries to multiple cloud storage providers. Some cloud storage gateways also include additional storage features such as backup and recovery, caching, compression, encryption,storage de-duplication and provisioning.
+Lumen Cloud customers may wish to leverage our S3 compatible Object Storage with Cloud Storage Gateway appliances. A cloud storage gateway is a network appliance or server which resides at the customer premises and translates cloud storageAPIs such as SOAP or REST to block-based storage protocols such as iSCSI or file-based interfaces such as NFS or CIFS. Unlike the cloud storage services which they complement, cloud storage gateways use standard network protocols which integrate with existing applications. Cloud storage gateways can also serve as intermediaries to multiple cloud storage providers. Some cloud storage gateways also include additional storage features such as backup and recovery, caching, compression, encryption,storage de-duplication and provisioning.
 
 There are many Cloud Storage Gateway appliances on the market today. In this Knowledge Base article we will focus on [TwinStrata](http://www.twinstrata.com/). The TwinStrata CloudArray provides customers various delivery models for the CloudArray product and Cloud Storage. Customers should validate with their Cloud Storage Gateway provider the support of an S3 compatible Object Storage.
 
 ### Supporting Information
-Information and details around the CenturyLink Cloud Object Storage can be found in our [Knowledge Base](https://www.ctl.io/knowledge-base/storage/object-storage/). It is also important to note that CenturyLink Cloud provides no support for any 3rd party Cloud Storage Gateways. We are simply providing cloud based storage for use with these Cloud Storage Gateways.  
+Information and details around the Lumen Cloud Object Storage can be found in our [Knowledge Base](https://www.ctl.io/knowledge-base/storage/object-storage/). It is also important to note that Lumen Cloud provides no support for any 3rd party Cloud Storage Gateways. We are simply providing cloud based storage for use with these Cloud Storage Gateways.  
 
 ### Prerequisites
-* CenturyLink Cloud Account
+* Lumen Cloud Account
 * TwinStrata CloudArray Virtual or Physical Appliance Base Configuration
-* An object storage user is created in the CenturyLink Cloud Control Portal. See this [Knowledge Base](https://www.ctl.io/knowledge-base/storage/object-storage/using-object-storage-from-the-control-portal/) article.
+* An object storage user is created in the Lumen Cloud Control Portal. See this [Knowledge Base](https://www.ctl.io/knowledge-base/storage/object-storage/using-object-storage-from-the-control-portal/) article.
 * The Cloud Storage Gateway has internet access ports as defined by the TwinStrata Installation Documentation.
 
-### Configuring CenturyLink Cloud as a Cloud Provider
+### Configuring Lumen Cloud as a Cloud Provider
 1. Select the Cloud Providers link in the TwinStrata CloudArray Dashboard
    ![cloud_providers_01.png](https://t3n.zendesk.com/attachments/token/9qglxzzyfxjcuvz/?name=cloud+providers+01.png)
 

@@ -7,7 +7,7 @@
 }}}
 
 ### Description
-CenturyLink Cloud customers can create complex network topologies to securely segment application tiers or entire systems. Using the Control Portal, users can easily provision VLANs and delete unused ones. Each CenturyLink Cloud customer gets an initial private VLAN to use, and can add more VLANs (for a fee). In this KB article, we will show how to create and delete a VLAN.
+Lumen Cloud customers can create complex network topologies to securely segment application tiers or entire systems. Using the Control Portal, users can easily provision VLANs and delete unused ones. Each Lumen Cloud customer gets an initial private VLAN to use, and can add more VLANs (for a fee). In this KB article, we will show how to create and delete a VLAN.
 
 ### Prerequisites
 

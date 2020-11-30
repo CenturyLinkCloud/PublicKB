@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p>The following table details the monitors that are enabled for the Managed Microsoft Active Directory Service on CenturyLink Cloud:</p>
+<p>The following table details the monitors that are enabled for the Managed Microsoft Active Directory Service on Lumen Cloud:</p>
 <table>
   <thead>
     <tr>

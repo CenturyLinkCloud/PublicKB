@@ -1,8 +1,8 @@
 {{{
-"title": "Using CenturyLink Cloud",
+"title": "Using Lumen Cloud",
 "date": "10-22-2019",
 "author": "Sergio Quintana, Yongjie Liang, Zachary McMaster",
-"keywords": ["cam", "cloud application manager", "centurylink", "clc"],
+"keywords": ["cam", "cloud application manager", "lumen", "clc"],
 "attachments": [],
 "sticky": true,
 "contentIsHTML": false
@@ -13,17 +13,17 @@
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
-* [Register CenturyLink Cloud Provider in Cloud Application Manager](#register-centurylink-cloud-provider-in-cloud-application-manager)
-* [CenturyLink Cloud Native Resources](#centuryLink-cloud-native-resources)
-* [CenturyLink Sub-Accounts](#centuryLink-sub-accounts)
-* [Deploy to CenturyLink Cloud from Cloud Application Manager](#deploy-to-centurylink-cloud-from-cloud-application-manager)
+* [Register Lumen Cloud Provider in Cloud Application Manager](#register-centurylink-cloud-provider-in-cloud-application-manager)
+* [Lumen Cloud Native Resources](#lumen-cloud-native-resources)
+* [Lumen Sub-Accounts](#lumen-sub-accounts)
+* [Deploy to Lumen Cloud from Cloud Application Manager](#deploy-to-centurylink-cloud-from-cloud-application-manager)
 * [Enabling services](#enabling-services)
-* [Shutdown and Terminate Instances in CenturyLink Cloud](#shutdown-and-terminate-instances-in-centurylink-cloud)
+* [Shutdown and Terminate Instances in Lumen Cloud](#shutdown-and-terminate-instances-in-centurylink-cloud)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
 
-Automate application deployments through Cloud Application Manager when you launch to Linux or Windows virtual servers in the CenturyLink Cloud public platform. Cloud Application Manager simplifies deployments with a dedicated focus on applications rather than infrastructure.
+Automate application deployments through Cloud Application Manager when you launch to Linux or Windows virtual servers in the Lumen Cloud public platform. Cloud Application Manager simplifies deployments with a dedicated focus on applications rather than infrastructure.
 
 ### Audience
 
@@ -31,30 +31,30 @@ All Cloud Application Manager users who want to deploy workloads into CLC.
 
 ### Prerequisites
 
-* Access to Cloud Application Manager [Management site](https://account.cam.ctl.io/#/providers?type=CenturyLink).
-* The user must have an existing CLC account or should be an Administrator of the organization in Cloud Application Manager to create or bring a CLC account to be managed by CenturyLink.
+* Access to Cloud Application Manager [Management site](https://account.cam.ctl.io/#/providers?type=Lumen).
+* The user must have an existing CLC account or should be an Administrator of the organization in Cloud Application Manager to create or bring a CLC account to be managed by Lumen.
 
-### Register CenturyLink Cloud Provider in Cloud Application Manager
+### Register Lumen Cloud Provider in Cloud Application Manager
 
-You need a [CenturyLink Cloud account](//www.ctl.io/) to be able to deploy from Cloud Application Manager. When you have an account, follow these steps to register it in Cloud Application Manager to automate your deployments.
+You need a [Lumen Cloud account](//www.ctl.io/) to be able to deploy from Cloud Application Manager. When you have an account, follow these steps to register it in Cloud Application Manager to automate your deployments.
 
 #### Steps
 
-1. In Cloud Application Manager, go to **Providers** > **New Provider** and select **CenturyLink.**
+1. In Cloud Application Manager, go to **Providers** > **New Provider** and select **Lumen.**
 
-2. Enter the CenturyLink username and password as shown
+2. Enter the Lumen username and password as shown
 
 3. Enter a account alias for the CLC sub account you wish to register as or leave empty to use default
 
 4. Save
 
-   ![centurylink-add-provider-credentials-1.png](../../images/cloud-application-manager/centurylink-add-provider-credentials-1.png)
+   ![lumen-add-provider-credentials-1.png](../../images/cloud-application-manager/centurylink-add-provider-credentials-1.png)
 
-### CenturyLink Cloud Native Resources
+### Lumen Cloud Native Resources
 
-After the synchronization process, you will also find in the Instances page a list of CenturyLink Cloud resources that already exist in your account. You can also register virtual machine type instances from here.
+After the synchronization process, you will also find in the Instances page a list of Lumen Cloud resources that already exist in your account. You can also register virtual machine type instances from here.
 
-![CenturyLink Cloud - Unregistered instances](../../images/cloud-application-manager/deploying-anywhere/clc-unregistered-instances.png)
+![Lumen Cloud - Unregistered instances](../../images/cloud-application-manager/deploying-anywhere/clc-unregistered-instances.png)
 
 These resources can be filtered by the following types and subtypes:
 
@@ -67,21 +67,21 @@ These resources can be filtered by the following types and subtypes:
   * Load Balancer
   * VPN
 
-### CenturyLink Sub-Accounts
+### Lumen Sub-Accounts
 
 Also after the synchronization process, you will have the list sub-accounts under this provider account located in the provider page in the sub-accounts section.
 
-![CenturyLink Cloud - Sub-Accounts](../../images/cloud-application-manager/deploying-anywhere/centurylink-sub-accounts.png)
+![Lumen Cloud - Sub-Accounts](../../images/cloud-application-manager/deploying-anywhere/centurylink-sub-accounts.png)
 
 You may register a sub account as a provider by selecting the check boxes and using **Bulk Actions** or clicking the down arrow on the right of the sub account.
 
-![CenturyLink Cloud - Sub-Accounts](../../images/cloud-application-manager/deploying-anywhere/centurylink-sub-accounts-register.png)
+![Lumen Cloud - Sub-Accounts](../../images/cloud-application-manager/deploying-anywhere/centurylink-sub-accounts-register.png)
 
-### Deploy to CenturyLink Cloud from Cloud Application Manager
+### Deploy to Lumen Cloud from Cloud Application Manager
 
 Select from the following deployment profile options to launch workloads on Linux or Windows machines.
 
-Note a couple of things about instances you deploy on CenturyLink Cloud through Cloud Application Manager.
+Note a couple of things about instances you deploy on Lumen Cloud through Cloud Application Manager.
 
 * Instance name. Each instance is assigned a name that has the format of DatacenterFirst_six_letters_of_instance_nameCounter. i.e., UC1CITTPUBLIC01 for an instance deployed on UC1 (US West - Santa Clara) of a box called Public Proxy.
 * Instance Description. Depending on the number of instances you spin up through Cloud Application Manager, each instance is assigned a description that has the format of dasherized-instance-name-datacenter-service_ID-machine-number.
@@ -90,7 +90,7 @@ Note a couple of things about instances you deploy on CenturyLink Cloud through 
 
 | Option | Description |
 |--------|-------------|
-| Provider |  Select a CenturyLink Cloud account registered in Cloud Application Manager. |
+| Provider |  Select a Lumen Cloud account registered in Cloud Application Manager. |
 
 #### Resource
 
@@ -101,7 +101,7 @@ Note a couple of things about instances you deploy on CenturyLink Cloud through 
 | Server Type | Select a server type, for example, standard. |
 | Datacenter | Select a location to place the instance, for example, UC1. |
 | Group | Select placement group for the new instance. |
-| Template | Select from a list of CenturyLink Cloud Linux or Windows images. Images are specific to the box service type, that is, Linux or Windows. |
+| Template | Select from a list of Lumen Cloud Linux or Windows images. Images are specific to the box service type, that is, Linux or Windows. |
 | Instances | Specify the number of instances to provision. |
 | Admin/root Password | Choose the Administrator user password for Windows instance or the root password for Linux instance. This Password can be left empty, then a random password will be generated. When specified, this password will show up in CLC portal. |
 | Confirm Password | Confirm the password. |
@@ -145,7 +145,7 @@ By default, the machine is provisioned with 17GB local disk space. You can add m
 
 ![Services tab](../../images/cloud-application-manager/Services-tab-CLC.png)
 
-### Shutdown and Terminate Instances in CenturyLink Cloud
+### Shutdown and Terminate Instances in Lumen Cloud
 
 #### Shutdown Instance
 

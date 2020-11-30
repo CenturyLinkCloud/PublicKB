@@ -1,5 +1,5 @@
 {{{
-  "title": "Latency Testing for CenturyLink Cloud Data Center Nodes",
+  "title": "Latency Testing for Lumen Cloud Data Center Nodes",
   "date": "1-3-2017",
   "author": "Chris Little",
   "attachments": [],
@@ -7,12 +7,12 @@
 }}}
 
 ### Overview
-Customers who wish to test latency to CenturyLink Cloud Data Center Nodes globally can leverage [CloudHarmony's](//cloudharmony.com) cloud speed test or use their own tools to specific IP endpoints.
+Customers who wish to test latency to Lumen Cloud Data Center Nodes globally can leverage [CloudHarmony's](//cloudharmony.com) cloud speed test or use their own tools to specific IP endpoints.
 
 ### Latency Testing Using CloudHarmony (Recommended)
 1. Navigate to the [Cloud Harmony Cloud Speed Test](//cloudharmony.com/speedtest)
 
-2. Use the search term *CenturyLink Cloud* and select *CenturyLink Cloud Servers (13 Services)*.  
+2. Use the search term *Lumen Cloud* and select *Lumen Cloud Servers (13 Services)*.  
 
     ![Select Cloud Speed Test](../../images/latency-testing-for-CenturyLink-Cloud-data-center-nodes-01.png)
 

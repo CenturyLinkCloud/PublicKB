@@ -1,5 +1,5 @@
 {{{
-  "title": "Building CoreOS Server Cluster on the CenturyLink Cloud",
+  "title": "Building CoreOS Server Cluster on the Lumen Cloud",
   "date": "10-14-2014",
   "author": "Bryan Friedman",
   "attachments": [],
@@ -7,8 +7,8 @@
 }}}
 
 Overview
-<p><a href="https://coreos.com/">CoreOS</a>&nbsp;is a lightweight Linux-based operating system that is designed to run&nbsp;<a href="https://www.docker.io/">Docker</a>&nbsp;containers. CoreOS is not currently supported natively as a VM template within the CenturyLink Cloud Control Portal, however it can be installed by using a self-managed PXE/DHCP Server and a dedicated network. This is easy to set up using the blueprints that have been created to help with the provisioning of a CoreOS cluster.</p>
-<p><em>Note: These same instructions can be followed to setup a Panamax server in CenturyLink Cloud. Instead of the "CoreOS Server" blueprint, just use the "CoreOS Server with Panamax" blueprint below and all other steps are the same. For more information, you can reference the <a href="https://github.com/CenturyLinkLabs/panamax-ui/wiki/Installing-Panamax#centurylink-cloud">installation instructions on the Panamax support site</a>.</em>
+<p><a href="https://coreos.com/">CoreOS</a>&nbsp;is a lightweight Linux-based operating system that is designed to run&nbsp;<a href="https://www.docker.io/">Docker</a>&nbsp;containers. CoreOS is not currently supported natively as a VM template within the Lumen Cloud Control Portal, however it can be installed by using a self-managed PXE/DHCP Server and a dedicated network. This is easy to set up using the blueprints that have been created to help with the provisioning of a CoreOS cluster.</p>
+<p><em>Note: These same instructions can be followed to setup a Panamax server in Lumen Cloud. Instead of the "CoreOS Server" blueprint, just use the "CoreOS Server with Panamax" blueprint below and all other steps are the same. For more information, you can reference the <a href="https://github.com/CenturyLinkLabs/panamax-ui/wiki/Installing-Panamax#lumen-cloud">installation instructions on the Panamax support site</a>.</em>
 </p>
 <h3>Basic Instructions</h3>
 <p>The basic steps are as follows, with further details below.</p>

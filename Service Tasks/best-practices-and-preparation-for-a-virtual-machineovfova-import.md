@@ -8,7 +8,7 @@
 
 ### Overview
 
-Images of existing physical or virtual servers can be imported directly onto the CenturyLink Cloud platform. These images are typically used for either compatibility and performance testing or as part of an overall cloud migration strategy. This article outlines the steps for successfully importing an image onto the CenturyLink Cloud Platform as a [service task](//www.ctl.io/centurylink-public-cloud/service-tasks/#169).
+Images of existing physical or virtual servers can be imported directly onto the Lumen Cloud platform. These images are typically used for either compatibility and performance testing or as part of an overall cloud migration strategy. This article outlines the steps for successfully importing an image onto the Lumen Cloud Platform as a [service task](//www.ctl.io/centurylink-public-cloud/service-tasks/#169).
 
 ### Detailed Steps
 

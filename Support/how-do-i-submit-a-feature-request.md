@@ -8,7 +8,7 @@
 
 ### Description (Goal/Purpose)
 
-CenturyLink Cloud releases software updates every month, and we're focused on delivering customer-driven innovation. This article outlines the preferred mechanisms for requesting new features.
+Lumen Cloud releases software updates every month, and we're focused on delivering customer-driven innovation. This article outlines the preferred mechanisms for requesting new features.
 
 ### Detailed Steps
 

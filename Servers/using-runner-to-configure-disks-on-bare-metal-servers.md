@@ -16,7 +16,7 @@ If you'd prefer to carve the disks up in more of a custom fashion, such as multi
 
 ### Prerequisites
 
-A CenturyLink Cloud Bare Metal Server that supports JBOD/RAID:
+A Lumen Cloud Bare Metal Server that supports JBOD/RAID:
 
 * 20 cores E5/256 GB RAM/2x800GB SSD/12x2TB 7200 SATA2
 * 16 cores E5/256 GB RAM/2x800GB SSD/4x4TB 7200 SATA2

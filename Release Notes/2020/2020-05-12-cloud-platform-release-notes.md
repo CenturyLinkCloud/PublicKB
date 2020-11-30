@@ -2,7 +2,7 @@
 "title": "Cloud Platform - Release Notes: May 12, 2020",
 "date": "05-12-2020",
 "author": "Randy Wansing",
-"keywords":["centurylink", "release notes", "cam", "alm", "cloud"],
+"keywords":["lumen", "release notes", "cam", "alm", "cloud"],
 "attachments": [],
 "contentIsHTML": false
 }}}

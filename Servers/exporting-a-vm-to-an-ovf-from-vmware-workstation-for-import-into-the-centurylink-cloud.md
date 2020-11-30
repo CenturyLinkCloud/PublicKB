@@ -1,5 +1,5 @@
 {{{
-  "title": "Exporting a VM to an OVF from VMware Workstation for Import into the CenturyLink Cloud",
+  "title": "Exporting a VM to an OVF from VMware Workstation for Import into the Lumen Cloud",
   "date": "4-16-2013",
   "author": "Jake Malmad",
   "attachments": [],
@@ -9,7 +9,7 @@
 <h3>Description</h3>
 
 <p>OVF (<strong>Open Virtualization Format</strong>) is an open standard for packaging and distributing virtual machines or virtual appliances. The OVF standard is not proprietary, and thus cross-platform compatible regardless of hypervisor (VMware, Hyper-V,
-  Xen). This article details the steps associated with exporting a virtual machine from VMware Workstation for import into the CenturyLink Cloud.</p>
+  Xen). This article details the steps associated with exporting a virtual machine from VMware Workstation for import into the Lumen Cloud.</p>
 <h3>Steps</h3>
 
 <ol>
@@ -25,7 +25,7 @@
 <p>A progress bar will be displayed showing the task completion.</p>
 </li>
 <li><p>To reduce file transfer time, and ensure file integrity, it is recommended to use an archival tool such as the open source 7zip to compress the OVF folder. Once the archive is created, it is advised calculate a checksum to ensure the
-  integrity of your files. This can be done in most archival programs, in 7zip, simply highlight the archive and go to “File” and selecting “Calculate Checksum”. The checksum value can provided to the CenturyLink Cloud NOC to ensure the integrity of the uploaded
+  integrity of your files. This can be done in most archival programs, in 7zip, simply highlight the archive and go to “File” and selecting “Calculate Checksum”. The checksum value can provided to the Lumen Cloud NOC to ensure the integrity of the uploaded
   archive.</p>
 <p><img src="https://t3n.zendesk.com/attachments/token/vosgvxtvv8qe6qo/?name=checksum.PNG" alt="checksum.PNG" />
 </p>

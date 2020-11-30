@@ -9,7 +9,7 @@
 
  ### Overview
 
-CenturyLink has created multiple opportunities for software vendors to integrate with the Cloud Marketplace. Each of these methods is designed for the provider to be as independent as possible as they work through the integration process.  To be included in the Cloud Marketplace, a SaaS provider must implement one of these methods. During the Marketplace Provider Onboarding Program, we will discuss which integration type is the best fit.
+Lumen has created multiple opportunities for software vendors to integrate with the Cloud Marketplace. Each of these methods is designed for the provider to be as independent as possible as they work through the integration process.  To be included in the Cloud Marketplace, a SaaS provider must implement one of these methods. During the Marketplace Provider Onboarding Program, we will discuss which integration type is the best fit.
 
 #### API
 
@@ -21,16 +21,16 @@ CenturyLink has created multiple opportunities for software vendors to integrate
 
 To build out the APIs, the SKUs must be created. The process for SKU creation is as follows:
 * Provider submits pricing information to Marketplace team representative.
-* Marketplace team representative formats the SKUs and submits them to the CenturyLink Platform billing team to create the SKUs in staging.
+* Marketplace team representative formats the SKUs and submits them to the Lumen Platform billing team to create the SKUs in staging.
 * Once created the Marketplace team representative will assign the SKUs to the provider's alias and associated products in the Provider Portal.
 * Provider can then use the SKUs to build out the API calls.
 
 
 ##### Deploy Software or Services
 
-The CenturyLink Cloud Marketplace will provide the user interface & collect the information that is required to deploy the software or services to an account on your platform. However, we do not collect Private Card Information (PCI) on your behalf.
+The Lumen Cloud Marketplace will provide the user interface & collect the information that is required to deploy the software or services to an account on your platform. However, we do not collect Private Card Information (PCI) on your behalf.
 
-You will be able to specify which data points are displayed to your perspective buyer, as well as which are required for them to complete.  This is done through the [Product Deployment Configuration](software-as-a-service-product-provisioning.md). In addition to the user input, as configured, CenturyLink will provide the following fields which your API client must tie to the customer for recording usage-based product SKUs (see below) in the future:
+You will be able to specify which data points are displayed to your perspective buyer, as well as which are required for them to complete.  This is done through the [Product Deployment Configuration](software-as-a-service-product-provisioning.md). In addition to the user input, as configured, Lumen will provide the following fields which your API client must tie to the customer for recording usage-based product SKUs (see below) in the future:
 
 * **provisioningId** - String - Unique identifier (GUID) of the provisioning event
 * **productSkus** - Array of strings - provisioned product SKU ids
@@ -56,7 +56,7 @@ The status codes your API will need to return are:
 
 **Note**
 
-Return payload to CenturyLink upon completed registration must return the customerId:
+Return payload to Lumen upon completed registration must return the customerId:
 
 ```
 { “customerId”: “YOUR-CUSTOMERID-STRING” }  
@@ -68,7 +68,7 @@ All returned data will be stored for future reference.
 
 ##### Delayed Billing Start
 
-Some providers require manual work before a customer begins use of the products.  To accommodate this, we have implemented delayed billing options, available for each defined SKU. You must notify a CenturyLink Marketplace representative of which billing model you want assigned to each SKU.
+Some providers require manual work before a customer begins use of the products.  To accommodate this, we have implemented delayed billing options, available for each defined SKU. You must notify a Lumen Marketplace representative of which billing model you want assigned to each SKU.
 
 The options are to start billing are:
  * Immediately
@@ -84,10 +84,10 @@ SKUs implementing the manual start billing option will not start billing until y
 
 The elements passed to the ```/start-billing/``` API must include the following items:
 
-* **providerKey** - String - Your unique identifier, provided by CenturyLink.
+* **providerKey** - String - Your unique identifier, provided by Lumen.
 * **customerid** - String - The ID assigned to the customer from your organization, returned by your API in the provisioning API call.
 * **provisioningId** - String - Unique identifier (GUID) of the provisioning event
-* **productId** - int - The product id for the product in the CenturyLink Cloud Marketplace. This is provided in the provisioning API call.
+* **productId** - int - The product id for the product in the Lumen Cloud Marketplace. This is provided in the provisioning API call.
 * **productSkus** - Array - A list of SKUs for which to start billing.
 
 An example JSON payload the ```/start-billing/``` API is provided below.
@@ -113,7 +113,7 @@ An example JSON payload the ```/start-billing/``` API is provided below.
 
 ##### Usage-Based Product SKUs
 
-Some of your products may include Usage-based billing.  Upon provisioning, you are required to track each customer's usage and report it to CenturyLink by the end of each month.  You may report usage for a customer at any time during the month, but keep in mind that every usage report sent is added to the customer's billing.  As such, it is **highly recommended** that you send a single month's usage at the end of each month for each customer.
+Some of your products may include Usage-based billing.  Upon provisioning, you are required to track each customer's usage and report it to Lumen by the end of each month.  You may report usage for a customer at any time during the month, but keep in mind that every usage report sent is added to the customer's billing.  As such, it is **highly recommended** that you send a single month's usage at the end of each month for each customer.
 
 The cutoff time to bill the customer for the current month is 3:45pm (CST) on the last day of each month.  Any usages reported after 6:00pm (CST) on the last day of the month will be applied to the next month's bill for the customer.  To allow time for processing, Please do not send usage reporting between 3:45pm (CST) and 6:00pm (CST) on the last day of the month.  
 
@@ -121,11 +121,11 @@ The cutoff time to bill the customer for the current month is 3:45pm (CST) on th
 
 The elements passed to the ```/saas-usage/``` API must include the following items:
 
-* **providerKey** - String - Your unique identifier, provided by CenturyLink.
+* **providerKey** - String - Your unique identifier, provided by Lumen.
 * **customerid** - String - The ID assigned to the customer from your organization, returned by your API in the provisioning API call.
 * **provisioningId** - String - Unique identifier (GUID) of the provisioning event
-* **productSku** - String - The SKU id associated to the product in the CenturyLink Cloud Marketplace. This is provided as one of the array values in the provisioning API call.
-* **productId** - int - The product id for the product in the CenturyLink Cloud Marketplace. This is provided in the provisioning API call.
+* **productSku** - String - The SKU id associated to the product in the Lumen Cloud Marketplace. This is provided as one of the array values in the provisioning API call.
+* **productId** - int - The product id for the product in the Lumen Cloud Marketplace. This is provided in the provisioning API call.
 * **usageCount** - double - the amount
 
 An example JSON payload the ```/saas-usage/``` API is provided below.
@@ -155,11 +155,11 @@ When a customer terminates his or her service through your website, you will nee
 
 The elements passed to the ```/saas-usage/end``` API must include the following items:
 
-* **providerKey** - String - Your unique identifier, provided by CenturyLink.
+* **providerKey** - String - Your unique identifier, provided by Lumen.
 * **customerid** - String - The ID assigned to the customer from your organization, returned by your API in the provisioning API call.
 * **provisioningId** - String - Unique identifier (GUID) of the provisioning event
-* **productSkus** - Array of Strings- The list of SKU ids associated to the product in the CenturyLink Cloud Marketplace for which the customer has terminated services.
-* **productId** - int - The product id for the product in the CenturyLink Cloud Marketplace. This is provided in the provisioning API call.
+* **productSkus** - Array of Strings- The list of SKU ids associated to the product in the Lumen Cloud Marketplace for which the customer has terminated services.
+* **productId** - int - The product id for the product in the Lumen Cloud Marketplace. This is provided in the provisioning API call.
 
 An example JSON payload the ```/saas-usage/end``` API is provided below.
 

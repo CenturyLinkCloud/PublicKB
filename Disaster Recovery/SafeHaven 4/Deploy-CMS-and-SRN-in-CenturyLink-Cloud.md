@@ -1,6 +1,6 @@
 {{{
 
-  "title": "Deploy CMS and SRN in CenturyLink Cloud",
+  "title": "Deploy CMS and SRN in Lumen Cloud",
 
   "date": "05-04-2017",
 
@@ -16,11 +16,11 @@
 
 ### Article Overview
 
-This article explains how to deploy the Central Management Server(CMS) and SafeHaven Replication Node(SRN) in CenturyLink Cloud.
+This article explains how to deploy the Central Management Server(CMS) and SafeHaven Replication Node(SRN) in Lumen Cloud.
 
 
 
-A single CMS server is required for a single SafeHaven Cluster. Typically CMS resides in the DR datacenter so that users can access it and manage their SafeHaven environment, even if the production datacenter is unavailable. In this scenario our DR site is CA2-Canada(Toronto) in CenturyLink Cloud.
+A single CMS server is required for a single SafeHaven Cluster. Typically CMS resides in the DR datacenter so that users can access it and manage their SafeHaven environment, even if the production datacenter is unavailable. In this scenario our DR site is CA2-Canada(Toronto) in Lumen Cloud.
 
 
 
@@ -36,7 +36,7 @@ Please refer to the **Support Matrix** section in the [SafeHaven 4.0.1 Release N
 
 
 
-Login access to the CenturyLink Cloud Portal at https://control.ctl.io.
+Login access to the Lumen Cloud Portal at https://control.ctl.io.
 
 
 
@@ -44,7 +44,7 @@ Login access to the CenturyLink Cloud Portal at https://control.ctl.io.
 
 
 
-This article assumes that the user has login access to the CenturyLink Cloud Portal. Login to the **CenturyLink Control Portal**  https://control.ctl.io with your credentials.
+This article assumes that the user has login access to the Lumen Cloud Portal. Login to the **Lumen Control Portal**  https://control.ctl.io with your credentials.
 
 
 
@@ -52,7 +52,7 @@ This article assumes that the user has login access to the CenturyLink Cloud Por
 
 
 
-### Deploy the Central Management Server(CMS) in CenturyLink Cloud
+### Deploy the Central Management Server(CMS) in Lumen Cloud
 
 
 
@@ -132,11 +132,11 @@ Under the **Network** section, select a **network** (VLAN) that will have connec
 
 
 
-### Deploy the SafeHaven Repliation Node(SRN) in CenturyLink Cloud
+### Deploy the SafeHaven Repliation Node(SRN) in Lumen Cloud
 
 
 
-Login to the **CenturyLink Control Portal** with your credentials and select the appropriate **DataCenter** (in this case its CA2-Canada (Toronto)) and the appropriate **Server Group** to deploy the SRN. Click on **Create Server** from the drop-down menu.
+Login to the **Lumen Control Portal** with your credentials and select the appropriate **DataCenter** (in this case its CA2-Canada (Toronto)) and the appropriate **Server Group** to deploy the SRN. Click on **Create Server** from the drop-down menu.
 
 
 
@@ -174,7 +174,7 @@ Under the **Network** section, select a **network** (VLAN) that will have connec
 
 
 
-You have now completed the deployment of CMS and SRN in CenturyLink Cloud. After completing the deployment of all the required SRNs, you can then start installation of the SafeHaven Cluster.
+You have now completed the deployment of CMS and SRN in Lumen Cloud. After completing the deployment of all the required SRNs, you can then start installation of the SafeHaven Cluster.
 
 
 

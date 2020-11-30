@@ -1,5 +1,5 @@
 {{{
-  "title": "How do I get support for CenturyLink Cloud services?",
+  "title": "How do I get support for Lumen Cloud services?",
   "date": "3-1-2018",
   "author": "Justin Lentz",
   "attachments": [],
@@ -20,11 +20,11 @@
 * [FAQ](#faq)
 
 ### Overview
-CenturyLink Cloud offers [flexible support options](//www.ctl.io/support/) for customers of all sizes, with optional add-on Service Engineering support as needed. In order to provide a quality service and quickly resolve incidents use the information below as a guide.  
+Lumen Cloud offers [flexible support options](//www.ctl.io/support/) for customers of all sizes, with optional add-on Service Engineering support as needed. In order to provide a quality service and quickly resolve incidents use the information below as a guide.  
 
 ### Audience
 
-* CenturyLink Cloud Customers
+* Lumen Cloud Customers
 
 ### Exceptions
 [Managed Services](//www.ctl.io/managed-services) customers should use the data below to request support for Managed OS or Applications:
@@ -140,7 +140,7 @@ Customers in these countries in Latin America can contact support via email or p
 
 **I have an email thread with my sales team on this issue. Why is this not being worked?**
 
-The CenturyLink Cloud Customer Care team does not use email to provide support. All issues are tracked in the ZenDesk ticketing system.
+The Lumen Cloud Customer Care team does not use email to provide support. All issues are tracked in the ZenDesk ticketing system.
 
 **I just reopened a ticket - now what?**
 

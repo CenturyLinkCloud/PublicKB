@@ -14,13 +14,13 @@
 
 ###### Optimized AWS in Latin America
 
-Cloud Application Manager now supports optimized AWS accounts from the following Latin American countries: Argentina, Brazil, Chile, Colombia, Ecuador, and Peru. Any customer with a legal and billing address in those countries can now migrate an existing account or create a new account to be optimized by CenturyLink for consolidated billing and platform support.
+Cloud Application Manager now supports optimized AWS accounts from the following Latin American countries: Argentina, Brazil, Chile, Colombia, Ecuador, and Peru. Any customer with a legal and billing address in those countries can now migrate an existing account or create a new account to be optimized by Lumen for consolidated billing and platform support.
 
 ###### Usage History Updates
 
-A new Usage History Enhancement fulfills the need to reconcile the CenturyLink billing cycle with our vendor billing cycles. (See notes regarding [Usage History](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-detailed-billing-report/) and [Reconciliation Usage](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-consolidated-billing/).)  On the 10th of every month, CenturyLink will make a final assessment of the differences between what we put on your last invoice and what our vendor charged us. With that final sliver of data, we can also make a "Vendor Billing Cycle" button appear in Cloud Application Manager's Usage History. When you click it, the data will align with the Vendor's billing cycle. Any line items that start with "Post-Bill Update" have not appeared on a CenturyLink invoice for that month. You will never see "Post Bill Updates" on an invoice. They are only presented in the Cloud Application Manager Usage History. But those same charges will appear as "Update to previous month…" on the next month's invoice.
+A new Usage History Enhancement fulfills the need to reconcile the Lumen billing cycle with our vendor billing cycles. (See notes regarding [Usage History](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-detailed-billing-report/) and [Reconciliation Usage](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-consolidated-billing/).)  On the 10th of every month, Lumen will make a final assessment of the differences between what we put on your last invoice and what our vendor charged us. With that final sliver of data, we can also make a "Vendor Billing Cycle" button appear in Cloud Application Manager's Usage History. When you click it, the data will align with the Vendor's billing cycle. Any line items that start with "Post-Bill Update" have not appeared on a Lumen invoice for that month. You will never see "Post Bill Updates" on an invoice. They are only presented in the Cloud Application Manager Usage History. But those same charges will appear as "Update to previous month…" on the next month's invoice.
 
-Example: A customer thinks they may have $5 of EC2 usage from January. On February 1 they receive a CenturyLink invoice totaling $4 from CenturyLink: $3 of usage on a EC2 for January usage and a $1 charge from December usage called "Update to Previous Month's EC2 Services." There is no "Vendor Billing Cycle" Button yet available. On February 10, the customer sees the button in Cloud Application Manager. When they click it, they see the same $3 of usage on a EC2 for January usage plus the $2 Post-Bill Update to EC2 Services.
+Example: A customer thinks they may have $5 of EC2 usage from January. On February 1 they receive a Lumen invoice totaling $4 from Lumen: $3 of usage on a EC2 for January usage and a $1 charge from December usage called "Update to Previous Month's EC2 Services." There is no "Vendor Billing Cycle" Button yet available. On February 10, the customer sees the button in Cloud Application Manager. When they click it, they see the same $3 of usage on a EC2 for January usage plus the $2 Post-Bill Update to EC2 Services.
 
 ![Image1](../../images/cloud-application-manager/usage-history-enhancement.png)
 
@@ -46,9 +46,9 @@ This new type of variables is only available in public boxes, the ones available
 
 ##### Authentication Updates
 
-Cloud Application Manager now supports CenturyLink Cloud as a new authentication option. Existing users of CenturyLink Cloud can now use their CenturyLink Cloud credentials to log on to Cloud Application Manager if CenturyLink Cloud has been enabled as one of the authentication options by the Organization Administrator.
+Cloud Application Manager now supports Lumen Cloud as a new authentication option. Existing users of Lumen Cloud can now use their Lumen Cloud credentials to log on to Cloud Application Manager if Lumen Cloud has been enabled as one of the authentication options by the Organization Administrator.
 
-Organization Administrators can enable CenturyLink Cloud as one of the authentication options from the Settings page and need to send invites to users for them to link their CenturyLink Cloud account with Cloud Application Manager. There is a one-time association step that  users need to do in order to continue to use CenturyLink Cloud credentials to log on to Cloud Application Manager.
+Organization Administrators can enable Lumen Cloud as one of the authentication options from the Settings page and need to send invites to users for them to link their Lumen Cloud account with Cloud Application Manager. There is a one-time association step that  users need to do in order to continue to use Lumen Cloud credentials to log on to Cloud Application Manager.
 
 ##### Performance Updates
 
@@ -68,10 +68,10 @@ Cloud Application Manager has been enhanced with performance improvements to the
 
 ### Announcements (2)
 
-#### CenturyLink Private Cloud on VMware Cloud Foundation
+#### Lumen Private Cloud on VMware Cloud Foundation
 
-DCC Foundation has a new name &mdash; CenturyLink Private Cloud on VMware Cloud Foundation. We will be updating all collateral to reflect this name change.
+DCC Foundation has a new name &mdash; Lumen Private Cloud on VMware Cloud Foundation. We will be updating all collateral to reflect this name change.
 
 #### Cloud Application Manager
 
-Please note that the provider type "CenturyLink" in Cloud Application Manager has been renamed to "CenturyLink Cloud", to clearly indicate that it represents an account with CenturyLink Cloud. This also helps users to differentiate "CenturyLink Cloud" from the other CenturyLink Provider types like "CenturyLink DCC" and "CenturyLink DCC-F".
+Please note that the provider type "Lumen" in Cloud Application Manager has been renamed to "Lumen Cloud", to clearly indicate that it represents an account with Lumen Cloud. This also helps users to differentiate "Lumen Cloud" from the other Lumen Provider types like "Lumen DCC" and "Lumen DCC-F".

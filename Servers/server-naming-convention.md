@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-All CenturyLink Cloud servers follow a standard naming convention that incorporates a number of pieces of information to make a unique key.
+All Lumen Cloud servers follow a standard naming convention that incorporates a number of pieces of information to make a unique key.
 
 ![Server Naming](../images/server-naming-convention-01.png)
 

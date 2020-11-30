@@ -14,7 +14,7 @@
 
 ### Description
 
-[Docker](//www.docker.com) is open-source software for Linux that is used to deploy applications inside software containers by providing an additional layer of abstraction within the operating system–level virtualization. CenturyLink Cloud supports [Docker on virtual cloud servers](../Blueprints/using-docker-on-centurylink-cloud-servers.md) as well as on bare metal servers. The instructions for installing Docker on bare metal servers are listed below. A shell script that runs all the commands below is also attached for reference.
+[Docker](//www.docker.com) is open-source software for Linux that is used to deploy applications inside software containers by providing an additional layer of abstraction within the operating system–level virtualization. Lumen Cloud supports [Docker on virtual cloud servers](../Blueprints/using-docker-on-centurylink-cloud-servers.md) as well as on bare metal servers. The instructions for installing Docker on bare metal servers are listed below. A shell script that runs all the commands below is also attached for reference.
 
 ### Prerequisite
 

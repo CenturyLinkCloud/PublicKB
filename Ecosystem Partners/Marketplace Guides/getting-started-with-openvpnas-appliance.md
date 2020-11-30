@@ -20,10 +20,10 @@ https://openvpn.net/
 OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments. OpenVPN Access Server supports a wide range of configurations, including secure and granular remote access to internal network and/ or private cloud network resources and applications with fine-grained access control.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Prerequisites
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 * control.ctl.io account with password authentication (two factor authentication not yet supported).
 * A set of [API credentials](https://control.ctl.io/Organization/api/users)
 
@@ -84,4 +84,4 @@ Contact sales@openvpn.net.
 **Who should I contact for support?**
 * For issues related to deploying OpenVPN AS email sales@openvpn.net.
 * For issues related to cloud infrastructure, please open a ticket using
-  the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
+  the [Lumen Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).

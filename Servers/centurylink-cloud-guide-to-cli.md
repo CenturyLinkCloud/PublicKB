@@ -1,5 +1,5 @@
 {{{
-  "title": "CenturyLink Cloud Guide to CLI",
+  "title": "Lumen Cloud Guide to CLI",
   "date": "01-19-2017",
   "author": "Gavin Lai",
   "attachments": [],
@@ -11,7 +11,7 @@
 * [Prerequisites](#prerequisites)
 * [Keywords](#keywords)
 * [Use Case Scenarios](#use-case-scenarios)
-* [Installation of CenturyLink Cloud CLI](#installation-of-centurylink-cloud-cli)
+* [Installation of Lumen Cloud CLI](#installation-of-centurylink-cloud-cli)
 * [READ commands](#read-commands)
 * [Billing and Accounting](#billing-and-accounting)
 * [Commands change the environment](#commands-change-the-environment)
@@ -30,13 +30,13 @@
 
 ### Overview
 
-There are two CLI interfaces available on CenturyLink Cloud, GO based
+There are two CLI interfaces available on Lumen Cloud, GO based
 CLI for API v2 [(explains here, currently version 1.1)](https://github.com/CenturyLinkCloud/clc-go-cli) and [Python based CLI for API v1 and v2](//github.com/CenturyLinkCloud/clc-python-sdk)
 
 For accounts, users, [API v1](//ca.ctl.io/api-docs/v1/u5o/) provides the access to this information. For the rest of the data, [API v2](//www.ctl.io/api-docs/v2/) can be used to access this information.
 
 The Python based SDK is crossed platform, the CLI can be ran on any Python 2.7 environment.  For detail usage of Python CLI and download, please see its [GitHub repository](//github.com/CenturyLinkCloud/clc-python-sdk).  The pre-complied windows CLI executable can be downloaded from [here](//github.com/CenturyLinkCloud/clc-python-sdk/raw/master/src/dist/clc-cli.exe).
-The GO based CLI can be run on Mac OSX, Linux and Windows. For release notes and download page, please see the [CenturyLink Cloud CLI GitHub release page](//github.com/CenturyLinkCloud/clc-go-cli/releases).  
+The GO based CLI can be run on Mac OSX, Linux and Windows. For release notes and download page, please see the [Lumen Cloud CLI GitHub release page](//github.com/CenturyLinkCloud/clc-go-cli/releases).  
 The resources available on both tools will output similar results, at this time, certain functions are only available on API v1, hence the need of both tools to capture all the functionalities of the platform.
 
 Comparison of the two CLI tools:
@@ -50,8 +50,8 @@ Comparison of the two CLI tools:
 
 
 ### Prerequisites
--   Access to the CenturyLink Cloud platform as an authorized user
--   Understanding of CenturyLink Cloud portal
+-   Access to the Lumen Cloud platform as an authorized user
+-   Understanding of Lumen Cloud portal
 -   Scripting knowledge will help on fully utilizing the CLI
 -   Python 2.7 installed in the environment for Python based CLI
 -   API user account [please see this KB for detail](//www.ctl.io/knowledge-base/accounts-&-users/creating-users/)
@@ -73,15 +73,15 @@ Output and error message
 
 
 ### Use Case Scenarios
-This tool enables system administrators to interface with CenturyLink Cloud without programming with the API or the using the Control Portal.  Automation can be achieved using scripting and other automation tools.
+This tool enables system administrators to interface with Lumen Cloud without programming with the API or the using the Control Portal.  Automation can be achieved using scripting and other automation tools.
 
-### Installation of CenturyLink Cloud CLI
+### Installation of Lumen Cloud CLI
 
 ***In order to make easy distintion between the two CLIs, clc-cli is the Python based tool and clc is the GO based tool.***
 
 **Python Based CLI**
 
-Installation instruction is available [here](//github.com/CenturyLinkCloud/clc-python-sdk).  If pip is installed, then the following command will installed the CenturyLink Cloud Python SDK and CLI:
+Installation instruction is available [here](//github.com/CenturyLinkCloud/clc-python-sdk).  If pip is installed, then the following command will installed the Lumen Cloud Python SDK and CLI:
 ```
 pip install clc-sdk
 ```
@@ -108,7 +108,7 @@ usage: clc-cli.exe [-h] [--cols [COL [COL ...]]] [--config CONFIG]
                    {accounts,users,servers,groups,billing,networks,queue,blueprints}
                    ...
 
-CLI tool for interacting with the CenturyLink Cloud API.
+CLI tool for interacting with the Lumen Cloud API.
 http://www.ctl.io
 
 optional arguments:
@@ -194,7 +194,7 @@ Available resources:
 
 ```
 
-**Logging into the CenturyLink account**
+**Logging into the Lumen account**
 
 Using command without a configuration file:
 ```
@@ -203,7 +203,7 @@ clc-cli --v1-api-key xxxxxxxxxxxxxxxxx --v1-api-passwd xxxxxxxxxxxxx  Commands
 ```
 clc login –user username –password
 ```
-Or setup the configuration file as described in [Installation of CenturyLink Cloud CLI](#installation-of-centurylink-cloud-cli)
+Or setup the configuration file as described in [Installation of Lumen Cloud CLI](#installation-of-centurylink-cloud-cli)
 
 **Output Format**
 
@@ -865,7 +865,7 @@ clc server update '{"ServerId": "CA3ABCDSVR01","Disks" : {"Keep" : [{ "DiskId": 
 ```
 
 ### Simple Backup Service
-Simple Backup Service provides a set and forget backup solution to CenturyLink Cloud customers, to learn more, please refer to this [knowledge article](../Backup/simple-backup-service-how-it-works.md).  With CLI access to Simple Backup Service, it gives customers more management flexibility on managing their backup.
+Simple Backup Service provides a set and forget backup solution to Lumen Cloud customers, to learn more, please refer to this [knowledge article](../Backup/simple-backup-service-how-it-works.md).  With CLI access to Simple Backup Service, it gives customers more management flexibility on managing their backup.
 
 **Create a backup policy:**
 ```
@@ -930,7 +930,7 @@ clc backup get-restore-point-details --account-policy-id xxxxxxxx-xxxx-xxxx-xxxx
 
 ### Utilization Report
 
-CenturyLink Cloud stores the utilization report of a server for the past 14 days.  The statistics include CPU, Memory, Disk usage and Network.  There are three options of retrieving statistics:
+Lumen Cloud stores the utilization report of a server for the past 14 days.  The statistics include CPU, Memory, Disk usage and Network.  There are three options of retrieving statistics:
 - latest (returns a single data point that reflects the last monitoring data collected)
 - hourly (returns data points for each sampleInterval value between the start and end times provided)
 - realtime (returns data from the last 4 hours, available in smaller increments)
@@ -946,7 +946,7 @@ clc group get-monitoring-statistics --group-name Test --type hourly --start "201
 ***Reuqest statistics realtime (last 4 hours) in 30 minutes interval***
 
 ### Webhook (only avaiable until version v1.1.0-rc.2)
-CLI can be used to configure webhooks, this enable customers to leverage the alert notification webhook services built into CenturyLink Cloud with 3rd party web apps or services.  The current event list are: "Account.Created", "Account.Delted", "Account.Updated", "Alert.Notificiation", "Server.Created", "Server.Deleted", "Server.Updated", "User.Created", "User.Deleted", "User.Updated".  To learn more on setup webhook in CenturyLink Cloud, please see [Configuring Webhooks and Consuming Notificatios](../General/CenturyLinkCloud/consuming-webhook-alerts-with-3rd-party-web-apps.md).
+CLI can be used to configure webhooks, this enable customers to leverage the alert notification webhook services built into Lumen Cloud with 3rd party web apps or services.  The current event list are: "Account.Created", "Account.Delted", "Account.Updated", "Alert.Notificiation", "Server.Created", "Server.Deleted", "Server.Updated", "User.Created", "User.Deleted", "User.Updated".  To learn more on setup webhook in Lumen Cloud, please see [Configuring Webhooks and Consuming Notificatios](../General/CenturyLinkCloud/consuming-webhook-alerts-with-3rd-party-web-apps.md).
 
 ***List all current webhook***
 ```
@@ -966,5 +966,5 @@ clc update --event Server.Deleted --recursive true --target-uri "https://zapier.
 ```
 
 ### Support
-* For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying any Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the CenturyLink Cloud Support website](//t3n.zendesk.com/tickets/new).
-* For CLI bugs, please visit [CenturyLink Cloud CLI Github](//github.com/CenturyLinkCloud/clc-go-cli/issues) and [CenturyLink Cloud Python SDK](//github.com/CenturyLinkCloud/clc-python-sdk/issues)
+* For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying any Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](//t3n.zendesk.com/tickets/new).
+* For CLI bugs, please visit [Lumen Cloud CLI Github](//github.com/CenturyLinkCloud/clc-go-cli/issues) and [Lumen Cloud Python SDK](//github.com/CenturyLinkCloud/clc-python-sdk/issues)
