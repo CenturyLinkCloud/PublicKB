@@ -72,3 +72,5 @@ The following items are recommended but not required.
 - Create a checksum hash of the files to be uploaded, and provide it in a text file zipped with the image(s). There are several tools available on Windows and Linux, but the most common is certutil for Windows and openssl for Linux (as shown below).
     - Windows: `certutil -hashfile .\filename sha1`
     - Linux: `openssl sha1 /path/to/filename`
+
+Once the above recommendations and requirements are met, [open a service task ticket](../Service Tasks/best-practices-and-preparation-for-a-virtual-machineovfova-import.md).
