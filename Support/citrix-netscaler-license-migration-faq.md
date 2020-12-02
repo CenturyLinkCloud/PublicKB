@@ -8,7 +8,7 @@
 
 ### Overview
 
-Effective December 1, 2020, Citrix NetScaler Dedicated Load Balancers will no longer be made available by Lumen Public Cloud (formerly Lumen Public Cloud) service offering.
+Effective December 1, 2020, Citrix NetScaler Dedicated Load Balancers will no longer be made available by Lumen Public Cloud (formerly CenturyLink Public Cloud) service offering.
 Existing NetScaler Load Balancers will continue to operate on the Lumen Public Cloud platform; however, Customers need to take action and must obtain a new license by contacting Citrix directly.
 
 Please see the section below labeled “How to obtain Citrix NetScaler license” for information on how to obtain the license directly from Citrix.
@@ -70,7 +70,7 @@ If you wish to no longer have a dedicated Citrix NetScaler Load Balancer and act
 
 **Q: What if I do nothing?**
 
-Customers who take no action will continue to be billed for the Citrix NetScaler licenses until January 31, 2020 or until their license expires, whichever occurs first.
+Customers who take no action will continue to be billed for the Citrix NetScaler licenses until January 31, 2021 or until their license expires, whichever occurs first.
 After January 31, 2021 the customer’s dedicated Citrix NetScaler Load Balancer environment(s) will no longer have an active license(s) and the NetScaler will stop passing traffic.
 
 **Q: How Do I Know When My Current License Expires?**
