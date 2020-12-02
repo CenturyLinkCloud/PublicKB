@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description</h3>
-<p>All actions performed by users in the CenturyLink Cloud are recorded. The CenturyLink Cloud Activity Account History log can be viewed on the CenturyLink Cloud Control Portal or exported to as a CSV file for further analysis. This log includes the activities performed by users within an account and any sub-accounts.</p>
+<p>All actions performed by users in the Lumen Cloud are recorded. The Lumen Cloud Activity Account History log can be viewed on the Lumen Cloud Control Portal or exported to as a CSV file for further analysis. This log includes the activities performed by users within an account and any sub-accounts.</p>
 
 <h3>Steps</h3>
 

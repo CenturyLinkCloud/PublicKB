@@ -41,7 +41,7 @@ This article assumes that:
 
 7. A summary panel appears. You may navigate back and change configurations for the Protection Group if you like. Please check the acknowledgement box and click **Create**  
 
-**NOTE**: LRA stands for Local Replication Agent which is the kernel level driver that CenturyLink provides to replicate Windows Production Servers. There are two methods by which LRA can be installed and initial replication can be started. User must select one of the two methods stated below.  
+**NOTE**: LRA stands for Local Replication Agent which is the kernel level driver that Lumen provides to replicate Windows Production Servers. There are two methods by which LRA can be installed and initial replication can be started. User must select one of the two methods stated below.  
 
 Method 1. Automatic/Ansible LRA installation and Automatically Start Initial Replication   
 OR  

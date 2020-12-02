@@ -9,7 +9,7 @@
 }}}
 
 ### Overview
-This guide provides a list of the Operating Systems and Control Portal actions that affect the power state of a server on the CenturyLink Cloud.
+This guide provides a list of the Operating Systems and Control Portal actions that affect the power state of a server on the Lumen Cloud.
 
 ### Supported Operating Systems
 Please see the [supported operating system KB](https://www.ctl.io/knowledge-base/support/supported-operating-systems/)

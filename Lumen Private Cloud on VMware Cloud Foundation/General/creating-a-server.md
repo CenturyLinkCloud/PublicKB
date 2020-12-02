@@ -10,16 +10,16 @@
 }}}
 
 ### Description
-In this KB article, we demonstrate how to provision a new virtual server in CenturyLink Private Cloud on VMware Cloud Foundation™.
+In this KB article, we demonstrate how to provision a new virtual server in Lumen Private Cloud on VMware Cloud Foundation™.
 
-Once you've gone through this KB article and created a new virtual server, you can follow these guides to learn how to [Configure SSL VPN-Plus](../Security/configuring-sslvpn-plus.md) and [How to Securely Connect](../Security/how-to-securely-connect.md) to your CenturyLink Private Cloud on VMware Cloud Foundation environment.
+Once you've gone through this KB article and created a new virtual server, you can follow these guides to learn how to [Configure SSL VPN-Plus](../Security/configuring-sslvpn-plus.md) and [How to Securely Connect](../Security/how-to-securely-connect.md) to your Lumen Private Cloud on VMware Cloud Foundation environment.
 
-Note: This KB assumes you have followed the KB article on [Adding to your Catalog](../Catalog/add-to-catalog.md) in CenturyLink Private Cloud on VMware Cloud Foundation.
+Note: This KB assumes you have followed the KB article on [Adding to your Catalog](../Catalog/add-to-catalog.md) in Lumen Private Cloud on VMware Cloud Foundation.
 
 ### Steps
-* Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment.
+* Login to your Lumen Private Cloud on VMware Cloud Foundation environment.
 
-  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
+  ![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
 * Once logged in, select __Datacenters__ from the menu at the top of the screen. Then select the datacenter for the server.
 

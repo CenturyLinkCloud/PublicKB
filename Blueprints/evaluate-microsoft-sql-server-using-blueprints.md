@@ -17,15 +17,15 @@
 * [Installing Microsoft SQL Server Evaluation using Blueprint Library](#installing-microsoft-sql-server-evaluation-using-blueprint-library)
 
 ### Overview
-CenturyLink Cloud customers can deploy evaluation Microsoft SQL Server software within the Control Portal. By using the CenturyLink Cloud public Blueprint customers have multiple ways to install this business critical database software.
+Lumen Cloud customers can deploy evaluation Microsoft SQL Server software within the Control Portal. By using the Lumen Cloud public Blueprint customers have multiple ways to install this business critical database software.
 
 ### Use Cases
-* Potential customers who wish to leverage our [Free Trial](//www.ctl.io/free-trial) program to test drive CenturyLink Cloud and avoid using up credits with paid production Microsoft SQL Licenses.
+* Potential customers who wish to leverage our [Free Trial](//www.ctl.io/free-trial) program to test drive Lumen Cloud and avoid using up credits with paid production Microsoft SQL Licenses.
 * Potential customers who wish to leverage our [Velocity Program](//www.ctl.io/velocity-migration/) for migrations or defined proof of concepts and avoid using up credits with paid production Microsoft SQL Licenses.
 * Any current customer who wishes to evaluate Microsoft SQL Server for various business proof of concepts on public cloud.
 
 ### Prerequisites
-* A CenturyLink Cloud Account
+* A Lumen Cloud Account
 * ~20 GB Free Storage on C:\
 * Operating System and SQL Server Edition aligns in a supported fashion:
 

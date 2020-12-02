@@ -10,11 +10,11 @@
 <hr />
 <ul>
   <li><strong>Blueprints: Allow Users to specify unique values for each instance of a task in a blueprint.</strong>&nbsp;Previously, if the same software/script/task was added to a blueprint multiple times, there was no way to specify unique parameters for
-    each instance. Now, users can provide specific parameters for every instance of a package. See <a href="../../Blueprints/add-multiple-instances-of-a-software-package-to-a-blueprint.md">this CenturyLink Cloud Knowledge Base article</a> for
+    each instance. Now, users can provide specific parameters for every instance of a package. See <a href="../../Blueprints/add-multiple-instances-of-a-software-package-to-a-blueprint.md">this Lumen Cloud Knowledge Base article</a> for
     a detailed walkthrough.</li>
-  <li><strong>Blueprints: Run package on group.&nbsp;</strong>Adds a new way to select, configure and run software/script packages against all or any of the servers in a Group. See&nbsp;<a href="../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md">this CenturyLink Cloud Knowledge Base article</a>&nbsp;for a further description of this feature.</li>
+  <li><strong>Blueprints: Run package on group.&nbsp;</strong>Adds a new way to select, configure and run software/script packages against all or any of the servers in a Group. See&nbsp;<a href="../../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md">this Lumen Cloud Knowledge Base article</a>&nbsp;for a further description of this feature.</li>
   <li><strong>Activity Log: Implement Show More.</strong>&nbsp;From the Control Portal dashboard, when the user views “Account Activity History” we now load a subset of data and allow the user to see further back in time.</li>
-  <li><strong>Billing: Display Detailed information for a Group.</strong>&nbsp;CenturyLink Cloud bills are broken down by Group to help users view a more detailed cost breakdown. Now, the bills also show which servers are part of the Group that incurred charges.</li>
+  <li><strong>Billing: Display Detailed information for a Group.</strong>&nbsp;Lumen Cloud bills are broken down by Group to help users view a more detailed cost breakdown. Now, the bills also show which servers are part of the Group that incurred charges.</li>
   <li><strong>Make it so that standard servers can go to 16GB ram in the Control Portal.&nbsp;</strong>Standard servers could only previously allocate 8 GB of RAM but now accept up to 16 GB of RAM.</li>
   <li><strong>Blueprints: add ability to clone a blueprint.</strong>&nbsp;Users can now take their blueprints and use them as a foundation for new blueprints. Note that users can only clone blueprints that were created by a user in the same account.</li>
 </ul>
@@ -64,13 +64,13 @@
   <li><strong>Blueprints: Unable to view Blueprint Details. </strong>Corrected error that occurred when trying to view blueprint details from the Control Portal.</li>
   <li><strong>SendEmail boolean on CreateServer does nothing.</strong> Now we send blueprint summary emails when blueprint completes.</li>
   <li><strong>Add more info to server create change log.</strong> Show the name of the blueprint that the server was created from.</li>
-  <li><strong>Queue: Error Queue page - failed requests are not appearing for Account Admins. </strong>User would expect to see failed requests when failure occurs, but only the CenturyLink Cloud Admin could see them. Corrected this issue.</li>
-  <li><strong>Groups: 'Trash' Group shows as a Standard (not System) Group to non t3n admins.</strong> Some accounts were seeing the system Group that holds deleted servers and now that Group is only visible to CenturyLink Cloud administrators.</li>
+  <li><strong>Queue: Error Queue page - failed requests are not appearing for Account Admins. </strong>User would expect to see failed requests when failure occurs, but only the Lumen Cloud Admin could see them. Corrected this issue.</li>
+  <li><strong>Groups: 'Trash' Group shows as a Standard (not System) Group to non t3n admins.</strong> Some accounts were seeing the system Group that holds deleted servers and now that Group is only visible to Lumen Cloud administrators.</li>
   <li><strong>Server: Create - Alt DC - user should be able to select 'New Network' if no network exists in the target DC. </strong>Fixed network options for users who needed to add a network in the target data center.</li>
   <li><strong>Server: Create - Install SQL fails when added as part of Create Server operation. </strong>Corrected problem experienced when adding SQL Server software to new servers.</li>
   <li><strong>Blueprints: Error reporting. </strong>Added more error details for failed blueprints.</li>
   <li><strong>Blueprints: Scripts/Software - the Upload button is missing.</strong> Corrected problem with “upload” button not showing up on the software/scripts pages.</li>
-  <li><strong>AccountService.svc CreateAccount errors during self-register activation since the last deployment.</strong> Account registration from the public CenturyLink Cloud site was causing backend error messages.</li>
+  <li><strong>AccountService.svc CreateAccount errors during self-register activation since the last deployment.</strong> Account registration from the public Lumen Cloud site was causing backend error messages.</li>
   <li><strong>API: Create Server - An existing network is required to build a server, but newly created accounts have no networks. </strong>Previously, if a user created an account via the API and then tried to build a server, it would fail because no valid
     network existed yet. The system now allows empty network information where none exists.</li>
   <li><strong>Blueprints/Networking: Error creating first server when no network exists. </strong>Creating new server from the UI when no network existed yet resulted in an error.</li>

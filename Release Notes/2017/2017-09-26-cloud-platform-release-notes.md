@@ -39,7 +39,7 @@
 
   __Managed Services Anywhere__
 
-  Cloud Application Manager’s Managed Services Anywhere now includes support for MS SQL, the foundation of Microsoft’s comprehensive data platform.  By selecting to deploy a Managed MS SQL server to AWS or Microsoft Azure - (CenturyLink Private Cloud on VMware Cloud Foundation) - customers get all the features of a managed server along with management of the SQL Server instance.  Simply Delegate Management to CenturyLink and receive Monitoring, Alerting, Ticketing, Remote Administration and Patching for both the VM and the SQL Server instance.
+  Cloud Application Manager’s Managed Services Anywhere now includes support for MS SQL, the foundation of Microsoft’s comprehensive data platform.  By selecting to deploy a Managed MS SQL server to AWS or Microsoft Azure - (Lumen Private Cloud on VMware Cloud Foundation) - customers get all the features of a managed server along with management of the SQL Server instance.  Simply Delegate Management to Lumen and receive Monitoring, Alerting, Ticketing, Remote Administration and Patching for both the VM and the SQL Server instance.
 
   Supported Versions
   - Microsoft SQL Server 2008 R2
@@ -57,7 +57,7 @@
   Supported Cloud Providers
   - AWS
   - Microsoft Azure
-  - CenturyLink DCC-Foundation (coming soon)
+  - Lumen DCC-Foundation (coming soon)
 
 ### Enhancements (1)
 
@@ -75,6 +75,6 @@
 
   Since introducing Cost Optimization and Analytics to Cloud Application Manager in January 2017, we have constantly improved the way we handle [consolidated billing]( https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration-consolidated-billing/). Our latest update affects [Optimized, Azure customers](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/partner-cloud-integration/). Instead of doing our billing in arrears, we will be gathering usage data daily. The benefit to our customers will be more timely charges on invoices plus usage estimates, visible through Cloud Application Manager.
 
-  As a result of this transition, the next invoice from CenturyLink will include both arrears charges and charges from the most recent month for Optimized Azure. This means that on the next invoice (scheduled to go out October 1), some customers may see charges for August Azure usage and September usage in the same invoice. The charges will be represented as different line items.
+  As a result of this transition, the next invoice from Lumen will include both arrears charges and charges from the most recent month for Optimized Azure. This means that on the next invoice (scheduled to go out October 1), some customers may see charges for August Azure usage and September usage in the same invoice. The charges will be represented as different line items.
 
   We are sorry about the inconveniences that this may cause and we encourage you to plan in advance. In Following October 1, estimates for your next bill will be included in Cloud Application Manager’s [billing dashboard](https://cam.ctl.io/#/billing).

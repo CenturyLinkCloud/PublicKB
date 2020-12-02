@@ -9,7 +9,7 @@
 
 ### Overview
 
-[Cloud Application Manager](https://www.ctl.io/cloud-application-manager/) offers the Cloud Integration feature, giving users the ability to benefit from CenturyLink's partnerships with other cloud providers. CenturyLink integrates the billing and assumes responsibility for Azure support. This document is specific to Azure.
+[Cloud Application Manager](https://www.ctl.io/cloud-application-manager/) offers the Cloud Integration feature, giving users the ability to benefit from Lumen's partnerships with other cloud providers. Lumen integrates the billing and assumes responsibility for Azure support. This document is specific to Azure.
 
 multiple Azure subscriptions provides your administrators the ability to easily manage users and resources for multiple Azure projects and departments by placing them in different Azure "Accounts.""
 
@@ -17,7 +17,7 @@ multiple Azure subscriptions provides your administrators the ability to easily 
 
 All of our customers are invited to use Cloud Optimization via Cloud Application Manager.
 
-For Azure, we are currently limited to serving billable customers who are not resellers (or customers of resellers) with offices within the United States the United Kingdom, and Canada. Also, the associated CenturyLink Cloud account cannot be a demo account or internal for CenturyLink employees. If you need special considerations for setting up an account, please email [cloudintegration@ctl.io](mailto:cloudintegration@ctl.io).
+For Azure, we are currently limited to serving billable customers who are not resellers (or customers of resellers) with offices within the United States the United Kingdom, and Canada. Also, the associated Lumen Cloud account cannot be a demo account or internal for Lumen employees. If you need special considerations for setting up an account, please email [cloudintegration@ctl.io](mailto:cloudintegration@ctl.io).
 
 ### Prerequisites
 
@@ -29,7 +29,7 @@ For Azure, we are currently limited to serving billable customers who are not re
 
 * An understanding of the features and benefits of [Partner Cloud Integration](partner-cloud-integration.md)
 
-* For each CenturyLink Cloud account integrated with Azure, both CenturyLink's and Microsoft's Terms and Conditions must be accepted. These will be presented to any user attempting to create a new "Microsoft Azure" provider in Cloud Application Manager. See our [Service Guide](https://www.ctl.io/legal/cloud-application-manager/supplemental-terms/) for a current list of countries we support.
+* For each Lumen Cloud account integrated with Azure, both Lumen's and Microsoft's Terms and Conditions must be accepted. These will be presented to any user attempting to create a new "Microsoft Azure" provider in Cloud Application Manager. See our [Service Guide](https://www.ctl.io/legal/cloud-application-manager/supplemental-terms/) for a current list of countries we support.
 
 ### Important Information
 
@@ -38,10 +38,10 @@ For Azure, we are currently limited to serving billable customers who are not re
 Cloud Application Manager Provider Verbiage | Description | Related Links
 --- | --- | ---
 Use an existing **Microsoft Azure** customer account | This is not an optimized option. Customer pays Amazon for usage. | [Click here](../../Cloud Application Manager/Deploying Anywhere/using-microsoft-azure.md)
-Migrate my account to CenturyLink for consolidated billing and Platform Support | **This is a Cloud Optimized option.** This allows an existing customer account to move under CenturyLink's care. | [Click Here](partner-cloud-integration-azure-existing.md)
-Create a new Azure customer account and Subscription or a new subscription for an existing account | **This is a Cloud Optimized option.** Begins the new account creation automation, enabling the customer to immediately enter CenturyLink's care. | This document
+Migrate my account to Lumen for consolidated billing and Platform Support | **This is a Cloud Optimized option.** This allows an existing customer account to move under Lumen's care. | [Click Here](partner-cloud-integration-azure-existing.md)
+Create a new Azure customer account and Subscription or a new subscription for an existing account | **This is a Cloud Optimized option.** Begins the new account creation automation, enabling the customer to immediately enter Lumen's care. | This document
 
-Charges for [Azure usage](partner-cloud-integration-consolidated-billing.md) will appear on invoices from CenturyLink.
+Charges for [Azure usage](partner-cloud-integration-consolidated-billing.md) will appear on invoices from Lumen.
 
 ### Steps
 
@@ -49,7 +49,7 @@ The following steps will walk through how to set up a new Cloud Application Mana
 * Create a new Azure Customer account and a new Azure subscription  
 * If the CAM organization already has an Azure Customer with at least one subscription, create another Azure subscription.
 
-Subscriptions created in the manners above fall within the scope of CenturyLink's responsibility.
+Subscriptions created in the manners above fall within the scope of Lumen's responsibility.
 
 Videos of these steps can be found [here](https://www.ctl.io/guides/).
 

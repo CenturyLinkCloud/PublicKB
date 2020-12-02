@@ -18,7 +18,7 @@ Instances of Network Exchange were previously referred to as "Virtual Circuits" 
 
 * __NetX Any to any connectivity__
 
-Network Exchange previously assumed CenturyLink Cloud to be a default endpoint of a Virtual Circuit. In this release, there is no assumption CLC is an endpoint.
+Network Exchange previously assumed Lumen Cloud to be a default endpoint of a Virtual Circuit. In this release, there is no assumption CLC is an endpoint.
 
 
 ### Announcements (2)
@@ -29,7 +29,7 @@ We are still accepting beta customer requests for our MSSQL Relational DB Beta. 
 
 * __SMTP Relay - EOL Update__
 
-Previously, CenturyLink announced that we will be deactivating the SMTP Relay Service on December 1st, 2016. To give some customers more time to migrate off of the service we are going to push back the deactivation of the SMTP Relay Service to January 15th, 2017.
+Previously, Lumen announced that we will be deactivating the SMTP Relay Service on December 1st, 2016. To give some customers more time to migrate off of the service we are going to push back the deactivation of the SMTP Relay Service to January 15th, 2017.
 
 
 ### Bug Fixes (1)

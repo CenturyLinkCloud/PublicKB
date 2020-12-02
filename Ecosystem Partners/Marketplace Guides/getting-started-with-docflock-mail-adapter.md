@@ -15,28 +15,28 @@ docflock is a cloud based, healthcare focused documentation management and healt
 
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
 After reading this article, the user should be able to download and provision a docflock email adapter.
 
 
 ### Prerequisite
-- Access to the CenturyLink Cloud platform as an authorized user.
+- Access to the Lumen Cloud platform as an authorized user.
 - Access to [docflock.com](http://docflock.com/) as an authorized user.
 
 ### Postrequisite
 
-To access your application from a computer outside the CenturyLink Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
-  1. [Add a Public IP](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
-  2. [Allow incoming traffic](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
+To access your application from a computer outside the Lumen Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
+  1. [Add a Public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal
+  2. [Allow incoming traffic](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
     * The default ports to access the application are: 80, 443
 
 ### Deploying the Email Adapter Blueprint v4 job
 
 #### Steps to Deploy
 1. Locate the “Email Adapter” job
-  1. Log into CenturyLink control portal
+  1. Log into Lumen control portal
   2. Open Orchestration > Blueprints Library
   3. Filter by Author: Simplicity Health Systems
   4. Select “Email Adapter Blueprint v4 ATB”
@@ -51,13 +51,13 @@ To access your application from a computer outside the CenturyLink Cloud network
 ### Access your Docflock Email Adapter server
 After your job deploys successfully, please follow these instructions to access your server:
 
-* Connect to your server using credentials provided by CenturyLink.
+* Connect to your server using credentials provided by Lumen.
 
 ### Licensing/Pricing
 docflock email adapters work only with active docflockDM account holders.  Contact sales@docflock.com for pricing.
 
 ### About Simplicity Health Systems
-CenturyLink Cloud works with [Simplicity Health Systems](http://www.docflock.com) to provide HIPAA compliant health content management and health interoperability services.
+Lumen Cloud works with [Simplicity Health Systems](http://www.docflock.com) to provide HIPAA compliant health content management and health interoperability services.
 
 
 ### Frequently Asked Questions
@@ -76,6 +76,6 @@ A: There are no limitations.
 
 
 #### Who should I contact for support?
-* For issues related to deploying the docflock email adapter Blueprint on CenturyLink Cloud, licensing or accessing the deployed software, please visit the [docflock Support Website](http://support.docflock.com)
+* For issues related to deploying the docflock email adapter Blueprint on Lumen Cloud, licensing or accessing the deployed software, please visit the [docflock Support Website](http://support.docflock.com)
 
-* For issues related to cloud infrastructure (VM's, network, etc), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VM's, network, etc), or if you experience a problem deploying the Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](https://t3n.zendesk.com/tickets/new).

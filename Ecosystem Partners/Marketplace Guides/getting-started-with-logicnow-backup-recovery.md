@@ -14,7 +14,7 @@ The MAX Backup & Recovery solution from LogicNow is an easy-to-use, highly secur
 
 ### Description
 
-MAX Backup & Recovery is integrated with the CenturyLink Cloud platform. The purpose of this Knowledge Base article is to help the reader take advantage of this integration for the most comprehensive data protection and rapid control over servers.
+MAX Backup & Recovery is integrated with the Lumen Cloud platform. The purpose of this Knowledge Base article is to help the reader take advantage of this integration for the most comprehensive data protection and rapid control over servers.
 
 ### Free Trial
 
@@ -26,7 +26,7 @@ MAX Backup & Recovery pricing is based on a “Per Server” pricing model that 
 
 ### Audience
 
-CenturyLink Cloud users looking for effective data protection with backup and recovery solutions.
+Lumen Cloud users looking for effective data protection with backup and recovery solutions.
 
 ### Deploying MAX Backup & Recovery
 
@@ -45,7 +45,7 @@ For more information about MAX Backup & Recovery, click on the following links:
 
 ### Who should I contact for support?
 
-For issues related to cloud infrastructure, please open a CenturyLink Cloud Support ticket by emailing [NOC](mailto:help@ctl.io) or through the CenturyLink [Cloud Support website](https://support.ctl.io/hc/en-us/requests/new)
+For issues related to cloud infrastructure, please open a Lumen Cloud Support ticket by emailing [NOC](mailto:help@ctl.io) or through the Lumen [Cloud Support website](https://support.ctl.io/hc/en-us/requests/new)
 
 For product support questions, release notes, and downloads related to deploying Max Backup & Recovery, please visit the LogicNow [Support Website](https://support.logicnow.com/kb/backup).
 

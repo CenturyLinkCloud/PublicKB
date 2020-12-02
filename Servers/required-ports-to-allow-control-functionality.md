@@ -19,7 +19,7 @@ Customers that prefer to "harden" their servers sometimes inadvertently block co
 
   ![Required ports to allow control functionality](../images/required-ports-to-allow-control-functionality2.png)
 
-Use this guide to keep necessary communications between Virtual Machines (VMs) and the Control Portal intact. For additional security-related information, read [Recommended Security Practices for Using CenturyLink Cloud](https://www.ctl.io/knowledge-base/servers/recommended-security-practices-for-using-centurylink-cloud/).
+Use this guide to keep necessary communications between Virtual Machines (VMs) and the Control Portal intact. For additional security-related information, read [Recommended Security Practices for Using Lumen Cloud](https://www.ctl.io/knowledge-base/servers/recommended-security-practices-for-using-lumen-cloud/).
 
 ### Linux
 For Linux VMs, customers need to ensure that the following ports are running:

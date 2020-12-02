@@ -2,7 +2,7 @@
 "title": "Cloud Platform - Release Notes: May 7, 2019",
 "date": "05-07-2019",
 "author": "Madhavi Pavanraj",
-"keywords":["centurylink", "cam", "ams", "msa", "analytics"],
+"keywords":["lumen", "cam", "ams", "msa", "analytics"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -42,7 +42,7 @@ Application Lifecycle Management now supports a new Google Cloud Platform region
 
 ##### Optimized AWS in EMEA
 
-CenturyLink has been authorized by AWS to support consolidated billing and management of accounts for customers headquartered within most European countries. A CenturyLink representative should be contacted for a detailed list of geographic, sector, and feature availability.
+Lumen has been authorized by AWS to support consolidated billing and management of accounts for customers headquartered within most European countries. A Lumen representative should be contacted for a detailed list of geographic, sector, and feature availability.
 
 #### [Managed Services Anywhere](https://www.ctl.io/cloud-application-manager/managed-services-anywhere/)
 

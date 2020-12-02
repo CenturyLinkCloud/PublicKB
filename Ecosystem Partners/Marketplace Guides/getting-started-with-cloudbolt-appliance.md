@@ -22,10 +22,10 @@ http://www.cloudbolt.io
 CloudBolt is an intuitive cloud management platform that delivers automated provisioning, unified IT management, chargeback/showback reporting, and interactive service catalogs for user self-service. It integrates both new and existing virtualization and private cloud environments with public clouds, automation scripting tools, and domain‐specific technologies.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Prerequisites
-* Access to the CenturyLink Cloud platform as an authorized user
+* Access to the Lumen Cloud platform as an authorized user
 * control.ctl.io account with password authentication (two factor authentication not yet supported)
 
 
@@ -73,7 +73,7 @@ CenturyLink Cloud Users
    ![Provide License](../../images/cloudbolt/appliance_license_screenshot.png)
 
 9. Get Going!
-   * You’re now ready to integrate CenturyLink Cloud with your configuration managers, provisioning engines, and other tools to deploy systems and publish them in the CloudBolt Service Catalog.
+   * You’re now ready to integrate Lumen Cloud with your configuration managers, provisioning engines, and other tools to deploy systems and publish them in the CloudBolt Service Catalog.
    * Review CloudBolt's [Installation and configuration information is available](http://docs.cloudbolt.io/installation.html#complete-the-quick-setup-wizard) to begin using the service.
 
 ### Pricing
@@ -89,4 +89,4 @@ The costs listed above in the above steps are for the infrastructure only. After
 
 **Who should I contact for support?**
 * For issues related to deploying CloudBolt email support@cloudbolt.io.
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
+* For issues related to cloud infrastructure, please open a ticket using the [Lumen Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).

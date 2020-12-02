@@ -6,16 +6,16 @@
   "contentIsHTML": true
 }}}
 
-<p>This document provides guidance for working with your CenturyLink-managed Windows Server Operating System.</p>
-<p>CenturyLink provides overall management for your Windows Server OS, including the primary Admin user privileges.&nbsp;&nbsp; Designated customer user(s) will receive access privileges for new user account creation, user deletion, and other administrative
-  tasks. CenturyLink will maintain the primary administrative user account which allows us to effectively monitor and maintain your server OS.</p>
+<p>This document provides guidance for working with your Lumen-managed Windows Server Operating System.</p>
+<p>Lumen provides overall management for your Windows Server OS, including the primary Admin user privileges.&nbsp;&nbsp; Designated customer user(s) will receive access privileges for new user account creation, user deletion, and other administrative
+  tasks. Lumen will maintain the primary administrative user account which allows us to effectively monitor and maintain your server OS.</p>
 <p><strong>Connecting to Your Server with Remote Desktop</strong>
 </p>
 <p>When your managed server is initially configured, both a server-specific <strong><em>Local Account</em></strong> user name and password <strong><em>AND</em></strong> a <strong><em>Shared Domain</em></strong> user account and password are created, and
-  both credentials can be used to access the machine for administrative purposes via Remote Desktop. The <em>Shared Domain</em> user account information can only be obtained from the CenturyLink Customer Response Center via Trouble
+  both credentials can be used to access the machine for administrative purposes via Remote Desktop. The <em>Shared Domain</em> user account information can only be obtained from the Lumen Customer Response Center via Trouble
   Ticket. If you already have your Shared Domain credentials, you may use them instead of the Local Account credentials detailed below.</p>
-<p>1. To access your server via Remote Desktop using your <strong><em>Local Account</em></strong> user name and password for your Remote Desktop session. Access your server password in the CenturyLink Cloud Control by choosing the ‘<em>click to authenticate</em>’
-  link illustrated below<em>.&nbsp;&nbsp; Note:&nbsp; If you have obtained your Shared Domain credentials or created a Dedicated Domain, you may use the appropriate domain user name and password. Your Local Account, Shared Domain, or Dedicated Domain user names and passwords are different from your CenturyLink Cloud Control user name and password.</em>
+<p>1. To access your server via Remote Desktop using your <strong><em>Local Account</em></strong> user name and password for your Remote Desktop session. Access your server password in the Lumen Cloud Control by choosing the ‘<em>click to authenticate</em>’
+  link illustrated below<em>.&nbsp;&nbsp; Note:&nbsp; If you have obtained your Shared Domain credentials or created a Dedicated Domain, you may use the appropriate domain user name and password. Your Local Account, Shared Domain, or Dedicated Domain user names and passwords are different from your Lumen Cloud Control user name and password.</em>
 </p>
 
 <p><img src="https://t3n.zendesk.com/attachments/token/6tfHYCovnaybmZj7pDxCakmxX/?name=Screen+Shot+2014-06-19+at+10.56.00+AM.png" alt="Screen_Shot_2014-06-19_at_10.56.00_AM.png" />

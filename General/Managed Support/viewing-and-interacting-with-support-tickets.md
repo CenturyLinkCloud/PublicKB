@@ -8,7 +8,7 @@
 
 ### Description
 
-Within the Support Portal, you can create tickets for your issues or requests to be reviewed and resolved by CenturyLink Support.  Once your ticket is created, there are multiple ways to view and interact with that ticket to check status, provide an update, self-close, and more.  This article will cover the various ways you can view and interact with your support tickets.
+Within the Support Portal, you can create tickets for your issues or requests to be reviewed and resolved by Lumen Support.  Once your ticket is created, there are multiple ways to view and interact with that ticket to check status, provide an update, self-close, and more.  This article will cover the various ways you can view and interact with your support tickets.
 
 ### Ticket Dashboard Summary View
 

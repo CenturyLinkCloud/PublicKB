@@ -25,7 +25,7 @@ Saved Orders
 
 User interface color scheme updated
 
-* To be consistent with CenturyLink Cloud Application Manager (CAM)
+* To be consistent with Lumen Cloud Application Manager (CAM)
 * To include colored Operation System icons
 * To include utilization gauges that change color based on their value
 
@@ -33,7 +33,7 @@ User interface color scheme updated
 
 Server Operations
 
-* If a Server Operation request (e.g. stop/start/restart/edit/add disk etc.) is made at a time that coincides with a CenturyLink scheduled management task then the request may be delayed and/or the result of the request may not be shown correctly until the scheduled management task completes. This may take up to 30 minutes
+* If a Server Operation request (e.g. stop/start/restart/edit/add disk etc.) is made at a time that coincides with a Lumen scheduled management task then the request may be delayed and/or the result of the request may not be shown correctly until the scheduled management task completes. This may take up to 30 minutes
 
 Clone Server
 

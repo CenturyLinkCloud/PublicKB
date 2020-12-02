@@ -15,7 +15,7 @@ This article explains how to create a CMS (Central Management Server) in AWS DR 
 2. Internet access on CMS in AWS once is is deployed.
 
 ### Assumptions
-It is assumed here that the user has an AWS account and a VPC created which has accessibility to CenturyLink Cloud Production Datacenter.
+It is assumed here that the user has an AWS account and a VPC created which has accessibility to Lumen Cloud Production Datacenter.
 
 ### Create a Security Group
 1. Click on **Security Groups** from the navigation tree, then click on **Create Security Group** button on the right.

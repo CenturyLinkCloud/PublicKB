@@ -8,7 +8,7 @@
 
 ### Overview
 
-Effective December 1, 2020, Citrix NetScaler Dedicated Load Balancers will no longer be made available by Lumen Public Cloud (formerly CenturyLink Public Cloud) service offering.
+Effective December 1, 2020, Citrix NetScaler Dedicated Load Balancers will no longer be made available by Lumen Public Cloud (formerly Lumen Public Cloud) service offering.
 Existing NetScaler Load Balancers will continue to operate on the Lumen Public Cloud platform; however, Customers need to take action and must obtain a new license by contacting Citrix directly.
 
 Please see the section below labeled “How to obtain Citrix NetScaler license” for information on how to obtain the license directly from Citrix.

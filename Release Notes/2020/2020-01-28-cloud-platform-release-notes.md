@@ -2,7 +2,7 @@
 "title": "Cloud Platform - Release Notes: January 28, 2020",
 "date": "01-28-2020",
 "author": "John Gerger",
-"keywords":["centurylink", "release notes", "cam", "alm", "msa", "compute instances", "cloudformation"],
+"keywords":["lumen", "release notes", "cam", "alm", "msa", "compute instances", "cloudformation"],
 "attachments": [],
 "contentIsHTML": false
 }}}

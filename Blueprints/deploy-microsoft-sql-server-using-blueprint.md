@@ -21,13 +21,13 @@
 * [Changelog](#changelog)
 
 ### Overview
-CenturyLink Cloud customers can procure and deploy Microsoft SQL Server licensing within the Control Portal. Microsoft SQL Server is licensed via the Microsoft SPLA program. By using the CenturyLink Cloud public Blueprint customers have multiple ways to consume and install this business critical database software.
+Lumen Cloud customers can procure and deploy Microsoft SQL Server licensing within the Control Portal. Microsoft SQL Server is licensed via the Microsoft SPLA program. By using the Lumen Cloud public Blueprint customers have multiple ways to consume and install this business critical database software.
 
 ### Socket to vCPU Allocation
 It is recommended customers review our delivery model for [Sockets to vCPU](../Servers/platform-socket-to-vcpu-allocation.md) prior to deploying Microsoft SQL Server to be fully aware of the platform default operations when allocating vCPUs for use with the database service.
 
 ### Prerequisites
-* A CenturyLink Cloud Account
+* A Lumen Cloud Account
 * ~20 GB Free Storage on the selected install drive
 * Operating System and SQL Server Edition aligns in a supported fashion:
 

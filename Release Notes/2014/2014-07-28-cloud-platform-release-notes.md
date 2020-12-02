@@ -9,7 +9,7 @@
 </p>
 <hr />
 <ul>
-  <li><strong>Horizontal Autoscale.</strong>&nbsp;CenturyLink Cloud now supports Horizontal Autoscale, allowing for groups of servers that meet a user-defined CPU and/or RAM utilization threshold to be scaled out/in by powering on/off one or more additional
+  <li><strong>Horizontal Autoscale.</strong>&nbsp;Lumen Cloud now supports Horizontal Autoscale, allowing for groups of servers that meet a user-defined CPU and/or RAM utilization threshold to be scaled out/in by powering on/off one or more additional
     servers in the group. (The existing Autoscale functionality allowing for scaling number of CPUs up or down on a server is still available as Vertical Autoscale.)
     <br />
     <br /><img src="https://t3n.zendesk.com/attachments/token/yQNnG88xba6VngVV1XTOeKWjg/?name=create-h-autoscale.png" alt="create-h-autoscale.png" />
@@ -26,11 +26,11 @@
     <br />
     <br />
   </li>
-  <li><strong>Data Center Updates.&nbsp;</strong>The CenturyLink Cloud opened another data center in Toronto, Canada (CA3). This new location is now live for all users and offers all the standard CenturyLink Cloud capabilities including support for Hyperscale
+  <li><strong>Data Center Updates.&nbsp;</strong>The Lumen Cloud opened another data center in Toronto, Canada (CA3). This new location is now live for all users and offers all the standard Lumen Cloud capabilities including support for Hyperscale
     Servers. There is further data center expansion planned for later this year as well.&nbsp;
     <br /><img src="https://t3n.zendesk.com/attachments/token/dY44pCFVakFBS4tueAboQeoFr/?name=dc-list-ca3-nogb2.png" alt="dc-list-ca3-nogb2.png" />
   </li>
-  <li><strong>Managed Services. </strong>Combining&nbsp;CenturyLink’s expertise in both the cloud and managed services spaces, users (CenturyLink-managed customers only) will now see a "managed server" option&nbsp;when creating a server, allowing them to
+  <li><strong>Managed Services. </strong>Combining&nbsp;Lumen’s expertise in both the cloud and managed services spaces, users (Lumen-managed customers only) will now see a "managed server" option&nbsp;when creating a server, allowing them to
     enable managed services with just one click, the ease of a cloud utility, and pay-by-the hour billing. Currently, the available managed services are Microsoft Windows Server (2008 and 2012), Red Hat Enterprise Linux 6.5, Active Directory, Apache HTTP
     Server, Microsoft IIS, MS SQL, MySQL, and Tomcat, with more rolling out in the coming months.&nbsp;The configuration, monitoring, and ongoing administration as well as the provisioning of each of these services is also automated via our Blueprints
     orchestration engine. Managed services are available in Sterling and Santa Clara data centers only at this time, with additional sites online in the coming months. Read more about managed services on our <a href="http://www.ctl.io/managed-services"
@@ -53,7 +53,7 @@
     <br /><img src="https://t3n.zendesk.com/attachments/token/Z9ytuI0EaGo1ilZsosG8TfG58/?name=policies-menu.png" alt="policies-menu.png" />
     <br /><img src="https://t3n.zendesk.com/attachments/token/N7vOSxqen80b3zPpiMizm4LaG/?name=policies.png" alt="policies.png" />
   </li>
-  <li><strong>Group/Server Permissions removed.&nbsp;</strong>Over the past 8 months, the CenturyLink Cloud team has been rebuilding the underlying platform API and the new, robust permissions model is incompatible with the legacy server and group resource-level
+  <li><strong>Group/Server Permissions removed.&nbsp;</strong>Over the past 8 months, the Lumen Cloud team has been rebuilding the underlying platform API and the new, robust permissions model is incompatible with the legacy server and group resource-level
     permission model. With the completion of the new Server API v2 this month, the Server and Group permissions have been retired. Look out for new role-based access controls in the Control Portal later this year.
     <br />
   </li>
@@ -61,6 +61,6 @@
     This will ensure that all monitoring&nbsp;of the server or group of servers is turned off for the maintenance tasks to be performed. Webhooks are still enabled and will be triggered when a server is put into or taken out of maintenance mode.</li>
   <li><strong>60GB Sizing for Windows Servers.&nbsp;</strong>The disk size for servers provisioned with Windows 2008 or 2012 Server templates have been set to a consistent size and have been increased to 60GB. This was due to customers running into
     build failures caused by the drives not having sufficient space to run a number of blueprints.</li>
-  <li><strong>New CoreOS Blueprint.&nbsp;</strong>Blueprints have been created for deploying CoreOS servers. Follow the <a href="https://t3n.zendesk.com/entries/47064274-Building-CoreOS-Server-Cluster-on-the-CenturyLink-Cloud">KB article on building CoreOS servers on CenturyLink Cloud</a>&nbsp;to
+  <li><strong>New CoreOS Blueprint.&nbsp;</strong>Blueprints have been created for deploying CoreOS servers. Follow the <a href="https://t3n.zendesk.com/entries/47064274-Building-CoreOS-Server-Cluster-on-the-Lumen-Cloud">KB article on building CoreOS servers on Lumen Cloud</a>&nbsp;to
     see how they are used.</li>
 </ul>

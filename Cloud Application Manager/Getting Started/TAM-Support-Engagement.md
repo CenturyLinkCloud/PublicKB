@@ -23,7 +23,7 @@ The following process is used to have a TAM assigned to the account:
 
 ### Getting General Support
 
-Customers can contact the CenturyLink Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
+Customers can contact the Lumen Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
 
 **Contact:**
 1.	**Phone:** 888-638-6771
@@ -43,7 +43,7 @@ The support desk will escalate the information to the Primary TAM and transfer t
 ### Getting the TAM
 In order to reach a TAM, users can use either of the following methods:
 
-1.	**Call** the CenturyLink Global Operations Center at 888-638-6771, and you will be **transferred to your primary TAM.**
+1.	**Call** the Lumen Global Operations Center at 888-638-6771, and you will be **transferred to your primary TAM.**
 
 2.	**Create Ticket in Cloud Application Manager** directly (see Create Ticket above)
 Submit your request via Managed Services Portal https://managedservices.ctl.io/msp/login and your primary TAM will contact you.

@@ -7,7 +7,7 @@
 }}}
 
 ### In this article:
-1. We will describe the way to maintain proper time on Windows servers within the CenturyLink cloud environment.
+1. We will describe the way to maintain proper time on Windows servers within the Lumen cloud environment.
 2. We will cover Windows servers not joined to an active directory domain and standalone servers which aren't.
 3. The summary of action to be taken in all cases is as follows:
    * Disable VMWare Tools hardware time sync feature.

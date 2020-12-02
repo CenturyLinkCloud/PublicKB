@@ -9,13 +9,13 @@
 
 ### Overview
 
-Part of [Cloud Application Manager's](https://www.ctl.io/cloud-application-manager/) Cloud Optimization gives users the ability to benefit from CenturyLink's partnerships with other cloud providers. CenturyLink assumes the billing for these accounts and takes responsibility for platform support. Users may also benefit from Security hardening and cost Analytics. This document is about creating new Amazon Web Services with Cloud Optimization.
+Part of [Cloud Application Manager's](https://www.ctl.io/cloud-application-manager/) Cloud Optimization gives users the ability to benefit from Lumen's partnerships with other cloud providers. Lumen assumes the billing for these accounts and takes responsibility for platform support. Users may also benefit from Security hardening and cost Analytics. This document is about creating new Amazon Web Services with Cloud Optimization.
 
 ### Audience
 
 All of our customers are invited to use Cloud Optimization via Cloud Application Manager.
 
-For Amazon Web Services, see our [Service Guide](https://www.ctl.io/legal/cloud-application-manager/supplemental-terms/) for a current list of countries we support.  Also, this offering is not for CenturyLink employees. If you need special considerations for setting up an account, please email [request@centurylink.com](mailto:request@centurylink.com).
+For Amazon Web Services, see our [Service Guide](https://www.ctl.io/legal/cloud-application-manager/supplemental-terms/) for a current list of countries we support.  Also, this offering is not for Lumen employees. If you need special considerations for setting up an account, please email [request@centurylink.com](mailto:request@centurylink.com).
 
 ### Prerequisites
 
@@ -27,36 +27,36 @@ For Amazon Web Services, see our [Service Guide](https://www.ctl.io/legal/cloud-
 
 * An understanding of the features and benefits of [Partner Cloud Integration](partner-cloud-integration.md)
 
-* For each CenturyLink Cloud account integrated with Amazon Web Services, both CenturyLink's AWS Terms and Conditions for the relevant territory must be accepted. These will be presented to any user attempting to create a new "Amazon Web Services" provider in Cloud Application Manager.
+* For each Lumen Cloud account integrated with Amazon Web Services, both Lumen's AWS Terms and Conditions for the relevant territory must be accepted. These will be presented to any user attempting to create a new "Amazon Web Services" provider in Cloud Application Manager.
 
 ### Important Information
 
-Charges for [AWS usage](partner-cloud-integration-consolidated-billing.md) will appear on invoices from CenturyLink.
+Charges for [AWS usage](partner-cloud-integration-consolidated-billing.md) will appear on invoices from Lumen.
 
 ![Amazon Web Services Provider](../../images/cloud-application-manager/CINT_AWS_Provider_Options.png)
 
 Cloud Application Manager Provider Option | Description | Related Links
 --- | --- | ---
  Use an existing AWS customer account | This is not an Optimized account and customer pays Amazon for usage. | [Click here](../Deploying Anywhere/using-your-aws-account.md)
-   Migrate my account to CenturyLink for consolidated billing and Platform Support | **This is a Cloud Optimized option.** Provided Amazon has approved the account transfer, this allows an existing customer account to move under CenturyLink's care. | [Click Here](partner-cloud-integration-aws-existing.md)
-  Create a new AWS account for consolidated billing and Platform Support | **This is a Cloud Optimized option.** Initiates the new account creation process, enabling the customer to immediately enter CenturyLink's care without prior approval from AWS. | This page
+   Migrate my account to Lumen for consolidated billing and Platform Support | **This is a Cloud Optimized option.** Provided Amazon has approved the account transfer, this allows an existing customer account to move under Lumen's care. | [Click Here](partner-cloud-integration-aws-existing.md)
+  Create a new AWS account for consolidated billing and Platform Support | **This is a Cloud Optimized option.** Initiates the new account creation process, enabling the customer to immediately enter Lumen's care without prior approval from AWS. | This page
 
-Any Amazon Web Service offering is available through CenturyLink.
+Any Amazon Web Service offering is available through Lumen.
 
 **Considerations**
 
 New AWS Accounts will automatically be Optimized.
 
-* **Data Access** Certain AWS Management Console reports will be restricted because they will not provide accurate representation of pricing, CenturyLink-provided discounts, or managed costs. Optimized accounts have access to use Cloud Application Manager's [Analytics](../Analytics/CloudApplicationManagerAnalyticsUI.md) and [Monitoring](../Monitoring/CTLCloudMonitoringUI.md) tools for usage details that would have been provided by AWS Billing Services such as Cost Explorer and to offer our customers visibility into the status of their environment. Additionally, customers will not be given access to consolidated data within the CenturyLink-owned Master Payers.
+* **Data Access** Certain AWS Management Console reports will be restricted because they will not provide accurate representation of pricing, Lumen-provided discounts, or managed costs. Optimized accounts have access to use Cloud Application Manager's [Analytics](../Analytics/CloudApplicationManagerAnalyticsUI.md) and [Monitoring](../Monitoring/CTLCloudMonitoringUI.md) tools for usage details that would have been provided by AWS Billing Services such as Cost Explorer and to offer our customers visibility into the status of their environment. Additionally, customers will not be given access to consolidated data within the Lumen-owned Master Payers.
 
 * **Reserved Instances**
-  * Customers may contact CenturyLink if they wish to have their Reserved Instance limit increased.
+  * Customers may contact Lumen if they wish to have their Reserved Instance limit increased.
   
-* **Cost Allocation Tags** Some features of CAM's Analytics tool rely upon cost allocation tags. As the reseller, CenturyLink is responsible for cost allocation tag approval. Please submit a support ticket with a list of the proposed tag keys which you need to have approved. When they are activated it will take up to 24 hours for AWS to begin writing the tags to the billing files. AWS will not retroactively populate data into billing tables, so please submit this ticket as soon as possible. 
+* **Cost Allocation Tags** Some features of CAM's Analytics tool rely upon cost allocation tags. As the reseller, Lumen is responsible for cost allocation tag approval. Please submit a support ticket with a list of the proposed tag keys which you need to have approved. When they are activated it will take up to 24 hours for AWS to begin writing the tags to the billing files. AWS will not retroactively populate data into billing tables, so please submit this ticket as soon as possible. 
 
 ### Steps
 
-The following steps will walk through how to set up a new Cloud Application Manager provider that has been designed to create an Amazon Web Services Customer account within the scope of CenturyLink's responsibility.
+The following steps will walk through how to set up a new Cloud Application Manager provider that has been designed to create an Amazon Web Services Customer account within the scope of Lumen's responsibility.
 
 1. Log into Cloud Application Manager.
 2. Select the Providers tab
@@ -68,7 +68,7 @@ The following steps will walk through how to set up a new Cloud Application Mana
 
 5. Provide a name for the provider that identifies it for your purposes
 
-6. Select the "Create a new AWS account with CenturyLink Cloud Optimization" option. (If the user cannot see this option, they are not an Administrator.)
+6. Select the "Create a new AWS account with Lumen Cloud Optimization" option. (If the user cannot see this option, they are not an Administrator.)
 
   ![Create New AWS Account](../../images/cloud-application-manager/CINT_New_AWS1.1.png)
 
@@ -77,7 +77,7 @@ The following steps will walk through how to set up a new Cloud Application Mana
 Please expect at least a few hours before we are able to process your request. In the meantime, the following will be completed:
 
 * Create an new Amazon Web Services Customer account on your behalf
-* Link the account to a CenturyLink-owned Master Payer, enabling consolidated billing.
+* Link the account to a Lumen-owned Master Payer, enabling consolidated billing.
 * Configure IAM Roles, Groups, Policies, and users to enable account automation, platform support, cost optimization, best practices, and access for your Administrator
 * Set the password policy
 * Set up CloudTrail and an associated S3 bucket to log security events,

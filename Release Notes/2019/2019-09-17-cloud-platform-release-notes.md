@@ -2,7 +2,7 @@
 "title": "Cloud Platform - Release Notes: September 17, 2019",
 "date": "09-17-2019",
 "author": "Anthony Hakim",
-"keywords":["centurylink", "cam", "alm", "optimization"],
+"keywords":["lumen", "cam", "alm", "optimization"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -39,11 +39,11 @@ The DCC UI have been updated to display Virtual Intelligent Hosting Instance (VI
 
 ##### Red Hat 6 & Red Hat 7 Upgrades
 
-The CenturyLink Cloud team is providing notice regarding a technology update for Red Hat 6 & Red Hat 7 machines on all CenturyLink Cloud accounts. In an effort to provide the quality service our customers expect from CenturyLink, we will be automatically updating all Red Hat 6 & Red Hat 7 machines to point to the new RHUI 3.X which will allow customers to continue to receive crucial Red Hat package updates. 
+The Lumen Cloud team is providing notice regarding a technology update for Red Hat 6 & Red Hat 7 machines on all Lumen Cloud accounts. In an effort to provide the quality service our customers expect from Lumen, we will be automatically updating all Red Hat 6 & Red Hat 7 machines to point to the new RHUI 3.X which will allow customers to continue to receive crucial Red Hat package updates. 
 
-On October 2, 2019, beginning at 10am CST, the CenturyLink Cloud team will begin the updates. The updates are anticipated to take around five hours, however during the update, Customers’ virtual machines will have full accessibility and no reboot is needed. 
+On October 2, 2019, beginning at 10am CST, the Lumen Cloud team will begin the updates. The updates are anticipated to take around five hours, however during the update, Customers’ virtual machines will have full accessibility and no reboot is needed. 
 
 There is no action required on your part to perform the update, however, if you would like to perform the update before the automated upgrade, you can do so by running the Blueprint “Upgrade to RHUI 3” on your Red Hat machines. 
 
-That Blueprint can be found by following this link and logging into your CenturyLink Cloud account: https://control.ctl.io/Blueprints/Browser/Details/16667.  
+That Blueprint can be found by following this link and logging into your Lumen Cloud account: https://control.ctl.io/Blueprints/Browser/Details/16667.  
  

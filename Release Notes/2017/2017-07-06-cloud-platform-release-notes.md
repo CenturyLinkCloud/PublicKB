@@ -12,7 +12,7 @@
 
   - __Support for Amazon Linux Operating System__
 
-    *Cloud Application Manager – Managed Services* now includes support for Amazon Linux Operating System. The Amazon Linux AMI is a supported and maintained by Amazon Web Services for use on the Elastic Compute Cloud (Amazon EC2). More about Amazon Linux can be found here https://aws.amazon.com/amazon-linux-ami/. Customers deploying the Amazon Linux Operating System now have an option to "Delegate OS Management" to CenturyLink. With CenturyLink managing their virtual machine instances, customers enjoy all the benefits of *Managed Services Anywhere* listed [here]( https://www.ctl.io/cloud-application-manager/managed-services-anywhere/#Features). Pricing for *Managed Services Anywhere* is defined [here](https://www.ctl.io/cloud-application-manager/managed-services-anywhere/#Pricing).
+    *Cloud Application Manager – Managed Services* now includes support for Amazon Linux Operating System. The Amazon Linux AMI is a supported and maintained by Amazon Web Services for use on the Elastic Compute Cloud (Amazon EC2). More about Amazon Linux can be found here https://aws.amazon.com/amazon-linux-ami/. Customers deploying the Amazon Linux Operating System now have an option to "Delegate OS Management" to Lumen. With Lumen managing their virtual machine instances, customers enjoy all the benefits of *Managed Services Anywhere* listed [here]( https://www.ctl.io/cloud-application-manager/managed-services-anywhere/#Features). Pricing for *Managed Services Anywhere* is defined [here](https://www.ctl.io/cloud-application-manager/managed-services-anywhere/#Pricing).
 
   - __User Management__
 
@@ -48,7 +48,7 @@
 
   - __New Exchanges Available__
 
-    Additional Network Exchanges have been added to enable backend connections between CenturyLink Datacenters. The new exchanges are:
+    Additional Network Exchanges have been added to enable backend connections between Lumen Datacenters. The new exchanges are:
     * SY7/AU1
     * FR6/DE1
     * SG2/SG1
@@ -60,7 +60,7 @@
 
 ### Ecosystem Partner Integrations (2)
 
-* __CenturyLink Marketplace Provider Integrations__
+* __Lumen Marketplace Provider Integrations__
 
   - __[Alert Logic Threat Manager with ActiveWatch](https://www.ctl.io/marketplace/partner/PST/product/Alert%20Logic%20Threat%20Manager%20with%20ActiveWatch/)__ is a cloud-based managed network intrusion detection and vulnerability assessment solution delivered as-a-service that works in any datacenter environment, from on-premises to the cloud. It works the same way in every environment, so you can keep costs down without having to learn multiple systems and hire additional staff.
 

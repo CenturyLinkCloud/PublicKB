@@ -9,7 +9,7 @@
 <img src="../../images/silverpeak/silverpeak_logo.png" style="border:0;float:right;max-width: 150px;">
 
 ### Overview
-After reading this article, the reader should feel comfortable deploying the Silver Peak VX virtual WAN optimization software on CenturyLink Cloud.
+After reading this article, the reader should feel comfortable deploying the Silver Peak VX virtual WAN optimization software on Lumen Cloud.
 
 ### Partner Profile
 Silver Peak Systems – Delivering Industry leading WAN optimization by combining the cost and flexibility benefits of virtualization with the performance.
@@ -22,7 +22,7 @@ http://www.silver-peak.com
 | [Customer Sales Site](http://www.silver-peak.com/company/contact)  | [Customer Support Site](http://www.silver-peak.com/support)|
 
 ### Description
-Silver Peak Systems has integrated market leading WAN Optimization technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for WAN Optimization solution.
+Silver Peak Systems has integrated market leading WAN Optimization technology with the Lumen Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for WAN Optimization solution.
 
 Silver Peak VX virtual WAN optimization software combines the cost and flexibility benefits of virtualization with the performance gains delivered by Silver Peak's industry-leading WAN optimization technology. Silver Peak VX virtual appliances support the full list of Silver Peak WAN optimization features for maximum functionality, including data reduction, path conditioning and traffic shaping. This enables customers to overcome bandwidth,
 distance and quality challenges when moving data over the WAN.
@@ -57,16 +57,16 @@ locations to the largest data centers. All Silver Peak products support the same
 * **Easy to Manage**: An intuitive Graphical User Interface (GUI) simplifies network monitoring, policy provisioning, and device management. Powerful wizards simplify configuration. A full-featured CLI is available via SSH. Larger deployments can easily be managed using Silver Peak’s Global Management System (GMS). This is a comprehensive platform for deployment, management, and monitoring of a Silver Peak–enabled WAN. In addition to centralizing the administration of Silver Peak appliances, GMS provides detailed visibility into all aspects of application delivery across a distributed enterprise, including application behavior, WAN performance, Quality of Service (QoS) policies, and bandwidth utilization.
 
 ### Offer
-Silver Peak is making their VX WAN Optimization appliance available for CenturyLink Cloud Users to deploy to their account. In order to purchase a license or entitlement, please contact Silver Peak using the contact information above.
+Silver Peak is making their VX WAN Optimization appliance available for Lumen Cloud Users to deploy to their account. In order to purchase a license or entitlement, please contact Silver Peak using the contact information above.
 
 http://www.silver-peak.com/company/contact
 http://marketplace.silver-peak.com/
 
 ### Audience
-CenturyLink Cloud Customers
+Lumen Cloud Customers
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using Silver Peak WAN Optimization VX technology on CenturyLink Cloud. Silver Peak has provided a Virtual Appliance - what we call a Blueprint - that can be deployed to your CenturyLink Cloud account via a Service Task.
+After reading this article, the user should feel comfortable getting started using Silver Peak WAN Optimization VX technology on Lumen Cloud. Silver Peak has provided a Virtual Appliance - what we call a Blueprint - that can be deployed to your Lumen Cloud account via a Service Task.
 
 ### Howe to Deploy the Partner Image
 1. Create an email to help@ctl.io.
@@ -82,11 +82,11 @@ After reading this article, the user should feel comfortable getting started usi
 
    CLC Support Team,
 
-   Please create a ticket to import the Ecosystem Partner Template image  referenced below to my CenturyLink Cloud Account:
+   Please create a ticket to import the Ecosystem Partner Template image  referenced below to my Lumen Cloud Account:
 
-   - Import CenturyLink Ecosystem Partner Source Image: Silver Peak VX
-   - My CenturyLink Cloud Account Alias: ####
-   - My CenturyLink Cloud Account PIN:  ######
+   - Import Lumen Ecosystem Partner Source Image: Silver Peak VX
+   - My Lumen Cloud Account Alias: ####
+   - My Lumen Cloud Account PIN:  ######
    - Data Center to import image to: ###
    - Server Name to import image as: ##########
    - VLAN in the account to add the Server to: ########
@@ -123,7 +123,7 @@ Follow this process to request credit on your account to reimburse any expense t
 
   CLC Ecosystem Team,
 
-  I am requesting a credit be placed on my account to cover the fees associated with deploying the Silver Peak Partner Template to my account under the Service Task deployed on MM/DD/YYYY. My CenturyLink Cloud username or account alias the credit needs to be placed on is ######
+  I am requesting a credit be placed on my account to cover the fees associated with deploying the Silver Peak Partner Template to my account under the Service Task deployed on MM/DD/YYYY. My Lumen Cloud username or account alias the credit needs to be placed on is ######
 
   Thank you very much, your_name_here
   ```
@@ -135,5 +135,5 @@ Follow this process to request credit on your account to reimburse any expense t
 * Purchase license by sending email - http://www.silver-peak.com/company/contact
 
 #### Who should I contact for support?
-* For issues related to deploying the Silver Peak partner template on CenturyLink Cloud, please contact [Silver Peak Customer Support](http://www.silver-peak.com/support).
-* or issues related to cloud infrastructure, please open a ticket using the CenturyLink Cloud [Support Process](../../Support/how-do-i-report-a-support-issue.md).
+* For issues related to deploying the Silver Peak partner template on Lumen Cloud, please contact [Silver Peak Customer Support](http://www.silver-peak.com/support).
+* or issues related to cloud infrastructure, please open a ticket using the Lumen Cloud [Support Process](../../Support/how-do-i-report-a-support-issue.md).

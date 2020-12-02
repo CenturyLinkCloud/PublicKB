@@ -66,13 +66,13 @@ SharePoint Farm, JBoss Sample Application, etc.
 
 This category groups boxes related to Managed Services, to enable it or perform services in server machines. Some of them are customized for a better performance in the provider site.
 
-Of special interest is **CenturyLink Management Appliance** which is a public box and you can see its code. In a few steps you can deploy an appliance in a region
+Of special interest is **Lumen Management Appliance** which is a public box and you can see its code. In a few steps you can deploy an appliance in a region
 
 ![Cloud Application Manager catalog Managed Services Anywhere](../../images/cloud-application-manager/catalog/cam-catalog-managed-services.png)
 
 **Examples**:
 
-CenturyLink Managed SQL Server, CenturyLink Managed IIS, CenturyLink Managed Apache HTTP Server, CenturyLink Managed Tomcat, CenturyLink Management Appliance, Managed Application Windows, etc.
+Lumen Managed SQL Server, Lumen Managed IIS, Lumen Managed Apache HTTP Server, Lumen Managed Tomcat, Lumen Management Appliance, Managed Application Windows, etc.
 
 #### Plugins
 
@@ -92,7 +92,7 @@ Here you can find boxes explaining some available cloud services in Cloud Applic
 
 **Examples**:
 
-Amazon Web Services, Microsoft Azure, CenturyLink Simple Backup Service, etc.
+Amazon Web Services, Microsoft Azure, Lumen Simple Backup Service, etc.
 
 #### Other
 

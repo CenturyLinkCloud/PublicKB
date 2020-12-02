@@ -8,7 +8,7 @@
 }}}
 
 ### Description
-The CenturyLink Cloud Object Storage service is available in multiple regions. Once you create a bucket in a specific region, you need to use the appropriate service point to interact with that bucket.  
+The Lumen Cloud Object Storage service is available in multiple regions. Once you create a bucket in a specific region, you need to use the appropriate service point to interact with that bucket.  
 
 Here is a list of the different regions and the region service points.  Please note, too, that our service endpoints leverage wildcard (SSL) certificates for the respective region, as shown in the table below.
 

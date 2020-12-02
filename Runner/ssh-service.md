@@ -11,12 +11,12 @@
 
 ## Audience
 
-This article is to support customers of Runner, a product that enables teams, developers, and engineers to quickly provision, interact, and modify their environments anywhere - CenturyLink Cloud, third-party cloud providers, and on-premises.  Additionally, the responses in this FAQ document are specific to using the service through the Control Portal.
+This article is to support customers of Runner, a product that enables teams, developers, and engineers to quickly provision, interact, and modify their environments anywhere - Lumen Cloud, third-party cloud providers, and on-premises.  Additionally, the responses in this FAQ document are specific to using the service through the Control Portal.
 
 
 ## SSH Key Management Service Overview
 
-Runner’s SSH Key Management Service will help you to manage and deploy SSH credentials on CenturyLink Cloud servers. With the keys deployed from this service, you can securely create and execute tasks using our Job service. The job actions can be performed via REST API calls. The API works with JSON messages over HTTP. It relies on the standard HTTP verbs including GET, POST, PUT, and DELETE.
+Runner’s SSH Key Management Service will help you to manage and deploy SSH credentials on Lumen Cloud servers. With the keys deployed from this service, you can securely create and execute tasks using our Job service. The job actions can be performed via REST API calls. The API works with JSON messages over HTTP. It relies on the standard HTTP verbs including GET, POST, PUT, and DELETE.
 
 The URL format of the service is: `https://api.runner.ctl.io/keypairs/{accountAlias}`.
 
@@ -34,11 +34,11 @@ For example, to retrieve information of all deployed keypairs created at the acc
 
 ### CREATE KEYPAIR <a id="CreateKeypair"></a>
 
-Creates an SSH Keypair and allows you to deploy those credentials to CenturyLink servers in your account.  The key can then be used to authenticate to these resources when executing a Runner Job. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
+Creates an SSH Keypair and allows you to deploy those credentials to Lumen servers in your account.  The key can then be used to authenticate to these resources when executing a Runner Job. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
 
 **When to use it**
 
-Use this API operation when you would like to create, deploy and manage SSH keys on CenturyLink servers.
+Use this API operation when you would like to create, deploy and manage SSH keys on Lumen servers.
 
 Note: The SSH privateKey is generated only once, so you have to save the privateKey from the response.
 
@@ -135,11 +135,11 @@ The response will be an object with the created SSH key information deployed on 
 
 ### DELETE KEYPAIR <a id="DeleteKeypair"></a>
 
-Delete deployed SSH credentials to CenturyLink servers. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
+Delete deployed SSH credentials to Lumen servers. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
 
 **When to use it**
 
-Use this API operation when you would like to remove a deployed key pair from your CenturyLink Cloud account alias.
+Use this API operation when you would like to remove a deployed key pair from your Lumen Cloud account alias.
 
 #### URL
 **Structure**
@@ -169,7 +169,7 @@ The response will be a standard HTTP 200 OK response upon deletion of the keypai
 
 ### DEPLOY KEYPAIR <a id="DeployKeypair"></a>
 
-Deploys SSH credentials to CenturyLink Cloud servers in a given account, so the keys can be used to authenticate these servers when executing Runner jobs. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
+Deploys SSH credentials to Lumen Cloud servers in a given account, so the keys can be used to authenticate these servers when executing Runner jobs. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
 
 **When to use it**
 
@@ -270,7 +270,7 @@ Retrieve the details of an existing keypair alias. Calls to this operation must 
 
 **When to use it**
 
-Use this API operation when you would like to retrieve the details of a deployed key pair to your CenturyLink Cloud account alias.
+Use this API operation when you would like to retrieve the details of a deployed key pair to your Lumen Cloud account alias.
 
 #### URL
 **Structure**
@@ -415,11 +415,11 @@ The response will be server usernames (listed as array of string) for a deployed
 
 ### GET KEYPAIRS <a id="GetKeypairs"></a>
 
-To get the details of all deployed SSH credentials to CenturyLink servers. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
+To get the details of all deployed SSH credentials to Lumen servers. Calls to this operation must include a token acquired from the authentication endpoint. See the [Login API](https://www.ctl.io/api-docs/v2/#authentication-login) for information on acquiring this token.
 
 **When to use it**
 
-Use this API operation when you would like to retrieve the details of all deployed key pair to your CenturyLink account alias.
+Use this API operation when you would like to retrieve the details of all deployed key pair to your Lumen account alias.
 
 #### URL
 **Structure**
@@ -441,7 +441,7 @@ Use this API operation when you would like to retrieve the details of all deploy
 
 #### Response
 
-The response will be list of objects (based on keypair alias) that were created within CenturyLink Cloud account alias.
+The response will be list of objects (based on keypair alias) that were created within Lumen Cloud account alias.
 
 **Entity Definition**
 

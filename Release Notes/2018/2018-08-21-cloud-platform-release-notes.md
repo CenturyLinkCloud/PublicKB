@@ -34,7 +34,7 @@ When multiple metric producers are selected, the list of collected metrics for a
 
 All instances of Hyperscale servers are re-entitled as standard compute instances. While these instances will still be hosted on our Hyperscale platform before the August 21st End of life, they will now be billed using our standard compute pricing.
 
-On June 20th, CenturyLink Cloud announced the end of life for our Hyperscale server instances. Read more at this [Knowledge Base article](../../Servers/hyperscale-eol-faqs.md).
+On June 20th, Lumen Cloud announced the end of life for our Hyperscale server instances. Read more at this [Knowledge Base article](../../Servers/hyperscale-eol-faqs.md).
 
 ##### Site Redirect
 
@@ -50,9 +50,9 @@ We have added resiliency features and enhanced the monitoring for our job queue.
 
 ### Announcements (1)
 
-#### CenturyLink Private Cloud on VMware Cloud Foundation
+#### Lumen Private Cloud on VMware Cloud Foundation
 
-We've completed the rebranding work of our new private cloud offering from DCC Foundation to CenturyLink Private Cloud on VMware Cloud Foundation.
+We've completed the rebranding work of our new private cloud offering from DCC Foundation to Lumen Private Cloud on VMware Cloud Foundation.
 
 ### Bug Fixes (1)
 

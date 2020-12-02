@@ -42,8 +42,8 @@ All Cloud Application Manager users who want to get their virtual machines deplo
 These are the Provider types supporting self-registration of virtual machines:
 
 * Amazon AWS/EC2
-* CenturyLink Cloud
-* CenturyLink Private Cloud on VMWare Cloud Foundation
+* Lumen Cloud
+* Lumen Private Cloud on VMWare Cloud Foundation
 * Google Cloud Platform
 * VMWare vCloud Director
 
@@ -82,7 +82,7 @@ When the self-register instances feature is enabled in a provider, the dropdown 
 
 ### Self-Registering instances into CPC on VCF and VMWare vCloud Director provider types
 
-When self-registering instances into CenturyLink Private Cloud on VMWare Cloud Foundation and VMWare vCloud Director provider types there is an important consideration we should take into account. When the self-registration script is executed in these instances, a restart is performed during the process to complete the registration process. This restart is required to update the customization script properties that are used to identify the instance uniquely from within Cloud Application Manager and the instance itself.
+When self-registering instances into Lumen Private Cloud on VMWare Cloud Foundation and VMWare vCloud Director provider types there is an important consideration we should take into account. When the self-registration script is executed in these instances, a restart is performed during the process to complete the registration process. This restart is required to update the customization script properties that are used to identify the instance uniquely from within Cloud Application Manager and the instance itself.
 
 If this is not a desired behavior, you may use the standard manual [registration process](./register-existing-instance.md) instead.
 

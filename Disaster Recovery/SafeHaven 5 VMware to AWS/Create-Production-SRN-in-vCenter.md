@@ -30,7 +30,7 @@ This article assumes that the user has login access to Vcenter
 5. Click on **Browse** and select the SafeHaveAppliance OVA file. Click **Next**
 
 6. Verify the OVF template details :
-Make sure that Product is **SafeHavenAppliance**, version is **5.0.x.x**, and Vendor is **CenturyLink Inc.**  
+Make sure that Product is **SafeHavenAppliance**, version is **5.0.x.x**, and Vendor is **Lumen Inc.**  
 Click **Next**.
 
 7. Enter the name fo the VM(e.g. SRN-PR), and select the Inventory Location. Click **Next**.

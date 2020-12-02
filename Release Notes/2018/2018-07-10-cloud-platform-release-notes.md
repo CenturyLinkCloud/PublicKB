@@ -11,7 +11,7 @@
 #### [Cloud Application Manager](//www.ctl.io/cloud-application-manager/)
 
 ##### Optimized Provider Updates
-* Any time a CenturyLink Operations user accesses a customer's AWS account or Azure subscription via the CAM provider, the user will see a log entry of that event within the provider.
+* Any time a Lumen Operations user accesses a customer's AWS account or Azure subscription via the CAM provider, the user will see a log entry of that event within the provider.
 
 ##### Application Lifecycle Management
 
@@ -31,4 +31,4 @@ Cloud Application Manager now provides the ability to import AWS Auto Scaling gr
 
 #### Public Cloud Inftrastrucure as a Service
 
-* We've updated CenturyLink Cloud's control portal user interface with a new look and feel. Our new aesthetic design has been applied across all of our cloud services to give users a similar experience across products. There are no functionality or feature changes associated with this user interface update.
+* We've updated Lumen Cloud's control portal user interface with a new look and feel. Our new aesthetic design has been applied across all of our cloud services to give users a similar experience across products. There are no functionality or feature changes associated with this user interface update.

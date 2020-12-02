@@ -13,7 +13,7 @@
 }}}
 
 ### Description
-<p>It can sometimes be helpful to expose metadata about CenturyLink Cloud servers or other components to the servers themselves, making details around data centers, groups, the server itself, or even other servers available for use on a server. This type of information can potentially be used for such things as balancing clusters or as part of specific configuration files on the server. By combining the flexibility of Blueprints and Scripts with the power of the v2 API, you can easily accomplish something like this. The following use case is one example of how to achieve this sort of functionality. It queries the API for the ID and name of the data center that the current server is in and writes this information to a file on the server.
+<p>It can sometimes be helpful to expose metadata about Lumen Cloud servers or other components to the servers themselves, making details around data centers, groups, the server itself, or even other servers available for use on a server. This type of information can potentially be used for such things as balancing clusters or as part of specific configuration files on the server. By combining the flexibility of Blueprints and Scripts with the power of the v2 API, you can easily accomplish something like this. The following use case is one example of how to achieve this sort of functionality. It queries the API for the ID and name of the data center that the current server is in and writes this information to a file on the server.
 
 ### Steps
 Write a shell script to perform the query and write the file.

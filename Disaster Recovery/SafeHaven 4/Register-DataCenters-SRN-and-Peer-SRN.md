@@ -9,7 +9,7 @@
 ### Article Overview
 
 This article focusses on how to:
-1. Register Data Centers and SRN's within the SafeHaven Console for CenturyLink Cloud, VMware vSphere and Manual(Standalone VMware ESXi hosts and DCC) datacenter type.
+1. Register Data Centers and SRN's within the SafeHaven Console for Lumen Cloud, VMware vSphere and Manual(Standalone VMware ESXi hosts and DCC) datacenter type.
 2. Pair the SRN's together to set up Protection Groups.
 
 A single SafeHaven Cluster can have upto 64 datacenters registered within itself which can be accessed through a single pane of glass. Each production and recovery datacenter has to be registered within the SafeHaven Console.
@@ -17,10 +17,10 @@ A single SafeHaven Cluster can have upto 64 datacenters registered within itself
 There are 4 **Data Center Types** available:
 1. VMware vSphere
 2. VMware vCloud Director
-3. CenturyLink Cloud
+3. Lumen Cloud
 4. Manual (Standalone VMware ESXi hosts and DCC)
 
-**NOTE**: For CenturyLink Cloud, each sub-account has to be registered as a separate datacenter.
+**NOTE**: For Lumen Cloud, each sub-account has to be registered as a separate datacenter.
 
 ### Requirements
 
@@ -55,13 +55,13 @@ Enter the **vCenter Identifier** (it can be any name), vCenter **IP Address/Host
 
 ![Upgrade](../../images/SH4.0/Cluster2/15.jpg)
 
-#### Centurylink Cloud Data Center
+#### Lumen Cloud Data Center
 
 Within the SafeHaven Console, right-click on the **Administrator@Cluster** in the Navigation Tree on the left and select **Register Data Center** from the drop-down menu.
 
 ![Upgrade](../../images/SH4.0/Cluster/07.png)
 
-Enter **Data Center Name** and select **CenturyLink Cloud** as the **Data Center Type**. Click **Register**.
+Enter **Data Center Name** and select **Lumen Cloud** as the **Data Center Type**. Click **Register**.
 
 ![Upgrade](../../images/SH4.0/Cluster2/02.png)
 
@@ -69,15 +69,15 @@ Now click on the Data Center you registered and under the **Properties** Panel c
 
 ![Upgrade](../../images/SH4.0/Cluster2/05.png)
 
-Enter your **CenturyLink Portal Username** and **Password** for CenturyLink Cloud administration. Click **Next**.
+Enter your **Lumen Portal Username** and **Password** for Lumen Cloud administration. Click **Next**.
 
 ![Upgrade](../../images/SH4.0/Cluster2/16.jpg)
 
-Select your **parent account** or **sub-account** as well as the CenturyLink Data Center **Location** select **Finish**.
+Select your **parent account** or **sub-account** as well as the Lumen Data Center **Location** select **Finish**.
 
 ![Upgrade](../../images/SH4.0/Cluster2/17.jpg)
 
-**Properties Panel** shows the CenturyLink Cloud information.
+**Properties Panel** shows the Lumen Cloud information.
 
 ![Upgrade](../../images/SH4.0/Cluster2/18.jpg)
 
@@ -91,7 +91,7 @@ Enter **Data Center Name** and select **Manual** as the **Data Center Type**. Cl
 
 **NOTE**: No credentials required for a Manual site.
 
-**Properties Panel** shows the CenturyLink Cloud information.
+**Properties Panel** shows the Lumen Cloud information.
 
 ![Upgrade](../../images/SH4.0/Cluster2/20.png)
 

@@ -2,14 +2,14 @@
 "title": "Cloud Platform - Release Notes: November 12, 2019",
 "date": "11-12-2019",
 "author": "Christal Clark",
-"keywords":["centurylink", "cam", "alm", "optimization"],
+"keywords":["lumen", "cam", "alm", "optimization"],
 "attachments": [],
 "contentIsHTML": false
 }}}
 
 ### Enhancements (5)
 
-#### [CenturyLink Private Cloud on VMware Cloud Foundation](https://www.ctl.io/centurylink-private-cloud-on-vmware-cloud-foundation/) (CPC on vCF)
+#### [Lumen Private Cloud on VMware Cloud Foundation](https://www.ctl.io/lumen-private-cloud-on-vmware-cloud-foundation/) (CPC on vCF)
 
 ##### Support for multiple clusters
 
@@ -29,7 +29,7 @@ Additionally, the size description has been extended with the corresponding CPU 
 
 ##### Auto-register Terraform VM resources in managed providers
 
-Application Lifecycle Management now allows users to auto-register VM instances that were deployed as part of a Terraform template deployment in a vCloud-based managed provider. Compute instances included into the Terraform template box resources will be automatically registered in Cloud Application Manager and if the provider has Managed Services Anywhere (MSA) enabled, those instances will be configured for MSA. This feature is currently supported for CenturyLink Private Cloud on vCloud Foundation and VMWare vCloud Director provider types.
+Application Lifecycle Management now allows users to auto-register VM instances that were deployed as part of a Terraform template deployment in a vCloud-based managed provider. Compute instances included into the Terraform template box resources will be automatically registered in Cloud Application Manager and if the provider has Managed Services Anywhere (MSA) enabled, those instances will be configured for MSA. This feature is currently supported for Lumen Private Cloud on vCloud Foundation and VMWare vCloud Director provider types.
 
 ##### New CloudFormation types supported
 

@@ -39,13 +39,13 @@
 
 ### Ecosystem (2)
 
-* __MapR.__ We've added another top-tier player in the Hadoop space - MapR joins the ranks of Cloudera and Pivotal HD as yet another organization that recognizes the opportunity CenturyLink Cloud virtual and bare metal IaaS offers to the Big Data space.  [Deploy MapR Community Edition today.](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-mapr-blueprint/)
-* __CouchBase and OrientDB.__ Whether it be a greenfield build on CenturyLink Cloud or an existing application migration, we are the place for NoSQL database engines.  We've also added  [CouchBase](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-couchbase/) and [OrientDB](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-orientdb/#audience) for instant deployment from our marketplace.  Find the best software for your application - or compare the performance and reliability of the underlying IaaS.
+* __MapR.__ We've added another top-tier player in the Hadoop space - MapR joins the ranks of Cloudera and Pivotal HD as yet another organization that recognizes the opportunity Lumen Cloud virtual and bare metal IaaS offers to the Big Data space.  [Deploy MapR Community Edition today.](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-mapr-blueprint/)
+* __CouchBase and OrientDB.__ Whether it be a greenfield build on Lumen Cloud or an existing application migration, we are the place for NoSQL database engines.  We've also added  [CouchBase](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-couchbase/) and [OrientDB](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-orientdb/#audience) for instant deployment from our marketplace.  Find the best software for your application - or compare the performance and reliability of the underlying IaaS.
 
 
 ### Open Source Contributions (1)
 
-* __Cyclops.__ [Cyclops](https://github.com/CenturyLinkCloud/Cyclops) is an open source collection of UX/UI patterns that make up the CenturyLink Cloud user interface. It's our way to showing how focused we are on creating a delightful and responsive user experience.
+* __Cyclops.__ [Cyclops](https://github.com/CenturyLinkCloud/Cyclops) is an open source collection of UX/UI patterns that make up the Lumen Cloud user interface. It's our way to showing how focused we are on creating a delightful and responsive user experience.
 
 	![Cyclops Logo](../../images/2016-02-02-cyclops_logo.png)
 

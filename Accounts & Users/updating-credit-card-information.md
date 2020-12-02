@@ -10,7 +10,7 @@
 
 ### Description
 
-CenturyLink Cloud allows customers to pay for their monthly service using a credit card. As a customer, updating your credit card information is as simple as [logging in to the Control Portal](//control.ctl.io/) and following the steps below.
+Lumen Cloud allows customers to pay for their monthly service using a credit card. As a customer, updating your credit card information is as simple as [logging in to the Control Portal](//control.ctl.io/) and following the steps below.
 
 ##### Step by step directions:
 

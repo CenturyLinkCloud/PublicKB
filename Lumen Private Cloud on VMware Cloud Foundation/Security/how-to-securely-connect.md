@@ -9,11 +9,11 @@
 }}}
 
 ### Description
-This KB article assumes that you've created a new virtual server on CenturyLink Private Cloud on VMware Cloud Foundation™. If not, follow this guide to [Create a Server](../General/creating-a-server.md), then return to this guide.
+This KB article assumes that you've created a new virtual server on Lumen Private Cloud on VMware Cloud Foundation™. If not, follow this guide to [Create a Server](../General/creating-a-server.md), then return to this guide.
 
 Now what? How do you securely connect to your servers? This KB article describes how to use SSL VPN-Plus to securely connect to your servers.
 
-Note: This KB article assumes that you have already setup SSL VPN-Plus in your CenturyLink Private Cloud on VMware Cloud Foundation environment. If not, follow this guide to [Configure SSL VPN-Plus](configuring-sslvpn-plus.md), then return to this guide.
+Note: This KB article assumes that you have already setup SSL VPN-Plus in your Lumen Private Cloud on VMware Cloud Foundation environment. If not, follow this guide to [Configure SSL VPN-Plus](configuring-sslvpn-plus.md), then return to this guide.
 
 ### Steps
 
@@ -49,7 +49,7 @@ Note: This KB article assumes that you have already setup SSL VPN-Plus in your C
 
   ![SSL VPN-Plus](../../images/dccf/how-to-securely-connect6.png)
 
-* Once you are connected, you can use an SSL or RDP client to access the servers within your CenturyLink Private Cloud on VMware Cloud Foundation environment.
+* Once you are connected, you can use an SSL or RDP client to access the servers within your Lumen Private Cloud on VMware Cloud Foundation environment.
 
   ![SSL VPN-Plus](../../images/dccf/how-to-securely-connect7.png)
 

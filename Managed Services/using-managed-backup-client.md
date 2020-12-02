@@ -12,7 +12,7 @@
 
 ### Overview
 
-While Control Portal allows for turning Managed Backup on and off for a given server, getting details about the status of recent backups or changing the target of the backups using an exclusions list are not yet supported through this interface. This functionality is provided, however, by the Netbackup Client installed on the server itself. After gaining access to the server remotely through either RDP on Windows or SSH on Linux, you can use the following instructions to review status or set paths for exclusion. For help using the Netbackup Client for exclusions or viewing status, you may also contact the CenturyLink Client Service Center at 1-888-638-6771.
+While Control Portal allows for turning Managed Backup on and off for a given server, getting details about the status of recent backups or changing the target of the backups using an exclusions list are not yet supported through this interface. This functionality is provided, however, by the Netbackup Client installed on the server itself. After gaining access to the server remotely through either RDP on Windows or SSH on Linux, you can use the following instructions to review status or set paths for exclusion. For help using the Netbackup Client for exclusions or viewing status, you may also contact the Lumen Client Service Center at 1-888-638-6771.
 
 ### Using Netbackup Client
 
@@ -40,7 +40,7 @@ Linux provides the bpclimagelist command that can be ran as follows ``/usr/openv
 
 #### Setting Exclusion Rules
 
-NetBackup provides for the ability to exclude or filter data from a backup job while it is running. A backup job is created with a defined include list for the policy and in the case CenturyLink Cloud Managed Backup, includes the entire volume for all disks by default. By creating an exclude list, it is possible to remove entries from the backup job which would normally be covered by the running job. It is recommended to utilize small, simple exclude lists where possible as they will add additional processing overhead.
+NetBackup provides for the ability to exclude or filter data from a backup job while it is running. A backup job is created with a defined include list for the policy and in the case Lumen Cloud Managed Backup, includes the entire volume for all disks by default. By creating an exclude list, it is possible to remove entries from the backup job which would normally be covered by the running job. It is recommended to utilize small, simple exclude lists where possible as they will add additional processing overhead.
 
 The primary cases for defining an exclude list are when you would like to:
 

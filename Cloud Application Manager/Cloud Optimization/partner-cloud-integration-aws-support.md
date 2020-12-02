@@ -8,7 +8,7 @@
 
 ### Overview
 
-Partner Cloud Integration allows an Cloud Application Manager user to create AWS Customer Accounts for which CenturyLink will provide Platform-level support. The following is a description of what platform-level support is and how to use it.
+Partner Cloud Integration allows an Cloud Application Manager user to create AWS Customer Accounts for which Lumen will provide Platform-level support. The following is a description of what platform-level support is and how to use it.
 
 ### Audience
 
@@ -22,9 +22,9 @@ Knowledge of how to [get started with Optimized Amazon Web Services](partner-clo
 
 ### Important Information
 
-For existing accounts moving under our care you may be required to change your accounts' Support plans. You must sign in with root account credentials (email address and password) to change your support plan to Enterprise Support. The cost of the support plan does not appear on your consolidated bill, but it is required so that CenturyLink may meet our Service Level Objectives and use our automated tools. In addition, Amazon Web Services requires it so that proper prioritization is given to any platform-level issues that may need to be addressed. Please review [get Started With an existing AWS Customer Account](partner-cloud-integration-aws-existing.md))
+For existing accounts moving under our care you may be required to change your accounts' Support plans. You must sign in with root account credentials (email address and password) to change your support plan to Enterprise Support. The cost of the support plan does not appear on your consolidated bill, but it is required so that Lumen may meet our Service Level Objectives and use our automated tools. In addition, Amazon Web Services requires it so that proper prioritization is given to any platform-level issues that may need to be addressed. Please review [get Started With an existing AWS Customer Account](partner-cloud-integration-aws-existing.md))
 
-CenturyLink recommends Customers utilize vendor-supported Operating Systems such as Microsoft Windows and RedHat Linux. Neither your company, CenturyLink nor our cloud partners can obtain vendor support on free Operating Systems.
+Lumen recommends Customers utilize vendor-supported Operating Systems such as Microsoft Windows and RedHat Linux. Neither your company, Lumen nor our cloud partners can obtain vendor support on free Operating Systems.
 
 For critical outages, to ensure the fastest response time always call
 - United States: 1-888-638-6771
@@ -36,9 +36,9 @@ For critical outages, to ensure the fastest response time always call
 
 See table below.
 
-Type of Support | Definition | Scope of CenturyLink Support
+Type of Support | Definition | Scope of Lumen Support
 --- | --- | ---
-Platform-Level | CenturyLink may act as the first responder to any issues related to permitted resources within re-sold AWS customer accounts and the ability to use those resources via normal means. | **IN SCOPE**: See the list below. **OUTSIDE SCOPE**: Remote Administration, Monitoring and Remediation, Change Management and Patching. Also Customer accounts that are not Optimized by Cloud Application Manager.
+Platform-Level | Lumen may act as the first responder to any issues related to permitted resources within re-sold AWS customer accounts and the ability to use those resources via normal means. | **IN SCOPE**: See the list below. **OUTSIDE SCOPE**: Remote Administration, Monitoring and Remediation, Change Management and Patching. Also Customer accounts that are not Optimized by Cloud Application Manager.
 
 Managed Services - which include Remote Administration, Monitoring and Remediation, Change Management and Patching - are also available for AWS. If Management is desired, please review your options [here](https://www.ctl.io/cloud-application-manager/managed-services-anywhere/).
 

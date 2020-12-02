@@ -23,7 +23,7 @@ Confirm that there are no jobs running in the SafeHaven Console at the time of t
 
 ### SafeHaven Syntropy Service
 
-Login to your existing SafeHaven Cluster version and validate both **Syntropy version** and **SafeHaven Console version** are 4.0.1 by clicking on **About CenturyLink SafeHaven Console** under the **Help** tab.
+Login to your existing SafeHaven Cluster version and validate both **Syntropy version** and **SafeHaven Console version** are 4.0.1 by clicking on **About Lumen SafeHaven Console** under the **Help** tab.
 
 ![Upgrade](../../images/SH4.0/Upgrade/upgrade_1.png)
 

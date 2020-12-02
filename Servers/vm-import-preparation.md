@@ -8,7 +8,7 @@
 
 ### Overview
 
-There are many considerations to be made when peparing your VM for import into CenturyLink Cloud. This article will cover the following subjects.
+There are many considerations to be made when peparing your VM for import into Lumen Cloud. This article will cover the following subjects.
 
 - [Ensuring Portal Functionality](#ensuring-portal-functionality)
 - [Minimum Requirements](#minimum-requirements)
@@ -30,7 +30,7 @@ Meeting the following conditions is optional when importing via a service task. 
     - Bash shell must be installed.
     - Direct Root access via SSH on port 22 must be enabled, and Root must be accessible with a password (access with a private key is not supported).
 - For functionality with *Windows* operating systems:
-    - SysPrep must be allowed to run so that the VM can be updated to use the CenturyLink Cloud Windows license. This is billed to your account.
+    - SysPrep must be allowed to run so that the VM can be updated to use the Lumen Cloud Windows license. This is billed to your account.
     - The platform must have Administrator (with password) access to PowerShell on ports 5985 and 5986 using. PowerShell must be at least version 2.0, but version 3.0+ is highly recommended.
 
 ### Requirements and Recommendations

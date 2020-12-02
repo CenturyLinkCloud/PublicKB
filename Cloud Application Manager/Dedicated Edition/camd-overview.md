@@ -20,7 +20,7 @@
 
 ### Overview
 
-This article explains how to run Cloud Application Manager platform on-premise as a virtual appliance in your CenturyLink Private Cloud on VMware Cloud Foundation (CPC on VCF), VMWare data center or OpenStack cloud. After you install and [set up Cloud Application Manager Dedicated Edition](camd-initialsetup.md) for use, you’re ready to automate deployments to any cloud and platform.
+This article explains how to run Cloud Application Manager platform on-premise as a virtual appliance in your Lumen Private Cloud on VMware Cloud Foundation (CPC on VCF), VMWare data center or OpenStack cloud. After you install and [set up Cloud Application Manager Dedicated Edition](camd-initialsetup.md) for use, you’re ready to automate deployments to any cloud and platform.
 
 **Download the Cloud Application Manager Virtual Appliance**
 Request a download link from [support](mailto:incident@CenturyLink.com).
@@ -39,7 +39,7 @@ All Cloud Application Manager Dedicated Edition users who wish to deploy or inst
 
 Cloud Application Manager Dedicated edition is supported on these platforms:
 
-* CenturyLink Private Cloud on VMware Cloud Foundation (CPC on VCF)
+* Lumen Private Cloud on VMware Cloud Foundation (CPC on VCF)
 * VMware vSphere vCenter or Cloud Foundation data centers
 * OpenStack
 * AWS

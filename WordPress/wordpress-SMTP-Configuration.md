@@ -5,11 +5,15 @@
   "attachments": [],
   "contentIsHTML": false
 }}}
-### IMPORTANT NOTECenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.
+### IMPORTANT NOTELumen
+
+Lumen WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
+
+During the Limited Beta there is no production Service Level Agreement.Lumen
 
 ### Overview
 
-Out of the box, WordPress sends email using the [PHP mail()](http://php.net/manual/en/function.mail.php) function. This function is unauthenticated and, for this reason, CenturyLink WordPress hosting does not allow this functionality and includes the Easy WP SMTP plugin instead. Your WordPress site comes preconfigured with a limited SendGrid account. This account is limited to 1000 emails per month. Sending 1 email to 1000 recipients will immediately use all of these credits for the month. If you would like to send more emails, you will first need to reconfigure the SMTP plugin.
+Out of the box, WordPress sends email using the [PHP mail()](http://php.net/manual/en/function.mail.php) function. This function is unauthenticated and, for this reason, Lumen WordPress hosting does not allow this functionality and includes the Easy WP SMTP plugin instead. Your WordPress site comes preconfigured with a limited SendGrid account. This account is limited to 1000 emails per month. Sending 1 email to 1000 recipients will immediately use all of these credits for the month. If you would like to send more emails, you will first need to reconfigure the SMTP plugin.
 
 **In this example, Gmail will be used as the SMTP Relay and assumes the following:**
 

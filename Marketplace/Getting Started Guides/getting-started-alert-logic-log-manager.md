@@ -12,7 +12,7 @@
 
 Alert Logic Log Manager with ActiveWatch is a Security-as-a-Service (SaaS) solution that meets compliance requirements and identifies security issues across your entire environment, including public cloud. It collects, processes and analyzes your data, while our ActiveWatch team unlocks the insights hidden in your log data with 24x7 expert monitoring and analysis.
 
-Alert Logic Log Manager collects, aggregates and normalizes log data from your CenturyLink Cloud servers. The web interface provides a unified view into all of your data, with tools to rapidly uncover the insight and alerts you need to remain secure and compliant.
+Alert Logic Log Manager collects, aggregates and normalizes log data from your Lumen Cloud servers. The web interface provides a unified view into all of your data, with tools to rapidly uncover the insight and alerts you need to remain secure and compliant.
 
 ### Description
 
@@ -40,7 +40,7 @@ For more details on the Alert Logic Log Manager architecture, please visit the [
 
 This Runner job performs the following steps:
 
-1. Provisions an Alert Logic Log Manager virtual appliance in the customer's CenturyLink Cloud account and initiates a monthly recurring subscription based on the selected license, currently only the 5 node option is available.  Support for up to 5, 10, 15, 20 or more server "nodes" to be released soon.
+1. Provisions an Alert Logic Log Manager virtual appliance in the customer's Lumen Cloud account and initiates a monthly recurring subscription based on the selected license, currently only the 5 node option is available.  Support for up to 5, 10, 15, 20 or more server "nodes" to be released soon.
 
 2. Initiates a one-time charge for the Alert Logic On-boarding service.
 
@@ -48,9 +48,9 @@ This Runner job performs the following steps:
 
 ### Prerequisite(s)
 
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 
-* The CenturyLink Cloud Network to which the Log Manager virtual appliance will be deployed to.
+* The Lumen Cloud Network to which the Log Manager virtual appliance will be deployed to.
 
 * The contact information for the designated IT contact. The Alert Logic On-boarding Product Manager (OPM) will contact this individual to begin the on-boarding engagement.
 
@@ -64,14 +64,14 @@ Pricing will vary based on the Alert Logic Log Manager license selected.
 
 ### Frequently Asked Questions (FAQ)
 
-**Will executing this Runner job charge my CenturyLink Cloud account?**
+**Will executing this Runner job charge my Lumen Cloud account?**
 
 Yes, executing this Runner job will initiate a recurring monthly subscriptions for the selected Log Manager license, plus a one-time $825 charge for the On-boarding engagement.
 
 **Who should I contact for support?**
 
 Please send support requests to: support@alertlogic.com.
-For issues related to CenturyLink Cloud infrastructure (VMs, network, etc.), please open a support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or through the [support website](https://support.ctl.io/access/unauthenticated?return_to=https%3A%2F%2Ft3n.zendesk.com%2Ftickets%2Fnew).
+For issues related to Lumen Cloud infrastructure (VMs, network, etc.), please open a support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or through the [support website](https://support.ctl.io/access/unauthenticated?return_to=https%3A%2F%2Ft3n.zendesk.com%2Ftickets%2Fnew).
 
 **How difficult is it to deploy?**
 

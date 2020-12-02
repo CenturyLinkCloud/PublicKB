@@ -15,7 +15,7 @@ If you prefer to set-up your environment manually, you can find those setup inst
 
 ### Audience
 
-Customers responsible for AWS Accounts which have been approved by Amazon Web Services to perform a transfer into CenturyLink's care. (New, Optimized accounts are automatically enrolled with Analytics.)
+Customers responsible for AWS Accounts which have been approved by Amazon Web Services to perform a transfer into Lumen's care. (New, Optimized accounts are automatically enrolled with Analytics.)
 
 ### Prerequisites
 
@@ -23,7 +23,7 @@ Customers responsible for AWS Accounts which have been approved by Amazon Web Se
 * The customer must have reviewed the process for transferring an [existing Amazon Web Services account](../Cloud Optimization/partner-cloud-integration-aws-existing.md)
 * It is recommended the user or role performing these steps have full IAM permissions for both CloudFormation and IAM policies and Roles.
 
-#### CenturyLink Cloud Optimization Configuration Steps:
+#### Lumen Cloud Optimization Configuration Steps:
 
 1. Open the CloudFormation template found [here](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/new?stackName=CTL-CloudOptimization-IAM-Stack&templateURL=https%3A%2F%2Fs3.us-east-2.amazonaws.com%2Fctl-cloudoptimization%2FCTLCloudOptimizationIAMPolicy.template.json).
 2. Login to the targeted AWS account, if not already.

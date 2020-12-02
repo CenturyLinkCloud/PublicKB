@@ -9,7 +9,7 @@
 }}}
 
 ### Description
-This KB article steps through the process to stand up a Site-to-Site VPN between CenturyLink Private Cloud on VMware Cloud Foundation™ (CPC on vCF) and CenturyLink Cloud (CLC).
+This KB article steps through the process to stand up a Site-to-Site VPN between Lumen Private Cloud on VMware Cloud Foundation™ (CPC on vCF) and Lumen Cloud (CLC).
 
 ### Prerequisites
 * CPC on vCF account
@@ -21,9 +21,9 @@ This KB article steps through the process to stand up a Site-to-Site VPN between
 * Firewall ports IP Protocol ID 50 (ESP), UDP Port 500 (IKE), and UDP Port 4500 are configured on both ends
 
 ### Steps
-Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment.
+Login to your Lumen Private Cloud on VMware Cloud Foundation environment.
 
-  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
+  ![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
 Once logged in, click __Edges__ in the menu on the left side of the screen, select the Edge Gateway, then click __Configure Services__. A popup will appear.
 
@@ -67,7 +67,7 @@ In the __IPsec VPN Configuration__ page, click the __Activation Status__ tab, th
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn5.png)
 
-Login to your CenturyLink Cloud environment.
+Login to your Lumen Cloud environment.
 
   ![IPsec VPN Sites](../../images/dccf/s2svpn6.png)
 

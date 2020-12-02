@@ -12,12 +12,12 @@
 <p><strong>Audience</strong>
 </p>
 <ul>
-  <li>CenturyLink Cloud Users</li>
+  <li>Lumen Cloud Users</li>
 </ul>
 
 <h3>Prerequisites</h3>
 <ul>
-  <li>Access to CenturyLink Control Portal: https://control.ctl.io</li>
+  <li>Access to Lumen Control Portal: https://control.ctl.io</li>
   <li>Access to the server that being re-sized</li>
   <li>No server snapshots in place.</li>
 </ul>

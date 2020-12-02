@@ -7,18 +7,18 @@
 }}}
 
 ### Description
-CenturyLink Cloud offers resellers a way to customize and personalize the CenturyLink Cloud to fit their needs. One way to do that is to modify the default email templates that are used by the CenturyLink Cloud system. Many of the email templates offer "tokens" which represent information about the user (e.g., "username") or resource (e.g., "Blueprint name") that the email applies to. In this KB article, we'll list each email template and which tokens are available.
+Lumen Cloud offers resellers a way to customize and personalize the Lumen Cloud to fit their needs. One way to do that is to modify the default email templates that are used by the Lumen Cloud system. Many of the email templates offer "tokens" which represent information about the user (e.g., "username") or resource (e.g., "Blueprint name") that the email applies to. In this KB article, we'll list each email template and which tokens are available.
 
 Note that to view the available tokens for a template, click inside the "message body" to switch from the Viewer interface to the Editable interface.
 
 ![Notification Templates](../images/email-token-templates.png)
 
 ### Audience
-* CenturyLink Cloud customers
+* Lumen Cloud customers
 
 ### Pre-Requisites
 * Account must be enabled for full customization.
-* Contact the CenturyLink Cloud NOC to enable your account.
+* Contact the Lumen Cloud NOC to enable your account.
 
 ### Template List
 1. Billing Invoice

@@ -14,7 +14,7 @@
 
 * **Role-based access improvements.**Platform is maturing how role-based access controls work, and this sprint featured significant work at the foundational level. Customers can see a peek of this work in action by seeing that Server
     Administrators can now see public and private IP addresses (but cannot claim or release them).
-* **Improved credit card processing. **We upgraded our underlying services to provide an even better customer experience and significantly reduce the opportunity for fraud in the CenturyLink Cloud.
+* **Improved credit card processing. **We upgraded our underlying services to provide an even better customer experience and significantly reduce the opportunity for fraud in the Lumen Cloud.
 * **Hot add of server resources. **Add CPU and memory to servers without a reboot. Applies to servers based on Windows Server 2012 Datacenter Edition, Red Hat Enterprise Linux 5/ 6, and Ubuntu 10/12 x64. **Note that while RAM capacity is added instantly, some OSes require your manual intervention for the server to *see* the new RAM.**
 * **Retired Windows Server 2012 Standard Edition template. **We have retired the Windows Server 2012 Standard template and ask all customers to use the powerful Windows Server 2012 Data Center Edition template. There is no price difference
     for users of the other Windows Server 2012 editions.

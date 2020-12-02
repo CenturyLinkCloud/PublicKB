@@ -18,11 +18,11 @@ before applications go-live. [Click here for more information](http://www8.hp.co
 | [HPE Sales](https://saas.hpe.com/buy/loadrunner?utm_source=hp.com&utm_medium=referral&utm_term=lr&utm_content=buy_flow&utm_campaign=hp.com_redirects) | [HPE Customer Support](http://community.hpe.com/t5/LoadRunner-Performance-Center/tkb-p/lr_pc_tkb) |
 
 ### Description
-HPE has integrated their technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for the HPE LoadRunner, the market leader for load and performance testing solution.
+HPE has integrated their technology with the Lumen Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for the HPE LoadRunner, the market leader for load and performance testing solution.
 
 LoadRunner is a single load testing tool for mobile, web, and legacy applications to provide an accurate view of end-to-end system performance so that you can identify and fix any issues before go-live. LoadRunner is extremely flexible and generates real life loads that help you identify performance problems and deliver higher quality applications as early as possible during the development process. It allows you to generate real-life loads, identify, and diagnose problems and deploy with confidence.
 
-Technology from HPE helps CenturyLink Cloud customers address the business challenge of capacity and performance management by implementing HP Load Runner solution - now available as part of the CenturyLink Cloud Blueprint Engine.
+Technology from HPE helps Lumen Cloud customers address the business challenge of capacity and performance management by implementing HP Load Runner solution - now available as part of the Lumen Cloud Blueprint Engine.
 
 
 ### Solution Overview
@@ -39,10 +39,10 @@ LoadRunner helps you:
 HPE has provided a Blueprint that enables customers to deploy HPE LoadRunner in a Bring Your Own license model. For more information, please visit the LoadRunner support website.
 
 ### Audience
-CenturyLink Cloud Users, Developers, Application Owners, Operations
+Lumen Cloud Users, Developers, Application Owners, Operations
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the partner technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the partner technology on Lumen Cloud.
 
 After executing the steps in this Getting Started document, the users will have a functioning HPE LoadRunner, the market leader for load and performance testing solution upon which they can start testing real business processes that users would perform in production, at massive scale using the LoadRunner software as their single load testing tool.
 
@@ -69,7 +69,7 @@ After executing the steps in this Getting Started document, the users will hav
 6. Enable public access (optional).
    * Servers are built using private IPs only with access with client or IPSEC VPN. For access from the Internet at large add a public IP to your master server.
 
-   <a href="../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md">
+   <a href="../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md">
      <img style="border:0;width:50px;vertical-align:middle;" src="../../images/shared_assets/fw_icon.png">
      Adding a public IP to your virtual machine
    </a>
@@ -84,5 +84,5 @@ The costs listed in the above steps are for the infrastructure only. There are n
 
 
 **Who should I contact for support?**
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
-* For issues related to deploying the HPE LoadRunner Blueprints and application operation on CenturyLink Cloud, contact [HPE Customer Support](http://community.hpe.com/t5/LoadRunner-Performance-Center/tkb-p/lr_pc_tkb).
+* For issues related to cloud infrastructure, please open a ticket using the [Lumen Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
+* For issues related to deploying the HPE LoadRunner Blueprints and application operation on Lumen Cloud, contact [HPE Customer Support](http://community.hpe.com/t5/LoadRunner-Performance-Center/tkb-p/lr_pc_tkb).

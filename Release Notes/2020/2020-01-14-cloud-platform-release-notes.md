@@ -2,7 +2,7 @@
 "title": "Cloud Platform - Release Notes: January 14, 2020",
 "date": "01-14-2020",
 "author": "Thomas Broadwell",
-"keywords":["centurylink", "release notes", "cam", "alm", "disconnect", "compute instances", "cloudformation"],
+"keywords":["lumen", "release notes", "cam", "alm", "disconnect", "compute instances", "cloudformation"],
 "attachments": [],
 "contentIsHTML": false
 }}}

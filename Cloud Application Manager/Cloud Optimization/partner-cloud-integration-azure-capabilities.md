@@ -8,4 +8,4 @@
 
 ### Overview
 
-As of 9/1/17, CenturyLink has removed all restrictions on Azure services offered to our customers.
+As of 9/1/17, Lumen has removed all restrictions on Azure services offered to our customers.

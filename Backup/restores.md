@@ -9,7 +9,7 @@
   "sticky": true
 }}}
 
-The Simple Backup Service has integrated the restore functionality directly into the [Simple Backup CenturyLink Cloud Control Portal page](https://backup.ctl.io). This integration simplifies the backup administration experience. We also added the ability to restore files from one server to any CenturyLink Cloud server, or registered Backup Anywhere server that has the Simple Backup agent installed on it.
+The Simple Backup Service has integrated the restore functionality directly into the [Simple Backup Lumen Cloud Control Portal page](https://backup.ctl.io). This integration simplifies the backup administration experience. We also added the ability to restore files from one server to any Lumen Cloud server, or registered Backup Anywhere server that has the Simple Backup agent installed on it.
 
 Performing a restore is simple, just navigate over to the new restore tab
 

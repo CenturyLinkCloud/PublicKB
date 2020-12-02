@@ -29,7 +29,7 @@ All Managed Services Anywhere (MSA) customers or those interested in enabling MS
 
 ### MSA Network Diagram
 
-Network connections between customer servers, MSA management appliance, and CenturyLink.
+Network connections between customer servers, MSA management appliance, and Lumen.
 
 ![Managed Services Anywhere Network Diagram](../../images/cloud-application-manager/MSA_Network-3-3-20.png)
 

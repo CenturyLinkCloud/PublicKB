@@ -7,9 +7,9 @@
   "contentIsHTML": false
 }}}
 
-S3CMD is a Linux command line utility that can be used to interact with and manage your CenturyLink Cloud [Object Storage](https://www.ctl.io/object-storage/) buckets and data, Access Control Lists (ACLs), and associated metadata. S3CMD is an advanced tool to be used for accessing object storage, so care should be taken. This article covers the following topics:
+S3CMD is a Linux command line utility that can be used to interact with and manage your Lumen Cloud [Object Storage](https://www.ctl.io/object-storage/) buckets and data, Access Control Lists (ACLs), and associated metadata. S3CMD is an advanced tool to be used for accessing object storage, so care should be taken. This article covers the following topics:
 * Installing S3CMD
-* Configuring S3CMD for CenturyLink Object Storage
+* Configuring S3CMD for Lumen Object Storage
 * Using S3CMD
 * Special Note About S3CMD Versions
 * Ways to Improve Transfer Speed
@@ -41,7 +41,7 @@ Note: Both instructions assume you are running as root. Your will need to add �
 4. Refresh your packages and install by entering the command: `apt-get update && apt-get install s3cmd`.
 
 ## Configuring S3CMD
-Once S3CMD has been installed, it must be configured to use CenturyLink Cloud’s Object Storage.
+Once S3CMD has been installed, it must be configured to use Lumen Cloud’s Object Storage.
 1. S3CMD stores its settings in a configuration file. You can either run `s3cmd –configure` to launch an interactive configuration generation tool, or specify a pre-existing file.
 
 2. You need both your **access Key ID** and your **secret access key**. You can find them by clicking **Services > Object Storage**.
@@ -61,7 +61,7 @@ Once S3CMD has been installed, it must be configured to use CenturyLink Cloud’
 
 9. Open it with a text editor. In this example we use `vi`. Enter the command: `vi ~/.s3cfg`.
 
-10. In the configuration file, change the following fields with the appropriate CenturyLink Cloud data center.
+10. In the configuration file, change the following fields with the appropriate Lumen Cloud data center.
    ```
    host_base = canada.os.ctl.io
    host_bucket = %(bucket)s.canada.os.ctl.io
@@ -120,7 +120,7 @@ verbosity = WARNING
 ```
 
 ### Creating the Object Storage Bucket
-To begin using S3CMD, you need to create an Object Storage user and a bucket, which you can create through the CenturyLink Cloud [Control Portal](https://control.ctl.io/).
+To begin using S3CMD, you need to create an Object Storage user and a bucket, which you can create through the Lumen Cloud [Control Portal](https://control.ctl.io/).
 
 1. From the Navigation Menu, click  **Services > Object Storage**.
 

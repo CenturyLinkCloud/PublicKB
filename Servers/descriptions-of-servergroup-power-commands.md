@@ -8,7 +8,7 @@
 
 ### Description
 
-CenturyLink Cloud users can issue power commands against individual servers or Groups of servers. For Groups, this makes it easy to quickly power off or reboot entire sets of servers with a single command. This KB article explains what each power command does to the underlying virtual machine.
+Lumen Cloud users can issue power commands against individual servers or Groups of servers. For Groups, this makes it easy to quickly power off or reboot entire sets of servers with a single command. This KB article explains what each power command does to the underlying virtual machine.
 
 ![Data Center Menu](../images/2015-03-27_powercommands-01.png "Data Center Menu")
 

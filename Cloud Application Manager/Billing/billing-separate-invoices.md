@@ -19,7 +19,7 @@
 
 ### Overview
 
-This article is meant to assist customers who want their Cloud Application Manager charges divided across multiple CenturyLink invoices to align with separate lines of business.
+This article is meant to assist customers who want their Cloud Application Manager charges divided across multiple Lumen invoices to align with separate lines of business.
 
 ### Audience
 
@@ -31,7 +31,7 @@ An active Cloud Application Manager account.
 
 ### Billing in a single invoice
 
-This is the default behavior for any Cloud Application Manager customer. All Cloud Application Manager usage and support charges will be included in a single CenturyLink invoice for the customer organization.
+This is the default behavior for any Cloud Application Manager customer. All Cloud Application Manager usage and support charges will be included in a single Lumen invoice for the customer organization.
 
 ### Billing divided across multiple invoices
 
@@ -46,12 +46,12 @@ To do so:
 **From a contracting perspective:**
 1.	Each Cost Center will require a unique Billing Account Number (BAN) in order to generate a separate invoice specific to the Cost Center.
 2.	A Cloud Application Manager order must be placed for each BAN to associate the CAM product to the BAN.
-3.	Reach out to your CenturyLink CSP/CSM, Sales Representative, or TAM to facilitate a Cloud Application Manager order for each new BAN to align with your Cost Centers. 
+3.	Reach out to your Lumen CSP/CSM, Sales Representative, or TAM to facilitate a Cloud Application Manager order for each new BAN to align with your Cost Centers. 
 
 
 ### Getting General Support
 
-Customers can contact the CenturyLink Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
+Customers can contact the Lumen Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
 
 **Contact:**
 

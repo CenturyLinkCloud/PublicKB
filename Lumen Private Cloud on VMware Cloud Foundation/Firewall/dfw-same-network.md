@@ -10,10 +10,10 @@
 }}}
 
 ### Description
-In this KB article, we walk through how to use the Distributed Firewall (DFW) that comes with CenturyLink Private Cloud on VMware Cloud Foundation (CPC on vCF). In this particular use case, we have 3 VMs that reside on the same virtual network, and we want to ensure that traffic is not allowed between certain VMs on the same network. We will use micro-segmentation with DFW to do this.
+In this KB article, we walk through how to use the Distributed Firewall (DFW) that comes with Lumen Private Cloud on VMware Cloud Foundation (CPC on vCF). In this particular use case, we have 3 VMs that reside on the same virtual network, and we want to ensure that traffic is not allowed between certain VMs on the same network. We will use micro-segmentation with DFW to do this.
 
 ### Prerequisites
-* Your base URL, and user credentials for CenturyLink Private Cloud on VMware Cloud Foundation
+* Your base URL, and user credentials for Lumen Private Cloud on VMware Cloud Foundation
 * 2 VMs on the same network
 * DFW should be enabled for your environment. If it is not, please refer to [Enabling the Distributed Firewall](dfw-enabling.md).
 

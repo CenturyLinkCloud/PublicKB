@@ -9,9 +9,9 @@
 }}}
 
 ### Description
-In this KB article, we outline the process involved in migrating VMs in your VMware (source) environment into CenturyLink Private Cloud on VMware Cloud Foundation.
+In this KB article, we outline the process involved in migrating VMs in your VMware (source) environment into Lumen Private Cloud on VMware Cloud Foundation.
 
-With vCloud Director Extender, you can migrate your virtual machines from an on-premise vCenter Server to your CenturyLink Private Cloud on VMware Cloud Foundation environment. You can migrate virtual machines both when they are powered on and powered off depending on the available downtime.
+With vCloud Director Extender, you can migrate your virtual machines from an on-premise vCenter Server to your Lumen Private Cloud on VMware Cloud Foundation environment. You can migrate virtual machines both when they are powered on and powered off depending on the available downtime.
 
 You can initiate virtual machines migration jobs only from a tenant vCenter Server on-premise. With vCloud Director Extender migration jobs, tenants can preserve their current IP and MAC address scheme after the migration completes.
 
@@ -28,10 +28,10 @@ Your virtual machines are active while the migration runs, and ensure minimal do
 You power off your virtual machines and start the migration. No cutover process is required in this case, you can select whether to power on the virtual machines from the migration setup menu.
 
 ### Prerequisites
-* You will need to setup your VMware (source) environment in readiness for migration into CenturyLink Private Cloud on VMware Cloud Foundation. Follow the steps in this KB article - [Preparing Your Environment for Migration into CenturyLink Private Cloud on VMware Cloud Foundation](migration-tool.md).
+* You will need to setup your VMware (source) environment in readiness for migration into Lumen Private Cloud on VMware Cloud Foundation. Follow the steps in this KB article - [Preparing Your Environment for Migration into Lumen Private Cloud on VMware Cloud Foundation](migration-tool.md).
 
 ### Warm Migration
-By performing a warm migration, you migrate a powered on virtual machine from an on-premise vCenter Server to an Org vDC in CenturyLink Private Cloud on VMware Cloud Foundation. A placeholder VM is created in CenturyLink Private Cloud on VMware Cloud Foundation, and you carry out an initial synchronization between the VM that runs on-premise and the placeholder VM in CenturyLink Private Cloud on VMware Cloud Foundation.
+By performing a warm migration, you migrate a powered on virtual machine from an on-premise vCenter Server to an Org vDC in Lumen Private Cloud on VMware Cloud Foundation. A placeholder VM is created in Lumen Private Cloud on VMware Cloud Foundation, and you carry out an initial synchronization between the VM that runs on-premise and the placeholder VM in Lumen Private Cloud on VMware Cloud Foundation.
 
 **Prerequisites**
 * Verify that you have sufficient space available in the target storage profile.
@@ -77,12 +77,12 @@ By Performing a cutover to a virtual machine, you finalize a warm migration. The
 
   ![Migration Tool](../../images/dccf/migration-warm6.png)
 
-Once the Cutover operation has fully synchronized, it will appear in CenturyLink Private Cloud on VMware Cloud Foundation.
+Once the Cutover operation has fully synchronized, it will appear in Lumen Private Cloud on VMware Cloud Foundation.
 
   ![Migration Tool](../../images/dccf/migration4w.png)
 
 ### Cold migration
-By performing a cold migration, you migrate a powered off virtual machine from an on-premise vCenter Server to an Org vDC in CenturyLink Private Cloud on VMware Cloud Foundation. Upon initiation, you start simultaneous file transfer and cutover processes, so no manual operations are required after the migration completes.
+By performing a cold migration, you migrate a powered off virtual machine from an on-premise vCenter Server to an Org vDC in Lumen Private Cloud on VMware Cloud Foundation. Upon initiation, you start simultaneous file transfer and cutover processes, so no manual operations are required after the migration completes.
 
 During a cold migration, the Replication Manager creates a VM instance in the resource vCenter Server in the cloud.
 
@@ -125,6 +125,6 @@ The migration job is initiated and a new cold migration job appears in the Migra
 
   ![Migration Tool](../../images/dccf/migration2.png)
 
-Once the VM has fully synchronized, it will appear in CenturyLink Private Cloud on VMware Cloud Foundation.
+Once the VM has fully synchronized, it will appear in Lumen Private Cloud on VMware Cloud Foundation.
 
   ![Migration Tool](../../images/dccf/migration4c.png)

@@ -44,7 +44,7 @@ All Cloud Application Manager users who want to deploy workloads into AWS from a
 
 * The EC2 Instance Role method only applies to appliances running as AWS EC2 Instances.
 * Once set, you will only be able to configure new AWS providers using an IAM Role. Providers created previously with key and secret pair will still work using these credentials.
-* Only AWS API communication is affected by this feature. All other provider types (CenturyLink Cloud, Microsoft Azure, VMware vSphere, etc.) will continue to work as expected.
+* Only AWS API communication is affected by this feature. All other provider types (Lumen Cloud, Microsoft Azure, VMware vSphere, etc.) will continue to work as expected.
 
 ### Create the Policy for the Master Account role
 
