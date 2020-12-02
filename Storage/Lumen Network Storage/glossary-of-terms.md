@@ -1,15 +1,15 @@
 {{{
 "title": "Lumen Network Storage Glossary of Terms",
-"date": "05-28-2020",
-"author": "Jim Greene",
-"keywords": ["cns", "glossary", "network", "portal", "storage"],
+"date": "12-02-2020",
+"author": "Dave Schwent",
+"keywords": ["cns", "lns", "glossary", "network", "portal", "storage"],
 "attachments": [],
 "contentIsHTML": false
 }}}
 
 **Access Protocol:** The access method used to establish a connection between an operating system and a Storage Volume and falls into categories of block, file and object protocols. Lumen Network Storage access protocols include NFS v3 and CIFS for File access and iSCSI for Block access. Object access is via an industry-standard S3-compatible API.
 
-**CNS Node:** A Virtual Storage Machine (VSM) providing access to purchased storage volumes via iSCSI, CIFS or NFS for a desired location.
+**LNS Node:** A Virtual Storage Machine (VSM) providing access to purchased storage volumes via iSCSI, CIFS or NFS for a desired location.
 
 **IOP:** Input/Output operation. Within Lumen Network Storage, IOPs are used to meter consumption of performance units measured from the software-defined storage controller. Does not include endpoint (server) effective IOPs.
 
