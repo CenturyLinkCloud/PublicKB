@@ -54,9 +54,9 @@ If you are interested in seeing this type of Partner Template deployment as an a
 ### Postrequisite
 * If you want to access your A10 vThunder Appliance over the internet, please perform the following tasks once your A10 vThunder Appliance has been deployed to your account:
 
-* [Add a Public IP](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal.
+* [Add a Public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal.
 
-* [Allow incoming traffic](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal.
+* [Allow incoming traffic](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal.
 
 ### Detailed Steps to Deploy A10 vThunder Appliance Partner Template
 Follow these step by step instructions to deploy a A10 vThunder Appliance in to your Lumen Cloud account:

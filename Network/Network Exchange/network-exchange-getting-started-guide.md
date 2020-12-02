@@ -41,7 +41,7 @@ Network Exchange is offered in a fixed monthly billing model preventing customer
 	* [Network Exchange Colocation Endpoint Guide](network-exchange-clc-colocation-endpoint-guide.md)
 	* [Network Exchange Managed Hosting via HAN Endpoint Guide](network-exchange-clc-managed-hosting-endpoint-guide.md)
 	* [Network Exchange Dedicated Access Endpoint Guide](network-exchange-clc-dedicated-access-endpoint-guide.md)
-	* [Network Exchange Lumen Private Cloud on VMWare Cloud Foundation Endpoint Guide](network-exchange-centurylink-private-cloud-endpoint-guide.md)
+	* [Network Exchange Lumen Private Cloud on VMWare Cloud Foundation Endpoint Guide](network-exchange-lumen-private-cloud-endpoint-guide.md)
 
 ### Exceptions
 

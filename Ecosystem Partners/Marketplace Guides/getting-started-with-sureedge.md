@@ -24,7 +24,7 @@ SUREedge technology allows Lumen customers to rapidly migrate workloads from any
 |info@surelinesystems.com |
 
 ### Description
-To use SUREedge for DR or onboarding to the Cloud, you must run an instance of SUREedge both on-prem and on-CenturyLink Cloud. The on-prem instance provides the capability to capture and dedupe-replicate applications and data, while the on-cloud instance acts as the receiver, storage and recovery manager in the Cloud.
+To use SUREedge for DR or onboarding to the Cloud, you must run an instance of SUREedge both on-prem and on-Lumen Cloud. The on-prem instance provides the capability to capture and dedupe-replicate applications and data, while the on-cloud instance acts as the receiver, storage and recovery manager in the Cloud.
 To create the on-Cloud instance, use either of these two Blueprints:
 * SUREedge Migrator:  Use this for on boarding/migration to Lumen Cloud.
 * SUREedge DR:  Use this for DR Lumen Cloud.
@@ -49,7 +49,7 @@ After reading this article, the user should be able to:
 * On-Prem:
  * Resources on a VM infrastructure for running the on-prem SUREedge instance. Popular VM infrastructures, such as VMware, Hyper-V or KVM are supported.
  * A Windows (Windows 8.x, Windows Server 2008 or later) VM running within the VM infrastructure described in Prerequisite 1.
-* On-CenturyLink Cloud:
+* On-Lumen Cloud:
  * Access to the Lumen Cloud platform as an authorized user.
  * A license for a Windows VM in Lumen Cloud.
 

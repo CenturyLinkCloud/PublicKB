@@ -12,9 +12,9 @@ This Knowledge Base provides an overview for customers who are considering deplo
 The customer will not have physical access to the CLC cloud space. CLC will need to be engaged using help@ctl.io if coordination of access needs to take place with the data center provider.
 
 ### Cross Connects Description and Benefits
-Lumen Cloud offers [multiple connectivity options](../CenturyLink Cloud/network-access-options-for-connecting-to-centurylink-clouds-platform.md) for its customers to leverage when deciding how they will connect to their resources deployed on Lumen Cloud’s platform (e.g., VPN tunnels, Cloud Network Service, Cross Connects, etc). That said, as a point of clarity, this Knowledge Base article specifically pertains to the deployment of cross connects.
+Lumen Cloud offers [multiple connectivity options](../Lumen Cloud/network-access-options-for-connecting-to-lumen-clouds-platform.md) for its customers to leverage when deciding how they will connect to their resources deployed on Lumen Cloud’s platform (e.g., VPN tunnels, Cloud Network Service, Cross Connects, etc). That said, as a point of clarity, this Knowledge Base article specifically pertains to the deployment of cross connects.
 
-In summary, cross connects are directly connected redundant network circuits between two physically isolated organizations within a data center provider’s facility. Currently, Lumen Cloud has [presence within the data centers listed in our KB](../../General/CenturyLinkCloud/centurylink-cloud-data-center-locations.md). This direct connectivity allows for fast, low-latency secure connections – a perfect combination for enterprises who want to securely extend their network into the cloud. While this process may differ slightly in each data center, this article describes the general options and decisions that need to be considered.
+In summary, cross connects are directly connected redundant network circuits between two physically isolated organizations within a data center provider’s facility. Currently, Lumen Cloud has [presence within the data centers listed in our KB](../../General/LumenCloud/lumen-cloud-data-center-locations.md). This direct connectivity allows for fast, low-latency secure connections – a perfect combination for enterprises who want to securely extend their network into the cloud. While this process may differ slightly in each data center, this article describes the general options and decisions that need to be considered.
 
 Many of our data center providers are within in multiple building across their respective metropolitan areas, and therefore “campus cross connects” are also an option for customers to consider (e.g., Customer is in Equinix’s CH1 building and Lumen Cloud is in Equinix’s CH3 building). These connections are usually more costly, but are a feasible option to be considered.
 
@@ -60,7 +60,7 @@ Once a purchasing decision is made, the following will need to be ascertained/su
     * Desktop initiated Internet access
   * Verify circuit hand-off will be native Ethernet hand-offs – e.g., no DS-3, SONET, OC3
   * Determine the preferred routing protocol (e.g., static, BGP, OSPF).
-  * Will the cross connect be deployed within one of [the data centers/campuses.](../../General/CenturyLinkCloud/centurylink-cloud-data-center-locations.md)
+  * Will the cross connect be deployed within one of [the data centers/campuses.](../../General/LumenCloud/lumen-cloud-data-center-locations.md)
   * Determine if any specific IP address ranges are required for CLC. Note, CLC can generally only provide /24 networks for customers, but if a specific requirement is needed Lumen Cloud will evaluate such requests.
 
 Once the aforementioned is decided, the next steps are for CLC’s customers to complete the LoA (if Lumen Cloud is purchasing the cross connect on the customer’s behalf) and authorize an agreement for any associated costs. Customers should expect a minimum of two week lead time to provision most cross connect deployments once all of the paperwork has been finalized.

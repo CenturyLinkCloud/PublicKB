@@ -26,8 +26,8 @@ Lumen Cloud customers
    ![Control Portal Login](../images/control-portal-login.png)
 
 **Note:** Your account may have SAML enabled allowing for Single Sign-On capabilities. For more information, refer to this Knowledge Base article about enabling SAML.
-* [Control Portal](using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md)
-* [Control Portal with Windows 2012 R2 ](using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal-with-windows-2012R2.md)
+* [Control Portal](using-saml-for-single-sign-on-to-the-lumen-platform-control-portal.md)
+* [Control Portal with Windows 2012 R2 ](using-saml-for-single-sign-on-to-the-lumen-platform-control-portal-with-windows-2012R2.md)
 
 Also, if you are an Account Admin, you have the ability to see information for other user accounts that have been created within your sub account. That information is available in Users area under the Account menu. While you cannot see user passwords, your credential enable you to perform the following:
 * View username and information.

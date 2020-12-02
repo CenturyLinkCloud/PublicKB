@@ -41,7 +41,7 @@ Required Compute:
 ### Postrequisites
 
 * Java Runtime
-* [VPN Access](../../Network/CenturyLink Cloud/how-to-configure-client-vpn.md) is required in order to administer the cluster via the GUI tool.
+* [VPN Access](../../Network/Lumen Cloud/how-to-configure-client-vpn.md) is required in order to administer the cluster via the GUI tool.
 
 
 ### Cluster Configuration

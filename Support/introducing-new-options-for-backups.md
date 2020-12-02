@@ -36,7 +36,7 @@ Yes – since storage no longer includes bundled backup, price reductions for bl
 
 ### Will I still be able to take snapshots manually?
 
-Yes. Snapshots are a useful feature for very specific scenarios – such as right before making impactful changes to your systems. Users can still perform [snapshots on-demand and as scheduled tasks](../Servers/creating-and-managing-server-snapshots.md). [The Lumen Cloud CLI can also help automate this task](https://www.ctl.io/knowledge-base/servers/centurylink-cloud-guide-to-cli/).
+Yes. Snapshots are a useful feature for very specific scenarios – such as right before making impactful changes to your systems. Users can still perform [snapshots on-demand and as scheduled tasks](../Servers/creating-and-managing-server-snapshots.md). [The Lumen Cloud CLI can also help automate this task](https://www.ctl.io/knowledge-base/servers/lumen-cloud-guide-to-cli/).
 
 ### Is my team required to take action in order to protect my data after this change?
 

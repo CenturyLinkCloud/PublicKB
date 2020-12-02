@@ -19,7 +19,7 @@ This article explains how to create a SafeHaven Cluster.
 
 This article assumes that the user has already deployed the CMS server in Lumen Cloud.
 
-To create CMS please refer to [Deploy CMS and SRN in Lumen Cloud](Deploy-CMS-and-SRN-in-CenturyLink-Cloud.md)
+To create CMS please refer to [Deploy CMS and SRN in Lumen Cloud](Deploy-CMS-and-SRN-in-Lumen-Cloud.md)
 
 ### SafeHaven Cluster Installation
 

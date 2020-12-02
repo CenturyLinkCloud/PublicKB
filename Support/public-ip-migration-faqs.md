@@ -37,7 +37,7 @@ Any Lumen Public Cloud public IP that is not within the following range is an im
 
 **Q: How do I migrate a public IP assigned to a server?**
 
-Simply remove and assign a new public IP via the Control Portal and a new IP within the range 65.151.128.0/17 will be assigned. Our [Public IP Article](../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) provides detailed instructions.
+Simply remove and assign a new public IP via the Control Portal and a new IP within the range 65.151.128.0/17 will be assigned. Our [Public IP Article](../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) provides detailed instructions.
 
 One migration method is to [assign a second internal IP](../Servers/how-to-associate-additional-private-ips-with-a-cloud-server.md) to your server, then add a corresponding new public IP. Next update DNS records to point to the new public IP. Once satisfied with the migration, release the original public IP via the Control Portal. Note, release of the initial internal IP in the Control Portal will require a support request to help@ctl.io.
 

@@ -31,8 +31,8 @@ There are many factors that influence how a customer or reseller will configure 
 * Accounts can’t be moved in their hierarchies
 
 * There is no “read-only” mode for users, role cascades.  Need to be careful about allowing access
-* Billing data out of Savvis/CenturyLink does not go down to server level only Account/Group
-* Additional detail on current spend can be found in the portal or through the API, but API data for invoices is not guaranteed to be aligned with Savvis/CenturyLink data (e.g. no tax)
+* Billing data out of Savvis/Lumen does not go down to server level only Account/Group
+* Additional detail on current spend can be found in the portal or through the API, but API data for invoices is not guaranteed to be aligned with Savvis/Lumen data (e.g. no tax)
 * No self-service ability to set custom pricing in the control portal
 
 ### Best Practices

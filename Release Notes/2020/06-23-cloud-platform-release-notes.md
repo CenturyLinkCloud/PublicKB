@@ -24,7 +24,7 @@ We are continuously updating our customer experiences to reflect the exciting ne
 
 Lumen is rapidly adding Edge Computing locations across the globe to provide customers low-latency hardware on-demand to power the workloads of next-gen technology. 
 
-Lumen Edge locations and availability for the expanding Edge Computing Service locations across the Lumen portfolio can be found [here](/knowledge-base/general/centurylinkcloud/centurylink-cloud-data-center-locations/).
+Lumen Edge locations and availability for the expanding Edge Computing Service locations across the Lumen portfolio can be found [here](/knowledge-base/general/lumencloud/lumen-cloud-data-center-locations/).
 
 ### End of Availability for Legacy Services/Features
 

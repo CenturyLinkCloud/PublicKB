@@ -32,7 +32,7 @@ Note – if these are the first servers in a datacenter for your account, then a
 
 ### CLC Firewall Policies
 
-Each server will need to be able to communicate with the subnet that the other two servers are on.  In this example, we will [create Cross Datacenter firewall policies](../Network/CenturyLink Cloud/creating-cross-data-center-firewall-policies.md) that open up each /24 subnet to each other.
+Each server will need to be able to communicate with the subnet that the other two servers are on.  In this example, we will [create Cross Datacenter firewall policies](../Network/Lumen Cloud/creating-cross-data-center-firewall-policies.md) that open up each /24 subnet to each other.
 
 ![Network Menu](../images/deploy-ha-exchange-on-clc-4.png)
 
@@ -58,7 +58,7 @@ Install Exchange 2013 on both servers in UC1/IL1 using the [setup wizard](https:
 
 * Create two PTR records by entering the IP address of each server transmitting mail to the Internet and the FQDN (external CAS URL; IE, the A record for OWA).  The PTR record will provide a valid reverse lookup for spam checks when other email systems receive your email.
 
-Both Exchange servers will need to [add two public IP’s](../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) each.
+Both Exchange servers will need to [add two public IP’s](../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) each.
 
 ![Public IP Menu](../images/deploy-ha-exchange-on-clc-7.png)
 

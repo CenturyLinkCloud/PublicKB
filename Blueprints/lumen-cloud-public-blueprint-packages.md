@@ -27,16 +27,16 @@ Below is a list of public packages that have been made available on the Lumen Cl
 - Install Cassandra on Linux (1 of 3) [Base Install]
 - Install Cassandra on Linux (2 of 3) [Node 0]
 - Install Cassandra on Linux (3 of 3) [Join Cluster]
-- [Install CoreOS (1 of 2) \[Configure PXE-DHCP\]](../Servers/building-coreos-server-cluster-on-the-centurylink-cloud.md)
-- [Install CoreOS (2 of 2) \[Base Install\]](../Servers/building-coreos-server-cluster-on-the-centurylink-cloud.md)
-- [Install CoreOS (2 of 2) \[With Panamax\]](../Servers/building-coreos-server-cluster-on-the-centurylink-cloud.md)
-- [Install Docker on CentOS](../Blueprints/using-docker-on-centurylink-cloud-servers.md)
-- [Install Docker on Ubuntu](../Blueprints/using-docker-on-centurylink-cloud-servers.md)
+- [Install CoreOS (1 of 2) \[Configure PXE-DHCP\]](../Servers/building-coreos-server-cluster-on-the-lumen-cloud.md)
+- [Install CoreOS (2 of 2) \[Base Install\]](../Servers/building-coreos-server-cluster-on-the-lumen-cloud.md)
+- [Install CoreOS (2 of 2) \[With Panamax\]](../Servers/building-coreos-server-cluster-on-the-lumen-cloud.md)
+- [Install Docker on CentOS](../Blueprints/using-docker-on-lumen-cloud-servers.md)
+- [Install Docker on Ubuntu](../Blueprints/using-docker-on-lumen-cloud-servers.md)
 - [Install Google PerfKit Benchmarker on Ubuntu](../Blueprints/installing-google-perfkit-benchmarker.md)
 - Install Gerrit on Linux
 - Install Jenkins on Linux
-- [Install LAMP Stack on Ubuntu/Debian](../Blueprints/installing-lamp-stack-on-centurylink-cloud-servers.md)
-- [Install LAMP Stack on CentOS/RedHat](../Blueprints/installing-lamp-stack-on-centurylink-cloud-servers.md)
+- [Install LAMP Stack on Ubuntu/Debian](../Blueprints/installing-lamp-stack-on-lumen-cloud-servers.md)
+- [Install LAMP Stack on CentOS/RedHat](../Blueprints/installing-lamp-stack-on-lumen-cloud-servers.md)
 - Install Riak on Linux (1 of 2) [Base Install]
 - Install Riak on Linux (2 of 2) [Join Cluster]
 - Perform General Availability Update on RedHat-CentOS

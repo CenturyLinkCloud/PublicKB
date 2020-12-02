@@ -32,7 +32,7 @@ together to create a high availability load balancing solution.
 
 -   Identify a Network VLAN you want the HAProxy to reside on
 
--   Understanding the functions of load balancer (beyond the scope of this article) and Lumen Cloud load balancing  offerings, to learn more, please see this [KB](../Network/CenturyLink Cloud/self-service-load-balancing-faq.md),
+-   Understanding the functions of load balancer (beyond the scope of this article) and Lumen Cloud load balancing  offerings, to learn more, please see this [KB](../Network/Lumen Cloud/self-service-load-balancing-faq.md),
     [general knowledge](//en.wikipedia.org/wiki/Load_balancing_%28computing%29)
      and [HAProxy documentations](//www.haproxy.org/#docs)
 
@@ -70,14 +70,14 @@ In preparation. There are several factors need to be considered:
 -   SSL certificate if the application is SSL based
 
 -   Configure the Virtual IP for the HAProxy servers with Public IP address:
- - [Assign a public IP address](../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) to one of the HAProxy servers and bind it to a new IP address
+ - [Assign a public IP address](../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to one of the HAProxy servers and bind it to a new IP address
  ![Adding Public IP with new Privte IP](../images/haproxy/HAProxy-add-publicip.png)
  - From that server, run `ifconfig ens160:1 down` and `remove /etc/sysconfig/network-scripts/ifcfg-ens160:1` file; verify this step by pinging the new public and private IP addresses, there should be no reply from these addresses (assuming ens160 is the network interface)
 
  - In this example, 10.100.96.28 is the new private IP assigned along with the public IP addresses
 
 - If only Private IP address is required:
- - Please following this [KB](../Network/CenturyLink Cloud/how-to-reserve-ip-addresses.md) to reserve the Private IP address required for HAProxy
+ - Please following this [KB](../Network/Lumen Cloud/how-to-reserve-ip-addresses.md) to reserve the Private IP address required for HAProxy
 
 
 ### Deployment
@@ -89,10 +89,10 @@ interfaces, depending on the security and infrastructure requirement,
 both can be implemented in Lumen Cloud.
 
 -   Deploy a CentOS 7 server using either the [Control
-    Portal](//control.ctl.io), [CLI](//github.com/CenturyLinkCloud/clc-go-cli) or [API](//www.ctl.io/developers/)
+    Portal](//control.ctl.io), [CLI](//github.com/LumenCloud/clc-go-cli) or [API](//www.ctl.io/developers/)
 
 -   Once deployed, connect to [Client
-    VPN](../Network/CenturyLink Cloud/how-to-configure-client-vpn.md)
+    VPN](../Network/Lumen Cloud/how-to-configure-client-vpn.md)
     and secure shell to the server and start implementation:
 
 -  As the applications use 'GetHostByName' system calls, `hostname -s` output should match the real hostname and not localhost.  In order to change hostname, run the first two commands below and update the repository with `yum update`
@@ -267,7 +267,7 @@ The environment can be tested by disabling httpd (or the load balanced applicati
 ### Troubleshooting
 - The most common issue is firewall ports are not configured properly, firewall can be disabled for testing purpose
 
-- If the HAProxy load balancers are on different VLANs, please make sure the firewall ports are configured between the two VLANs (for details, please see this [KB](../Network/CenturyLink Cloud/connecting-data-center-networks-through-firewall-policies.md))
+- If the HAProxy load balancers are on different VLANs, please make sure the firewall ports are configured between the two VLANs (for details, please see this [KB](../Network/Lumen Cloud/connecting-data-center-networks-through-firewall-policies.md))
 
 - Keepalive uses VRRP for heatbeat, the following command would help identify if VRRP is working:
 

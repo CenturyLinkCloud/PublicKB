@@ -30,7 +30,7 @@ All users of Cloud Application Manager who wants to define and use Terraform Tem
   * [AWS](../Deploying Anywhere/using-your-aws-account.md)
   * [Microsoft Azure](../Deploying Anywhere/using-microsoft-azure.md)
   * [Google Cloud](../Deploying Anywhere/using-google-cloud.md)
-  * [Lumen Cloud](../Deploying Anywhere/using-centurylink-cloud.md)
+  * [Lumen Cloud](../Deploying Anywhere/using-lumen-cloud.md)
   * [Lumen Private Cloud on VMware Cloud Foundation](../Deploying Anywhere/using-private-cloud-on-vmware-cloud-foundation.md)
   * [VMware vCenter/vSphere](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md)
   * [VMware vCloud Director](../Deploying Anywhere/orchestrating-vcloud-air-vcloud-director-deployments.md)

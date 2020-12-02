@@ -5,12 +5,12 @@
   "attachments": [
     {
       "file_name": "Lumen Cloud Visio 2013 Stencils",
-      "url": "../attachments/CenturyLinkCloudVisioStencils.zip",
+      "url": "../attachments/LumenCloudVisioStencils.zip",
       "type": "application/zip"
     },
     {
       "file_name": "Lumen Cloud Visio 2010 Stencils",
-      "url": "../attachments/CenturyLinkCloudVisio2010Stencils.zip",
+      "url": "../attachments/LumenCloudVisio2010Stencils.zip",
       "type": "application/zip"
     }
   ],

@@ -20,7 +20,7 @@ Lumen has integrated the OSSEC HIDS solution in to the Lumen Cloud platform to e
 
 OSSEC is a free, open-source host-based intrusion detection system (HIDS). It performs log analysis, integrity checking, Windows registry monitoring, root kit detection, time-based alerting, and active response. It provides intrusion detection for most operating systems, including Linux, OpenBSD, FreeBSD, Mac OS X, Solaris and Windows. OSSEC has a centralized, cross-platform architecture allowing multiple systems to be easily monitored and managed.
 
-As a Silver-certified member of the [Lumen Cloud Ecosystem Program](../../Ecosystem Partners/Partner Integration Resources/centurylink-cloud-ecosystem-program-guide.md), the only thing which Lumen Cloud certifies is that the Partner technology deploys successfully to the Lumen Cloud. We provide complementary knowledge-base articles to get the customer started but all support is available directly from the existing OSSEC community and not Lumen.
+As a Silver-certified member of the [Lumen Cloud Ecosystem Program](../../Ecosystem Partners/Partner Integration Resources/lumen-cloud-ecosystem-program-guide.md), the only thing which Lumen Cloud certifies is that the Partner technology deploys successfully to the Lumen Cloud. We provide complementary knowledge-base articles to get the customer started but all support is available directly from the existing OSSEC community and not Lumen.
 
 ### Audience
 Lumen Cloud Users

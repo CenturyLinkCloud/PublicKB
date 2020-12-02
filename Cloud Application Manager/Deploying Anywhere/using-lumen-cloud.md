@@ -13,12 +13,12 @@
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
-* [Register Lumen Cloud Provider in Cloud Application Manager](#register-centurylink-cloud-provider-in-cloud-application-manager)
+* [Register Lumen Cloud Provider in Cloud Application Manager](#register-lumen-cloud-provider-in-cloud-application-manager)
 * [Lumen Cloud Native Resources](#lumen-cloud-native-resources)
 * [Lumen Sub-Accounts](#lumen-sub-accounts)
-* [Deploy to Lumen Cloud from Cloud Application Manager](#deploy-to-centurylink-cloud-from-cloud-application-manager)
+* [Deploy to Lumen Cloud from Cloud Application Manager](#deploy-to-lumen-cloud-from-cloud-application-manager)
 * [Enabling services](#enabling-services)
-* [Shutdown and Terminate Instances in Lumen Cloud](#shutdown-and-terminate-instances-in-centurylink-cloud)
+* [Shutdown and Terminate Instances in Lumen Cloud](#shutdown-and-terminate-instances-in-lumen-cloud)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview

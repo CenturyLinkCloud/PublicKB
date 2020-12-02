@@ -65,9 +65,9 @@ After executing the steps in this Getting Started document, the users will have 
 ### Postrequisite
 * If you want to access your VM over the internet, please perform the following tasks once you receive an email confirming you Blueprint completed successfully:
 
-* If you need to connect to your server via the Internet, Add a [Public IP](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/CenturyLink Cloud/how-to-configure-client-vpn.md) or similar technology.
+* If you need to connect to your server via the Internet, Add a [Public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/Lumen Cloud/how-to-configure-client-vpn.md) or similar technology.
 
-* [Allow incoming traffic](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal. The ports used by 'flume' are controlled by a configuration file /etc/flume/ports but the standard ports to open are:
+* [Allow incoming traffic](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal. The ports used by 'flume' are controlled by a configuration file /etc/flume/ports but the standard ports to open are:
    * TCP `22`, `2354-2454`
    * UDP `2355-2454`
 

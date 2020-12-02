@@ -9,7 +9,7 @@
 
 ### Enhancements (2)
 
-#### [Lumen Private Cloud on VMware Cloud Foundation (CPC on vCF)](https://www.ctl.io/centurylink-private-cloud-on-vmware-cloud-foundation/)
+#### [Lumen Private Cloud on VMware Cloud Foundation (CPC on vCF)](https://www.ctl.io/lumen-private-cloud-on-vmware-cloud-foundation/)
 
 ##### Upgrades for CPC on vCF
 
@@ -38,7 +38,7 @@ DR-Readiness feature for MSA
 
 ### Announcements (8)
 
-#### [Load Balancer](https://www.ctl.io/centurylink-public-cloud/load-balancing/) Migrations
+#### [Load Balancer](https://www.ctl.io/lumen-public-cloud/load-balancing/) Migrations
 
 ##### Notice of Migration for Lumen Cloud Shared Load Balancer Customers to Cloud Load Balancing-as-a-Service
 

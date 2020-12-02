@@ -32,6 +32,6 @@ For more information about this change, please see this [document](https://www.c
 * __New Look & Features for Status Page__
 
 [Status.ctl.io](https://status.ctl.io/) has a new look and we have added new features. Check out our 
-[FAQ](https://www.ctl.io/knowledge-base/general/centurylink-cloud-status-faq/) for more information.
+[FAQ](https://www.ctl.io/knowledge-base/general/lumen-cloud-status-faq/) for more information.
 
   ![Status](../../images/2016-09-27_Status.png)

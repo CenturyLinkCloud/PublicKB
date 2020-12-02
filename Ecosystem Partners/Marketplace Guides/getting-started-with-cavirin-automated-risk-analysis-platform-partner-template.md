@@ -69,8 +69,8 @@ If you are interested in seeing this type of Partner Template deployment as an a
 
 ### Postrequisite
 If you want to access your Cavirin partner template over the internet, please perform the following tasks once your VM has been deployed to your account.
-* [Add a Public IP](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
-* If required, [allow incoming traffic for the admin port](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Servers Public IP in the Control Portal.
+* [Add a Public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
+* If required, [allow incoming traffic for the admin port](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Servers Public IP in the Control Portal.
 * **IMPORTANT**: Please make sure your firewall rules are properly configured to only allow specific source traffic. If you do not configure source traffic rules you risk exposing your VM to the entire internet. Note: When accessing your VM for the first time or for any administration, we recommend you connect to your Lumen Cloud environment via Client VPN.
 
 ### Detailed Steps to Deploy Cavirin Automated Risk Analysis Platform

@@ -81,7 +81,7 @@ vi ansible/credentials.sh
 source ansible/credentials.sh
 
 ```
-4) Make sure the computer you are working on has access to the Lumen Cloud network. This is done by using a VM inside the Lumen Cloud network or having an active VPN connection to the Lumen Cloud network. To find out how to configure the VPN connection, [visit here](../../Network/CenturyLink Cloud/how-to-configure-client-vpn.md).
+4) Make sure the computer you are working on has access to the Lumen Cloud network. This is done by using a VM inside the Lumen Cloud network or having an active VPN connection to the Lumen Cloud network. To find out how to configure the VPN connection, [visit here](../../Network/Lumen Cloud/how-to-configure-client-vpn.md).
 
 
 #### Ubuntu 14  Walkthrough: Installation of Requirements and Scripts

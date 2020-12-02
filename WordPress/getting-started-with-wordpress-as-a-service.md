@@ -69,7 +69,7 @@ A: Use the link here: https://git.wordpress.ctl.io/users/confirmation/new
 
 **Q: How do I migrate my existing WordPress Site to Lumen's WordPress hosting platform?**
 
-A: The Lumen WordPress hosting team has compiled a [Knowledge Base article for manually migrating a WordPress site to Lumen Cloud](wordpress-site-migration-to-centurylink-cloud.md).
+A: The Lumen WordPress hosting team has compiled a [Knowledge Base article for manually migrating a WordPress site to Lumen Cloud](wordpress-site-migration-to-lumen-cloud.md).
 
 **Q: Can I have persistent storage with Lumen WordPress Hosting?**
 

@@ -11,7 +11,7 @@
 * [Prerequisites](#prerequisites)
 * [Keywords](#keywords)
 * [Use Case Scenarios](#use-case-scenarios)
-* [Installation of Lumen Cloud CLI](#installation-of-centurylink-cloud-cli)
+* [Installation of Lumen Cloud CLI](#installation-of-lumen-cloud-cli)
 * [READ commands](#read-commands)
 * [Billing and Accounting](#billing-and-accounting)
 * [Commands change the environment](#commands-change-the-environment)
@@ -203,7 +203,7 @@ clc-cli --v1-api-key xxxxxxxxxxxxxxxxx --v1-api-passwd xxxxxxxxxxxxx  Commands
 ```
 clc login –user username –password
 ```
-Or setup the configuration file as described in [Installation of Lumen Cloud CLI](#installation-of-centurylink-cloud-cli)
+Or setup the configuration file as described in [Installation of Lumen Cloud CLI](#installation-of-lumen-cloud-cli)
 
 **Output Format**
 
@@ -643,7 +643,7 @@ clc server execute-package --server-ids CA2ABCDMYSQLU01 --package "package-id=fc
   ```
 
 **Adding a secondary network card on a server**
-Please refer to the [Add or Remove Network Interface to Server using Go CLI](../Network/CenturyLink Cloud/add-or-remove-network-interface-to-server-using-go-cli.md)
+Please refer to the [Add or Remove Network Interface to Server using Go CLI](../Network/Lumen Cloud/add-or-remove-network-interface-to-server-using-go-cli.md)
 
 **Create firewall rule with port tcp/22 between VLANs**
 ```
@@ -946,7 +946,7 @@ clc group get-monitoring-statistics --group-name Test --type hourly --start "201
 ***Reuqest statistics realtime (last 4 hours) in 30 minutes interval***
 
 ### Webhook (only avaiable until version v1.1.0-rc.2)
-CLI can be used to configure webhooks, this enable customers to leverage the alert notification webhook services built into Lumen Cloud with 3rd party web apps or services.  The current event list are: "Account.Created", "Account.Delted", "Account.Updated", "Alert.Notificiation", "Server.Created", "Server.Deleted", "Server.Updated", "User.Created", "User.Deleted", "User.Updated".  To learn more on setup webhook in Lumen Cloud, please see [Configuring Webhooks and Consuming Notificatios](../General/CenturyLinkCloud/consuming-webhook-alerts-with-3rd-party-web-apps.md).
+CLI can be used to configure webhooks, this enable customers to leverage the alert notification webhook services built into Lumen Cloud with 3rd party web apps or services.  The current event list are: "Account.Created", "Account.Delted", "Account.Updated", "Alert.Notificiation", "Server.Created", "Server.Deleted", "Server.Updated", "User.Created", "User.Deleted", "User.Updated".  To learn more on setup webhook in Lumen Cloud, please see [Configuring Webhooks and Consuming Notificatios](../General/LumenCloud/consuming-webhook-alerts-with-3rd-party-web-apps.md).
 
 ***List all current webhook***
 ```

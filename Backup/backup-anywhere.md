@@ -17,7 +17,7 @@ Simple Backup Anywhere extends Simple Backup outside of Lumen Cloud to allow use
 
 ### Getting Started with Backup Anywhere
 
-There are 2 methods available to install the Simple Backup agent on your non-CenturyLink Cloud servers. The easiest way to get started with backup anywhere is covered in this article and is administered through the [Simple Backup UI](http://backup.ctl.io) and is intended to install the agent on a single server at a time. An advanced/manual installation is available and covered in the [manual install guide](backup-anywhere-manual-install.md).
+There are 2 methods available to install the Simple Backup agent on your non-Lumen Cloud servers. The easiest way to get started with backup anywhere is covered in this article and is administered through the [Simple Backup UI](http://backup.ctl.io) and is intended to install the agent on a single server at a time. An advanced/manual installation is available and covered in the [manual install guide](backup-anywhere-manual-install.md).
 
 * To get started with Backup Anywhere, simply select the Backup Anywhere heading in the [Simple Backup UI](http://backup.ctl.io).
 

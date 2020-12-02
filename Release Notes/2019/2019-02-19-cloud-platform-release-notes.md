@@ -11,7 +11,7 @@
 #### Lumen Cloud
 
 ##### SAML Certificate Update - *Action may be required!*
-If you are using SAML authentication you will need to update the signing certificate for use with your IdP as of February 9, 2019. You can find the updated certificate within our [SAML knowledge base article](../../Control Portal/using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md). Please update the certificate in order to continue SAML authentication.
+If you are using SAML authentication you will need to update the signing certificate for use with your IdP as of February 9, 2019. You can find the updated certificate within our [SAML knowledge base article](../../Control Portal/using-saml-for-single-sign-on-to-the-lumen-platform-control-portal.md). Please update the certificate in order to continue SAML authentication.
 
 #### [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/)
 

@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-By leveraging [Lumen Cloud Public Blueprints](../Blueprints/centurylink-cloud-public-blueprint-packages.md), customers can automate operational tasks.  In using the **Install IIS on Windows** Blueprint, customers can add the IIS role on Windows Servers in an automated fashion.
+By leveraging [Lumen Cloud Public Blueprints](../Blueprints/lumen-cloud-public-blueprint-packages.md), customers can automate operational tasks.  In using the **Install IIS on Windows** Blueprint, customers can add the IIS role on Windows Servers in an automated fashion.
 
 ### Prerequisites
 * A Lumen Cloud Account

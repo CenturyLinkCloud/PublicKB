@@ -33,9 +33,9 @@ After reading this article, the user should feel comfortable getting Hortonworks
 ### Postrequisite
 * If you want to access your VM with Hortonworks Hadoop over the internet, please perform the following tasks once you receive an email confirming you Blueprint completed successfully.
 
-* If you need to connect to your server via the Internet, Add a [Public IP](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/CenturyLink Cloud/how-to-configure-client-vpn.md) or similar technology.
+* If you need to connect to your server via the Internet, Add a [Public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/Lumen Cloud/how-to-configure-client-vpn.md) or similar technology.
 
-* [Allow incoming traffic](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal. Hortonworks listens on port `8080`.
+* [Allow incoming traffic](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal. Hortonworks listens on port `8080`.
 
 #### Steps to Deploy Blueprint
 1. Locate the Hortonworks Install Blueprint.

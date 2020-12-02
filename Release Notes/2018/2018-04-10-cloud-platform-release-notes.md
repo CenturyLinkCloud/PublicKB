@@ -16,7 +16,7 @@ Application Lifecycle Management now offers a Workload Map view into the instanc
 
 ### Enhancements (1)
 
-#### [Lumen Private Cloud on VMware Cloud Foundation](//centurylink-private-cloud-on-vmware-cloud-foundation)
+#### [Lumen Private Cloud on VMware Cloud Foundation](//lumen-private-cloud-on-vmware-cloud-foundation)
 
 Customers of Lumen Private Cloud on VMware Cloud Foundation now have the option for Lumen provided OS licenses, for Microsoft Windows and/or Red Hat Enterprise Linux.
 

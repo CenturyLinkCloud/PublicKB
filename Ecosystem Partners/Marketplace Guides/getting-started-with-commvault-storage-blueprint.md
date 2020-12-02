@@ -54,8 +54,8 @@ After the Blueprint completes, you will need to RDP to the server, login to the 
 * [Create a schedule policy](http://documentation.commvault.com/commvault/v10/article?p=features/schedule_policy/getting_started.htm).
 * [Create a deduplication policy](http://documentation.commvault.com/commvault/v10/article?p=features/deduplication/t_creating_a_global_deduplication_policy.htm).
 * If you want to access Commvault server over the internet, please perform the following tasks once you receive an email confirming you Blueprint completed successfully.
-   * To connect to your Commvault server via the Internet, Add a [Public IP](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/CenturyLink Cloud/how-to-configure-client-vpn.md) or similar technology.
-   * [Allow incoming traffic](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal.
+   * To connect to your Commvault server via the Internet, Add a [Public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/Lumen Cloud/how-to-configure-client-vpn.md) or similar technology.
+   * [Allow incoming traffic](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal.
    * Add a Public IP to your VM and open Firewall Ports for TCP protocol.
    * Browse to the new VM and click on the Add Public IP button.
    * When the firewall rule dialog openDs, Add two (2x) single-port boxes: configure one for TCP on port TB.

@@ -27,9 +27,9 @@ After reading this article, you should have a configured Docker registry ready t
 
 ### Postrequisite
 To access your application from a computer outside the Lumen Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
-* Recommended: [VPN Access](../../Network/CenturyLink Cloud/how-to-configure-client-vpn.md) (optional) will allow you to access your server over the internal network interfaces.
-* Optional: [Add a Public IP](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
-* [Allow incoming traffic](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) for port `443` by clicking on the Servers Public IP through the Control Portal.
+* Recommended: [VPN Access](../../Network/Lumen Cloud/how-to-configure-client-vpn.md) (optional) will allow you to access your server over the internal network interfaces.
+* Optional: [Add a Public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
+* [Allow incoming traffic](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) for port `443` by clicking on the Servers Public IP through the Control Portal.
 
 ### Deploying the "Install Docker Trusted Registry on Ubuntu" Blueprint
 

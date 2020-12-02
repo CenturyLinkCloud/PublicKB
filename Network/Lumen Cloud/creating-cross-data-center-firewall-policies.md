@@ -8,7 +8,7 @@
 
 ### Creating Cross Data Center Firewall Policies
 
-In addition to being able to connect networks within a particular data center through [Intra Data Center](../CenturyLink Cloud/connecting-data-center-networks-through-firewall-policies.md) firewall policies, users can also create firewall policies that span cloud data centers. This helps enterprises build sophisticated and secure network topologies that take advantage of our global footprint while meeting an organization's functional needs.
+In addition to being able to connect networks within a particular data center through [Intra Data Center](../Lumen Cloud/connecting-data-center-networks-through-firewall-policies.md) firewall policies, users can also create firewall policies that span cloud data centers. This helps enterprises build sophisticated and secure network topologies that take advantage of our global footprint while meeting an organization's functional needs.
 
 ### General Notes
 
@@ -18,7 +18,7 @@ In addition to being able to connect networks within a particular data center th
 
 ### Connecting Networks within a Single Account
 
-1. [Create network VLAN(s)](../CenturyLink Cloud/creating-and-deleting-vlans.md) in each of the respective Lumen Cloud Data Centers.
+1. [Create network VLAN(s)](../Lumen Cloud/creating-and-deleting-vlans.md) in each of the respective Lumen Cloud Data Centers.
 2. Validate the networks are in place in your Lumen Cloud account using the **Network** menu item and selecting the appropriate Data Center. In the sample below, networks exists in both UC1 (Santa Clara) & DE1 (Germany).
 
   ![validate network](../../images/creating-cross-data-center-firewall-policies-02.png)
@@ -63,7 +63,7 @@ In addition to being able to connect networks within a particular data center th
 
 1. Create the appropriate Parent & Sub-Account Hierarchy. Refer to the [Account Hierarchy Primer](../../Accounts & Users/account-hierarchy-user-network-and-firewall-policy-primer.md) for more information. **Note**, policies between sub-accounts must be made from the shared **parent account**.
 
-2. Create network VLAN(s) in the respective Lumen Cloud Data Center and Accounts.  We recommend [applying friendly names](../CenturyLink Cloud/add-a-user-friendly-name-to-vlans.md) to Networks.
+2. Create network VLAN(s) in the respective Lumen Cloud Data Center and Accounts.  We recommend [applying friendly names](../Lumen Cloud/add-a-user-friendly-name-to-vlans.md) to Networks.
 
 3. Validate the networks are in place in your Lumen Cloud accounts using the Networks menu item and selecting the appropriate Data Center.  In the sample below, a "Web Services" network in NY1 & a "DB VLAN" network in IL1 are provisioned under unique sub-accounts BVPN and MMTM.  
 

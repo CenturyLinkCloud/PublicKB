@@ -106,7 +106,7 @@
   <li><strong>Blueprints: Designer - MultiSelect checkboxes are not rendering correctly.</strong>&nbsp;&nbsp;Formatting fixed.</li>
   <li><strong>Add "Blueprint Library" link to Blueprints subnav to be consistent with other main nav submenus.</strong>&nbsp;&nbsp;Cleaned up navigation menu and added "Blueprint Library" as a link to all the blueprints that the user is allowed to see.</li>
   <li><strong>Packages: Details - Required Arguments Preview - field and labels do not align.</strong>&nbsp;&nbsp;Formatting fixed.</li>
-  <li><strong>Blueprints: Add filter for Server and Networks so that only Tier3 admins see Web Fabric Servers and Networks in dropdowns when deploying a Blueprint.</strong>&nbsp;&nbsp;Non-CenturyLink Cloud administrators can no longer see Web Fabric-type servers/networks
+  <li><strong>Blueprints: Add filter for Server and Networks so that only Tier3 admins see Web Fabric Servers and Networks in dropdowns when deploying a Blueprint.</strong>&nbsp;&nbsp;Non-Lumen Cloud administrators can no longer see Web Fabric-type servers/networks
     when building blueprints. Users who want to create a Web Fabric instance should go directly to that portion of the Control Portal.</li>
   <li><strong>Web Fabric: Control for web fabric to display status of apps.</strong>&nbsp;&nbsp;Web Fabric dashboard now shows the states of the applications.</li>
   <li><strong>Server: Snapshot - user has no way to delete a snapshot.</strong>&nbsp;&nbsp;Now you do. The server page now shows all the snapshots for a server and provides an option to delete individual snapshots.</li>

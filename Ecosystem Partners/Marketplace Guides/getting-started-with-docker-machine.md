@@ -60,7 +60,7 @@ Docker users interested in deploying machines on Lumen Cloud.
 ### Machine options
 
 #### Public/Private
-By default, a public IP is allocated on your docker-machine instance, controlled by the `--clc-server-private` flag. SSH is required for docker-machine to install the docker engine software packages. This means that if public IPs are not available or you don't want the tls-secured machine publicly accessible, you'll need to be connected via [VPN Access](../../Network/CenturyLink Cloud/how-to-configure-client-vpn.md).
+By default, a public IP is allocated on your docker-machine instance, controlled by the `--clc-server-private` flag. SSH is required for docker-machine to install the docker engine software packages. This means that if public IPs are not available or you don't want the tls-secured machine publicly accessible, you'll need to be connected via [VPN Access](../../Network/Lumen Cloud/how-to-configure-client-vpn.md).
 
 ### Troubleshooting
 * Driver missing in path, ensure downloaded binary is in your shell path.

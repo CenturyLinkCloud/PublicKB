@@ -92,7 +92,7 @@ A script (S3fs on CentOS 7) is created to speed up the deployment of s3fs on Lum
 
 For API, please refer to the [Execute Package API](//www.ctl.io/api-docs/v2/#server-actions-execute-package).  
 
-The CLI deployment can be done following the command in the [Lumen Cloud Guide to CLI](//www.ctl.io/knowledge-base/servers/centurylink-cloud-guide-to-cli/#advanced-usage).  
+The CLI deployment can be done following the command in the [Lumen Cloud Guide to CLI](//www.ctl.io/knowledge-base/servers/lumen-cloud-guide-to-cli/#advanced-usage).  
 
 When using the portal, this [Knowledge article](../Servers/using-group-tasks-to-install-software-and-run-scripts-on-groups.md)
 

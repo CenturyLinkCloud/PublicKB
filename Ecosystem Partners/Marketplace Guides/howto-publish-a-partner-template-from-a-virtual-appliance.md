@@ -24,7 +24,7 @@ For some Lumen Cloud Ecosystem Program members, a Virtual Appliance or "custom i
     - Should adhere to Image Best Practices
         http://www.ctl.io/knowledge-base/service-tasks/best-practices-and-preparation-for-a-virtual-machineovfova-import
 - Please ensure that company and product name are in any image filenames.
-- Be aware that importing a virtual appliance or image is considered a billable service task by Lumen Cloud Support. These fees will count against an Ecosystem Partner's integration credit. More information on Service Tasks and pricing can be found here: http://www.ctl.io/knowledge-base/service-tasks/requesting-service-tasks-on-centurylink-cloud
+- Be aware that importing a virtual appliance or image is considered a billable service task by Lumen Cloud Support. These fees will count against an Ecosystem Partner's integration credit. More information on Service Tasks and pricing can be found here: http://www.ctl.io/knowledge-base/service-tasks/requesting-service-tasks-on-lumen-cloud
 
 ### Publish Partner-Supplied 'Custom Image' Process
 This is an easy 3 step process that enables Ecosystem Partners to provide their OVA file via FTP and then request that it be moved to the Ecosystem Partner Global Repository.

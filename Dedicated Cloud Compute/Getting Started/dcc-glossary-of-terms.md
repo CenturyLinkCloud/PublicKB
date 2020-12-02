@@ -26,7 +26,7 @@
 
 **HPSA (Hewlett Packard Server Automation)** &mdash; This is a data center automation tool that Cloud Compute uses to harden new and cloned VMs and bring them into compliance with CTL standards.
 
-**Instance Template** &mdash; A standard configuration image created from a virtual machine that contains pre-configured operating systems and customized non-CenturyLink managed applications (if applicable). Instance template(s) allows clients to consistently apply a template to multiple instances simultaneously.
+**Instance Template** &mdash; A standard configuration image created from a virtual machine that contains pre-configured operating systems and customized non-Lumen managed applications (if applicable). Instance template(s) allows clients to consistently apply a template to multiple instances simultaneously.
 
 **Managed Hosting** &mdash; The set of Lumen managed server services that include Intelligent Hosting, Foundation Hosting, and Dedicated Cloud Compute.
 

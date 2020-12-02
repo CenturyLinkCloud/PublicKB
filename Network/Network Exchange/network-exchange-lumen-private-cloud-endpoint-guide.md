@@ -11,7 +11,7 @@
 
 ### Lumen Private Cloud on VMware Cloud Foundation (VCF) Endpoint Connections
 
-* Starting in mid July, 2018, Network Exchange will have fully automated setup of connections to Lumen's new private cloud - [Lumen Private Cloud on VMware Cloud Foundation](https://www.ctl.io/centurylink-private-cloud-on-vmware-cloud-foundation/). The addition of Lumen Private Cloud on VCF as a Network Exchange Endpoint allows customers to easily connect to a highly secure, scalable, and powerful environment that can be deployed in less than a day.
+* Starting in mid July, 2018, Network Exchange will have fully automated setup of connections to Lumen's new private cloud - [Lumen Private Cloud on VMware Cloud Foundation](https://www.ctl.io/lumen-private-cloud-on-vmware-cloud-foundation/). The addition of Lumen Private Cloud on VCF as a Network Exchange Endpoint allows customers to easily connect to a highly secure, scalable, and powerful environment that can be deployed in less than a day.
 
 ### Lumen Private Cloud on VMware Cloud Foundation (VCF) Endpoint Connectivity Prerequisites
 

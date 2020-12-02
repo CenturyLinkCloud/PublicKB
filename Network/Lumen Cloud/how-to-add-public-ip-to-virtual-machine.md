@@ -10,12 +10,12 @@ Lumen Cloud customers may wish to add a public IP to specific virtual machine or
 
 ### General Notes & Best Practices
 
-* All public IPs deployed on the platform have [hairpinning](../CenturyLink Cloud/hairpin-nats.md) enabled.
+* All public IPs deployed on the platform have [hairpinning](../Lumen Cloud/hairpin-nats.md) enabled.
 * In its current iteration setting a source IP filter will secure all public ports, single ports or port ranges specified by the customer. Customers can leverage OS based firewall services if they wish to secure public services in a more granular fashion
 * Customers are encouraged to leverage the source IP filter unless delivering completely open public internet services to their user community.
 * Customers should avoid opening RDP or SSH to their virtual machines to the public internet. As such the following are recommended access methods.
-    1. Use the free OpenVPN client included in every Lumen Cloud Account. Refer to [How To Configure Client VPN](../CenturyLink Cloud/how-to-configure-client-vpn.md). This is the ideal solution for individuals who are mobile and not in fixed office or data center locations.
-    2. Build an IPSEC VPN Tunnel from a remote office or data center location. Refer to [Creating a Self-Service IPSEC Site-to-Site VPN Tunnel](../CenturyLink Cloud/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md). IPSEC VPN tunnels are best for remote access to Cloud Virtual Machines when administrators are in centralized offices or data centers.
+    1. Use the free OpenVPN client included in every Lumen Cloud Account. Refer to [How To Configure Client VPN](../Lumen Cloud/how-to-configure-client-vpn.md). This is the ideal solution for individuals who are mobile and not in fixed office or data center locations.
+    2. Build an IPSEC VPN Tunnel from a remote office or data center location. Refer to [Creating a Self-Service IPSEC Site-to-Site VPN Tunnel](../Lumen Cloud/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md). IPSEC VPN tunnels are best for remote access to Cloud Virtual Machines when administrators are in centralized offices or data centers.
     3. If either of the previous options are not feasible customers should at a minimum use the source IP filter service on the public IP and pair that with local OS firewall policies within the guest VM.
 
 ### Exceptions

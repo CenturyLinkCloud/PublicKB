@@ -14,7 +14,7 @@ Prospective Users of Lumen Cloud
 
 ### How do I sign up for a trial?
 
-Visit [www.ctl.io/centurylink-public-cloud/account-activation/](http://www.ctl.io/centurylink-public-cloud/account-activation/). You will need a valid credit card (Visa or Mastercard only - American Express, Discover, and pre-paid credit cards are not accepted) and a mobile phone that supports text messaging, which is used to verify your identity and prevent fraudulent usage.
+Visit [www.ctl.io/lumen-public-cloud/account-activation/](http://www.ctl.io/lumen-public-cloud/account-activation/). You will need a valid credit card (Visa or Mastercard only - American Express, Discover, and pre-paid credit cards are not accepted) and a mobile phone that supports text messaging, which is used to verify your identity and prevent fraudulent usage.
 
 ### What's included with a trial?
 

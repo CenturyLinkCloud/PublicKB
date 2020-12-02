@@ -13,9 +13,9 @@
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
-* [Register Lumen Private Cloud on VMware Cloud Foundation as Provider](#register-centurylink-private-cloud-on-vmware-cloud-foundation-as-provider)
+* [Register Lumen Private Cloud on VMware Cloud Foundation as Provider](#register-lumen-private-cloud-on-vmware-cloud-foundation-as-provider)
 * [Enabling services](#enabling-services)
-* [Deploy to Lumen Private Cloud from Cloud Application Manager](#deploy-to-centurylink-private-cloud-from-cloud-application-manager)
+* [Deploy to Lumen Private Cloud from Cloud Application Manager](#deploy-to-lumen-private-cloud-from-cloud-application-manager)
 * [Naming vCloud resources](#naming-vcloud-resources)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
@@ -35,7 +35,7 @@ All Cloud Application Manager users who wants to deploy workloads into Lumen Pri
 
 ### Register Lumen Private Cloud on VMware Cloud Foundation as Provider
 
-To enable a Cloud Application Manager Provider for Lumen Private Cloud on VMware Cloud Foundation™ (CPC on VCF) see the example [Configure a Provider for Cloud Application Manager](../../CenturyLink Private Cloud on VMware Cloud Foundation/General/cam-provider.md).
+To enable a Cloud Application Manager Provider for Lumen Private Cloud on VMware Cloud Foundation™ (CPC on VCF) see the example [Configure a Provider for Cloud Application Manager](../../Lumen Private Cloud on VMware Cloud Foundation/General/cam-provider.md).
 
 ![Lumen Private Cloud on VMware Cloud Foundation add Provider](../../images/dccf/cam-provider3.png)
 

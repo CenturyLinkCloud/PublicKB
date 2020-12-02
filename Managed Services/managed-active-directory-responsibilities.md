@@ -27,9 +27,9 @@ The following is not meant to be a complete description of every feature of Acti
 **High Level Function** | **Responsible** | **Contact Method** | **Notes**
  --- | --- | --- | ---
  Initial configuration | CLC Managed AD Blueprint | Client | If there are issues with the Blueprint's initial configuration of Managed AD, it will fail during provisioning. Client should expect to be contacted by Lumen operations to assist.
- Configure Sites & Services for non-CenturyLink Managed Sites | Customer | Internal | N/A
- Configure Trusts to non-CenturyLink Managed Domains | Customer | Internal | N/A
- Perform non-CenturyLink Supported Schema Extensions | Customer| Internal | N/A
+ Configure Sites & Services for non-Lumen Managed Sites | Customer | Internal | N/A
+ Configure Trusts to non-Lumen Managed Domains | Customer | Internal | N/A
+ Perform non-Lumen Supported Schema Extensions | Customer| Internal | N/A
  Migrate objects from an external environment | Customer | Internal | N/A
  Migrate objects from an external environment | Customer | Internal | N/A
  Create Users and Groups | Customer | Internal | N/A

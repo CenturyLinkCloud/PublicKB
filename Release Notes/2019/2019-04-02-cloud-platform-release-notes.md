@@ -9,7 +9,7 @@
 
 ### Announcements (6)
 
-#### [Lumen Private Cloud on VMware Cloud Foundation](https://www.ctl.io/centurylink-private-cloud-on-vmware-cloud-foundation/)
+#### [Lumen Private Cloud on VMware Cloud Foundation](https://www.ctl.io/lumen-private-cloud-on-vmware-cloud-foundation/)
 
 All new customer builds from this point forward will include vCloud Director 9.5.
 

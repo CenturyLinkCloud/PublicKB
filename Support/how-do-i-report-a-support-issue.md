@@ -55,16 +55,16 @@ US: 888.638.6771<br>UK: +44.118.322.6100<br>Singapore: +65.6305.8099| incident@c
 
 * Alternatively, you may select the **?** icon inside the Control Portal and choose **submit a support request.** This will create a new ticket in our Support ticketing system. As described in the [Support Ticketing](../Support/zendesk-login-help-for-helpdesk-ticketing-and-kb-access.md) article, this is a separate user account from the Control Portal.
 
-    ![submit a support request](../images/how-do-i-get-support-for-centurylink-cloud-services-01.PNG)
+    ![submit a support request](../images/how-do-i-get-support-for-lumen-cloud-services-01.PNG)
 
 ### Chat Support
 Customers in the **Professional and Enterprise** support tier can leverage our real-time chat system.
 
 1. Login to the [Control Portal](//control.ctl.io), select the **?** icon and choose **Chat with support.**
 
-    ![Chat with support](../images/how-do-i-get-support-for-centurylink-cloud-services-02.PNG)
+    ![Chat with support](../images/how-do-i-get-support-for-lumen-cloud-services-02.PNG)
 
-    ![chat dialog box](../images/how-do-i-get-support-for-centurylink-cloud-services-03.png)
+    ![chat dialog box](../images/how-do-i-get-support-for-lumen-cloud-services-03.png)
 
 2. Provide your Account Alias, [user PIN](../Support/pin-authentication-for-support-requests.md) and description of the problem to the support engineer.
 

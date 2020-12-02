@@ -9,7 +9,7 @@
 
 ### Enhancements (2)
 
-#### [Lumen Cloud](https://www.ctl.io/centurylink-public-cloud/) Site to Site VPN
+#### [Lumen Cloud](https://www.ctl.io/lumen-public-cloud/) Site to Site VPN
 
 We have updated the IP address ranges used for Site to Site VPN’s within Lumen Cloud. Any changes/edits to an existing Site to Site VPN will update the IP address automatically to one of the new IP addresses, which may require you to update the configuration on the other end of the VPN. A warning message will notify you during an edit that the IP address is changing. This change is being made to better protect our customers with DDoS mitigation on the new IP ranges.
 

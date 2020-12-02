@@ -30,12 +30,12 @@ After reading this article, the user should be able to start a server running El
 
 ### Postrequisite
 To access your application from a computer outside the Lumen Cloud network over the public internet, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
-* [Add a Public IP](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
-* [Allow incoming traffic](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) for the remote desktop port by clicking on the Servers Public IP through the Control Portal and configuring appropriately.
+* [Add a Public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
+* [Allow incoming traffic](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) for the remote desktop port by clicking on the Servers Public IP through the Control Portal and configuring appropriately.
     * The default port to access the application through Microsoft Remote Desktop is: `3389`.
 
 Alternatively, you may add a VPN connection to your installation, and omit adding the public IP address. This will allow access with the machine being exposed to the external internet.
-* See: [Adding a VPN connection](../../Network/CenturyLink Cloud/how-to-configure-client-vpn.md).
+* See: [Adding a VPN connection](../../Network/Lumen Cloud/how-to-configure-client-vpn.md).
 
 ### Deploying the Elastic COBOL Developer for Windows Blueprint
 

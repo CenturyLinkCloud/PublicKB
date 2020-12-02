@@ -21,7 +21,7 @@ AlwaysOn can be configured at both the database level and instance level.  This 
 
 SQL 2014 AlwaysOn Database Availability Groups require a properly configured Active Directory environment and Enterprise or higher editions of Windows Server 2012 and Enterprise edition of SQL 2014.  This guide will not detail the required Active Directory setup, however listed below are some important ideas to consider prior.
 * Ensure that the required Active Directory subnets are defined and joined to the correct Active Directory Sites.  This work is performed via the Active Directory Sites and Services tool.
-* Ensure that at least one Active Directory Domain Controller is configured in each datacenter location that will support availability groups.  Leverage our [public blueprints](../Blueprints/centurylink-cloud-public-blueprint-packages.md) to automate this process.
+* Ensure that at least one Active Directory Domain Controller is configured in each datacenter location that will support availability groups.  Leverage our [public blueprints](../Blueprints/lumen-cloud-public-blueprint-packages.md) to automate this process.
 
 This guide will use the Lumen Cloud Blueprints Library for server deployments as well as base application installation, assuming you have already deployed the desired servers in the desired datacenter that will be used for the Microsoft SQL Server.  It is also an assumption that there is a working Active Directory environment and the “Join Domain” and “Install SQL” tasks on the final page of the Create Server page.  
 
@@ -35,7 +35,7 @@ This guide will use the Lumen Cloud Blueprints Library for server deployments as
 
 2. Create a Cross Data Center Firewall Policy
 
-  After all servers are deployed and SQL Server 2014 is installed, a [cross data center firewall policy](../Network/CenturyLink Cloud/creating-cross-data-center-firewall-policies.md) will need to be created between datacenter locations GB1 and GB3.  Lumen Cloud data centers are federated using our global network backbone.  To allow customer connectivity between datacenters, a cross data center firewall policy must be created.  Below, a policy has been created between 10.61.98.0/24 in GB1 and 10.105.40.0/24 in GB3, which are the subnets our guide servers are deployed to.  In this example, communication will be allowed between the entire /24 subnet range.  If security policies require restricting communication to specific hosts and ports, operating system firewalls can be configured as required.
+  After all servers are deployed and SQL Server 2014 is installed, a [cross data center firewall policy](../Network/Lumen Cloud/creating-cross-data-center-firewall-policies.md) will need to be created between datacenter locations GB1 and GB3.  Lumen Cloud data centers are federated using our global network backbone.  To allow customer connectivity between datacenters, a cross data center firewall policy must be created.  Below, a policy has been created between 10.61.98.0/24 in GB1 and 10.105.40.0/24 in GB3, which are the subnets our guide servers are deployed to.  In this example, communication will be allowed between the entire /24 subnet range.  If security policies require restricting communication to specific hosts and ports, operating system firewalls can be configured as required.
 
   ![Create a cross dc firewall policy](../images/alwayson-02.png)
 

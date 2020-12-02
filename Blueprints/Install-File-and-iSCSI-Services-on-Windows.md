@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-By leveraging [Lumen Cloud Public Blueprints](../Blueprints/centurylink-cloud-public-blueprint-packages.md), customers can automate operational tasks. In using the **Install File and iSCSI Services on Windows** Blueprint, customers can add the File and iSCSI storage roles on Windows Servers in an automated fashion.
+By leveraging [Lumen Cloud Public Blueprints](../Blueprints/lumen-cloud-public-blueprint-packages.md), customers can automate operational tasks. In using the **Install File and iSCSI Services on Windows** Blueprint, customers can add the File and iSCSI storage roles on Windows Servers in an automated fashion.
 
 ### Prerequisites
 

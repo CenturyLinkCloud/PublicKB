@@ -12,8 +12,8 @@
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
-* [Creating a Lumen DCC provider](#creating-a-centurylink-dcc-provider)
-* [Editing Policy Boxes on Lumen DCC](#editing-policy-boxes-on-centurylink-dcc)
+* [Creating a Lumen DCC provider](#creating-a-lumen-dcc-provider)
+* [Editing Policy Boxes on Lumen DCC](#editing-policy-boxes-on-lumen-dcc)
 * [Deploying Instances from Deployment Policies](#deploying-instances-from-deployment-policies)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
@@ -66,7 +66,7 @@ To do this, access the details by selecting "Code", then "Edit", where the follo
 |--------|-------------|
 | Company | Select the company of your DDC provider. |
 | Billing Site | Select the billing site of your DDC provider. |
-| Datacenter | Clusters are grouped in [Datacenters](../../General/CenturyLinkCloud/centurylink-cloud-data-center-locations.md). To select a Cluster, Cloud Application Manager needs to know the Datacenter the Cluster belongs to. |
+| Datacenter | Clusters are grouped in [Datacenters](../../General/LumenCloud/lumen-cloud-data-center-locations.md). To select a Cluster, Cloud Application Manager needs to know the Datacenter the Cluster belongs to. |
 | Cluster | Select the cluster where you want to deploy. |
 | Domain | Select the domain where you want to deploy. |
 

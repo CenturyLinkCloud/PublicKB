@@ -61,6 +61,6 @@
     This will ensure that all monitoring&nbsp;of the server or group of servers is turned off for the maintenance tasks to be performed. Webhooks are still enabled and will be triggered when a server is put into or taken out of maintenance mode.</li>
   <li><strong>60GB Sizing for Windows Servers.&nbsp;</strong>The disk size for servers provisioned with Windows 2008 or 2012 Server templates have been set to a consistent size and have been increased to 60GB. This was due to customers running into
     build failures caused by the drives not having sufficient space to run a number of blueprints.</li>
-  <li><strong>New CoreOS Blueprint.&nbsp;</strong>Blueprints have been created for deploying CoreOS servers. Follow the <a href="https://t3n.zendesk.com/entries/47064274-Building-CoreOS-Server-Cluster-on-the-CenturyLink-Cloud">KB article on building CoreOS servers on Lumen Cloud</a>&nbsp;to
+  <li><strong>New CoreOS Blueprint.&nbsp;</strong>Blueprints have been created for deploying CoreOS servers. Follow the <a href="https://t3n.zendesk.com/entries/47064274-Building-CoreOS-Server-Cluster-on-the-Lumen-Cloud">KB article on building CoreOS servers on Lumen Cloud</a>&nbsp;to
     see how they are used.</li>
 </ul>

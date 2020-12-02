@@ -13,7 +13,7 @@ You can connect your Azure VNET to Lumen Cloud networks by using a VPN connectio
 ### Steps
 If you would like to use IKEv1, you can follow the guide below to configure site-to-site VPN between Azure and Lumen Cloud using self-service.
 1.	You can follow Azure VPN documentation to configure VPN on their end.
-2.	Once you configure Azure VPN from the documentation stated in step 1, [follow this guide](../CenturyLink Cloud/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md) to setup VPN from Lumen side, ensuring an exact match with the Azure configuration.
+2.	Once you configure Azure VPN from the documentation stated in step 1, [follow this guide](../Lumen Cloud/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md) to setup VPN from Lumen side, ensuring an exact match with the Azure configuration.
 
 As IKEv2 VPN cannot be configured via Control, it would have to be done as [Service Task](https://www.ctl.io/service-tasks/#vpn-tunnels-deployment). 
 1.	You can follow Azure VPN documentation to configure VPN on their end.

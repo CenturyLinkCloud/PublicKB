@@ -14,7 +14,7 @@ The Lumen Image Management Storage repository for Dedicated Cloud Compute is ava
 
 Lumen provides operating system licensing, installation, management, and monitoring of Lumen standardized operating system builds. Non-standard operating system builds may exclude any or all of the licensing, installation, management, and monitoring. Lumen will make a commercially reasonable effort to support custom customer images, however, Lumen is not responsible for the support of non-standard operating system builds.
 
-An instance template is a standard configuration image created from a virtual machine that contains pre-configured operating systems and customized non-CenturyLink managed applications (if applicable). Instance template(s) allows clients to consistently apply a template to multiple instances simultaneously.
+An instance template is a standard configuration image created from a virtual machine that contains pre-configured operating systems and customized non-Lumen managed applications (if applicable). Instance template(s) allows clients to consistently apply a template to multiple instances simultaneously.
 
 The process of deploying a template can be done via the portal. A multiple instance deployment is automated through the portal and can be created from a single template.
 

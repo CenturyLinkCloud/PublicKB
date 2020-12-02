@@ -9,7 +9,7 @@
 
 ### Overview
 
-This document provides an overview of Lumen and customer responsibilities for [Lumen Network Storage](https://www.ctl.io/centurylink-network-storage/).
+This document provides an overview of Lumen and customer responsibilities for [Lumen Network Storage](https://www.ctl.io/lumen-network-storage/).
 
 ### Audience
 
@@ -17,11 +17,11 @@ This document provides an overview of Lumen and customer responsibilities for [L
 
 ### Prerequisites
 
-An understanding of how to [get started with Lumen Network Storage](../../Storage/CenturyLink Network Storage/getting-started-creating-cns-nodes-volumes.md).
+An understanding of how to [get started with Lumen Network Storage](../../Storage/Lumen Network Storage/getting-started-creating-cns-nodes-volumes.md).
 
 ### Important Information
 
-This document is not a complete description of every responsibility regarding use of Lumen Network Storage but should provide context regarding user responsibilities and Lumen support. For more information, see the [Lumen Network Storage Service Guide](https://www.centurylink.com/asset/business/enterprise/service-guides/hosting/centurylink-network-storage-service-guide.pdf).
+This document is not a complete description of every responsibility regarding use of Lumen Network Storage but should provide context regarding user responsibilities and Lumen support. For more information, see the [Lumen Network Storage Service Guide](https://www.centurylink.com/asset/business/enterprise/service-guides/hosting/lumen-network-storage-service-guide.pdf).
 
 ### Customer Responsibilities
 

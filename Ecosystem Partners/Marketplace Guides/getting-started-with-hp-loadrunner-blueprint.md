@@ -69,7 +69,7 @@ After executing the steps in this Getting Started document, the users will hav
 6. Enable public access (optional).
    * Servers are built using private IPs only with access with client or IPSEC VPN. For access from the Internet at large add a public IP to your master server.
 
-   <a href="../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md">
+   <a href="../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md">
      <img style="border:0;width:50px;vertical-align:middle;" src="../../images/shared_assets/fw_icon.png">
      Adding a public IP to your virtual machine
    </a>

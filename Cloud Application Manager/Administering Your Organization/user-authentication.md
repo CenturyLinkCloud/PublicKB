@@ -20,8 +20,8 @@
 * [Setting Up LDAP in Cloud Application Manager](#setting-up-ldap-in-cloud-application-manager)
 * [Syncing with LDAP Groups](#syncing-with-ldap-groups)
 * [Giving LDAP Accounts Admin Access](#giving-ldap-accounts-admin-access)
-* [Single Sign-On with Lumen Cloud](#single-sign-on-with-centurylink-cloud)
-* [Single Sign-On with Lumen Master Account](#single-sign-on-with-centurylink-master-account)
+* [Single Sign-On with Lumen Cloud](#single-sign-on-with-lumen-cloud)
+* [Single Sign-On with Lumen Master Account](#single-sign-on-with-lumen-master-account)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview

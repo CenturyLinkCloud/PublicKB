@@ -45,7 +45,7 @@ After reading this article, the user should understand what ClustrixDB does, how
 
 ### Postrequisite
 To access your application from a computer outside the Lumen Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
-* [Allow incoming traffic](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Server's Public IP through the Control Portal and configuring appropriately.
+* [Allow incoming traffic](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Server's Public IP through the Control Portal and configuring appropriately.
 * The default ports to access the application are: `22`, `80`, `3306`.
 
 ### Deploying the “Add a ClustrixDB v7-0-1 node" Blueprint

@@ -33,7 +33,7 @@
   - [Site-to-Site VPN](https://www.ctl.io/vpn/)
   - [Cross Data Center Firewalls](https://www.ctl.io/cloud-firewall/)<p>
 
-  The [CTL Cloud CLI is available on github](https://github.com/CenturyLinkCloud/clc-go-cli/releases). For more information on using the CLI, refer to the [KB article CTL Cloud Guide to the CLI](https://www.ctl.io/knowledge-base/servers/centurylink-cloud-guide-to-cli/).
+  The [CTL Cloud CLI is available on github](https://github.com/CenturyLinkCloud/clc-go-cli/releases). For more information on using the CLI, refer to the [KB article CTL Cloud Guide to the CLI](https://www.ctl.io/knowledge-base/servers/lumen-cloud-guide-to-cli/).
 
 ### Open Source Contributions (1)
 

@@ -12,7 +12,7 @@
 * [Supported Managed Operating Systems](#supported-managed-operating-systems)
 * [Supported Managed Microsoft SQL Server Editions](#supported-managed-microsoft-sql-server-editions)
 * [Important Information](#important-information)
-* [Managed SQL with Lumen provided license](#managed-sql-with-centurylink-provided-license)
+* [Managed SQL with Lumen provided license](#managed-sql-with-lumen-provided-license)
 * [Managed SQL with BYOL](#managed-sql-with-byol)
 * [Frequently Asked Questions](#frequently-asked-questions)
 
@@ -111,7 +111,7 @@ A: Please see [Pricing Catalog](//www.ctl.io/pricing/) for more information.
 
 **Q: How do I request MSSQL Mirroring or MSSQL AlwaysOn Configuration?**
 
-A: Database Mirroring or SQL AlwaysOn configuration are available as Service Tasks. For your existing Managed MSSQL instance(s), you can request configuration of Database Mirroring or SQL AlwaysOn by opening a Service Task ticket. You can find more information on what Service Tasks are available and how to request them in our [Requesting Service Tasks on Lumen Cloud](//www.ctl.io/knowledge-base/service-tasks/requesting-service-tasks-on-centurylink-cloud) article.
+A: Database Mirroring or SQL AlwaysOn configuration are available as Service Tasks. For your existing Managed MSSQL instance(s), you can request configuration of Database Mirroring or SQL AlwaysOn by opening a Service Task ticket. You can find more information on what Service Tasks are available and how to request them in our [Requesting Service Tasks on Lumen Cloud](//www.ctl.io/knowledge-base/service-tasks/requesting-service-tasks-on-lumen-cloud) article.
 
 Service Tasks are billed at a rate of $195 per hour.
 

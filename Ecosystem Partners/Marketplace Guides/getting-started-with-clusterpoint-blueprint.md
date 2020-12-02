@@ -34,7 +34,7 @@ After reading this article, the user should be able to deploy Clusterpoint Bluep
 
 ### Postrequisite
 To access your application from a computer outside the Lumen Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
-* [Allow incoming traffic](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal and configuring appropriately.
+* [Allow incoming traffic](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal and configuring appropriately.
 * Port to access the Clusterpoint Web Console is TCP 5580. Open it if you want to access Clusterpoint On Premises Web Console to manage your Clusterpoint databases and users, and use REST API interface to access Clusterpoint databases.
 * Port to access Clusterpoint Hub for API access is TCP 25007. Open it if you want to access Clusterpoint databases trough TCP from outside your Lumen network.
 * All additional nodes speak to core server with manager trough local IP. However, if you want to get additional hub access for TCP connections you need to assign public IP and open port TCP 25007 for additional node/hub machines as well.

@@ -117,9 +117,9 @@ The Fortinet partner template deploys in a virtual appliance model, as a Lumen C
 ### Postrequisite
 To access your Fortinet partner template over the internet, please perform the following tasks once your VM has been deployed to your account.
 
-1. If required, [Add a Public IP](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
+1. If required, [Add a Public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
 
-2. If required, [allow incoming traffic for the admin port](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Server's Public IP in the Control Portal.
+2. If required, [allow incoming traffic for the admin port](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Server's Public IP in the Control Portal.
 
     **Warning:** Please make sure your firewall rules are properly configured to only allow specific source traffic. If you do not configure source traffic rules you risk exposing your VM to the entire internet.
 

@@ -16,7 +16,7 @@
 ### Table of contents
 
 * [Overview](#overview)
-* [Create a Site to Site VPN in Lumen Cloud](#create-a-site-to-site-vpn-in-centurylink-cloud)
+* [Create a Site to Site VPN in Lumen Cloud](#create-a-site-to-site-vpn-in-lumen-cloud)
 * [Create VPC](#create-vpc)
 * [Using CloudFormation Template](#using-cloudformation-template)
 * [VPN setup with an existing VPC](#vpn-setup-with-an-existing-vpc)
@@ -36,7 +36,7 @@ This guide will walk through the different scenarios of connecting to an AWS env
 
    ![aws-clc](../../images/awsvpn/clc-aws.png)
 
-2. First is to obtain the public IP address of the Lumen Cloud VPN gateway, this can be obtained from Lumen Cloud portal under Network -> Site to Site VPN.  Detail is for the Lumen Cloud Site to Site VPN setup is available [here](../CenturyLink Cloud/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md).
+2. First is to obtain the public IP address of the Lumen Cloud VPN gateway, this can be obtained from Lumen Cloud portal under Network -> Site to Site VPN.  Detail is for the Lumen Cloud Site to Site VPN setup is available [here](../Lumen Cloud/creating-a-self-service-ipsec-site-to-site-vpn-tunnel.md).
 
    ![aws-vpn](../../images/awsvpn/clc-s2s.png)
 

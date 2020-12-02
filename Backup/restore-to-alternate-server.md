@@ -41,7 +41,7 @@ You will need to find the proper SBS ServerPolicy and SBS Restore Point to resto
 
 1. The SBS ServerPolicy and SBS Restore Point can be found in the SBS Agent User Interface on each system. Examples will be shown later in this article.
 2. The SBS logs on the original backup server contain the SBS ServerPolicy and SBS Restore Point. Examples will be shown later in this article.
-3. If the SBS Agent User Interface and the logs is not available, or if you plan on using SBS to restore files from a system that is not available, then you must use the CTL CLI:  [Lumen Cloud Guide to CLI](../Servers/centurylink-cloud-guide-to-cli.md)
+3. If the SBS Agent User Interface and the logs is not available, or if you plan on using SBS to restore files from a system that is not available, then you must use the CTL CLI:  [Lumen Cloud Guide to CLI](../Servers/lumen-cloud-guide-to-cli.md)
 
   * The CTL CLC Downloads: [https://github.com/CenturyLinkCloud/clc-go-cli/releases](https://github.com/CenturyLinkCloud/clc-go-cli/releases)
   * How to configure CTL CLC: [https://github.com/CenturyLinkCloud/clc-go-cli\#set-up-the-configuration-file](https://github.com/CenturyLinkCloud/clc-go-cli%23set-up-the-configuration-file)

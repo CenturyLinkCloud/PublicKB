@@ -158,7 +158,7 @@ In the zCenter Portal, Click the API Management Tab on the left bar.
 
 ### Post-Installation Note
 
-If you want to access your CoIP web management portal, zCenter, from a computer that is outside of the Lumen Cloud network, you need to [add a public IP](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Lumen Control Portal.
+If you want to access your CoIP web management portal, zCenter, from a computer that is outside of the Lumen Cloud network, you need to [add a public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Lumen Control Portal.
 
 ### Pricing
 

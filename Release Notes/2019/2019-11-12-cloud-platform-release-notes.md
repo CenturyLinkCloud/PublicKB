@@ -9,7 +9,7 @@
 
 ### Enhancements (5)
 
-#### [Lumen Private Cloud on VMware Cloud Foundation](https://www.ctl.io/centurylink-private-cloud-on-vmware-cloud-foundation/) (CPC on vCF)
+#### [Lumen Private Cloud on VMware Cloud Foundation](https://www.ctl.io/lumen-private-cloud-on-vmware-cloud-foundation/) (CPC on vCF)
 
 ##### Support for multiple clusters
 

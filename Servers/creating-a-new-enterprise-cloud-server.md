@@ -30,7 +30,7 @@ The heart of the Lumen Cloud Platform is the ability to create and manage virtua
 3. Input the required resources, network and other advanced configuration information for your new server.
     * CPU, RAM & Storage up to [the platform maximums](../Servers/cloud-server-instance-size-and-performance.md). Virtual server configurations can be modified after deployment.
     * Enable a [CPU autoscale](../General/Autoscale/creating-and-applying-autoscale-policies.md) policy if desired.
-    * Select a [Network](../Network/CenturyLink Cloud/creating-and-deleting-vlans.md) for your virtual machine.
+    * Select a [Network](../Network/Lumen Cloud/creating-and-deleting-vlans.md) for your virtual machine.
     * Set a primary and secondary dns server. (Lumen provides the following default DNS servers: 172.17.1.26 and 172.17.1.27)
     * Enable a Time to Live (TTL) if desired for your virtual machine to be destroyed.
 

@@ -31,7 +31,7 @@ are live in the next few minutes.Lumen
 
 - You want to install or update a WordPress plug-in or theme.
 - You need to customize the WordPress core.
-- You are [migrating](wordpress-site-migration-to-centurylink-cloud.md) an existing WordPress site to the Lumen WordPress hosting platform.
+- You are [migrating](wordpress-site-migration-to-lumen-cloud.md) an existing WordPress site to the Lumen WordPress hosting platform.
 Don't do this if you are just posting new content (text, images, video) to your WordPress site. Please review
 our documentation on [persistent object storage](wordpress-persistent-storage-configuration.md) for creating
 multimedia content.

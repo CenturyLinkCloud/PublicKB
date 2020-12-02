@@ -91,10 +91,10 @@ Cloud Application Manager integrates with many popular clouds. Here is a full li
 | Clouds                 | Enterprise <br> (Saas) | Enterprise <br> (Appliance) |
 | ---------------------- | :--------------------: | :-------------------------: |
 | [Lumen Private Cloud on VMware Cloud Foundation (CPC on VCF)](../Deploying Anywhere/using-private-cloud-on-vmware-cloud-foundation.md)| ✓ | ✓ |
-| [Lumen Private Cloud for VMware Cloud on AWS (CPC for VMC)](../Deploying Anywhere/using-centurylink-private-cloud-for-vmc-on-aws.md)| ✓ | ✓ |
-| [Lumen Cloud](../Deploying Anywhere/using-centurylink-cloud.md) | ✓ | ✓ |
+| [Lumen Private Cloud for VMware Cloud on AWS (CPC for VMC)](../Deploying Anywhere/using-lumen-private-cloud-for-vmc-on-aws.md)| ✓ | ✓ |
+| [Lumen Cloud](../Deploying Anywhere/using-lumen-cloud.md) | ✓ | ✓ |
 | [Lumen DCC](../Deploying Anywhere/using-dcc.md)                 | ✓ | ✓ |
-| [Lumen DEC3](../Deploying Anywhere/using-centurylink-dec3.md)| ✓ | ✓ |
+| [Lumen DEC3](../Deploying Anywhere/using-lumen-dec3.md)| ✓ | ✓ |
 | [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md) | ✓ | ✓ |
 | Amazon Web Services GovCloud<br>(Same documentation as [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md)) | ✓ | ✓ |
 | [CloudStack](../Deploying Anywhere/using-cloudstack.md)          | ✓ | ✓ |

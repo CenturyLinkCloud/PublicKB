@@ -14,7 +14,7 @@
 
 ### Description
 
-[Docker](//www.docker.com) is open-source software for Linux that is used to deploy applications inside software containers by providing an additional layer of abstraction within the operating system–level virtualization. Lumen Cloud supports [Docker on virtual cloud servers](../Blueprints/using-docker-on-centurylink-cloud-servers.md) as well as on bare metal servers. The instructions for installing Docker on bare metal servers are listed below. A shell script that runs all the commands below is also attached for reference.
+[Docker](//www.docker.com) is open-source software for Linux that is used to deploy applications inside software containers by providing an additional layer of abstraction within the operating system–level virtualization. Lumen Cloud supports [Docker on virtual cloud servers](../Blueprints/using-docker-on-lumen-cloud-servers.md) as well as on bare metal servers. The instructions for installing Docker on bare metal servers are listed below. A shell script that runs all the commands below is also attached for reference.
 
 ### Prerequisite
 
@@ -34,7 +34,7 @@
 
 #### CentOS 6 and Red Hat 6
 
-1. Log into the machine via SSH as the `root` user. (Make sure you are logged into your [VPN](../Network/CenturyLink Cloud/how-to-configure-client-vpn.md) and connecting to the machine's private IP as it is not recommended to allow SSH over a public IP.)
+1. Log into the machine via SSH as the `root` user. (Make sure you are logged into your [VPN](../Network/Lumen Cloud/how-to-configure-client-vpn.md) and connecting to the machine's private IP as it is not recommended to allow SSH over a public IP.)
 
         ssh root@{ip_address}
 
