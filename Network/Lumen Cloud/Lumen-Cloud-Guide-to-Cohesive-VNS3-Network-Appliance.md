@@ -1,4 +1,4 @@
-{{{LumenLumenLumenLumenLumenLumenLumenLumenLumenLumenLumenLumenLumenLumen
+{{{
   "title": "Lumen Cloud Guide to Cohesive VNS3 Network Appliance ",
   "date": "9-24-2015",
   "author": "Eric Schubert",
