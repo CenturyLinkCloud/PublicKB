@@ -70,7 +70,7 @@ If you wish to no longer have a dedicated Citrix NetScaler Load Balancer and act
 
 **Q: What if I do nothing?**
 
-Customers who take no action will continue to be billed for the Citrix NetScaler licenses until January 31, 2020 or until their license expires, whichever occurs first.
+Customers who take no action will continue to be billed for the Citrix NetScaler licenses until January 31, 2021 or until their license expires, whichever occurs first.
 After January 31, 2021 the customer’s dedicated Citrix NetScaler Load Balancer environment(s) will no longer have an active license(s) and the NetScaler will stop passing traffic.
 
 **Q: How Do I Know When My Current License Expires?**
