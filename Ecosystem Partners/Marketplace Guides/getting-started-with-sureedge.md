@@ -9,14 +9,14 @@
 <img src="../../images/sureedge/sureline_logo.png" style="border:0;float:right;max-width: 150px;">
 
 ### Technology Profile
-Sureline Systems Inc. is the provider of SUREedge, an Application Mobility Solution for Disaster Recovery (DR) and Migration that is Hardware Agnostic, Hypervisor Agnostic, and Cloud Agnostic. Sureline is the only company that fundamentally solves the problem of Any-to-Any DR and Migration, enabling seamless data migration and DR from any environment – physical or virtual – to CenturyLink Cloud. By partnering with CenturyLink, SUREedge brings your enterprise Cloud strategy to life.
+Sureline Systems Inc. is the provider of SUREedge, an Application Mobility Solution for Disaster Recovery (DR) and Migration that is Hardware Agnostic, Hypervisor Agnostic, and Cloud Agnostic. Sureline is the only company that fundamentally solves the problem of Any-to-Any DR and Migration, enabling seamless data migration and DR from any environment – physical or virtual – to Lumen Cloud. By partnering with Lumen, SUREedge brings your enterprise Cloud strategy to life.
 
 Sureline provies the technology and solution for:
 
-* **Onboarding/Migration to CenturyLink Cloud**
-* **Disaster Recovery to the CenturyLink Cloud**
+* **Onboarding/Migration to Lumen Cloud**
+* **Disaster Recovery to the Lumen Cloud**
 
-SUREedge technology allows CenturyLink customers to rapidly migrate workloads from any physical or virtual system(s) into the CenturyLink Cloud, or use the CenturyLink Cloud as a DR site.
+SUREedge technology allows Lumen customers to rapidly migrate workloads from any physical or virtual system(s) into the Lumen Cloud, or use the Lumen Cloud as a DR site.
 
 ##### Customer Support
 |Sales Contact |
@@ -24,21 +24,21 @@ SUREedge technology allows CenturyLink customers to rapidly migrate workloads fr
 |info@surelinesystems.com |
 
 ### Description
-To use SUREedge for DR or onboarding to the Cloud, you must run an instance of SUREedge both on-prem and on-CenturyLink Cloud. The on-prem instance provides the capability to capture and dedupe-replicate applications and data, while the on-cloud instance acts as the receiver, storage and recovery manager in the Cloud.
+To use SUREedge for DR or onboarding to the Cloud, you must run an instance of SUREedge both on-prem and on-Lumen Cloud. The on-prem instance provides the capability to capture and dedupe-replicate applications and data, while the on-cloud instance acts as the receiver, storage and recovery manager in the Cloud.
 To create the on-Cloud instance, use either of these two Blueprints:
-* SUREedge Migrator:  Use this for on boarding/migration to CenturyLink Cloud.
-* SUREedge DR:  Use this for DR CenturyLink Cloud.
+* SUREedge Migrator:  Use this for on boarding/migration to Lumen Cloud.
+* SUREedge DR:  Use this for DR Lumen Cloud.
 
 To download and create the on-prem instance, go to [http://www.surelinesystems.com/centurylink/](http://www.surelinesystems.com/centurylink/)
 
 ### Audience
-CenturyLink Cloud Users desiring:
-* Onboarding/Migration to CenturyLink Cloud
-* Disaster Recovery to CenturyLink Cloud
+Lumen Cloud Users desiring:
+* Onboarding/Migration to Lumen Cloud
+* Disaster Recovery to Lumen Cloud
 
 ### Impact
 After reading this article, the user should be able to:
-* Install SUREedge cloud instance within CenturyLink Cloud
+* Install SUREedge cloud instance within Lumen Cloud
 * Download and install on-prem SUREedge instance
 * Configure on-prem and on-cloud instances
 * Add clients for migration or DR
@@ -49,20 +49,20 @@ After reading this article, the user should be able to:
 * On-Prem:
  * Resources on a VM infrastructure for running the on-prem SUREedge instance. Popular VM infrastructures, such as VMware, Hyper-V or KVM are supported.
  * A Windows (Windows 8.x, Windows Server 2008 or later) VM running within the VM infrastructure described in Prerequisite 1.
-* On-CenturyLink Cloud:
- * Access to the CenturyLink Cloud platform as an authorized user.
- * A license for a Windows VM in CenturyLink Cloud.
+* On-Lumen Cloud:
+ * Access to the Lumen Cloud platform as an authorized user.
+ * A license for a Windows VM in Lumen Cloud.
 
 ### Postrequisites
 * None
 
 ### Deploying SUREedge
-You can achieve a single-button deployment of a new SUREedge instance using CenturyLink Cloud Blueprints.
+You can achieve a single-button deployment of a new SUREedge instance using Lumen Cloud Blueprints.
 
 #### Deciding Which Blueprint to Use
 There are two SUREedge Blueprints available:
-* SUREedge Migrator: Use this for onboarding/migration to CenturyLink Cloud.
-* SUREedge DR: Use this for DR to CenturyLink Cloud.
+* SUREedge Migrator: Use this for onboarding/migration to Lumen Cloud.
+* SUREedge DR: Use this for DR to Lumen Cloud.
 
 #### Steps to Deploy a New SUREedge Blueprint
 1. Locate the Blueprint in the Blueprint Library.
@@ -114,7 +114,7 @@ There are two SUREedge Blueprints available:
 
 12. Logging onto the on-Cloud instance and Recovering.
    * Use any browser (Firefox recommended) to connect to the public IP address of the on-cloud SUREedge-MC instance. Login using the username and password you specified while deploying the Blueprint.
-   * You will be now able to recover systems that have been replicated to CenturyLink Cloud.
+   * You will be now able to recover systems that have been replicated to Lumen Cloud.
    * Refer to the [User Guide](http://www.surelinesystems.com/resources/) on how to recover a system.
 
 ### Pricing
@@ -128,4 +128,4 @@ Contact info@surelinesystems.com.
 
 **Who should I contact for support?**
 * For issues related to deploying SUREedge, visit [Sureline Support](http://www.surelinesystems.com/support/).
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
+* For issues related to cloud infrastructure, please open a ticket using the [Lumen Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).

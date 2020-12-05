@@ -12,7 +12,7 @@
 
 **How To:** [How To Create A Customer Specific OS Template](../Servers/how-to-create-customer-specific-os-templates.md)
 
-**Costs** Customer specific template storage is billed on a per GB basis as Standard Storage. Out of the box Virtual Machine templates in the CenturyLink Cloud platform do not incur a storage fee. Visit our [pricing catalog](https://www.ctl.io/pricing) for rates.
+**Costs** Customer specific template storage is billed on a per GB basis as Standard Storage. Out of the box Virtual Machine templates in the Lumen Cloud platform do not incur a storage fee. Visit our [pricing catalog](https://www.ctl.io/pricing) for rates.
 
 **Sample Use Case** ISV would like to build a virtual machine base template that includes the OS, software packages and security customization to improve speed of delivery to their client base.
 
@@ -37,7 +37,7 @@
 
 **How To:** [Creating & Managing Server Snapshots](../Servers/creating-and-managing-server-snapshots.md)
 
-**Costs:** Snapshots are included as part of the CenturyLink Cloud platform. Snapshots can be automatically created or deleted using the built in scheduler.
+**Costs:** Snapshots are included as part of the Lumen Cloud platform. Snapshots can be automatically created or deleted using the built in scheduler.
 
 **Sample Use Case:** IT Department is preparing for the monthly patch release cycle for their Windows servers. For rapid fallback group level snapshots are created against the production environment prior to application of patches.
 

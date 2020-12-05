@@ -43,7 +43,7 @@ Package Format
         </p>
       </td>
       <td>
-        <p>At least one executable file must be included in the Package. CenturyLink Cloud supports the following executable types:</p>
+        <p>At least one executable file must be included in the Package. Lumen Cloud supports the following executable types:</p>
         <p>-        Standard .exe</p>
         <p>-        Command line scripts (anything that can be run from cmd.exe for Windows or the shell on Linux)</p>
         <p>-        PowerShell scripts (.ps1 files)</p>
@@ -259,7 +259,7 @@ Package Format
         </p>
       </td>
       <td>
-        <p>This is a variable name which you can refer to in the execution command for your package. Our recommendation is that you name your variables to include your CenturyLink Cloud account alias and your Package Name (e.g. T3.install-ad.DomainName) to ensure
+        <p>This is a variable name which you can refer to in the execution command for your package. Our recommendation is that you name your variables to include your Lumen Cloud account alias and your Package Name (e.g. T3.install-ad.DomainName) to ensure
           that you don’t encounter any name conflicts with other scripts you’ve included in a Blueprint.</p>
       </td>
       <td>
@@ -378,7 +378,7 @@ Package Format
         </p>
       </td>
       <td>
-        <p>The CenturyLink Cloud internal network name.</p>
+        <p>The Lumen Cloud internal network name.</p>
         <p>The list contains all networks that belong to the account, and the user is required to select one.</p>
         <p><em>It is unlikely that a Package would ever need this piece of information.</em>
         </p>
@@ -485,7 +485,7 @@ Package Format
   </tbody>
 </table>
 <h4>System Parameters</h4>
-<p>Named Parameters defined by CenturyLink Cloud that can be accessed from within the Package.
+<p>Named Parameters defined by Lumen Cloud that can be accessed from within the Package.
   <br /><em>To use a System Parameter it must be defined in the Parameter list with Prompt=’none’</em>
 </p>
 <table>

@@ -14,7 +14,7 @@
 
 ##### Intra-Organization Adjustments
 
-More details of how CenturyLink distributes credits between Optimized AWS Accounts is now represented in Usage History. It represents pre-invoice adjustments for customers who would otherwise have a negative balance on a particular line item because of shifting RI discounts. For more detail, visit the [Knowledge Base](../../Cloud Application Manager/Cloud Optimization/partner-cloud-integration-detailed-billing-report.md).
+More details of how Lumen distributes credits between Optimized AWS Accounts is now represented in Usage History. It represents pre-invoice adjustments for customers who would otherwise have a negative balance on a particular line item because of shifting RI discounts. For more detail, visit the [Knowledge Base](../../Cloud Application Manager/Cloud Optimization/partner-cloud-integration-detailed-billing-report.md).
 
 #### [Application Lifecycle Management](//www.ctl.io/cloud-application-manager/application-lifecycle-management/)
 
@@ -39,7 +39,7 @@ Product highlights include:
 
 ##### Support for Edge Gateway on CPC on vCF
 
-CenturyLink Private Cloud on vCloud Foundation (CPC on vCF) customers’ Edge Gateways can now be monitored and managed via Managed Services Anywhere
+Lumen Private Cloud on vCloud Foundation (CPC on vCF) customers’ Edge Gateways can now be monitored and managed via Managed Services Anywhere
 
 Watcher Monitors coming soon:
 

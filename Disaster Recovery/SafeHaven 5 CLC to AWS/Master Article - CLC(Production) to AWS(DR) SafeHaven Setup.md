@@ -23,7 +23,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 3. [Setup AWS for SafeHaven-5 using CloudFormation](../SafeHaven 5 General/Setup AWS for SafeHaven-5 using CloudFormation.md)
 
-4. [Create Production SRN in CenturyLink Cloud](Create Production SRN in CenturyLink Cloud.md)
+4. [Create Production SRN in Lumen Cloud](Create Production SRN in Lumen Cloud.md)
 
 5. [Create CMS in AWS](Create CMS in AWS.md)
 
@@ -37,7 +37,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 10. [Add SRN Peer](Add SRN Peer.md)
 
-11. [Add and Claim Storage on Production SRN in CenturyLink Cloud](Add and Claim Storage on Production SRN in CenturyLink Cloud.md)
+11. [Add and Claim Storage on Production SRN in Lumen Cloud](Add and Claim Storage on Production SRN in Lumen Cloud.md)
 
 12. [Create Windows Protection Group,Install LRA and Start Replication](Create-Windows-Protection-Group-Install-LRA-and-Start-Replication.md)
 

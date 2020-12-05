@@ -88,7 +88,7 @@ Then, follow the steps of the [Registration process](#registration-process) belo
 
 #### Registration process
 
-* Start registering. When performing a bulk register, a previous step appears in the dialog providing the option to apply property values to all instances to register. The following image shows the dialog displayed when bulk registering in a *CenturyLink Cloud* provider type:
+* Start registering. When performing a bulk register, a previous step appears in the dialog providing the option to apply property values to all instances to register. The following image shows the dialog displayed when bulk registering in a *Lumen Cloud* provider type:
 
     ![Register Instances bulk](../../images/cloud-application-manager/register/clc-registerInstance-bulk.png)
 
@@ -140,7 +140,7 @@ Then, follow the steps of the [Registration process](#registration-process) belo
 
     ![Start elasticbox agent](../../images/cloud-application-manager/register/aws-registerInstance-success.png)
 
-The previous process was done using a *CenturyLink Cloud* provider but, depending on the provider or the used *OS* it may be necessary to perform additional steps after or before the ones stated above.
+The previous process was done using a *Lumen Cloud* provider but, depending on the provider or the used *OS* it may be necessary to perform additional steps after or before the ones stated above.
 Please, visit these links for further information:
 
 * [Auto-discover AWS EC2 instances](./autodiscover-ec2-instances.md)

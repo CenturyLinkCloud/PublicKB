@@ -110,7 +110,7 @@ ___
 
 ##### How are Cloud Application Manager charges represented on my invoice?
 
-Charges on your CenturyLink invoice are represented by an alias. Cloud Application Manager currently has three different types of alias' including Billing Account Alias, Cost Center Account Alias and Account Alias.
+Charges on your Lumen invoice are represented by an alias. Cloud Application Manager currently has three different types of alias' including Billing Account Alias, Cost Center Account Alias and Account Alias.
 
 ##### What is a Billing Account Alias?
 

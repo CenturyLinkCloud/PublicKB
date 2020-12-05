@@ -10,16 +10,16 @@
 }}}
 
 ### Description
-In this KB article, we demonstrate how to add an Open Virtualization Format (OVF) Template to your Catalog in CenturyLink Private Cloud on VMware Cloud Foundation™. We also have step-by-step instructions on adding an Existing vApp to your Catalog. In this case, an existing vApp could consist of one or more VMs.
+In this KB article, we demonstrate how to add an Open Virtualization Format (OVF) Template to your Catalog in Lumen Private Cloud on VMware Cloud Foundation™. We also have step-by-step instructions on adding an Existing vApp to your Catalog. In this case, an existing vApp could consist of one or more VMs.
 
-A catalog is a container for vApp templates and media files in an organization. Organization administrators and catalog authors within CenturyLink Private Cloud on VMware Cloud Foundation can create catalogs in an organization. Catalog contents can be shared with other users within CenturyLink Private Cloud on VMware Cloud Foundation.
+A catalog is a container for vApp templates and media files in an organization. Organization administrators and catalog authors within Lumen Private Cloud on VMware Cloud Foundation can create catalogs in an organization. Catalog contents can be shared with other users within Lumen Private Cloud on VMware Cloud Foundation.
 
-CenturyLink Private Cloud on VMware Cloud Foundation contains organization (private) catalogs, and access to its public catalog. Organization catalogs include vApp templates and media files that you can share with other users in the organization.
+Lumen Private Cloud on VMware Cloud Foundation contains organization (private) catalogs, and access to its public catalog. Organization catalogs include vApp templates and media files that you can share with other users in the organization.
 
 ### Steps to add an OVF Template
-* Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment.
+* Login to your Lumen Private Cloud on VMware Cloud Foundation environment.
 
-  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
+  ![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
 * Once logged in, click on the menu icon at the top of the screen. Select __Libraries__ in the dropdown menu.
 
@@ -41,7 +41,7 @@ CenturyLink Private Cloud on VMware Cloud Foundation contains organization (priv
 
   ![Catalog](../../images/dccf/add-to-catalog6-html5.png)
 
-* Once the vApp Template is successfully imported, it can be used to deploy VMs inside of CenturyLink Private Cloud on VMware Cloud Foundation.
+* Once the vApp Template is successfully imported, it can be used to deploy VMs inside of Lumen Private Cloud on VMware Cloud Foundation.
 
 ### Steps to add an Existing vApp to your Catalog
 In this example, we will work with the Engineering vApp to create a new vApp Template. If the vApp is running, it is added to the catalog as a vApp template with all of its VMs in a suspended state.

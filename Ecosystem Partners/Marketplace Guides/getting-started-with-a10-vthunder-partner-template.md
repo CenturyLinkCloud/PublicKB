@@ -28,38 +28,38 @@ A10 has pioneered a new generation of application networking technologies. Our s
 For more information, visit [http://www.a10networks.com](http://www.a10networks.com).
 
 ### Solution Overview
-A10 has integrated their vThunder virtual appliance with the CenturyLink Cloud to provide users with maximum flexibility. vThunder virtual appliances are available for both application delivery controller (ADC) and carrier grade networking (CGN) product lines. With vThunder virtual appliances you gain a flexible and easy-to-deploy appliance featuring advanced services for any enterprises, web giant or service provider, on demand.
+A10 has integrated their vThunder virtual appliance with the Lumen Cloud to provide users with maximum flexibility. vThunder virtual appliances are available for both application delivery controller (ADC) and carrier grade networking (CGN) product lines. With vThunder virtual appliances you gain a flexible and easy-to-deploy appliance featuring advanced services for any enterprises, web giant or service provider, on demand.
 
 The vThunder ADC provides advanced L4-7 ADC services (including security) and server load balancing (SLB). The vThunder CGN provides IPv4 scaling with carrier grade NAT (CGNAT) and IPv6 migration capabilities.
 
 For more information, view the product information on A10's website: [http://www.a10networks.com/products/vThunder.php](http://www.a10networks.com/products/vThunder.php).
 
 ### Offer
-A10 is making their vThunder Appliance available for CenturyLink Cloud Users to deploy to their account.  In order to purchase a license or entitlement, please contact A10 Sales using the contact information above.
+A10 is making their vThunder Appliance available for Lumen Cloud Users to deploy to their account.  In order to purchase a license or entitlement, please contact A10 Sales using the contact information above.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable deploying the A10 vThunder technology on CenturyLink Cloud.  A10 has provided a Virtual Appliance - what we call a Partner Template - that can be deployed to your CenturyLink Cloud account via a Service Task.
+After reading this article, the user should feel comfortable deploying the A10 vThunder technology on Lumen Cloud.  A10 has provided a Virtual Appliance - what we call a Partner Template - that can be deployed to your Lumen Cloud account via a Service Task.
 
-This deployment process for Partner Templates currently requires manual interaction via the Service Task process, but will be further automated in future releases of the CenturyLink Cloud Platform.
+This deployment process for Partner Templates currently requires manual interaction via the Service Task process, but will be further automated in future releases of the Lumen Cloud Platform.
 
 If you are interested in seeing this type of Partner Template deployment as an automated feature in the future, please share your input with us at [features@ctl.io](mailto:features@ctl.io).
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 * Create a Network VLAN you want the A10 vThunder Appliance to reside on.  Creating a new VLAN follows best practices so users can secure the private VIPs with firewalls.
 
 ### Postrequisite
 * If you want to access your A10 vThunder Appliance over the internet, please perform the following tasks once your A10 vThunder Appliance has been deployed to your account:
 
-* [Add a Public IP](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal.
+* [Add a Public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal.
 
-* [Allow incoming traffic](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal.
+* [Allow incoming traffic](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal.
 
 ### Detailed Steps to Deploy A10 vThunder Appliance Partner Template
-Follow these step by step instructions to deploy a A10 vThunder Appliance in to your CenturyLink Cloud account:
+Follow these step by step instructions to deploy a A10 vThunder Appliance in to your Lumen Cloud account:
 
 * Open a service task request ticket via email to help@ctl.io with the following details.  You will need to edit some of the information below.
 
@@ -71,10 +71,10 @@ EMAIL SUBJECT:   Custom Image Import Request for Ecosystem Partner Template
 CLC Support Team,
 Please create a ticket to complete the following Service Task:
 
-Please import the Ecosystem Partner Template image file referenced below to my CenturyLink Cloud Account:
-- Import CenturyLink Ecosystem Partner Source Image: “vThunder-2.7.2-P4-single-interface-v2.ova”
-- My CenturyLink Cloud Account Alias: ####
--- My CenturyLink Cloud Account PIN: ####
+Please import the Ecosystem Partner Template image file referenced below to my Lumen Cloud Account:
+- Import Lumen Ecosystem Partner Source Image: “vThunder-2.7.2-P4-single-interface-v2.ova”
+- My Lumen Cloud Account Alias: ####
+-- My Lumen Cloud Account PIN: ####
 - Data Center to import image to: ###
 - Server Name to import image as: ##########
 - VLAN in the account to add the Server to: ########
@@ -82,7 +82,7 @@ Please import the Ecosystem Partner Template image file referenced below to my C
 
 Additional Information to add Partner Template to Network:
 - Please reference the A10 documentation and follow the steps below;
-- During the initial install, the first interface will be used for both management and data. Please request "black hole" VLANs for interfaces 2 and 3 for the system to work correctly. This requirement will be removed in the future as vThunder is tailored for CenturyLink's Cloud.
+- During the initial install, the first interface will be used for both management and data. Please request "black hole" VLANs for interfaces 2 and 3 for the system to work correctly. This requirement will be removed in the future as vThunder is tailored for Lumen's Cloud.
 - Boot the server up and at the command prompt:
 - Login as:  admin / 10
 - Enter privileged mode by running: "enable" (Just hit enter when prompted for a password)
@@ -117,7 +117,7 @@ Once the Service Task team deploy's your A10 vThunder Appliance, you will get a 
 - For additional information on how to configure your A10 vThunder Appliance, please visit the support website at [A10 Networks/](http:///www.A10Networks.com/support/).
 
 ### Pricing
-There are no A10 license costs included.  The cost to deploy the A10 vThunder Partner Template will be billed as a Service Task, but CenturyLink will provide a credit for those costs.  In order to receive a credit, please follow the instructions below. More information about Service Tasks and fees is [available here](http://www.ctl.io/service-tasks).
+There are no A10 license costs included.  The cost to deploy the A10 vThunder Partner Template will be billed as a Service Task, but Lumen will provide a credit for those costs.  In order to receive a credit, please follow the instructions below. More information about Service Tasks and fees is [available here](http://www.ctl.io/service-tasks).
 
 #### Process to request credit for Service Task fee
 Follow this process to request credit on your account to re-imburse any expense to deploy the Partner Template:
@@ -132,7 +132,7 @@ EMAIL SUBJECT:   Requesting Credit for A10 vThunder Partner Template Deployment
 
 CLC Ecosystem Team,
 
-I am requesting a credit be placed on my account to cover the fees associated with deploying the A10 vThunder Partner Template to my account under the Service Task deployed on MM/DD/YYYY.  My CenturyLink Cloud username or account alias the credit needs to be placed on is ######
+I am requesting a credit be placed on my account to cover the fees associated with deploying the A10 vThunder Partner Template to my account under the Service Task deployed on MM/DD/YYYY.  My Lumen Cloud username or account alias the credit needs to be placed on is ######
 
 Thank you very much, your_name_here
 
@@ -141,7 +141,7 @@ Thank you very much, your_name_here
 ### Frequently Asked Questions
 
 #### Where do I obtain my A10 License or entitlements?
-You can contact A10 directly using the information below.  Existing CenturyLink Enterprise Customers can contact their Account Representative for help obtaining a A10 license.
+You can contact A10 directly using the information below.  Existing Lumen Enterprise Customers can contact their Account Representative for help obtaining a A10 license.
   - US Sales and Marketing - For US Sales please contact [pwidman@a10networks.com](mailto:pwidman@a10networks.com) or call (770) 289-7245
   - International Sales and Marketing - For International Sales please contact [sales@a10networks.com](mailto:sales@a10networks.com) or call (408)-325-8616
 
@@ -151,4 +151,4 @@ You can contact A10 directly using the information below.  Existing CenturyLink 
   - Email [support@a10networks.com](mailto:support@a10networks.com)
   - Telephone: (888) 822-7210 or international (408) 325-8676
 
-* For issues related to CenturyLink cloud infrastructure (VMs, storage, network, etc.), or if you experience a problem deploying the partner template, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to Lumen cloud infrastructure (VMs, storage, network, etc.), or if you experience a problem deploying the partner template, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).

@@ -14,7 +14,7 @@ How to delete a server and a server API in the Control Portal.
 
 ### Audience
 
-CenturyLink Cloud Customers
+Lumen Cloud Customers
 
 ### Steps
 
@@ -36,4 +36,4 @@ CenturyLink Cloud Customers
 
 * To learn about how to delete server APIs visit: https://www.ctl.io/api-docs/v1/#server-delete-server
 
-*  To learn about how to archive a server visit: https://www.ctl.io/knowledge-base/servers/managing-and-controlling-costs-in-centurylink-cloud/
+*  To learn about how to archive a server visit: https://www.ctl.io/knowledge-base/servers/managing-and-controlling-costs-in-lumen-cloud/

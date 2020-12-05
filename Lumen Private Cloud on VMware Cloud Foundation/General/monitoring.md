@@ -10,10 +10,10 @@
 }}}
 
 ### Description
-CenturyLink maintains and monitors all components of the CenturyLink Private Cloud on VMware Cloud Foundation stack. The following outlines the monitors that are in place to ensure availability of the product.
+Lumen maintains and monitors all components of the Lumen Private Cloud on VMware Cloud Foundation stack. The following outlines the monitors that are in place to ensure availability of the product.
 
 ### Physical Hardware
-CenturyLink monitors the physical hardware that hosts the CenturyLink Private Cloud on VMware Cloud Foundation product. This includes monitoring components such as:
+Lumen monitors the physical hardware that hosts the Lumen Private Cloud on VMware Cloud Foundation product. This includes monitoring components such as:
 
 * System board
 * RAM
@@ -26,7 +26,7 @@ CenturyLink monitors the physical hardware that hosts the CenturyLink Private Cl
 * Network Interfaces
 
 ### Software Components
-CenturyLink monitors the software components that make up the CenturyLink Private Cloud on VMware Cloud Foundation product. This includes monitoring components such as:
+Lumen monitors the software components that make up the Lumen Private Cloud on VMware Cloud Foundation product. This includes monitoring components such as:
 
 * ESXi Servers
 * vSphere
@@ -37,4 +37,4 @@ CenturyLink monitors the software components that make up the CenturyLink Privat
 * Backups
 
 ### Monitoring Actions
-If an event is triggered by one more of the monitors listed above, an alert is sent to the CenturyLink Service Desk. These alerts are then actioned according to the type and severity of the event.
+If an event is triggered by one more of the monitors listed above, an alert is sent to the Lumen Service Desk. These alerts are then actioned according to the type and severity of the event.

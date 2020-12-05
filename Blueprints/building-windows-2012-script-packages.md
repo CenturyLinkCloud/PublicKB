@@ -33,7 +33,7 @@
 }}}
 
 ### Overview
-In order to facilitate knowledge of the CenturyLink Cloud platform this article will provide sample scripts for use on Windows 2012 Virtual Machines. Detailed information on script and software package management can be found in [our KB](../Blueprints/blueprints-script-and-software-package-management.md)
+In order to facilitate knowledge of the Lumen Cloud platform this article will provide sample scripts for use on Windows 2012 Virtual Machines. Detailed information on script and software package management can be found in [our KB](../Blueprints/blueprints-script-and-software-package-management.md)
 
 ### Important Tools
 * [GUID Generator:](http://www.somacon.com/p113.php) Each package.manifest created and uploaded must contain a unique UUID. This tools provides a way to quickly generate a new one for each package built. **Users must change the GUID on each package posted below.**

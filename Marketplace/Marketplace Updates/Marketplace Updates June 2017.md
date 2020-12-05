@@ -6,9 +6,9 @@
 "contentIsHTML": false
 }}}
 
-The [CenturyLink Marketplace](https://www.ctl.io/marketplace/) provides self-service, on-demand provisioning of provider services on the CenturyLink Platform. Below are the latest additions to the Marketplace. The Marketplace is constantly evolving with more products, providers, and offerings. Check the Marketplace Updates for the latest Marketplace offerings. If you would like to join the CenturyLink Marketplace Provider Program, you can learn more [here](https://www.ctl.io/marketplace-program/).
+The [Lumen Marketplace](https://www.ctl.io/marketplace/) provides self-service, on-demand provisioning of provider services on the Lumen Platform. Below are the latest additions to the Marketplace. The Marketplace is constantly evolving with more products, providers, and offerings. Check the Marketplace Updates for the latest Marketplace offerings. If you would like to join the Lumen Marketplace Provider Program, you can learn more [here](https://www.ctl.io/marketplace-program/).
 
-Products added to the CenturyLink Marketplace June 2017 include:
+Products added to the Lumen Marketplace June 2017 include:
 
 ### Stash
 
@@ -26,10 +26,10 @@ From your computer to your Armored Courier™ and on to colleagues’ computers,
 * [STASH Personal](https://www.ctl.io/marketplace/partner/ZY8M/product/STASH%20Personal/) is a very Secure Data Vault for individuals. There is no better place to store your most important, private, and confidential information. Universally available from anywhere, at any time, with any browser.
 
 
-### CenturyLink Marketplace Featured Provider
+### Lumen Marketplace Featured Provider
 
 Our Featured Marketplace Provider is FlexSecure. FlexSecure is a context-based Authentication-as-a-Service API platform, providing passwordless and pin-based authentication. This platform enables organizations of all sizes to choose, or mix and match, appropriate user authentication methods to protect and secure their data sources on their Cloud/Mobile/IT infrastructure.
 
-By adding multi-layered authentication options that may require user interaction before granting access, organizations have the ability to add significant levels of security to protect their data from hackers and prevent unauthorized access. To learn more about FlexSecure, visit [their site](http://www.flexsecure.co/) or read their CenturyLink Marketplace provider spotlight blog post, [Security Made Easy with FlexSecure](https://www.ctl.io/blog/post/security-made-easy-with-flexsecure/).
+By adding multi-layered authentication options that may require user interaction before granting access, organizations have the ability to add significant levels of security to protect their data from hackers and prevent unauthorized access. To learn more about FlexSecure, visit [their site](http://www.flexsecure.co/) or read their Lumen Marketplace provider spotlight blog post, [Security Made Easy with FlexSecure](https://www.ctl.io/blog/post/security-made-easy-with-flexsecure/).
 
-You can find the [FlexSecure Passwordless Authentication](https://www.ctl.io/marketplace/partner/ADMN/) product on the [CenturyLink Marketplace](https://www.ctl.io/marketplace/).
+You can find the [FlexSecure Passwordless Authentication](https://www.ctl.io/marketplace/partner/ADMN/) product on the [Lumen Marketplace](https://www.ctl.io/marketplace/).

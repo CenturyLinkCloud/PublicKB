@@ -10,12 +10,12 @@
 }}}
 
 ### Description
-In this KB article, we describe how to change a user password in CenturyLink Private Cloud on VMware Cloud Foundation™ (CPC on VCF).
+In this KB article, we describe how to change a user password in Lumen Private Cloud on VMware Cloud Foundation™ (CPC on VCF).
 
 ### Steps
-Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment.
+Login to your Lumen Private Cloud on VMware Cloud Foundation environment.
 
-  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
+  ![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
 Once logged in, click the "hamburger" menu in the upper left of the screen, then select __Administration__.
 

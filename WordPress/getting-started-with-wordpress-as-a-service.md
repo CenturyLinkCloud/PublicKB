@@ -1,5 +1,5 @@
 {{{
-  "title": "Getting Started with CenturyLink WordPress Hosting",
+  "title": "Getting Started with Lumen WordPress Hosting",
   "date": "10-15-2015",
   "author": "Bill Burge, Andy Watson",
   "attachments": [],
@@ -8,7 +8,7 @@
 
 ### IMPORTANT NOTE
 
-CenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
+Lumen WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
 
 During the Limited Beta there is no production Service Level Agreement.
 
@@ -17,19 +17,19 @@ Today nearly 25% of the sites on the internet are WordPress sites. WordPress is 
 
 In addition to all that WordPress has to offer, there is an extensive and helpful community of WordPress users around the world. Questions and answers can be found in [support forums](https://wordpress.org/support/), [mailing lists](https://codex.wordpress.org/Mailing_Lists), [WordCamps](https://central.wordcamp.org/) and if that is not enough, thousands of video presentations exists and are being added to on [wordpress.tv](http://wordpress.tv/) to help everyone from the beginner to the expert.
 
-CenturyLink's WordPress Hosting platform hosts secure, enterprise class, cloud-based WordPress sites.
+Lumen's WordPress Hosting platform hosts secure, enterprise class, cloud-based WordPress sites.
 
 ### Prerequisites
 
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 
 ## Configuring a New WordPress Site
 
-1. Browse to the [CenturyLink Cloud WordPress Site Creation Login](https://wordpress.ctl.io)
+1. Browse to the [Lumen Cloud WordPress Site Creation Login](https://wordpress.ctl.io)
 
   ![](../images/wp_getting_started/wp_getting_started_1.png)
 
-2. Input your CenturyLink Cloud username and password and click Login
+2. Input your Lumen Cloud username and password and click Login
 
   ![](../images/wp_getting_started/wp_getting_started_2.png)
 
@@ -45,11 +45,11 @@ CenturyLink's WordPress Hosting platform hosts secure, enterprise class, cloud-b
 
   ![](../images/wp_getting_started/wp_getting_started_5.png)
 
-6. You will also receive an email from CenturyLink Cloud with limited site details.
+6. You will also receive an email from Lumen Cloud with limited site details.
 
   ![](../images/wp_getting_started/wp_getting_started_6.png)
 
-7. You will also receive an email from the CenturyLink Git Repository asking for confirmation. Click Confirm your account.
+7. You will also receive an email from the Lumen Git Repository asking for confirmation. Click Confirm your account.
 
   ![](../images/wp_getting_started/wp_getting_started_7.png)
 
@@ -59,21 +59,21 @@ CenturyLink's WordPress Hosting platform hosts secure, enterprise class, cloud-b
 
 ## Frequently Asked Questions
 
-**Q: What are the differences between a standard WordPress install and a CenturyLink Cloud WordPress install?**
+**Q: What are the differences between a standard WordPress install and a Lumen Cloud WordPress install?**
 
-A: The CenturyLink WordPress hosting team has compiled a [Knowledge Base article for known WordPress Limitaions](wordpress-known-limitations.md).
+A: The Lumen WordPress hosting team has compiled a [Knowledge Base article for known WordPress Limitaions](wordpress-known-limitations.md).
 
 **Q: I lost my Git confirmation email, how do I confirm my Git repository?**
 
 A: Use the link here: https://git.wordpress.ctl.io/users/confirmation/new
 
-**Q: How do I migrate my existing WordPress Site to CenturyLink's WordPress hosting platform?**
+**Q: How do I migrate my existing WordPress Site to Lumen's WordPress hosting platform?**
 
-A: The CenturyLink WordPress hosting team has compiled a [Knowledge Base article for manually migrating a WordPress site to CenturyLink Cloud](wordpress-site-migration-to-centurylink-cloud.md).
+A: The Lumen WordPress hosting team has compiled a [Knowledge Base article for manually migrating a WordPress site to Lumen Cloud](wordpress-site-migration-to-lumen-cloud.md).
 
-**Q: Can I have persistent storage with CenturyLink WordPress Hosting?**
+**Q: Can I have persistent storage with Lumen WordPress Hosting?**
 
-A: WordPress persistent storage must be [configured  with CenturyLink Cloud Object Storage](wordpress-persistent-storage-configuration.md).
+A: WordPress persistent storage must be [configured  with Lumen Cloud Object Storage](wordpress-persistent-storage-configuration.md).
 
 **Q: How do I access the MySQL database for my WordPress site?**
 
@@ -87,9 +87,9 @@ A: You can [push plugins and themes to your WordPress site using your git reposi
 
 A: You must [configure SMTP for your WordPress site](wordpress-SMTP-Configuration.md) in order to send email.
 
-**Q: Can I configure my own domain with CenturyLink WordPress Hosting?**
+**Q: Can I configure my own domain with Lumen WordPress Hosting?**
 
-A: You can [configure your own domain name](wordpress-custom-domain-configuration.md) via the CenturyLink Cloud Portal.
+A: You can [configure your own domain name](wordpress-custom-domain-configuration.md) via the Lumen Cloud Portal.
 
 **Q: How do I update my WordPress site?**
 

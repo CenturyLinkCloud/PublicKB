@@ -7,10 +7,10 @@
 }}}
 
 ### Overview
-After deployment of the SafeHaven and the monitoring system, CenturyLink provides the customer with credentials to log into the SafeHaven console to view the solution. The customer can edit certain fields to accommodate the solution and their daily workloads. In order to ensure the integrity of the solution, we strongly recommend that the customer edit **only** the fields listed below. The customer can also request assistance and/or recommendation from CenturyLink before editing them.
+After deployment of the SafeHaven and the monitoring system, Lumen provides the customer with credentials to log into the SafeHaven console to view the solution. The customer can edit certain fields to accommodate the solution and their daily workloads. In order to ensure the integrity of the solution, we strongly recommend that the customer edit **only** the fields listed below. The customer can also request assistance and/or recommendation from Lumen before editing them.
 
 ### Console Access to the Solution
-1. Log into the CenturyLink SafeHaven Console.
+1. Log into the Lumen SafeHaven Console.
    ![SafeHaven Console Login](../images/drms-log-in-console.png)
 
 2. Navigate around the SafeHaven Console.
@@ -48,6 +48,6 @@ After deployment of the SafeHaven and the monitoring system, CenturyLink provide
 
 7. Failover a Protection Group.
    * When disaster occurs, right-click the protection group and choose **Failover**.
-   * **Note:** We recommend having a phone conversation your CenturyLink DR Manager prior to invoking a failover operation.
+   * **Note:** We recommend having a phone conversation your Lumen DR Manager prior to invoking a failover operation.
 
    ![Invoking a Failover](../images/drms-failover.png)

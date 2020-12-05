@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-Managed Disaster Recovery Services (MDRS) are ideal for customers who lack Disaster Recovery (DR) expertise or do not have the staff needed to maintain a DR solution. CenturyLink takes over these responsibilities and delivers end-to-end services. Unlike other DRaaS solutions, CenturyLink MDRS carries out regular audits, tests, and at-time-of-disaster (ATOD) failover services to ensure the reliability, accuracy, and efficiency of your DR solution. MDRS services including:
+Managed Disaster Recovery Services (MDRS) are ideal for customers who lack Disaster Recovery (DR) expertise or do not have the staff needed to maintain a DR solution. Lumen takes over these responsibilities and delivers end-to-end services. Unlike other DRaaS solutions, Lumen MDRS carries out regular audits, tests, and at-time-of-disaster (ATOD) failover services to ensure the reliability, accuracy, and efficiency of your DR solution. MDRS services including:
 
 * White-glove on boarding
 * 24x7 monitoring and maintenance

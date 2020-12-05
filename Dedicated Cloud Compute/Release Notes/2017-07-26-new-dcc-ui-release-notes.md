@@ -8,7 +8,7 @@
 
 ### Enhancements
 
-* Global Navigation: More improvements switching between other CenturyLink services.
+* Global Navigation: More improvements switching between other Lumen services.
 * Order Expiration: Saved orders that have not been updated for 8 days will automatically expire and release the resources that were reserved. Saved orders shown as expiring soon should be updated or deployed to prevent them from having to be recreated after they expire.
 * Price Changes: When deploying a saved order, any price changes that have occurred will be displayed and must be confirmed before deployment starts.
 * Create Server: When manually entering an IP address, the subnet will be pre-filled automatically.

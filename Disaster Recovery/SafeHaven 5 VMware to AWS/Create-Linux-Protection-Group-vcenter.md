@@ -7,10 +7,10 @@
 }}}
 
 ### Article Overview
-This article explains how to attach a RAW disk to Production SRN in CenturyLink Cloud and create a Linux Protection Group.
+This article explains how to attach a RAW disk to Production SRN in Lumen Cloud and create a Linux Protection Group.
 
 ### Requirements
-Access to the Production SRN in CenturyLink Cloud and permissions to add raw disks to it.
+Access to the Production SRN in Lumen Cloud and permissions to add raw disks to it.
 
 ### Assumption
 This article assumes that:

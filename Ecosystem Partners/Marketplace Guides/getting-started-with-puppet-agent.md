@@ -9,7 +9,7 @@
 [Puppet Labs Logo](../../images/puppet/puppet_labs_logo.jpg)
 
 ### Overview
-After reading this article, the reader should feel comfortable deploying a Puppet Agent on CenturyLink Cloud.
+After reading this article, the reader should feel comfortable deploying a Puppet Agent on Lumen Cloud.
 
 ### Partner Profile
 Puppet is a configuration management solution that allows you to define the state of your IT infrastructure, and then automatically enforces the desired state.
@@ -17,7 +17,7 @@ Puppet is a configuration management solution that allows you to define the stat
 https://puppetlabs.com/puppet/puppet-open-source
 
 ### Description
-Puppet agent integration is now supported on the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this solution.
+Puppet agent integration is now supported on the Lumen Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this solution.
 
 Open Source Puppet is a declarative, model-based configuration management solution that lets you define the state of your IT infrastructure, using the Puppet language. Open Source Puppet then automatically enforces the correct configuration to ensure the right services are up and running, on the right platforms.
 
@@ -25,9 +25,9 @@ You can run Puppet on all major Linux and Unix platforms, Mac OS X, and Windows.
 
 ### Audience
 
-CenturyLink Cloud Users
+Lumen Cloud Users
 ### Deploying via Blueprint Packages
-Puppet agents are often best deployed as part of a new server build, especially when designed a standardized infrastructure service catalog. CenturyLink has made two packages available for inclusion in your own Blueprints:
+Puppet agents are often best deployed as part of a new server build, especially when designed a standardized infrastructure service catalog. Lumen has made two packages available for inclusion in your own Blueprints:
 * [Install Puppet Agent Bridge on Linux](https://control.ctl.io/Blueprints/Packages/Details?uuid=775bb824-579d-4c8d-8955-c69a94a2ba1a&classification=Script&type=AccountLibrary).
 * [Install Puppet Agent Bridge on Windows](https://control.ctl.io/Blueprints/Packages/Details?uuid=735bb844-579d-4c8d-8255-c69a94a2ba1a&classification=Script&type=AccountLibrary).
 
@@ -55,15 +55,15 @@ Add a Puppet Agent to an existing Linux server using the preconfigured Blueprint
    * You will see the deployment details stating the Blueprint is queued for execution.
    * This will kick off the Blueprint deploy process and load a page where you can track the deployment progress. Deployment will typically complete within 15 to 20 minutes.
 
-### About Community Releases on CenturyLink Cloud
-CenturyLink Cloud publishes a variety of packaged and certified community releases of OSS or otherwise generally available software solutions. These certifications are limited to successful deployment of assets on cloud servers and do not extend onto ongoing software configuration, guarantees, or support.
+### About Community Releases on Lumen Cloud
+Lumen Cloud publishes a variety of packaged and certified community releases of OSS or otherwise generally available software solutions. These certifications are limited to successful deployment of assets on cloud servers and do not extend onto ongoing software configuration, guarantees, or support.
 
-Have a suggestion for other software to include within the CenturyLink Cloud Blueprints Library?  Email ECOSystem@centurylink.com.
+Have a suggestion for other software to include within the Lumen Cloud Blueprints Library?  Email ECOSystem@centurylink.com.
 
 ### Frequently Asked Questions
 **Where do I obtain my license?**
 This is a release of the Puppet Community Edition. For Enterprise deployments or commercial support engage Puppet Labs directly.
 
 **Who should I contact for support?**
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
+* For issues related to cloud infrastructure, please open a ticket using the [Lumen Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
 * For all Puppet related issues direct questions towards the Puppet user community.

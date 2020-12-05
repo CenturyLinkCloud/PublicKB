@@ -9,7 +9,7 @@
 ### Article Overview
 This article explains how to add and claim storage to the SRNs in the production and DR side.
 ### Requirements
-Access to the Production SRN in CenturyLink Cloud and permissions to add raw disks to it.
+Access to the Production SRN in Lumen Cloud and permissions to add raw disks to it.
 
 ### Assumption
 This article assumes that:
@@ -18,7 +18,7 @@ This article assumes that:
 2. Both production and recovery SRNs have been registered and peered
 
 ### Add and claim Storage on SRNs.
-**Adding Storage to the Production SRN in Centurylink Private Cloud**
+**Adding Storage to the Production SRN in Lumen Private Cloud**
 1. Login to CPC-vCF console.
 2. Click on the production SRN VM.
 3. Go to **Hardware** tab
@@ -40,7 +40,7 @@ This article assumes that:
    
    
 **Adding Storage to the DR SRN in CLC**
-1. Login to Centurylink Cloud Portal.
+1. Login to Lumen Cloud Portal.
 2. Click on the DR-SRN.
 3. Click on **Edit Storage**.
 4. Click on **Add storage**. Then select **raw disk**.

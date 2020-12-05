@@ -24,9 +24,9 @@ info-us@centerity.com
 * EMEA & APAC Customers: +1 (339) 225-7010
 
 ### Description
-Centerity has integrated their technology with the CenturyLink Cloud platform and produced several Blueprints. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Cloud APM solution.
+Centerity has integrated their technology with the Lumen Cloud platform and produced several Blueprints. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Cloud APM solution.
 
-Centerity offers integrated monitoring solution with CenturyLink Cloud platform. This document will guide CenturyLink users how to use Centerity Monitor in the CenturyLink cloud with a few easy steps.
+Centerity offers integrated monitoring solution with Lumen Cloud platform. This document will guide Lumen users how to use Centerity Monitor in the Lumen cloud with a few easy steps.
 
 ![Diagram](https://t3n.zendesk.com/attachments/token/hAxZSNLbzTswDqfATtK7gOONm/?name=bsm.jpg)
 
@@ -40,7 +40,7 @@ Centerity Monitor provides accurate real-time measurements of performance and av
 Centerity Monitor’s business value is to provide business analytics and business intelligence via a unified software platform with superior Time-to-Value (TTV), Total Cost of Ownership (TCO) and Return on Investment (ROI) characteristics.
 
 ### Offer
-Centerity Systems is offering a subset of its unified IT monitoring platform as part of a no charge, 30 day, one-time trial program for Linux and Windows servers (10 services max) within CenturyLink’s Cloud. Through this unique offer, users will have access to the Centerity Monitor Dashboard, which provides key metrics, summary views of real-time system health and availability, host and service group status and event status as well as access to all Centerity Monitor reports such as system utilization, usage summary, uptime, trends, and history. Please check with CenturyLink for any access charges that may apply to using its Cloud.
+Centerity Systems is offering a subset of its unified IT monitoring platform as part of a no charge, 30 day, one-time trial program for Linux and Windows servers (10 services max) within Lumen’s Cloud. Through this unique offer, users will have access to the Centerity Monitor Dashboard, which provides key metrics, summary views of real-time system health and availability, host and service group status and event status as well as access to all Centerity Monitor reports such as system utilization, usage summary, uptime, trends, and history. Please check with Lumen for any access charges that may apply to using its Cloud.
 
 For this trial, users will have complete access to any of the application metric capture profiles. These are available through Centerity Support:
 
@@ -62,16 +62,16 @@ Centerity will also offer access to its complete enterprise-class and carrier-cl
 All use of Centerity software, documentation, and services is governed by Centerity’s Software License and Support Agreement or End User License Agreement (EULA). Contact Centerity for details of the agreement.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the Centerity Monitor technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the Centerity Monitor technology on Lumen Cloud.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 
 ### Postrequisite
-* Adding an external ip-address to an existing or new CenturyLink server.
+* Adding an external ip-address to an existing or new Lumen server.
   ![ip.jpg](https://t3n.zendesk.com/attachments/token/kObGC9P2IjP1ate0NexwFNiXz/?name=ip.jpg)
 
 * Allow incoming traffic for port 5666 to an existing or new server.
@@ -113,7 +113,7 @@ After reading this article, the user should feel comfortable getting started usi
 
 ### Install Centerity CentOS / Red Hat Agent 64bit Blueprint
 1. Locate the Centerity CentOS / Red Hat Agent 64bit Blueprint.
-   * Starting from the CenturyLink Control Panel, navigate to the Blueprints Library.
+   * Starting from the Lumen Control Panel, navigate to the Blueprints Library.
    * Search for “Centerity” in the keyword search on the right side of the page.
    * Locate the Centerity CentOS / Red Hat Agent 64bit Blueprint.
 
@@ -177,7 +177,7 @@ IPTables: When iptables is enabled: add an inbound rule to allow traffic for por
    ``
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no Centerity license costs or additional fees bundled in.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. There are no Centerity license costs or additional fees bundled in.
 
 ### Frequently Asked Questions
 Where do I obtain my Centerity Licenses?
@@ -187,5 +187,5 @@ us-info@centerity.com
 +1-339-225-7006
 
 #### Who should I contact for support?
-* For issues related to deploying the Centerity Blueprint on CenturyLink Cloud, licensing or accessing the deployed software, please visit the Centerity Support Website TBD.
-* For issues related to cloud infrastructure (VMs, network, etc.), please open a ticket using the CenturyLink Cloud Support Process.
+* For issues related to deploying the Centerity Blueprint on Lumen Cloud, licensing or accessing the deployed software, please visit the Centerity Support Website TBD.
+* For issues related to cloud infrastructure (VMs, network, etc.), please open a ticket using the Lumen Cloud Support Process.

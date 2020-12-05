@@ -8,7 +8,7 @@
 }}}
 
 ### Overview
-CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storage for backup and recovery of file systems or applications. As Object Storage is consumable by any customer in a public fashion, applications or servers can be located within the CenturyLink Cloud or on premise. There are various industry backup tools that support object storage as a repository for data. In this Knowledge Base article we will focus on [Cloudberry Lab](http://www.cloudberrylab.com).
+Lumen Cloud customers may wish to leverage our S3 compatible Object Storage for backup and recovery of file systems or applications. As Object Storage is consumable by any customer in a public fashion, applications or servers can be located within the Lumen Cloud or on premise. There are various industry backup tools that support object storage as a repository for data. In this Knowledge Base article we will focus on [Cloudberry Lab](http://www.cloudberrylab.com).
 
 [Cloudberry Ultimate Edition](http://www.cloudberrylab.com/enterprise-cloud-backup-software.aspx) permits backup of Microsoft Windows Server File Systems (backup files, folders, **network shares** and **system image**), Microsoft SQL and Microsoft Exchange data.
 
@@ -16,18 +16,18 @@ CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storag
 
 [Cloudberry Backup for Linux](http://www.cloudberrylab.com/backuplinux.aspx) permits backup of Linux File Systems (backup files and folders).
 
-[Cloudberry Backup for QNAP NAS](http://www.cloudberrylab.com/backup-qnap.aspx) offers QNAP NAS data backup directly to CenturyLink Object storage.
+[Cloudberry Backup for QNAP NAS](http://www.cloudberrylab.com/backup-qnap.aspx) offers QNAP NAS data backup directly to Lumen Object storage.
 
-[Cloudberry Backup for Synology NAS](http://www.cloudberrylab.com/backup-synology.aspx) offers Synology NAS data backup directly to CenturyLink Object storage.
+[Cloudberry Backup for Synology NAS](http://www.cloudberrylab.com/backup-synology.aspx) offers Synology NAS data backup directly to Lumen Object storage.
 
 ### Supporting Information
-* Information and details around the CenturyLink Cloud Object Storage services can be found in our [Knowledge Base.](//www.ctl.io/knowledge-base/storage/object-storage)
-* It is also important to note that CenturyLink Cloud provides no support for any 3rd party backup software tools. We are simply providing cloud based storage onto which backup software can store data.
+* Information and details around the Lumen Cloud Object Storage services can be found in our [Knowledge Base.](//www.ctl.io/knowledge-base/storage/object-storage)
+* It is also important to note that Lumen Cloud provides no support for any 3rd party backup software tools. We are simply providing cloud based storage onto which backup software can store data.
 
 ### Prerequisites
-* A CenturyLink Cloud Account
+* A Lumen Cloud Account
 * Cloudberry Backup software licenses and installation
-* [An object storage user and bucket for backups is created in the CenturyLink Cloud Control Portal.](../Object Storage/using-object-storage-from-the-control-portal.md)
+* [An object storage user and bucket for backups is created in the Lumen Cloud Control Portal.](../Object Storage/using-object-storage-from-the-control-portal.md)
 * The source VM or Server has internet access
 
 ### Cloudberry Ultimate Edition capabilities
@@ -38,25 +38,25 @@ CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storag
 * [Microsoft SQL backup](#microsoft-sql-backup)
 * [Microsoft Exchange backup](#microsoft-exchange-backup)
 
-#### Configuring CenturyLink Object storage
+#### Configuring Lumen Object storage
 
 1. Open Cloudberry Backup Ultimate Edition, select file, in the main menu select «Add New Account» and select «CentryLink» icon.
 
   ![Cloudberry Ultimate edition - add new account](../../images/cloudberrylab/cloudberry-ultimate-add-storage.jpg)
 
-  ![Cloudberry Ultimate - select CenturyLink](../../images/cloudberrylab/cloudberrylab-select-cloud-storage-centurylink-focused.jpg)
+  ![Cloudberry Ultimate - select Lumen](../../images/cloudberrylab/cloudberrylab-select-cloud-storage-centurylink-focused.jpg)
 
-2. Populate the S3 Compatible Account information with your CenturyLink Cloud [Object Storage Access Key, Secret Key, Service Point and bucket name.](../Object Storage/using-object-storage-from-the-control-portal.md) [All service points are listed here.](//www.ctl.io/knowledge-base/storage/object-storage/object-storage-regions-and-service-points/)
+2. Populate the S3 Compatible Account information with your Lumen Cloud [Object Storage Access Key, Secret Key, Service Point and bucket name.](../Object Storage/using-object-storage-from-the-control-portal.md) [All service points are listed here.](//www.ctl.io/knowledge-base/storage/object-storage/object-storage-regions-and-service-points/)
 
-  ![Cloudberry Ultimate - set up CenturyLink account](../../images/cloudberrylab/cloudberrylab-centurylink-storage-account-configuration.jpg)
+  ![Cloudberry Ultimate - set up Lumen account](../../images/cloudberrylab/cloudberrylab-centurylink-storage-account-configuration.jpg)
 
-3. Optionally, you may input cost estimate parameters as part of the storage account setup. By using this component the Cloudberry Lab backup software is able to estimate your costs for storage. **This is an estimate on storage (excluding bandwidth charges) and does not necessarily reflect actual CenturyLink Cloud Object Storage fees.**
+3. Optionally, you may input cost estimate parameters as part of the storage account setup. By using this component the Cloudberry Lab backup software is able to estimate your costs for storage. **This is an estimate on storage (excluding bandwidth charges) and does not necessarily reflect actual Lumen Cloud Object Storage fees.**
 
   ![Cloudberry Ultimate - storage cost estimates](../../images/cloudberrylab/cloudberrylab-enable-cost-estimates.jpg)     
 
-4. Your CenturyLink object storage account should now be created successfully.
+4. Your Lumen object storage account should now be created successfully.
 
-  ![Cloudberry Ultimate - CenturyLink account registed](../../images/cloudberrylab/cloudberry-ultimate-registered-accounts.jpg)
+  ![Cloudberry Ultimate - Lumen account registed](../../images/cloudberrylab/cloudberry-ultimate-registered-accounts.jpg)
 
 #### <a name="file-level-backup"></a>Configuring file level backup for Windows
 
@@ -64,9 +64,9 @@ CenturyLink Cloud customers may wish to leverage our S3 compatible Object Storag
 
   ![Cloudberry Ultimate - file level backup](../../images/cloudberrylab/cloudberry-ultimate-file-level-backup.jpg)
 
-2. Select the CenturyLink Object Storage account you created recently (as described above).
+2. Select the Lumen Object Storage account you created recently (as described above).
 
-  ![Cloudberry Ultimate - select CenturyLink object storage](../../images/cloudberrylab/cloudberry-ultimate-select-storage-account.jpg)
+  ![Cloudberry Ultimate - select Lumen object storage](../../images/cloudberrylab/cloudberry-ultimate-select-storage-account.jpg)
 
 3. Specify a name for the backup plan. We recommend a name that encompasses the server name, backup type (file, SQL etc.) as a minimum. Additionally, it is advised that backup plan configurations are saved to the backup storage (Default).
 

@@ -2,20 +2,20 @@
 "title": "Cloud Platform - Release Notes: June 11, 2019",
 "date": "06-11-2019",
 "author": "Marco Paolillo",
-"keywords":["centurylink", "cam", "ams", "msa", "analytics"],
+"keywords":["lumen", "cam", "ams", "msa", "analytics"],
 "attachments": [],
 "contentIsHTML": false
 }}}
 
 ### Announcements (7)
 
-#### [CenturyLink Private Cloud on VMware Cloud Foundation](https://www.ctl.io/centurylink-private-cloud-on-vmware-cloud-foundation/)
+#### [Lumen Private Cloud on VMware Cloud Foundation](https://www.ctl.io/lumen-private-cloud-on-vmware-cloud-foundation/)
 
 ##### Automated vApp Templates Catalog
 
-All new builds will use an automated Catalog subscription model. The Default Catalog, named CTL-Golden-Images, will come populated with various vApp Templates. For more information, please refer to the knowledge base article [Default Catalog and How to Opt Out](../../CenturyLink Private Cloud on VMware Cloud Foundation/Catalog/default-catalog.md).
+All new builds will use an automated Catalog subscription model. The Default Catalog, named CTL-Golden-Images, will come populated with various vApp Templates. For more information, please refer to the knowledge base article [Default Catalog and How to Opt Out](../../Lumen Private Cloud on VMware Cloud Foundation/Catalog/default-catalog.md).
 
-#### [CenturyLink Public Cloud](https://www.ctl.io/dedicated-cloud-compute/)
+#### [Lumen Public Cloud](https://www.ctl.io/dedicated-cloud-compute/)
 
 ##### Windows 2008 Vulnerability
 
@@ -23,13 +23,13 @@ On May 14, 2019, Microsoft announced CVE-2019-0708, a critical flaw in Remote De
 
 If you have Remote Desktop Services enabled and a public IP, you are at a high risk of being compromised and need to update all machines running Windows 2008 or older ASAP. At the very least, please disable Remote Desktop Services if you can until the updates are performed.  
 
-In all cases, CenturyLink recommends that you to install the updates for this vulnerability as soon as possible.  Where able, migrate applications to a newer version of Windows as Windows 2008 is going end of support Jan 2020.  For responses to FAQs regarding Windows 2008 support please see [this Knowledge Base article](../../Support/windows-2008-end-of-vendor-support-faq.md).
+In all cases, Lumen recommends that you to install the updates for this vulnerability as soon as possible.  Where able, migrate applications to a newer version of Windows as Windows 2008 is going end of support Jan 2020.  For responses to FAQs regarding Windows 2008 support please see [this Knowledge Base article](../../Support/windows-2008-end-of-vendor-support-faq.md).
 
-##### Important Notice Regarding End of Sale for CenturyLink Cloud Managed Backup
+##### Important Notice Regarding End of Sale for Lumen Cloud Managed Backup
 
-Beginning June 25, [CenturyLink Cloud Managed Backup](https://www.ctl.io/managed-services/backup/) will no longer be available for purchase. There is no action necessary for current CenturyLink Cloud Managed Backup customers. The features and functionality of the Cloud Managed Backup offer will not change.
+Beginning June 25, [Lumen Cloud Managed Backup](https://www.ctl.io/managed-services/backup/) will no longer be available for purchase. There is no action necessary for current Lumen Cloud Managed Backup customers. The features and functionality of the Cloud Managed Backup offer will not change.
  
-We appreciate you choosing CenturyLink as your Cloud Provider. At CenturyLink, it is our mission to offer products and services that help our customers navigate the digital transformation path; allowing them to focus on what is important &mdash; growing their business and taking care of their customers. 
+We appreciate you choosing Lumen as your Cloud Provider. At Lumen, it is our mission to offer products and services that help our customers navigate the digital transformation path; allowing them to focus on what is important &mdash; growing their business and taking care of their customers. 
 
 #### [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/)
 
@@ -56,4 +56,4 @@ Users can now use these new resource types in the template definition of any Clo
 
 ##### Integrated Azure in Asia Pacific
 
-CenturyLink has been authorized by Azure to support consolidated billing and management of accounts for customers headquartered within select countries within the Asia Pacific region. A CenturyLink representative should be contacted for a detailed list of geographic, sector, and feature availability.
+Lumen has been authorized by Azure to support consolidated billing and management of accounts for customers headquartered within select countries within the Asia Pacific region. A Lumen representative should be contacted for a detailed list of geographic, sector, and feature availability.

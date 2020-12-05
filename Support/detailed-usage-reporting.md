@@ -1,5 +1,5 @@
 {{{
-  "title": "Understanding Your Estimated CenturyLink Cloud Usage",
+  "title": "Understanding Your Estimated Lumen Cloud Usage",
   "date": "09-28-2018",
   "author": "Jared Ruckle",
   "attachments": []
@@ -7,7 +7,7 @@
 
 ### Description
 
-For customers that want to know more information about their estimated resource usage on CenturyLink Cloud, several options are available. This article explains a few of them.
+For customers that want to know more information about their estimated resource usage on Lumen Cloud, several options are available. This article explains a few of them.
 
 ### Self-Service Tools
 

@@ -16,9 +16,9 @@ Login access to the Manual Production Site.
 ### Assumptions
 This article assumes that the user has login access to the Manual Production Site.
 
-### Create Production SRN - If production site is CenturyLink Private Cloud on VMware Cloud Foundation
-1. Login to the **CenturyLink Private Cloud on VMware Cloud Foundation** portal with your credentials.  
-2. Upload the **SafeHaven OVA** (from the latest Release notes) to the CenturyLink Private Cloud on VMware Cloud Foundation portal. Once that is complete click on **Catalog**, then **SafeHaven**.  
+### Create Production SRN - If production site is Lumen Private Cloud on VMware Cloud Foundation
+1. Login to the **Lumen Private Cloud on VMware Cloud Foundation** portal with your credentials.  
+2. Upload the **SafeHaven OVA** (from the latest Release notes) to the Lumen Private Cloud on VMware Cloud Foundation portal. Once that is complete click on **Catalog**, then **SafeHaven**.  
 3. Right-Click on **SafeHavenApplianceOVA** and select **Add to My Cloud**  
 4. Enter a name for the VM, and click **Next**.  
 5. Under **Configure Resources** tab, enter the **Virtual Machine** name, **Computer Name** (Can be same as VM name).  

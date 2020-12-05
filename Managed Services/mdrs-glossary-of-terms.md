@@ -10,16 +10,16 @@
 
 **Central Managed Server** - SafeHaven Central Managed Server is part of SafeHaven cluster. It gathers information about the status of SafeHaven Replication Nodes (SRN), protection groups, recovery point history, job history, WAN sync speed, un-synced data, and presents the information via SafeHaven Console. The Central Managed Server receives commands from the SafeHaven Console and distributes the commands to SRNs to execute the commands.
 
-**CenturyLink Cloud** - CenturyLink Cloud is a single cloud platform offering secure enterprise cloud services ideal for business apps, IaaS, PaaS, SaaS, DBaaS, and cloud management via an intuitive Control Portal.
+**Lumen Cloud** - Lumen Cloud is a single cloud platform offering secure enterprise cloud services ideal for business apps, IaaS, PaaS, SaaS, DBaaS, and cloud management via an intuitive Control Portal.
 
 
 **Client Server** - A Client Server is server used to launch the SafeHaven Console, which is a Graphical User Interface. It must be a Windows machine with the proper Java version installed.
 
 **Disaster Recovery Plan** - The Disaster Recovery Plan is a SafeHaven built-in plan which maps production servers to recovery servers and defines the boot up and power off sequence of the servers in each protection group.
 
-**Failback** - Failback is the process of restoring operations to the primary site. SafeHaven Failback is protection group based. There is no data loss for SafeHaven Failback. After SafeHaven Failback, the DR solution is restored to the same status as before disaster. During failback Managed Disaster Recovery Services coordinate with different CenturyLink teams MS SQL, AD, SAP, etc., to restore applications.
+**Failback** - Failback is the process of restoring operations to the primary site. SafeHaven Failback is protection group based. There is no data loss for SafeHaven Failback. After SafeHaven Failback, the DR solution is restored to the same status as before disaster. During failback Managed Disaster Recovery Services coordinate with different Lumen teams MS SQL, AD, SAP, etc., to restore applications.
 
-**Failover** - Failover switches the workloads from the production site to the recovery site. SafeHaven Failover is protection group based so that applications and servers in the same group are consistent. SafeHaven Failover stops the WAN sync from the primary site to the recovery site and brings up the recovery servers based on the selected checkpoints. During failover Managed Disaster Recovery Services coordinate with different CenturyLink teams MS SQL, AD, SAP, etc., to restore applications.
+**Failover** - Failover switches the workloads from the production site to the recovery site. SafeHaven Failover is protection group based so that applications and servers in the same group are consistent. SafeHaven Failover stops the WAN sync from the primary site to the recovery site and brings up the recovery servers based on the selected checkpoints. During failover Managed Disaster Recovery Services coordinate with different Lumen teams MS SQL, AD, SAP, etc., to restore applications.
 
 **In-Band-to-Out-of-Band Conversion** - In-Band-to-Out-of-Band Conversion is a procedure, which boots up recovery servers from local disks instead of the network disks.
 

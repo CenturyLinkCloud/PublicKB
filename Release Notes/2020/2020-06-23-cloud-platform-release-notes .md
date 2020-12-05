@@ -2,7 +2,7 @@
 "title": "Cloud Platform - Release Notes: June 23, 2020",
 "date": "06-23-2020",
 "author": "Marco Paolillo",
-"keywords":["centurylink", "release notes", "cam", "cpc", "msa", "cloud"],
+"keywords":["lumen", "release notes", "cam", "cpc", "msa", "cloud"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -17,7 +17,7 @@ Customers can manually import physical servers running on a supported OS into CA
 
 ### Announcements (3)
 
-#### [CPC on VCF](https://www.ctl.io/centurylink-private-cloud-on-vmware-cloud-foundation/)
+#### [CPC on VCF](https://www.ctl.io/lumen-private-cloud-on-vmware-cloud-foundation/)
 
 ##### HCX Over the Internet
 

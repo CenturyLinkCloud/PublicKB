@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p>The following table details the monitors enabled for the Managed Apache Tomcat service on CenturyLink Cloud:</p>
+<p>The following table details the monitors enabled for the Managed Apache Tomcat service on Lumen Cloud:</p>
 <table>
   <tbody>
     <tr>

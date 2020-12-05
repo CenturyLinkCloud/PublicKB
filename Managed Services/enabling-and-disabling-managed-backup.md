@@ -18,7 +18,7 @@ The Managed Backup service can be configured on new or existing managed servers.
 ##### New Server
 1. Follow the [steps for creating a new server](../Servers/creating-a-new-enterprise-cloud-server.md).
 
-2. From the Create Server page click the Managed Server toggle to turn it on and then the option for Managed Backup will appear. Click this toggle as well to enable Managed Backup on the new server. An updated [list of locations that support managed services can be found in our knowledge base.](../General/CenturyLinkCloud/centuryLink-cloud-feature-availability-matrix.md)
+2. From the Create Server page click the Managed Server toggle to turn it on and then the option for Managed Backup will appear. Click this toggle as well to enable Managed Backup on the new server. An updated [list of locations that support managed services can be found in our knowledge base.](../General/LumenCloud/lumen-cloud-feature-availability-matrix.md)
 
     ![toggle managed services via create server ux](../images/enabling-and-disabling-managed-backup-01.png)
 
@@ -27,7 +27,7 @@ The Managed Backup service can be configured on new or existing managed servers.
 4. Your server will now be provisioned with Managed Backup (and Managed OS) enabled.
 
 ##### Existing Server
-1. Navigate to the Server Details page for the server you'd like to enable or disable Managed Backup on. Make sure the server is in one of the data centers that supports both Managed Services and Managed Backup. An updated [list of locations that support managed services can be found in our knowledge base.](../General/CenturyLinkCloud/centuryLink-cloud-feature-availability-matrix.md). **IMPORTANT: Managed OS services are required on the existing server to enable managed backup.**
+1. Navigate to the Server Details page for the server you'd like to enable or disable Managed Backup on. Make sure the server is in one of the data centers that supports both Managed Services and Managed Backup. An updated [list of locations that support managed services can be found in our knowledge base.](../General/LumenCloud/lumen-cloud-feature-availability-matrix.md). **IMPORTANT: Managed OS services are required on the existing server to enable managed backup.**
 
 2. On the right side under the Server Info section, find the button for enabling or disabling Managed Backup.
 
@@ -49,4 +49,4 @@ As of Sept 10th, 2016, any customer that tries to create a new VM with Managed B
 Upon receiving this error, you will need to wait while we manually enable managed backup for the network you have chosen to create the new server. Updates on our progress will come via our ticketing system and this is a one time change that is needed for any new network that is created after Sept 10, 2016. Once this work is complete, you can go ahead and create servers on this network with managed backup enabled. Alternatively, you can go ahead and create a server on this network without managed backup. Then, after we are complete with this work, you can go ahead and add managed backup to this server.
 
 ##### Managed Backup isn't enabled in VA1, but should be.
-Even though managed backup is a service that is available in VA1, under certain conditions our user interface will not allow you to create new servers with managed backup. As of Sept 10th, 2016, on any CenturyLink Cloud account that has no networks in VA1, the 'add managed backup' button will be disabled on the create server webpage. To resolve this, you will need to first create a network manually in VA1. Once you do that, you will need to follow the process above listed in section 'Error on New Server Creation - VA1'.
+Even though managed backup is a service that is available in VA1, under certain conditions our user interface will not allow you to create new servers with managed backup. As of Sept 10th, 2016, on any Lumen Cloud account that has no networks in VA1, the 'add managed backup' button will be disabled on the create server webpage. To resolve this, you will need to first create a network manually in VA1. Once you do that, you will need to follow the process above listed in section 'Error on New Server Creation - VA1'.

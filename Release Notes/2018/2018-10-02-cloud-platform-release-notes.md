@@ -21,7 +21,7 @@ We are pleased to announce the addition of monitoring functionality to the Simpl
 
 ##### Automatic Discovery of Resources
 
-Cloud Application Manager now includes the ability to enable automatic synchronization of unregistered resources in the providers that are either managed or optimized by CenturyLink. This feature will refresh the available unregistered instances for AWS, Azure, CenturyLink Cloud and CenturyLink Private Cloud on vCloud Foundation Provider types every 20 minutes, enabling the automatic discovery of resources without requiring a full synchronization process. Users can set the 'Automatic discovery of resources' toggle at provider creation time or through the Edit properties button in the Provider details page.
+Cloud Application Manager now includes the ability to enable automatic synchronization of unregistered resources in the providers that are either managed or optimized by Lumen. This feature will refresh the available unregistered instances for AWS, Azure, Lumen Cloud and Lumen Private Cloud on vCloud Foundation Provider types every 20 minutes, enabling the automatic discovery of resources without requiring a full synchronization process. Users can set the 'Automatic discovery of resources' toggle at provider creation time or through the Edit properties button in the Provider details page.
 
 ##### Cloud Optimization
 

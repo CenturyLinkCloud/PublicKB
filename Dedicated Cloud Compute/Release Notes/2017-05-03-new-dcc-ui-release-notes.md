@@ -83,7 +83,7 @@ Saved Images
 * The ability to create and deploy a Saved Image are not included in this release
 
 Server Operations
-* If a Server Operation request (e.g. stop/start/restart/edit/add disk etc.) is made at a time that coincides with a CenturyLink scheduled management task then the request may be delayed and/or the result of the request may not be shown correctly until the scheduled management task completes. This may take up to 30 minutes
+* If a Server Operation request (e.g. stop/start/restart/edit/add disk etc.) is made at a time that coincides with a Lumen scheduled management task then the request may be delayed and/or the result of the request may not be shown correctly until the scheduled management task completes. This may take up to 30 minutes
 
 Clone Server
 * The server being cloned will not accept any configuration change (e.g. edit/add disk/delete disk) until the Clone request completes, is deleted or the request expires (after 8 days)

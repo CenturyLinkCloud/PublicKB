@@ -19,7 +19,7 @@ Netwrix Auditor is a visibility and governance platform that enables control ove
 Netwrix Auditor includes applications for Active Directory, Exchange, Office 365, Windows file servers, EMC storage devices, NetApp filer appliances, SharePoint, SQL Server, VMware and Windows Server. Empowered with the RESTful API and user activity video recording, the platform delivers visibility and control across all of your on-premises or cloud-based IT systems in a unified way.
 
 ### Description
-Through the CenturyLink Blueprint integration, Netwrix provides a solution to deploy and configure Netwrix Auditor platform.
+Through the Lumen Blueprint integration, Netwrix provides a solution to deploy and configure Netwrix Auditor platform.
 
 For more information, please visit [Netwrix](http://www.netwrix.com/).
 
@@ -27,13 +27,13 @@ For more information, please visit [Netwrix](http://www.netwrix.com/).
 Phone: 1-949-407-5125 | Toll-free: 888-638-9749 | [Contact Us](https://start.netwrix.com/netwrix_auditor_blueprint.html)
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the Netwrix Auditor Blueprint on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the Netwrix Auditor Blueprint on Lumen Cloud.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 
 ### Important Notes
 * For full featured auditing we recommend to have the Microsoft Active Directory set up in the same VLAN as the deployed Netwrix Auditor Blueprint.
@@ -73,7 +73,7 @@ To get detailed information on Netwrix Auditor configuration and usage please re
 ### Frequently Asked Questions
 
 #### Where do I obtain my Netwrix License?
-Existing CenturyLink Customers can contact their Account Representative for help obtaining a Netwrix license, or contact Netwrix directly:
+Existing Lumen Customers can contact their Account Representative for help obtaining a Netwrix license, or contact Netwrix directly:
 * Web - [http://www.netwrix.com](https://start.netwrix.com/netwrix_auditor_blueprint.html)
 * Phone: 1-949-910-9556 | Toll-free: 888-638-9749 ext 2812
 
@@ -81,4 +81,4 @@ Existing CenturyLink Customers can contact their Account Representative for help
 * For issues regarding the Netwrix Auditor software, please contact Netwrix:
 * Web - [http://www.netwrix.com](http://www.netwrix.com/support.html)
 
-* For issues related to CenturyLink cloud infrastructure (VMs, storage, network, etc.), or if you experience a problem deploying the partner template, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to Lumen cloud infrastructure (VMs, storage, network, etc.), or if you experience a problem deploying the partner template, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).

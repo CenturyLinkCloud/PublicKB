@@ -7,10 +7,10 @@
 }}}
 
 ### Article Overview
-This article explains how to attach a RAW disk to Production SRN in CenturyLink Cloud and create a Linux Protection Group.
+This article explains how to attach a RAW disk to Production SRN in Lumen Cloud and create a Linux Protection Group.
 
 ### Requirements
-Access to the Production SRN in CenturyLink Cloud and permissions to add raw disks to it.
+Access to the Production SRN in Lumen Cloud and permissions to add raw disks to it.
 
 ### Assumption
 This article assumes that:
@@ -18,7 +18,7 @@ This article assumes that:
 1. A SafeHaven cluster has been created successfully.
 2. Both production and recovery SRNs have been registered and peered
 
-### Attach and Claim RAW Disks on Production SRN in CenturyLink Cloud
+### Attach and Claim RAW Disks on Production SRN in Lumen Cloud
 1. Login to CLC Control portal https://control.ctl.io, select **Servers** under the **Infrastructure** tab. Confirm the Storage requirements for the Production Server (in this case Linux). Based on the Production Server O.S. Type and [Storage Requirements](Determine Storage Requirements.md), calculate the amount of storage that needs to be added.
 
 2. In the Navigation Tree, select the **SRN** you want to add storage to, then scroll down on the main data panel and select **edit storage**.

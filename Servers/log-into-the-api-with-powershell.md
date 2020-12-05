@@ -1,5 +1,5 @@
 {{{
-  "title": "Log into the CenturyLink Cloud API with PowerShell",
+  "title": "Log into the Lumen Cloud API with PowerShell",
   "date": "5-28-2015",
   "author": "Ted Henley",
   "attachments": [],
@@ -8,11 +8,11 @@
 
 ### Overview
 
-CenturyLink Cloud customers can use PowerShell to log into the CenturyLink Cloud API and use the resulting session token for additional API calls
+Lumen Cloud customers can use PowerShell to log into the Lumen Cloud API and use the resulting session token for additional API calls
 
 ### Prerequisites
 
-* A CenturyLink Cloud Account
+* A Lumen Cloud Account
 * [An API user has been created](../Accounts & Users/creating-users.md)
 * PowerShell v4+ has been installed on client machine and is being run as administrator
 
@@ -21,7 +21,7 @@ CenturyLink Cloud customers can use PowerShell to log into the CenturyLink Cloud
 * Recommended to use PowerShell v4+ because PowerShell v3 Invoke-RestMethod has a bug with [accept headers](https://connect.microsoft.com/PowerShell/feedback/details/757249/invoke-restmethod-accept-header)
 * Tested on [API v1](https://www.ctl.io/api-docs/v1/#authentication-logon)
 * API user and API password need to be entered into the script
-* Script can be used from anywhere - does not have to be on CenturyLink Cloud network
+* Script can be used from anywhere - does not have to be on Lumen Cloud network
 
 ### PowerShell V1 Steps
 

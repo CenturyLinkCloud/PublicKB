@@ -10,7 +10,7 @@
 
 ### Overview
 
-CenturyLink Cloud customers may choose to create their own baseline OS templates for deployment within the Control Portal. These templates may include customization, software packages, security templates or other components. Customers should take care to test and validate the packages or changes being applied, to ensure that the OS instance functions properly after the template process is complete. Customers are responsible for this validation and ongoing support of changes made to OS Templates.
+Lumen Cloud customers may choose to create their own baseline OS templates for deployment within the Control Portal. These templates may include customization, software packages, security templates or other components. Customers should take care to test and validate the packages or changes being applied, to ensure that the OS instance functions properly after the template process is complete. Customers are responsible for this validation and ongoing support of changes made to OS Templates.
 
 ### Exclusions
 
@@ -21,11 +21,11 @@ CenturyLink Cloud customers may choose to create their own baseline OS templates
 
 **_DO NOT RUN THE CONVERT TO TEMPLATE FUNCTION ON A PRODUCTION/LIVE VIRTUAL SERVER_**. Customers should create a virtual instance with their specific configurations on a non-production virtual instance. The convert to template function actually modifies and moves the virtual machine to the templates group.
 
-Customers creating OS Templates for Windows Servers should carefully review the [Microsoft Sysprep for Server Roles TechNet Article](//msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/sysprep-support-for-server-roles). Sysprep is a component of creating an OS Template and as such certain OS Roles are not supported in both the template or clone process. **_For Windows Servers the CenturyLink Cloud Platform performs the sysprep function on behalf of customers when using the Convert To Template feature._**
+Customers creating OS Templates for Windows Servers should carefully review the [Microsoft Sysprep for Server Roles TechNet Article](//msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/sysprep-support-for-server-roles). Sysprep is a component of creating an OS Template and as such certain OS Roles are not supported in both the template or clone process. **_For Windows Servers the Lumen Cloud Platform performs the sysprep function on behalf of customers when using the Convert To Template feature._**
 
 ### Steps
 
-1. Use the [Create Server](../Servers/creating-a-new-enterprise-cloud-server.md) Control Portal function to deploy a baseline operating system supported on the CenturyLink Cloud platform. Alternatively, customers can elect to import a server template in the form of an OVF file. CenturyLink Cloud provides [service tasks](//www.ctl.io/products/support/service-tasks) to perform custom imports and customers can engage this group for fees.
+1. Use the [Create Server](../Servers/creating-a-new-enterprise-cloud-server.md) Control Portal function to deploy a baseline operating system supported on the Lumen Cloud platform. Alternatively, customers can elect to import a server template in the form of an OVF file. Lumen Cloud provides [service tasks](//www.ctl.io/products/support/service-tasks) to perform custom imports and customers can engage this group for fees.
 
 2. Login to the newly created OS Instance and apply the customization or packages that should be part of the Template. We recommend after all changes are made a clean reboot of the OS prior to proceeding to step #3.
 

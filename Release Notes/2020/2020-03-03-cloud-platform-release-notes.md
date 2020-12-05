@@ -2,7 +2,7 @@
 "title": "Cloud Platform - Release Notes: March 3, 2020",
 "date": "03-03-2020",
 "author": "Craig Wedbush",
-"keywords":["centurylink", "release notes", "cam", "alm", "msa", "compute instances", "cloudformation"],
+"keywords":["lumen", "release notes", "cam", "alm", "msa", "compute instances", "cloudformation"],
 "attachments": [],
 "contentIsHTML": false
 }}}

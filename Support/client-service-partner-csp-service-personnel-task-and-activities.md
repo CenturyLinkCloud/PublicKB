@@ -6,27 +6,27 @@
   "contentIsHTML": true
 }}}
 
-<p>The following Service personnel tasks and activities are included in the CSP’s tasks and activities, limited by the hours per month included in the package purchased by the customer. Services extend across all products and services in the CenturyLink
-  portfolio, not just CenturyLink Cloud.</p>
+<p>The following Service personnel tasks and activities are included in the CSP’s tasks and activities, limited by the hours per month included in the package purchased by the customer. Services extend across all products and services in the Lumen
+  portfolio, not just Lumen Cloud.</p>
 <p><strong>Customer Relationship Management</strong>
 </p>
 <ul>
   <li>Proactive calls to Customer with regular touch points</li>
   <li>Provide product introduction or enhancements information</li>
-  <li>Customer tours of CenturyLink Data Centers</li>
+  <li>Customer tours of Lumen Data Centers</li>
   <li>Contact Management and Administration - with new Customer contacts</li>
   <li>Customer queries (e.g. what is the storage capacity available?)</li>
-  <li>CenturyLink Service Guide</li>
-  <li>Customer advocate at CenturyLink</li>
+  <li>Lumen Service Guide</li>
+  <li>Customer advocate at Lumen</li>
   <li>Contractual queries</li>
-  <li>Informing Customer on CenturyLink changes, such as Invoice layout, DCMW</li>
+  <li>Informing Customer on Lumen changes, such as Invoice layout, DCMW</li>
   <li>Control Portal training</li>
 </ul>
 <p><strong>Incident / Problem Management</strong>
 </p>
 <ul>
   <li>Incident and problem trending and reporting</li>
-  <li>Escalation management (via CenturyLink Cloud Network Operations Center)</li>
+  <li>Escalation management (via Lumen Cloud Network Operations Center)</li>
 </ul>
 <p><strong>Configuration Management</strong>
 </p>

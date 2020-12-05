@@ -30,8 +30,8 @@ All users of Cloud Application Manager who wants to define and use Terraform Tem
   * [AWS](../Deploying Anywhere/using-your-aws-account.md)
   * [Microsoft Azure](../Deploying Anywhere/using-microsoft-azure.md)
   * [Google Cloud](../Deploying Anywhere/using-google-cloud.md)
-  * [CenturyLink Cloud](../Deploying Anywhere/using-centurylink-cloud.md)
-  * [CenturyLink Private Cloud on VMware Cloud Foundation](../Deploying Anywhere/using-private-cloud-on-vmware-cloud-foundation.md)
+  * [Lumen Cloud](../Deploying Anywhere/using-lumen-cloud.md)
+  * [Lumen Private Cloud on VMware Cloud Foundation](../Deploying Anywhere/using-private-cloud-on-vmware-cloud-foundation.md)
   * [VMware vCenter/vSphere](../Deploying Anywhere/using-the-vmware-vcenter-private-datacenter.md)
   * [VMware vCloud Director](../Deploying Anywhere/orchestrating-vcloud-air-vcloud-director-deployments.md)
 
@@ -135,7 +135,7 @@ Once live, you can continue to make changes to your Terraform configuration temp
 
 ### Getting General Support
 
-Customers can contact the CenturyLink Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
+Customers can contact the Lumen Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
 
 #### Contact:
 

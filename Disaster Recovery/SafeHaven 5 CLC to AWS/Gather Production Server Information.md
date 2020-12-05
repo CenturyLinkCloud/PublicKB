@@ -25,7 +25,7 @@ Gather the following information for the servers you want to protect:
 6. Network/VLAN Information/I.P. Address
 7. Server dependencies(grouping servers together)
 
-Apart from this other information regarding Domain Controllers, DNS Servers, transaction rate of SQL Servers, etc. have to be gathered as it impacts the overall disaster recovery setup. CenturyLink's resource will provide guidance on this.
+Apart from this other information regarding Domain Controllers, DNS Servers, transaction rate of SQL Servers, etc. have to be gathered as it impacts the overall disaster recovery setup. Lumen's resource will provide guidance on this.
 
 ### VM Discovery for VMware on prem site using SafeHaven console
 

@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p>Many customers ask if they can provision a Windows Desktop Virtual Machines (Windows XP, 7, 8, 8.1) to run on the CenturyLink Cloud platform. At this time, Windows Desktop OS may not be provided under an SPLA (Service Provider Licensing Agreement).
+<p>Many customers ask if they can provision a Windows Desktop Virtual Machines (Windows XP, 7, 8, 8.1) to run on the Lumen Cloud platform. At this time, Windows Desktop OS may not be provided under an SPLA (Service Provider Licensing Agreement).
   </p>
 <p>For customers wishing to bring their own license (leveraging the "License Mobility under Software Assurance" program which allows users with an EA or Select agreement to use their licenses for supported products on "cloud" based resources), this is currently
   not supported/allowed by Microsoft for Windows Desktop OS. Under the EULA for Windows Desktop OS, while Microsoft will allow for the OS to run as a virtual machine, the license is bound to the physical hosting hardware and may not be used against

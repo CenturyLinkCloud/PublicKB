@@ -7,7 +7,7 @@
 }}}
 
 <h3>Description</h3>
-<p>CenturyLink Cloud servers are logically organized into groups within each data center. When you create a server, you define which group to put that new server in. If for any reason, you need to put that server into a different group, the following steps
+<p>Lumen Cloud servers are logically organized into groups within each data center. When you create a server, you define which group to put that new server in. If for any reason, you need to put that server into a different group, the following steps
   will show you how to&nbsp;move a server into another group any time after it has been created.</p>
 <h3>Steps</h3>
 <ol>

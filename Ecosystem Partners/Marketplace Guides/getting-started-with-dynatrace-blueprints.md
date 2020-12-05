@@ -10,20 +10,20 @@
 Dynatrace - “Dynatrace APM tools provide application monitoring for today's most challenging web, cloud, mobile, enterprise and Big Data applications worldwide.” http://www.Dynatrace.com Dynatrace makes application performance monitoring, load testing and end user experience monitoring tools for enterprises
 
 Customer Support:
-* CenturyLink Blueprint-[specific Support Website](https://community.compuwareapm.com/community/pages/viewpage.action?pageId=184951236)
+* Lumen Blueprint-[specific Support Website](https://community.compuwareapm.com/community/pages/viewpage.action?pageId=184951236)
 * General Dynatrace [Support Website](https://community.compuwareapm.com/community/display/SUPPORT/How+to+get+Support)
 
 ### Description
-Dynatrace makes APM software that will provide the customer with information on how their application is performing. Dynatrace has integrated their technology with the CenturyLink Cloud platform and produced several Blueprints. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Cloud APM solution.
+Dynatrace makes APM software that will provide the customer with information on how their application is performing. Dynatrace has integrated their technology with the Lumen Cloud platform and produced several Blueprints. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Cloud APM solution.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the Dynatrace technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the Dynatrace technology on Lumen Cloud.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 * See further information in Blueprints section below.
 
 ### Blueprints
@@ -60,15 +60,15 @@ Follow these step by step instructions to get started with a Dynatrace deploymen
    * This is what a successful deployment looks like in the queue:
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
-### Access and Configure Dynatrace on CenturyLink
+### Access and Configure Dynatrace on Lumen
 For more information on how to access, license and configure Dynatrace, please view the [Dynatrace documentation](https://community.compuwareapm.com/community/pages/viewpage.action?pageId=184951236). Additional documentation on the Free Trial can be found here.
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no Dynatrace license costs or additional fees bundled in.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. There are no Dynatrace license costs or additional fees bundled in.
 
 ### Frequently Asked Questions
 Where do I obtain my Dynatrace Licenses? Contact Dynatrace via email: isvintegrate@dynatrace.com
 
 ### Who should I contact for support?
-* For issues related to deploying the Dynatrace Blueprint on CenturyLink Cloud, licensing or accessing the deployed software, please visit the [Dynatrace Support Website](https://community.compuwareapm.com/community/display/SUPPORT/How+to+get+Support)
-* For issues related to cloud infrastructure (VMs, network, etc.), please open a ticket using the CenturyLink Cloud Support Process.
+* For issues related to deploying the Dynatrace Blueprint on Lumen Cloud, licensing or accessing the deployed software, please visit the [Dynatrace Support Website](https://community.compuwareapm.com/community/display/SUPPORT/How+to+get+Support)
+* For issues related to cloud infrastructure (VMs, network, etc.), please open a ticket using the Lumen Cloud Support Process.

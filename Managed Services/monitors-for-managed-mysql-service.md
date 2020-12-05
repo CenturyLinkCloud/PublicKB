@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p>The following table details the monitors supported for the Managed MySQL service on CenturyLink Cloud:</p>
+<p>The following table details the monitors supported for the Managed MySQL service on Lumen Cloud:</p>
 Monitors for MySQL Server Service
 <table>
   <tbody>

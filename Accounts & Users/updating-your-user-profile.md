@@ -39,7 +39,7 @@ Additional information, such as title and phone number(s), can be provided optio
 
 #### SAML Profile
 
-Customers who have integrated CenturyLink Cloud with an authentication solution that uses Security Assertion Markup Language (SAML) may also update their SAML username through the User Profile. Find out more about using SAML for [single sign-on](../Control Portal/using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md) or [multi-factor authentication](../Control Portal/using-saml-for-multi-factor-authentication-to-centurylink-control-portal.md).  
+Customers who have integrated Lumen Cloud with an authentication solution that uses Security Assertion Markup Language (SAML) may also update their SAML username through the User Profile. Find out more about using SAML for [single sign-on](../Control Portal/using-saml-for-single-sign-on-to-the-lumen-platform-control-portal.md) or [multi-factor authentication](../Control Portal/using-saml-for-multi-factor-authentication-to-lumen-control-portal.md).  
 
 ### Important Notes
 
@@ -53,4 +53,4 @@ A user is assigned a PIN at the time the user profile is created. You can custom
 
 #### Deleting a User Profile
 
-A User Profile may be deleted by an account administrator, but this will cause issues if you want to reuse the same username. A custom request needs to be filed by emailing help@ctl.io. CenturyLink Cloud management approval is required.
+A User Profile may be deleted by an account administrator, but this will cause issues if you want to reuse the same username. A custom request needs to be filed by emailing help@ctl.io. Lumen Cloud management approval is required.

@@ -8,14 +8,14 @@
 
 ### Overview
 
-[CenturyLink Cloud Managed Operating System Services](//www.ctl.io/managed-services/operating-system/) provide maintenance and management of your Windows & Red Hat cloud servers, 24x7.  For a flat hourly fee, our engineers will perform support and administrative functions on your behalf.
+[Lumen Cloud Managed Operating System Services](//www.ctl.io/managed-services/operating-system/) provide maintenance and management of your Windows & Red Hat cloud servers, 24x7.  For a flat hourly fee, our engineers will perform support and administrative functions on your behalf.
 The following is the simplest method for creating a managed server via the Control Panel.
 
-Please also consider using the [CenturyLink Cloud v2.0 API](https://www.ctl.io/api-docs/v2/#servers-create-server) Create Server capability for performing the same action programmatically.
+Please also consider using the [Lumen Cloud v2.0 API](https://www.ctl.io/api-docs/v2/#servers-create-server) Create Server capability for performing the same action programmatically.
 
 ### Audience
 
-Users employed by companies that have agreed to terms with [CenturyLink Sales](http://www.centurylink.com/) for the CenturyLink Cloud product.
+Users employed by companies that have agreed to terms with [Lumen Sales](http://www.centurylink.com/) for the Lumen Cloud product.
 
 ### General Prerequisites
 * An understanding of the standard server creation process.
@@ -54,7 +54,7 @@ After creating a VM for management or after deploying the blueprint to convert a
 * UK: +44.118.322.6100
 * Singapore: +65.6305.8099.
 
-Please do not email the CenturyLink Cloud NOC or raise the issue via chat - faster responses to inquiries will come from the email address and support numbers above. This is because Managed support is provided by a different team than Platform support.
+Please do not email the Lumen Cloud NOC or raise the issue via chat - faster responses to inquiries will come from the email address and support numbers above. This is because Managed support is provided by a different team than Platform support.
 
 ### Validation
 The user will receive a notification email once the virtual machine is successfully converted to Managed.

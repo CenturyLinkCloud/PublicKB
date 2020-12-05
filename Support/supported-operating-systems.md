@@ -6,9 +6,9 @@
   "contentIsHTML": false
 }}}
 
-### What operating systems are supported in the CenturyLink Cloud?
+### What operating systems are supported in the Lumen Cloud?
 
-The following operating systems are supported in CenturyLink Cloud:
+The following operating systems are supported in Lumen Cloud:
 
 Virtual Machines|Bare Metal
 ----------------|----------
@@ -18,7 +18,7 @@ CentOS 6<br>CentOS 7<br>Debian 6<br>Debian 7<br>RedHat Enterprise Linux 5<br>Red
 
 ### What does it mean for an operating system to be "supported"?
 
-All supported operating systems have a "template" in CenturyLink Cloud that is created, maintained, and managed by CenturyLink Cloud engineers. Templates can be viewed in the "Create Server" screen and accessed via the API. These templates are the basis for all new virtual machines created in the platform.
+All supported operating systems have a "template" in Lumen Cloud that is created, maintained, and managed by Lumen Cloud engineers. Templates can be viewed in the "Create Server" screen and accessed via the API. These templates are the basis for all new virtual machines created in the platform.
 
 ### Can I build custom templates?
 
@@ -38,4 +38,4 @@ Currently, CLC does not support a Bring Your Own License model for both Windows 
 
 ### I'd like to deploy an operating system that is not supported. What are my options?
 
-We do not recommend that you deploy unsupported operating systems in the platform. CenturyLink Cloud SLAs will not apply to virtual machines running an *unsupported* OS. In addition, some features may not work on unsupported OSes. Your options are to request a new OS be supported using our [suggested feature process](mailto:features@ctl.io), or to deploy the OS in a traditional hosting environment.
+We do not recommend that you deploy unsupported operating systems in the platform. Lumen Cloud SLAs will not apply to virtual machines running an *unsupported* OS. In addition, some features may not work on unsupported OSes. Your options are to request a new OS be supported using our [suggested feature process](mailto:features@ctl.io), or to deploy the OS in a traditional hosting environment.

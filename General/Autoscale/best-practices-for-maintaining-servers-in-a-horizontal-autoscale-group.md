@@ -10,7 +10,7 @@
 When using a horizontal Autoscale policy on a group, it is very important to ensure that all the servers within the group are the same, meaning that they are kept in sync from a software and configuration perspective. This is generally true for any group of servers that sit behind a load balancer since traffic can be routed to any of the servers at any time. In the case of servers in a horizontal Autoscale group, it can also be potentially challenging to perform the necessary actions to keep the servers up to date because they may be powered on or off automatically at any time by an autoscale event trigger. This article discusses some suggested best practices around how to manage servers within a horizontal Autoscale group.
 
 ### Audience
-* CenturyLink Cloud customers
+* Lumen Cloud customers
 
 ### Prerequisites
 * Must be logged into the system

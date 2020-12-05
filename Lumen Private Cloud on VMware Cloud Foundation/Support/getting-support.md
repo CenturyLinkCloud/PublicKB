@@ -27,7 +27,7 @@ In this KB article, we demonstrate how to get support when needed. As part of ou
     * Submitting a ticket:
       1. Go to https://managedsupport.ctl.io/msp/ and enter your login credentials.
       2. After logging in, search for and select your Company or Site ID.
-      3. Next, enter your main contact. Select __Cloud__ in the "What Product is this for?" field. Select __Centurylink Private Cloud on VMware Cloud Foundation__ in the "Which Cloud Product" dropdown.
+      3. Next, enter your main contact. Select __Cloud__ in the "What Product is this for?" field. Select __Lumen Private Cloud on VMware Cloud Foundation__ in the "Which Cloud Product" dropdown.
       4. In the "what is the status?" dropdown, select __Experiencing an Issue__, __Requesting a Change__, or __Requesting Information__.
         ![Quick Access](../../images/dccf/getting-support.png)
       5. Based on the option you select, additional fields will appear in the form. Once all required fields are completed, click __Submit__. 

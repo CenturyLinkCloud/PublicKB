@@ -24,7 +24,7 @@ This article explains how to Failover a Linux Protection Group from a production
 ### Assumptions
 This article assumes that the user has successfully completed the setup of a Linux Protection Group and has already performed a successful non-disruptive Test Failover to confirm the recovery instance boots correctly and presents the production data in the recovery datacenter. The assumption is that now the user wants to Failover to the recovery site and make the recovery instance in the recovery(DR) datacenter an active production instance for business continuity.
 
-For the purpose of this article, we are using Ubuntu 14 for the Linux production server in CenturyLink's CA2(Toronto) production datacenter. The recovery datacenter is CenturyLink's WA1(Seattle) datacenter.
+For the purpose of this article, we are using Ubuntu 14 for the Linux production server in Lumen's CA2(Toronto) production datacenter. The recovery datacenter is Lumen's WA1(Seattle) datacenter.
 
 ### Failover
 Here is a Linux Protection Group called **Linux-PG** that is currently active in CA2 datacenter (booting from local storage) and is ready for Failover.
@@ -36,7 +36,7 @@ Here is a Linux Protection Group called **Linux-PG** that is currently active in
 2. Select a **clean 0 (zero) byte checkpoint** for Linux recovery and click **Next**.
    ![Linux](../../images/SH4.0/LinuxFailover/LF14.png)
 
-   When Failover is initiated, the iSCSI targets in the recovery datacenter get activated. Then, the recovery server (stub) powers on and boots from the iSCSI disks presented in the recovery datacenter. A power on job can be seen in CLC-WA1 datacenter's queue from the CenturyLink Control Portal.
+   When Failover is initiated, the iSCSI targets in the recovery datacenter get activated. Then, the recovery server (stub) powers on and boots from the iSCSI disks presented in the recovery datacenter. A power on job can be seen in CLC-WA1 datacenter's queue from the Lumen Control Portal.
 
 3. Select **Finish** to complete Failover.
    * **Note**: DO NOT CHECK Run 'Boot from Primary Data Storage' upon exit.

@@ -7,13 +7,13 @@
 }}}
 
 ### Overview
-CenturyLink Cloud supports importing and exporting data through portable storage devices into our data centers. This article provides an overview of this billable service. Billable charge details can be found [on our pricing page.](//www.ctl.io/pricing) 
+Lumen Cloud supports importing and exporting data through portable storage devices into our data centers. This article provides an overview of this billable service. Billable charge details can be found [on our pricing page.](//www.ctl.io/pricing) 
 
 ### Service Task Prioritization
 * Refer to [our ticket prioritization matrix](../Support/ticket-prioritization-matrix.md)
 
 ### Audience
-* CenturyLink Cloud Customers
+* Lumen Cloud Customers
 
 ### Prerequisites
 * All data must be encrypted.  The following tools are supported:
@@ -37,7 +37,7 @@ If you are using domain specific ACLs. You must grant the "everyone" group full 
 ### Detailed Steps
 
 ##### Requesting an Import/Export
-1. Create a Ticket through the CenturyLink Cloud Ticketing system
+1. Create a Ticket through the Lumen Cloud Ticketing system
     * Indicate the datacenter where the portable device will be sent
     * Indicate the expected ship date and expected arrival date of the device
     * Provide the password for the encryption only via the ticket
@@ -47,7 +47,7 @@ If you are using domain specific ACLs. You must grant the "everyone" group full 
     * Provide any additional details about the data to be imported/exported
     * Provide pre-paid shipping method and/or FedEx account number to be charged for return shipping.
 
-2. Our team will reply with the data center mailing address and a data center logistics ticket number must be included on the shipping label. Note that the logistics number is different than the CenturyLink Cloud ticket number.
+2. Our team will reply with the data center mailing address and a data center logistics ticket number must be included on the shipping label. Note that the logistics number is different than the Lumen Cloud ticket number.
 
 ##### Import/Export Process
 1. Ship or deliver portable device to the datacenter - include the datacenter specific ticket number (provided by Service Task) on the shipping label.
@@ -56,7 +56,7 @@ If you are using domain specific ACLs. You must grant the "everyone" group full 
 
 3. Our team will periodically update the ticket for this request as we progress with the work.
 
-4. Once the data is copied and the request is completed, CenturyLink Cloud will ship the device via the pre-paid return shipping method provided.
+4. Once the data is copied and the request is completed, Lumen Cloud will ship the device via the pre-paid return shipping method provided.
 
 Note that the drive will be wiped prior to return shipping if used for import.
 
@@ -65,7 +65,7 @@ If our team needs to apply encryption to an export, a password will be provided 
 
 ### FAQs
 
-**Q: Will CenturyLink Cloud provide for shipping costs?**
+**Q: Will Lumen Cloud provide for shipping costs?**
 
 A: No, shipping costs are the responsibility of the customer. The customer should provide prepaid return shipping label in the shipping materials.
 
@@ -77,7 +77,7 @@ A: No, we will not accept any portable devices that are not encrypted. We will n
 
 A: No, please encrypt drive with compatible mode.
 
-**Q: Can CenturyLink Cloud provide a portable device?**
+**Q: Can Lumen Cloud provide a portable device?**
 
 A: No, we no longer provide portable devices to customers for this process. 
  
@@ -85,12 +85,12 @@ A: No, we no longer provide portable devices to customers for this process.
 
 A: Data must come from the country in which the datacenter is located. We will not ship data out of the country of origin.
 
-**Q: What are the CenturyLink Cloud data centers located?**
+**Q: What are the Lumen Cloud data centers located?**
 
 A: Check out our [Data Centers Location page](//www.ctl.io/data-centers) for detailed information about where you can find our datacenters.
 
 **Q: What limitations of liability are imposed?**
 
-A: CenturyLink Cloud is not responsible for the loss or damage of the device, please ensure that you have a backup of your data.  Customer acknowledges that portable devices contain no malicious content, and will not damage or compromise CenturyLink Cloud equipment.
+A: Lumen Cloud is not responsible for the loss or damage of the device, please ensure that you have a backup of your data.  Customer acknowledges that portable devices contain no malicious content, and will not damage or compromise Lumen Cloud equipment.
 
 

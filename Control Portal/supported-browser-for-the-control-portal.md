@@ -6,7 +6,7 @@
   "contentIsHTML": false
 }}}
 
-The CenturyLink Cloud Control Portal is designed to work consistently across all major modern web browsers.
+The Lumen Cloud Control Portal is designed to work consistently across all major modern web browsers.
 
 Minimum version browser support:
 

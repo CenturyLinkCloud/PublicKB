@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-After reading this article, the user should feel comfortable getting started using the partner technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the partner technology on Lumen Cloud.
 
 ### Partner Profile
 <img src="../../images/xtremedata/xtremelog_wht.png" style="max-width:200px;border:0;float:right;">
@@ -20,15 +20,15 @@ http://www.xtremedata.com/
 
 |Sales Contact |
 |:- |
-|centurylinkcloud-sales@xtremedata.com |
+|lumencloud-sales@xtremedata.com |
 
 ### Description
-XtremeData has integrated their dbX technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this XtremeData solution.
+XtremeData has integrated their dbX technology with the Lumen Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this XtremeData solution.
 
 XtremeData delivers high performance, full-featured ANSI SQL database engine designed for performance at all scales, up to 100s of terabytes. ANSI SQL. Simple to deploy, simple to administer, simple to scale up. Any data schema any data location.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Deploying a New Cluster
 Single button deploy of a new cluster including a master host, a standby master for failover, and two nodes.
@@ -72,22 +72,22 @@ Single button deploy of a new cluster including a master host, a standby master 
 9. Enable public access (optional).
    * Servers are built using private IPs only with access with client or IPSEC VPN. For access from the Internet at large add a public IP to your master server.
 
-  <a href="../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md">
+  <a href="../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md">
     <img style="border:0;width:50px;vertical-align:middle;" src="../../images/shared_assets/fw_icon.png">
     Adding a public IP to your virtual machine
   </a>
 
 ### Pricing
 The costs listed above in the above steps are for the infrastructure only. After deploying this Blueprint, you may secure entitlements to the technology using the following steps:
-* Email: centurylinkcloud-sales@xtremedata.com
+* Email: lumencloud-sales@xtremedata.com
 
 ### Frequently Asked Questions
 **Where do I obtain my license?**
 8 Contact sales@xtremedata.com
 
 **Who should I contact for support?**
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
-* For issues related to deploying the XtremeData dbX Blueprints and application operation on CenturyLink Cloud and you have a paid license, please contact centurylinkcloud-sales@xtremedata.com or follow your existing XtremeData support process if known.
+* For issues related to cloud infrastructure, please open a ticket using the [Lumen Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
+* For issues related to deploying the XtremeData dbX Blueprints and application operation on Lumen Cloud and you have a paid license, please contact lumencloud-sales@xtremedata.com or follow your existing XtremeData support process if known.
 
 **How do I learn more about the application?**
 View XtremeData's [documentation and other support resources](http://www.xtremedata.com/support).

@@ -2,7 +2,7 @@
 "title": "Cloud Platform - Release Notes: April 28, 2020",
 "date": "04-28-2020",
 "author": "Madhu Pavanraj",
-"keywords":["centurylink", "release notes", "cam", "alm", "cloud"],
+"keywords":["lumen", "release notes", "cam", "alm", "cloud"],
 "attachments": [],
 "contentIsHTML": false
 }}}

@@ -6,9 +6,9 @@
 "contentIsHTML": false
 }}}
 
-The [CenturyLink Marketplace](https://www.ctl.io/marketplace/) provides self-service, on-demand provisioning of provider services on the CenturyLink Platform. Below are the current products available in the Marketplace. The Marketplace is constantly evolving with more products, providers, and offerings. Check the Marketplace Updates for the latest Marketplace offerings. If you would like to join the CenturyLink Cloud Marketplace Provider Program, you can learn more [here](https://www.ctl.io/marketplace-program/).
+The [Lumen Marketplace](https://www.ctl.io/marketplace/) provides self-service, on-demand provisioning of provider services on the Lumen Platform. Below are the current products available in the Marketplace. The Marketplace is constantly evolving with more products, providers, and offerings. Check the Marketplace Updates for the latest Marketplace offerings. If you would like to join the Lumen Cloud Marketplace Provider Program, you can learn more [here](https://www.ctl.io/marketplace-program/).
 
-Products added to the CenturyLink Marketplace March 2017 include:
+Products added to the Lumen Marketplace March 2017 include:
 
 * [Alert Logic Log Manager with ActiveWatch](https://www.ctl.io/marketplace/partner/PST/product/Alert%20Logic%20Log%20Manager%20with%20ActiveWatch/)
 

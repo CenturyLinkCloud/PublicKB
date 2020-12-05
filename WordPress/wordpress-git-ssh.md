@@ -9,7 +9,7 @@
 IMPORTANT NOTE
 --------------
 
-CenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only
+Lumen WordPress hosting is currently in a Limited Beta program with specific customers by invitation only
 and is not intended for production usage.
 
 During the Limited Beta there is no production Service Level Agreement.
@@ -20,7 +20,7 @@ Prerequisites
 1. You have [git](http://git-scm.com/) installed. To test this, type `git --version` at the command prompt.
 2. You have [OpenSSH](http://www.openssh.com/) installed. To test this, type `ssh -v` at the command prompt.
 3. You have successfully created a WordPress site with
-   [CenturyLink's WordPress as a Service](https://wordpress.ctl.io/).
+   [Lumen's WordPress as a Service](https://wordpress.ctl.io/).
 4. You have a basic comfort with a command prompt. All commands provided are meant to be entered into a Bash
    shell or similar.
 
@@ -37,7 +37,7 @@ Overview
 --------
 
 1. First a public-private key pair must be generated.
-2. The public key must be applied to your CenturyLink Git Hosting user account.
+2. The public key must be applied to your Lumen Git Hosting user account.
 3. Git operations over SSH (clone, push, pull, fetch, etc.) can now be performed.
 
 Generating a Public-Private Key Pair
@@ -84,9 +84,9 @@ follow these steps rather than using the standard Windows command prompt.
 Adding Your Public Key to Your Git Account
 ------------------------------------------
 
-Now your public key needs to be associated with your CenturyLink Git Hosting account.
+Now your public key needs to be associated with your Lumen Git Hosting account.
 
-1. Log in to CenturyLink's Git Hosting and navigate to
+1. Log in to Lumen's Git Hosting and navigate to
    [the SSH keys on your account profile](https://git.wordpress.ctl.io/profile/keys).
 2. Click "Add SSH Key".
 

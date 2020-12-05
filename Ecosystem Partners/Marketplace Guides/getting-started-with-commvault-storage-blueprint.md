@@ -20,30 +20,30 @@ Commvault - "Protect, Access, Comply, Share"
 * Phone Support - Call (877) 780-3077
 
 ### Description
-Commvault Systems has integrated their technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Data Management solution.
+Commvault Systems has integrated their technology with the Lumen Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Data Management solution.
 
-Technology from Commvault Systems helps CenturyLink Cloud customers address the business challenge of data protection and data growth by implementing Commvault's Simpana data management solution - now available as part of the CenturyLink Cloud Blueprint Engine.
+Technology from Commvault Systems helps Lumen Cloud customers address the business challenge of data protection and data growth by implementing Commvault's Simpana data management solution - now available as part of the Lumen Cloud Blueprint Engine.
 
 ### Solution Overview
 CommVault's holistic approach to cloud management allows you to manage your virtual infrastructure seamlessly across multiple hypervisors and cloud platforms — and to automate and streamline operations over the entire VM lifecycle, from provisioning to protection to decommissioning.
 
-The CommVault Simpana Blueprints offer different ways to manage data in, from and to the CenturyLink Cloud as well as integrate with multiple remote data centers and cloud platforms.
+The CommVault Simpana Blueprints offer different ways to manage data in, from and to the Lumen Cloud as well as integrate with multiple remote data centers and cloud platforms.
 
 The 'All in One' Blueprint includes a Windows 2012 Server image with the Simpana components to build out a new CommCell and/or attache to an existing Commcell. The image has the CommmServe and Media Agent software component ready to be configured as needed for your desired use case.
 
 ### Offer
-Commvault is making their technology available for CenturyLink Cloud Users to deploy to their account. Installation of the Commvault Server and All In One Blueprints includes a license good for one month (depending on the actual date of deployment). In order to purchase a license or entitlement, please contact [Contact Commvault sales](http://www.commvault.com/contact-us).
+Commvault is making their technology available for Lumen Cloud Users to deploy to their account. Installation of the Commvault Server and All In One Blueprints includes a license good for one month (depending on the actual date of deployment). In order to purchase a license or entitlement, please contact [Contact Commvault sales](http://www.commvault.com/contact-us).
 
 ### Audience
-CenturyLink Cloud Users and Commvault Simpana customers
+Lumen Cloud Users and Commvault Simpana customers
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the Commvault technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the Commvault technology on Lumen Cloud.
 
 After executing the steps in this Getting Started document, the users will have a functioning Commvault Simpana data management platform upon which they can start developing data management solutions.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user
+* Access to the Lumen Cloud platform as an authorized user
 * Commvault software license
 
 ### Postrequisite
@@ -54,8 +54,8 @@ After the Blueprint completes, you will need to RDP to the server, login to the 
 * [Create a schedule policy](http://documentation.commvault.com/commvault/v10/article?p=features/schedule_policy/getting_started.htm).
 * [Create a deduplication policy](http://documentation.commvault.com/commvault/v10/article?p=features/deduplication/t_creating_a_global_deduplication_policy.htm).
 * If you want to access Commvault server over the internet, please perform the following tasks once you receive an email confirming you Blueprint completed successfully.
-   * To connect to your Commvault server via the Internet, Add a [Public IP](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/CenturyLink Cloud/how-to-configure-client-vpn.md) or similar technology.
-   * [Allow incoming traffic](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal.
+   * To connect to your Commvault server via the Internet, Add a [Public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/Lumen Cloud/how-to-configure-client-vpn.md) or similar technology.
+   * [Allow incoming traffic](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal.
    * Add a Public IP to your VM and open Firewall Ports for TCP protocol.
    * Browse to the new VM and click on the Add Public IP button.
    * When the firewall rule dialog openDs, Add two (2x) single-port boxes: configure one for TCP on port TB.
@@ -112,7 +112,7 @@ After your Blueprint deploys successfully, please follow these instructions to a
 * Configure your Commvault solution appropriately. See the Post-Requisite section for more details.
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no Commvault license costs or additional fees bundled in. Licensing and Pricing for Simpana need to be aligned with software contract. Please contact CommVault Sales for information: [Contact Commvault sales](http://www.commvault.com/contact-us).
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. There are no Commvault license costs or additional fees bundled in. Licensing and Pricing for Simpana need to be aligned with software contract. Please contact CommVault Sales for information: [Contact Commvault sales](http://www.commvault.com/contact-us).
 
 ### Frequently Asked Questions
 
@@ -120,5 +120,5 @@ The costs associated with this Blueprint deployment are for the CenturyLink Clou
 This is a Bring You Own License model (BYOL). [Contact Commvault sales](http://www.commvault.com/contact-us) for license and pricing information. You may obtain a 30 day trail license when you run the blueprint.
 
 #### Who should I contact for support?
-* For issues related to deploying the Commvault solution on CenturyLink Cloud via the Blueprint, accessing or using the deployed software, [please contact Commvault support](mailto:support@commvault.com) or by calling (877) 780-3077.
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to deploying the Commvault solution on Lumen Cloud via the Blueprint, accessing or using the deployed software, [please contact Commvault support](mailto:support@commvault.com) or by calling (877) 780-3077.
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).

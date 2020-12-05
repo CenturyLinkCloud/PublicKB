@@ -7,7 +7,7 @@
 }}}
 
 ### Article Overview
-Register Data centers within the SafeHaven Console for CenturyLink Cloud and Amazon Cloud site types.
+Register Data centers within the SafeHaven Console for Lumen Cloud and Amazon Cloud site types.
 
 ### Requirements
 1. SafeHaven Cluster already installed and user needs to have access to it.
@@ -16,12 +16,12 @@ Register Data centers within the SafeHaven Console for CenturyLink Cloud and Ama
 ### Assumptions
 SafeHaven Cluster has already been installed with proper network connectivity between CMS-SRN and SRN-SRN.
 
-### Register CenturyLink Cloud Data center
-Each CenturyLink Cloud Parent or Sub Account is treated as a separate Data center within a SafeHaven Cluster.
+### Register Lumen Cloud Data center
+Each Lumen Cloud Parent or Sub Account is treated as a separate Data center within a SafeHaven Cluster.
 
 1. Within the **SafeHaven Console**, right-click on the **Administrator@Cluster** in the Navigation Tree on the left, and select **Register Data Center** from the drop-down menu.
-2. Enter **Data Center Name**, and select **CenturyLink Cloud** as the **Data Center Type**. Click **Next**.
-3. Enter your **CenturyLink Portal Username** and **Password** for CenturyLink Cloud administration. Click **Retrieve account information**. Choose Organization and Location. Click **Add Site**.
+2. Enter **Data Center Name**, and select **Lumen Cloud** as the **Data Center Type**. Click **Next**.
+3. Enter your **Lumen Portal Username** and **Password** for Lumen Cloud administration. Click **Retrieve account information**. Choose Organization and Location. Click **Add Site**.
 
 ### Register AWS Region
 Each AWS Region is treated as a separate Data center within a SafeHaven Cluster.

@@ -24,7 +24,7 @@ Download the **GUI Package** from the **Download Links** section of the most rec
 ### Create a New SafeHaven Cluster
 1. Launch the **safehaven-console.exe**.
 2. Click on **Create new cluster**.
-3. Enter the **Organization Name** and the **License key** provided to you by your CenturyLink Onboarding Resource. Click **Next**.
+3. Enter the **Organization Name** and the **License key** provided to you by your Lumen Onboarding Resource. Click **Next**.
 4. Fill in the following fields:  
 
    a. Enter **CMS Hostname**.
@@ -42,7 +42,7 @@ Download the **GUI Package** from the **Download Links** section of the most rec
    f. Copy the **Debian Package for CMS/SRN** link from the **Download Links** section of the most recent SafeHaven release notes.
    In this case, it is  [SafeHaven 5.0 Release Notes](../SafeHaven 5 General/SafeHaven5.0.0-Release-Notes.md) and enter it in the **SafeHaven distribution URL** field.
 
-   **NOTE**:Please contact your CenturyLink Cloud Onboarding Resource if you have any questions regarding the latest version of **Debian
+   **NOTE**:Please contact your Lumen Cloud Onboarding Resource if you have any questions regarding the latest version of **Debian
    Package for CMS/SRN**. Do not modify the Service Port (TCP), Heartbeat Port (UDP), Installation ID.
 
 5. Click **Next**
