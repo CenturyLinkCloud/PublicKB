@@ -18,17 +18,17 @@ It is recommended the user or role performing these steps have full IAM permissi
 1. Login to the target AWS account [here](https://console.aws.amazon.com/iam).
 2. Access the IAM dashboard.
 
-#### Create Lumen Cloud Optimization IAM Policy
+#### Create CTL Cloud Optimization IAM Policy
 1. Navigate to IAM "Policy."
 2. Click "Create Policy."
 3. Select "Create Your Own Policy."
-4. Name the Policy as follows: LumenCloudOptimizationPolicy.
-5. Add the following Description: Access Policy for Lumen's Cloud Optimization Functionality.
-6. Paste the Lumen Cloud Optimization IAM policy documented [below](#lumen-cloud-optimization-iam-policy).
+4. Name the Policy as follows: CTLCloudOptimizationPolicy.
+5. Add the following Description: Access Policy for CTL's Cloud Optimization Functionality.
+6. Paste the CTL Cloud Optimization IAM policy documented [below](#CTL-cloud-optimization-iam-policy).
 7. Click "Validate Policy."
 8. Click "Create Policy."
 
-#### Create Lumen Cloud Optimization IAM Role
+#### Create CTL Cloud Optimization IAM Role
 1. Navigate to IAM "Roles."
 2. Click "Create New Role."
 3. Click "Role for Cross-account access."
@@ -37,19 +37,19 @@ It is recommended the user or role performing these steps have full IAM permissi
 6. Add External ID as follows: [as provided by Cloud Optimization].
 7. Do NOT check "require MFA."
 8. Click "Next Steps."
-9. Select "LumenCloudOptimizationPolicy."
+9. Select "CTLCloudOptimizationPolicy."
 10. Click "Next Step."
-11. Name the Role as "LumenCloudOptimization."
-12. Add the following Description: "Lumen's Cloud Optimization Functionality."
+11. Name the Role as "CTLCloudOptimization."
+12. Add the following Description: "CTL's Cloud Optimization Functionality."
 13. Click "Create Role."
 
 #### Retrieve ARN role
-1. Select the Lumen Cloud Optimization IAM Role.
+1. Select the CTL Cloud Optimization IAM Role.
 2. Record listed ARN.
 3. Send ARN to your Technical Account Manager or on-boarding representative.
 
 
-##### Lumen Cloud Optimization IAM Policy
+##### CTL Cloud Optimization IAM Policy
 
 ```
 
