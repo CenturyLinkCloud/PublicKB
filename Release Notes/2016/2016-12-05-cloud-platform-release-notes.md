@@ -36,4 +36,4 @@ Previously, Lumen announced that we will be deactivating the SMTP Relay Service 
 
 * __NetX Santa Clara datacenter options__
 
-Selecting HAN as an endpoint for the UC1 CLC datacenter incorrectly offered LUMEN SC4 & LUMEN SC5 as datacenter options. This has been corrected to reflect the two valid options of SC8 and SC9.
+Selecting HAN as an endpoint for the UC1 CLC datacenter incorrectly offered Lumen SC4 & Lumen SC5 as datacenter options. This has been corrected to reflect the two valid options of SC8 and SC9.

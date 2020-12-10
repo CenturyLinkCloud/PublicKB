@@ -87,7 +87,7 @@ Lumen Dedicated Cloud Compute**
 
 Lumen Managed Server**
 
-**Q: Does LUMEN offset any of the cost to migrate?**
+**Q: Does Lumen offset any of the cost to migrate?**
 
 A: No, there are fees associated with migration. However, if the customer is doing a tech refresh to a new version or Platform, there will be no early termination fees applied to the account.  
 
@@ -107,13 +107,13 @@ A: Please contact 800-728-8471 for assistance.
 
 A: Customers are encouraged to act, but if they don’t they should expect the following based on the platform:
 
-Lumen Managed Server: best effort support, no SLA, no security patches, and possibly a future announcement that the OS cannot be operated in the LUMEN environments.
+Lumen Managed Server: best effort support, no SLA, no security patches, and possibly a future announcement that the OS cannot be operated in the Lumen environments.
 
-Lumen Dedicated Cloud Compute: best effort support, no SLA, no security patches, and possibly a future announcement that the OS cannot be operated in the LUMEN environments.
+Lumen Dedicated Cloud Compute: best effort support, no SLA, no security patches, and possibly a future announcement that the OS cannot be operated in the Lumen environments.
 
-Lumen Private Cloud on VMware Cloud Foundation: best effort support, no SLA, no security patches, and possibly a future announcement that the OS cannot be operated in the LUMEN environments.
+Lumen Private Cloud on VMware Cloud Foundation: best effort support, no SLA, no security patches, and possibly a future announcement that the OS cannot be operated in the Lumen environments.
 
-Lumen Cloud: best effort support, no SLA, no security patches, and possibly a future announcement that the OS cannot be operated in the LUMEN environments or possibly a future announcement that VMs will be removed.
+Lumen Cloud: best effort support, no SLA, no security patches, and possibly a future announcement that the OS cannot be operated in the Lumen environments or possibly a future announcement that VMs will be removed.
 
 ** As of January 14, 2020, there will be no further security updates, no free support, and no online technical content updates. Lumen will provide best-effort support with no SLAs.
 

@@ -111,9 +111,9 @@ Refer to Avni SDC user guide for more information.
 There are no Avni license costs included. The cost to deploy the Avni SDC Partner Template will be billed as a Service Task, but Lumen will provide a credit for those costs. In order to receive a credit, please follow the instructions below. More information about Service Tasks and fees is [available here](http://www.ctl.io/service-tasks).
 
 #### Avni Pricing
-1. Software Defined Cloud Controller (LUMEN SDC CNTRL): $25,000/Instance/Year
-2. Software Defined Network Services (LUMEN SDN SVC): $100/Instance/Year
-3. Application VM Management (LUMEN APP VMM): $100/Instance/Year
+1. Software Defined Cloud Controller (Lumen SDC CNTRL): $25,000/Instance/Year
+2. Software Defined Network Services (Lumen SDN SVC): $100/Instance/Year
+3. Application VM Management (Lumen APP VMM): $100/Instance/Year
 
 Please contact Avni directly to purchase a license by emailing [Avni](mailto:contact@avni.io).
 
