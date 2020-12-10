@@ -18,17 +18,17 @@ It is recommended the user or role performing these steps have full IAM permissi
 1. Login to the target AWS account [here](https://console.aws.amazon.com/iam).
 2. Access the IAM dashboard.
 
-#### Create CTL Cloud Optimization IAM Policy
+#### Create Lumen Cloud Optimization IAM Policy
 1. Navigate to IAM "Policy."
 2. Click "Create Policy."
 3. Select "Create Your Own Policy."
 4. Name the Policy as follows: CTLCloudOptimizationPolicy.
 5. Add the following Description: Access Policy for CTL's Cloud Optimization Functionality.
-6. Paste the CTL Cloud Optimization IAM policy documented [below](#CTL-cloud-optimization-iam-policy).
+6. Paste the Lumen Cloud Optimization IAM policy documented [below](#lumen-cloud-optimization-iam-policy).
 7. Click "Validate Policy."
 8. Click "Create Policy."
 
-#### Create CTL Cloud Optimization IAM Role
+#### Create Lumen Cloud Optimization IAM Role
 1. Navigate to IAM "Roles."
 2. Click "Create New Role."
 3. Click "Role for Cross-account access."
@@ -44,12 +44,12 @@ It is recommended the user or role performing these steps have full IAM permissi
 13. Click "Create Role."
 
 #### Retrieve ARN role
-1. Select the CTL Cloud Optimization IAM Role.
+1. Select the Lumen Cloud Optimization IAM Role.
 2. Record listed ARN.
 3. Send ARN to your Technical Account Manager or on-boarding representative.
 
 
-##### CTL Cloud Optimization IAM Policy
+##### Lumen Cloud Optimization IAM Policy
 
 ```
 
