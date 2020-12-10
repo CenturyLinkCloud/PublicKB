@@ -8,7 +8,7 @@
 
 ### Overview
 
-Partner Cloud Integration allows an Cloud Application Manager user to create Microsoft Azure Customer Accounts or transfer an existing one into Lumen's care. If you want to stop usage and completely shut down that Azure Customer Account, you must do more than delete the provider in Cloud Application Manager. You will also need to tell Lumen to turn off the actual Azure account via a CTL support ticket and CTL will assist to make sure the account is removed properly.  Not following this process could cause unexpected billing charges to continue.
+Partner Cloud Integration allows an Cloud Application Manager user to create Microsoft Azure Customer Accounts or transfer an existing one into Lumen's care. If you want to stop usage and completely shut down that Azure Customer Account, you must do more than delete the provider in Cloud Application Manager. You will also need to tell Lumen to turn off the actual Azure account via a Lumen support ticket and Lumen will assist to make sure the account is removed properly.  Not following this process could cause unexpected billing charges to continue.
 
 ### Audience
 

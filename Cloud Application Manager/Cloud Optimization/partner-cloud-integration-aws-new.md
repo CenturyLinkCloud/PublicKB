@@ -104,4 +104,4 @@ In the case of a box error, share the box in the workspace that your organizatio
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
 * Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log
 
-If you would like a complete IAM assessment, please reach out to your assigned CTL representative.
+If you would like a complete IAM assessment, please reach out to your assigned Lumen representative.
