@@ -24,7 +24,7 @@
 
 **DynamicResourceScheduler (DRS)** &mdash; VMware DRS dynamically balances computing capacity across a collection of hardware resources aggregated into logical resource pools, continuously monitoring utilization across resource pools and intelligently allocating available resources among the virtual machines based on pre-defined rules that reflect business needs and changing priorities. When a virtual machine experiences an increased load, VMware DRS automatically allocates additional resources by redistributing virtual machines among the physical servers in the resource pool.
 
-**HPSA (Hewlett Packard Server Automation)** &mdash; This is a data center automation tool that Cloud Compute uses to harden new and cloned VMs and bring them into compliance with CTL standards.
+**HPSA (Hewlett Packard Server Automation)** &mdash; This is a data center automation tool that Cloud Compute uses to harden new and cloned VMs and bring them into compliance with LUMEN standards.
 
 **Instance Template** &mdash; A standard configuration image created from a virtual machine that contains pre-configured operating systems and customized non-Lumen managed applications (if applicable). Instance template(s) allows clients to consistently apply a template to multiple instances simultaneously.
 

@@ -28,7 +28,7 @@ Network Exchange is offered in a fixed monthly billing model preventing customer
 * Common Provider business models include:
   * **Hosted Service Provider:** Primarily provides SaaS or managed services on infrastructure hosted by Lumen o External Managed Service Provider: Primarily provides services to others on infrastructure not operated by CTL, i.e. IaaS clouds, SaaS platforms, Colocation providers.
   * **External Network Service Provider:** Primarily provides WAN services, e.g. Level3, Comcast.
-  * **Lumen Managed Service Provider:** Any CTL-provided service, e.g. CLC, DCC, Managed Hosting, Network Exchange or Lumen Managed Network Provider: Any CTL-provided network, e.g. IQ, CTL-SDWAN
+  * **Lumen Managed Service Provider:** Any Lumen-provided service, e.g. CLC, DCC, Managed Hosting, Network Exchange or Lumen Managed Network Provider: Any LUMEN-provided network, e.g. IQ, LUMEN-SDWAN
 * **On-Net Provider:** A service provider, fitting any of the above sub-models, who is directly or indirectly reachable via Network Exchange
 
 ### Prerequisites

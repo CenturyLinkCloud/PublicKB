@@ -34,9 +34,9 @@
 
 **A:** Yes, any terminations of contracts fall under the established Early Termination Fee (ETF) in your contract and will be billed to the customer accordingly. Customers that opt to go this route must follow the established guidelines in their services contract to initiate this request.
 
-**Q: I have a 3rd party circuit (or Level3/CTL circuit) running into the datacenter that is being impacted by this move. Will I have to move this connection?**
+**Q: I have a 3rd party circuit (or Level3/LUMEN circuit) running into the datacenter that is being impacted by this move. Will I have to move this connection?**
 
-**A:** Lumen will make all efforts to leverage your existing circuits that are being run into these facilities. This will be discussed with you after the analysis is completed by the Sales and Design and Transition teams. In cases where there may be distance limitations, or the additional costs necessary to extend this circuit to the Lumen managed cage will come at a great financial impact to either party, Lumen may request that you ask your circuit provider to provide you a new LOA/CFA to the new facility. Lumen will also work with you and your 3rd party (or Level3/CTL) to perform a hot cut from your old/current circuit to the new location where your equipment will reside.
+**A:** Lumen will make all efforts to leverage your existing circuits that are being run into these facilities. This will be discussed with you after the analysis is completed by the Sales and Design and Transition teams. In cases where there may be distance limitations, or the additional costs necessary to extend this circuit to the Lumen managed cage will come at a great financial impact to either party, Lumen may request that you ask your circuit provider to provide you a new LOA/CFA to the new facility. Lumen will also work with you and your 3rd party (or Level3/LUMEN) to perform a hot cut from your old/current circuit to the new location where your equipment will reside.
 
 **Q: I have colocation space that also connects to Lumen Managed services cage in this facility. Will those connections be impacted?**
 

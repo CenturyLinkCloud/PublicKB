@@ -8,7 +8,7 @@
 
 ### Overview
 
-Partner Cloud Integration allows an Cloud Application Manager user to create AWS Customer Accounts or transfer an existing one into Lumen's care. If you want to stop usage and completely shut down that AWS Customer Account, you must do more than delete the provider in Cloud Application Manager. You will also need to tell Lumen to turn off the actual AWS account via a CTL support ticket and CTL will assist to make sure the account is removed properly.  Not following this process could cause unexpected billing charges to continue.
+Partner Cloud Integration allows an Cloud Application Manager user to create AWS Customer Accounts or transfer an existing one into Lumen's care. If you want to stop usage and completely shut down that AWS Customer Account, you must do more than delete the provider in Cloud Application Manager. You will also need to tell Lumen to turn off the actual AWS account via a LUMEN support ticket and LUMEN will assist to make sure the account is removed properly.  Not following this process could cause unexpected billing charges to continue.
 
 ### Audience
 
