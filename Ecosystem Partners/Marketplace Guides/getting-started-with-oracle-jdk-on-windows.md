@@ -2,7 +2,7 @@
 {{{
   "title": "Installing Oracle JDK 1.7 on Windows",
   "date": "12-01-2015",
-  "author": "CTL Ecosystem Team",
+  "author": "Lumen Ecosystem Team",
   "attachments": [],
   "contentIsHTML": false
 }}}
