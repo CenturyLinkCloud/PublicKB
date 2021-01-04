@@ -11,7 +11,7 @@
   <hr />
 </div>
 <ul>
-  <li><strong>New Role-Based Access Control Services.&nbsp;</strong>CenturyLink Cloud has launched an upgraded user security model that cascades throughout the UI and v2 API. These 8 roles map to unique personas within an organization and help customers apply
+  <li><strong>New Role-Based Access Control Services.&nbsp;</strong>Lumen Cloud has launched an upgraded user security model that cascades throughout the UI and v2 API. These 8 roles map to unique personas within an organization and help customers apply
     a least-privilege approach to their cloud environment. A user can be part of multiple roles, and the Control Portal user interface recognizes which role(s) a customer has and adjusts accordingly. For a deep dive description of the permissions assigned
     to each role, view the <a href="https://t3n.zendesk.com/entries/57974910-Role-Permissions-Matrix">Permission Matrix KB</a>. Also, review the <a href="https://t3n.zendesk.com/entries/57600424-Roles-FAQ">Roles FAQ</a>    and <a href="https://t3n.zendesk.com/entries/58057670-Roles-Migration-Guide">migration guide</a> for more details. Below is a brief description of each role:</li>
   <ul>

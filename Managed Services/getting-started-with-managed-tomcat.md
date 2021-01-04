@@ -7,7 +7,7 @@
 }}}
 
 <p>Apache Tomcat is an open source software implementation of the Java Servlet and JavaServer Pages technologies. As a collaboration of best-of-breed developers from around the world, Apache Tomcat has rapidly become one of the leading Web servers. Here's
-  how to create a managed Tomcat environment in CenturyLink Cloud.</p>
+  how to create a managed Tomcat environment in Lumen Cloud.</p>
 
 **NOTE**: Before you can deploy Managed Tomcat, you must create a Managed Red Hat server.
 
@@ -37,15 +37,15 @@
 </p>
 <h3><strong>&nbsp;FREQUENTLY ASKED QUESTIONS</strong></h3>
 
-<p><strong>Q: How is the CenturyLink Cloud for Managed Apache Tomcat priced? </strong>
+<p><strong>Q: How is the Lumen Cloud for Managed Apache Tomcat priced? </strong>
 </p>
-<p>A: CenturyLink Cloud Web Software for Apache is priced by the VM, billed hourly.</p>
+<p>A: Lumen Cloud Web Software for Apache is priced by the VM, billed hourly.</p>
 <p><strong>Q: Can the customer have multiple Apache Tomcat Instances installed on the same server? </strong>
 </p>
 <p>A: NO, however all versions of Tomcat support the installation and configuration of "Multiple JVM's" on the same Tomcat server.</p>
-<p><strong>Q: What Versions of Apache Tomcat does CenturyLink Cloud support? </strong>
+<p><strong>Q: What Versions of Apache Tomcat does Lumen Cloud support? </strong>
 </p>
-<p>A: CenturyLink Cloud Supports Tomcat V7, Tomcat v8 and Tomcat v8.5.</p>
+<p>A: Lumen Cloud Supports Tomcat V7, Tomcat v8 and Tomcat v8.5.</p>
 <p><strong>Q: What operating systems are supported for Managed Apache? </strong>
 </p>
 <p>A: Managed Red Hat.

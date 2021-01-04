@@ -28,7 +28,7 @@ A Recovery Server template can make Protection group deployment easier if there 
 
 ### Pre-deploy a Recovery Instance(Optional)
 It is possible to pre-deploy the recovery instance to speed up the Protection Group Deployment process.
-1. Login to Centurylink Cloud Portal https://control.ctl.io/
+1. Login to Lumen Cloud Portal https://control.ctl.io/
 2. Click on the DR Datacenter.
 3. Click on a group where the recovery instance should be deployed.
 4. Click on **create**, then select **server**.

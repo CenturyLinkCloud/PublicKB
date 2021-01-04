@@ -12,7 +12,7 @@
 
   - __Global Navigation__
 
-    We have additional updates to the Global Navigation bar at the top of the website. In our attempt to provide One Portal View of all CenturyLink Cloud and Hosting Services, we released “Services” Menu in our last release allowing users to navigate easily between Cloud Application Manager, CenturyLink Public Cloud, Managed Hosting and Managed Security portals. We have now enabled Private Cloud navigation that will take users to CenturyLink Dedicated Cloud Compute portal. Going forward users will see an additional navigation menu called “Sites”, that will allow them to switch between multiple sites within Cloud Application Manager.
+    We have additional updates to the Global Navigation bar at the top of the website. In our attempt to provide One Portal View of all Lumen Cloud and Hosting Services, we released “Services” Menu in our last release allowing users to navigate easily between Cloud Application Manager, Lumen Public Cloud, Managed Hosting and Managed Security portals. We have now enabled Private Cloud navigation that will take users to Lumen Dedicated Cloud Compute portal. Going forward users will see an additional navigation menu called “Sites”, that will allow them to switch between multiple sites within Cloud Application Manager.
 
   - __Sites Menu__
 
@@ -22,11 +22,11 @@
 
   - __Cloud Optimization Site__
 
-    CenturyLink is committed to providing value added services to our Reseller Customers. With our newly launched Cloud Optimization Site, customers who purchased AWS Services through CenturyLink can now get the additional reporting capabilities on their AWS infrastructure. Once users navigate to the Cloud Optimization Site, they will be authorized with their Cloud Application Manager credentials and will see Optimization recommendations. Now, users will see “Savings” and “Best Practices” modules. As we continue to improve the Cloud Optimization Site users will see additional recommendation related to utilization, cost, and inventory in the coming weeks.
+    Lumen is committed to providing value added services to our Reseller Customers. With our newly launched Cloud Optimization Site, customers who purchased AWS Services through Lumen can now get the additional reporting capabilities on their AWS infrastructure. Once users navigate to the Cloud Optimization Site, they will be authorized with their Cloud Application Manager credentials and will see Optimization recommendations. Now, users will see “Savings” and “Best Practices” modules. As we continue to improve the Cloud Optimization Site users will see additional recommendation related to utilization, cost, and inventory in the coming weeks.
 
   - __Monitoring Site__
 
-    Customers who purchased Managed Services from CenturyLink will now have additional insight into the Managed Servers that have been deployed in multiple cloud platforms. After navigating to the Monitoring site, the users will be authorized with their Cloud Application Manager credentials and will see “Events”, “Policies”, “Servers”, ‘Suppressions” and “Graphs”. At this time, end users are going to have a “Read Only” view of the monitoring and suppression policies and will be able to see graphs on Operating Systems metrics. Users will have an option to request changes to the monitoring policies if they think there needs to be changes to the policies.
+    Customers who purchased Managed Services from Lumen will now have additional insight into the Managed Servers that have been deployed in multiple cloud platforms. After navigating to the Monitoring site, the users will be authorized with their Cloud Application Manager credentials and will see “Events”, “Policies”, “Servers”, ‘Suppressions” and “Graphs”. At this time, end users are going to have a “Read Only” view of the monitoring and suppression policies and will be able to see graphs on Operating Systems metrics. Users will have an option to request changes to the monitoring policies if they think there needs to be changes to the policies.
 
 
 ### Enhancements (3)
@@ -69,4 +69,4 @@
 
 * __IaaS - Enhancements Related to Overall Stability and Availability__
 
-  CenturyLink Cloud Infrastructure-as-a-Service has implemented improvements to our cloud infrastructure and Control Portal software. These additions are meant to improve customer experience by increasing availability and improving platform stability.
+  Lumen Cloud Infrastructure-as-a-Service has implemented improvements to our cloud infrastructure and Control Portal software. These additions are meant to improve customer experience by increasing availability and improving platform stability.

@@ -11,7 +11,7 @@
 
 ### Product Overview
 
-[Network Exchange](https://www.ctl.io/network-exchange/) provides secure, high-speed, redundant, automated network connections between disparate IT environments allowing for a true hybrid environment. Common environments include CenturyLink Cloud (CLC), CenturyLink Private Cloud on VMware Cloud Foundation (VCF), Colocation environments, CenturyLink Managed Hosting, CenturyLink Dedicated Cloud Compute, 3rd party networks and customer owned devices. Network Exchange is ideal for your hybrid environment as well as capacity augmentation or cloud bursting, data migration, and disaster recovery.
+[Network Exchange](https://www.ctl.io/network-exchange/) provides secure, high-speed, redundant, automated network connections between disparate IT environments allowing for a true hybrid environment. Common environments include Lumen Cloud (CLC), Lumen Private Cloud on VMware Cloud Foundation (VCF), Colocation environments, Lumen Managed Hosting, Lumen Dedicated Cloud Compute, 3rd party networks and customer owned devices. Network Exchange is ideal for your hybrid environment as well as capacity augmentation or cloud bursting, data migration, and disaster recovery.
 
 An instance of Network Exchange is referred to as an Exchange. An Exchange is an interconnect between two or more IT environments. A Network Exchange customer may have one or more Exchanges. A connectivity point, such as a Colocation, in an Exchange is referred to as an Endpoint.
 
@@ -26,9 +26,9 @@ Network Exchange is offered in a fixed monthly billing model preventing customer
     * **Endpoint:** A connectivity point for a given Exchange.
 
 * Common Provider business models include:
-  * **Hosted Service Provider:** Primarily provides SaaS or managed services on infrastructure hosted by CenturyLink o External Managed Service Provider: Primarily provides services to others on infrastructure not operated by CTL, i.e. IaaS clouds, SaaS platforms, Colocation providers.
+  * **Hosted Service Provider:** Primarily provides SaaS or managed services on infrastructure hosted by Lumen o External Managed Service Provider: Primarily provides services to others on infrastructure not operated by CTL, i.e. IaaS clouds, SaaS platforms, Colocation providers.
   * **External Network Service Provider:** Primarily provides WAN services, e.g. Level3, Comcast.
-  * **CenturyLink Managed Service Provider:** Any CTL-provided service, e.g. CLC, DCC, Managed Hosting, Network Exchange or CenturyLink Managed Network Provider: Any CTL-provided network, e.g. IQ, CTL-SDWAN
+  * **Lumen Managed Service Provider:** Any Lumen-provided service, e.g. CLC, DCC, Managed Hosting, Network Exchange or Lumen Managed Network Provider: Any Lumen-provided network, e.g. IQ, Lumen-SDWAN
 * **On-Net Provider:** A service provider, fitting any of the above sub-models, who is directly or indirectly reachable via Network Exchange
 
 ### Prerequisites
@@ -37,11 +37,11 @@ Network Exchange is offered in a fixed monthly billing model preventing customer
 * The desired Endpoint should be verified as supported at the desired data center(s). Please refer to the Knowledge Base article [Network Exchange Availability Matrix](network-exchange-connectivity-matrix-configuration-guide.md).
 * The desired Endpoint / data center combination(s) per Exchange should be validated as a supported configuration in the Knowledge Base article [Network Exchange Availability Guide](network-exchange-connectivity-matrix-configuration-guide.md) once Endpoint availability has been validated, per the previous step.
 * Each Endpoint type has certain prerequisites, capabilities and caveats that should be understood before setting up an Exchange. Please see the following Knowledge Base documents for details:
-	* [Network Exchange CenturyLink Cloud Endpoint Guide](network-exchange-clc-endpoint-guide.md)
+	* [Network Exchange Lumen Cloud Endpoint Guide](network-exchange-clc-endpoint-guide.md)
 	* [Network Exchange Colocation Endpoint Guide](network-exchange-clc-colocation-endpoint-guide.md)
 	* [Network Exchange Managed Hosting via HAN Endpoint Guide](network-exchange-clc-managed-hosting-endpoint-guide.md)
 	* [Network Exchange Dedicated Access Endpoint Guide](network-exchange-clc-dedicated-access-endpoint-guide.md)
-	* [Network Exchange CenturyLink Private Cloud on VMWare Cloud Foundation Endpoint Guide](network-exchange-centurylink-private-cloud-endpoint-guide.md)
+	* [Network Exchange Lumen Private Cloud on VMWare Cloud Foundation Endpoint Guide](network-exchange-lumen-private-cloud-endpoint-guide.md)
 
 ### Exceptions
 
@@ -53,7 +53,7 @@ Network Exchange is designed to enable connectivity between any supported Endpoi
 
 ![Network Exchange Portal](../../images/network/netx-cam-internet-page.png)
 
-2. Login using your Cloud Application Manager or CenturyLink Cloud username and password   
+2. Login using your Cloud Application Manager or Lumen Cloud username and password   
 
 ![Network Exchange Portal](../../images/network/netx-cam-login-with-cam-credentials.png)
 
@@ -178,7 +178,7 @@ Click **Next**.
 
 **Notes:**
 
-* VLAN "A" and VLAN "B" are provided by a CenturyLink account manager and are based on the VLANs that are set up in the in the CenturyLink data center’s managed hosting network. Please see [Network Exchange Managed Hosting Exchange Ports](network-exchange-clc-managed-hosting-endpoint-guide.md) for details on how to obtain these.
+* VLAN "A" and VLAN "B" are provided by a Lumen account manager and are based on the VLANs that are set up in the in the Lumen data center’s managed hosting network. Please see [Network Exchange Managed Hosting Exchange Ports](network-exchange-clc-managed-hosting-endpoint-guide.md) for details on how to obtain these.
 * You may cancel this operation by clicking the red X on the screen, or, by selecting the "Back" button.
 * If this is your first endpoint, you will be prompted to enter a second endpoint. If you have entered an endpoint previously, you will be navigated to the **Review Your Request** flyout. See instructions below on how to proceed.
 

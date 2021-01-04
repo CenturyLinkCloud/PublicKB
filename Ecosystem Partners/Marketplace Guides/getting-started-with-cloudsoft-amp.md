@@ -17,17 +17,17 @@ AMP v4 is built on the open-source project [Apache Brooklyn](https://brooklyn.ap
 For more information, please visit http://www.cloudsoft.io/products/.
 
 ### Audience
-CenturyLink Cloud Users.
-If you are ready to get started, but are not yet a CenturyLink Cloud customer, no problem. Get started with [CenturyLink Cloud for free](https://www.ctl.io/free-trial/). Try our most popular products, or [MarketPlace Partners](https://www.ctl.io/marketplace/program/) offerings, allowing you to create a combination of products that best fits your business needs.
+Lumen Cloud Users.
+If you are ready to get started, but are not yet a Lumen Cloud customer, no problem. Get started with [Lumen Cloud for free](https://www.ctl.io/free-trial/). Try our most popular products, or [MarketPlace Partners](https://www.ctl.io/marketplace/program/) offerings, allowing you to create a combination of products that best fits your business needs.
 
 ### Impact
-After reading this article, the user will be able to install and use Cloudsoft AMP v4 in the CenturyLink Cloud platform.
+After reading this article, the user will be able to install and use Cloudsoft AMP v4 in the Lumen Cloud platform.
 
 ### Prerequisites
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 
 ### Postrequisite
-If you are deploying from "CenturyLink Blueprints Library" all the prerequisites are configured. There is no need to perform any tasks.
+If you are deploying from "Lumen Blueprints Library" all the prerequisites are configured. There is no need to perform any tasks.
 
 ### Deploying the "Cloudsoft AMP 4" Blueprint
 
@@ -53,9 +53,9 @@ If you are deploying from "CenturyLink Blueprints Library" all the prerequisites
 5. AMP 4 Install Script on AMP4- section.
   * Specify AMP Username (e.g., admin)
   * Specify AMP Password
-  * Specify CenturyLink Cloud account
-  * Specify CenturyLink Cloud password
-  * Select one or multiple CenturyLink Cloud data centers to configure as
+  * Specify Lumen Cloud account
+  * Specify Lumen Cloud password
+  * Select one or multiple Lumen Cloud data centers to configure as
      AMP locations, or "(None)" if none are needed
   * Accept the Cloudsoft Trial Software License Agreement Terms and Conditions
 <img src="../../images/cloudsoft/amp401-customise-install-script.png">
@@ -82,16 +82,16 @@ After your Blueprint deploys successfully, please follow these instructions to a
 
 2. Browse to http://PublicIpAddress:8080 and use the credentials specified at "AMP 4 Install Script on AMP4-" section.
 
-3. Start deploying AMP blueprints to the CenturyLink Cloud Data centers specified above.
+3. Start deploying AMP blueprints to the Lumen Cloud Data centers specified above.
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only.
 
 ### About Cloudsoft
-CenturyLink Cloud works with [Cloudsoft](http://www.cloudsoft.io) to provide agility and reliability throughout the application lifecycle.
+Lumen Cloud works with [Cloudsoft](http://www.cloudsoft.io) to provide agility and reliability throughout the application lifecycle.
 
 ### Frequently Asked Questions
 
 #### Who should I contact for support?
-* For issues related to deploying the Cloudsoft AMP 4 Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the [Cloudsoft Support website](https://support.cloudsoft.io/).
-* For issues related to cloud infrastructure (VMs, network, etc), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to deploying the Cloudsoft AMP 4 Blueprint on Lumen Cloud, Licensing or Accessing the deployed software, please visit the [Cloudsoft Support website](https://support.cloudsoft.io/).
+* For issues related to cloud infrastructure (VMs, network, etc), or if you experience a problem deploying the Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](https://t3n.zendesk.com/tickets/new).

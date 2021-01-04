@@ -11,9 +11,9 @@
 
 ### What is Anomaly Detection?
 
-CenturyLink’s Cloud Application Manager – Managed Services Anywhere (CAM MSA) monitoring component, Watcher collects and stores metrics from applications, services and infrastructure.  While these metrics are useful for event triage and historical trending, they may also be used for statistical analysis.  
+Lumen’s Cloud Application Manager – Managed Services Anywhere (CAM MSA) monitoring component, Watcher collects and stores metrics from applications, services and infrastructure.  While these metrics are useful for event triage and historical trending, they may also be used for statistical analysis.  
 
-Leveraging statistical analysis known as triple exponential smoothing, ie: the Holt-Winters method, Watcher first derives a forecast for the metric signal.  Using this data model, it compares actual observed values against the forecasted expected values to identify anomalous events.  Multiple parameters are also available to fine tune the sensitivity of the anomaly detection algorithm.  Upon the identification of an anomaly, as with any other event, alerts are generated and sent to CenturyLink incident management system.
+Leveraging statistical analysis known as triple exponential smoothing, ie: the Holt-Winters method, Watcher first derives a forecast for the metric signal.  Using this data model, it compares actual observed values against the forecasted expected values to identify anomalous events.  Multiple parameters are also available to fine tune the sensitivity of the anomaly detection algorithm.  Upon the identification of an anomaly, as with any other event, alerts are generated and sent to Lumen incident management system.
 
 ### Example Practical Use Case
 

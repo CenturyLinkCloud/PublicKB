@@ -10,14 +10,14 @@
 }}}
 
 ### Description
-In this KB article, we will demonstrate how to use Simple Backup Anywhere to provide file and folder level backups and restores for VMs in CenturyLink Private Cloud on VMware Cloud Foundation™.
+In this KB article, we will demonstrate how to use Simple Backup Anywhere to provide file and folder level backups and restores for VMs in Lumen Private Cloud on VMware Cloud Foundation™.
 
 ### Prerequisites
-You will need the following in order to use Simple Backup Anywhere with CenturyLink Private Cloud on VMware Cloud Foundation:
+You will need the following in order to use Simple Backup Anywhere with Lumen Private Cloud on VMware Cloud Foundation:
 
 * A Windows or Linux server (VM)
 * Connectivity to your Windows or Linux server
-* An active CenturyLink Cloud (CLC) account
+* An active Lumen Cloud (CLC) account
 
 ### High Level Steps
 * Login to your CLC account and navigate to Simple Backup (Control Portal | Services | Backup)

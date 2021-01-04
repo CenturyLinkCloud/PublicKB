@@ -8,11 +8,11 @@
 "sticky": false
 }}}
 
-This guide provides an overview of the activities required of customers during the pre-installation and installation process for the CenturyLink Security Log Monitoring (SLM) Service. This service requires the installation of a log collection platform (LCP/”FALCON” device) inside the customer premise or data center environment. CenturyLink supplies a software-based log collection probe to collect premise-based system logs, which are automatically and securely transmitted to the CenturyLink® Managed Security Service SIEM Platform. Hardware (i.e., the server) needed to run the log collection platform is not included. (Additional technical details and requirements are defined in the CenturyLink Service Guide (“SG”) for Security Log Monitoring, which is supplied to customers post-sale.)
+This guide provides an overview of the activities required of customers during the pre-installation and installation process for the Lumen Security Log Monitoring (SLM) Service. This service requires the installation of a log collection platform (LCP/”FALCON” device) inside the customer premise or data center environment. Lumen supplies a software-based log collection probe to collect premise-based system logs, which are automatically and securely transmitted to the Lumen® Managed Security Service SIEM Platform. Hardware (i.e., the server) needed to run the log collection platform is not included. (Additional technical details and requirements are defined in the Lumen Service Guide (“SG”) for Security Log Monitoring, which is supplied to customers post-sale.)
 
 The following describes the steps customers need to take to help ensure successful implementation of the Security Log Monitoring service.
 
-1. Customer works with CenturyLink Sales Engineer to complete onboarding questionnaire.
+1. Customer works with Lumen Sales Engineer to complete onboarding questionnaire.
 
     **Pre-install information needed from customer:**
 
@@ -44,14 +44,14 @@ The following describes the steps customers need to take to help ensure successf
 
     ![Network requirements](../images/mssp-security-log-monitoring-pre-install-guide-2.png)
 
-4. Customer works with CenturyLink Implementation to customize the log collection platform.
+4. Customer works with Lumen Implementation to customize the log collection platform.
 
-    Customers are required to provide credentials and IP details to CenturyLink in order to customize the log collection platform for customer network (IP settings, listening services, db connection settings). CenturyLink then performs the customization of the log collection platform device(s).
+    Customers are required to provide credentials and IP details to Lumen in order to customize the log collection platform for customer network (IP settings, listening services, db connection settings). Lumen then performs the customization of the log collection platform device(s).
 
 5. Customer configures their internal devices (log forwarding & firewall rules).
 
     Customers are required to configure the technology transmitting or being connected to collect logs. This includes firewall configuration to allow log collection platform to receive log data. Customer firewall rule requirements include:
 
-    * CenturyLink MSSP appliance listens for logs on TCP/UDP 514, TCP 601 and TCP 6514 depending on the type of syslog being sent. Any firewalls between the source devices and the appliance should be opened for those ports.
+    * Lumen MSSP appliance listens for logs on TCP/UDP 514, TCP 601 and TCP 6514 depending on the type of syslog being sent. Any firewalls between the source devices and the appliance should be opened for those ports.
     * TCP 6514, TCP 6515, and TCP 443 need to be opened for the appliance to communicate with the MSSP portal (mss.centurylink.com/174.140.132.59), but only the appliance initiates the connection.
     * UDP 53 needs to be opened from the appliance to the DNS servers speci ed in the appliance setup wizard.

@@ -7,7 +7,7 @@
 }}}
 
 ### Description (Goal/Purpose)
-CenturyLink Cloud supports the ability to add additional disks to Linux machines, and the operation can be monitored in the deployment queue of the control portal. The job can fail for various reasons, resulting in the error "manual intervention required". These are the manual steps required to detect and mount the new disk.
+Lumen Cloud supports the ability to add additional disks to Linux machines, and the operation can be monitored in the deployment queue of the control portal. The job can fail for various reasons, resulting in the error "manual intervention required". These are the manual steps required to detect and mount the new disk.
 
 ### Impact
 The new disk will be detected, formatted, and mounted.

@@ -16,7 +16,7 @@ Installation instructions for deploying the [Docker Trusted Registry](https://do
 The Docker Trusted Registry (hereafter DTR) blueprint based on Docker-CS (commercial support) provides a secured, private hosted Docker registry appliance.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
 After reading this article, you should have a configured Docker registry ready to be configured with license key and SSL certs.
@@ -26,10 +26,10 @@ After reading this article, you should have a configured Docker registry ready t
 * A DTR License key obtainable [here](https://www.docker.com/pricing)
 
 ### Postrequisite
-To access your application from a computer outside the CenturyLink Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
-* Recommended: [VPN Access](../../Network/CenturyLink Cloud/how-to-configure-client-vpn.md) (optional) will allow you to access your server over the internal network interfaces.
-* Optional: [Add a Public IP](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
-* [Allow incoming traffic](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) for port `443` by clicking on the Servers Public IP through the Control Portal.
+To access your application from a computer outside the Lumen Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
+* Recommended: [VPN Access](../../Network/Lumen Cloud/how-to-configure-client-vpn.md) (optional) will allow you to access your server over the internal network interfaces.
+* Optional: [Add a Public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
+* [Allow incoming traffic](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) for port `443` by clicking on the Servers Public IP through the Control Portal.
 
 ### Deploying the "Install Docker Trusted Registry on Ubuntu" Blueprint
 
@@ -67,10 +67,10 @@ After your Blueprint deploys successfully, please follow these instructions to a
 The Docker Trusted Registry administrative webapp should load. By default, DTR generates a set of default SSL certs so your browser's security warnings may be safely ignored. Once you're connected to the admin interface, be sure to configure external domain, SSL, and license settings.
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no Docker-CS (commercial support) license costs or additional fees bundled in.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. There are no Docker-CS (commercial support) license costs or additional fees bundled in.
 
 ### Frequently Asked Questions
 
 #### Who should I contact for support?
 * For issues related to Docker licensing, please visit the [Docker CS Support website](https://www.docker.com/support).
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](https://t3n.zendesk.com/tickets/new).

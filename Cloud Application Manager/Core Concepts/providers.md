@@ -2,7 +2,7 @@
 "title": "Providers",
 "date": "10-22-2019",
 "author": "Diego Sanjuan, Guillermo Sánchez, Victor Shulman, Zachary McMaster",
-"keywords": ["cam", "alm", "providers", "centuryLink-cloud", "clc", "aws", "azure", "google-cloud", "gcp", "cloudstack", "dimension-data", "openstack", "rackspace", "softlayer", "vcloud", "vmware"],
+"keywords": ["cam", "alm", "providers", "lumen-cloud", "clc", "aws", "azure", "google-cloud", "gcp", "cloudstack", "dimension-data", "openstack", "rackspace", "softlayer", "vcloud", "vmware"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -71,7 +71,7 @@ You can request Cloud Application Manager to update provider's metadata clicking
 
 All synchronization process is logged and you can audit it in the **Logs** tab of the provider details page.
 
-In case you are using aditional services like Managed Services Anywhere or Analytics or your provider is optimized the synchronization process will include also some configuration steps which will create required infrastructure and configurations in your account to allow CenturyLink to provide such services.
+In case you are using aditional services like Managed Services Anywhere or Analytics or your provider is optimized the synchronization process will include also some configuration steps which will create required infrastructure and configurations in your account to allow Lumen to provide such services.
 
 These required configuration include these steps:
 
@@ -90,11 +90,11 @@ Cloud Application Manager integrates with many popular clouds. Here is a full li
 
 | Clouds                 | Enterprise <br> (Saas) | Enterprise <br> (Appliance) |
 | ---------------------- | :--------------------: | :-------------------------: |
-| [CenturyLink Private Cloud on VMware Cloud Foundation (CPC on VCF)](../Deploying Anywhere/using-private-cloud-on-vmware-cloud-foundation.md)| ✓ | ✓ |
-| [CenturyLink Private Cloud for VMware Cloud on AWS (CPC for VMC)](../Deploying Anywhere/using-centurylink-private-cloud-for-vmc-on-aws.md)| ✓ | ✓ |
-| [CenturyLink Cloud](../Deploying Anywhere/using-centurylink-cloud.md) | ✓ | ✓ |
-| [CenturyLink DCC](../Deploying Anywhere/using-dcc.md)                 | ✓ | ✓ |
-| [CenturyLink DEC3](../Deploying Anywhere/using-centurylink-dec3.md)| ✓ | ✓ |
+| [Lumen Private Cloud on VMware Cloud Foundation (CPC on VCF)](../Deploying Anywhere/using-private-cloud-on-vmware-cloud-foundation.md)| ✓ | ✓ |
+| [Lumen Private Cloud for VMware Cloud on AWS (CPC for VMC)](../Deploying Anywhere/using-lumen-private-cloud-for-vmc-on-aws.md)| ✓ | ✓ |
+| [Lumen Cloud](../Deploying Anywhere/using-lumen-cloud.md) | ✓ | ✓ |
+| [Lumen DCC](../Deploying Anywhere/using-dcc.md)                 | ✓ | ✓ |
+| [Lumen DEC3](../Deploying Anywhere/using-lumen-dec3.md)| ✓ | ✓ |
 | [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md) | ✓ | ✓ |
 | Amazon Web Services GovCloud<br>(Same documentation as [Amazon Web Services](../Deploying Anywhere/using-your-aws-account.md)) | ✓ | ✓ |
 | [CloudStack](../Deploying Anywhere/using-cloudstack.md)          | ✓ | ✓ |

@@ -9,7 +9,7 @@
 ### Technology Profile
 <img src="../../images/aiscaler/aiscaler-logo.png" style="border:0;float:right;max-width: 150px;">
 
-aiScaler helps CenturyLink Cloud customers address the business challenge of website scalability, stability and security - now available as part of the CenturyLink Cloud Blueprint Engine.
+aiScaler helps Lumen Cloud customers address the business challenge of website scalability, stability and security - now available as part of the Lumen Cloud Blueprint Engine.
 
 
 ##### Customer Support
@@ -19,7 +19,7 @@ aiScaler helps CenturyLink Cloud customers address the business challenge of�
 |support@aiscaler.com<br>+1-408-744-6078<br>+44 20 7993 4587<br>Skype: ai.scaler   	| 2 Free hours of installation support<br>Professional services available.<br>Email, skype and phone available M-F Business hours EST.|
 
 ### Description
-aiScaler has integrated their technology with the CenturyLink Cloud platform.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this application delivery controller solution.
+aiScaler has integrated their technology with the Lumen Cloud platform.  The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this application delivery controller solution.
 
 
 #### aiMobile
@@ -33,11 +33,11 @@ aiScaler has integrated their technology with the CenturyLink Cloud platform. 
 development. Please contact us for a free technical consult.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 
 ### Impact
-After reading this article, the you should feel comfortable getting started using the aiScaler technology on CenturyLink Cloud.
+After reading this article, the you should feel comfortable getting started using the aiScaler technology on Lumen Cloud.
 
 After executing the steps in this Getting Started document, you will have a functioning virtual application delivery controller, upon which you can deploy web applications that are fast, able to handle massive traffic and secured from DDoS and other online attacks.
 
@@ -49,7 +49,7 @@ Prior to deploying this Blueprint please create a new server matching the below 
 
 
 ### Deploying aiScaler
-You can achieve a single-button deployment of a new aiScaler instance using CenturyLink Cloud Blueprints.
+You can achieve a single-button deployment of a new aiScaler instance using Lumen Cloud Blueprints.
 
 Follow these step by step instructions to deploy aiScaler. For more details please reference
 https://aiscaler.com/wiki/getting-started-centurylink.
@@ -110,4 +110,4 @@ aiScaler offers 30 day free trial demo licenses. You can find all license plans 
 
 **Who should I contact for support?**
 * For issues related to deploying aiScaler, please contact support@aiscaler.com (Skype: ai.scaler).
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
+* For issues related to cloud infrastructure, please open a ticket using the [Lumen Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).

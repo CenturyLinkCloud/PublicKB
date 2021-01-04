@@ -1,5 +1,5 @@
 {{{
-  "title": " Add and Claim Storage on SRNs in CenturyLink Cloud",
+  "title": " Add and Claim Storage on SRNs in Lumen Cloud",
   "date": "07-25-2018",
   "author": "Weiran Wang",
   "attachments": [],
@@ -7,20 +7,20 @@
 }}}
 
 ### Article Overview
-This article explains how to attach storage on production site SRN and recovery site SRN in CenturyLink Cloud. After the SRNs have been registered with the SafeHaven Console, the next step is to attach storage to it before creating Protection Groups.
+This article explains how to attach storage on production site SRN and recovery site SRN in Lumen Cloud. After the SRNs have been registered with the SafeHaven Console, the next step is to attach storage to it before creating Protection Groups.
 
 **NOTE**: For ease of management and troubleshooting it is recommended that the user creates one Storage Pool per Protection Group.
 
 ### Requirements
-1. Access to the SRNs in CenturyLink Cloud portal
+1. Access to the SRNs in Lumen Cloud portal
 2. Access to the SafeHaven Cluster
 
 ### Assumptions
 This article assumes that the user has already registered the SRNs within the SafeHaven Console and wants to add storage to the SRNs before creating Protection Groups.
 
 ### Add and claim Storage on SRNs.
-#### Adding Storage to the Production SRN in Centurylink Private Cloud
-1. Login to Centurylink Cloud Portal.
+#### Adding Storage to the Production SRN in Lumen Private Cloud
+1. Login to Lumen Cloud Portal.
 2. Click on the PROD-SRN.
 3. Click on **Edit Storage**.
 4. Click on **Add storage**. Then select **raw disk**.
@@ -43,7 +43,7 @@ This article assumes that the user has already registered the SRNs within the Sa
 
 
 #### Adding Storage to the DR SRN in CLC
-1. Login to Centurylink Cloud Portal.
+1. Login to Lumen Cloud Portal.
 2. Click on the DR-SRN.
 3. Click on **Edit Storage**.
 4. Click on **Add storage**. Then select **raw disk**.
@@ -51,7 +51,7 @@ This article assumes that the user has already registered the SRNs within the Sa
     For example, If Production VMs disk size is 16 GB, add a 26 GB(20 + 6) disk to the Production SRN.
 6. Click on **apply**
     
-#### Claim storage pool for CenturyLink Cloud SRNs
+#### Claim storage pool for Lumen Cloud SRNs
 1. Login to the SafeHaven Console.
 2. click on Production SRN.
 3. On the right side, click **Claim Storage**.

@@ -7,10 +7,10 @@
 }}}
 
 <h3>Description </h3>
-<p>As part of the CenturyLink Cloud platform customers are able to deploy base Operating System templates of various Linux and Windows flavors. Frequently, clients wish to understand how these templates are maintained and updated. This KB provides a list of FAQ's to address these queries.</p>
+<p>As part of the Lumen Cloud platform customers are able to deploy base Operating System templates of various Linux and Windows flavors. Frequently, clients wish to understand how these templates are maintained and updated. This KB provides a list of FAQ's to address these queries.</p>
 <h3>Audience</h3>
 <ul>
-  <li>CenturyLink Cloud Clients</li>
+  <li>Lumen Cloud Clients</li>
 </ul>
 <h3>Frequently Asked Questions</h3>
 <h4>Q: From what sources are the OS binaries obtained?</h4>

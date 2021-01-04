@@ -9,7 +9,7 @@
 ### Technology Profile
 <a href="http://www.apptio.com/"><img src="../../images/apptio/apptio-logo.png" style="border:0;float:right;margin:1em;"/></a>
 
-Providing the industry's most comprehensive view of cloud costs. Real-time analytics, standardized costing, and a partnership with CenturyLink Cloud allow for complete analysis of public, private, and hybrid cloud computing environments.
+Providing the industry's most comprehensive view of cloud costs. Real-time analytics, standardized costing, and a partnership with Lumen Cloud allow for complete analysis of public, private, and hybrid cloud computing environments.
 
 https://www.apptio.com/
 
@@ -36,4 +36,4 @@ For more information on Apptio's Cost Transparency application, please visit: ht
 
 **Who should I contact for support?**
 * For issues related to using Apptio [contact Apptio support](http://www.apptio.com/about/contact).
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
+* For issues related to cloud infrastructure, please open a ticket using the [Lumen Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).

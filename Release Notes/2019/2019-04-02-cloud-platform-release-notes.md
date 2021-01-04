@@ -2,22 +2,22 @@
 "title": "Cloud Platform - Release Notes: April 2, 2019",
 "date": "04-02-2019",
 "author": "Christine Sala",
-"keywords":["centurylink", "cam", "clc", "cpc-vcf", "aws", "analytics"],
+"keywords":["lumen", "cam", "clc", "cpc-vcf", "aws", "analytics"],
 "attachments": [],
 "contentIsHTML": false
 }}}
 
 ### Announcements (6)
 
-#### [CenturyLink Private Cloud on VMware Cloud Foundation](https://www.ctl.io/centurylink-private-cloud-on-vmware-cloud-foundation/)
+#### [Lumen Private Cloud on VMware Cloud Foundation](https://www.ctl.io/lumen-private-cloud-on-vmware-cloud-foundation/)
 
 All new customer builds from this point forward will include vCloud Director 9.5.
 
 #### [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/)
 
-##### Support for CenturyLink Master Account login method
+##### Support for Lumen Master Account login method
 
-Cloud Application Manager now supports CenturyLink Master Account as an authentication method. A new button will appear on the Cloud Application Manager login page next to your existing authentication methods. This will allow users to sign in with a CenturyLink Master Account so they can use their credentials to access Cloud Application Manager. This will also let users with additional CenturyLink products supporting this authentication method to use Single Sign-On within Cloud Application Manager and these other additional products.
+Cloud Application Manager now supports Lumen Master Account as an authentication method. A new button will appear on the Cloud Application Manager login page next to your existing authentication methods. This will allow users to sign in with a Lumen Master Account so they can use their credentials to access Cloud Application Manager. This will also let users with additional Lumen products supporting this authentication method to use Single Sign-On within Cloud Application Manager and these other additional products.
 
 ##### SAML support improvements for encryption and groups
 
@@ -37,7 +37,7 @@ Cloud Application Manager has redesigned the user interface formerly used to ena
 
 ### Bug Fixes (4)
 
-#### [CenturyLink Public Cloud](https://www.ctl.io/cloud-platform/)
+#### [Lumen Public Cloud](https://www.ctl.io/cloud-platform/)
 
 Fixed bug for API Endpoint /v2/servers/{accountAlias}/{serverName} which allowed the server to be retrieved when providing an incorrect accountAlias as long as it was in the same account hierarchy as the user requesting the data.
 

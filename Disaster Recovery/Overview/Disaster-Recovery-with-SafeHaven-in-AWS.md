@@ -17,9 +17,9 @@ This article explains how SafeHaven performs Disaster Recovery in AWS and how a 
 Production Datacenter Site type in this scenario can be:
 
 1. On-Prem VMware
-2. Any CenturyLink Cloud Datacenter
-3. CenturyLink Private Cloud on VMware Cloud Foundation
-4. CenturyLink Bare Metal Servers
+2. Any Lumen Cloud Datacenter
+3. Lumen Private Cloud on VMware Cloud Foundation
+4. Lumen Bare Metal Servers
 5. Hyper-V Generation 1
 6. Any AWS Region
 6. Physical Servers
@@ -43,7 +43,7 @@ Gather the following information for the servers you want to protect:
 ### SafeHaven Replication Node(SRN)
 SafeHaven Replication Node(SRN) is an Ubuntu 16 based lightweight virtual appliance(virtual machine)which transfers and retains production data.
 
-If the Production Datacenter is an On-prem VMware site, CenturyLink Private Cloud on VMware Cloud Foundation, Hyper-V Generation 1 or a Physical Server, CenturyLink team provides an OVF for spinning up SRN appliances. If the Production Datacenter is a CenturyLink Cloud Datacenter or a CenturyLink Bare Metal Server, simply use the standard Ubuntu 16 template that CenturyLink Portal provides. If the Production/Recovery Datacenter is an AWS Region, simply use the SafeHaven template published under Community AMI's.
+If the Production Datacenter is an On-prem VMware site, Lumen Private Cloud on VMware Cloud Foundation, Hyper-V Generation 1 or a Physical Server, Lumen team provides an OVF for spinning up SRN appliances. If the Production Datacenter is a Lumen Cloud Datacenter or a Lumen Bare Metal Server, simply use the standard Ubuntu 16 template that Lumen Portal provides. If the Production/Recovery Datacenter is an AWS Region, simply use the SafeHaven template published under Community AMI's.
 
 Production Servers typically resides in the same VLAN as that of the Production SRN. Once connectivity is setup between the Production Server and Production SRN, the next step is to setup a sister SRN in AWS Recovery Datacenter. SRN appliances work in pairs and once a the Recovery SRN is spun up, a peering relationship is established between the Production and Recovery SRN appliances.
 
@@ -65,7 +65,7 @@ As the Recovery SRN retains a full copy of the production data called "Remote Re
 ### Central Management Server(CMS) and SafeHaven Console(GUI)
 Central Management Server(CMS) is an Ubuntu 16 based lightweight virtual appliance(virtual machine) in AWS Recovery Datacenter that binds all the data centers/appliances together and provides access to the DR environment via a SafeHaven Console(GUI).
 
-A standalone java client(provided by CenturyLink) is used to access the SafeHaven Console/Cluster so that users can manage their DR environment and initiate recovery operations.
+A standalone java client(provided by Lumen) is used to access the SafeHaven Console/Cluster so that users can manage their DR environment and initiate recovery operations.
 
 ![](../../images/SHOverview/DRinAWS/CMSandConsole.PNG)
 
@@ -73,9 +73,9 @@ A standalone java client(provided by CenturyLink) is used to access the SafeHave
 Protection Groups are logical mappings between the Production and Recovery Servers. Protection Groups are created from within the SafeHaven Console and users have the choice to either include one or multiple servers inside a single protection group. All the recovery operations are initiated from a Protection Group level.
 
 ### Install Local Replication Agent(LRA)/Scripts on the Production Servers
-For Windows Production Servers, users can automatically/manually install the Local Replication Agent(LRA) provided by the CenturyLink Team to replicate production data. For Windows, SafeHaven performs block level replication.
+For Windows Production Servers, users can automatically/manually install the Local Replication Agent(LRA) provided by the Lumen Team to replicate production data. For Windows, SafeHaven performs block level replication.
 
-For Linux Production Servers, users will install certain scripts provided by the CenturyLink team to replicate production data. For Linux, SafeHaven performs file level replication using Rsync.
+For Linux Production Servers, users will install certain scripts provided by the Lumen team to replicate production data. For Linux, SafeHaven performs file level replication using Rsync.
 
 ![](../../images/SHOverview/DRinAWS/LRA.PNG)
 

@@ -32,4 +32,4 @@ Global parameters are shown towards the top of the wizard before any platform-le
 Any packages that will be included in a Blueprint with a **Shared** or **Public** visibility level must have the same visibility. For example, Public Blueprints must reference only packages that are also public.
 
 ### Software vs. Scripts
-CenturyLink Cloud includes the concepts of grouping packages into classes of either Software or Scripts. **All new package deployments should be classified as Scripts**. We anticipate deprecating the Software class and many third-party tools have been created to support Scripts rather than software. There is zero functionality differentiation between the two classification types.
+Lumen Cloud includes the concepts of grouping packages into classes of either Software or Scripts. **All new package deployments should be classified as Scripts**. We anticipate deprecating the Software class and many third-party tools have been created to support Scripts rather than software. There is zero functionality differentiation between the two classification types.

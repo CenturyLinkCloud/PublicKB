@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-When submitting a support request, CenturyLink Cloud requires that the requester supply a personal identification number (PIN) as a secondary means of authentication. This measure is designed to add an additional layer of security to prevent user impersonation and unauthorized changes.
+When submitting a support request, Lumen Cloud requires that the requester supply a personal identification number (PIN) as a secondary means of authentication. This measure is designed to add an additional layer of security to prevent user impersonation and unauthorized changes.
 
 ### Finding Your PIN
 1. Log in to the [Control Portal](//control.ctl.io).

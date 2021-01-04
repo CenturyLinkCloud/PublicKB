@@ -7,10 +7,10 @@
 }}}
 
 ### Overview
-The CenturyLink Cloud Control Portal allows for the creation of FTP users. These FTP users are intended to be used *only for the uploading of custom script and software packages* to be run as part of a Blueprint or directly on a server or group of servers. The FTP users created in Control Portal may also be used for uploading VM images for import. This article explains what the FTP users service is used for and the process for using it.
+The Lumen Cloud Control Portal allows for the creation of FTP users. These FTP users are intended to be used *only for the uploading of custom script and software packages* to be run as part of a Blueprint or directly on a server or group of servers. The FTP users created in Control Portal may also be used for uploading VM images for import. This article explains what the FTP users service is used for and the process for using it.
 
 ### Audience
-CenturyLink Cloud customers
+Lumen Cloud customers
 
 ### Creating FTP Users
 1. From the Navigation Menu, select **Orchestration > FTP Users**. This opens a page showing the FTP users that have been created.

@@ -8,7 +8,7 @@
 
 ### New Features (3)
 
-* __Intrusion Prevention has been released for General Availability.__ The [Intrusion Prevention or IPS Product](https://www.ctl.io/intrusion-prevention-service/) is now available in all CenturyLink Cloud Data Centers.  
+* __Intrusion Prevention has been released for General Availability.__ The [Intrusion Prevention or IPS Product](https://www.ctl.io/intrusion-prevention-service/) is now available in all Lumen Cloud Data Centers.  
 
   The product installs a Trend Micro Agent on a host machine to protect that host against known and unknown vulnerabilities to operating systems and over 100 applications. The IPS agent automatically scans the host for newly installed applications every 24 hours, and if any are found, the protection policy is updated accordingly. The agent is also automatically updated with new Trend Micro patches to protect against new vulnerabilities. Details on installing IPS and configuring your event notification destinations are available in the Security section of our [Knowledge Base](https://www.ctl.io/knowledge-base/security/#1).
 
@@ -46,7 +46,7 @@
 
   <img src="../../images/2015-11-03_runner-logo-releasenotes.png" alt="Runner Logo"/>
 
-  Runner enables teams, developers, and engineers to quickly provision, manage, and modify their environment in not only the CenturyLink Cloud Platform, but other cloud services, as well as on-premise deployments. Runner brings together state-based and massive parallel job execution, with multi-cloud and multi-data center support, all in a single interface.
+  Runner enables teams, developers, and engineers to quickly provision, manage, and modify their environment in not only the Lumen Cloud Platform, but other cloud services, as well as on-premise deployments. Runner brings together state-based and massive parallel job execution, with multi-cloud and multi-data center support, all in a single interface.
 
     <img src="../../images/2015-11-03_runner-flowchart-abstract-releasenotes.jpg" width="40%" alt="Runner Design Flowchart"/>
 
@@ -56,7 +56,7 @@
 
   * __Runner Job Service.__ The Job Service is the primary component of the Runner product. Users can create, modify, and execute jobs at anytime. The Job Service accepts a payload that references a playbook, Ansible’s configuration, deployment, and orchestration language file to be used, whether that is using a public GitHub repository or private (GitHub credentials required), as well as other information like login or bearer token, environments, and so on.
 
-  * __Runner SSH Service.__ The SSH Service supports Key Pair management within CenturyLink Cloud. Users can create, retrieve, deploy, and import Key Pairs, as well a remove or "undeploy." The SSH Service can be used as a standalone feature as well.
+  * __Runner SSH Service.__ The SSH Service supports Key Pair management within Lumen Cloud. Users can create, retrieve, deploy, and import Key Pairs, as well a remove or "undeploy." The SSH Service can be used as a standalone feature as well.
 
   * __Runner VPN Service.__ The VPN Service creates connection definitions to be used in parallel with jobs.  The VPN Service allows for the Job Service to access remote hosts and establish connections during job execution.
 
@@ -89,11 +89,11 @@
 
 ### Open Source Contributions (3)
 
-* __CLC-Ansible Cloud Module clc_server_snapshot.__ Ansible module for managing server snapshots in CenturyLink Cloud - (http://docs.ansible.com/ansible/clc_server_snapshot_module.html)
+* __CLC-Ansible Cloud Module clc_server_snapshot.__ Ansible module for managing server snapshots in Lumen Cloud - (http://docs.ansible.com/ansible/clc_server_snapshot_module.html)
 
-* __CLC-Ansible Cloud Module: clc_alert_policy.__ Ansible module to manage alert policies in CenturyLink Cloud - (http://docs.ansible.com/ansible/clc_alert_policy_module.html)
+* __CLC-Ansible Cloud Module: clc_alert_policy.__ Ansible module to manage alert policies in Lumen Cloud - (http://docs.ansible.com/ansible/clc_alert_policy_module.html)
 
-* __CLC-Ansible Cloud Module: clc_aa_policy.__ Ansible module to manage anti affinity policies in CenturyLink Cloud -  (http://docs.ansible.com/ansible/clc_aa_policy_module.html)
+* __CLC-Ansible Cloud Module: clc_aa_policy.__ Ansible module to manage anti affinity policies in Lumen Cloud -  (http://docs.ansible.com/ansible/clc_aa_policy_module.html)
 
 ### Announcements (1)
 

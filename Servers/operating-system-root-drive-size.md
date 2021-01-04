@@ -7,7 +7,7 @@
 }}}
 
 ### Operating System Root Drive Sizes
-The list below details the Root storage sizes of the Virtual Operating Systems provisioned on the CenturyLink Cloud platform.
+The list below details the Root storage sizes of the Virtual Operating Systems provisioned on the Lumen Cloud platform.
 
 * CentOS 6 | 64-bit (17 GB)
 * Debian 6 | 64-bit (17 GB)

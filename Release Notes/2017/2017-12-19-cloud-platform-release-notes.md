@@ -41,7 +41,7 @@ Product Highlights Include:
 
 __Support for Microsoft Windows 2016 Operating System__
 
-Managed Services Anywhere now includes support for Microsoft Windows 2016 Standard and Datacenter on AWS and Azure. Deployment of the cloud providers’, AWS or Azure, OS image along with the cloud providers’ licensing are supported. Customers deploying the Windows 2016 Standard or Datacenter Operating System now have an option to "Delegate OS Management" to CenturyLink. With CenturyLink managing their virtual machine instances, customers enjoy all the benefits of Managed Services Anywhere listed here. Pricing for Managed Services Anywhere is defined here.
+Managed Services Anywhere now includes support for Microsoft Windows 2016 Standard and Datacenter on AWS and Azure. Deployment of the cloud providers’, AWS or Azure, OS image along with the cloud providers’ licensing are supported. Customers deploying the Windows 2016 Standard or Datacenter Operating System now have an option to "Delegate OS Management" to Lumen. With Lumen managing their virtual machine instances, customers enjoy all the benefits of Managed Services Anywhere listed here. Pricing for Managed Services Anywhere is defined here.
 
 
 

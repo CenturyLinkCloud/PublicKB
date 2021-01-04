@@ -30,7 +30,7 @@ This article explains how to Failover a Windows Local Cache Protection Group fro
 
 This article assumes that the user has successfully completed the setup of a Windows Local Cache Protection Group and has already performed a non-disruptive Test Failover successfully to confirm the recovery instance boots correctly and presents the production data in the recovery datacenter. Assumption is that now the user wants to Failover to the recovery site and make the recovery instance in the recovery(DR) datacenter, an active production instance for business continuity.
 
-For the purpose of this article, we have used **Windows 2012 R2 DataCenter** as the Operating System type for the Windows production server in CenturyLink's CA2(Toronto) production datacenter. The recovery datacenter being used is CenturyLink's WA1(Seattle) datacenter.
+For the purpose of this article, we have used **Windows 2012 R2 DataCenter** as the Operating System type for the Windows production server in Lumen's CA2(Toronto) production datacenter. The recovery datacenter being used is Lumen's WA1(Seattle) datacenter.
 
 ### Failover
 
@@ -46,7 +46,7 @@ Select a **clean checkpoint** for Windows recovery and click ** Next**.
 
 ![Linux](../../images/SH4.0/WindowsFO/WF3.png)
 
-When Failover is intiated, firstly the iSCSI targets in the recovery datacenter get activated. Then the recovery server (stub) gets powered on and boots from the DR-SRN's iSCSI disks in the recovery datacenter. A power on job can be seen in CLC-WA1 datacenter's queue from the CenturyLink Portal.
+When Failover is intiated, firstly the iSCSI targets in the recovery datacenter get activated. Then the recovery server (stub) gets powered on and boots from the DR-SRN's iSCSI disks in the recovery datacenter. A power on job can be seen in CLC-WA1 datacenter's queue from the Lumen Portal.
 
 Click **Finish** to complete Failover.
 

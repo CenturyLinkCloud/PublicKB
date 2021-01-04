@@ -19,7 +19,7 @@ Take a look at [status.ctl.io](https://status.ctl.io/) to see our new layout. We
 
 **SAML**
 
-Upcoming Enhancements to Authentication & Changes for Your SAML Configuration: In the coming weeks, CenturyLink Cloud will be upgrading its authentication service. Many customers will not experience any material changes as a result of this upgrade. However, customers that have enabled SAML for their CenturyLink Cloud accounts will be required to make configuration changes to ensure that authentication continues to function. Please review this [FAQ](https://www.ctl.io/knowledge-base/support/authentication-updates-faq/) to understand the action required on your part, if any.
+Upcoming Enhancements to Authentication & Changes for Your SAML Configuration: In the coming weeks, Lumen Cloud will be upgrading its authentication service. Many customers will not experience any material changes as a result of this upgrade. However, customers that have enabled SAML for their Lumen Cloud accounts will be required to make configuration changes to ensure that authentication continues to function. Please review this [FAQ](https://www.ctl.io/knowledge-base/support/authentication-updates-faq/) to understand the action required on your part, if any.
 
 ***Network Exchange***
 

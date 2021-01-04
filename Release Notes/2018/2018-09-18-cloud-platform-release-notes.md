@@ -22,13 +22,13 @@ The unregistered instances tab in the provider details page remains unchanged fo
 
 #### Partner Offer Notification
 
-##### Bitnami Applications are no longer available for direct purchase and/or download from CenturyLink Cloud.
+##### Bitnami Applications are no longer available for direct purchase and/or download from Lumen Cloud.
 
-This serves as a customer-facing notification that Bitnami applications, including Bitnami Launchpad for CenturyLink, will no longer be available for direct purchase, download, or updates to current versions via Runner, Blueprints, or the CenturyLink Marketplace.
+This serves as a customer-facing notification that Bitnami applications, including Bitnami Launchpad for Lumen, will no longer be available for direct purchase, download, or updates to current versions via Runner, Blueprints, or the Lumen Marketplace.
 
-Instances already created in your account are not affected and will continue to be available on the CenturyLink platform via your CenturyLink Control Portal.
+Instances already created in your account are not affected and will continue to be available on the Lumen platform via your Lumen Control Portal.
 
-Bitnami Launchpad customers will still be able to view their instances on the Bitnami Launchpad for CenturyLink until November 18, 2018, but will not be able to perform any other actions. On November 18, 2018, the Bitnami Launchpad and all documentation, including Knowledge Base articles, will be removed.
+Bitnami Launchpad customers will still be able to view their instances on the Bitnami Launchpad for Lumen until November 18, 2018, but will not be able to perform any other actions. On November 18, 2018, the Bitnami Launchpad and all documentation, including Knowledge Base articles, will be removed.
 
 If you would like to continue to use Bitnami’s secure, up-to-date, and ready to run images, visit the [Bitnami website](https://bitnami.com).
 

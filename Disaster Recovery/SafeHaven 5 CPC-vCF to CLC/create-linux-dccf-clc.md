@@ -7,7 +7,7 @@
 }}}
 
 ### Article Overview
-This article explains how to create a Linux Protection Group when the source site is Centurylink Private Cloud on VMWare Cloud Foundation, and the DR site is CLC
+This article explains how to create a Linux Protection Group when the source site is Lumen Private Cloud on VMWare Cloud Foundation, and the DR site is CLC
 
 ### Requirements
 Access to the Production SRN in CPC-vCF and permissions to add raw disks to it.
@@ -20,7 +20,7 @@ This article assumes that:
 
 ### Create Recovery Server
 A recovery server boots off of disks of the DR SRN when a test failover/ failover operation is issued. 
-1. Go to Centurylink Cloud Portal.
+1. Go to Lumen Cloud Portal.
 2. Go to the Dr Data center, and create a Group for the recovery server by clickin on **Create** and then selecting **Group**
 3. Click on the group, on the right click on **Create** and select **Server**.
    Make sure that correct datacenter and group are selected.  

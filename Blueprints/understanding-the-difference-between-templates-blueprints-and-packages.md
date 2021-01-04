@@ -7,7 +7,7 @@
   "sticky": true
 }}}
 
-This article can be helpful to differentiate between Templates, Blueprints and Packages - all critical elements of the CenturyLink Cloud orchestration system we collectively call the Blueprint Engine.
+This article can be helpful to differentiate between Templates, Blueprints and Packages - all critical elements of the Lumen Cloud orchestration system we collectively call the Blueprint Engine.
 
 ![Blueprints](../images/understanding-the-difference-between-templates-blueprints-and-packages-1.png)
 

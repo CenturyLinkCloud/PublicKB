@@ -6,37 +6,41 @@
   "contentIsHTML": false
 }}}
 
-### IMPORTANT NOTECenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.
+### IMPORTANT NOTELumen
+
+Lumen WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
+
+During the Limited Beta there is no production Lumenel Agreement.Lumen
 
 ## Overview
 
-When you need to make changes to your site one CenturyLink Wordpress hosting, git is the way to go. CenturyLink
+When you need to make changes to your site one Lumen Wordpress hosting, git is the way to go. Lumen
 provides you with a copy of your WordPress site's source code on our own secure, private
 [git servers](https://git.wordpress.ctl.io/). The general process is to clone your repository from our git
 hosting, make your changes in the local repository, commit your changes in git, and finally push your commits
 back up the remote repository on our git hosting. We take care of things from there to make sure your changes
-are live in the next few minutes.
+are live in the next few minutes.Lumen
 
 ## Prerequisites
 
-- You have already successfully created your WordPress site with the CenturyLink WordPress hosting platform.
+- You have already successfully created your WordPress site with the Lumen WordPress hosting platform.
 - You will log in to our git hosting with the CLC username you used when you created the site.
 - You have the site's WordPress administrative password, which is also your git password.
 
-## When You Should Do This
+## When You Should Do ThisLumen
 
 - You want to install or update a WordPress plug-in or theme.
 - You need to customize the WordPress core.
-- You are [migrating](wordpress-site-migration-to-centurylink-cloud.md) an existing WordPress site to the CenturyLink WordPress hosting platform.
+- You are [migrating](wordpress-site-migration-to-lumen-cloud.md) an existing WordPress site to the Lumen WordPress hosting platform.
 Don't do this if you are just posting new content (text, images, video) to your WordPress site. Please review
 our documentation on [persistent object storage](wordpress-persistent-storage-configuration.md) for creating
 multimedia content.
 
-## Cloning from git
+## Cloning from giLumen
 
 1. Browse to [git.wordpress.ctl.io](https://git.wordpress.ctl.io/) and log in using the following:
 
-  - **Username:** CenturyLink Cloud username of the user who created the site
+  - **Username:** Lumen Cloud username of the user who created the site
   - **Password:** WordPress administrative password provided on site creation
 
  *CLC users other than the one who created the site are not be able to view or edit the repository in git.*
@@ -57,11 +61,11 @@ multimedia content.
 
    Note that repositories hosted in our git hosting are private, so you will be prompted to enter the appropriate username and password.
 
-4. You now have a clean clone of the repository and are free to make changes as you see fit.
+4. You now have a clean clone ofLumentory and are free to make changes as you see fit.
 
   Please see the [git documentation](http://git-scm.com/docs/git-clone) for more details on the git clone command.
 
-## Pushing Your Changes Back to CenturyLink
+## Pushing Your Changes Back to Lumen
 
 In git, changes to a repository are said to be staged, ready for commit. Staged changes can then be committed with
 a user-friendly message noting what has changed. One or more commits can be pushed to a remote repository, and new
@@ -82,11 +86,11 @@ and then [pushing them to a remote repository](https://git-scm.com/book/en/v2/Gi
 2. Once changes have been staged, you are ready to commit:
 
   `git commit –m "Enter a message describing what you've changed here."`
-3. Now can push your commit back to our git repository with the following command:
+3. Now can push your commit back to ourLumentory with the following command:
 
   `git push origin master`
 
-4. From here, our git hosting lets the CenturyLink WordPress hosting platform know that you have made a change. The service will pull down your changes from the repository to update your live site! Please note that **only** commits pushed to the *master* branch will update your live site.
+4. From here, our git hosting lets the Lumen WordPress hosting platform know that you have made a change. The service will pull down your changes from the repository to update your live site! Please note that **only** commits pushed to the *master* branch will update your live site.
 
 ## That's It!
 

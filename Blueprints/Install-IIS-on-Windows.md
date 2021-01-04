@@ -7,10 +7,10 @@
 }}}
 
 ### Overview
-By leveraging [CenturyLink Cloud Public Blueprints](../Blueprints/centurylink-cloud-public-blueprint-packages.md), customers can automate operational tasks.  In using the **Install IIS on Windows** Blueprint, customers can add the IIS role on Windows Servers in an automated fashion.
+By leveraging [Lumen Cloud Public Blueprints](../Blueprints/lumen-cloud-public-blueprint-packages.md), customers can automate operational tasks.  In using the **Install IIS on Windows** Blueprint, customers can add the IIS role on Windows Servers in an automated fashion.
 
 ### Prerequisites
-* A CenturyLink Cloud Account
+* A Lumen Cloud Account
 * Supported Windows Operating Systems for IIS 7.5:
     * Windows 2008 R2 Standard 64-bit
     * Windows 2008 R2 Enterprise 64-bit
@@ -37,7 +37,7 @@ By leveraging [CenturyLink Cloud Public Blueprints](../Blueprints/centurylink-cl
    ![Select Features and Servers](../images/Install-IIS-on-Windows-04.png)
 
 ### Install IIS on Windows using Blueprints
-Customers who are building environments in the CenturyLink Cloud may wish to use Blueprints to build servers and install IIS in an automated fashion. Blueprints provide a tool for customers to build environments for multiple deployments.
+Customers who are building environments in the Lumen Cloud may wish to use Blueprints to build servers and install IIS in an automated fashion. Blueprints provide a tool for customers to build environments for multiple deployments.
 
 To use this approach follow the [How to Build a Blueprint](../Blueprints/how-to-build-a-blueprint.md) Knowledge Base article and combine the Install IIS on Windows script with Windows Virtual Machine builds.
 

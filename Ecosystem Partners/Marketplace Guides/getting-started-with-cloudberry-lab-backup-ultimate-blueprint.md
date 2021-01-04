@@ -25,7 +25,7 @@
   * Telephone: US 1 (415) 301 7773 ext 2
 
 ### Description
-CloudBerry Lab has integrated their backup technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Backup to Cloud Object Storage solution.
+CloudBerry Lab has integrated their backup technology with the Lumen Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Backup to Cloud Object Storage solution.
 
 The evolution of cloud  technology saw cloud storage as a great tool to offload on premise storage economics into the cloud. Thanks to ever-increasing Internet bandwidth and declining storage prices, keeping backups in the cloud has become a viable alternative to traditional on-site data storage for SMBs. Many companies often overlook key considerations when it comes to online backup:
 * Reliable Storage. When moving backup data offsite, a company should ensure the cloud storage service is reliable, cost-effective, yet high-performing.
@@ -34,32 +34,32 @@ The evolution of cloud  technology saw cloud storage as a great tool to offload 
 
 
 ### Solution Overview
-CloudBerry Backup is a reliable, powerful and affordable cloud backup solutions that is fully compatible with CenturyLink object storage. In addition to offering real-time and/or scheduled regular backups, it allows you to:
-* Store backups in a CenturyLink user-owned account.
+CloudBerry Backup is a reliable, powerful and affordable cloud backup solutions that is fully compatible with Lumen object storage. In addition to offering real-time and/or scheduled regular backups, it allows you to:
+* Store backups in a Lumen user-owned account.
 * Encrypt data via 256-bit AES encryption with user-controlled password.
 * Check backup consistency to ensure data is in a recoverable state.
 * Free restores No need for a commercial license to restore data.
 
-Technology from CloudBerry Lab helps CenturyLink Cloud customers address the business challenge of secure and easy-to-use backup-to-cloud by implementing Cloudberry Lab backup solution - now available as part of the CenturyLink Cloud Blueprint Engine.
+Technology from CloudBerry Lab helps Lumen Cloud customers address the business challenge of secure and easy-to-use backup-to-cloud by implementing Cloudberry Lab backup solution - now available as part of the Lumen Cloud Blueprint Engine.
 
 ### Offer
 CloudBerry Labs has included a free, 15-day trial license with the Blueprint deployment. Users can try the software during that time period without restriction.
 
 ### Audience
-CenturyLink Cloud Users, Administrators, Engineer, Backup Operators, Storage Enthusiasts
+Lumen Cloud Users, Administrators, Engineer, Backup Operators, Storage Enthusiasts
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the partner technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the partner technology on Lumen Cloud.
 
-After executing the steps in this Getting Started document, the users will have a functioning backup-agent installed on a virtual server upon which they can start backing up their data to CenturyLink Object Storage.
+After executing the steps in this Getting Started document, the users will have a functioning backup-agent installed on a virtual server upon which they can start backing up their data to Lumen Object Storage.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 * Existing Windows Platform server to deploy to.
 * Configure the VPN access to the virtual server.
 
 ### Deploy CloudBerry Labs Software via Blueprint
-Follow these step by step instructions to deploy Cloudberry Backup Ultimate Edition on your server and connect to you CenturyLink Object Storage account.
+Follow these step by step instructions to deploy Cloudberry Backup Ultimate Edition on your server and connect to you Lumen Object Storage account.
 
 1. Open the Blueprint Library.
    * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
@@ -107,15 +107,15 @@ Follow these steps to access and use the CloudBerry software.
 
     ![Cloudberry Ultimate backup - Acc New Account](../../images/cloudberrylab/cloudberrylab-ultimate-backup-add-account.jpg)
 
-4. Choose CenturyLink
+4. Choose Lumen
 
-    ![Cloudberry Ultimate Backup - select cloud storage CenturyLink](../../images/cloudberrylab/cloudberrylab-select-cloud-storage-centurylink-focused.jpg)
+    ![Cloudberry Ultimate Backup - select cloud storage Lumen](../../images/cloudberrylab/cloudberrylab-select-cloud-storage-centurylink-focused.jpg)
 
-5. You’ll be requested to enter your CenturyLink Cloud Storage account credentials.
+5. You’ll be requested to enter your Lumen Cloud Storage account credentials.
 
-  ![Cloudberry Lab Ultimate Backup CenturyLink Configuration](../../images/cloudberrylab/cloudberrylab-add-new-storage-account-centurylink-access-credentials.jpg)
+  ![Cloudberry Lab Ultimate Backup Lumen Configuration](../../images/cloudberrylab/cloudberrylab-add-new-storage-account-centurylink-access-credentials.jpg)
 
-6. To add CenturyLink Cloud Storage: Via your web browser, in your CenturyLink Cloud Portal, navigate to “Object Storage” in the top menu.
+6. To add Lumen Cloud Storage: Via your web browser, in your Lumen Cloud Portal, navigate to “Object Storage” in the top menu.
 
   ![CTL control panel - select object storage](../../images/cloudberrylab/ctl-control-panel-object-storage.jpg)
 
@@ -133,7 +133,7 @@ Follow these steps to access and use the CloudBerry software.
 
 10. Paste it to the account credentials window in Cloudberry Backup > Service point.
 
-  ![Cloudberry Lab - service endpoint for CenturyLink](../../images/cloudberrylab/cloudberrylab-centurylink-endpoint.jpg)
+  ![Cloudberry Lab - service endpoint for Lumen](../../images/cloudberrylab/cloudberrylab-centurylink-endpoint.jpg)
 
   The list of service points are available [in our knowledgebase.](../../Storage/Object Storage/object-storage-regions-and-service-points.md)
 
@@ -153,22 +153,22 @@ Follow these steps to access and use the CloudBerry software.
 
   ![Cloudberry Ultimate Backup - storage account configuration (access / secret key pair)](../../images/cloudberrylab/cloudberrylab-centurylink-storage-account-configuration.jpg)
 
-15. Now you can see all the buckets you have created through your CenturyLink dashboard and create new buckets.
+15. Now you can see all the buckets you have created through your Lumen dashboard and create new buckets.
    * Select existing bucket or create new and press "OK".
 
-      ![Cloudberry Ultimate Backup - list and create bucket for CenturyLink](../../images/cloudberrylab/cloudberrylab-centurylink-list-create-bucket.jpg)
+      ![Cloudberry Ultimate Backup - list and create bucket for Lumen](../../images/cloudberrylab/cloudberrylab-centurylink-list-create-bucket.jpg)
 
 16.	To start creating your first backup plan, press the button “Files”.
 
-    * Proceed to the second step and choose the "CenturyLink" option.
+    * Proceed to the second step and choose the "Lumen" option.
     * Then the connection you have created.
 
-        ![Cloudberry Ultimate Backup - select CenturyLink account](../../images/cloudberrylab/cloudberrylab-backup-to-centurylink-account.jpg)
+        ![Cloudberry Ultimate Backup - select Lumen account](../../images/cloudberrylab/cloudberrylab-backup-to-centurylink-account.jpg)
 
 17.	All further information you can in the Help topics:
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no CloudBerry Labs license costs or additional fees bundled in.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. There are no CloudBerry Labs license costs or additional fees bundled in.
 
 By the first run of Cloudberry Backup you activate the free trial, which is valid for 15 days. As soon as the trial expires, you’ll be able to buy the license online using your credit card. You can also purchase it anytime through Cloudberrylab.com by visiting [this link](http://www.cloudberrylab.com/enterprise-cloud-backup-software.aspx).
 
@@ -179,4 +179,4 @@ You can purchase online by visiting [this link](http://www.cloudberrylab.com/ent
 
 #### Who should I contact for support?
 * For issues directly related to the Cloudberry lab software or licensing, please contact [support@CloudBerryLab.com](mailto:support@cloudberrylab.com) or via telephone: US 1 (415) 301 7773.
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).

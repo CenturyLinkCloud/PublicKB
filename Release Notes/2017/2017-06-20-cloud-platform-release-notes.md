@@ -10,13 +10,13 @@
 
 * __Cloud Application Manager__
 
-  - __Support for CenturyLink Dedicated Cloud Compute__
+  - __Support for Lumen Dedicated Cloud Compute__
 
-    Cloud Application Manager now supports CenturyLink Dedicated Cloud Compute. When creating a new Provider, users will now see a Provider type "CenturyLink DCC". If you are an existing CenturyLink Dedicated Cloud Compute customer, please contact your administrator to obtain CenturyLink DCC credentials before you setup CenturyLink DCC as a Provider in Cloud Application Manager. Users will also see default Deployment Policies after creating the Provider.
+    Cloud Application Manager now supports Lumen Dedicated Cloud Compute. When creating a new Provider, users will now see a Provider type "Lumen DCC". If you are an existing Lumen Dedicated Cloud Compute customer, please contact your administrator to obtain Lumen DCC credentials before you setup Lumen DCC as a Provider in Cloud Application Manager. Users will also see default Deployment Policies after creating the Provider.
 
-  - __Azure Account Migration to CenturyLink__
+  - __Azure Account Migration to Lumen__
 
-    Cloud Application Manager users who are interested in migrating their existing Azure Account to CenturyLink for Consolidated Billing and Platform Support can now submit requests to CenturyLink. As part of creating Microsoft Azure Provider, users will now see a new option to request migration of their Microsoft Azure account to CenturyLink for Consolidated Billing and Platform Support. Your Account Manager will then contact you for next steps.
+    Cloud Application Manager users who are interested in migrating their existing Azure Account to Lumen for Consolidated Billing and Platform Support can now submit requests to Lumen. As part of creating Microsoft Azure Provider, users will now see a new option to request migration of their Microsoft Azure account to Lumen for Consolidated Billing and Platform Support. Your Account Manager will then contact you for next steps.
 
 * __IaaS__
 
@@ -28,7 +28,7 @@
 
   - __Addition of two new endpoints__
 
-    Added two new endpoint types that enable "Dedicated Access" to either CenturyLink or 3rd party workloads and networks, such as dedicated firewall and third party MPLS.
+    Added two new endpoint types that enable "Dedicated Access" to either Lumen or 3rd party workloads and networks, such as dedicated firewall and third party MPLS.
 
 ### Enhancements (2)
 
@@ -46,7 +46,7 @@
 
 ### Ecosystem Partner Integrations
 
-* __CenturyLink Marketplace Provider Integrations__
+* __Lumen Marketplace Provider Integrations__
 
   - __[STASH Secure Digital Vault](https://www.ctl.io/marketplace/partner/ZY8M/product/STASH%20Secure%20Digital%20Vault/)__ is an application developed for deploying to up to millions of customers, the consumer-facing version of the STASH Digital Safe™. STASH Secure Digital Vault™ creates the opportunity for your organization, firm or company to offer a custom-branded white label security to your own customers, from a trusted business source they already use. Perfect for banks, post offices, insurance companies and others. As a way to enhance the customer experience, as a thank you for doing business with your company over a competitor, as a way to create definitive peace of mind for your current and future customers to name but a few, there are multiple advantages and opportunities to add value and increase brand equity.
 

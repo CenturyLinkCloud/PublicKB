@@ -8,7 +8,7 @@
 
 ### Description
 
-CenturyLink Cloud uses role-based access control (RBAC) for restricting system access for specific areas of the platform to authorized users only. Prior to the release of the currently available eight roles that are designed to align with job functions generally found in most organizations, there was a much smaller and less scalable role set that resulted in a number of users being given more access than they needed to perform their job duties. The guidelines below will help customers migrate from using the four legacy roles to leveraging the eight new more granular ones.
+Lumen Cloud uses role-based access control (RBAC) for restricting system access for specific areas of the platform to authorized users only. Prior to the release of the currently available eight roles that are designed to align with job functions generally found in most organizations, there was a much smaller and less scalable role set that resulted in a number of users being given more access than they needed to perform their job duties. The guidelines below will help customers migrate from using the four legacy roles to leveraging the eight new more granular ones.
 
 ### Existing Roles Mapping
 

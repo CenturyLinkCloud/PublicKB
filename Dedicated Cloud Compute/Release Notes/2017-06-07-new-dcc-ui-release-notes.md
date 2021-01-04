@@ -8,7 +8,7 @@
 
 ### New Features
 
-* Global Navigation: Allows easy switching between other CenturyLink services
+* Global Navigation: Allows easy switching between other Lumen services
 
 ### Enhancements
 

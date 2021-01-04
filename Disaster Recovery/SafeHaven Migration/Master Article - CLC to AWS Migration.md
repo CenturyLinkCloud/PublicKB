@@ -21,7 +21,7 @@ This article provides step by step links on how to migrate a VM from CLC datacen
 
 3. [Setup AWS for SafeHaven-5 using CloudFormation](../SafeHaven 5 General/Setup AWS for SafeHaven-5 using CloudFormation.md)
 
-4. [Create Production SRN in CenturyLink Cloud](../SafeHaven 5 CLC to AWS/Create Production SRN in CenturyLink Cloud.md)
+4. [Create Production SRN in Lumen Cloud](../SafeHaven 5 CLC to AWS/Create Production SRN in Lumen Cloud.md)
 
 5. [Create CMS in AWS](../SafeHaven 5 CLC to AWS/Create CMS in AWS.md)
 
@@ -35,7 +35,7 @@ This article provides step by step links on how to migrate a VM from CLC datacen
 
 10. [Add SRN Peer](../SafeHaven 5 CLC to AWS/Add SRN Peer.md)
 
-11. [Add and Claim Storage on Production SRN in CenturyLink Cloud](../SafeHaven 5 CLC to AWS/Add and Claim Storage on Production SRN in CenturyLink Cloud.md)
+11. [Add and Claim Storage on Production SRN in Lumen Cloud](../SafeHaven 5 CLC to AWS/Add and Claim Storage on Production SRN in Lumen Cloud.md)
 
 12. [Create Windows Protection Group,Install LRA and Start Replication](../SafeHaven 5 CLC to AWS/Create-Windows-Protection-Group-Install-LRA-and-Start-Replication.md)
 

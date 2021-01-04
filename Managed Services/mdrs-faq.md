@@ -18,13 +18,13 @@ The Managed Disaster Recovery Services (MDRS) offer a fully-managed disaster rec
 
 **What does the installation and configuration service include?**
 
-CenturyLink provides an implementation that includes SafeHaven infrastructure deployment, Local Replication Agent (LRA) installation, recovery server configuration, protection group creation, monitoring of system deployment, initial data seeding, and acceptance testing.
+Lumen provides an implementation that includes SafeHaven infrastructure deployment, Local Replication Agent (LRA) installation, recovery server configuration, protection group creation, monitoring of system deployment, initial data seeding, and acceptance testing.
 
 Note: Before the implementation, the customer is required to establish the network infrastructure, open the ports, prepare storage, reserve CPU and memory resources, and set up client servers according to the Managed Disaster Recovery Services Implementation Guide and the Managed Disaster Recovery Services Requirement.
 
 **Which operating systems are supported?**
 
-SafeHaven supports VMware vSphere based virtual Windows and Linux servers. The following OS matrix shows supported server types. For OS managed by CenturyLink, restoring Managed OS components on the recovery server is included in the failover services.
+SafeHaven supports VMware vSphere based virtual Windows and Linux servers. The following OS matrix shows supported server types. For OS managed by Lumen, restoring Managed OS components on the recovery server is included in the failover services.
 
 | Supported Server | SafeHaven 4.0.2 Local Cache | SafeHaven 4.0.2 Local Replica |
 |-------------------------|:----------------:|:----------------------:|
@@ -38,21 +38,21 @@ SafeHaven supports VMware vSphere based virtual Windows and Linux servers. The f
 
 **What are the supported hosting platforms?**
 
-SafeHaven supports VMware vSphere based cloud platforms including: CenturyLink Cloud, CenturyLink Dedicated Cloud Compute, and customer-provided cloud infrastructure that uses VMware virtualization. The following table show the supported primary and recovery hosting platforms.
+SafeHaven supports VMware vSphere based cloud platforms including: Lumen Cloud, Lumen Dedicated Cloud Compute, and customer-provided cloud infrastructure that uses VMware virtualization. The following table show the supported primary and recovery hosting platforms.
 
 | Primary Platform | Recovery Platform |
 |------------------------|--------------------------|
-| CenturyLink Cloud | CenturyLink Cloud |
-| Customer provided VMware Datacenter | CenturyLink Cloud |
-| Dedicated Cloud Compute | CenturyLink Cloud |
+| Lumen Cloud | Lumen Cloud |
+| Customer provided VMware Datacenter | Lumen Cloud |
+| Dedicated Cloud Compute | Lumen Cloud |
 
 **What application support is there during a recovery?**
 
-For applications using native replication technologies, CenturyLink coordinates with different parties to recover the applications. For applications native to the Windows OS residing on servers protected by SafeHaven, CenturyLink ensures that the services of the applications are started during a failover or a test failover. However, custom configurations in the applications are the responsibility of the customer. Likewise, services that are unable to start due to configuration issues in the applications are also the responsibility of the customer.
+For applications using native replication technologies, Lumen coordinates with different parties to recover the applications. For applications native to the Windows OS residing on servers protected by SafeHaven, Lumen ensures that the services of the applications are started during a failover or a test failover. However, custom configurations in the applications are the responsibility of the customer. Likewise, services that are unable to start due to configuration issues in the applications are also the responsibility of the customer.
 
-**What configuration services does CenturyLink provide?**
+**What configuration services does Lumen provide?**
 
-CenturyLink provides configuration of the primary disk replication, WAN sync rate, recovery point interval, periodic disaster recovery report system, and the SafeHaven built-in disaster recovery plan. For detailed information on specific configuration roles and responsibilities, refer to the *Managed Disaster Recovery Services Guide*.
+Lumen provides configuration of the primary disk replication, WAN sync rate, recovery point interval, periodic disaster recovery report system, and the SafeHaven built-in disaster recovery plan. For detailed information on specific configuration roles and responsibilities, refer to the *Managed Disaster Recovery Services Guide*.
 
 **What administrative access does the customer retain?**
 
@@ -60,7 +60,7 @@ The customer is given administrative control to the SafeHaven solution via the S
 
 **What types of monitoring take place on servers?**
 
-Servers are monitored 24 X 7 X 365. CenturyLink monitors SafeHaven nodes, protection groups, protected Windows servers, and recovered Windows servers. No monitors are deployed on Linux production servers. The following monitoring probes are in place for SafeHaven servers:
+Servers are monitored 24 X 7 X 365. Lumen monitors SafeHaven nodes, protection groups, protected Windows servers, and recovered Windows servers. No monitors are deployed on Linux production servers. The following monitoring probes are in place for SafeHaven servers:
 * Replication Nodes
 * Replication Service
 * Recovery Point Objective
@@ -81,15 +81,15 @@ Audit services identify new servers, disks, applications, deletions, and network
 
 **What types of test services are covered?**
 
-SafeHaven test failover is a bubble test in which the CenturyLink managed recovery servers are brought up in an isolated network. Tests and alterations on the recovery data center are not routed back to a production data center, thus avoiding any disruptions. Critical applications are also started by CenturyLink on recovery servers during testing.
+SafeHaven test failover is a bubble test in which the Lumen managed recovery servers are brought up in an isolated network. Tests and alterations on the recovery data center are not routed back to a production data center, thus avoiding any disruptions. Critical applications are also started by Lumen on recovery servers during testing.
 
-**How often does CenturyLink conduct failover testing?**
+**How often does Lumen conduct failover testing?**
 
-CenturyLink delivers semi-annual failover testing during the term of your service year. A customer who requires additional tests can purchase them separately.
+Lumen delivers semi-annual failover testing during the term of your service year. A customer who requires additional tests can purchase them separately.
 
 **How often can a customer invoke at-time-of-disaster (ATOD) support?**
 
-CenturyLink offers 24 X 7 X 365 ATOD service support for one disaster declaration every contract year. Customers requiring additional ATOD services can purchase the disaster declaration service separately.
+Lumen offers 24 X 7 X 365 ATOD service support for one disaster declaration every contract year. Customers requiring additional ATOD services can purchase the disaster declaration service separately.
 
 **What types of responsibility does the customer assume?**
 
@@ -97,8 +97,8 @@ Generally speaking, the customer is responsible for the following:
 * Designates and maintain customer contact during the service term.
 * Agrees to meet implementation requirements and standards for on-going support requirements.
 * Ensures that production and disaster recovery environments provisioned with servers, local incremental and replica storage, network connectivity, CPU, memory, other infrastructure components and replication are operational.
-* Identifies and provides CenturyLink with access to all relevant customer-controlled information, resources, and locations required.
-* Purchases the CenturyLink DR Manager, which coordinates the DR implementation, daily maintenance, test, audit, and ATOD procedures.
-* Purchases and uses the CenturyLink Cloud as a recovery data center.
+* Identifies and provides Lumen with access to all relevant customer-controlled information, resources, and locations required.
+* Purchases the Lumen DR Manager, which coordinates the DR implementation, daily maintenance, test, audit, and ATOD procedures.
+* Purchases and uses the Lumen Cloud as a recovery data center.
 
 Specific details of customer responsibility can be found in the *Managed Disaster Recovery Services Guide*.

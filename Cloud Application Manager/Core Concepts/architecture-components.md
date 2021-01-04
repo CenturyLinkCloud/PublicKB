@@ -55,7 +55,7 @@ Cloud Application Manager agent supports proxy configuration to call back when i
 
 The Watcher agents are deployed to each CAM registered VM that is under management.  The deployment of the Watcher agent is initiated on any new CAM registered VM running a manageable OS (RHEL 6&7, CentOS 6&7, Ubuntu 14, 16 & 18, Windows 2k08R2, 2k12 and 2k16).  
 
-The Watcher agent executes scripts (checks) on workloads and provides the results to the Monitoring infrastructure within CenturyLink.
+The Watcher agent executes scripts (checks) on workloads and provides the results to the Monitoring infrastructure within Lumen.
 
 The Monitoring infrastructure provides a [repository of checks](https://watcher.ctl.io/docs/check_types/) that may be applicable to agents, stores metric data from checks and processes check results to identify actionable events.
 
@@ -92,7 +92,7 @@ Allow Outgoing traffic on port 443 (https) from the virtual machines' network or
 
 Where MSA is enabled, allow Outgoing traffic on ports 80, 443, 5671 and UDP destination ports 500 and 4500 from the virtual machines network or VPC so Watcher agents are able to communicate with the Monitoring infrastructure within CLC.  See [MSA Networking](https://www.ctl.io/knowledge-base/cloud-application-manager/managed-services/msa-networking/) knowledgebase article for more information on MSA networking and requirements.
 
-MSA enabled environments must also allow intranetwork communication for FTP, SSH, ICMP, HTTP(S), Microsoft AD/SMB, RDP and WinRM HTTP(S) on the virtual machine's network or VPC so that Remote Administration connections may be made by CenturyLink Operations. A secure, reverse tunnel is established between CenturyLink and the MSA enabled environment by which CenturyLink Operations may securely administer customer VMs.  
+MSA enabled environments must also allow intranetwork communication for FTP, SSH, ICMP, HTTP(S), Microsoft AD/SMB, RDP and WinRM HTTP(S) on the virtual machine's network or VPC so that Remote Administration connections may be made by Lumen Operations. A secure, reverse tunnel is established between Lumen and the MSA enabled environment by which Lumen Operations may securely administer customer VMs.  
 
 As features are added, other protocols necessary for the operation of the solution may be required.  It is recommended that unfettered outbound access on the virtual machines' network or VPC be made available to account for these potential changes.
 

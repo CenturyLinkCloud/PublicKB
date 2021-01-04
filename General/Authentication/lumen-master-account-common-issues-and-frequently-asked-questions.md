@@ -43,18 +43,16 @@ Email was blocked at 'date/time' due to 'reason'|The email was sent, but the rec
 If the above issues did not help you, you can reach out to our support teams, detailed below.
 
 ### Contacting the Client Response Center  
-The Client Response Center can assist you with issues regarding the following applications:
+The Client Response Center (request@lumen.com) can assist you with issues affecting your Master Account, to include:
+* Master Account provisioning, linking, and authentication
 * Managed Hosting (SavvisStation)
 * Private Cloud (Dedicated Cloud Compute)
 * Cloud Application Manager
 * Support (managedsupport.ctl.io)
 
-_Note: If you are unable to reach any of the above applications due to issues with your Master Account or multi-factor authentication, [contact the customer care team.](#contacting-the-customer-care-team)_
 
 [If you are experiencing an issue with the above, please visit the Managed Services and Support page for contact instructions.](https://www.ctl.io/managed-services/support/)
 
-### Contacting the Customer Care Team  
-The Customer Care team can assist with issues regarding your Lumen Master Account. If you are experiencing an issue with this account, send an email to help@ctl.io with details about what you are trying to accomplish and what error you are receiving. You can also include screenshots of the error you are receiving in this email.  
 
 ### Frequently Asked Questions
 **Q: Why are we releasing this functionality?**

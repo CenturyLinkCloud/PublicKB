@@ -32,4 +32,4 @@
 
 **WebHook TLS 1.2 Support**
 
-[CenturyLink Cloud's WebHook](//control.ctl.io/Organization/Api/Webhooks) functionality has been upgraded to support TLS 1.2. The enablement of TLS 1.2 provides enhanced security to all consumers of the service.
+[Lumen Cloud's WebHook](//control.ctl.io/Organization/Api/Webhooks) functionality has been upgraded to support TLS 1.2. The enablement of TLS 1.2 provides enhanced security to all consumers of the service.

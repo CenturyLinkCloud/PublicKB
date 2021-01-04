@@ -10,7 +10,7 @@
 }}}
 
 ### Description
-In this KB article, we will explore the core concepts that are within the VMware vCloud Director User Interface (UI) that makes up your CenturyLink Private Cloud on VMware Cloud Foundation™ environment.
+In this KB article, we will explore the core concepts that are within the VMware vCloud Director User Interface (UI) that makes up your Lumen Private Cloud on VMware Cloud Foundation™ environment.
 
 ### Core Concepts
 VMware vCloud Director (vCD) provides role-based access to a Web console that allows the members of an organization to interact with the organization's resources to create and work with vApps and virtual machines (VMs).

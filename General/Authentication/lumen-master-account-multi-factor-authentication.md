@@ -23,7 +23,7 @@ You can opt-in after registration by navigating to the Authentication tab in the
 
 **2:** Initial Login after User Registration
 
-Once registration of the master account is complete, you are prompted to enter your credentials for your CenturyLink Master account for the first time after registration.  
+Once registration of the master account is complete, you are prompted to enter your credentials for your Lumen Master account for the first time after registration.  
 
 ![lma-registration-7.PNG](../../images/lma-registration-7.png)
 

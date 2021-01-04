@@ -23,11 +23,11 @@
 </p>
 <hr />
 <ul>
-  <li><strong>TRUSTe certification and updates to privacy policy.&nbsp;</strong>CenturyLink Cloud has passed TRUSTe certification and you will find the logo on the home page, and multiple links to our updated privacy policy.
+  <li><strong>TRUSTe certification and updates to privacy policy.&nbsp;</strong>Lumen Cloud has passed TRUSTe certification and you will find the logo on the home page, and multiple links to our updated privacy policy.
     <p><img src="https://t3n.zendesk.com/attachments/token/2hi5l90nwpuqolk/?name=release03-13_03.png" alt="release03-13_03.png" />
     </p>
   </li>
-  <li><strong>Resize root Linux disks (without requiring a reboot).</strong> CenturyLink Cloud is among the first cloud vendors provide root Linux drive resizing without forcing the machine to reboot.</li>
+  <li><strong>Resize root Linux disks (without requiring a reboot).</strong> Lumen Cloud is among the first cloud vendors provide root Linux drive resizing without forcing the machine to reboot.</li>
   <li><strong>Blueprint/server deployment success email contains link to new resource.&nbsp;</strong>The default "Blueprint success" email message now contains a link to the new server(s) created or changed.</li>
   <li><strong>Filter Account Activity History by active and/or disabled accounts.&nbsp;</strong>Now you can view the activity history for active and disabled accounts.
     <p><img src="https://t3n.zendesk.com/attachments/token/yep9gtt35d9jeii/?name=release03-13_04.png" alt="release03-13_04.png" />
@@ -38,7 +38,7 @@
     <p><img src="https://t3n.zendesk.com/attachments/token/mxrgjg96hixoqj2/?name=release03-13_05.png" alt="release03-13_05.png" />
     </p>
   </li>
-  <li><strong>Personalization tokens in billing email templates.&nbsp;</strong>For resellers who rebrand the CenturyLink Cloud experience and have customized the CenturyLink Cloud email messages, they can now add tokens ("account name", "account alias") to the subject line.
+  <li><strong>Personalization tokens in billing email templates.&nbsp;</strong>For resellers who rebrand the Lumen Cloud experience and have customized the Lumen Cloud email messages, they can now add tokens ("account name", "account alias") to the subject line.
     <p><img src="https://t3n.zendesk.com/attachments/token/fbaum1mvvhg9d6s/?name=release03-13_06.png" alt="release03-13_06.png" />
     </p>
   </li>

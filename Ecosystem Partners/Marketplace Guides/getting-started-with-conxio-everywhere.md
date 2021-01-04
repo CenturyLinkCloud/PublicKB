@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-After reading this article, the reader should feel comfortable deploying Conxio Everywhere on CenturyLink Cloud.
+After reading this article, the reader should feel comfortable deploying Conxio Everywhere on Lumen Cloud.
 
 ### Partner Profile
 <img src="../../images/conxio/conxio_logo.png" style="border:0;float:right;max-width: 100px;">
@@ -25,7 +25,7 @@ http://www.conx.io/
 Conxio is a secure communication platform that enables financial institutions to connect with their customers over ATMs or any other connected devices and exchange end-to-end encrypted and untraceable messages, including streaming video and sharing desktops. Conxio is the first solution of its kind that works on HTML5 and does not require installation of any app while working on any connected device. Conxio is aligned with ISO 27001 and is capable of delivering compliance with HIPAA, SEC, FISMA-2002, internal and external certification requirements.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Deploying via Blueprint Packages
 1. Locate the Blueprint in the Blueprint Library.
@@ -53,5 +53,5 @@ The costs listed above in the above steps are for the infrastructure only. After
 Contact your Conxio account manager or inquire via email to [clc-sales@conx.io](mailto:clc-sales@conx.io).
 
 **Who should I contact for support?**
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
-* For issues related to configuring or managing the Conxio Everywhere application on CenturyLink Cloud and you have a paid license, please contact sales-clc@conx.io or follow your existing Conxio support process if known.
+* For issues related to cloud infrastructure, please open a ticket using the [Lumen Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
+* For issues related to configuring or managing the Conxio Everywhere application on Lumen Cloud and you have a paid license, please contact sales-clc@conx.io or follow your existing Conxio support process if known.

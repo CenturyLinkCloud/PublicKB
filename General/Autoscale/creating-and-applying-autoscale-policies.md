@@ -7,7 +7,7 @@
 }}}
 
 ### Description
-The CenturyLink Cloud platform now supports both Vertical Autoscale of CPU capacity for servers as well as Horizontal Autoscale of servers. This makes it possible to scale servers up and down (vertical) or out and in (horizontal) based on utilization, ensuring optimal deployment of resources for cloud environments under a variety of conditions.
+The Lumen Cloud platform now supports both Vertical Autoscale of CPU capacity for servers as well as Horizontal Autoscale of servers. This makes it possible to scale servers up and down (vertical) or out and in (horizontal) based on utilization, ensuring optimal deployment of resources for cloud environments under a variety of conditions.
 
 How does Autoscale work? For vertical Autoscale, servers that exceed a user-defined CPU utilization threshold instantly scale up, and servers that go below a user-defined CPU utilization threshold scale down (and reboot) during a user-defined window. In the case of horizontal Autoscale, groups of servers that exceed a user-defined CPU/RAM utilization threshold scale out by powering on one or more additional servers in the group, and groups of servers that go below a user-defined CPU/RAM utilization threshold scale in by powering off one or more servers in the group.
 
@@ -18,10 +18,10 @@ For example, consider a vertical Autoscale policy that sets a range of 4 to 6 CP
 This KB article describes all of the steps for creating, applying, and testing both vertical and horizontal Autoscale policies.
 
 ### Audience
-* CenturyLink Cloud customers (operations staff)
+* Lumen Cloud customers (operations staff)
 
 ### Prerequisites
-* CenturyLink Cloud account
+* Lumen Cloud account
 * A running server on which to apply an Autoscale policy
 
 ### Configuring Vertical Autoscale - New Policy
@@ -112,7 +112,7 @@ Vertical Autoscale policies can be added to existing servers or during the serve
    ![Autoscale Policy](../../images/createautoscale-new-h-scale-list.png)
 
 6. **Note**: You need to have a load balancer group created and a pool configured in order to move on to the next step.
-   * Please follow the instructions for [creating and configuring a load balancer](../../Network/CenturyLink Cloud/creating-a-self-service-load-balancing-configuration.md) before proceeding.
+   * Please follow the instructions for [creating and configuring a load balancer](../../Network/Lumen Cloud/creating-a-self-service-load-balancing-configuration.md) before proceeding.
    * Ideally, you should configure the load balancer with all the IP addresses (and ports) of the servers in the group you plan on applying the autoscale policy to.
    * If you don't do this, the autoscale policy takes care of it for you, but it could take up to five minutes before the load balancer configuration is updated after the autoscale policy is applied to the group.
    * Once you have a load balancer group and pool created and ready to use, continue on to the next steps.

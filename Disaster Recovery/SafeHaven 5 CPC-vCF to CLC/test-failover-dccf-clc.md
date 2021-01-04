@@ -7,7 +7,7 @@
 }}}
 
 ### Article Overview
-This article describes how to perform Test Failover to CenturyLink Cloud from a Protection Group level. Test Failovers can be performed multiple times by the user to verify data integrity as well as for their annual DR tests.
+This article describes how to perform Test Failover to Lumen Cloud from a Protection Group level. Test Failovers can be performed multiple times by the user to verify data integrity as well as for their annual DR tests.
 
 
 ### Requirements

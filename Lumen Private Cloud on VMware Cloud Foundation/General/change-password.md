@@ -10,12 +10,12 @@
 }}}
 
 ### Description
-In this KB article, we describe how to change the password on VMs that are deployed using our default "CTL-Golden-Images" vApp Templates in CenturyLink Private Cloud on VMware Cloud Foundation™.
+In this KB article, we describe how to change the password on VMs that are deployed using our default "CTL-Golden-Images" vApp Templates in Lumen Private Cloud on VMware Cloud Foundation™.
 
 ### Steps
-Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment.
+Login to your Lumen Private Cloud on VMware Cloud Foundation environment.
 
-  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
+  ![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
 Once logged in, click __Virtual Machines__ in the menu on the left side of the screen, then select the __VM__ in which you want to change the password.
 

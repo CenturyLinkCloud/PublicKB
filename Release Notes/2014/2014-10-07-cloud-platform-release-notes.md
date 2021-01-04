@@ -38,7 +38,7 @@
 <p><img src="https://t3n.zendesk.com/attachments/token/Nb8P5Rm8KBj0ZLhgMQzUGmHbz/?name=dc_settings.gif" alt="dc_settings.gif" />
 </p>
 <ul>
-  <li><strong>Data Center Updates.</strong> The CenturyLink Cloud opened another data center in Slough, UK (GB3). This new location is now live for all users and offers all the standard CenturyLink Cloud capabilities including support for Hyperscale Servers.
+  <li><strong>Data Center Updates.</strong> The Lumen Cloud opened another data center in Slough, UK (GB3). This new location is now live for all users and offers all the standard Lumen Cloud capabilities including support for Hyperscale Servers.
     There is further data center expansion planned for later this year as well.</li>
 </ul>
 <p><strong>Minor Enhancements (2)</strong>

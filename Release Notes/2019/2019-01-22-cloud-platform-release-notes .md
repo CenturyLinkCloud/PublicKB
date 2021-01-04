@@ -22,7 +22,7 @@ Cloud Application Manager now implements a new way of loading static resources t
 
 ##### Analytics Available for Any Type of AWS or Azure Provider
 
-For Azure, CenturyLink now extends our Analytics offering to unmanaged providers that are sourced by the customer. This functionality is in addition to the same recently-announced functionality for AWS providers. On these "Bring Your Own Cloud" Providers, administrators will see an "Analytics" option, capable of activating Cloud Optimization & Analytics capabilities before or after a Provider has been launched. Once Cloud Optimization & Analytics is activated for a customer-sourced Provider, CenturyLink will begin including that Provider's charges in the monthly basis for Platform Advisory Support. All CAM administrators have access to pricing details in the Management Site of CAM.
+For Azure, Lumen now extends our Analytics offering to unmanaged providers that are sourced by the customer. This functionality is in addition to the same recently-announced functionality for AWS providers. On these "Bring Your Own Cloud" Providers, administrators will see an "Analytics" option, capable of activating Cloud Optimization & Analytics capabilities before or after a Provider has been launched. Once Cloud Optimization & Analytics is activated for a customer-sourced Provider, Lumen will begin including that Provider's charges in the monthly basis for Platform Advisory Support. All CAM administrators have access to pricing details in the Management Site of CAM.
 
 #### [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/)
 
@@ -34,6 +34,6 @@ Application Lifecycle Management now supports additional CloudFormation types to
 
 ### Bug Fixes (1)
 
-#### Windows 2016 Patch for CenturyLink Cloud
+#### Windows 2016 Patch for Lumen Cloud
 
-Windows 2016 has been patched and the newest version is now available in CLC.  This patching was completed as part of our ongoing efforts to improve security and availability of all CenturyLink Cloud resources.
+Windows 2016 has been patched and the newest version is now available in CLC.  This patching was completed as part of our ongoing efforts to improve security and availability of all Lumen Cloud resources.

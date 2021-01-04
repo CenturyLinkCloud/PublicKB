@@ -8,11 +8,11 @@
 
 ### Overview
 
-Partner Cloud Integration allows an Cloud Application Manager user to create Microsoft Azure Customer Accounts or transfer an existing one into CenturyLink's care. If you want to stop usage and completely shut down that Azure Customer Account, you must do more than delete the provider in Cloud Application Manager. You will also need to tell CenturyLink to turn off the actual Azure account via a CTL support ticket and CTL will assist to make sure the account is removed properly.  Not following this process could cause unexpected billing charges to continue.
+Partner Cloud Integration allows an Cloud Application Manager user to create Microsoft Azure Customer Accounts or transfer an existing one into Lumen's care. If you want to stop usage and completely shut down that Azure Customer Account, you must do more than delete the provider in Cloud Application Manager. You will also need to tell Lumen to turn off the actual Azure account via a Lumen support ticket and Lumen will assist to make sure the account is removed properly.  Not following this process could cause unexpected billing charges to continue.
 
 ### Audience
 
-All Cloud Application Manager Customers with ARM Providers supported by CenturyLink
+All Cloud Application Manager Customers with ARM Providers supported by Lumen
 
 ### Prerequisites
 
@@ -37,12 +37,12 @@ Submit a support request to remove your Azure Customer Account. To submit a supp
 
 Please provide the following information for the delete:
 
-* Your first and last name (must be a user registered with CenturyLink for the account)
+* Your first and last name (must be a user registered with Lumen for the account)
 * Your company's name
 * Your request to delete your Azure Customer account and your reason for the request.
 * If you are not transferring to a new CSP and expect to pay Microsoft directly, you will be required to transfer resources to new Subscriptions. After you create one new subscription outside the CSP for each that is inside the CSP, please provide a mapping of how you want the resources to transfer. 
-* If you are not transferring to a new CSP and expect to pay Microsoft directly, please provide contact information for whomever your CenturyLink TAM should work with to ensure that all the resources have migrated.
-* If you are transferring to a new CSP, request that CenturyLink provide the following information so that you can complete the form.
+* If you are not transferring to a new CSP and expect to pay Microsoft directly, please provide contact information for whomever your Lumen TAM should work with to ensure that all the resources have migrated.
+* If you are transferring to a new CSP, request that Lumen provide the following information so that you can complete the form.
 
 CSP Partner name     
 CSP Microsoft ID      

@@ -2,7 +2,7 @@
 "title": "Cloud Platform - Release Notes: March 17, 2020",
 "date": "03-17-2020",
 "author": "Guillermo Sanchez",
-"keywords":["centurylink", "release notes", "cam", "alm", "msa", "export", "disconnect", "cloudformation"],
+"keywords":["lumen", "release notes", "cam", "alm", "msa", "export", "disconnect", "cloudformation"],
 "attachments": [],
 "contentIsHTML": false
 }}}

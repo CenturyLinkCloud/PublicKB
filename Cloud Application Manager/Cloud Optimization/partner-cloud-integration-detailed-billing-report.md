@@ -11,8 +11,8 @@
 Usage History is designed primarily for the purpose of explaining your invoice. It contains information for resold services, Managed Services, Platform Advisory Support, Application Lifecycle Management, and any other charges attributable to Cloud Application Manager. There are several goals for Usage History.
 
 * Provide detail similar to what you would expect on an invoice from your cloud vendor if you paid them directly.
-* Provide transparency in regards to CenturyLink billing practices.
-* Provide an understanding of the differences between CenturyLink's billing cycle and vendor billing cycles.
+* Provide transparency in regards to Lumen billing practices.
+* Provide an understanding of the differences between Lumen's billing cycle and vendor billing cycles.
 * Provide some flexibility in how information is presented.
 
 Integrated Accounts allow a Cloud Application Manager user to receive [consolidated bills](partner-cloud-integration-consolidated-billing.md) and therefore review usage within Usage History. 
@@ -37,35 +37,35 @@ Cloud Application Manager organization administrator access.
 ![Select a Month](../../images/cloud-application-manager/CAM_COA_DetailedBilling_1.png)
 
 
-For each line item, you will see to which provider name, provider alias, and account or subscription ID to which charges are associated. This line item equates to lines items you would see on your CenturyLink invoice.
+For each line item, you will see to which provider name, provider alias, and account or subscription ID to which charges are associated. This line item equates to lines items you would see on your Lumen invoice.
 
 ![Select a Line Item](../../images/cloud-application-manager/CAM_COA_DetailedBilling_2b.png)
 
 **Arrears Billing**
-Please review the Consolidated Billing Guide regarding the 11/1/2019 transition to Arrears billing. The following information regarding Vendor and CenturyLink billing cycles is relevant only to customers with invoices prior to that time.
+Please review the Consolidated Billing Guide regarding the 11/1/2019 transition to Arrears billing. The following information regarding Vendor and Lumen billing cycles is relevant only to customers with invoices prior to that time.
 
-**Vendor Billing Cycle:** This view is for usage prior to 11/1/2019. This fulfilled the need to reconcile the CenturyLink billing cycle with our vendor billing cycles.  On the 10th of every month, CenturyLink made a final assessment of the differences between what we put on your last invoice and what our vendor charged us. With that final sliver of data, we made a "Vendor Billing Cycle" button appear in Cloud Application Manager's Usage History. When you click it, the data will align with the Vendor's billing cycle. Any line items that start with "Post-Bill Update" have not appeared on a CenturyLink invoice for that month. You will never see "Post Bill Updates" on an invoice. They are only presented in the Cloud Application Manager Usage History. But those same charges will appear as "Update to previous month…" on the next month's invoice.
+**Vendor Billing Cycle:** This view is for usage prior to 11/1/2019. This fulfilled the need to reconcile the Lumen billing cycle with our vendor billing cycles.  On the 10th of every month, Lumen made a final assessment of the differences between what we put on your last invoice and what our vendor charged us. With that final sliver of data, we made a "Vendor Billing Cycle" button appear in Cloud Application Manager's Usage History. When you click it, the data will align with the Vendor's billing cycle. Any line items that start with "Post-Bill Update" have not appeared on a Lumen invoice for that month. You will never see "Post Bill Updates" on an invoice. They are only presented in the Cloud Application Manager Usage History. But those same charges will appear as "Update to previous month…" on the next month's invoice.
 
-Example: A customer thinks they may have $5 of EC2 usage from January. On February 1 they receive a CenturyLink invoice totaling $4 from CenturyLink: $3 of usage on a EC2 for January usage and a $1 charge from December usage called "Update to Previous Month's EC2 Services." There is no "Vendor Billing Cycle" Button yet available. On February 10, the customer sees the button in Cloud Application Manager. When they click it, they see the same $3 of usage on a EC2 for January usage plus the $2 Post-Bill Update to EC2 Services.
+Example: A customer thinks they may have $5 of EC2 usage from January. On February 1 they receive a Lumen invoice totaling $4 from Lumen: $3 of usage on a EC2 for January usage and a $1 charge from December usage called "Update to Previous Month's EC2 Services." There is no "Vendor Billing Cycle" Button yet available. On February 10, the customer sees the button in Cloud Application Manager. When they click it, they see the same $3 of usage on a EC2 for January usage plus the $2 Post-Bill Update to EC2 Services.
 
 ![Vendor Billing Enhancement](../../images/cloud-application-manager/usage-history-enhancement.png)
 
-**Sequence:** Three groupings are available: invoice, account, and service. *Invoice* sequences the line items similar to how it is laid out on your CenturyLink Invoice. *Account* groups charges, account by account. regardless of service or invoice. *Service** groups charges by the type of service, regardless of service or invoice.
+**Sequence:** Three groupings are available: invoice, account, and service. *Invoice* sequences the line items similar to how it is laid out on your Lumen Invoice. *Account* groups charges, account by account. regardless of service or invoice. *Service** groups charges by the type of service, regardless of service or invoice.
 
 ![Usage History Sequence](../../images/cloud-application-manager/Usage_History_Sequence.1.png)
 
 
 
-**Service and Region Details:** You may select a line item drop-down and it will provide detail into all the services, by region, that contributed charges to that line item, according to Centurylink's [consolidated billing](partner-cloud-integration-consolidated-billing.md) policy.
+**Service and Region Details:** You may select a line item drop-down and it will provide detail into all the services, by region, that contributed charges to that line item, according to Lumen's [consolidated billing](partner-cloud-integration-consolidated-billing.md) policy.
 
 
 ![Select an Account](../../images/cloud-application-manager/CAM_COA_DetailedBilling_3b.png)
 
- **Inter-Customer Adjustments:** Details of how CenturyLink safeguards customer accounts so they are billed fairly is also represented. If a Reserved Instance or Cost Savings Plan is purchased in one account and assigned by Amazon Web Services to a different account, CenturyLink will perform inter-customer adjustments. The RI-purchasing account will be credited and the RI-consuming account will be debited.
+ **Inter-Customer Adjustments:** Details of how Lumen safeguards customer accounts so they are billed fairly is also represented. If a Reserved Instance or Cost Savings Plan is purchased in one account and assigned by Amazon Web Services to a different account, Lumen will perform inter-customer adjustments. The RI-purchasing account will be credited and the RI-consuming account will be debited.
 
  ![Inter-Customer Adjustments](../../images/cloud-application-manager/CAM_COA_InterCustomerAdjustment.png)
 
- **Intra-Organization Adjustments:** Details of how CenturyLink distributes credits which may result from Inter-Customer Adjustments is also represented. It represents pre-invoice adjustments between your accounts. A common use case is when an AWS Customer with a multi-account, AWS Organization structure with a mature RI or Cost Savings Plan purchase model becomes a resale customer of CenturyLink. They often have all (or most) of their RIs or Cost Savings Plans purchased in one account. Naturally, they expect them to be consumed by instances in at least one more of their accounts. In the shared pool of CenturyLink customers, RI or Cost Savings Plan benefits are shared with all other accounts. CenturyLink's "Inter-Customer Adjustments" debits the RI-or-Cost-Savings-Plan-consuming account and credits the RI-or-Cost-Savings-Plan-purchasing account. However, as the owner account of the use case described above often does not have any instances, the line item for that account would be driven to a negative balance, which is not consistent with AWS.
+ **Intra-Organization Adjustments:** Details of how Lumen distributes credits which may result from Inter-Customer Adjustments is also represented. It represents pre-invoice adjustments between your accounts. A common use case is when an AWS Customer with a multi-account, AWS Organization structure with a mature RI or Cost Savings Plan purchase model becomes a resale customer of Lumen. They often have all (or most) of their RIs or Cost Savings Plans purchased in one account. Naturally, they expect them to be consumed by instances in at least one more of their accounts. In the shared pool of Lumen customers, RI or Cost Savings Plan benefits are shared with all other accounts. Lumen's "Inter-Customer Adjustments" debits the RI-or-Cost-Savings-Plan-consuming account and credits the RI-or-Cost-Savings-Plan-purchasing account. However, as the owner account of the use case described above often does not have any instances, the line item for that account would be driven to a negative balance, which is not consistent with AWS.
 
   * When a customer account has "negative totals" for a line item in one account, our logic looks for other accounts in the same CAM org which have positive usage. We can call those accounts "positive line accounts."
   * Without including the credit from RI or Cost Savings Plan Cross Customer Adjustments, we determine the "positive total."
@@ -96,4 +96,4 @@ Letter In Image | Name  | Description  | Notes
  K  | Total  | Quantity multiplied by unit cost  | At the present time, there may be some. See note for M, below.  
  L  | On Your Invoice  | Contains line item totals for which you are charged on your invoice.  |   
  M | Supporting Detail  | Item detail totals that add up to the "On your Invoice" totals.  |  
- N  | Adjustments  | See above. CenturyLink provides visibility into what adjustments are made to ensure fairness of charges.  |   
+ N  | Adjustments  | See above. Lumen provides visibility into what adjustments are made to ensure fairness of charges.  |   

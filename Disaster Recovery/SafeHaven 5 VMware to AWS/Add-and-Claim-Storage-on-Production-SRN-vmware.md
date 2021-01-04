@@ -18,7 +18,7 @@ This article explains how to attach storage on a single SRN in VMWare. After the
 ### Assumptions
 This article assumes that the user has already registered the SRN within the SafeHaven Console and wants to add storage to the SRN before creating Protection Groups.
 
-### Add storage to the Production SRN in CenturyLink Cloud
+### Add storage to the Production SRN in Lumen Cloud
 1. Login to VMWare Vcenter. Confirm the Storage requirements for the Production Server (in this case Windows). Right click the VM, and click **Edit Settings** to see the total provisioned storage. Based on the Production Server O.S. Type and [Storage Requirements](../SafeHaven 5 CLC to AWS/Determine Storage Requirements.md), calculate the amount of storage that needs to be added.
 
 2. In the Navigation Tree, right click the **SRN** you want to add storage to, and click **Edit Settings**.
@@ -35,7 +35,7 @@ This article assumes that the user has already registered the SRN within the Saf
 
 **NOTE**: There is no need to allocate storage for the SRN on AWS. Depending on the size of your Protection Group, SafeHaven will automatically create the EBS volumes to meet the requirements.
 
-### Claim storage pool for CenturyLink Cloud Production SRN
+### Claim storage pool for Lumen Cloud Production SRN
 1. Once the storage has been attached to the SRN, the next step is to login to the **SafeHaven Console**.
 2. Go to the Navigation Tree and select the Production SRN. In the **Properties Panel** select **Claim Storage Pool**.
 **NOTE**: If you don't see a device listed click on **Rescan** in order to force a rescan of the SCSI bus on the SRN.

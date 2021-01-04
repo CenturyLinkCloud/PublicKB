@@ -2,7 +2,7 @@
 "title": "Cloud Platform - Release Notes: July 23, 2019",
 "date": "07-23-2019",
 "author": "Evan McNeill",
-"keywords":["centurylink", "cam", "alm", "optimization"],
+"keywords":["lumen", "cam", "alm", "optimization"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -27,12 +27,12 @@ As with all Actions, the MS Teams Action type can be applied at all scope levels
 
 ### Announcements (1)
 
-#### [CenturyLink Cloud](https://www.ctl.io/cloud-platform/)
+#### [Lumen Cloud](https://www.ctl.io/cloud-platform/)
 
-##### Single Sign On for all CenturyLink products
+##### Single Sign On for all Lumen products
 
-This month we are deploying a new security feature. Single Sign On (SSO), will provide enhanced security capabilities and enable a single login for all your CenturyLink products.
+This month we are deploying a new security feature. Single Sign On (SSO), will provide enhanced security capabilities and enable a single login for all your Lumen products.
 
-Once released, you can opt into a one-time setup to create a new Master Account using the "Sign in with CenturyLink Master Account" button on the login page. You will then receive a one-time prompt to provide credentials to link your services to your master account. This will allow you to navigate between services without re-authenticating going forward.
+Once released, you can opt into a one-time setup to create a new Master Account using the "Sign in with Lumen Master Account" button on the login page. You will then receive a one-time prompt to provide credentials to link your services to your master account. This will allow you to navigate between services without re-authenticating going forward.
 
 Other security improvements include optional multi-factor authentication through your smart phone (soft token) and the ability to set up multiple security questions for account validation and retrieval purposes. You'll continue to see enhancements as they are released throughout the year.

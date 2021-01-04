@@ -11,7 +11,7 @@
 
 ### Dedicated Access Endpoint Connectivity Prerequisites
 
-* End Users must establish a CenturyLink Cloud (CLC) master account and sub-accounts, the latter to create isolation between the networking resources of the business units of their enterprise. The Exchanges created under each sub-account will be logically isolated from one another.
+* End Users must establish a Lumen Cloud (CLC) master account and sub-accounts, the latter to create isolation between the networking resources of the business units of their enterprise. The Exchanges created under each sub-account will be logically isolated from one another.
 * The desired site must be supported within Network Exchange. See the [Network Exchange Availability Matrix and Configuration Guide](../Network Exchange/network-exchange-connectivity-matrix-configuration-guide.md) for supported data centers.
 
 ### Dedicated Access Endpoint Capabilities
@@ -23,8 +23,8 @@
 
 ### Notes
 
-* Dedicated Access may be used for connecting directly to CenturyLink Managed Hosting and third party networks and devices.
-* This document does not apply to CenturyLink endpoints reached through the Managed Area Network (HAN). For HAN-connected endpoints, please refer to the [Network Exchange CenturyLink Managed Hosting via HAN Endpoint Guide](../Network Exchange/network-exchange-clc-managed-hosting-endpoint-guide.md).
+* Dedicated Access may be used for connecting directly to Lumen Managed Hosting and third party networks and devices.
+* This document does not apply to Lumen endpoints reached through the Managed Area Network (HAN). For HAN-connected endpoints, please refer to the [Network Exchange Lumen Managed Hosting via HAN Endpoint Guide](../Network Exchange/network-exchange-clc-managed-hosting-endpoint-guide.md).
 * Additional purchase(s) required includes Hosting Access Extension (HAE) - a cross connect - with number of orders matching the number of connections, one for a single line or two for redundant connections. The cross connects will connect Network Exchange and the End User’s equipment following the provisioning of Network Exchange. Network Exchange will provide the equipment location and ports on the Network Exchange switches to be connected to, so the connections can be completed.
 * The user will have a choice between a 1Gbps and 10Gbps connection. The optics used to connect to Network Exchange are one of:
   * QFX-SFP-1GE-LX SFP 1000BASE-LX Gigabit Ethernet Optics, 1,310 nm for 10 km transmission on single mode fiber-optic (SMF)

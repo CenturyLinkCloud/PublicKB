@@ -8,7 +8,7 @@
 
 ### IMPORTANT NOTE
 
-CenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only
+Lumen WordPress hosting is currently in a Limited Beta program with specific customers by invitation only
 and is not intended for production usage.
 
 During the Limited Beta there is no production Service Level Agreement.
@@ -22,18 +22,18 @@ to roll back without dealing with git commit history and reverts.
 
 The rollback feature is intended as a quick fix until the site's git repository is
 fixed. After a rollback is performed, further rollbacks are disabled until the next
-push to CenturyLink Git Hosting; in other words, it is **not** possible to roll back
-the rollback. The code in the CenturyLink Git Hosting repository is not modified.
+push to Lumen Git Hosting; in other words, it is **not** possible to roll back
+the rollback. The code in the Lumen Git Hosting repository is not modified.
 
 ### Prerequisites
 
-* A WordPress site has been created using the CenturyLink WordPress hosting platform.
-* A change to the site has been committed and pushed to CenturyLink Git Hosting.
+* A WordPress site has been created using the Lumen WordPress hosting platform.
+* A change to the site has been committed and pushed to Lumen Git Hosting.
 * The change is undesired and needs to be rolled back.
 
 ### Rollback Process
 
-1. [Log in](https://wordpress.ctl.io/) to the CenturyLink WordPress hosting platform.
+1. [Log in](https://wordpress.ctl.io/) to the Lumen WordPress hosting platform.
 2. Find the site that needs to be rolled back in the list of sites.
 3. The "Roll Back" button is on the right side of the row. If no "Roll Back" button
    is visible for a given site, that site cannot be rolled back—either because it is

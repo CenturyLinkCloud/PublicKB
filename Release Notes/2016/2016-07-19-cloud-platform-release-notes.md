@@ -9,7 +9,7 @@
 ### New Features (2)
 * __Control Portal: Updated Main Navigation Experience in the Control Portal__
 
-	We’ve redesigned our [Control Portal](https://control.ctl.io) experience with our users in mind. The new enhancements make navigation faster, more intuitive, and mobile-friendly. Additionally, we also want to give you consistent, high-quality experience when interacting with the flagship CenturyLink Cloud Control Portal, and our cloud-related services. For additional details on this update, please read [this KB from our creative director](https://www.ctl.io/knowledge-base/general/control-portal-navigation-update/).<p>
+	We’ve redesigned our [Control Portal](https://control.ctl.io) experience with our users in mind. The new enhancements make navigation faster, more intuitive, and mobile-friendly. Additionally, we also want to give you consistent, high-quality experience when interacting with the flagship Lumen Cloud Control Portal, and our cloud-related services. For additional details on this update, please read [this KB from our creative director](https://www.ctl.io/knowledge-base/general/control-portal-navigation-update/).<p>
 
 	![Control UI Left Nav](../../images/2016-07-19_ReleaseNotes1.png)
 
@@ -23,9 +23,9 @@
   ![RunnerLogo](../../images/runner-logo-black-text.png)
 
 ### Enhancements (1)
-* __CenturyLink Cloud Command-line Interface (CLI): Additional Service Available__
+* __Lumen Cloud Command-line Interface (CLI): Additional Service Available__
 
-	The CenturyLink Cloud CLI has been enhanced to include additional API calls for several of our advanced services. Users can use the CLI to operate their compute, storage, and networking services as well as these new features:
+	The Lumen Cloud CLI has been enhanced to include additional API calls for several of our advanced services. Users can use the CLI to operate their compute, storage, and networking services as well as these new features:
   - [RelationalDB](https://www.ctl.io/relational-database/)
   - [Simple Backup](https://www.ctl.io/simple-backup-service/)
   - [Intrusion Prevention Service (IPS)](https://www.ctl.io/intrusion-prevention-service/)
@@ -33,13 +33,13 @@
   - [Site-to-Site VPN](https://www.ctl.io/vpn/)
   - [Cross Data Center Firewalls](https://www.ctl.io/cloud-firewall/)<p>
 
-  The [CTL Cloud CLI is available on github](https://github.com/CenturyLinkCloud/clc-go-cli/releases). For more information on using the CLI, refer to the [KB article CTL Cloud Guide to the CLI](https://www.ctl.io/knowledge-base/servers/centurylink-cloud-guide-to-cli/).
+  The [CTL Cloud CLI is available on github](https://github.com/CenturyLinkCloud/clc-go-cli/releases). For more information on using the CLI, refer to the [KB article CTL Cloud Guide to the CLI](https://www.ctl.io/knowledge-base/servers/lumen-cloud-guide-to-cli/).
 
 ### Open Source Contributions (1)
 
 * __Cyclops: Version 1.5 Release__
 
-  [Cyclops](https://github.com/CenturyLinkCloud/Cyclops) is an open source collection of UX/UI patterns that make up the CenturyLink Cloud user interface. It's our way to showing how focused we are on creating a delightful and responsive user experience.
+  [Cyclops](https://github.com/CenturyLinkCloud/Cyclops) is an open source collection of UX/UI patterns that make up the Lumen Cloud user interface. It's our way to showing how focused we are on creating a delightful and responsive user experience.
 
   __New Features__
 
@@ -70,4 +70,4 @@
 
 
 ### Announcements (1)
-* __Upcoming Enhancements to Authentication & Changes for Your SAML Configuration__ - In the coming months, CenturyLink Cloud will be upgrading its authentication service. Many customers will not experience any material changes as a result of this upgrade. However, customers that have enabled SAML for their CenturyLink Cloud accounts will be required to make configuration changes to ensure that authentication continues to function.  Please review this [FAQ](https://www.ctl.io/knowledge-base/support/authentication-updates-faq/)  to understand the action required on your part, if any.
+* __Upcoming Enhancements to Authentication & Changes for Your SAML Configuration__ - In the coming months, Lumen Cloud will be upgrading its authentication service. Many customers will not experience any material changes as a result of this upgrade. However, customers that have enabled SAML for their Lumen Cloud accounts will be required to make configuration changes to ensure that authentication continues to function.  Please review this [FAQ](https://www.ctl.io/knowledge-base/support/authentication-updates-faq/)  to understand the action required on your part, if any.

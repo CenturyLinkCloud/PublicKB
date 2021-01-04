@@ -43,13 +43,13 @@ All Cloud Application Manager users who want to deploy workloads into Microsoft 
 ### Prerequisites
 
 * Access to Cloud Application Manager [Management site](https://account.cam.ctl.io/#/providers?type=Microsoft-Azure).
-* The user must have an existing Microsoft Azure account or should be an Administrator of the organization in Cloud Application Manager to [create](../Cloud Optimization/partner-cloud-integration-azure-new.md) or [bring](../Cloud Optimization/partner-cloud-integration-azure-existing.md) a Microsoft Azure account to be managed by CenturyLink.
+* The user must have an existing Microsoft Azure account or should be an Administrator of the organization in Cloud Application Manager to [create](../Cloud Optimization/partner-cloud-integration-azure-new.md) or [bring](../Cloud Optimization/partner-cloud-integration-azure-existing.md) a Microsoft Azure account to be managed by Lumen.
 
 ### Connect your Microsoft Azure Account in Cloud Application Manager
 
-Each of Cloud Application Manager's Microsoft Azure Providers gives you the option of setting it up either for an existing or a new Azure Customer Account. Existing accounts are your responsibility and will continue to be billed to you by Azure. New Accounts will automatically be generated on your behalf and the credentials pulled into the Provider via [Cloud Optimization](../Cloud Optimization/partner-cloud-integration.md), allowing you to hand off platform-level support and billing to CenturyLink.
+Each of Cloud Application Manager's Microsoft Azure Providers gives you the option of setting it up either for an existing or a new Azure Customer Account. Existing accounts are your responsibility and will continue to be billed to you by Azure. New Accounts will automatically be generated on your behalf and the credentials pulled into the Provider via [Cloud Optimization](../Cloud Optimization/partner-cloud-integration.md), allowing you to hand off platform-level support and billing to Lumen.
 
-If you want to learn how to use the New Account feature, please visit [Partner Cloud: Getting Started With a New Azure Customer](../Cloud Optimization/partner-cloud-integration-azure-new.md). The rest of this article assumes you will be using an existing, Azure Customer Account without any integration with CenturyLink.
+If you want to learn how to use the New Account feature, please visit [Partner Cloud: Getting Started With a New Azure Customer](../Cloud Optimization/partner-cloud-integration-azure-new.md). The rest of this article assumes you will be using an existing, Azure Customer Account without any integration with Lumen.
 
 #### Creating your own Azure Subscription
 
@@ -70,7 +70,7 @@ If you want to create your own Azure subscription, follow these steps:
 
 Login to the [Microsoft Azure portal](https://portal.azure.com/) using your Microsoft Azure Account.
 
-If you already have a Microsoft Azure Provider in your Cloud Application Manager, the CenturyLink support staff can access your subscription by clicking on the **Portal Access** button located in the Microsoft Azure Provider details page.  
+If you already have a Microsoft Azure Provider in your Cloud Application Manager, the Lumen support staff can access your subscription by clicking on the **Portal Access** button located in the Microsoft Azure Provider details page.  
 
 ![Microsoft Azure Portal Access from CAM](../../images/microsoft-azure-console/ms-azure-access-from-cam.png)
 
@@ -88,7 +88,7 @@ Once in Microsoft Azure Portal you can reach different sections using the upper 
 2. Copy and take note of the Directory ID field for later. It is known as **Directory (tenant) ID**  
 3. Next select *App registrations*, within the Azure Active Directory menu pane
 4. Create a *New Application Registration* with the following values:
-    * Name: **CenturyLink-CAM**
+    * Name: **Lumen-CAM**
     * Supported account types: **My organization only**
     * Redirect URL: **web - `https://localhost/logon`**
 5. Upon registering a line with this applicattion will be added to list. Click on it and see its details.
@@ -150,7 +150,7 @@ Navigate to *Subscriptions* panel. Use search tool and introduce "Subscriptions"
 4. When creating the new role, do so with the following values:
     * Role: **Owner** (If you do not see the Owner role, you will need to talk to your administrator.)
     * Assign Access to: **Azure AD user, group or application**
-    * Select: **CenturyLink-CAM**
+    * Select: **Lumen-CAM**
 5. Now select *Resource providers* tab (dowm in the Settings Tabs segment) in your subscription and **Register** the following providers:
     * *Microsoft.Compute*
     * *Microsoft.Network*
@@ -160,7 +160,7 @@ Navigate to *Subscriptions* panel. Use search tool and introduce "Subscriptions"
 
 #### Secret
 
-Return to the *Azure Active Directory* panel, select *App Registrations* then *CenturyLink-CAM* and finally *Certificates & Secrets*.  
+Return to the *Azure Active Directory* panel, select *App Registrations* then *Lumen-CAM* and finally *Certificates & Secrets*.  
 
 1. Add a new client secret
 2. Set a Key with the following values:
@@ -265,7 +265,7 @@ To deploy a virtual machine with compute services you can edit one of windows or
 
 ![Microsoft Azure - Compute deployment options](../../images/cloud-application-manager/microsoft-azure/compute-deployment-options-pre4.png)
 
-If you can't create any policy box on Windows Azure provider probably you have to create a virtual network from Azure portal or you may deploy a new one with a template as we describe in following section. If you choose to use a [new Azure provider optimized by CenturyLink](../Cloud Optimization/partner-cloud-integration-azure-new.md) we will create a default network for you.
+If you can't create any policy box on Windows Azure provider probably you have to create a virtual network from Azure portal or you may deploy a new one with a template as we describe in following section. If you choose to use a [new Azure provider optimized by Lumen](../Cloud Optimization/partner-cloud-integration-azure-new.md) we will create a default network for you.
 
 #### Resources
 
@@ -281,7 +281,7 @@ If you can't create any policy box on Windows Azure provider probably you have t
 | SSH Certificate | Only in Linux machines you can specify a certificate to access via ssh. |
 | Instances | Specify the number of instances to spawn. If you increase it to a value higher than 1, a **High Availability** toggle will appear below that you can enable to use Azure availability sets for high availability support. |
 | ScaleSet  | Specify if the instance/s should be created into a ScaleSet resource. When switched on, it will enable auto-scaling and load-balancer sections (see below). It will also create a managed Availability Set.  |
-| Delegate Management  | Delegate management to CenturyLink.  |
+| Delegate Management  | Delegate management to Lumen.  |
 
 When you increase the number of instances, and if you have not enable Scale Set, the High Availability toggle appears:
 

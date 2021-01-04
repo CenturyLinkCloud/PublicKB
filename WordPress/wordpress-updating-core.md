@@ -10,13 +10,13 @@
 
 ### IMPORTANT NOTE
 
-CenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage at this time.
+Lumen WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage at this time.
 
 During the Limited Beta there is no production Service Level Agreement.
 
 ### Overview
 
-At the present time, CenturyLink does not provide automated updates or upgrades to WordPress sites.  This article will demonstrate the process for upgrading your site when WordPress issues a new security patch or major release.
+At the present time, Lumen does not provide automated updates or upgrades to WordPress sites.  This article will demonstrate the process for upgrading your site when WordPress issues a new security patch or major release.
 
 ### How to Update WordPress Core
 
@@ -90,7 +90,7 @@ At the present time, CenturyLink does not provide automated updates or upgrades 
 
 7. Push changes to origin/master to update site in production
 
-  Now, push your newly updated _master_ branch to your CenturyLink git repository to update your Production site:
+  Now, push your newly updated _master_ branch to your Lumen git repository to update your Production site:
 
   `git push origin master`
 

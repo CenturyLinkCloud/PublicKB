@@ -9,7 +9,7 @@
 
 ### Overview
 
-CenturyLink Cloud's Object Storage service allows administrators to manage users on the storage level.  These users are not the same as users in the Control Portal account, and through the S3 protocol, they may be granted limited access to buckets and objects.
+Lumen Cloud's Object Storage service allows administrators to manage users on the storage level.  These users are not the same as users in the Control Portal account, and through the S3 protocol, they may be granted limited access to buckets and objects.
 
 ### Audience
 
