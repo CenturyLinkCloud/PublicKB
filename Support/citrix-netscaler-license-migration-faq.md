@@ -8,14 +8,16 @@
 
 ### Overview
 
-Effective December 1, 2020, Citrix NetScaler Dedicated Load Balancers will no longer be made available by Lumen Public Cloud (formerly CenturyLink Public Cloud) service offering.
-Existing NetScaler Load Balancers will continue to operate on the Lumen Public Cloud platform; however, Customers need to take action and must obtain a new license by contacting Citrix directly.
+Effective December 1, 2020, Citrix NetScaler Dedicated Load Balancer licenses will no longer be made available by Lumen Public Cloud as a service offering. **Prior to February 1, 2021 action is required to prevent any loss of service on your load balancer.**
 
-Please see the section below labeled “How to obtain Citrix NetScaler license” for information on how to obtain the license directly from Citrix.
+Existing NetScaler Load Balancers will continue to operate on the Lumen Public Cloud platform; however, Customers need to take action and must obtain a new license by contacting Citrix directly, as described in Option 2 below.
+
+New Citrix Netscalers can still be deployed as a billable [Service Task](https://www.ctl.io/lumen-public-cloud/service-tasks/#171), but will now require the customer to provide their own license.
+
 
 ### Audience
 
-Lumen Cloud customers Customers with a dedicated Citrix NetScaler Load Balancer and license provided by Lumen through the Lumen Public Cloud service.
+Lumen Cloud customers with a dedicated Citrix NetScaler Load Balancer and license provided by Lumen through the Lumen Public Cloud service.
 
 ### Prerequisites to enable the license updates
 
@@ -33,16 +35,17 @@ Customers have two options outlined below, both require customer action and comm
 
 Customers must review the options below, choose the option that fits their needs, and notify Lumen no later than February 1, 2021 of their decisions.
 
-Option #1:
-Cancel the dedicated Citrix NetScaler Load Balancer and license provided by Lumen Public Cloud.
+#### Option #1:
+Decommission the dedicated Citrix NetScaler Load Balancer and license provided by Lumen Public Cloud.
 
-Required Customer Action:
-Notification of Customer’s intent to cancel affected Citrix licenses must be received by Lumen no later than February 1, 2021 in order to stop billing for the license.
+**Required Customer Action:**
+Delete the relevant servers via the Control Portal
 
-Option #2:
-Keep the dedicated Citrix NetScaler Load Balancer offer and purchase a new license directly Citrix.
+#### Option #2:
+Keep the dedicated Citrix NetScaler Load Balancer offer and purchase a new license directly from Citrix.
 
-How to obtain Citrix NetScaler license
+**Required Customer Action**
+Contact Citrix and obtain a new license file from Citrix and install it on the load balancer prior to February 1, 2021
 
 Customers can reach out to the Citrix inquiry page to engage Citrix by following the steps below.
 
@@ -52,10 +55,6 @@ Customers can reach out to the Citrix inquiry page to engage Citrix by following
 **Citrix rebranded the Citrix NetScaler offer to be named Citrix Application Delivery Controller**
 4)	A Citrix representative will contact you to discuss the best options for license procurement and support.
 
-**Required Customer Action**
-
-Customers choosing to acquire a new license directly from Citrix must notify Lumen no later than February 1, 2021 in order to stop billing for the license.
-Completing these actions will stop Lumen from billing for the license.
 
 ### Frequently Asked Questions
 
@@ -66,12 +65,11 @@ All customers with a dedicated Citrix NetScaler Load Balancer and license provid
 
 **Q: What if I no longer want or need the dedicated Citrix NetScaler Load Balancer offer that is provided by Lumen Public Cloud AND also do not want to purchase a new license from Citrix?**
 
-If you wish to no longer have a dedicated Citrix NetScaler Load Balancer and active license, please reach out to the [Lumen Customer Care team](mailto:help@ctl.io) to request the licensing be canceled and to stop the billing.
+If you wish to no longer have a dedicated Citrix NetScaler Load Balancer delete the relevant servers via the Control Portal.
 
 **Q: What if I do nothing?**
 
-Customers who take no action will continue to be billed for the Citrix NetScaler licenses until January 31, 2021 or until their license expires, whichever occurs first.
-After January 31, 2021 the customer’s dedicated Citrix NetScaler Load Balancer environment(s) will no longer have an active license(s) and the NetScaler will stop passing traffic.
+Customers who take no action will continue to be billed for the Citrix NetScaler licenses until January 31, 2021. After January 31, 2021 the customer’s dedicated Citrix NetScaler Load Balancer environment(s) will no longer have an active license(s) and upon reboot the NetScaler will stop passing traffic.
 
 **Q: How Do I Know When My Current License Expires?**
 
