@@ -1,71 +1,59 @@
 {{{
-  "title": "How do I escalate a ticket?",
-  "date": "11-12-2014",
-  "author": "Gavin McMurdo",
+  "title": "Escalating a Public Cloud Ticket",
+  "date": "01-04-2021",
+  "author": "Derek Jansen",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-### Description (goal/purpose)
+### Description (Goal/Purpose)
 
+This article will provide guidance on escalating a Public Cloud ticket for the following scenarios.
 
-1. I have submitted a support request and need it to be executed immediately.
-2. I have submitted a ticket and would like to escalate it.
-3. Lumen Cloud did not deliver or perform what they committed to deliver in a ticket.
+- A support request has just been submitted, and it needs to be executed immediately.
+- A request has been submitted previously, and it now needs to be escalated.
+- Public Cloud did not deliver on what was agreed in a ticket.
 
 ### Audience
 
-- Customers who have a paid support contract</li>
+- Accounts with a Paid Support Level (Details on these support agreements can be found on the [Public Cloud site's support page](//www.ctl.io/lumen-public-cloud/support).)
 
+### Prerequisites
 
-### Pre-Requisites
-
-- Please DO NOT forward a previous ticket to this mechanism because the automation will add your email to that ticket.
-- Ticket number of the ticket that describes the issue in detail.
-- Please review the [Ticket Prioritization Matrix](../Support/ticket-prioritization-matrix.md)
-- Please ensure that this issue being escalated requires escalation. The majority of the escalation team reside in Seattle and please be aware of the time when you escalate.
-- Please have someone available to respond to any information request from Lumen Cloud. The majority of the time, these requests will be made via the original ticket. Not having someone available could delay the resolution of the issue
-    and defeats the purpose of the escalation mechanism.
-
+- Review the [ticket prioritization matrix](../Support/ticket-prioritization-matrix.md) for an understanding of the support prioritization for tickets, including expectations on response cadence and resolution time.
+- Ensure that this issue requires escalation.
+- Have someone available to respond to any information requests from Public Cloud. For the majority of the time, these requests will be made via the original ticket. Not having someone available could delay the resolution of the issue and defeats the purpose of the escalation mechanism.
 
 ### Steps
 
-1. **Please review the Ticket Prioritization Matrix so that you understand what priority your ticket should be.**
-2. **A NEW TICKET must be created by a separate email. Forwarding or CC'ing an existing ticket will prevent automation from handling the request properly and an escalation will not occur. Email escalation@ctl.io with the following information:**
+Send an ***new email*** to Public Cloud. Forwarding/copying escalation an existing ticket will prevent automation from handling the request properly, and an escalation will not occur. The email must have the following details.
 
-  Subject: ESCALATION: Ticket - <your ticket number>
+  - To: escalation@ctl.io
+  - Subject: `ESCALATION: Ticket - #` (example: "ESCALATION: Ticket - 1701234")
+  - Body: Provide a brief explanation of why the ticket should be escalated.
 
-  Body: Your message and a brief explanation of why you are escalating the ticket.
-
-3. **A ticket will be created in our system for your escalation and it will be automatically escalated to the Lumen Cloud operations management.**
+A new ticket will be created in the system, and it will be automatically escalated to the Public Cloud operations management.
 
 ### FAQ
 
-**Is this capability available 24x7?**
+1. **Is this capability available 24x7?**  
+Yes. While the management team is based on the US west coast, they do respond to escalations within 15 minutes.
 
-Yes, while the management team that responds to these requests is based on the US West Coast, they do respond to escalations within 15 minutes. *The exception is an escalation for Service Tasks, which are only acknowledged from 7am-7pm Pacific*.
+2. **What criteria are used to evaluate a service request escalation?**  
+The members of the escalation team are in the Public Cloud support management. They will review the following details of the original ticket.
+    - time and date
+    - clarity of information
+    - scope
+    - skill required
 
-**What criteria are used to evaluate a Service Request escalation request?**
+3. **Is there a charge for escalating a ticket?**  
+In general, no. However, Public Cloud *does* reserve the right to charge parties that misuse the escalation mechanism.
 
-The members of the escalation team are members of the Lumen Cloud Support Management team. They will review the age of the original ticket, clarity of information in the original ticket, scope, skill level, and time of day of the request.
+4. **If the account does not have a paid support level, what will happen when this mechanism is used?**  
+The automation will check to validate the account's support level. If the account does not have a paid support level, the escalation will not complete successfully.
 
-**Will I be charged for escalating a ticket?**
-
-In general no; however for parties that misuse the escalation mechanism, Lumen Cloud does reserve the right to charge.
-
-**I do not have a paid support contract, what will happen when I use this mechanism?**
-
-The automation will check to validate your contract and if you do not have a support contract, your escalation will not complete successfully.
-
-**I have escalated an issue but am not satisfied with the resolution of that escalation.  What can I do?**
-
-If you wish to escalate to the executive level:
-
-1. **Email execescalation@ctl.io with the following information:**
-  
-    Subject: ESCALATION: Ticket - <your ticket number>
-  
-    Body: Your message and a brief explanation of why you are escalating the ticket.
-  
-2. **A ticket will be created in our system for your Executive escalation and it will be automatically escalated to the Lumen Cloud Executive Management.**
-
+5. **The issue was escalated but the resolution was not satisfactory. What can be done?**  
+To further escalate to the executive level, send another email. Again, this must be a separate email; forwarding/copying executive escalation an existing ticket will prevent automation from handling the request properly, and an escalation will not occur. The email must have the following details.
+    - To: execescalation@ctl.io
+    - Subject: `ESCALATION: Ticket - #` (example: "ESCALATION: Ticket - 1701234")
+    - Body: Provide a brief explanation of why the ticket should be escalated.

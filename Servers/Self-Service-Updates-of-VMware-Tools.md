@@ -24,7 +24,7 @@ If you would like to update the version of VMware Tools on your servers, this is
 ### Detailed Steps for Windows Servers
 To update VMware Tools for Windows, you can download them from VMware's website and run the .exe installer. You can run the installer interactively or silently. It is recommended that you reboot after installation.
 
-1. [Download the latest version from VMware's website](https://packages.vmware.com/tools/esx/latest/windows/x64/index.html)
+1. [Download the latest version from VMware's website](https://packages.vmware.com/tools/releases/latest/windows/x64/)
 2. Double-click on the downloaded .exe file to run the installer interactively.
 3. Reboot the server.
 
