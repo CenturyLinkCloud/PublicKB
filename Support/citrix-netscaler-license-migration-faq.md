@@ -8,7 +8,7 @@
 
 ### Overview
 
-Effective December 1, 2020, Citrix NetScaler Dedicated Load Balancer licenses will no longer be made available by Lumen Public Cloud as a service offering. **Prior to February 1, 2021 action is required to prevent any loss of service on your load balancer.**
+Effective December 1, 2020, Citrix NetScaler Dedicated Load Balancer licenses will no longer be made available by Lumen Public Cloud as a service offering. **Prior to February 1, 2021 action is required to prevent any loss of service on your load balancer. Lumen Public Cloud will not be able to restore service for license related issues.**
 
 Existing NetScaler Load Balancers will continue to operate on the Lumen Public Cloud platform; however, Customers need to take action and must obtain a new license by contacting Citrix directly, as described in Option 2 below.
 
@@ -42,7 +42,7 @@ Decommission the dedicated Citrix NetScaler Load Balancer and license provided b
 Delete the relevant servers via the Control Portal
 
 #### Option #2:
-Keep the dedicated Citrix NetScaler Load Balancer offer and purchase a new license directly from Citrix.
+Keep the dedicated Citrix NetScaler Load Balancer servers and purchase a new license directly from Citrix.
 
 **Required Customer Action**
 Contact Citrix and obtain a new license file from Citrix and install it on the load balancer prior to February 1, 2021
