@@ -6,7 +6,7 @@
     "Blueprints",
     "Lumen Private Cloud on VMware Cloud Foundation",
     "Cloud Application Manager",
-    "Lumen Edge Services",
+    "Edge Computing Solutions",
     "Compliance",
     "Control Portal",
     "Database",
