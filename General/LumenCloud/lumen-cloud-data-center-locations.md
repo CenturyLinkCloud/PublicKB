@@ -1,13 +1,13 @@
 {{{
   "title": "Lumen Edge Computing Locations",
-  "date": "12-08-2020",
+  "date": "1-06-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false
 }}}
 Lumen is rapidly adding Edge Computing locations across the globe to provide customers low-latency hardware on-demand to power the workloads of next-gen technology. This document will be updated as we add new locations. 
 
-Below are tables that provide locations and availabilty for the expanding Edge Computing Service locations across the Lumen portfolio.  
+Below are tables that provide locations and availabilty for the expanding Edge Computing locations across the Lumen portfolio.  
 
 * **Lumen Public Cloud (LPC)**: (formerly CenturyLink Public Cloud) Multi-tenant computing service that enables flexible virtual machines and other datacenter services in a pay-as-you-go model.  
 * **Lumen Edge Compute (LEC)**: Bare-metal compute service, launching early 2021, that enables pay-as-you-go server hardware on-demand.  
@@ -41,13 +41,13 @@ Argentina – AR1|Lumen| Av. Del Campo N°  1301, Buenos Aires, Argentina|Coming
 **Region**|**LEC Data Center**|**CLLI Code**|**Provider**|**Physical Address**|**More Information**
 ---------|-----------------|-----------------|-----------------|--------------------------------------------|------------------
 NA|Denver, CO|DNVTCO56|Lumen|1850 Pearl St., Denver, CO 80203|Available Today (Beta)
-NA|Phoenix, AZ|PHNDAZ91|Lumen|811 S. 16th Street, Phoenix, AZ 85034|Coming in 2020
-NA|Minneapolis, MN|MNNTMNIC|Lumen|5480 Feltl Rd, Minnesota, MN 55343|Coming in 2020 
-NA|Nashville, TN|NSVMTN17|Lumen|2208 9th Avenue North, Nashville, TN 37208|Coming in 2020 
-NA|Chicago, IL|BRVWILCU|Lumen|2101 Roberts Drive, Broadview, IL 60155|Coming in 2020 
-NA|Pittsburgh, PA|PITEPADT|Lumen|143 South 25th Street Pittsburgh, PA 15203|Coming in 2020 
-NA|Tampa, FL|TAMRFLWS|Lumen|7909 Woodland Center Blvd, Tampa, FL 33614|Coming in 2020 
-NA|Kansas City, MO|KSCBMOVS|Lumen|1212 East 19th Street, Kansas City, MO 64108|Coming in 2020
+NA|Phoenix, AZ|PHNDAZ91|Lumen|811 S. 16th Street, Phoenix, AZ 85034|Available Today (Beta)
+NA|Chicago, IL|BRVWILCU|Lumen|2101 Roberts Drive, Broadview, IL 60155|Available Today (Beta)
+NA|Pittsburgh, PA|PITEPADT|Lumen|143 South 25th Street Pittsburgh, PA 15203|Available Today (Beta)
+NA|Tampa, FL|TAMRFLWS|Lumen|7909 Woodland Center Blvd, Tampa, FL 33614|Available Today (Beta)
+NA|Nashville, TN|NSVMTN17|Lumen|2208 9th Avenue North, Nashville, TN 37208|Coming in 2021 
+NA|Minneapolis, MN|MNNTMNIC|Lumen|5480 Feltl Rd, Minnesota, MN 55343|Coming in 2021
+NA|Kansas City, MO|KSCBMOVS|Lumen|1212 East 19th Street, Kansas City, MO 64108|Coming in 2021
 NA|Sacramento, CA|WSCRCAHW|Lumen|1075 Triangle Ct, West Sacramento, CA 95605|Coming in 2021
 NA|Monmouth Junction, NJ|MNJTNJAB|Lumen|4260 US-1 N, Monmouth Junction, NJ 08852|Coming in 2021
 NA|Detroit, MI|DTRTMITK|Lumen|1965 Porter St, Detroit, MI 48216|Coming in 2021 
