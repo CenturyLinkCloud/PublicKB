@@ -1,16 +1,16 @@
 {{{
-  "title": "Lumen Edge Computing Locations",
-  "date": "1-06-2021",
+  "title": "Lumen Edge Computing Solutions Locations",
+  "date": "1-20-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false
 }}}
-Lumen is rapidly adding Edge Computing locations across the globe to provide customers low-latency hardware on-demand to power the workloads of next-gen technology. This document will be updated as we add new locations. 
+Lumen is rapidly adding Edge Computing Solutions locations across the globe to provide customers low-latency hardware on-demand to power the workloads of next-gen technology. This document will be updated as we add new locations. 
 
-Below are tables that provide locations and availabilty for the expanding Edge Computing locations across the Lumen portfolio.  
+Below are tables that provide locations and availabilty for the expanding Edge Computing Solutions locations across the Lumen portfolio.  
 
 * **Lumen Public Cloud (LPC)**: (formerly CenturyLink Public Cloud) Multi-tenant computing service that enables flexible virtual machines and other datacenter services in a pay-as-you-go model.  
-* **Lumen Edge Compute (LEC)**: Bare-metal compute service, launching early 2021, that enables pay-as-you-go server hardware on-demand.  
+* **Lumen Edge Bare Metal**: Bare-metal compute service, launching early 2021, that enables pay-as-you-go server hardware on-demand.  
 Over time, the Lumen Public Cloud service will be migrated to run on the Lumen Edge Cloud.
 * **Lumen Edge Colocation**: Sites operated by Lumen as well as from partner facilities in a re-sale model.  
 Any colocation model can be on-boarded as an Edge Hosting Environment where we can support a range of hybrid infrastructure managed services.
@@ -36,7 +36,7 @@ Australia - AU1|NextDC (S1)|4 Eden Park Dr <br>Macquarie Park NSW 2113|[provider
 Brazil – BR1|Lumen| Rua Eid. Manssur N° 666, Parque São George, Rodovia Raposo Tavares, Km 25, Cotia, Brazil|Coming in 2021
 Argentina – AR1|Lumen| Av. Del Campo N°  1301, Buenos Aires, Argentina|Coming in 2021
 
-**Lumen Edge Compute (LEC)**
+**Lumen Edge Bare Metal**
 
 **Region**|**LEC Data Center**|**CLLI Code**|**Provider**|**Physical Address**|**More Information**
 ---------|-----------------|-----------------|-----------------|--------------------------------------------|------------------
