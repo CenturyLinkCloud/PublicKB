@@ -6,7 +6,7 @@
 "contentIsHTML": false
 }}}
 
-CenturyLink Cloud supports the ability to create Sub accounts, which fall under a Parent account. Sub accounts have many advantages:
+Lumen Cloud supports the ability to create Sub accounts, which fall under a Parent account. Sub accounts have many advantages:
 
 * They are hierarchal - user account permissions flow from Parent account to Sub account, not up nor sideways 
 * They may be billed separately or to the Parent account 
@@ -15,7 +15,7 @@ CenturyLink Cloud supports the ability to create Sub accounts, which fall under 
 
 ### Creating a Sub Account
 
-* On the left hand side of CenturyLink Cloud’s Control Portal, select Settings -> Sub Accounts.
+* On the left hand side of Lumen Cloud’s Control Portal, select Settings -> Sub Accounts.
 * Click the `+ create new account` button
 
 ### Organization Info
@@ -34,7 +34,7 @@ Further down in the page you wil see this section:
 
 ![sub-billing](../images/create-sub-account-billing.png)
 
-You may input a Default Primary DNS and a Default Secondary DNS IP address. This will be the DNS servers used when building a server in the platform.  Input IPv4 IP addresses into these fields. You may list your own environment's DNS servers, preferred public DNS servers, or the default CenturyLink Cloud datacenter DNS servers (172.17.1.26, 172.17.1.27). If you leave it blank, it will default to using the CenturyLink Cloud Datacenter DNS servers, which do allow for external DNS lookup.
+You may input a Default Primary DNS and a Default Secondary DNS IP address. This will be the DNS servers used when building a server in the platform.  Input IPv4 IP addresses into these fields. You may list your own environment's DNS servers, preferred public DNS servers, or the default Lumen Cloud datacenter DNS servers (172.17.1.26, 172.17.1.27). If you leave it blank, it will default to using the Lumen Cloud Datacenter DNS servers, which do allow for external DNS lookup.
 
 
 Bill to: Each Sub account generates an invoice. You have the option of submitting the invoice to the Parent account, or bill the Sub account directly.

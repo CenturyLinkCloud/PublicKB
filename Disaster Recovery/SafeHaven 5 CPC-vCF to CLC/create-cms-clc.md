@@ -1,6 +1,6 @@
 {{{
 
-  "title": "Deploy CMS in CenturyLink Cloud",
+  "title": "Deploy CMS in Lumen Cloud",
   "date": "04-30-2018",
   "author": "Anshul Arora",
   "attachments": [],
@@ -8,19 +8,19 @@
 }}}
 
 ### Article Overview
-This article explains how to create a CMS (Central Management Server) in centurylink cloud to use in a SafeHaven 5 Environment. A CMS( Center Management Server) is basically a management server that is used to access the Safehaven Cluster. It provides a user interface through a java application. For SafeHaven 5, an Ubuntu-16 VM template is used to deploy the CMS machine.
+This article explains how to create a CMS (Central Management Server) in lumen cloud to use in a SafeHaven 5 Environment. A CMS( Center Management Server) is basically a management server that is used to access the Safehaven Cluster. It provides a user interface through a java application. For SafeHaven 5, an Ubuntu-16 VM template is used to deploy the CMS machine.
 
 ### Requirements
-1. Login access to the CenturyLink Cloud Portal at https://control.ctl.io.
+1. Login access to the Lumen Cloud Portal at https://control.ctl.io.
 2. Permissions to deploy a VM in the account.
 
 ### Assumptions
-This article assumes that the user has login access to the CenturyLink Cloud Portal. Login to the **CenturyLink Control Portal**  https://control.ctl.io with your credentials.
+This article assumes that the user has login access to the Lumen Cloud Portal. Login to the **Lumen Control Portal**  https://control.ctl.io with your credentials.
 
 
 
-### Deploy the CMS Node in CenturyLink Cloud
-1. Login to Centurylink Cloud portal with your ceredentials - https://control.ctl.io/
+### Deploy the CMS Node in Lumen Cloud
+1. Login to Lumen Cloud portal with your ceredentials - https://control.ctl.io/
 2. Change the subaccount if needed by clicking on top of the screen.
 3. Click on the Datacenter that is required to be the DR Datacenter.
 4. Create a Group(Optional):  

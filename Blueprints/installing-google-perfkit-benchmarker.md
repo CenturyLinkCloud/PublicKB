@@ -7,9 +7,9 @@
 }}}
 
 ### Overview
-[PerfKit Benchmarker](https://github.com/GoogleCloudPlatform/PerfKitBenchmarker) is an open source tool for measuring and comparing cloud offerings. It was developed by Google with feedback and contributions from over 30 leading researchers, companies and customers, including CenturyLink Cloud. PerfKit Benchmarker is written in Python and licensed under the Apache ASLv2 license, allowing contributors to either add their own benchmarks or suggest improvements to existing ones.
+[PerfKit Benchmarker](https://github.com/GoogleCloudPlatform/PerfKitBenchmarker) is an open source tool for measuring and comparing cloud offerings. It was developed by Google with feedback and contributions from over 30 leading researchers, companies and customers, including Lumen Cloud. PerfKit Benchmarker is written in Python and licensed under the Apache ASLv2 license, allowing contributors to either add their own benchmarks or suggest improvements to existing ones.
 
-While PerfKit natively supports some vendor-provided command line tools to measure end-to-end provisioning time for certain other cloud platforms, it is also capable of running benchmarks against any existing remote server resource via SSH. This is how PerfKit Benchmarker runs against CenturyLink Cloud, which supports ten of the benchmarks defined in the PerfKit framework.
+While PerfKit natively supports some vendor-provided command line tools to measure end-to-end provisioning time for certain other cloud platforms, it is also capable of running benchmarks against any existing remote server resource via SSH. This is how PerfKit Benchmarker runs against Lumen Cloud, which supports ten of the benchmarks defined in the PerfKit framework.
 
 ### Description
 The Google PerfKit Benchmarker Blueprint is provided for easily provisioning the required servers and automating the tool's setup. It provisions seven servers (one as a client to install/run on, and six servers required to support all ten benchmarks) and then installs PerfKit Benchmarker on the client. Finally, since it is a potentially long running job, it schedules a run to kick off one minute after the Blueprint completes.
@@ -25,7 +25,7 @@ The Google PerfKit Benchmarker Blueprint is provided for easily provisioning the
    ![](../images/perfkit-benchmarker-1.png)
 
    *  Specify the full "Results Path" for where  to save the results.json file upon completion of the benchmarks running.
-   * Choose which benchmarks to run. The first option - "CenturyLink Cloud Set" - will run all of the listed options, or you may pick and choose one or more to run.
+   * Choose which benchmarks to run. The first option - "Lumen Cloud Set" - will run all of the listed options, or you may pick and choose one or more to run.
    * (For more information about each of these benchmarks, how they are licensed, and what they test, [PerfKit Benchmarker Readme on GitHub](https://github.com/GoogleCloudPlatform/PerfKitBenchmarker/blob/master/README.md)).
 
    ![](../images/perfkit-benchmarker-2.png)

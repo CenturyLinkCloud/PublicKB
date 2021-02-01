@@ -3,6 +3,7 @@
 "date": "09-01-2019",
 "author": "Arya Roudi, Julio Castanar",
 "keywords": ["cam administration", "management", "overview", "cam", "cam organization", "settings", "manage users", "manage providers", "management activity", "billing"],
+"sticky": true,
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -24,10 +25,10 @@
 
 Cloud Application Manager **Management site** is where you can perform administrative tasks.  
 
-* In the overview page you will find your available products for your organization. 
+* In the overview page you will find your available products for your organization.
 * Providers page let you manage your cloud providers' accounts.
 * Users page allows you to manage your organization users.
-* Activity page displays the management actions being performed in your organization and by whom. 
+* Activity page displays the management actions being performed in your organization and by whom.
 * Settings is the page where you manage and control configuration settings for your organization.  
 * Billing page provides details about your organization charges.
 
@@ -38,7 +39,7 @@ All users with Cloud Application Manager organization administrator access.
 ### Prerequisites
 
 * The user must be an Administrator of the organization in Cloud Application Manager.
-* The user should be at the organization level scope to access the Settings 
+* The user should be at the organization level scope to access the Settings
 * Access to Cloud Application Manager, [Management site](https://account.cam.ctl.io/#) options in the left side menu.
 
 ### Overview page
@@ -47,11 +48,11 @@ When you access the Cloud Application Manager through Management Site, you will 
 
 ![Management site - Overview](../../images/cloud-application-manager/admin-overview1.png)
 
-In the overview pane you can access to each of the sites by clicking the icon cards. In above figure you can see: 
-* [Applications](../Getting Started/getting-started-login-quick-tour.md), 
-* [Analytics](https://www.ctl.io/knowledge-base/cloud-application-manager/analytics/#1), 
-* [Monitoring](https://www.ctl.io/knowledge-base/cloud-application-manager/monitoring/#1), 
-* [Network Exchange](https://www.ctl.io/knowledge-base/network/#1) 
+In the overview pane you can access to each of the sites by clicking the icon cards. In above figure you can see:
+* [Applications](../Getting Started/getting-started-login-quick-tour.md),
+* [Analytics](https://www.ctl.io/knowledge-base/cloud-application-manager/analytics/#1),
+* [Monitoring](https://www.ctl.io/knowledge-base/cloud-application-manager/monitoring/#1),
+* [Network Exchange](https://www.ctl.io/knowledge-base/network/network-exchange/) 
 
 ### Providers
 
@@ -60,7 +61,7 @@ Providers page contains all providers your Organization can manage and how are t
 
 ![Providers list](../../images/cloud-application-manager/admin-overview4.png)
 
-* Connect to a provider to orchestrate deployments. Click **New** to add AWS, Azure, CenturyLink Cloud, vSphere, Google Cloud, OpenStack, CloudStack, etc...
+* Connect to a provider to orchestrate deployments. Click **New** to add AWS, Azure, Lumen Cloud, vSphere, Google Cloud, OpenStack, CloudStack, etc...
 * Locate a provider through search or by type.
 * Sync or delete provider accounts using the gear icon actions.
 
@@ -87,9 +88,9 @@ Activity contains logs for all management events in your Organization.
     * **Provider**, this option filters the result and shows only the provider's activity.
     * **Settings**, this option filters the result and shows only the activities that are related to settings.
     * **User**, this option filters the result and shows only the user management activity.
-      
+
         > **note that you can combine these filters with each other on your own will.**
-        
+
 * Search by user name or action to narrow the results, or click on certain actions to navigate to the affected resource.
 
 ### Settings
@@ -108,12 +109,12 @@ Many of these settings are document in the [Administering Your Organization](htt
 
 #### Shortcut to access Settings from context switcher
 
-1. Access to the context switcher drop-down, located at the top navigation bar. 
+1. Access to the context switcher drop-down, located at the top navigation bar.
 2. Click on **Organizations** tab.
 
    ![Change CAM Workspace Scope](../../images/cloud-application-manager/admin-overview2.png)
 
-3. Click on the **edit/pencil button**, located in the top right of the organization card. 
+3. Click on the **edit/pencil button**, located in the top right of the organization card.
 
 ### Billing
 

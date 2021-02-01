@@ -2,23 +2,24 @@
   "title": "Resizing a Relational Database Instance",
   "date": "10-22-2017",
   "author": "Brian Waganer",
+  "keywords": ["clc", "cloud", "database", "db", "dbaas", "mysql", "rdbs", "portal"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false
 }}}
 
 ### Audience
-This article is to support customers of Relational Database service (RDBS), CenturyLink's database-as-a-service product. These instructions are specific to resizing a subscription through the Control Portal.
+This article is to support customers of Relational Database service (RDBS), Lumen's database-as-a-service product. These instructions are specific to resizing a subscription through the Control Portal.
 
 ### Overview
-CenturyLink's Relational Database service is a database-as-a-service that provides instant access to a database instance with SSL support, daily backups, basic monitoring, logs, metrics, and a replication option. Users can configure the amount of CPU, memory, and storage based on their database needs. They can choose to replicate their instance in a data center for a more highly available solution. As the customer's capacity needs grow, they can easily scale their CPU, RAM, and/or storage with the click of a button.
+Lumen's Relational Database service is a database-as-a-service that provides instant access to a database instance with SSL support, daily backups, basic monitoring, logs, metrics, and a replication option. Users can configure the amount of CPU, memory, and storage based on their database needs. They can choose to replicate their instance in a data center for a more highly available solution. As the customer's capacity needs grow, they can easily scale their CPU, RAM, and/or storage with the click of a button.
 
 ### Prerequisites
-* access to the CenturyLink Cloud platform as an authorized user
+* access to the Lumen Cloud platform as an authorized user
 * an existing RDBS instance
 
 ### Resizing an Existing Relational Database Instance
-1. Browse to CenturyLink Cloud’s RDBS dashboard through the [Control Portal][1] or directly at [rdbs.ctl.io][2].
+1. Browse to Lumen Cloud’s RDBS dashboard through the [Control Portal][1] or directly at [rdbs.ctl.io][2].
 
 2. Under the tab "Databases", identify and select the database subscription you would like to resize. This takes you to a details screen specific to that subscription.
 
@@ -32,6 +33,8 @@ CenturyLink's Relational Database service is a database-as-a-service that provid
     \- Decreasing CPU
     - Storage can be scaled up, but cannot be scaled down through the API or UI.
     - New applicable hourly charges apply after successful resize.
+
+**Note:** All changes to the RDBS instance will be locked until the change operations have completed.
 
 **If you have questions or feedback, please submit them to our team by emailing [rdbs-help@ctl.io][4].**
 

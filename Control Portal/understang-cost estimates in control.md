@@ -28,7 +28,7 @@ One of the best features of the Control Portal is the cost estimation in every l
 - Monthly Usage Summary
 
 ### Main Dashboard
-When logging into the CenturyLink Control Portal, the main dashboard is displayed.  There are four estimates at the top of the page.  
+When logging into the Lumen Control Portal, the main dashboard is displayed.  There are four estimates at the top of the page.  
 
 ![Dashboard](../images/estimator/dashboard.png)
 
@@ -103,7 +103,7 @@ Under Network menu, the cost of VLANs, Share Load Balanacer, DNS and Site to Sit
 
 ### Services
 
-CenturyLink Cloud offers different services for which the cost estimation can be found under the individual service page.
+Lumen Cloud offers different services for which the cost estimation can be found under the individual service page.
 
 #### Backup
 

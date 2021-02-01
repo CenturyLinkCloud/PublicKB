@@ -1,7 +1,8 @@
 {{{
   "title": "Simple Backup Service Reports",
-  "date": "06-29-2018",
+  "date": "10-29-2019",
   "author": "John Gerger",
+  "keywords": ["backup", "clc", "cloud", "report", "sbs", "server"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

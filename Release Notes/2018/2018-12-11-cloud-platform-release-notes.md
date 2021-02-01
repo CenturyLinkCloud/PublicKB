@@ -14,7 +14,7 @@
 
 **Support for Google Compute Deployment Manager**
 
-[Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) now supports a new type of template box based on Google Deployment Manager Templates. Now you can create this new type of template box and add multiple Google Deployment templates files in YAML format to it to compose your box. Similar to the current support for AWS Cloud Formation, Azure ARM and Terraform templates, you can also define variables through Cloud Application Manager user interface, and then reference them from any Google Deployment Manager template file in the instance, with the usual Jinja format. For more information, please refer to [https://www.ctl.io/knowledge-base/cloud-application-manager/automating-deployments/google-deployment-manager.md](../../Cloud Application Manager/Automating Deployments/google-deployment-manager.md)
+[Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) now supports a new type of template box based on Google Deployment Manager Templates. Now you can create this new type of template box and add multiple Google Deployment templates files in YAML format to it to compose your box. Similar to the current support for AWS CloudFormation, Azure ARM and Terraform templates, you can also define variables through Cloud Application Manager user interface, and then reference them from any Google Deployment Manager template file in the instance, with the usual Jinja format. For more information, please refer to [https://www.ctl.io/knowledge-base/cloud-application-manager/automating-deployments/google-deployment-manager.md](../../Cloud Application Manager/Automating Deployments/google-deployment-manager.md)
 
 **Instances page now displays Azure native services**
 
@@ -32,10 +32,10 @@
 
 [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) now supports a new Jinja System Variable to allow access the provider type where the instance has been deployed to. You can refer to this new variable through the usual Jinja syntax by referencing: `\{{ service.provider_type \}}`. The returned value will be the corresponding descriptive name of the provider type, for example: "Amazon Web Services".
 
-**New Cloud Formation types supported**
+**New CloudFormation types supported**
 
-[Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) now supports additional Cloud Formation types to be used in Cloud Formation template boxes. These additional types are:
+[Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) now supports additional CloudFormation types to be used in CloudFormation template boxes. These additional types are:
 
 ``'AWS::ServiceDiscovery::HttpNamespace', 'AWS::Lambda::LayerVersion', 'AWS::Lambda::LayerVersionPermission'``
 
-The user can now use these new resource types in the template definition of any Cloud Formation template box, or update the template file of any existing template instance and reconfigure it to use the new resource types.
+The user can now use these new resource types in the template definition of any CloudFormation template box, or update the template file of any existing template instance and reconfigure it to use the new resource types.

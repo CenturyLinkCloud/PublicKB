@@ -10,7 +10,7 @@
 This KB article describes how to locate and execute a published Blueprint.
 
 ### Prerequisites
-* A active account on CenturyLink Cloud.
+* A active account on Lumen Cloud.
 
 ### Steps
 1. Log into the [Control Portal](https://control.ctl.io).

@@ -14,7 +14,7 @@ This article explains how to create a SRN (SafeHaven Replication Node) in AWS DR
 2. Internet access on DR-SRN in AWS once it is deployed.
 
 ### Assumptions
-1. It is assumed here that the user has an AWS account and a VPC created which has accessibility to CenturyLink Cloud Production Datacenter.
+1. It is assumed here that the user has an AWS account and a VPC created which has accessibility to Lumen Cloud Production Datacenter.
 2. Typically CMS and DR-SRN reside in the same subnet so we will simply re-use the Security Group we created in the previous step [Create CMS in AWS](Create CMS in AWS.md)
 
 ### Create an AWS instance
@@ -33,10 +33,5 @@ This article explains how to create a SRN (SafeHaven Replication Node) in AWS DR
 13. Once the Instance is created, user can name the instance as CMS and add tags if required.
 
 **NOTE:** The default root password for the SRN will be provided upon SafeHaven License Request. **It is STRONGLY recommended to change the default root password for security purposes.**
-
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YH-XudTKrlQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</p>  
 
 **Next Step** is to [Create SafeHaven Cluster and Login to SafeHaven Console](Create SafeHaven Cluster and Login to SafeHaven Console.md)

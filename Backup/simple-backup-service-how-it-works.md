@@ -1,7 +1,8 @@
 {{{
   "title": "Simple Backup How It Works",
-  "date": "9-12-2017",
+  "date": "2-27-2019",
   "author": "John Gerger",
+  "keywords": ["backup", "clc", "cloud", "restore", "security", "sbs", "server", "storage"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -18,25 +19,25 @@ For example, you can specify the backup schedule, retention, location, self-serv
 
 Define and apply a policy to the server. A backup agent is then installed on the server. Backups of designated files and folders occur per the schedule defined in the backup policy. The server connects to the Internet through which the backup agent communicates directly with the backup infrastructure. No external server talks to the customer’s server.
 
-SBS utilizes S3 protocol to leverage a combination of [Centurylink Cloud Object Storage](https://www.ctl.io/object-storage/) and AWS Objects Storage. Backups are securely transferred into Object Storage and reside in storage for the duration of the retention period. Restores are initiated by the customer, at which point the files are brought back to the server for customer use. Partnering with 3rd party cloud providers such as AWS allows additional flexibility for our customers to choose their desired Object Storage region. For a list of storage regions and the associated provider, please see the chart below.
+SBS utilizes S3 protocol to leverage a combination of [Lumen Cloud Object Storage](https://www.ctl.io/object-storage/) and AWS Objects Storage. Backups are securely transferred into Object Storage and reside in storage for the duration of the retention period. Restores are initiated by the customer, at which point the files are brought back to the server for customer use. Partnering with 3rd party cloud providers such as AWS allows additional flexibility for our customers to choose their desired Object Storage region. For a list of storage regions and the associated provider, please see the chart below.
 
 Backup Region|Storage Target|Endpoint
 -------------|--------------|---------
 APAC (Singapore)|Amazon Simple Storage Service S3 (Singapore) - ap-southeast-1|s3-ap-southeast-1.amazonaws.com
 APAC (Sydney)|Amazon Simple Storage Service S3 (Sydney) - ap-southeast-2|s3-ap-southeast-2.amazonaws.com
 EU (Germany)|Amazon Simple Storage Service S3 (Frankfurt) - eu-central-1|s3.eu-central-1.amazonaws.com<br>s3-eu-central-1.amazonaws.com
-EU (Germany|CenturyLink Cloud Germany|germany.os.ctl.io
+EU (Germany|Lumen Cloud Germany|germany.os.ctl.io
 EU (Ireland)|Amazon Simple Storage Service S3 (Ireland) - eu-west-1|s3-eu-west-1.amazonaws.com
 EU (London)|Amazon Simple Storage Service S3 (London) - eu-west-2|s3-eu-west-2.amazonaws.com
 US East|Amazon Simple Storage Service S3 (Northern Virginia) - us-east-1|s3.amazonaws.com<br>s3-external-1.amazonaws.com
 US West|Amazon Simple Storage Service S3 (Oregon) - us-west-2|s3-us-west-2.amazonaws.com
-Canada|CenturyLink Cloud Canada|canada.os.ctl.io
+Canada|Lumen Cloud Canada|canada.os.ctl.io
 
 ### Backup Policies
 Backup Policies are user-defined configurations that you specify through the [Control Portal](https://control.ctl.io/). Servers are added to policies and start backing up based on the policy details. There is no limit on the number of servers you can add to a policy. Likewise, a server can be added to multiple policies. Backup Policy details include:
 
 * *Name* – A quick, user-friendly name to assist with identifying policies
-* *Operating System* – Linux or Windows. All Operating Systems that are currently buildable in the CLC Control Portal are supported.
+* *Operating System* – Linux or Windows. All Operating Systems that are currently buildable in the CLC Control Portal are supported, with the exception of RedHat Enterprise linux 5, and Debian 6.
 * *Schedule* – how often to run the backups. This can be hourly, daily, weekly, monthly or yearly based on your needs.
 * *Retention (days)* – The number of days that each data point is stored in secure object storage.
 * *Paths to Include* – Define what directories should be included in your backups. Multiple paths may be indicated by clicking the ‘add path’ button.
@@ -56,7 +57,7 @@ Upon installation the agent initially conducts a full backup as indicated by the
 As mentioned above, all data is transferred to Objected Storage when the backup agent gets installed on the server. Incremental backups occur according to the schedule defined in the backup policy and cover the added, changed, or deleted files and folders specifically. This model has the same level of customer data protection as a constant full backup. It offers the benefits of reduced backup speed, minimized data transfer cost, and minimized storage cost. The bottom line is a fast, reliable, and affordable backup solution.
 
 ### Backup Duration
-The length of time needed to complete the backup varies. Several factors come into play such as whether it's the initial backup, a subsequent incremental backup, the number of files and folders, files sizes, other processes running on the server, bandwidth, ingest rates into Object Storage, or region and distance to the target storage, etc. 
+The length of time needed to complete the backup varies. Several factors come into play such as whether it's the initial backup, a subsequent incremental backup, the number of files and folders, files sizes, other processes running on the server, bandwidth, ingest rates into Object Storage, or region and distance to the target storage, etc.
 
 ### Active/Inactive Policy vs. Active/Inactive Server
 You can enable or disable a server or policy as needed. An inactive policy essentially disables all servers associated with the policy, while the server status only refers to the specified server. An inactive policy status overrides an active server status. Here are the state definitions:
@@ -69,9 +70,9 @@ You can enable or disable a server or policy as needed. An inactive policy essen
 If the backup agent is unable to communicate with the SBS infrastructure, data will not be set to expire. The feature ensures that data is safe and restorable in the case of server failure or Internet connectivity issues. Servers removed from a policy are treated as if the server status is set to inactive and the retention period starts.
 
 ### Restoration
-A new restoration point is created at the completion of every backup, full or incremental. The restore point contains a backup date and time stamp which is actually the point-in-time that the backup job completed. Executing a restore is easy. You manage restoration points through the backup agent's UI. Select the "point-in-time" backup event, specify a destination directory, and optionally specify the exact file(s) or directories to restore and click **restore**. That's it! Your data is restored automatically within minutes. You can also delete restoration points that are no longer needed.
+A new restoration point is created at the completion of every backup, full or incremental. The restore point contains a backup date and time stamp which is actually the point-in-time that the backup job completed. Executing a restore is easy, see our [restore guide](./restores.md) for more information.
 
 In order to prevent the accidental overwriting of data, a new directory is created under the restoration path you provide. The directory uses the restoration point ID as the name and contains all of the restored data.
 
 ### Security
-Backup are transferred from your server over the public Internet to Object Storage using TLSv1.2. The data is then encrypted at rest in the object store with 256-bit AES encryption server side for all AWS endpoints. A unique key that is also encrypted with a master key when it is stored is used to secure your data. Keys are stored in separate locations from your data for extra protection. At this time user supplied keys are not supported. CenturyLink Cloud endpoints (Canada & Germany) do not currently offer encryption at rest.
+Backup are transferred from your server over the public Internet to Object Storage using TLSv1.2. The data is then encrypted at rest in the object store with 256-bit AES encryption server side for all AWS endpoints. A unique key that is also encrypted with a master key when it is stored is used to secure your data. Keys are stored in separate locations from your data for extra protection. At this time user supplied keys are not supported. Lumen Cloud endpoints (Canada & Germany) do not currently offer encryption at rest.

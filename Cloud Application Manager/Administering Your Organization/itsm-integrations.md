@@ -1,8 +1,8 @@
 {{{
 "title": "ITSM Integrations",
-"date": "10-30-2018",
-"author": "Arya Roudi",
-"keywords": ["administration", "itsm", "servicenow"],
+"date": "05-23-2019",
+"author": "Arya Roudi and Sergio Quintana",
+"keywords": ["cam", "cloud application manager", "organization", "settings", "administration", "itsm", "servicenow", "integration"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -18,7 +18,7 @@
 
 ### Overview
 
-In the organization settings page there is a section to configure ITSM (IT Service Management) integrations, where you can enable and configure the ServiceNow integration. ServiceNow can be configured as configuration management database (CMDB), so whenever an instance is deployed, it will be registered into ServiceNow CMDB, and whenever is terminated it will be removed from ServiceNow CMDB as well. This allows you to have a synchronized view of your CAM deployments into  ServiceNow CMDB module.
+In the organization settings page there is a section from where to configure ITSM (IT Service Management) integrations, so you can enable and configure the ServiceNow integration. ServiceNow can be configured as configuration management database (CMDB), so whenever an instance is deployed, it will be registered into ServiceNow CMDB, and whenever is terminated it will be removed from ServiceNow CMDB as well. This allows you to have a synchronized view of your CAM deployments into  ServiceNow CMDB module.
 
 ### Audience
 
@@ -27,35 +27,44 @@ All users with Cloud Application Manager organization administrator access.
 ### Prerequisites
 
 * Access to Cloud Application Manager, [Management site](https://account.cam.ctl.io/#/settings).
+  
 * The user must be an Administrator of the organization in Cloud Application Manager.
-* The user should be at the organization level scope to access the Settings option in the left side menu, or through the pencil button in the organization element in the context switcher.
+  
+* The user should be at the organization level scope to access the **Settings** option on the left side menu. Accessing that option is also possible through the pencil button of an organization element in the Context Switcher.
 
 ### Configuration Steps
 
-1. Navigate to the ITSM Integrations section in the Organization settings page and enable ServiceNow CMDB toggle:
+1. Navigate to the ITSM Integrations section in the organization settings page and enable ServiceNow CMDB toggle:
+   
    ![ServiceNow CMDB toggle](../../images/cloud-application-manager/management/servicenow-cmdb-toggle.png)
 
 2. Click on the **Add ServiceNow** button:
+   
    ![ServiceNow CMDB add](../../images/cloud-application-manager/management/servicenow-cmdb-add.png)
 
 3. Fill in the form with the required fields:
-   ![ServiceNow CMDB add](../../images/cloud-application-manager/management/servicenow-cmdb-form.png)
+   
+   ![ServiceNow CMDB form](../../images/cloud-application-manager/management/servicenow-cmdb-form.png)
 
-    Once you specify the ServiceNow host, you should copy the Redirect URL and click on the **Create an application registry for CAM** link which will open the ServiceNow server configuration in a new tab or window where you will configure the ServiceNow application registration for Cloud Application Manager (CAM) and fill in the following:
+    Once you specify the ServiceNow host, you should copy the Redirect URL and click on the **Create an application registry for CAM** link. This will open the ServiceNow server configuration in a new tab or window, where you will configure the ServiceNow application registration for Cloud Application Manager (CAM) and fill in the following:
     * Click on the lock next to Redirect URL to unlock the field and paste there the value you copied from CAM form earlier.
     * Specify a meaningful name for your ServiceNow application registration for CAM
     * Copy the Client ID that has been automatically generated and go back to CAM to paste it in the corresponding field
     * Specify the same Client Secret in both configuration pages (CAM and ServiceNow).
     * In ServiceNow application registration page you can change the **Refresh Token Lifespan** value to "-1" to define that it will never expire.
     * Going back to Cloud Application Manager New ServiceNow Configuration form, click on **Save**
-  ![ServiceNow CMDB save](../../images/cloud-application-manager/management/servicenow-cmdb-form-save.png)
+  
+    ![ServiceNow CMDB save](../../images/cloud-application-manager/management/servicenow-cmdb-form-save.png)
 
 4. Once you have saved your configuration, you need to Authorize access for Cloud Application Manager to be able to talk to your ServiceNow instance by clicking the **Authorize** button:
-  ![ServiceNow CMDB authorize](../../images/cloud-application-manager/management/servicenow-cmdb-authorize.png)
-  When clicking on the **Authorize** button a ServiceNow screen will appear where you can **Allow** Cloud Application Manager to connect to your ServiceNow account.
+   
+    ![ServiceNow CMDB authorize](../../images/cloud-application-manager/management/servicenow-cmdb-authorize.png)
 
-5. Once you have authorize the connection, you will see **Authorized** in your configuration, and you will have the option to **Reauthorize** in case you need to do so, or when your token expires:
-  ![ServiceNow CMDB authorized](../../images/cloud-application-manager/management/servicenow-cmdb-authorized.png)
+    When clicking on the **Authorize** button a ServiceNow screen will appear where you can **Allow** Cloud Application Manager to connect to your ServiceNow account.
+
+5. Once you have authorized the connection, you will see **Authorized** in your configuration, and you will have the option to **Reauthorize** in case you need to do so, or when your token expires:
+   
+    ![ServiceNow CMDB authorized](../../images/cloud-application-manager/management/servicenow-cmdb-authorized.png)
 
 The **Activity** audit log will show a record whenever the ITSM ServiceNow CMDB integration has been switched on or off:
 
@@ -67,13 +76,13 @@ Once ServiceNow CMDB integration has been configured, the following behavior wil
 
 #### When deploying a new instance
 
-When a new instance is deployed in Cloud Application Manager, the following fields will be sent to ServiceNow CMDB in one new cmdb_ci entity:
+When a new instance is deployed in Cloud Application Manager the following fields will be sent to ServiceNow CMDB in one new cmdb_ci entity:
 
-* “name”: name of the instance in CAM
-* short_description”: type of service
-* “attributes”: provider type, provider managed_os, provider description, provider name and service type.
-* “comments”: Instance name and instance Id
-* “correlation_id”: Instance Id
+* **“name”**: name of the instance in CAM
+* **“short_description”**: type of service
+* **“attributes”**: provider type, provider managed_os, provider description, provider name and service type.
+* **“comments”**: Instance name and instance Id
+* **“correlation_id”**: Instance Id
 
 The instance activity log will show that the instance deployment was registered into ServiceNow CMDB:
 
@@ -81,7 +90,7 @@ The instance activity log will show that the instance deployment was registered 
 
 #### When terminating an instance
 
-When an instance is terminated, its corresponding ServiceNow entity is deleted from ServiceNow CMDB.
+When an instance is terminated its corresponding ServiceNow entity is deleted from ServiceNow CMDB.
 
 The instance activity log will show that the instance termination has been informed to ServiceNow CMDB for it to be unregistered:
 
@@ -89,7 +98,7 @@ The instance activity log will show that the instance termination has been infor
 
 ### Contacting Cloud Application Manager Support
 
-Customers can contact the CenturyLink Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
+Customers can contact the Lumen Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
 
 **Contact:**
 

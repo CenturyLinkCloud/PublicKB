@@ -15,13 +15,13 @@ This Blueprint will install TimeKeeper software that will allow you to synchroni
 For more information, please visit http://www.fsmlabs.com/.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
 After reading this article, the user should understand how to install TimeKeeper software.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 * TimeKeeper license file available by emailing support@fsmlabs.com.
 
 ### Postrequisite
@@ -36,7 +36,7 @@ These are the instructions to be executed for existing server installation. Time
 1. Deploy or Identify an Existing Server.
    * Identify the server targeted for TimeKeeper installation.
    * The Operating system must be supported by the Script Package.
-   * The server must be a server within your CenturyLink Cloud account.
+   * The server must be a server within your Lumen Cloud account.
 
 2. Select 'Execute the Package on a Server Group'.
    * Packages can be executed on one more more servers in a Group.
@@ -53,14 +53,14 @@ These are the instructions to be executed for existing server installation. Time
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. Additional licensing is required from FSMLabs.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. Additional licensing is required from FSMLabs.
 
 ### About FSMLabs
-CenturyLink Cloud works with [FSMLabs](http://www.fsmlabs.c) to provide FSMLabs.
+Lumen Cloud works with [FSMLabs](http://www.fsmlabs.c) to provide FSMLabs.
 
 ### Frequently Asked Questions
 
 #### Who should I contact for support?
-* For issues related to deploying the TimeKeeper Blueprint on CenturyLink
+* For issues related to deploying the TimeKeeper Blueprint on Lumen
 Cloud, licensing or accessing the deployed software, please visit the [FSMLabs http://www.fsmlabs.com] and email support@fsmlabs.com.
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](https://t3n.zendesk.com/tickets/new).

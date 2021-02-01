@@ -15,6 +15,7 @@ The LAMP Stack app is defined in Cloud Application Manager as a box that you can
 It takes 90 minutes to go through this tutorial. By the end, you’d know how to use the plugin to integrate with your own Jenkins setup and automate deployments painlessly.
 
 **In this article:**
+
 * Before you begin
 * Create a Jenkins build job
 * Trigger a CI/CD build
@@ -22,6 +23,7 @@ It takes 90 minutes to go through this tutorial. By the end, you’d know how to
 ### Before You Begin
 
 You need the following:
+
 * Get an Cloud Application Manager account.
 * Fork a repository of this [GitHub project](https://github.com/ElasticBox/Easy-PHP-MySQL). You’ll use this to make some code changes and trigger a Jenkins build.
 * Build a [LAMP Stack box with a binding to a MySQL Database box](lamp-stack-tutorial.md). Create and save a deployment profile for both boxes, but don’t deploy.
@@ -31,6 +33,7 @@ You need the following:
 ___
 
 ### Create a Jenkins Build Job
+
 Now that you’ve installed Jenkins server and registered your Cloud Application Manager account there, you’re ready to create a job that automates a test build.
 
 **Step 1. Create a new job based on an existing template.**
@@ -163,5 +166,6 @@ We’re sorry you’re having an issue in [Cloud Application Manager](https://ww
 For issues related to API calls, send the request body along with details related to the issue.
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
 * Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log

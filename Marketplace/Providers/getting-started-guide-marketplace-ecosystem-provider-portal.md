@@ -7,24 +7,24 @@
 "sticky": true
 }}}
 
-The Provider Portal (PP) is an application that allows CenturyLink Cloud Provider Partners to manage the display of their products on the CenturyLink Marketplace. Once a Provider has certified a product, a member of the Marketplace Team provides the partner with a welcome email and credentials to log into PP.
+The Provider Portal (PP) is an application that allows Lumen Cloud Provider Partners to manage the display of their products on the Lumen Marketplace. Once a Provider has certified a product, a member of the Marketplace Team provides the partner with a welcome email and credentials to log into PP.
 
 ### Signing In
 
-Sign into the [Provider Portal](https://provider-portal.ctl.io/#/login) using your CenturyLink Cloud credentials. You will be redirected to the Welcome screen. **New** You can now log in using your Google credentials.
+Sign into the [Provider Portal](https://provider-portal.ctl.io/#/login) using your Lumen Cloud credentials. You will be redirected to the Welcome screen. **New** You can now log in using your Google credentials.
 
 ![EPP1](../../images/EPP1.png)
 
 ### Provider Homepage
 
-Once logged in you will directed to your Provider Home page. The home page will have any message that the CenturyLink Marketplace team have sent you or have been created due to an error with a product deployment. There is also a Provider Workflow which is a dashboard that shows your company specific progress on onboarding tasks as well as product completion progress.
+Once logged in you will directed to your Provider Home page. The home page will have any message that the Lumen Marketplace team have sent you or have been created due to an error with a product deployment. There is also a Provider Workflow which is a dashboard that shows your company specific progress on onboarding tasks as well as product completion progress.
 You can hover over the pie charts on the dashboard for more information.
 
 ![EPP](../../images/EPPnew7.png)
 
 ### Company Information
 
-Click the **Company Information** tab. This takes you to your **Provider Details** page, which was created for you when we established your CenturyLink Marketplace profile. Here you can review, edit, update your company information, and change the logo.
+Click the **Company Information** tab. This takes you to your **Provider Details** page, which was created for you when we established your Lumen Marketplace profile. Here you can review, edit, update your company information, and change the logo.
 
 ![EPP2](../../images/EPP2.png)
 
@@ -36,7 +36,7 @@ You can sign up to be notified upon the creation of a subscription for your soft
 
 ![EPP](../../images/EPPnew3.png)
 
-The company logo, content that is provided in the **Description** field and products that are available in the CenturyLink Marketplace are what the customer will see when clicking the company name in the Marketplace.
+The company logo, content that is provided in the **Description** field and products that are available in the Lumen Marketplace are what the customer will see when clicking the company name in the Marketplace.
 
 This is a sample of the customer view of your Company Information on the Marketplace:
 
@@ -44,7 +44,7 @@ This is a sample of the customer view of your Company Information on the Marketp
 
 ### Remit Address
 
-You will need to provide the remit address information for your company so that CenturyLink can remunerate payments for Marketplace subscriptions.
+You will need to provide the remit address information for your company so that Lumen can remunerate payments for Marketplace subscriptions.
 
 ### Marketplace Provider Agreement (MPA)
 
@@ -56,7 +56,7 @@ It can be found [here](https://www.ctl.io/legal/marketplace/). Once you have rea
 
 ### Creating a New Product
 
-Product creation is done in the staging environment of the Provider Portal to allow for testing. To create products you will log into the staging environment here: https://provider-portal.staging.ctl.io/#/login. You will login with your same CenturyLink Cloud credentials for both production and staging.
+Product creation is done in the staging environment of the Provider Portal to allow for testing. To create products you will log into the staging environment here: https://provider-portal.staging.ctl.io/#/login. You will login with your same Lumen Cloud credentials for both production and staging.
 
 From the **Provider Details** page, you can find a list of your products that have been added to the Marketplace. If you're a new Provider, you may not see any products listed.
 
@@ -113,7 +113,7 @@ From the **Provider Details** page, you can find a list of your products that ha
 
 10. Click **Create**.
 
-11. Once all of the technical and billing integrations are completed and you are ready to test the product in staging, Click **Request Publication**. This forwards a request to the CenturyLink Marketplace team notifying them to review and publish your product. If there are questions/issues related to the submission, a Marketplace team member will contact you. Otherwise, your product is published within two business days.
+11. Once all of the technical and billing integrations are completed and you are ready to test the product in staging, Click **Request Publication**. This forwards a request to the Lumen Marketplace team notifying them to review and publish your product. If there are questions/issues related to the submission, a Marketplace team member will contact you. Otherwise, your product is published within two business days.
 A Marketplace team member will give you a test account to be able to test the product in staging.
 
 **Note**:
@@ -142,7 +142,7 @@ Required steps for publication of products to staging are as follows:
 
 4. Click **Request Publication**. Note: You have to click this button or your changes won't be visible on the Marketplace.
 
-5. A CenturyLink Marketplace team member will review and approve the changes and publish.
+5. A Lumen Marketplace team member will review and approve the changes and publish.
 
 ### Cloning a Product
 
@@ -187,7 +187,7 @@ It is a requirement that partners enter an End User License Agreement (EULA) for
 
 ### Service Tasks
 
-Some products are assigned service tasks. This is determined between the partner and the CenturyLink Ecosystem engineer during the integration process. If a product requires service tasks, you can add information as needed by accessing the **Service Task** tab per the directions below:
+Some products are assigned service tasks. This is determined between the partner and the Lumen Ecosystem engineer during the integration process. If a product requires service tasks, you can add information as needed by accessing the **Service Task** tab per the directions below:
 
 1. Sign into the [Provider Portal](http://provider-portal.ctl.io/#/login) and navigate to the **Product** tab. This takes you to the product details page for your company.
 
@@ -212,7 +212,7 @@ This opens a new form where you input your user name, and a new password will be
 ![EPP10](../../images/EPP10.png)
 
 **Q: What if I forget my User Name?**
-**A:** Reach out to the [CenturyLink help desk](mailto:help@ctl.io).
+**A:** Reach out to the [Lumen help desk](mailto:help@ctl.io).
 
 **Q: What Markdown is accepted by EPP?**
 **A:** Most Markdown formatting is recognized. See the [markdown-it](https://markdown-it.github.io/), the GitHub Markdown editor, for more detail.
@@ -221,7 +221,7 @@ This opens a new form where you input your user name, and a new password will be
 **A:** Files must be 1MB or smaller. EPP accepts the following image file types: PNG, BMP, JPG, or GIF.
 
 **Q: How long after I click Request Publication can I expect my product to be published?**
-**A:** Within 2 business days, the CenturyLink Cloud Marketplace Team will approve and publish your product. At that point, it will be fully available for customers in the [Marketplace](https://www.ctl.io/marketplace/).
+**A:** Within 2 business days, the Lumen Cloud Marketplace Team will approve and publish your product. At that point, it will be fully available for customers in the [Marketplace](https://www.ctl.io/marketplace/).
 
 **Q: Why are there two different ways to Preview my content on the Product Detail page?**
 **A:** Here's the difference.
@@ -250,7 +250,7 @@ This is what it looks like in **Preview** mode.
 
 ![EPP18](../../images/EPP18.png)
 
-**A:** You may have already completed your data entry and requested publication, but your product isn't viewable in published mode until the CenturyLink Cloud Marketplace Team approves and publishes the content.
+**A:** You may have already completed your data entry and requested publication, but your product isn't viewable in published mode until the Lumen Cloud Marketplace Team approves and publishes the content.
 
 
 ### Other Resources
@@ -258,6 +258,6 @@ This is what it looks like in **Preview** mode.
 * Within the Provider Portal there is a [Help](https://provider-portal.ctl.io/#/help) tab that has links and videos on how to use the provider portal.
 * Within the Provider Portal there are Green ? bubbles next to certain fields, click the ? to learn more.
 * [GitHub Markdown Editor](https://markdown-it.github.io/)
-* The CenturyLink Cloud [Marketplace](https://www.ctl.io/marketplace/)
+* The Lumen Cloud [Marketplace](https://www.ctl.io/marketplace/)
 * Marketplace Provider [Onboarding Resource Guide](onboarding-resources.md).
 * For questions or suggestions on how to make this Guide more useful, email the [Marketplace team](mailto:Marketplace@centurylink.com).

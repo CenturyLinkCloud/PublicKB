@@ -17,16 +17,16 @@ CA Unified Infrastructure Management (CA UIM) is a scalable IT monitoring soluti
 * [Email & phone support](https://www.ca.com/us/contact/call-me.aspx)
 
 ### Description
-CA Technologies has integrated their _CA Unified Infrastructure Management_ (CA UIM) with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this IT monitoring solution. See more at [CA Unified Infrastructure Management](http://www.ca.com/us/opscenter/ca-unified-infrastructure-management.aspx?intcmp=searchresultclick&resultnum=1).
+CA Technologies has integrated their _CA Unified Infrastructure Management_ (CA UIM) with the Lumen Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this IT monitoring solution. See more at [CA Unified Infrastructure Management](http://www.ca.com/us/opscenter/ca-unified-infrastructure-management.aspx?intcmp=searchresultclick&resultnum=1).
 
 ### Audience
-CenturyLink Cloud users looking to enhance the monitoring capabilities of their CenturyLink Cloud Environment.
+Lumen Cloud users looking to enhance the monitoring capabilities of their Lumen Cloud Environment.
 
 ### Impact
-After reading this article, the user should be able to install UIM for Windows on a CenturyLink Cloud server.
+After reading this article, the user should be able to install UIM for Windows on a Lumen Cloud server.
 
 ### Prerequisites
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 * MS-SQL Database server with superuser login credentials.
 * Enable default MS-SQL server listening port `1433`.
 
@@ -80,9 +80,9 @@ For more information about UIM, click on the following links:
 * [Getting Started - CA Unified Infrastructure Management](https://wiki.ca.com/display/UIM82/Getting+Started)
 * [Demo Video - CA Unified Infrastructure Management Demo](http://www.ca.com/us/opscenter/ca-unified-infrastructure-management.aspx)
 
-#### Issues related to deploying UIM Blueprints on CenturyLink Cloud
+#### Issues related to deploying UIM Blueprints on Lumen Cloud
 * Contact [our sales team](mailto:sales@ca.com).
 
 #### Who should I contact for support?
-* For issues related to deploying the UIM Blueprint on CenturyLink Cloud, licensing or accessing the deployed software, please visit the [CA Support Website](http://www.ca.com/us/support.aspx?intcmp=headernav).
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or through the [CenturyLink Cloud Support website](https://support.ctl.io/hc/en-us/requests/new).
+* For issues related to deploying the UIM Blueprint on Lumen Cloud, licensing or accessing the deployed software, please visit the [CA Support Website](http://www.ca.com/us/support.aspx?intcmp=headernav).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or through the [Lumen Cloud Support website](https://support.ctl.io/hc/en-us/requests/new).

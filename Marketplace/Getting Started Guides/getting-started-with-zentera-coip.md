@@ -8,7 +8,7 @@
 
 ### Getting Started with Zentera Systems
 
-After reading this article, the reader should know how to deploy the [Zentera](http://www.zentera.net) CoIP® (Cloud over IP®) secure networking solution on CenturyLink Multi-Cloud.
+After reading this article, the reader should know how to deploy the [Zentera](http://www.zentera.net) CoIP® (Cloud over IP®) secure networking solution on Lumen Multi-Cloud.
 
 ### Partner Profile
 
@@ -48,15 +48,15 @@ The Zentera CoIP platform offers the following benefits:
 
 ### Offer
 
-The Zentera CoIP solution is available for CenturyLink Cloud users as a virtual appliance. To receive a 60-day CoIP trial license, please contact Zentera Systems using the following link: [http://www.zentera.net/try-it-now](http://www.zentera.net/try-it-now)
+The Zentera CoIP solution is available for Lumen Cloud users as a virtual appliance. To receive a 60-day CoIP trial license, please contact Zentera Systems using the following link: [http://www.zentera.net/try-it-now](http://www.zentera.net/try-it-now)
 
 ### Audience
 
-CenturyLink customers with Multi-cloud deployments.
+Lumen customers with Multi-cloud deployments.
 
 ### Prerequisites
 
-* Access to the CenturyLink Cloud platform as an authorized user
+* Access to the Lumen Cloud platform as an authorized user
 
 * [Create a New VM](https://www.ctl.io/guides/servers/create-a-custom-server/) if you don't have an existing VM.
 
@@ -122,9 +122,9 @@ In the zCenter Portal, Click the API Management Tab on the left bar.
 
 * You can remain logged in. You will be returning to zCenter at the end of this Runner job.
 
-**Step 6: Deploy Runner on CenturyLink to Install CoIP zLink agents into your servers (VMs)**
+**Step 6: Deploy Runner on Lumen to Install CoIP zLink agents into your servers (VMs)**
 
-1. Locate the Zentera Runner tile from the CenturyLink Runner panel.
+1. Locate the Zentera Runner tile from the Lumen Runner panel.
 
 2. Click on the Zentera tile.
 
@@ -158,11 +158,11 @@ In the zCenter Portal, Click the API Management Tab on the left bar.
 
 ### Post-Installation Note
 
-If you want to access your CoIP web management portal, zCenter, from a computer that is outside of the CenturyLink Cloud network, you need to [add a public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the CenturyLink Control Portal.
+If you want to access your CoIP web management portal, zCenter, from a computer that is outside of the Lumen Cloud network, you need to [add a public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Lumen Control Portal.
 
 ### Pricing
 
-The costs associated with the Zentera CoIP Runner deployment are for the CenturyLink Cloud infrastructure only. The Zentera CoIP Proof of Concept (PoC) comes with 60-day trial license. For a production license, please contact: [ctl-sales@zentera.net](mailto:ctl-sales@zentera.net).
+The costs associated with the Zentera CoIP Runner deployment are for the Lumen Cloud infrastructure only. The Zentera CoIP Proof of Concept (PoC) comes with 60-day trial license. For a production license, please contact: [ctl-sales@zentera.net](mailto:ctl-sales@zentera.net).
 
 ### Frequently Asked Questions
 
@@ -174,5 +174,5 @@ Purchase license by sending email: [ctl-sales@zentera.net](mailto:ctl-sales@zent
 
 **Who should I contact for support?**
 
-For issues related to deploying the Zentera CoIP on CenturyLink Cloud, please contact [ctl-support@zentera.net](mailto:ctl-support@zentera.net).
-For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
+For issues related to deploying the Zentera CoIP on Lumen Cloud, please contact [ctl-support@zentera.net](mailto:ctl-support@zentera.net).
+For issues related to cloud infrastructure, please open a ticket using the [Lumen Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).

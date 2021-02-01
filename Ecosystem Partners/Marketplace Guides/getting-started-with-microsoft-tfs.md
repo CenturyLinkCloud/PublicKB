@@ -14,7 +14,7 @@
 Microsoft Team Foundation Server 2013 (TFS 2013) provides the collaboration hub at the center of the Application Lifecycle Management (ALM) solution. By automating the software delivery process, entire teams can collaborate across roles and track team actions and project artifacts such as requirements, tasks, bugs, source code, build results, and test results. Team Foundation Server 2013 enables team rooms, comprehensive reporting, and dashboards that provide historical trending, full traceability, and real-time visibility into software quality.
 
 ### Description
-This KB article describes the options for installing and configuring TFS 2013 on the CenturyLink Cloud using Blueprints.
+This KB article describes the options for installing and configuring TFS 2013 on the Lumen Cloud using Blueprints.
 
 Due to the complexities of the possible TFS 2013 configurations, there are several TFS 2013 Blueprints available to allow you to achieve your required scenario.
 * Team Foundation Server 2013 Standalone Small
@@ -52,13 +52,13 @@ This Blueprint installs TFS 2013 and performs the Basic configuration, which ins
 This Blueprint installs (a full edition of) SQL Server and TFS 2013. The user should select either SQL Server 2014 Standard or Enterprise.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
 After reading this article, the user should be able to deploy a TFS 2013 Blueprint to create a TFS 2013 server.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 
 #### Steps to Deploy Blueprint
 1. Locate the "Team Foundation Server" Blueprint.
@@ -90,10 +90,10 @@ After reading this article, the user should be able to deploy a TFS 2013 Bluepri
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Access your TFS 2013 server
-To access your TFS 2013 server from a computer outside the CenturyLink Cloud network use the OpenVPN client as specified here: [How To Configure Client VPN](https://www.ctl.io/knowledge-base/network/how-to-configure-client-vpn/).
+To access your TFS 2013 server from a computer outside the Lumen Cloud network use the OpenVPN client as specified here: [How To Configure Client VPN](https://www.ctl.io/knowledge-base/network/how-to-configure-client-vpn/).
 
 ### Pricing
-The costs associated with this Blueprint deployment include CenturyLink Cloud infrastructure usage.
+The costs associated with this Blueprint deployment include Lumen Cloud infrastructure usage.
 
 Additional licensing costs will apply for Microsoft software, including TFS 2013 and SQL Server. If you deploy with SQL Server, charges will apply for SQL Server. See the article [install SQL Server](../../Blueprints/deploy-microsoft-sql-server-using-blueprint.md) for information on how to install SQL Server if you have any questions. This Blueprint is automatically run if you choose the Blueprint, **Blueprint - Team Foundation Server 2013 with SQL Server**.
 
@@ -102,14 +102,14 @@ The TFS 2013 license is not included. You can choose to configure TFS 2013 on fi
 [Locate or Change the Product Key for Team Foundation Server](https://msdn.microsoft.com/en-us/library/Cc668758.aspx)
 
 ### Terawe
-CenturyLink Cloud works with [Terawe](http://terawe.com), a Microsoft Cloud and Hosting partner, to provide new  cloud offerings to our customers for various Microsoft products.
+Lumen Cloud works with [Terawe](http://terawe.com), a Microsoft Cloud and Hosting partner, to provide new  cloud offerings to our customers for various Microsoft products.
 
 Terawe is a software technology company that provides world-class sustainable solutions and services for customers. With key initiatives spanning industry verticals in education and hosting, along with in-depth expertise including Cloud, Data Platform, Mobility, Big Data and Business Intelligence, we create compelling solutions for customers at the highest efficiency and quality.
 
 ### Frequently Asked Questions
 
 #### Who should I contact for support?
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](https://t3n.zendesk.com/tickets/new).
 
-* For issues related to deploying the Terawe TFS Blueprints on CenturyLink Cloud, please email
+* For issues related to deploying the Terawe TFS Blueprints on Lumen Cloud, please email
 [support@terawe.com](mailto:support@terawe.com).

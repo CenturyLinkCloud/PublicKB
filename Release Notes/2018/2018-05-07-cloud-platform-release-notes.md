@@ -16,7 +16,7 @@ We are excited to launch a few major enhancements to our Managed Services Anywhe
 
 ###### Supported Platforms
 
-Besides AWS and Azure, we are now expanding our supported platforms to include CenturyLink Private Cloud on VMware Cloud Foundation. Users of CenturyLink Private Cloud on VMware Cloud Foundation can now signup for Cloud Application Manager and enable Managed Services and get the same features that they would get on AWS & Azure.
+Besides AWS and Azure, we are now expanding our supported platforms to include Lumen Private Cloud on VMware Cloud Foundation. Users of Lumen Private Cloud on VMware Cloud Foundation can now signup for Cloud Application Manager and enable Managed Services and get the same features that they would get on AWS & Azure.
 
 ###### Improved set of fully supported services:
 
@@ -26,14 +26,14 @@ A) Managed Operating System of Microsoft Windows and RedHat Enterprise Linux
 
 B) Managed Applications (Microsoft SQL Server, Microsoft IIS Web Server, Oracle MySQL Enterprise Edition, Apache Web Server, Apache Tomcat)
 
-C) AWS Services (Amazon EC2, VPC, Relational Database Services, EBS, S3, ELB, Route 53, ElastiCache, CloudFront, Management Tools, Cloud Formation, Direct Connect, Cloud Watch, Cloud Trail, Trusted Advisor, Cert Manager, Organizations, Auto Scale, Directory Services, IAM)
+C) AWS Services (Amazon EC2, VPC, Relational Database Services, EBS, S3, ELB, Route 53, ElastiCache, CloudFront, Management Tools, CloudFormation, Direct Connect, Cloud Watch, Cloud Trail, Trusted Advisor, Cert Manager, Organizations, Auto Scale, Directory Services, IAM)
 
 D) Azure Services (Virtual Machines, Virtual Network, VPN Gateway, Security Groups, ExpressRoute, IP Addresses, Blob Storage, Queue Storage, Disk Storage
 
-E) CenturyLink Private Cloud on VMware Cloud Foundation Edge Gateway & VMware vCloud Director service features
+E) Lumen Private Cloud on VMware Cloud Foundation Edge Gateway & VMware vCloud Director service features
 
 ###### Service enablement
-Going forward customers can enable Managed Services by "Provider" instead of enabling by instance. Provider is a representation of an Account in the downstream cloud platform. Once Managed Services are enabled on a Provider, CenturyLink will provide full support on the services listed above.
+Going forward customers can enable Managed Services by "Provider" instead of enabling by instance. Provider is a representation of an Account in the downstream cloud platform. Once Managed Services are enabled on a Provider, Lumen will provide full support on the services listed above.
 
 ###### Billing
 Going forward Managed Services charge is calculated based on the spend of the Provider on which it is enabled unlike the per instance/per hour model. Managed Services are charged on a graduated spend.
@@ -44,7 +44,7 @@ Find out more about [Managed Services Anywhere](https://www.ctl.io/cloud-applica
 
 ##### Cloud Optimization and Analytics
 
-A new Usage History Enhancement details how CenturyLink safeguards customer accounts so they are billed fairly.  If a Reserved instance is purchased in one account and assigned by Amazon Web Services to a different account, CenturyLink will perform inter-customer adjustments. The RI-purchasing account will be credited and the RI-consuming account will be debited (see image below).
+A new Usage History Enhancement details how Lumen safeguards customer accounts so they are billed fairly.  If a Reserved instance is purchased in one account and assigned by Amazon Web Services to a different account, Lumen will perform inter-customer adjustments. The RI-purchasing account will be credited and the RI-consuming account will be debited (see image below).
 
 ![Image1](../../images/cloud-application-manager/integrated-billing-report.png)
 

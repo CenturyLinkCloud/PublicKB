@@ -16,7 +16,7 @@ On the March 1 invoice, Cloud Application Manager will reveal per-provider billi
 
 ###### Application Lifecycle Management
 
-Going forward when a DCC or VMware vCloud provider type is configured, Cloud Application Manager will auto-discover existing instances in DCC as well as VMware vCloud based environments. With this additions, the discovery feature of existing instances is now available for any CLC, AWS, Azure, DCC, CenturyLink Private Cloud on VMware Cloud Foundation and VMWare vCloud configured provider.
+Going forward when a DCC or VMware vCloud provider type is configured, Cloud Application Manager will auto-discover existing instances in DCC as well as VMware vCloud based environments. With this additions, the discovery feature of existing instances is now available for any CLC, AWS, Azure, DCC, Lumen Private Cloud on VMware Cloud Foundation and VMWare vCloud configured provider.
 
 Consolidated Account activity:
 
@@ -47,7 +47,7 @@ Product tips:
 
 ##### Object Storage
 
-CenturyLink Cloud's Object Storage service allows administrators to manage users on the storage level. These users are not the same as users in the Control Portal account, and through the S3 protocol, they may be granted limited access to buckets and objects.
+Lumen Cloud's Object Storage service allows administrators to manage users on the storage level. These users are not the same as users in the Control Portal account, and through the S3 protocol, they may be granted limited access to buckets and objects.
 
 Users may be disabled and re-enabled. It is not currently possible to delete users. When a user is disabled, buckets and objects owned by that user will become inaccessible.
 

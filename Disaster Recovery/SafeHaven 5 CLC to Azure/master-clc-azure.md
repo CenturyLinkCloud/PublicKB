@@ -19,7 +19,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 1. [Gather Production Server Information](../SafeHaven 5 CLC to AWS/Gather Production Server Information.md)
 
-2. [Create Production SRN in CLC](../SafeHaven 5 CLC to AWS/Create Production SRN in CenturyLink Cloud.md)
+2. [Create Production SRN in CLC](../SafeHaven 5 CLC to AWS/Create Production SRN in Lumen Cloud.md)
 
 3. [Create CMS in Azure](CreateCMSAzure.md)
 
@@ -33,7 +33,7 @@ This article explains how to setup SafeHaven at a high level and use SafeHaven f
 
 8. [Add SRN Peer](../SafeHaven 5 CLC to AWS/Add SRN Peer.md)
 
-9. [Add and Claim Storage on the SRNs](../SafeHaven 5 CLC to AWS/Add and Claim Storage on Production SRN in CenturyLink Cloud.md)
+9. [Add and Claim Storage on the SRNs](../SafeHaven 5 CLC to AWS/Add and Claim Storage on Production SRN in Lumen Cloud.md)
 
 10. [Create Windows Protection Group,Install LRA and Start Replication](../SafeHaven 5 CLC to AWS/Create-Windows-Protection-Group-Install-LRA-and-Start-Replication.md)
 

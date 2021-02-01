@@ -6,7 +6,7 @@
  "contentIsHTML": false
  }}}
 
- The CenturyLink Cloud Marketplace supports the following billing models:
+ The Lumen Cloud Marketplace supports the following billing models:
 
  * Hourly
  * Monthly
@@ -26,10 +26,10 @@ To build out the APIs and Product Provisioning, the SKUs must be created.
 The process for SKU creation is as follows:
 
 * Provider submits pricing information to Marketplace team representative.
-* Marketplace team representative formats the SKUs and submits them to the CenturyLink Platform billing team to create the SKUs in staging.
+* Marketplace team representative formats the SKUs and submits them to the Lumen Platform billing team to create the SKUs in staging.
 * Once created the Marketplace team representative will assign the SKUs to the provider's alias and associated products in the Provider Portal.
 * Provider can then use the SKUs to build out the API calls.
-* Once the integration and SKUs have been successfully tested in staging, a Marketplace team representative will submit them to the CenturyLink Platform billing team to create the SKUs in production.
+* Once the integration and SKUs have been successfully tested in staging, a Marketplace team representative will submit them to the Lumen Platform billing team to create the SKUs in production.
 
 
 Should you have additional questions, please contact us at [Marketplace@centurylink.com](mailto: Marketplace@centurylink.com).

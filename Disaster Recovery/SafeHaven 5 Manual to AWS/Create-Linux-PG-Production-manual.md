@@ -1,5 +1,5 @@
 {{{
-  "title": "Create Linux Protection Group with Production site in CenturyLink Private Cloud on VMware Cloud Foundation",
+  "title": "Create Linux Protection Group with Production site in Lumen Private Cloud on VMware Cloud Foundation",
   "date": "02-06-2018",
   "author": "Anshul Arora",
   "attachments": [],
@@ -7,10 +7,10 @@
 }}}
 
 ### Article Overview
-This article explains how to attach a RAW disk to Production SRN in CenturyLink Private Cloud on VMware Cloud Foundation and create a Linux Protection Group.
+This article explains how to attach a RAW disk to Production SRN in Lumen Private Cloud on VMware Cloud Foundation and create a Linux Protection Group.
 
 ### Requirements
-Access to the Production SRN in CenturyLink Private Cloud on VMware Cloud Foundation and permissions to add raw disks to it.
+Access to the Production SRN in Lumen Private Cloud on VMware Cloud Foundation and permissions to add raw disks to it.
 
 ### Assumption
 This article assumes that:
@@ -71,10 +71,5 @@ For example, if you added a 17GB disk in step 1, then please add a second raw di
 8. Please read the acknowledgement, and check the box.
 
 9. Verify the Protection Group summary, and click **Create**.
-
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MhANG2fdiKA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</p>
 
 **Next Step** is to [Install Scripts and Start Replication for Linux Protection Group](../SafeHaven 5 CLC to AWS/Install Scripts and Start Replication for Linux Protection Group.md)

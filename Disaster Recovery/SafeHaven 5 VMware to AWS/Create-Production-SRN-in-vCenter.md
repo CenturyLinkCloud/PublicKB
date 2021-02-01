@@ -29,8 +29,8 @@ This article assumes that the user has login access to Vcenter
 
 5. Click on **Browse** and select the SafeHaveAppliance OVA file. Click **Next**
 
-6. Verify the OVF template details : 
-Make sure that Product is **SafeHavenAppliance**, version is **5.0.x.x**, and Vendor is **CenturyLink Inc.**  
+6. Verify the OVF template details :
+Make sure that Product is **SafeHavenAppliance**, version is **5.0.x.x**, and Vendor is **Lumen Inc.**  
 Click **Next**.
 
 7. Enter the name fo the VM(e.g. SRN-PR), and select the Inventory Location. Click **Next**.
@@ -44,10 +44,5 @@ Click **Next**.
 11. Verify all the properties of the VM. You may choose for the VM to automatically **power on the after deployment** by checking the box in fron of it. Click **Finish**.
 
 **NOTE:** This will deploy an SRN in the vCenter. The deployment can take some time to complete. Once the deployment complete, the user can click on the VM and go to the **Summary** tab to verify all the proterties of the VM
-
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-FooxE4w8LI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</p>
 
 **Next Step** is to [Create CMS in AWS](../SafeHaven 5 CLC to AWS/Create CMS in AWS.md)

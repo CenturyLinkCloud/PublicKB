@@ -10,13 +10,13 @@
 
 #### Audience
 
-This article is to support customers of Runner, a product that enables teams, developers, and engineers to quickly provision, interact, and modify their environments anywhere - CenturyLink Cloud, third-party cloud providers, and on-premises.  Additionally, the responses in this FAQ document are specific to using the service through the Control Portal.
+This article is to support customers of Runner, a product that enables teams, developers, and engineers to quickly provision, interact, and modify their environments anywhere - Lumen Cloud, third-party cloud providers, and on-premises.  Additionally, the responses in this FAQ document are specific to using the service through the Control Portal.
 
 #### FREQUENTLY ASKED QUESTIONS
 
-**Q: Do I need a CenturyLink Cloud account to use the Runner tools?**
+**Q: Do I need a Lumen Cloud account to use the Runner tools?**
 
-A: Yes, you will need a CenturyLink Cloud account. If you don't already have an account with us, you can start with a [free 30 day trial](https://www.ctl.io/free-trial/) to help kick the tires.
+A: Yes, you will need a Lumen Cloud account. If you don't already have an account with us, you can start with a [free 30 day trial](https://www.ctl.io/free-trial/) to help kick the tires.
 
 **Q: How can I use Runner services against resources present in other cloud providers or on-prem environment?**
 
@@ -44,9 +44,9 @@ A: Yes, you will need a CenturyLink Cloud account. If you don't already have an 
 }
 ```
 
-**Q: Will I be able to use Runner to manage my CenturyLink Cloud resources?**
+**Q: Will I be able to use Runner to manage my Lumen Cloud resources?**
 
-**A:** Yes our services use the underlying Centurylink Cloud APIs to let you manage your resources in Centurylink Cloud. In addition, you can use our services to manage your resources on third-party cloud providers, and on-premises.
+**A:** Yes our services use the underlying Lumen Cloud APIs to let you manage your resources in Lumen Cloud. In addition, you can use our services to manage your resources on third-party cloud providers, and on-premises.
 
 **Q: I previously defined a job, how do I execute it again?**
 

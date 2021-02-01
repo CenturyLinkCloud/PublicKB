@@ -20,7 +20,7 @@ In 2015 the RSA Conference’s Innovation Sandbox awarded Waratek the title of�
 * [Sales and Marketing](mailto:sales@waratek.com)
 
 ### Description
-Waratek has made their award winning Cloud Based Application Security solution, Locker, available on the CenturyLink Cloud platform, publishing their virtual appliance as a CenturyLink Cloud Partner Template. This KB article should help the reader understand why Runtime Application Self Protection has been described as the "Must Have Emerging Technology’ and why use of it can help you confidently move more of your applications to a cloud based environment.
+Waratek has made their award winning Cloud Based Application Security solution, Locker, available on the Lumen Cloud platform, publishing their virtual appliance as a Lumen Cloud Partner Template. This KB article should help the reader understand why Runtime Application Self Protection has been described as the "Must Have Emerging Technology’ and why use of it can help you confidently move more of your applications to a cloud based environment.
 
 Waratek Locker provides a secure container for your Java applications and enables a legacy Java application to be run in an up-to-date container to gain modern security fixes. Due to its unique understanding of application logic, Locker is able to secure your application against the OWASP and SANS leading attack vectors, such as SQL injection, with zero false positives.
 
@@ -44,16 +44,16 @@ For further information about Locker please visit: [www.waratek.com/locker](htt
 ### Technology Profile
 Waratek Locker is a secure container, which includes an Oracle certified Java virtual machine (JVM) running a standard Apache Tomcat application server. When a Java application is deployed Locker's security technology monitors its runtime environment. When it detects real-time attacks, it is capable of controlling how the application executes and thus secures it from Advanced Persistent Threats (Advanced Persistent Threats). Furthermore, this award-winning and patented technology can detect and prevent malicious attacks without any code changes to an application.
 
-This CenturyLink Blueprint provides a simple install solution of Waratek Locker on CentOS 6 and Apache Tomcat 7. It is also possible to use other application servers such as JBoss or Weblogic. Please contact Waratek to find out more.
+This Lumen Blueprint provides a simple install solution of Waratek Locker on CentOS 6 and Apache Tomcat 7. It is also possible to use other application servers such as JBoss or Weblogic. Please contact Waratek to find out more.
 
 ### Audience
-CenturyLink Cloud Users desiring a secure Java environment.
+Lumen Cloud Users desiring a secure Java environment.
 
 ### Impact
-After reading this article, the user should be able to install Locker on a CenturyLink Cloud server.
+After reading this article, the user should be able to install Locker on a Lumen Cloud server.
 
 ### Prerequisites
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 
 ### Postrequisites
 * None
@@ -126,4 +126,4 @@ Locker FAQs [http://www.waratek.com/resources/guides/locker/frequently-asked-que
 ### Who should I contact for support?
 * For issues related to deploying, configuring Waratek Locker please visit [Waratek Support](https://support.waratek.com/).
 
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](https://t3n.zendesk.com/tickets/new).

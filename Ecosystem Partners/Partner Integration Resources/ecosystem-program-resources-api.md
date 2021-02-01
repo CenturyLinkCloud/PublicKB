@@ -7,9 +7,9 @@
 }}}
 
 
-CenturyLink [Ecosystem Program Partner Members](centurylink-cloud-ecosystem-program-guide.md) gain access to a bevy of [resources](ecosystem-program-resources.md) that make integrations easy.
+Lumen [Ecosystem Program Partner Members](lumen-cloud-ecosystem-program-guide.md) gain access to a bevy of [resources](ecosystem-program-resources.md) that make integrations easy.
 
-By using the CenturyLink Cloud API, partners and customers can query and engage with cloud assets including servers, accounts, billing, etc.
+By using the Lumen Cloud API, partners and customers can query and engage with cloud assets including servers, accounts, billing, etc.
 
 ### Core Documentation
 

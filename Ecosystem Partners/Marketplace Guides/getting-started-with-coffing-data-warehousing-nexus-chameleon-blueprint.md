@@ -23,7 +23,7 @@ Coffing Data Warehousing is happy to be providing its amazing service on the Cen
 
 Coffing Data Warehousing, founded by Tom Coffing, has been providing data warehousing products, education and services since 1993. Tom and his teams have written over 50 books on data warehousing and have taught 1,000s of classes on every major data warehouse vendor. The Nexus Chameleon combines these years of experience to provide users the ability to analyze, visualize, compare, compress and move data between many disparate data warehousing systems. Coffing’s latest achievement allows users to join data between SQL Server, Oracle, and Teradata via a simple point and click interface.
 
-The Nexus Chameleon helps CenturyLink Cloud customers by unifying their data warehousing environment under one software solution. Multiple tools for multiple systems are no longer needed and this solution is not available to everyone as part of the CenturyLink Cloud Blueprint Engine. CoffingDW solutions have helped provide the largest data warehouses in the world increased cost savings, productivity, and efficiency.
+The Nexus Chameleon helps Lumen Cloud customers by unifying their data warehousing environment under one software solution. Multiple tools for multiple systems are no longer needed and this solution is not available to everyone as part of the Lumen Cloud Blueprint Engine. CoffingDW solutions have helped provide the largest data warehouses in the world increased cost savings, productivity, and efficiency.
 
 ### Solution Overview
 Nexus is a world-class business intelligence tool that provides serious insight into every major database system in your enterprise. It was designed to unite your enterprise and was designed for the most powerful and popular data sources including Redshift, Hadoop, Oracle, SQL Server, Teradata, Asterdata, Netezza, DB2, Kognitio, Vertica, Greenplum, Sybase ASE, ParAccel, and Excel.
@@ -33,13 +33,13 @@ The amazing Super Join Builder's drag and drop interface allows users to create 
 The new Garden of Analysis will perform deep analytics on any data set using local cpu and disk, saving these valuable resources on the main system. It will even stream data between Oracle, SQL Server and Teradata and then convert the DDL from one system to the other. The process of manually converting DDL, building ETL scripts and then moving this data could take weeks of work by expensive consultants. Nexus can do this in seconds with only a few clicks!
 
 ### Offer
-Coffing Data Warehousing is providing CenturyLink users a *free* trial license as part of this Blueprint. Please contact [helpdesk@coffingdw.com](mailto:helpdesk@coffingdw.com) to secure your free fully-functional trial license of the Nexus Chameleon.
+Coffing Data Warehousing is providing Lumen users a *free* trial license as part of this Blueprint. Please contact [helpdesk@coffingdw.com](mailto:helpdesk@coffingdw.com) to secure your free fully-functional trial license of the Nexus Chameleon.
 
 ### Audience
-CenturyLink Cloud Users, Database Administrators, Big Data enthusiasts
+Lumen Cloud Users, Database Administrators, Big Data enthusiasts
 
 ### Impact
-After reading this article, you should feel comfortable getting started using the Nexus Chameleon on the CenturyLink Cloud.
+After reading this article, you should feel comfortable getting started using the Nexus Chameleon on the Lumen Cloud.
 
 After executing the steps in this Getting Started document, you will have a functioning version of Nexus Chameleon running on Window Server upon which you can use to start developing data warehousing solutions.
 
@@ -88,11 +88,11 @@ Follow these steps to access and use the Nexus Chameleon software,
 1. Access the VM.
    * Connect via Remote Desktop to the target VM.
    * You will see a Nexus Icon on the desktop. Double-click it to launch Nexus.
-   * Nexus is installed, but it is not licensed. Please contact [helpdesk@coffingdw.com](mailto:helpdesk@coffingdw.com) to receive your free CenturyLink trial license.
+   * Nexus is installed, but it is not licensed. Please contact [helpdesk@coffingdw.com](mailto:helpdesk@coffingdw.com) to receive your free Lumen trial license.
    ![Coffing DW Image](../../images/ecosystem-coffing-8.png)
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no Coffing Data Warehousing Nexus license costs or additional fees bundled in.   
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. There are no Coffing Data Warehousing Nexus license costs or additional fees bundled in.   
 
 Please contact [helpdesk@coffingdw.com](mailto:helpdesk@coffingdw.com) to secure your *free*, fully-functional trial license of the Nexus Chameleon.
 
@@ -105,7 +105,7 @@ Please contact [helpdesk@coffingdw.com](mailto:helpdesk@coffingdw.com) for a tri
 
 #### Who should I contact for support?
 * For issues directly related to the Nexus Chameleon, please email [helpdesk@coffingdw.com](mailto:helpdesk@coffingdw.com). Email usually provides the quickest response, however, you may also call 1-855-333-3537 Option 3 to speak with technical support.
-* For issues related to cloud infrastructure (VM’s, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VM’s, network, etc.), or if you experience a problem deploying the Blueprint, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).
 
 #### How do I license Nexus on Window Server?
 * Nexus uses a floating license concept for licensing multiple users on Windows Server. A user, typically an administrator, will license Nexus first and create the licensing database in a folder which all server users have access to. Subsequent users will reference this database when they license Nexus. For more information on this process, please refer to [this document](http://www.coffingdw.com/data/nexus/docs/windows_server_licensing.pdf).

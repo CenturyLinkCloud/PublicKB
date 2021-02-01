@@ -9,17 +9,17 @@ This article was updated June 1, 2016 to confirm the retirement of Standard & Pr
 
 ### Introducing New Options for Backups, Plus an Update on the Retirement of Standard & Premium Backup Features
 
-Late last year, CenturyLink notified customers that the backup features associated with “Standard” and “Premium” storage were to be retired in 2016.
+Late last year, Lumen notified customers that the backup features associated with “Standard” and “Premium” storage were to be retired in 2016.
 
 UPDATE - JUNE 1, 2016: Standard & Premium backup features are now retired. Please ensure your data is backed up and protected as needed.  There is no impact to the persistent storage attached to servers.
 
-The [Simple Backup Service is CenturyLink Cloud's backup solution](https://www.ctl.io/simple-backup-service/). This integrated service offers file-level backup protection, with highly customizable retention policies. The service will be available in all CenturyLink Cloud locations, with backup locations around the world.
+The [Simple Backup Service is Lumen Cloud's backup solution](https://www.ctl.io/simple-backup-service/). This integrated service offers file-level backup protection, with highly customizable retention policies. The service will be available in all Lumen Cloud locations, with backup locations around the world.
 
 In addition, we reduced the price of block storage on April 1, two full months **before** the retirement of Standard & Premium backup features.
 
 To assist customers during this transition, here are answers to a few common questions we’ve received from customers.
 
-### Why is CenturyLink making this change?
+### Why is Lumen making this change?
 
 In short, customers have told us that they want more flexibility and control over their backups, including:
 * Custom retention policies: “I don’t want to be limited to 5 or 14 days”
@@ -28,7 +28,7 @@ In short, customers have told us that they want more flexibility and control ove
 * More control over the files backed up: “I don’t want to be constrained to just snapshots; only certain apps and data require backup”
 * The freedom to opt-out of backups entirely for certain servers, to help lower costs
 
-Another reason: a lack of usage of the Standard and Premium backup services, particularly restores. A very small number of restores have been requested in the last 12 months. Consequently, CenturyLink has focused on building and supporting products that offer more self-service features.
+Another reason: a lack of usage of the Standard and Premium backup services, particularly restores. A very small number of restores have been requested in the last 12 months. Consequently, Lumen has focused on building and supporting products that offer more self-service features.
 
 ### Is the price of storage going to drop? If so, by how much?
 
@@ -36,7 +36,7 @@ Yes – since storage no longer includes bundled backup, price reductions for bl
 
 ### Will I still be able to take snapshots manually?
 
-Yes. Snapshots are a useful feature for very specific scenarios – such as right before making impactful changes to your systems. Users can still perform [snapshots on-demand and as scheduled tasks](../Servers/creating-and-managing-server-snapshots.md). [The CenturyLink Cloud CLI can also help automate this task](https://www.ctl.io/knowledge-base/servers/centurylink-cloud-guide-to-cli/).
+Yes. Snapshots are a useful feature for very specific scenarios – such as right before making impactful changes to your systems. Users can still perform [snapshots on-demand and as scheduled tasks](../Servers/creating-and-managing-server-snapshots.md). [The Lumen Cloud CLI can also help automate this task](https://www.ctl.io/knowledge-base/servers/lumen-cloud-guide-to-cli/).
 
 ### Is my team required to take action in order to protect my data after this change?
 
@@ -61,8 +61,8 @@ Second, profile your applications. What level of data protection do your VMs nee
 Third, consider the following timeline to protect your VMs with the Simple Backup Service in the coming weeks:
 
 #### Week 1
-* Configure policies that match your data retention policies. You can create policies that feature 5 days of retention, as well as 14 days of retention – just like Standard and Premium.
-* Apply these policies to a few test servers, and verify that the backup frequency and retention period meet your business needs.
+* Configure policies that match your data retention policies. You can create policies that feature 5 days of retention, as well as 14 days of retention – just like Standard and Premium.
+* Apply these policies to a few test servers, and verify that the backup frequency and retention period meet your business needs.
 * Experiment with other elements of the Simple Backup UI.
 
 #### Week 2
@@ -75,65 +75,39 @@ Third, consider the following timeline to protect your VMs with the Simple Backu
 #### Week 4
 * Ensure that all VMs that need to be protected, are protected, either with Simple Backup or with another mechanism.
 
-### How does the Simple Backup Service compare to other options are available on CenturyLink Cloud?
+### How does the Simple Backup Service compare to other options are available on Lumen Cloud?
 
 The answer varies depending on the workload and your requirements. Along those lines, We’ve partnered with several companies who have in turn integrated their technology with our platform as Certified Ecosystem partners. We summarized a few of these below. They all have a few things in common, namely:
 * Proven features for common enterprise use cases
 * Automated deployment
 * Beta programs, PoCs, or evaluation licenses to help you try each service with little risk
-* CenturyLink Cloud SLAs that cover the underlying compute, storage, and network capabilities of each product
+* Lumen Cloud SLAs that cover the underlying compute, storage, and network capabilities of each product
 
 **None of these solutions provide VM-level snapshots, but you may find these options superior because of the choice, flexibility, and reliability they provide. Further, almost all of them offer self-service capabilities for the most common DR and backup scenarios, including restores.**
 
-#### Simple Backup Service, from CenturyLink
+#### Simple Backup Service, from Lumen
 * When to use it: To back up and protect files against corruption
 * Requirements: Outbound Internet access for servers; administrative credentials need to be stored in the Control Portal for automated deployment (manual deployment can be performed if credentials are not stored in the Control Portal)
 * Cost: $0.10 GB / mo; Self-service restores will be priced at $0.10 per GB restored
 * Licensing: None
 * Availability: GA on March 29, 2016
 * Deployment Time: Instant – agents are installed locally on each server once a backup policy is applied to a given server
-* Support Model: Supported by CenturyLink (since the product is integrated into the Control Portal), with an integrated support experience
+* Support Model: Supported by Lumen (since the product is integrated into the Control Portal), with an integrated support experience
 * Getting Started: Review the [the product page](https://www.ctl.io/simple-backup-service/), then login to the Control Portal to get started.
 * Other resources:
   * [Simple Backup Service API Documentation](https://www.ctl.io/api-docs/v2/#simple-backup)
   * [Powershell Script for the bulk application of Simple Backup Policies for all Servers in an Account](https://github.com/MattSchwabbyCLC/CLCSBSDeployment)
 
-#### Safe Haven, from CenturyLink
-* When to use it: Disaster Recovery between CenturyLink Cloud locations, with customized RTO/RPO targets.
-* Cost: $40 per VM, per month for licensing. In addition, storage fees for the “replica” site in CenturyLink Cloud apply. Compute resources are not incurred unless a test is underway, or in the event of a disaster.
+#### Safe Haven, from Lumen
+* When to use it: Disaster Recovery between Lumen Cloud locations, with customized RTO/RPO targets.
+* Cost: $40 per VM, per month for licensing. In addition, storage fees for the “replica” site in Lumen Cloud apply. Compute resources are not incurred unless a test is underway, or in the event of a disaster.
 * Licensing: None
 * Availability: GA
 * Deployment Time: Days
-* Support Model: Supported by CenturyLink (since the product is integrated into the Control Portal); on-boarding from CenturyLink is also included
+* Support Model: Supported by Lumen (since the product is integrated into the Control Portal); on-boarding from Lumen is also included
 * To Get Started: Contact your account team, or [visit the product page](https://www.ctl.io/disaster-recovery/)
 * Other resources:
   * [This section of the Knowledge Base](https://www.ctl.io/knowledge-base/disaster-recovery/safehaven-3/#1) has additional articles on Safe Haven.
-
-#### CommVault
-* When to use it: Data and file backup, with many powerful features and capabilities to protect data across a variety of platforms, and to host data across a variety of storage media. OS-level images are supported.
-* Requirements: Detailed in [this Knowledge Base article: Getting Started with CommVault Storage Blueprint](../Ecosystem Partners/Marketplace Guides/getting-started-with-commvault-storage-blueprint.md)
-* Cost: Based on the amount of storage protected. Pricing is available upon request, and evaluation licenses are available. Compute resources are required to run CommVault “control” servers in CenturyLink Cloud.
-* Licensing: Bring your own license (BYOL), available from CommVault
-* Availability: GA
-* Deployment Time: Days
-* Support Model: Software is supported by CommVault; CenturyLink Cloud supports the underlying infrastructure via our standard SLAs
-* To Get Started: 30-day evaluation licenses are available, please contact your CenturyLink account team, or [CommVault for additional information](http://www.commvault.com/contact-us).
-* Other resources:
-  * [Getting Started with CommVault Storage Blueprint](../Ecosystem Partners/Marketplace Guides/getting-started-with-commvault-storage-blueprint.md)
-
-
-#### Managed Backup
-* When to use it: File-based backup, using the Symantec NetBackup offering
-* Requirements: Virtual machines running in supported locations (UC1, VA1, IL1, GB3, SG1, CA3)
-* Cost: Tiered pricing
-* Availability: GA, in selected sites
-* Deployment Time: Self-service, if you have a Master Service Agreement in place with CenturyLink. Refer to [the FAQs to learn more](../Managed Services/managed-backup-frequently-asked-questions.md).
-* Support Model: Supported by CenturyLink (since the product is integrated into the Control Portal)
-* To Get Started: Contact Vision Solutions directly via email at [CenturyLinkInfo@visionsolutions.com](mailto:CenturyLinkInfo@visionsolutions.com); evaluation licenses are available.
-* Other resources:
-  * [Managed Backup - Product Page](https://www.ctl.io/managed-services/backup/)
-  * [Enabling & Disabling Managed Backup](../Managed Services/enabling-and-disabling-managed-backup.md)
-  * [Managed Backup FAQs](../Managed Services/managed-backup-frequently-asked-questions.md)
 
 ### Summary
 This information should give you a good starting point to investigate specialized solutions that can meet your business requirements. If there’s more details or information you would require, please let us know via [help@ctl.io](mailto:help@ctl.io).

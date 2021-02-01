@@ -1,7 +1,8 @@
 {{{
   "title": "Restarting Simple Backup Service",
-  "date": "03-30-2016",
-  "author":  "Justin Withington",
+  "date": "11-11-2019",
+  "author":  "John Gerger",
+  "keywords": ["backup", "clc", "cloud", "restarting", "sbs"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

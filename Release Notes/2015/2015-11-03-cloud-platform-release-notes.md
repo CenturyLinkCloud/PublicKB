@@ -8,7 +8,7 @@
 
 ### New Features (3)
 
-* __Intrusion Prevention has been released for General Availability.__ The [Intrusion Prevention or IPS Product](https://www.ctl.io/intrusion-prevention-service/) is now available in all CenturyLink Cloud Data Centers.  
+* __Intrusion Prevention has been released for General Availability.__ The [Intrusion Prevention or IPS Product](https://www.ctl.io/intrusion-prevention-service/) is now available in all Lumen Cloud Data Centers.  
 
   The product installs a Trend Micro Agent on a host machine to protect that host against known and unknown vulnerabilities to operating systems and over 100 applications. The IPS agent automatically scans the host for newly installed applications every 24 hours, and if any are found, the protection policy is updated accordingly. The agent is also automatically updated with new Trend Micro patches to protect against new vulnerabilities. Details on installing IPS and configuring your event notification destinations are available in the Security section of our [Knowledge Base](https://www.ctl.io/knowledge-base/security/#1).
 
@@ -46,7 +46,7 @@
 
   <img src="../../images/2015-11-03_runner-logo-releasenotes.png" alt="Runner Logo"/>
 
-  Runner enables teams, developers, and engineers to quickly provision, manage, and modify their environment in not only the CenturyLink Cloud Platform, but other cloud services, as well as on-premise deployments. Runner brings together state-based and massive parallel job execution, with multi-cloud and multi-data center support, all in a single interface.
+  Runner enables teams, developers, and engineers to quickly provision, manage, and modify their environment in not only the Lumen Cloud Platform, but other cloud services, as well as on-premise deployments. Runner brings together state-based and massive parallel job execution, with multi-cloud and multi-data center support, all in a single interface.
 
     <img src="../../images/2015-11-03_runner-flowchart-abstract-releasenotes.jpg" width="40%" alt="Runner Design Flowchart"/>
 
@@ -56,7 +56,7 @@
 
   * __Runner Job Service.__ The Job Service is the primary component of the Runner product. Users can create, modify, and execute jobs at anytime. The Job Service accepts a payload that references a playbook, Ansible’s configuration, deployment, and orchestration language file to be used, whether that is using a public GitHub repository or private (GitHub credentials required), as well as other information like login or bearer token, environments, and so on.
 
-  * __Runner SSH Service.__ The SSH Service supports Key Pair management within CenturyLink Cloud. Users can create, retrieve, deploy, and import Key Pairs, as well a remove or "undeploy." The SSH Service can be used as a standalone feature as well.
+  * __Runner SSH Service.__ The SSH Service supports Key Pair management within Lumen Cloud. Users can create, retrieve, deploy, and import Key Pairs, as well a remove or "undeploy." The SSH Service can be used as a standalone feature as well.
 
   * __Runner VPN Service.__ The VPN Service creates connection definitions to be used in parallel with jobs.  The VPN Service allows for the Job Service to access remote hosts and establish connections during job execution.
 
@@ -86,30 +86,14 @@
   * __Server Group Defaults.__ Sets the default settings to be used when building servers in a group.
     - https://www.ctl.io/api-docs/v2/#groups-set-group-defaults
 
-### Ecosystem (3)
-
-* __Appcito.__ [Appcito](http://www.appcito.com) CAFE (Cloud Application Front End) is an easy-to-deploy, unified and cloud-native service that enables cloud application teams to select and deploy enterprise grade L4 to L7 application network services.  This cloud-native, proxy-based service gateway improves application delivery with a web-scale solution for load balancing, application security and continuous availability.
-
-* __CloudFuze.__ [CloudFuze](https://www.cloudfuze.com/), provides management tools for cloud-based file and storage services.  Their integration allows customers of CenturyLink’s cloud platform to utilize one tool to track and manage information residing in diverse cloud file-sharing services with a common management framework.
-Start controlling your storage sprawl by [deploying CloudFuze](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-cloudfuze-blueprint/) on CenturyLink today.
-
-* __bplmager.__ Many [Marketplace Provider Program](https://www.ctl.io/marketplace/program/) partners use the power of CenturyLink [Cloud Blueprints](https://www.ctl.io/cloud-platform/cloud-orchestration/) to configure ready-to-use solutions that CenturyLink customers can quickly discover and deploy.  However, many partners rely on the virtual appliance model (.AMI, .ISO, .OVF) to package and deploy their software for cloud consumption which had previously only been available on the CenturyLink Cloud platform as a [Service Task](https://www.ctl.io/service-tasks/).  
-
-  The [CenturyLink bpImager](https://www.ctl.io/knowledge-base/ecosystem-partners/partner-integration-resources/bpimager-appliance-requirements/) solution, now in beta release, offers a set of integration tools that can convert many common virtual appliance formats into a Blueprint deployment model. This reduces the barrier to integration for many Marketplace Provider Program partners. Some examples of partners who are already taking advantage:
-
-  * __CloudBolt.__ [CloudBolt](http://www.cloudbolt.io) is an intuitive cloud management platform (CMP) that delivers automated provisioning, unified IT management, chargeback/showback reporting, and interactive service catalogs for user self-service. It integrates both new and existing virtualization and private cloud environments with public clouds, automation scripting tools, and domain‐specific technologies.  CloudBolt has integrated a [resource handler](http://docs.cloudbolt.io/resource-handlers.html) for CenturyLink Cloud, which streamlines the discovery of services after users get started with the [CloudBolt blueprint](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-cloudbolt-appliance/).
-
-  * __OpenVPN Access Server.__ [OpenVPN Access Server](https://openvpn.net) is a full-featured, software-based, virtual private networking solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments. OpenVPN Access Server supports a wide range of configurations, including secure and granular remote access to internal network and/ or private cloud network resources and applications with fine-grained access control.  [Build your secure link to the cloud today](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-openvpnas-appliance/) using OpenVPN AS.
-
-  * __SoftNAS.__ [SoftNAS](https://www.softnas.com) is one of the most popular storage technologies in the cloud.  This virtual appliance template is [now available via Cloud Blueprint](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-softnas-cloud-file-gateway-appliance/), providing CenturyLink customers with an enterprise-grade, software-defined, network-attached storage gateway to safely and reliably operate their business-critical IT systems and storage folders inside CenturyLink Cloud.
 
 ### Open Source Contributions (3)
 
-* __CLC-Ansible Cloud Module clc_server_snapshot.__ Ansible module for managing server snapshots in CenturyLink Cloud - (http://docs.ansible.com/ansible/clc_server_snapshot_module.html)
+* __CLC-Ansible Cloud Module clc_server_snapshot.__ Ansible module for managing server snapshots in Lumen Cloud - (http://docs.ansible.com/ansible/clc_server_snapshot_module.html)
 
-* __CLC-Ansible Cloud Module: clc_alert_policy.__ Ansible module to manage alert policies in CenturyLink Cloud - (http://docs.ansible.com/ansible/clc_alert_policy_module.html)
+* __CLC-Ansible Cloud Module: clc_alert_policy.__ Ansible module to manage alert policies in Lumen Cloud - (http://docs.ansible.com/ansible/clc_alert_policy_module.html)
 
-* __CLC-Ansible Cloud Module: clc_aa_policy.__ Ansible module to manage anti affinity policies in CenturyLink Cloud -  (http://docs.ansible.com/ansible/clc_aa_policy_module.html)
+* __CLC-Ansible Cloud Module: clc_aa_policy.__ Ansible module to manage anti affinity policies in Lumen Cloud -  (http://docs.ansible.com/ansible/clc_aa_policy_module.html)
 
 ### Announcements (1)
 

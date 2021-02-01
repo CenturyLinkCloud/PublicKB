@@ -9,9 +9,9 @@
 }}}
 
 ## You have a shiny new virtual server - now what?
-Congratulations! You've just built a new virtual server on CenturyLink Cloud - we assume you have created a new virtual server.  If not, [follow this other guide first](../Servers/creating-a-new-enterprise-cloud-server.md), then return to this guide.
+Congratulations! You've just built a new virtual server on Lumen Cloud - we assume you have created a new virtual server.  If not, [follow this other guide first](../Servers/creating-a-new-enterprise-cloud-server.md), then return to this guide.
 
-Now what?  How do you securely connect to your server(s)?  Some customers have the option of using a site-to-site VPN tunnel, MPLS, CNS, etc.  If your company doesn't have these options available, then follow the steps below to use OpenVPN.
+Now what?  How do you securely connect to your server(s)?  Some customers have the option of using a site-to-site VPN tunnel, MPLS, Cloud Network Service, etc.  If your company doesn't have these options available, then follow the steps below to use OpenVPN.
 
 ## Connect to your shiny new virtual server
 In order to connect to your shiny new virtual server, you will need to:
@@ -21,11 +21,12 @@ In order to connect to your shiny new virtual server, you will need to:
 3. Launch the OpenVPN client and connect to your VPN
 4. Launch your Remote Desktop or SSH client, and connect to your server
 
+
 ### 1. Download and install the OpenVPN client
 You will use the OpenVPN client to securely connect to your new virtual server.
 
 For Windows:
-* Download the OpenVPN client from the [OpenVPN client](https://openvpn.net/index.php/open-source/downloads.html) website. There is currently a known issue when using OpevnVPN client version 2.4.5 with OpenVPN servers provisioned prior to June 2017, to resolve use  2.3.18-I602 64-bit release. Additional information can be found in our [Troubleshooting Article](../Network/vpn-client-connection-troubleshooting.md).
+* Download the OpenVPN client from the [OpenVPN client](https://openvpn.net/index.php/open-source/downloads.html) website. There is currently a known issue when using OpevnVPN client version 2.4.5 with OpenVPN servers provisioned prior to June 2017, to resolve use  2.3.18-I602 64-bit release. Additional information can be found in our [Troubleshooting Article](../Network/Lumen Cloud/vpn-client-connection-troubleshooting.md).
 * Click `Run` to begin the installation.
 
   ![Getting Started: How to securely connect to your server](../images/getting-started-how-to-securely-connect-to-your-server1.png)
@@ -40,6 +41,9 @@ For Mac (OS X):
   ![Getting Started: How to securely connect to your server](../images/getting-started-how-to-securely-connect-to-your-server2.png)
 
 * If prompted to enter your password, do so. Once the installation has completed, you will be prompted to either Quit or Launch Tunnelblick - click `Quit`.
+
+For Linux:
+* Follow the OpenVPN instructions [here](https://openvpn.net/vpn-server-resources/how-to-connect-to-access-server-from-a-linux-computer/)
 
 ### 2. Download and install the certificate/OpenVPN configuration
 

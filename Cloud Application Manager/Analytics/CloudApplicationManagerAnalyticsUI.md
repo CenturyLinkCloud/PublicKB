@@ -1,6 +1,6 @@
 {{{
-  "title": "CenturyLink Cloud Optimization Introduction",
-  "date": "12-13-18",
+  "title": "Lumen Cloud Optimization Introduction",
+  "date": "09-05-19",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
@@ -17,18 +17,26 @@ One of the following use cases must have occurred successfully:
 * The provider is enabled for [Cloud Optimization](https://www.ctl.io/knowledge-base/cloud-application-manager/cloud-optimization/#1)
 * The provider is no Optimized or Managed, but enabled for Analytics. (See below)
 
+### Important Information
+* After you activate Analytics for providers for which you pay the vendor directly, Lumen will read your Provider's charges in our calculation of Platform Advisory Support
+* For AWS, these are the scenarios where Analytics can provide cost and usage data: 1) accounts which are not members of AWS Organizations 2) accounts which are members of AWS organizations and the CAM admin has also set up an Analyzed provider for the Master Payer of that organization. 3) Accounts that have been integrated into CAM Consolidated billing.
+* In the second scenario above, CAM will read usage for the entire organization and apply that to Platform Advisory Support even if all the accounts in the organization have not all been associated to CAM Providers.
+* For AWS scenarios where Analytics does not see cost and usage data, it will still offer features including Inventory and Best Practices.
+
+
+
 #### Opting To Use Analytics for a Provider that is Not Optimized or Managed.
 
 ![Analytics Toggle in Provider](../../images/cloud-application-manager/CAM_COA_Analytics_Provider_Toggle.png)
 
-Switching the flag to ON at the time you start the provider means CenturyLink will read your Provider's charges in our calculation of Platform Advisory Support. A CAM administrator will have access to pricing details in that Management Site of CAM.  It will give you access to:
+Switching the flag to ON after you start the provider means Lumen will read your Provider's charges in our calculation of Platform Advisory Support. A CAM administrator will have access to pricing details in that Management Site of CAM.  It will give you access to:
 
 * All the reporting described in this document
 * An assigned TAM that will cover your Provider environment in addition to the CAM tools and features like Application Lifecycle Management and Analytics.
 
-Switching the flag to OFF at the time you start the provider means Platform Advisory Support only covers your ALM instance fees.
+Leaving the flag OFF at the time you start the provider means Platform Advisory Support only covers your ALM instance fees.
 
-You may switch a provider from OFF to ON after it is created, but to switch from ON to OFF please submit a support ticket.
+To switch from ON to OFF please submit a support ticket.
 
 ### The Analytics Site
 
@@ -81,7 +89,7 @@ Historical, monthly statistics for each month the account has been available for
 
 Learn how to [gain access](AdvancedAnalyticsAccess.md).
 
-To gain the deepest insight CenturyLink can provide, follow steps described in the link above. Actual functionality is not limited to the following list.
+To gain the deepest insight Lumen can provide, follow steps described in the link above. Actual functionality is not limited to the following list.
 
 **AWS**
 

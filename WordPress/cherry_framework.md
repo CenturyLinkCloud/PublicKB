@@ -10,14 +10,14 @@
 
 ### IMPORTANT NOTE
 
-CenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage at this time.
+Lumen WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage at this time.
 
 During the Limited Beta there is no production Service Level Agreement.
 
 ### Overview
 The [Cherry Framework for WordPress](http://www.cherryframework.com/) is a free framework that can use WordPress themes from Template Monster that are made to use with the Cherry Framework. 
 
-Most of what you need to know is already covered in the [quick start guide on Template Monster](http://www.templatemonster.com/help/quick-start-guide/wordpress-themes/master/index_en.html#introduction).  In this KB article, we will cover how to install and setup Cherry Framework on the [CenturyLink WordPress](https://www.ctl.io/wordpress) hosting platform so that you can take advantage of it.
+Most of what you need to know is already covered in the [quick start guide on Template Monster](http://www.templatemonster.com/help/quick-start-guide/wordpress-themes/master/index_en.html#introduction).  In this KB article, we will cover how to install and setup Cherry Framework on the [Lumen WordPress](https://www.ctl.io/wordpress) hosting platform so that you can take advantage of it.
 
 
 ### Cherry Framework Features

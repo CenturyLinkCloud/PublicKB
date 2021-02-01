@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-The CenturyLink Cloud provides Linux virtual machine templates as part of the Cloud Platform. Within this KB customers will find the current release details for the Linux templates deployed.
+The Lumen Cloud provides Linux virtual machine templates as part of the Cloud Platform. Within this KB customers will find the current release details for the Linux templates deployed.
 
 ### Audience
 * Cloud Administrators

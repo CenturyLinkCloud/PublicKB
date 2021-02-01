@@ -2,22 +2,23 @@
   "title": "Replication and Failover - MSSQL Relational DB",
   "date": "10-22-2017",
   "author": "Brian Waganer",
+  "keywords": ["clc", "cloud", "database", "db", "dbaas", "failover", "mssql", "replication", "portal"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false
 }}}
 
 ### Audience
-This article is to support customers of Relational DB Service, CenturyLink's Microsoft SQL Server database-as-a-service product. These instructions are specific to using the replication features through the Control Portal.
+This article is to support customers of Relational DB Service, Lumen's Microsoft SQL Server database-as-a-service product. These instructions are specific to using the replication features through the Control Portal.
 
 ### Overview
-CenturyLink's Relational DB Service is a MSSQL database-as-a-service that provides instant access to a database instance with SSL support, daily backups, basic monitoring, logs, OS metrics, and a replication option. Users can configure the amount of CPU, Memory and Storage based on their database needs. They can choose to replicate their instance in a datacenter for a more highly available solution. As the customer's capacity needs grown, they can easily scale their CPU, RAM, and/or Storage with the click of a button.
+Lumen's Relational DB Service is a MSSQL database-as-a-service that provides instant access to a database instance with SSL support, daily backups, basic monitoring, logs, OS metrics, and a replication option. Users can configure the amount of CPU, Memory and Storage based on their database needs. They can choose to replicate their instance in a datacenter for a more highly available solution. As the customer's capacity needs grown, they can easily scale their CPU, RAM, and/or Storage with the click of a button.
 
 ### Prerequisites
-* Access to the CenturyLink Cloud Platform as an authorized user
+* Access to the Lumen Cloud Platform as an authorized user
 
 ### Provisioning an Instance with Replication
-1. Browse to CenturyLink Cloud’s Relational DB UI through the Control Portal or directly at [rdbs.ctl.io](https://rdbs.ctl.io).
+1. Browse to Lumen Cloud’s Relational DB UI through the Control Portal or directly at [rdbs.ctl.io](https://rdbs.ctl.io).
 
 2. Click on 'Create Database'. From there, select your subscription details (database name, username, password, cpu, memory, and storage). If you want your instance to be replicated, simply, flip the Replication toggle to 'yes' and click on 'Create Database'.
    ![CreateReplicatedDB](../images/rdbs/rdbs-create-mssql-with-replication.png)

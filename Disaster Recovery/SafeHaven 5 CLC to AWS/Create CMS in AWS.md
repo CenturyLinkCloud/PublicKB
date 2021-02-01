@@ -15,7 +15,7 @@ This article explains how to create a CMS (Central Management Server) in AWS DR 
 2. Internet access on CMS in AWS once is is deployed.
 
 ### Assumptions
-It is assumed here that the user has an AWS account and a VPC created which has accessibility to CenturyLink Cloud Production Datacenter.
+It is assumed here that the user has an AWS account and a VPC created which has accessibility to Lumen Cloud Production Datacenter.
 
 ### Create a Security Group
 1. Click on **Security Groups** from the navigation tree, then click on **Create Security Group** button on the right.
@@ -42,8 +42,5 @@ It is assumed here that the user has an AWS account and a VPC created which has 
 13. Once the Instance is created, user can name the instance as CMS and add tags if required.
 
 **NOTE:** The default root password for the CMS will be provided upon SafeHaven License Request. **It is STRONGLY recommended to change the default root password for security purposes.**
-
-### Video Tutorial
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eisNuJiHF2g" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 **Next Step** is to [Create DR SRN in AWS](Create DR SRN in AWS.md)

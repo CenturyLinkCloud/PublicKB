@@ -10,7 +10,7 @@
 
 ### Introduction
 
-CenturyLink Cloud does not currently sell Azure through [Cloud Application Manager](https://www.ctl.io/cloud-application-manager) to the following types of accounts:
+Lumen Cloud does not currently sell Azure through [Cloud Application Manager](https://www.ctl.io/cloud-application-manager) to the following types of accounts:
 * Resellers
 * Internal accounts
 * Demo accounts
@@ -18,7 +18,7 @@ CenturyLink Cloud does not currently sell Azure through [Cloud Application Manag
 
 ### Non-Billable Accounts
 
-The following error will appear if the CenturyLink Cloud account alias you provide is a reseller, internal, demo or sub-account, and is therefore designated "not billable."
+The following error will appear if the Lumen Cloud account alias you provide is a reseller, internal, demo or sub-account, and is therefore designated "not billable."
 
 ![Cloud Application Manager Error: Account Not Billable](../../images/cloud-application-manager-billable2.png)
 
@@ -34,7 +34,7 @@ Select **Microsoft Azure** to build a customer account in the current Microsoft 
 
 ### The Exception Message
 
-If the CenturyLink Cloud billing account is the wrong account type, the following error message will appear, indicating we're not permitted to offer the product to you.
+If the Lumen Cloud billing account is the wrong account type, the following error message will appear, indicating we're not permitted to offer the product to you.
 
 "Thank you for your interest in integrated Azure. Our apologies, but we are not able to provide this functionality for your account. Please submit a support request if you would like us to review your situation in further detail."
 

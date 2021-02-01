@@ -21,11 +21,11 @@ This article explains how to Failback a Windows Protection Group from a Recovery
 
 This article assumes that the Protection group is in a failed over state, and the production VM is available to initiate a failback.
 
-For the purpose of this article, we have used CenturyLink's CA2(Toronto) as the production datacenter. The recovery site being used is CenturyLink's WA1(Washington) recovery datacenter.
+For the purpose of this article, we have used Lumen's CA2(Toronto) as the production datacenter. The recovery site being used is Lumen's WA1(Washington) recovery datacenter.
 
 ### Failback
 
-Before initiating the Failback, we need to add disk to the production SRN to failback to. Login to Centurylink Portal, go to Production SRN, and click on ** Add raw disk**. Please add 125% of the protection group size + 5GB extra storage for Failback. For example, the size of Management-PG is 60GB, so we added 80GB raw disk to the production SRN
+Before initiating the Failback, we need to add disk to the production SRN to failback to. Login to Lumen Portal, go to Production SRN, and click on ** Add raw disk**. Please add 125% of the protection group size + 5GB extra storage for Failback. For example, the size of Management-PG is 60GB, so we added 80GB raw disk to the production SRN
 
 ![Linux](../../images/SH4.0/WindowsFB/WFB3.png)
 

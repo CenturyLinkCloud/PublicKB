@@ -1,10 +1,12 @@
-{{{ "title": "Using Google Deployment Manager with Cloud Application Manager",
+{{{ "title": "Google Deployment Manager Template Boxes",
 "date": "11-29-2018",
 "author": "Dénes Pál",
 "attachments": [],
 "contentIsHTML": false,
-"keywords": ["google deployment manager", "template box", "cloud application manager", "deployment templates", "cam"]
+"keywords": ["google deployment manager", "template box", "cloud application manager", "deployment templates", "cam", "alm", "application lifecycle management"]
 }}}
+
+### Using Google Deployment Manager with Cloud Application Manager
 
 **In this article:**
 
@@ -76,7 +78,7 @@ If you happen to reference resources with the same name in multiple Deployment I
 
 A good practice to avoid these scenarios is to prefix the name of each resource with the **name of the deployment**, which happens to be the *service-id* in Cloud Application Manager.
 
-```Jinja
+```
 resources:
 - name: \{{ env['deployment'] }}-vm
   type: compute.v1.instance
@@ -112,7 +114,7 @@ Variables can be used only with *Jinja* and *Python* type template files. **Yaml
 
 The corresponding feature is called *Outputs* in [Google's Documentation](https://cloud.google.com/deployment-manager/docs/configuration/expose-information-outputs). Any Outputs defined in templates are going to end up as output variables in Cloud Application Manager.
 
-```Jinja
+```
 outputs:
 - name: internalIP
   value: $(ref.\{{name}}-vm.networkInterfaces[0].networkIP)
@@ -145,7 +147,7 @@ would update the already existing resource, instead of creating a new one, and w
 when terminated, leaving the remaining Instance referring to a non-existing resource, and therefore fail to
 terminate in CAM. And also bear in mind the dire threat of unintentionally deleting resources.
 
-```Jinja
+```
 resources:
 - name: \{{ env['deployment'] }}-vm
   type: compute.v1.instance
@@ -214,7 +216,7 @@ to learn more about deployment templates.
 
 ### Getting General Support
 
-Customers can contact the CenturyLink Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
+Customers can contact the Lumen Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
 
 #### Contact:
 

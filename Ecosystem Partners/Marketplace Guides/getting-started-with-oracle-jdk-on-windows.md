@@ -2,7 +2,7 @@
 {{{
   "title": "Installing Oracle JDK 1.7 on Windows",
   "date": "12-01-2015",
-  "author": "CTL Ecosystem Team",
+  "author": "Lumen Ecosystem Team",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -16,13 +16,13 @@ This Blueprint installs the Oracle JDK 1.7 on Windows.
 This is the Oracle JDK, which requires that the user agree to the license terms supplied by Oracle [here](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
 After reading this article, the user should be able to install Java on an existing Linux server.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user
+* Access to the Lumen Cloud platform as an authorized user
 * An existing Windows server
 
 ### Postrequisite
@@ -53,10 +53,10 @@ After reading this article, the user should be able to install Java on an existi
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no Oracle license costs or additional fees bundled in.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. There are no Oracle license costs or additional fees bundled in.
 
 ### Frequently Asked Questions
 
 #### Who should I contact for support?
-* For issues related to deploying the Oracle Blueprint on CenturyLink Cloud, licensing or accessing the deployed software, please visit the [Oracle Support website](http://www.oracle.com/technetwork/java/javase/documentation/index.html).
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to deploying the Oracle Blueprint on Lumen Cloud, licensing or accessing the deployed software, please visit the [Oracle Support website](http://www.oracle.com/technetwork/java/javase/documentation/index.html).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](https://t3n.zendesk.com/tickets/new).

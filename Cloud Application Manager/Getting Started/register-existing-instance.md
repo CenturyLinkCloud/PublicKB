@@ -4,6 +4,7 @@
 "author": "Guillermo Sanchez & Sergio Quintana",
 "keywords": ["cam", "instances", "auto-discovery", "register"],
 "attachments": [],
+"sticky": true,
 "contentIsHTML": false
 }}}
 
@@ -18,7 +19,7 @@
 
 ### Overview
 
-*Cloud Application Manager* can auto-discover existing instances that have been provisioned directly using the provider console outside of *Cloud Application Manager*. With this capability, even if some of your teams are using the provider's console to provision instances, you can import them into *Cloud Application Manager* and manage their lifecycle as well as view them as part of the *Cloud Reports*. 
+*Cloud Application Manager* can auto-discover existing instances that have been provisioned directly using the provider console outside of *Cloud Application Manager*. With this capability, even if some of your teams are using the provider's console to provision instances, you can import them into *Cloud Application Manager* and manage their lifecycle as well as view them as part of the *Cloud Reports*.
 It is important to realize that discovered instances will exist only as an instance. In addition, *Cloud Application Manager* does not create a corresponding *Deployment Policy* as part of registration process.
 
 You can check the full process by watching the following video:
@@ -53,7 +54,7 @@ If you have an existing provider in *Cloud Application Manager*, the next time y
 
 #### When enabling Automatic Discovery of Resources
 
-You can enable the *Automatic Discovery of Resources* toggle in the provider details dialog.
+You can enable the *Automatic Discovery of Resources* toggle in the provider *Services* tab.
 
 ![Edit Provider - Auto Discovery of Resources](../../images/cloud-application-manager/register/clc-registerInstance-autoSync.png)
 
@@ -65,7 +66,7 @@ This feature is only available for Optimized or Managed providers.
 
 Instances can be registered either from the *Unregistered Instances* tab of your provider details page, where you can import a single instance or select many of them and execute a bulk register, or from the *Instances* page where you can register one instance at a time.
 
-Currently, it is not necessary anymore to be in the target workspace scope where you want to register the instance, since instance registering from a scope other than a workspace is allowed.
+It is not necessary  to be in the target workspace scope where you want to register the instance, since instance registration from a scope other than a workspace will ask for the target workspace to register the instance in.
 
 #### Register an instance or instances from the *Unregistered Instances* tab
 
@@ -87,14 +88,14 @@ Then, follow the steps of the [Registration process](#registration-process) belo
 
 #### Registration process
 
-* Start registering. When performing a bulk register, a previous step appears in the dialog providing the option to apply property values to all instances to register. The following image shows the dialog displayed when bulk registering in a *CenturyLink Cloud* provider type:
+* Start registering. When performing a bulk register, a previous step appears in the dialog providing the option to apply property values to all instances to register. The following image shows the dialog displayed when bulk registering in a *Lumen Cloud* provider type:
 
     ![Register Instances bulk](../../images/cloud-application-manager/register/clc-registerInstance-bulk.png)
 
 * The next step of the bulk import will allow you to set the properties for each instance to be registered:
 
     ![Register Instances](../../images/cloud-application-manager/register/clc-registerInstances-dialog.png)
-    
+
 * If you are registering a single instance, a single step dialog appears asking for information to complete the register process:
 
     ![Register Instance](../../images/cloud-application-manager/register/clc-registerInstance-dialog.png)
@@ -107,11 +108,11 @@ Then, follow the steps of the [Registration process](#registration-process) belo
 
     ![Register Instance Successful](../../images/cloud-application-manager/register/clc-registerInstance-successfully.png)
 
-* If an Unsuccessful Registration occurred:
+* If an Unsuccessful Registration occurred, either if the credentials are not valid or the instance IP address is not accessible through the internet:
 
     ![Unsuccessful registering](../../images/cloud-application-manager/register/aws-registerInstance-failed.png)
 
-* Go to the instance details:
+* Go to the instance details where you should find the command to be executed into the instance to manually register it:
 
     ![Detail of Unsuccessful registered instance](../../images/cloud-application-manager/register/aws-registerInstance-failedDetails.png)
 
@@ -139,14 +140,13 @@ Then, follow the steps of the [Registration process](#registration-process) belo
 
     ![Start elasticbox agent](../../images/cloud-application-manager/register/aws-registerInstance-success.png)
 
-The previous process was done using a *CenturyLink Cloud* provider but, depending on the provider or the used *OS* it may be necessary to perform additional steps after or before the ones stated above. 
+The previous process was done using a *Lumen Cloud* provider but, depending on the provider or the used *OS* it may be necessary to perform additional steps after or before the ones stated above.
 Please, visit these links for further information:
 
 * [Auto-discover AWS EC2 instances](./autodiscover-ec2-instances.md)
-
 * [Register an Existing AWS Linux instance](./register-existing-aws-linux-instance.md)
-
 * [Register an Existing AWS Windows instance](./register-existing-aws-windows-instance.md)
+* [Register an Existing GCP Windows instance](./register-existing-google-cloud-instance.md)
 
 ### Contacting Cloud Application Manager Support
 

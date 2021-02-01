@@ -8,12 +8,12 @@
 
 ### IMPORTANT NOTE
 
-CenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
+Lumen WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
 
 During the Limited Beta there is no production Service Level Agreement.
 
-## Known Limitations of CenturyLink WordPress Hosting
-CenturyLink WordPress hosting is designed to minimize the management of a WordPress site by abstracting away many of the typical installation and maintenance tasks. The platform is cloud native, so there are several use cases that work differently than a traditional hosted WordPress site or may be completely unavailable.
+## Known Limitations of Lumen WordPress Hosting
+Lumen WordPress hosting is designed to minimize the management of a WordPress site by abstracting away many of the typical installation and maintenance tasks. The platform is cloud native, so there are several use cases that work differently than a traditional hosted WordPress site or may be completely unavailable.
 
 
 * [__WordPress Multisite__](#multisite)
@@ -24,18 +24,18 @@ CenturyLink WordPress hosting is designed to minimize the management of a WordPr
 * [__PHP mail__](#mail)
 
 ## <a name="multisite"></a>WordPress Multisite
-WordPress Multisite allows a single WordPress installation to house a network of separate sites. This feature is currently *disabled* by default in CenturyLink Cloud WordPress hosting, and __is not__ supported.
+WordPress Multisite allows a single WordPress installation to house a network of separate sites. This feature is currently *disabled* by default in Lumen Cloud WordPress hosting, and __is not__ supported.
 
 ## <a name="storage"></a>Local File Storage
-CenturyLink WordPress hosting __does not__ offer long term local file system storage for media, plugins, or themes. Traditional WordPress hosting on physical or virtual machines save site content to the local disk by default.  In the Cloud environment we have configured your WordPress site to work differently by allowing the site to use a previously created object storage bucket.
+Lumen WordPress hosting __does not__ offer long term local file system storage for media, plugins, or themes. Traditional WordPress hosting on physical or virtual machines save site content to the local disk by default.  In the Cloud environment we have configured your WordPress site to work differently by allowing the site to use a previously created object storage bucket.
 
 For more details please check out the Knowledge Base articles to [create an object storage bucket](https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/) and how to [create a WordPress site with object storage](https://www.ctl.io/knowledge-base/wordpress/getting-started-with-wordpress-as-a-service/).
 
 > #### Media Content
->CenturyLink WordPress hosting comes with a cloud storage plugin pre-installed. This is the preferred method of bypassing local file storage.
+>Lumen WordPress hosting comes with a cloud storage plugin pre-installed. This is the preferred method of bypassing local file storage.
 
 > #### Plugins and Themes
-Plugins and themes should be added to the git repository that comes with your CenturyLink Cloud WordPress hosting to ensure the changes are persisted long term.
+Plugins and themes should be added to the git repository that comes with your Lumen Cloud WordPress hosting to ensure the changes are persisted long term.
 
 ## <a name="ssl"></a>Custom SSL and HTTPS
 SSL and HTTPS are configured automatically when your WordPress site is installed. This configuration uses an SSL certificate issued to the infrastructure housing your site. There is currently no way to to replace the default certificates with custom SSL certificates .

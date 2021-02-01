@@ -40,16 +40,11 @@ This article assumes that a Linux Protection group has been successfully created
    - **What is your remote hypervisor type ?[xen/vmware]**  
      Please put **xen** if the DR site is AWS.
    - **Please enter the iSCSI Target Server IP Address at this site:**  
-     Please put the Local iSCSI IP Address of the Production SRN in CenturyLink Cloud Production Datacenter here.
+     Please put the Local iSCSI IP Address of the Production SRN in Lumen Cloud Production Datacenter here.
    - **Select the target IQN of your protection group**  
      Put the number corresponding to the correct protection group. This question will not be asked if there is just one protection group.  
 **Note**: Now the rsync replication of files will start automatically. The replication can take a while depending at the size of the server. Once the replication is done, hit <enter> to end the screen session.  
 
 5. Once the replication completes, the user can type **crontab -l** to see the hourly Rsync job that is running in the background. User can modify the crontab interval as well as exclude certain files/folders from Rsync replication.
-
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0x9CRRQkZ0I" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</p>
 
 **Next Step** is to [Modify WAN Replication Rate](Modify WAN Replication Rate.md)

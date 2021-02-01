@@ -6,7 +6,7 @@
 }}}
 
 ### Overview
-CenturyLink Cloud offers three different [Support Levels](https://www.ctl.io/support/):
+Lumen Cloud offers three different [Support Levels](https://www.ctl.io/support/):
 * Developer (Default for customers who have signed up via the web)
 * Professional (Default option for contracts)
 * Enterprise (Premier level of support)

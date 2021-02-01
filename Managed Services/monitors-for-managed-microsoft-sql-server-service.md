@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p>The following tables detail the monitors supported for the Managed MS SQL service on CenturyLink Cloud:</p>
+<p>The following tables detail the monitors supported for the Managed MS SQL service on Lumen Cloud:</p>
 Monitors for Microsoft SQL Server Service
 <table>
   <tbody>

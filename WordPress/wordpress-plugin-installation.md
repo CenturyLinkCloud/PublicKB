@@ -6,11 +6,17 @@
   "contentIsHTML": false
 }}}
 
-### IMPORTANT NOTECenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.## Overview
+### IMPORTANT NOTELumen
 
-CenturyLink WordPress hosting use Git to deploy new WordPress code including new plugins.
+Lumen WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
 
-In order to activate a plugin you will need to download a WordPress Plugin and upload it into the Master branch of the Centurylink Git repository provided to you during your site creation. This will then force a refresh of your WordPress blog and allow you to activate and configure the plugin.
+During the Limited Beta there is no production Service Level Agreement.Lumen
+
+## Overview
+
+Lumen WordPress hosting use Git to deploy new WordPress code including new plugins.
+
+In order to activate a plugin you will need to download a WordPress Plugin and upload it into the Master branch of the Lumen Git repository provided to you during your site creation. This will then force a refresh of your WordPress blog and allow you to activate and configure the plugin.
 
 **NOTE:** These instructions assume the following...
 

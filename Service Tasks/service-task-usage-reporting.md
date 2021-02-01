@@ -8,13 +8,13 @@
 }}}
 
 ### Overview
-Usage reports provided by the CenturyLink Cloud’s service task team enables you to request and analyze reports on customized instances which are not available in the control Portal.
+Usage reports provided by the Lumen Cloud’s service task team enables you to request and analyze reports on customized instances which are not available in the control Portal.
 
 ### Available Reports
 You can request the following custom reports from the service task team:
 
 #### The Data in Usage Report
-A two-week CenturyLink Cloud utilization report in CSV spread sheet format for a given account alias - rolls up all sub-accounts(does not include machines that are powered off or templates).
+A two-week Lumen Cloud utilization report in CSV spread sheet format for a given account alias - rolls up all sub-accounts(does not include machines that are powered off or templates).
 
 Summary:
 Servers: xx | CPUs: 82 Utilization: 7.3% | RAM: 274 GB Utilization: 13.0% | Storage: 12436.472 GB Utilization: 43.9%.

@@ -19,19 +19,19 @@ Couchbase is also the only big data database that offers a native integrated NoS
 For more information, please visit [Couchbase](http://www.couchbase.com).
 
 ### Audience
-* CenturyLink Cloud Users
+* Lumen Cloud Users
 * Developers wishing to migrate from Relational Databases to a NoSQL Document Database
 
 ### Impact
 After reading this article, users should  be able to start a server running Couchbase Server, create a Couchbase Server cluster, connect to that server using an IP address and start accessing Couchbase Server cluster in their application.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 * An Couchbase Server Enterprise license from Couchbase Inc. See Enterprise Subscription [License Agreement](http://www.couchbase.com/agreement/subscription) for details.
 
 ### Postrequisite
-After you successfully install a Blueprint, you will receive a notification email. If you want to access your application from a computer that is outside of the CenturyLink Cloud network, you need to perform the following steps:
-* [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the CenturyLink the Control Portal.
+After you successfully install a Blueprint, you will receive a notification email. If you want to access your application from a computer that is outside of the Lumen Cloud network, you need to perform the following steps:
+* [Add a Public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Lumen the Control Portal.
 * Click on the Servers Public IP through the Control Portal and configure the ports. The default port for Couchbase Server is `8091`. For the additional available network ports, refer to the Couchbase Server [documentation](http://developer.couchbase.com/documentation/server/4.1/install/install-ports.html).
 
 ### Deploying the Couchbase Server Blueprint
@@ -73,10 +73,10 @@ After you successfully install a Blueprint, you will receive a notification emai
    * Once the Blueprint completes successfully, you will receive an email confirming that the Blueprint build is complete. Do not use the application until you have received this email notification.
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no license costs or additional fees bundled in. You will need a valid [Enterprise Edition license](http://www.couchbase.com/agreement/subscription) from Couchbase Inc.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. There are no license costs or additional fees bundled in. You will need a valid [Enterprise Edition license](http://www.couchbase.com/agreement/subscription) from Couchbase Inc.
 
 ### Frequently Asked Questions
 
 #### Who should I contact for support?
-* For issues related to the Couchbase Server Blueprint on CenturyLink Cloud or licensing, please visit [Couchbase Support website](http://support.couchbase.com/home).
-* For issues related to cloud infrastructure (VMs, network, etc.) or if you experience a problem deploying the Blueprint or Script Package, open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to the Couchbase Server Blueprint on Lumen Cloud or licensing, please visit [Couchbase Support website](http://support.couchbase.com/home).
+* For issues related to cloud infrastructure (VMs, network, etc.) or if you experience a problem deploying the Blueprint or Script Package, open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](https://t3n.zendesk.com/tickets/new).

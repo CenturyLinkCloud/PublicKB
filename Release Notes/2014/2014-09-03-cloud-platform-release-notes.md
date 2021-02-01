@@ -45,7 +45,7 @@
   <hr />
 </div>
 <ul>
-  <li><strong>Ubuntu 14 support.&nbsp;</strong>CenturyLink Cloud now supports&nbsp;Ubuntu 14 as an OS template for servers. Customers can now create and deploy 64-bit Ubuntu 14 virtual instances to all data centers. Among other things, this latest version
+  <li><strong>Ubuntu 14 support.&nbsp;</strong>Lumen Cloud now supports&nbsp;Ubuntu 14 as an OS template for servers. Customers can now create and deploy 64-bit Ubuntu 14 virtual instances to all data centers. Among other things, this latest version
     of Ubuntu has native support for Docker. Check out&nbsp;<a href="https://insights.ubuntu.com/2014/04/17/whats-new-in-ubuntu-server-14-04-lts/">what else is new in version 14</a>&nbsp;and read the <a href="https://wiki.ubuntu.com/TrustyTahr/ReleaseNotes"
    >Ubuntu 14 Release Notes</a> for more information.
     <br /><img src="https://t3n.zendesk.com/attachments/token/VEu6qTztoK4IPTjZUY2aBPfTN/?name=ubuntu-14.png" alt="ubuntu-14.png" />&nbsp;</li>
@@ -55,19 +55,19 @@
     <br />
     <br />
   </li>
-  <li><strong>Updated Account Hierarchy/Billing Page (for some accounts). </strong>For selected customers, this update displays consumption details for cloud services while billing details will continue to come directly from CenturyLink. This update also
-    exposes access to the full suite of <a href="https://t3n.zendesk.com/categories/20074004-Managed-Services">managed services</a> available on CenturyLink Cloud.
+  <li><strong>Updated Account Hierarchy/Billing Page (for some accounts). </strong>For selected customers, this update displays consumption details for cloud services while billing details will continue to come directly from Lumen. This update also
+    exposes access to the full suite of <a href="https://t3n.zendesk.com/categories/20074004-Managed-Services">managed services</a> available on Lumen Cloud.
     <br /><img src="https://t3n.zendesk.com/attachments/token/aYFFxeop7WfTGaEVZe7PpzD95/?name=usage-history.png" alt="usage-history.png" /><img src="https://t3n.zendesk.com/attachments/token/y5FsSU18ywzCmlovCQN77vwql/?name=usage-details.png" alt="usage-details.png"
     />
   </li>
 </ul>
 <ul>
   <li><strong>Docker and Panamax Blueprints.&nbsp;</strong>Following the <a href="https://t3n.zendesk.com/entries/47893914-Cloud-Platform-Release-Notes-July-28-2014">release of the CoreOS&nbsp;blueprints</a> last month, additional blueprints
-    have been created for installing&nbsp;<a href="http://www.centurylinklabs.com/">CenturyLink Labs</a>' Docker management utility,&nbsp;<a href="http://www.panamax.io/">Panamax</a>, as well as one for installing Docker on Linux servers. Check out all
-    the ways you can now&nbsp;<a href="http://www.ctl.io/blog/full/deploying-docker-containers-on-centurylink-cloud">Deploy Containers on CenturyLink Cloud</a>!</li>
+    have been created for installing&nbsp;<a href="http://www.centurylinklabs.com/">Lumen Labs</a>' Docker management utility,&nbsp;<a href="http://www.panamax.io/">Panamax</a>, as well as one for installing Docker on Linux servers. Check out all
+    the ways you can now&nbsp;<a href="http://www.ctl.io/blog/full/deploying-docker-containers-on-centurylink-cloud">Deploy Containers on Lumen Cloud</a>!</li>
   <li><strong>Better Back Office support. </strong>We've done some housekeeping on our side to improve logging and more efficiently manage certain common requests. With these tools, we can now better support our customers who may run into blueprint failures
     or are in&nbsp;need of&nbsp;<a href="http://www.ctl.io/products/support/service-tasks">Service Tasks</a>.&nbsp;</li>
-  <li><strong>Data Center Updates.&nbsp;</strong>The CenturyLink Cloud successfully migrated all users from the Croyden (GB2) data center to our data center in Reading (GB1). There is also data center expansion planned in Great Britain in the coming weeks.&nbsp;
+  <li><strong>Data Center Updates.&nbsp;</strong>The Lumen Cloud successfully migrated all users from the Croyden (GB2) data center to our data center in Reading (GB1). There is also data center expansion planned in Great Britain in the coming weeks.&nbsp;
     <br
     /><img src="https://t3n.zendesk.com/attachments/token/dY44pCFVakFBS4tueAboQeoFr/?name=dc-list-ca3-nogb2.png" alt="dc-list-ca3-nogb2.png" />
   </li>

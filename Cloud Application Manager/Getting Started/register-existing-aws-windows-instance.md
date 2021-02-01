@@ -1,7 +1,7 @@
 {{{
 "title": "Register an Existing AWS Windows Instance",
-"date": "12-13-2018",
-"author": "Thomas Broadwell & Sergio Quintana",
+"date": "01-29-2019",
+"author": "Sergio Quintana & Guillermo Sanchez",
 "keywords": ["cam", "instances", "auto-discovery", "register", "windows", "aws"],
 "attachments": [],
 "contentIsHTML": false
@@ -40,11 +40,11 @@ Users who want to register their *Windows* instances into *Cloud Application Man
 
 Within the *Cloud Application Manager* workspace, navigate to your *AWS* provider and run the sync function by clicking **Sync**.
 
-![Run Sync](../../images/cloud-application-manager/cam-register-existing-aws-windows-instance-1.png)
+![Run Sync](../../images/cloud-application-manager/register/cam-register-existing-aws-windows-instance-1.png)
 
 The sync process will discover unregistered *AWS* instances and list them under the **Unregistered Instances** tab.
 
-![Locate Unregistered Instances](../../images/cloud-application-manager/cam-register-existing-aws-windows-instance-2.png)
+![Locate Unregistered Instances](../../images/cloud-application-manager/register/cam-register-existing-aws-windows-instance-2.png)
 
 ### Register the instance
 
@@ -52,23 +52,23 @@ Under the **Unregistered Instances** tab or within the *Instances* page, click t
 
 Provide any details for the instance in the fields provided.
 
-![Register Instance](../../images/cloud-application-manager/cam-register-existing-aws-windows-instance-3.png)
+![Register Instance](../../images/cloud-application-manager/register/cam-register-existing-aws-windows-instance-3.png)
 
 Click **Register** to register the instance.
 
-If you didn't provide the *Private Key*, *Windows Username* and *Password* fields *Cloud Application Manager* returns an error message because the agent installation script that allows *CenturyLink* to register the instance is not yet executed on this instance.
+If you did not provide the *Private Key*, *Windows Username* and *Password* fields, or the instance IP address is not accesible from the internet, an error message is returned because the agent installation script that allows *Cloud Application Manager* to register the instance has not been executed on it yet. You can then proceed to the manual instalation process described below.
 
 ### Install the Agent Installation Script manually
 
 Copy the agent installation script provided in the **Activity** tab in the log details.
 
-![Copy agent installation script](../../images/cloud-application-manager/cam-register-existing-aws-windows-instance-4.png)
+![Copy agent installation script](../../images/cloud-application-manager/register/cam-register-existing-aws-windows-instance-4.png)
 
 Log-in to the instance residing in your *AWS* provider.
 
 Execute the agent installation script.
 
-![Execute agent installation script](../../images/cloud-application-manager/cam-register-existing-aws-windows-instance-5.png)
+![Execute agent installation script](../../images/cloud-application-manager/register/cam-register-existing-aws-windows-instance-5.png)
 
 Once the script is executed, the instance will be available in *Cloud Application Manager*.
 

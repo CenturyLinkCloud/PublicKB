@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-Managed Disaster Recovery Services (MDRS) are ideal for customers who lack Disaster Recovery (DR) expertise or do not have the staff needed to maintain a DR solution. CenturyLink takes over these responsibilities and delivers end-to-end services. Unlike other DRaaS solutions, CenturyLink MDRS carries out regular audits, tests, and at-time-of-disaster (ATOD) failover services to ensure the reliability, accuracy, and efficiency of your DR solution. MDRS services including:
+Managed Disaster Recovery Services (MDRS) are ideal for customers who lack Disaster Recovery (DR) expertise or do not have the staff needed to maintain a DR solution. Lumen takes over these responsibilities and delivers end-to-end services. Unlike other DRaaS solutions, Lumen MDRS carries out regular audits, tests, and at-time-of-disaster (ATOD) failover services to ensure the reliability, accuracy, and efficiency of your DR solution. MDRS services including:
 
 * White-glove on boarding
 * 24x7 monitoring and maintenance
@@ -33,11 +33,11 @@ Informed - 	People who are affected by the activity/decision and therefore need 
 | Activities | Tasks                                                   							|Operations | DR Manager | Customer |
 |---------|---------|---------|---------|--------|
 | Installation | Create and distribute the active directory inventory list | I 				| R 					| I 					|
-|					|Customer grant CTL operations full access to the domain | I | I | R |
+|					|Customer grant Lumen operations full access to the domain | I | I | R |
 |					| Create secondary AD servers on the recovery site and add them to the existing domain, ensure full and continuous AD database replication| R | I | I |
 |					|Set up monitoring on the secondary Ad server to monitor the replication status and AD status| R | I | I |
 | Maintenance | Monitoring of AD servers and replication health. Maintain AD server replication health between sites| R | I | I |
-|Audit			|Collect the changes made on primary AD servers including OS update, AD application changes and deliver the changes to CTL operations team | I | R | I |
+|Audit			|Collect the changes made on primary AD servers including OS update, AD application changes and deliver the changes to Lumen operations team | I | R | I |
 |					| Reflect the changes on secondary AD servers|		R| I	| I	|
 | Test			| Validate and test AD replication prior to network connectivity isolation  1) Validate successful site to site replication 2) Create test object on AD server in primary site, validate successful replication on AD server in secondary/DR site | R | I | I |
 |					| Verify connectivity and AD domain resolution of Safehaven servers in all sites | R | C | I |

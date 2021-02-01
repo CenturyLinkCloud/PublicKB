@@ -7,7 +7,7 @@
 }}}
 
 ### Article Overview
-Register Datacenters within the SafeHaven Console for CenturyLink Cloud and Amazon Cloud site types.
+Register Datacenters within the SafeHaven Console for Lumen Cloud and Amazon Cloud site types.
 
 ### Requirements
 1. SafeHaven Cluster already installed and user needs to have access to it.
@@ -36,10 +36,5 @@ Each AWS Region is treated as a separate Datacenter within a SafeHaven Cluster.
 5. Click **Finish**.
 
 **Properties Panel** shows the Amazon Cloud information.
-
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kmtrlYN5OGU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</p>
 
 **Next Step** is to [Register SRN within SafeHaven Console](../SafeHaven 5 CLC to AWS/Register SRN within SafeHaven Console.md)

@@ -1,7 +1,7 @@
 {{{
   "title": "Creating Users",
   "date": "10-26-2017",
-  "author": "CenturyLink Cloud Customer Care",
+  "author": "Lumen Cloud Customer Care",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -15,7 +15,7 @@ You can manage users on your account by going to the Control Portal > Settings >
 **Important Notes:** 
 * Permissions must be configured for a user after they are created in order to have access within the control. Learn more about [User Permissions](user-permissions.md).
 
-* A Control account username must be globally unique in the platform and cannot be reused, or otherwise reissued/migrated into a different Control account. If the user account is deleted, it cannot be reinstated or repurposed for another user. This constraint is currently an intentional design specification built into the CenturyLink Cloud Control platform.
+* A Control account username must be globally unique in the platform and cannot be reused, or otherwise reissued/migrated into a different Control account. If the user account is deleted, it cannot be reinstated or repurposed for another user. This constraint is currently an intentional design specification built into the Lumen Cloud Control platform.
 
 **Creating Users**
 1. Click the "Create New User" button.

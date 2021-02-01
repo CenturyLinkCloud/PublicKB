@@ -1,5 +1,5 @@
 {{{
-  "title": "Partner Cloud Integration: CenturyLink Azure Reserved Instance Strategy",
+  "title": "Partner Cloud Integration: Lumen Azure Reserved Instance Strategy",
   "date": "09-28-2018",
   "author": "Ben Swoboda",
   "attachments": [],
@@ -8,12 +8,12 @@
 
 ### Overview
 
-CenturyLink [Cloud Application Manager's](https://www.ctl.io/cloud-application-manager/) Cloud Optimization offers [consolidated billing](partner-cloud-integration-consolidated-billing.md)to make payments easy. Part of consolidated billing and Partner Requirements require Azure Virtual Machine [Reserved Instances](https://docs.microsoft.com/en-us/partner-center/develop/purchase-azure-reservations).
+Lumen [Cloud Application Manager's](https://www.ctl.io/cloud-application-manager/) Cloud Integration offers [consolidated billing](partner-cloud-integration-consolidated-billing.md)to make payments easy. Part of consolidated billing and Partner Requirements require Azure Virtual Machine [Reserved Instances](https://docs.microsoft.com/en-us/partner-center/develop/purchase-azure-reservations).
 
 
 ### Audience
 
-Users of accounts that already have or are considering CenturyLink Optimization of Azure. This is for all new standard Azure accounts created through Cloud Application Manager and any existing account moving into CenturyLink's care who have bought Azure Virtual Machine Reserved Instances.
+Users of accounts that already have or are considering Cloud Application Manager's Integration of Azure. This is for all new standard Azure accounts created through Cloud Application Manager and any existing account moving into Lumen's care who have bought Azure Virtual Machine Reserved Instances.
 
 
 ### Prerequisites
@@ -43,7 +43,7 @@ Please review the process for migrating an [existing Azure account](partner-clou
 
 * Review [Microsoft's Calculator](https://azure.microsoft.com/en-us/pricing/calculator/) to help you determine expected costs.
 
-* Submit a support request to CenturyLink with the following information:
+* Submit a support request to Lumen with the following information:
 
 ```
 Your intent
@@ -55,9 +55,9 @@ VM Cores:
 VM Type/Category:
 VM RAM: 
 ```
-* If there is any question, CenturyLink staff will confirm with you.
+* If there is any question, Lumen staff will confirm with you.
 
-* Once CenturyLink has purchased on your behalf, the Reserved Instance will be visible in your Azure portal.
+* Once Lumen has purchased on your behalf, the Reserved Instance will be visible in your Azure portal.
 
 #### Azure Reserved Instance Initial Purchase Fee
 Azure allows customers to buy Reserved Instances All Upfront. The fee will always appear on the next month's invoice from which it was purchased.
@@ -66,7 +66,7 @@ Azure allows customers to buy Reserved Instances All Upfront. The fee will alway
 
 * Review [Microsoft documentation](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/prepay-reserved-vm-instances) regarding Cancelations or Exchanges.
 
-* Submit a support request to CenturyLink with the following information:
+* Submit a support request to Lumen with the following information:
 
 ```
 Your intent
@@ -80,6 +80,6 @@ Validation info:
 * VM RAM: 
 ```
 
-* If there is any question, CenturyLink staff will confirm with you.
+* If there is any question, Lumen staff will confirm with you.
 
 

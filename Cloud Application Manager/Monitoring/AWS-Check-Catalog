@@ -1,0 +1,226 @@
+{{{
+  "title": " CAM Monitoring Site - Check Catalog - AWS
+",
+  "date": "06-03-2019",
+  "author": "Mindy Daugherty",
+  "attachments": [],
+  "related-products" : [],
+  "contentIsHTML": false,
+  "sticky": true
+}}}
+
+
+### Overview 
+The Check Catalog is library that contains the available Checks (metric or status) that can be added to Policies within the Cloud Application Manager. 
+
+### Navigation 
+
+Left-hand Navigation:  
+The Checks live on the Policies tab (Check Catalog) within the Cloud Application Management Monitoring site.
+ 
+To view the Check Catalog, click on the **Check Catalog* button on the top left corner. 
+![NavigationPolicies.png](../../images/cloud-application-manager/NavgivationPolicies.png)
+
+![CreatingNewPolicy.png](../../images/cloud-application-manager/CreatingNewPolicy.png)
+
+
+#### AWS Metric Checks
+![AWSCheckCatalogMetrics.png](../../images/cloud-application-manager/AWSCheckCatalogMetrics.png)
+
+
+**ASG** * 
+Gets Auto Scaling Group metrics from Cloud Watch and outputs them in Graphite format. 
+
+**ASG Instance Count** * 
+Gets the count of instances in a given Auto Scaling Group. 
+
+**Billing** * 
+Gets billing metrics from Cloud Watch and outputs them in Graphite format. 
+
+**Cloudfront Metrics** 
+Gets latency metrics from CloudWatch.
+
+**EC2 Count** 
+This plugin retrieves the number of an Amazon Elastic Compute Cloud (EC2) instances as a metric.
+
+**EC2 Filter** *
+This plugin retrieves EC2 instances matching a given filter. 
+
+**ELB** * 
+Gets Elastic Load Balancer (ELB) metrics from CloudWatch and outputs them in Graphite format. Only supports Classic load balancers. 
+
+**ELB (full)**
+Note: This metric has been deprecated and will be removed. Use ELB metric instead.
+
+**EMR Step** *
+Lists steps in an Amazon MapReduce (EMR) cluster queue with their status. 
+
+**Elasticache** 
+Gets latency metrics from CloudWatch and outputs them in Graphite format.
+
+**RDS** *
+Gets Relational Database Service (RDS) metrics from CloudWatch and outputs them in Graphite format. 
+
+**S3** *
+Gets Amazon Simple Storage Service (S3) metrics from CloudWatch and outputs them in Graphite format. 
+
+**SES** *
+Lists SES (Simple Email Service) send statistics. 
+
+**SQS** *
+Fetches SQS (Simple Queue Service) metrics.
+
+**WAF**
+Gets WAF (Web Application Firewall) latency metrices from CloudWatch.
+
+#### AWS Status Checks
+![AWSCheckCatalogStatuses.png](../../images/cloud-application-manager/AWSCheckCatalogStatuses.png)
+![AWSCheckCatalogStatuses2.png](../../images/cloud-application-manager/AWSCheckCatalogStatuses2.png)
+
+
+**ALB Target Group Health** 
+This plugin checks the health of Application Load Balancer (ALB) target groups.
+
+**ASG Instance Churn**
+Check the number of Auto Scaling Group instances that are terminated and launching in the last hour.
+
+**ASG Instances In Service** *
+Check Auto Scaling Group instances in service. 
+
+**Autoscaling CPU Credits** *
+Check AutoScaling CPU Credits through CloudWatch API. 
+
+**Beanstalk ELB** *
+This plugin finds the desired ELB in a Beanstalk environment and queries for the requested Cloud Watch metric for that ELB. 
+
+**Beanstalk Health** *
+This plugin checks the health of a beanstalk environment using the enhanced health reporting. 
+
+**CloudWatch Alarm** *
+This plugin retrieves the state of a CloudWatch alarm. Can be configured to trigger a warning or critical based on the result. Defaults to OK unless alarm is missing. 
+
+**CloudWatch Alarms**
+This plugin raise a critical if any CloudWatch alarms are in given state. 
+If only 1 alarm needs to be checked, then use CloudWatch Alarm check.
+
+**CloudWatch Composite Metric**
+This plugin retrieves a couple of values of two CloudWatch metrics, computes a percentage value based on the numerator metric and the denominator metric and triggers alarms based on the thresholds specified.
+
+**CloudWatch Metric** *
+This plugin retrieves the value of a CloudWatch metric and triggers alarms based on the thresholds specified. 
+
+**Direct Connect Virtual Interface Check**
+This plugin uses the AWS Direct Connect API to check the status of virtual interfaces. This will critically alert if the connection is not 'available' and warn if there are no connections.
+
+**EBS Burst Limit** *
+Check EC2 Attached Volumes for volumes with low burst balance. 
+
+**EBS Snapshots** *
+Check EC2 Attached Volumes for Snapshots. Only for Volumes with a Name tag. 
+
+**EC2 CPU Balance** *
+This plugin retrieves the value of the CPU balance for all servers. 
+
+**EC2 Filter** *
+This plugin retrieves EC2 instances matching a given filter. 
+
+**EC2 Network** *
+Check EC2 Network Metrics by CloudWatch API. 
+
+**EFS Metric** 
+This plugin checks a CloudWatch metric from the AWS/EFS namespace. 
+For more details, see https://docs.aws.amazon.com/efs/latest/ug/monitoring-cloudwatch.html#efs-metrics
+
+**ELB Certs** *
+This plugin looks up all ELBs in the organization and checks https endpoints for expiring certificates. Only supports Classic load balancers. 
+
+**ELB Health** *
+This plugin checks the health of an Amazon Elastic Load Balancer. Only supports Classic load balancers. 
+
+**ELB Instance In Service** *
+Check Elastic Load Balancer Instances are in Service. Only supports Classic Load Balancers. 
+
+**ELB Latency** *
+This plugin checks the latency of an Amazon ELB (Elastic Load Balancer.) Only supports Classic load balancers. 
+
+**ELB Nodes** *
+This plugin checks an AWS Elastic Load Balancer to ensure a minimum number or percentage of nodes are in service on the ELB. Only supports Classic load balancers. 
+
+**ELB SDK Health**
+This plugin checks the health of an Amazon Elastic Load Balancer or all ELBs in a given region.
+
+**ELB Sum Requests** *
+Check ELB Sum Requests by CloudWatch API. Only supports Classic load balancers. 
+
+**EMR Cluster** *
+This plugin checks to see if an EMR (Elastic MapReduce) cluster exists. 
+
+**EMR Steps** *
+Alerts on any failed steps for a cluster in the past 10 minutes. 
+
+**ENI Status**
+This plugin checks the status of an ENI (Elastic Network Interface.)
+
+**Instance Count** *
+This plugin checks the instances count for a specific ASG (Auto Scale Group.) 
+
+**Instance Events** *
+This plugin looks up all instances in an account and alerts if one or more have a scheduled event (reboot, retirement, etc). 
+
+**Instance Health** *
+This plugin looks up all instances in an account and checks event data and system status. 
+
+
+**Instance Reachability** *
+This plugin looks up all instances from a filter set and pings. 
+
+**RDS***
+Check RDS instance statuses by RDS and CloudWatch API. 
+
+**RDS Events** *
+This plugin checks RDS clusters for critical events. Due to the number of events types on RDS clusters, the check should filter out non-disruptive events that are part of basic operations. 
+
+**RDS Pending Events** *
+This plugin checks RDS clusters for pending maintenance action. 
+
+**Reserved Instances** *
+This plugin checks if reserved instances expire soon. 
+
+**Route** *
+This plugin checks a route to an instance/ENI on a route table. 
+
+**S3 Bucket** *
+This plugin checks a bucket and alerts if not exists. T
+
+**S3 Bucket Visibility**
+This plugin checks a bucket for website configuration and bucket policy. It alerts if the bucket has a website configuration, or a policy that has Get or List actions.
+
+**S3 Object**
+This plugin checks if a file exists in a bucket and/or is not too old.
+
+**S3 Tag** *
+This plugin checks if buckets have a set of tags. 
+
+**SES Limit ** *
+Gets your SES sending limit and issues a warn and critical based on percentages you supply for your daily sending limit. 
+
+**SES Statistics** *
+Alerts on threshold values for SES statistics. 
+
+**SNS Subscriptions** *
+This plugin checks if topic subscriptions are not 'PendingConfirmation' state. 
+
+**SQS Messages** *
+This plugin checks the number of messages in an Amazon Web Services SQS queue. 
+
+**Subnet IP Consumption** *
+This plugin uses the EC2 API to determine if any subnet in a given region has consumed IP addresses such that the consumption exceeds a user-specified threshold. This plugin additionally uses the IAM API to resolve the account alias, if the user uses the -s/--show-account-alias flag. 
+
+**VPC Name Servers** *
+Checks the VPCs nameservers are functional. 
+
+**VPC VPN Connections** *
+This plugin checks VPC VPN connections to ensure they are up. 
+
+
+*Indicates the Metric or Status check must be run on an agent running in AWS infrastructure or the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY environment variables must be set.

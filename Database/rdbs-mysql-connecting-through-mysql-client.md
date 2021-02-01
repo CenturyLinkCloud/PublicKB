@@ -2,6 +2,7 @@
   "title": "Connecting to Relational DB using MySQL Workbench",
   "date": "03-04-2016",
   "author": "Christine Parr",
+  "keywords": ["clc", "cloud", "database", "db", "dbaas", "mysql", "ssl"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false

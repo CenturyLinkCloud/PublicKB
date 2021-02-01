@@ -8,9 +8,9 @@
 
 ### Create Managed Application in Cloud Application Manager (CAM)
 
-Learn how to create a Managed Application within CAM; one that would be supported and managed by CenturyLink.  At the time of writing this article, this is intended for internal users of CenturyLink and most specifically those familiar with Managed Services Anywhere.  As the process is refined, the creation of Managed Applications will be expanded to a wider audience. This includes customers wanting their custom applications managed by CenturyLink.
+Learn how to create a Managed Application within CAM; one that would be supported and managed by Lumen.  At the time of writing this article, this is intended for internal users of Lumen and most specifically those familiar with Managed Services Anywhere.  As the process is refined, the creation of Managed Applications will be expanded to a wider audience. This includes customers wanting their custom applications managed by Lumen.
 
-Before you start, sign up for a Cloud Application Manager account (account currently expected to be within the CenturyLink organization).
+Before you start, sign up for a Cloud Application Manager account (account currently expected to be within the Lumen organization).
 
 Then, follow these simple steps.
 
@@ -47,7 +47,7 @@ Go ahead and click **New**, which will show a pop-up modal. Here, enter a name a
 
 ![msa-managed-mongodb-watcher-policies-new.png](../../images/managed-services-anywhere/msa-managed-mongodb-watcher-policies-new.png)
 
-Here's our new policy with no checks currently. I'll just be adding a simple check. Go ahead and create all of the necessary checks for your application. Reference Watcher documentation for further information.
+Here's our new policy with no checks currently. I'll just be adding a simple check. Go ahead and create all of the necessary checks for your application. The Check Catalog is accessible from within the Policies tab of the Monitoring Site and provides a list of all the current check types that could be configured.
 
 ![msa-managed-mongodb-watcher-nochecks.png](../../images/managed-services-anywhere/msa-managed-mongodb-watcher-nochecks.png)
 
@@ -99,7 +99,7 @@ I have gone ahead and added the Managed Application script box as well as the Mo
 
 ### Pass Application Values to Managed Application Box
 
-Learn how to pass values to the Managed Application script box for making your application available for support by CenturyLink.
+Learn how to pass values to the Managed Application script box for making your application available for support by Lumen.
 
 First, I should point out the lifecycle events of a Managed Application. When a Managed Application is deployed, the Make Managed process will be triggered and executed on the compute prior to your application script box.  It is during your script box execution that the Managed Application script box will execute at both the **pre_start** and **start** lifecycle events.  The **pre_start** is simply detecting whether or not the Make Managed process for the compute was successful prior to moving forward.  If it had failed silently for some reason, the script box will be halted here.
 
@@ -123,7 +123,7 @@ And you can see that I have populated the **configure** event with some code.  B
 
 > Bash Example:
 
-```shell
+```
 username="{{ mongo.username }}"
 password="{{ mongo.password }}"
 log_path="{{ mongo.LOG_PATH }}"
@@ -139,7 +139,7 @@ elasticbox set app.vars.APPLICATION_CONFIG "$config"
 
 > Powershell Example (if this were windows):
 
-```powershell
+```
 $username = "{{ mongo.username }}"
 $password = "{{ mongo.password }}"
 $log_path = "{{ mongo.LOG_PATH }}"

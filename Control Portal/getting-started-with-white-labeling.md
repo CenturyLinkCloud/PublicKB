@@ -7,7 +7,7 @@
 }}}
 
 ### Getting Started with White Labeling
-CenturyLink Cloud includes several features that allow organizations to replace specific CenturyLink branding elements with their own brand. This article covers the most popular elements of white-labeling, including:
+Lumen Cloud includes several features that allow organizations to replace specific Lumen branding elements with their own brand. This article covers the most popular elements of white-labeling, including:
 
 * Site Name
 * Header Bar Color Scheme

@@ -22,9 +22,4 @@ Check the box in front of **Maximum Available Bandwidth**. Click **Ok**
 
 **Note**: The procedure is same for VMWare/Manual sites as source datacenters.
 
-### Video Tutorial
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/37-86QUfJW0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</p>
-
 **Next Step** is to [Check Replication Status](Check Replication Status.md)

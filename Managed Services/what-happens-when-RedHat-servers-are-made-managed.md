@@ -7,11 +7,11 @@
 }}}
 
 ### Overview
-This document provides an overview of steps taken when RHEL servers are prepared to be managed by CenturyLink.
+This document provides an overview of steps taken when RHEL servers are prepared to be managed by Lumen.
 
 ### Audience
 
-Users employed by companies that have agreed to terms with [CenturyLink Sales](http://www.centurylink.com/) for the CenturyLink Cloud product.
+Users employed by companies that have agreed to terms with [Lumen Sales](http://www.centurylink.com/) for the Lumen Cloud product.
 
 ### Prerequisites
 * An understanding of the process for [making newly created servers managed](../Managed Services/created-a-managed-server-now-what.md) or for [converting pre-existing servers to managed](../Managed Services/converting-unmanaged-virtual-machines-to-managed.md)
@@ -24,7 +24,7 @@ Users employed by companies that have agreed to terms with [CenturyLink Sales](h
 
 The following is not meant to be a complete description of everything that happens when a VM is prepared for management, but to give users a better idea of configuration changes that might be necessary to manage their servers.
 
-Many of the following items are mandatory. Some default items have options for change. If you would like to alter default options, please contact the CenturyLink Client Service Center at 1-888-638-6771 to submit your request for review.
+Many of the following items are mandatory. Some default items have options for change. If you would like to alter default options, please contact the Lumen Client Service Center at 1-888-638-6771 to submit your request for review.
 
 Some of the items below only occur when the server is new. If the server already exists before it is [converted to managed](../Managed Services/converting-unmanaged-virtual-machines-to-managed.md)it is considered a Customer Provided Image (CPI). Because each CPI server is different and there is no guarantee that some of the steps below would not harm CPI servers, some of the steps -  indicated by "Not for CPI" statements - will not apply.
 

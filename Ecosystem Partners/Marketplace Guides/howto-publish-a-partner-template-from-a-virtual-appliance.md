@@ -7,14 +7,14 @@
 }}}
 
 ### Description
-This Knowledge Base article documents the process required for Cloud Ecosystem Program partners to upload and publish Partner Templates to customers of the CenturyLink Cloud platform using an uploaded "virtual appliance" image.
+This Knowledge Base article documents the process required for Cloud Ecosystem Program partners to upload and publish Partner Templates to customers of the Lumen Cloud platform using an uploaded "virtual appliance" image.
 
 ### Audience
 - Cloud Ecosystem Program Members
-- CenturyLink Cloud Support Personnel
+- Lumen Cloud Support Personnel
 
 ### Impact
-For some CenturyLink Cloud Ecosystem Program members, a Virtual Appliance or "custom image" is simply the best model for technology integration and deployment. CenturyLink Cloud Ecosystem members can upload their VMware-based image technology by following this process.
+For some Lumen Cloud Ecosystem Program members, a Virtual Appliance or "custom image" is simply the best model for technology integration and deployment. Lumen Cloud Ecosystem members can upload their VMware-based image technology by following this process.
 
 ### Prerequisite
 - Cloud Ecosystem Program status - must be at least Candidate
@@ -24,16 +24,16 @@ For some CenturyLink Cloud Ecosystem Program members, a Virtual Appliance or "cu
     - Should adhere to Image Best Practices
         http://www.ctl.io/knowledge-base/service-tasks/best-practices-and-preparation-for-a-virtual-machineovfova-import
 - Please ensure that company and product name are in any image filenames.
-- Be aware that importing a virtual appliance or image is considered a billable service task by CenturyLink Cloud Support. These fees will count against an Ecosystem Partner's integration credit. More information on Service Tasks and pricing can be found here: http://www.ctl.io/knowledge-base/service-tasks/requesting-service-tasks-on-centurylink-cloud
+- Be aware that importing a virtual appliance or image is considered a billable service task by Lumen Cloud Support. These fees will count against an Ecosystem Partner's integration credit. More information on Service Tasks and pricing can be found here: http://www.ctl.io/knowledge-base/service-tasks/requesting-service-tasks-on-lumen-cloud
 
 ### Publish Partner-Supplied 'Custom Image' Process
 This is an easy 3 step process that enables Ecosystem Partners to provide their OVA file via FTP and then request that it be moved to the Ecosystem Partner Global Repository.
 
 #### Step 1 - Open Service Task request and ask for a FTP account to upload the image to
-Open a service task request ticket with ServiceTasks@ctl.io with the following details:
+Open a service task request ticket with help@ctl.io with the following details:
 
 ----
-TO: ServiceTasks@ctl.io
+TO: help@ctl.io
 
 SUBJECT:  Custom Image Import Request for CLC Ecosystem Partner
 
@@ -55,7 +55,7 @@ your.name.here
 Upload your OVA file via FTP to the location provided by the Service Request team. Please do not use any compression besides .zip format.
 
 #### Step 3 - Request the image to the Global Repo
-Please reply to the previous service task request email with the FTP login from ServiceTasks@ctl.io with the following details:
+Please reply to the previous service task request email with the FTP login from help@ctl.io with the following details:
 
 ----
 _REPLY TO THE PREVIOUS REQUEST EMAIL TO KEEP THE REQUEST IN ONE TICKET_

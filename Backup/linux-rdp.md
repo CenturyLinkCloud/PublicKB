@@ -1,7 +1,8 @@
 {{{
   "title": "Install RDP on Linux for SBS",
-  "date": "03-21-2016",
+  "date": "11-4-2019",
   "author":  "John Gerger",
+  "keywords": ["api", "backup", "clc", "cloud", "install", "sbs", "server"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -14,93 +15,93 @@ The new Simple Backup Service (SBS) currently requires a web browser to perform 
 Here are the commands to install RDP services on a remote RHEL6x, RHEL7x, CentOS6x, and CentOS7x servers.
 Other OSes and versions may have similar procedures.
 ```
-# RHEL6x 
-####### 
-# Establish a remote SSH session as root and install and configure a desktop with RDP on RHEL6x 
-# Install a full desktop 
+# RHEL6x
+#######
+# Establish a remote SSH session as root and install and configure a desktop with RDP on RHEL6x
+# Install a full desktop
 yum -y groupinstall "Desktop Platform"
 
-# Install RDP services 
+# Install RDP services
 yum -y install xrdp tigervnc-server
 
-# Start the RDP service manually now 
+# Start the RDP service manually now
 /etc/init.d/xrdp start
 
-# Install a web browser 
+# Install a web browser
 yum -y install firefox
 
-# You may now RDP to Linux from Windows 
-# NOTE1: Set mstsc to use 16bit High Color (24bit / 32bit will NOT work) 
+# You may now RDP to Linux from Windows
+# NOTE1: Set mstsc to use 16bit High Color (24bit / 32bit will NOT work)
 # NOTE2: You may want to login as a non-root user to get access to normal icons and programs
 ```
 ```
-# RHEL7x 
-####### 
-# Establish a remote SSH session as root and install and configure a desktop with RDP on RHEL7x 
-# Install a full desktop 
+# RHEL7x
+#######
+# Establish a remote SSH session as root and install and configure a desktop with RDP on RHEL7x
+# Install a full desktop
 yum -y groups install "Server with GUI"
 
-# Install RDP services 
+# Install RDP services
 yum -y install xrdp tigervnc-server
 
-# Allow a rule to allow RDP through the OS firewall 
+# Allow a rule to allow RDP through the OS firewall
 firewall-cmd --permanent --zone=public --add-port=3389/tcp
 
-# Restart the firewall so the new RDP rule becomes effective 
+# Restart the firewall so the new RDP rule becomes effective
 firewall-cmd --reload
 
-# Set the RDP service to auto-start at boot-time 
+# Set the RDP service to auto-start at boot-time
 systemctl enable xrdp.service
 
-# Start the RDP service manually now 
+# Start the RDP service manually now
 systemctl start xrdp.service
 
-# You may now RDP to Linux from Windows 
+# You may now RDP to Linux from Windows
 # NOTE: Set mstsc to use 16bit High Color (24bit / 32bit will NOT work)
 ```
 ```
-# CentOS6x 
-######### 
-# Establish a remote SSH session as root and install and configure a desktop with RDP on CentOS6x 
-# Install a full desktop 
+# CentOS6x
+#########
+# Establish a remote SSH session as root and install and configure a desktop with RDP on CentOS6x
+# Install a full desktop
 yum -y groupinstall desktop
 
-# Install RDP services 
+# Install RDP services
 yum -y install xrdp tigervnc-server
 
-# Start the RDP service manually now 
+# Start the RDP service manually now
 /etc/init.d/xrdp start
 
-# Install a web browser 
+# Install a web browser
 yum -y install firefox
 
-# You may now RDP to Linux from Windows 
-# NOTE1: Set mstsc to use 16bit High Color (24bit / 32bit will NOT work) 
+# You may now RDP to Linux from Windows
+# NOTE1: Set mstsc to use 16bit High Color (24bit / 32bit will NOT work)
 # NOTE2: You may want to login as a non-root user to get access to normal icons and programs
 ```
 ```
-# CentOS7x 
-########## 
-# Establish a remote SSH session as root and install and configure a desktop with RDP on CentOS7x 
-# Install a full desktop 
+# CentOS7x
+##########
+# Establish a remote SSH session as root and install and configure a desktop with RDP on CentOS7x
+# Install a full desktop
 yum -y groups install "Server with GUI"
 
-# Install RDP services 
+# Install RDP services
 yum -y install xrdp tigervnc-server
 
-# Allow a rule to allow RDP through the OS firewall 
+# Allow a rule to allow RDP through the OS firewall
 firewall-cmd --permanent --zone=public --add-port=3389/tcp
 
-# Restart the firewall so the new RDP rule becomes effective 
+# Restart the firewall so the new RDP rule becomes effective
 firewall-cmd --reload
 
-# Set the RDP service to auto-start at boot-time 
+# Set the RDP service to auto-start at boot-time
 systemctl enable xrdp.service
 
-# Start the RDP service manually now 
+# Start the RDP service manually now
 systemctl start xrdp.service
 
-# You may now RDP to Linux from Windows 
+# You may now RDP to Linux from Windows
 # NOTE: Set mstsc to use 16bit High Color (24bit / 32bit will NOT work)
 ```
 

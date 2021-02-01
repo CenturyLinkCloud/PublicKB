@@ -33,19 +33,19 @@ Current Release is v 7.0.1 (6/15/2015)
 For more information, please visit www.clustrix.com.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
 After reading this article, the user should understand what ClustrixDB does, how to add a new node to an existing ClustrixDB cluster, and how to contact Clustrix to get more information or product license/keys for evaluation and production.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 * An existing ClustrixDB cluster with an Evaluation or Production License.
 * Adequate/equivalent CLC infrastructure will be deployed for the new evaluation or typical production node as part of the ClustrixDB Blueprint execution.
 
 ### Postrequisite
-To access your application from a computer outside the CenturyLink Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
-* [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Server's Public IP through the Control Portal and configuring appropriately.
+To access your application from a computer outside the Lumen Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
+* [Allow incoming traffic](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Server's Public IP through the Control Portal and configuring appropriately.
 * The default ports to access the application are: `22`, `80`, `3306`.
 
 ### Deploying the “Add a ClustrixDB v7-0-1 node" Blueprint
@@ -87,13 +87,13 @@ After your Blueprint deploys successfully, please follow these instructions to a
 3. You'll need the private IP of the nodes to complete this action.
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. CenturyLink Cloud customers must have a separate subscription and license and license key from Clustrix to use the ClustrixDB software after deployed. For more information on pricing and licensing, please contact Clustrix @ +1 877.806.5357 or +1 415.501.9560 or at [clcsales@clustrix.com](mailto:clcsales@clustrix.com)
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. Lumen Cloud customers must have a separate subscription and license and license key from Clustrix to use the ClustrixDB software after deployed. For more information on pricing and licensing, please contact Clustrix @ +1 877.806.5357 or +1 415.501.9560 or at [clcsales@clustrix.com](mailto:clcsales@clustrix.com)
 
 ### About Clustrix
-CenturyLink Cloud works with [Clustrix](http://www.clustrix.com) who provides the leading scale-out SQL database engineered for the cloud and the first database built specifically to meet the unique growth, performance and availability demands of today’s transactional web sites and web applications. With ClustrixDB, you can build business critical applications that support massive transactional volume and real-time reporting of business performance metrics.
+Lumen Cloud works with [Clustrix](http://www.clustrix.com) who provides the leading scale-out SQL database engineered for the cloud and the first database built specifically to meet the unique growth, performance and availability demands of today’s transactional web sites and web applications. With ClustrixDB, you can build business critical applications that support massive transactional volume and real-time reporting of business performance metrics.
 
 ### Frequently Asked Questions
 
 #### Who should I contact for support?
-* For issues related to deploying the Clustrix Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please visit the [Clustrix website](http://docs.clustrix.com) or by emailing [clcsales@clustrix.com](mailto:clcsales@clustrix.com)
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to deploying the Clustrix Blueprint on Lumen Cloud, Licensing or Accessing the deployed software, please visit the [Clustrix website](http://docs.clustrix.com) or by emailing [clcsales@clustrix.com](mailto:clcsales@clustrix.com)
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](https://t3n.zendesk.com/tickets/new).

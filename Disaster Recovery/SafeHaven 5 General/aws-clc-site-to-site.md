@@ -20,35 +20,35 @@ This article explains how to create a site-to-site VPN between AWS and CLC. It i
    * Enter **IPv4 CIDR block** . This is going to be a /16 IP block that will be created under the VPC.   
      **IPv6 CIDR Block** : Select the defaul option, **No IPv6 CIDR Block**.  
      Enter **VPC name**.  
-       
+
    * Enter **Public subnet's IPv4 CIDR**. Enter a /24 IP block to use for the public subnet. This subnet should be within the range of        /16 IP clock specied in step a.  
-     Select an **availability zone** for the subnet. 
+     Select an **availability zone** for the subnet.
      Enter the **Public subnet name**
-       
+
    * Enter **Private subnet's IPv4 CIDR**. Enter a /24 IP block to use for the private subnet. This subnet should be within the range        of /16 IP clock specied in step a.  
      Select an **availability zone** for the subnet.   
      Enter the **Private subnet name**.
-     
+
    * Click **Next**.
-     
+
 5. Configure your VPN.  
    * Enter **Customer Gateway IP**.   
-     To find this information, login to [Centurylink Portal](https://control.ctl.io/)   
+     To find this information, login to [Lumen Portal](https://control.ctl.io/)   
      Click on **Network** > **Site-to-site VPN**  
      Click **+site to site vpn**  
      Select the right datacenter in front of **Control portal site**  
      Copy the **VPN Peer IPv4 address** and paste it in **Customer Gateway IP** in AWS.
-   
+
    * Enter **Customer Gateway name** and **VPN Connection name**.  
-   
+
    * Change **Routing type** to **Static**
-   
+
    * Go back to CLC **Site to Site VPN** page to get the **IP prefix**.
      Click on **Add Network Block**. Select the **Network** and **subnet size**. click **Add network block**.
      Copy the IP address in fron of **Tunnel Encrypted Subnets** and paste it under **IP prefix** in AWS.  
-      
+
    * Click **Create VPC**. This will initiate the VPC.
-   
+
    * Click **ok**  
      Select the newly created VPC.
      click **VPN Connections**.  
@@ -94,7 +94,7 @@ The private subnet needs to be routed using a NAT Gateway.
 
 2. Click on **Allocate new address**.  Click **Alocate**  
 
-3. This will privision a new Elastic IP. Click **Close**. 
+3. This will privision a new Elastic IP. Click **Close**.
 
 #### Create a NAT Gateway
 1. Click on **NAT Gateways** on the left side.  
@@ -117,16 +117,13 @@ The private subnet needs to be routed using a NAT Gateway.
 5. Click **Add another route**.  
    Under **destination**, enter 0.0.0.0/0. Undedr **target**, select the NAT Gateway created in previous section.  
    Click **Save**.  
-   
+
 6. Click on **Subnet Associations** tab.  
 
 7. Click **Edit**.  
 
 8. Select the private subnet, and click **Save**.  
 
-This concludes the setup of VPN between Centurylink Cloud and AWS cloud.
+This concludes the setup of VPN between Lumen Cloud and AWS cloud.
 
 To configure security groups, please follow [configure security groups](security-group.md)
-
-### Video Tutorial  
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BcRTgbuj2Fo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

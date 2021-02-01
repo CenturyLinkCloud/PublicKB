@@ -25,7 +25,7 @@
 <p><strong>Minor Enhancements (3)</strong>
 </p>
 <ul>
-  <li><strong>Platform and templates replicated across data centers. </strong>All CenturyLink Cloud operating system templates are automatically replicated to every CenturyLink Cloud data center.</li>
+  <li><strong>Platform and templates replicated across data centers. </strong>All Lumen Cloud operating system templates are automatically replicated to every Lumen Cloud data center.</li>
   <li><strong>View the status of your accounts (active OR disabled). </strong>Users can see all the sub-accounts for a given account, even if those sub-accounts are marked as inactive. In the next release, users will be able to also change the state of accounts
     and users.
     <p><img src="https://t3n.zendesk.com/attachments/token/bju27qjtjdxajrd/?name=release04-26_02.png" alt="release04-26_02.png" />

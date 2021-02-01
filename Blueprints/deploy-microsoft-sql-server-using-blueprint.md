@@ -21,13 +21,13 @@
 * [Changelog](#changelog)
 
 ### Overview
-CenturyLink Cloud customers can procure and deploy Microsoft SQL Server licensing within the Control Portal. Microsoft SQL Server is licensed via the Microsoft SPLA program. By using the CenturyLink Cloud public Blueprint customers have multiple ways to consume and install this business critical database software.
+Lumen Cloud customers can procure and deploy Microsoft SQL Server licensing within the Control Portal. Microsoft SQL Server is licensed via the Microsoft SPLA program. By using the Lumen Cloud public Blueprint customers have multiple ways to consume and install this business critical database software.
 
 ### Socket to vCPU Allocation
 It is recommended customers review our delivery model for [Sockets to vCPU](../Servers/platform-socket-to-vcpu-allocation.md) prior to deploying Microsoft SQL Server to be fully aware of the platform default operations when allocating vCPUs for use with the database service.
 
 ### Prerequisites
-* A CenturyLink Cloud Account
+* A Lumen Cloud Account
 * ~20 GB Free Storage on the selected install drive
 * Operating System and SQL Server Edition aligns in a supported fashion:
 
@@ -60,6 +60,7 @@ The following are quick tips/notes based on past experiences with customers leve
 * Due to Microsoft's licensing constraints, changing the version/edition is not possible. Customers who want to change this must create a new server and SQL instance with the version/edition desired and migrate their data.
 * To remove the SQL license from your server, it must be deleted. Customers are responsible for migrating their data prior to deleting the server. Microsoft will not accept license termination unless the VM is fully removed.
 * Licensing fee's are billed with a minimum of 4 vCPU and in 2 vCPU increments for a full month. These fee's are also billed using a high watermark model in which the maximum vCPU assigned to a server during a given month will incurr cost.
+* There is a known issue with installing SQL by Blueprint on domain-joined servers. It is recommended to install SQL on servers prior to taking the action of joining them to a domain.
 
 ### Installing Microsoft SQL Server using Execute Package
 

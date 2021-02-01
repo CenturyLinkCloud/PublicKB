@@ -9,11 +9,11 @@
 }}}
 
 ### Introduction
-Here at CenturyLink, we use a technology called [Ansible](http://www.ansible.com/) pretty extensively throughout our platform. Ansible is an IT automation and orchestration engine that enables configuration management, provisioning, deployment, as well as many other IT needs. [Runner](https://www.ctl.io/runner/) wraps all of Ansible’s goodness into a Job Service, along with other micro services such as SSH, status, queuing, and scheduling. Next we'll look at what Runner is and how you would use it.
+Here at Lumen, we use a technology called [Ansible](http://www.ansible.com/) pretty extensively throughout our platform. Ansible is an IT automation and orchestration engine that enables configuration management, provisioning, deployment, as well as many other IT needs. [Runner](https://www.ctl.io/runner/) wraps all of Ansible’s goodness into a Job Service, along with other micro services such as SSH, status, queuing, and scheduling. Next we'll look at what Runner is and how you would use it.
 
 
 #### What Is Runner?
-Runner is a new product from CenturyLink that enables fast, easy automation and orchestration on the CenturyLink Platform, as well as third-party cloud providers and on-premises infrastructure and devices. Runner provides the ability to quickly provision and modify resources on any environment, and gives users a true Hybrid IT solution, regardless of where their resources are.
+Runner is a new product from Lumen that enables fast, easy automation and orchestration on the Lumen Platform, as well as third-party cloud providers and on-premises infrastructure and devices. Runner provides the ability to quickly provision and modify resources on any environment, and gives users a true Hybrid IT solution, regardless of where their resources are.
 
 On a more granular level, Runner is an automation and orchestration engine that we exposed as a service, and coupled with services mentioned below, enhance the Runner experience. Runner, at its core, is an Ansible engine. On top of that engine exists several other custom services and APIs we've created, many of which were created in tandem with the Runner job service to enhance the job execution capabilities.
 
@@ -29,7 +29,7 @@ Using Runner is a fairly straightforward process. To get started, one must first
 
 **Host Information** – This information provides the job context for where your job is to be run. You can specify a single host, group, or all hosts you want to use.
 
-**Bearer Token** – Each job requires authorization in order to run. Runner authorizes your job using your CenturyLink Cloud Bearer Token. [The API is available here](https://www.ctl.io/api-docs/v2/#authentication-login). Runner takes a JSON payload of user defined options and parameters, including the above required information, and creates a job definition within Runner. For a full list of payload options and parameters, please take a look at this [KB article](https://www.ctl.io/knowledge-base/runner/job-service/). It is worth noting that you can create a job and not run it. This will be defined in your API calls, such as:
+**Bearer Token** – Each job requires authorization in order to run. Runner authorizes your job using your Lumen Cloud Bearer Token. [The API is available here](https://www.ctl.io/api-docs/v2/#authentication-login). Runner takes a JSON payload of user defined options and parameters, including the above required information, and creates a job definition within Runner. For a full list of payload options and parameters, please take a look at this [KB article](https://www.ctl.io/knowledge-base/runner/job-service/). It is worth noting that you can create a job and not run it. This will be defined in your API calls, such as:
 
 `[RUNNER API PATH]/jobs/{accountAlias}?immediate=true|false`
 
@@ -119,5 +119,5 @@ We run the shell command **echo** here.
 **Want to see it for yourself?** For the full list of playbooks and all Ansible module-related things, visit our [GitHub page](https://github.com/CenturyLinkCloud/clc-ansible-module).
 
 #### What's Next?
-* Start a [free trial](https://www.ctl.io/free-trial/) on CenturyLink Cloud.
+* Start a [free trial](https://www.ctl.io/free-trial/) on Lumen Cloud.
 * Learn more about Runner in our [Knowledge Base](https://www.ctl.io/knowledge-base/runner/).

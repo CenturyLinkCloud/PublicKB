@@ -19,7 +19,7 @@ This article explains how to Failback a Linux Protection Group from a Recovery D
 ### Assumptions
 This article assumes that the Protection group is in a failed over state and the production VM is available to initiate a failback.
 
-For the purpose of this article, we are using Ubuntu 14 as a production server in CenturyLink's CA2(Toronto) production datacenter. The recovery site is CenturyLink's WA1(Washington) recovery datacenter.
+For the purpose of this article, we are using Ubuntu 14 as a production server in Lumen's CA2(Toronto) production datacenter. The recovery site is Lumen's WA1(Washington) recovery datacenter.
 
 ### Failback
 1. Once the production site is ready for failback, right-click the protection group on the DR Site and click **Failback**.
@@ -45,7 +45,7 @@ For the purpose of this article, we are using Ubuntu 14 as a production server i
 
    Wait till Test Failover and Power on have completed. The production VM should be powered ON.
 
-7. The Production server is now configured to iSCSI boot using the disks of the Production SRN instead of its own local disks. We **strongly recommend** taking a snapshot of the Production VM at this point from the CenturyLink Control Portal.
+7. The Production server is now configured to iSCSI boot using the disks of the Production SRN instead of its own local disks. We **strongly recommend** taking a snapshot of the Production VM at this point from the Lumen Control Portal.
    ![Linux](../../images/SH4.0/LinuxFailover/LF23.png)
 
 8. Log in to the production server.

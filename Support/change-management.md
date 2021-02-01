@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p>All changes performed by CenturyLink Cloud&nbsp;will be done in compliance with the following criteria:</p>
+<p>All changes performed by Lumen Cloud&nbsp;will be done in compliance with the following criteria:</p>
 
 <p>1. All Network changes will be performed outside of local datacenter time of 8:00am to 5:00pm Monday through Friday, to provide greater network stability during core business hours. The exception is for break/fix work during an Urgent Incident or in extreme circumstances.</p>
 
@@ -44,12 +44,12 @@
         <p>Potentially Disruptive</p>
       </td>
       <td>
-        <p>This category covers maintenance where CenturyLink Cloud&nbsp;cannot remove or migrate the live customer data from the system but it is expected that the maintenance will have no customer impact. An example of this is upgrading the redundant controllers
+        <p>This category covers maintenance where Lumen Cloud&nbsp;cannot remove or migrate the live customer data from the system but it is expected that the maintenance will have no customer impact. An example of this is upgrading the redundant controllers
           on storage units that allow hot upgrading. It is highly recommended to migrate as much live customer data off of the hardware/service that is about to undergo maintenance.</p>
         
       </td>
       <td>
-        <p>(48 hours in advance) Customers, Partners, and CenturyLink Cloud&nbsp;will be notified via email. This list will be derived from control.</p>
+        <p>(48 hours in advance) Customers, Partners, and Lumen Cloud&nbsp;will be notified via email. This list will be derived from control.</p>
       </td>
     </tr>
     <tr>
@@ -60,7 +60,7 @@
         <p>This category covers maintenance where a change that is going to be made will cause a noticeable outage to the customers.</p>
       </td>
       <td>
-        <p>(96 hours in advance)&nbsp; Customers, Partners, and CenturyLink Cloud&nbsp;will be notified via email. This list will be derived from control.</p>
+        <p>(96 hours in advance)&nbsp; Customers, Partners, and Lumen Cloud&nbsp;will be notified via email. This list will be derived from control.</p>
       </td>
     </tr>
   </tbody>

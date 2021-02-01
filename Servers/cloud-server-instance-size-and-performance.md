@@ -7,7 +7,7 @@
   "sticky": true
 }}}
 
-The CenturyLink Cloud Platform does not offer predefined virtual "instance types" but rather, lets users provision virtual servers with any combination of resources they want. The platform is designed to deliver predictable performance for each machine regardless of size and data center. Costs are incurred hourly and based on the amount of CPU, memory and storage resources allocated.
+The Lumen Cloud Platform does not offer predefined virtual "instance types" but rather, lets users provision virtual servers with any combination of resources they want. The platform is designed to deliver predictable performance for each machine regardless of size and data center. Costs are incurred hourly and based on the amount of CPU, memory and storage resources allocated.
 
 ### Maximum Resources (Standard)
 
@@ -41,4 +41,4 @@ For organizations that are used to working with their own data centers, the term
 
 With the increasing prevalence of server virtualization, developers and administrators are growing comfortable with compute resources that can easily change over time. Cloud computing takes this paradigm further by not only charging per hour (instead of for the life of the server), but also shielding the user from the underlying infrastructure that hosts the virtual machines. Each vCPU requested by a customer is equivalent to a 2 GHz or faster Intel Xeon processor. These resources are then managed by the hypervisor to ensure that all server instances on the physical host receive predictable performance while maximizing the overall performance of the physical host.
 
-CenturyLink Cloud closely monitors the server clusters and ensures that CPU and RAM utilization never surpass 50-70% to allow enough headroom for spikes and peak traffic.
+Lumen Cloud closely monitors the server clusters and ensures that CPU and RAM utilization never surpass 50-70% to allow enough headroom for spikes and peak traffic.

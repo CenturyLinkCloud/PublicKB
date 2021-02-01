@@ -1,16 +1,17 @@
 {{{
-  "title": "Automating Your Rollout of the Simple Backup Service with the CenturyLink Cloud API",
+  "title": "Automating Your Rollout of the Simple Backup Service with the Lumen Cloud API",
   "date": "05-16-2016",
   "author": "Matt Schwabenbauer",
+  "keywords": ["api", "backup", "clc", "cloud", "portal", "powershell", "sbs", "storage", "vm"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
   "sticky": false
 }}}
 
-Earlier this year, CenturyLink Cloud introduced the [Simple Backup Service (SBS)](//www.ctl.io/simple-backup-service/). A fully-integrated component of the CenturyLink Cloud Platform, the SBS enables customers to have complete control over the retention policies, file paths, and off-site storage locations of file-level backup protection for their public cloud virtual machines (VM).
+Earlier this year, Lumen Cloud introduced the [Simple Backup Service (SBS)](//www.ctl.io/simple-backup-service/). A fully-integrated component of the Lumen Cloud Platform, the SBS enables customers to have complete control over the retention policies, file paths, and off-site storage locations of file-level backup protection for their public cloud virtual machines (VM).
 
-Much like our other product offerings, you can create and apply SBS retention policies directly from the CenturyLink Cloud Control Portal UI. While the UI is great for simple tasks like creating a retention policy or applying a policy to one or two servers, having to run through an entire CenturyLink Cloud footprint isn’t the best option for some of our larger customers. So, we have also integrated SBS into the CenturyLink Cloud V2 API. By leveraging our RESTful API, you can 'programmatically' create or modify retention policies for your organization, discover the policies assigned to a server or set of servers, and quickly assign retention policies in bulk.
+Much like our other product offerings, you can create and apply SBS retention policies directly from the Lumen Cloud Control Portal UI. While the UI is great for simple tasks like creating a retention policy or applying a policy to one or two servers, having to run through an entire Lumen Cloud footprint isn’t the best option for some of our larger customers. So, we have also integrated SBS into the Lumen Cloud V2 API. By leveraging our RESTful API, you can 'programmatically' create or modify retention policies for your organization, discover the policies assigned to a server or set of servers, and quickly assign retention policies in bulk.
 
 The following powershell script will iterate through each of the servers in the specified account alias and create the appropriate SBS policies based on the storage paths being used on the VMs. The correct operating system (OS) policies will be created for Windows and Linux respectively. The script will then iterate through the servers again and apply the appropriate policy based on the OS.
 
@@ -32,7 +33,7 @@ There are a number of variables at the beginning of the script that you can manu
 
 4. Click **Run Script** in the toolbar at the top of the Windows PowerShell ISE window. This is identified by a green arrow pointing to the right. Alternatively, you can press the F5 function key.
 
-5. A prompt will appear. Log in to the prompt with your CenturyLink Cloud Control Portal credentials. As the prompt implies, these are the same credentials you use to log in to the Control Portal UI, or to make CenturyLink Cloud V2 API calls.
+5. A prompt will appear. Log in to the prompt with your Lumen Cloud Control Portal credentials. As the prompt implies, these are the same credentials you use to log in to the Control Portal UI, or to make Lumen Cloud V2 API calls.
 
     ![sbspowershellscriptprompt.png](../images/sbspowershellscriptprompt.png)
 
@@ -61,7 +62,7 @@ to confirm the script and access the .txt output file. The file contains the log
 
     ![sbspowershellscriptlogging.png](../images/sbspowershellscriptlogging.png)
 
-11. You can also check the Control Portal to see the policies that were created. Navigate to the [Control Portal](https://control.ctl.io) and login with your CenturyLink Cloud account credentials.
+11. You can also check the Control Portal to see the policies that were created. Navigate to the [Control Portal](https://control.ctl.io) and login with your Lumen Cloud account credentials.
 
 12. From the Navigation Menu, click **Infrastructure > Policies**. On the Policies page, click **Simple Backup Service**.
 
@@ -83,7 +84,7 @@ to confirm the script and access the .txt output file. The file contains the log
 
 ```
 <#
-Script to create and apply a Simple Backup Service retention policy to all CenturyLink Cloud servers in a given account
+Script to create and apply a Simple Backup Service retention policy to all Lumen Cloud servers in a given account
 Author: Matt Schwabenbauer
 Created: April 20, 2016
 Matt.Schwabenbauer@ctl.io
@@ -99,16 +100,16 @@ An output file with results of the operation will be stored in C:\users\public\C
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 
 # Tell the user about this script
-Write-Verbose -message "This script will iterate through Virtual Machines in a given CenturyLink Cloud account alias and apply a Simple Backup Service policy to them." -verbose
+Write-Verbose -message "This script will iterate through Virtual Machines in a given Lumen Cloud account alias and apply a Simple Backup Service policy to them." -verbose
 
 # Create directory to store .txt file with results of the operation
 New-Item -ItemType Directory -Force -Path C:\Users\Public\CLC\SBSDeployment
 
 # API V2 Login: Creates $HeaderValue for Passing Auth. Displays $error variable if the login fails, and exits the script.
-Write-Verbose "Logging in to CenturyLink Cloud v2 API." -Verbose
+Write-Verbose "Logging in to Lumen Cloud v2 API." -Verbose
 try
 {
-$global:CLCV2cred = Get-Credential -message "Please enter your CenturyLink Cloud Control Portal credentials." -ErrorAction Stop
+$global:CLCV2cred = Get-Credential -message "Please enter your Lumen Cloud Control Portal credentials." -ErrorAction Stop
 $body = @{username = $CLCV2cred.UserName; password = $CLCV2cred.GetNetworkCredential().password} | ConvertTo-Json
 $global:resttoken = Invoke-RestMethod -uri "https://api.ctl.io/v2/authentication/login" -ContentType "Application/JSON" -Body $body -Method Post
 $HeaderValue = @{Authorization = "Bearer " + $resttoken.bearerToken}
@@ -319,4 +320,4 @@ forEach ($Server in $serverDetails)
 
 ### Want to Know More About the Simple Backup Service?
 
-Check out our SBS product page [here](//www.ctl.io/simple-backup-service/). The CenturyLink [Knowledge Base](../Backup) also has a number of articles on backup, including [Getting Started with Simple Backup](getting-started-with-simple-backup.md) and [Simple Backup How It Works](simple-backup-service-how-it-works.md).
+Check out our SBS product page [here](//www.ctl.io/simple-backup-service/). The Lumen [Knowledge Base](../Backup) also has a number of articles on backup, including [Getting Started with Simple Backup](getting-started-with-simple-backup.md) and [Simple Backup How It Works](simple-backup-service-how-it-works.md).

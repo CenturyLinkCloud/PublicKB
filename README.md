@@ -1,8 +1,8 @@
 ![Build Status of master branch](https://travis-ci.org/CenturyLinkCloud/PublicKB.svg?branch=master)
 
-# CenturyLink Cloud Knowledge Base
+# Lumen Cloud Knowledge Base
 
-Welcome to the [CenturyLink Cloud](http://www.ctl.io) Knowledge Base (KB) repository. This is the source of information on all of our products and services available today. Please follow the guidelines below to contribute or make changes.
+Welcome to the [Lumen Cloud](http://www.ctl.io) Knowledge Base (KB) repository. This is the source of information on all of our products and services available today. Please follow the guidelines below to contribute or make changes.
 
 If you are new to Git and Github, we highly recommend spending 5 minutes reading this great article on [Understanding the Github Flow](https://guides.github.com/introduction/flow/). This repo follows the Github Flow.
 
@@ -43,8 +43,10 @@ The repository is organized by category, and each folder represents a category. 
 1. Create a [pull request](https://help.github.com/articles/creating-a-pull-request) to merge your changes into the `master` branch.
   * [Create a pull request using Github for Windows](https://github.com/blog/1969-create-pull-requests-in-github-for-windows)
   * [Create a pull request using Github for Mac](https://github.com/blog/1946-create-pull-requests-with-github-for-mac)
+  * For Lumen internal users, notifications for the pull request, including requested changes, will be sent to [MS Teams](https://teams.microsoft.com/l/channel/19%3a5c80a93c8b854e279de7adff53f061a7%40thread.skype/Public%2520KB%2520Review?groupId=eab2e1cd-8f6e-44c2-9c12-e4e25437502e&tenantId=72b17115-9915-42c0-9f1b-4f98e5a4bcd2)
 
-    **Note:** If you are uploading a KB and its associated images/attachments, it should all be part of one pull request. Do not upload the article and the images/attachments in separate pull requests.
+    **Important Note:** If you are uploading a KB and its associated images/attachments, it should all be part of one pull request. Do not upload the article and the images/attachments in separate pull requests.  If separate, the commit analyzer (see below) will fail, and we will not be able to merge.
+
 
 1. This repository contains a [commit analyzer](https://github.com/CenturyLinkCloud/KB-Commit-Analyzer) that runs against each file in the repository validating that the following are true:
 
@@ -67,7 +69,7 @@ The repository is organized by category, and each folder represents a category. 
 
   **Note:** Content authors are responsible for making their pull requests pass the commit analyzer. Once they pass, pull requests will be merged.
 
-1. CenturyLink Cloud Team reviews your pull request. If accepted, it will be added to the [Knowledge Base on ctl.io](https://www.ctl.io/knowledge-base).
+1. Lumen Cloud Team reviews your pull request. If accepted, it will be added to the [Knowledge Base on ctl.io](https://www.ctl.io/knowledge-base).
 2. In general Pull Requests are review once in the morning and once in the afternoon (Seattle Time). This is not a garantee but is generally the practice. So if there are no changes required your pull request is generally accepted within a day. However, if there are changes required then the time line depends on when the changes are addressed. So remember to keep an eye on your pull request for comments.
 
 
@@ -83,20 +85,20 @@ _Note that the first time you wish to run the commit analyzer, you'll have to ru
 
 ### Merging an upstream repository into your fork
 
-If your fork and branch are behind by a number of commits (meaning there have been a lot of changes made to the master branch since you originally forked it), you may need to update your fork to reflect the latest changes. This involves sending a pull request that asks for all changes in the current master branch to be merged into your fork and branch. This is the opposite of a pull request that you would normally send (which merges your changes into the CenturyLinkCloud/PublicKB master branch).
+If your fork and branch are behind by a number of commits (meaning there have been a lot of changes made to the master branch since you originally forked it), you may need to update your fork to reflect the latest changes. This involves sending a pull request that asks for all changes in the current master branch to be merged into your fork and branch. This is the opposite of a pull request that you would normally send (which merges your changes into the LumenCloud/PublicKB master branch).
 
 **Via Github.com Website**
 
 1. Open your fork (and branch) on GitHub.
 2. Click the **Pull Request** button (next to the **Branch:** drop down list).
-3. Click **New Pull Request**. By default, GitHub will compare the master branch of the CenturyLinkCloud/PublicKB with your fork and branch.  
+3. Click **New Pull Request**. By default, GitHub will compare the master branch of the LumenCloud/PublicKB with your fork and branch.  
     **Note:** If you have not made any changes to your fork yet, there shouldn’t be anything to compare.
-4. Reverse the order of the repositories and branches in the **Base Fork:** and **Head Fork:** drop down lists. Your repository and branch should come before the CenturyLinkCloud/PublicKB master repository and branch. This allows GitHub to compare your fork with the master. You should then see all the latest changes that have been made to the master branch.
+4. Reverse the order of the repositories and branches in the **Base Fork:** and **Head Fork:** drop down lists. Your repository and branch should come before the LumenCloud/PublicKB master repository and branch. This allows GitHub to compare your fork with the master. You should then see all the latest changes that have been made to the master branch.
 5. Click the **Pull Request** button to create a pull request for this comparison.  
     **Note:** You should assign a predictable name to your pull request (e.g., Update from original).
 6. Click on **Send Pull Request**.
 7. Scroll down and click **Merge Pull Request** and then **Confirm Merge**. If your fork didn’t have any changes, you will be able to merge it automatically.  
-    **Note:** You will not be able to merge your own pull request unless you have write access to the CenturyLink Cloud repository.
+    **Note:** You will not be able to merge your own pull request unless you have write access to the Lumen Cloud repository.
 
 **Via Terminal (Mac) or Command Prompt (Windows)**
 
@@ -192,7 +194,7 @@ Links to external sites (not ctl.io) should be full, regular links and follow th
 Links to podcasts should look like this:
 
   ```
-  <iframe id='ei8087582' src='//centurylinklabs.podomatic.com/embed/frame/posting/2016-06-06T12_59_45-07_00?json_url=http%3A%2F%2Fcenturylinklabs.podomatic.com%2Fentry%2Fembed_params%2F2016-06-06T12_59_45-07_00%3Fcolor%3D43bee7%26autoPlay%3Dfalse%26facebook%3Dtrue%26height%3D85%26width%3D620%26minicast%3Dfalse%26objembed%3D0&notb=1' height='85' width='620'frameborder='0' marginheight='0' marginwidth='0' scrolling='no' allowfullscreen></iframe>
+  <iframe id='ei8087582' src='//centurylinklabs.podomatic.com/embed/frame/posting/2016-06-06T12_59_45-07_00?json_url=http%3A%2F%2Flumenlabs.podomatic.com%2Fentry%2Fembed_params%2F2016-06-06T12_59_45-07_00%3Fcolor%3D43bee7%26autoPlay%3Dfalse%26facebook%3Dtrue%26height%3D85%26width%3D620%26minicast%3Dfalse%26objembed%3D0&notb=1' height='85' width='620'frameborder='0' marginheight='0' marginwidth='0' scrolling='no' allowfullscreen></iframe>
   ```
   **Note:** Like the external site links, the "http:" and "https:" are removed from the links to eliminate conflicts.
 

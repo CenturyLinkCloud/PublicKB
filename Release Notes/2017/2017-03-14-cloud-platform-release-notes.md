@@ -10,19 +10,19 @@
 
 * __Cloud Application Manager Launch__
 
-  CenturyLink, Inc. has launched CenturyLink Cloud Application Manager, a new orchestration platform designed to simplify deployment of enterprise workloads, managed services and third-party cloud resources. This cloud-agnostic management platform enables companies to better manage applications and workloads across hybrid hosting environments – in customer private clouds, colocation centers and public cloud environments.
+  Lumen, Inc. has launched Lumen Cloud Application Manager, a new orchestration platform designed to simplify deployment of enterprise workloads, managed services and third-party cloud resources. This cloud-agnostic management platform enables companies to better manage applications and workloads across hybrid hosting environments – in customer private clouds, colocation centers and public cloud environments.
 
-  In a business climate where companies need to simplify management and governance of applications across multiple cloud infrastructures without sacrificing control or visibility, Cloud Application Manager delivers flexibility that enterprises need to quickly provision, deploy and migrate workloads to the environment that best matches business requirements. This global platform also enables automated deployment of expert managed services from CenturyLink for application and infrastructure management. Cloud Application Manager includes:
+  In a business climate where companies need to simplify management and governance of applications across multiple cloud infrastructures without sacrificing control or visibility, Cloud Application Manager delivers flexibility that enterprises need to quickly provision, deploy and migrate workloads to the environment that best matches business requirements. This global platform also enables automated deployment of expert managed services from Lumen for application and infrastructure management. Cloud Application Manager includes:
 
   *	Application lifecycle management – Customers and partners can manage applications from build phase through deployment and run-state. Once deployed, customer-defined automation policies enable customers to scale, update, and migrate applications across environments.
 
-  *	Managed services anywhere – Customers and partners can select CenturyLink Managed Services for on-demand monitoring, patching, backup and remote administration across any hybrid hosting environment.
+  *	Managed services anywhere – Customers and partners can select Lumen Managed Services for on-demand monitoring, patching, backup and remote administration across any hybrid hosting environment.
 
   *	Cloud optimization – Customers and partners can leverage existing public cloud accounts, or provision new subscriptions directly through the Cloud Application Manager platform – simplifying vendor management and consolidating billing of multi-cloud deployments. Additionally, Cloud Application Manager enables customers to better manage costs and spending on the various cloud platforms while making recommendations on the ideal place to run workloads.
 
-  Cloud Application Manager combines new investment in the automated delivery of CenturyLink managed services with recently acquired ElasticBox technology to create a powerful service framework. Users can consume Cloud Application Manager via the cloud version (SaaS) or the data center version (a virtual appliance that runs on-premises in their data center). This usage-based platform allows customers to consume the value-added services they need with a consolidated bill and a simplified, yet powerful, interface.
+  Cloud Application Manager combines new investment in the automated delivery of Lumen managed services with recently acquired ElasticBox technology to create a powerful service framework. Users can consume Cloud Application Manager via the cloud version (SaaS) or the data center version (a virtual appliance that runs on-premises in their data center). This usage-based platform allows customers to consume the value-added services they need with a consolidated bill and a simplified, yet powerful, interface.
 
-  To learn more about CenturyLink's multi-cloud management capabilities, visit [www.ctl.io/cloud-application-manager](https://www.ctl.io/cloud-application-manager/).
+  To learn more about Lumen's multi-cloud management capabilities, visit [www.ctl.io/cloud-application-manager](https://www.ctl.io/cloud-application-manager/).
 
 
 ### Enhancements (2)

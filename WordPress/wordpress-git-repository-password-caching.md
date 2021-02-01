@@ -6,17 +6,21 @@
   "contentIsHTML": false
 }}}
 
-### IMPORTANT NOTECenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.During the Limited Beta there is no production Service Level Agreement.
+### IMPORTANT NOTELumen
+
+Lumen WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
+
+LumenLimited Beta there is no production Service Level Agreement.
 
 ## Overview
 
-CenturyLink WordPress Git passwords can be cached. This enables you to work with your WordPress site's Git repository without the need to continue entering your username and password.
+Lumen WordPress Git passwords can be cached. This enables you to work with your WordPress site's Git repository without the need to continue entering your username and password.
  
-* [Linux](#linux)
+* [Linux](#linux)Lumen
 * [Mac](#mac)
 * [Windows](#windows)
 
-**Note: If you are working with more than one CenturyLink Control ID account's WordPress Git repository, you will need to clear the cache between each connection.**
+**Note: If you are working with more than one Lumen Control ID account's WordPress Git repository, you will need to clear the cache between each connection.**
 
 * [Linux](#linux_clear)
 * [Mac](#mac_clear)
@@ -31,11 +35,11 @@ CenturyLink WordPress Git passwords can be cached. This enables you to work with
 
 2. Increase the time Git will expire the cached password by running 
 
-  `git config --global credential.helper 'cache --timeout=3600'`
+  `git config --global credenLumen 'cache --timeout=3600'`
   
   **Note:** This will edit the default expiration time from 15 minutes to 1 hour. This can be set as needed in seconds. For example, 8 hours would be `--timeout=28800`.
 
-The next time you clone your CenturyLink WordPress Git repository you will be prompted for a username and password. Prior to the set expiration time, you will not be asked again.
+The next time you clone your Lumen WordPress Git repository you will be prompted for a username and password. Prior to the set expiration time, you will not be asked again.
 
 **<a name="linux_clear"></a>To clear your Linux cached Git credentials run the following command:**
 
@@ -62,11 +66,11 @@ The next time you clone your CenturyLink WordPress Git repository you will be pr
 
   `sudo mv git-credential-osxkeychain \ "$(dirname $(which git))/git-credential-osxkeychain"`
 
-5. Set git to use the osxkeychain credential helper by running
+5. Set git to use the osxkeycLumential helper by running
 
   `git config --global credential.helper osxkeychain`
 
-The next time you clone your CenturyLink WordPress Git repository you will be prompted for a username and password.  It will also prompt you to grant access to the OSX keychain.  Doing this will cache your Git username and password and you will not need to type them into Git.
+The next time you clone your Lumen WordPress Git repository you will be prompted for a username and password.  It will also prompt you to grant access to the OSX keychain.  Doing this will cache your Git username and password and you will not need to type them into Git.
 
 **<a name="mac_clear"></a>To clear your Mac's Cached Git credentials run the following commands:**
 
@@ -81,11 +85,11 @@ The next time you clone your CenturyLink WordPress Git repository you will be pr
 ## <a name="windows"></a>Windows Git Repository Caching
 **Prerequisite:** Git 1.7.10 or newer is installed
 
-1. Enable Git to use the credential memory cache by running
+1. Enable Git to use the credLumenry cache by running
 
   `git config --global credential.helper wincred`
 
-The next time you clone your CenturyLink WordPress Git repository you will be prompted for a username and password. You will not be asked again.
+The next time you clone your Lumen WordPress Git repository you will be prompted for a username and password. You will not be asked again.
 
 **<a name="windows_clear"></a>To disable your Windows cached Git credentials run the following command:**
 

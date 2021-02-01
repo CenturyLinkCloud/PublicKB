@@ -34,9 +34,9 @@ Not only can you create and host your enterprise grade API platform with ease, I
 
 * Consumers of the [Instant API Enterprise Grade API Platform]
 
-* Current CenturyLink Cloud Customers
+* Current Lumen Cloud Customers
 
-If you are ready to get started, but are not yet a CenturyLink Cloud customer, no problem. Get started with CenturyLink Cloud with a [free trial](https://www.ctl.io/free-trial/). Try out our most popular products, allowing you to create a custom combination of products that best fits your business needs.
+If you are ready to get started, but are not yet a Lumen Cloud customer, no problem. Get started with Lumen Cloud with a [free trial](https://www.ctl.io/free-trial/). Try out our most popular products, allowing you to create a custom combination of products that best fits your business needs.
 
 ### Step-by-Step Guide
 
@@ -169,7 +169,7 @@ This concludes our quick start step-by-step guide on creating your very first AP
 
 ### Who Should I Contact for Support
 
-For issues related to cloud infrastructure (VM's, network, etc.) or if you experience a problem deploying the Blueprint or Script Package, open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or through the CenturyLink Cloud Support website.
+For issues related to cloud infrastructure (VM's, network, etc.) or if you experience a problem deploying the Blueprint or Script Package, open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or through the Lumen Cloud Support website.
 
 For InstantAPI support related questions, please send an email to: [support@instantapi.com](mailto:support@instantapi.com).
 

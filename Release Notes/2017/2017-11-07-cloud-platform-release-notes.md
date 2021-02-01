@@ -22,7 +22,7 @@ __Cloud Optimization and Analytics__
 
 __Managed Services Anywhere__
 
-   Cloud Application Manager’s Managed Services Anywhere now includes support for Tomcat and Apache, enabling large-scale, mission-critical web applications to be deployed on AWS or Microsoft Azure (CenturyLink Private Cloud on VMware Cloud Foundation). By selecting to deploy Managed Tomcat and/or Apache servers to AWS or Microsoft Azure - (CenturyLink Private Cloud on VMware Cloud Foundation) - customers get all the features of a managed server along with management of the Tomcat / Apache instance. Simply Delegate Management to CenturyLink and receive Monitoring, Alerting, Ticketing, Remote Administration and Patching for both the VM and the Tomcat / Apache intance.
+   Cloud Application Manager’s Managed Services Anywhere now includes support for Tomcat and Apache, enabling large-scale, mission-critical web applications to be deployed on AWS or Microsoft Azure (Lumen Private Cloud on VMware Cloud Foundation). By selecting to deploy Managed Tomcat and/or Apache servers to AWS or Microsoft Azure - (Lumen Private Cloud on VMware Cloud Foundation) - customers get all the features of a managed server along with management of the Tomcat / Apache instance. Simply Delegate Management to Lumen and receive Monitoring, Alerting, Ticketing, Remote Administration and Patching for both the VM and the Tomcat / Apache intance.
 
 Supported Versions:
 * Tomcat 7.0, 8.0 & 8.5
@@ -35,7 +35,7 @@ Supported Operating Systems:
 Supported Cloud Providers:
 * AWS
 * Microsoft Azure
-* CenturyLink Private Cloud on VMware Cloud Foundation
+* Lumen Private Cloud on VMware Cloud Foundation
 
 ### Enhancements (1)
 

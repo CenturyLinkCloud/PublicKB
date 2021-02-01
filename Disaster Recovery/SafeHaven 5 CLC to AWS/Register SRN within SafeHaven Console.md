@@ -7,7 +7,7 @@
 }}}
 
 ### Article Overview
-This article focusses on how to Register SRNs within the SafeHaven Console for CenturyLink Cloud and AWS.
+This article focusses on how to Register SRNs within the SafeHaven Console for Lumen Cloud and AWS.
 
 ### Requirements
 1. SafeHaven Cluster already installed.
@@ -15,7 +15,7 @@ This article focusses on how to Register SRNs within the SafeHaven Console for C
 
 ### Assumptions
 1. SafeHaven Cluster already installed with proper network connectivity between CMS-SRN and SRN-SRN.
-2. Datacenters already registered.
+2. Data centers already registered.
 
 ### Register SRN
 **Right-click** on the any registered **Data Center** within the Navigation Tree and select **Register SRN** from the drop-down menu.
@@ -33,21 +33,6 @@ Fill in the following fields:
 
 **NOTE**: Follow the same procedure to register the all the SRN's within the SafeHaven Console. For AWS SRN the Local iSCSI IP and Service IP  are the same.
 
-The above procedure stays the same for CLC/VMWare/Manual sites as the source datacenters.
-
-### Video tutorial(CLC to AWS)
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/smxX1hcuyYI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</p>
-
-### Video tutorial (VMWare to AWS)
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aRxIXwsazt4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</p>
-
-### Video tutorial (Manual to AWS)
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qqhdhkFfFjE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</p>
+The above procedure stays the same for CLC/VMWare/Manual sites as the source data centers.
 
 **Next Step** is to [Add SRN Peer](Add SRN Peer.md)

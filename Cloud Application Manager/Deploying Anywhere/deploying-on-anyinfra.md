@@ -1,34 +1,56 @@
 {{{
 "title": "Deploying to Any Infrastructure",
-"date": "09-01-2016",
-"author": "",
+"date": "05-14-2019",
+"author": "Guillermo Sánchez",
 "attachments": [],
-"contentIsHTML": false
+"contentIsHTML": false,
+"keywords": ["cam", "cloud application manager", "register", "byoi", "bring your own infrastructure"]
 }}}
 
 ### Deploying to Any Infrastructure
 
 **In this article:**
-* Overview
-* How to deploy with the Cloud Application Manager agent
-* Cloud Application Manager agent command
+
+* [Deploying to Any Infrastructure](#deploying-to-any-infrastructure)
+* [Overview](#overview)
+* [Audience](#audience)
+* [Prerequisites](#prerequisites)
+* [Bring your own infrastructure](#bring-your-own-infrastructure)
+* [How to Deploy with the Cloud Application Manager Agent](#how-to-deploy-with-the-cloud-application-manager-agent)
+* [Cloud Application Manager Agent Command](#cloud-application-manager-agent-command)
+* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
 
+You can bring your own infrastructure to Cloud Application Manager by installing the Cloud Application Manager agent. This will enable lifecycle of the instance through Cloud Application Manager like with any other natively-deployed instance.
+
+### Audience
+
+Cloud Application Manager users willing to register any infrastructure into it.
+
+### Prerequisites
+
+* An active Cloud Application Manager account.
+* Any infrastructure capable of running Cloud Application Manager Agent.
+
+### Bring your own infrastructure
+
+The preferred method to register any infrastructure in CAM, is to register it into a provider, instead of a stand-alone instance. To learn more about registering your servers into a compute instances provider, please review the [Using Compute Instances](./using-compute-instances.md) article.
+
 You can launch boxes on any infrastructure by running the Cloud Application Manager agent. The agent is required to execute box variables and scripts and run lifecycle operations. To install the agent, you run a Bash command. The infrastructure can be a virtual machine in your laptop, physical machines on premise, a datacenter, or any cloud provider environment. We support running it on Linux distributions Debian 6 and 7, Ubuntu 12.04 and 14.04, RedHat 6.x, CentOS 6.x, and any AWS Linux AMI. No matter where you choose to deploy, boxes launch consistently as they would on any cloud provider.
 
-![deploy-via-myserver-1.png](../../images/cloud-application-manager/deploy-via-myserver-1.png)
+![Deploy via my server diagram](../../images/cloud-application-manager/deploy-via-myserver-1.png)
 
 ### How to Deploy with the Cloud Application Manager Agent
 
 Run the Cloud Application Manager agent on the Linux machine where you want to launch the box. Once the box is launched, sign in to Cloud Application Manager and access the instance from the Instances to edit its box makeup, debug, or manage its lifecycle. Follow these steps to launch a box on your infrastructure.
 
-**Before You Begin**
+#### Before You Begin
 
 * Make sure you have a box configured and ready to launch.
 * Get the target infrastructure where you want to launch your box up and running first. This can be any Linux machine running a supported image.
 
-**Steps**
+#### Steps
 
 1. SSH into the machine to run the agent. Here as an example, we SSH into a Linux machine running Ubuntu 12.04 in AWS.
 
@@ -46,13 +68,13 @@ Run the Cloud Application Manager agent on the Linux machine where you want to l
 
 Use cURL to download and run the agent with piped parameters.
 
-**Syntax**
+#### Syntax
 
 ```
 curl -sSL https://cam.ctl.io | sudo bash -s -- -b "<box name or ID>" -n "<environment nameID>" -t <your_authentication_tokenID> -V <variable_name="variable value"ID> [-o "ID<owner IDID>"] [-d] [-H] [h] [f]
 ```
 
-**Parameters**
+#### Parameters
 
 | **Parameter**  |  **Description** |
 |----------|:-----|
@@ -73,5 +95,6 @@ We’re sorry you’re having an issue in [Cloud Application Manager](https://ww
 For issues related to API calls, send the request body along with details related to the issue.
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
 * Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log

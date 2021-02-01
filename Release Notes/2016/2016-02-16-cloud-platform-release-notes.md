@@ -8,7 +8,7 @@
 
 ### New Features (1)
 
-* __"IPS Anywhere" for Any Server Running Selected Versions of Windows.__ CenturyLink Cloud users may now additionally implement host-based Intrusion Prevention Service on Windows servers located on-premises, in CenturyLink Cloud, or off-site with another hosting provider. The only requirement is connectivity to CenturyLink's management network. To configure access to this network, refer to [Getting Started with IPS - prerequisites](https://www.ctl.io/knowledge-base/security/getting-started-with-ips/#prerequisites).
+* __"IPS Anywhere" for Any Server Running Selected Versions of Windows.__ Lumen Cloud users may now additionally implement host-based Intrusion Prevention Service on Windows servers located on-premises, in Lumen Cloud, or off-site with another hosting provider. The only requirement is connectivity to Lumen's management network. To configure access to this network, refer to [Getting Started with IPS - prerequisites](https://www.ctl.io/knowledge-base/security/getting-started-with-ips/#prerequisites).
 
 	Installing IPS Anywhere is a simple API call - to learn more, refer to this [KB article](https://www.ctl.io/knowledge-base/security/ipsanywhere/).
 
@@ -22,6 +22,6 @@
 
 ### Ecosystem (1)
 
-* __Bitnami Launchpad.__ [Bitnami](https://bitnami.com/) is a software service that packages popular applications into cloud-friendly installers and integrates them with the major cloud service platforms. Especially focused on open source projects, Bitnami makes it easy for an enterprise cloud user to evaluate open source alternatives for different tools and functions. A number of Blueprints in the [CenturyLink Cloud Marketplace](https://www.ctl.io/knowledge-base/ecosystem-partners/general/ecosystem-partner-list/) are based on Bitnami installers, and you can now get started quickly by deploying applications to CenturyLink directly from the [Centurylink-Bitnami Launchpad site](https://centurylink.bitnami.com/).
+* __Bitnami Launchpad.__ [Bitnami](https://bitnami.com/) is a software service that packages popular applications into cloud-friendly installers and integrates them with the major cloud service platforms. Especially focused on open source projects, Bitnami makes it easy for an enterprise cloud user to evaluate open source alternatives for different tools and functions. A number of Blueprints in the [Lumen Cloud Marketplace](https://www.ctl.io/knowledge-base/ecosystem-partners/general/ecosystem-partner-list/) are based on Bitnami installers, and you can now get started quickly by deploying applications to Lumen directly from the [Lumen-Bitnami Launchpad site](https://centurylink.bitnami.com/).
 
-	![Bitnami Launchpad for CenturyLink Cloud](../../images/2016-02-16_bitnami_launchpad.png)
+	![Bitnami Launchpad for Lumen Cloud](../../images/2016-02-16_bitnami_launchpad.png)

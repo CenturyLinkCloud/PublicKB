@@ -1,12 +1,12 @@
 {{{
   "title": "Getting Started with Managed MySQL",
   "date": "7-5-2017",
-  "author": "CenturyLink",
+  "author": "Lumen",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-MySQL is an open source Relational Database Management System (RDBMS) that uses Structured Query Language (SQL). This article will cover creating a managed MySQL environment in CenturyLink Cloud.
+MySQL is an open source Relational Database Management System (RDBMS) that uses Structured Query Language (SQL). This article will cover creating a managed MySQL environment in Lumen Cloud.
 
 ### Prerequisites
 - The server must have internet access.
@@ -24,13 +24,13 @@ MySQL is an open source Relational Database Management System (RDBMS) that uses 
 
 ### Frequently Asked Questions
 
-**Q: How is the CenturyLink Cloud for Managed Oracle MySQL Enterprise product priced?**
+**Q: How is the Lumen Cloud for Managed Oracle MySQL Enterprise product priced?**
 
 A: Managed Oracle MySQL Enterprise is priced according to our [pricing catalog](//www.ctl.io/pricing) and includes MySQL Enterprise software as part of the ongoing fees for the service.
 
 **Q: What versions of Oracle MySQL Enterprise are supported?**
 
-A: CenturyLink Cloud Supports MySQL 5.6 and MySQL 5.7.
+A: Lumen Cloud Supports MySQL 5.6 and MySQL 5.7.
 
 **Q: Can the customer have multiple MySQL instances installed on the same server?**
 

@@ -12,7 +12,7 @@
 
 ##### Support for Azure Canada
 
-Cloud Application Manager now supports the creation of Azure reseller accounts into Canada territory. Any Canadian customer can now create an Azure account optimized by CenturyLink for consolidated billing and platform support.
+Cloud Application Manager now supports the creation of Azure reseller accounts into Canada territory. Any Canadian customer can now create an Azure account optimized by Lumen for consolidated billing and platform support.
 
 ### Enhancements (1)
 
@@ -32,7 +32,7 @@ Due to Microsoft Support End of Life, customers can no longer Clone or Save Imag
 
 #### [Load Balancer as a Service (LBaaS)](//www.ctl.io/load-balancing/)
 
-CenturyLink Cloud has released a new load balancer service in our DE1, IL1 and NY1 locations. We’re calling it Load Balancer as a Service (LBaaS). We added more features that allow you to focus on your business while we help service your infrastructure. You get to keep all of the features available in the current Shared Load Balancer service, and we’ve added:
+Lumen Cloud has released a new load balancer service in our DE1, IL1 and NY1 locations. We’re calling it Load Balancer as a Service (LBaaS). We added more features that allow you to focus on your business while we help service your infrastructure. You get to keep all of the features available in the current Shared Load Balancer service, and we’ve added:
 
 * TCP load balancing
 * Load balance on any port 23 and up

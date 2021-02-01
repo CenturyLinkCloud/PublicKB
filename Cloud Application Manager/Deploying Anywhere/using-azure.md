@@ -1,12 +1,11 @@
 {{{
 "title": "Using Classic Azure",
-"date": "09-01-2016",
-"author": "",
+"date": "12-18-2019",
+"author": "Guillermo Sánchez",
+"keywords": ["microsoft", "classic azure"],
 "attachments": [],
 "contentIsHTML": false
 }}}
-
-### Using Azure
 
 **In this article:**
 
@@ -21,10 +20,12 @@
 
 There are two different flavors of Azure and Cloud Application Manager has providers for both. This document is in reference to Classic Azure.
 
-**Name** | **URL of Portal** | **Name of Related Cloud Application Manager Provider** | **KB article**
+Please note that Microsoft no longer recommends the usage of the Classic Azure deployment model, which has been superseded by the Resource Manager model. For more information see [this Microsoft article](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-deployment-model).
+
+**Name** | **URL of Portal** | **Name of Provider** | **KB article**
 --- | --- | --- | ---
-Classic Azure | https://manage.windowsazure.com | Classic Azure | This document
-Microsoft Azure | https://portal.azure.com | Microsoft Azure  | [Using Microsoft Azure](using-microsoft-azure.md)
+Classic Azure | <https://manage.windowsazure.com> | Classic Azure | This document
+Microsoft Azure | <https://portal.azure.com> | Microsoft Azure  | [Using Microsoft Azure](using-microsoft-azure.md)
 
 Microsoft's Classic Azure hosts applications in virtual machines and in cloud services via Web, Worker roles. Cloud Application Manager supports deploying to all three models through the Virtual Machine Role, Web and Worker roles. Take a look at the [benefits of deploying to Azure using Cloud Application Manager](#benefits-of-deploying-to-azure-using-cloud-application-manager).
 
@@ -33,18 +34,7 @@ To learn about Azure hosting services, see the [Azure help](https://azure.micros
 
 ### Before You Begin
 
-You need an Azure subscription to be able to consume Azure services. Follow these steps to create one.
-
-**Steps**
-1. Sign in to your [account](https://portal.azure.com/).
-
-2. Open Subscriptions.
-
-3. Click add subscription.
-   ![azure-add-new-subscription-1.png](../../images/cloud-application-manager/azure-add-new-subscription-1.png)
-
-4. You can use the free trial version or select and purchase a payment plan.
-   * **Note:** Cloud Application Manager is not responsible for any costs incurred through deploying to Azure. For more information, see [Azure pricing](https://azure.microsoft.com/en-us/pricing/calculator/?scenario=virtual-machines).
+This Classic Azure provider support is offered through Cloud Application Manager for managing existing Classic Azure subscriptions, and should not be used for new environments, that should be using Microsoft's recommended Azure Resource Manager deployment model with its corresponding [Microsoft Azure](using-microsoft-azure.md) provider type.
 
 ### Benefits of Deploying to Azure Using Cloud Application Manager
 
@@ -62,40 +52,39 @@ Cloud Application Manager simplifies Azure deployments with these benefits:
 
 ### Registering Your Azure Subscription in Cloud Application Manager
 
-To connect to Azure in Cloud Application Manager, you need to upload the elasticbox.cer to your Azure subscription and then provide Cloud Application Manager your subscription ID.
-Follow these steps.
+To connect to Azure in Cloud Application Manager, you need to upload the elasticbox.cer to your Azure subscription and then provide Cloud Application Manager your subscription ID. Follow these steps:
 
-**Steps**
 1. [Log in to Cloud Application Manager](https://www.ctl.io/cloud-application-manager/).
 
 2. Click **Providers** > **New Provider**.
 
-3. In the dialog, select **Microsoft Azure**.
-   ![azure-add-provider-2.png](../../images/cloud-application-manager/azure-add-provider-2.png)
+3. In the dialog, select **Azure Classic**.
+   ![New Azure Classic](../../images/cloud-application-manager/deploying-anywhere/azure-classic/azure-classic-new-provider.png)
 
-4. Enter your Azure subscription credentials as shown.
-   * Enter a useful name to identify the Azure subscription in Cloud Application Manager.
-   * Under Credentials, click **Download**. The elasticbox.cer certificate is saved to your local machine. Upload the certificate to your Azure portal. 	
+4. Enter your Azure subscription parameters as shown.
+   * Enter a useful **name** to identify the Azure subscription in Cloud Application Manager.
+   * Under *Credentials*, click **Download**. The elasticbox.cer certificate is saved to your local machine. Upload the certificate to your Azure portal.
       * This allows Cloud Application Manager to manage your subscription based on resources you deploy.
       * Sign in to the [Azure Portal](https://manage.windowsazure.com/).
 
-      Click Settings > Management Certificates > UPLOAD A MANAGEMENT CERTIFICATE.
-      ![azure-upload-cloud-application-manager-certificate-3.png](../../images/cloud-application-manager/azure-upload-cloud-application-manager-certificate-3.png)
+        Click Settings > Management Certificates > UPLOAD A MANAGEMENT CERTIFICATE.
+        ![Azure Classic upload Cloud Application Manager certificate](../../images/cloud-application-manager/deploying-anywhere/azure-classic/azure-classic-upload-cam-certificate.png)
       * Under **FILE** > click **BROWSE FOR FILE** to select the certificate from your local machine.
       * Under Subscription, be sure to select your subscription.
-      ![azure-upload-eb-certificate-4.png](../../images/cloud-application-manager/azure-upload-eb-certificate-4.png)
+      ![Azure Classic uploading Cloud Application Manager certificate](../../images/cloud-application-manager/deploying-anywhere/azure-classic/azure-classic-upload-cam-certificate.png)
 
 5. Click the checkmark to save.
    * Copy your Azure subscription ID located under Settings in the Azure Management Portal.
-   ![azure-select-subscriptionid-5.png](../../images/cloud-application-manager/azure-select-subscriptionid-5.png)
+   ![Select Azure Subscription ID](../../images/cloud-application-manager/deploying-anywhere/azure-classic/azure-classic-select-subscriptionid.png)
    * In Cloud Application Manager, under Credentials, paste in the subscription ID.
-   ![azure-paste-subscriptionid-in-cloud-application-manager-6.png](../../images/cloud-application-manager/azure-paste-subscriptionid-in-cloud-application-manager-6.png)
+   ![Azure Classic paste subscription ID in CAM](../../images/cloud-application-manager/deploying-anywhere/azure-classic/azure-classic-new-provider-subscription-id.png)
 
 6. Click **Save**.
 
 ### Deploying in Azure
 
 You can deploy to the following services in Azure:
+
 * Web and Worker Roles
 * Virtual machine role
 
@@ -118,9 +107,9 @@ In case of multi-tier applications deployed to different roles, follow these tip
 
 * To allow traffic to web role instances, we automatically open HTTP port 80 for both public (input) and private (internal) endpoints. We also open any other ports that you define on the box.
 * To allow traffic to worker role instances, you have to first define port variables on the box, which we open for both public (input) and private (internal) endpoints.
-* To allow web and worker role instances to communicate with each other, make sure they’re deployed to the same availability set. Configure [bindings](../Automating Deployments/managing-multi-tier-applications.md) to connect their boxes. Then print '\{{ bindingname.address }}:\{{bindingname.port}}' in a configure event script to connect by querying the instance IP address and port.
+* To allow web and worker role instances to communicate with each other, make sure they’re deployed to the same availability set. Configure [bindings](../Automating Deployments/managing-multi-tier-applications-with-bindings.md) to connect their boxes. Then print '\{{ bindingname.address }}:\{{bindingname.port}}' in a configure event script to connect by querying the instance IP address and port.
 
-![azure-webworkerroles-depprofile-7.png](../../images/cloud-application-manager/azure-webworkerroles-depprofile-7.png)
+  ![Azure Classic Web worker roles deployment profiles](../../images/cloud-application-manager/deploying-anywhere/azure-classic/azure-webworkerroles-depprofile.png)
 
 #### Azure Web and Worker Role Deployment Options
 
@@ -132,9 +121,11 @@ In case of multi-tier applications deployed to different roles, follow these tip
 
 ##### Resource
 
+![Resource section of deployment policy](../../images/cloud-application-manager/deployment-policy/azure-classic-resource.png)
+
 | Option | Description |
 |--------|-------------|
-| Role | Select Web Role or Worker Role. See [Virtual Machine Role](using-azure.md) to deploy to that instead. |
+| Role | Select Web Role or Worker Role. See [Virtual Machine Role](#virtual-machine-role) to deploy to that instead. |
 | OS Family | Select the guest OS to run in the worker role instance. Note that Windows 2008 images are not synced at this time because the Cloud Application Manager agent doesn’t work on them. |
 | OS Version | Select the guest OS version to run in the worker role instance. You can select a specific version or go with latest. If you choose latest, the OS is automatically upgraded to the latest version. |
 | Size | Select a size to set the number of CPU cores, memory, and disk size to store your OS files, process temporary memory, and store application data. For more information, see the [Azure help](https://azure.microsoft.com/documentation/articles/cloud-services-sizes-specs/). Note that D-Series sizes use solid-state drive disks. |
@@ -144,9 +135,20 @@ In case of multi-tier applications deployed to different roles, follow these tip
 
 ##### Network
 
+![Network section of deployment policy](../../images/cloud-application-manager/deployment-policy/azure-classic-network.png)
+
 | Option | Description |
 |--------|-------------|
 | Location | Select a virtual network, region, or affinity group to physically place the instance. <li>**Virtual Networks**. To let the instance connect to services in Azure, select a virtual private network that you previously created in your subscription. See the Azure help on [creating virtual networks](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-create-vnet-classic-portal). </li><li>**Regions**. Select a region to place the instance. </li><li>**Affinity Groups**. Select an affinity group, if you created one to keep the instance close to other regional resources in the datacenter.</li> |
+
+##### Proxy
+
+![Proxy section of deployment policy](../../images/cloud-application-manager/deployment-policy/azure-classic-proxy.png)
+
+| Option | Description |
+|-------------------|-------------|
+| Host | The hostname or domain of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
+| Port |  The port of the proxy that the agent will use to connect back to Cloud Application Manager, once it has been installed in the deployed instance. |
 
 ##### Autoscaling Web or Worker Role Instances
 
@@ -155,7 +157,7 @@ To support cloud bursting scenarios, you can proactively plan for scaling your a
 Cloud Application Manager supports autoscaling by monitoring CPU thresholds. If CPU usage hits 80%, a new instance is added in that role. Similarly if CPU usage is at 60% or below, the role instances are scaled down.
 
 To autoscale Web or Worker roles, configure these settings in the Azure deployment profile before deploying:
-![azure-webworkerrole-autoscale-instances-8.png](../../images/cloud-application-manager/azure-webworkerrole-autoscale-instances-8.png)
+![Azure Classic Web worker roles autoscale instances](../../images/cloud-application-manager/deploying-anywhere/azure-classic/azure-webworkerrole-autoscale-instances.png)
 
 * Select a machine size for the role that has the sufficient number of cores to support scaling.
 * Set the number of instances to at least two to meet high availability SLAs from Azure. Here, you can control autoscaling by setting the maximum number of instances to scale.
@@ -169,29 +171,29 @@ The virtual machine role lets you build and manage highly customizable and flexi
 
 To deploy in Cloud Application Manager, simply select your box based on Linux or Windows, and [create a new instance](deploying-managing-instances.md). Then, choose from the following deployment options.
 
-![azure-vm-deploymentoptions-9.png](../../images/cloud-application-manager/azure-vm-deploymentoptions-9.png)
+![Azure Classic VM deployment options](../../images/cloud-application-manager/deploying-anywhere/azure-classic/azure-vm-deploymentoptions.png)
 
 #### Azure Virtual Machine Role Deployment Options
 
-##### Deployment
+##### VM Deployment
 
 | Option | Windows or Linux | Description |
 |--------|------------------|-------------|
-| Provider | Both |	Select your Azure subscription or one that’s shared with you in Cloud Application Manager. |
+| Provider | Both | Select your Azure subscription or one that’s shared with you in Cloud Application Manager. |
 
-##### Resource
+##### VM Resource
 
 | Option | Windows or Linux | Description |
 |--------|------------------|-------------|
 | Role | Windows | Select the **Virtual Machine Role **to deploy to a Windows environment that you want to customize and manage. To deploy to other roles, see Web and Worker Roles section in this documentation. |
-| Image | Both | Choose from [images ](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/cli-ps-findimage)that are custom or stock OS images or are generalized, specialized VM images. The drop-down shows images relevant to a Windows or Linux deployment. Note that Windows 2008 images are not synced at this time because the Cloud Application Manager agent doesn’t work on them. |
-| Size | Both |	Select a virtual machine size from the basic or standard tier options including [D-Series](https://azure.microsoft.com/blog/2014/09/22/new-d-series-virtual-machine-sizes/). Each option such as A1 sets the number of CPU cores, OS disk memory, and number of input and output operations per second (IOPS) for the virtual machine. Size affects pricing. For more information, see [Virtual Machine and Cloud Service Sizes](https://docs.microsoft.com/en-us/azure/cloud-services/cloud-services-sizes-specs).|
+| Image | Both | Choose from [images](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/cli-ps-findimage) that are custom or stock OS images or are generalized, specialized VM images. The drop-down shows images relevant to a Windows or Linux deployment. Note that Windows 2008 images are not synced at this time because the Cloud Application Manager agent doesn’t work on them. |
+| Size | Both | Select a virtual machine size from the basic or standard tier options including [D-Series](https://azure.microsoft.com/blog/2014/09/22/new-d-series-virtual-machine-sizes/). Each option such as A1 sets the number of CPU cores, OS disk memory, and number of input and output operations per second (IOPS) for the virtual machine. Size affects pricing. For more information, see [Virtual Machine and Cloud Service Sizes](https://docs.microsoft.com/en-us/azure/cloud-services/cloud-services-sizes-specs).|
 | Username | Windows | Specify the root admin account username required to access and manage Windows machines. For Linux machines, the Service ID shown in the Cloud Application Manager instance page is the admin account username, for example, eb-gm3vg. Inbound traffic from the Internet or virtual networks to Windows virtual machines is allowed through Remote Desktop (RDP) with these default port settings.<table class="internal"><tr style="background-color:#f8f8f9;border-left: solid 1px;border-right: solid 1px"><th>**Endpoint Type**</th><th>**Protocol**</th><th>**Public Port**</th><th>**Private Port**</th></tr><tr><td>RDP</td><td>TCP</td><td>3389</td><td>3389</td></tr></table>|
-|Password |	Windows | Required for root admin access to Windows virtual machines. The password must be at least 8 characters long containing 3 of the following: a lowercase, an uppercase, a number, or a special character. |
-| SSH Certificate |	Linux |	 Required for Linux virtual machines. Create and upload a [X.509 SSH certificate with the .cer extension](http://azure.microsoft.com/en-us/documentation/articles/linux-use-ssh-key/) accepted by Azure. SSH is required to allow inbound traffic from the Internet or from virtual networks to Linux virtual machines. These are default port settings for SSH access.<table class="internal"><tr style="background-color:#f8f8f9;border-left: solid 1px;border-right: solid 1px"><th>**Endpoint Type**</th><th>**Protocol**</th><th>**Public Port**</th><th>**Private Port**</th></tr><tr><td>SSH</td><td>TCP</td><td>22</td><td>22</td></tr></table>|
+|Password | Windows | Required for root admin access to Windows virtual machines. The password must be at least 8 characters long containing 3 of the following: a lowercase, an uppercase, a number, or a special character. |
+| SSH Certificate | Linux | Required for Linux virtual machines. Create and upload a [X.509 SSH certificate with the .cer extension](http://azure.microsoft.com/en-us/documentation/articles/linux-use-ssh-key/) accepted by Azure. SSH is required to allow inbound traffic from the Internet or from virtual networks to Linux virtual machines. These are default port settings for SSH access.<table class="internal"><tr style="background-color:#f8f8f9;border-left: solid 1px;border-right: solid 1px"><th>**Endpoint Type**</th><th>**Protocol**</th><th>**Public Port**</th><th>**Private Port**</th></tr><tr><td>SSH</td><td>TCP</td><td>22</td><td>22</td></tr></table>|
 | Instances | Both | Select the maximum number of virtual machines to deploy when you enable autoscaling and load balancing. |
 
-##### Network
+##### VM Network
 
 | Option | Windows or Linux | Description |
 |--------|------------------|-------------|
@@ -219,7 +221,7 @@ When you enable autoscaling, you also want to turn on load balancing to direct t
 
 Here we’ve set an instance to autoscale and load balance with a limit of up to three machines. To allow traffic to each instance spawned, the port variable on the box is mapped as both the public and private port through which Internet traffic reaches the instance.
 
-![azure-configureautoscaling-loadbalancing-depprofile-10.png](../../images/cloud-application-manager/azure-configureautoscaling-loadbalancing-depprofile-10.png)
+![Azure Classic configure autoscaling-loadbalancing](../../images/cloud-application-manager/deploying-anywhere/azure-classic/azure-classic-configureautoscaling-loadbalancing-depprofile.png)
 
 ### Contacting Cloud Application Manager Support
 
@@ -228,5 +230,6 @@ We’re sorry you’re having an issue in [Cloud Application Manager](https://ww
 For issues related to API calls, send the request body along with details related to the issue.
 
 In the case of a box error, share the box in the workspace that your organization and Cloud Application Manager can access and attach the logs.
+
 * Linux: SSH and locate the log at /var/log/elasticbox/elasticbox-agent.log
 * Windows: RDP into the instance to locate the log at ProgramDataElasticBoxLogselasticbox-agent.log

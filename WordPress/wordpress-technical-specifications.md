@@ -7,13 +7,13 @@
 }}}
 ### IMPORTANT NOTE
 
-CenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
+Lumen WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage.
 
 During the Limited Beta there is no production Service Level Agreement.
 
 ## Overview
 
-The CenturyLink WordPress hosting platform runs on the CenturyLink Cloud utilizing the latest stable WordPress release.  System Specifactions and limitations have been chosen to maximize uptime, fulfill business needs, and ensure the security of customer's sites.
+The Lumen WordPress hosting platform runs on the Lumen Cloud utilizing the latest stable WordPress release.  System Specifactions and limitations have been chosen to maximize uptime, fulfill business needs, and ensure the security of customer's sites.
 
 ## System Specifications
 
@@ -38,12 +38,12 @@ _future product_
 
 ## Disallowed Services
 
-**phpmail()** is unauthenticated and not allowed in CenturyLink WordPress hosting.  [SMTP can be configured using a plugin](wordpress-SMTP-Configuration.md) to send mail from within WordPress.
+**phpmail()** is unauthenticated and not allowed in Lumen WordPress hosting.  [SMTP can be configured using a plugin](wordpress-SMTP-Configuration.md) to send mail from within WordPress.
 
 
 ## Disallowed php functions
 
-Many php Functions have been found to be WordPress security vulnerabilities, and these fucntions have been disabled for CenturyLink WordPress hosting.
+Many php Functions have been found to be WordPress security vulnerabilities, and these fucntions have been disabled for Lumen WordPress hosting.
 
 * **dl** - Loads a PHP extension at runtime
 * **exec** - Execute an external program

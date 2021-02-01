@@ -9,7 +9,7 @@
 ### Article Overview
 
 This article explains how to
-1. Attach storage on a single SRN in CenturyLink Cloud and VMware
+1. Attach storage on a single SRN in Lumen Cloud and VMware
 2. Claim storage on a single SRN from the SafeHaven Console
 
 After the SRN has been registered with the SafeHaven Console, the next step is to attach storage to it before creating Protection Groups. Once the storage is attached, the user has to claim the attached storage and allocate it to a Storage Pool in order to use the storage for Protection Group creation. Storage Pool lets the user allocate the attached storage for creating a single or multiple Protection Groups. A single Storage Pool can span across multiple disks.
@@ -20,7 +20,7 @@ After the SRN has been registered with the SafeHaven Console, the next step is t
 
 ### Requirements
 
-1. Access to the SRN in CenturyLink Cloud portal
+1. Access to the SRN in Lumen Cloud portal
 2. Access to the SRN in VMware environment
 3. Access to the SafeHaven Cluster
 
@@ -28,7 +28,7 @@ After the SRN has been registered with the SafeHaven Console, the next step is t
 
 This article assumes that the user has already registered the SRN within the SafeHaven Console and wants to add storage to the SRN before creating Protection Groups.
 
-### Add storage to SRN in CenturyLink Cloud
+### Add storage to SRN in Lumen Cloud
 
 Select **Servers** under the **Infrastructure** tab. In the Navigation Tree, select the **SRN**, you want to add storage to, then scroll down on the main data panel and select **edit storage**.
 

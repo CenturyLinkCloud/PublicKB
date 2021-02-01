@@ -1,6 +1,6 @@
 {{{
   "title": "Cloud Optimization AWS Configuration - Manual",
-  "date": "12-13-2017",
+  "date": "09-12-2019",
   "author": "Ben Swoboda",
   "attachments": [],
   "contentIsHTML": false
@@ -18,17 +18,17 @@ It is recommended the user or role performing these steps have full IAM permissi
 1. Login to the target AWS account [here](https://console.aws.amazon.com/iam).
 2. Access the IAM dashboard.
 
-#### Create CenturyLink Cloud Optimization IAM Policy
+#### Create Lumen Cloud Optimization IAM Policy
 1. Navigate to IAM "Policy."
 2. Click "Create Policy."
 3. Select "Create Your Own Policy."
 4. Name the Policy as follows: CTLCloudOptimizationPolicy.
 5. Add the following Description: Access Policy for CTL's Cloud Optimization Functionality.
-6. Paste the CenturyLink Cloud Optimization IAM policy documented [below](#centuryLink-cloud-optimization-iam-policy).
+6. Paste the Lumen Cloud Optimization IAM policy documented [below](#lumen-cloud-optimization-iam-policy).
 7. Click "Validate Policy."
 8. Click "Create Policy."
 
-#### Create CenturyLink Cloud Optimization IAM Role
+#### Create Lumen Cloud Optimization IAM Role
 1. Navigate to IAM "Roles."
 2. Click "Create New Role."
 3. Click "Role for Cross-account access."
@@ -44,12 +44,12 @@ It is recommended the user or role performing these steps have full IAM permissi
 13. Click "Create Role."
 
 #### Retrieve ARN role
-1. Select the CenturyLink Cloud Optimization AMI Role.
+1. Select the Lumen Cloud Optimization IAM Role.
 2. Record listed ARN.
-3. Send ARN to your on-boarding representative.
+3. Send ARN to your Technical Account Manager or on-boarding representative.
 
 
-##### CenturyLink Cloud Optimization IAM Policy
+##### Lumen Cloud Optimization IAM Policy
 
 ```
 
@@ -57,7 +57,6 @@ It is recommended the user or role performing these steps have full IAM permissi
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "FullPolicy",
             "Action": [
                 "acm:DescribeCertificate",
                 "acm:ListCertificates",
@@ -89,6 +88,7 @@ It is recommended the user or role performing these steps have full IAM permissi
                 "directconnect:DescribeVirtualInterfaces",
                 "dynamodb:ListTables",
                 "dynamodb:DescribeTable",
+                "dynamodb:ListTagsOfResource",
                 "ec2:Describe*",
                 "ec2:GetConsoleOutput",
                 "ecs:ListClusters",
@@ -121,6 +121,7 @@ It is recommended the user or role performing these steps have full IAM permissi
                 "glacier:GetJobOutput",
                 "iam:Get*",
                 "iam:List*",
+                "iam:GenerateCredentialReport",
                 "iot:DescribeThing",
                 "iot:ListThings",
                 "iam:GenerateCredentialReport",
@@ -131,7 +132,6 @@ It is recommended the user or role performing these steps have full IAM permissi
                 "kms:Describe*",
                 "kms:Get*",
                 "kms:List*",
-                "kms:ListResourceTags",
                 "lambda:ListFunctions",
                 "lambda:ListTags",
                 "rds:Describe*",
@@ -150,6 +150,8 @@ It is recommended the user or role performing these steps have full IAM permissi
                 "s3:GetBucketNotification",
                 "s3:GetLifecycleConfiguration",
                 "s3:GetObject",
+                "s3:GetObjectMetadata",
+                "s3:GetNotificationConfiguration",
                 "s3:List*",
                 "ses:ListIdentities",
                 "ses:GetSendStatistics",
@@ -167,6 +169,7 @@ It is recommended the user or role performing these steps have full IAM permissi
                 "sns:GetSubscriptionAttributes",
                 "sns:ListTopics",
                 "sns:ListSubscriptionsByTopic",
+                "sns:GetSnsTopic",
                 "ssm:List*",
                 "sqs:ListQueues",
                 "sqs:GetQueueAttributes",
@@ -174,14 +177,15 @@ It is recommended the user or role performing these steps have full IAM permissi
                 "storagegateway:List*",
                 "workspaces:DescribeWorkspaceDirectories",
                 "workspaces:DescribeWorkspaceBundles",
-                "workspaces:DescribeWorkspaces"
+                "workspaces:DescribeWorkspaces",
+                "Organizations:List*",
+                "Organizations:Describe*"
             ],
+            "Resource": "*",
             "Effect": "Allow",
-            "Resource": "*"
+            "Sid": "FullPolicy"
         },
         {
-            "Sid": "CloudWatchLogsSpecific",
-            "Effect": "Allow",
             "Action": [
                 "logs:GetLogEvents",
                 "logs:DescribeLogGroups",
@@ -189,7 +193,9 @@ It is recommended the user or role performing these steps have full IAM permissi
             ],
             "Resource": [
                 "arn:aws:logs:*:*:*"
-            ]
+            ],
+            "Effect": "Allow",
+            "Sid": "CloudWatchLogsSpecific"
         }
     ]
 }
