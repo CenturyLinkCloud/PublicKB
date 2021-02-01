@@ -53,8 +53,7 @@ Cloud Application Manager currently supports Terraform configuration **version 0
 
 3. In the box, select **New** in Templates, under Code tab.
 
-    ![Select Terraform template file](../../images/cloud-application-manager/template-box/terraform-version2-2a.png)
-    ![Select Terraform template file](../../images/cloud-application-manager/template-box/terraform-parameters-2b.png)
+    ![Select Terraform template file](../../images/cloud-application-manager/template-box/terraformboxes2.png)
 
     * **Blank Template**. Develop one from scratch. When you save, you have a blank template you can start authoring. Configuration files with extensions `.tf`, `.tf.json` and `.auto.tfvars` are allowed.
     * **File**. Upload an existing template. When you save, the contents of the file are available in the template. You can upload one up to 1MB in size.
@@ -76,7 +75,8 @@ Cloud Application Manager currently supports Terraform configuration **version 0
 
 2. Customize parameters. Although optional, if you have them in the template, they’re automatically shown under Variables. You can customize several parameters as in this example.
 
-    ![Terraform template box variables](../../images/cloud-application-manager/template-box/terraformboxes3.png)
+    ![Terraform version variables](../../images/cloud-application-manager/template-box/terraform-versions-3a.png)
+    ![Terraform template box variables](../../images/cloud-application-manager/template-box/terraform-parameters-3b.png)
 
      **Variables in Terraform boxes**:
 
