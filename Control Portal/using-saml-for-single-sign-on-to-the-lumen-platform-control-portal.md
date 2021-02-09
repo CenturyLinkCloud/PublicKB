@@ -1,6 +1,6 @@
 {{{
   "title": "Using SAML for Single-Sign-On to the Lumen Platform Control Portal",
-  "date": "UPDATED WITH SIGNING CERTIFICATE 02-01-2021",
+  "date": "UPDATED WITH SIGNING CERTIFICATE 01-28-2021",
   "author": "Matthew Ordman",
   "attachments": [],
   "contentIsHTML": false
@@ -281,7 +281,7 @@ The steps below walk through the process of building an entire SSO and SAML scen
 
 ### Updated Signing Certificate (February 2021)
 
-Customers with an existing SAML configuration as of February 1, 2021 will need to update their signing certificate for use with their IdP with the following text:
+Customers with an existing SAML configuration as of Thursday, January 28, 2021 6:00:00 AM MNT will need to update their signing certificate for use with their IdP with the following text:
 
 
 ```

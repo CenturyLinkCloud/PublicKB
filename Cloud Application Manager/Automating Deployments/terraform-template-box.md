@@ -1,6 +1,6 @@
 {{{ "title": "Terraform Template Boxes",
-"date": "11-04-2019",
-"author": "Amalia Garcia de Mirasierra and Guillermo Sanchez",
+"date": "02-01-2021",
+"author": "Amalia Garcia de Mirasierra and Guillermo Sanchez and Gavin Lai",
 "attachments": [],
 "contentIsHTML": false,
 "keywords": ["terraform", "template box", "cloud application manager", "cam", "alm", "application lifecycle management", "auto-register"]
@@ -41,7 +41,7 @@ The Terraform Template box consists mainly on a list of template files where you
 
 We use a sample Basic Two-Tier Architecture in Google Cloud with Terraform templates to show how to create and launch a Terraform box template in Cloud Application Manager.
 
-Cloud Application Manager currently supports Terraform configuration **version 0.11**.
+Cloud Application Manager currently supports Terraform configuration **version 0.11 and 0.12**.
 
 **Step 1. Create the template**
 
@@ -75,7 +75,8 @@ Cloud Application Manager currently supports Terraform configuration **version 0
 
 2. Customize parameters. Although optional, if you have them in the template, they’re automatically shown under Variables. You can customize several parameters as in this example.
 
-    ![Terraform template box variables](../../images/cloud-application-manager/template-box/terraformboxes3.png)
+    ![Terraform version variables](../../images/cloud-application-manager/template-box/terraform-versions-3a.png)
+    ![Terraform template box variables](../../images/cloud-application-manager/template-box/terraform-parameters-3b.png)
 
      **Variables in Terraform boxes**:
 
