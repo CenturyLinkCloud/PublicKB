@@ -1,7 +1,7 @@
 {{{
   "title": "Getting Support",
-  "date": "5-8-2019",
-  "author": "Hannah Melvin",
+  "date": "02-15-2021",
+  "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -16,7 +16,7 @@ In this KB article, we demonstrate how to get support when needed. As part of ou
 * Via Phone: Response Objective is 1-5 minutes
     * United States: 1-888-638-6771
     * Canada: 1-866-296-5335
-    * EMEA: 00800-7288-4743
+    * EMEA: +44 800 496 5000 (UK) / +800 5336 3273 (EU)
     * Asia Pacific: +65-6768-8099
 
 * Via Email: Response Objective is less than 6 hours
@@ -30,7 +30,7 @@ In this KB article, we demonstrate how to get support when needed. As part of ou
       3. Next, enter your main contact. Select __Cloud__ in the "What Product is this for?" field. Select __Lumen Private Cloud on VMware Cloud Foundation__ in the "Which Cloud Product" dropdown.
       4. In the "what is the status?" dropdown, select __Experiencing an Issue__, __Requesting a Change__, or __Requesting Information__.
         ![Quick Access](../../images/dccf/getting-support.png)
-      5. Based on the option you select, additional fields will appear in the form. Once all required fields are completed, click __Submit__. 
+      5. Based on the option you select, additional fields will appear in the form. Once all required fields are completed, click __Submit__.
 
 
 ### Steps to request a SavvisStation Portal Account.
