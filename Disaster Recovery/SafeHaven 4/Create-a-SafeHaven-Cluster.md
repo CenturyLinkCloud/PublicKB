@@ -17,9 +17,9 @@ This article explains how to create a SafeHaven Cluster.
 
 ### Assumptions
 
-This article assumes that the user has already deployed the CMS server in CenturyLink Cloud.
+This article assumes that the user has already deployed the CMS server in Lumen Cloud.
 
-To create CMS please refer to [Deploy CMS and SRN in CenturyLink Cloud](Deploy-CMS-and-SRN-in-CenturyLink-Cloud.md)
+To create CMS please refer to [Deploy CMS and SRN in Lumen Cloud](Deploy-CMS-and-SRN-in-Lumen-Cloud.md)
 
 ### SafeHaven Cluster Installation
 
@@ -35,17 +35,17 @@ Accept the **End User License Agreement** and click **Next**.
 
 ![Upgrade](../../images/SH4.0/Cluster/02.png)
 
-Enter the **Customer Name** and the **License key** provided to you by your CenturyLink Engineer.
+Enter the **Customer Name** and the **License key** provided to you by your Lumen Engineer.
 
 ![Upgrade](../../images/SH4.0/Cluster/03.png)
 
 Fill in the following fields:
 1. CMS hostname in the **Node Name**
-2. **Client Access IP** (CMS IP that used to connect to the SafeHaven Console GUI) and **Service Access IP** (CMS IP that is used for communication between CMS and SRN). Typically CMS Private IP address is entered in these fields. You can get this information from the CenturyLink Control Portal.
+2. **Client Access IP** (CMS IP that used to connect to the SafeHaven Console GUI) and **Service Access IP** (CMS IP that is used for communication between CMS and SRN). Typically CMS Private IP address is entered in these fields. You can get this information from the Lumen Control Portal.
 3. Set the **Administrator Password** (Password required to login to the SafeHaven Console GUI to manange the SafeHaven)
-4. Enter the **CMS root password**. You can get this information from the CenturyLink Control Portal.
+4. Enter the **CMS root password**. You can get this information from the Lumen Control Portal.
 5. Click on **Test Login** to confirm connectivity to the CMS.
-6. Copy the **Debian Package for CMS/SRN** link from the **Download Links** section of the [SafeHaven 4.0.2 Release Notes](safehaven-4.0.2-release.md) and enter it in the **SafeHaven 4.0.2 distribution URL** section. Please contact your CenturyLink Cloud Engineer if you have any questions regarding the latest version of **Debian Package for CMS/SRN**.
+6. Copy the **Debian Package for CMS/SRN** link from the **Download Links** section of the [SafeHaven 4.0.2 Release Notes](safehaven-4.0.2-release.md) and enter it in the **SafeHaven 4.0.2 distribution URL** section. Please contact your Lumen Cloud Engineer if you have any questions regarding the latest version of **Debian Package for CMS/SRN**.
 7. Do not modify the Service Port (TCP) , Heartbeat Port (UDP) , Installation ID.
 
 Click **Next**

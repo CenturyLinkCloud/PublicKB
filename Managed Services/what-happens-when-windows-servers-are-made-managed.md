@@ -7,11 +7,11 @@
 }}}
 
 ### Overview
-This document provides an overview of steps taken when Windows servers are prepared to be managed by CenturyLink.
+This document provides an overview of steps taken when Windows servers are prepared to be managed by Lumen.
 
 ### Audience
 
-Users employed by companies that have agreed to terms with [CenturyLink Sales](http://www.centurylink.com/) for the CenturyLink Cloud product.
+Users employed by companies that have agreed to terms with [Lumen Sales](http://www.centurylink.com/) for the Lumen Cloud product.
 
 ### Prerequisites
 * An understanding of the process for [making newly created servers managed](../Managed Services/created-a-managed-server-now-what.md) or for [converting pre-existing servers to managed](../Managed Services/converting-unmanaged-virtual-machines-to-managed.md)
@@ -26,7 +26,7 @@ It is required that a Windows server reboot during the make managed process. If 
 
 The following is not meant to be a complete description of everything that happens when a VM is prepared for management, but to give users a better idea of configuration changes that might be necessary to manage their servers.
 
-Many of the following items are mandatory. Some default items have options for change. If you would like to alter default options, please contact the CenturyLink Client Service Center at 1-888-638-6771 to submit your request for review.
+Many of the following items are mandatory. Some default items have options for change. If you would like to alter default options, please contact the Lumen Client Service Center at 1-888-638-6771 to submit your request for review.
 
 * A client is downloaded onto the VM. This client allows for installation of management tools, configuration, and remote support.
 * If a [dedicated domain exists](../Managed Services/getting-started-with-managed-active-directory.md) for the customer, the server will be joined to it. Otherwise, the server will join a shared domain.
@@ -83,7 +83,7 @@ Many of the following items are mandatory. Some default items have options for c
 
 
 
-* The following software is either installed or configured and required for management and should not be altered without consulting with CenturyLink
+* The following software is either installed or configured and required for management and should not be altered without consulting with Lumen
   * Our approved, managed antivirus
   * Opsware agent
   * ActivePerl
@@ -96,6 +96,6 @@ Many of the following items are mandatory. Some default items have options for c
 
 
 
-* The following directories are required for management and should not be altered without consulting with CenturyLink
+* The following directories are required for management and should not be altered without consulting with Lumen
   * D:\svvstools
   * C:\XFER

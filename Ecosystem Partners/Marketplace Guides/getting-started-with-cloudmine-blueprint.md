@@ -12,22 +12,22 @@
 [CloudMine](https://cloudmineinc.com/) - Blend public cloud with private data to accelerate the next generation
 
 ### Customer Support:
-* CenturyLinksupport@cloudmine.me
+* Lumensupport@cloudmine.me
 
-* CenturyLink Cloud Account Alias: CMNE
-  All support requests can be sent to CenturyLinksupport@cloudmine.me. Please include as much detail as possible regarding your issue and list pertinent contact information so that our team may address your question quickly.
+* Lumen Cloud Account Alias: CMNE
+  All support requests can be sent to Lumensupport@cloudmine.me. Please include as much detail as possible regarding your issue and list pertinent contact information so that our team may address your question quickly.
 
 ### Description
-CloudMine has integrated their technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Mobile Backend solution.
+CloudMine has integrated their technology with the Lumen Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Mobile Backend solution.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the partner technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the partner technology on Lumen Cloud.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 
 ### Detailed Steps
 Follow these step by step instructions to get started with a single-server CloudMine deployment.
@@ -82,7 +82,7 @@ Follow these step by step instructions to get started with a single-server Cloud
    ![CloudMine 8](../../images/cm8.png)
 
 ### Pricing
-The costs listed above in Steps 1 and 2 are for the CenturyLink Cloud infrastructure only. There are no CloudMine license costs or additional fees bundled in. After deploying this Blueprint, the user can secure entitlements to the CloudMine technology by using the following steps:
+The costs listed above in Steps 1 and 2 are for the Lumen Cloud infrastructure only. There are no CloudMine license costs or additional fees bundled in. After deploying this Blueprint, the user can secure entitlements to the CloudMine technology by using the following steps:
 * Contact CloudMine via telephone: (855) 662-7722.
 * Contact Cloudmine via the [contact page](https://cloudmine.me/contact/) on their website.
 
@@ -92,6 +92,6 @@ The costs listed above in Steps 1 and 2 are for the CenturyLink Cloud infrastruc
 * Contact Cloudmine via the [contact page](https://cloudmine.me/contact/) on their website.
 
 **Who should I contact for support?**
-* For issues related to deploying the CloudMine& Blueprint on CenturyLink Cloud, please contact [CloudMine Support](mailto:CenturyLinksupport@cloudmine.me).
+* For issues related to deploying the CloudMine& Blueprint on Lumen Cloud, please contact [CloudMine Support](mailto:Lumensupport@cloudmine.me).
 
-* For issues related to cloud infrastructure (VMs, network, etc.), please open a ticket using the CenturyLink Cloud [Support Process](https://t3n.zendesk.com/entries/23610702-How-do-I-report-a-support-issue).
+* For issues related to cloud infrastructure (VMs, network, etc.), please open a ticket using the Lumen Cloud [Support Process](https://t3n.zendesk.com/entries/23610702-How-do-I-report-a-support-issue).

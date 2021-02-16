@@ -8,7 +8,7 @@
 }}}
 
 ### Overview
-CenturyLink Cloud now has a robust, geo-distributed Object Storage service capable of storing any type of digital content. Perfect for data backups, media distribution, and file transfers, the Object Storage is Amazon S3-compatible and accessible from the Control Portal or via API. CenturyLink Cloud Object Storage is Amazon S3 compatible, which means that a host of tools are readily available for maintaining buckets and interacting with bucket objects.
+Lumen Cloud now has a robust, geo-distributed Object Storage service capable of storing any type of digital content. Perfect for data backups, media distribution, and file transfers, the Object Storage is Amazon S3-compatible and accessible from the Control Portal or via API. Lumen Cloud Object Storage is Amazon S3 compatible, which means that a host of tools are readily available for maintaining buckets and interacting with bucket objects.
 
 ### Audience
 * Bucket Administrators
@@ -20,7 +20,7 @@ CenturyLink Cloud now has a robust, geo-distributed Object Storage service capab
 * Have already created a new bucket or have access permissions to an existing bucket
 
 ### Using Cloudberry Explorer for Amazon S3
-[Explorer for Amazon S3](http://www.cloudberrylab.com/) is a freeware tool for Windows (a paid version also available) that works with CenturyLink Cloud Object Storage.
+[Explorer for Amazon S3](http://www.cloudberrylab.com/) is a freeware tool for Windows (a paid version also available) that works with Lumen Cloud Object Storage.
 
 1. [Download and Install a copy of Explorer for S3.](http://www.cloudberrylab.com/free-amazon-s3-explorer-cloudfront-IAM.aspx)
 
@@ -31,10 +31,10 @@ CenturyLink Cloud now has a robust, geo-distributed Object Storage service capab
 
 4. Capture the [service point for object storage](https://www.ctl.io/knowledge-base/storage/object-storage/object-storage-regions-and-service-points/).
 
-5. Back in Explorer for Amazon S3, click **File > New S3 Compatible Account**. Choose the **CenturyLink** menu option in order to add the connection details for Object Storage.
+5. Back in Explorer for Amazon S3, click **File > New S3 Compatible Account**. Choose the **Lumen** menu option in order to add the connection details for Object Storage.
    ![new s3 compatible account](../../images/using-object-storage-from-3rd-party-tools-01.png)
 
-6. Specify name, service point, access, and secret keys to register the new CenturyLink account.
+6. Specify name, service point, access, and secret keys to register the new Lumen account.
    ![s3 compatible account input](../../images/using-object-storage-from-3rd-party-tools-02.png)
 
 7. Return to the Explorer for Amazon S3 main window. Using the drag and drop model of the software (or the Copy command), upload data to Object Storage.
@@ -48,7 +48,7 @@ CenturyLink Cloud now has a robust, geo-distributed Object Storage service capab
 9. Explorer for Amazon S3 also lets users download objects, delete objects, view bucket/object properties, and preview objects.
 
 ### Using CyberDuck on Mac OS X
-[CyberDuck](https://cyberduck.io/) is a freeware product for Mac OS X (paid version also available) that works with CenturyLink Cloud Object Storage.
+[CyberDuck](https://cyberduck.io/) is a freeware product for Mac OS X (paid version also available) that works with Lumen Cloud Object Storage.
 
 1. Download a copy of [CyberDuck for OS X](https://update.cyberduck.io/Cyberduck-4.7.2.zip) from the product website.
 
@@ -78,7 +78,7 @@ CenturyLink Cloud now has a robust, geo-distributed Object Storage service capab
 
    ![cyberduck established connection](../../images/cyberduck-established-connection.png)
 
-9. Now that CyberDuck is configured to quickly connect to your CenturyLink Cloud Object Storage account and access the stored buckets, you should bookmark the account for easy access. Click the **Bookmark icon** to navigate to the Bookmark page.
+9. Now that CyberDuck is configured to quickly connect to your Lumen Cloud Object Storage account and access the stored buckets, you should bookmark the account for easy access. Click the **Bookmark icon** to navigate to the Bookmark page.
 
    ![cyberduck bookmark page](../../images/cyberduck-bookmark-page.png)
 

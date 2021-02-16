@@ -20,4 +20,4 @@ __Cloud Application Manager__
 
   - Anomaly Detection – Alert based on any observed metric data that falls outside of the historical operating norms. This feature allows for threshold-less alerting that triggers when the metric deviates from it’s predicted value.
   - Forecasting – Alert based on projected future states of metric data.  Allows for the configuration of thresholds that are detected to be crossed within some arbitrary future time frame.
-  - Any generated alerts will be sent to a CenturyLink operator for evaluation, notification, and remediation.
+  - Any generated alerts will be sent to a Lumen operator for evaluation, notification, and remediation.

@@ -8,7 +8,7 @@
 
 ### IMPORTANT NOTE
 
-CenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only
+Lumen WordPress hosting is currently in a Limited Beta program with specific customers by invitation only
 and is not intended for production usage.
 
 During the Limited Beta there is no production Service Level Agreement.
@@ -22,13 +22,13 @@ At times it is necessary to manage the database to resolve issues or add functio
 
 ### Prerequisites:
 
-* A CenturyLink WordPress hosting site has been created.
+* A Lumen WordPress hosting site has been created.
 * A suitable MySQL client is installed and ready to use. There are many compatible options—from the MySQL
   command-line interface to MySQL Workbench and other third-party tools.
 
 ## WordPress MySQL Database Access with external tools
 
-1. In a Web browser, navigate to the [CenturyLink WordPress as a Service dashboard](https://wordpress.ctl.io/).
+1. In a Web browser, navigate to the [Lumen WordPress as a Service dashboard](https://wordpress.ctl.io/).
 2. Log in and then choose the site whose database you want to manage from the list of sites.
 3. Once the Site Details have loaded, click on the `Database` tab.
 4. This page provides all the information your database client needs to connect to your WordPress site's database.

@@ -8,12 +8,12 @@
 }}}
 
 ### Description
-CenturyLink Cloud now has a robust, geo-distributed Object Storage service capable of storing any type of digital content. Perfect for data backups, media distribution, and file transfers. The CenturyLink Cloud Object Storage is Amazon S3-compatible and accessible from the CenturyLink Cloud Control Portal or via API. This KB article explains how to interact with Object Storage from the CenturyLink Cloud Control Portal.
+Lumen Cloud now has a robust, geo-distributed Object Storage service capable of storing any type of digital content. Perfect for data backups, media distribution, and file transfers. The Lumen Cloud Object Storage is Amazon S3-compatible and accessible from the Lumen Cloud Control Portal or via API. This KB article explains how to interact with Object Storage from the Lumen Cloud Control Portal.
 
 ### Audience
 * Bucket Administrators
 
-### Actions Supported in the CenturyLink Cloud Control Portal
+### Actions Supported in the Lumen Cloud Control Portal
 Below, each action available in the Control Portal is explained and demonstrated.
 
 ### Create Object Storage Users

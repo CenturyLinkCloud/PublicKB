@@ -8,7 +8,7 @@
 }}}
 
 ### Description
-CenturyLink Cloud [Object Storage](http://www.ctl.io/object-storage) is an ideal repository for unstructured data ranging from media files to database backups. The Object Storage service is Amazon S3 compatible which means that code and tools that work with Amazon S3 should work seamlessly with CenturyLink Cloud Object Storage. This KB article shows you how to use the raw REST API and the AWS SDK (for .NET and Node.js) to interact with Object Storage.
+Lumen Cloud [Object Storage](http://www.ctl.io/object-storage) is an ideal repository for unstructured data ranging from media files to database backups. The Object Storage service is Amazon S3 compatible which means that code and tools that work with Amazon S3 should work seamlessly with Lumen Cloud Object Storage. This KB article shows you how to use the raw REST API and the AWS SDK (for .NET and Node.js) to interact with Object Storage.
 
 ### Audience
 * Developers
@@ -18,7 +18,7 @@ CenturyLink Cloud [Object Storage](http://www.ctl.io/object-storage) is an ideal
 * See the KB article [Using Object Storage from the Control Portal](https://www.ctl.io/knowledge-base/storage/object-storage/using-object-storage-from-the-control-portal/) for a walkthrough of users and buckets.
 
 ### Using the Object Storage REST API from .NET
-The CenturyLink Cloud Object Storage service offers an Amazon S3-compatible web services endpoint. The endpoint has the same authentication, resources, and payloads as defined in the [Amazon S3 documentation](http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html). The steps below show how to consume Object Storage from a custom .NET application. **Note** that the [source code for this sample application](https://github.com/Tier3/Examples/tree/master/ObjectStorage/Tier3.ObjectStorageViaAPI.DotNet) can be downloaded from GitHub.
+The Lumen Cloud Object Storage service offers an Amazon S3-compatible web services endpoint. The endpoint has the same authentication, resources, and payloads as defined in the [Amazon S3 documentation](http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html). The steps below show how to consume Object Storage from a custom .NET application. **Note** that the [source code for this sample application](https://github.com/Tier3/Examples/tree/master/ObjectStorage/Tier3.ObjectStorageViaAPI.DotNet) can be downloaded from GitHub.
 
 ### Detailed Steps
 Log into the Control Portal to acquire your user credentials.
@@ -253,13 +253,13 @@ using (var client2 = new HttpClient())
    ![kb-objectstorage.gif](https://t3n.zendesk.com/attachments/token/bkeyeatvpms07td/?name=kb-objectstorage.gif)
 
 ### Using Amazon SDK for .NET to Interact with Object Storage
-The Amazon Web Services team created and maintain a set of SDKs for developers to use when interacting with their cloud platform. Because CenturyLink Cloud Object Storage is S3-compatible, developers can reuse these existing SDKs when interacting with Object Storage. An SDK is typically MUCH easier to work with than a raw API as much of the complexity is hidden. **Note** that the [source code for this sample application](https://github.com/Tier3/Examples/tree/master/ObjectStorage/Tier3.ObjectStorageViaAPI.DotNet) can be downloaded from GitHub.
+The Amazon Web Services team created and maintain a set of SDKs for developers to use when interacting with their cloud platform. Because Lumen Cloud Object Storage is S3-compatible, developers can reuse these existing SDKs when interacting with Object Storage. An SDK is typically MUCH easier to work with than a raw API as much of the complexity is hidden. **Note** that the [source code for this sample application](https://github.com/Tier3/Examples/tree/master/ObjectStorage/Tier3.ObjectStorageViaAPI.DotNet) can be downloaded from GitHub.
 
 ### Detailed Steps
 1. Download the <a href="http://aws.amazon.com/sdkfornet/">AWS SDK for .NET</a>&nbsp;and install it. Or, open Visual Studio and install the SDK as part of a <a href="http://nuget.org/">NuGet package</a>. To install the NuGet package, right click the Visual Studio project, choose "Manage NuGet Packages", search for "AWS" and install the package into this project.
    ![objectstorage-api01.png](https://t3n.zendesk.com/attachments/token/ng4xwk0kmb3v398/?name=objectstorage-api01.png)
 
-2. Add code that uses the AWS SDK to read the list of buckets from Object Storage. First, a configuration object is instantiated and the CenturyLink Cloud Object Storage URL is provided. Then, the client object is created and provided the credentials and configuration. The SDK uses strong typing, so the client object specifically calls "ListBuckets" and gets back a list of buckets with properties such as "BucketName."
+2. Add code that uses the AWS SDK to read the list of buckets from Object Storage. First, a configuration object is instantiated and the Lumen Cloud Object Storage URL is provided. Then, the client object is created and provided the credentials and configuration. The SDK uses strong typing, so the client object specifically calls "ListBuckets" and gets back a list of buckets with properties such as "BucketName."
 
 ```
 //create configuration that points to different URL
@@ -333,7 +333,7 @@ foreach (S3Object obj in objResp.S3Objects)
    ![kb-objectstorage2.gif](https://t3n.zendesk.com/attachments/token/gbflxnbusallb3r/?name=kb-objectstorage2.gif)
 
 ### Using the Amazon SDK for Node.js to Interact with Object Storage
-Node.js is a popular platform for building high-performing JavaScript-friendly applications. Amazon Web Services also ships an SDK for Node.js, and that SDK works perfectly with CenturyLink Cloud Object Storage. **Note** that the [source code for this sample application](https://github.com/Tier3/Examples/tree/master/ObjectStorage/Tier3.ObjectStorageViaApi.Node) can be downloaded from GitHub.
+Node.js is a popular platform for building high-performing JavaScript-friendly applications. Amazon Web Services also ships an SDK for Node.js, and that SDK works perfectly with Lumen Cloud Object Storage. **Note** that the [source code for this sample application](https://github.com/Tier3/Examples/tree/master/ObjectStorage/Tier3.ObjectStorageViaApi.Node) can be downloaded from GitHub.
 
 ### Detailed Steps
 1. Create a [new Node.js project](http://nodejs.org/"). This example solution uses the [Express framework](http://expressjs.com/) to provide an MVC foundation to the application.
@@ -379,7 +379,7 @@ exports.index = function(req, res){
 
         console.log(data.Buckets);
 
-        res.render('index', { title: 'CenturyLink Cloud Object Storage Bucket List', buckets: data.Buckets });
+        res.render('index', { title: 'Lumen Cloud Object Storage Bucket List', buckets: data.Buckets });
 
     });
 
@@ -408,15 +408,15 @@ table(class="table table-striped table-bordered table-hover")
                | #{bucket.Name}
 ```
 
-6. Run the Node.js application and see that the list of CenturyLink Cloud Object Storage buckets is retrieved and displayed on the page.
+6. Run the Node.js application and see that the list of Lumen Cloud Object Storage buckets is retrieved and displayed on the page.
 
 ### Using the Amazon SDK for Java to Interact with Object Storage
-Amazon Web Services also ships an [SDK for Java](https://aws.amazon.com/sdk-for-java/), and that SDK works with CenturyLink Cloud Object Storage. To get started, include the package in your project; an example for Gradle is shown below (syntax can vary if a different build system is being used and/or if a different version of the package is desired).
+Amazon Web Services also ships an [SDK for Java](https://aws.amazon.com/sdk-for-java/), and that SDK works with Lumen Cloud Object Storage. To get started, include the package in your project; an example for Gradle is shown below (syntax can vary if a different build system is being used and/or if a different version of the package is desired).
 ```
 compile 'com.amazonaws:aws-java-sdk-s3:1.11.411'
 ```
 
-You can then use the following code to create a client object that can be used to interact with CenturyLink Cloud Object Storage:
+You can then use the following code to create a client object that can be used to interact with Lumen Cloud Object Storage:
 ```
 AmazonS3 s3client = AmazonS3ClientBuilder.standard()
             .withClientConfiguration(new ClientConfiguration().withSignerOverride("S3SignerType"))

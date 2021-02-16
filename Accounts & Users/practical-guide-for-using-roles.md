@@ -8,7 +8,7 @@
 
 ### Description
 
-CenturyLink Cloud currently offers eight roles that are available to assign users to. A brief description of each role is available on the [User Permissions page](../Accounts & Users/user-permissions.md), and a complete list of actions that can be performed by each role can be found in the [Role Permissions Matrix](../Accounts & Users/role-permissions-matrix.md). These roles were designed to align with job functions that are frequently found in many organizations, but they may not perfectly match up with the specific use cases or job titles found in your organization. This article will give some examples and guidelines for using roles and account hierarchies for managing security and access in the Control Portal.
+Lumen Cloud currently offers eight roles that are available to assign users to. A brief description of each role is available on the [User Permissions page](../Accounts & Users/user-permissions.md), and a complete list of actions that can be performed by each role can be found in the [Role Permissions Matrix](../Accounts & Users/role-permissions-matrix.md). These roles were designed to align with job functions that are frequently found in many organizations, but they may not perfectly match up with the specific use cases or job titles found in your organization. This article will give some examples and guidelines for using roles and account hierarchies for managing security and access in the Control Portal.
 
 ### Example Organizational Role Breakdown
 

@@ -18,7 +18,7 @@ http://www.ustechsource.com/
 | info@ustechsource.com |
 
 ### Description
-The StratoZone platform delivers an end-to-end solution from initial engagement to migration of customer assets into the CenturyLink Cloud environment. Through automation of data collection, end-state design, provisioning, migration planning and migration execution, we provide a low-touch, highly efficient automated processing including planning, onboarding and the actual migration.
+The StratoZone platform delivers an end-to-end solution from initial engagement to migration of customer assets into the Lumen Cloud environment. Through automation of data collection, end-state design, provisioning, migration planning and migration execution, we provide a low-touch, highly efficient automated processing including planning, onboarding and the actual migration.
 
 StratoZone® CP reduces the complexity and level of manual effort through end-to-end automation, reducing the per-workload cost to customers by over 60%.
 
@@ -38,4 +38,4 @@ Contact US TechSource at info@ustechsource.com
 
 **Who should I contact for support?**
 * For issues related to using StratoZone email info@ustechsource.com.
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
+* For issues related to cloud infrastructure, please open a ticket using the [Lumen Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).

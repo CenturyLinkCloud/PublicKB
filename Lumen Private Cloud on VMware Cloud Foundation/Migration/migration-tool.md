@@ -9,7 +9,7 @@
 }}}
 
 ### Description
-In this KB article, we outline the process involved in preparing your VMware (source) environment in readiness for migration into CenturyLink Private Cloud on VMware Cloud Foundation.
+In this KB article, we outline the process involved in preparing your VMware (source) environment in readiness for migration into Lumen Private Cloud on VMware Cloud Foundation.
 
 This process involves multiple components that you must install and configure in a specific order.
 
@@ -21,12 +21,12 @@ You can configure NAT and Firewall rules, either prior to, or after installation
 
 During the deployment of the various appliances, it is necessary to input the public (NAT) IP address along with the port (PAT) which will be used in the NAT/PAT configuration.
 
-**Important Note:** You will also need to obtain the public IPs for the Service Provider Extender and vCloud Director for your CenturyLink Private Cloud on VMware Cloud Foundation environment. Refer to the following example for what you need.
+**Important Note:** You will also need to obtain the public IPs for the Service Provider Extender and vCloud Director for your Lumen Private Cloud on VMware Cloud Foundation environment. Refer to the following example for what you need.
 
 **Example:**  
 `Tenant Replicator: <Translated Public IP>:443`
 
-The following examples have 2 Management IPs and 1 Public IP for the Tenant (Customer) and 2 Public IPs on the Service Provider (CenturyLink Private Cloud on VMware Cloud Foundation) side:
+The following examples have 2 Management IPs and 1 Public IP for the Tenant (Customer) and 2 Public IPs on the Service Provider (Lumen Private Cloud on VMware Cloud Foundation) side:
 
 | Tenant Function | Service Provider Function | IP Address |
 | :-----: | :-----: | :-----: |
@@ -36,7 +36,7 @@ The following examples have 2 Management IPs and 1 Public IP for the Tenant (Cus
 | - | Extender IP | 206.1.2.34 |
 | - | vCloud Director IP | 206.1.2.44 |
 
-Your Extender and vCloud Director IP Addresses will be provided once your CenturyLink Private Cloud on VMware Cloud Foundation environment is built out.
+Your Extender and vCloud Director IP Addresses will be provided once your Lumen Private Cloud on VMware Cloud Foundation environment is built out.
 
 #### NAT Requirements - Tenant (source)
 The following NAT rules are required on the Tenant (source) side of the connection:
@@ -214,7 +214,7 @@ Verify that the vCloud Director Extender On-Premise Appliance VM is powered on.
 
   ![Migration Tool](../../images/dccf/extender17.png)
 
-### Connect to a Provider Cloud (CenturyLink Private Cloud on VMware Cloud Foundation)
+### Connect to a Provider Cloud (Lumen Private Cloud on VMware Cloud Foundation)
 Before you can initiate migration jobs with vCloud Director Extender, you must set up a connection to a Provider Cloud
 
 **Prerequisites**
@@ -242,4 +242,4 @@ If you haven't configured the pre-requisite NAT firewall rules as indicated at t
 
   ![Migration Tool](../../images/dccf/extender20.png)
 
-Now that you're done setting up your environment, you are ready to proceed to the next step - [Migrating VMs into CenturyLink Private Cloud on VMware Cloud Foundation](using-migration-tool.md).
+Now that you're done setting up your environment, you are ready to proceed to the next step - [Migrating VMs into Lumen Private Cloud on VMware Cloud Foundation](using-migration-tool.md).

@@ -6,18 +6,18 @@
   "contentIsHTML": true
 }}}
 
-<p>This document provides guidance for working with your CenturyLink-managed Red Hat Enterprise Linux Operating System.</p>
-<p>CenturyLink provides you overall management for your server OS, including access to the primary root user privileges for new user account creation, user deletion, application installation, and other administrative tasks. CenturyLink will also maintain
+<p>This document provides guidance for working with your Lumen-managed Red Hat Enterprise Linux Operating System.</p>
+<p>Lumen provides you overall management for your server OS, including access to the primary root user privileges for new user account creation, user deletion, application installation, and other administrative tasks. Lumen will also maintain
   root access which allows us to effectively monitor and maintain your server OS.</p>
 <h3><strong>Connecting to Your Server with SSH</strong></h3>
 <p>When your server was initially configured, a customer account was created for your use, and the root account was configured for you to initially access the machine for administrative purposes.&nbsp;&nbsp;</p>
-<p>1. You will need the Admin (root) password for your initial SSH session. Access your server password in the CenturyLink Cloud Control by choosing the ‘<em>click to authenticate</em>’ link illustrated below in the red box, in the upper right corner<em>.&nbsp;&nbsp; Note:&nbsp; Your Admin user name and password are different from your CenturyLink Cloud Control user name and password. Also, this root account password should not be changed except from within this CenturyLink Cloud Control interface.</em>
+<p>1. You will need the Admin (root) password for your initial SSH session. Access your server password in the Lumen Cloud Control by choosing the ‘<em>click to authenticate</em>’ link illustrated below in the red box, in the upper right corner<em>.&nbsp;&nbsp; Note:&nbsp; Your Admin user name and password are different from your Lumen Cloud Control user name and password. Also, this root account password should not be changed except from within this Lumen Cloud Control interface.</em>
 </p>
 <p><em><img src="https://t3n.zendesk.com/attachments/token/igx4zrd8DJt6tERYiOu0CqUGt/?name=Overview.jpg" alt="Overview.jpg" /></em>
 </p>
 
 <p>2. Use any SSH version 2 compatible client. (SSH, Putty, Secure CRT, WS_FTP).</p>
-<p>3. Direct your SSH client to connect to the host server IP that was provided to you by CenturyLink Cloud Control. This IP is a CLC private network IP. <strong>You should NEVER manage your virtual server through a public IP address but rather, always use a secure tunnel such as a client VPN or site to site VPN connection.</strong>
+<p>3. Direct your SSH client to connect to the host server IP that was provided to you by Lumen Cloud Control. This IP is a CLC private network IP. <strong>You should NEVER manage your virtual server through a public IP address but rather, always use a secure tunnel such as a client VPN or site to site VPN connection.</strong>
 </p>
 <p>4. Once logged in, you should immediately set the password of your non-root management account. Run the command that's <strong>bolded below</strong> and note the resulting account name (shown below in<em> italics</em>) that you can use for your
   regular server operations:</p>
@@ -52,10 +52,10 @@
 </ul>
 <p>6. Log out of the highly-privileged root account and reserve your use of it for operations you cannot do using your non-root management account and the sudo privilege escalation command.</p>
 <h3><strong>Difficulty Connecting via SSH</strong></h3>
-<p>If you should have difficulty connecting via SSH, be sure that you are connecting from an IP address that has port 22 allowed on the CenturyLink inbound firewall. The firewall rule-set can be reviewed with CenturyLink Support.</p>
+<p>If you should have difficulty connecting via SSH, be sure that you are connecting from an IP address that has port 22 allowed on the Lumen inbound firewall. The firewall rule-set can be reviewed with Lumen Support.</p>
 <p>If you have a firewall at your location ensure port 22 is opened for outbound traffic. Additionally, confirm that your SSH client is configured to use port 22 (in all likelihood it is by default).</p>
 <p>If you are having problems connecting to your VM, please execute the following trouble-shooting steps (and save your output), prior to contacting Support. Saving your output data will help to expedite the trouble-shooting process.</p>
-<p>1. Provide a <em>traceroute(8)</em> output from your source host to the CenturyLink server destination IP.</p>
+<p>1. Provide a <em>traceroute(8)</em> output from your source host to the Lumen server destination IP.</p>
 <ul>
   <li>Example from a UNIX or Linux source host:</li>
 </ul>
@@ -64,7 +64,7 @@
   <li>Example from a Windows/DOS environment:</li>
 </ul>
 <pre>C:\&gt;<strong>tracert 216.64.212.85</strong></pre>
-<p>2. Ensure that your firewall is open for outbound connections on port 22. Provide output of a telnet to CenturyLink server destination IP over port 22.</p>
+<p>2. Ensure that your firewall is open for outbound connections on port 22. Provide output of a telnet to Lumen server destination IP over port 22.</p>
 <ul>
   <li>From most operating systems that have the <em>telnet</em> command the following example command line would be executed to test port 22:</li>
 </ul>

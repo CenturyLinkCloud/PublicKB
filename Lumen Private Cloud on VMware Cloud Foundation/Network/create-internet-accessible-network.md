@@ -9,7 +9,7 @@
 }}}
 
 ### Description
-In this KB article, we walk through how to create a new software-defined network in CenturyLink Private Cloud on VMware Cloud Foundation (CPC on vCF). In this particular use case, we would like to allow this network to have Outbound Internet., and will do the following:
+In this KB article, we walk through how to create a new software-defined network in Lumen Private Cloud on VMware Cloud Foundation (CPC on vCF). In this particular use case, we would like to allow this network to have Outbound Internet., and will do the following:
 
 1. Create the Network
 2. Create a Firewall Rule to allow Outbound Internet Access for the Network

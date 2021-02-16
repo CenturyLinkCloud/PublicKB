@@ -7,7 +7,7 @@
 }}}
 
 ### Description
-You can use the CenturyLink Cloud API to perform the same actions programmatically as you can from within the Control Portal. The below example shows how to create a user via the API.
+You can use the Lumen Cloud API to perform the same actions programmatically as you can from within the Control Portal. The below example shows how to create a user via the API.
 
 For more details about the specific API functions used below, reference the complete [API documentation](https://www.ctl.io/api-docs/v1/).
 

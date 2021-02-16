@@ -2,7 +2,7 @@
 "title": "Cloud Platform - Release Notes: March 19, 2019",
 "date": "03-19-2019",
 "author": "Guillermo Sanchez",
-"keywords":["centurylink", "cam", "clc", "kubernetes", "aws", "gcp", "analytics"],
+"keywords":["lumen", "cam", "clc", "kubernetes", "aws", "gcp", "analytics"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -36,4 +36,4 @@ Users of Advanced Analytics may now set cost and security event Alerts for AWS a
 
 #### [Public Cloud IaaS](//www.ctl.io/product-overview/#)
 
-As a part of our ongoing efforts to improve CenturyLink Cloud's offerings, we are pleased to announce that Ubuntu 18 is now available within Control. Within Control you are now able to go to create => server => operating system and select "Ubuntu 18 | 64-bit".
+As a part of our ongoing efforts to improve Lumen Cloud's offerings, we are pleased to announce that Ubuntu 18 is now available within Control. Within Control you are now able to go to create => server => operating system and select "Ubuntu 18 | 64-bit".

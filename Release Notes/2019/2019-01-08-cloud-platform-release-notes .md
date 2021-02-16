@@ -12,11 +12,11 @@
 
 ##### Usage History Improvements
 
-Within the Management Site, Usage History now includes several enhancements to help explain invoices from CenturyLink and charges from the vendor.
+Within the Management Site, Usage History now includes several enhancements to help explain invoices from Lumen and charges from the vendor.
 
 Information regarding discounted line items and Managed Services are now shown. This allows you to gain a much more holistic explanation of your invoice, rather than just providing information about charges related to Optimized Accounts and CAM Support.
 
-Users may adjust the sequencing of line items to accelerate invoice validation and approval. Three groupings are available: Invoice, Account, and Service. "Invoice" sequences the line items similar to how it is laid out on your CenturyLink Invoice. "Account" groups charges, account by account, regardless of service or invoice. "Service" groups charges by the type of service, regardless of service or invoice.
+Users may adjust the sequencing of line items to accelerate invoice validation and approval. Three groupings are available: Invoice, Account, and Service. "Invoice" sequences the line items similar to how it is laid out on your Lumen Invoice. "Account" groups charges, account by account, regardless of service or invoice. "Service" groups charges by the type of service, regardless of service or invoice.
 
 ![Usage History Sequence](../../images/usage-history-sequence.png)
 
@@ -26,13 +26,13 @@ The CSV Export of the Usage History has been updated to include more detail to a
 
 ##### New Autodiscovery Badge for Providers with Automatic Discovery of Resources Enabled
 
-Cloud Application Manager now tags providers that have automatic discovery of resources enabled with a new badge "Autodiscovery" so the user can identify at a glance the providers that have this feature enabled, both in the Providers List view and in the Provider Details view. Remember that this feature enables automatic periodic synchronization of unregistered resources in the providers that are either managed or optimized by CenturyLink.
+Cloud Application Manager now tags providers that have automatic discovery of resources enabled with a new badge "Autodiscovery" so the user can identify at a glance the providers that have this feature enabled, both in the Providers List view and in the Provider Details view. Remember that this feature enables automatic periodic synchronization of unregistered resources in the providers that are either managed or optimized by Lumen.
 
 #### [Analytics](https://www.ctl.io/cloud-application-manager/cloud-optimization/)
 
 ##### Analytics Available for Any Type of AWS or Azure Provider
 
-For AWS providers, CenturyLink now extends our Analytics offering to unmanaged, unhardened providers. This feature had previously only been available for providers where customers had selected Optimization or Managed Services Anywhere. On these "Bring Your Own Cloud" providers, administrators will see an "Analytics" option, capable of activating Analytics capabilities before or after a provider has been launched. When activated, CenturyLink will read your Provider's charges in our calculation of Platform Advisory Support. A CAM administrator has access to pricing details in the Management Site of CAM.
+For AWS providers, Lumen now extends our Analytics offering to unmanaged, unhardened providers. This feature had previously only been available for providers where customers had selected Optimization or Managed Services Anywhere. On these "Bring Your Own Cloud" providers, administrators will see an "Analytics" option, capable of activating Analytics capabilities before or after a provider has been launched. When activated, Lumen will read your Provider's charges in our calculation of Platform Advisory Support. A CAM administrator has access to pricing details in the Management Site of CAM.
 
 #### [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/)
 

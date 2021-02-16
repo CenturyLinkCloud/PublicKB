@@ -28,7 +28,7 @@ The graph also shows the legend in the bottom with the total charges of the disp
 
 [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/) now supports a new type of template boxes based on Terraform. You can now create these template boxes and add multiple Terraform template files to compose your box. Similar to the current support for CloudFormation and Azure ARM templates, you can also define variables through the Cloud Application Manager user interface. They will be added to your templates, and the variables you define in your template files will be detected and added to the variables section in the template box details page. Terraform modules are also supported by using Terraform template box variables inside another Terraform box.
 
-Terraform is a provider-agnostic templating system, so whenever you define a Terraform template box in Application Lifecycle Management, you can select which provider to deploy to among the supported provider types: AWS, Microsoft Azure, Google Cloud Platform and CenturyLink Cloud.
+Terraform is a provider-agnostic templating system, so whenever you define a Terraform template box in Application Lifecycle Management, you can select which provider to deploy to among the supported provider types: AWS, Microsoft Azure, Google Cloud Platform and Lumen Cloud.
 
 For more information, refer to [Template Boxes](../../Cloud Application Manager/Automating Deployments/template-box.md).
 
@@ -50,8 +50,8 @@ As part of the August 14th disclosure by Intel, three security vulnerabilities h
 * CVE-2018-3620 (L1 Terminal Fault - OS)
 * CVE-2018-3615 (L1 Terminal Fault – SGX, SMM)
 
-CenturyLink is actively conducting patching and other remediation activities across all of our infrastructure. At this time, there is no indication that these vulnerabilities have impacted us or have been used to attack our customers.
+Lumen is actively conducting patching and other remediation activities across all of our infrastructure. At this time, there is no indication that these vulnerabilities have impacted us or have been used to attack our customers.
 
-Also, please note: While CenturyLink is patching our environment, we want to remind our customers that they are responsible for updating the operating system of their cloud virtual and bare metal servers. We are actively working to apply the latest patches to our Operating System templates to ensure any new virtual servers are not at risk of these vulnerabilities. We recommend you check with your operating system vendor(s) and system manufacturer(s) and apply any updates as soon as they are available.
+Also, please note: While Lumen is patching our environment, we want to remind our customers that they are responsible for updating the operating system of their cloud virtual and bare metal servers. We are actively working to apply the latest patches to our Operating System templates to ensure any new virtual servers are not at risk of these vulnerabilities. We recommend you check with your operating system vendor(s) and system manufacturer(s) and apply any updates as soon as they are available.
 
 See [our full post](https://www.ctl.io/blog/post/intel-discloses-three-security-vulnerabilities/).

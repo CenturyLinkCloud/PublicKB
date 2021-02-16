@@ -39,10 +39,10 @@ Take control of users and files with CloudFuze’s administrative features – a
 Get your data where you want it with a simple drag and drop while optimizing your storage spend
 
 ### Audience
-CenturyLink Cloud Users, Cloud Storage Enthusiasts
+Lumen Cloud Users, Cloud Storage Enthusiasts
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the partner technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the partner technology on Lumen Cloud.
 
 After executing the steps in this Getting Started document, the users will have a functioning CloudFuze solution
 
@@ -50,7 +50,7 @@ After executing the steps in this Getting Started document, the users will have 
 CloudFuze has included a free 30 day trial in a specific Trial Blueprint. If you are deploying the CloudFuze Production Server or Installing the CloudFuze Server on Existing Hardware please complete [this contact form] (http://www.CloudFuze.com/centurylink) so that a CloudFuze representative can help you setup a license on your CloudFuze Server.
 
 ### Prerequisite
-If you are deploying from “CenturyLink Blueprints Library” all the prerequisites are configured. There is no need to perform any tasks.
+If you are deploying from “Lumen Blueprints Library” all the prerequisites are configured. There is no need to perform any tasks.
 
 CloudFuze runs best on CentOS v6.5, with a server that has a minimum of 4 ours, and 16GB or RAM.
 
@@ -95,7 +95,7 @@ Follow these step by step instructions to deploy CloudFuze.
 ### Access and use CloudFuze
 Follow these steps to access and use the CloudFuze software.
 1. Access the VM
-   * Please, connect to your server using the VPN access [Click here for VPN configuration instructions](../../Network/CenturyLink Cloud/how-to-configure-client-vpn.md), ssh to your server and login as root.
+   * Please, connect to your server using the VPN access [Click here for VPN configuration instructions](../../Network/Lumen Cloud/how-to-configure-client-vpn.md), ssh to your server and login as root.
    * To access CloudFuze, please add newly created domains (e.g., displayed in above Jump In step to view build log) in DNS server record ‘A’.
 
    ![CloudFuze Image](../../images/ecosystem-CloudFuze-7.png)
@@ -161,12 +161,12 @@ Follow these instructions to generate the necessary Oauth keys from your provide
 6. Please go through the [CloudFuze UserGuide](#Userguide).
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no CloudFuze license costs or additional fees bundled in. Contact [sales@cloudfuze.com](mailto:sales@cloudfuze.com) for product pricing information.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. There are no CloudFuze license costs or additional fees bundled in. Contact [sales@cloudfuze.com](mailto:sales@cloudfuze.com) for product pricing information.
 
 ### Frequently Asked Questions
 
 #### Where do I get my CloudFuze License?
-* The CloudFuze on CenturyLink Cloud is provided in a bring-your-own-license model. Please contact [sales@CloudFuze.com](mailto:sales@CloudFuze.com) to activate your CloudFuze license.
+* The CloudFuze on Lumen Cloud is provided in a bring-your-own-license model. Please contact [sales@CloudFuze.com](mailto:sales@CloudFuze.com) to activate your CloudFuze license.
 
 <a name="Userguide"></a>
 #### Where should I get CloudFuze 2.0 User Guide? And How to Use CloudFuze 2.0 ?
@@ -179,5 +179,5 @@ The costs associated with this Blueprint deployment are for the CenturyLink Clou
 * Please Contact [support@cloudfuze.com](mailto:support@cloudfuze.com). And send the Blueprint build logs and the cloudfuze installation logs at location “/var/log/cloudfuze/” on the server.
 
 #### Who should I contact for support?
-* For issues related to deploying the CloudFuze Blueprint on CenturyLink Cloud, please contact [support@CloudFuze.com](mailto:support@CloudFuze.com) or via telephone: (888) 600-6996.
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new) .
+* For issues related to deploying the CloudFuze Blueprint on Lumen Cloud, please contact [support@CloudFuze.com](mailto:support@CloudFuze.com) or via telephone: (888) 600-6996.
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new) .

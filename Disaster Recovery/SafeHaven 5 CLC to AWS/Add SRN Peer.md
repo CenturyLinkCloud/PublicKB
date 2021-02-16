@@ -26,4 +26,4 @@ Once all the production and recovery SRN(s) have been registered, then we must e
 
 **NOTE**: Please follow the same procedure for CLC/VMWare/Manual sites as source datacenters.
 
-**Next Step** is to [Add and Claim Storage on Production SRN in CenturyLink Cloud](Add and Claim Storage on Production SRN in CenturyLink Cloud.md)
+**Next Step** is to [Add and Claim Storage on Production SRN in Lumen Cloud](Add and Claim Storage on Production SRN in Lumen Cloud.md)

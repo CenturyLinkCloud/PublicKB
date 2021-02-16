@@ -14,7 +14,7 @@
 Cloud Application Manager now allows users to register auto discovered instances in bulk. Full instructions on how to use this new feature are available in the Knowledge Base section on our website.
 
 * **Microsoft Azure Resale available for U.K. based customers**
-Azure resale to companies based in the United Kingdom is Live! From the Azure Provider, users whose main registered address with CenturyLink is in the United Kingdom, will be permitted to automatically provision new Azure accounts for consolidated billing and platform level support.
+Azure resale to companies based in the United Kingdom is Live! From the Azure Provider, users whose main registered address with Lumen is in the United Kingdom, will be permitted to automatically provision new Azure accounts for consolidated billing and platform level support.
 
 ### Enhancements (3)
 

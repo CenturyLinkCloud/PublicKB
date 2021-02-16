@@ -9,14 +9,14 @@
 }}}
 
 ### Description
-In this KB article, we walk through how to enable an IPSec VPN on Edge Gateway Services within the vCloud Director (vCD) Web Console environment for CenturyLink Private Cloud on VMware Cloud Foundation™.
+In this KB article, we walk through how to enable an IPSec VPN on Edge Gateway Services within the vCloud Director (vCD) Web Console environment for Lumen Private Cloud on VMware Cloud Foundation™.
 
 ### Prerequisites
 You must configure at least one IPSec VPN site on the NSX Edge before enabling the IPSec VPN service.
 
-* Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment with an Org Admin Account
+* Login to your Lumen Private Cloud on VMware Cloud Foundation environment with an Org Admin Account
 
-  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
+  ![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
 * Once logged in, click __Datacenters__ in the ,menu at the top and then select your Datacenter.
 

@@ -19,19 +19,19 @@
 
 **Q: What is included in the Managed Backup service?**
 
-A: Managed Backup makes CenturyLink's backup solution available in the CenturyLink Cloud. Customers can deploy the new managed backup service on existing virtual machines in the CenturyLink Cloud, as well as on new VMs. By default, all servers with Managed Backup enabled have their volumes backed up nightly. The backup data is stored for two weeks in the same data center as the virtual machine **and** in a remote data center – this offers geographic redundancy. Customers also get 24x7 support from managed backup engineers to help troubleshoot any backup issues or change configurations such as schedules or retention policies. This support staff is available by contacting the CenturyLink Client Service Center at 1-888-638-6771.
+A: Managed Backup makes Lumen's backup solution available in the Lumen Cloud. Customers can deploy the new managed backup service on existing virtual machines in the Lumen Cloud, as well as on new VMs. By default, all servers with Managed Backup enabled have their volumes backed up nightly. The backup data is stored for two weeks in the same data center as the virtual machine **and** in a remote data center – this offers geographic redundancy. Customers also get 24x7 support from managed backup engineers to help troubleshoot any backup issues or change configurations such as schedules or retention policies. This support staff is available by contacting the Lumen Client Service Center at 1-888-638-6771.
 
 **Q: How do I create a VM that uses Managed Backup?**
 
 A: From the Control Portal menu, select “Create Server.” You will then be prompted to select the data center, group membership, and other VM properties. Select a data center that supports Managed Backup (an updated list is [available here](//www.ctl.io/managed-services/backup/)), and then click the “managed server” element to “Yes.” Once this is selected, you will see the option for "managed backup" appear. Set this to yes, and the operating system drop-down menu will then automatically refresh to show available options. Choose your version, and then proceed with the remainder of the server creation process. You may also [review a more detailed walkthrough of enabling (and disabling) Managed Backup on a server](../Managed Services/enabling-and-disabling-managed-backup.md).
 
-**Why don’t I see an option for Managed Backup in the CenturyLink Cloud Control Panel?**
+**Why don’t I see an option for Managed Backup in the Lumen Cloud Control Panel?**
 
-We discontinued consumption from within the CenturyLink Cloud Control Portal when Managed Backup went End of Sale on June 25, 2019. All existing subscriptions will still continue to function, but you cannot add Managed Backup to new servers. It can be removed from existing servers.
+We discontinued consumption from within the Lumen Cloud Control Portal when Managed Backup went End of Sale on June 25, 2019. All existing subscriptions will still continue to function, but you cannot add Managed Backup to new servers. It can be removed from existing servers.
 
 **Q: How much does the Managed Backup service cost? Why is the cost not included in the estimates shown in Control Portal?**
 
-A: Managed Backup uses a tiered pricing model and will cost anywhere from $0.42 to $0.49 per GB per month,and depending on how much average protected storage is being used (see table below). *Note: Existing managed hosting customers using Data Protect Backup will have cloud usage contribute to overall protected data utilization and also may have different pricing based on existing term commit agreements.* Though the costs for Managed Backup does not currently show up as part of the estimates in Control Portal, they will appear on your monthly invoice from CenturyLink as a separate line item. If you have detailed questions regarding billing, please contact your CenturyLink Sales Representative using one of the numbers above.
+A: Managed Backup uses a tiered pricing model and will cost anywhere from $0.42 to $0.49 per GB per month,and depending on how much average protected storage is being used (see table below). *Note: Existing managed hosting customers using Data Protect Backup will have cloud usage contribute to overall protected data utilization and also may have different pricing based on existing term commit agreements.* Though the costs for Managed Backup does not currently show up as part of the estimates in Control Portal, they will appear on your monthly invoice from Lumen as a separate line item. If you have detailed questions regarding billing, please contact your Lumen Sales Representative using one of the numbers above.
 
 **Avg Protected Data Utilization**|**Monthly Price per GB**
 ----------------------------------|------------------------
@@ -46,11 +46,11 @@ A: Managed Backup uses a tiered pricing model and will cost anywhere from $0.42 
 
 **Q: When do my scheduled backups run? What if I want my backups to run more frequently or on a different schedule?**
 
-A: Managed backups are scheduled to run daily. The time of the backup will be within 12 hours from the time of server creation (if a server was created at 8:05am, backup will run sometime before 8:05pm each day). If you would like to change this schedule, you may contact the CenturyLink Technology Solutions Client Service Center at 1-888-638-6771 and enter a request to customize the scheduled backup time for a particular server or set of servers.
+A: Managed backups are scheduled to run daily. The time of the backup will be within 12 hours from the time of server creation (if a server was created at 8:05am, backup will run sometime before 8:05pm each day). If you would like to change this schedule, you may contact the Lumen Technology Solutions Client Service Center at 1-888-638-6771 and enter a request to customize the scheduled backup time for a particular server or set of servers.
 
 **Q: How can I see the status of my recent backups?**
 
-A: Status for recent backups can be seen from the Netbackup Client agent on the server itself. For details, see [instructions on using the Netbackup Client](../Managed Services/using-managed-backup-client.md). The CenturyLink Technology Solutions Client Service Center is also available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at 1-888-638-6771.
+A: Status for recent backups can be seen from the Netbackup Client agent on the server itself. For details, see [instructions on using the Netbackup Client](../Managed Services/using-managed-backup-client.md). The Lumen Technology Solutions Client Service Center is also available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at 1-888-638-6771.
 
 **Q:   If I delete my VM, what happens to the backups?**
 
@@ -60,7 +60,7 @@ A: The backups will eventually be expired off the storage. Backups are managed i
 
 A:  In order to make sure you are using only the amount of backup storage that you need, you can configure an exclusions list to prevent certain paths on the server from being sent to backup. You can configure this list from the Netbackup Client agent on the server itself. For details, see [instructions on using the Netbackup Client](../Managed Services/using-managed-backup-client.md).
 
-The CenturyLink Technology Solutions Client Service Center is also available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at 1-888-638-6771.
+The Lumen Technology Solutions Client Service Center is also available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at 1-888-638-6771.
 
 **Q: What if I want my backups to be kept for longer than two weeks?**
 
@@ -68,7 +68,7 @@ A:  At this time 2 weeks is the only retention period available.  Our [Simple Ba
 
 **Q: What should I do if I need a restore?**
 
-A: Contact the CenturyLink Technology Solutions Client Service Center at 1-888-638-6771.
+A: Contact the Lumen Technology Solutions Client Service Center at 1-888-638-6771.
 
 **Q: How can I remove Managed Backup from a VM? Can I add Managed Backup to an existing VM?**
 
@@ -76,7 +76,7 @@ A: From the Control Portal you can enable and disable managed backup on existing
 
 **Q: Who do I contact if I have trouble with or questions about Managed Backup on my VM?**
 
-A: The CenturyLink Technology Solutions Client Service Center is available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at 1-888-638-6771.
+A: The Lumen Technology Solutions Client Service Center is available to assist you with any issues you may have 24 hours a day, 7 days a week, and 365 days a year. Simply call us at 1-888-638-6771.
 
 **Q: Is there a customer accessible API which allows for turning on/off backups, configuring backups, and triggering restores?**
 
@@ -96,17 +96,17 @@ A: Hot backup is not offered in Managed Backup.  Managed Backup is for file/fold
 
 For SQL, Mysql , Oracle and other databases, a suggested method is to put the data to a file/folder for inclusion in the backups.
 
-To safely backup and restore Microsoft Exchange mailbox data CenturyLink Cloud customers must implement and operate their own solution.  Using 3rd party backup clients allows customers to perform recovery of message/mailbox (Exchange) data, define retention periods and backup frequency.  Customers can speak to a CenturyLink Cloud sales representative for guidance.
+To safely backup and restore Microsoft Exchange mailbox data Lumen Cloud customers must implement and operate their own solution.  Using 3rd party backup clients allows customers to perform recovery of message/mailbox (Exchange) data, define retention periods and backup frequency.  Customers can speak to a Lumen Cloud sales representative for guidance.
 
 **Q: Where are my offsite vault copies stored?**
 
 A: The table below provides the offsite vault locations:
 
-**CenturyLink Cloud Location**|**Offsite Vault Location**
+**Lumen Cloud Location**|**Offsite Vault Location**
 ------------------------------|--------------------------
-US West (Santa Clara) - UC1|[CenturyLink CH3](//www.centurylink.com/business/enterprise/colocation/data-centers/united-states/illinois/chicago.html)
-US East (Sterling) - VA1|[CenturyLink DL2](//www.centurylink.com/business/enterprise/colocation/data-centers/united-states/texas/dallas.html)
-Great Britain (Slough) - GB3|[CenturyLink LO6](//www.centurylink.com/business/enterprise/colocation/data-centers/united-kingdom/london.html)
-APAC (Singapore) - SG1|[CenturyLink SG8](//www.centurylink.com/business/enterprise/colocation/data-centers/singapore.html)
-US Central (Chicago) - IL1|[CenturyLink DL2](//www.centurylink.com/business/enterprise/colocation/data-centers/united-states/texas/dallas.html)
-Canada (Toronto - Mississauga) - CA3|[CenturyLink TR3](//www.centurylink.com/business/enterprise/resources/products/tr3-toronto-canada.html)
+US West (Santa Clara) - UC1|[Lumen CH3](//www.centurylink.com/business/enterprise/colocation/data-centers/united-states/illinois/chicago.html)
+US East (Sterling) - VA1|[Lumen DL2](//www.centurylink.com/business/enterprise/colocation/data-centers/united-states/texas/dallas.html)
+Great Britain (Slough) - GB3|[Lumen LO6](//www.centurylink.com/business/enterprise/colocation/data-centers/united-kingdom/london.html)
+APAC (Singapore) - SG1|[Lumen SG8](//www.centurylink.com/business/enterprise/colocation/data-centers/singapore.html)
+US Central (Chicago) - IL1|[Lumen DL2](//www.centurylink.com/business/enterprise/colocation/data-centers/united-states/texas/dallas.html)
+Canada (Toronto - Mississauga) - CA3|[Lumen TR3](//www.centurylink.com/business/enterprise/resources/products/tr3-toronto-canada.html)

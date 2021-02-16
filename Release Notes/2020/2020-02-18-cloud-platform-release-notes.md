@@ -2,7 +2,7 @@
 "title": "Cloud Platform - Release Notes: February 18, 2020",
 "date": "02-18-2020",
 "author": "Daniel Stephan",
-"keywords":["centurylink", "release notes", "cam", "alm", "msa", "compute instances", "cloudformation"],
+"keywords":["lumen", "release notes", "cam", "alm", "msa", "compute instances", "cloudformation"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -11,9 +11,9 @@
 
 #### [Cloud Application Manager Platform](https://www.ctl.io/cloud-application-manager/)
 
-##### New provider type for CenturyLink DEC 3
+##### New provider type for Lumen DEC 3
 
-Cloud Application Manager has added the support for the CenturyLink DEC 3 provider type. Any existing DEC 3 (Dynamic Enterprise Computing v3) environment can now be registered as a provider in Cloud Application Manager Provider. This will enable the deployment of new instances as well as the discovery and register of existing instances already available in the DEC 3 environment. For more information see [Using CenturyLink DEC 3](../../Cloud Application Manager/Deploying Anywhere/using-centurylink-dec3.md)
+Cloud Application Manager has added the support for the Lumen DEC 3 provider type. Any existing DEC 3 (Dynamic Enterprise Computing v3) environment can now be registered as a provider in Cloud Application Manager Provider. This will enable the deployment of new instances as well as the discovery and register of existing instances already available in the DEC 3 environment. For more information see [Using Lumen DEC 3](../../Cloud Application Manager/Deploying Anywhere/using-lumen-dec3.md)
 
 ##### User list export feature
 

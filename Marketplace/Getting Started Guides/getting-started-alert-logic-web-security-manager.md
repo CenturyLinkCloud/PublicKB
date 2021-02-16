@@ -28,7 +28,7 @@ For more details on the Alert Logic Web Security Manager Premier architecture, p
 ### Deployment Process
 This Runner job performs the following steps:
 
-1. Provisions an Alert Logic Web Security Manager Premier virtual appliance in the customer's CenturyLink Cloud account and initiates a monthly recurring subscription based on the selected license. Currently only the 5 node option is available.  Support for up to 5, 10, 15, 20 or more server "nodes" to be released soon. (e.g. Support for protecting up to 5, 10, 15, 20 or more websites, or "nodes").
+1. Provisions an Alert Logic Web Security Manager Premier virtual appliance in the customer's Lumen Cloud account and initiates a monthly recurring subscription based on the selected license. Currently only the 5 node option is available.  Support for up to 5, 10, 15, 20 or more server "nodes" to be released soon. (e.g. Support for protecting up to 5, 10, 15, 20 or more websites, or "nodes").
 
 2. Initiates a one-time charge of $4,050 for the Alert Logic On-boarding service.
 
@@ -36,9 +36,9 @@ This Runner job performs the following steps:
 
 ### Prerequisite(s)
 
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 
-* The CenturyLink Cloud Network to which the Web Security Manager Premier virtual appliance will be deployed to.
+* The Lumen Cloud Network to which the Web Security Manager Premier virtual appliance will be deployed to.
 
 * The contact information for the designated IT contact. The Alert Logic On-boarding Product Manager (OPM) will contact this individual to begin the on-boarding engagement.
 
@@ -52,14 +52,14 @@ Pricing will vary based on the Alert Logic Web Security Manager Premier license 
 
 ### Frequently Asked Questions (FAQ)
 
-**Will executing this Runner job charge my CenturyLink Cloud account?**
+**Will executing this Runner job charge my Lumen Cloud account?**
 
 Yes, executing this Runner job will initiate a recurring monthly subscription for the selected Web Security Manager Premier license (based on the number of protected web sites, or "nodes"), plus a one-time $4,050 charge for the On-boarding engagement.
 
 **Who should I contact for support?**
 
 Please send support requests to: support@alertlogic.com.
-For issues related to CenturyLink Cloud infrastructure (VMs, network, etc.), please open a support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or through the [support website](https://support.ctl.io/access/unauthenticated?return_to=https%3A%2F%2Ft3n.zendesk.com%2Ftickets%2Fnew).
+For issues related to Lumen Cloud infrastructure (VMs, network, etc.), please open a support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or through the [support website](https://support.ctl.io/access/unauthenticated?return_to=https%3A%2F%2Ft3n.zendesk.com%2Ftickets%2Fnew).
 
 **How difficult is it to deploy?**
 

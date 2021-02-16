@@ -12,7 +12,7 @@
 
 **API (Application Programming Interface)** &mdash; A language and message format used by an application program.  This is how the back-end system calls ABL functions to complete various tasks.
 
-**Data Center** &mdash; The facility in which the Systems are located. Hosting Area Network (HAN) means the managed networking infrastructure that supports CenturyLink Managed Hosting services. This is a separate service that has its own Service Guide and SLA.
+**Data Center** &mdash; The facility in which the Systems are located. Hosting Area Network (HAN) means the managed networking infrastructure that supports Lumen Managed Hosting services. This is a separate service that has its own Service Guide and SLA.
 
 **Dedicated Cloud Compute** &mdash; A managed server service that includes use of a physical server, space and power for the server, virtualization operating system license, instance operating system licenses, network connectivity, use of storage services on a managed storage area network, management and monitoring of the server hardware, virtualization operating system and instance operating systems, and use of SavvisStation Portal for automated instance provisioning.
 
@@ -24,16 +24,16 @@
 
 **DynamicResourceScheduler (DRS)** &mdash; VMware DRS dynamically balances computing capacity across a collection of hardware resources aggregated into logical resource pools, continuously monitoring utilization across resource pools and intelligently allocating available resources among the virtual machines based on pre-defined rules that reflect business needs and changing priorities. When a virtual machine experiences an increased load, VMware DRS automatically allocates additional resources by redistributing virtual machines among the physical servers in the resource pool.
 
-**HPSA (Hewlett Packard Server Automation)** &mdash; This is a data center automation tool that Cloud Compute uses to harden new and cloned VMs and bring them into compliance with CTL standards.
+**HPSA (Hewlett Packard Server Automation)** &mdash; This is a data center automation tool that Cloud Compute uses to harden new and cloned VMs and bring them into compliance with Lumen standards.
 
-**Instance Template** &mdash; A standard configuration image created from a virtual machine that contains pre-configured operating systems and customized non-CenturyLink managed applications (if applicable). Instance template(s) allows clients to consistently apply a template to multiple instances simultaneously.
+**Instance Template** &mdash; A standard configuration image created from a virtual machine that contains pre-configured operating systems and customized non-Lumen managed applications (if applicable). Instance template(s) allows clients to consistently apply a template to multiple instances simultaneously.
 
-**Managed Hosting** &mdash; The set of CenturyLink managed server services that include Intelligent Hosting, Foundation Hosting, and Dedicated Cloud Compute.
+**Managed Hosting** &mdash; The set of Lumen managed server services that include Intelligent Hosting, Foundation Hosting, and Dedicated Cloud Compute.
 
-**SavvisStation Portal** &mdash; The name for the interface that ties together centralized systems that CenturyLink uses to provide services to customers. Included in SavvisStation Portal are systems for order processing, provisioning, procurement, management and monitoring, change management, billing, customer support/ticketing and reporting.
+**SavvisStation Portal** &mdash; The name for the interface that ties together centralized systems that Lumen uses to provide services to customers. Included in SavvisStation Portal are systems for order processing, provisioning, procurement, management and monitoring, change management, billing, customer support/ticketing and reporting.
 
 **SA (Server Automation)** &mdash; See HPSA.
 
 **UI (user interface)** &mdash; This refers to the new portal internal and external customers will use to provision and manage virtual resources in the DCC environment.
 
-**Utility Storage** &mdash; a CenturyLink managed storage service that includes use of a storage area network, which is provided and managed by CenturyLink. This is a separate service that has its own Service Guide and SLA.
+**Utility Storage** &mdash; a Lumen managed storage service that includes use of a storage area network, which is provided and managed by Lumen. This is a separate service that has its own Service Guide and SLA.

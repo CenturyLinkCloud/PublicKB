@@ -10,7 +10,7 @@
 
 ### URL, TCP and ICMP Monitoring
 
-CenturyLink provides three URL, TCP, and ICMP monitoring credits with each Dedicated Cloud Compute node. Customers may use these credits to create automatic notification monitors in the portal. Additional monitor credits are available at an additional charge.
+Lumen provides three URL, TCP, and ICMP monitoring credits with each Dedicated Cloud Compute node. Customers may use these credits to create automatic notification monitors in the portal. Additional monitor credits are available at an additional charge.
 
 ### URL Check Options
 

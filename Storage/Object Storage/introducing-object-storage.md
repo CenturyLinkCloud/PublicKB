@@ -8,23 +8,23 @@
 }}}
 
 ### Description
-CenturyLink Cloud now has a robust, geo-based Object Storage service capable of storing any type of digital content. Perfect for data backups, media distribution, and file transfers, the CenturyLink Cloud Object Storage is Amazon S3-compatible and accessible from the CenturyLink Cloud Control Portal or via API calls.
+Lumen Cloud now has a robust, geo-based Object Storage service capable of storing any type of digital content. Perfect for data backups, media distribution, and file transfers, the Lumen Cloud Object Storage is Amazon S3-compatible and accessible from the Lumen Cloud Control Portal or via API calls.
 
 ### Audience
-* CenturyLink Cloud Users
+* Lumen Cloud Users
 
 ### FAQ
 **Q: Is this software home-grown or is this based on a commercial product?**
 
-A: CenturyLink Cloud Object Storage is based on a popular software package with targeted extensions to optimize it for CenturyLink Cloud.
+A: Lumen Cloud Object Storage is based on a popular software package with targeted extensions to optimize it for Lumen Cloud.
 
 **Q: What are the key vocabulary terms for Object Storage?**
 
-A: Object Storage is deployed in a series of "regions" which include data centers for each CenturyLink Cloud geography (a full list of available regions is [here](object-storage-regions-and-service-points.md)). Object Storage uses "buckets" to hold "objects." Buckets are flat (no hierarchy) and can contain an unlimited number of objects and unlimited amount of storage. "Access Control Lists" (ACLs) describe permissions to a bucket and the objects within it. Object Storage "users" have an "access key ID" and "secret access key" which act as the user's username and password for accessing storage.
+A: Object Storage is deployed in a series of "regions" which include data centers for each Lumen Cloud geography (a full list of available regions is [here](object-storage-regions-and-service-points.md)). Object Storage uses "buckets" to hold "objects." Buckets are flat (no hierarchy) and can contain an unlimited number of objects and unlimited amount of storage. "Access Control Lists" (ACLs) describe permissions to a bucket and the objects within it. Object Storage "users" have an "access key ID" and "secret access key" which act as the user's username and password for accessing storage.
 
-**Q: How do Object Storage users relate to CenturyLink Cloud users?**
+**Q: How do Object Storage users relate to Lumen Cloud users?**
 
-A: Object Storage users are distinct from CenturyLink Cloud users, but all reside under CenturyLink Cloud accounts. A CenturyLink Cloud user may create multiple Object Storage users that have different access to their buckets. For example, you can create "application users" that a web application uses to retrieve objects from buckets.
+A: Object Storage users are distinct from Lumen Cloud users, but all reside under Lumen Cloud accounts. A Lumen Cloud user may create multiple Object Storage users that have different access to their buckets. For example, you can create "application users" that a web application uses to retrieve objects from buckets.
 
 **Q: What kind of data belongs in Object Storage?**
 
@@ -36,7 +36,7 @@ A: Data stored in an Object Storage region is stored in a highly available, faul
 
 **Q: How do I interact with Object Storage?**
 
-A: Bucket Administrators can use the CenturyLink Cloud Control Portal to create users, create buckets, and secure buckets. Object users and developers have their choice of numerous best-of-breed tools for interfacing with objects.
+A: Bucket Administrators can use the Lumen Cloud Control Portal to create users, create buckets, and secure buckets. Object users and developers have their choice of numerous best-of-breed tools for interfacing with objects.
 
 **Q: What can I do in the Control Portal vs. 3rd party tools?**
 

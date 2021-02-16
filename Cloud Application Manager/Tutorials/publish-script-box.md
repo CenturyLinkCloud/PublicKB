@@ -36,4 +36,4 @@ Add any additional comments that you would like to be submitted to the Cloud App
 
 ![public-box-version-template.png](../../images/cloud-application-manager/public-box-publish-template.png)
 
-Once you have hit send, you will receive an email acknowledging that your box has been submitted for review. After your box has been reviewed by the CenturyLink team, you will receive an email notifying you whether your box has been accepted to the public catalog or denied.
+Once you have hit send, you will receive an email acknowledging that your box has been submitted for review. After your box has been reviewed by the Lumen team, you will receive an email notifying you whether your box has been accepted to the public catalog or denied.

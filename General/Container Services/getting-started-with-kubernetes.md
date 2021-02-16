@@ -8,7 +8,7 @@
 
 ![logo](../../images/kubernetes.jpg)
 
-Please visit [here](https://github.com/CenturyLinkCloud/adm-kubernetes-on-clc) for instructions on how to install Kubrenetes on CenturyLink Cloud.
+Please visit [here](https://github.com/CenturyLinkCloud/adm-kubernetes-on-clc) for instructions on how to install Kubrenetes on Lumen Cloud.
 
 ### Technology Profile
 
@@ -19,18 +19,18 @@ For more information on what Kubernetes is, please visit http://www.kubernetes.i
 
 ### Description
 
-By using our Ansible scripts, customers can create a Kubernetes cluster on CenturyLink Cloud infrastructure by running a single script.
+By using our Ansible scripts, customers can create a Kubernetes cluster on Lumen Cloud infrastructure by running a single script.
 
 To see the source code of our Kubernetes Cluster Creation Ansible scripts, please visit our github repo: [https://github.com/CenturyLinkCloud/adm-kubernetes-on-clc](https://github.com/CenturyLinkCloud/adm-kubernetes-on-clc)
 
-By using our Ansible scripts, customers can create a Kubernetes cluster on CenturyLink Cloud infrastruture by running a single script.
+By using our Ansible scripts, customers can create a Kubernetes cluster on Lumen Cloud infrastruture by running a single script.
 
 ### Audience
 
-CenturyLink Cloud Users, Developers, Operations, System Engineers, Architects.
+Lumen Cloud Users, Developers, Operations, System Engineers, Architects.
 
 ### Impact
-After following the instructions this article, the user should have a working Kubernetes cluster on CenturyLink.
+After following the instructions this article, the user should have a working Kubernetes cluster on Lumen.
 
 ### Clusters of VMs or Physical Servers, your choice.
 
@@ -42,10 +42,10 @@ After following the instructions this article, the user should have a working Ku
 
 ### Requirements
 
-The following requirements are needed in order to use these scripts to install Kubernetes on CenturyLink Cloud.
+The following requirements are needed in order to use these scripts to install Kubernetes on Lumen Cloud.
 
-- A CenturyLink Cloud account
-- VPN access established to your CenturyLink data-center
+- A Lumen Cloud account
+- VPN access established to your Lumen data-center
 
 And
 
@@ -67,7 +67,7 @@ After you have all the requirements met, please follow these instructions to ins
 git clone https://github.com/CenturyLinkCloud/adm-kubernetes-on-clc
 ```
 
-2) Install the CenturyLink Cloud SDK and Ansible Modules.
+2) Install the Lumen Cloud SDK and Ansible Modules.
 
 ```
 sudo pip install -r requirements.txt
@@ -81,7 +81,7 @@ vi ansible/credentials.sh
 source ansible/credentials.sh
 
 ```
-4) Make sure the computer you are working on has access to the CenturyLink Cloud network. This is done by using a VM inside the CenturyLink Cloud network or having an active VPN connection to the CenturyLink Cloud network. To find out how to configure the VPN connection, [visit here](../../Network/CenturyLink Cloud/how-to-configure-client-vpn.md).
+4) Make sure the computer you are working on has access to the Lumen Cloud network. This is done by using a VM inside the Lumen Cloud network or having an active VPN connection to the Lumen Cloud network. To find out how to configure the VPN connection, [visit here](../../Network/Lumen Cloud/how-to-configure-client-vpn.md).
 
 
 #### Ubuntu 14  Walkthrough: Installation of Requirements and Scripts
@@ -122,9 +122,9 @@ It takes about 15 minutes to create the cluster. Once the script completes, it w
 #### Script Options
 ```
 Usage: kube-up.sh [OPTIONS]
-Create servers in the CenturyLinkCloud environment and initialize a Kubernetes cluster
+Create servers in the LumenCloud environment and initialize a Kubernetes cluster
 Environment variables CLC_V2_API_USERNAME and CLC_V2_API_PASSWD must be set in
-order to access the CenturyLinkCloud API
+order to access the LumenCloud API
 
 All options (both short and long form) require arguments, and must include "="
 between option name and option value.
@@ -174,11 +174,11 @@ bash add-kube-node.sh -c="name_of_kubernetes_cluster" -m=2
 
 ```
 Usage: add-kube-node.sh [OPTIONS]
-Create servers in the CenturyLinkCloud environment and add to an
+Create servers in the LumenCloud environment and add to an
 existing CLC kubernetes cluster
 
 Environment variables CLC_V2_API_USERNAME and CLC_V2_API_PASSWD must be set in
-order to access the CenturyLinkCloud API
+order to access the LumenCloud API
 
      -h (--help)                   display this help and exit
      -c= (--clc_cluster_name=)     set the name of the cluster, as used in CLC group names
@@ -196,7 +196,7 @@ python delete_cluster.py --cluster=clc_cluster_name --datacenter=DC1
 
 ```
 
-2) Use the CenturyLink Cloud UI. To delete a cluster, log into the CenturyLink Cloud control portal and delete the
+2) Use the Lumen Cloud UI. To delete a cluster, log into the Lumen Cloud control portal and delete the
 parent server group that contains the Kubernetes Cluster. We hope to add a
 scripted option to do this soon.
 
@@ -303,23 +303,23 @@ and then access urls like http://127.0.0.1:8001/api/v1/proxy/namespaces/kube-sys
 without the need for client certificates in your browser.
 
 
-### What Kubernetes features do not work on CenturyLink Cloud
+### What Kubernetes features do not work on Lumen Cloud
 
 - At this time, there is no support services of the type 'loadbalancer'. We are actively working on this and hope to publish the changes soon.
-- At this time, there is no support for persistent storage volumes provided by CenturyLink Cloud. However, customers can bring their pwn persistent storage offering.
+- At this time, there is no support for persistent storage volumes provided by Lumen Cloud. However, customers can bring their pwn persistent storage offering.
 
 
 ### Pricing
-The costs associated with running Kubernetes from the Ansible scripts are for the CenturyLink Cloud infrastructure only.  There are no Kubernetes  license costs or additional fees bundled in.
+The costs associated with running Kubernetes from the Ansible scripts are for the Lumen Cloud infrastructure only.  There are no Kubernetes  license costs or additional fees bundled in.
 
 
-After following the instructions this article, the user should have a working kubernetes cluster on CenturyLink.
+After following the instructions this article, the user should have a working kubernetes cluster on Lumen.
 
 ### Instructions
 
-Since this is an open source project, the instructions on how to use this scripts are found on Github. Please visit [here](https://github.com/CenturyLinkCloud/adm-kubernetes-on-clc) for the detailed instructions on how to install a Kubernetes Cluster on CenturyLink Cloud.
+Since this is an open source project, the instructions on how to use this scripts are found on Github. Please visit [here](https://github.com/CenturyLinkCloud/adm-kubernetes-on-clc) for the detailed instructions on how to install a Kubernetes Cluster on Lumen Cloud.
 
 #### Who should I contact for support?
 * For issues related to creating the Kubernetes cluster, please email kubernetes@ctl.io or create a support ticket.
-* For issues related to cloud infrastructure (VM’s, network, etc), please open a CenturyLink Cloud Support ticket: https://t3n.zendesk.com/tickets/new
+* For issues related to cloud infrastructure (VM’s, network, etc), please open a Lumen Cloud Support ticket: https://t3n.zendesk.com/tickets/new
 * For more information on using Kubernetes, please visit http://kubernetes.io/v1.1/.

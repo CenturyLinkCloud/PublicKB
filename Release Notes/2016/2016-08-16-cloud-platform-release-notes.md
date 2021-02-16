@@ -19,9 +19,9 @@
   ![RunnerLogo](../../images/runner-logo-black-text.png)
 
 ### Enhancements (1)
-* __CenturyLink Cloud Platform: Additional Inventory Protection__
+* __Lumen Cloud Platform: Additional Inventory Protection__
 
-	The CenturyLink Cloud Platform has augmented our protection algorithms that enforce resource limits on Virtual and Bare Metal Servers. This change will help prevent situations in which a single account utilizes more capacity than desired.
+	The Lumen Cloud Platform has augmented our protection algorithms that enforce resource limits on Virtual and Bare Metal Servers. This change will help prevent situations in which a single account utilizes more capacity than desired.
 
 
 ### Announcements (2)
@@ -29,4 +29,4 @@
 
 	[Standard pricing applies](https://www.ctl.io/pricing/)
 
-* __Upcoming Enhancements to Authentication & Changes for Your SAML Configuration__ - In the coming months, CenturyLink Cloud will be upgrading its authentication service. Many customers will not experience any material changes as a result of this upgrade. However, customers that have enabled SAML for their CenturyLink Cloud accounts will be required to make configuration changes to ensure that authentication continues to function.  Please review this [FAQ](https://www.ctl.io/knowledge-base/support/authentication-updates-faq/)  to understand the action required on your part, if any.<p>
+* __Upcoming Enhancements to Authentication & Changes for Your SAML Configuration__ - In the coming months, Lumen Cloud will be upgrading its authentication service. Many customers will not experience any material changes as a result of this upgrade. However, customers that have enabled SAML for their Lumen Cloud accounts will be required to make configuration changes to ensure that authentication continues to function.  Please review this [FAQ](https://www.ctl.io/knowledge-base/support/authentication-updates-faq/)  to understand the action required on your part, if any.<p>

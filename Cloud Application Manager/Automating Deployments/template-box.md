@@ -63,8 +63,8 @@ For more information, go to [ARM templates](../Automating Deployments/arm-templa
 A Terraform Template box allows you to apply a **Terraform version 0.11** configuration consisting of one or many files on the following Providers:
 
 * Amazon Web Services
-* CenturyLink Cloud
-* CenturyLink Private Cloud on VMware Cloud Foundation
+* Lumen Cloud
+* Lumen Private Cloud on VMware Cloud Foundation
 * Google Cloud Platform
 * Microsoft Azure
 * VMware vCenter/vSphere
@@ -88,7 +88,7 @@ For more information, go to [Google templates](../Automating Deployments/google-
 
 ### Getting General Support
 
-Customers can contact the CenturyLink Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
+Customers can contact the Lumen Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
 
 #### Contact:
 

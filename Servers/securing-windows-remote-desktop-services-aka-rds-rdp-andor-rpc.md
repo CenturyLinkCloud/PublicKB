@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p>Due to many security vulnerabilities with the Windows Remote Desktop Service, it is not recommend this remote service is allowed to communicate directly to the public Internet, and customers should utilize the multiple secure connectivity options CenturyLink Cloud offers (e.g., OpenVPN Client, IPSEC tunnels, cross connects, etc). Although, in the event a secure connectivity option is not available when accessing your Windows server via RDP, customers should strongly consider the following best practices:</p>
+<p>Due to many security vulnerabilities with the Windows Remote Desktop Service, it is not recommend this remote service is allowed to communicate directly to the public Internet, and customers should utilize the multiple secure connectivity options Lumen Cloud offers (e.g., OpenVPN Client, IPSEC tunnels, cross connects, etc). Although, in the event a secure connectivity option is not available when accessing your Windows server via RDP, customers should strongly consider the following best practices:</p>
 
 <ol>
 <li>Deploy a Remote Desktop Gateway (RD Gateway). RD Gateways utilize the Remote Desktop Protocol over HTTPS to establish a secure, encrypted connection between remote users on the Internet and customer's Windows servers. For steps to deploy this service, please see: http://technet.microsoft.com/en-us/library/dd983949</li>

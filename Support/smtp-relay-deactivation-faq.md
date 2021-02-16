@@ -7,7 +7,7 @@
 
 ### Description
 
-In September 2016, CenturyLink announced that we would be retiring our SMTP Relay Service by the end of the year. After hearing from customers about the challenges they faced when transitioning to a new service, we have decided to extend our End of Life (EOL) date to February 14, 2017. This way, we are able to ensure that our customers have enough time to carry out the necessary testing and implementation plans to facilitate successful migrations to alternative SMTP delivery services.
+In September 2016, Lumen announced that we would be retiring our SMTP Relay Service by the end of the year. After hearing from customers about the challenges they faced when transitioning to a new service, we have decided to extend our End of Life (EOL) date to February 14, 2017. This way, we are able to ensure that our customers have enough time to carry out the necessary testing and implementation plans to facilitate successful migrations to alternative SMTP delivery services.
 
 ### Deactivation Date
 
@@ -21,7 +21,7 @@ The SMTP Relay Service is being End of Serviced (EOS) on December 1, 2016 with a
 
 ### Why is this change happening?
 
-Customers choose CenturyLink as a technology service provider because of our cutting edge public cloud, private cloud, and networking products. If we feel that our customers are not receiving the best possible business value from any of our products, then we would rather partner with alternative service providers to enable a better customer experience.
+Customers choose Lumen as a technology service provider because of our cutting edge public cloud, private cloud, and networking products. If we feel that our customers are not receiving the best possible business value from any of our products, then we would rather partner with alternative service providers to enable a better customer experience.
 
 After deciding that our SMTP Relay Service was one such product that was not living up to our expectations, we took action to enable our customers with preferable e-mail service providers as opposed to our offering. Now that our customers have had time to move to an alternative product, we are decommissioning our SMTP Relay Service.
 
@@ -50,14 +50,14 @@ There are many great external SMTP Relay services available that provide custome
 * [MailJet](https://www.mailjet.com/)
 * [Dyn](http://dyn.com/email-delivery/)
 
-#### Use CenturyLink Servers + Software to send emails
+#### Use Lumen Servers + Software to send emails
 
 For customers that would like more control over their e-mail delivery functionality, they can configure servers to send email manually as opposed to using a service. This requires additional manual overhead and is only recommended if there are specific business requirements that other e-mail delivery services do not offer. There are plenty of guides on the Internet that explain how to do this. For example:
 
-* [CL Blueprint & Halon Software](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-halon-partner-template/) - Use a CenturyLink Cloud Blueprint to install the Halon SMTP Software for sending emails.
+* [CL Blueprint & Halon Software](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-halon-partner-template/) - Use a Lumen Cloud Blueprint to install the Halon SMTP Software for sending emails.
 * [Windows & IIS](https://support.office.com/en-us/article/How-to-configure-IIS-for-relay-with-Office-365-eb57abd2-3859-4e79-b721-2ed1f0f579c9?ui=en-US&rs=en-US&ad=US) - Setup a Windows SMTP server to send emails.
 * [Linux & PostFix](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-as-a-send-only-smtp-server-on-ubuntu-14-04) - Setup the Postfix SMTP email server on Linux to send emails.
 
 ### Summary
 
-CenturyLink will be decommissioning our SMTP Relay Service on February 14, 2017. If you have any questions about the retirement of our SMTP Relay Service, or if you need assistance with your transition to an alternative service, please contact us at [help@ctl.io](mailto:help@ctl.io).
+Lumen will be decommissioning our SMTP Relay Service on February 14, 2017. If you have any questions about the retirement of our SMTP Relay Service, or if you need assistance with your transition to an alternative service, please contact us at [help@ctl.io](mailto:help@ctl.io).

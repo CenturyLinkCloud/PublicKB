@@ -6,16 +6,16 @@
   "contentIsHTML": false
 }}}
 
-CenturyLink [Ecosystem Program Partner Members](centurylink-cloud-ecosystem-program-guide.md) gain access to a bevy of [resources](ecosystem-program-resources.md) that make integrations easy.
+Lumen [Ecosystem Program Partner Members](lumen-cloud-ecosystem-program-guide.md) gain access to a bevy of [resources](ecosystem-program-resources.md) that make integrations easy.
 
-Creating server templates on CenturyLink Cloud enables customers to deploy bit-for-bit replicas of your software as a virtual appliance.
+Creating server templates on Lumen Cloud enables customers to deploy bit-for-bit replicas of your software as a virtual appliance.
 
 ### Universal Deploy
-This supports nearly any virtual appliance type including those that require console configuration on first boot.  These deploys are performed by CenturyLink operations staff as a service task and take longer to deploy.
+This supports nearly any virtual appliance type including those that require console configuration on first boot.  These deploys are performed by Lumen operations staff as a service task and take longer to deploy.
 
 ### Universal Deploy Core Documentation
 
-Reference the following key pages from the CenturyLink Cloud [knowledge base](//www.ctl.io/knowledge-base).
+Reference the following key pages from the Lumen Cloud [knowledge base](//www.ctl.io/knowledge-base).
 
 - [Publishing a Partner Template from a Virtual Appliance](../Marketplace Guides/howto-publish-a-partner-template-from-a-virtual-appliance.md)
 - [VM Import Preparation](../../Servers/vm-import-preparation.md)

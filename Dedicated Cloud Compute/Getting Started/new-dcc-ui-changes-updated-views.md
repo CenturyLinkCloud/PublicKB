@@ -97,7 +97,7 @@ This section covers the following:
 
   A final, fundamental change with the new UI is the replacement of "Carts" (i.e., Shopping Carts) and "Tasks" with the concept of "Orders".
 
-   **Figure 11.** shows an example in the old SSP where a user could create a "Cart" like you might have if you were on an e-commerce site like Amazon.  This would allow you to put things in and take things out without buying (provisioning) them. For CenturyLink, it also allows companies to separate user rights where technical personnel might have the means to build out one or more systems, but authorization to spend money could be limited to someone in a manager or finance role.
+   **Figure 11.** shows an example in the old SSP where a user could create a "Cart" like you might have if you were on an e-commerce site like Amazon.  This would allow you to put things in and take things out without buying (provisioning) them. For Lumen, it also allows companies to separate user rights where technical personnel might have the means to build out one or more systems, but authorization to spend money could be limited to someone in a manager or finance role.
 
    **Figure 11.**
    ![lockedcartoldssp.png](../../images/lockedcartoldssp.png)

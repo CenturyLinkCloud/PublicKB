@@ -105,9 +105,9 @@ You have a few options:
 * Log-in with your current GitHub credentials if your org admin has enabled GitHub sign in for Cloud Application Manager.
 * Enter your company Active Directory credentials in the username, password fields if your admin enabled LDAP integration with Cloud Application Manager.
 * Log-in with your company SAML credentials if your admin enabled and configured SAML integration with Cloud Application Manager.
-* Log-in with your CenturyLink Cloud credentials if your admin enabled CenturyLink Cloud authentication integration with Cloud Application Manager.
+* Log-in with your Lumen Cloud credentials if your admin enabled Lumen Cloud authentication integration with Cloud Application Manager.
 
-**Note**: When you log in with your AD credentials, GitHub, Google, SAML or CenturyLink Cloud accounts, Cloud Application Manager does not have access to your password. We use your email to create a profile and workspace for you.
+**Note**: When you log in with your AD credentials, GitHub, Google, SAML or Lumen Cloud accounts, Cloud Application Manager does not have access to your password. We use your email to create a profile and workspace for you.
 
 ![Getting Started - Login page](../../images/cloud-application-manager/getting-started-login-1.png)
 
@@ -129,7 +129,7 @@ ___
 
 ### Getting General Support
 
-Customers can contact the CenturyLink Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
+Customers can contact the Lumen Global Operations Support center (support desk) directly for getting help with Cloud Application Manager as well as any other supported product that they’ve subscribed to.  Below are three ways to get help.
 
 **Contact:**
 

@@ -15,7 +15,7 @@
     <p><img src="https://t3n.zendesk.com/attachments/token/6nhavnhfgqq16wy/?name=release08-05_01.png" alt="release08-05_01.png" />
     </p>
   </li>
-  <li><strong>Self-service provisioning of site-to-site VPN.&nbsp;</strong>Users can now configure a site to site IPsec VPN tunnel from the Control Portal instead of opening a ticket with the CenturyLink Cloud NOC.
+  <li><strong>Self-service provisioning of site-to-site VPN.&nbsp;</strong>Users can now configure a site to site IPsec VPN tunnel from the Control Portal instead of opening a ticket with the Lumen Cloud NOC.
     <br />
     <p><img src="https://t3n.zendesk.com/attachments/token/t7jrwoyoufy1ojm/?name=release08-05_02.png" alt="release08-05_02.png" />
     </p>
@@ -25,7 +25,7 @@
 <p><strong>Minor Enhancements (5)</strong>
 </p>
 <ul>
-  <li><strong>Account administrators can add new VLANs.&nbsp;</strong>Customers can add new networks to their accounts without contacting CenturyLink Cloud first. Also, VLANs can be deleted via self-service (*if* there are no IPs claimed or assigned; if the VLAN is
+  <li><strong>Account administrators can add new VLANs.&nbsp;</strong>Customers can add new networks to their accounts without contacting Lumen Cloud first. Also, VLANs can be deleted via self-service (*if* there are no IPs claimed or assigned; if the VLAN is
     in use, please open a NOC ticket to have your VLAN cleaned up) and all connected resources such as firewall rules and client VPN routes are removed. Note that private VLANs have <a href="http://www.tier3.com/products/network/firewall">the same price as before</a>.
     <p><img src="https://t3n.zendesk.com/attachments/token/rhmfej5scwlv6tz/?name=release08-05_03.png" alt="release08-05_03.png" />
     </p>
@@ -39,7 +39,7 @@
     <p><img src="https://t3n.zendesk.com/attachments/token/vtff4mpyrlxtlqc/?name=release08-05_04.png" alt="release08-05_04.png" />
     </p>
   </li>
-  <li><strong>Object Storage bandwidth auditing</strong>. The initial launch of the CenturyLink Cloud geo-redundant Object Storage service did not include a charge for inbound/outbound transfer, but now this is billed at $0.08/GB.</li>
+  <li><strong>Object Storage bandwidth auditing</strong>. The initial launch of the Lumen Cloud geo-redundant Object Storage service did not include a charge for inbound/outbound transfer, but now this is billed at $0.08/GB.</li>
   <li><strong>Users API returns user status.</strong> Both the GetUsers and GetUserDetails API operations now return a status field that indicates if the user is active or inactive.</li>
 </ul>
 <p><strong>For a demo of these features, please visit:&nbsp;<a href="http://www.slideshare.net/Tier3Cloud/tier-3-august-2013-release-webcast">http://www.slideshare.net/Tier3Cloud/tier-3-august-2013-release-webcast</a>&nbsp;</strong>

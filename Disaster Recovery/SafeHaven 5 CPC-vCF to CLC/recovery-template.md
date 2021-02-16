@@ -11,7 +11,7 @@
 * **Matching NIC and PCI Slot**: For Windows Production Server, if the DR-Site is CLC/DCC/VMWare, the **NIC and PCI slots** of the Recovery VM should be exactly same as that of the Production Server. This is a requirement for iSCSI boot on the DR Side.   
 **Note** : Matching NIC/PCI is not needed for a Linux Production VM.  
 * For ease of deployment, it is highly recommended to have a Recovery instance template in advance before creating a protection group. It is mostly benefitial when there are multiple production VMs with similar PCI slots  
-**Note** : If the production server's NIC and PCI slots are VMXNET3 and 160, respectively , then a template is not required because Centurylink Cloud's default Ubuntu 14 template can be used to deploy a recovery instance.  
+**Note** : If the production server's NIC and PCI slots are VMXNET3 and 160, respectively , then a template is not required because Lumen Cloud's default Ubuntu 14 template can be used to deploy a recovery instance.  
 
 This article explains how to create a template for recovery server in CLC.  
 
@@ -24,7 +24,7 @@ This article explains how to create a template for recovery server in CLC.
 ![NIC-PCI](../../images/SH5.0/NIC-PCI.png)
 
 ### Create an instance with matching NIC and PCI.
-1. Login to Centurylink cloud portal. https://control.ctl.io/
+1. Login to Lumen cloud portal. https://control.ctl.io/
 2. Click on the Datacenter that is required to be the DR Datacenter.
 3. Click **Create** button on the right to expand it.  
   a. Click **Server**.  
@@ -41,12 +41,12 @@ This article explains how to create a template for recovery server in CLC.
      Select a **Network**. This is the network where the Recovery Servers will be deployed.
      Click **Create Server**.
      **Note**: It may take a few minutes for the deployment to finish
- 4. Once the VM has been created, send a request to **help@ctl.io** to change the NIC and PCI slot of the VM to match the Production Server. The request can also be submitted through **chat with support** button from Centurylink control portal.
+ 4. Once the VM has been created, send a request to **help@ctl.io** to change the NIC and PCI slot of the VM to match the Production Server. The request can also be submitted through **chat with support** button from Lumen control portal.
 
 ### Convert a VM into Template
 Once the NIC and PCI of the VM matches the production server, it can be converted into a template to be used multiple Protection Group Deployments.  
 **Note**: Do not convert a Production Server into a template. It can cause downtime.
-1. In Centurylink control portal, click on the VM that is to be converted into a template in DR Datacenter.
+1. In Lumen control portal, click on the VM that is to be converted into a template in DR Datacenter.
 2. Click **convert to template** button.
    a. Make sure the **template location** is in DR Datacenter.
    b. Enter the **admin or root password** of the VM that is being converted into a template.

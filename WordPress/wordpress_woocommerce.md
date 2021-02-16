@@ -10,14 +10,14 @@
 
 ### IMPORTANT NOTE
 
-CenturyLink WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage at this time.
+Lumen WordPress hosting is currently in a Limited Beta program with specific customers by invitation only and is not intended for production usage at this time.
 
 During the Limited Beta there is no production Service Level Agreement.
 
 ### Overview
 The [WooCommerce plugin](http://www.woothemes.com/woocommerce/) is an open source e-commerce plugin for WordPress. It is designed for both small, medium and large online merchants using WordPress. 
 
-Most of what you need to know aboud WooCommerce is already covered in the [WooCommerce documentation](http://docs.woothemes.com/documentation/plugins/woocommerce/).  In this KB article, we will cover how to install and setup the WooCoomerce plugin on the [CenturyLink Cloud WordPress](https://www.ctl.io/wordpress).
+Most of what you need to know aboud WooCommerce is already covered in the [WooCommerce documentation](http://docs.woothemes.com/documentation/plugins/woocommerce/).  In this KB article, we will cover how to install and setup the WooCoomerce plugin on the [Lumen Cloud WordPress](https://www.ctl.io/wordpress).
 
 
 ### WooCommerce Features

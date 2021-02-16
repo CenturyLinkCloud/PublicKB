@@ -13,7 +13,7 @@
 This blueprint allows company's of user size 1-100 deploy appsFreedom Platform - Basic edition.
 
 ### Description
-appsFreedom has integrated their technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this solution.
+appsFreedom has integrated their technology with the Lumen Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this solution.
 
 This blueprint allows company's of user size 1-100 deploy appsFreedom Platform - Basic edition.
 appsFreedom is the leading provider of a Model-Driven, Enterprise App Development Platform, empowering non-professional developers to easily build Mobile and Web apps, fully integrated to IT’s core applications in days. appsFreedom drives business productivity by delivering a high-productivity platform through its appsFreedom Platform to collaborate, build, deploy and run apps in a multi-channel, multi-device environment. The basic edition includes a select set of key features of the appsFreedom Platform for small to medium businesses.
@@ -21,13 +21,13 @@ appsFreedom is the leading provider of a Model-Driven, Enterprise App Developmen
 For more information, please visit appsfreedom.com.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
 After reading this article, the user should get a functioning Rapid Mobile App Development Platform upon which they can start developing enterprise mobile app solutions.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 * Installation and Configuration of the appsFreedom Master Database. Please contact appsfreedom(sales@appsfreedom.com) to get a copy of the Master Database.
 * Connectivity Parameters to the appsFreedom Master Database.
   * HostName
@@ -38,9 +38,9 @@ After reading this article, the user should get a functioning Rapid Mobile App D
 * Available, SMTP Set-up Parameters.
 
 ### Postrequisite
-To access your application from a computer outside the CenturyLink Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully.
-* [Add a Public IP](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal.
-* [Allow incoming traffic](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
+To access your application from a computer outside the Lumen Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully.
+* [Add a Public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through Control Portal.
+* [Allow incoming traffic](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal and configuring appropriately.
   * The default ports to access the application are: `80`.
 
 ### Deploying the appsFreedom Platform - Basic edition Blueprint
@@ -103,13 +103,13 @@ To access your application from a computer outside the CenturyLink Cloud network
    * Once the blueprint completes successfully, you will receive an email stating that the blueprint build is complete. Please do not use the application until you have received this email notification.
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. Build and deploy your first app for FREE. Please contact appsFreedom for more details.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. Build and deploy your first app for FREE. Please contact appsFreedom for more details.
 
 ### About appsFreedom
-CenturyLink Cloud works with [appsFreedom Inc](http://appsfreedom.com) to provide a Model-Driven, Enterprise App Development Platform, empowering non-professional developers to easily build Mobile and Web apps, fully integrated to IT’s core applications in days. appsFreedom drives business productivity by delivering a high-productivity platform through its appsFreedom Platform to collaborate, build, deploy and run apps in a multi-channel, multi-device environment. The basic edition includes a select set of key features of the appsFreedom Platform for small to medium businesses.
+Lumen Cloud works with [appsFreedom Inc](http://appsfreedom.com) to provide a Model-Driven, Enterprise App Development Platform, empowering non-professional developers to easily build Mobile and Web apps, fully integrated to IT’s core applications in days. appsFreedom drives business productivity by delivering a high-productivity platform through its appsFreedom Platform to collaborate, build, deploy and run apps in a multi-channel, multi-device environment. The basic edition includes a select set of key features of the appsFreedom Platform for small to medium businesses.
 
 ### Frequently Asked Questions
 
 #### Who should I contact for support?
-* For issues related to deploying the appsFreedom Inc Blueprint on CenturyLink Cloud, licensing or accessing the deployed software, please contact appsFreedom Inc. Support at 855.277.7373
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to deploying the appsFreedom Inc Blueprint on Lumen Cloud, licensing or accessing the deployed software, please contact appsFreedom Inc. Support at 855.277.7373
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](https://t3n.zendesk.com/tickets/new).

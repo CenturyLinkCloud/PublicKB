@@ -17,16 +17,16 @@ Please use the contact page on the Acumatica website
 * General Inqueries - info@acumatica.com
 
 ### Description
-Acumatica has integrated their technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Cloud ERP solution.
+Acumatica has integrated their technology with the Lumen Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Cloud ERP solution.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the Acumatica technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the Acumatica technology on Lumen Cloud.
 
 ### Prerequisite
-Access to the CenturyLink Cloud platform as an authorized user.
+Access to the Lumen Cloud platform as an authorized user.
 
 ### Additional Resources
 Acumatica Knwoledge Base Article - [Getting Started with Acumatica ERP Blueprint](http://adn.acumatica.com/forums/topic/getting-started-acumatica-erp-centurylink/)
@@ -86,11 +86,11 @@ Follow these step by step instructions to get started with a single-server Acuma
    * “admin” for username and “setup” for password.
 
 ### Pricing
-The costs listed above in Steps 1 and 2 are for the CenturyLink Cloud infrastructure only. There are no Acumatica license costs or additional fees bundled in.
+The costs listed above in Steps 1 and 2 are for the Lumen Cloud infrastructure only. There are no Acumatica license costs or additional fees bundled in.
 
 ### Frequently Asked Questions
 ### Where do I obtain my Acumatica License?
   * Contact Acumatica via telephone (888) 228-8300 or the [contact page](http://www.acumatica.com/contact-sales/) on their website.
 #### Who should I contact for support?
-  * For issues related to deploying the Acumatica Blueprint on CenturyLink Cloud, or with any Install or Configuration issues while deploying, please view this Knowledge Base article or contact info@acumatica.com.
-  * For issues related to cloud infrastructure (VM’s, network, etc), please open a ticket using the CenturyLink Cloud Support Process.
+  * For issues related to deploying the Acumatica Blueprint on Lumen Cloud, or with any Install or Configuration issues while deploying, please view this Knowledge Base article or contact info@acumatica.com.
+  * For issues related to cloud infrastructure (VM’s, network, etc), please open a ticket using the Lumen Cloud Support Process.

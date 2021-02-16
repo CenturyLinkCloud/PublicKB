@@ -61,7 +61,7 @@ Providers page contains all providers your Organization can manage and how are t
 
 ![Providers list](../../images/cloud-application-manager/admin-overview4.png)
 
-* Connect to a provider to orchestrate deployments. Click **New** to add AWS, Azure, CenturyLink Cloud, vSphere, Google Cloud, OpenStack, CloudStack, etc...
+* Connect to a provider to orchestrate deployments. Click **New** to add AWS, Azure, Lumen Cloud, vSphere, Google Cloud, OpenStack, CloudStack, etc...
 * Locate a provider through search or by type.
 * Sync or delete provider accounts using the gear icon actions.
 

@@ -9,7 +9,7 @@
 
 ### Ecosystem-Partner Integrations (2)
 
-The [CenturyLink Marketplace](https://www.ctl.io/marketplace/) added two new commercially available offerings with the following Partners:
+The [Lumen Marketplace](https://www.ctl.io/marketplace/) added two new commercially available offerings with the following Partners:
 
 * __[OSNEXUS QuantaStor SDS EE with Silver Support](https://www.ctl.io/marketplace/partner/ZV5T/product/QuantaStor%20SDS%20with%20Silver%20Support%20%28License%20Only%29/)__ - QuantaStor is a unified Software Defined Storage (SDS) platform designed to scale out to make storage management easy while reducing overall enterprise storage costs. This is a License Only purchase. The customer is responsible for deploying QuantaStor SDS separately on the infrastructure of their choosing.
 

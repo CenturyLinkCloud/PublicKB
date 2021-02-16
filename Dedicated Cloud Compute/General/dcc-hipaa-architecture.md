@@ -32,4 +32,4 @@ Dedicated Cloud Compute (DCC) has a recommended architecture plan for HIPAA comp
 |    HIPAA 164.312(e)(1)     |  I  | Implement a mechanism to encrypt ePHI whenever deemed appropriate. |
 
 
-*The CenturyLink Products and Services illustrated in this document are guidelines for implementing a HIPAA compliant solution using Dedicated Cloud. Attaining overall HIPAA compliance remains the responsibility of the Customer.*
+*The Lumen Products and Services illustrated in this document are guidelines for implementing a HIPAA compliant solution using Dedicated Cloud. Attaining overall HIPAA compliance remains the responsibility of the Customer.*

@@ -20,7 +20,7 @@ Symas OpenLDAP Silver is licensed under several Open Source licenses included in
 For more information, please visit http://symas.com.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
 After reading this article, the user should be able to install Symas OpenLDAP, deploy a sample database and run example searches on sample data contained in the installation.
@@ -29,7 +29,7 @@ Dependencies/Conflicts
 Symas OpenLDAP Silver is fully self-contained and does not depend on any external software. It does not conflict with any other known software, including copies of OpenLDAP installed as part of the Red Hat distribution.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 
 Minimum System Requirements:
 * A virtual machine running a supported OS: CentOS or Red Hat 5, 6, or 7.
@@ -38,11 +38,11 @@ Minimum System Requirements:
 * 4-6 GB of available disk space.
 
 ### Postrequisite
-To access your application from a computer outside the CenturyLink Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully.
+To access your application from a computer outside the Lumen Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully.
 
-* [Add a Public IP](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
+* [Add a Public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
 
-* [Allow incoming traffic](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal and configuring appropriately.
+* [Allow incoming traffic](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal and configuring appropriately.
   * The default ports to access the application are: `389` (ldap://), `636` (ldaps://).
 
 ### Deploying the 'Install Symas OpenLDAP Silver' Blueprint
@@ -106,14 +106,14 @@ Note: If you ran the example script described above, Steps 1 and 2 below aren’
    * `/etc/init.d/solserver start`
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no fees associated with the use of Symas OpenLDAP Silver.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. There are no fees associated with the use of Symas OpenLDAP Silver.
 
 ### Frequently Asked Questions
 
 #### Who should I contact for support?
 * Symas OpenLDAP Silver is provided AS-IS and does not include technical support. If you need a professionally supported version of OpenLDAP, please consider one of our other Symas OpenLDAP offerings.
 
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](https://t3n.zendesk.com/tickets/new).
 
 #### Additional Resources
 - http://symas.com

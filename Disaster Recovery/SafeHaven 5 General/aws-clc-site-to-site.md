@@ -33,7 +33,7 @@ This article explains how to create a site-to-site VPN between AWS and CLC. It i
 
 5. Configure your VPN.  
    * Enter **Customer Gateway IP**.   
-     To find this information, login to [Centurylink Portal](https://control.ctl.io/)   
+     To find this information, login to [Lumen Portal](https://control.ctl.io/)   
      Click on **Network** > **Site-to-site VPN**  
      Click **+site to site vpn**  
      Select the right datacenter in front of **Control portal site**  
@@ -124,6 +124,6 @@ The private subnet needs to be routed using a NAT Gateway.
 
 8. Select the private subnet, and click **Save**.  
 
-This concludes the setup of VPN between Centurylink Cloud and AWS cloud.
+This concludes the setup of VPN between Lumen Cloud and AWS cloud.
 
 To configure security groups, please follow [configure security groups](security-group.md)

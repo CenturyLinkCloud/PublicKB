@@ -19,7 +19,7 @@ customers while we work to introduce LBaaS.
 
 **Q:** What is Load Balancer as a Service (LBaaS)?
 
-**A:** CenturyLink Load Balancer as a Service (LBaaS) helps you build
+**A:** Lumen Load Balancer as a Service (LBaaS) helps you build
 highly scalable and highly available applications by providing
 application-level (HTTP & TCP) load balancing. It also offers various
 persistence methods to ensure that a user, once connected, continues to
@@ -28,8 +28,8 @@ be connected to the same application instance.
 LBaaS is a load balancing solution that is meant to provide both server
 load balancing and high availability in an industry standard.
 
-**Q:** What’s the difference between CenturyLink Cloud’s existing Shared
-Load Balancer service and CenturyLink Cloud’s new Load Balancer as a
+**Q:** What’s the difference between Lumen Cloud’s existing Shared
+Load Balancer service and Lumen Cloud’s new Load Balancer as a
 Service (LBaaS)?
 
 **A:** LBaaS provides for all of the existing functionality or our

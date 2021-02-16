@@ -8,7 +8,7 @@
 
 ### Overview
 
-Partner Cloud Integration allows an Cloud Application Manager user to create Microsoft Azure Customer Accounts or transfer an existing one for which CenturyLink will provide Platform-level support. The following is a description of what platform-level support is and how to use it.
+Partner Cloud Integration allows an Cloud Application Manager user to create Microsoft Azure Customer Accounts or transfer an existing one for which Lumen will provide Platform-level support. The following is a description of what platform-level support is and how to use it.
 
 ### Audience
 
@@ -22,7 +22,7 @@ Knowledge of how to [get started with cloud-integrated Azure](partner-cloud-inte
 
 ### Important Information
 
-CenturyLink recommends Customers utilize vendor-supported Operating Systems such as Microsoft Windows and RedHat Linux. Neither CenturyLink nor its cloud partners can provide support on free Operating Systems.
+Lumen recommends Customers utilize vendor-supported Operating Systems such as Microsoft Windows and RedHat Linux. Neither Lumen nor its cloud partners can provide support on free Operating Systems.
 
 For critical outages, to ensure the fastest response time always call
 - United States: 1-888-638-6771
@@ -34,9 +34,9 @@ For critical outages, to ensure the fastest response time always call
 
 See table below.
 
-Type of Support | Definition | Scope of CenturyLink Support
+Type of Support | Definition | Scope of Lumen Support
 --- | --- | ---
-Platform-Level | CenturyLink becomes the first responder to any issues related to permitted resources within re-sold (CSP) Azure customer accounts and the ability to use those resources via normal means. | **IN SCOPE**: See the list below. **OUTSIDE SCOPE**: Remote Administration, Monitoring and Remediation, Change Management and Patching. Also Customer accounts that are not within CenturyLink's list of CSP Azure Customers
+Platform-Level | Lumen becomes the first responder to any issues related to permitted resources within re-sold (CSP) Azure customer accounts and the ability to use those resources via normal means. | **IN SCOPE**: See the list below. **OUTSIDE SCOPE**: Remote Administration, Monitoring and Remediation, Change Management and Patching. Also Customer accounts that are not within Lumen's list of CSP Azure Customers
 
 Managed Services - which include Remote Administration, Monitoring and Remediation, Change Management and Patching - are also available for Azure. If Management is desired, please review your options [here](https://www.ctl.io/cloud-application-manager/managed-services-anywhere/).
 

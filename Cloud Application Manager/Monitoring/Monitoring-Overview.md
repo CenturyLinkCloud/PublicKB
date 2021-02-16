@@ -105,7 +105,7 @@ The **Agents** tab provides a view of the existing monitored Agents for the sele
 * Name - Hostname of Host VM
 * Operating System - Deployed Operating System of Host VM
 * Agent Version - Version of the running Agent
-* Support ID - Unique Identifier for CenturyLink Operations Center
+* Support ID - Unique Identifier for Lumen Operations Center
 * Status - State of the Agent *(Online or Offline)*
 * Config - Depicts availability of updates for the Agent
 

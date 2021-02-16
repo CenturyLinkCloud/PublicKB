@@ -16,7 +16,7 @@ This video will show you how to delete a template instance in an existing Azure 
 
 ### Log Into Cloud Application Manager
 
-To get started with Cloud Application Manager, sign up for an account and register your cloud service (CenturyLink, AWS or Azure, for example) as a provider.
+To get started with Cloud Application Manager, sign up for an account and register your cloud service (Lumen, AWS or Azure, for example) as a provider.
 
 ![Cloud Application Manager Login](../../images/cloud-application-manager-dashboard.png)
 

@@ -2,7 +2,7 @@
 "title": "Cloud Platform - Release Notes: August 20, 2019",
 "date": "08-20-2019",
 "author": "Christine Knobbe",
-"keywords":["centurylink", "cam", "alm", "optimization"],
+"keywords":["lumen", "cam", "alm", "optimization"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -32,14 +32,14 @@ Users can now use these new resource types in the template definition of any Clo
 
 ##### Change in Analytics Source Data
 
-CenturyLink has been working with our Analytics vendor to change the AWS source for billing and usage data. While CenturyLink has been consuming the Cost and Usage Report for billing, our Analytics site has been consuming data from the Detailed Billing Report. Now both systems will be using the Cost and Usage report to ensure fewer discrepancies occur between the billing capabilities of CenturyLink and the budgetary and analytical capabilities of our Analytics site.  
+Lumen has been working with our Analytics vendor to change the AWS source for billing and usage data. While Lumen has been consuming the Cost and Usage Report for billing, our Analytics site has been consuming data from the Detailed Billing Report. Now both systems will be using the Cost and Usage report to ensure fewer discrepancies occur between the billing capabilities of Lumen and the budgetary and analytical capabilities of our Analytics site.  
 
 ### Announcements (1)
 
-#### Notice of Migration for CenturyLink Cloud Shared Load Balancer Customers to Cloud Load Balancing-as-a-Service
+#### Notice of Migration for Lumen Cloud Shared Load Balancer Customers to Cloud Load Balancing-as-a-Service
 
-In an effort to provide the quality service you expect from CenturyLink on the latest technology available, we will be migrating all current CenturyLink Cloud Shared Load Balancer customers to a new load balancer service; CenturyLink Cloud Load Balancing-as-a-Service. This new offer will provide added functionality, and most customers will also see a cost savings.
+In an effort to provide the quality service you expect from Lumen on the latest technology available, we will be migrating all current Lumen Cloud Shared Load Balancer customers to a new load balancer service; Lumen Cloud Load Balancing-as-a-Service. This new offer will provide added functionality, and most customers will also see a cost savings.
 
-All affected customers have been notified via email of the impending migration. CenturyLink will perform the migration and there is no anticipated impact or downtime to the service during the migration. The CenturyLink Cloud Load Balancing-as-a-Service uses a multi-tenant, scalable, and programmable infrastructure presented to the customer as a service, and offers all of the same functionality as the previous offer, as well as additional features and/or functionality that include Health-check monitoring and port forwarding configurations.
+All affected customers have been notified via email of the impending migration. Lumen will perform the migration and there is no anticipated impact or downtime to the service during the migration. The Lumen Cloud Load Balancing-as-a-Service uses a multi-tenant, scalable, and programmable infrastructure presented to the customer as a service, and offers all of the same functionality as the previous offer, as well as additional features and/or functionality that include Health-check monitoring and port forwarding configurations.
 
 You can learn more about the new offer and view pricing on the [Cloud Load Balancing-as-a-Service product page](https://www.ctl.io/load-balancing/). If you have additional questions, please feel free to contact [help@ctl.io](mailto:help@ctl.io), or read our [knowledge base article](../../General/LBaaS/LBaaSFAQ.md).

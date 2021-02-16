@@ -17,18 +17,18 @@ Qubida Analytics provides "Quick Big Data".
 |info@qubida.com | support@qubida.com |
 
 ### Description
-Qubida Analytics has integrated their technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Cloud Analytics solution.
+Qubida Analytics has integrated their technology with the Lumen Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Cloud Analytics solution.
 
-Technology from Qubida Analytics helps CenturyLink Cloud customers address the business challenge of analytics on demand by implementing an out of the box big data solution on the cloud - now available as part of the CenturyLink Cloud Blueprint Engine.
+Technology from Qubida Analytics helps Lumen Cloud customers address the business challenge of analytics on demand by implementing an out of the box big data solution on the cloud - now available as part of the Lumen Cloud Blueprint Engine.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the partner technology on CenturyLink Cloud. After executing the steps in this Getting Started document, the users will have a functioning BI analytics solution.
+After reading this article, the user should feel comfortable getting started using the partner technology on Lumen Cloud. After executing the steps in this Getting Started document, the users will have a functioning BI analytics solution.
 
 ### Deploying Qubida
-You can achieve a single-button deployment of a new Qubida Analytics instance using CenturyLink Cloud Blueprints.
+You can achieve a single-button deployment of a new Qubida Analytics instance using Lumen Cloud Blueprints.
 1. Locate the Blueprint in the Blueprint Library.
    * Login to the Control Portal. From the Nav Menu on the left, click **Orchestration > Blueprints Library**.
    * Search for "Qubida Analytics Trial" in the keyword search on the right side of the page.
@@ -78,4 +78,4 @@ Contact info@qubida.com.
 
 **Who should I contact for support?**
 * For issues related to deploying Qubida, email support@qubida.com.
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
+* For issues related to cloud infrastructure, please open a ticket using the [Lumen Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).

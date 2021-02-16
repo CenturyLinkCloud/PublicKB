@@ -6,11 +6,11 @@
 "contentIsHTML": false
 }}}
 
-The [CenturyLink Marketplace](https://www.ctl.io/marketplace/) provides self-service, on-demand provisioning of provider services on the CenturyLink Platform. Below are the current products available in the Marketplace. The Marketplace is constantly evolving with more products, providers, and offerings. Check the Marketplace Updates for the latest Marketplace offerings. If you would like to join the CenturyLink Cloud Marketplace Provider Program, you can learn more [here](https://www.ctl.io/marketplace-program/).
+The [Lumen Marketplace](https://www.ctl.io/marketplace/) provides self-service, on-demand provisioning of provider services on the Lumen Platform. Below are the current products available in the Marketplace. The Marketplace is constantly evolving with more products, providers, and offerings. Check the Marketplace Updates for the latest Marketplace offerings. If you would like to join the Lumen Cloud Marketplace Provider Program, you can learn more [here](https://www.ctl.io/marketplace-program/).
 
 ### Commercial Products Available:
 
-[Zentera Systems Announces CenturyLink as First Telecom Integration for Its Cloud over IP Platform](http://zentera.net/news-item/zentera-systems-announces-centurylink-first-telecom-integration-cloud-ip-platform/)
+[Zentera Systems Announces Lumen as First Telecom Integration for Its Cloud over IP Platform](http://zentera.net/news-item/zentera-systems-announces-centurylink-first-telecom-integration-cloud-ip-platform/)
 
 [Zentera CoIP Agent](https://www.ctl.io/marketplace/partner/ZZNC/product/CoIP/v/3.4.3/)
 

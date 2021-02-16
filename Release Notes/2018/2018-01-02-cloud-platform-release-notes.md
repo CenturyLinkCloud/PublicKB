@@ -48,7 +48,7 @@ Instances List now also shows the instance IP adresses (either public or private
 
 One of the major feature's of this release is the capability to protect production servers on **multiple hypervisors** to failover to **AWS**. Examples of validated hypervisors are
 
-* VMware: including VMware based cloud platforms such as CLC, CenturyLink Private Cloud on VMware Cloud Foundation, etc.
+* VMware: including VMware based cloud platforms such as CLC, Lumen Private Cloud on VMware Cloud Foundation, etc.
 * Hyper-V Generation 1
 * Xen(AWS)
 * KVM
@@ -60,10 +60,10 @@ One of the major feature's of this release is the capability to protect producti
 
 Another major feature is the introduction of Microsoft Virtual Shadow Copy (VSS) enabled checkpoint for single Windows server protection groups.
 
-**NOTE**:This feature is available for both recovery into AWS as well as CenturyLink Cloud(CLC).
+**NOTE**:This feature is available for both recovery into AWS as well as Lumen Cloud(CLC).
 
 ##### Built-in network isolation capability via GUI
 
 Introduction of the built-in network isolation capability via GUI for recovery servers running on the same subnet as the recovery SRN.
 
-**NOTE**:This feature is ONLY available for use cases with recovery into CenturyLink Cloud(CLC).
+**NOTE**:This feature is ONLY available for use cases with recovery into Lumen Cloud(CLC).

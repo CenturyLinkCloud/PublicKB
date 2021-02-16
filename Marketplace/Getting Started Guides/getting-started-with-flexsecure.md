@@ -10,7 +10,7 @@
 
 ### Technology Profile
 
-[FlexSecure](https://www.flexsecure.co/) has integrated their technology on the CenturyLink Cloud Marketplace.
+[FlexSecure](https://www.flexsecure.co/) has integrated their technology on the Lumen Cloud Marketplace.
 FlexSecure is a flexible User Authentication platform, providing Passwordless and Pin-based authentication, without the need to install an app. This platform enables organizations of all sizes to mix and match appropriate user authentication methods to protect applications on their Cloud, Mobile, and IT infrastructure.
 
 By adding FlexSecure to their existing authentication or access control systems, organizations can adopt multi-layered authentication options. Multi-layered authentication enable organizations to add significant levels of security to protect their data from hackers and prevent unauthorized access.

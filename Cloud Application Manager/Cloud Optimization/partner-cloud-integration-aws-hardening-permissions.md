@@ -1,5 +1,5 @@
 {{{
-  "title": "Partner Cloud Integration: CenturyLink Permissions and Access for Integrated AWS Accounts",
+  "title": "Partner Cloud Integration: Lumen Permissions and Access for Integrated AWS Accounts",
   "date": "12-04-18",
   "author": "Benjamin Swoboda",
   "attachments": [],
@@ -8,11 +8,11 @@
  
 ### Overview
 
-As discussed in the [Service Guide](https://www.ctl.io/legal/cloud-application-manager/service-guide/), CenturyLink will provide billing and support functions for Amazon Web Services (AWS) accounts that are integrated with Cloud Application Manager. The Service Guide provides a high-level overview of those permissions, describing the groups requiring permissions and the type of permissions they are expected to have.
+As discussed in the [Service Guide](https://www.ctl.io/legal/cloud-application-manager/service-guide/), Lumen will provide billing and support functions for Amazon Web Services (AWS) accounts that are integrated with Cloud Application Manager. The Service Guide provides a high-level overview of those permissions, describing the groups requiring permissions and the type of permissions they are expected to have.
 
 ### Audience
 
-Account users that have or are considering CenturyLink Optimization of AWS Accounts. This is for all new AWS accounts created through Cloud Application Manager ("greenfield") and any existing account moving into CenturyLink's care ("brownfield").
+Account users that have or are considering Lumen Optimization of AWS Accounts. This is for all new AWS accounts created through Cloud Application Manager ("greenfield") and any existing account moving into Lumen's care ("brownfield").
 
 ### Prerequisites
 
@@ -30,25 +30,25 @@ For an existing AWS Account:
 
 #### Root Level Access
 
-CenturyLink does not provide root level access for any account. Root access should be avoided unless absolutely necessary for both Master Payer accounts owned by CenturyLink and any linked account owned by the customer.
+Lumen does not provide root level access for any account. Root access should be avoided unless absolutely necessary for both Master Payer accounts owned by Lumen and any linked account owned by the customer.
 
-Customers with existing accounts are asked to deliver root account credentials to CenturyLink per the Service Guide. This includes root email, root password, and MFA’s secret configuration key. You may continue to use your IAM credentials.
+Customers with existing accounts are asked to deliver root account credentials to Lumen per the Service Guide. This includes root email, root password, and MFA’s secret configuration key. You may continue to use your IAM credentials.
 
-For Master Payers and new accounts created through Cloud Application Manager, MFA access is set up after account configuration is complete. The key is kept in an encrypted vault within a domain separated from the main CenturyLink domain.
+For Master Payers and new accounts created through Cloud Application Manager, MFA access is set up after account configuration is complete. The key is kept in an encrypted vault within a domain separated from the main Lumen domain.
 
 
 #### Federated access
-All roles described below &mdash; except for the Customer Admin &mdash; maintain a trust with CenturyLink accounts. This allows access to customer accounts to certain CenturyLink users and automated tools, which inherit the permissions and restrictions described with the roles below.
+All roles described below &mdash; except for the Customer Admin &mdash; maintain a trust with Lumen accounts. This allows access to customer accounts to certain Lumen users and automated tools, which inherit the permissions and restrictions described with the roles below.
 
 #### IAM Access
-The following categories explain how CenturyLink automatically provides or restricts user access.
+The following categories explain how Lumen automatically provides or restricts user access.
 
 All policies summarized in this document result from intensive consultation with AWS MSP specialists, and are designed to be in accordance with partner requirements and suggested best practices. All policies have been reviewed and approved by the vendor and third-party auditors.
 
 #### Hardening, Re-Hardening, Overrides, and Exceptions
-The following IAM hardening roles and policies are applied at the time the account is integrated with Cloud Application Manager. Additionally, CenturyLink will occasionally re-apply these policies. The entire process is applied to any integrated account to which CAM still has administrative rights. Any deviations from the standard will be overwritten except where there are overrides or customizations.
+The following IAM hardening roles and policies are applied at the time the account is integrated with Cloud Application Manager. Additionally, Lumen will occasionally re-apply these policies. The entire process is applied to any integrated account to which CAM still has administrative rights. Any deviations from the standard will be overwritten except where there are overrides or customizations.
 
-Overrides can be be performed by customer users with appropriate permissions or by CenturyLink Support Staff. Where the CAMOverridePolicy and CAMOpsOverridePolicy are used, users may modify permissions of CAM, Admin Users, and CenturyLink CenturyLink Support Staff via the AWS IAM Console. These policies will not be overwritten when account hardening is re-applied. Please be aware that these polices may be applied to several roles.
+Overrides can be be performed by customer users with appropriate permissions or by Lumen Support Staff. Where the CAMOverridePolicy and CAMOpsOverridePolicy are used, users may modify permissions of CAM, Admin Users, and Lumen Lumen Support Staff via the AWS IAM Console. These policies will not be overwritten when account hardening is re-applied. Please be aware that these polices may be applied to several roles.
 
 Change Requests may result in exceptions to hardening. Please read the "Change Request" sections below. If you submit one and it is accepted, CAM will not be able to overwrite those changes as a result of future hardening attempts.
 
@@ -59,11 +59,11 @@ Change Requests may result in exceptions to hardening. Please read the "Change R
 * **Attached Policy Names**: CTLCustomerPolicy, AdministratorAccess
 * **Targeted groups/tools/users**: The first Administrator who created a new AWS account via Cloud Application Manager, plus any further users placed in that group.
 * **Intent**: To be able to provide the first administrator as many permissions as possible so that they can begin to set up the new account.
-* **Change Requests**: The policies will be applied by default to this group for any new accounts created by CenturyLink. If you would like  to add further restrictions to the group and the users it contains, the customer retains all permissions to do so.
+* **Change Requests**: The policies will be applied by default to this group for any new accounts created by Lumen. If you would like  to add further restrictions to the group and the users it contains, the customer retains all permissions to do so.
 * **Policy Summary**
 - Restricts the ability to link or unlink from an organization.
-- Restricts deleting CenturyLink-defined IAM policies, roles and additional sundry functions (such as MFA/SAML deletion).
-- Billing/Usage/Budgeting aspects of the portal are restricted to prevent confusion due to CenturyLink consolidated billing. (Integrated accounts have access to this data through Cloud Application Manager's Analytics tools.)
+- Restricts deleting Lumen-defined IAM policies, roles and additional sundry functions (such as MFA/SAML deletion).
+- Billing/Usage/Budgeting aspects of the portal are restricted to prevent confusion due to Lumen consolidated billing. (Integrated accounts have access to this data through Cloud Application Manager's Analytics tools.)
 - Full administrator access to all other aspects of the account which are not restricted by other policies.
 
 
@@ -73,16 +73,16 @@ Change Requests may result in exceptions to hardening. Please read the "Change R
 * **Attached Policy Names**: CTLCustomerPolicy
 * **Targeted groups/tools/users**: Any customer user. This policy is applied to all customer IAM Groups.
 * **Intent**: To be added to existing customer IAM groups or given to new customer groups. This policy allows the user to manipulate all services within AWS, but restricts certain views and actions that would confuse or cause conflict in an Integrated account.
-* **Change Requests**: This will be applied by default, but CenturyLink can work with you to ensure that the policy does not impact existing functionality. If there are any concerns or desired exceptions regarding these policies, please submit a ticket and one of our Product Team members will be glad to discuss it with you.
+* **Change Requests**: This will be applied by default, but Lumen can work with you to ensure that the policy does not impact existing functionality. If there are any concerns or desired exceptions regarding these policies, please submit a ticket and one of our Product Team members will be glad to discuss it with you.
 * **Policy Summary**
   - Restricts the ability to link or unlink from an organization.
-  - Restricts deleting CenturyLink-defined IAM policies, roles and additional sundry functions (such as MFA/SAML deletion).
-  - Billing/Usage/Budgeting aspects of the portal are restricted to prevent confusion due to CenturyLink consolidated billing. (Integrated accounts have access to this data through Cloud Application Manager's Analytics tools.)
+  - Restricts deleting Lumen-defined IAM policies, roles and additional sundry functions (such as MFA/SAML deletion).
+  - Billing/Usage/Budgeting aspects of the portal are restricted to prevent confusion due to Lumen consolidated billing. (Integrated accounts have access to this data through Cloud Application Manager's Analytics tools.)
 
-**CenturyLink Operations Role**
+**Lumen Operations Role**
 * **Role Name**: CTLOperationsRole
 * **Attached Policy Names**: ReadOnlyAccess, CTLOperationsPolicy, CAMOpsOverridePolicy
-* **Targeted groups/tools/users**: CenturyLink Support Staff and tools
+* **Targeted groups/tools/users**: Lumen Support Staff and tools
 * **Intent**: To allow Operations rights of least privilege, with flexibility
 * **Change Requests**: Both the customer and Operations can modify CAMOpsOverridePolicy to change permissions and restrictions of Operations
 * **Policy Summary**
@@ -91,26 +91,26 @@ Change Requests may result in exceptions to hardening. Please read the "Change R
   - CAMOpsOverridePolicy: See "Hardening, Re-Hardening, Overrides, and Exceptions" above.
 
 
-**CenturyLink Developer Role**
+**Lumen Developer Role**
 * **Role Name**: CTLDeveloperRole
 * **Attached Policy Names**: CTLDeveloperPolicy
-* **Targeted groups/tools/users**:Cloud Application Manager's Optimization tool. A limited number of CenturyLink developers have access to the tool.
+* **Targeted groups/tools/users**:Cloud Application Manager's Optimization tool. A limited number of Lumen developers have access to the tool.
 * **Intent**: The Optimization tool should be able to configure customer accounts, affect IAM permissions, and swiftly remediate any issues.
-* **Change Requests**: Because CenturyLink must maintain administrative access, no changes can be made at this time. Please see the [Service Guide](https://www.ctl.io/legal/cloud-application-manager/service-guide/) for details.
+* **Change Requests**: Because Lumen must maintain administrative access, no changes can be made at this time. Please see the [Service Guide](https://www.ctl.io/legal/cloud-application-manager/service-guide/) for details.
 * **Policy Summary**:
   - Full access
 
-**CenturyLink Lambda Role**
+**Lumen Lambda Role**
 * **Role Name**: CTLAccountControlsLambdaRole
 * **Attached Policy Names**: CTLAccountControlsLambdaPolicy
 * **Targeted groups/tools/users**: Newly created IAM users that are not in IAM Groups
-* **Intent**: Our hardening applies continuous auto-remediation steps to ensure your accounts are protected. IAM users who are not placed within a group will have all their permissions removed, so it is recommended that you move all IAM users to an IAM group. Once they are placed in a group, permissions can be applied again. Newly created IAM groups will automatically have the CTLCustomerPolicy applied. These steps are taken to ensure a seamless experience between Cloud Application Manager and your AWS account. This also allows CenturyLink to ensure that your account continues to meet best practice security guidelines.
-* **Change Requests**: This will be applied by default, but as this policy is intended to help, not hinder you, please contact CenturyLink with a support ticket if you find it conflicts with existing functionality.
+* **Intent**: Our hardening applies continuous auto-remediation steps to ensure your accounts are protected. IAM users who are not placed within a group will have all their permissions removed, so it is recommended that you move all IAM users to an IAM group. Once they are placed in a group, permissions can be applied again. Newly created IAM groups will automatically have the CTLCustomerPolicy applied. These steps are taken to ensure a seamless experience between Cloud Application Manager and your AWS account. This also allows Lumen to ensure that your account continues to meet best practice security guidelines.
+* **Change Requests**: This will be applied by default, but as this policy is intended to help, not hinder you, please contact Lumen with a support ticket if you find it conflicts with existing functionality.
 * **Policy Summary**:
   - Full control of IAM and Config
 
 
-**CenturyLink Analytics Role**
+**Lumen Analytics Role**
 * **Role Name**: CTLCloudOptimizationRole
 * **Policy Name**: CTLCloudOptimization
 * **Targeted groups/tools/users**: Cloud Optimization and Analytics tool
@@ -141,7 +141,7 @@ Change Requests may result in exceptions to hardening. Please read the "Change R
 * **Intent**: To permit these users as much freedom as possible.
 * **Change Requests**: If you would like to alter the ALM capabilities of Cloud Application Manager, you may create custom permissions under the "CAMOverridePolicy".
 * **Policy Summary**
-  - CTLCustNoSupportPolicy: Deny support permissions (please contact CenturyLink with support requests)
+  - CTLCustNoSupportPolicy: Deny support permissions (please contact Lumen with support requests)
   - CAMOverridePolicy: See "Hardening, Re-Hardening, Overrides, and Exceptions" above.
   - ReadOnlyAccess: Allows ReadOnlyAccess to enable the [Monitoring](../Monitoring/CAMMonitoringUI.md) feature on Cloud Application Manager
   - CTLCAMPolicy: See "Cloud Application Manager Role" above
@@ -151,7 +151,7 @@ Change Requests may result in exceptions to hardening. Please read the "Change R
 * **Attached Policy Names**: ReadOnlyAccess
 * **Targeted groups/tools/users**: Users of CAM for whom providers are shared, but administrative access is not given. This is not specific to Optimized providers. When providers are Optimized, the Cloud Integration Read-Only Role is used.
 * **Intent**: To permit these users to see but not alter any resources in the AWS Console when they click the provider's "AWS Console" button
-* **Change Requests**: To avoid creating a security breach, CenturyLink will not change this role.
+* **Change Requests**: To avoid creating a security breach, Lumen will not change this role.
 * **Policy Summary**
   - Read-only access.
 
@@ -160,17 +160,17 @@ Change Requests may result in exceptions to hardening. Please read the "Change R
 * **Attached Policy Names**: ReadOnlyAccess, CTLCustomerPolicy, CTLCustNoSupportPolicy
 * **Targeted groups/tools/users**: Users of CAM for whom Optimized providers are shared, but administrative access is not given.
 * **Intent**: To permit these users to see but not alter any resources in the AWS Console when they click the provider's "AWS Console" button
-* **Change Requests**: To avoid creating a security breach, CenturyLink will not change this role.
+* **Change Requests**: To avoid creating a security breach, Lumen will not change this role.
 * **Policy Summary**
   - Read-only access.
-  - See "CenturyLink Developer Role" above.
-  - CTLCustNoSupportPolicy: Deny support permissions (please contact CenturyLink with support requests.)
+  - See "Lumen Developer Role" above.
+  - CTLCustNoSupportPolicy: Deny support permissions (please contact Lumen with support requests.)
 
-**CenturyLink Service Management Policy**
+**Lumen Service Management Policy**
 * **Role Name**: CTLServiceManagementRole
 * **Policy Name**: CTLServiceManagmentPolicy
 * **Targeted groups/tools/users**: Service Management Staff
-* **Intent**:This is not an immediate part of any Optimization scenario but it is enabled by Cloud Application Manager's Account Optimization. Access to a customer's account via this role is only given to a CenturyLink representative when the customer has purchased Service Management from CenturyLink.
+* **Intent**:This is not an immediate part of any Optimization scenario but it is enabled by Cloud Application Manager's Account Optimization. Access to a customer's account via this role is only given to a Lumen representative when the customer has purchased Service Management from Lumen.
 * **Change Requests**: This policy is not currently activated by default, just created. If you need permissions changed, please submit a ticket describing the change you would like.
 * **Policy Summary**:
   - Add, Change, and Delete capabilities for all services. No capabilities to edit account details or budgets.*

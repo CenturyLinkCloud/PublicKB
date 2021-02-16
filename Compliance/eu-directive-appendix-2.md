@@ -8,27 +8,27 @@
 
 **Initial Customer Communications**
 
-The [European Union Directive](//www.ctl.io/compliance/eu-directive/) page on the [CenturyLink Compliance](//www.ctl.io/compliance/) is an excellent starting point to gain information. As well, the CAIQ crosswalk can be downloaded on the [CSA STAR](//www.ctl.io/compliance/star/) page for initial identification with regards to how CenturyLink Cloud answers specifically to the [95/46/EC - European Union Data Protection Directive](http://ec.europa.eu/justice/data-protection/international-transfers/transfer/index_en.htm).
+The [European Union Directive](//www.ctl.io/compliance/eu-directive/) page on the [Lumen Compliance](//www.ctl.io/compliance/) is an excellent starting point to gain information. As well, the CAIQ crosswalk can be downloaded on the [CSA STAR](//www.ctl.io/compliance/star/) page for initial identification with regards to how Lumen Cloud answers specifically to the [95/46/EC - European Union Data Protection Directive](http://ec.europa.eu/justice/data-protection/international-transfers/transfer/index_en.htm).
 
-**What is the CenturyLink European Union Appendix 2**
+**What is the Lumen European Union Appendix 2**
 
-CenturyLink has implemented, and will maintain during the Term, an information security program (the “Program”) that includes reasonable measures designed to:
+Lumen has implemented, and will maintain during the Term, an information security program (the “Program”) that includes reasonable measures designed to:
 
 1. Secure the confidentiality and integrity of Exporter Data.
 
-2. Protect against foreseeable threats to the security or integrity of Exporter Data to the extent related to the Services and CenturyLink Infrastructure.
+2. Protect against foreseeable threats to the security or integrity of Exporter Data to the extent related to the Services and Lumen Infrastructure.
 
 3. Protect against unauthorized access to, disclosure of, or use of Exporter Data.
 
-4. Ensure that CenturyLink employees are aware of the need to maintain the confidentiality, integrity, and security of Exporter Data.
+4. Ensure that Lumen employees are aware of the need to maintain the confidentiality, integrity, and security of Exporter Data.
 
 **Governance and Scope of Appendix Products**
 
-CenturyLink’s technical and organizational security measures apply to standard services that may involve the processing of personal data as part of the Exporter Data including: colocation, managed hosting, cloud hosting, connectivity, and other processing services provided at CenturyLink data centers.
+Lumen’s technical and organizational security measures apply to standard services that may involve the processing of personal data as part of the Exporter Data including: colocation, managed hosting, cloud hosting, connectivity, and other processing services provided at Lumen data centers.
 
 **Location of Contract and Appendix**
 
-[European Union Only-Contractual Clauses](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:31995L0046:en:HTML) can be downloaded from the European Commission site. CenturyLink is able to sign Standard Contractual Clauses with customers following a review process. Once the review is complete, CenturyLink can sign the Clauses using the standard Appendix 2, which includes the security measures CenturyLink has in place to protect data.
+[European Union Only-Contractual Clauses](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:31995L0046:en:HTML) can be downloaded from the European Commission site. Lumen is able to sign Standard Contractual Clauses with customers following a review process. Once the review is complete, Lumen can sign the Clauses using the standard Appendix 2, which includes the security measures Lumen has in place to protect data.
 
 **General Inquiries**
 

@@ -6,7 +6,7 @@
   "contentIsHTML": true
 }}}
 
-<p>This can be done quite easily through the&nbsp;<a href="https://control.ctl.io/">CenturyLink Cloud Control Portal</a>. It's important the Control Portal and your server's password match in order to perform certain control functions such as adding disks, IP addresses, and deploying blueprints. There are a couple of pre-requisites that you will need to be able to perform this task:</p>
+<p>This can be done quite easily through the&nbsp;<a href="https://control.ctl.io/">Lumen Cloud Control Portal</a>. It's important the Control Portal and your server's password match in order to perform certain control functions such as adding disks, IP addresses, and deploying blueprints. There are a couple of pre-requisites that you will need to be able to perform this task:</p>
 <ol>
   <li>First you must have an account which has administrator or root access for your company.&nbsp;&nbsp;</li>
   <li>Next you will need to have the prior password for the server which was sent to you when your server was created. If this password has changed, please change it back within the Operating System to match the portal before proceeding.</li>

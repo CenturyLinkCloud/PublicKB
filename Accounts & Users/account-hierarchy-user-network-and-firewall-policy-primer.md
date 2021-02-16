@@ -9,7 +9,7 @@
 
 ### Overview
 
-CenturyLink Cloud provides a secure multi-tenant platform by strictly segmenting customer accounts from each other.  This includes a strict separation between customer accounts including: cloud servers, networks, users, firewall policies, and all associated metadata.  The ability to create hard fenced accounts has been fully extended to customers through the introduction of [Sub Accounts](../Accounts & Users/creating-a-sub-account.md).
+Lumen Cloud provides a secure multi-tenant platform by strictly segmenting customer accounts from each other.  This includes a strict separation between customer accounts including: cloud servers, networks, users, firewall policies, and all associated metadata.  The ability to create hard fenced accounts has been fully extended to customers through the introduction of [Sub Accounts](../Accounts & Users/creating-a-sub-account.md).
 
 ### Account and Subaccount Structure
 
@@ -41,7 +41,7 @@ Parent accounts can control firewall policies associated with parent-child netwo
 
 ### Service Catalog
 
-The [Service Catalog](../General/CenturyLinkCloud/getting-started-with-the-service-catalog.md) allows Account Administrators to enable or disable certain cloud platform services for users of individual parent or sub accounts.
+The [Service Catalog](../General/LumenCloud/getting-started-with-the-service-catalog.md) allows Account Administrators to enable or disable certain cloud platform services for users of individual parent or sub accounts.
 
 ![Service Catalog in account Hierarchy](../images/account-hierarchy-7.png)
 
@@ -53,4 +53,4 @@ Take note that accounts and Server Groups are very different.  Whereas accounts 
 
 ### Considerations and Example Use Cases
 
-The CenturyLink Cloud services team is specially positioned to help customers design the most effective account hierarchy.  Note that account structure and naming cannot be changed once created (though subaccounts can always be created/removed).  
+The Lumen Cloud services team is specially positioned to help customers design the most effective account hierarchy.  Note that account structure and naming cannot be changed once created (though subaccounts can always be created/removed).  

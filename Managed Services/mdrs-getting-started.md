@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-Managed Disaster Recovery Services (MDRS) are ideal for customers who lack Disaster Recovery (DR) expertise or do not have the staff needed to maintain a DR solution. CenturyLink takes over these responsibilities and delivers end-to-end services. Unlike other DRaaS solutions, CenturyLink MDRS carries out regular audits, tests, and at-time-of-disaster (ATOD) failover services to ensure the reliability, accuracy, and efficiency of your DR solution. MDRS services including:
+Managed Disaster Recovery Services (MDRS) are ideal for customers who lack Disaster Recovery (DR) expertise or do not have the staff needed to maintain a DR solution. Lumen takes over these responsibilities and delivers end-to-end services. Unlike other DRaaS solutions, Lumen MDRS carries out regular audits, tests, and at-time-of-disaster (ATOD) failover services to ensure the reliability, accuracy, and efficiency of your DR solution. MDRS services including:
 
 * White-glove on boarding
 * 24x7 monitoring and maintenance
@@ -18,9 +18,9 @@ Managed Disaster Recovery Services (MDRS) are ideal for customers who lack Disas
 * Application recovery services
 
 ### Requesting the Service
-Managed Disaster Recovery Services are deployed and maintained by CenturyLink. To get started with MDRS, please submit a service request via the CenturyLink support channel.
+Managed Disaster Recovery Services are deployed and maintained by Lumen. To get started with MDRS, please submit a service request via the Lumen support channel.
 
-1. Go to the CenturyLink support website. At the top of the screen, click **Submit a request**.
+1. Go to the Lumen support website. At the top of the screen, click **Submit a request**.
    ![Support Website](../images/drms-website.png)
 
 2. From the drop-down menu, select **Normal**.
@@ -32,4 +32,4 @@ Managed Disaster Recovery Services are deployed and maintained by CenturyLink. T
 
    ![Service Request Form](../images/drms-request.png)
 
-3. Upon receiving the request, CenturyLink transfers your ticket to a cloud architect to work with you on designing and implement the DR solution for your IT environment.
+3. Upon receiving the request, Lumen transfers your ticket to a cloud architect to work with you on designing and implement the DR solution for your IT environment.

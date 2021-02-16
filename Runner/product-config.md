@@ -11,7 +11,7 @@
 
 ### Audience
 
-This article is to support customers of Runner, a product that enables teams, developers, and engineers to quickly provision, interact, and modify their environments anywhere - CenturyLink Cloud, third-party cloud providers, and on-premises.
+This article is to support customers of Runner, a product that enables teams, developers, and engineers to quickly provision, interact, and modify their environments anywhere - Lumen Cloud, third-party cloud providers, and on-premises.
 
 ### Catalog & Product Overview
 
@@ -98,7 +98,7 @@ organizationUrl | URL for your company website
 The ```config.yml``` file is used to not only provide information about your product, but can also be used to build dynamic forms to provide information to your playbook. Below are the various field types you can use to acquire information from the user and pass it to your playbook.
 
 ##### Datacenters
-The datacenters field will query the CenturyLink Cloud APIs and bring back all valid datacenters for an account alias.
+The datacenters field will query the Lumen Cloud APIs and bring back all valid datacenters for an account alias.
 
 ###### Options
 
@@ -121,7 +121,7 @@ required | Is this item required for playbook execution (true / false)
 
 
 ##### Groups
-The groups field will query the CenturyLink Cloud APIs and display all groups for an account alias. The output can be restricted to a specific datacenter if you include a `parent` option.
+The groups field will query the Lumen Cloud APIs and display all groups for an account alias. The output can be restricted to a specific datacenter if you include a `parent` option.
 
 ###### Options
 parameter | comments
@@ -160,7 +160,7 @@ fields:
 
 
 ##### Servers
-The servers field will query the CenturyLink Cloud APIs and display all servers for an account alias.
+The servers field will query the Lumen Cloud APIs and display all servers for an account alias.
 
 ###### Options
 parameter | comments
@@ -186,7 +186,7 @@ fields:
 
 
 ##### Networks
-The networks field will query the CenturyLink Cloud APIs and display all networks for an account alias.
+The networks field will query the Lumen Cloud APIs and display all networks for an account alias.
 
 ###### Options
 parameter | comments

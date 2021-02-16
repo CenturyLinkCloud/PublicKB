@@ -26,7 +26,7 @@
 
 **Q: What are the network requirements for Simple Backup Service (SBS), if any?**
 
-A: SSH for Root is required to allow the blueprint to initially install the backup agent on the target server; it may be disabled after the initial instillation as it is not needed for the agent to function. Simple Backup Service also requires outbound internet traffic over port 443. CenturyLink Cloud VMs allow outbound traffic by default using NAT.
+A: SSH for Root is required to allow the blueprint to initially install the backup agent on the target server; it may be disabled after the initial instillation as it is not needed for the agent to function. Simple Backup Service also requires outbound internet traffic over port 443. Lumen Cloud VMs allow outbound traffic by default using NAT.
 
 - Alternatively, firewall rules may be configured utilizing the endpoints listed below. Additional endpoints will need to be configured based on the storage region selected as indicated in our [SBS functionality article](simple-backup-service-how-it-works.md).
 
@@ -133,7 +133,7 @@ A: It depends on the OS, as listed below.
 
 **Q: How can I confirm that my backups were successful?**
 
-A: There are multiple ways to check the statuses of your backups. The CenturyLink Cloud Simple Backup control portal has an activites tab that provides a quick, at-a-glance view of your recent backups. You can also use the [reporting functionality](reports.md) or the [monitoring functionality](sbs-monitoring.md) to provide a deeper view into your backup landscape.
+A: There are multiple ways to check the statuses of your backups. The Lumen Cloud Simple Backup control portal has an activites tab that provides a quick, at-a-glance view of your recent backups. You can also use the [reporting functionality](reports.md) or the [monitoring functionality](sbs-monitoring.md) to provide a deeper view into your backup landscape.
 
 **Q: For a "Failed" or "Partial Success" backup status, can I see which files failed and why?**
 
@@ -144,7 +144,7 @@ A: Yes. See the sbs-backup-files-failed.csv file located on the backup agent's l
 
 **Q: Where are my backups actually stored?**
 
-A: The SBS agent on the server transfers backup data to one of six different backup storage regions, each built on top of object storage. CenturyLink Cloud sources this storage from a combination of its own cloud platform, as well as 3rd-party cloud providers such as Amazon Web Services. For more information, see our [SBS functionality article](simple-backup-service-how-it-works.md).
+A: The SBS agent on the server transfers backup data to one of six different backup storage regions, each built on top of object storage. Lumen Cloud sources this storage from a combination of its own cloud platform, as well as 3rd-party cloud providers such as Amazon Web Services. For more information, see our [SBS functionality article](simple-backup-service-how-it-works.md).
 
 **Q: Can I check the status of my backups?**
 

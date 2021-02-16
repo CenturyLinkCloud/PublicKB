@@ -13,9 +13,9 @@
 In this KB article, we demonstrate how to add a new user as an OrgAdmin to your VCD organization. When a new user is set up as an OrgAdmin, they have the ability to use the vCloud Director Web Console, tenant portal, or vCloud OpenAPI to manage users and groups in their organization and assign them roles, including the predefined __Organization Administrator__ role.
 
 ### Steps to Add a New User as an Org Admin
-* Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment.
+* Login to your Lumen Private Cloud on VMware Cloud Foundation environment.
 
-  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
+  ![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
 * Once logged in, click on the menu icon at the top of the screen. Select __Administration__ in the dropdown menu.
 
@@ -33,9 +33,9 @@ In this KB article, we demonstrate how to add a new user as an OrgAdmin to your 
 
 ### Steps to Make an Existing User an Org Admin
 
-* Login to your CenturyLink Private Cloud on VMware Cloud Foundation environment.
+* Login to your Lumen Private Cloud on VMware Cloud Foundation environment.
 
-  ![Login to CenturyLink Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
+  ![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
 * Once logged in, click on the menu icon at the top of the screen. Select __Administration__ in the dropdown menu.
 

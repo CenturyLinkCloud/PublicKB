@@ -16,7 +16,7 @@ http://www.fortycloud.com
 ##### Customer Support
 | Sales Contact  | Support Contact  |
 |:- |:- |
-| sales@fortycloud.com  | centurylink@fortycloud.com  |
+| sales@fortycloud.com  | lumen@fortycloud.com  |
 
 ### Description
 FortyCloud provides a comprehensive security solution for IaaS using Software Defined Networking (SDN) and Software Defined Security (SDS) technologies. All important IT security elements, like AAA, encryption and firewall, are packaged together in the FortyCloud solution and are delivered in SaaS model. Using an Intuitive UI, the FortyCloud solution allows even non-security experts to easily configure fine-grained security policies that are then enforced using the different FortyCloud network entities.
@@ -31,10 +31,10 @@ Benefits:
 For more information visit: www.fortycloud.com.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Prerequisites
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 * control.ctl.io account with password authentication (two factor authentication not yet supported).
 
 ### Steps to Deploy a New Appliance
@@ -88,7 +88,7 @@ CenturyLink Cloud Users
    * Login to the FortyCloud Web Admin Console to retrieve a new Gateway registration token.
    * Press on the “Setup a new Gateway” icon.
 	 ![Setup New Gateway](../../images/fortycloud/setup_new_gateway.png)
-   * **Setup a New Gateway** Wizard opens. Make Sure **CenturyLink Cloud** is selected and copy the *FortyCloud Account Registration Token* (the blue highlighted text).
+   * **Setup a New Gateway** Wizard opens. Make Sure **Lumen Cloud** is selected and copy the *FortyCloud Account Registration Token* (the blue highlighted text).
 	![Setup New Gateway](../../images/fortycloud/setup_new_gateway2.png)
   * SSH to your server using your password (ssh root@[Public IP]) once prompted enter your password, once you are logged in the following screen will be prompted.
 	![Setup New Gateway](../../images/fortycloud/setup_new_gateway3.png)
@@ -115,5 +115,5 @@ After deploying this Blueprint, you may secure entitlements to the technology us
 In order to create a new license visit our new account request page: http://campaign.fortycloud.com/30-day-free-trial/
 
 **Who should I contact for support?**
-* For issues related to deploying CloudBolt email centurylink@fortycloud.com.
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
+* For issues related to deploying CloudBolt email lumen@fortycloud.com.
+* For issues related to cloud infrastructure, please open a ticket using the [Lumen Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).

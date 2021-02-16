@@ -22,7 +22,7 @@ This article explains how to boot from a Production VM from primary data storage
 
 This article assumes that the user has already performed Failback Phase 1 and Phase 2, and the Production VM has been configured with makestub.exe and is booting from the iSCSI disks. Now the user wants to copy data from the iSCSI disks to the production VM's local disk and then boot the VM from the Primary Storage.
 
-For the purpose of this article, we have used Windows 2012R2 as a production server in CenturyLink's CA2(Toronto) production datacenter. The recovery site being used is CenturyLink's WA1(Washington) recovery datacenter.
+For the purpose of this article, we have used Windows 2012R2 as a production server in Lumen's CA2(Toronto) production datacenter. The recovery site being used is Lumen's WA1(Washington) recovery datacenter.
 
 ###Boot From Primary Storage
 Log into production server, find ** In-band To Out-of-band Converter**

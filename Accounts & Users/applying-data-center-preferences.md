@@ -8,7 +8,7 @@
 
 ### Description
 
-CenturyLink Cloud customers can choose which data centers to make available to the users of an account. **Changing these settings has implications on the user experience, and how new data centers are exposed to the account.** Read the steps below to learn how to enable/disable data centers, and the implications on the API.
+Lumen Cloud customers can choose which data centers to make available to the users of an account. **Changing these settings has implications on the user experience, and how new data centers are exposed to the account.** Read the steps below to learn how to enable/disable data centers, and the implications on the API.
 
 ### Audience
 
@@ -31,4 +31,4 @@ CenturyLink Cloud customers can choose which data centers to make available to t
 ![Create Server](../images/data-center-create-server.png)
 1. A disabled data center is also unavailable for any API operations that use a data center parameter (e.g. [Get Data Center List](http://www.ctl.io/api-docs/v2#data-centers-get-data-center-list)).
 
-**Note:** If you apply data center preferences to your account, than any **new** CenturyLink Cloud data centers will **NOT** automatically show up in the Control Portal for you. You will need to come into the Data Center preferences page and manually enable the new data center. This behavior is in place to respect your conscious choice to show specific data centers.
+**Note:** If you apply data center preferences to your account, than any **new** Lumen Cloud data centers will **NOT** automatically show up in the Control Portal for you. You will need to come into the Data Center preferences page and manually enable the new data center. This behavior is in place to respect your conscious choice to show specific data centers.

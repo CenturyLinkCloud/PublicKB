@@ -12,30 +12,30 @@
 Apache Hadoop® is an open source framework for distributed storage and processing of large sets of data on commodity hardware. Hadoop enables businesses to quickly gain insight from massive amounts of structured and unstructured data.
 
 ### Description
-CenturyLink has created a Blueprint that makes it extremely easy to spin up a Hortonworks Hadoop Server in minutes. You can start using your Hortonworks Hadoop server immediately after the Blueprint completes. The Blueprint will automatically install all required packages and settings required for Hortonworks.
+Lumen has created a Blueprint that makes it extremely easy to spin up a Hortonworks Hadoop Server in minutes. You can start using your Hortonworks Hadoop server immediately after the Blueprint completes. The Blueprint will automatically install all required packages and settings required for Hortonworks.
 
-Advantages of running Hortonworks in CenturyLink Cloud:
+Advantages of running Hortonworks in Lumen Cloud:
 * Fast provisioning - get Hadoop running within minutes- No long term server commitment - pay as you go each month.
 * On-demand Scalability - Add more CPU, Disk or Memory resources on the fly as your data grows.
-* Save money - Run your Hadoop server only when you use it. You can host a server just during business hours and power it off during nights and weekends. You can use the CenturyLink Cloud mobile app to start and stop your server anytime, anywhere.
+* Save money - Run your Hadoop server only when you use it. You can host a server just during business hours and power it off during nights and weekends. You can use the Lumen Cloud mobile app to start and stop your server anytime, anywhere.
 * Fast Bandwidth - Your Hadoop server has a 2GB inbound network throughput ensuring low latency data transfers.
 * No technical experience required - Don't worry about setting kernel variables and preloading database and software packages, we did that for you. Just run the Blueprint, enter some basic configuration details and start importing data.
 
 ### Audience
-CenturyLink Cloud Users, Data Scientists and Big Data Enthusiasts.
+Lumen Cloud Users, Data Scientists and Big Data Enthusiasts.
 
 ### Impact
-After reading this article, the user should feel comfortable getting Hortonworks Hadoop up and running with Server Blueprint technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting Hortonworks Hadoop up and running with Server Blueprint technology on Lumen Cloud.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 
 ### Postrequisite
 * If you want to access your VM with Hortonworks Hadoop over the internet, please perform the following tasks once you receive an email confirming you Blueprint completed successfully.
 
-* If you need to connect to your server via the Internet, Add a [Public IP](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/CenturyLink Cloud/how-to-configure-client-vpn.md) or similar technology.
+* If you need to connect to your server via the Internet, Add a [Public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/Lumen Cloud/how-to-configure-client-vpn.md) or similar technology.
 
-* [Allow incoming traffic](../../Network/CenturyLink Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal. Hortonworks listens on port `8080`.
+* [Allow incoming traffic](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through Control Portal. Hortonworks listens on port `8080`.
 
 #### Steps to Deploy Blueprint
 1. Locate the Hortonworks Install Blueprint.
@@ -114,7 +114,7 @@ After your Blueprint deploys successfully, please follow these instructions to a
 19.	You will then be redirected to the Hortworks Dashboard: http://your-ip:8080/#/main/dashboard/metrics
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no Hortonworks Hadoop license costs or additional fees bundled in.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. There are no Hortonworks Hadoop license costs or additional fees bundled in.
 
 ### Frequently Asked Questions
 
@@ -140,5 +140,5 @@ The costs associated with this Blueprint deployment are for the CenturyLink Clou
 * For more information visit [Hortonworks](http://www.Hortonworks.com).
 
 #### Who should I contact for support?
-* CenturyLink Cloud does not support the Hortonworks Hadoop Server software. Please contact Hortonworks for any support around Hortonworks Hadoop.
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing help@ctl.io or [through the support website](https://t3n.zendesk.com/tickets/new).
+* Lumen Cloud does not support the Hortonworks Hadoop Server software. Please contact Hortonworks for any support around Hortonworks Hadoop.
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a Lumen Cloud Support ticket by emailing help@ctl.io or [through the support website](https://t3n.zendesk.com/tickets/new).

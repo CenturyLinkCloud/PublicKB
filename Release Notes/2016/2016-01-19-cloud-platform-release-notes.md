@@ -8,13 +8,13 @@
 
 ### New Features (4)
 
-* __Object Storage now available in US-East.__ CenturyLink's [object storage service](https://www.ctl.io/object-storage/) is now available in the US East region. Like our improved Canadian offering, object storage in US East will provide high availability and redundancy over the familiar S3 interface.  More details are available on the [object storage product page (including pricing)](https://www.ctl.io/object-storage/), as well as the [Knowledge Base](https://www.ctl.io/knowledge-base/object-storage).
+* __Object Storage now available in US-East.__ Lumen's [object storage service](https://www.ctl.io/object-storage/) is now available in the US East region. Like our improved Canadian offering, object storage in US East will provide high availability and redundancy over the familiar S3 interface.  More details are available on the [object storage product page (including pricing)](https://www.ctl.io/object-storage/), as well as the [Knowledge Base](https://www.ctl.io/knowledge-base/object-storage).
 
 ![Object Storage US East](../../images/2016-01-19_objectstorageuseast.png)
 
-* __Managed MS SQL: Bring Your Own License.__ A new [Managed MS SQL Blueprint](https://www.ctl.io/managed-services/ms-sql/) that supports "bring your own license" is now available for managed CenturyLink Cloud customers. Customers who deploy this Blueprint will pay for the management of their MS SQL instance only, at a rate of $0.48/hr. The features of the managed service remain unchanged.
+* __Managed MS SQL: Bring Your Own License.__ A new [Managed MS SQL Blueprint](https://www.ctl.io/managed-services/ms-sql/) that supports "bring your own license" is now available for managed Lumen Cloud customers. Customers who deploy this Blueprint will pay for the management of their MS SQL instance only, at a rate of $0.48/hr. The features of the managed service remain unchanged.
 
-* __"IPS Anywhere" for Any Server Running Selected Versions of Red Hat, CentOS, Ubuntu, and SUSE.__ CenturyLink Cloud users may now install instances of host-based [Intrusion Prevention Service](https://www.ctl.io/intrusion-prevention-service/) on any server running one of these 64-bit operating systems: RHEL 5/6/7, CentOS 5/6/7, Ubuntu 12/14, and SUSE 11. The server can be located on-premises, in CenturyLink Cloud, or off-site with another hosting provider - the only requirement is connectivity to CenturyLink's management network. To configure access to this network, refer to [Getting Started with IPS - prerequisites](https://www.ctl.io/knowledge-base/security/getting-started-with-ips/#prerequisites).
+* __"IPS Anywhere" for Any Server Running Selected Versions of Red Hat, CentOS, Ubuntu, and SUSE.__ Lumen Cloud users may now install instances of host-based [Intrusion Prevention Service](https://www.ctl.io/intrusion-prevention-service/) on any server running one of these 64-bit operating systems: RHEL 5/6/7, CentOS 5/6/7, Ubuntu 12/14, and SUSE 11. The server can be located on-premises, in Lumen Cloud, or off-site with another hosting provider - the only requirement is connectivity to Lumen's management network. To configure access to this network, refer to [Getting Started with IPS - prerequisites](https://www.ctl.io/knowledge-base/security/getting-started-with-ips/#prerequisites).
 
   Installing IPS Anywhere is a simple API call - to learn more, [refer to this KB article](https://www.ctl.io/knowledge-base/security/#1).
 
@@ -28,7 +28,7 @@
 
   These features, and more, are now available in beta via API. For more details, and to sign-up for the beta service, please visit [the product page](https://www.ctl.io/load-balancing/).
 
-* __DBaaS Beta Conclusion.__ The [DBaaS beta](https://www.ctl.io/dbaas/) ends January 25; the service will then become generally available as the "Relational DB Service". This new service supports rapid software delivery by providing instant access to a high performance, enterprise-hardened MySQL-compatible database instances. The service is hosted on CenturyLink Cloud's [Hyperscale service](https://www.ctl.io/hyperscale/), with 100% flash storage. The service will be GA at launch in three CenturyLink Cloud locations: IL1, VA1 and UC1.
+* __DBaaS Beta Conclusion.__ The [DBaaS beta](https://www.ctl.io/dbaas/) ends January 25; the service will then become generally available as the "Relational DB Service". This new service supports rapid software delivery by providing instant access to a high performance, enterprise-hardened MySQL-compatible database instances. The service is hosted on Lumen Cloud's [Hyperscale service](https://www.ctl.io/hyperscale/), with 100% flash storage. The service will be GA at launch in three Lumen Cloud locations: IL1, VA1 and UC1.
 
 * __Runner.__ Several new capabilities are available for [the agent-less automation service](http://info.runner.ctl.io/):
 
@@ -58,8 +58,8 @@
 
 * __Silver Peak:__ [Silver Peak](http://www.silver-peak.com/) WAN Optimization appliances make global distributed applications more accessible than ever. Using their "Set it and forget it" configuration, off-premise IT is delivered to corporate headquarters and branch sites without administration overhead. [Try this partner template](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-silver-peak-partner-template/) with your own applications today.
 
-* __Clusterpoint:__ [Clusterpoint's](https://www.clusterpoint.com/) ACID compliant distributed database solution offers NoSQL and SQL interfaces - including a first of its kind stored procedure execution on NoSQL transactions. [Accelerate your business with a private installation](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-clusterpoint-blueprint/) on CenturyLink Cloud.
+* __Clusterpoint:__ [Clusterpoint's](https://www.clusterpoint.com/) ACID compliant distributed database solution offers NoSQL and SQL interfaces - including a first of its kind stored procedure execution on NoSQL transactions. [Accelerate your business with a private installation](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-clusterpoint-blueprint/) on Lumen Cloud.
 
 ### Open Source Contributions (1)
 
-* __[CenturyLink Cloud Chef Knife Plug-In](https://github.com/CenturyLinkCloud/clc-knife/).__ Chef users can now perform key configuration management functions using CenturyLink Cloud and Knife, with this open-source plug-in. Over a dozen commands related to servers, data centers, groups, and power operations are supported. Fork [the repo on Github](https://github.com/CenturyLinkCloud/clc-knife) to get started.
+* __[Lumen Cloud Chef Knife Plug-In](https://github.com/CenturyLinkCloud/clc-knife/).__ Chef users can now perform key configuration management functions using Lumen Cloud and Knife, with this open-source plug-in. Over a dozen commands related to servers, data centers, groups, and power operations are supported. Fork [the repo on Github](https://github.com/CenturyLinkCloud/clc-knife) to get started.

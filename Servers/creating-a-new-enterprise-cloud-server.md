@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-The heart of the CenturyLink Cloud Platform is the ability to create and manage virtual infrastructure. In this KB article, we demonstrate how to provision new virtual machines in CenturyLink Cloud. Once you've gone through this KB article and created a new server, you can follow the [getting Started guide](../Servers/getting-started-how-to-securely-connect-to-your-server.md) to learn how to securely connect to your new server.
+The heart of the Lumen Cloud Platform is the ability to create and manage virtual infrastructure. In this KB article, we demonstrate how to provision new virtual machines in Lumen Cloud. Once you've gone through this KB article and created a new server, you can follow the [getting Started guide](../Servers/getting-started-how-to-securely-connect-to-your-server.md) to learn how to securely connect to your new server.
 
 ### Guided Steps
 
@@ -30,8 +30,8 @@ The heart of the CenturyLink Cloud Platform is the ability to create and manage 
 3. Input the required resources, network and other advanced configuration information for your new server.
     * CPU, RAM & Storage up to [the platform maximums](../Servers/cloud-server-instance-size-and-performance.md). Virtual server configurations can be modified after deployment.
     * Enable a [CPU autoscale](../General/Autoscale/creating-and-applying-autoscale-policies.md) policy if desired.
-    * Select a [Network](../Network/CenturyLink Cloud/creating-and-deleting-vlans.md) for your virtual machine.
-    * Set a primary and secondary dns server. (CenturyLink provides the following default DNS servers: 172.17.1.26 and 172.17.1.27)
+    * Select a [Network](../Network/Lumen Cloud/creating-and-deleting-vlans.md) for your virtual machine.
+    * Set a primary and secondary dns server. (Lumen provides the following default DNS servers: 172.17.1.26 and 172.17.1.27)
     * Enable a Time to Live (TTL) if desired for your virtual machine to be destroyed.
 
     ![create server resources](../images/creating-a-new-enterprise-cloud-server-03.png)

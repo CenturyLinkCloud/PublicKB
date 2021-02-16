@@ -32,7 +32,7 @@ SafeHaven 5.0.1 was released with following improvements:
 
 #### Load Balancer as a Service 
 
-CenturyLink Cloud is excited to release a new load balancer service in our VA2 and WA1 locations. We’re calling it Load Balancer as a Service (LBaaS). We added more features that allow you to focus on your business while we help service your infrastructure. You get to keep all of the features that are available in the current Shared Load Balancer service, but we’ve added a few new things to get excited about:
+Lumen Cloud is excited to release a new load balancer service in our VA2 and WA1 locations. We’re calling it Load Balancer as a Service (LBaaS). We added more features that allow you to focus on your business while we help service your infrastructure. You get to keep all of the features that are available in the current Shared Load Balancer service, but we’ve added a few new things to get excited about:
 
 * TCP load balancing
 * Load balance on any port 23 and up

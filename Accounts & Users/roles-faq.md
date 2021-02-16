@@ -8,7 +8,7 @@
 
 ### Description
 
-CenturyLink Cloud uses role-based access control (RBAC) for restricting system access for specific areas of the platform to authorized users only. There are currently eight roles available to choose from with varying degrees of access. These roles were designed to align with job functions that are generally found in most organizations.
+Lumen Cloud uses role-based access control (RBAC) for restricting system access for specific areas of the platform to authorized users only. There are currently eight roles available to choose from with varying degrees of access. These roles were designed to align with job functions that are generally found in most organizations.
 
 This FAQ addresses many commonly asked questions about roles. For more information about how these roles may best be used in the context of your organization, see the KB article titled [Practical Guide for Using Roles](../Accounts & Users/practical-guide-for-using-roles.md).
 
@@ -24,7 +24,7 @@ A: For a complete list of actions that can be performed in the platform broken d
 
 **Q: How are these roles different from the previous ones that were available?**
 
-A: Previously, CenturyLink Cloud offered a very small set of roles (called "area permissions") that allowed for broadly restricting large parts of the Control Portal for a few specialty users (such as a Billing Administrator). To perform the vast majority of activities in the platform, it was required to be an Account Administrator, which often meant opening up more permissions than were required for a user to complete their necessary tasks. The newer implementation supports more granularity of control as well as the ability for some users to have read-only access to some areas without the ability to change the configuration. Information on migrating existing users into the new roles model can be found in the [Roles Migration Guide](roles-migration-guide.md).
+A: Previously, Lumen Cloud offered a very small set of roles (called "area permissions") that allowed for broadly restricting large parts of the Control Portal for a few specialty users (such as a Billing Administrator). To perform the vast majority of activities in the platform, it was required to be an Account Administrator, which often meant opening up more permissions than were required for a user to complete their necessary tasks. The newer implementation supports more granularity of control as well as the ability for some users to have read-only access to some areas without the ability to change the configuration. Information on migrating existing users into the new roles model can be found in the [Roles Migration Guide](roles-migration-guide.md).
 
 **Q: Can I change a user's role through the API?**
 

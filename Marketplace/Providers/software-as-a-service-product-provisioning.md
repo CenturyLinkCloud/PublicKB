@@ -14,7 +14,7 @@ The next step is to create the Product Provisioning within the Provider Portal f
 
 ### Product Provisioning
 
-1. Product creation and Provisioning is done in the staging environment of the Provider Portal to allow for testing. To create products you will log into the staging environment here: https://provider-portal.staging.ctl.io/#/login. You will login with your same CenturyLink Cloud credentials for both production and staging.
+1. Product creation and Provisioning is done in the staging environment of the Provider Portal to allow for testing. To create products you will log into the staging environment here: https://provider-portal.staging.ctl.io/#/login. You will login with your same Lumen Cloud credentials for both production and staging.
 
 2. If a product tile has yet to be created, you can do so by following the steps outlined in the [Getting Started Guide](getting-started-guide-marketplace-ecosystem-provider-portal.md).
 
@@ -34,7 +34,7 @@ The next step is to create the Product Provisioning within the Provider Portal f
 
 8. The **Provisioning Success Message** field is optional and supports markdown. Examples of content for this field would be "Congratulations you have successfully deployed XXX software." It could also be a call to action for the end user, such as check your email for next steps.  
 
-9. The **API Headers & Inputs** field is where the software provider gets to create both the customer facing and hidden parameters that are needed to complete the transaction. The CenturyLink Cloud Marketplace will provide the user interface & collect the information that is required to provision an account on your platform. However, we do not collect Private Card Information (PCI) on your behalf.
+9. The **API Headers & Inputs** field is where the software provider gets to create both the customer facing and hidden parameters that are needed to complete the transaction. The Lumen Cloud Marketplace will provide the user interface & collect the information that is required to provision an account on your platform. However, we do not collect Private Card Information (PCI) on your behalf.
 
   ![SaaS3](../../images/SaaS3.png)
 
@@ -48,7 +48,7 @@ The next step is to create the Product Provisioning within the Provider Portal f
 
   ![SaaS5.png](../../images/SaaS6.png)
 
-12. The **Product SKU Conditions** field is optional.  By default, all Product SKUs associated with the product will generate billing immediately when the end user provisions the product.  Setting a condition allows you to choose which SKUs will be active, based on a user's selection.  Please note, setting a SKU condition is only available for **Selection** type inputs and if SKU will have delayed billing it must be set up that why by a CenturyLink Marketplace representative.  
+12. The **Product SKU Conditions** field is optional.  By default, all Product SKUs associated with the product will generate billing immediately when the end user provisions the product.  Setting a condition allows you to choose which SKUs will be active, based on a user's selection.  Please note, setting a SKU condition is only available for **Selection** type inputs and if SKU will have delayed billing it must be set up that why by a Lumen Marketplace representative.  
 
 13. Below the **Example API Request** box, there is the option to preview and save your work. Be sure to click **SAVE** before leaving the SaaS tab!
 

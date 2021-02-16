@@ -1,5 +1,5 @@
 {{{
-  "title": "Deploying CenturyLink Managed Apache via Cloud Application Manager",
+  "title": "Deploying Lumen Managed Apache via Cloud Application Manager",
   "date": "03-30-2018",
   "author": "Thomas Broadwell",
   "attachments": [],
@@ -21,10 +21,10 @@
 
 
 ### Introduction
-Apache HTTP has been the most popular web server for nearly two decades — and it gets even better with CenturyLink Cloud and our Managed Apache service.
+Apache HTTP has been the most popular web server for nearly two decades — and it gets even better with Lumen Cloud and our Managed Apache service.
 
 ### Overview
-Cloud Application Manager’s Managed Services Anywhere (MSA) allows customers to depend on CenturyLink to manage cloud deployed workloads, relieving themselves of the burdens of day to day monitoring, patching and Operational activities.  Through Cloud Application Manager's Managed Service Anywhere (MSA), a customer can provision a VM instance running Apache within any MSA enabled provider and because Managed Services has been enabled on the provider, CenturyLink will manage both the Operating System and Apache.
+Cloud Application Manager’s Managed Services Anywhere (MSA) allows customers to depend on Lumen to manage cloud deployed workloads, relieving themselves of the burdens of day to day monitoring, patching and Operational activities.  Through Cloud Application Manager's Managed Service Anywhere (MSA), a customer can provision a VM instance running Apache within any MSA enabled provider and because Managed Services has been enabled on the provider, Lumen will manage both the Operating System and Apache.
 
 ### Supported Apache HTTP Server
 *  HTTP Server version 2.4
@@ -38,21 +38,21 @@ Cloud Application Manager’s Managed Services Anywhere (MSA) allows customers t
 *	Managed Redhat version 7
 
 ### License
-* Licensing for deployments are provided by the Cloud Provider.  The cost for the RHEL license and the VM it is deployed upon will be reflected within the customer's cloud provider bill, or under the cloud provider's section in the CenturyLink consolidated bill (for customers that have elected to utilize CenturyLink's consolidated billing feature).
+* Licensing for deployments are provided by the Cloud Provider.  The cost for the RHEL license and the VM it is deployed upon will be reflected within the customer's cloud provider bill, or under the cloud provider's section in the Lumen consolidated bill (for customers that have elected to utilize Lumen's consolidated billing feature).
 
 ### Installation Features
 * Prepare Server for Application Service (OS Specific Parameters)
 * Install Apache Http Server
 * Install PHP, Ruby on Rails, Express, AngularJS and Node.JS
 * Install OpenSSL
-* Install CenturyLink Monitoring
+* Install Lumen Monitoring
 * Perform Quality Assurance against Apache Http Server Installation/Hardening
 
 ### Configuration
 * Configure Site Connectivity (Virtual Hosts, TCP Port, IP Address and SSL Certificate allocation)
 * Implementation of Customer specified Apache configuration
 * Implementation of Customer specified PHP configuration
-* Configure CenturyLink Monitoring
+* Configure Lumen Monitoring
 
 ### Administration
 * Application Log Monitoring
@@ -66,9 +66,9 @@ Cloud Application Manager’s Managed Services Anywhere (MSA) allows customers t
 
 ### Deploying Managed Apache
 
-Deploying Managed Apache to your provider with CenturyLink Cloud Application Manager:
+Deploying Managed Apache to your provider with Lumen Cloud Application Manager:
 
-1. In Catalog, select the Managed Services Anywhere subcategory and then select the “CenturyLink Managed Apache Http Server".  Deploy CenturyLink Managed Apache instance.
+1. In Catalog, select the Managed Services Anywhere subcategory and then select the “Lumen Managed Apache Http Server".  Deploy Lumen Managed Apache instance.
 
   ![MgdApache0.PNG](../../images/cloud-application-manager/MgdApache0.PNG)
 

@@ -12,7 +12,7 @@ Cloud Network Administrators, Application Developers
 
 ### Overview
 
-CenturyLink Load-Balancer-as-a-Service (LBaaS) helps you build highly scalable and highly available applications by providing application-level (HTTP & TCP) load balancing. It also offers various persistence methods to ensure that a user, once connected, continues to be connected to the same application instance.
+Lumen Load-Balancer-as-a-Service (LBaaS) helps you build highly scalable and highly available applications by providing application-level (HTTP & TCP) load balancing. It also offers various persistence methods to ensure that a user, once connected, continues to be connected to the same application instance.
 
 ### What is Load-Balancer-as-a-Service?
 
@@ -217,7 +217,7 @@ The request format is specified using the ‘Content-Type’ header and is requi
 
 #### Authenticate Against the API
 
-Authentication to the API is done with the same credentials used to access the CenturyLink Cloud Control Portal. The username and password are provided to the API and in return, the user gets back a credentials object. This object contains a valid bearer token, which must be provided on each subsequent API request and can be reused for up to 2 weeks. The HTTP request must also include a Content-Type header set to application/json.
+Authentication to the API is done with the same credentials used to access the Lumen Cloud Control Portal. The username and password are provided to the API and in return, the user gets back a credentials object. This object contains a valid bearer token, which must be provided on each subsequent API request and can be reused for up to 2 weeks. The HTTP request must also include a Content-Type header set to application/json.
 
 ### Configure the Load Balancer-as-a-Service (LBaaS)
 

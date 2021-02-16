@@ -13,7 +13,7 @@
 
 ### New Features
 
-* New user interface consistent with CenturyLink Cloud Compute (CLC) with the ability to view your dedicated resources from the perspective of a global dashboard, an individual datacenter or a specific cluster.
+* New user interface consistent with Lumen Cloud Compute (CLC) with the ability to view your dedicated resources from the perspective of a global dashboard, an individual datacenter or a specific cluster.
 * Compute tab providing view only information similar to the Marketplace > Symphony Orchestrator > Compute Dashboard.
 * Storage tab providing view only information similar to the Marketplace > Symphony Orchestrator > Storage Dashboard.
 * Saved Images under each datacenter providing view only information similar to the Marketplace > Symphony Orchestrator > Image Management.
