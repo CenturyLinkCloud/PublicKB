@@ -1,7 +1,7 @@
 {{{
   "title": "Getting Started with Managed Services Anywhere in CAM",
-  "date": "5-30-2019",
-  "author": "Mindy Daugherty",
+  "date": "2-16-2021",
+  "author": "Randy Wansing",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -22,10 +22,10 @@ The management appliance must be installed on a Centos 7 server.
 
 #### Supported OS
 
-* RHEL 6, 7, and 8
-* CentOS 6, 7, and 8 
-* Ubuntu 14, 16 and 18
-* Windows 2k08R2, 2k12, 2k16, and 2k19
+- RHEL 6, 7, and 8
+- CentOS 6, 7, and 8 
+- Ubuntu 14, 16 and 18
+- Windows 2k08R2, 2k12, 2k16, and 2k19
 
 Note for windows servers, .NET 4.6 and powershell 3.0 must be installed, and TLS 1.2 must be supported.
 
@@ -41,19 +41,26 @@ Upon completion of the synchronization the provider will be Online and available
 
 You can choose to Enable Managed Services on the provider at this time and by doing so, Lumen will enable our comprehensive managed services including monitoring, patching and remote administration by way of automation and hands-on access by certified IT professionals. MSA includes all the ALM features along with Analytics and a Technical Account Manager will be assigned to your account.
 
-* Select the Provider on which MSA is to be enabled from the **Providers** tab.
+- Select the Provider on which MSA is to be enabled from the **Providers** tab.
 
-  ![GettingStarted1.png](../../images/cloud-application-manager/GettingStarted1.png)
+  ![getting-started-enable-msa-2.png](../../images/cloud-application-manager/getting-started-enable-msa-2.png)
 
-* Next click on **Services** to open and configure available services. To enable Managed Services Anywhere, toggle the “Enable Services Anywhere’ button from **OFF** to **ON**.
+- Next click on **Services** to open and configure available services. To enable Managed Services Anywhere, Click "Edit" button.
 
-  ![GettingStarted2.png](../../images/cloud-application-manager/GettingStarted2.png)
+  ![getting-started-enable-msa-2.png](../../images/cloud-application-manager/getting-started-enable-msa-2.png)
 
-* Review and Accept the Enable Managed Services Terms by checking the checkbox and then click **Enable**.
+- MSA Workload Tiers (Default is Off)
+  - Optional Management of Compute & OS  (Off, Alerting, Managed)
+  - Optional Management of Non-native Databases  (Off, Alerting, Managed)
+    - Alerting option only available when Compute & OS set to Alerting or Managed
+    - Managed option only available when Compute & OS set to Managed
+  - Optional Management of Non-native Web Services  (Off, Alerting, Managed)
+    - Alerting option only available when Compute & OS set to Alerting or Managed
+    - Managed option only available when Compute & OS set to Managed
 
-  ![GettingStarted3.png](../../images/cloud-application-manager/GettingStarted3.png)
+  ![getting-started-enable-msa-3.png](../../images/cloud-application-manager/getting-started-enable-msa-3.png)
 
-After agreeing to Enable Managed Services Terms, you will be prompted to select the VPC(s) or Network(s) where your managed workloads are deployed and/or where you wish to deploy managed workloads.
+After setting your workload tier levels of management, Click the "Apply" button. You will be prompted to select the VPC(s) or Network(s) where your managed workloads are deployed and/or where you wish to deploy managed workloads.
 
 The make managed process will deploy a VM within the region(s) or VPC(s)/Networks(s) selected for the management appliance to be deployed on.
 
