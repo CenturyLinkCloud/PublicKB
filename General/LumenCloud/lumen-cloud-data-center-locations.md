@@ -1,17 +1,18 @@
 {{{
   "title": "Lumen Edge Computing Solutions Locations",
-  "date": "1-20-2021",
+  "date": "2-15-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false
 }}}
-Lumen is rapidly adding Edge Computing Solutions locations across the globe to provide customers low-latency hardware on-demand to power the workloads of next-gen technology. This document will be updated as we add new locations. 
+Lumen is rapidly adding Edge Computing Solutions locations across the globe to provide customers low-latency compute on-demand to power the workloads of next-gen technology. This document will be updated as Lumen adds new locations. 
 
 Below are tables that provide locations and availabilty for the expanding Edge Computing Solutions locations across the Lumen portfolio.  
 
-* **Lumen Public Cloud (LPC)**: (formerly CenturyLink Public Cloud) Multi-tenant computing service that enables flexible virtual machines and other datacenter services in a pay-as-you-go model.  
-* **Lumen Edge Bare Metal**: Bare-metal compute service, launching early 2021, that enables pay-as-you-go server hardware on-demand.  
-Over time, the Lumen Public Cloud service will be migrated to run on the Lumen Edge Cloud.
+* **Lumen Public Cloud (LPC)**: (formerly CenturyLink Public Cloud) Multi-tenant computing service that enables flexible virtual machines and other datacenter services in a pay-as-you-go model. Over time, the Lumen Public Cloud service will be migrated to run on the Lumen Edge Cloud.
+
+* **Lumen Edge Bare Metal**: Bare-metal compute service, launched in February 2021, enables pay-as-you-go server hardware on-demand.  
+
 * **Lumen Edge Colocation**: Sites operated by Lumen as well as from partner facilities in a re-sale model.  
 Any colocation model can be on-boarded as an Edge Hosting Environment where we can support a range of hybrid infrastructure managed services.
 
@@ -40,28 +41,29 @@ Argentina – AR1|Lumen| Av. Del Campo N°  1301, Buenos Aires, Argentina|Coming
 
 **Region**|**LEC Data Center**|**CLLI Code**|**Provider**|**Physical Address**|**More Information**
 ---------|-----------------|-----------------|-----------------|--------------------------------------------|------------------
-NA|Denver, CO|DNVTCO56|Lumen|1850 Pearl St., Denver, CO 80203|Available Today (Beta)
-NA|Phoenix, AZ|PHNDAZ91|Lumen|811 S. 16th Street, Phoenix, AZ 85034|Available Today (Beta)
-NA|Chicago, IL|BRVWILCU|Lumen|2101 Roberts Drive, Broadview, IL 60155|Available Today (Beta)
-NA|Pittsburgh, PA|PITEPADT|Lumen|143 South 25th Street Pittsburgh, PA 15203|Available Today (Beta)
-NA|Tampa, FL|TAMRFLWS|Lumen|7909 Woodland Center Blvd, Tampa, FL 33614|Available Today (Beta)
+NA|Denver, CO|DNVTCO56|Lumen|1850 Pearl St., Denver, CO 80203|Available Today 
+NA|Phoenix, AZ|PHNDAZ91|Lumen|811 S. 16th Street, Phoenix, AZ 85034|Available Today 
+NA|Chicago, IL|BRVWILCU|Lumen|2101 Roberts Drive, Broadview, IL 60155|Available Today 
+NA|Pittsburgh, PA|PITEPADT|Lumen|143 South 25th Street Pittsburgh, PA 15203|Available Today
+NA|Tampa, FL|TAMRFLWS|Lumen|7909 Woodland Center Blvd, Tampa, FL 33614|Available Today 
+NA|Seattle, WA|STTNWAHO|Lumen|1000 Denny Way, Seattle, WA 98109|Coming in March 2021 
+NA|Sacramento, CA|WSCRCAHW|Lumen|1075 Triangle Ct, West Sacramento, CA 95605|Coming in March 2021
+NA|Atlanta, GA|DRVLGAGZ|Lumen|6855 Crescent Dr, Atlanta, GA 30340|Coming in March 2021 
+NA|Sacramento, CA|WSCRCAHW|Lumen|1075 Triangle Ct, West Sacramento, CA 95605|Coming in March 2021
+NA|San Diego, CA|SNDACAGL|Lumen|8929 Aero Drive, San Diego, CA 92123|Coming in March 2021
+NA|Kansas City, MO|KSCBMOVS|Lumen|1212 East 19th Street, Kansas City, MO 64108|Coming in March 2021
+NA|Cincinnati, OH|CNCNOHBV|Lumen|400 Pike Street, Cincinnati, OH 45202|Coming in March 2021 
+NA|Minneapolis, MN|MNNTMNIC|Lumen|5480 Feltl Rd, Minnesota, MN 55343|Coming in March 2021
 NA|Nashville, TN|NSVMTN17|Lumen|2208 9th Avenue North, Nashville, TN 37208|Coming in 2021 
-NA|Minneapolis, MN|MNNTMNIC|Lumen|5480 Feltl Rd, Minnesota, MN 55343|Coming in 2021
-NA|Kansas City, MO|KSCBMOVS|Lumen|1212 East 19th Street, Kansas City, MO 64108|Coming in 2021
-NA|Sacramento, CA|WSCRCAHW|Lumen|1075 Triangle Ct, West Sacramento, CA 95605|Coming in 2021
 NA|Monmouth Junction, NJ|MNJTNJAB|Lumen|4260 US-1 N, Monmouth Junction, NJ 08852|Coming in 2021
 NA|Detroit, MI|DTRTMITK|Lumen|1965 Porter St, Detroit, MI 48216|Coming in 2021 
-NA|Atlanta, GA|DRVLGAGZ|Lumen|6855 Crescent Dr, Atlanta, GA 30340|Coming in 2021 
 NA|San Francisco, CA|EMVLCA04|Lumen|5000 Hollis Street, Emeryville, CA 94608|Coming in 2021 
-NA|Seattle, WA|STTNWAHO|Lumen|1000 Denny Way, Seattle, WA 98109|Coming in 2021 
 NA|Newark, NJ|MNJTNJAB|Lumen|4260 US Route 1 North, Newark, NJ 08852|Coming in 2021 
-NA|Cincinnati, OH|CNCNOHBV|Lumen|400 Pike Street, Cincinnati, OH 45202|Coming in 2021 
 NA|Raleigh, NC|RLGHNCJV|Lumen|5301 Departure Drive, Raleigh, NC 27616|Coming in 2021 
 NA|Las Vegas, NV|NLVGNVBV|Lumen|1 Aerojet Way North, Las Vegas, NV 89030|Coming in 2021 
 NA|Salt Lake City, UT|SLKDUTTX|Lumen|5035 Harold Gatty Drive, Salt Lake City, UT 84116|Coming in 2021
 NA|San Antonio, TX|SNAQTXKY|Lumen|5130 Service Center Drive, San Antonio,	TX 78218|Coming in 2021
 NA|El Paso, TX|ELPUTXAY|Lumen|501 W Overland, El Paso, TX 79901|Coming in 2021
-NA|San Diego, CA|SNDACAGL|Lumen|8929 Aero Drive, San Diego, CA 92123|Coming in 2021
 EMEA|London, England|LONDENEH|Lumen|260-266 Goswell Rd, Clerkenwell, London EC1V 7EB, UK|Coming in 2021
 LATAM|Cotia, Brazil|CTIABZAF|Lumen|Rua Eid. Manssur N° 666, Parque São George, Rodovia Raposo Tavares, Km 25, Cotia, Brazil|Coming in 2021 
 LATAM|Buenos Aires, Argentina|BNARAGMS|Lumen|Av. Del Campo N° 1301, Buenos Aires, Argentina|Coming in 2021
