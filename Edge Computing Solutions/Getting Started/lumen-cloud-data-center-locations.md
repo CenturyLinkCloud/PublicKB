@@ -3,7 +3,8 @@
   "date": "2-15-2021",
   "author": "Brandy Smith",
   "attachments": [],
-  "contentIsHTML": false
+  "contentIsHTML": false,
+  "sticky": true
 }}}
 Lumen is rapidly adding Edge Computing Solutions locations across the globe to provide customers low-latency compute on-demand to power the workloads of next-gen technology. This document will be updated as Lumen adds new locations. 
 
