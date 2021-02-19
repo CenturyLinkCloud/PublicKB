@@ -10,7 +10,7 @@
 
 ### Description
 
-Lumen Bare Metal servers are built with connectivity to either the Internet or an MPLS IPVPN (coming soon).
+Lumen Bare Metal servers are built with connectivity to either the Internet or an MPLS IPVPN(coming soon).
 This FAQ addresses how the access to these networks are setup for servers.
 
 
@@ -52,4 +52,4 @@ At this time, additional IP space is not supported. Only the /29 subnet that is 
 
 Egress from the datacenter’s switch fabric to either the Internet (AS3356) or the MPLS IPVPN network (AS3549) is provided by two diverse Provider Edge (PE) routers – one pair per each network. These PE pairs connect to a corresponding pair of switches in the fabric. Traffic can be forwarded through both PEs and will switchover automatically upon failure of a PE, switch or the link between them. This dual routing path is important to remember when utilizing traceroutes or other reporting. PE1 may be active today but PE2 become the active path tomorrow.
 
-You can learn more about how you are billed for Egress for Edge Bare Metal [here](.../edge-computing-solutions/getting-started/edge-bare-metal-billing/).
+You can learn more about how you are billed for Egress for Edge Bare Metal [here](../Getting Started/edge-bare-metal-billing).
