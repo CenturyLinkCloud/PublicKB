@@ -49,20 +49,14 @@ Customers should choose the Bandwidth selection that best fits their business ne
 
 Below is the Public Internet egress cost table.
 
- Public Egress Tier|Price per Byte|
-|------------------|--------------|
-|  0-1 GB          | Free         |
-|                  |              |
-|  2-10 TB         | $.07         |
-|                  |              |
-|  11-50 TB        | $.06         |
-|                  |              |
-|  51-150 TB       | $.05         |
-|                  |              |
-|  151-500 TB      | $.04         |
-|                  |              |
-| 501+ TB          | $.03         |
-|------------------|--------------|
+| Public Egress Tier | Price per Byte |
+|:------------------:|:--------------:|
+| 0-1 GB             | Free           |
+| 2-10 TB            | $.07           |
+| 11-50 TB           | $.06           |
+| 51-150 TB          | $.05           |
+| 151-500 TB         | $.04           |
+| 501+ TB            | $.03           |
 
 ## How will I be invoiced for Edge Bare Metal?
 
