@@ -17,28 +17,18 @@ Log in to the appropriate tenant within the Lumen Edge Orchestrator portal that 
 
 1. To start the Provision Server process, use the top navigation and choose **Provisioning**.
 2. Under the **Provisioning** tab, choose **Instances**.
-
-![PBM1](../../images/PBM1.png)
-
+  ![PBM1](../../images/PBM1.png)
 3. Once under the **Instances** tab, Click the **+ADD** button, this will begin the process of Provisioning a Bare Metal server.
-
-![PBM2](../../images/PBM2.png)
-
+  ![PBM2](../../images/PBM2.png)
 4. Create Instance Type
-
 Choose the operating system for this server and click the **NEXT** button.
 **Note** Some Operating Systems may have licensing fees associated with them, for ones that have a licensing fee the cost will be displayed in the portal prior to purchase.
 Currently, only free Open Source Operating Systems are available.
 Additional OS's will be made available in future releases and supporting documentation will be provided regarding how licensing costs are billed.
-
-![PBM3](../../images/PBM3.png)
-
+  ![PBM3](../../images/PBM3.png)
 5. Instance Summary
-
 In this section, you will see multiple fields.
-
-![PBM4](../../images/PBM4.png)
-
+  ![PBM4](../../images/PBM4.png)
 Below outlines what each field does in the image above.
 
 **Group**
@@ -66,14 +56,10 @@ An Instance’s environment label can be changed by editing the Instance.
 -Required field, free text, no cost
 Customers can add labels to the servers as they see fit.
 Labels just provide another way for customers to manage, report, or group servers.
-
 6. Configuration Options
-
 In this section, you will see multiple fields. Once you have made selections for all the required fields please review for accuracy and press the **NEXT** button to proceed to the next steps.
 Please note, there are some prerequisites and actions users must take for some fields below. Please read this section carefully before moving on to Step 7.
-
-![PBM5](../../images/PBM5.png)
-
+  ![PBM5](../../images/PBM5.png)
 Below outlines what each field does in the image above.
 
 **Version**
@@ -107,7 +93,7 @@ For estimated costing of the various locations where Edge Bare Metal is availabl
 -Required field, drop down, **cost based on Network type selection**
 This fields where you select your what Network type you want to connect to your Edge Bare Metal server.
 Currently there is only one Network type available, which is Public Internet, additional Network types, including IPVPN will be available in future releases.
-To learn more about the costs associated with Network type selections, please visit this [Knowledge Base article](../edge-computing-solutions/getting-started/edge-bare-metal-billing/).
+To learn more about the costs associated with Network type selections, please visit this [Knowledge Base article](../Getting Started/edge-bare-metal-billing/).
 
 **Bandwidth**
 -Required field, drop down, **Egress cost based on Bandwidth rate selection**
@@ -117,7 +103,7 @@ For Public Internet, Egress is charged based upon total number of bytes transfer
 Bandwidth selection identifies the requested rate limit for the internet port and is selected during the provisioning of the Bare Metal server instance.
 **Note:** Higher rate limits can pass more traffic, which could result in additional Internet charges.
 Customers should choose the Bandwidth selection that best fits their business needs to avoid unintended Internet charge spikes.
-Network charges are outlined in this [Knowledge Base article](../edge-computing-solutions/getting-started/edge-bare-metal-billing/).
+Network charges are outlined in this [Knowledge Base article](../Getting Started/edge-bare-metal-billing).
 
 **User Config**
 -Required field, pre-populated, no cost
@@ -134,21 +120,16 @@ In the event that you accidentally provision a server prior to adding your crede
 Phone 800-536-3273 or by email [EdgeServicesIncident@lumen.com](mailto:EdgeServicesIncident@lumen.com).
 
 User Groups can also be created to additionally add more users if needed.
-To learn more about how to add credentials for the instance type please visit this [Knowledge Base article](../edge-computing-solutions/administration/adding-users-and-roles).
-To learn more about overall User Management, please visit this [Knowledge Base article](../edge-computing-solutions/administration/user-management).
+
+To learn more about overall User Management, please visit this [Knowledge Base article](../Administration/user-management).
 
 **Advanced Options**
 -Non-Required fields, free text, no costs
 These fields are discretionary for the customer to use as they see fit.
-
 7. Lifecycle
-
 Currently, this section is not functional, please press the **NEXT** button to proceed.
-
 8. Review
-
-![PBM6](../../images/PBM6.png)
-
+  ![PBM6](../../images/PBM6.png)
 This is the final screen for customers to review all of the sections from the previous steps. Once you press the **COMPLETE** button, the server will begin provisioning.
 Once the server is successfully created, billing for that server configuration starts, so it is important that you review and ensure that your selections are accurate prior to hitting the **COMPLETE** button.
 Any billable components will show on the review screen.
@@ -158,4 +139,4 @@ Once you press the **COMPLETE** button your Bare Metal server will begin to prov
 You will see a live tracker that shows you the progression of your server build with an estimated time of completion.
 On average, large server configurations take up to 40 minutes to build, while smaller server configurations happen much faster.
 Once the server is built, billing has started and you can manage your Bare Metal Server by going to your **Dashboard** section, and finding the server under the **MY INSTANCES** section of the dashboard.
-To learn more about how to manage your Bare Metal servers, please visit this [Knowledge Base article](../edge-computing-solutions/getting-started/managing-bare-metal-instances).
+To learn more about how to manage your Bare Metal servers, please visit this [Knowledge Base article](../Getting Started/managing-bare-metal-instances).
