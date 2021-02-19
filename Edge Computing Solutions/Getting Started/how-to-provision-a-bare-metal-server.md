@@ -56,7 +56,6 @@ An Instance’s environment label can be changed by editing the Instance.
 -Required field, free text, no cost
 Customers can add labels to the servers as they see fit.
 Labels just provide another way for customers to manage, report, or group servers.
-
 6. Configuration Options
 In this section, you will see multiple fields. Once you have made selections for all the required fields please review for accuracy and press the **NEXT** button to proceed to the next steps.
 Please note, there are some prerequisites and actions users must take for some fields below. Please read this section carefully before moving on to Step 7.
@@ -94,7 +93,7 @@ For estimated costing of the various locations where Edge Bare Metal is availabl
 -Required field, drop down, **cost based on Network type selection**
 This fields where you select your what Network type you want to connect to your Edge Bare Metal server.
 Currently there is only one Network type available, which is Public Internet, additional Network types, including IPVPN will be available in future releases.
-To learn more about the costs associated with Network type selections, please visit this [Knowledge Base article](../getting-started/edge-bare-metal-billing/).
+To learn more about the costs associated with Network type selections, please visit this [Knowledge Base article](./edge-bare-metal-billing/).
 
 **Bandwidth**
 -Required field, drop down, **Egress cost based on Bandwidth rate selection**
@@ -104,7 +103,7 @@ For Public Internet, Egress is charged based upon total number of bytes transfer
 Bandwidth selection identifies the requested rate limit for the internet port and is selected during the provisioning of the Bare Metal server instance.
 **Note:** Higher rate limits can pass more traffic, which could result in additional Internet charges.
 Customers should choose the Bandwidth selection that best fits their business needs to avoid unintended Internet charge spikes.
-Network charges are outlined in this [Knowledge Base article](../edge-bare-metal-billing).
+Network charges are outlined in this [Knowledge Base article](./edge-bare-metal-billing).
 
 **User Config**
 -Required field, pre-populated, no cost
@@ -122,7 +121,7 @@ Phone 800-536-3273 or by email [EdgeServicesIncident@lumen.com](mailto:EdgeServi
 
 User Groups can also be created to additionally add more users if needed.
 
-To learn more about overall User Management, please visit this [Knowledge Base article](../administration/user-management).
+To learn more about overall User Management, please visit this [Knowledge Base article](../Administration/user-management).
 
 **Advanced Options**
 -Non-Required fields, free text, no costs
@@ -140,4 +139,4 @@ Once you press the **COMPLETE** button your Bare Metal server will begin to prov
 You will see a live tracker that shows you the progression of your server build with an estimated time of completion.
 On average, large server configurations take up to 40 minutes to build, while smaller server configurations happen much faster.
 Once the server is built, billing has started and you can manage your Bare Metal Server by going to your **Dashboard** section, and finding the server under the **MY INSTANCES** section of the dashboard.
-To learn more about how to manage your Bare Metal servers, please visit this [Knowledge Base article](../managing-bare-metal-instances).
+To learn more about how to manage your Bare Metal servers, please visit this [Knowledge Base article](./managing-bare-metal-instances).
