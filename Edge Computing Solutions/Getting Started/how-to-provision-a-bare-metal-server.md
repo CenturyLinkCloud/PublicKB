@@ -93,7 +93,7 @@ For estimated costing of the various locations where Edge Bare Metal is availabl
 -Required field, drop down, **cost based on Network type selection**
 This fields where you select your what Network type you want to connect to your Edge Bare Metal server.
 Currently there is only one Network type available, which is Public Internet, additional Network types, including IPVPN will be available in future releases.
-To learn more about the costs associated with Network type selections, please visit this [Knowledge Base article](../Getting Started/edge-bare-metal-billing/).
+To learn more about the costs associated with Network type selections, please visit this [Knowledge Base article](../Getting Started/edge-bare-metal-billing).
 
 **Bandwidth**
 -Required field, drop down, **Egress cost based on Bandwidth rate selection**
