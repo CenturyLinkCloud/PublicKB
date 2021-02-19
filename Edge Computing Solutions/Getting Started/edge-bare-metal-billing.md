@@ -27,7 +27,7 @@ The following options are available for sharing or saving the Estimate.
 3. Share via email.
 4. Share via a unique URL the Price Estimator tool creates and provides.
 
-### How am I billed for Edge Bare Metal?**
+### How am I billed for Edge Bare Metal?
 
 Customers are not billed for Edge Bare Metal services until a Bare Metal Server is provisioned via the Edge Orchestrator Portal.
 
@@ -49,20 +49,14 @@ Customers should choose the Bandwidth selection that best fits their business ne
 
 Below is the Public Internet egress cost table.
 
- Public Egress Tier|Price per Byte|
-|------------------|--------------|
-|  0-1 GB          | Free         |
-|------------------|--------------|
-|  2-10 TB         | $.07         |
-|------------------|--------------|
-|  11-50 TB        | $.06         |
-|------------------|--------------|
-| 51-150 TB        | $.05         |
-|------------------|--------------|
-| 151-500 TB       | $.04         |
-|------------------|--------------|
-| 501+ TB          | $.03         |
-|------------------|--------------|
+| Public Egress Tier | Price per Byte |
+|:------------------:|:--------------:|
+| 0-1 GB             | Free           |
+| 2-10 TB            | $.07           |
+| 11-50 TB           | $.06           |
+| 51-150 TB          | $.05           |
+| 151-500 TB         | $.04           |
+| 501+ TB            | $.03           |
 
 ## How will I be invoiced for Edge Bare Metal?
 
@@ -87,7 +81,7 @@ You can also reach the Control Center portal [here](https://www.lumen.com/login)
 You can learn more about viewing your invoice [here](https://www.lumen.com/help/en-us/control-center/billing/viewing-your-bill.html).
 You can learn more about your billing support options [here](https://www.lumen.com/help/en-us/control-center/billing.html).
 
-## How do I cancel my Edge Bare Metal service?**
+## How do I cancel my Edge Bare Metal service?
 
 You can stop all billing by deleting all of the Bare Metal instance, and will be charged a final bill of service for the usage on the last billing cycle.
 If you want to cancel your Edge Computing Solutions account, please reach out to your sales account manager or to the Lumen Edge Customer Care team 24/7 by phone 800-536-3273 or by email at [EdgeServicesIncident@lumen.com](mailto:EdgeServicesIncident@lumen.com).
