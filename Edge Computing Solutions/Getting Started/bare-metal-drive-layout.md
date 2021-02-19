@@ -16,7 +16,7 @@ This article applies specifically to the Edge Bare Metal servers which are Dell 
 At time of deployment, only the boot drive is formatted and configured for the installed Operating System.
 The other drives are available for customer use as they see fit.
 
-## The boot drive for Linux Operating Systems is configured as follows:
+**The boot drive for Linux Operating Systems is configured as follows:**
 
 1. /boot/efi  [1] a "fat32" partition used for booting the Operating System. In our deployments this is typically 536MiB
 2. The rest of the disk is configured to use LVM [2]. This allows post deployment configuration, including adding storage from other available local disks as needed.
