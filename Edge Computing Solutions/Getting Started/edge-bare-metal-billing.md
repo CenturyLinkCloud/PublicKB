@@ -42,14 +42,14 @@ Currently, only Public Internet is available as a Network type, but additional N
 
 ### Public Internet Egress Charges
 
-For Public Internet, Egress is charged based upon total number of bytes transferred over the course of the month.
+For Public Internet, Egress is charged based upon total number of gigabytes transferred over the course of the month.
 Bandwidth selection identifies the requested rate limit for the internet port and is selected during the provisioning of the Bare Metal server instance.
 **Note:** Higher rate limits can pass more traffic, which could result in additional Internet charges.
 Customers should choose the Bandwidth selection that best fits their business needs to avoid unintended Internet charge spikes.
 
 Below is the Public Internet egress cost table.
 
-| Public Egress Tier | Price per Byte |
+| Public Egress Tier | Price per GB   |
 |:------------------:|:--------------:|
 | 0-1 GB             | Free           |
 | 2-10 TB            | $.07           |
