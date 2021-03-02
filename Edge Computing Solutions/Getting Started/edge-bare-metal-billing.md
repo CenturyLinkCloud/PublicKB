@@ -46,13 +46,13 @@ For Public Internet, Egress is charged based upon total number of gigabytes tran
 Bandwidth selection identifies the requested rate limit for the internet port and is selected during the provisioning of the Bare Metal server instance.
 **Note:** Higher rate limits can pass more traffic, which could result in additional Internet charges.
 Customers should choose the Bandwidth selection that best fits their business needs to avoid unintended Internet charge spikes.
-
+Customers are charged for Bandwidth per GB, partial GB output is rounded up.
 Below is the Public Internet egress cost table.
 
 | Public Egress Tier | Price per GB   |
 |:------------------:|:--------------:|
 | 0-1 GB             | Free           |
-| 2-10 TB            | $.07           |
+| 2GB-10 TB          | $.07           |
 | 11-50 TB           | $.06           |
 | 51-150 TB          | $.05           |
 | 151-500 TB         | $.04           |
