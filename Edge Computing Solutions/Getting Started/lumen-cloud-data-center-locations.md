@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Computing Solutions Locations",
-  "date": "2-15-2021",
+  "date": "3-09-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -12,7 +12,7 @@ Below are tables that provide locations and availabilty for the expanding Edge C
 
 * **Lumen Public Cloud (LPC)**: (formerly CenturyLink Public Cloud) Multi-tenant computing service that enables flexible virtual machines and other datacenter services in a pay-as-you-go model. Over time, the Lumen Public Cloud service will be migrated to run on the Lumen Edge Cloud.
 
-* **Lumen Edge Bare Metal**: Bare-metal compute service, launched in February 2021, enables pay-as-you-go server hardware on-demand.  
+* **Lumen Edge Bare Metal**: Bare metal compute service, enables pay-as-you-go server hardware on-demand via the Edge Orchestrator Portal. Learn more about Edge Bare Metal [here](/edge-computing-solutions/edge-bare-metal/). 
 
 * **Lumen Edge Colocation**: Sites operated by Lumen as well as from partner facilities in a re-sale model.  
 Any colocation model can be on-boarded as an Edge Hosting Environment where we can support a range of hybrid infrastructure managed services.
@@ -47,14 +47,13 @@ NA|Phoenix, AZ|PHNDAZ91|Lumen|811 S. 16th Street, Phoenix, AZ 85034|Available To
 NA|Chicago, IL|BRVWILCU|Lumen|2101 Roberts Drive, Broadview, IL 60155|Available Today 
 NA|Pittsburgh, PA|PITEPADT|Lumen|143 South 25th Street Pittsburgh, PA 15203|Available Today
 NA|Tampa, FL|TAMRFLWS|Lumen|7909 Woodland Center Blvd, Tampa, FL 33614|Available Today 
-NA|Seattle, WA|STTNWAHO|Lumen|1000 Denny Way, Seattle, WA 98109|Coming in March 2021 
-NA|Sacramento, CA|WSCRCAHW|Lumen|1075 Triangle Ct, West Sacramento, CA 95605|Coming in March 2021
-NA|Atlanta, GA|DRVLGAGZ|Lumen|6855 Crescent Dr, Atlanta, GA 30340|Coming in March 2021 
-NA|Sacramento, CA|WSCRCAHW|Lumen|1075 Triangle Ct, West Sacramento, CA 95605|Coming in March 2021
-NA|San Diego, CA|SNDACAGL|Lumen|8929 Aero Drive, San Diego, CA 92123|Coming in March 2021
-NA|Kansas City, MO|KSCBMOVS|Lumen|1212 East 19th Street, Kansas City, MO 64108|Coming in March 2021
-NA|Cincinnati, OH|CNCNOHBV|Lumen|400 Pike Street, Cincinnati, OH 45202|Coming in March 2021 
-NA|Minneapolis, MN|MNNTMNIC|Lumen|5480 Feltl Rd, Minnesota, MN 55343|Coming in March 2021
+NA|Seattle, WA|STTNWAHO|Lumen|1000 Denny Way, Seattle, WA 98109|Available Today
+NA|Sacramento, CA|WSCRCAHW|Lumen|1075 Triangle Ct, West Sacramento, CA 95605|Available Today
+NA|Atlanta, GA|DRVLGAGZ|Lumen|6855 Crescent Dr, Atlanta, GA 30340|Available Today
+NA|San Diego, CA|SNDACAGL|Lumen|8929 Aero Drive, San Diego, CA 92123|Available Today
+NA|Kansas City, MO|KSCBMOVS|Lumen|1212 East 19th Street, Kansas City, MO 64108|Available Today
+NA|Cincinnati, OH|CNCNOHBV|Lumen|400 Pike Street, Cincinnati, OH 45202|Available Today
+NA|Minneapolis, MN|MNNTMNIC|Lumen|5480 Feltl Rd, Minnesota, MN 55343|Available Today
 NA|Nashville, TN|NSVMTN17|Lumen|2208 9th Avenue North, Nashville, TN 37208|Coming in 2021 
 NA|Monmouth Junction, NJ|MNJTNJAB|Lumen|4260 US-1 N, Monmouth Junction, NJ 08852|Coming in 2021
 NA|Detroit, MI|DTRTMITK|Lumen|1965 Porter St, Detroit, MI 48216|Coming in 2021 
