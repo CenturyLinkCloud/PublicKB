@@ -1,6 +1,6 @@
 {{{
   "title": "Edge Bare Metal Billing",
-  "date": "2-21-2021",
+  "date": "3-11-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -61,13 +61,18 @@ Below is the Public Internet egress cost table.
 ## How will I be invoiced for Edge Bare Metal?
 
 Edge Bare Metal allows customers the benefit of self-service management of their costs associated with their Bare Metal instances.
-Customers are automatically entered into a pay-as-you go model that allows the flexibility to turn on and off servers on-demand, as your budget and business needs change.
+Customers are automatically entered into a pay-as-you go model that allows the flexibility to spin up or delete servers on-demand, as your budget and business needs change.
 Customers can also enter into a Term based billing contract with spend discounting. Customers can work with their sales account manager to discuss their Term Commit options.
 Once a Bare Metal Server has been successfully provisioned billing starts.
 Customers are billed based on the configuration selections outlined above for each Bare Metal Server instance created.
 Customers will be invoiced monthly, in arrears for their total Edge Computing Solutions billable charges for active services during that billing period.
 
-Deleting a Bare Metal server will end billing for that server.
+The power states and applicable billing for an Edge Bare Metal server are as follows:
+* Provision a Bare Metal Server: Starts billing
+* On/Running: Continuosly bills at the hourly rate based on the server configuration and applicable services tied to the server. 
+* Stop: Stops the server but does NOT stop billing. 
+* Delete: Deleting a Bare Metal server will end billing for that server.
+
 Deleted servers will be charged based on the configuration, network charges, and other applicable services tied to the server during the up time of the server during a billing cycle.
 
 Currently, this service is only billable in USD. As this offer expands globally, the ability to bill and get estimates via the [Edge Price Estimator](https://www.ctl.io/estimator/) tool in additional currencies will be made available.
