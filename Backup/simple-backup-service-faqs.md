@@ -156,6 +156,24 @@ A: Yes. You can check the activities tab for an at-a-glance view of your most re
 
 A: This indicates that the data is actively being restored from the storage region associated with the policy to the server.
 
+
+**Q: What would be the most common reason for a "staged" status on a restore Job?**
+
+A: The below are the most common reason for the staged status of the SBS backup restore.
+
+ * Insufficient Disk Space
+
+   * We need to make sure that Target path have enough disk space
+     * Example: Error processing restore job! Local agent's jobId: user-31 - Error: com.ctl.clc.agent.filesystem.DiskSpaceDetails$InsufficientSpaceException: Requested              42753833984 but only 22661103616 is usable
+ * Disk is in Read only Mode
+
+   * We need to make sure that Target path disk is not in Read Only mode
+ * Treating "SBS Anywhere" servers as regular SBS servers when attempting to restore
+
+   * It appears that "SBS Anywhere" servers were treated as regular SBS servers when attempting to restore.
+   * Please try again and select the server from the "anywhere servers"
+   * Destination Location > Backup Anywhere > Anywhere Servers
+
 **Q: Can I select specific files/folders to restore from a restore point?**
 
 A: Yes. In the restore section, there is an option to perform a full restore or selective-file restore. Using the selective restore option allows you to enter the full path to a file or folder and gives you the option to add multiple paths to restore. While using the selective restore, function you are able to use `*` as a wildcard in the path or filename.
