@@ -23,3 +23,15 @@ Performing a restore is simple, just navigate over to the new restore tab
   * If you choose another server you will be presented with the server picker list to be able to choose any server that is available to be restored to.
 
 Upon filling out the form and pressing the restore button at the bottom of the page the restore job will be queued and picked up by the backup agent during its next check in (which happens every 10 minutes). You will also be taken to the Activities page where you can see the most recent backup and restore jobs and their statuses. If the target restore server is currently performing a backup, the restore job will not execute until that backup has been completed.
+
+The below are the most common reason for the staged status of the SBS backup restore.
+* Insufficient Disk Space
+   * We need to make sure that Target path have enough disk space
+     * Example: Error processing restore job! Local agent's jobId: user-31 - Error: com.ctl.clc.agent.filesystem.DiskSpaceDetails$InsufficientSpaceException: Requested 42753833984 but only 22661103616 is usable
+* Disk is in Read only Mode
+    * We need to make sure that Target path disk is not in Read Only mode
+  
+* Treating "SBS Anywhere" servers as regular SBS servers when attempting to restore
+   * It appears that "SBS Anywhere" servers were treated as regular SBS servers when attempting to restore.
+     * Please try again and select the server from the "anywhere servers"
+       * Destination Location > Backup Anywhere > Anywhere Servers
