@@ -21,7 +21,7 @@ Our Edge Customer Care team is available and ready to assist 24/7.
 - If applicable, determine if server OS is capable of receiving updates from OS vendor or from Lumen provided infrastructure, depending on OS.
 If applicable, for Lumen provided infrastructure, determine customer server OS is up-to-date and initiate update, if needed.
 - Troubleshooting client-based OpenVPN issues
-- IPVPN services connecting Edge Computing Services are supported through Lumen Control Center
+
 
 ### Audience
 
