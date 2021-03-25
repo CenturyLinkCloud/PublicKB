@@ -1,6 +1,6 @@
 {{{
   "title": "Edge Computing Solutions Support",
-  "date": "2-21-2021",
+  "date": "3-24-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -30,7 +30,7 @@ If applicable, for Lumen provided infrastructure, determine customer server OS i
 This article outlines the following support options and how to use each support option:
 
 1. Open a Support Ticket via the Lumen Edge Orchestrator Portal
-2. Phone Support
+2. Phone Support by region
 3. Live Click to Chat via the Lumen Edge Orchestrator Portal
 4. Email
 
@@ -50,7 +50,10 @@ Please provide as much of the following information as possible:
 
 ### Phone Support
 
-You can reach our Lumen Edge Customer Care specialist via phone 24/7/365 at 800-536-3273.
+You can reach our Lumen Edge Customer Care specialist via phone 24/7/365 at the following regional numbers:
+
+**US: 800-536-3273**
+**UK: 08005288798**
 
 Please be prepared with the following information for phone support.
 
@@ -79,3 +82,4 @@ Please be prepared with the following information for Click to Chat support.
 
 * Supported Operating Systems: Windows XP, Vista, 7, 8, 8.1, 10, Mac OS X 10.8 and newer
 * Supported browsers: Chrome 31 and newer, Mozilla Firefox 29 and newer, Internet Explorer 7 and newer, Safari 6 and newer, Opera 12 and newer
+* IMPORTANT: Chat is not supported in Chrome Incognito mode
