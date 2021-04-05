@@ -54,7 +54,7 @@ NA|San Diego, CA|SNDACAGL|Lumen|8929 Aero Drive, San Diego, CA 92123|Available T
 NA|Kansas City, MO|KSCBMOVS|Lumen|1212 East 19th Street, Kansas City, MO 64108|Available Today
 NA|Cincinnati, OH|CNCNOHBV|Lumen|400 Pike Street, Cincinnati, OH 45202|Available Today
 NA|Minneapolis, MN|MNNTMNIC|Lumen|5480 Feltl Rd, Minnesota, MN 55343|Available Today
-NA|Nashville, TN|NSVMTN17|Lumen|2208 9th Avenue North, Nashville, TN 37208|Available Today
+NA|Nashville, TN|NSVMTN17|Lumen|2990 Sidco Drive, Nashville, TN 37204|Available Today
 NA|Dallas,TX|DLLATX37|Lumen|3180 Irving Blvd, Dallas,TX 75247|Available Today
 NA|San Antonio, TX|SNAQTXKY|Lumen|5130 Service Center Drive, San Antonio,	TX 78218|Available Today
 NA|Santa Clara, CA|SNTDCADZ|Lumen|3045 Raymond StSanta Clara, CA 95054|Available Today
