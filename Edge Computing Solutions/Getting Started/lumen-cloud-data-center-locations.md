@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Computing Solutions Locations",
-  "date": "3-24-2021",
+  "date": "4-05-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -54,7 +54,7 @@ NA|San Diego, CA|SNDACAGL|Lumen|8929 Aero Drive, San Diego, CA 92123|Available T
 NA|Kansas City, MO|KSCBMOVS|Lumen|1212 East 19th Street, Kansas City, MO 64108|Available Today
 NA|Cincinnati, OH|CNCNOHBV|Lumen|400 Pike Street, Cincinnati, OH 45202|Available Today
 NA|Minneapolis, MN|MNNTMNIC|Lumen|5480 Feltl Rd, Minnesota, MN 55343|Available Today
-NA|Nashville, TN|NSVMTN17|Lumen|2208 9th Avenue North, Nashville, TN 37208|Available Today
+NA|Nashville, TN|NSVMTN17|Lumen|2990 Sidco Drive, Nashville, TN 37204|Available Today
 NA|Dallas,TX|DLLATX37|Lumen|3180 Irving Blvd, Dallas,TX 75247|Available Today
 NA|San Antonio, TX|SNAQTXKY|Lumen|5130 Service Center Drive, San Antonio,	TX 78218|Available Today
 NA|Santa Clara, CA|SNTDCADZ|Lumen|3045 Raymond StSanta Clara, CA 95054|Available Today
@@ -63,12 +63,12 @@ NA|Las Vegas, NV|NLVGNVBV|Lumen|1 Aerojet Way North, Las Vegas, NV 89030|Availab
 NA|Salt Lake City, UT|SLKDUTTX|Lumen|5035 Harold Gatty Drive, Salt Lake City, UT 84116|Available Today
 NA|Tustin, CA|TUSTCAFT|Lumen|14452 Franklin Ave, Tustin, CA 92780|Available Today
 NA|Miami, FL|MIATFLAD|Lumen|49 NW 5th St, Miami, FL 33128|Available Today
+NA|Detroit, MI|DTRTMITK|Lumen|1965 Porter St, Detroit, MI 48216|Available Today
+NA|Portland, OR|PTLGORIA|Lumen|1335 NW Northrup Street, Portland, OR 97209|Available Today
 NA|Monmouth Junction, NJ|MNJTNJAB|Lumen|4260 US-1 N, Monmouth Junction, NJ 08852|Coming in 2021
-NA|Detroit, MI|DTRTMITK|Lumen|1965 Porter St, Detroit, MI 48216|Coming in 2021 
 NA|San Francisco, CA|EMVLCA04|Lumen|5000 Hollis Street, Emeryville, CA 94608|Coming in 2021 
 NA|Newark, NJ|MNJTNJAB|Lumen|4260 US Route 1 North, Newark, NJ 08852|Coming in 2021 
 NA|Raleigh, NC|RLGHNCJV|Lumen|5301 Departure Drive, Raleigh, NC 27616|Coming in 2021 
-NA|Salt Lake City, UT|SLKDUTTX|Lumen|5035 Harold Gatty Drive, Salt Lake City, UT 84116|Coming in 2021
 NA|El Paso, TX|ELPUTXAY|Lumen|501 W Overland, El Paso, TX 79901|Coming in 2021
 LATAM|Cotia, Brazil|CTIABZAF|Lumen|Rua Eid. Manssur N° 666, Parque São George, Rodovia Raposo Tavares, Km 25, Cotia, Brazil|Coming in 2021 
 LATAM|Buenos Aires, Argentina|BNARAGMS|Lumen|Av. Del Campo N° 1301, Buenos Aires, Argentina|Coming in 2021
