@@ -1,6 +1,6 @@
 {{{
   "title": "How to Provision a Bare Metal Server",
-  "date": "2-21-2021",
+  "date": "4-21-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -110,17 +110,13 @@ Network charges are outlined in this [Knowledge Base article](../Getting Started
 This field applies the user configuration for access to the server.
 **Important**
 Before proceeding, please read.
-The customer needs to add credentials for the instance type (Linux or Windows) in their profile and then, the applicable credentials for the account of the user provisioning the server is added by default.
+
+The customer needs to add credentials for the instance type (Linux or Windows) in their profile. Then at deployment the applicable credentials for the provisioning user is added to the server by default. 
 If you have yet to add credentials for the instance type (Linux or Windows) to your profile, please do that step now.
 **Failure to add credentials for the instance type in the User Profile will cause you to be locked out of accessing the server.**
-In the event that you accidentally provision a server prior to adding your credentials, please reach out to our Edge Customer Care team to resolve.
-
-**How to Contact Support:**
-
-Phone 800-536-3273 or by email [EdgeServicesIncident@lumen.com](mailto:EdgeServicesIncident@lumen.com).
+In the event that you accidentally provision a server prior to adding your credentials, please delete the server, set your credentials, and deploy a new server.
 
 User Groups can also be created to additionally add more users if needed.
-
 To learn more about overall User Management, please visit this [Knowledge Base article](../Administration/user-management).
 
 **Advanced Options**
@@ -137,6 +133,6 @@ If you need to make a change to selections, you can use the **PREVIOUS** button 
 Once you have reviewed for accuracy, please press the **COMPLETE** button to proceed.
 Once you press the **COMPLETE** button your Bare Metal server will begin to provision.
 You will see a live tracker that shows you the progression of your server build with an estimated time of completion.
-On average, large server configurations take up to 40 minutes to build, while smaller server configurations happen much faster.
+On average, large server configurations take up to 30 minutes to build.
 Once the server is built, billing has started and you can manage your Bare Metal Server by going to your **Dashboard** section, and finding the server under the **MY INSTANCES** section of the dashboard.
 To learn more about how to manage your Bare Metal servers, please visit this [Knowledge Base article](../Getting Started/managing-bare-metal-instances).
