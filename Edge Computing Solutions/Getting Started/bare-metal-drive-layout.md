@@ -9,7 +9,7 @@
 
 ### Description
 
-This article applies specifically to the Edge Bare Metal servers which are Dell C6420 hardware systems, and explains how storage is delivered in these systems.
+This article applies specifically to the Edge Bare Metal servers and explains how storage is delivered in these systems.
 
 ### Details
 

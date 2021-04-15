@@ -42,7 +42,7 @@ Please contact Customer Care.
 One of our technicians will be happy to assist.
 You will need to provide the server name and your Tenant (Account) name when reaching out to Customer Care.
 
-•	If there’s no data that needs to be recovered, we recommend decommissioning the server by initiating a “Delete” in the Actions menu in the Hosts view or Host detailed views in the portal and provision a new bare metal server to replace the failed server.
+Note:	In the case of unrecoverable hardware failure the recommended course of action is decommissioning the server by initiating a “Delete” in the Actions menu in the Hosts view or Host detailed views in the portal and provision a new bare metal server to replace the failed server.
 
 
 More information on maintenance windows and SLA’s can be found [here](https://www.ctl.io/legal/lumen-edge-bare-metal/sla/).
