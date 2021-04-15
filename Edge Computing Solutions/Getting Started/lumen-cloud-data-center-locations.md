@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Computing Solutions Locations",
-  "date": "4-05-2021",
+  "date": "4-15-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -8,11 +8,16 @@
 }}}
 Lumen is rapidly adding Edge Computing Solutions locations across the globe to provide customers low-latency compute on-demand to power the workloads of next-gen technology. This document will be updated as Lumen adds new locations. 
 
-Below are tables that provide locations and availabilty for the expanding Edge Computing Solutions locations across the Lumen portfolio.  
+Below are tables that provide locations and availabilty for the expanding Edge Computing Solutions locations across the Lumen portfolio. 
+You can find service by location across our Hybrid IT portfolio in a map view [here](https://www.ctl.io/data-centers). 
+You can find service by location with latency coverage across our Edge portfolio [here](https://www.lumen.com/en-us/solutions/edge-computing.html#edge-computing-map).
 
 * **Lumen Public Cloud**: (formerly CenturyLink Public Cloud) Multi-tenant computing service that enables flexible virtual machines and other datacenter services in a pay-as-you-go model. Over time, the Lumen Public Cloud service will be migrated to run on the Lumen Edge Cloud.
 
 * **Lumen Edge Bare Metal**: Bare metal compute service, enables pay-as-you-go server hardware on-demand via the Edge Orchestrator Portal. Learn more about Edge Bare Metal [here](/edge-computing-solutions/edge-bare-metal/). 
+
+* **Lumen Network Storage**: Physically implemented storage pods located throughout the network,
+enabling real-time data action at the Edge. Learn more about Network Storage [here](/lumen-network-storage/). 
 
 * **Lumen Edge Colocation**: Sites operated by Lumen as well as from partner facilities in a re-sale model.  
 Any colocation model can be on-boarded as an Edge Hosting Environment where we can support a range of hybrid infrastructure managed services.
@@ -40,7 +45,7 @@ Argentina – AR1|Lumen| Av. Del Campo N°  1301, Buenos Aires, Argentina|Coming
 
 **Lumen Edge Bare Metal**
 
-**Region**|**LEC Data Center**|**CLLI Code**|**Provider**|**Physical Address**|**More Information**
+**Region**|**Data Center**|**CLLI Code**|**Provider**|**Physical Address**|**More Information**
 ---------|-----------------|-----------------|-----------------|--------------------------------------------|------------------
 NA|Denver, CO|DNVTCO56|Lumen|1850 Pearl St., Denver, CO 80203|Available Today 
 NA|Phoenix, AZ|PHNDAZ91|Lumen|811 S. 16th Street, Phoenix, AZ 85034|Available Today 
@@ -65,14 +70,35 @@ NA|Tustin, CA|TUSTCAFT|Lumen|14452 Franklin Ave, Tustin, CA 92780|Available Toda
 NA|Miami, FL|MIATFLAD|Lumen|49 NW 5th St, Miami, FL 33128|Available Today
 NA|Detroit, MI|DTRTMITK|Lumen|1965 Porter St, Detroit, MI 48216|Available Today
 NA|Portland, OR|PTLGORIA|Lumen|1335 NW Northrup Street, Portland, OR 97209|Available Today
-NA|Monmouth Junction, NJ|MNJTNJAB|Lumen|4260 US-1 N, Monmouth Junction, NJ 08852|Coming in 2021
 NA|San Francisco, CA|EMVLCA04|Lumen|5000 Hollis Street, Emeryville, CA 94608|Coming in 2021 
-NA|Newark, NJ|MNJTNJAB|Lumen|4260 US Route 1 North, Newark, NJ 08852|Coming in 2021 
 NA|Raleigh, NC|RLGHNCJV|Lumen|5301 Departure Drive, Raleigh, NC 27616|Coming in 2021 
 NA|El Paso, TX|ELPUTXAY|Lumen|501 W Overland, El Paso, TX 79901|Coming in 2021
 LATAM|Cotia, Brazil|CTIABZAF|Lumen|Rua Eid. Manssur N° 666, Parque São George, Rodovia Raposo Tavares, Km 25, Cotia, Brazil|Coming in 2021 
 LATAM|Buenos Aires, Argentina|BNARAGMS|Lumen|Av. Del Campo N° 1301, Buenos Aires, Argentina|Coming in 2021
 EMEA|London, England|LONDENEH|Lumen|260-266 Goswell Rd, Clerkenwell, London EC1V 7EB, UK|Coming in 2021
+
+**Lumen Network Storage**
+
+**Region**|**Data Center**|**CLLI Code**|**Provider**|**Physical Address**|**Storage Type**|**More Information**
+---------|-----------------|-----------------|-----------------|--------------------------------------------|------------------
+NA|Denver, CO|DNVTCO56|Lumen|1850 Pearl St., Denver, CO 80203|Block/File|Available Today
+NA|Phoenix, AZ|PHNDAZ91|Lumen|811 S. 16th Street, Phoenix, AZ 85034|Block/File/Object|Coming in 2021 	
+NA|Tampa, FL|TAMRFLWS|Lumen|7909 Woodland Center Blvd, Tampa, FL 33614|Block/File|Coming in 2021 
+NA|Chicago, IL|BRVWILCU|Lumen|2101 Roberts Drive, Broadview, IL 60155|Block/File|Coming in 2021 
+NA|New York, NY|NYCPNYYK|Lumen|601 W 26th St, New York, NY 10001|Block/File|Coming in 2021 
+NA|St. Louis, MO|STLSMOPL|Lumen|1015 Locust St., St. Louis, MO 63101|Block/File|Coming in 2021 
+NA|Dallas,TX|DLLATX37|Lumen|3180 Irving Blvd, Dallas,TX 75247|Block/File|Coming in 2021 
+NA|Santa Clara, CA|SNTDCADZ|Lumen|3045 Raymond StSanta Clara, CA 95054|Block/File|Coming in 2021 
+NA|Minneapolis, MN|MNNTMNIC|Lumen|5480 Feltl Rd, Minnesota, MN 55343|Block/File|Coming in 2021 
+NA|Atlanta, GA|DRVLGAGZ|Lumen|6855 Crescent Dr, Atlanta, GA 30340|Block/File/Object|Coming in 2021 
+NA|Tustin, CA|TUSTCAFT|Lumen|14452 Franklin Ave, Tustin, CA 92780|Block/File|Coming in 2021 
+NA|Seattle, WA|STTNWAHO|Lumen|1000 Denny Way, Seattle, WA 98109|Block/File|Coming in 2021
+NA|Herndon, VA|HRNDVAIZ|Lumen|524 Van Buren St., Herndon, VA 20170|Block/File|Coming in 2021
+NA|Portland, OR|PTLGORIA|Lumen|1335 NW Northrup Street, Portland, OR 97209|Block/File|Coming in 2021
+NA|Honolulu, OR|MLUAHIAK|Lumen|550 Paiea St, Honolulu, HI 96819|Block/File|Coming in 2021
+CA|Toronto, CA|TORVONRF|Lumen|8 Garamond Ct, North York, ON M3C 1Z4,Canada|Block/File|Coming in 2021
+CA|Vancouver, CA|VANCBCHC|Lumen|555 W Hastings St, Vancouver, BC V6B 4N4,CanadaBlock/File|Coming in 2021
+
 
 **Lumen Edge Colocation**
 
