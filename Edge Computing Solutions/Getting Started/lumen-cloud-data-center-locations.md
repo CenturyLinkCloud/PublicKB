@@ -80,7 +80,7 @@ EMEA|London, England|LONDENEH|Lumen|260-266 Goswell Rd, Clerkenwell, London EC1V
 **Lumen Network Storage**
 
 **Region**|**Data Center**|**CLLI Code**|**Provider**|**Physical Address**|**Storage Type**|**More Information**
----------|-----------------|-----------------|-----------------|--------------------------------------------|------------------
+----------|---------------|-------------|------------|--------------------|----------------|--------------------|
 NA|Denver, CO|DNVTCO56|Lumen|1850 Pearl St., Denver, CO 80203|Block/File|Available Today
 NA|Phoenix, AZ|PHNDAZ91|Lumen|811 S. 16th Street, Phoenix, AZ 85034|Block/File/Object|Coming in 2021 	
 NA|Tampa, FL|TAMRFLWS|Lumen|7909 Woodland Center Blvd, Tampa, FL 33614|Block/File|Coming in 2021 
