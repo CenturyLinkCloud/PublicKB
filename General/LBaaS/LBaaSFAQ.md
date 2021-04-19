@@ -65,3 +65,7 @@ Balancer instances created prior to LBaaS availability will remain in tact and o
 
 
 Any new instances of the new LBaaS service after service availability will be priced according to our [pricing catalog](//www.ctl.io/pricing).
+
+**Q:** Can I add public IP addresses to my load balancer pools?
+
+**A:** No, this is not possible. Using private server IPs is the most efficient way of balancing traffic and is the only option.

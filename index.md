@@ -14,7 +14,6 @@
     "Disaster Recovery",
     "General",
     "Managed Services",
-    "Marketplace",
     "Network",
     "Partners",
     "Release Notes",
