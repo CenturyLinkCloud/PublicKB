@@ -8,10 +8,10 @@
 
 ### Announcements (7)
 
-#### CenturyLink Cloud
+#### Lumen Cloud
 
 ##### SAML Certificate Update - *Action may be required!*
-If you are using SAML authentication you will need to update the signing certificate for use with your IdP as of February 9, 2019. You can find the updated certificate within our [SAML knowledge base article](../../Control Portal/using-saml-for-single-sign-on-to-the-centurylink-platform-control-portal.md). Please update the certificate in order to continue SAML authentication.
+If you are using SAML authentication you will need to update the signing certificate for use with your IdP as of February 9, 2019. You can find the updated certificate within our [SAML knowledge base article](../../Control Portal/using-saml-for-single-sign-on-to-the-lumen-platform-control-portal.md). Please update the certificate in order to continue SAML authentication.
 
 #### [Cloud Application Manager](https://www.ctl.io/cloud-application-manager/)
 
@@ -27,7 +27,7 @@ Cloud Application Manager was using certain Google+ API on its OAuth integration
 
 ##### Support for Proxy in Agent Connection
 
-Application Lifecycle Management now supports configuring a proxy for the agent to contact back to Cloud Application Manager. The user will have the ability to set up the proxy address and port values in any deployment policy configuration. These values will be used by the agent installed on the machine to contact Cloud Application Manager back, so it enables certain network restricted use cases to be supported and managed by Cloud Application Manager. The new proxy support in agent connection feature will be available for all provider types, such as AWS, Azure, CenturyLink Cloud, CenturyLink Private Cloud on VMWare Cloud Foundation, CenturyLink DCC, Google Cloud, IBM Cloud, vCloud and vCenter environments, etc.
+Application Lifecycle Management now supports configuring a proxy for the agent to contact back to Cloud Application Manager. The user will have the ability to set up the proxy address and port values in any deployment policy configuration. These values will be used by the agent installed on the machine to contact Cloud Application Manager back, so it enables certain network restricted use cases to be supported and managed by Cloud Application Manager. The new proxy support in agent connection feature will be available for all provider types, such as AWS, Azure, Lumen Cloud, Lumen Private Cloud on VMWare Cloud Foundation, Lumen DCC, Google Cloud, IBM Cloud, vCloud and vCenter environments, etc.
 
 ##### Manual Terminate and Shutdown protection
 

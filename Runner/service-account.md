@@ -11,12 +11,12 @@
 
 ### Audience
 
-This article is to support customers of Runner, a product that enables teams, developers, and engineers to quickly provision, interact, and modify their environments anywhere - CenturyLink Cloud, third-party cloud providers, and on-premises.  Additionally, the responses in this FAQ document are specific to using the service through the Control Portal.
+This article is to support customers of Runner, a product that enables teams, developers, and engineers to quickly provision, interact, and modify their environments anywhere - Lumen Cloud, third-party cloud providers, and on-premises.  Additionally, the responses in this FAQ document are specific to using the service through the Control Portal.
 
 
 ### Service Account Overview
 
-The Service Account alias is a secure store of a users credentials. These credentials are associated with a Job and a Schedule. When the schedule fires these credentials will be used to authenticate to CenturyLink Cloud to retrieve the necessary tokens to execute the job. The credentials are stored in a secure format separate from the job definition and other account identifying elements.
+The Service Account alias is a secure store of a users credentials. These credentials are associated with a Job and a Schedule. When the schedule fires these credentials will be used to authenticate to Lumen Cloud to retrieve the necessary tokens to execute the job. The credentials are stored in a secure format separate from the job definition and other account identifying elements.
 
 * [Create Service Account via Runner UI](#create-service-account-via-runner-ui)
 * [Create Service Account via Runner API](#create-service-account-via-runner-api)
@@ -34,7 +34,7 @@ The Service Account alias is a secure store of a users credentials. These creden
 
 3. Input the following information:
     * The Service Account Alias, this can be anything you want but it should be descriptive.
-    * The CenturyLink Cloud User Name that you want associated with this Service Account.
+    * The Lumen Cloud User Name that you want associated with this Service Account.
     * The password that corresponds with the User Name you entered above.
 
 4. Click the Save button and your service account will be created.
@@ -45,7 +45,7 @@ The Service Account alias is a secure store of a user's credentials. These crede
 
 **When to use it**
 
-Use this API to create Service Account alias under your CenturyLink Cloud account and use this alias for executing scheduled jobs.
+Use this API to create Service Account alias under your Lumen Cloud account and use this alias for executing scheduled jobs.
 
 ##### URL
 **Structure**
@@ -61,15 +61,15 @@ Use this API to create Service Account alias under your CenturyLink Cloud accoun
 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
 | --- | --- | --- | --- |
-| accountAlias |	string |	Short code of your CenturyLink Cloud Account Alias. |	Yes |
+| accountAlias |	string |	Short code of your Lumen Cloud Account Alias. |	Yes |
 
 **Entity Definition**
 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
 | --- | --- | --- | --- |
 | alias |	string |	Enter your Service Account Alias name. |	Yes |
-| username |	string |	Your CenturyLink Cloud Account username. |	Yes |
-| password |	string |	Your CenturyLink Cloud Account password. |	Yes |
+| username |	string |	Your Lumen Cloud Account username. |	Yes |
+| password |	string |	Your Lumen Cloud Account password. |	Yes |
 
 ##### Response
 
@@ -80,10 +80,10 @@ The response will list the details of the new Service Account alias created.
 | NAME | TYPE |	DESCRIPTION	|
 | --- | --- | --- |
 | id |	string |	ID of your new Service Account Alias. |
-| accountAlias |	string |	Short code of your CenturyLink Cloud Account Alias. |
+| accountAlias |	string |	Short code of your Lumen Cloud Account Alias. |
 | alias |	string |	Your Service Account Alias name. |
-| username |	string |	Your CenturyLink Cloud Account username. |
-| password |	string |	Your CenturyLink Cloud Account password. |
+| username |	string |	Your Lumen Cloud Account username. |
+| password |	string |	Your Lumen Cloud Account password. |
 
 **Example**
 
@@ -103,7 +103,7 @@ The Service Account alias is a secure store of a users credentials. These creden
 
 **When to use it**
 
-Use this API to view all the Service Account alias under your CenturyLink Cloud account alias.
+Use this API to view all the Service Account alias under your Lumen Cloud account alias.
 
 ##### URL
 **Structure**
@@ -119,11 +119,11 @@ Use this API to view all the Service Account alias under your CenturyLink Cloud 
 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
 | --- | --- | --- | --- |
-| accountAlias |	string |	Short code of your CenturyLink Cloud Account Alias. |	Yes |
+| accountAlias |	string |	Short code of your Lumen Cloud Account Alias. |	Yes |
 
 ##### Response
 
-The response will provide an array of all Service Account alias created under your CenturyLink Cloud Account.
+The response will provide an array of all Service Account alias created under your Lumen Cloud Account.
 
 **Entity Definition**
 
@@ -150,7 +150,7 @@ The Service Account alias is a secure store of a users credentials. These creden
 
 **When to use it**
 
-Use this API to update your existing Service Account alias credentials under your CenturyLink Cloud account.
+Use this API to update your existing Service Account alias credentials under your Lumen Cloud account.
 
 ##### URL
 **Structure**
@@ -166,15 +166,15 @@ Use this API to update your existing Service Account alias credentials under you
 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
 | --- | --- | --- | --- |
-| accountAlias |	string |	Short code of your CenturyLink Cloud Account Alias. |	Yes |
+| accountAlias |	string |	Short code of your Lumen Cloud Account Alias. |	Yes |
 | alias |	string |	Your Service Account Alias name to be updated. |	Yes |
 
 **Entity Definition**
 
 | NAME | TYPE |	DESCRIPTION	| REQ.|
 | --- | --- | --- | --- |
-| username |	string |	Your CenturyLink Cloud Account username. |	Yes |
-| password |	string |	Your CenturyLink Cloud Account password. |	Yes |
+| username |	string |	Your Lumen Cloud Account username. |	Yes |
+| password |	string |	Your Lumen Cloud Account password. |	Yes |
 
 ##### Response
 
@@ -185,10 +185,10 @@ The response will contain the updated Service Account alias details.
 | NAME | TYPE |	DESCRIPTION	|
 | --- | --- | --- |
 | id |	string |	ID of your new Service Account Alias. |
-| accountAlias |	string |	Short code of your CenturyLink Cloud Account Alias. |
+| accountAlias |	string |	Short code of your Lumen Cloud Account Alias. |
 | alias |	string |	Your Service Account Alias name. |
-| username |	string |	Your CenturyLink Cloud Account username. |
-| password |	string |	Your CenturyLink Cloud Account password. |
+| username |	string |	Your Lumen Cloud Account username. |
+| password |	string |	Your Lumen Cloud Account password. |
 
 **Example**
 

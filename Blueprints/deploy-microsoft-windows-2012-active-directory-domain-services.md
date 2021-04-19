@@ -6,11 +6,11 @@
   "contentIsHTML": false
 }}}
 
-### Deploy Microsoft Windows 2012 Active Directory Domain Services using CenturyLink Cloud Blueprint
-CenturyLink Cloud customers can deploy Microsoft Windows 2012 Active Directory Domain Servers using the Execute Packages functions or Blueprints within the Control Portal. Public Packages are available for both the primary and secondary domain controllers.
+### Deploy Microsoft Windows 2012 Active Directory Domain Services using Lumen Cloud Blueprint
+Lumen Cloud customers can deploy Microsoft Windows 2012 Active Directory Domain Servers using the Execute Packages functions or Blueprints within the Control Portal. Public Packages are available for both the primary and secondary domain controllers.
 
 ### Prerequisites
-* A CenturyLink Cloud Account
+* A Lumen Cloud Account
 * Supported Guest Operating Systems
   * Windows 2012 Datacenter 64-bit
   * Windows 2012 R2 Datacenter 64-bit
@@ -51,7 +51,7 @@ Customers who wish to layer Windows 2012 Active Directory Domain Services onto e
    ![](../images/deploy-active-directory-7.png)
 
 ### Deploying Windows 2012 Active Directory Domain Services using Blueprints
-Customers who are building greenfield environments in the CenturyLink Cloud may wish to use Blueprints to deploy Single or Dual Domain Controllers and Active Directory Domain Services in an automated fashion. Blueprint provide a tool for customers to build environments for multiple deployments.  
+Customers who are building greenfield environments in the Lumen Cloud may wish to use Blueprints to deploy Single or Dual Domain Controllers and Active Directory Domain Services in an automated fashion. Blueprint provide a tool for customers to build environments for multiple deployments.  
 
 To Deploy Windows 2012 Active Directory Domain Services using this approach follow the [How to Build a Blueprint](how-to-build-a-blueprint.md) Knowledge Base article and use the public script packages Install Active Directory on Windows 2012 (1 of 2) [Primary Node] & Install Active Directory on Windows 2012 (2 of 2) [Secondary Node] in conjunction with Windows 2012 Virtual Machine builds.
 ![](../images/deploy-active-directory-8.png)

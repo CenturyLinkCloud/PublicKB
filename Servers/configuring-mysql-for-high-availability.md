@@ -8,12 +8,12 @@
 
 <p><strong>Description</strong></p>
 
-<p>Simple scalability and easy elasticity are key benefits of any cloud environment, and along with features like self-service load balancer configurations and autoscaling, CenturyLink Cloud enables users to easily deploy applications with high-availability
+<p>Simple scalability and easy elasticity are key benefits of any cloud environment, and along with features like self-service load balancer configurations and autoscaling, Lumen Cloud enables users to easily deploy applications with high-availability
   architectures. While this is especially true for most web applications, the database tier, particularly when it is a traditional relational database like MySQL, can often become the performance bottleneck or the single point of failure for many workloads
   because it can sometimes be a challenge to scale it out. While a vertical autoscale can help handle peak usage for performance, it doesn't cut it when you're looking for high availability from your relational database.</p>
 
 <p><a href="http://dev.mysql.com/doc/refman/5.7/en/ha-overview.html">MySQL offers a number of high-availability configurations</a>, but perhaps the two most commonly implemented are <a href="#replication">Replication</a> and <a href="#clustering">Clustering</a>.
-  In this article, we will explore both types of MySQL high-availability options and walkthrough the steps for deploying them on the CenturyLink Cloud.</p>
+  In this article, we will explore both types of MySQL high-availability options and walkthrough the steps for deploying them on the Lumen Cloud.</p>
 
 <p>
   <a name="replication"></a>
@@ -27,9 +27,9 @@ Replication
   in <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-performance.html">performance degradation</a> of the master). In the case of a failover situation, if your master goes down, you can (manually) <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-switch.html"
  >turn any slave into the master</a> and have the system back up in less time than it might take to rebuild from backups. And, of course, you may simply want to use them to <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-scaleout.html"
  >scale out </a>your environment and spread your load across multiple servers as you might do on the web tier as well (remember though, the app can read from any slave, but it must always write to the master). Whatever the scenario you
-  plan to use replication for, the below steps will walk you through getting MySQL master and slave instances up and running on the CenturyLink Cloud.</p>
+  plan to use replication for, the below steps will walk you through getting MySQL master and slave instances up and running on the Lumen Cloud.</p>
 
-<h3>Steps to Configure MySQL <em>Replication</em> on CenturyLink Cloud</h3>
+<h3>Steps to Configure MySQL <em>Replication</em> on Lumen Cloud</h3>
 
 <p>These steps describe the process to bring up one master and one slave, but you can repeat the steps to create the slave and deploy multiple ones if you wish. While there are many possible MySQL replication options (including the ability to replicate all
   databases, a specific database, or specific tables), the following outlines a good baseline to configure replication for a single database. You should consult the <a href="http://dev.mysql.com/doc/refman/5.7/en/replication.html">MySQL documentation</a>  for more details.</p>
@@ -127,8 +127,8 @@ Replication
     meaning it works well with minimally specced hardware, each with its own memory and disk. MySQL Cluster combines the standard MySQL server with an in-memory clustered storage engine called NDB (Network DataBase), and so it sometimes referred to as
     an NDB cluster.&nbsp;A MySQL Cluster consists of multiple nodes of different types,&nbsp;including MySQL servers (for access to NDB data), data nodes (for storage of the data), and one or more management servers. All data in an NDB cluster&nbsp;is
     stored in the data nodes and the tables are directly accessible from all other SQL nodes in the cluster. This differs from the replication methodology in that there is no master-slave relationship - all data nodes contain copies of the data, but you
-    can read or write to the tables using any of the SQL nodes in the cluster. The following steps will walk you through getting MySQL Cluster installed, configured, and started up on the CenturyLink Cloud.</p>
-  <h3>Steps to Configure MySQL <em>Cluster</em> on CenturyLink Cloud</h3>
+    can read or write to the tables using any of the SQL nodes in the cluster. The following steps will walk you through getting MySQL Cluster installed, configured, and started up on the Lumen Cloud.</p>
+  <h3>Steps to Configure MySQL <em>Cluster</em> on Lumen Cloud</h3>
   <p>These steps describe the process to bring up one management (ndb_mgmd) node, one SQL (mysqld) node, and two data (ndbd) nodes. This is the absolute minimum required number of servers for a cluster to work. It is highly recommended to create multiple
     SQL nodes (following the same steps listed below for the SQL node), and additional data nodes as needed, and it is even possible to set up multiple management nodes (though this is less critical since a cluster can function for some time without the
     ndb_mgmd node being up). There are plenty of configuration options as well as <a href="http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster-limitations.html">some limitations</a> to using clustering, so the <a href="http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html"

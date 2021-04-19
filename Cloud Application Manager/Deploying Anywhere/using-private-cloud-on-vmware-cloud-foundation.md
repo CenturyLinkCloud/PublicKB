@@ -1,8 +1,8 @@
 {{{
-"title": "Using CenturyLink Private Cloud on VMware Cloud Foundation",
+"title": "Using Lumen Private Cloud on VMware Cloud Foundation",
 "date": "04-02-2019",
 "author": "Julio Castanar & Sergio Quintana",
-"keywords": ["cam","centurylink private cloud", "cpc on vcf", "vmware cloud foundation", "deploy", "provider"],
+"keywords": ["cam","lumen private cloud", "cpc on vcf", "vmware cloud foundation", "deploy", "provider"],
 "attachments": [],
 "sticky": true,
 "contentIsHTML": false
@@ -13,31 +13,31 @@
 * [Overview](#overview)
 * [Audience](#audience)
 * [Prerequisites](#prerequisites)
-* [Register CenturyLink Private Cloud on VMware Cloud Foundation as Provider](#register-centurylink-private-cloud-on-vmware-cloud-foundation-as-provider)
+* [Register Lumen Private Cloud on VMware Cloud Foundation as Provider](#register-lumen-private-cloud-on-vmware-cloud-foundation-as-provider)
 * [Enabling services](#enabling-services)
-* [Deploy to CenturyLink Private Cloud from Cloud Application Manager](#deploy-to-centurylink-private-cloud-from-cloud-application-manager)
+* [Deploy to Lumen Private Cloud from Cloud Application Manager](#deploy-to-lumen-private-cloud-from-cloud-application-manager)
 * [Naming vCloud resources](#naming-vcloud-resources)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 ### Overview
 
-This article is meant to assist users of Cloud Application Manager to learn how to deploy CenturyLink Private Cloud on VMware Cloud Foundation Provider.
+This article is meant to assist users of Cloud Application Manager to learn how to deploy Lumen Private Cloud on VMware Cloud Foundation Provider (CPC on VCF).
 
 ### Audience
 
-All Cloud Application Manager users who wants to deploy workloads into CenturyLink Private Cloud on VMware Cloud Foundation Provider.
+All Cloud Application Manager users who wants to deploy workloads into Lumen Private Cloud on VMware Cloud Foundation Provider.
 
 ### Prerequisites
 
 * You must have a Cloud Application Manager Account
-* Your base URL, and user credentials for CenturyLink Private Cloud on VMware Cloud Foundation
+* Your base URL, and user credentials for Lumen Private Cloud on VMware Cloud Foundation
 * [Install VMware tools](https://pubs.vmware.com/vcd-51/index.jsp?topic=%2Fcom.vmware.vcloud.users.doc_51%2FGUID-9BB72070-65E9-4458-84C3-05D8247C7343.html) on vApp templates in the catalog. This doesn’t apply to public vApp templates, which already have them.
 
-### Register CenturyLink Private Cloud on VMware Cloud Foundation as Provider
+### Register Lumen Private Cloud on VMware Cloud Foundation as Provider
 
-To enable a Cloud Application Manager Provider for CenturyLink Private Cloud on VMware Cloud Foundation™ see the example [Configure a Provider for Cloud Application Manager](../../CenturyLink Private Cloud on VMware Cloud Foundation/General/cam-provider.md).
+To enable a Cloud Application Manager Provider for Lumen Private Cloud on VMware Cloud Foundation™ (CPC on VCF) see the example [Configure a Provider for Cloud Application Manager](../../Lumen Private Cloud on VMware Cloud Foundation/General/cam-provider.md).
 
-![CenturyLink Private Cloud on VMware Cloud Foundation add Provider](../../images/dccf/cam-provider3.png)
+![Lumen Private Cloud on VMware Cloud Foundation add Provider](../../images/dccf/cam-provider3.png)
 
 ### Enabling services
 
@@ -45,11 +45,11 @@ To enable a Cloud Application Manager Provider for CenturyLink Private Cloud on 
 
 ![Services tab](../../images/cloud-application-manager/Services-tab-DCCf.png)
 
-### Deploy to CenturyLink Private Cloud from Cloud Application Manager
+### Deploy to Lumen Private Cloud from Cloud Application Manager
 
-Create a [deployment policy](../Automating Deployments/deploymentpolicy-box.md) to encapsulate parameters required to deploy Linux or Windows vApps through the CenturyLink Private Cloud on VMware Cloud Foundation provider
+Create a [deployment policy](../Automating Deployments/deploymentpolicy-box.md) to encapsulate parameters required to deploy Linux or Windows vApps through the Lumen Private Cloud on VMware Cloud Foundation provider
 
-![CenturyLink Private Cloud on VMware Cloud Foundation Policy Box](../../images/cloud-application-manager/deploying-anywhere/cpc-vcf/cpc-vcf-policy.png)
+![Lumen Private Cloud on VMware Cloud Foundation Policy Box](../../images/cloud-application-manager/deploying-anywhere/cpc-vcf/cpc-vcf-policy.png)
 
 At deploy time, Cloud Application Manager auto provisions vApps, one template per VM, and orchestrates workload automation on them.
 
@@ -63,7 +63,7 @@ Edit the deployment policy to set the following parameters for deploying to vClo
 
 | Option | Description |
 |--------|-------------|
-| Organization | Select the organization in CenturyLink Private Cloud. The organization is a virtual container for vApp templates, vApps, media images, and disks. |
+| Organization | Select the organization in Lumen Private Cloud. The organization is a virtual container for vApp templates, vApps, media images, and disks. |
 | Catalog | Select the catalog that contains the vApp template for deployment. The catalog stores vApp templates and media files. Select from shared, private, and public catalogs that your organization can access. |
 | vApp Template | Select a vApp template from the catalog. VMs imported as OVFs then uploaded as templates are also listed. |
 | Customization Password | Optionally, provide a custom VM administrator password. If you leave this empty, the default administrator password from the template applies.|

@@ -7,7 +7,8 @@
 }}}
 
 ### Description
-Creating a bare metal server on CenturyLink Cloud follows a similar flow as [creating a virtual server](../Servers/creating-a-new-enterprise-cloud-server.md), with a few exceptions. The steps below demonstrate how to provision new bare metal machines in the CenturyLink Cloud. For specifications on which capabilities are supported for bare metal servers as opposed to virtual machines, you may reference the [Server Comparison Matrix](../Servers/server-comparison-matrix.md) for details. For more information on Bare Metal servers in general, please refer to the [Bare Metal FAQ](../Servers/bare-metal-faq.md).
+Creating a bare metal server on Lumen Cloud follows a similar flow as [creating a virtual server](../Servers/creating-a-new-enterprise-cloud-server.md), with a few exceptions. The steps below demonstrate how to provision new bare metal machines in the Lumen Cloud. For specifications on which capabilities are supported for bare metal servers as opposed to virtual machines, you may reference the [Server Comparison Matrix](../Servers/server-comparison-matrix.md) for details. For more information on Bare Metal servers in general, please refer to the [Bare Metal FAQ](../Servers/bare-metal-faq.md). 
+**IMPORTANT.** Please take note of the section related to data security and recovery in the event of hardware failure in the FAQ's to ensure your achitecture proposal accounts for this when creating a Bare Metal server.
 
 Once you've gone through this KB article and created a new server, you can follow this Getting Started guide to learn [how to securely connect to your new server.](../Servers/getting-started-how-to-securely-connect-to-your-server.md)
 
@@ -37,11 +38,11 @@ Once you've gone through this KB article and created a new server, you can follo
   * Ubuntu 14 LTS
   * Ubuntu 16 LTS
 
-5. Next, you'll need to set the server name, description, and administrator password for this server, just as you do with any CenturyLink Cloud server. As usual, the name entered is part of a formatted name that is arranged as: **(data center name)** + **(account alias)** + **(user-provided server name)** + **(counter index)**. The administrator password will set the "Administrator" password in Windows or the "root" password in Linux.
+5. Next, you'll need to set the server name, description, and administrator password for this server, just as you do with any Lumen Cloud server. As usual, the name entered is part of a formatted name that is arranged as: **(data center name)** + **(account alias)** + **(user-provided server name)** + **(counter index)**. The administrator password will set the "Administrator" password in Windows or the "root" password in Linux.
 
   ![Create a New Bare Metal Server](../images/baremetal-create-6.png)
 
-4. Finally, select the account network, primary DNS and secondary DNS for the server, the same as you would for any CenturyLink Cloud server.
+4. Finally, select the account network, primary DNS and secondary DNS for the server, the same as you would for any Lumen Cloud server.
 
   ![Create a New Bare Metal Server](../images/baremetal-create-7.png)
 

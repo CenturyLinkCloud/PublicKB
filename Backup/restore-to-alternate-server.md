@@ -2,6 +2,7 @@
   "title": "Restore to Alternate Server",
   "date": "02-27-2019",
   "author": "Dan Benton",
+  "keywords": ["backup", "clc", "cloud", "restore", "sbs", "server"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -13,7 +14,7 @@
 SBS Glossary of terms used in this document
 ====
 
-* CLC Command - A program supplied by Centurylink Cloud to interact with the CTL Cloud API directly.
+* CLC Command - A program supplied by Lumen Cloud to interact with the Lumen Cloud API directly.
 * SBS Policy - A backup policy defined by the customer that defines backups for one or more Servers.
 * SBS ServerPolicy - The information that joins a single Server to a SBS Policy
 * SBS RestorePoint - The meta information about a single backup for a single server.
@@ -40,12 +41,12 @@ You will need to find the proper SBS ServerPolicy and SBS Restore Point to resto
 
 1. The SBS ServerPolicy and SBS Restore Point can be found in the SBS Agent User Interface on each system. Examples will be shown later in this article.
 2. The SBS logs on the original backup server contain the SBS ServerPolicy and SBS Restore Point. Examples will be shown later in this article.
-3. If the SBS Agent User Interface and the logs is not available, or if you plan on using SBS to restore files from a system that is not available, then you must use the CTL CLI:  [CenturyLink Cloud Guide to CLI](../Servers/centurylink-cloud-guide-to-cli.md)
+3. If the SBS Agent User Interface and the logs is not available, or if you plan on using SBS to restore files from a system that is not available, then you must use the CTL CLI:  [Lumen Cloud Guide to CLI](../Servers/lumen-cloud-guide-to-cli.md)
 
-  * The CTL CLC Downloads: [https://github.com/CenturyLinkCloud/clc-go-cli/releases](https://github.com/CenturyLinkCloud/clc-go-cli/releases)
-  * How to configure CTL CLC: [https://github.com/CenturyLinkCloud/clc-go-cli\#set-up-the-configuration-file](https://github.com/CenturyLinkCloud/clc-go-cli%23set-up-the-configuration-file)
+  * The Lumen CLC Downloads: [https://github.com/CenturyLinkCloud/clc-go-cli/releases](https://github.com/CenturyLinkCloud/clc-go-cli/releases)
+  * How to configure Lumen CLC: [https://github.com/CenturyLinkCloud/clc-go-cli\#set-up-the-configuration-file](https://github.com/CenturyLinkCloud/clc-go-cli%23set-up-the-configuration-file)
   * If you are using the CTL CLI to restore the SBS team recommends that you set up and test the CLC commands in advance.
-  * The CTL CLC is NOT required on the restore server. It is only used to gather the proper SBS ServerPolicy and SBS Restore Point to populate a script that is executed on the server to restore to. Examples with be shown later in this article.
+  * The Lumen CLC is NOT required on the restore server. It is only used to gather the proper SBS ServerPolicy and SBS Restore Point to populate a script that is executed on the server to restore to. Examples with be shown later in this article.
 
 How to find the SBS ServerPolicy and SBS Restore Point using the SBS User Interface
 ===================================================================================
@@ -115,14 +116,14 @@ The restore point ID is: **8e463b1f-b0a0-4d84-93b3-68914fcd3b4520180505010403**.
 
 *Save the PolicyId and RestorePointId for values for the script to initiate the restore.*
 
-How to find the SBS ServerPolicy and SBS Restore Point using the CTL CLC CLI API Commands
+How to find the SBS ServerPolicy and SBS Restore Point using the Lumen CLC CLI API Commands
 =========================================================================================
 
 Carefully configure the CLT CLC CLI and verify that it works:
 
 [https://github.com/CenturyLinkCloud/clc-go-cli\#set-up-the-configuration-file](https://github.com/CenturyLinkCloud/clc-go-cli%23set-up-the-configuration-file)
 
-Example use you CTL Cloud username and password:
+Example use you Lumen Cloud username and password:
 
 ![](../images/backup/alt-restore/image4.jpg)
 
@@ -133,8 +134,8 @@ Windows Configuration:
 PS C:\Users\bentondc\Downloads\clc-v1.1.0-windows-amd64> more .\login.txt
 [
 {
-username: "Your CTL Cloud username",
-password: "Your CTL Cloud password"
+username: "Your Lumen Cloud username",
+password: "Your Lumen Cloud password"
 }
 ]
 ```
@@ -146,8 +147,8 @@ Linux Configuration:
 Linux configuration in ~/.clc/config.yml:
 
 {
-user: "Your CTL Cloud username",
-password: "Your CTL Cloud password"
+user: "Your Lumen Cloud username",
+password: "Your Lumen Cloud password"
 }
 ```
 

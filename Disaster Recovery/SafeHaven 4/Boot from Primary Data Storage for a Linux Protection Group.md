@@ -19,7 +19,7 @@ This article explains how to boot from a Production VM using primary data storag
 ### Assumptions
 This article assumes that the user has already successfully performed Failback Phase 1 and Phase 2. The Production VM is configured with makestub.sh and is booting from the iSCSI disks. The user is ready to copy data from the iSCSI disks to the production VM's local disk and then boot the VM from Primary Storage.
 
-For the purpose of this article, we are using Ubuntu 14 as a production server in CenturyLink's CA2(Toronto) production datacenter. The recovery site is CenturyLink's WA1(Washington) recovery datacenter.
+For the purpose of this article, we are using Ubuntu 14 as a production server in Lumen's CA2(Toronto) production datacenter. The recovery site is Lumen's WA1(Washington) recovery datacenter.
 
 ### Boot from Local Storage
 1. Right-click on the Linux protection group, and click **Boot from Primary Data Storage**.

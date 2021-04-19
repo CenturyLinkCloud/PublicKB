@@ -2,6 +2,7 @@
   "title": "FAQs: MySQL Relational DB Service",
   "date": "02-28-2016",
   "author": "Christine Parr",
+  "keywords": ["api", "clc", "cloud", "database", "db", "dbaas", "mysql", "faq"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -9,7 +10,7 @@
 }}}
 
 ### Audience
-This article is to support customers of Relational DB Service, CenturyLink's database-as-a-service product. The responses in this FAQ document are specific MySQL-compatible Relational DB.
+This article is to support customers of Relational DB Service, Lumen's database-as-a-service product. The responses in this FAQ document are specific MySQL-compatible Relational DB.
 
 ### Frequently Asked Questions
 **Q: How will I connect to my MySQL instance?**
@@ -48,7 +49,7 @@ A: Customers have the option to sign up to receive email notification when their
 
 A: Customers can easily scale their database instance size through the UI or API. CPU and RAM can be scaled up or down and storage can be scaled up only. Adding or removing memory or reducing CPU will require a database restart. Growing CPU or storage will not require a restart of the database. Please see the KB article on [Resizing a Relational DB Instance](rdbs-resizing-instance.md)
 
-**Q: I understand that CenturyLink is backing my data up daily. How can I access my backups in order to restore?**
+**Q: I understand that Lumen is backing my data up daily. How can I access my backups in order to restore?**
 
 A: If you need to restore from an available backup, you can leverage the Restore Backup API or perform the restore in the Control Portal. For more information on performing database restores in Control, please see the KB on [Backups and Restores](rdbs-backups-and-restores.md).
 

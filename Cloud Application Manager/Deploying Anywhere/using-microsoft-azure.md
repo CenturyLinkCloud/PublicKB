@@ -1,8 +1,8 @@
 {{{
 "title": "Using Microsoft Azure",
-"date": "03-28-2019",
+"date": "12-18-2019",
 "author": "Guillermo Sanchez & Sergio Quintana",
-"keywords": ["microsoft", "azure", "arm"],
+"keywords": ["microsoft", "azure", "arm", "resource manager"],
 "attachments": [],
 "sticky": true,
 "contentIsHTML": false
@@ -27,12 +27,14 @@
 ### Overview
 
 There are two different flavors of Azure and Cloud Application Manager has providers for both.  
-This document is in reference to **Microsoft Azure**.
+This document is in reference to **Microsoft Azure** or **Azure Resource Manager** deployment model.
 
-**Name** | **URL of Portal** | **Name of Related Cloud Application Manager Provider** | **KB article**
+**Name** | **URL of Portal** | **Name of Provider** | **KB article**
 --- | --- | --- | ---
-Classic Azure | https://manage.windowsazure.com | Classic Azure | [Using Classic Azure](using-azure.md)
-Microsoft Azure | https://portal.azure.com | Microsoft Azure  | This document
+Classic Azure | <https://manage.windowsazure.com> | Classic Azure | [Using Classic Azure](using-azure.md) (1)
+Microsoft Azure | <https://portal.azure.com> | Microsoft Azure  | This document
+
+(1) Please note that Microsoft no longer recommends the usage of the Classic Azure deployment model, which has been superseded by the Resource Manager model. For more information see [this Microsoft article](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-deployment-model).
 
 ### Audience
 
@@ -41,25 +43,40 @@ All Cloud Application Manager users who want to deploy workloads into Microsoft 
 ### Prerequisites
 
 * Access to Cloud Application Manager [Management site](https://account.cam.ctl.io/#/providers?type=Microsoft-Azure).
-* The user must have an existing Microsoft Azure account or should be an Administrator of the organization in Cloud Application Manager to [create](../Cloud Optimization/partner-cloud-integration-azure-new.md) or [bring](../Cloud Optimization/partner-cloud-integration-azure-existing.md) a Microsoft Azure account to be managed by CenturyLink.
+* The user must have an existing Microsoft Azure account or should be an Administrator of the organization in Cloud Application Manager to [create](../Cloud Optimization/partner-cloud-integration-azure-new.md) or [bring](../Cloud Optimization/partner-cloud-integration-azure-existing.md) a Microsoft Azure account to be managed by Lumen.
 
 ### Connect your Microsoft Azure Account in Cloud Application Manager
 
-Each of Cloud Application Manager's Microsoft Azure Providers gives you the option of setting it up either for an existing or a new Azure Customer Account. Existing accounts are your responsibility and will continue to be billed to you by Azure. New Accounts will automatically be generated on your behalf and the credentials pulled into the Provider via [Cloud Optimization](../Cloud Optimization/partner-cloud-integration.md), allowing you to hand off platform-level support and billing to CenturyLink.
+Each of Cloud Application Manager's Microsoft Azure Providers gives you the option of setting it up either for an existing or a new Azure Customer Account. Existing accounts are your responsibility and will continue to be billed to you by Azure. New Accounts will automatically be generated on your behalf and the credentials pulled into the Provider via [Cloud Optimization](../Cloud Optimization/partner-cloud-integration.md), allowing you to hand off platform-level support and billing to Lumen.
 
-If you want to learn how to use the New Account feature, please visit [Partner Cloud: Getting Started With a New Azure Customer](../Cloud Optimization/partner-cloud-integration-azure-new.md). The rest of this article assumes you will be using an existing, Azure Customer Account without any integration with CenturyLink.
+If you want to learn how to use the New Account feature, please visit [Partner Cloud: Getting Started With a New Azure Customer](../Cloud Optimization/partner-cloud-integration-azure-new.md). The rest of this article assumes you will be using an existing, Azure Customer Account without any integration with Lumen.
+
+#### Creating your own Azure Subscription
+
+If you want to create your own Azure subscription, follow these steps:
+
+1. Sign in to your [account](https://portal.azure.com/).
+
+2. Open Subscriptions.
+
+3. Click on **Add** subscription.
+   ![Azure add new subscription](../../images/cloud-application-manager/azure-add-new-subscription-1.png)
+
+4. You can use the free trial version or select and purchase a payment plan.
+
+   * **Note:** Cloud Application Manager is not responsible for any costs incurred through deploying to Azure. For more information, see [Azure pricing](https://azure.microsoft.com/en-us/pricing/calculator/?scenario=virtual-machines).
 
 ### Access to Microsoft Azure Services console with a Microsoft Azure subscription
 
-You need an Microsoft Azure subscription to be able to consume Azure services. Follow these steps to create one.
 Login to the [Microsoft Azure portal](https://portal.azure.com/) using your Microsoft Azure Account.
 
-If you already have a Microsoft Azure Provider in your Cloud Application Manager, you can reach this portal from the **Portal Access** button located in the Microsoft Azure Provider details page and you will be directly logged in.  
+If you already have a Microsoft Azure Provider in your Cloud Application Manager, the Lumen support staff can access your subscription by clicking on the **Portal Access** button located in the Microsoft Azure Provider details page.  
 
 ![Microsoft Azure Portal Access from CAM](../../images/microsoft-azure-console/ms-azure-access-from-cam.png)
 
-**Note**: This button is only available when provider has been sychronized.  
-Then if you have permissions, you will see a temporay credentials dialog you must use to login in [Microsoft Azure portal](https://portal.azure.com/). Be sure to logout from previous session in this portal. Remember that these temporal credentials only lasts one hour, then you must run this process again.
+**Note**: This button is only available when provider has been sychronized.
+
+Then, if the user has permissions, a temporary credentials dialog will be displayed to allow the user to login in [Microsoft Azure portal](https://portal.azure.com/). Be sure to logout from previous session in this portal first. These temporary user credentials only lasts for one hour, then the user needs to run this process again.
 
 #### Application ID (Client) and Directory ID (Tenant)
 
@@ -71,9 +88,9 @@ Once in Microsoft Azure Portal you can reach different sections using the upper 
 2. Copy and take note of the Directory ID field for later. It is known as **Directory (tenant) ID**  
 3. Next select *App registrations*, within the Azure Active Directory menu pane
 4. Create a *New Application Registration* with the following values:
-    * Name: **CenturyLink-CAM**
+    * Name: **Lumen-CAM**
     * Supported account types: **My organization only**
-    * Redirect URL: **web - https://localhost/logon**
+    * Redirect URL: **web - `https://localhost/logon`**
 5. Upon registering a line with this applicattion will be added to list. Click on it and see its details.
 6. Copy and take note of **Application (Client) ID** that have been generated.
 
@@ -102,23 +119,23 @@ To do so, on the details page fo the application you just created, click on API 
 
     Finally, click **Add permissions** to apply them to your application.
 
-    ![MS Azure Services Microsoft Graph API](../../images/microsoft-azure-console/ms-azure-api-graph-permissions.png)
+The following screenshot shows all the permissions that should be granted. Use the above guidance to add anyone else that might be still missing:
+
+![MS Azure Services Microsoft Graph API](../../images/microsoft-azure-console/ms-azure-api-graph-permissions.png)
 
 #### PowerShell script for automatic deletion role
 
 In order to allow automatic deletion, you must [add the Company Administrator Role to the App](https://docs.microsoft.com/en-us/powershell/module/msonline/add-msolrolemember?view=azureadps-1.0). To accomplish it, you must execute the next script from a [Windows PowerShell console](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/starting-windows-powershell?view=powershell-6):
 
-~~~powershell
-$tenantGuid = 'YOUR-TENANT-ID'
-$user = 'YOUR_USER@YOUR-DOMAIN.onmicrosoft.com'
-$password = 'YOUR PASSWORD'
-$appID = 'YOUR-APP-ID'
-$Creds = New-Object System.Management.Automation.PsCredential($user, (ConvertTo-SecureString $password -AsPlainText -Force))
-Connect-MSOLSERVICE -Credential $Creds
-$msSP = Get-MsolServicePrincipal -AppPrincipalId $appID -TenantID $tenantGuid
-$objectId = $msSP.ObjectId
-Add-MsolRoleMember -RoleName "Company Administrator" -RoleMemberType ServicePrincipal -RoleMemberObjectId $objectId
-~~~
+    $tenantGuid = 'YOUR-TENANT-ID'
+    $user = 'YOUR_USER@YOUR-DOMAIN.onmicrosoft.com'
+    $password = 'YOUR PASSWORD'
+    $appID = 'YOUR-APP-ID'
+    $Creds = New-Object System.Management.Automation.PsCredential($user, (ConvertTo-SecureString $password -AsPlainText -Force))
+    Connect-MSOLSERVICE -Credential $Creds
+    $msSP = Get-MsolServicePrincipal -AppPrincipalId $appID -TenantID $tenantGuid
+    $objectId = $msSP.ObjectId
+    Add-MsolRoleMember -RoleName "Company Administrator" -RoleMemberType ServicePrincipal -RoleMemberObjectId $objectId
 
 #### Subscriptions
 
@@ -133,7 +150,7 @@ Navigate to *Subscriptions* panel. Use search tool and introduce "Subscriptions"
 4. When creating the new role, do so with the following values:
     * Role: **Owner** (If you do not see the Owner role, you will need to talk to your administrator.)
     * Assign Access to: **Azure AD user, group or application**
-    * Select: **CenturyLink-CAM**
+    * Select: **Lumen-CAM**
 5. Now select *Resource providers* tab (dowm in the Settings Tabs segment) in your subscription and **Register** the following providers:
     * *Microsoft.Compute*
     * *Microsoft.Network*
@@ -143,7 +160,7 @@ Navigate to *Subscriptions* panel. Use search tool and introduce "Subscriptions"
 
 #### Secret
 
-Return to the *Azure Active Directory* panel, select *App Registrations* then *CenturyLink-CAM* and finally *Certificates & Secrets*.  
+Return to the *Azure Active Directory* panel, select *App Registrations* then *Lumen-CAM* and finally *Certificates & Secrets*.  
 
 1. Add a new client secret
 2. Set a Key with the following values:
@@ -248,7 +265,7 @@ To deploy a virtual machine with compute services you can edit one of windows or
 
 ![Microsoft Azure - Compute deployment options](../../images/cloud-application-manager/microsoft-azure/compute-deployment-options-pre4.png)
 
-If you can't create any policy box on Windows Azure provider probably you have to create a virtual network from Azure portal or you may deploy a new one with a template as we describe in following section. If you choose to use a [new Azure provider optimized by CenturyLink](../Cloud Optimization/partner-cloud-integration-azure-new.md) we will create a default network for you.
+If you can't create any policy box on Windows Azure provider probably you have to create a virtual network from Azure portal or you may deploy a new one with a template as we describe in following section. If you choose to use a [new Azure provider optimized by Lumen](../Cloud Optimization/partner-cloud-integration-azure-new.md) we will create a default network for you.
 
 #### Resources
 
@@ -264,7 +281,7 @@ If you can't create any policy box on Windows Azure provider probably you have t
 | SSH Certificate | Only in Linux machines you can specify a certificate to access via ssh. |
 | Instances | Specify the number of instances to spawn. If you increase it to a value higher than 1, a **High Availability** toggle will appear below that you can enable to use Azure availability sets for high availability support. |
 | ScaleSet  | Specify if the instance/s should be created into a ScaleSet resource. When switched on, it will enable auto-scaling and load-balancer sections (see below). It will also create a managed Availability Set.  |
-| Delegate Management  | Delegate management to CenturyLink.  |
+| Delegate Management  | Delegate management to Lumen.  |
 
 When you increase the number of instances, and if you have not enable Scale Set, the High Availability toggle appears:
 

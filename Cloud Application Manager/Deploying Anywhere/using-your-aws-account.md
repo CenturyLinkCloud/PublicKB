@@ -43,7 +43,7 @@ All Cloud Application Manager users who want to deploy workloads into AWS.
 ### Prerequisites
 
 * Access to Cloud Application Manager [Management site](https://account.cam.ctl.io/#/providers?type=Amazon-Web-Services).
-* The user must have an existing AWS account or should be an Administrator of the organization in Cloud Application Manager to [create](../Cloud Optimization/partner-cloud-integration-aws-new.md) or [bring](../Cloud Optimization/partner-cloud-integration-aws-existing.md) an AWS account to be managed by CenturyLink.
+* The user must have an existing AWS account or should be an Administrator of the organization in Cloud Application Manager to [create](../Cloud Optimization/partner-cloud-integration-aws-new.md) or [bring](../Cloud Optimization/partner-cloud-integration-aws-existing.md) an AWS account to be managed by Lumen.
 
 ### Connect your AWS Account in Cloud Application Manager
 
@@ -422,7 +422,7 @@ To deploy workloads to an EC2 instance, create a [deployment policy](../Automati
 | Keypairs | Select a key pair you created in AWS to connect to the instance or select None if you don’t want SSH access to the instance.|
 | IAM Role | Select one to assign an existing IAM role to the instance. This allows the instance to make and accept API requests securely using the permissions defined by the role. To let Cloud Application Manager view and pass the existing role to the instance, update the Cloud Application Manager IAM role policy with the listed permissions. To learn more about IAM roles, see the [AWS docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#permission-to-pass-iam-roles).|
 | Instances | Select the number of instances to launch. |
-| Delegate Management | Only visible if this feature is available in your account. Delegate the instance management to CenturyLink. For more information see [Managed Services Anywhere](../Managed Services/getting-started-with-cam-enable-managed-provider.md)|
+| Delegate Management | Only visible if this feature is available in your account. Delegate the instance management to Lumen. For more information see [Managed Services Anywhere](../Managed Services/getting-started-with-cam-enable-managed-provider.md)|
 
 #### Placement
 
@@ -537,7 +537,7 @@ Once your instance has been deployed, you can access its information by clicking
 |Elastic IP            | Yes or no. |
 |KeyPair               | Name of the key pair that can be used to access the instance. |
 |IAM Role              | IAM Role associated with the instance. |
-|Managed               | Yes if the management of the instances has been delegated to CenturyLink. |
+|Managed               | Yes if the management of the instances has been delegated to Lumen. |
 |Security Groups       | Name of the security groups associated with this instance. |
 |Target Groups         | Name of the groups used to attach an instance to both types of load balancers automatically. |
 |Instances             | Number of AWS instances associated with this CAM instance through a load balancer. |

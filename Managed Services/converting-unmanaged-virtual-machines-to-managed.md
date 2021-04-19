@@ -7,15 +7,15 @@
 }}}
 
 ### Overview
-[CenturyLink Cloud Managed Operating System Services](https://www.ctl.io/managed-services/operating-system) provide maintenance and management of your Windows & Red Hat cloud servers, 24x7.  For a flat hourly fee, our engineers will perform support and administrative functions on your behalf.
+[Lumen Cloud Managed Operating System Services](https://www.ctl.io/managed-services/operating-system) provide maintenance and management of your Windows & Red Hat cloud servers, 24x7.  For a flat hourly fee, our engineers will perform support and administrative functions on your behalf.
 
-Customers may wish to enable Managed OS on virtual machines already deployed in an **unmanaged** state to offload critical IT functions. In order to facilitate this process, the CenturyLink Cloud platform provides an automated [Blueprint](https://www.ctl.io/blueprints) to convert unmanaged virtual machines into a managed operating system.
+Customers may wish to enable Managed OS on virtual machines already deployed in an **unmanaged** state to offload critical IT functions. In order to facilitate this process, the Lumen Cloud platform provides an automated [Blueprint](https://www.ctl.io/blueprints) to convert unmanaged virtual machines into a managed operating system.
 
-Of course, you may also consider using the CenturyLink Cloud API to handle these actions programmatically. What follows is the simplest method, via the Control Portal.
+Of course, you may also consider using the Lumen Cloud API to handle these actions programmatically. What follows is the simplest method, via the Control Portal.
 
 ### Audience
 
-Users employed by companies that have agreed to terms with [CenturyLink Sales](https://www.centurylink.com) for the CenturyLink Cloud product.
+Users employed by companies that have agreed to terms with [Lumen Sales](https://www.centurylink.com) for the Lumen Cloud product.
 
 ### Prerequisites
 - An understanding of the standard server creation process.
@@ -105,7 +105,7 @@ After creating a VM for management, or after deploying the blueprint to convert 
     * UK: +44.118.322.6100
     * Singapore: +65.6305.8099.
 
-Please do not email the CenturyLink Cloud support team or raise the issue via chat - faster responses to inquiries will come from the email address and support numbers above. This is because Managed support is provided by a different team than Platform support.
+Please do not email the Lumen Cloud support team or raise the issue via chat - faster responses to inquiries will come from the email address and support numbers above. This is because Managed support is provided by a different team than Platform support.
 
 The user will receive a notification email once the virtual machine is successfully converted to Managed.
 
@@ -113,6 +113,6 @@ The user will receive a notification email once the virtual machine is successfu
 Your request "Managed server build VA1CCVARHEL01" has successfully completed.
 ```
 
-Validation can also be confirmed by looking for the CenturyLink logo next to the name of the server in the Control Portal.
+Validation can also be confirmed by looking for the Lumen logo next to the name of the server in the Control Portal.
 
 ![Managed Servers in Control](../images/converting-unmanaged-virtual-machines-to-managed-11.png)

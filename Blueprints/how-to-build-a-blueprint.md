@@ -10,7 +10,7 @@
 The purpose of this documentation is to introduce and explain the process and detail the steps on how to construct a Blueprint.
 
 ### Steps
-1. Log into the CenturyLink Cloud Control Portal.
+1. Log into the Lumen Cloud Control Portal.
 
 2. From the Navigation Menu, select **Orchestration > Design Blueprint**.
 

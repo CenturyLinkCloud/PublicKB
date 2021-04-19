@@ -19,7 +19,7 @@ customers while we work to introduce LBaaS.
 
 **Q:** What is Load Balancer as a Service (LBaaS)?
 
-**A:** CenturyLink Load Balancer as a Service (LBaaS) helps you build
+**A:** Lumen Load Balancer as a Service (LBaaS) helps you build
 highly scalable and highly available applications by providing
 application-level (HTTP & TCP) load balancing. It also offers various
 persistence methods to ensure that a user, once connected, continues to
@@ -28,8 +28,8 @@ be connected to the same application instance.
 LBaaS is a load balancing solution that is meant to provide both server
 load balancing and high availability in an industry standard.
 
-**Q:** What’s the difference between CenturyLink Cloud’s existing Shared
-Load Balancer service and CenturyLink Cloud’s new Load Balancer as a
+**Q:** What’s the difference between Lumen Cloud’s existing Shared
+Load Balancer service and Lumen Cloud’s new Load Balancer as a
 Service (LBaaS)?
 
 **A:** LBaaS provides for all of the existing functionality or our
@@ -65,3 +65,7 @@ Balancer instances created prior to LBaaS availability will remain in tact and o
 
 
 Any new instances of the new LBaaS service after service availability will be priced according to our [pricing catalog](//www.ctl.io/pricing).
+
+**Q:** Can I add public IP addresses to my load balancer pools?
+
+**A:** No, this is not possible. Using private server IPs is the most efficient way of balancing traffic and is the only option.

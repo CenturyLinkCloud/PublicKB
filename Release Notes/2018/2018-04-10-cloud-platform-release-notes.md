@@ -16,9 +16,9 @@ Application Lifecycle Management now offers a Workload Map view into the instanc
 
 ### Enhancements (1)
 
-#### [CenturyLink Private Cloud on VMware Cloud Foundation](//centurylink-private-cloud-on-vmware-cloud-foundation)
+#### [Lumen Private Cloud on VMware Cloud Foundation](//lumen-private-cloud-on-vmware-cloud-foundation)
 
-Customers of CenturyLink Private Cloud on VMware Cloud Foundation now have the option for CenturyLink provided OS licenses, for Microsoft Windows and/or Red Hat Enterprise Linux.
+Customers of Lumen Private Cloud on VMware Cloud Foundation now have the option for Lumen provided OS licenses, for Microsoft Windows and/or Red Hat Enterprise Linux.
 
 ### Announcements (2)
 
@@ -42,7 +42,7 @@ Amazon Web Services
 
 #### [Load Balancer as a Service (LBaaS)](//www.ctl.io/load-balancing/)
 
-CenturyLink Cloud is excited to release a new load balancer service in our AU1 location. We’re calling it Load Balancer as a Service (LBaaS). We added more features that allow you to focus on your business while we help service your infrastructure. You get to keep all of the features that are available in the current Shared Load Balancer service, but we’ve added a few new things to get excited about:
+Lumen Cloud is excited to release a new load balancer service in our AU1 location. We’re calling it Load Balancer as a Service (LBaaS). We added more features that allow you to focus on your business while we help service your infrastructure. You get to keep all of the features that are available in the current Shared Load Balancer service, but we’ve added a few new things to get excited about:
 
 • TCP load balancing
 • Load balance on any port 23 and up

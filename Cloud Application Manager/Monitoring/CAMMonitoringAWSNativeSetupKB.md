@@ -10,9 +10,9 @@
 To supplement our [Managed OS Anywhere](https://www.ctl.io/cloud-application-manager/managed-services-anywhere/) offering we offer functionality to monitor native AWS Services via CloudWatch to augment our existing OS level monitoring capabilities as an optional feature. 
 
 ### Overview
-The below process details the steps to configure your AWS account for CenturyLink's AWS Native Monitoring functionality.
+The below process details the steps to configure your AWS account for Lumen's AWS Native Monitoring functionality.
 
-#### Create CenturyLink Cloud Monitoring IAM Role
+#### Create Lumen Cloud Monitoring IAM Role
 * Navigate to IAM 'Roles'
 * Click 'Create Role'
 * Select 'EC2' for the services

@@ -1,5 +1,5 @@
 {{{
-    "title": "CenturyLink Managed Services Anywhere Azure Buy-Your-Own-Cloud Requirements", "date": "05-7-2018",
+    "title": "Lumen Managed Services Anywhere Azure Buy-Your-Own-Cloud Requirements", "date": "05-7-2018",
     "author": "Chris Meyer",
     "attachments": [],
     "contentIsHTML": false
@@ -12,7 +12,7 @@
 
 ### Overview  
 
-This KB details the requirements of Centurylink's Managed Services Anywhere (MSA) offering with customer provided Microsoft Azure accounts.
+This KB details the requirements of Lumen's Managed Services Anywhere (MSA) offering with customer provided Microsoft Azure accounts.
 
 ### Microsoft Azure Configuration Requirements
 

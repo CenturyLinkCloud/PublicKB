@@ -11,7 +11,7 @@
 ### Hyperscale Server Retirement
 The key to success with cloud infrastructure is to manage your deployments by using repeatable and scalable processes. In order to drive business agility while also maintaining simplicity, it is critical to streamline your infrastructure footprint on a standardized platform.
 
-Over the past year, CenturyLink Cloud has worked hard to improve our standard compute service to fulfill more of our customers’ cloud hosting needs. By standardizing our storage infrastructure on all-flash platforms, customers have the ability to host distributed workloads on a common compute product while maximizing performance.
+Over the past year, Lumen Cloud has worked hard to improve our standard compute service to fulfill more of our customers’ cloud hosting needs. By standardizing our storage infrastructure on all-flash platforms, customers have the ability to host distributed workloads on a common compute product while maximizing performance.
 
 Due to the positive impact of the storage improvements across all of our cloud infrastructure, we’ve come to realize that our customers no longer need our specialized all-flash storage cloud compute service, Hyperscale. Today, we are announcing the end of availability for Hyperscale.
 
@@ -19,7 +19,7 @@ Due to the positive impact of the storage improvements across all of our cloud i
 
 **Q**: When is Hyperscale being discontinued?
 
-**A**: On July 10, 2018, we will remove Hyperscale links from the [CenturyLink Cloud control portal](https://control.ctl.io/). Existing Hyperscale servers will continue to operate until they have been migrated to our standard virtual compute infrastructure.
+**A**: On July 10, 2018, we will remove Hyperscale links from the [Lumen Cloud control portal](https://control.ctl.io/). Existing Hyperscale servers will continue to operate until they have been migrated to our standard virtual compute infrastructure.
 
 By August 21, 2018, all Hyperscale servers will have been migrated to our standard compute infrastructure.
 

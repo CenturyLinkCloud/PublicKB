@@ -7,7 +7,7 @@
 }}}
 
 ### Article Overview
-Register Datacenters within the SafeHaven Console for CenturyLink Cloud and Amazon Cloud site types.
+Register Datacenters within the SafeHaven Console for Lumen Cloud and Amazon Cloud site types.
 
 ### Requirements
 1. SafeHaven Cluster already installed and user needs to have access to it.

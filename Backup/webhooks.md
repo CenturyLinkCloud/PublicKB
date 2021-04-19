@@ -2,6 +2,7 @@
   "title": "Simple Backup Webhooks",
   "date": "11-7-2019",
   "author": "John Gerger",
+  "keywords": ["backup", "clc", "cloud", "sbs", "server", "storage", "webhook"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
@@ -34,11 +35,11 @@ A: Webhooks are available within the Simple backup UI in a sub-menu called "Webh
 
 **Q: Are there any requirements for the service that receives the Webhook notification?**
 
-A: Listener services must be on the public internet in a location reachable by the CenturyLink Cloud platform. If a customer plans on consuming this data within an internal system, consider using a reverse proxy or another mechanism to forward traffic from a public-facing web service to an internal system.
+A: Listener services must be on the public internet in a location reachable by the Lumen Cloud platform. If a customer plans on consuming this data within an internal system, consider using a reverse proxy or another mechanism to forward traffic from a public-facing web service to an internal system.
 
 **Q: What happens if the destination is unreachable?**
 
-A: There is no guaranteed delivery with CenturyLink Cloud Webhooks. We make a single attempt to send a message to the designated endpoint and if it fails, it is not retried. This means two things: (1) design your endpoints to be highly available and withstand failures of any single component in the solution, and (2) rely on a combination of Webhooks and daily email reports to monitor your backup environment completely.
+A: There is no guaranteed delivery with Lumen Cloud Webhooks. We make a single attempt to send a message to the designated endpoint and if it fails, it is not retried. This means two things: (1) design your endpoints to be highly available and withstand failures of any single component in the solution, and (2) rely on a combination of Webhooks and daily email reports to monitor your backup environment completely.
 
 **Q: What data is sent in the Webhook event notification?**
 

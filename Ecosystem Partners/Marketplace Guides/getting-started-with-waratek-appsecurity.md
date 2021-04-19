@@ -12,18 +12,18 @@
 Waratek security solutions protect applications and data without software agents, code changes, or network devices. By placing security within the Java virtual machine, attacks from both internal and external sources can be mitigated with minimal impact on performance. See more at [Waratek Solutions/](http://www.waratek.com/solutions/).
 
 ### Description
-This CenturyLink Blueprint provides a simple install solution of the Waratek AppSecurity JVM on CentOS 6 and Red Hat 6 Linux platforms.
+This Lumen Blueprint provides a simple install solution of the Waratek AppSecurity JVM on CentOS 6 and Red Hat 6 Linux platforms.
 
 For more information, please visit [http://www.waratek.com](http://www.waratek.com).
 
 ### Audience
-CenturyLink Cloud Users desiring a secure Java environment.
+Lumen Cloud Users desiring a secure Java environment.
 
 ### Impact
-After reading this article, the user should be able to install AppSecurity for Java on a  CenturyLink Cloud server.
+After reading this article, the user should be able to install AppSecurity for Java on a  Lumen Cloud server.
 
 ### Prerequisites
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 
 ### Postrequisites
 * None
@@ -86,4 +86,4 @@ Waratek JVM is available as a Blueprint for deployment on a new server.
 
 #### Who should I contact for support?
 * For issues related to deploying Waratek JVM visit [Waratek Support](https://support.waratek.com).
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](https://t3n.zendesk.com/tickets/new).

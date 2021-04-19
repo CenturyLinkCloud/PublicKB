@@ -43,7 +43,7 @@
 
 * __Load Balancer as a Service (LBaaS) is now available in UC1 and VA1!__
 
-CenturyLink Cloud is excited to release a new load balancer service in our UC1 and VA1 Data Centers.   We’re calling it Load Balancer as a Service (LBaaS) since we’ll be adding in more features that allow you to focus on your business, while we help you to service your infrastructure. You get to keep all of the features that are available in the current Shared Load Balancer service, but we’ve added a few new things to get excited about, too.
+Lumen Cloud is excited to release a new load balancer service in our UC1 and VA1 Data Centers.   We’re calling it Load Balancer as a Service (LBaaS) since we’ll be adding in more features that allow you to focus on your business, while we help you to service your infrastructure. You get to keep all of the features that are available in the current Shared Load Balancer service, but we’ve added a few new things to get excited about, too.
 
 - TCP load balancing!
 - Load balance on any port!

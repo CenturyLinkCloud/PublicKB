@@ -12,29 +12,29 @@
 VDP is an end to end VDI management system. Combining connection brokering, VM management, health, alerting, inventory, physical management, and remote protocols.
 
 ### Description
-This CenturyLink Blueprint provides a click-through solution to install and configure the VDIworks VDP Host Agent on the Windows Server platform.
+This Lumen Blueprint provides a click-through solution to install and configure the VDIworks VDP Host Agent on the Windows Server platform.
 
 For more information, please visit [http://www.vdiworks.com/](http://www.vdiworks.com).
 To get in contact with sales representative please email [sales@vdiworks.com](mailto:sales@vdiworks.com).
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the Blueprint technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the Blueprint technology on Lumen Cloud.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 
 ### Postrequisite
 * If you want to access your application over the internet, please perform the following tasks after you receive an email notifying you that the Blueprint completed successfully.
 
-* If you need to connect to your server via the Internet, [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
+* If you need to connect to your server via the Internet, [Add a Public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
 
-* [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal and configuring appropriately.
+* [Allow incoming traffic](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal and configuring appropriately.
    * Ports needed for Public Access: RDP `3389`, TCP&UDP `8004`, `6502`.
 
-* Alternatively, you can use the CenturyLink Cloud VPN that is available through the Control Portal.  
+* Alternatively, you can use the Lumen Cloud VPN that is available through the Control Portal.  
 
 ### Deploying VDIworks VDP Host Agent
 VDP Host Agent is available as a Blueprint for deployment on a new server.
@@ -48,7 +48,7 @@ VDP Host Agent is available as a Blueprint for deployment on a new server.
 2. Choose and Deploy the Blueprint.
    * Click the 'Install VDIworks VDP Host Agent' Blueprint.
 
-3. Configure the Blueprint. 
+3. Configure the Blueprint.
    Complete the information below:
 
    * Enter a Password for the Server and repeat to confirm.
@@ -84,5 +84,5 @@ One of the industry's most reputable benchmarks of segment leadership, Computer 
 ### Frequently Asked Questions
 
 #### Who should I contact for support?
-* For issues related to deploying the VDIworks Blueprint on CenturyLink Cloud, licensing or accessing the deployed software, please visit the [VDIworks website](http://www.vdiworks.com/) or email [support@vdiworks.com](mailto:support@vdiworks.com).
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to deploying the VDIworks Blueprint on Lumen Cloud, licensing or accessing the deployed software, please visit the [VDIworks website](http://www.vdiworks.com/) or email [support@vdiworks.com](mailto:support@vdiworks.com).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](https://t3n.zendesk.com/tickets/new).

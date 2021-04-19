@@ -8,7 +8,7 @@
 
 ### Enhancements
 
-* Global Navigation: Improved switching between other CenturyLink services
+* Global Navigation: Improved switching between other Lumen services
 * Saved Images: Added ability to deploy and delete saved server images
 * Server > Overview: Added ability to create a saved server image
 

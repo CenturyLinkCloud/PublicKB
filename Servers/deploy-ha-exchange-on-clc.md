@@ -1,14 +1,14 @@
 {{{
-  "title": "Deploy HA Exchange on CenturyLink Cloud",
+  "title": "Deploy HA Exchange on Lumen Cloud",
   "date": "3-31-2015",
   "author": "Mark Turpin",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-### Exchange 2013 on CenturyLink Cloud – High Availability and Automatic Failover
+### Exchange 2013 on Lumen Cloud – High Availability and Automatic Failover
 
-Exchange 2013 offers excellent high availability and disaster recovery for enterprise messaging. With CenturyLink Cloud’s Global Data Center footprint, it is easy to deploy a globally scaled and highly available Exchange architecture.
+Exchange 2013 offers excellent high availability and disaster recovery for enterprise messaging. With Lumen Cloud’s Global Data Center footprint, it is easy to deploy a globally scaled and highly available Exchange architecture.
 
 ### Prerequisites
 
@@ -32,7 +32,7 @@ Note – if these are the first servers in a datacenter for your account, then a
 
 ### CLC Firewall Policies
 
-Each server will need to be able to communicate with the subnet that the other two servers are on.  In this example, we will [create Cross Datacenter firewall policies](../Network/creating-cross-data-center-firewall-policies.md) that open up each /24 subnet to each other.
+Each server will need to be able to communicate with the subnet that the other two servers are on.  In this example, we will [create Cross Datacenter firewall policies](../Network/Lumen Cloud/creating-cross-data-center-firewall-policies.md) that open up each /24 subnet to each other.
 
 ![Network Menu](../images/deploy-ha-exchange-on-clc-4.png)
 
@@ -58,7 +58,7 @@ Install Exchange 2013 on both servers in UC1/IL1 using the [setup wizard](https:
 
 * Create two PTR records by entering the IP address of each server transmitting mail to the Internet and the FQDN (external CAS URL; IE, the A record for OWA).  The PTR record will provide a valid reverse lookup for spam checks when other email systems receive your email.
 
-Both Exchange servers will need to [add two public IP’s](../Network/how-to-add-public-ip-to-virtual-machine.md) each.
+Both Exchange servers will need to [add two public IP’s](../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) each.
 
 ![Public IP Menu](../images/deploy-ha-exchange-on-clc-7.png)
 
@@ -83,7 +83,7 @@ Add-WindowsFeature FS-FileServer
 
 * Ensure that File and Print Sharing is allowed in the Windows Firewall if the firewall is enabled
 
-At this point the FSW server is ready for the DAG to be created.  As a pre-requisite for the DAG, we will need to claim the internal cluster IP’s for each datacenter by requesting a NOC ticket (You can open a ticket by simply sending an email to noc@ctl.io).  We need both IP’s to be marked as claimed in the portal so they will be unavailable for newly provisioned servers (as provision servers will use the next available IP).  Below is an example of a claimed IP which we will use for the IL1 portion of the DAG:
+At this point the FSW server is ready for the DAG to be created.  As a pre-requisite for the DAG, we will need to claim the internal cluster IP’s for each datacenter by requesting a NOC ticket (You can open a ticket by simply sending an email to help@ctl.io).  We need both IP’s to be marked as claimed in the portal so they will be unavailable for newly provisioned servers (as provision servers will use the next available IP).  Below is an example of a claimed IP which we will use for the IL1 portion of the DAG:
 
 ![IP Addresses Menu](../images/deploy-ha-exchange-on-clc-10.png)
 

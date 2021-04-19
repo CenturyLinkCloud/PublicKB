@@ -8,7 +8,7 @@
 
 ### Overview
 After reading this article, the user should be able to provision infrastructure with
-[Hashicorp Terraform](https://terraform.io) on CenturyLink Cloud.
+[Hashicorp Terraform](https://terraform.io) on Lumen Cloud.
 
 ### Description
 
@@ -18,7 +18,7 @@ After reading this article, the user should be able to provision infrastructure 
 Hashicorp Terraform – “Terraform provides a common configuration to launch infrastructure — from physical and virtual servers to email and DNS providers. Once launched, Terraform safely and efficiently changes infrastructure as the configuration is evolved.”
 
 ### Audience
-Terraform users wishing to deploy to CenturyLink Cloud. Familiarity with infrastructure automation and the Terraform toolkit are required.
+Terraform users wishing to deploy to Lumen Cloud. Familiarity with infrastructure automation and the Terraform toolkit are required.
 
 Full [documentation](https://www.terraform.io/docs/providers/clc/index.html) for using Terraform on CLC.
 

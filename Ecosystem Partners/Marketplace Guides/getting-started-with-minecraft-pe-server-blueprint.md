@@ -16,27 +16,27 @@ Minecraft is a sandbox construction game where you can build anything you can im
 For more information, please visit the [Minecraft](http://www.Minecraft.com) website.
 
 ### Description
-CenturyLink has created a Blueprint that makes it extremely easy to spin up your own dedicated Minecraft PE (Pocket Edition) Server in minutes and play from iOS clients like iPad and iPhone. This Blueprint will automatically download, install and configure Minecraft PE Server 1.4.1 on to a new Linux server.
+Lumen has created a Blueprint that makes it extremely easy to spin up your own dedicated Minecraft PE (Pocket Edition) Server in minutes and play from iOS clients like iPad and iPhone. This Blueprint will automatically download, install and configure Minecraft PE Server 1.4.1 on to a new Linux server.
 
-Advantages of running Minecraft PE Server in CenturyLink Cloud:
+Advantages of running Minecraft PE Server in Lumen Cloud:
 * Fast provisioning - get a Minecraft server running within minutes - No long term server commitment - pay as you go each month.
 * On-demand Scalability - Add more CPU, Disk or Memory resources on the fly as your worlds grow.
-* Save money - Run your Minecraft PE server only when you use it. You can host a server just in the evenings or weekends with your friends and not have to pay to run it 24/7 unless you chose to. You can use the CenturyLink Cloud mobile app to start and stop your Minecraft server any time, any where.
+* Save money - Run your Minecraft PE server only when you use it. You can host a server just in the evenings or weekends with your friends and not have to pay to run it 24/7 unless you chose to. You can use the Lumen Cloud mobile app to start and stop your Minecraft server any time, any where.
 * Fast Bandwidth - Your Minecraft server has a 2GB inbound network throughput ensuring low latency game play.
 * Easy backups - You can easily save your worlds anytime you choose.
 * Customizable - Customize your Minecraft server by installing any mods you want!
 * No advanced technical experience required - Don't worry about setting up the VM and software dependencies, we did that for you. Just run the Blueprint, add a public IP with firewall rules and start playing in minutes.
 * Parental Control - Control where your family plays and who they play with by having ownership of the server.
-* Secure - CenturyLink Cloud includes network security and allows you to block users from connecting to your server at a network level in addition to game whitelists.
+* Secure - Lumen Cloud includes network security and allows you to block users from connecting to your server at a network level in addition to game whitelists.
 
 ### Audience
-CenturyLink Cloud Users, Creepers, and Minecrafters
+Lumen Cloud Users, Creepers, and Minecrafters
 
 ### Impact
-After reading this article, the user should feel comfortable getting started deploying and using the Minecraft PE Server Blueprint technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started deploying and using the Minecraft PE Server Blueprint technology on Lumen Cloud.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 * Confirm you are using Minecraft Personal Edition client.
   ![Minecraft PE Client Image](../../images/ecosystem-minecraft-pe-server-1.png)
 
@@ -80,7 +80,7 @@ Please follow the instructions below to access the Minecraft server for gameplay
 #### Access the server for gameplay
 After you've added a Public IP to your server and opened the proper firewall holes, follow these instructions in order to play on the server.
 
-1. Start by adding your CenturyLink Minecraft PE server to your client. From the main screen, click on the `Play` button.
+1. Start by adding your Lumen Minecraft PE server to your client. From the main screen, click on the `Play` button.
    ![Click Play Button Image](../../images/ecosystem-minecraft-pe-server-1.png)
 
 2. Click the Edit button on the top right of the screen.
@@ -117,7 +117,7 @@ After your Blueprint deploys successfully, please follow these instructions to a
 5. To stop (and save) the server, login to the console and type save-all then stop. For more information, please consult the Minecraft PE documentation.
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no Mojang or Microsoft license costs or additional fees bundled in.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. There are no Mojang or Microsoft license costs or additional fees bundled in.
 
 ### Frequently Asked Questions
 
@@ -145,5 +145,5 @@ The costs associated with this Blueprint deployment are for the CenturyLink Clou
 * If you cannot login as minecraftpe with the password set at time of Blueprint deployment, login via ssh as root and manually change the password for the minecraftpe user by running the command: `passwd minecraftpe`.
 
 #### Who should I contact for support?
-* CenturyLink Cloud does not support the Minecraft PE Server software. Please contact Mojang for any support around Minecraft.
-* For issues related to cloud infrastructure (VM’s, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket: https://t3n.zendesk.com/tickets/new.
+* Lumen Cloud does not support the Minecraft PE Server software. Please contact Mojang for any support around Minecraft.
+* For issues related to cloud infrastructure (VM’s, network, etc.), or if you experience a problem deploying the Blueprint, please open a Lumen Cloud Support ticket: https://t3n.zendesk.com/tickets/new.

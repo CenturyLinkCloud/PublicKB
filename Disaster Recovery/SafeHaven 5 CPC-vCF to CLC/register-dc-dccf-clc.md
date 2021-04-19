@@ -17,7 +17,7 @@ This article explains how to register a manual data center within SafeHaven Cons
 ### Assumptions
 1. User has login access to the SafeHaven Console.
 
-### Register a Manual Site (CenturyLink Private Cloud on VMware Cloud Foundation/DCC-core/Hyper-V)
+### Register a Manual Site (Lumen Private Cloud on VMware Cloud Foundation/DCC-core/Hyper-V)
 
 1. Within the **SafeHaven Console**, right-click on the **Administrator@Cluster** in the Navigation Tree on the left, and select **Register Data Center** from the drop-down menu.
 2. Enter **Data Center Name**, and select **Manual** as the **Data Center Type**. Click **Register**.
@@ -25,9 +25,9 @@ This article explains how to register a manual data center within SafeHaven Cons
 ### Register a CLC site
 
 1. Within the **SafeHaven Console**, right-click on the **Administrator@Cluster** in the Navigation Tree on the left and select **Register Data Center** from the drop-down menu.
-2. Enter **Data Center Name** and select **CenturyLink Cloud** as the **Data Center Type**. Click **Register**.
+2. Enter **Data Center Name** and select **Lumen Cloud** as the **Data Center Type**. Click **Register**.
 3. Now click on the Data Center you registered and under the **Properties** Panel click on **Change Credentials**.
-4. Enter the **username** and **password** of your Centurylink Portal account. Click **Next**.
+4. Enter the **username** and **password** of your Lumen Portal account. Click **Next**.
 5. Select an **Account** and **location**(Datacenter). Click **Finish**.
 
 If you click on each datacenter, the **Properties** panel will show the information specific to that datacenter.

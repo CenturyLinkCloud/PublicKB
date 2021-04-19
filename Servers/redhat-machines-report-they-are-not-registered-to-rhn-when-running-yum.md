@@ -8,7 +8,7 @@
 
 ### Red Hat Update Infrastructure
 
-When running 'yum' on a RedHat Enterprise Linux (RHEL) machine deployed in the CenturyLink Cloud, you may receive the following message:
+When running 'yum' on a RedHat Enterprise Linux (RHEL) machine deployed in the Lumen Cloud, you may receive the following message:
 
 **This system is not registered to Red Hat Subscription Management. You can use subscription-manager to register.**
 

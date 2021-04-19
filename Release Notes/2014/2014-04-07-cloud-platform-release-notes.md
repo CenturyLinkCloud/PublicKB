@@ -9,11 +9,11 @@
 </p>
 <hr />
 <ul>
-  <li><strong>New CenturyLink Cloud Data Centers Now Live</strong>. The CenturyLink Cloud opened more North American data centers in California and Virginia. These new locations -- now live for all users -- offer all the standard CenturyLink Cloud capabilities
+  <li><strong>New Lumen Cloud Data Centers Now Live</strong>. The Lumen Cloud opened more North American data centers in California and Virginia. These new locations -- now live for all users -- offer all the standard Lumen Cloud capabilities
     and also support Hyperscale Servers.
     <br /><img src="https://t3n.zendesk.com/attachments/token/vrxjXWoFjKGkvsZltCOBrY60A/?name=release04_07_14_01.png" alt="release04_07_14_01.png" />
   </li>
-  <li><strong>Updated CenturyLink Cloud Dashboard page.</strong>&nbsp;The dashboard has been redesigned and provides a clear rollup of deployed resources across all data centers.
+  <li><strong>Updated Lumen Cloud Dashboard page.</strong>&nbsp;The dashboard has been redesigned and provides a clear rollup of deployed resources across all data centers.
     <br /><img src="https://t3n.zendesk.com/attachments/token/h0hMAPQTnDhETwG96MiI6V3iz/?name=release04_07_14_02.png" alt="release04_07_14_02.png" />
   </li>
   <li><strong>Next generation API available.&nbsp;</strong>The first official version of the "v2 API" is now available and documented. Users can interact with Groups and Servers (via read operations, power commands). Soon to follow are API operations to create

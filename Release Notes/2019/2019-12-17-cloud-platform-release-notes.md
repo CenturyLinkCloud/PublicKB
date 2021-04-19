@@ -2,7 +2,7 @@
 "title": "Cloud Platform - Release Notes: December 17, 2019",
 "date": "12-17-2019",
 "author": "Ben Stephan",
-"keywords":["centurylink", "release notes", "cam", "alm", "disconnect", "compute instances", "cloudformation"],
+"keywords":["lumen", "release notes", "cam", "alm", "disconnect", "compute instances", "cloudformation"],
 "attachments": [],
 "contentIsHTML": false
 }}}

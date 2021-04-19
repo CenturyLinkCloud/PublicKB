@@ -2,7 +2,7 @@
 "title": "Cloud Platform - Release Notes: May 28, 2019",
 "date": "05-28-2019",
 "author": "Christine Parr",
-"keywords":["centurylink", "cam", "ams", "msa", "analytics"],
+"keywords":["lumen", "cam", "ams", "msa", "analytics"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -33,7 +33,7 @@ Because AWS has added multiple, new regions since accounts were created, integra
 
 ##### Latin America (LATAM) Customer identification
 
-Alerts for customers in the LATAM region are identifiable and will be forwarded to the appropriate LATAM support desk.  This enables future CAM MSA customers in the LATAM region the ability to communicate with CenturyLink support for MSA enabled providers in their local language.  
+Alerts for customers in the LATAM region are identifiable and will be forwarded to the appropriate LATAM support desk.  This enables future CAM MSA customers in the LATAM region the ability to communicate with Lumen support for MSA enabled providers in their local language.  
 
 ##### Support for VMs built ephemeral storage
 
@@ -56,11 +56,11 @@ Application Lifecycle Management now supports additional CloudFormation types to
 
 Application Lifecycle Management now supports two new Amazon Web Services instance types: I3en, T3a. Once you synchronize your AWS provider in Cloud Application Manager, you will be able to select in your Deployment Policy boxes any flavor of these Instance types by looking them up in the search box of the Instance Type drop down.
 
-#### [CenturyLink Public Cloud](https://www.ctl.io/dedicated-cloud-compute/)
+#### [Lumen Public Cloud](https://www.ctl.io/dedicated-cloud-compute/)
 
 #### OS Templates
 
-RHEL 6 & 7 have been updated and the latest revisions are now available on the CLC Platform.  RHEL 6 in now on revision 6.8 and RHEL 7 is on 7.2.  This update was completed as part of our ongoing efforts to improve security and availability of all CenturyLink Cloud resources.
+RHEL 6 & 7 have been updated and the latest revisions are now available on the CLC Platform.  RHEL 6 in now on revision 6.8 and RHEL 7 is on 7.2.  This update was completed as part of our ongoing efforts to improve security and availability of all Lumen Cloud resources.
 
 ### Bug Fixes (2)
 

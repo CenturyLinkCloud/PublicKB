@@ -2,14 +2,14 @@
 "title": "Cloud Platform - Release Notes: December 3, 2019",
 "date": "12-3-2019",
 "author": "Anshul Arora",
-"keywords":["centurylink", "release notes", "cam", "alm", "optimization","cpc", "billing", "compute instances"],
+"keywords":["lumen", "release notes", "cam", "alm", "optimization","cpc", "billing", "compute instances"],
 "attachments": [],
 "contentIsHTML": false
 }}}
 
 ### Announcements (4)
 
-#### [CenturyLink Private Cloud on VMware Cloud Foundation](https://www.ctl.io/centurylink-private-cloud-on-vmware-cloud-foundation/) (CPC on vCF)
+#### [Lumen Private Cloud on VMware Cloud Foundation](https://www.ctl.io/lumen-private-cloud-on-vmware-cloud-foundation/) (CPC on vCF)
 
 ##### Branding Update
 

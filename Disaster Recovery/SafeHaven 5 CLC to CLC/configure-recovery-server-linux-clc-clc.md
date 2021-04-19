@@ -43,7 +43,7 @@ A recovery server boots off of disks of the DR SRN when a test failover/ failove
    ```
  **Note**: The above script will download some packages required for the replication.
    - **Please enter the iSCSI Target Server IP Address at this site:**  
-     Please put the Local iSCSI IP Address of the Recovery SRN in CenturyLink Cloud Production Datacenter here.
+     Please put the Local iSCSI IP Address of the Recovery SRN in Lumen Cloud Production Datacenter here.
 9. Shut down the Recovery server.
     ```
     shutdown -h now

@@ -13,7 +13,7 @@
 BizTalk Server is a Microsoft Server product for integration and connectivity with a multitude of systems, applications and services. BizTalk Server 2013 is the eight major  release of this enterprise ready product that can aid organizations tremendously in connecting disparate systems inside and outside the organization. It provides numerous adapters and has a robust, durable, and scalable messaging infrastructure. In addition to integration capabilities, BizTalk also provides strong durable messaging, a rules engine, EDI connectivity, Business Activity Monitoring (BAM), Windows Azure connectivity and RFID capabilities.
 
 ### Description
-This KB article describes the options for installing and configuring BizTalk 2013 R2 Server in a distributed topology on the CenturyLink Cloud using Blueprints.
+This KB article describes the options for installing and configuring BizTalk 2013 R2 Server in a distributed topology on the Lumen Cloud using Blueprints.
 
 The following software is installed by the BizTalk Server 2013 R2 Distributed Blueprint:
 
@@ -31,13 +31,13 @@ This Blueprint requires an existing server running Microsoft Windows 2012 R2 Dat
 This Blueprint installs SQL Server followed by Enterprise Single Sign on and finally the BizTalk Server 2013 R2. Once the installs have completed, the BizTalk server is configured and a copy of the configuration command script is copied to the C:\Temp\ConfigureBTS.cmd for reference.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
 After reading this article, the user should be able to deploy a BizTalk Server 2013 R2 Distributed Blueprint on three existing servers running Microsoft Windows 2012 R2 Datacenter Edition 64-bit.
 
 ### Prerequisite
-Access to the CenturyLink Cloud platform as an authorized user.
+Access to the Lumen Cloud platform as an authorized user.
 
 #### Steps to Deploy Blueprint
 1. Provision three new servers using the steps below.
@@ -115,20 +115,20 @@ Note: the server names should indicate the role the server will assume.
    * [Install BizTalk Server 2010 and BAM in a Multi-Computer Environment](http://social.technet.microsoft.com/wiki/contents/articles/1837.install-biztalk-server-2010-and-bam-in-a-multi-computer-environment.aspx)
 
 ### Access your BTS 2013 server
-To access your BTS 2013 server from a computer outside the CenturyLink Cloud network use the OpenVPN client as specified here: [How To Configure Client VPN](https://www.ctl.io/knowledge-base/network/how-to-configure-client-vpn/)
+To access your BTS 2013 server from a computer outside the Lumen Cloud network use the OpenVPN client as specified here: [How To Configure Client VPN](https://www.ctl.io/knowledge-base/network/how-to-configure-client-vpn/)
 
 ### Pricing
-The costs associated with this Blueprint deployment include CenturyLink Cloud infrastructure usage. Additional licensing costs may apply for Microsoft software, including Windows Server, BTS 2013 Server and SQL Server.
+The costs associated with this Blueprint deployment include Lumen Cloud infrastructure usage. Additional licensing costs may apply for Microsoft software, including Windows Server, BTS 2013 Server and SQL Server.
 
 ### Terawe
-CenturyLink Cloud works with [Terawe](http://terawe.com), a Microsoft Cloud and Hosting partner, to provide new  cloud offerings to our customers for various Microsoft products.
+Lumen Cloud works with [Terawe](http://terawe.com), a Microsoft Cloud and Hosting partner, to provide new  cloud offerings to our customers for various Microsoft products.
 
 Terawe is a software technology company that provides world-class sustainable solutions and services for customers. With key initiatives spanning industry verticals in education and hosting, along with in-depth expertise including Cloud, Data Platform, Mobility, Big Data and Business Intelligence, we create compelling solutions for customers at the highest efficiency and quality.
 
 ### Frequently Asked Questions
 
 #### Who should I contact for support?
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](https://t3n.zendesk.com/tickets/new).
 
-* For issues related to deploying the Terawe BTS Blueprints on CenturyLink Cloud please email
+* For issues related to deploying the Terawe BTS Blueprints on Lumen Cloud please email
 [support@terawe.com](mailto:support@terawe.com).

@@ -8,7 +8,7 @@
 
 ### Description
 
-The CenturyLink Cloud has updated the Server Alerting capabilities which offer a new way to create and manage alert policies.
+The Lumen Cloud has updated the Server Alerting capabilities which offer a new way to create and manage alert policies.
 
 **Q: What's new in the server alerting service?**
 
@@ -40,7 +40,7 @@ Once in the **Alert Policies** submenu, click "+ alert policy" and provide a nam
 
 **Q: What kind of emails do I receive when an alert occurs?**
 
-**A:** The CenturyLink Cloud platform will send an email to the address(es) designated in the alert policy whenever the alert threshold is exceeded. This email message identifies the name of the alert, and what capacity of the server (e.g. 80% CPU utilization) trigger the alert. The platform will also send a follow up email when the alert is no longer occurring.
+**A:** The Lumen Cloud platform will send an email to the address(es) designated in the alert policy whenever the alert threshold is exceeded. This email message identifies the name of the alert, and what capacity of the server (e.g. 80% CPU utilization) trigger the alert. The platform will also send a follow up email when the alert is no longer occurring.
 
 **Q: How can I see information in the Control Portal about active alerts?**
 
@@ -54,6 +54,6 @@ The server page itself also shows the alert details. You can see both the curren
 
 **Q: How do alert webhooks work?**
 
-**A:** [Webhooks](https://t3n.zendesk.com/entries/22916235-Webhooks-FAQ") are a powerful way to build a more event-driven relationship with your cloud environment. Users of webhooks can integrate internal systems with the resources running in the cloud. Alerts are now available as webhooks! Whenever an alert fires, the CenturyLink Cloud platform sends out a JSON-encoded message to a web address specified by the user. These JSON messages include the name of alert, account name, server name, and threshold violation details. Users can choose to also receive webhook events for alerts raised in any sub accounts.
+**A:** Webhooks are a powerful way to build a more event-driven relationship with your cloud environment. Users of webhooks can integrate internal systems with the resources running in the cloud. Alerts are now available as webhooks! Whenever an alert fires, the Lumen Cloud platform sends out a JSON-encoded message to a web address specified by the user. These JSON messages include the name of alert, account name, server name, and threshold violation details. Users can choose to also receive webhook events for alerts raised in any sub accounts.
 
 ![monitoringfaq05](https://t3n.zendesk.com/attachments/token/jtiu0cckldrrzll/?name=monitoringfaq05.png)

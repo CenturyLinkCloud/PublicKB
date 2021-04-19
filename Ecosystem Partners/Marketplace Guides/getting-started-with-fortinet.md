@@ -24,11 +24,11 @@ For additional information about the company please visit [Fortinet](//www.forti
 
 ### Description
 
-Fortinet has integrated their next-generation firewall (NGFW) technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this high-performance firewall solution.
+Fortinet has integrated their next-generation firewall (NGFW) technology with the Lumen Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this high-performance firewall solution.
 
 Each FortiGate virtual appliance ships with the broadest range of security and network technologies of any virtual appliance on the market today. And, because all of these technologies are included with the FortiGate-VM license, you have complete flexibility to deploy the right mix of technologies to fit your unique, virtualized environment and address your concerns about migrating data to the cloud.
 
-FortiGate is now available as part of the CenturyLink Cloud Platform.
+FortiGate is now available as part of the Lumen Cloud Platform.
 
 ### Solution Overview
 Each FortiGate-VM delivers the same comprehensive suite of consolidated, integrated security technologies as industry-leading FortiGate physical appliances. This suite includes:
@@ -41,31 +41,31 @@ Each FortiGate-VM delivers the same comprehensive suite of consolidated, integra
 Fortinet’s network security product strategy is built around a multi-tenant architecture. Fortinet solutions have the breadth and depth to address securing data as it moves to, through, and outside of the cloud. By providing centrally-managed physical and virtual appliances that deliver the broadest range of network security solutions in the industry, Fortinet can help protect your critical data, from the customer to the cloud and back.
 
 ### Offer
-Fortinet has provided their FortiGate Platform virtual appliance, known as a partner template, that can be deployed to your CenturyLink Cloud account via a Service Task. Although Service Tasks are ordinarily billed to the end user account, CenturyLink will provide a refund for the Service Task costs associated with deploying the Fortinet Partner Template. The process to request a refund can be found in this document. The FortiGate virtual appliance is sold via flexible licensing and packaging. We also have trial licenses available upon request. To receive pricing for your environment and/or receive a trial license please contact Fortinet sales: [Dustin Warner, dwarner@fortinet.com](mailto:dwarner@fortinet.com) or via telephone: (720) 838-7353.
+Fortinet has provided their FortiGate Platform virtual appliance, known as a partner template, that can be deployed to your Lumen Cloud account via a Service Task. Although Service Tasks are ordinarily billed to the end user account, Lumen will provide a refund for the Service Task costs associated with deploying the Fortinet Partner Template. The process to request a refund can be found in this document. The FortiGate virtual appliance is sold via flexible licensing and packaging. We also have trial licenses available upon request. To receive pricing for your environment and/or receive a trial license please contact Fortinet sales: [Dustin Warner, dwarner@fortinet.com](mailto:dwarner@fortinet.com) or via telephone: (720) 838-7353.
 
 ### Audience
-* CenturyLink Cloud Users, Security Administrators, Network Security, Operations Teams
+* Lumen Cloud Users, Security Administrators, Network Security, Operations Teams
 
 ### Impact
 After executing the steps in this Getting Started guide, users will have a functioning FortiGate High Performance Next-Gen Firewall upon which they can quickly start securing workloads in the cloud.
 
-The deployment process for partner templates currently requires manual interaction via the Service Task process, but will be further automated in future releases of the CenturyLink Cloud Platform.
+The deployment process for partner templates currently requires manual interaction via the Service Task process, but will be further automated in future releases of the Lumen Cloud Platform.
 
 If you are interested in seeing this type of partner template deployment as an automated feature in the future, please share your input with us at [features@ctl.io](mailto:features@ctl.io)
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 * A Network VLAN for the Fortinet partner template to be deployed on.
 * A FortiGate VM License.
-    **Note:** You will need to send this to CenturyLink Support at the time of deployment. You should have obtained a license from FortiGate sales.
+    **Note:** You will need to send this to Lumen Support at the time of deployment. You should have obtained a license from FortiGate sales.
 
 ### Deploying, Accessing, and Configuring the Fortigate Partner Template
-The Fortinet partner template deploys in a virtual appliance model, as a CenturyLink Cloud partner template.  Follow these step by step instructions to deploy a Fortinet Fortigate partner template in to your CenturyLink Cloud account.
+The Fortinet partner template deploys in a virtual appliance model, as a Lumen Cloud partner template.  Follow these step by step instructions to deploy a Fortinet Fortigate partner template in to your Lumen Cloud account.
 
-1. Open a Service Task Request Ticket via an email to [ServiceTasks@ctl.io](mailto:ServiceTasks@ctl.io). Attach your Fortinet license to the email and include the following details in the email:
+1. Open a Service Task Request Ticket via an email to [help@ctl.io](mailto:help@ctl.io). Attach your Fortinet license to the email and include the following details in the email:
 
-    * CenturyLink Cloud Account Alias
-    * CenturyLink Cloud Account PIN
+    * Lumen Cloud Account Alias
+    * Lumen Cloud Account PIN
     * Data Center (to import the image to)
     * Server Name (to import the image as)
     * VLAN (to add the server to)
@@ -77,17 +77,17 @@ The Fortinet partner template deploys in a virtual appliance model, as a Century
 
  ```
     ----
-    TO: ServiceTasks@ctl.io
+    TO: help@ctl.io
 
     EMAIL SUBJECT: Ecosystem Partner Template Import Request
 
     CLC Support Team,
 
-    Please create a ticket to import the Ecosystem Partner Template image referenced below to my CenturyLink Cloud Account:
+    Please create a ticket to import the Ecosystem Partner Template image referenced below to my Lumen Cloud Account:
 
-    - Import CenturyLink Ecosystem Partner Source Image: Fortinet Fortigate
-    - My CenturyLink Cloud Account Alias: ####
-    - My CenturyLink Cloud Account PIN: ######
+    - Import Lumen Ecosystem Partner Source Image: Fortinet Fortigate
+    - My Lumen Cloud Account Alias: ####
+    - My Lumen Cloud Account PIN: ######
     - Data Center to import image to: ###
     - Server Name to import image as: FORT
     - VLAN in the account to add the Server to: vlan_####_#.#.#.#
@@ -104,11 +104,11 @@ The Fortinet partner template deploys in a virtual appliance model, as a Century
 
 2. The support team will send you an email once the template has been deployed. This email will also contain the IP address of the server so that you can access the template.
 
-    **Note:** When accessing your VM for the first time or for any administration, we recommend you connect to your CenturyLink Cloud environment via Client VPN.
+    **Note:** When accessing your VM for the first time or for any administration, we recommend you connect to your Lumen Cloud environment via Client VPN.
 
 3. Using a web browser, navigate to `https://server_ip_address`. (This can be the private IP if you are connected via VPN, or a Public IP if you added one and opened the proper firewall rules).
 
-4. Log in with the newly-created administrator account.  The login will be supplied by the CenturyLink support team.
+4. Log in with the newly-created administrator account.  The login will be supplied by the Lumen support team.
 
 5. Once logged in, configure the High Performance Next-Gen Firewall by following the [FortiNet documentation](//support.fortinet.com).
 
@@ -117,16 +117,16 @@ The Fortinet partner template deploys in a virtual appliance model, as a Century
 ### Postrequisite
 To access your Fortinet partner template over the internet, please perform the following tasks once your VM has been deployed to your account.
 
-1. If required, [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
+1. If required, [Add a Public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
 
-2. If required, [allow incoming traffic for the admin port](../../Network/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Server's Public IP in the Control Portal.
+2. If required, [allow incoming traffic for the admin port](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) by clicking on the Server's Public IP in the Control Portal.
 
     **Warning:** Please make sure your firewall rules are properly configured to only allow specific source traffic. If you do not configure source traffic rules you risk exposing your VM to the entire internet.
 
-    **Note:** When accessing your VM for the first time or for any administration, we recommend you connect to your CenturyLink Cloud environment via Client VPN.
+    **Note:** When accessing your VM for the first time or for any administration, we recommend you connect to your Lumen Cloud environment via Client VPN.
 
 ### Pricing
-There are no Fortinet license costs included. The cost to deploy the Fortinet Partner Template will be billed as a Service Task, but CenturyLink will provide a credit for those costs. In order to receive a credit, please follow the instructions below. More information about Service Tasks and fees is [available here](//www.ctl.io/service-tasks).
+There are no Fortinet license costs included. The cost to deploy the Fortinet Partner Template will be billed as a Service Task, but Lumen will provide a credit for those costs. In order to receive a credit, please follow the instructions below. More information about Service Tasks and fees is [available here](//www.ctl.io/service-tasks).
 
 ### To Request a Credit for the Service Task Fee
 Request a credit on your account to reimburse any expense to deploy the partner template.
@@ -142,7 +142,7 @@ EMAIL SUBJECT:   Requesting Credit for Fortinet Partner Template Deployment
 
 CLC Ecosystem Team,
 
-I am requesting a credit be placed on my account to cover the fees associated with deploying the Fortinet Partner Template to my account under the Service Task deployed on MM/DD/YYYY.  My CenturyLink Cloud username or account alias the credit needs to be placed on is ######
+I am requesting a credit be placed on my account to cover the fees associated with deploying the Fortinet Partner Template to my account under the Service Task deployed on MM/DD/YYYY.  My Lumen Cloud username or account alias the credit needs to be placed on is ######
 
 Thank you very much, your_name_here
 
@@ -153,11 +153,11 @@ Thank you very much, your_name_here
 
 **Q:** Where do I obtain my Fortinet License or entitlements?
 
-**A:** Existing CenturyLink Enterprise Customers can contact their Account Representative for help obtaining a Fortinet license, or contact Fortinet directly: Please email [Dustin Warner, dwarner@fortinet.com](mailto:dwarner@fortinet.com) or via telephone: (720) 838-7353.
+**A:** Existing Lumen Enterprise Customers can contact their Account Representative for help obtaining a Fortinet license, or contact Fortinet directly: Please email [Dustin Warner, dwarner@fortinet.com](mailto:dwarner@fortinet.com) or via telephone: (720) 838-7353.
 
 **Q:** Who should I contact for support?
 
 **A:**
 * For issues regarding the Fortinet appliance, the application or functionality of it, please contact Fortinet via their 24x7 Web Support: [Fortinet](//support.fortinet.com), or via Phone Support: (866) 648 4638.
 
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).

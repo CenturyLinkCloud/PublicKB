@@ -19,21 +19,21 @@ Zoomdata – The Fastest Visual Analytics for Big Data
 * Sales Email - [sales@zoomdata.com](mailto:sales@zoomdata.com)
 
 ### Description
-Zoomdata has integrated their technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this visual analytics solution.
+Zoomdata has integrated their technology with the Lumen Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this visual analytics solution.
 
 Zoomdata is the world’s fastest solution for visual analytics of big data. Zoomdata enables business users to visually consume and interact with all the data in the modern enterprise. While specifically built for modern data sources -- including Cloudera -- Zoomdata also works with relational databases and popular cloud applications. Using patented Data Sharpening and Micro-query technologies, Zoomdata empowers business users to visually consume data in seconds, even across billions of rows of data. Zoomdata Fusion enables interactive analytics across disparate data sources, bridging modern and legacy data architectures, blending real-time streams and historical data, and unifying enterprise data on-premises and in the cloud. Zoomdata brings visual analytics to all business users -- not just data analysts -- via an intuitive user interface that can be used out of the box or embedded in custom applications.
 
-Technology from Zoomdata helps CenturyLink Cloud customers visually consume and interact with CenturyLink Cloud data services by implementing Zoomdata Server - now available as part of the CenturyLink Cloud Blueprint Engine.
+Technology from Zoomdata helps Lumen Cloud customers visually consume and interact with Lumen Cloud data services by implementing Zoomdata Server - now available as part of the Lumen Cloud Blueprint Engine.
 
 ### Audience
-CenturyLink Cloud Users, Big Data Enthusiasts
+Lumen Cloud Users, Big Data Enthusiasts
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the partner technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the partner technology on Lumen Cloud.
 
 After executing the steps in this Getting Started document, the users will have a functioning Zoomdata Server with which they can start developing big data discovery and self-service visual analytics solutions.
 
-* Getting started with Zoomdata on CenturyLink Cloud
+* Getting started with Zoomdata on Lumen Cloud
 
 ### Offer
 Zoomdata has included a free 30 day trial in a specifi Trial Blueprint. If you are deploying the Zoomdata Production Server or Installing the Zoomdata Server on Existing Hardware please complete [this contact form](http://www.zoomdata.com/centurylink) so that a Zoomdata representative can help you setup a license on your Zoomdata Server.
@@ -84,19 +84,19 @@ Follow these step by step instructions to deploy Zoomdata.
 Follow these steps to access and use the Zoomdata software.
 1. Access the VM.
    * Please log in to your server using the VPN access.
-   * [Click here for VPN configuration instructions](../../Network/how-to-configure-client-vpn.md).
+   * [Click here for VPN configuration instructions](../../Network/Lumen Cloud/how-to-configure-client-vpn.md).
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no Zoomdata license costs or additional fees bundled in. To take advantage of the 30 day free trial, select the Zoomdata Trial Version.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. There are no Zoomdata license costs or additional fees bundled in. To take advantage of the 30 day free trial, select the Zoomdata Trial Version.
 
 ### Frequently Asked Questions
 
 #### Where do I get my Zoomdata License?
-* The Zoomdata on CenturyLink Cloud is provided in a bring-your-own-license model. Please contact [sales@zoomdata.com](mailto:sales@zoomdata.com) to activate your Zoomdata license.
+* The Zoomdata on Lumen Cloud is provided in a bring-your-own-license model. Please contact [sales@zoomdata.com](mailto:sales@zoomdata.com) to activate your Zoomdata license.
 
 #### Is there documentation available for Zoomdata?
 * Yes. Please visit [http://docs.zoomdata.com/zoomdata-docs-portal](http://docs.zoomdata.com/zoomdata-docs-portal) for complete documentation.
 
 #### Who should I contact for support?
-* For issues related to deploying the Zoomdata Blueprint on CenturyLink Cloud, please contact [support@zoomdata.com](mailto:support@zoomdata.com) or via telephone: (888) 600-6996.
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to deploying the Zoomdata Blueprint on Lumen Cloud, please contact [support@zoomdata.com](mailto:support@zoomdata.com) or via telephone: (888) 600-6996.
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).

@@ -29,12 +29,10 @@ Import the following keys
 
 **RHEL / CentOS:**
 
-`rpm --import http://packages.vmware.com/tools/keys/VMWARE-PACKAGING-GPG-DSA-KEY.pub`
 `rpm --import http://packages.vmware.com/tools/keys/VMWARE-PACKAGING-GPG-RSA-KEY.pub`
 
 **Ubuntu:**
 
-`wget http://packages.vmware.com/tools/keys/VMWARE-PACKAGING-GPG-DSA-KEY.pub -O - | apt-key add -`
 `wget http://packages.vmware.com/tools/keys/VMWARE-PACKAGING-GPG-RSA-KEY.pub -O - | apt-key add -`
 
 **Create the config file for the new repository:**

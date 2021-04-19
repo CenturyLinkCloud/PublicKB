@@ -7,9 +7,9 @@
 }}}
 
 ### Overview
-CenturyLink Cloud’s Account Hierarchy management features allows customers granular enablement and demarcation of: users, systems, groups, networks,
-billing, reporting, and/or sub-accounts that reside within the CenturyLink Cloud platform. Customers with administrator access can create and manage these attributes
-within the CenturyLink Cloud Control Portal. It is strongly recommended organizations should consider the following factors, limitations, and best practices before they
+Lumen Cloud’s Account Hierarchy management features allows customers granular enablement and demarcation of: users, systems, groups, networks,
+billing, reporting, and/or sub-accounts that reside within the Lumen Cloud platform. Customers with administrator access can create and manage these attributes
+within the Lumen Cloud Control Portal. It is strongly recommended organizations should consider the following factors, limitations, and best practices before they
 embark on leveraging the aforementioned features.
 
 ### Factors that Influence Account Configuration
@@ -31,8 +31,8 @@ There are many factors that influence how a customer or reseller will configure 
 * Accounts can’t be moved in their hierarchies
 
 * There is no “read-only” mode for users, role cascades.  Need to be careful about allowing access
-* Billing data out of Savvis/CenturyLink does not go down to server level only Account/Group
-* Additional detail on current spend can be found in the portal or through the API, but API data for invoices is not guaranteed to be aligned with Savvis/CenturyLink data (e.g. no tax)
+* Billing data out of Savvis/Lumen does not go down to server level only Account/Group
+* Additional detail on current spend can be found in the portal or through the API, but API data for invoices is not guaranteed to be aligned with Savvis/Lumen data (e.g. no tax)
 * No self-service ability to set custom pricing in the control portal
 
 ### Best Practices

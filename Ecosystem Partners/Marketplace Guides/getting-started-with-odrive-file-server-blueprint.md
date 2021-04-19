@@ -20,9 +20,9 @@ Check out this [odrive video](https://vimeo.com/117538897) to learn more.
 24x7 Web Support - [https://www.odrive.com/forum/](https://www.odrive.com/forum/)
 
 ### Description
-odrive has integrated their technology with the CenturyLink Cloud platform and produced several Blueprints to deploy the odrive File Server. In addition, a user can link to CenturyLink servers via SFTP protocol. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Cloud and file sharing solution.
+odrive has integrated their technology with the Lumen Cloud platform and produced several Blueprints to deploy the odrive File Server. In addition, a user can link to Lumen servers via SFTP protocol. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this Cloud and file sharing solution.
 
-odrive offers integrated file sync capabilities with the CenturyLink Cloud platform. This document will guide CenturyLink users how to deploy the odrive File Server in the CenturyLink Cloud and link to Century Link cloud servers via SFTP with a few easy steps.
+odrive offers integrated file sync capabilities with the Lumen Cloud platform. This document will guide Lumen users how to deploy the odrive File Server in the Lumen Cloud and link to Century Link cloud servers via SFTP with a few easy steps.
 
 ### Solution Overview
 odrive enables Century Link customers to set up either an individual private cloud or public cloud storage for groups.
@@ -32,26 +32,26 @@ odrive fully supports SFTP (SSH File Transfer Protocol) linking, giving you the 
 With the odrive file server (OFS), you can add a user and provision storage in seconds. Administrators have full control over user permissions and access. You will also have real-time insight into user access and data usage.
 
 ### Offer
-odrive is offering SFTP linking and the odrive File Server as part of a no charge program for Linux and Windows servers within CenturyLink’s Cloud. Through this unique offer, users will have access to SFTP linking and the odrive File Server services at no additional cost. Please check with CenturyLink for any access charges that may apply to using its Cloud. Please contact ODrive directly for offer and pricing details.
+odrive is offering SFTP linking and the odrive File Server as part of a no charge program for Linux and Windows servers within Lumen’s Cloud. Through this unique offer, users will have access to SFTP linking and the odrive File Server services at no additional cost. Please check with Lumen for any access charges that may apply to using its Cloud. Please contact ODrive directly for offer and pricing details.
 
 All use of odrive software, documentation and services is governed by odrive’s Software License and Support Agreement or End User License Agreement (EULA) that can be reviewed at: [https://www.odrive.com/terms/](https://www.odrive.com/terms/)
 
 ### Audience
-CenturyLink Cloud Users, Developers, IT Engineers, IT Administrators, File Sharing application users
+Lumen Cloud Users, Developers, IT Engineers, IT Administrators, File Sharing application users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using odrive to link to CenturyLink Cloud either by SFTP or via the odrive File Server.
+After reading this article, the user should feel comfortable getting started using odrive to link to Lumen Cloud either by SFTP or via the odrive File Server.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 * Install the [odrive client](https://www.odrive.com/m/) on your workstation or laptop in order to access the odrive File Server.
 
 ### Postrequisite
 * If you want to access odrive file server over the internet, please perform the following tasks once you receive an email confirming you Blueprint completed successfully.
 
-* If you need to connect to your odrive file server via the Internet, Add a [Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/how-to-configure-client-vpn.md) or similar technology.
+* If you need to connect to your odrive file server via the Internet, Add a [Public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal. Alternatively, you can [setup a VPN using OpenVPN](../../Network/Lumen Cloud/how-to-configure-client-vpn.md) or similar technology.
 
-* [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal.
+* [Allow incoming traffic](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal.
 
 1. Add a Public IP to your VM and open Firewall ports `4433` and `4434` for TCP protocol.
 1. Browse to the new VM and click on the Add Public IP button.
@@ -140,7 +140,7 @@ Once your odrive File Server has been configured, you can store information on i
 5. For more information on odrive and how to enable advanced configuration, please visit the odrive Support Forum: [https://www.odrive.com/forum/](https://www.odrive.com/forum/).
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no odrive license costs or additional fees bundled in.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. There are no odrive license costs or additional fees bundled in.
 
 ### Frequently Asked Questions
 
@@ -148,6 +148,6 @@ The costs associated with this Blueprint deployment are for the CenturyLink Clou
 odrive is free. Sign up at: [http://odrive.com](http://odrive.com).
 
 #### Who should I contact for support?
-* For issues related to deploying the odrive Blueprint on CenturyLink Cloud or linking via SFTP, Licensing, Accessing or using the deployed software, please visit the odrive Support Forum: [https://www.odrive.com/forum/](https://www.odrive.com/forum/)
+* For issues related to deploying the odrive Blueprint on Lumen Cloud or linking via SFTP, Licensing, Accessing or using the deployed software, please visit the odrive Support Forum: [https://www.odrive.com/forum/](https://www.odrive.com/forum/)
 
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the support website](https://t3n.zendesk.com/tickets/new).

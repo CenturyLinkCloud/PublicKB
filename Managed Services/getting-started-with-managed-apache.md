@@ -7,7 +7,7 @@
 }}}
 
 ### Overview
-CenturyLink Cloud Web server application offers a reliable, high-performance, and secure vehicle for delivery HTTP content to end users. Here's how to create a managed Apache environment in CenturyLink Cloud.
+Lumen Cloud Web server application offers a reliable, high-performance, and secure vehicle for delivery HTTP content to end users. Here's how to create a managed Apache environment in Lumen Cloud.
 
 ### Prerequisites
 * Managed Red Hat Enterprise Linux
@@ -45,9 +45,9 @@ CenturyLink Cloud Web server application offers a reliable, high-performance, an
 
 ### FAQ
 
-**Q: How is the CenturyLink Cloud for Managed Apache HTTP priced?**
+**Q: How is the Lumen Cloud for Managed Apache HTTP priced?**
 
-A: CenturyLink Cloud Web Software for Apache is priced by the VM, billed hourly. Refer to our [pricing catalog](//www.ctl.io/pricing) for detailed pricing.
+A: Lumen Cloud Web Software for Apache is priced by the VM, billed hourly. Refer to our [pricing catalog](//www.ctl.io/pricing) for detailed pricing.
 
 **Q: Can the customer have multiple Apache Instances installed on the same server?**
 

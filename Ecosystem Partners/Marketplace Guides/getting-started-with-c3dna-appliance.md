@@ -22,10 +22,10 @@ http://www.c3dna.com/product.html
 C<sup>3</sup>DNA’s self-reliant Application Lifecycle Management platform is completely Application driven. By “focusing on the App” we enable easy migration of entire applications between data centers. Our platform tackles the problem at the source and delivers application portability at the app layer. Applications become infrastructure agnostic, self-reliant, portable across clouds and can be “cloudify” in a few steps.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Prerequisites
-* Access to the CenturyLink Cloud platform as an authorized user
+* Access to the Lumen Cloud platform as an authorized user
 * control.ctl.io account with password authentication (two-factor authentication not yet supported)
 
 ### Steps to Deploy a New Appliance
@@ -101,4 +101,4 @@ After deploying this Blueprint, you may secure additional entitlements to the te
 
 **Who should I contact for support?**
 * For issues related to deploying C<sup>3</sup>DNA email support@c3dna.com.
-* For issues related to cloud infrastructure, please open a ticket using the [CenturyLink Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).
+* For issues related to cloud infrastructure, please open a ticket using the [Lumen Cloud Support Process](../../Support/how-do-i-report-a-support-issue.md).

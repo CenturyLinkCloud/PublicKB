@@ -1,7 +1,7 @@
 {{{
   "title": "Getting Started with Managed Services Anywhere in CAM",
-  "date": "5-30-2019",
-  "author": "Mindy Daugherty",
+  "date": "2-16-2021",
+  "author": "Randy Wansing",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -10,42 +10,62 @@
 
 Managed Services Anywhere (MSA) provides comprehensive managed services including monitoring, patching and remote administration by way of automation and hands-on access by certified IT professionals.
 
-Services are offered on Amazon Web Services (AWS), Microsoft Azure (Azure) and CenturyLink Private Cloud on VMware Cloud Foundation per Provider (An account in one of the previously mentioned cloud platforms where customer is either directly responsible for the billing or buying the services through CenturyLink)
+Services are offered on Amazon Web Services (AWS), Microsoft Azure (Azure) and Lumen Private Cloud on VMware Cloud Foundation per Provider (An account in one of the previously mentioned cloud platforms where customer is either directly responsible for the billing or buying the services through Lumen)
 
 ### CAM MSA Technical Dependencies
 
-For CenturyLink teams to be able to offer Managed Services on customer workloads, there is a technical dependency to have a Management Appliance in the VPC (AWS), Virtual Network (Azure) or Org Network (CenturyLink Private Cloud on VMware Cloud Foundation) where the workloads reside.
+For Lumen teams to be able to offer Managed Services on customer workloads, there is a technical dependency to have a Management Appliance in the VPC (AWS), Virtual Network (Azure) or Org Network (Lumen Private Cloud on VMware Cloud Foundation) where the workloads reside.
 
-CenturyLink Management Appliance enables CenturyLink Support Engineers the ability to access customer's workloads in a secure mechanism and provide Managed Services. Additionally, outbound internet access must be available for the Management Appliance and the managed workloads.
+Lumen Management Appliance enables Lumen Support Engineers the ability to access customer's workloads in a secure mechanism and provide Managed Services. Additionally, outbound internet access must be available for the Management Appliance and the managed workloads.
+
+The management appliance must be installed on a Centos 7 server.
+
+#### Supported OS
+
+- RHEL 6, 7, and 8
+- CentOS 6, 7, and 8 
+- Ubuntu 14, 16 and 18
+- Windows 2k08R2, 2k12, 2k16, and 2k19
+
+Note for windows servers, .NET 4.6 and powershell 3.0 must be installed, and TLS 1.2 must be supported.
+
+For all other operating systems, please consult with a sales representative.  
 
 ### Enable Managed Services on a cloud provider in Cloud Application Manager (CAM)
 
-After configuring your AWS, Azure or CenturyLink Private Cloud on VMware Cloud Foundation provider within CAM (see Providers KB article) an initial synchronization of the provider will occur (a sync can be done at any time by clicking the Sync button on the provider's Logs tab).
+After configuring your AWS, Azure or Lumen Private Cloud on VMware Cloud Foundation provider within CAM (see Providers KB article) an initial synchronization of the provider will occur (a sync can be done at any time by clicking the Sync button on the provider's Logs tab).
 
-During the synchronization process, CenturyLink automation will collect information about the provider such as running workloads (VMs), security policies, IAM roles, images/AMIs, Networks, VPCs, and other configuration details.
+During the synchronization process, Lumen automation will collect information about the provider such as running workloads (VMs), security policies, IAM roles, images/AMIs, Networks, VPCs, and other configuration details.
 
 Upon completion of the synchronization the provider will be Online and available to be affected through CAM Application Lifecycle Management (ALM), Managed Services Anywhere (MSA) and Analytics.
 
-You can choose to Enable Managed Services on the provider at this time and by doing so, CenturyLink will enable our comprehensive managed services including monitoring, patching and remote administration by way of automation and hands-on access by certified IT professionals. MSA includes all the ALM features along with Analytics and a Technical Account Manager will be assigned to your account.
+You can choose to Enable Managed Services on the provider at this time and by doing so, Lumen will enable our comprehensive managed services including monitoring, patching and remote administration by way of automation and hands-on access by certified IT professionals. MSA includes all the ALM features along with Analytics and a Technical Account Manager will be assigned to your account.
 
-* Select the Provider on which MSA is to be enabled from the **Providers** tab.
+- Select the Provider on which MSA is to be enabled from the **Providers** tab.
 
-  ![GettingStarted1.png](../../images/cloud-application-manager/GettingStarted1.png)
+  ![getting-started-enable-msa-2.png](../../images/cloud-application-manager/getting-started-enable-msa-2.png)
 
-* Next click on **Services** to open and configure available services. To enable Managed Services Anywhere, toggle the “Enable Services Anywhere’ button from **OFF** to **ON**.
+- Next click on **Services** to open and configure available services. To enable Managed Services Anywhere, Click "Edit" button.
 
-  ![GettingStarted2.png](../../images/cloud-application-manager/GettingStarted2.png)
+  ![getting-started-enable-msa-2.png](../../images/cloud-application-manager/getting-started-enable-msa-2.png)
 
-* Review and Accept the Enable Managed Services Terms by checking the checkbox and then click **Enable**.
+- MSA Workload Tiers (Default is Off)
+  - Optional Management of Compute & OS  (Off, Alerting, Managed)
+  - Optional Management of Non-native Databases  (Off, Alerting, Managed)
+    - Alerting option only available when Compute & OS set to Alerting or Managed
+    - Managed option only available when Compute & OS set to Managed
+  - Optional Management of Non-native Web Services  (Off, Alerting, Managed)
+    - Alerting option only available when Compute & OS set to Alerting or Managed
+    - Managed option only available when Compute & OS set to Managed
 
-  ![GettingStarted3.png](../../images/cloud-application-manager/GettingStarted3.png)
+  ![getting-started-enable-msa-3.png](../../images/cloud-application-manager/getting-started-enable-msa-3.png)
 
-After agreeing to Enable Managed Services Terms, you will be prompted to select the VPC(s) or Network(s) where your managed workloads are deployed and/or where you wish to deploy managed workloads.
+After setting your workload tier levels of management, Click the "Apply" button. You will be prompted to select the VPC(s) or Network(s) where your managed workloads are deployed and/or where you wish to deploy managed workloads.
 
 The make managed process will deploy a VM within the region(s) or VPC(s)/Networks(s) selected for the management appliance to be deployed on.
 
 The VM will be deployed to the customer's environment and the cost will be reflected on the customer's cloud provider bill.
-For this reason, CenturyLink provides this mechanism to allow customers to select only those Regions, VPCs/Networks where they have, or will have, workloads deployed.
+For this reason, Lumen provides this mechanism to allow customers to select only those Regions, VPCs/Networks where they have, or will have, workloads deployed.
 
 **Azure:** For regions where a network and security group does not already exist, an Azure Resource Manager (ARM) template will be deployed creating the necessary network and security group prior to deploying the management appliance (VM).
 
@@ -69,7 +89,7 @@ Continue to add additional Regions or select **Apply** and confirm changes.
 
 ![GettingStartedConfirm.png](../../images/cloud-application-manager/GettingStartedConfirm.png)
 
-**AWS:** By default AWS creates a default VPC and Default network in each region.  To avoid the cost of unnecessary VMs in regions where no workloads are deployed, CenturyLink enables the ability to select those regions where workloads exist for the AWS account configured in the provider.  
+**AWS:** By default AWS creates a default VPC and Default network in each region.  To avoid the cost of unnecessary VMs in regions where no workloads are deployed, Lumen enables the ability to select those regions where workloads exist for the AWS account configured in the provider.  
 
 Selecting a VPC and Network within a region will result in the automated deployment of the Management appliance.  
 

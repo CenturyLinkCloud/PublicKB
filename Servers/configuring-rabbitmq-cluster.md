@@ -14,7 +14,7 @@
 
 <p>Upon RabbitMQ cluster installation a testing method will be presented as well.</p>
 
-<h3>Steps to Configure RabbitMQ Cluster on CenturyLink Cloud</h3>
+<h3>Steps to Configure RabbitMQ Cluster on Lumen Cloud</h3>
 
 
 <div>

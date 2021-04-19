@@ -8,11 +8,11 @@
 
 ### Overview
 
-CenturyLink provides a vast array of Hybrid IT solutions for customers to consume on-demand and through self-service. This matrix is designed to provide a single resource to review availability of **location-specific** CenturyLink Hybrid IT solutions on a global scale.
+Lumen provides a vast array of Hybrid IT solutions for customers to consume on-demand and through self-service. This matrix is designed to provide a single resource to review availability of **location-specific** Lumen Hybrid IT solutions on a global scale.
 
 ### Exceptions
 
-* Only location-specific services are provided in this matrix. For a full list of CenturyLink Hybrid Cloud and IT products and services [visit our product catalog](//www.ctl.io/product-catalog/).
+* Only location-specific services are provided in this matrix. For a full list of Lumen Hybrid Cloud and IT products and services [visit our product catalog](//www.ctl.io/product-catalog/).
 
 ### Hardware Products
 
@@ -34,7 +34,7 @@ CenturyLink provides a vast array of Hybrid IT solutions for customers to consum
 [Utility Storage](//www.ctl.io/marketplace/partner/CLCC/product/Utility%20Storage%20Services/)| Atlanta 1 - AT1<br>Boston 2 - BO2<br>Chicago 3 - CH3<br>Chicago 4 - CH4<br>DC.3 Sterling - DC3<br>New Jersey 2 - NJ2<br>New Jersey 2X - NJ2X<br>New Jersey 3 - NJ3<br>Seattle 2 - SE2<br>Santa Clara 9 – SC9<br>Bangalore - BLR2<br>Frankfurt - FR5<br>Frankfurt - FR6<br>Hong Kong - HKNG7<br>Singapore - SING8<br>Singapore 2 - SING2<br>Tokyo - TY6<br>Toronto 1 - TR1<br>Toronto 3 - TR3<br>United Kingdom - LO4<br>United Kingdom – LO1<br>United Kingdom 2 – LOND
 [Utility Storage - QoS Migration](//www.ctl.io/data-centers/#/filters/Utility%20Storage%20-%20QoS%20Migration)| Atlanta 1 - AT1<br>Chicago 3 - CH3<br>Chicago 4 - CH4<br>DL2 Dallas FW - DL2<br>El Segundo 1 - LA1<br>New Jersey 3 - NJ3<br>Seattle 2 - SE2<br>Santa Clara 9 – SC9<br>Bangalore - BLR2<br>Frankfurt 5 - FR5<br>Frankfurt 6 - FR6<br>Singapore - SING8<br>Singapore 2 - SING2<br>Tokyo - TY6<br>Toronto 1 - TR1<br>United Kingdom – LO1<br>United Kingdom 2 – LOND
 [SAN Connect](//www.ctl.io/block-storage/)| Atlanta 1 - AT1<br>Boston 2 - BO2<br>Chicago 3 - CH3<br>Chicago 4 - CH4<br>DC.3 Sterling - DC3<br>DL2 Dallas FW - DL2<br>El Segundo 1 - LA1<br>Minneapolis 2 - MP2<br>New Jersey 2 - NJ2<br>New Jersey 2X - NJ2X<br>New Jersey 3 - NJ3<br>New Jersey 4 - NJ4<br>Seattle 2 - SE2<br>Santa Clara 9 – SC9<br>Bangalore - BLR2<br>Frankfurt 5 - FR5<br>Frankfurt 6 - FR6<br>Hong Kong 2 - HK2<br>Hong Kong - HKNG7<br>Shanghai - 3PSH2<br>Singapore - SING8<br>Singapore 2 - SING2<br>Tokyo - TY6<br>Toronto 1 - TR1<br>Toronto 3 - TR3<br>United Kingdom – LO1<br>United Kingdom – LO4<br>United Kingdom 2 – LOND
-[NAS Connect](//www.ctl.io/knowledge-base/servers/using-a-software-defined-virtual-nassan-on-centurylink-cloud/)| Boston 2 - BO2<br>Chicago 3 - CH3<br>Chicago 4 - CH4<br>DC.3 Sterling - DC3<br>DL2 Dallas FW - DL2<br>El Segundo 1 - LA1<br>New Jersey 2 - NJ2<br>New Jersey 2X - NJ2X<br>New Jersey 3 - NJ3<br>Seattle 2 - SE2<br>Santa Clara 9 – SC9<br>United Kingdom 2 – LOND
+[NAS Connect](//www.ctl.io/knowledge-base/servers/using-a-software-defined-virtual-nassan-on-lumen-cloud/)| Boston 2 - BO2<br>Chicago 3 - CH3<br>Chicago 4 - CH4<br>DC.3 Sterling - DC3<br>DL2 Dallas FW - DL2<br>El Segundo 1 - LA1<br>New Jersey 2 - NJ2<br>New Jersey 2X - NJ2X<br>New Jersey 3 - NJ3<br>Seattle 2 - SE2<br>Santa Clara 9 – SC9<br>United Kingdom 2 – LOND
 [NAShare](//www.ctl.io/marketplace/partner/CLCC/product/Unified%20Storage/)| Atlanta 1 - AT1<br>Boston 2 - BO2<br>Chicago 3 - CH3<br>DC.3 Sterling - DC3<br>DL2 Dallas FW - DL2<br>El Segundo 1 - LA1<br>New Jersey 2 - NJ2<br>New Jersey 2X - NJ2X<br>New Jersey 3 - NJ3<br>Seattle 2 - SE2<br>Santa Clara 9 – SC9<br>Frankfurt 5 - FR5<br>Frankfurt 6 - FR6<br>Singapore - SING8<br>Singapore 2 - SING2<br>Toronto 1 - TR1<br>United Kingdom – LO1<br>United Kingdom 2 – LOND
 
 #### Backup Products

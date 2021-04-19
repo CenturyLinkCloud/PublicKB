@@ -73,4 +73,4 @@ The SafeHaven releaes note page (like [this for SafeHaven-4.0.1](safehaven-4.0.1
 #### Summary and Recommendation to Firewall Internet Access White Listing
 
 * Temporarily allow all Internet access (http and https) during cluster installation phase.
-* White list https://*.ctl.io/ which could cover anything provided by CenturyLink Cloud.
+* White list https://*.ctl.io/ which could cover anything provided by Lumen Cloud.

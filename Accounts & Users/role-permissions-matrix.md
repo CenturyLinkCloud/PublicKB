@@ -9,8 +9,8 @@
 
 ### Audience
 
-Any user of CenturyLink Cloud products and services.
+Any user of Lumen Cloud products and services.
 
 ### Overview
 
-View the [Role Permission Matrix](//www.ctl.io/role-permissions-matrix/) for CenturyLink Cloud.
+View the [Role Permission Matrix](//www.ctl.io/role-permissions-matrix/) for Lumen Cloud.

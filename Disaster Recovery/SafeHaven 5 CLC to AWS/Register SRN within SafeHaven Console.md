@@ -7,7 +7,7 @@
 }}}
 
 ### Article Overview
-This article focusses on how to Register SRNs within the SafeHaven Console for CenturyLink Cloud and AWS.
+This article focusses on how to Register SRNs within the SafeHaven Console for Lumen Cloud and AWS.
 
 ### Requirements
 1. SafeHaven Cluster already installed.

@@ -8,12 +8,12 @@
 
 ### Overview
 
-CenturyLink offers customers world-class support services to match any organization’s budget and requirements. This article summarizes the post-sales cloud support teams that are currently available to customers. For more information and/or to engage one of these service groups, please contact your CenturyLink Sales Representative or our NOC.
+Lumen offers customers world-class support services to match any organization’s budget and requirements. This article summarizes the post-sales cloud support teams that are currently available to customers. For more information and/or to engage one of these service groups, please contact your Lumen Sales Representative or our NOC.
 
 <!--### CLoud Onboarding Services:
-* All CenturyLink Cloud QuickStart Onboardings. Please see https://www.ctl.io/onboarding/ for more information.-->
+* All Lumen Cloud QuickStart Onboardings. Please see https://www.ctl.io/onboarding/ for more information.-->
 
-### CenturyLink Cloud Customer Care (support) team
+### Lumen Cloud Customer Care (support) team
 * 24/7 support of your cloud infrastructure and resources. The Customer Care team is "Always On", available to answer your questions regarding the Platform and work to resolve any isseus you are having with the service. Please see https://www.ctl.io/support/ for more information.
 
 ### Service Tasks
@@ -30,7 +30,7 @@ CenturyLink offers customers world-class support services to match any organizat
 
 
 ### Cloud Consulting & Transition Services (aka Solutions Consulting)
-* Large scale migrations and implementations that are managed by CenturyLink. Please see http://www.centurylinktechnology.com/consulting for more information
+* Large scale migrations and implementations that are managed by Lumen. Please see http://www.centurylinktechnology.com/consulting for more information
 
 ### Service Management
-* When you require hybrid support options beyond cloud based solutions, CenturyLink’s Service Management team can provide you this level of support. Please see http://www.centurylinktechnology.com/service-management for more information
+* When you require hybrid support options beyond cloud based solutions, Lumen’s Service Management team can provide you this level of support. Please see http://www.centurylinktechnology.com/service-management for more information

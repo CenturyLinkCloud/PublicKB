@@ -6,12 +6,12 @@
   "contentIsHTML": true
 }}}
 
-<p>One of the benefits of the CenturyLink Cloud platform is the elasticity of resource allocation; our utility based model allows customers to pay only for the required compute resources, unlike the physical model wherein one is sizing for the maximum possible required
+<p>One of the benefits of the Lumen Cloud platform is the elasticity of resource allocation; our utility based model allows customers to pay only for the required compute resources, unlike the physical model wherein one is sizing for the maximum possible required
   resources. When greater capacity is needed- simply adjust your machines allocation to scale.</p>
 <p>When planning an initial deployment, some consideration is required- migrating workloads to a cloud environment isn’t quite as simple as a 1:1 mapping of physical to virtual resources. Nearly all hypervisors have mechanisms to consolidate resources requirements
   to extract greater performance out of lesser resources (e.g. memory ballooning, transparent page sharing, etc.). This article will focus on a few commands which provide better insight into real-world resource usage in the hope of “right-sizing” your
   Windows environment. For the purpose of demonstration, Server 2008 R2 will be used, however, these commands translate across most Operating System versions.</p>
-<p>If you are looking to transition your virtualized environment to take advantage of CenturyLink Cloud’s enterprise performance or global data centers, you can already view most detailed resource utilization in your existing hypervisor.</p>
+<p>If you are looking to transition your virtualized environment to take advantage of Lumen Cloud’s enterprise performance or global data centers, you can already view most detailed resource utilization in your existing hypervisor.</p>
 <p>Perfmon is a natively available Windows utility which provides insight into performance counters, this tutorial will guide you through collecting data for memory, processor and disk I/O utilization.</p>
 
 <ol>
@@ -74,6 +74,6 @@
 <li><strong>System\Processor Queue Length.</strong> This indicates the number of threads in the processor queue. The server doesn't have enough processor power if the value is more than two times the number of CPUs for an extended period of time.</li>
 <li><strong>Processor\Processor Time.</strong> This measures the percentage of elapsed time the processor spends executing a non-idle thread. If the percentage is greater than 85 percent, the processor is overwhelmed and the server may require more
   processing power.</p>
-<p>If you need additional assistance, or have any questions about designing your cloud environment, CenturyLink Cloud's team of Solutions Architects are readily available to assist with planning, sizing, capacity management, and migration strategies for moving and
+<p>If you need additional assistance, or have any questions about designing your cloud environment, Lumen Cloud's team of Solutions Architects are readily available to assist with planning, sizing, capacity management, and migration strategies for moving and
   managing your cloud infrastructure.</p></li>
 </ol>

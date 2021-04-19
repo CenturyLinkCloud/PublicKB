@@ -41,7 +41,7 @@ Required Compute:
 ### Postrequisites
 
 * Java Runtime
-* [VPN Access](../../Network/how-to-configure-client-vpn.md) is required in order to administer the cluster via the GUI tool.
+* [VPN Access](../../Network/Lumen Cloud/how-to-configure-client-vpn.md) is required in order to administer the cluster via the GUI tool.
 
 
 ### Cluster Configuration
@@ -125,14 +125,14 @@ The SDC installer will require the IP address of the primary MDM node as well as
 
 ### Performance
 
-For optimal performance, consider using cloud or Bare Metal server types for the SDS nodes. To do so, 
+For optimal performance, consider using cloud or Bare Metal server types for the SDS nodes. To do so,
 pre-allocate these machines in a server group of your choice. Then point the cluster installer at the group.
 
 
 
 ### Licensing
 
-The costs associated with this installer are for the CenturyLink Cloud
+The costs associated with this installer are for the Lumen Cloud
 infrastructure only. EMC ScaleIO is free to use for evaluation
 purposes. An EMC ScaleIO license is required for normal operation and
 available for purchase from [EMC directly][scaleio-store].
@@ -148,9 +148,9 @@ available for purchase from [EMC directly][scaleio-store].
   [EMC Support][scaleio-support].
 
 * For issues related to cloud infrastructure (VMs, network, etc.), or
-  if you experience a problem deploying the installer, please open a CenturyLink Cloud Support ticket by emailing
-  [noc@ctl.io](mailto:noc@ctl.io) or
-  [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+  if you experience a problem deploying the installer, please open a Lumen Cloud Support ticket by emailing
+  [help@ctl.io](mailto:help@ctl.io) or
+  [through the Lumen Cloud Support website](https://t3n.zendesk.com/tickets/new).
 
 
 

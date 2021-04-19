@@ -7,11 +7,11 @@
 }}}
 
 
-The following Service personnel tasks and activities are included in the TSE’s tasks and activities, limited by the hours per month included in the package purchased by the customer. Services extend across all products and services in the CenturyLink portfolio, not just CenturyLink Cloud.
+The following Service personnel tasks and activities are included in the TSE’s tasks and activities, limited by the hours per month included in the package purchased by the customer. Services extend across all products and services in the Lumen portfolio, not just Lumen Cloud.
 
 ### Technical Leadership
 
-* Technical Engineer at CenturyLink
+* Technical Engineer at Lumen
 * Understand Customer’s technical environment and can implement changes
 * Representation at technical forums
 * Proactive recommendations for service optimization and enhancement

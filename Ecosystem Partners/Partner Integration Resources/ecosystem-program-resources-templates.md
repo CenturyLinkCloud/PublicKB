@@ -6,25 +6,21 @@
   "contentIsHTML": false
 }}}
 
+Lumen [Ecosystem Program Partner Members](lumen-cloud-ecosystem-program-guide.md) gain access to a bevy of [resources](ecosystem-program-resources.md) that make integrations easy.
 
-CenturyLink [Ecosystem Program Partner Members](centurylink-cloud-ecosystem-program-guide.md) gain access to a bevy of [resources](ecosystem-program-resources.md) that make integrations easy.
+Creating server templates on Lumen Cloud enables customers to deploy bit-for-bit replicas of your software as a virtual appliance.
 
-Creating Server Templates on CenturyLink Cloud enables customers to deploy bit-for-bit replicas of your software as a virtual appliance.
+### Universal Deploy
+This supports nearly any virtual appliance type including those that require console configuration on first boot.  These deploys are performed by Lumen operations staff as a service task and take longer to deploy.
 
-We have two deployment models available:
+### Universal Deploy Core Documentation
 
-* **Universal Deploy**.  Supports nearly any virtual appliance type including those that require console configuration on first boot.  These deploys are performed by CenturyLink operations staff as a Service Task and take longer to deploy.
+Reference the following key pages from the Lumen Cloud [knowledge base](//www.ctl.io/knowledge-base).
 
-### (Universal Deploy) Core Documentation
-
-Reference the following key pages from the CenturyLink Cloud [Knowledge Base](https://www.ctl.io/knowledge-base/):
-
-* [How To Publish a Partner Template from a Virtual Appliance](../Marketplace Guides/howto-publish-a-partner-template-from-a-virtual-appliance.md)
-* [Requirements for custom image/VM imports](../../Service Tasks/requirements-for-custom-imagevm-imports.md) (case 1)
-* [Best Practices and Preparation for a Virtual Machine/OVF/OVA Import](../../Service Tasks/best-practices-and-preparation-for-a-virtual-machineovfova-import.md)
-* [Collection of Templates Best Practices](../../Blueprints/templates-best-practices.md)
-
-
+- [Publishing a Partner Template from a Virtual Appliance](../Marketplace Guides/howto-publish-a-partner-template-from-a-virtual-appliance.md)
+- [VM Import Preparation](../../Servers/vm-import-preparation.md)
+- [Requesting an OVA or OVF Import via a Service Task](../../Service Tasks/best-practices-and-preparation-for-a-virtual-machineovfova-import.md)
+- [Collection of Templates Best Practices](../../Blueprints/templates-best-practices.md)
 
 ### Contributed Resources
 

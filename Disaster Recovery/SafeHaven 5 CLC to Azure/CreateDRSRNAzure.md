@@ -14,7 +14,7 @@ This article explains how to create a SRN (SafeHaven Replication Node) in Azure 
 2. Internet access on DR-SRN in Azure once it is deployed.
 
 ### Assumptions
-1. It is assumed here that the user has an Azure account, a VNet created which has accessibility to CenturyLink Cloud Production Datacenter and a Resource Group that will contain all the resources related to SafeHaven.
+1. It is assumed here that the user has an Azure account, a VNet created which has accessibility to Lumen Cloud Production Datacenter and a Resource Group that will contain all the resources related to SafeHaven.
 2. Typically CMS and DR-SRN reside in the same subnet so we will simply re-use the Network Security Group we created in the previous step [Create CMS in Azure](CreateCMSAzure.md)
 3. It is assumed the user has a storage account created.
 
@@ -47,7 +47,7 @@ This article explains how to create a SRN (SafeHaven Replication Node) in Azure 
    * Leave all the other values to default and click on the **Next: Guest config** button.
 8. Click on the **Next: Tags >** button and then **Next: Review + create >**.
 9. Finally review the settings selected and click on **Create**.
-10. Once the Virtual Machine is created go to **Virtual Machines** service and find the Instance, select it and then click on **Networking**, write down either the Public IP or Private IP information depending if you will be accessing the server through the Internet or via VPN from CenturyLink.
+10. Once the Virtual Machine is created go to **Virtual Machines** service and find the Instance, select it and then click on **Networking**, write down either the Public IP or Private IP information depending if you will be accessing the server through the Internet or via VPN from Lumen.
 11. SSH to the DR-SRN Instance using the credentials created in step 5.  
     1. Once logged in elevate to root access and modify the password  
     

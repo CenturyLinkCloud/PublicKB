@@ -8,7 +8,7 @@
 
 <h3>Description</h3>
 
-<p>Server resource requirements change frequently as environments scale, with storage being the most often re-sized aspect of the environment. The CenturyLink Cloud control portal provides a self-service function to accommodate increased storage demands by allowing you to add disks to your virtual machine. Disks added to a Linux VM will have a file system created as part of the addition process and do not require a server reboot.</p>
+<p>Server resource requirements change frequently as environments scale, with storage being the most often re-sized aspect of the environment. The Lumen Cloud control portal provides a self-service function to accommodate increased storage demands by allowing you to add disks to your virtual machine. Disks added to a Linux VM will have a file system created as part of the addition process and do not require a server reboot.</p>
 
 <h3>Steps</h3>
 

@@ -25,23 +25,5 @@ One nice effect of using a horizontal autoscale policy with a group is that user
 ### Using Horizontal Autoscale Without a Load Balancer
 Though horizontal autoscale may most often be used in conjunction with a load balancer, it is *not* *required* to select a load balancer group when applying a horizontal autoscale policy. Users have the option of selecting "None" instead of choosing a load balancer to associate with the group. This can be useful in cases where the servers act as distributed worker nodes, asynchronously responding to messages in a queue or actively polling for new files or database records. In a case like this, it still makes sense to autoscale the worker nodes horizontally, but there is no need to choose a load balancer to associate with the policy, allowing the group to just expand or contract the number of running servers without worrying about routing traffic to them.
 
-
-### Using Horizontal Autoscale With a Dedicated Load Balancer
-When selecting a load balancer group to use with horizontal autoscale, the Control Portal makes use of the CenturyLink Cloud's self-service shared load balancer configuration in conjunction with the autoscale policy. However, if you wish to use a dedicated load balancer instead, horizontal autoscale policies support this as well, but the load balancer configuration must be set up separately. Once you have a dedicated Netscaler load balancer in your environment, you can follow these steps to configure a horizontal autoscale policy with the dedicated load balancer:
-
-1. Create a horizontal autoscale policy.
-
-2. Associate the policy to the group that has the servers you wish to autoscale. Select "none" for the Load Balancer option so it is not associated with any shared load balancer configuration.
-
-3. Take note of the IP address for every server in the horizontal autoscale group, whether it is powered on or off.
-
-4. Login to the dedicated load balancer's web-based management page and follow the instructions for [Dedicated Load Balancer Basic Management](../../Network/dedicated-load-balancer-basic-management.md) to add each of the server's IP addresses to the configuration.
-
-5. As long as you have "ping" and "tcp" monitors setup as described in the management article, no traffic is routed to servers that are powered off. When the group scales out and powers on a server, traffic begins routing to it from the load balancer until the server is powered off after a scale in event. (You may wish to set up additional monitors as well to ensure that a specific application or port is available before routing traffic to the server.)
-
-If you remove or add servers to the group, you need to make sure to manually remove or add their IP addresses to the dedicated load balancer configuration to keep them in sync with the horizontal autoscale group as Control does not take care of this like it would with the shared load balancer.
-
-You can also read more about [Load Balancing Comparison](../../Network/load-balancing-comparison-matrix.md) to see the difference between the two load balancer types and find links to resources about configuring them.
-
 ### Schedule-Based Horizontal Autoscale
 Horizontal autoscale policies are configured to be triggered using utilization thresholds for both memory and CPU. There may be cases, however, where rather than scaling in or out due to usage, users would like to scale in or out on a schedule based on knowledge of an application's usage patterns. For example, maybe the servers are hosting a timesheet system that is overwhelmed twice a month by employees entering the hours they've worked. Rather than deploying more resources than are needed for non-peak usage or dealing with bimonthly slow performance, users can create scheduled tasks to power on servers at a specific point each day/week/month to increase application capacity, and then use another schedule task to power servers back down when the predictable spike is over. This sort of elasticity is exactly what the cloud is good at and it helps you deliver an optimized application that delights users while keeping costs down. You can read more about [Scheduled Tasks](../../Servers/creating-a-scheduled-task.md).

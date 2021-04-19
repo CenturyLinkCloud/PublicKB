@@ -33,7 +33,7 @@ Disaster Recovery
 For more information, please visit www.rackwareinc.com.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
 After reading this article, the user should be understand the use cases for the RackWare RMM and to provision and install the RMM software.
@@ -42,7 +42,7 @@ After reading this article, the user should be understand the use cases for the 
 IP level network connectivity is required from the RMM Server to the Origin workloads. Additional information regarding prerequisites can be found in the RMM v5 Prerequisites and Operational Requirements document.
 
 ### Postrequisite
-If using the RMM to migrate workloads to the CenturyLink cloud, the RMM Server can be decommissioned after the replications are complete.
+If using the RMM to migrate workloads to the Lumen cloud, the RMM Server can be decommissioned after the replications are complete.
 
 If using the RMM to for Disaster Recovery, the DR configuration and operation can be monitored by configuring email alerts in the DR Policy. Consult the RackWare v5 Disaster Recovery Guide for more information.
 
@@ -83,7 +83,7 @@ If using the RMM to for Disaster Recovery, the DR configuration and operation ca
 The RMM is available as a Script Package for deployment on a newly provisioned server or an existing server based on your own sizing requirements.
 
 ####Deploy or Identify an Existing Server  
-Identify the server targeted for RMM installation. The Operating system must be supported by the Script Package. The server must be a server within your CenturyLink Cloud account.
+Identify the server targeted for RMM installation. The Operating system must be supported by the Script Package. The server must be a server within your Lumen Cloud account.
 
 Installation set up for RackWare is comprised of a dedicated server (physical or virtual) running the RMM. The RMM server requirements are as follows:
 * x86_64 architecture (Intel or AMD)
@@ -174,17 +174,17 @@ Query the RMM.
 This will display general information about the RMM.
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. RackWare licensing information can be obtained by email info@rackwareinc.com.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. RackWare licensing information can be obtained by email info@rackwareinc.com.
 
 ### About RackWare
-CenturyLink Cloud works with [RackWare](http://www.rackwareinc.com) to provide a software management suite for cloud called RackWare Management Module (RMM). The RMM solution enables Enterprises to implement 4 major use cases: workload mobility, backup, disaster recovery, and AutoScaling.
+Lumen Cloud works with [RackWare](http://www.rackwareinc.com) to provide a software management suite for cloud called RackWare Management Module (RMM). The RMM solution enables Enterprises to implement 4 major use cases: workload mobility, backup, disaster recovery, and AutoScaling.
 
 ### Frequently Asked Questions
 
 #### Who should I contact for support?
-* For issues related to deploying the RackWare Management Module (RMM) Blueprint on CenturyLink Cloud, Licensing or Accessing the deployed software, please contact RackWare at:
+* For issues related to deploying the RackWare Management Module (RMM) Blueprint on Lumen Cloud, Licensing or Accessing the deployed software, please contact RackWare at:
 
 support@rackwareinc.com
 1 844-797-8776
 
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](https://t3n.zendesk.com/tickets/new).

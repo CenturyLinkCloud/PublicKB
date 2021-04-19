@@ -11,7 +11,7 @@
 ### Partner Profile
 * BCMOne Vital View - Intelligent monitoring platform
 * http://www.bcmone.com/vitalview
-* CenturyLink Cloud Account Alias: BCM
+* Lumen Cloud Account Alias: BCM
 
 ### Customer Support:
 * 24x7 Email Support - [support@bcmone.com](mailto:support@bcmone.com)
@@ -19,16 +19,16 @@
 * Sales and Marketing - [Vital View Sales](mailto:VitalViewNewReg@BCMOne.com)
 
 ### Description
-Vital View has integrated their technology with the CenturyLink Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this intelligent monitoring solution.
+Vital View has integrated their technology with the Lumen Cloud platform. The purpose of this KB article is to help the reader take advantage of this integration to achieve rapid time-to-value for this intelligent monitoring solution.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
-After reading this article, the user should feel comfortable getting started using the Vital View technology on CenturyLink Cloud.
+After reading this article, the user should feel comfortable getting started using the Vital View technology on Lumen Cloud.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 * If you want to access Vital View from the internet or a Mobile Device, you will need to manually add a Public IP address to the VitalView server. For more information, view this [Knowledge Base](http://www.ctl.io/knowledge-base/network/how-to-add-public-ip-to-virtual-machine.md) article.
 
 ###  Detailed Steps
@@ -61,7 +61,7 @@ Follow these step by step instructions to get started with a single-server Vital
 6. Get Busy!
    * Once the Blueprint completes successfully, you will receive an email stating that the Blueprint build is complete. Please do not use the application until you have received this email notification.
    * Once the process has completed ­ you will need to determine the your IP address for the newly deployed host. If you navigate to the “Servers” panel and look for the IP addresses. Note the IP address, it will be required in future steps. See the image below for help.
-   * **Important**: If you want to access Vital View from the internet you will need to manually add a Public IP address to the Vital View server via the CenturyLink Cloud control portal. For more information, view this [Knowledge Base](http://www.ctl.io/knowledge-base/network/how-to-add-public-ip-to-virtual-machine.md) article.
+   * **Important**: If you want to access Vital View from the internet you will need to manually add a Public IP address to the Vital View server via the Lumen Cloud control portal. For more information, view this [Knowledge Base](http://www.ctl.io/knowledge-base/network/how-to-add-public-ip-to-virtual-machine.md) article.
    * You will need to copy the IP address. It will be required in future steps.
 
 7. Access The Vital View dashboard Interface.
@@ -72,7 +72,7 @@ Follow these step by step instructions to get started with a single-server Vital
    ![VitalView Dashboard](../../images/vitalview-dashboard.png)
 
 ### Pricing
-The costs listed above in Steps 1 and 2 are for the CenturyLink Cloud infrastructure only. There are no Vital View license costs or additional fees bundled in. After deploying this Blueprint, the user can secure entitlements to the Vital View technology by using the following steps:
+The costs listed above in Steps 1 and 2 are for the Lumen Cloud infrastructure only. There are no Vital View license costs or additional fees bundled in. After deploying this Blueprint, the user can secure entitlements to the Vital View technology by using the following steps:
 * Contact BCMOne Vital View Support via telephone: (855) 662-7722
 * Contact Vital View via the [contact page one their website](https://cloudmine.me/contact/).
 
@@ -83,5 +83,5 @@ The costs listed above in Steps 1 and 2 are for the CenturyLink Cloud infrastruc
 * Contact BCMOne Vital View via their [website](http://www.bcmone.com/vitalview)
 
 **Who should I contact for support?**
-* For issues related to deploying the Vital View Blueprint on CenturyLink Cloud, please contact [support@bcmone.com](mailto:support@bcmone.com).
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to deploying the Vital View Blueprint on Lumen Cloud, please contact [support@bcmone.com](mailto:support@bcmone.com).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](https://t3n.zendesk.com/tickets/new).

@@ -10,13 +10,13 @@
 
 * __Network Exchange__
 
-Network Exchange, which provides self-service, automated interconnection for application components within CenturyLink Hybrid IT environments, has been released into production in a limited availability. It is available to serve use cases that had previously been addressed with CenturyLink Cloud-Network Services (CNS) in a limited set of six data centers - LO1, TR1, NJ2, DC2, CH3 and SC8. For more information on this new product, please visit the product page at https://www.ctl.io/network-exchange and visit https://www.ctl.io/knowledge-base/network/ for KBs including the Getting Started Guide.
+Network Exchange, which provides self-service, automated interconnection for application components within Lumen Hybrid IT environments, has been released into production in a limited availability. It is available to serve use cases that had previously been addressed with Lumen Cloud-Network Services (CNS) in a limited set of six data centers - LO1, TR1, NJ2, DC2, CH3 and SC8. For more information on this new product, please visit the [product page](https://www.ctl.io/network-exchange) and visit the [Network Exchange KB](https://www.ctl.io/knowledge-base/network/network-exchange/), including the Getting Started Guide.
 
 * __Status.ctl.io__
 
-CenturyLink Cloud Status Chrome Extension: Real-time updates of status.ctl.io
+Lumen Cloud Status Chrome Extension: Real-time updates of status.ctl.io
 
-Status.ctl.io provides the status of the CenturyLink Cloud platform and the available services. You can use this extension to see the real-time, overall status for the platform and it's services. The icon will show a blue dot if there is planned maintenance in progress, or an orange or red icon if a service is temporarily disrupted. Hovering over the icon will give you a brief description of the current status. To get more detailed information, click on the icon to go to the front page of the status application!
+Status.ctl.io provides the status of the Lumen Cloud platform and the available services. You can use this extension to see the real-time, overall status for the platform and it's services. The icon will show a blue dot if there is planned maintenance in progress, or an orange or red icon if a service is temporarily disrupted. Hovering over the icon will give you a brief description of the current status. To get more detailed information, click on the icon to go to the front page of the status application!
 
 https://chrome.google.com/webstore/detail/centurylink-cloud-status/abhpdblgadmelnffnnfddppakgbfimmj?hl=en
 
@@ -52,7 +52,7 @@ Managed Services Anywhere
 
 Additional monitoring capabilities for Managed Operating System on AWS
 
-- CenturyLink Operators now can configure additional Cloud Watch alerts for Managed Operating System on AWS. Part of our support for Managed Operating System customers is our automated monitoring process, which constantly monitors a customer’s infrastructure and alerts our Support personnel to any issues. Our automated monitoring process relies on an agent installed on the AWS EC2 instance as part of “Delegate OS Management” functionality. We now can use AWS Cloud Watch to get additional insights into the managed instance. If you would like to take advantage of these additional monitoring capabilities, please reach out to us using our support options within Cloud Application Manager or write us at incident@centurylink.com
+- Lumen Operators now can configure additional Cloud Watch alerts for Managed Operating System on AWS. Part of our support for Managed Operating System customers is our automated monitoring process, which constantly monitors a customer’s infrastructure and alerts our Support personnel to any issues. Our automated monitoring process relies on an agent installed on the AWS EC2 instance as part of “Delegate OS Management” functionality. We now can use AWS Cloud Watch to get additional insights into the managed instance. If you would like to take advantage of these additional monitoring capabilities, please reach out to us using our support options within Cloud Application Manager or write us at incident@centurylink.com
 
 Cloud Optimization
 
@@ -64,7 +64,7 @@ Impact
 
 Support
 
-- As always if you have any questions, please feel free to write us at incident@CenturyLink.com. In addition to reaching us via email, you can now reach us via Phone at the following numbers: 
+- As always if you have any questions, please feel free to write us at incident@CenturyLink.com. In addition to reaching us via email, you can now reach us via Phone at the following numbers:
     - United States: 1-888-638-6771
     - Canada: 1-866-296-5335
     - EMEA: 00800 72884743

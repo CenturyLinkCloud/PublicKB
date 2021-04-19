@@ -17,18 +17,18 @@ OrientDB is a 2nd Generation, Distributed Graph Database with the flexibility of
 For more information, please visit http://www.orientdb.com.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
 After reading this article, the user should be familiar with launching and using the OrientDB Blueprint.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 
 ### Postrequisite
-* To access your application from a computer outside the CenturyLink Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully.
-* [Add a Public IP](../../Network/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
-* [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal and configuring appropriately.
+* To access your application from a computer outside the Lumen Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully.
+* [Add a Public IP](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) to your server through the Control Portal.
+* [Allow incoming traffic](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal and configuring appropriately.
   * The default ports to access the application are: `80`, `443`.
   * Be sure to also allow access to TCP port `2480` (OrientDB Studio).
 
@@ -74,13 +74,13 @@ After your Blueprint deploys successfully, please follow these instructions to a
 * To start your OrientDB server instance, use "systemctl start orientdb".
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. There are no OrientDB LTD license costs or additional fees bundled in.
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. There are no OrientDB LTD license costs or additional fees bundled in.
 
 ### About OrientDB LTD
-CenturyLink Cloud works with [OrientDB LTD](http://www.orientdb.com) to provide the latest OrientDB Community Edition Multi-Model Database.
+Lumen Cloud works with [OrientDB LTD](http://www.orientdb.com) to provide the latest OrientDB Community Edition Multi-Model Database.
 
 ### Frequently Asked Questions
 
 #### Who should I contact for support?
-* For issues related to deploying the OrientDB LTD Blueprint on CenturyLink Cloud, licensing or accessing the deployed software, please visit the [OrientDB Support website](http://www.orientdb.com/support).
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to deploying the OrientDB LTD Blueprint on Lumen Cloud, licensing or accessing the deployed software, please visit the [OrientDB Support website](http://www.orientdb.com/support).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](https://t3n.zendesk.com/tickets/new).

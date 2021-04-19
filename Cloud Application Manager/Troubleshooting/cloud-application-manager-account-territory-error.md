@@ -10,11 +10,11 @@
 
 ### Introduction
 
-CenturyLink Cloud is limited by contract with Microsoft to sell Azure only to specific countries. This tutorial demonstrates the alert message that will display if the CenturyLink Cloud billing address linked to an admin account is outside the territory permitted by Microsoft.
+Lumen Cloud is limited by contract with Microsoft to sell Azure only to specific countries. This tutorial demonstrates the alert message that will display if the Lumen Cloud billing address linked to an admin account is outside the territory permitted by Microsoft.
 
 ### Billing Address Must Match Territory
 
-The following error will appear if the CenturyLink Cloud billing address associated with the user and account alias is outside the territory allowed by our contract with Microsoft.
+The following error will appear if the Lumen Cloud billing address associated with the user and account alias is outside the territory allowed by our contract with Microsoft.
 
 ![Cloud Application Manager Error: Outside of Territory](../../images/cloud-application-manager-territory2.png)
 
@@ -30,7 +30,7 @@ Select **Microsoft Azure** to build a customer account in the current Microsoft 
 
 ### The Exception Message
 
-If the CenturyLink Cloud billing address associated with the user and alias is outside the territory given to us by Microsoft, you will see this error message letting you know we are not permitted to offer the product to you.
+If the Lumen Cloud billing address associated with the user and alias is outside the territory given to us by Microsoft, you will see this error message letting you know we are not permitted to offer the product to you.
 
 "Thank you for your interest in Integrated Azure. Our apologies, but we are not able to provide that functionality for your account. Please submit a support request if you would like us to review your situation in further detail."
 

@@ -24,19 +24,19 @@ Scalability - Clusterpoint’s distributed architecture allows to scale horizont
 For more information, please visit https://www.clusterpoint.com/docs/.
 
 ### Audience
-CenturyLink Cloud Users
+Lumen Cloud Users
 
 ### Impact
 After reading this article, the user should be able to deploy Clusterpoint Blueprint to install all-in-one installation of Clusterpoint manager, hub and node with web manager, and separate installation of additional Clusterpoint node/hub for your database cloud.
 
 ### Prerequisite
-* Access to the CenturyLink Cloud platform as an authorized user.
+* Access to the Lumen Cloud platform as an authorized user.
 
 ### Postrequisite
-To access your application from a computer outside the CenturyLink Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
-* [Allow incoming traffic](../../Network/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal and configuring appropriately.
+To access your application from a computer outside the Lumen Cloud network, perform the following tasks after you receive the email notifying you that the Blueprint completed successfully:
+* [Allow incoming traffic](../../Network/Lumen Cloud/how-to-add-public-ip-to-virtual-machine.md) for desired ports by clicking on the Servers Public IP through the Control Portal and configuring appropriately.
 * Port to access the Clusterpoint Web Console is TCP 5580. Open it if you want to access Clusterpoint On Premises Web Console to manage your Clusterpoint databases and users, and use REST API interface to access Clusterpoint databases.
-* Port to access Clusterpoint Hub for API access is TCP 25007. Open it if you want to access Clusterpoint databases trough TCP from outside your CenturyLink network.
+* Port to access Clusterpoint Hub for API access is TCP 25007. Open it if you want to access Clusterpoint databases trough TCP from outside your Lumen network.
 * All additional nodes speak to core server with manager trough local IP. However, if you want to get additional hub access for TCP connections you need to assign public IP and open port TCP 25007 for additional node/hub machines as well.
 
 ### Deploying the Clusterpoint All Blueprint (to install core structure for your database cloud with manager, hub, and node)
@@ -109,7 +109,7 @@ Clusterpoint is available as a Software Package for deployment on an existing se
 #### Steps
 1. Deploy or Identify an Existing Server.
    * Identify the server targeted for Clusterpoint installation.
-   * The Operating system must be supported by the Software Package. The server must be a server within your CenturyLink Cloud account.
+   * The Operating system must be supported by the Software Package. The server must be a server within your Lumen Cloud account.
 
 2. Select 'Execute the Package on a Server Group'.
    * Packages can be executed on one more more servers in a Group.
@@ -133,13 +133,13 @@ After your Blueprint deploys successfully, please follow these instructions to a
 * You can verify hubs and nodes installed trough 'Clusterpoint Node' Blueprint and connected to your database cloud via On Premises Web Console logging in as administrator with user 'root' and then accessing 'Hubs' and 'Nodes' sections of interface at the top of the interface (last two icons in menu at left).
 
 ### Pricing
-The costs associated with this Blueprint deployment are for the CenturyLink Cloud infrastructure only. CenturyLink Cloud customers must have a separate subscription and license and license key from Clusterpoint to use the Clusterpoint 4.0 software after deployed. For more information on pricing and licensing, please contact  Clusterpoint @ USA 1-650-681-9710  Europe +371-6693-8800 or at sales@clusterpoint.com
+The costs associated with this Blueprint deployment are for the Lumen Cloud infrastructure only. Lumen Cloud customers must have a separate subscription and license and license key from Clusterpoint to use the Clusterpoint 4.0 software after deployed. For more information on pricing and licensing, please contact  Clusterpoint @ USA 1-650-681-9710  Europe +371-6693-8800 or at sales@clusterpoint.com
 
 ### About Clusterpoint
-CenturyLink Cloud works with [Clusterpoint] (https://www.clusterpoint.com/) to provide ACID compliant, document oriented database built for Cloud. Clusterpoint deals with both - structured and unstructured data through one API. There is a minimal learning curve to start working with Clusterpoint as two major technologies - JavaScript and SQL are used to access and transform the data.
+Lumen Cloud works with [Clusterpoint] (https://www.clusterpoint.com/) to provide ACID compliant, document oriented database built for Cloud. Clusterpoint deals with both - structured and unstructured data through one API. There is a minimal learning curve to start working with Clusterpoint as two major technologies - JavaScript and SQL are used to access and transform the data.
 
 ### Frequently Asked Questions
 
 #### Who should I contact for support?
-* For issues related to deploying the Clusterpoint Blueprint on CenturyLink Cloud, licensing or accessing the deployed software, please visit the [Clusterpoint] Support chat (https://www.clusterpoint.com/) or send an [e-mail](mailto:support@clusterpoint.com).
-* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [noc@ctl.io](mailto:noc@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For issues related to deploying the Clusterpoint Blueprint on Lumen Cloud, licensing or accessing the deployed software, please visit the [Clusterpoint] Support chat (https://www.clusterpoint.com/) or send an [e-mail](mailto:support@clusterpoint.com).
+* For issues related to cloud infrastructure (VMs, network, etc.), or if you experience a problem deploying the Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](https://t3n.zendesk.com/tickets/new).

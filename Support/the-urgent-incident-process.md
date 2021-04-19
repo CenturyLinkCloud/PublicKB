@@ -10,7 +10,7 @@
 
 ### Description (goal/purpose)
 
-What classifies as an urgent incident? The accepted definition at CenturyLink Cloud is any incident that impacts two or more customers or an entire product or service. These incidents qualify because they have the capacity to affect a large amount of functionality for customers. These incidents take first priority with the Customer Care team. We will respond, as per service agreement, throughout the incident to keep customers informed of the current status.
+What classifies as an urgent incident? The accepted definition at Lumen Cloud is any incident that impacts two or more customers or an entire product or service. These incidents qualify because they have the capacity to affect a large amount of functionality for customers. These incidents take first priority with the Customer Care team. We will respond, as per service agreement, throughout the incident to keep customers informed of the current status.
 
 ### Roles defined as needed during Urgent Incidents
 

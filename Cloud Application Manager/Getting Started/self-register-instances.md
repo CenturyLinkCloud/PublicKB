@@ -1,5 +1,5 @@
 {{{ "title": "Self-Registering Virtual Machines",
-"date": "09-04-2019",
+"date": "03-17-2020",
 "author": "Denes Pal and Guillermo Sanchez",
 "attachments": [],
 "contentIsHTML": false,
@@ -15,6 +15,7 @@
 * [Enabling the self-registration feature for your organization](#enabling-the-self-registration-feature-for-your-organization)
 * [Enabling self-registration on a provider](#enabling-self-registration-on-a-provider)
 * [Obtaining the self-registration script](#obtaining-the-self-registration-script)
+* [Self-Registering instances into CPC on VCF and VMWare vCloud Director provider types](#self-registering-instances-into-cpc-on-vcf-and-vmware-vcloud-director-provider-types)
 * [Managing self-registered instances](#managing-self-registered-instances)
 * [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
@@ -41,15 +42,17 @@ All Cloud Application Manager users who want to get their virtual machines deplo
 These are the Provider types supporting self-registration of virtual machines:
 
 * Amazon AWS/EC2
-* CenturyLink Cloud
+* Lumen Cloud
+* Lumen Private Cloud on VMWare Cloud Foundation
 * Google Cloud Platform
+* VMWare vCloud Director
 
 ### Supported instance types
 
 The self-Registering feature supports:
 
 * Single virtual machine instances
-* Virtual machines that belongs to a scaling group. All machines belonging to the same auto-scaling group will be registered as a single instance in Cloud Application Manager of type auto-scaling group.
+* Virtual machines that belongs to a scaling group or scale set. All machines belonging to the same auto-scaling group will be registered as a single instance in Cloud Application Manager of type auto-scaling group.
 
 ### Enabling the self-registration feature for your organization
 
@@ -73,9 +76,15 @@ Once it has been enabled in the provider, when the user clicks the _Self-Registe
 
 ![Self-register command snippets](../../images/cloud-application-manager/getting-started/self-register_scripts.png)
 
-The self-registration command snippets are customized per provider, and will only be valid for self-register instances being deployed on the corresponding underlying cloud account. You should copy the corresponding command snippet (either for Linux and Unix-like OS-es as Bash script, or for Windows as PowerShell script) and include it in the bootstrap process of the virtual machine definition or template to be made self-registered.
+The self-registration command snippets are customized per provider, and will only be valid for self-register instances being deployed on the corresponding underlying cloud account. You should copy the corresponding command snippet (either for Linux and Unix-like OS-es as a Bash script, or for Windows as a 64-bit PowerShell script) and include it in the bootstrap process of the virtual machine definition or template to be made self-registered.
 
 When the self-register instances feature is enabled in a provider, the dropdown option changes to  _Disable Self-Register_, which you can use to disable the feature in the provider, so that no newly deployed instances will be self-registered, even if they include and execute the self-register snippet.
+
+### Self-Registering instances into CPC on VCF and VMWare vCloud Director provider types
+
+When self-registering instances into Lumen Private Cloud on VMWare Cloud Foundation and VMWare vCloud Director provider types there is an important consideration we should take into account. When the self-registration script is executed in these instances, a restart is performed during the process to complete the registration process. This restart is required to update the customization script properties that are used to identify the instance uniquely from within Cloud Application Manager and the instance itself.
+
+If this is not a desired behavior, you may use the standard manual [registration process](./register-existing-instance.md) instead.
 
 ### Managing self-registered instances
 
@@ -95,4 +104,3 @@ In the case of a error registering an instance, share the instance to a workspac
 
 * Linux: SSH into the instance and locate the log at /var/log/elasticbox/elasticbox-agent.log
 * Windows: RDP into the instance to locate the log at \ProgramData\ElasticBox\Logs\elasticbox-agent.log
-

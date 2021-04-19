@@ -8,7 +8,7 @@
 
 ### Description
 
-Alerts are triggered to notify CenturyLink and our users that there is an issue with a device and action needs to be taken to resolve it.  The Support Portal displays alerts triggered against your devices so you are aware of active alerts, as well as related tickets so you can verify the status.  Additionally, when you plan to make an impacting change on one of your devices, you can create Customer Performed Changes to suppress unnecessary alerts and incident response during these activities.  This article will show you how to view your active alerts and related tickets, as well as how to suppress alerts on your devices.
+Alerts are triggered to notify Lumen and our users that there is an issue with a device and action needs to be taken to resolve it.  The Support Portal displays alerts triggered against your devices so you are aware of active alerts, as well as related tickets so you can verify the status.  Additionally, when you plan to make an impacting change on one of your devices, you can create Customer Performed Changes to suppress unnecessary alerts and incident response during these activities.  This article will show you how to view your active alerts and related tickets, as well as how to suppress alerts on your devices.
 
 ### Suppress Alerts on your Devices
 

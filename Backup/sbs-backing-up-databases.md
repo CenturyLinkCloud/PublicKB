@@ -2,16 +2,14 @@
   "title": "Backing Up Relational Databases With Simple Backup Service",
   "date": "11-12-2019",
   "author": "John Gerger",
+  "keywords": ["backup", "clc", "cloud", "sbs", "sql", "mysql", "database"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
   "sticky": false
 }}}
 
-Backing Up Relational Databases With Simple Backup Service
-==========================================================
-
-If you would like to perform a “hot” backup of a relational database running on your CenturyLink Cloud server and store it offsite using Simple Backup Service(SBS), then there are a few special considerations you’ll need to take to ensure your backups are internally consistent and not missing key data.  
+If you would like to perform a “hot” backup of a relational database running on your Lumen Cloud server and store it offsite using Simple Backup Service(SBS), then there are a few special considerations you’ll need to take to ensure your backups are internally consistent and not missing key data.  
 
 At any given point in time, data which is in the process of being written to the database can reside in the server’s memory or on disk in a primary database file and log (transaction) file that reside on your cloud server.  If you try to back these files up directly using Simple Backup, it will most likely fail because the files are open and locked by the database software.  Additionally, important data could be missed altogether from the backup because it was still residing in memory and thus was not included in the backup.  
 

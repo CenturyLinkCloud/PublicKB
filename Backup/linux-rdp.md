@@ -2,6 +2,7 @@
   "title": "Install RDP on Linux for SBS",
   "date": "11-4-2019",
   "author":  "John Gerger",
+  "keywords": ["api", "backup", "clc", "cloud", "install", "sbs", "server"],
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,

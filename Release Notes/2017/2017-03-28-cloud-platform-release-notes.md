@@ -22,9 +22,9 @@
     As you are aware, Cloud Application Manager supports both Azure Classic and Microsoft Azure as providers. Starting ​3/28/2017​, you will see a change in how they are identified within Cloud Application Manager. We are making this change to be consistent with the language Microsoft uses to communicate with their customers
 
 
-  * Dependency on CenturyLink Cloud for Microsoft Azure Customers
+  * Dependency on Lumen Cloud for Microsoft Azure Customers
 
-    For users who are interested in signing up a new Microsoft Azure account as part of the CenturyLink Reseller Program, starting ​3/28/2017​, you are no longer required to key-in your CenturyLink Cloud credentials. That requirement has been removed. At the same time, going forward only ​Organization Administrators​ will have the ability to sign up for a new Microsoft Azure account from CenturyLink. If you are an Organization Administrator, you will continue to see an option to sign up for a new Microsoft Azure Account when you create a new ​Microsoft Azure​ provider.
+    For users who are interested in signing up a new Microsoft Azure account as part of the Lumen Reseller Program, starting ​3/28/2017​, you are no longer required to key-in your Lumen Cloud credentials. That requirement has been removed. At the same time, going forward only ​Organization Administrators​ will have the ability to sign up for a new Microsoft Azure account from Lumen. If you are an Organization Administrator, you will continue to see an option to sign up for a new Microsoft Azure Account when you create a new ​Microsoft Azure​ provider.
 
 
   * Usage-based billing
@@ -34,7 +34,7 @@
 
   * Self-service ticketing Portal
 
-    Starting ​3/30/2017​ you will have access to a self-service ticketing portal to open/view tickets with CenturyLink support. The new ticketing portal is our interface for managing tickets, alerts and changes for Cloud Application Manager, Managed Hosting and Dedicated Cloud customers. Your Cloud Application Manager credentials will allow you to single sign-on to the ticketing portal. You can also directly access the ticketing portal at https://managedservices.ctl.io/msp/oauth/login​ which will redirect you to provide your Cloud Application Manager credentials. Once authenticated, you will be logged-in to the ticketing portal. As always you can reach out to CenturyLink Support via phone and email as published here https://www.ctl.io/cloud-application-manager/support/
+    Starting ​3/30/2017​ you will have access to a self-service ticketing portal to open/view tickets with Lumen support. The new ticketing portal is our interface for managing tickets, alerts and changes for Cloud Application Manager, Managed Hosting and Dedicated Cloud customers. Your Cloud Application Manager credentials will allow you to single sign-on to the ticketing portal. You can also directly access the ticketing portal at https://managedservices.ctl.io/msp/oauth/login​ which will redirect you to provide your Cloud Application Manager credentials. Once authenticated, you will be logged-in to the ticketing portal. As always you can reach out to Lumen Support via phone and email as published here https://www.ctl.io/cloud-application-manager/support/
 
 
 
@@ -42,9 +42,9 @@
 
    In order to bring access to Object Storage within closer proximity to our users preferred deployment region for infrastructure, the US-West region for object storage is now available. This region accompanies the US-East and Canada regions that are already available.
 
-   For information on utilizing CenturyLink Object Storage via the Control Portal in this or other regions, please see: https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/
+   For information on utilizing Lumen Object Storage via the Control Portal in this or other regions, please see: https://www.ctl.io/knowledge-base/object-storage/using-object-storage-from-the-control-portal/
 
-   For information on utilizing CenturyLink Object Storage via APIs in this or other regions, please see: https://www.ctl.io/knowledge-base/object-storage/using-object-storage-via-rest-api-aws-sdk/
+   For information on utilizing Lumen Object Storage via APIs in this or other regions, please see: https://www.ctl.io/knowledge-base/object-storage/using-object-storage-via-rest-api-aws-sdk/
 
 
 * __MySQL v5.7__

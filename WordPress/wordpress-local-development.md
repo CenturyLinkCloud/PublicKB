@@ -1,5 +1,5 @@
 {{{
-  "title": "Local Development with CenturyLink WordPress as a Service",
+  "title": "Local Development with Lumen WordPress as a Service",
   "date": "07-30-2015",
   "author": "Matt Wittmann",
   "attachments": [],
@@ -9,7 +9,7 @@
 IMPORTANT NOTE
 --------------
 
-CenturyLink Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only
+Lumen Cloud WordPress hosting is currently in a Limited Beta program with specific customers by invitation only
 and is not intended for production usage.
 
 During the Limited Beta there is no production Service Level Agreement.
@@ -28,7 +28,7 @@ Introduction
 ------------
 
 WordPress is infinitely customizable with themes and plug-ins galore. A best practice is for WordPress developers
-to preview their changes on their local machine before uploading them to their production host. CenturyLink WordPress hosting makes these easy by integrating with Vagrant. Using Vagrant, a full development
+to preview their changes on their local machine before uploading them to their production host. Lumen WordPress hosting makes these easy by integrating with Vagrant. Using Vagrant, a full development
 environment can be created in minutes with the whole LEMP (Linux, nginx, MySQL, PHP) stack running inside a virtual
 machine.
 
@@ -47,7 +47,7 @@ Next run:
 vagrant up
 ```
 
-The centurylinkcloud/wp-developer Vagrant box will be downloaded, which can take some time for the first run.
+The lumencloud/wp-developer Vagrant box will be downloaded, which can take some time for the first run.
 After that, it will provision the box and try to set your hosts file to map `192.168.33.10` to `wp.dev` if the
 Hosts Updater Vagrant plug-in is installed.
 
@@ -55,7 +55,7 @@ Navigate to [http://wp.dev/](http://wp.dev/) or [http://192.168.33.10/](http://1
 Hosts Updater plug-in has not been installed. This gives access to the WordPress application running
 from the local git repository. As changes are made, they will be immediately live on the local site.
 
-When you are satisfied with your changes, you may commit them and push them back up to CenturyLink's git
+When you are satisfied with your changes, you may commit them and push them back up to Lumen's git
 hosting. Please review the [Knowledge Base article on git cloning and pushing](wordPress-site-updates-with-git.md).
 
 ### Note

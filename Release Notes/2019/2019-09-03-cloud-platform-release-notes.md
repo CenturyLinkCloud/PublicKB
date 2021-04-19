@@ -2,7 +2,7 @@
 "title": "Cloud Platform - Release Notes: September 3, 2019",
 "date": "09-03-2019",
 "author": "Jason Holland",
-"keywords":["centurylink", "cam", "alm", "optimization"],
+"keywords":["lumen", "cam", "alm", "optimization"],
 "attachments": [],
 "contentIsHTML": false
 }}}
@@ -19,7 +19,7 @@ Watcher checks for AWS services have been updated to allow monitoring of newer A
 
 ##### New branding styles added to portal
 
-The Cloud Application Manager user interface has been updated with the latest CenturyLink branding styles in all Cloud Application Manager sites. New styles include the inverse, black top navigation bar, CenturyLink mint green highlights, and updated action button colors, among others.
+The Cloud Application Manager user interface has been updated with the latest Lumen branding styles in all Cloud Application Manager sites. New styles include the inverse, black top navigation bar, Lumen mint green highlights, and updated action button colors, among others.
 
 #### [Application Lifecycle Management](https://www.ctl.io/cloud-application-manager/application-lifecycle-management/)
 
@@ -27,9 +27,9 @@ The Cloud Application Manager user interface has been updated with the latest Ce
 
 Self-register feature allow customers to enable instances to self-register once they are deployed externally on an AWS or CLC provider already set up in Cloud Application Manager. This new feature can be enabled through a new option in the provider details page dropdown menu. Once enabled, a new button will show a snippet to be added to the machine startup process in order to trigger the self-register process. Any instance deployed from outside of Cloud Application Manager including this snippet will be self-registered and will be shown in the instances page as any other manually registered instance. This feature supports either single virtual machines or auto-scaling groups and it is available for AWS and CLC provider types for now. More provider types will come later on.
 
-##### Instances page now displays CenturyLink database and load balancer resource types
+##### Instances page now displays Lumen database and load balancer resource types
 
-Application Lifecycle Management Instances page will now list the CenturyLink database and load balancer resource types. These resources will be shown as unregistered instances with some basic information for each type such as subtype, data center, status, name, and description. If you have an existing CenturyLink Cloud provider already set up, you will need to synchronize it for these resources to be discovered. These resources have been added to the already displayed CLC virtual networks and VPNs recently included into the instances list.
+Application Lifecycle Management Instances page will now list the Lumen database and load balancer resource types. These resources will be shown as unregistered instances with some basic information for each type such as subtype, data center, status, name, and description. If you have an existing Lumen Cloud provider already set up, you will need to synchronize it for these resources to be discovered. These resources have been added to the already displayed CLC virtual networks and VPNs recently included into the instances list.
 
 ##### Filter by Service Type in Instances Page
 
