@@ -1,7 +1,7 @@
 {{{
 "title": "MSA Network Architecture",
-"date": "09-26-2019",
-"author": "Thomas Broadwell",
+"date": "04/19/2021",
+"author": "Randy Wansing",
 "attachments": [],
 "contentIsHTML": false,
 "keywords": ["cam", "cloud application manager", "architecture", "msa", "watcher", "monitoring", "anywhere", "remote administration", "ra"]
@@ -10,11 +10,14 @@
 
 **In this article:**
 
-* [Overview](#overview)
-* [Audience](#audience)
-* [MSA Network Diagram](#msa-network-diagram)
-* [Connectivity and Required Firewall Rules](#connectivity-and-required-firewall-rules)
-* [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
+- [Overview](#overview)
+- [Audience](#audience)
+- [MSA Network Diagram](#msa-network-diagram)
+- [Connectivity and Required Firewall Rules](#connectivity-and-required-firewall-rules)
+  - [External Connections from MSA Management Appliance](#external-connections-from-msa-management-appliance)
+  - [Internal Connections from MSA Management Appliance](#internal-connections-from-msa-management-appliance)
+  - [Internal Connections *to* MSA Management Appliance](#internal-connections-to-msa-management-appliance)
+- [Contacting Cloud Application Manager Support](#contacting-cloud-application-manager-support)
 
 
 ### Overview
@@ -31,7 +34,7 @@ All Managed Services Anywhere (MSA) customers or those interested in enabling MS
 
 Network connections between customer servers, MSA management appliance, and Lumen.
 
-![Managed Services Anywhere Network Diagram](../../images/cloud-application-manager/MSA_Network-3-3-20.png)
+![Managed Services Anywhere Network Diagram](../../images/cloud-application-manager/MSA_Network-04-17-2021.png)
 
 *Does not include traffic between other sources, such as for DNS resolution or OS updates.*
 
