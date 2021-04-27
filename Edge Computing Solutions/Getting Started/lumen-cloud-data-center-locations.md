@@ -75,7 +75,7 @@ NA|Raleigh, NC|RLGHNCJV|Lumen|5301 Departure Drive, Raleigh, NC 27616|Coming in 
 NA|El Paso, TX|ELPUTXAY|Lumen|501 W Overland, El Paso, TX 79901|Coming in 2021
 LATAM|Cotia, Brazil|CTIABZAF|Lumen|Rua Eid. Manssur N° 666, Parque São George, Rodovia Raposo Tavares, Km 25, Cotia, Brazil|Coming in 2021 
 LATAM|Buenos Aires, Argentina|BNARAGMS|Lumen|Av. Del Campo N° 1301, Buenos Aires, Argentina|Coming in 2021
-EMEA|London, England|LONDENEH|Lumen|260-266 Goswell Rd, Clerkenwell, London EC1V 7EB, UK|Coming in 2021
+EMEA|London, England|LONDENEH|Lumen|260-266 Goswell Rd, Clerkenwell, London EC1V 7EB, UK|Available Today
 
 **Lumen Network Storage**
 
