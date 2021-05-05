@@ -69,7 +69,7 @@ Customers will be invoiced monthly, in arrears for their total Edge Computing So
 
 The power states and applicable billing for an Edge Bare Metal server are as follows:
 * Provision a Bare Metal Server: Starts billing
-* On/Running: Continuosly bills at the hourly rate based on the server configuration and applicable services tied to the server. 
+* On/Running: Continuously bills at the hourly rate based on the server configuration and applicable services tied to the server. 
 * Stop: Stops the server but does NOT stop billing. 
 * Delete: Deleting a Bare Metal server will end billing for that server.
 
