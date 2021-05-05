@@ -1,7 +1,7 @@
 {{{
   "title": "Best Practices for Account Hierarchy Management",
   "date": "3-31-2015",
-  "author": "Dave X. Burkhardt",
+  "author": "Dave Burkhardt",
   "attachments": [],
   "contentIsHTML": false
 }}}
