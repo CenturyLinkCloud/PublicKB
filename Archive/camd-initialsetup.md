@@ -1,5 +1,5 @@
 {{{
-"title": "Setting Up Cloud Application Manager Dedicated Edition for Use",
+"title": "Setting Up Cloud Application Manager Dedicated Edition for Use - testing travis-ci change",
 "date": "03-25-2020",
 "author": "Diego Sanjuan and Guillermo Sanchez",
 "keywords": ["cam", "cloud application manager", "Data Center edition", "appliance", "setup", "ssh", "key", "smtp", "ntp", "password", "dedicated", "cam-d"],
