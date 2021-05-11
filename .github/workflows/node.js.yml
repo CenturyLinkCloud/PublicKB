@@ -17,3 +17,4 @@ jobs:
         node-version: '14.x'
     - name: Pull in KB-Commit-Analyzer
       uses: CenturyLinkCloud/KB-Commit-Analyzer
+      run: node index.js
