@@ -21,4 +21,5 @@ jobs:
       with:
         node-version: '14.x'
     - uses: CenturyLinkCloud/KB-Commit-Analyzer
+    - name: Run KB-Commit-Analyzer
       run: node index.js
