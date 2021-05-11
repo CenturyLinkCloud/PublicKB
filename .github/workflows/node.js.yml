@@ -1,0 +1,19 @@
+name: PublicKB
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  kb-commit-analyzer:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: CenturyLink/checkout@v1
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14.x'
+    - name: Pull in KB-Commit-Analyzer
+      uses: CenturyLinkCloud/KB-Commit-Analyzer
