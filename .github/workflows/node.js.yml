@@ -9,6 +9,11 @@ on:
 jobs:
   kb-commit-analyzer:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
     steps:
     - uses: CenturyLink/checkout@v1
     - name: Use Node.js
