@@ -17,7 +17,7 @@ Lumen Network Storage users.
 
 ### Prerequisites
 
-An understanding of how to [get started with Lumen Network Storage](https://www.ctl.io/knowledge-base/lumen-network-storage/getting-started/getting-started-creating-cns-nodes-volumes/).
+An understanding of how to [get started with Lumen Network Storage](getting-started-creating-cns-nodes-volumes.md).
 
 ### Important Information
 
