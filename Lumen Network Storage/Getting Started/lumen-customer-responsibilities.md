@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen and Customer Responsibilities for Lumen Network Storage",
-  "date": "12-02-2020",
+  "date": "05-20-2021",
   "author": "Dave Schwent",
   "keywords": ["cns", "lns", "network", "node", "portal", "service", "storage", "support", "volume"],
   "attachments": [],
@@ -13,15 +13,15 @@ This document provides an overview of Lumen and customer responsibilities for [L
 
 ### Audience
 
-[Lumen](http://www.centurylink.com/) Network Storage users.
+Lumen Network Storage users.
 
 ### Prerequisites
 
-An understanding of how to [get started with Lumen Network Storage](../../Storage/Lumen Network Storage/getting-started-creating-cns-nodes-volumes.md).
+An understanding of how to [get started with Lumen Network Storage](getting-started-creating-cns-nodes-volumes.md).
 
 ### Important Information
 
-This document is not a complete description of every responsibility regarding use of Lumen Network Storage but should provide context regarding user responsibilities and Lumen support. For more information, see the [Lumen Network Storage Service Guide](https://www.centurylink.com/asset/business/enterprise/service-guides/hosting/lumen-network-storage-service-guide.pdf).
+This document is not a complete description of every responsibility regarding use of Lumen Network Storage but should provide context regarding user responsibilities and Lumen support. For more information, see the [Lumen Network Storage Service Guide](https://assets.lumen.com/is/content/Lumen/centurylink-network-storage-service-guidepdf?Creativeid=c4e5d55d-9d1c-4bd8-91a3-0798c791df22).
 
 ### Customer Responsibilities
 
