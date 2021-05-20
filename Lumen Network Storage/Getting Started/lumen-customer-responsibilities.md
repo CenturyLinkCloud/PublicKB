@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen and Customer Responsibilities for Lumen Network Storage",
-  "date": "12-02-2020",
+  "date": "05-20-2021",
   "author": "Dave Schwent",
   "keywords": ["cns", "lns", "network", "node", "portal", "service", "storage", "support", "volume"],
   "attachments": [],
