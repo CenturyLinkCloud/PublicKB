@@ -1,1 +1,10 @@
 sinatra.md
+camd-initialsetup.md
+camd-migration.md
+camd-networking.md
+camd-openstack.md
+camd-overview.md
+camd-troubleshooting-tips.md
+camd-upgrading.md
+camd-vsphere.md
+camd-with-aws-master-account.md
