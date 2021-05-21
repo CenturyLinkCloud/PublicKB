@@ -7,11 +7,11 @@
 }}}
 
 Take advantage of our web-based [Blueprint Package Manifest Builder Wizard](http://centurylinkcloud.github.io/blueprint-package-manifest-builder/) to:
-* Discover the user and system generated data collector widgets.
+* Discover the user and **system generated data collector widgets**.
 * Create a functional package.manifest file.
 * Export customized shell script templates.
 
-For a more in-depth review of how to manually create a Blueprint Package or to review package specifications reference the [Blueprints Script and Software Package Management article](blueprints-script-and-software-package-management.md).
+For a more in-depth review of how to manually create a Blueprint Package or to review **package** specifications reference the [Blueprints Script and Software Package Management article](blueprints-script-and-software-package-management.md).
 
 ### Wizard UI
 The wizard screen is divided into four primary components. See details on each in the Wizard Usage section of this article.
