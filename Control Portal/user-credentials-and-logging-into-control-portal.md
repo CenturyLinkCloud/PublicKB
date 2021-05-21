@@ -7,7 +7,7 @@
 }}}
 
 ### Description
-There are at least two different types of user credentials that you need to maintain and be aware of as a Lumen Cloud Control Portal user. One set of credentials is used for you or other users in your organization to gain access to the Control Portal itself. These are your Lumen Cloud Control Portal user credentials. You may also be responsible for maintaining a number of different administrator credentials for servers you have created within your Lumen Cloud account. Both credentials should use strong and secure passwords, however *they are not related to each other and should be managed and used separately.* This article discusses how to manage and use both types of credentials independently.
+One set of credentials is used for you or other users in your organization to gain access to the Control Portal itself. These are your Lumen Cloud Control Portal user credentials. You may also be responsible for maintaining a number of different administrator credentials for servers you have created within your Lumen Cloud account. Both credentials should use strong and secure passwords, however *they are not related to each other and should be managed and used separately.* This article discusses how to manage and use both types of credentials independently.
 
 ### Audience
 Lumen Cloud customers
