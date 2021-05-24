@@ -11,6 +11,7 @@ This article outlines how customers can access and set up their Lumen Network St
 ### Accessing the Lumen Network Storage Portal
 
 **Creating Tenants and Users**
+
 The Lumen Network Storage Portal is a self-service interface into the most commonly used storage provisioning and configuration tasks. To access the portal, open https://storage.lumen.com in any web browser.
 ![Lumen Sign In dialog](../../images/LNS-ObjectTierNewUserGuide_graphics_51121/001_LNS-OTNUG_graphic.png)
 Enter your username and the temporary password provided in your welcome email. 
