@@ -1,6 +1,6 @@
 {{{
   "title": "Object Tier New User Guide",
-  "date": "5-24-2021",
+  "date": "5-25-2021",
   "author": "Brad Lewis",
   "attachments": [],
   "contentIsHTML": false,
@@ -45,6 +45,7 @@ The final step before access to object storage is to create a bucket via a compa
 As Lumen Network Storage Object Tier is S3 compliant, any S3 compatible browser/client may be used to configure buckets, write or retrieve data, and delete buckets or individual objects (files). Examples include Cyberduck, Cloudberry Browser, S3cmd, and others. Additionally, most enterprise backup software has the ability to write directly to an S3 target. 
 For this example, we will show configuration of Cyberduck for bucket configuration.
 S3 terminology typically references “buckets” as the storage containers, with “objects” being stored in those containers. While technically inaccurate, Cyberduck presents this as a more familiar construct of directories and files. The first step is to configure our S3 client for accessing the Lumen Network Storage regional endpoint. As seen in our example, our chosen region is US-west-1 (PHX).
+ 
 1. Launch Cyberduck.
 2. Click the **Open Connection** icon. 
 3. Click on the FTP line.
