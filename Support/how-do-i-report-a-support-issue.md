@@ -87,16 +87,8 @@ Customers in the **Professional and Enterprise** support tier can leverage our p
     Dates/Time (if applicable):
     ```
 
-2. Call the phone number for your appropriate region.
+2. Currently Lumen Public Cloud calls should be made directly to the Customer Care team via the USA number at +1 (425) 321-0338.
 
-**Country**|**Phone Number**
------------|----------------
-USA|+1 (425) 321-0338
-UK|+44 20 0333 0338
-Hong Kong|+852 58032338
-Australia|+61 7 4410 3380
-Singapore|+65 3158 9575
-Japan|+81-3-4540-3776
 
 ### Latin America
 Customers in these countries in Latin America can contact support via email or phone:
