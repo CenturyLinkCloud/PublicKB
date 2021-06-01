@@ -13,11 +13,11 @@
 In this KB article, we demonstrate how to add a new user as an OrgAdmin to your VCD organization. When a new user is set up as an OrgAdmin, they have the ability to use the vCloud Director Web Console, tenant portal, or vCloud OpenAPI to manage users and groups in their organization and assign them roles, including the predefined __Organization Administrator__ role.
 
 ### Steps to Add a New User as an Org Admin
-* Login to your Lumen Private Cloud on VMware Cloud Foundation environment.
+* Login to your Lumen Private Cloud on the VMware Cloud Foundation environment.
 
   ![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
-* Once logged in, click on the menu icon at the top of the screen. Select __Administration__ in the dropdown menu.
+* Once logged in, select __Administration__ in the top menu.
 
   ![Catalog](../../images/dccf/adding-org-admin1.png)
 
@@ -25,7 +25,7 @@ In this KB article, we demonstrate how to add a new user as an OrgAdmin to your 
 
   ![Catalog](../../images/dccf/adding-org-admin2.png)
 
-* A __New User__ window will pop up. Enter the user's credentials and password, then be sure "Enable" is checked to activate the user account. Under __Role__, select __CPCVCP Organization Administrator__. Continue filling out the user's contact info if needed. Please note, only fields with a red asterisk are required. When finished, click __Save__.
+* A __New User__ window will pop up. Type the user's credentials and password, then be sure "Enable" is checked to activate the user account. Under __Role__, select __Organization Administrator__. Continue filling out the user's contact info if needed. Please note, only fields with a red asterisk are required. When finished, click __Save__.
 
    ![Catalog](../../images/dccf/adding-org-admin3.png)
 
@@ -33,11 +33,11 @@ In this KB article, we demonstrate how to add a new user as an OrgAdmin to your 
 
 ### Steps to Make an Existing User an Org Admin
 
-* Login to your Lumen Private Cloud on VMware Cloud Foundation environment.
+* Login to your Lumen Private Cloud on the VMware Cloud Foundation environment.
 
   ![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
-* Once logged in, click on the menu icon at the top of the screen. Select __Administration__ in the dropdown menu.
+* Once logged in, select __Administration__ in the top menu.
 
   ![Catalog](../../images/dccf/adding-org-admin1.png)
 
@@ -45,6 +45,6 @@ In this KB article, we demonstrate how to add a new user as an OrgAdmin to your 
 
   ![Catalog](../../images/dccf/adding-org-admin4.png)
 
-* From the __Available Roles__ dropdown menu, select __CPCVCF Organization Adminitrator__. Then click __Save__.
+* From the __Available Roles__ dropdown menu, select __Organization Administrator__. Then click __Save__.
 
   ![Catalog](../../images/dccf/adding-org-admin5.png)
