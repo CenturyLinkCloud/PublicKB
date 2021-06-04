@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Computing Solutions Locations",
-  "date": "5-13-2021",
+  "date": "6-4-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
