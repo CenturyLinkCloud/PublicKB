@@ -45,7 +45,7 @@ A: The following breakdown explains what is available in the Control Portal and 
 ##### CONTROL PORTAL ONLY
 - Create user 
 
-##### BOTH CONTROL PORTAL AND 3RD PARTY TOOL
+##### BOTH CONTROL PORTAL AND 3RD PARTY TOOLS
 - List all buckets for user
 - Create a bucket
 - Delete a bucket 
@@ -54,7 +54,7 @@ A: The following breakdown explains what is available in the Control Portal and 
 - See bucket region
 - See bucket owner name|
 
-##### 3RD PARTY TOOL ONLY
+##### 3RD PARTY TOOLS ONLY
 - Add object to bucket
 - Delete object in bucket
 - View object ACLs (permissions)
