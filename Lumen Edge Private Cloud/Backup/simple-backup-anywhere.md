@@ -15,16 +15,16 @@ In this KB article, we will demonstrate how to use Simple Backup Anywhere to pro
 ### Prerequisites
 You will need the following in order to use Simple Backup Anywhere with Lumen Private Cloud on VMware Cloud Foundation:
 
-* A Windows or Linux server (VM)
-* Connectivity to your Windows or Linux server
-* An active Lumen Cloud (CLC) account
+* A Windows or Linux server (VM).
+* Connectivity to your Windows or Linux server.
+* An active Lumen Cloud (CLC) account.
 
 ### High Level Steps
-* Login to your CLC account and navigate to Simple Backup (Control Portal | Services | Backup)
-* Create a backup policy - if you haven't already done so
-* Click on Backup Anywhere and Register an Anywhere Server - this is the server you will install the Simple Backup agent
-* Download the installer
-* Install the agent on the server
-* Add the server to a backup policy
+* Login to your CLC account and navigate to Simple Backup (Control Portal | Services | Backup).
+* Create a backup policy - if you haven't already done so.
+* Click on Backup Anywhere and Register an Anywhere Server - this is the server you will install the Simple Backup agent.
+* Download the installer.
+* Install the agent on the server.
+* Add the server to a backup policy.
 
-For more details, please take a look at this [Simple Backup Anywhere](../../Backup/backup-anywhere.md) KB article
+
