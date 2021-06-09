@@ -1,6 +1,6 @@
 {{{
   "title": "Using Simple Backup Anywhere",
-  "date": "05-17-2018",
+  "date": "06-09-2021",
   "author": "Anthony Hakim",
   "keywords": ["cpc", "cloud", "vmware", "backup", "vcloud", "vcf"],
   "attachments": [],
