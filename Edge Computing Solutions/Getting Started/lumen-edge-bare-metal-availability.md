@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Bare Metal Availability",
-  "date": "6-4-2021",
+  "date": "6-9-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -11,7 +11,7 @@ Lumen is rapidly adding Edge Computing Solutions locations across the globe to p
 Lumen Edge Bare Metal provides low-latency on-demand Bare Metal servers via the Edge Platform.
 Learn more about Edge Bare Metal [here](/edge-computing-solutions/edge-bare-metal/).
 
-The table below provides near-real time availability of Edge Bare Metal configurations at each location, all designed to deliver near-zero latency.
+The table below provides current availability of Edge Bare Metal configurations at each location, all designed to deliver near-zero latency.
 You can find latency coverage across our Edge portfolio [here](https://www.lumen.com/en-us/solutions/edge-computing.html#edge-computing-map).
 
 **Lumen Edge Bare Metal Server Configuration Availability By Location**
@@ -19,39 +19,39 @@ You can find latency coverage across our Edge portfolio [here](https://www.lumen
 **Region**|**Edge Bare Metal Site Locations**|**32 Cores, 384 GB RAM,7,680 GB SSD**|**32 Cores, 768 GB RAM,32,200 GB SSD**
 ----------|----------------------------------|----------------------------------|------------------------------------------|
 NA|Atlanta,GA|0|10
-NA|Austin,TX|12|19
+NA|Austin,TX|12|7
 NA|Chicago,IL|0|21
-NA|Cambridge,MA|7|14
+NA|Cambridge,MA|7|2
 NA|Cincinnati,OH|0|18
-NA|Dallas,TX|0|8
-NA|Denver,CO|5|3
+NA|Dallas,TX|2|3
+NA|Denver,CO|4|0
 NA|Detroit,MI|0|20
-NA|El Paso,TX|12|20
-NA|Houston,TX|5|13
-NA|Jacksonville,FL|11|19
-NA|Kansas City,MO|0|18
+NA|El Paso,TX|12|4
+NA|Houston,TX|5|2
+NA|Jacksonville,FL|11|8
+NA|Kansas City,MO|0|17
 NA|Las Vegas,NV|0|13
-NA|Little Rock,AK|6|14
-EMEA|London,England|0|18
-NA|McAllen,TX|10|17
-NA|Metairie,LA|11|19
-NA|Miami,FL|11|18
-NA|Minneapolis,MN|0|15
+NA|Little Rock,AK|6|3
+EMEA|London,England|0|17
+NA|McAllen,TX|10|3
+NA|Metairie,LA|11|4
+NA|Miami,FL|12|7
+NA|Minneapolis,MN|0|17
 NA|Nashville,TN|0|19
-NA|New York,NY|11|37
-NA|Omaha,NE|12|20
-NA|Philadelphia,PA|10|16
-NA|Phoenix,AZ|0|14
+NA|New York,NY|11|27
+NA|Omaha,NE|12|8
+NA|Philadelphia,PA|10|2
+NA|Phoenix,AZ|0|12
 NA|Pittsburgh,PA|0|6
-NA|Portland,OR|10|11
-NA|Reno,NV|11|20
+NA|Portland,OR|10|1
+NA|Reno,NV|11|4
 NA|Salt Lake City,UT|0|19
 NA|San Antonio,TX|0|19
 NA|San Diego,CA|0|11
-NA|Santa Clara,CA|7|26
-NA|Seattle,WA|3|7
-NA|St.Louis,MO|12|20
+NA|Santa Clara,CA|7|19
+NA|Seattle,WA|3|0
+NA|St.Louis,MO|12|8
 NA|Tampa,FL|0|12
-CA|Toronto,Canada|11|18
-NA|Tustin,CA|12|14
+CA|Toronto,Canada|11|3
+NA|Tustin,CA|12|2
 NA|W Sacramento,CA|0|13
