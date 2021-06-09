@@ -1,6 +1,6 @@
 {{{
   "title": "How to securely connect",
-  "date": "5-17-2018",
+  "date": "06-09-2021",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
