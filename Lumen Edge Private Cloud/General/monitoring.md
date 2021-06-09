@@ -1,6 +1,6 @@
 {{{
   "title": "Monitoring",
-  "date": "5-20-2019",
+  "date": "06-03-2021",
   "author": "Anthony Hakim",
   "keywords": ["cpc", "cloud", "vm", "monitoring", "vcf"],
   "attachments": [],
@@ -13,7 +13,7 @@
 Lumen maintains and monitors all components of the Lumen Private Cloud on VMware Cloud Foundation stack. The following outlines the monitors that are in place to ensure availability of the product.
 
 ### Physical Hardware
-Lumen monitors the physical hardware that hosts the Lumen Private Cloud on VMware Cloud Foundation product. This includes monitoring components such as:
+Lumen monitors the physical hardware that hosts the Lumen Private Cloud on VMware Cloud Foundation product. This includes monitoring components such as the following:
 
 * System board
 * RAM
@@ -26,7 +26,7 @@ Lumen monitors the physical hardware that hosts the Lumen Private Cloud on VMwar
 * Network Interfaces
 
 ### Software Components
-Lumen monitors the software components that make up the Lumen Private Cloud on VMware Cloud Foundation product. This includes monitoring components such as:
+Lumen monitors the software components that make up the Lumen Private Cloud on VMware Cloud Foundation product. This includes monitoring components such as the following:
 
 * ESXi Servers
 * vSphere

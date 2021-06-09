@@ -1,6 +1,6 @@
 {{{
   "title": "Migrating Workloads",
-  "date": "5-22-2018",
+  "date": "06-03-2021",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -9,26 +9,26 @@
 }}}
 
 ### Description
-In this KB article, we outline the process involved in migrating VMs in your VMware (source) environment into Lumen Private Cloud on VMware Cloud Foundation.
+In this KB article, we outline the process involved in migrating VMs in your VMware (source) environment into Lumen Private Cloud on VMware Cloud Foundation (LPC on VCF).
 
 With vCloud Director Extender, you can migrate your virtual machines from an on-premise vCenter Server to your Lumen Private Cloud on VMware Cloud Foundation environment. You can migrate virtual machines both when they are powered on and powered off depending on the available downtime.
 
 You can initiate virtual machines migration jobs only from a tenant vCenter Server on-premise. With vCloud Director Extender migration jobs, tenants can preserve their current IP and MAC address scheme after the migration completes.
 
-**Note:** Preserving IP and MAC address scheme after a migration is only possible, if you extend a private, on-premise, virtual network to cloud VDC networks by using the DC Extension feature of vCloud Director Extender. Follow the information in KB titled [Configuring DC Extensions for vCD Extender](l2vpn-migration-tool.md) to configure this for your environment.
+**Note:** Preserving the IP and MAC address scheme after a migration is only possible if you extend a private, on-premise, virtual network to cloud VDC networks (by using the DC Extension feature of vCloud Director Extender). Follow the information in KB titled [Configuring DC Extensions for vCD Extender](l2vpn-migration-tool.md) to configure this for your environment.
 
 Migration of an entire data center is a slow process and is often done in stages. To ensure a minimal downtime of client applications, vCloud Director Extender provides flexibility in the different types of migrations.
 
 You can choose from two types of migration:
 
 **Warm Migration**
-Your virtual machines are active while the migration runs, and ensure minimal downtime. After the migration completes, you start a manual Cutover to make the virtual machines available on the cloud provider site and finalize the migration. Cutover is a process of powering on the virtual machines at the cloud provider site, after the warm migration completes. The Cutover operation includes a final sync and import of a migrated VM into a destination Org VDC's vApp and an optional powering on of the VM.
+Your virtual machines are active while the migration runs, and ensure minimal downtime. After the migration completes, you start a manual Cutover to make the virtual machines available on the cloud provider site and finalize the migration. Cutover is a process of powering on the virtual machines at the cloud provider site -- after the warm migration completes. The Cutover operation includes a final sync and import of a migrated VM into a destination Org VDC's vApp, and an optional powering on of the VM.
 
 **Cold Migration**
-You power off your virtual machines and start the migration. No cutover process is required in this case, you can select whether to power on the virtual machines from the migration setup menu.
+You power off your virtual machines and start the migration. No cutover process is required in this case; you can select whether to power on the virtual machines from the migration setup menu.
 
 ### Prerequisites
-* You will need to setup your VMware (source) environment in readiness for migration into Lumen Private Cloud on VMware Cloud Foundation. Follow the steps in this KB article - [Preparing Your Environment for Migration into Lumen Private Cloud on VMware Cloud Foundation](migration-tool.md).
+* You must setup your VMware (source) environment in readiness for migration into Lumen Private Cloud on VMware Cloud Foundation. Follow the steps in this KB article - [Preparing Your Environment for Migration into Lumen Private Cloud on VMware Cloud Foundation](migration-tool.md).
 
 ### Warm Migration
 By performing a warm migration, you migrate a powered on virtual machine from an on-premise vCenter Server to an Org vDC in Lumen Private Cloud on VMware Cloud Foundation. A placeholder VM is created in Lumen Private Cloud on VMware Cloud Foundation, and you carry out an initial synchronization between the VM that runs on-premise and the placeholder VM in Lumen Private Cloud on VMware Cloud Foundation.
@@ -40,21 +40,21 @@ By performing a warm migration, you migrate a powered on virtual machine from an
 
 **Procedure**
 * In the vSphere Web Client, navigate to Home > Inventories > vCloud Director Extender.
-* In the Migrations tab, click New Migration.
+* In the Migrations tab, click **NEW MIGRATION**.
 
   ![Migration Tool](../../images/dccf/migration1.png)
 
-* Select Warm migration and click Next.
+* Select Warm migration and click **NEXT**.
 
   ![Migration Tool](../../images/dccf/migration-warm1.png)
 
-* Select the Source VMs that you want to migrate and click Next.
+* Select the Source VMs that you want to migrate and click **NEXT**.
   * When you select a VM, the system verifies if the selected VM is powered on.
   * If you select a VM that is powered off, the system returns an error, and you cannot proceed until you select a powered on VM.
 
   ![Migration Tool](../../images/dccf/migration-warm2.png)
 
-* Select a Target Cloud, a target vDC, a target storage profile, a target network, and whether you want to group all virtual machines that you are migrating into a single vApp, and click Next.
+* Select a Target Cloud, a target vDC, a target storage profile, a target network, and whether you want to group all virtual machines that you are migrating into a single vApp, and click **NEXT**.
 
   ![Migration Tool](../../images/dccf/migration-warm3.png)
 
@@ -63,7 +63,7 @@ By performing a warm migration, you migrate a powered on virtual machine from an
   * Select a target Recovery Point Objective (RPO).
   * Select the disk type.
   * (Optional) Enter a tag for the migration job that you are initiating.
-  * Click Start.
+  * Click **START**.
 
   ![Migration Tool](../../images/dccf/migration-warm4.png)
 
@@ -93,21 +93,21 @@ During a cold migration, the Replication Manager creates a VM instance in the re
 
 **Procedure**
 * In the vSphere Web Client, navigate to Home > Inventories > vCloud Director Extender.
-* In the Migrations tab, click New Migration.
+* In the Migrations tab, click **NEW MIGRATION**.
 
   ![Migration Tool](../../images/dccf/migration1.png)
 
-* Select Cold migration and click Next.
+* Select Cold migration and click **NEXT**.
 
   ![Migration Tool](../../images/dccf/migration-cold1.png)
 
-* Select the VM that you want to migrate and click Next.
+* Select the VM that you want to migrate and click **NEXT**.
   * When you select a VM, the system verifies if the selected VM is powered off.
   * If you select a VM that is powered on, the system returns an error, and you cannot proceed until you select a powered off VM.
 
   ![Migration Tool](../../images/dccf/migration-cold2.png)
 
-* Select a Target Cloud, a target vDC, a target storage profile, a target network, and whether you want to group all VMs that you are migrating into a single vApp, and click Next.
+* Select a Target Cloud, a target vDC, a target storage profile, a target network, and whether you want to group all VMs that you are migrating into a single vApp, and click **NEXT**.
 
   ![Migration Tool](../../images/dccf/migration-cold3.png)
 
@@ -116,7 +116,7 @@ During a cold migration, the Replication Manager creates a VM instance in the re
   * Select if you want to power on the VM after the migration operation completes.
   * Select the disk type.
   * (Optional) Enter a tag for the migration job that you are initiating.
-  * Click Start.
+  * Click **START**.
 
   ![Migration Tool](../../images/dccf/migration-cold4.png)
 

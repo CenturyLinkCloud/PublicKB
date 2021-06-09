@@ -1,6 +1,6 @@
 {{{
   "title": "Creating a Server",
-  "date": "5-6-2019",
+  "date": "06-03-2021",
   "author": "Hannah Melvin",
   "keywords": ["cpc", "cloud", "vm", "server", "ssl", "vapp", "vpn", "vcf"],
   "attachments": [],
@@ -12,12 +12,12 @@
 ### Description
 In this KB article, we demonstrate how to provision a new virtual server in Lumen Private Cloud on VMware Cloud Foundation™.
 
-Once you've gone through this KB article and created a new virtual server, you can follow these guides to learn how to [Configure SSL VPN-Plus](../Security/configuring-sslvpn-plus.md) and [How to Securely Connect](../Security/how-to-securely-connect.md) to your Lumen Private Cloud on VMware Cloud Foundation environment.
+Once you've gone through this KB article and created a new virtual server, you can follow these guides to learn how to [Configure SSL VPN-Plus](../Security/configuring-sslvpn-plus.md) and [How to Securely Connect](../Security/how-to-securely-connect.md) to your Lumen Private Cloud on the VMware Cloud Foundation environment.
 
 Note: This KB assumes you have followed the KB article on [Adding to your Catalog](../Catalog/add-to-catalog.md) in Lumen Private Cloud on VMware Cloud Foundation.
 
 ### Steps
-* Login to your Lumen Private Cloud on VMware Cloud Foundation environment.
+* Log in to your Lumen Private Cloud on VMware Cloud Foundation environment.
 
   ![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
@@ -29,31 +29,28 @@ Note: This KB assumes you have followed the KB article on [Adding to your Catalo
 
   ![Select vApp Template](../../images/dccf/creating-a-server2-html5.png)
 
-* Click __New vAPP__ a the top of the screen. A popup window will appear. Enter a name for the new vApp you are creating &mdash; in the context of vCloud Director, a vApp is simply a container for the objects you create. Once you enter a Name, click __Add Virtual Machine__.
+* Click __NEW__, and then select __New vApp__. A popup window will appear. Enter a name for the new vApp you are creating &mdash; in the context of LPC on VCF, a vApp is simply a container for the objects you create. Once you enter a Name, click __ADD VIRTUAL MACHINE__.
 
   ![Select Name and Location](../../images/dccf/creating-a-server3-html5.png)
 
-* In the New VM popup window, enter a name for your Virtual Machine &mdash; this is the friendly name that will be displayed inside of vCloud Director. Enter your __Computer Name__ &mdash; the Computer Name will default to the same as the Name but can be edited as needed. For __Type__ of VM, select New or From Template. If choosing __From Template__, the Compute details can be updated in later steps. Click __OK__.
+* In the New VM popup window, enter a name for your Virtual Machine &mdash; this is the friendly name that will be displayed inside of LPC on VCF. Enter your __Computer Name__ &mdash; the Computer Name will default to the same as the Name but can be edited as needed. For __Type__ of VM, select New or From Template. If choosing __From Template__, the Compute details can be updated in later steps. Click __OK__.
 
   ![Select Name and Location](../../images/dccf/creating-a-server4-html5.png)
 
-* On the New vApp window, you can add additional Virtual Machines to your vApp, or you can click __Create__.
+* On the New vApp window, you can add additional Virtual Machines to your vApp, or you can click __CREATE__.
 
   ![Configure Networking](../../images/dccf/creating-a-server5-html5.png)
 
-* After clicking __Create__ you will be navigated back to the vApps screen. If you would like to update details within your vApp or VM and to add a Network, locate your vApp and click __Details__.
+* After clicking __CREATE__, you will be navigated back to the vApps screen. If you would like to update details within your vApp or VM and to add a Network, locate your vApp and click __DETAILS__.
 
   ![Configure Networking](../../images/dccf/creating-a-server6-html5.png)
 
-* Click the __Networks__ tab to configure a network. Then click __New__.
+* Click the __Networks__ tab to configure a network. Then click __NEW__. Use the wizard to configure your new network.
 
-  ![Configure Networking](../../images/dccf/creating-a-server7-html5.png)
+  ![Configure Networking](../../images/dccf/new_org_VDC_network_wizard.png)
 
-* Select the Network Type. If choosing __OrgVDC Network__ select the network and click __Add__. If choosing __vApp Network__ complete the fields that appear, then click __Add__.
 
-  ![Configure Networking](../../images/dccf/creating-a-server8-html5.png)
-
-* If you would like to update the Compute details on your VM, select the Details tab, then click the __Name__ of your VM. You will then be able to edit General fields, Hardware, Guest OS Customization, and CPU, Memory, and Metadata in the __Advanced__ section. Click __Save__ when finished.
+* If you would like to update the Compute details on your VM, select the Details tab, then click the __Name__ of your VM. Select from the menu on the left to edit General fields, Hardware, Guest OS Customization, Guest Properties, and Metadata.
 
   ![Configure Networking](../../images/dccf/creating-a-server9-html5.png)
 
@@ -63,6 +60,6 @@ Note: This KB assumes you have followed the KB article on [Adding to your Catalo
 
   ![Configure Networking](../../images/dccf/creating-a-server11-html5.png)
 
-* To power on your vApp, click __Actions__, then __Power On__.
+* To power on your vApp, click __ACTIONS__, then __Power On__.
 
   ![Configure Networking](../../images/dccf/creating-a-server12-html5.png)

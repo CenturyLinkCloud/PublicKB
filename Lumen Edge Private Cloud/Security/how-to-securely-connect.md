@@ -1,6 +1,6 @@
 {{{
   "title": "How to securely connect",
-  "date": "5-17-2018",
+  "date": "06-03-2021",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -9,15 +9,15 @@
 }}}
 
 ### Description
-This KB article assumes that you've created a new virtual server on Lumen Private Cloud on VMware Cloud Foundation™. If not, follow this guide to [Create a Server](../General/creating-a-server.md), then return to this guide.
+This KB article assumes that you've created a new virtual server on Lumen Private Cloud on VMware Cloud Foundation™ (LPC on VCF). If not, follow this guide to [Create a Server](../General/creating-a-server.md), and then return to this guide.
 
 Now what? How do you securely connect to your servers? This KB article describes how to use SSL VPN-Plus to securely connect to your servers.
 
-Note: This KB article assumes that you have already setup SSL VPN-Plus in your Lumen Private Cloud on VMware Cloud Foundation environment. If not, follow this guide to [Configure SSL VPN-Plus](configuring-sslvpn-plus.md), then return to this guide.
+Note: This KB article assumes that you have already setup SSL VPN-Plus in your Lumen Private Cloud on VMware Cloud Foundation environment. If not, follow this guide to [Configure SSL VPN-Plus](configuring-sslvpn-plus.md), and then return to this guide.
 
 ### Steps
 
-* Go to the path to your SSL VPN-Plus endpoint, and login using your SSL VPN-Plus credentials.
+* Go to the path to your SSL VPN-Plus endpoint, and log in using your SSL VPN-Plus credentials.
 
   ![SSL VPN-Plus](../../images/dccf/how-to-securely-connect1.png)
 
@@ -45,7 +45,7 @@ Note: This KB article assumes that you have already setup SSL VPN-Plus in your L
 
   ![SSL VPN-Plus](../../images/dccf/how-to-securely-connect5m.png)
 
-* Login with the same credentials you used to download the SSL VPN-Plus client.
+* Log in with the same credentials you used to download the SSL VPN-Plus client.
 
   ![SSL VPN-Plus](../../images/dccf/how-to-securely-connect6.png)
 
