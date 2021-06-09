@@ -1,6 +1,6 @@
 {{{
   "title": "Preparing Your Environment for Migration",
-  "date": "5-22-2018",
+  "date": "06-09-2021",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -9,7 +9,7 @@
 }}}
 
 ### Description
-In this KB article, we outline the process involved in preparing your VMware (source) environment in readiness for migration into Lumen Private Cloud on VMware Cloud Foundation.
+In this KB article, we outline the process involved in preparing your VMware (source) environment in readiness for migration into Lumen Private Cloud on VMware Cloud Foundation (LPC on VCF).
 
 This process involves multiple components that you must install and configure in a specific order.
 
@@ -17,7 +17,7 @@ This process involves multiple components that you must install and configure in
 * VMware ESXi 5.5 and newer.
 * The following NAT and Firewall rules.
 
-You can configure NAT and Firewall rules, either prior to, or after installation, but you must have the required Management IP's, Translated Public IP and necessary port information prior to installation.
+You can configure NAT and Firewall rules, either prior to, or after installation, but you must have the required Management IP's, Translated Public IP, and necessary port information prior to installation.
 
 During the deployment of the various appliances, it is necessary to input the public (NAT) IP address along with the port (PAT) which will be used in the NAT/PAT configuration.
 
@@ -55,76 +55,76 @@ The following NAT rules are required on the Tenant (source) side of the connecti
 | VCDX-Rule-003 |	User |	206.1.2.34 |	40.2.1.137 |	443/8043/8044/44045 |	Accept |
 
 ### Installation Process
-* [Download the vCloud Director Extender OVA file](https://my.vmware.com/group/vmware/details?downloadGroup=CX100&productId=693#product_downloads)
-* Log in to the vSphere Web Client, using the FQDN, as an administrator
+* [Download the vCloud Director Extender OVA file](https://my.vmware.com/group/vmware/details?downloadGroup=CX100&productId=693#product_downloads).
+* Log in to the vSphere Web Client, using the FQDN, as an administrator.
 * In the vSphere Web Client, right-click on the vCenter Server, and select Deploy OVF Template...
 
   ![Migration Tool](../../images/dccf/extender1.png)
 
   Note: You can also use the File menu to select Deploy OVF Template...
 
-* On the Select template page, click Browse..., select the downloaded vCloud Extender OVA file
-* Click Next
+* On the Select template page, click Browse..., select the downloaded vCloud Extender OVA file.
+* Click Next.
 
   ![Migration Tool](../../images/dccf/extender2.png)
 
-* On the Review details page, review your selections
-* Click Next
+* On the Review details page, review your selections.
+* Click Next.
 
   ![Migration Tool](../../images/dccf/extender3.png)
 
-* On the Accept license agreement page, click Accept
-* Click Next
+* On the Accept license agreement page, click Accept.
+* Click Next.
 
   ![Migration Tool](../../images/dccf/extender4.png)
 
-* On the Select name and folder page, enter the VM Name, select the Datacenter
-* Click Next
+* On the Select name and folder page, enter the VM Name, select the Datacenter.
+* Click Next.
 
   ![Migration Tool](../../images/dccf/extender5.png)
 
-* On the Select a resource page, make the appropriate selection
-* Click Next
+* On the Select a resource page, make the appropriate selection.
+* Click Next.
 
   ![Migration Tool](../../images/dccf/extender6.png)
 
 * On the Select storage page, choose the following:
-  * Select virtual disk format: Thin provision
-  * VM storage policy: Select your appropriate storage policy
-* Select your appropriate datastore
-* Click Next
+  * Select virtual disk format: Thin provision.
+  * VM storage policy: Select your appropriate storage policy.
+* Select your appropriate datastore.
+* Click Next.
 
   ![Migration Tool](../../images/dccf/extender7.png)
 
 * On the Setup networks page, choose the following:
-  * Select your appropriate destination network
-  * (IP Allocation Settings) IP protocol: IPv4
-* Click Next
+  * Select your appropriate destination network.
+  * (IP Allocation Settings) IP protocol: IPv4.
+* Click Next.
 
   ![Migration Tool](../../images/dccf/extender8.png)
 
 * On the Customize template page, choose the following (Application):
-  * Deployment Type: cx-connector
-  * Enable SSH: Checked
-  * Initial root password: Set and confirm a password
-  * NTP Server: Enter the IP address of your NTP server
+  * Deployment Type: cx-connector.
+  * Enable SSH: Checked.
+  * Initial root password: Set and confirm a password.
+  * NTP Server: Enter the IP address of your NTP server.
 
     ![Migration Tool](../../images/dccf/extender9a.png)
 
 * On the Customize template page, choose the following (Networking Properties):
-  * Default Gateway: Enter the IP address of your default gateway
-  * Domain Name: Enter your domain name
-  * Domain Name Servers: Enter the IP address(es) of your DNS server(s)
-  * Domain Search Path: Enter your domain search path
-  * Network 1 IP Address: Enter the IP address for this interface
-  * Network 1 Netmask: Enter the network mask address for this interface
-* Click Next
+  * Default Gateway: Enter the IP address of your default gateway.
+  * Domain Name: Enter your domain name.
+  * Domain Name Servers: Enter the IP address(es) of your DNS server(s).
+  * Domain Search Path: Enter your domain search path.
+  * Network 1 IP Address: Enter the IP address for this interface.
+  * Network 1 Netmask: Enter the network mask address for this interface.
+* Click Next.
 
     ![Migration Tool](../../images/dccf/extender9b.png)  
 
-* Review your settings
-* Select Power on after deployment
-* Click Finish
+* Review your settings.
+* Select Power on after deployment.
+* Click Finish.
 
   ![Migration Tool](../../images/dccf/extender10.png)
 
@@ -136,7 +136,7 @@ Verify that the vCloud Director Extender On-Premise Appliance VM is powered on.
 
 **Process**
 * In a Web browser, open the OnPrem Setup UI at `https://<Your-vCD-Extender-OnPrem-Appliance-IP>/ui/mgmt`
-* Log in as administrator
+* Log in as administrator.
 
   **Note:** Use the password that you set during the vCloud Director Extender On-Premise Appliance installation.
 
@@ -144,78 +144,78 @@ Verify that the vCloud Director Extender On-Premise Appliance VM is powered on.
 
 * Click Setup Wizard
 
-  **Note:** Run the Setup wizard for your first-time configuration to install Replicator
+  **Note:** Run the Setup wizard for your first-time configuration to install Replicator.
 
   ![Migration Tool](../../images/dccf/extender12.png)
 
 * On the On-Prem vCenter page, enter the following:
-  * Name: Enter the on-premise vCenter Server Name
-  * IP Address or URL: Enter the IP address or URL of the vCenter Server
-  * Lookup Service URL (optional): Enter the Lookup Service URL
+  * Name: Enter the on-premise vCenter Server Name.
+  * IP Address or URL: Enter the IP address or URL of the vCenter Server.
+  * Lookup Service URL (optional): Enter the Lookup Service URL.
 
     **Important:** If you are using an external Platform Services Controller (PSC), enter the address to the external Lookup service in the suggested syntax. If you are using an embedded PSC, you can skip this step.
-  * Username: administrator@vsphere.local
-  * Password: Enter the administrator password
-  * Click Next
+  * Username: administrator@vsphere.local.
+  * Password: Enter the administrator password.
+  * Click Next.
 
     ![Migration Tool](../../images/dccf/extender13a.png)
 
     ![Migration Tool](../../images/dccf/extender13b.png)
 
-* On the Register Plugin with vCenter Server page, register with a valid version number
+* On the Register Plugin with vCenter Server page, register with a valid version number.
 
   **Note:** This process registers vCloud Director Extender as a plug-in to the on-premise vCenter Server.
-* Click Next
+* Click Next.
 
   ![Migration Tool](../../images/dccf/extender14a.png)
 
   ![Migration Tool](../../images/dccf/extender14b.png)
 
 * On the Replicator page, enter the following:
-  * Name: Enter a name for the replicator
-  * Folder/Datacenter: Enter the target Folder/Datacenter Name
+  * Name: Enter a name for the replicator.
+  * Folder/Datacenter: Enter the target Folder/Datacenter Name.
 
     **Note:** You must provide the full multilevel schema path.
-  * Hosts Or Cluster: Enter the target Hosts or Cluster Name
-  * Datastore: Enter the target Datastore Name
-  * Network: Enter the target Network Name
-  * Do not select the DHCP check box
-  * IP Address: Enter your desired IP Address
-  * Gateway Address: Enter your Gateway Address
-  * DNS: Enter your DNS
-  * Netmask: Enter your Netmask
-  * Click Next
+  * Hosts Or Cluster: Enter the target Hosts or Cluster Name.
+  * Datastore: Enter the target Datastore Name.
+  * Network: Enter the target Network Name.
+  * Do not select the DHCP check box.
+  * IP Address: Enter your desired IP Address.
+  * Gateway Address: Enter your Gateway Address.
+  * DNS: Enter your DNS.
+  * Netmask: Enter your Netmask.
+  * Click Next.
 
     ![Migration Tool](../../images/dccf/extender15a.png)
 
     ![Migration Tool](../../images/dccf/extender15b.png)
 
-  * After the Replicator is created, click Next
+  * After the Replicator is created, click Next.
 
     ![Migration Tool](../../images/dccf/extender15c.png)
 
 * On the Activate Replicator page, enter the following:
-  * Root Password: Set and confirm a password
-  * Management vCenter Lookup Service URL: Enter the Lookup Service URL
-  * Management vCenter SSO User: administrator@vsphere.local
+  * Root Password: Set and confirm a password.
+  * Management vCenter Lookup Service URL: Enter the Lookup Service URL.
+  * Management vCenter SSO User: administrator@vsphere.local.
 
     **Note:** The user you enter must be an administrator or part of the administrators group.
-  * Management vCenter SSO Password: Enter the administrator password
-  * Public Endpoint URL (optional): Enter the Public Endpoint URL and Port
+  * Management vCenter SSO Password: Enter the administrator password.
+  * Public Endpoint URL (optional): Enter the Public Endpoint URL and Port.
 
     ![Migration Tool](../../images/dccf/extender16a.png)
 
-  * After the Replicator is Activated, click next
+  * After the Replicator is Activated, click next.
 
     ![Migration Tool](../../images/dccf/extender16b.png)
 
-* To complete the setup wizard, click Next and Finish
+* To complete the setup wizard, click Next and Finish.
   **Note:** In the Management vCenter tab, the on-premise vCenter Server details appear. In the Replicators tab, you can see the details for the deployed Replicator appliance.
 
   ![Migration Tool](../../images/dccf/extender17.png)
 
 ### Connect to a Provider Cloud (Lumen Private Cloud on VMware Cloud Foundation)
-Before you can initiate migration jobs with vCloud Director Extender, you must set up a connection to a Provider Cloud
+Before you can initiate migration jobs with vCloud Director Extender, you must set up a connection to a Provider Cloud.
 
 **Prerequisites**
 If you haven't configured the pre-requisite NAT firewall rules as indicated at the top of this knowledge base article, please complete before proceeding with the next step.

@@ -1,6 +1,6 @@
 {{{
   "title": "Migrating Workloads",
-  "date": "5-22-2018",
+  "date": "06-09-2021",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -77,7 +77,7 @@ By Performing a cutover to a virtual machine, you finalize a warm migration. The
 
   ![Migration Tool](../../images/dccf/migration-warm6.png)
 
-Once the Cutover operation has fully synchronized, it will appear in Lumen Private Cloud on VMware Cloud Foundation.
+Once the Cutover operation has fully synchronized, it will appear in Lumen Private Cloud on VMware Cloud Foundation. 
 
   ![Migration Tool](../../images/dccf/migration4w.png)
 
