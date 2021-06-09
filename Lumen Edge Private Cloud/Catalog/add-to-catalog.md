@@ -1,6 +1,6 @@
 {{{
   "title": "Adding to your Catalog",
-  "date": "5-8-2019",
+  "date": "06-03-2021",
   "author": "Hannah Melvin",
   "keywords": ["cpc", "cloud", "vmware", "catalog", "ovf", "template", "vapp", "vcf"],
   "attachments": [],
@@ -17,23 +17,23 @@ A catalog is a container for vApp templates and media files in an organization. 
 Lumen Private Cloud on VMware Cloud Foundation contains organization (private) catalogs, and access to its public catalog. Organization catalogs include vApp templates and media files that you can share with other users in the organization.
 
 ### Steps to add an OVF Template
-* Login to your Lumen Private Cloud on VMware Cloud Foundation environment.
+* Log in to your Lumen Private Cloud on VMware Cloud Foundation environment.
 
   ![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
-* Once logged in, click on the menu icon at the top of the screen. Select __Libraries__ in the dropdown menu.
+* Once logged in, select __Libraries__ in the top menu.
 
   ![Catalog](../../images/dccf/add-to-catalog2-html5.png)
 
-* In the __Libraries__ page, click __Add__ at the top of the vApp Templates screen.
+* In the __Libraries__ page, click __NEW__ at the top of the vApp Templates screen.
 
   ![Catalog](../../images/dccf/add-to-catalog3-html5.png)
 
-* In the __Create vApp Template from OVF__ window, either enter the __URL__ to the OVF, or __Browse...__ to the __Local file__, then click __Next__.
+* In the __Create vApp Template from OVF__ window, either type the __URL__ to the OVF, or __Browse...__ to the __Local file__, then click __NEXT__.
 
   ![Catalog](../../images/dccf/add-to-catalog4-html5.png)
 
-* Review the details, then click __Next__. On the next screen (Select vApp Template Name) enter the __Name__ and optional Description, then select the catalog from the __Catalog__ dropdown.
+* Review the details, then click __NEXT__. On the next screen (Select vApp Template Name),  type the __Name__ and optional Description, then select the catalog from the __Catalog__ dropdown.
 
   ![Catalog](../../images/dccf/add-to-catalog5-html5.png)
 

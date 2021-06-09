@@ -1,6 +1,6 @@
 {{{
   "title": "Create Internet Accessible Network",
-  "date": "9-18-2019",
+  "date": "06-03-2021",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -9,7 +9,7 @@
 }}}
 
 ### Description
-In this KB article, we walk through how to create a new software-defined network in Lumen Private Cloud on VMware Cloud Foundation (CPC on vCF). In this particular use case, we would like to allow this network to have Outbound Internet., and will do the following:
+In this KB article, we walk through how to create a new software-defined network in Lumen Private Cloud on VMware Cloud Foundation (LPC on VCF). In this particular use case, we would like to allow this network to have Outbound Internet, and will do the following:
 
 1. Create the Network
 2. Create a Firewall Rule to allow Outbound Internet Access for the Network
@@ -19,9 +19,9 @@ In this KB article, we walk through how to create a new software-defined network
 
 #### Create the Network
 
-Log in to your CPC on vCF environment.
+Log in to your LPC on VCF environment.
 
-Click __Datacenters__ from the menu dropdown. Select your Datacenter. Select __Networks__ in the left side-panel. On the Networks page, click __NEW__
+Click __Datacenters__ from the top menu. Select your Datacenter. Select __Networks__ in the left side-panel. On the Networks page, click __NEW__
 
   ![Network](../../images/dccf/network1.png)
 

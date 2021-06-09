@@ -1,6 +1,6 @@
 {{{
   "title": "Configuring SSL VPN-Plus",
-  "date": "4-29-2019",
+  "date": "06-03-2021",
   "author": "Hannah Melvin",
   "attachments": [],
   "related-products" : [],
@@ -18,7 +18,7 @@ Once you are done with this configuration, take a look at [How to Securely Conne
 
   ![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
-* Once logged in, click __Datacenters__ in the menu at the top. Then select the Datacenter to open.
+* Once logged in, click __Data Centers__ in the top menu. Then select the Data Center to open.
 
   ![SSL VPN-Plus](../../images/dccf/configuring-sslvpn-plus1-html5.png)
 

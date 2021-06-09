@@ -1,6 +1,6 @@
 {{{
   "title": "Enable IPSec VPN on Edge Gateway Services",
-  "date": "9-11-2018",
+  "date": "06-03-2021",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -18,7 +18,7 @@ You must configure at least one IPSec VPN site on the NSX Edge before enabling t
 
   ![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
-* Once logged in, click __Datacenters__ in the ,menu at the top and then select your Datacenter.
+* Once logged in, click __Data Centers__ in the top menu and then select your Data Center.
 
   ![IPSec VPN](../../images/dccf/configuring-sslvpn-plus1-html5.png)
 

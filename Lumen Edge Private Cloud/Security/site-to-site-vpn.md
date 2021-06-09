@@ -1,6 +1,6 @@
 {{{
   "title": "Configuring Site-to-Site (IPsec VPN Sites) VPN",
-  "date": "11-12-2019",
+  "date": "06-03-2021",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -9,10 +9,10 @@
 }}}
 
 ### Description
-This KB article steps through the process to stand up a Site-to-Site VPN between Lumen Private Cloud on VMware Cloud Foundation™ (CPC on vCF) and Lumen Cloud (CLC).
+This KB article steps through the process to stand up a Site-to-Site VPN between Lumen Private Cloud on VMware Cloud Foundation™ (LPC on VCF) and Lumen Cloud (CLC).
 
 ### Prerequisites
-* CPC on vCF account
+* LPC on VCF account
 * CLC account
 * Local Endpoint (Public IP for IPsec VPN on the CPC on vCF side)
 * Local Subnets in CIDR format (local networks to be accessible to IPsec VPN on the CPC on vCF side)
@@ -21,7 +21,7 @@ This KB article steps through the process to stand up a Site-to-Site VPN between
 * Firewall ports IP Protocol ID 50 (ESP), UDP Port 500 (IKE), and UDP Port 4500 are configured on both ends
 
 ### Steps
-Login to your Lumen Private Cloud on VMware Cloud Foundation environment.
+Log in to your Lumen Private Cloud on VMware Cloud Foundation environment.
 
   ![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
