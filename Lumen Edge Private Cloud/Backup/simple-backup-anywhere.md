@@ -27,4 +27,4 @@ You will need the following in order to use Simple Backup Anywhere with Lumen Pr
 * Install the agent on the server
 * Add the server to a backup policy
 
-For more details, please take a look at this [Simple Backup Anywhere](../../Backup/backup-anywhere.md) KB article
+

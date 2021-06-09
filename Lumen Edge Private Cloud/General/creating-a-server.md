@@ -14,7 +14,7 @@ In this KB article, we demonstrate how to provision a new virtual server in Lume
 
 Once you've gone through this KB article and created a new virtual server, you can follow these guides to learn how to [Configure SSL VPN-Plus](../Security/configuring-sslvpn-plus.md) and [How to Securely Connect](../Security/how-to-securely-connect.md) to your Lumen Private Cloud on VMware Cloud Foundation environment.
 
-Note: This KB assumes you have followed the KB article on [Adding to your Catalog](../Catalog/add-to-catalog.md) in Lumen Private Cloud on VMware Cloud Foundation.
+Note: This KB assumes you have followed the KB article on [Adding to your Catalog](../Catalog/add-to-catalog.md) in Lumen Private Cloud on VMware Cloud Foundation (LPC on VCF).
 
 ### Steps
 * Login to your Lumen Private Cloud on VMware Cloud Foundation environment.
@@ -29,7 +29,7 @@ Note: This KB assumes you have followed the KB article on [Adding to your Catalo
 
   ![Select vApp Template](../../images/dccf/creating-a-server2-html5.png)
 
-* Click __New vAPP__ a the top of the screen. A popup window will appear. Enter a name for the new vApp you are creating &mdash; in the context of vCloud Director, a vApp is simply a container for the objects you create. Once you enter a Name, click __Add Virtual Machine__.
+* Click __New vAPP__ a the top of the screen. A popup window will appear. Enter a name for the new vApp you are creating &mdash; in the context of LPC on VCF, a vApp is simply a container for the objects you create. Once you enter a Name, click __Add Virtual Machine__.
 
   ![Select Name and Location](../../images/dccf/creating-a-server3-html5.png)
 
@@ -53,7 +53,7 @@ Note: This KB assumes you have followed the KB article on [Adding to your Catalo
 
   ![Configure Networking](../../images/dccf/creating-a-server8-html5.png)
 
-* If you would like to update the Compute details on your VM, select the Details tab, then click the __Name__ of your VM. You will then be able to edit General fields, Hardware, Guest OS Customization, and CPU, Memory, and Metadata in the __Advanced__ section. Click __Save__ when finished.
+* If you would like to update the Compute details on your VM, select the Details link in your VM. You will then be able to edit General fields, Hardware, Guest OS Customization, Guest Properties, Monitoring, and Metadata. Click __Save__ when finished.
 
   ![Configure Networking](../../images/dccf/creating-a-server9-html5.png)
 
