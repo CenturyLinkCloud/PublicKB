@@ -21,7 +21,7 @@ Lumen monitors the physical hardware that hosts the Lumen Private Cloud on VMwar
 * Battery.
 * Fan.
 * CPU.
-* Controllers.
+* Controllers. 
 * Storage.
 * Network Interfaces.
 
