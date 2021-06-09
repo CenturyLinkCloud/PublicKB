@@ -15,26 +15,25 @@ Lumen maintains and monitors all components of the Lumen Private Cloud on VMware
 ### Physical Hardware
 Lumen monitors the physical hardware that hosts the Lumen Private Cloud on VMware Cloud Foundation product. This includes monitoring components such as the following:
 
-* System board
-* RAM
-* Power Supplies
-* Battery
-* Fan
-* CPU
-* Controllers
-* Storage
-* Network Interfaces
+* System board.
+* RAM.
+* Power Supplies.
+* Battery.
+* Fan.
+* CPU.
+* Controllers.
+* Storage.
+* Network Interfaces.
 
 ### Software Components
 Lumen monitors the software components that make up the Lumen Private Cloud on VMware Cloud Foundation product. This includes monitoring components such as the following:
 
-* ESXi Servers
-* vSphere
-* Datastore
-* Licenses
-* Network Uplinks
-* Database
-* Backups
+* ESXi Servers.
+* Datastore.
+* Licenses.
+* Network Uplinks.
+* Database.
+* Backups.
 
 ### Monitoring Actions
 If an event is triggered by one more of the monitors listed above, an alert is sent to the Lumen Service Desk. These alerts are then actioned according to the type and severity of the event.

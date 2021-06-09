@@ -27,4 +27,4 @@ You will need the following to use Simple Backup Anywhere with Lumen Private Clo
 * Install the agent on the server.
 * Add the server to a backup policy.
 
-For more details, please take a look at this [Simple Backup Anywhere](../../Backup/backup-anywhere.md) KB article.
+
