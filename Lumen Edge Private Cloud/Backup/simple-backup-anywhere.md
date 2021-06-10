@@ -20,7 +20,7 @@ You will need the following in order to use Simple Backup Anywhere with Lumen Pr
 * An active Lumen Cloud (CLC) account.
 
 ### High Level Steps
-* Login to your CLC account and navigate to Simple Backup (Control Portal | Services | Backup).
+* Log in to your CLC account and navigate to Simple Backup (Control Portal | Services | Backup).
 * Create a backup policy - if you haven't already done so.
 * Click on Backup Anywhere and Register an Anywhere Server - this is the server you will install the Simple Backup agent.
 * Download the installer.
