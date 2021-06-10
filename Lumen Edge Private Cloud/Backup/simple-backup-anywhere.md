@@ -28,3 +28,4 @@ You will need the following in order to use Simple Backup Anywhere with Lumen Pr
 * Add the server to a backup policy.
 
 
+For more details, please take a look at this [Simple Backup Anywhere](https://www.ctl.io/knowledge-base/backup/backup-anywhere/) KB article.
