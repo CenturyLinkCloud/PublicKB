@@ -20,7 +20,7 @@
 
 **Multiple NAT/Double NAT**: NAT (Network Address Translation) is being performed on a router, but additionally on another device connected in front of it resulting in double NAT. The public/private network boundary doesn't exist on the router as it is on the other device(s), which means that both the WAN and LAN sides of the router are private networks. Double NAT is a scenario where multiple routers on the network are doing network address translation.
 
-**NAT**: Network Address Translation
+**NAT**: Network Address Translation 
 
 **NSX**: A virtual networking and security software product family created from VMware's vCloud Networking and Security (vCNS), and Nicira Network Virtualization Platform (NVP) intellectual property.
 
