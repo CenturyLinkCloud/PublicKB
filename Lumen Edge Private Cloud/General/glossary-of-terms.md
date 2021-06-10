@@ -8,7 +8,7 @@
  "contentIsHTML": false
  }}}
 
-**"Bring Your Own IP"**: Customers use their IP address in a migration
+**"Bring Your Own IP"**: Customers use their IP address in a migration.
 
 **Catalog**: A catalog is a container for vApp templates and media files in an organization. Organization administrators and catalog authors can create catalogs in an organization. Catalog contents can be shared with other users in the organization and can also be published to all organizations in the vCloud Director installation.
 
