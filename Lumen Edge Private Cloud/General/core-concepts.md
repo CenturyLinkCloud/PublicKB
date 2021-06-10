@@ -1,6 +1,6 @@
 {{{
   "title": "Core Concepts",
-  "date": "5-17-2018",
+  "date": "06-09-2021",
   "author": "Anthony Hakim",
   "keywords": ["cpc", "cloud", "vm", "core", "vcloud", "vapp", "template", "vcf"],
   "attachments": [],
