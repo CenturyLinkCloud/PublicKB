@@ -1,6 +1,6 @@
 {{{
  "title": "Glossary of Terms",
- "date": "06-07-2018",
+ "date": "06-07-2021",
  "author": "Anthony Hakim",
  "keywords": ["cpc", "cloud", "vm", "glossary", "vapp", "vcloud", "vcf"],
 "attachments": [],
