@@ -1,6 +1,6 @@
 {{{
   "title": "Introducing Object Storage",
-  "date": "6-04-2021",
+  "date": "6-15-2021",
   "author": "Daniel Stephan, Oct 29, 2015, updated by Randy Roten",
   "attachments": [],
   "contentIsHTML": false,
