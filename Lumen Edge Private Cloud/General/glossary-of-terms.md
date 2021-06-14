@@ -1,6 +1,6 @@
 {{{
  "title": "Glossary of Terms",
- "date": "06-07-2018",
+ "date": "06-07-2021",
  "author": "Anthony Hakim",
  "keywords": ["cpc", "cloud", "vm", "glossary", "vapp", "vcloud", "vcf"],
 "attachments": [],
@@ -14,7 +14,7 @@
 
 **Client-to-Site VPN**: A VPN client on the remote user's computer or mobile device connects to a VPN gateway on the organization's network. The gateway typically requires the device to authenticate its identity.
 
-**DCC**: Dedicated Cloud Compute 
+**DCC**: Dedicated Cloud Compute
 
 **Hyperconvergence**: A type of infrastructure system with a software-centric architecture that tightly integrates compute, storage, networking and virtualization resources and other technologies from scratch in a commodity hardware box supported by a single vendor.
 
