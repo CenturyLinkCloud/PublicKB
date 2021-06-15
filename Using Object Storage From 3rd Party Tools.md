@@ -7,7 +7,7 @@
   "sticky": true
 }}}
 #### Description
-A variety of freeware and shareware FTP clients are available for FTP processes. Examples include Cyberduck, Cloudberry Browser, S3cmd, and others. Additionally, most enterprise backup software has the ability to write directly to an S3 target. For this example, we will show configuration of Cyberduck for bucket configuration. 
+A variety of freeware and shareware FTP clients are available for FTP processes. Examples include Cyberduck, Cloudberry Browser, S3cmd, aupdatednd others. Additionally, most enterprise backup software has the ability to write directly to an S3 target. For this example, we will show configuration of Cyberduck for bucket configuration. 
 
 ### Accessing the Lumen Network Storage Portal
 #### Creating Object Storage Buckets Via an S3 Browser
