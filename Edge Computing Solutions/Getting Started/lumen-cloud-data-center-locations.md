@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Computing Solutions Locations",
-  "date": "6-4-2021",
+  "date": "6-15-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -49,6 +49,7 @@ Argentina – AR1|Lumen| Av. Del Campo N°  1301, Buenos Aires, Argentina|Coming
 ---------|-----------------|-----------------|-----------------|--------------------------------------------|------------------
 NA|Atlanta,GA|DRVLGAGZ|Lumen|6855 Crescent Dr,Atlanta, GA 30340|Available Today
 NA|Austin, TX|AUSTTXUH|Lumen|4207 Smith School Road,Austin, TX 78744|Available Today
+NA|Boise, ID|BOISIDMA|Lumen|619 W Bannock St, Boise, ID 83702|Available Today
 NA|Chicago, IL|BRVWILCU|Lumen|2101 Roberts Drive,Broadview, IL 60155|Available Today
 NA|Cambridge, MA|CMBRMAOR|Lumen|300 Bent St,Cambridge, MA 02141|Available Today
 NA|Cincinnati, OH|CNCNOHBV|Lumen|400 Pike Street,Cincinnati, OH 45202|Available Today
