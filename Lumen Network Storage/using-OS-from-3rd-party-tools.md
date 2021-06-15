@@ -11,7 +11,7 @@ A variety of freeware and shareware FTP clients are available for FTP processes.
 
 ### Accessing the Lumen Network Storage Portal
 #### Creating Object Storage Buckets Via an S3 Browser
-In this example, we will show configuration of Cyberduck for bucket configuration.
+For this example, we will show configuration of Cyberduck for bucket configuration.
 S3 terminology typically references “buckets” as the storage containers, with “objects” being stored in those containers. While technically inaccurate, Cyberduck presents this as a more familiar construct of directories and files. The first step is to configure our S3 client for accessing the Lumen Network Storage regional endpoint. As seen in our example, our chosen region is US-west-1 (PHX).
 1. Launch Cyberduck.
 2. Click the **Open Connection** icon. 
