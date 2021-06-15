@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Bare Metal Availability",
-  "date": "6-14-2021",
+  "date": "6-15-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -18,30 +18,30 @@ You can find latency coverage across our Edge portfolio [here](https://www.lumen
 
 **Region**|**Edge Bare Metal Site Locations**|**32 Cores, 384 GB RAM,7,680 GB SSD**|**32 Cores, 768 GB RAM,32,200 GB SSD**
 ----------|----------------------------------|----------------------------------|------------------------------------------|
-NA|Atlanta,GA|5|12
+NA|Atlanta,GA|5|11
 NA|Austin,TX|12|7
 NA|Chicago,IL|0|21
-NA|Cambridge,MA|7|7
-NA|Cincinnati,OH|0|18
-NA|Dallas,TX|2|2
+NA|Cambridge,MA|7|5
+NA|Cincinnati,OH|0|15
+NA|Dallas,TX|2|1
 NA|Denver,CO|0|0
 NA|Detroit,MI|0|20
 NA|El Paso,TX|12|6
 NA|Houston,TX|5|2
 NA|Jacksonville,FL|11|8
-NA|Kansas City,MO|0|16
+NA|Kansas City,MO|0|15
 NA|Las Vegas,NV|0|13
-NA|Little Rock,AK|6|3
-EMEA|London,England|0|17
-NA|McAllen,TX|10|3
-NA|Metairie,LA|11|4
-NA|Miami,FL|12|7
-NA|Minneapolis,MN|0|17
+NA|Little Rock,AK|6|8
+EMEA|London,England|0|16
+NA|McAllen,TX|10|5
+NA|Metairie,LA|12|7
+NA|Miami,FL|12|6
+NA|Minneapolis,MN|0|16
 NA|Nashville,TN|0|19
 NA|New York,NY|11|27
 NA|Omaha,NE|12|8
-NA|Philadelphia,PA|10|2
-NA|Phoenix,AZ|0|12
+NA|Philadelphia,PA|11|6
+NA|Phoenix,AZ|1|7
 NA|Pittsburgh,PA|0|6
 NA|Portland,OR|10|1
 NA|Reno,NV|11|4
@@ -52,6 +52,6 @@ NA|Santa Clara,CA|7|19
 NA|Seattle,WA|3|0
 NA|St.Louis,MO|12|8
 NA|Tampa,FL|0|12
-CA|Toronto,Canada|11|3
+CA|Toronto,Canada|11|7
 NA|Tustin,CA|12|2
 NA|W Sacramento,CA|0|13
