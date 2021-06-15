@@ -1,7 +1,7 @@
 {{{
   "title": "Using Object Storage From 3rd Party Tools",
   "date": "6-16-2021",
-  "author": "Brad Lewis, Randy Roten updates",
+  "author": "Brad Lewis, updates from Randy Roten",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
