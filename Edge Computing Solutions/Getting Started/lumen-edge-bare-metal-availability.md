@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Bare Metal Availability",
-  "date": "6-15-2021",
+  "date": "6-16-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -20,7 +20,7 @@ You can find latency coverage across our Edge portfolio [here](https://www.lumen
 ----------|----------------------------------|----------------------------------|------------------------------------------|
 NA|Atlanta,GA|5|11
 NA|Austin,TX|12|7
-NA|Chicago,IL|0|21
+NA|Chicago,IL|0|20
 NA|Cambridge,MA|7|5
 NA|Cincinnati,OH|0|15
 NA|Dallas,TX|2|1
@@ -37,7 +37,7 @@ NA|McAllen,TX|10|5
 NA|Metairie,LA|12|7
 NA|Miami,FL|12|6
 NA|Minneapolis,MN|0|16
-NA|Nashville,TN|0|19
+NA|Nashville,TN|2|19
 NA|New York,NY|11|27
 NA|Omaha,NE|12|8
 NA|Philadelphia,PA|11|6
