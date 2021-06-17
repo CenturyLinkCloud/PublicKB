@@ -1,6 +1,6 @@
 {{{
   "title": "CPC Metrics",
-  "date": "6-15-2020",
+  "date": "06-15-2020",
   "author": "Anthony Hakim",
   "keywords": ["cpc", "cloud", "vm", "metrics", "vapp", "vcloud", "vcf"],
   "attachments": [],
