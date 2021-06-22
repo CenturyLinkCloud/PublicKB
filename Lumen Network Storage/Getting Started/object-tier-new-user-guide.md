@@ -1,6 +1,6 @@
 {{{
   "title": "Object Tier New User Guide",
-  "date": "6-15-2021",
+  "date": "6-22-2021",
   "author": "Brad Lewis, updated by Randy Roten",
   "attachments": [],
   "contentIsHTML": false,
@@ -36,7 +36,7 @@ From the **Users** tab, you can create a new Object Storage user which is associ
 ![Create Object Storage User dialog](../../images/LNS-OTNUG_051121/006_CreateOS-User-dialog.png)
 Once User creation completes, the user **Access Key** and **Secret Key** will display. 
 _**Important**_ **: Capture and save these keys in text format. You will not be able to reference them within the portal again after this dialog box is dismissed. The user is advised to capture and duplicate these keys in multiple ways to provide a backup reference.**
-![Object Storage User Created Successfully – Access Key and Secret Key message](../../images/LNS-OTNUG_051121/0007_AccessKeySecretKey-message.png)
+![Object Storage User Created Successfully – Access Key and Secret Key message](../../images/LNS-OTNUG_051121/007_AccessKeySecretKey-message.png)
 _**Warning**_ **: This is the only time that these credentials will be available.**
 Once a User is created, that user will be listed in the User Details page of the **Users** tab. The **Buckets** navigation tab is also available on this page.
 ![Object Storage Dashboard Users and Tenants List](../../images/LNS-OTNUG_051121/008_UsersTenantsList.png)
