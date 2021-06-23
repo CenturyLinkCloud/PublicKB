@@ -354,15 +354,3 @@ W#### Ways to Improve Transfer Speed
 When uploading or downloading a large file, consider to put s3cmd in quiet mode (`no-progress` option) to minimize the output to console (stdout), as stdout could potentially slow down the transfer process.
 
 Look for the next article in this series which will discuss using advanced S3cmd features such as rsync and encryption!
-
-### Related Topics
-
-[Request Rate and Performance Considerations](https://development.ctl.io/knowledge-base/storage/object-storage/request-rate-and-performance-considerations/)
-
-[Object Storage User Management](https://development.ctl.io/knowledge-base/storage/object-storage/object-storage-user-management/)
-
-[Object Storage Error Code: 503 Slow Down](https://development.ctl.io/knowledge-base/storage/object-storage/object-storage-error-code-503-slow-down/)
-
-[Object Storage 3rd Party Compatibility](https://development.ctl.io/knowledge-base/storage/object-storage/object-storage-3rd-party-compatibility/)
-
-[Object Storage Regions and Service Points](https://development.ctl.io/knowledge-base/storage/object-storage/object-storage-regions-and-service-points/)
