@@ -1,0 +1,733 @@
+{{{
+  "title": "Lumen Edge Orchestrator and Amazon Web Services",
+  "date": "6-17-2021",
+  "author": "Randy Roten",
+  "attachments": [],
+  "contentIsHTML": false,
+  "sticky": true
+}}}
+### Description
+Amazon Web Services (AWS) is the Amazon public cloud. This documentation will help you get Lumen Edge Orchestrator and AWS connected to make best use of features listed below.
+
+### Overview
+---
+
+AWS is the Amazon public cloud, offering a full range of services and features across the globe in various datacenters. AWS provides businesses with a flexible, highly scalable, and low-cost way to deliver a variety of services using open standard technologies as well as proprietary solutions. This section of documentation will help you get Lumen Edge Orchestrator and AWS connected to use the features below.
+
+### Features
+---
+
+- Instance, Service, Infrastructure Provisioning, and Synchronization
+- EKS Cluster Creation and Synchronization
+- Lumen Edge Orchestrator Kubernetes, Docker, and KVM Cluster Creation
+- ELB Classic Load Balancer Creation and Synchronization
+- ELB Application Load Balancer (ALB) Creation and Synchronization
+- Security Group Creation and Synchronization
+- Security Group Rule Creation and Synchronization
+- Network Synchronization
+- VPC Creation and Synchronization
+- CloudFormation Provisioning and Resource Synchronization
+- Terraform Provisioning and Resource Synchronization
+- Pricing and Costing Synchronization
+- MetaData Tag Creation and Synchronization
+- S3 Bucket Creation and Synchronization
+- Route53 Automation and Synchronization
+- IAM Profile Synchronization and Assignment
+- RDS Support
+- Backups / Snapshots
+- Migrations
+- Auto Scaling
+- Remote Console (SSH and RDP)
+- Lifecycle Management and Resize
+- Restore from Snapshots
+- Elastic IP Assignment
+- Network Pools
+- Enhanced Invoice Costing
+
+### Requirements
+---
+
+#### AWS IAM Security Credentials
+
+Access Key Secret Key Sufficient User Privileges (see the Minimum IAM Policies section for more info)
+
+#### Security Group Configuration for Agent Install, Script Execution, and Remote Console Access
+
+* Typical Inbound ports open from Lumen Edge Orchestrator Appliance: 22, 5985, 3389 (22 and 3389 required for Console. 22 and 5985 required for agent-less comms).
+* Typical Outbound to Lumen Edge Orchestrator Appliance: 443 (Required for Agent install and comms).
+
+_**Note:**_These are required for Lumen Edge Orchestrator agent install, communication, and remote console access for windows and Linux. Other configurations, such as docker instances, will need the appropriate ports opened as well. Cloud-init Agent Install mode does not require incoming access for port 22.
+
+#### Network(s)
+
+IP assignment required for Agent install, Script Execution, and Console if the Lumen Edge Orchestrator Appliance is not able to communicate with private IP AWS instances.
+
+_**Note:**_Each AWS Cloud in Lumen Edge Orchestrator is scoped to an AWS Region and VPC. Multiple AWS Clouds can be added and even grouped if different region and VPC combinations are needed. It’s also recommended you verify that Security Groups are properly configured in all regions Lumen Edge Orchestrator Clouds will scope to.
+
+### Adding an AWS Cloud
+---
+
+1. Navigate to Infrastructure -> Clouds
+2. Select + Create Cloud
+3. Select AWS
+4. Enter the following:
+
+#### Cloud Configuration
+
+**NAME**
+Name of the Cloud in Lumen Edge Orchestrator
+
+**CODE**
+Unique code used for api/cli, automation and policies.
+
+**LOCATION**
+Description field for adding notes on the cloud, such as location.
+
+**VISIBILITY**
+For setting cloud permissions in a multi-tenant environment. Not applicable in single tenant environments.
+
+**TENANT**
+If Visibility is set to Private, select the Tenant the Cloud resources will assigned to.
+
+**ENABLED**
+When disabled, automatic Cloud sync is paused and the Cloud will not be selectable for provisioning.
+
+**AUTOMATICALLY POWER ON VMS**
+When enabled, Lumen Edge Orchestrator will maintain the expected power state of managed VMs. Lumen Edge Orchestrator will power on any managed VMs in the Cloud that have been shut down for unknown reasons (not powered off by Lumen Edge Orchestrator) to ensure availability of services.
+
+_**Note:**_ When **AUTOMATICALLY POWER ON VMS** is enabled, the power state of managed VMs should be maintained in Lumen Edge Orchestrator. This setting is not applicable to discovered/unmanaged resources.
+
+#### Details
+
+**REGION**
+Select AWS Region for the Cloud
+
+**ACCESS KEY**
+Access Key ID from AWS IAM User Security Credentials.
+
+**SECRET KEY**
+Secret Access Key associated with the Access Key ID.
+
+**USE HOST IAM CREDENTIALS**
+Check to use use Host IAM Credentials
+
+**ROLE ARN**
+Supports security token service (STS) to AssumeRole by entering an AWS Role ARN
+
+**INVENTORY**
+**Basic**
+Lumen Edge Orchestrator will sync information on all EC2 Instances in the selected VPC the IAM user has access to, including Name, IP Addresses, Platform Type, Power Status, and overall resources sizing for Storage, CPU and RAM, every 5 minutes. Inventoried EC2 Instances will appear as Unmanaged VM’s.
+
+**Full**
+In addition to the information synced from Basic Inventory level, Lumen Edge Orchestrator will gather Resource Utilization metrics for Memory, Storage and CPU utilization per VM.
+
+**Off**
+Existing EC2 Instances will not be inventoried
+
+_**Note:**_
+
+Cloud Watch must be configured in AWS for Lumen Edge Orchestrator to collect Memory and Storage utilization metrics on inventoried EC2 instances.
+
+**USE VPC**
+Specify if the target account is using EC2-VPC or EC2-Classic Platform. In almost all cases, VPC should be selected, and then select the target VPC from the synced available VPC’s list, or All VPC’s.
+
+The AWS cloud is ready to be added to a group and saved. Additional configuration options available:
+
+IMAGE TRANSFER STORE
+S3 bucket for Image transfers, required for migrations into AWS.
+
+**EBS ENCRYPTION**
+Enable or disable encryption of EBS Volumes
+
+**COSTING KEY**
+For Gov Cloud pricing only, key for standard managing cost account
+
+**COSTING SECRET**
+For Gov Cloud pricing only, secret for standard managing cost account
+
+#### Advanced Options
+
+**DOMAIN**
+Specify a default domain for instances provisioned to this Cloud.
+
+**SCALE PRIORITY**
+Only affects Docker Provisioning. Specifies the priority with which an instance will scale into the cloud. A lower priority number means this cloud integration will take scale precedence over other cloud integrations in the group.
+
+**APPLIANCE URL**
+Alternate Appliance url for scenarios when the default Appliance URL (configured in admin -> settings) is not reachable or resolvable for Instances provisioned in this cloud. The Appliance URL is used for Agent install and reporting.
+
+**TIME ZONE**
+Configures the time zone on provisioned VM’s if necessary.
+
+**DATACENTER ID**
+Used for differentiating pricing among multiple datacenters. Leave blank unless prices are properly configured.
+
+**NETWORK MODE**
+Unmanaged or select a Network Integration (NSX, ACI etc)
+
+**LOCAL FIREWALL**
+On or Off. Enable to managed Host and VM firewall/IP Table rules (linux only)
+
+**SECURITY SERVER**
+Security Server setting is for Security Service Integrations such as ACI
+
+**TRUST PROVIDER**
+Select Internal (Lumen Edge Orchestrator) or an existing Trust Provider Integration
+
+**STORAGE MODE**
+Single Disk, LVM or Clustered
+
+**BACKUP PROVIDER**
+Select Internal Backups (Lumen Edge Orchestrator) or a Backup Integration
+
+**REPLICATION PROVIDER**
+Sets the default Replication Provider for the Cloud. Select an existing Replication Provider Integration
+
+**GUIDANCE**
+Enable Guidance recommendations on cloud resources.
+
+**COSTING**
+Enable for Lumen Edge Orchestrator to sync Costing data from the Cloud provider, when available. If your organization utilizes reserved instances and you want to pull in related pricing data, select Costing and Reservations. If this is not relevant, select Costing to save money on additional calls to the AWS Cost Explorer API or similar service for other clouds.
+
+**DNS INTEGRATION**
+Records for instances provisioned in this cloud will be added to selected DNS integration.
+
+**SERVICE REGISTRY**
+Services for instances provisioned in this cloud will be added to selected Service Registry integration.
+
+**CONFIG MANAGEMENT**
+Select a Chef, Salt, Ansible or Puppet integration to be used with this Cloud.
+
+**CMDB**
+Select CMDB Integration to automatically update selected CMDB.
+
+**CHANGE MANAGEMENT**
+Select an existing Change Management Integration to set on the Cloud. ex: Cherwell
+
+**AGENT INSTALL MODE**
+- SSH / WINRM: Lumen Edge Orchestrator will use SSH or WINRM for Agent install.
+- Cloud Init / Unattend (when available): (DEFAULT) Lumen Edge Orchestrator will utilize Cloud-Init or Cloudbase-Init for agent install when provisioning images with Cloud-Init/Cloudbase-Init installed. Lumen Edge Orchestrator will fall back on SSH or WINRM if cloud-init is not installed on the provisioned image. Lumen Edge Orchestrator will also add Agent installation to Windows unattend.xml data when performing Guest Customizations or utilizing sysprepped images.
+
+**API PROXY**
+Set a proxy for outbound communication from the Lumen Edge Orchestrator Appliance to the Cloud endpoints. Proxies can be added in the Infrastructure -> Networks -> Proxies tab.
+
+**INSTALL AGENT**
+Enable to have Agent Installation on by default for all provisioning into this Cloud. Disable for Agent Installation to be off by default for all provisioning into this Cloud.
+
+#### Provisioning Options
+
+**PROXY**
+Set a proxy for inbound communication from Instances to the Lumen Edge Orchestrator Appliance. Proxies can be added in the Infrastructure -> Networks -> Proxies tab.
+
+**Bypass Proxy for Appliance URL**
+Enable to bypass proxy settings (if added) for Lumen Edge Orchestrator Agent communication to the Appliance URL.
+
+**NO PROXY**
+Include a list of IP addresses or name servers to exclude from proxy traversal
+
+**USER DATA (LINUX) **
+Add cloud-init user data. Lumen Edge Orchestrator 4.1.0 and earlier assumes bash syntax. Lumen Edge Orchestrator 4.1.1 and later supports all User Data formats. Refer to [https://cloudinit.readthedocs.io/en/latest/topics/format.html]( https://cloudinit.readthedocs.io/en/latest/topics/format.html) for more information.
+
+#### Advanced Options
+
+**DOMAIN**
+Specify a default domain for instances provisioned to this Cloud.
+
+**SCALE PRIORITY**
+Only affects Docker Provisioning. Specifies the priority with which an instance will scale into the cloud. A lower priority number means this cloud integration will take scale precedence over other cloud integrations in the group.
+
+**APPLIANCE URL**
+Alternate Appliance URL for scenarios when the default Appliance URL (configured in admin -> settings) is not reachable or resolvable for Instances provisioned in this cloud. The Appliance URL is used for Agent install and reporting.
+
+**TIME ZONE**
+Configures the time zone on provisioned VM’s if necessary.
+
+**DATACENTER ID**
+Used for differentiating pricing among multiple datacenters. Leave blank unless prices are properly configured.
+
+**NETWORK MODE**
+Unmanaged or select a Network Integration (NSX, ACI etc)
+
+**LOCAL FIREWALL**
+On or Off. Enable to managed Host and VM firewall/IP Table rules (linux only)
+
+**SECURITY SERVER**
+Security Server setting is for Security Service Integrations such as ACI
+
+**TRUST PROVIDER**
+Select Internal (Lumen Edge Orchestrator) or an existing Trust Provider Integration
+
+**STORAGE MODE**
+Single Disk, LVM or Clustered
+
+**BACKUP PROVIDER**
+Select Internal Backups (Lumen Edge Orchestrator) or a Backup Integration
+
+**REPLICATION PROVIDER**
+Sets the default Replication Provider for the Cloud. Select an existing Replication Provider Integration
+
+**GUIDANCE**
+Enable Guidance recommendations on cloud resources.
+
+**COSTING**
+Enable for Lumen Edge Orchestrator to sync Costing data from the Cloud provider, when available. If your organization utilizes reserved instances and you want to pull in related pricing data, select Costing and Reservations. If this is not relevant, select Costing to save money on additional calls to the AWS Cost Explorer API or similar service for other clouds.
+
+**DNS INTEGRATION**
+Records for instances provisioned in this cloud will be added to selected DNS integration.
+
+**SERVICE REGISTRY**
+Services for instances provisioned in this cloud will be added to selected Service Registry integration.
+
+**CONFIG MANAGEMENT**
+Select a Chef, Salt, Ansible or Puppet integration to be used with this Cloud.
+
+**CMDB**
+Select CMDB Integration to automatically update selected CMDB.
+
+**CHANGE MANAGEMENT**
+Select an existing Change Management Integration to set on the Cloud. ex: Cherwell
+
+**AGENT INSTALL MODE**
+- SSH / WINRM: Lumen Edge Orchestrator will use SSH or WINRM for Agent install.
+- Cloud Init / Unattend (when available): (DEFAULT) Lumen Edge Orchestrator will utilize Cloud-Init or Cloudbase-Init for agent install when provisioning images with Cloud-Init/Cloudbase-Init installed. Lumen Edge Orchestrator will fall back on SSH or WINRM if cloud-init is not installed on the provisioned image. Lumen Edge Orchestrator will also add Agent installation to Windows unattend.xml data when performing Guest Customizations or utilizing sysprepped images.
+
+**API PROXY**
+Set a proxy for outbound communication from the Lumen Edge Orchestrator Appliance to the Cloud endpoints. Proxies can be added in the Infrastructure -> Networks -> Proxies tab.
+
+**INSTALL AGENT**
+Enable to have Agent Installation on by default for all provisioning into this Cloud. Disable for Agent Installation to be off by default for all provisioning into this Cloud.
+
+#### Provisioning Options
+
+PROXY
+Set a proxy for inbound communication from Instances to the Lumen Edge Orchestrator Appliance. Proxies can be added in the Infrastructure -> Networks -> Proxies tab.
+
+Bypass Proxy for Appliance URL
+Enable to bypass proxy settings (if added) for Lumen Edge Orchestrator Agent communication to the Appliance URL.
+
+NO PROXY
+Include a list of IP addresses or name servers to exclude from proxy traversal
+
+USER DATA (LINUX)
+Add cloud-init user data. Lumen Edge Orchestrator 4.1.0 and earlier assumes bash syntax. Lumen Edge Orchestrator 4.1.1 and later supports all User Data formats. Refer to https://cloudinit.readthedocs.io/en/latest/topics/format.html for more information.
+
+### Enhanced Invoice Costing Configuration
+---
+
+AWS cloud integrations in Lumen Edge Orchestrator will sync highly-granular costing data through the use of AWS Costing and Utilization Reports (CUR). If desired, users can turn on costing in the Lumen Edge Orchestrator Cloud configuration without linking a CUR to use AWS Cost Explorer instead. Lumen Edge Orchestrator version 4.2.3 also simplified the way CUR reports can be selected or created in order to sync costing data. The section below discusses setting up enhanced costing through CUR reports both in 4.2.3 and versions prior. For additional details on setting up costing with AWS GovCloud, see the next section.
+
+_**Note:**_ 
+Even with a costing report configured in the Cloud integration as described below, the COSTING value must also be set to “Costing and Reservations” in order for enhanced invoice data to be brought into Lumen Edge Orchestrator. Confirm this setting by: 1. Editing the Amazon Cloud integration. 
+2. Checking the **COSTING** value in the **Advanced Options** panel before continuing.
+
+
+
+#### v4.2.3 and Above
+
+In Lumen Edge Orchestrator 4.2.3 and higher, edit the Amazon cloud integration or create a new Amazon Cloud to get started. On the **Create/Edit Cloud** modal, open the advanced options section. The relevant fields for configuring invoice costing are shown below:
+
+![Billing Fields](../AWS_overview_art/001_BillingFields)
+
+In the example case above, a new report and a new S3 bucket are created but Lumen Edge Orchestrator will also synchronize buckets and reports that meet the required parameters, if they already exist. For reports to be synced they must meet the requirements listed below:
+
+- Hourly time granularity
+- Include resource IDs
+- GZIP compression
+- CSV format
+
+If you don’t currently have a report meeting those criteria, you can create one by selecting “New Report” from the **REPORT NAME** dropdown menu. A new S3 bucket can be created in similar fashion if needed. You may also want to review the section below on configuration for Lumen Edge Orchestrator 4.2.2 and below to note policies that will be applied to your selected bucket and Cost Explorer permissions required for the AWS cloud user associated with the Lumen Edge Orchestrator Cloud integration.
+
+In the end, the following fields must be filled in order to complete the process:
+
+- **COSTING BUCKET: ** The S3 bucket name
+- **COSTING REGION: ** The region the bucket was created in
+- **COSTING FOLDER: ** This is the report path prefix if you configured one earlier
+- **COSTING REPORT NAME: ** The name given to your CUR report
+- **COSTING KEY: ** If the IAM user for this AWS cloud integration does not have access to the S3 bucket with the CUR data, enter the AWS Key ID for an IAM user with access
+- **COSTING SECRET: ** If the IAM user for this AWS cloud integration does not have access to the S3 bucket with the CUR data, enter the AWS Secret Key for the IAM account whose Key ID you entered in the previous field
+- **LINKED ACCOUNT ID: ** If the IAM user for this AWS cloud integration does not have access to the S3 bucket with the CUR data, enter the AWS account number that the IAM user from the above step resides in
+
+_**Note:**_
+If the AWS cloud account is a GovCloud account, enter the COSTING KEY, COSTING SECRET, and LINKED ACCOUNT ID for the master commercial account your GovCloud account is associated with.
+
+
+
+#### v4.2.2 and Below
+
+Begin by logging into the [AWS Billing Console](https://console.aws.amazon.com/billing/home?#/) and then clicking the **Create report** button.
+
+![Billing Console](../AWS_overview_art/002_BillingConsole.png)
+
+Include a name for your report and mark the box to **Include resource IDs**. Lumen Edge Orchestrator uses these resource IDs to map costs to various resources. Click the Next button.
+
+![Report Configuration](../AWS_overview_art/003_ReportConfig_e.png)
+
+On the following page, begin by identifying an S3 bucket to house reports. Click the **Configure** button near the top of the page and select an existing bucket or create a new one.
+
+
+![Choose Bucket](../AWS_overview_art/004_ChooseBucket.png)
+
+After identifying the bucket, you must mark the box to accept the default policy being applied to the bucket. Click the **Save** button.
+
+![Confirm Policy](../AWS_overview_art/005_ConfirmPolicy.png)
+
+The default policy applied to the bucket is below:
+
+{
+&nbsp;  "Version": "2008-10-17",
+&nbsp;  "Id": "SomeID",
+&nbsp;  "Statement": [
+&nbsp;  &nbsp;  {
+&nbsp;  &nbsp;  &nbsp;  "Sid": "SomeStmtID",
+&nbsp;  &nbsp;  &nbsp;  "Effect": "Allow",
+&nbsp;  &nbsp;  &nbsp;  "Principal": {
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  "Service": "billingreports.amazonaws.com"
+&nbsp;  &nbsp;  &nbsp;  },
+&nbsp;  &nbsp;  &nbsp;  "Action": [
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  "s3:GetBucketAcl",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  "s3:GetBucketPolicy"
+&nbsp;  &nbsp;  &nbsp;  ],
+&nbsp;  &nbsp;  &nbsp;  "Resource": "arn:aws:s3:::bucket-name"
+&nbsp;  &nbsp;  },
+&nbsp;  &nbsp;  {
+&nbsp;  &nbsp;  &nbsp;  "Sid": "SomeStmtID",
+&nbsp;  &nbsp;  &nbsp;  "Effect": "Allow",
+&nbsp;  &nbsp;  &nbsp;  "Principal": {
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  "Service": "billingreports.amazonaws.com"
+&nbsp;  &nbsp;  &nbsp;  },
+&nbsp;  &nbsp;  &nbsp;  "Action": [
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  "s3:PutObject"
+&nbsp;  &nbsp;  &nbsp;  ],
+&nbsp;  &nbsp;  &nbsp;  "Resource": "arn:aws:s3:::bucket-name/*"
+&nbsp;  }
+&nbsp;  ]
+}
+
+After choosing a bucket, accepting the default policy, and saving the change, you’re brought back to the report delivery page. By default, CUR reports are saved to a folder at the path `my-report-name/date-folder`. If this bucket already contains CUR reports, you may want to specify a prefix path in the **Report path prefix** field. Outside of this field, use the default values as shown in the screenshot below, then click the **Next** button.
+
+![Delivery Options](../AWS_overview_art/006_CompleteDelivery.png)
+
+On the following page, make your final review and click the **Review and Complete** button. Following this, you will see your newly configured report in the list of CUR report(s).
+
+In addition, the AWS cloud user associated with the integration in Lumen Edge Orchestrator requires IAM policy permission to access Cost Explorer. Attach a policy like the one below to this cloud user:
+
+{
+&nbsp;  "Version": "2012-10-17",
+&nbsp;  "Id": "SomeID",
+&nbsp;  "Statement": [
+&nbsp;  &nbsp;  {
+&nbsp;  &nbsp;  &nbsp;  "Sid": "SomeStmtID",
+&nbsp;  &nbsp;  &nbsp;  "Effect": "Allow",
+&nbsp;  &nbsp;  &nbsp;  "Action": [
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  "ce:DescribeReportDefinitions",
+&nbsp;  &nbsp;  &nbsp;  "ce:DescribeCostCategoryDefinition",
+&nbsp;  &nbsp;  &nbsp;  "ce:ListCostCategoryDefinitions"
+&nbsp;  &nbsp;  &nbsp;  ],
+&nbsp;  &nbsp;  &nbsp;  "Resource": [
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  "*"
+&nbsp;  &nbsp;  &nbsp;  ]
+&nbsp;  &nbsp;  }
+&nbsp;  ]
+}
+
+_**Note:**_ If the Cost Explorer permissions are granted at the master account level, the user will see all costs for each member account; if granted at the member account, only the costs for that member account are available.
+
+With the AWS console configuration steps complete, we can move back into Lumen Edge Orchestrator. Keep in mind it is only necessary to set up one AWS cloud for Costing since we process all records in the CUR report.
+
+Once back in Lumen Edge Orchestrator, add or edit the relevant AWS cloud integration with one of the following actions:
+
+- **Infrastructure > Clouds > + ADD** button.
+
+OR 
+
+- Click the pencil icon in the row for the chosen AWS integration. 
+
+Expand the **Advanced Options** drawer and complete the following fields:
+
+**COSTING BUCKET: The S3 bucket name
+- **COSTING REGION:** The region the bucket was created in.
+- **COSTING FOLDER:** This is the report path prefix if you configured one earlier.
+- **COSTING REPORT NAME:** The name given to your CUR report
+- **COSTING KEY:** If the IAM user for this AWS cloud integration does not have access to the S3 bucket with the CUR data, enter the AWS Key ID for an IAM user with access.
+- **COSTING SECRET:** If the IAM user for this AWS cloud integration does not have access to the S3 bucket with the CUR data, enter the AWS Secret Key for the IAM account whose Key ID you entered in the previous field.
+- **LINKED ACCOUNT ID**: If the IAM user for this AWS cloud integration does not have access to the S3 bucket with the CUR data, enter the AWS account number that the IAM user from the above step resides in.
+
+_**Note:**_ If the AWS cloud account is a GovCloud account, enter the COSTING KEY, COSTING SECRET, and LINKED ACCOUNT ID for the master commercial account your GovCloud account is associated with.
+
+![Costing configuration](../AWS_overview_art/007_LEO-Config_e.png)
+
+Save changes to your cloud integration.
+
+_**Important**_ 
+It may take as long as one hour for Lumen Edge Orchestrator to process the next CUR report.
+
+### Costing and AWS GovCloud
+---
+
+AWS GovCloud delivers Amazon public cloud infrastructure and features in a way that complies with U.S. government standards for security. GovCloud accounts are applied for and must be associated with a pre-existing standard AWS account and the usage and billing data for the GovCloud account is rolled up into that of the standard AWS account. For that reason, Amazon recommends creating a new standard account solely to house the GovCloud account if usage and billing must be tracked separately.
+
+Since GovCloud accounts do not have direct access to billing data, Lumen Edge Orchestrator must be able to access it through the associated standard account. You could do this by creating the Lumen Edge Orchestrator cloud integration through the standard account itself or by integrating the GovCloud account and supplying an Access Key and Secret Key for the standard account when configuring costing. When needed, add the additional credentials for the standard commercial account as described below:
+
+1. Add a new AWS Cloud or edit an existing one
+2. Expand the Advanced Options section
+3. Complete the following fields in addition to other required fields needed to set up costing as described in the previous section:
+
+- **COSTING KEY:** The AWS Key ID for an IAM user with sufficient access who is associated with the standard commercial account
+- **COSTING SECRET:** The AWS Secret Key for an IAM user with sufficient access who is associated with the standard commercial account
+- **LINKED ACCOUNT ID:** The AWS account number for the standard commercial account in which the IAM user referenced in the prior bullets resides
+
+4. Save the changes to the AWS Cloud integration.
+
+When credentials are configured correctly, you will be able to select an existing Costing and Usage Report (CUR) from the appropriate S3 bucket if it already exists. If not, you can create one directly from the add/edit AWS Cloud modal in Lumen Edge Orchestrator.
+
+![Government Cloud Costing](../AWS_overview_art/008_GovcloudCosting.png)
+
+### AWS Reserved Instances and Savings Plans
+---
+
+Amazon AWS public cloud offers Reserved Instances (RI) and Savings Plans, which allow organizations with consistent use patterns to reduce cloud spend significantly. Lumen Edge Orchestrator analyzes AWS cloud usage and spend, which allows it to make intelligent recommendations that can lead to significant savings. This data can be reviewed in the Reservation Recommendations and Savings Plan Recommendations tables on any AWS Cloud detail page by clicking 
+
+**Infrastructure > Clouds > Selected Amazon Cloud**
+
+Savings Plans potentially offer greater than 70% savings in exchange for a commitment to consistent usage levels for a 1- or 3-year term. Lumen Edge Orchestrator provides Savings Plan guidance based on learned analytics; allowing you to analyze Savings Plans based on different term commitments and upfront costs to choose the best savings plan
+
+![Savings Plan](../AWS_overview_art/009_SavingsPlan.png)
+
+Reserved Instances (RI) provide a discounted hourly rate and optional capacity reservation for EC2 instances. AWS billing automatically applies your RI-discounted rate when the attributes of EC2 instance usage match attributes of an active RI. Lumen Edge Orchestrator provides RI guidance based on learned analytics.
+
+![Reservation Recommendations](../AWS_overview_art/010_ReservationRecommendations.png)
+
+### Minimum AWS IAM Policies
+---
+
+Below are the AWS IAM Permissions covering the minimum access for Lumen Edge Orchestrator applying to all resources and services.
+
+See [http://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies.html]( http://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies.html) for more information.
+
+#### Lumen Edge Orchestrator Sample AWS IAM Policy
+
+{
+&nbsp;  &nbsp;  "Version": "2012-10-17",
+&nbsp;  &nbsp;  "Statement": [
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  {
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "Sid": "VisualEditor0",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "Effect": "Allow",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "Action": [
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "autoscaling:DescribeAutoScalingGroups",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ce:*",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "cloudwatch:DescribeAlarms",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "cloudwatch:GetMetricStatistics",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:AllocateAddress",
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:AssignPrivateIpAddresses",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:AssociateAddress",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:AttachInternetGateway",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:AttachNetworkInterface",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:AttachVolume",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:AuthorizeSecurityGroupEgress",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:AuthorizeSecurityGroupIngress",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:CancelExportTask",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:CancelImportTask",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:CopyImage",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:CopySnapshot",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:CreateEgressOnlyInternetGateway",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:CreateImage",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:CreateInstanceExportTask",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:CreateInternetGateway",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:CreateKeyPair",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:CreateNatGateway",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:CreateNetworkAcl",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:CreateNetworkAclEntry",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:CreateNetworkInterface",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:CreateSecurityGroup",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:CreateSnapshot",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:CreateTags",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:CreateVolume",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DeleteEgressOnlyInternetGateway",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DeleteInternetGateway",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DeleteKeyPair",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DeleteNatGateway",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DeleteNetworkAcl",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DeleteNetworkAclEntry",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DeleteNetworkInterface",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DeleteSecurityGroup",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DeleteSnapshot",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DeleteTags",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DeleteVolume",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DeregisterImage",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeAccountAttributes",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeAddresses",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeAvailabilityZones",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeClassicLinkInstances",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeConversionTasks",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeEgressOnlyInternetGateways",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeExportTasks",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeImageAttribute",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeImages",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeImportImageTasks",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeImportSnapshotTasks",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeInstances",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeInstanceStatus",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeInternetGateways",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeKeyPairs",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeNatGateways",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeNetworkAcls",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeNetworkInterfaceAttribute",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeNetworkInterfaces",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeRegions",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeSecurityGroupReferences",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeSecurityGroups",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeSnapshotAttribute",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeSnapshots",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeStaleSecurityGroups",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeSubnets",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeTags",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeVolumeAttribute",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeVolumes",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeVolumeStatus",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeVpcAttribute",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeVpcClassicLink",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeVpcClassicLinkDnsSupport",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeVpcEndpoints",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeVpcEndpointServices",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeVpcPeeringConnections",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DescribeVpcs",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DetachInternetGateway",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DetachNetworkInterface",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DetachVolume",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:DisassociateAddress",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:GetPasswordData",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:ImportImage",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:ImportInstance",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:ImportKeyPair",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:ImportSnapshot",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:ImportVolume",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:ModifyImageAttribute",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:ModifyInstanceAttribute",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:ModifyNetworkInterfaceAttribute",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:ModifySnapshotAttribute",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:ModifyVolumeAttribute",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:RebootInstances",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:RegisterImage",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:ReleaseAddress",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:ReplaceNetworkAclAssociation",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:ReplaceNetworkAclEntry",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:ResetImageAttribute",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:ResetInstanceAttribute",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:ResetNetworkInterfaceAttribute",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:ResetSnapshotAttribute",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:RevokeSecurityGroupEgress",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:RevokeSecurityGroupIngress",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:RunInstances",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:StartInstances",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:StopInstances",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:TerminateInstances",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:UnassignPrivateIpAddresses",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "ec2:UpdateSecurityGroupRuleDescriptionsEgress",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "eks:*",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "iam:ListGroups",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "iam:ListInstanceProfiles",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "iam:ListRoles",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:AddRoleToDBCluster",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:AddTagsToResource",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:ApplyPendingMaintenanceAction",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:AuthorizeDBSecurityGroupIngress",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:CopyDBClusterSnapshot",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:CopyDBParameterGroup",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:CopyDBSnapshot",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:CreateDBCluster",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:CreateDBClusterSnapshot",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:CreateDBInstance",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:CreateDBInstanceReadReplica",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:CreateDBSecurityGroup",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:CreateDBSnapshot",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DeleteDBCluster",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DeleteDBInstance",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DeleteDBSecurityGroup",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DeleteDBSnapshot",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeAccountAttributes",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeCertificates",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeDBClusterParameterGroups",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeDBClusterParameters",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeDBClusters",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeDBClusterSnapshotAttributes",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeDBClusterSnapshots",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeDBEngineVersions",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeDBInstances",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeDBLogFiles",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeDBParameterGroups",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeDBParameters",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeDBSecurityGroups",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeDBSnapshotAttributes",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeDBSnapshots",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeDBSubnetGroups",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeEngineDefaultClusterParameters",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeEngineDefaultParameters",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeEventCategories",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeEvents",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeOptionGroupOptions",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeOptionGroups",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:DescribeOrderableDBInstanceOptions",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:ListTagsForResource",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:ModifyDBCluster",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:ModifyDBClusterParameterGroup",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:ModifyDBClusterSnapshotAttribute",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:ModifyDBInstance",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:ModifyDBParameterGroup",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:ModifyDBSnapshotAttribute",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:PromoteReadReplica",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:RebootDBInstance",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:RemoveTagsFromResource",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:RestoreDBClusterFromSnapshot",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:RestoreDBClusterToPointInTime",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:RestoreDBInstanceFromDBSnapshot",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:RestoreDBInstanceToPointInTime",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "rds:RevokeDBSecurityGroupIngress",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "route53:GetHostedZone",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "route53:ListHostedZones",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "route53:ListResourceRecordSets",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "s3:AbortMultipartUpload",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "s3:CreateBucket",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "s3:DeleteBucket",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "s3:DeleteObject",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "s3:DeleteObjectVersion",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "s3:GetBucketLocation",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "s3:GetObject",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "s3:GetObjectVersion",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "s3:ListAllMyBuckets",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "s3:ListBucket",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "s3:ListBucketMultipartUploads",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "s3:ListBucketVersions",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "s3:ListMultipartUploadParts",
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "s3:PutObject"
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  ],
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  "Resource": "*"
+&nbsp;  &nbsp;  &nbsp;  &nbsp;  }
+&nbsp;  &nbsp;  ]
+}
+
+#### Resource Filter
+
+If you need to limit actions based on filters you have to pull out the action and put it in a resource based policy since not all the actions support resource filters.
+
+See [http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-supported-iam-actions-resources.html]( http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-supported-iam-actions-resources.html) for more information on limiting resources by filter.
+
+Resource filter example:
+
+{
+&nbsp;  "Effect": "Allow",
+&nbsp;  "Action": [
+&nbsp;  &nbsp; "ec2:StopInstances",
+&nbsp;  &nbsp; "ec2:StartInstances"
+&nbsp;  ],
+&nbsp;  "Resource": *
+&nbsp; },
+&nbsp; {
+&nbsp;  "Effect": "Allow",
+&nbsp;  "Action": "ec2:TerminateInstances",
+&nbsp;  "Resource": "arn:aws:ec2:us-east-1:123456789012:instance/*",
+&nbsp;  "Condition": {
+&nbsp;  &nbsp;  "StringEquals": {
+&nbsp;  &nbsp;  &nbsp;  &nbsp; "ec2:ResourceTag/purpose": "test"
+&nbsp;  &nbsp;  &nbsp; }
+&nbsp;  &nbsp; }
+&nbsp; }
