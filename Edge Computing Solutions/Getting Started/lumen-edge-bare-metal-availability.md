@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Bare Metal Availability",
-  "date": "6-15-2021",
+  "date": "6-22-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -20,38 +20,43 @@ You can find latency coverage across our Edge portfolio [here](https://www.lumen
 ----------|----------------------------------|----------------------------------|------------------------------------------|
 NA|Atlanta,GA|5|11
 NA|Austin,TX|12|7
-NA|Chicago,IL|0|21
-NA|Cambridge,MA|7|5
-NA|Cincinnati,OH|0|15
-NA|Dallas,TX|2|1
-NA|Denver,CO|0|0
-NA|Detroit,MI|0|20
-NA|El Paso,TX|12|6
-NA|Houston,TX|5|2
+NA|Boise,ID|11|6
+NA|Chicago,IL|0|27
+NA|Cambridge,MA|11|3
+NA|Charlotte,NC|9|5
+NA|Cincinnati,OH|4|19
+NA|Dallas,TX|2|2
+NA|Denver,CO|3|7
+NA|Detroit,MI|2|22
+NA|El Paso,TX|12|7
+NA|Herndon,VA|12|20
+NA|Houston,TX|10|4
 NA|Jacksonville,FL|11|8
-NA|Kansas City,MO|0|15
-NA|Las Vegas,NV|0|13
-NA|Little Rock,AK|6|8
+NA|Kansas City,MO|3|18
+NA|Las Vegas,NV|3|13
+NA|Little Rock,AK|12|8
 EMEA|London,England|0|16
-NA|McAllen,TX|10|5
-NA|Metairie,LA|12|7
-NA|Miami,FL|12|6
-NA|Minneapolis,MN|0|16
-NA|Nashville,TN|0|19
-NA|New York,NY|11|27
+NA|Madison, WI|11|7
+NA|McAllen,TX|10|3
+NA|Metairie,LA|12|6
+NA|Miami,FL|12|7
+NA|Minneapolis,MN|4|17
+NA|Nashville,TN|3|20
+NA|New York,NY|12|39
 NA|Omaha,NE|12|8
-NA|Philadelphia,PA|11|6
-NA|Phoenix,AZ|1|7
-NA|Pittsburgh,PA|0|6
-NA|Portland,OR|10|1
-NA|Reno,NV|11|4
-NA|Salt Lake City,UT|0|19
-NA|San Antonio,TX|0|19
-NA|San Diego,CA|0|11
+NA|Philadelphia,PA|12|2
+NA|Phoenix,AZ|3|16
+NA|Pittsburgh,PA|3|10
+NA|Portland,OR|10|0
+NA|Reno,NV|11|1
+NA|Salt Lake City,UT|5|20
+NA|San Antonio,TX|2|20
+NA|San Diego,CA|4|17
 NA|Santa Clara,CA|7|19
-NA|Seattle,WA|3|0
+NA|Seattle,WA|7|13
+NA|Spokane,WA|12|8
 NA|St.Louis,MO|12|8
-NA|Tampa,FL|0|12
-CA|Toronto,Canada|11|7
+NA|Tampa,FL|0|14
+CA|Toronto,Canada|12|6
 NA|Tustin,CA|12|2
-NA|W Sacramento,CA|0|13
+NA|W Sacramento,CA|2|14
