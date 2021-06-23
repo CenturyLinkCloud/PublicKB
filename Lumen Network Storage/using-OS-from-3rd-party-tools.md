@@ -1,14 +1,13 @@
 {{{
   "title": "Using Object Storage From 3rd Party Tools",
-  "date": "6-7-2021",
-  "author": "Brad Lewis",
+  "date": "6-16-2021",
+  "author": "Brad Lewis, updates from Randy Roten",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
 }}}
 #### Description
 A variety of freeware and shareware FTP clients are available for FTP processes. Examples include Cyberduck, Cloudberry Browser, S3cmd, and others. Additionally, most enterprise backup software has the ability to write directly to an S3 target. For this example, we will show configuration of Cyberduck for bucket configuration. 
-
 ### Accessing the Lumen Network Storage Portal
 #### Creating Object Storage Buckets Via an S3 Browser
 For this example, we will show configuration of Cyberduck for bucket configuration.
@@ -20,18 +19,18 @@ S3 terminology typically references “buckets” as the storage containers, wit
 5. Edit the Server name so that it will point to your Lumen Network Storage Region endpoint URL.
 6. Enter the user **Access Key** and **Secret Key**.
 7. Click the **Connect** button. 
-![Cyberduck login data entry dialog]( ../../images/LNS-ObjectTierNewUserGuide_graphics_51121/009_LNS-OTNUG_graphic.png)
+![Cyberduck login data entry dialog](../images/LNS-OTNUG_051121/009_Cduck-data-entry-dialog.png)
 8. After a connection is created, you will be in the ‘root’ directory, where you can create a new bucket.
-![Cyberduck connection “root” directory]( ../../images/LNS-ObjectTierNewUserGuide_graphics_51121/010_LNS-OTNUG_graphic.png)
+![Cyberduck connection “root” directory](../images/LNS-OTNUG_051121/010_Cduck“root”directory.png)
 9. Right-click on the list or choose **File > New Folder** from the menu. 
-![Cyberduck Create New Folder dialog]( ../../images/LNS-ObjectTierNewUserGuide_graphics_51121/011_LNS-OTNUG_graphic.png)
+![Cyberduck Create New Folder dialog](../images/LNS-OTNUG_051121/011_CduckCreateNewFolder.png)
 Your folder is created and is now available to write data through: 
 * Your S3 browser via drag-drop functionality.
 * Your backup software.
 * Directly via the S3 API.
 
 Returning to the Lumen Network Storage Object Dashboard, your new bucket is listed.
-![Lumen Network Storage Object Dashboard with the just-created new bucket listed, along with Region, Tenant, and Primary Site details]( ../../images/ LNS-ObjectTierNewUserGuide_graphics_51121/012_LNS-OTNUG_graphic.png)
+![Lumen Network Storage Object Dashboard with the just-created new bucket listed, along with Region, Tenant, and Primary Site details](../images/LNS-OTNUG_051121/012_LNS-ObjectDashboard.png)
 Further Information on S3 protocol APIs can be found [here](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html).
 To open a support ticket, click on the help icon at the top right of the portal window to send an email request, or call the Lumen support desk.
 
