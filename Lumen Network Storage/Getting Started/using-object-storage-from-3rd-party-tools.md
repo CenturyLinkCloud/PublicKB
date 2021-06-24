@@ -1,6 +1,6 @@
 {{{
   "title": "Using Object Storage From 3rd Party Tools",
-  "date": "6-22-2021",
+  "date": "6-24-2021",
   "author": "Brad Lewis, updates by Randy Roten",
   "attachments": [],
   "contentIsHTML": false,
@@ -25,7 +25,7 @@ S3 terminology typically references “buckets” as the storage containers, wit
 
 8. After a connection is created, you will be in the ‘root’ directory, where you can create a new bucket.
 
-![Cyberduck connection “root” directory](../../images/LNS-OTNUG_051121/010_Cduck“root”directory.png)
+![Cyberduck connection “root” directory](../../images/LNS-OTNUG_051121/010_Cduck-root-directory.png)
 
 9. Right-click on the list or choose **File > New Folder** from the menu.
 
