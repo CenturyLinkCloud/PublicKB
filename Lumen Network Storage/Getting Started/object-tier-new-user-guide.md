@@ -52,12 +52,9 @@ S3 terminology typically references “buckets” as the storage containers, wit
 4. Select the **Amazon S3** transfer protocol. 
 5. Edit the Server name so that it will point to your Lumen Network Storage Region endpoint URL.
 6. Enter the user **Access Key** and **Secret Key**.
-7. Click the **Connect** button. 
-![Cyberduck login data entry dialog](../../images/LNS-OTNUG_051121/009_Cduck-data-entry-dialog.png)
-8. After a connection is created, you will be in the ‘root’ directory, where you can create a new bucket.
-![Cyberduck connection “root” directory](../../images/LNS-OTNUG_051121/010_Cduck-root-directory.png)
-9. Right-click on the list or choose **File > New Folder** from the menu. 
-![Cyberduck Create New Folder dialog](../../images/LNS-OTNUG_051121/011_CduckCreateNewFolder.png)
+7. Click the **Connect** button.  ![Cyberduck login data entry dialog](../../images/LNS-OTNUG_051121/009_Cduck-data-entry-dialog.png)
+8. After a connection is created, you will be in the ‘root’ directory, where you can create a new bucket. ![Cyberduck connection “root” directory](../../images/LNS-OTNUG_051121/010_Cduck-root-directory.png)
+9. Right-click on the list or choose **File > New Folder** from the menu. ![Cyberduck Create New Folder dialog](../../images/LNS-OTNUG_051121/011_CduckCreateNewFolder.png)
 Your folder is created and is now available to write data through: 
 * Your S3 browser via drag-drop functionality.
 * Your backup software.
