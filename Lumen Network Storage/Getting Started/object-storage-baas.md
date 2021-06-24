@@ -1,6 +1,6 @@
 {{{
   "title": "Using Lumen Object Storage for Backup as a Service / S3CMD - Object Storage Management for Linux Machines",
-  "date": "6-23-2021",
+  "date": "6-24-2021",
   "authors": " Evgeny Rudinsky / Brian Button, updated by Randy Roten",
   "attachments": [],
   "contentIsHTML": false,
