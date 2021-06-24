@@ -1,6 +1,6 @@
 {{{
   "title": "Object Tier New User Guide",
-  "date": "6-15-2021",
+  "date": "6-24-2021",
   "author": "Brad Lewis, updated by Randy Roten",
   "attachments": [],
   "contentIsHTML": false,
@@ -55,7 +55,7 @@ S3 terminology typically references “buckets” as the storage containers, wit
 7. Click the **Connect** button. 
 ![Cyberduck login data entry dialog](../../images/LNS-OTNUG_051121/009_Cduck-data-entry-dialog.png)
 8. After a connection is created, you will be in the ‘root’ directory, where you can create a new bucket.
-![Cyberduck connection “root” directory](../../images/LNS-OTNUG_051121/010_Cduck“root”directory.png)
+![Cyberduck connection “root” directory](../../images/LNS-OTNUG_051121/010_Cduck-root-directory.png)
 9. Right-click on the list or choose **File > New Folder** from the menu. 
 ![Cyberduck Create New Folder dialog](../../images/LNS-OTNUG_051121/011_CduckCreateNewFolder.png)
 Your folder is created and is now available to write data through: 
