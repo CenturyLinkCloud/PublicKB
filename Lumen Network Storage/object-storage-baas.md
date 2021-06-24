@@ -1,6 +1,6 @@
 {{{
   "title": "Using Lumen Object Storage for Backup as a Service / S3CMD - Object Storage Management for Linux Machines",
-  "date": "6-10-2021",
+  "date": "6-23-2021",
   "authors": " Evgeny Rudinsky / Brian Button, updated by Randy Roten",
   "attachments": [],
   "contentIsHTML": false,
@@ -86,6 +86,8 @@ Lumen Object Storage Cloud customers may wish to leverage our S3 compatible Obje
 ![Select the backup source](../images/object-storage-baas/011_CBerryBU-Select-backup-source.jpg)
 
 7. The Advanced Filter allows administrators to include or exclude specific file types, folders, and large files. Select the appropriate settings based on IT Department or business policies.
+
+![Advanced filter](../images/object-storage-baas/012_CBerryBU-AdvancedFilter.png)
 
 8. In order to secure backup data and reduce cost, customers can enable encryption and compression. **AES 128bit or higher is recommended.** Use encryption keys that are long and complex. Additionally, file name encryption adds another layer of security. Mark the Encrypt filenames checkbox.
 
@@ -352,15 +354,3 @@ W#### Ways to Improve Transfer Speed
 When uploading or downloading a large file, consider to put s3cmd in quiet mode (`no-progress` option) to minimize the output to console (stdout), as stdout could potentially slow down the transfer process.
 
 Look for the next article in this series which will discuss using advanced S3cmd features such as rsync and encryption!
-
-### Related Topics
-
-[Request Rate and Performance Considerations](https://development.ctl.io/knowledge-base/storage/object-storage/request-rate-and-performance-considerations/)
-
-[Object Storage User Management](https://development.ctl.io/knowledge-base/storage/object-storage/object-storage-user-management/)
-
-[Object Storage Error Code: 503 Slow Down](https://development.ctl.io/knowledge-base/storage/object-storage/object-storage-error-code-503-slow-down/)
-
-[Object Storage 3rd Party Compatibility](https://development.ctl.io/knowledge-base/storage/object-storage/object-storage-3rd-party-compatibility/)
-
-[Object Storage Regions and Service Points](https://development.ctl.io/knowledge-base/storage/object-storage/object-storage-regions-and-service-points/)
