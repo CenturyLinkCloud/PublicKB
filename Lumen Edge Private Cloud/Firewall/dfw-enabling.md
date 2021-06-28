@@ -1,7 +1,7 @@
 {{{
   "title": "Enabling the Distributed Firewall",
-  "date": "5-7-2019",
-  "author": "Hannah Melvin",
+  "date": "6-28-2021",
+  "author": "John Grant",
   "keywords": ["cpc", "cloud", "vmware", "firewall", "support", "vcf"],
   "attachments": [],
   "related-products" : [],
@@ -26,7 +26,7 @@ In this KB article, we walk through how to enable Distributed Firewall for Lumen
   * What is the status? **Requesting a Change**
   * When should this change be performed? **Prioritized (Any time in the next X hours)**
   * Change Subject: **Lumen Private Cloud on VMware Cloud Foundation Prioritized**
-  * Change Details: **Please enable Distributed Firewall in my CPC on vCF environment - `<yourURL>`**.
+  * Change Details: **Please enable Distributed Firewall in my LPC on VCF environment - `<yourURL>`**.
   * Priority: Select the appropriate priority (**P2 Standard or P3 Standard**).
   * Click on the **submit** button.
 
