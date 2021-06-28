@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Bare Metal Availability",
-  "date": "6-22-2021",
+  "date": "6-28-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -18,45 +18,45 @@ You can find latency coverage across our Edge portfolio [here](https://www.lumen
 
 **Region**|**Edge Bare Metal Site Locations**|**32 Cores, 384 GB RAM,7,680 GB SSD**|**32 Cores, 768 GB RAM,32,200 GB SSD**
 ----------|----------------------------------|----------------------------------|------------------------------------------|
-NA|Atlanta,GA|5|11
-NA|Austin,TX|12|7
-NA|Boise,ID|11|6
-NA|Chicago,IL|0|27
-NA|Cambridge,MA|11|3
-NA|Charlotte,NC|9|5
-NA|Cincinnati,OH|4|19
-NA|Dallas,TX|2|2
-NA|Denver,CO|3|7
+NA|Atlanta,GA|5|8
+NA|Austin,TX|10|5
+NA|Boise,ID|11|7
+NA|Chicago,IL|0|24
+NA|Cambridge,MA|10|3
+NA|Charlotte,NC|8|4
+NA|Cincinnati,OH|4|18
+NA|Dallas,TX|2|1
+NA|Denver,CO|6|10
 NA|Detroit,MI|2|22
 NA|El Paso,TX|12|7
-NA|Herndon,VA|12|20
-NA|Houston,TX|10|4
-NA|Jacksonville,FL|11|8
+NA|Herndon,VA|11|19
+NA|Houston,TX|11|4
+NA|Jacksonville,FL|10|8
 NA|Kansas City,MO|3|18
 NA|Las Vegas,NV|3|13
 NA|Little Rock,AK|12|8
 EMEA|London,England|0|16
-NA|Madison, WI|11|7
-NA|McAllen,TX|10|3
-NA|Metairie,LA|12|6
+NA|Madison, WI|9|6
+NA|McAllen,TX|10|2
+NA|Metairie,LA|12|5
 NA|Miami,FL|12|7
 NA|Minneapolis,MN|4|17
-NA|Nashville,TN|3|20
-NA|New York,NY|12|39
+NA|Nashville,TN|4|20
+NA|New York,NY|12|38
 NA|Omaha,NE|12|8
 NA|Philadelphia,PA|12|2
-NA|Phoenix,AZ|3|16
+NA|Phoenix,AZ|3|15
 NA|Pittsburgh,PA|3|10
 NA|Portland,OR|10|0
-NA|Reno,NV|11|1
+NA|Reno,NV|7|1
 NA|Salt Lake City,UT|5|20
-NA|San Antonio,TX|2|20
-NA|San Diego,CA|4|17
+NA|San Antonio,TX|2|19
+NA|San Diego,CA|1|17
 NA|Santa Clara,CA|7|19
-NA|Seattle,WA|7|13
-NA|Spokane,WA|12|8
+NA|Seattle,WA|16|11
+NA|Spokane,WA|11|7
 NA|St.Louis,MO|12|8
 NA|Tampa,FL|0|14
-CA|Toronto,Canada|12|6
+CA|Toronto,Canada|11|6
 NA|Tustin,CA|12|2
-NA|W Sacramento,CA|2|14
+NA|W Sacramento,CA|7|19
