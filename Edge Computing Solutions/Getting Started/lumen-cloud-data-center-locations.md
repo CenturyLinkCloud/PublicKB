@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Computing Solutions Locations",
-  "date": "6-22-2021",
+  "date": "6-29-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -50,8 +50,9 @@ Argentina – AR1|Lumen| Av. Del Campo N°  1301, Buenos Aires, Argentina|Coming
 NA|Atlanta,GA|DRVLGAGZ|Lumen|6855 Crescent Dr,Atlanta, GA 30340|Available Today
 NA|Austin, TX|AUSTTXUH|Lumen|4207 Smith School Road,Austin, TX 78744|Available Today
 NA|Boise, ID|BOISIDMA|Lumen|619 W Bannock St, Boise, ID 83702|Available Today
-NA|Chicago, IL|BRVWILCU|Lumen|2101 Roberts Drive,Broadview, IL 60155|Available Today
 NA|Cambridge, MA|CMBRMAOR|Lumen|300 Bent St,Cambridge, MA 02141|Available Today
+NA|Charlotte, NC|CHRLNCRL|Lumen|4021 Rose Lake Dr, Charlotte, NC 28217|Available Today
+NA|Chicago, IL|BRVWILCU|Lumen|2101 Roberts Drive,Broadview, IL 60155|Available Today
 NA|Cincinnati, OH|CNCNOHBV|Lumen|400 Pike Street,Cincinnati, OH 45202|Available Today
 NA|Dallas, TX|DLLATX37|Lumen|3180 Irving Blvd,Dallas,TX 75247|Available Today
 NA|Denver, CO|DNVTCO56|Lumen|1850 Pearl St.,Denver, CO 80203|Available Today
@@ -64,6 +65,7 @@ NA|Kansas City, MO|KSCBMOVS|Lumen|1212 East 19th Street,Kansas City, MO 64108|Av
 NA|Las Vegas, NV|NLVGNVBV|Lumen|1 Aerojet Way North,Las Vegas, NV 89030|Available Today
 NA|Little Rock, AR|LTRKARDR|Lumen|300 S Gaines St,Little Rock, AR 72201|Available Today
 EMEA|London, England|LONDENEH|Lumen|260-266 Goswell Rd,Clerkenwell, London EC1V 7EB, UK|Available Today
+NA|Madison, WI|MDSNWIUQ|Lumen|710 E Mifflin St, Madison, WI 53703|Available Today
 NA|McAllan, TX|MCAMTXKN|Lumen|906 Beech Ave,McAllen, TX 78501|Available Today
 NA|Metairie, LA|MTRELANJ|Lumen|3220 Lausat St,Metairie, LA 70001|Available Today
 NA|Miami, FL|MIATFLAD|Lumen|49 NW 5th St,Miami, FL 33128|Available Today
@@ -82,12 +84,12 @@ NA|San Antonio, TX|SNAQTXKY|Lumen|5130 Service Center Drive, San Antonio,	TX 782
 NA|San Diego, CA|SNDACAGL|Lumen|8929 Aero Drive, San Diego, CA 92123|Available Today
 NA|Santa Clara, CA|SNTDCADZ|Lumen|3045 Raymond St Santa Clara, CA 95054|Available Today
 NA|Seattle, WA|STTNWAHO|Lumen|1000 Denny Way, Seattle, WA 98109|Available Today
+NA|Spokane, WA|SPKNWA01|Lumen|501 W 2nd Ave, Spokane, WA 99201|Available Today
 NA|St. Louis, MO|STLSMOPL|Lumen|1015 Locust Street, St. Louis, MO 63101|Available Today
 NA|Tampa,FL|TAMRFLWS|Lumen|7909 Woodland Center Blvd, Tampa, FL 33614|Available Today
 CA|Toronto,CA|TORVONRF|Lumen| 8 Garamond Ct, North York, ON M3C 1Z4, Canada|Available Today
 NA|Tustin, CA|TUSTCAFT|Lumen|14452 Franklin Ave, Tustin, CA 92780|Available Today
-NA|San Francisco, CA|EMVLCA04|Lumen|5000 Hollis Street, Emeryville, CA 94608|Coming in 2021
-NA|Raleigh, NC|RLGHNCJV|Lumen|5301 Departure Drive, Raleigh, NC 27616|Coming in 2021
+NA|Honolulu, HI|MLUAHIAKLumen|550 Paiea St, Honolulu, HI 96819|Coming in 2021
 LATAM|Cotia, Brazil|CTIABZAF|Lumen|Rua Eid. Manssur N° 666, Parque São George, Rodovia Raposo Tavares, Km 25, Cotia, Brazil|Coming in 2021
 LATAM|Buenos Aires, Argentina|BNARAGMS|Lumen|Av. Del Campo N° 1301, Buenos Aires, Argentina|Coming in 2021
 
