@@ -1,6 +1,6 @@
 {{{
   "title": "Default Catalog and How to Opt Out",
-  "date": "5-22-2019",
+  "date": "6-29-2021",
   "author": "Anthony Hakim",
   "keywords": ["cpc", "cloud", "vmware", "catalog", "template", "vapp", "vcf"],
   "attachments": [],
@@ -21,16 +21,16 @@ Since your Default Catalog is a subscriber to the CTL Master Catalog Service, th
 ### Steps to Opt Out
 There are two options for Opting out for the Default Catalog (CTL-Golden-Images).
 
-The first option is to stop the automatic synchronization of the catalog. The contents of the subscribed catalog will remain intact, but will not be updated to reflect any changes, whether they are new templates, updates to existing templates or templates that are removed from the catalog.
+The first option is to stop the automatic synchronization of the catalog. The contents of the subscribed catalog will remain intact, but will not be updated to reflect any changes, whether they are new templates, updates to existing templates, or templates that are removed from the catalog.
 
 The second option is to delete the catalog. __The catalog and contents of the catalog will be deleted__. You have the option to move the vApp Templates to another catalog before you proceed with Option 2.
 
 #### Option 1
-* Login to your Lumen Private Cloud on VMware Cloud Foundation environment.
+* Log in to your Lumen Private Cloud on VMware Cloud Foundation (LPC on VCF) environment.
 
   ![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
-* Once logged in, click on the __Main Menu__ (also known as the Hamburger Menu) at the top of the page, then click __Libraries__.
+* Once logged in, click __Libraries__ in the top menu.
 
   ![Catalog](../../images/dccf/catalog1.png)
 
@@ -38,7 +38,7 @@ The second option is to delete the catalog. __The catalog and contents of the ca
 
   ![Catalog](../../images/dccf/catalog2.png)
 
-* Locate __CTL-Golden-Images__ on the right side, then click on the dotted menu to the left, then __Subscribe settings__.
+* Locate __CTL-Golden-Images__ on the right side, then click on the dotted menu to the left, and then select __Subscribe settings__.
 
   ![Catalog](../../images/dccf/catalog3.png)
 
@@ -47,11 +47,11 @@ The second option is to delete the catalog. __The catalog and contents of the ca
   ![Catalog](../../images/dccf/catalog4.png)
 
 #### Option 2
-* Login to your Lumen Private Cloud on VMware Cloud Foundation environment.
+* Log in to your Lumen Private Cloud on VMware Cloud Foundation environment.
 
   ![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
-* Once logged in, click on the __Main Menu__ (also known as the Hamburger Menu) at the top of the page, then click __Libraries__.
+* Once logged in, click __Libraries__ in the top menu.
 
   ![Catalog](../../images/dccf/catalog1.png)
 
@@ -59,7 +59,7 @@ The second option is to delete the catalog. __The catalog and contents of the ca
 
   ![Catalog](../../images/dccf/catalog2.png)
 
-* Locate __CTL-Golden-Images__ on the right side, then click on the dotted menu to the left, then __Delete__.
+* Locate __CTL-Golden-Images__ on the right side, then click on the dotted menu to the left, then select __Delete__.
 
   ![Catalog](../../images/dccf/catalog5.png)
 
