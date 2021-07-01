@@ -1,6 +1,6 @@
 {{{
   "title": "Using the API",
-  "date": "5-17-2018",
+  "date": "7-1-2021",
   "author": "Anthony Hakim",
   "keywords": ["cpc", "cloud", "vmware", "admin", "vcloud", "vcf", "api"],
   "attachments": [],
@@ -10,7 +10,7 @@
 }}}
 
 ### Description
-In this KB article, we walk through the basics of creating a New Session (Logging In) with the vCloud Director (vCD) API that is part of Lumen Private Cloud on VMware Cloud Foundation™. Once a new session is established, you should follow the detailed [VMware API documentation](https://code.vmware.com/apis/220/vcloud).
+In this KB article, we walk through the basics of creating a New Session (Logging In) with the VMware Cloud Director (vCD) API that is part of Lumen Private Cloud on VMware Cloud Foundation™. Once a new session is established, you should follow the detailed [VMware API documentation](https://code.vmware.com/apis/220/vcloud).
 
 ### Create a New Session (Logging In)
 To begin using the API, you request the system to create a Session object. In this request, you supply your credentials in an Authorization header of the form prescribed by the identity provider that your organization uses. The response includes an authorization token, which you must include in subsequent requests.
@@ -27,9 +27,9 @@ To create a session object, you supply your credentials in an Authorization head
 
 * Create a New Session with the vCD endpoint, using the following:
   * Header: Authorization = Basic (username: username@org)
-  * Header: Accept = application/vnd.vmware.vcloud.session+xml;version=27.0
+  * Header: Accept = application/vnd.vmware.vcloud.session+xml;version=27.0 (your version # will vary)
   * Method: POST
-  * URL: https://yourdccfoundationurl/api/sessions
+  * URL: https://yourLPCurl/api/sessions
 
 Response:
 
