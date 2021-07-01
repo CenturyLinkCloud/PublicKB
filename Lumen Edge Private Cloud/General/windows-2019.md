@@ -1,6 +1,6 @@
 {{{
   "title": "Windows 2019",
-  "date": "6-23-21",
+  "date": "7-1-21",
   "author": "John Grant",
   "keywords": ["lpc", "cloud", "vm", "windows2019", "vcloud", "vcf"],
   "date": "6-17-21",
@@ -14,8 +14,6 @@
 
 ### Description
 In this KB article, we walk through creating a Virtual Machine (VM) with Windows 2019 OS in Lumen Private Cloud on VMware Cloud Foundation (LPC on VCF).
-In this KB article, we walk through creating a Virtual Machine with Windows 2019 OS in Lumen Private Cloud on VMware Cloud Foundation (LPC on VCF).
-
 
 ### Steps
 
@@ -23,9 +21,6 @@ In this KB article, we walk through creating a Virtual Machine with Windows 2019
 
 ![Windows 2019](../../images/dccf/login-html5.png)
 
-2. Click the Virtual Data Center summary box.
-
-![Windows 2019](../../images/dccf/data-centers-summary.png)
 2. Click the Virtual Data Center summary box.
 
 ![Data Center Summary](../../images/dccf/data-centers-summary.png)
@@ -36,7 +31,7 @@ In this KB article, we walk through creating a Virtual Machine with Windows 2019
 
 ![Windows 2019](../../images/dccf/windows-19-1.png)
 
-5. Enter Name, Computer Name, and Description (optional). Select From Template as the Type. Choose whether or not the VM should be powered on after creation.
+5. Enter Name, Computer Name, and Description (optional). Select __From Template__ as the Type. Choose whether or not the VM should be powered on after creation.
 
 6. In the Template options select the template with the name __WIN2019DTC-64__. Although the OS for this template shows __Microsoft Windows Server 2016 (64-bit)__, this is the Windows 2019 OS. This is a VMware known issue.
 
