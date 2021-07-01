@@ -10,7 +10,7 @@
 }}}
 
 ### Description
-In this KB article, we describe how to change the password on VMs that are deployed using our default "CTL-Golden-Images" vApp Templates in Lumen Private Cloud on VMware Cloud Foundation™.
+In this KB article, we describe how to change the password on VMs that are deployed using our default "<siteID><data center>cl01 Lumen" vApp Templates in Lumen Private Cloud on VMware Cloud Foundation™.
 
 ### Steps
 Login to your Lumen Private Cloud on VMware Cloud Foundation (LPC on VCF) environment.
@@ -29,7 +29,7 @@ In the properties page of the VM, click __Guest OS Customization__. Click __EDIT
   
   ![Change Password](../../images/dccf/change-password2.png)
 
-Once the save is completed, click __Virtual Machines__ in the menu on the left side of the screen, then click on the vertical ellipsis for the __VM__ in which you changed the password. Select __Power On and Force Recustomization__ to enact your changes.
+Once the save is completed, click __Virtual Machines__ in the menu on the left side of the screen, and then click on the vertical ellipsis for the __VM__ in which you changed the password. Select __Power On and Force Recustomization__ to enact your changes.
 
   ![Change Password](../../images/dccf/change-password4.png)
 
