@@ -1,7 +1,7 @@
 {{{
   "title": "Adding to your Catalog",
-  "date": "5-8-2019",
-  "author": "Hannah Melvin",
+  "date": "7-4-2021",
+  "author": "John Grant",
   "keywords": ["cpc", "cloud", "vmware", "catalog", "ovf", "template", "vapp", "vcf"],
   "attachments": [],
   "related-products" : [],
@@ -17,27 +17,27 @@ A catalog is a container for vApp templates and media files in an organization. 
 Lumen Private Cloud on VMware Cloud Foundation contains organization (private) catalogs, and access to its public catalog. Organization catalogs include vApp templates and media files that you can share with other users in the organization.
 
 ### Steps to add an OVF Template
-* Login to your Lumen Private Cloud on VMware Cloud Foundation environment.
+* Log in to your Lumen Private Cloud on VMware Cloud Foundation environment.
 
   ![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
-* Once logged in, click on the menu icon at the top of the screen. Select __Libraries__ in the dropdown menu.
+* Once logged in, click __Libraries__ in the top menu.
 
   ![Catalog](../../images/dccf/add-to-catalog2-html5.png)
 
-* In the __Libraries__ page, click __Add__ at the top of the vApp Templates screen.
+* In the __Libraries__ page, click __NEW__ at the top of the vApp Templates screen.
 
   ![Catalog](../../images/dccf/add-to-catalog3-html5.png)
 
-* In the __Create vApp Template from OVF__ window, either enter the __URL__ to the OVF, or __Browse...__ to the __Local file__, then click __Next__.
+* In the __Create vApp Template from OVF__ window, either type the __URL__ to the OVF, or __Browse__ to the __Local file__, then click __NEXT__.
 
   ![Catalog](../../images/dccf/add-to-catalog4-html5.png)
 
-* Review the details, then click __Next__. On the next screen (Select vApp Template Name) enter the __Name__ and optional Description, then select the catalog from the __Catalog__ dropdown.
+* Review the details, and then click __NEXT__. On the next screen (Select vApp Template Name), type the __Name__ and optional Description, and then select the catalog from the __Catalog__ dropdown.
 
   ![Catalog](../../images/dccf/add-to-catalog5-html5.png)
 
-* The template will be shown in the template list and the progress of the upload will be shown in the __Recent Tasks__ pane at the bottom of the screen.
+* The template will be shown in the template list, and the progress of the upload will be shown in the __Recent Tasks__ pane at the bottom of the screen.
 
   ![Catalog](../../images/dccf/add-to-catalog6-html5.png)
 
@@ -46,7 +46,7 @@ Lumen Private Cloud on VMware Cloud Foundation contains organization (private) c
 ### Steps to add an Existing vApp to your Catalog
 In this example, we will work with the Engineering vApp to create a new vApp Template. If the vApp is running, it is added to the catalog as a vApp template with all of its VMs in a suspended state.
 
-* Click on __Datacenters__ from menu, and then in the left pane, click __vApps__. Click the __Actions__ dropdown on the vApp and select __Add to Catalog...__
+* Click on __Data Centers__ in the top menu, and then click on the Virtual Data Center summary box. In the left pane, click __vApps__. Click the verticle ellipsis menu  dropdown on the vApp, and select __Create Template__.
 
   ![Catalog](../../images/dccf/add-to-catalog7-html5.png)
 
@@ -54,7 +54,7 @@ In this example, we will work with the Engineering vApp to create a new vApp Tem
 
   Specify how the template should be created:
   - __Make Identical Copy:__ vApps that are created from this vApp template inherit the guest operating system settings specified in the template. If you select this option and guest customization is enabled, the guest operating system is personalized. IP addresses of the NICs in the template are reserved.
-  - __Customize VM Settings:__ Guest operating system is personalized regardless of the vApp template settings when the template is instantiated. IP addresses of the NICs in the template are released.
+  - __Customize VM Settings:__ The guest operating system is personalized regardless of the vApp template settings when the template is instantiated. IP addresses of the NICs in the template are released.
 
 * Click __OK__ to finish.
 
