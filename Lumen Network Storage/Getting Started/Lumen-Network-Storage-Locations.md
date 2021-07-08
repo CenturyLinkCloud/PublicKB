@@ -36,7 +36,7 @@ NA|Tampa, FL|TAMRFLWS|Lumen|7909 Woodland Center Blvd, Tampa, FL 33614|Block/Fil
 NA|Tustin, CA|TUSTCAFT|Lumen|14452 Franklin Ave, Tustin, CA 92780|Block/File|Available Today
 NA|Washington, DC|DC3|Cyxtera|45845 Nokes Blvd.,Sterling, VA 20166|Block/File|Block/File Available Today
 CA|Toronto, CA|TORVONRF|Lumen|8 Garamond Ct, North York, ON M3C 1Z4,Canada|Block/File|Coming in 2021
-CA|Vancouver, CA|VANCBCHC|Lumen|555 W Hastings St, Vancouver, BC V6B 4N4,CanadaBlock/File|Coming in 2021
+CA|Vancouver, CA|VANCBCHC|Lumen|555 W Hastings St, Vancouver, BC V6B 4N4,Canada|Block/File|Coming in 2021
 EMEA|London, England|LONDENEH|Lumen|260-266 Goswell Rd, Clerkenwell, London EC1V 7EB, UK|Object/Block/File|Coming in 2021
 EMEA|London, England|LO1|Cyxtera|630 Ajax Ave., Slough, UK SL1 4DG,UK|Block/File|Available Today
 EMEA|London, England|LO6|Cyxtera|260-266 Goswell Rd, Clerkenwell, London EC1V 7EB, UK|Block/File|Available Today
