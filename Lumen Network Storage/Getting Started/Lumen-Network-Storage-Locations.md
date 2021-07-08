@@ -11,7 +11,7 @@ customers with physically implemented storage pods located throughout the networ
 enabling real-time data action at the Edge.
 Learn more about Network Storage [here](/lumen-network-storage/).
 You can find service by location with latency coverage across our Edge portfolio 
-[here] (https://www.lumen.com/en-us/resources/network-maps.html#edge-roadmap).
+[here](https://www.lumen.com/en-us/resources/network-maps.html#edge-roadmap).
 This document will be updated as Lumen adds new locations.
 **Lumen Network Storage Locations**
 **Region**|**Data Center**|**CLLI Code**|**Provider**|**Physical Address**|**Storage Type**|**More Information**
@@ -37,6 +37,6 @@ NA|Tustin, CA|TUSTCAFT|Lumen|14452 Franklin Ave, Tustin, CA 92780|Block/File|Ava
 NA|Washington, DC|DC3|Cyxtera|45845 Nokes Blvd.,Sterling, VA 20166|Block/File|Block/File Available Today
 CA|Toronto, CA|TORVONRF|Lumen|8 Garamond Ct, North York, ON M3C 1Z4,Canada|Block/File|Coming in 2021
 CA|Vancouver, CA|VANCBCHC|Lumen|555 W Hastings St, Vancouver, BC V6B 4N4,Canada|Block/File|Coming in 2021
-EMEA|London, England|LONDENEH|Lumen|260-266 Goswell Rd, Clerkenwell, London EC1V 7EB, UK|Object/Block/File|Coming in2021
+EMEA|London, England|LONDENEH|Lumen|260-266 Goswell Rd, Clerkenwell, London EC1V 7EB, UK|Object/Block/File|Coming in 2021
 EMEA|London, England|LO1|Cyxtera|630 Ajax Ave., Slough, UK SL1 4DG,UK|Block/File|Available Today
 EMEA|London, England|LO6|Cyxtera|260-266 Goswell Rd, Clerkenwell, London EC1V 7EB, UK|Block/File|Available Today
