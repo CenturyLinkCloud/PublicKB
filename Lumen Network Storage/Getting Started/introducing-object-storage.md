@@ -1,7 +1,7 @@
 {{{
   "title": "Introducing Object Storage",
-  "date": "6-04-2021",
-  "author": "Daniel Stephan, Oct 29, 2015, updated by Randy Roten",
+  "date": "6-15-2021",
+  "author": "Daniel Stephan, updated by Randy Roten",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
@@ -68,10 +68,3 @@ A: No. The Object Storage API for retrieving bucket lists only returns buckets w
 #### Q: What are those built-in role types (All Users, Authenticated Users) for?
 
 A: Built-in Access Control Lists (ACLs) make it easy to share access with a broad population. While you can add individual users to your bucket (and those users can then interface with that bucket via the API) you also may want to make a bucket (or object) public by giving "All Users" a "Read" permission. This would let public Internet users list the contents of a bucket or view an individual object. The "Authenticated Users" ACL lets any user with a valid Object Storage access key ID interact with the selected object.
-
-## Related Topics
-[Request Rate and Performance Considerations]( https://development.ctl.io/knowledge-base/storage/object-storage/request-rate-and-performance-considerations/)
-[Object Storage User Management]( https://development.ctl.io/knowledge-base/storage/object-storage/object-storage-user-management/)
-[Object Storage Error Code: 503 Slow Down]( https://development.ctl.io/knowledge-base/storage/object-storage/object-storage-error-code-503-slow-down/)
-[Object Storage 3rd Party Compatibility]( https://development.ctl.io/knowledge-base/storage/object-storage/object-storage-3rd-party-compatibility/)
-[Object Storage Regions and Service Points]( https://development.ctl.io/knowledge-base/storage/object-storage/object-storage-regions-and-service-points/)

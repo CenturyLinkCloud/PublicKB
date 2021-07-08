@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Bare Metal Availability",
-  "date": "6-9-2021",
+  "date": "6-29-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -18,40 +18,45 @@ You can find latency coverage across our Edge portfolio [here](https://www.lumen
 
 **Region**|**Edge Bare Metal Site Locations**|**32 Cores, 384 GB RAM,7,680 GB SSD**|**32 Cores, 768 GB RAM,32,200 GB SSD**
 ----------|----------------------------------|----------------------------------|------------------------------------------|
-NA|Atlanta,GA|0|10
-NA|Austin,TX|12|7
-NA|Chicago,IL|0|21
-NA|Cambridge,MA|7|2
-NA|Cincinnati,OH|0|18
-NA|Dallas,TX|2|3
-NA|Denver,CO|4|0
-NA|Detroit,MI|0|20
-NA|El Paso,TX|12|4
-NA|Houston,TX|5|2
-NA|Jacksonville,FL|11|8
-NA|Kansas City,MO|0|17
-NA|Las Vegas,NV|0|13
-NA|Little Rock,AK|6|3
-EMEA|London,England|0|17
-NA|McAllen,TX|10|3
-NA|Metairie,LA|11|4
+NA|Atlanta,GA|5|8
+NA|Austin,TX|10|5
+NA|Boise,ID|11|7
+NA|Chicago,IL|0|24
+NA|Cambridge,MA|10|3
+NA|Charlotte,NC|8|4
+NA|Cincinnati,OH|4|18
+NA|Dallas,TX|2|1
+NA|Denver,CO|6|10
+NA|Detroit,MI|2|22
+NA|El Paso,TX|12|7
+NA|Herndon,VA|11|19
+NA|Houston,TX|11|4
+NA|Jacksonville,FL|10|8
+NA|Kansas City,MO|3|18
+NA|Las Vegas,NV|3|13
+NA|Little Rock,AK|12|8
+EMEA|London,England|0|16
+NA|Madison, WI|9|6
+NA|McAllen,TX|10|2
+NA|Metairie,LA|12|5
 NA|Miami,FL|12|7
-NA|Minneapolis,MN|0|17
-NA|Nashville,TN|0|19
-NA|New York,NY|11|27
+NA|Minneapolis,MN|4|17
+NA|Nashville,TN|4|20
+NA|New York,NY|12|38
 NA|Omaha,NE|12|8
-NA|Philadelphia,PA|10|2
-NA|Phoenix,AZ|0|12
-NA|Pittsburgh,PA|0|6
-NA|Portland,OR|10|1
-NA|Reno,NV|11|4
-NA|Salt Lake City,UT|0|19
-NA|San Antonio,TX|0|19
-NA|San Diego,CA|0|11
+NA|Philadelphia,PA|12|2
+NA|Phoenix,AZ|3|15
+NA|Pittsburgh,PA|3|10
+NA|Portland,OR|6|0
+NA|Reno,NV|7|1
+NA|Salt Lake City,UT|5|20
+NA|San Antonio,TX|2|19
+NA|San Diego,CA|1|17
 NA|Santa Clara,CA|7|19
-NA|Seattle,WA|3|0
+NA|Seattle,WA|5|11
+NA|Spokane,WA|11|7
 NA|St.Louis,MO|12|8
-NA|Tampa,FL|0|12
-CA|Toronto,Canada|11|3
+NA|Tampa,FL|0|15
+CA|Toronto,Canada|11|6
 NA|Tustin,CA|12|2
-NA|W Sacramento,CA|0|13
+NA|W Sacramento,CA|7|19
