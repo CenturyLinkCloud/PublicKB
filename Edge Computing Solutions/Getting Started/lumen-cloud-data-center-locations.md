@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Computing Solutions Locations",
-  "date": "6-4-2021",
+  "date": "7-01-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -10,7 +10,7 @@ Lumen is rapidly adding Edge Computing Solutions locations across the globe to p
 
 Below are tables that provide locations and availability for the expanding Edge Computing Solutions locations across the Lumen portfolio.
 You can find service by location across our Hybrid IT portfolio in a map view [here](https://www.ctl.io/data-centers).
-You can find service by location with latency coverage across our Edge portfolio [here](https://www.lumen.com/en-us/solutions/edge-computing.html#edge-computing-map).
+You can find service by location with latency coverage across our Edge portfolio [here](https://www.lumen.com/en-us/resources/network-maps.html).
 
 * **Lumen Public Cloud**: (formerly CenturyLink Public Cloud) Multi-tenant computing service that enables flexible virtual machines and other datacenter services in a pay-as-you-go model. Over time, the Lumen Public Cloud service will be migrated to run on the Lumen Edge Cloud.
 
@@ -40,8 +40,8 @@ Germany (Frankfurt) - DE1|Equinix|Lärchenstrasse 110<br>65933 Frankfurt- Griesh
 Germany (Frankfurt) - DE3|Interxion (FR6)|Landstraße 296a<br>60314 Frankfurt am Main Germany|[provider details](https://www.interxion.com/Locations/frankfurt/)
 APAC (Singapore) - SG1|Cyxtera (SG2)|29A International Business Park<br>Jurong East Singapore 609934|[provider details](https://www.cyxtera.com/images/sg2-singapore-colocation-tearsheet-ss122015.pdf)
 Australia - AU1|NextDC (S1)|4 Eden Park Dr <br>Macquarie Park NSW 2113|[provider details](https://www.nextdc.com/data-centres/s1-sydney-data-centre)
-Brazil – BR1|Lumen| Rua Eid. Manssur N° 666, Parque São George, Rodovia Raposo Tavares, Km 25, Cotia, Brazil|Coming in 2021
-Argentina – AR1|Lumen| Av. Del Campo N°  1301, Buenos Aires, Argentina|Coming in 2021
+Brazil – BR1|Lumen| Rua Eid. Manssur N° 666, Parque São George, Rodovia Raposo Tavares, Km 25, Cotia, Brazil|Coming Soon
+Argentina – AR1|Lumen| Av. Del Campo N°  1301, Buenos Aires, Argentina|Coming Soon
 
 **Lumen Edge Bare Metal**
 
@@ -49,19 +49,23 @@ Argentina – AR1|Lumen| Av. Del Campo N°  1301, Buenos Aires, Argentina|Coming
 ---------|-----------------|-----------------|-----------------|--------------------------------------------|------------------
 NA|Atlanta,GA|DRVLGAGZ|Lumen|6855 Crescent Dr,Atlanta, GA 30340|Available Today
 NA|Austin, TX|AUSTTXUH|Lumen|4207 Smith School Road,Austin, TX 78744|Available Today
-NA|Chicago, IL|BRVWILCU|Lumen|2101 Roberts Drive,Broadview, IL 60155|Available Today
+NA|Boise, ID|BOISIDMA|Lumen|619 W Bannock St, Boise, ID 83702|Available Today
 NA|Cambridge, MA|CMBRMAOR|Lumen|300 Bent St,Cambridge, MA 02141|Available Today
+NA|Charlotte, NC|CHRLNCRL|Lumen|4021 Rose Lake Dr, Charlotte, NC 28217|Available Today
+NA|Chicago, IL|BRVWILCU|Lumen|2101 Roberts Drive,Broadview, IL 60155|Available Today
 NA|Cincinnati, OH|CNCNOHBV|Lumen|400 Pike Street,Cincinnati, OH 45202|Available Today
 NA|Dallas, TX|DLLATX37|Lumen|3180 Irving Blvd,Dallas,TX 75247|Available Today
 NA|Denver, CO|DNVTCO56|Lumen|1850 Pearl St.,Denver, CO 80203|Available Today
 NA|Detroit, MI|DTRTMITK|Lumen|1965 Porter St,Detroit, MI 48216|Available Today
 NA|El Paso, TX|ELPUTXAY|Lumen|501 W Overland,El Paso, TX 79901|Available Today
+NA|Herndon, VA|HRNDVAIZ|Lumen|524 Van Buren St., Herndon, VA 20170|Available Today
 NA|Houston, TX|HSTQTX02|Lumen|12001 North Fwy,Houston, TX 77060|Available Today
 NA|Jacksonville, FL|JCVLFLAI|Lumen|4814 Philips Highway,Jacksonville, FL 32207|Available Today
 NA|Kansas City, MO|KSCBMOVS|Lumen|1212 East 19th Street,Kansas City, MO 64108|Available Today
 NA|Las Vegas, NV|NLVGNVBV|Lumen|1 Aerojet Way North,Las Vegas, NV 89030|Available Today
 NA|Little Rock, AR|LTRKARDR|Lumen|300 S Gaines St,Little Rock, AR 72201|Available Today
 EMEA|London, England|LONDENEH|Lumen|260-266 Goswell Rd,Clerkenwell, London EC1V 7EB, UK|Available Today
+NA|Madison, WI|MDSNWIUQ|Lumen|710 E Mifflin St, Madison, WI 53703|Available Today
 NA|McAllan, TX|MCAMTXKN|Lumen|906 Beech Ave,McAllen, TX 78501|Available Today
 NA|Metairie, LA|MTRELANJ|Lumen|3220 Lausat St,Metairie, LA 70001|Available Today
 NA|Miami, FL|MIATFLAD|Lumen|49 NW 5th St,Miami, FL 33128|Available Today
@@ -80,12 +84,13 @@ NA|San Antonio, TX|SNAQTXKY|Lumen|5130 Service Center Drive, San Antonio,	TX 782
 NA|San Diego, CA|SNDACAGL|Lumen|8929 Aero Drive, San Diego, CA 92123|Available Today
 NA|Santa Clara, CA|SNTDCADZ|Lumen|3045 Raymond St Santa Clara, CA 95054|Available Today
 NA|Seattle, WA|STTNWAHO|Lumen|1000 Denny Way, Seattle, WA 98109|Available Today
+NA|Spokane, WA|SPKNWA01|Lumen|501 W 2nd Ave, Spokane, WA 99201|Available Today
 NA|St. Louis, MO|STLSMOPL|Lumen|1015 Locust Street, St. Louis, MO 63101|Available Today
 NA|Tampa,FL|TAMRFLWS|Lumen|7909 Woodland Center Blvd, Tampa, FL 33614|Available Today
 CA|Toronto,CA|TORVONRF|Lumen| 8 Garamond Ct, North York, ON M3C 1Z4, Canada|Available Today
 NA|Tustin, CA|TUSTCAFT|Lumen|14452 Franklin Ave, Tustin, CA 92780|Available Today
-NA|San Francisco, CA|EMVLCA04|Lumen|5000 Hollis Street, Emeryville, CA 94608|Coming in 2021
-NA|Raleigh, NC|RLGHNCJV|Lumen|5301 Departure Drive, Raleigh, NC 27616|Coming in 2021
+NA|Honolulu, HI|MLUAHIAK|Lumen|550 Paiea St, Honolulu, HI 96819|Coming in 2021
+CA|Lachine, CA|LCHNPQEQ|Lumen|4825 Rue François Cusson, Lachine, QC H8T 3P6, Canada|Coming in 2021
 LATAM|Cotia, Brazil|CTIABZAF|Lumen|Rua Eid. Manssur N° 666, Parque São George, Rodovia Raposo Tavares, Km 25, Cotia, Brazil|Coming in 2021
 LATAM|Buenos Aires, Argentina|BNARAGMS|Lumen|Av. Del Campo N° 1301, Buenos Aires, Argentina|Coming in 2021
 
@@ -93,26 +98,25 @@ LATAM|Buenos Aires, Argentina|BNARAGMS|Lumen|Av. Del Campo N° 1301, Buenos Aire
 
 **Region**|**Data Center**|**CLLI Code**|**Provider**|**Physical Address**|**Storage Type**|**More Information**
 ----------|---------------|-------------|------------|--------------------|----------------|--------------------|
-NA|Denver, CO|DNVTCO56|Lumen|1850 Pearl St.,Denver, CO 80203|Block/File|Available Today
 NA|Atlanta, GA|DRVLGAGZ|Lumen|6855 Crescent Dr,Atlanta, GA 30340|Object/Block/File|Object Available Today
-NA|Phoenix, AZ|PHNDAZ91|Lumen|811 S. 16th Street,Phoenix, AZ 85034|Block/File/Object|Object Available Today
-NA|Seattle, WA|STTNWAHO|Lumen|1000 Denny Way,Seattle, WA 98109|Object/Block/File|Object Available Today
-NA|New York, NY|NYCPNYYK|Lumen|601 W 26th St,New York, NY 10001|Object/Block/File|Object Available Today
-NA|Chicago, IL|CH3|Cyxtera|2425 Busse Road,Elk Grove Village, IL 60007|Block/File|Available Today
-NA|Washington, DC|DC3|Cyxtera|45845 Nokes Blvd.,Sterling, VA 20166|Block/File|Available Today
-NA|Dallas, TX|DL1|Cyxtera|14901 FAA Blvd.,Fort Worth, TX 76155|Block/File|Available Today
-NA|Chicago, IL|BRVWILCU|Lumen|2101 Roberts Drive,Broadview, IL 60155|Block/File|Coming May 2021  
-NA|Tampa, FL|TAMRFLWS|Lumen|7909 Woodland Center Blvd,Tampa, FL 33614|Block/File|Coming May 2021
-NA|Portland, OR|PTLGORIA|Lumen|1335 NW Northrup Street,Portland, OR 97209|Object/Block/File|Coming in 2021
-NA|St. Louis, MO|STLSMOPL|Lumen|1015 Locust St.,St. Louis, MO 63101|Block/File|Coming in 2021
-NA|Dallas,TX|DLLATX37|Lumen|3180 Irving Blvd,Dallas,TX 75247|Block/File|Coming in 2021
-NA|Santa Clara, CA|SNTDCADZ|Lumen|3045 Raymond St, Santa Clara, CA 95054|Block/File|Coming in 2021
-NA|Minneapolis, MN|MNNTMNIC|Lumen|5480 Feltl Rd, Minnesota, MN 55343|Block/File|Coming in 2021
-NA|Tustin, CA|TUSTCAFT|Lumen|14452 Franklin Ave, Tustin, CA 92780|Block/File|Coming in 2021
+NA|Cambridge, MA|CMBRMAOR|Lumen|300 Bent St, Cambridge, MA 02141|Block/File|Coming in 2021
+NA|Chicago, IL|BRVWILCU|Lumen|2101 Roberts Drive,Broadview, IL 60155|Block/File|Block/File Available Today 
+NA|Chicago, IL|CH3|Cyxtera|2425 Busse Road,Elk Grove Village, IL 60007|Block/File|Block/File Available Today
+NA|Dallas,TX|DLLATX37|Lumen|3180 Irving Blvd,Dallas,TX 75247|Block/File|Available Today
+NA|Dallas, TX|DL1|Cyxtera|14901 FAA Blvd.,Fort Worth, TX 76155|Block/File|Block/File Available Today
+NA|Denver, CO|DNVTCO56|Lumen|1850 Pearl St.,Denver, CO 80203|Block/File|Block/File Available Today
 NA|Herndon, VA|HRNDVAIZ|Lumen|524 Van Buren St., Herndon, VA 20170|Block/File|Coming in 2021
 NA|Honolulu, OR|MLUAHIAK|Lumen|550 Paiea St, Honolulu, HI 96819|Block/File|Coming in 2021
-NA|Cambridge, MA|CMBRMAOR|Lumen|300 Bent St, Cambridge, MA 02141|Block/File|Coming in 2021
 NA|Minneapolis, MN|MNNTMNIC|Lumen|5480 Feltl Rd, Minnesota, MN 55343|Block/File|Coming in 2021
+NA|New York, NY|NYCPNYYK|Lumen|601 W 26th St,New York, NY 10001|Object/Block/File|Object/Block/File Available Today
+NA|Phoenix, AZ|PHNDAZ91|Lumen|811 S. 16th Street,Phoenix, AZ 85034|Block/File/Object|Object/Block/File Available Today
+NA|Portland, OR|PTLGORIA|Lumen|1335 NW Northrup Street,Portland, OR 97209|Object/Block/File|Coming in 2021
+NA|Santa Clara, CA|SNTDCADZ|Lumen|3045 Raymond St, Santa Clara, CA 95054|Block/File|Coming in 2021
+NA|Seattle, WA|STTNWAHO|Lumen|1000 Denny Way,Seattle, WA 98109|Object/Block/File|Object/Block/File Available Today
+NA|St. Louis, MO|STLSMOPL|Lumen|1015 Locust St.,St. Louis, MO 63101|Block/File|Coming in 2021
+NA|Tampa, FL|TAMRFLWS|Lumen|7909 Woodland Center Blvd,Tampa, FL 33614|Block/File|Block/File Available Today
+NA|Tustin, CA|TUSTCAFT|Lumen|14452 Franklin Ave, Tustin, CA 92780|Block/File|Available Today
+NA|Washington, DC|DC3|Cyxtera|45845 Nokes Blvd.,Sterling, VA 20166|Block/File|Block/File Available Today
 CA|Toronto, CA|TORVONRF|Lumen|8 Garamond Ct, North York, ON M3C 1Z4,Canada|Block/File|Coming in 2021
 CA|Vancouver, CA|VANCBCHC|Lumen|555 W Hastings St, Vancouver, BC V6B 4N4,CanadaBlock/File|Coming in 2021
 EMEA|London, England|LONDENEH|Lumen|260-266 Goswell Rd, Clerkenwell, London EC1V 7EB, UK|Object/Block/File|Coming in 2021
