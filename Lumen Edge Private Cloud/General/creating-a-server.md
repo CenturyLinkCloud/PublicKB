@@ -1,6 +1,6 @@
 {{{
   "title": "Creating a Server",
-  "date": "6-29-2021",
+  "date": "7-12-2021",
   "author": "John Grant",
   "keywords": ["cpc", "cloud", "vm", "server", "ssl", "vapp", "vpn", "vcf"],
   "attachments": [],
@@ -65,7 +65,7 @@ Note: This KB assumes you have followed the KB article on [Adding to your Catalo
 
 * Select the Edge Connection (for Routed networks). Click __NEXT__.
 
-  ![Configure Networking](../../images/dccf/new-org-vdc-network-edge-connection.png)
+  ![Configure Networking](../../images/dccf/new-org-vdc-edge-connection.png)
 
 * For General, type the Name and Gateway CIDR (Classless Inter-Domain Routing). Click __NEXT__.
 
