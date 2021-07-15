@@ -40,7 +40,7 @@ Once a minimum of one tenant has been created, you are now ready to create a use
 _**NOTE**_: Lumen does not store private access keys. These keys will only be provided a single time when the user is created. Store them in text format somewhere on your local system. If you lose your private key, a new set of keys must be created before you can access your data.
 To create a user, navigate to the **Users** tab on the **Object Storage Dashboard**:
 
-![Object Storage Dashboard – No Users Available](../../images/LNS-OTNUG_051121/005_OS-Dashboard–NoUsersAvailable.png)
+![Object Storage Dashboard – No Users Available](../../images/LNS-OTNUG_051121/005_LNS-OTNUG_graphic.png)
 
 From the **Users** tab, you can create a new Object Storage user which is associated to a single tenant. Users cannot be members of multiple tenants and must be unique within the associated tenant. However, the same username can be created across multiple tenants, with each user provided with a unique set of access keys:
 
