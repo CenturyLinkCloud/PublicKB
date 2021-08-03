@@ -1,6 +1,6 @@
 {{{
   "title": "Enable IPSec VPN on Edge Gateway Services",
-  "date": "9-11-2018",
+  "date": "8-2-2021",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -14,25 +14,23 @@ In this KB article, we walk through how to enable an IPSec VPN on Edge Gateway S
 ### Prerequisites
 You must configure at least one IPSec VPN site on the NSX Edge before enabling the IPSec VPN service.
 
-* Login to your Lumen Private Cloud on VMware Cloud Foundation environment with an Org Admin Account
+* Log in to your Lumen Private Cloud on VMware Cloud Foundation environment with an Org Admin Account.
 
   ![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
-* Once logged in, click __Datacenters__ in the ,menu at the top and then select your Datacenter.
+* Once logged in, select Data Centers from the menu at the top of the screen, and then click the Data Centers summary box.
 
-  ![IPSec VPN](../../images/dccf/configuring-sslvpn-plus1-html5.png)
+![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/data-centers-summary.png)
 
-* Click on __Edges__ in the panel on the left side.
+* Click on __Edges__ in the panel on the left side. 
+* Click your Edge Gateway.
 
   ![IPSec VPN](../../images/dccf/configuring-sslvpn-plus2-html5.png)
 
-* Select your Edge Gateway, and take note of the (Public) IP Address for the Edge Gateway. Click __Configure Services__ at the top of the screen.
+* Under __Services__, click __IPSec VPN__.
+* Click __NEW__.
 
   ![IPSec VPN](../../images/dccf/edge-gws1-html5.png)
-
-* Select the __VPN__ tab, then __IPsecVPN Sites__. Click the __+__ icon to add IPsec VPN Sites (this is a prerequisite to enable IPsec VPN Services).
-
-  ![IPSec VPN](../../images/dccf/edge-gws2-html5.png)
 
 * A new window will pop up. Follow the steps below:   
 
@@ -56,8 +54,8 @@ You must configure at least one IPSec VPN site on the NSX Edge before enabling t
 
   ![IPSec VPN](../../images/dccf/edge-gws5.png)
 
-*	Click Keep
-*	In the __IPSec VPN Configuration__ page, select the __Activation Status__ tab, and enable __IPsec VPN Service Status__
+*	Click __KEEP__.
+*	In the __IPSec VPN Configuration__ page, select the __Activation Status__ tab, and enable __IPsec VPN Service Status__.
 
   ![IPSec VPN](../../images/dccf/edge-gws6.png)
 
