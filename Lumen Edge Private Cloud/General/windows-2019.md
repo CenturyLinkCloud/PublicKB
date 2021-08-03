@@ -1,7 +1,10 @@
 {{{
   "title": "Windows 2019",
-  "date": "1-2-20",
-  "author": "Hannah Melvin",
+  "date": "7-1-21",
+  "author": "John Grant",
+  "keywords": ["lpc", "cloud", "vm", "windows2019", "vcloud", "vcf"],
+  "date": "6-17-21",
+  "author": "John Grant",
   "keywords": ["cpc", "cloud", "vm", "windows2019", "vcloud", "vcf"],
   "attachments": [],
   "related-products" : [],
@@ -10,16 +13,17 @@
 }}}
 
 ### Description
-In this KB article, we walk through creating a Virtual Machine with Windows 2019 OS in vCloud Director.
-
+In this KB article, we walk through creating a Virtual Machine (VM) with Windows 2019 OS in Lumen Private Cloud on VMware Cloud Foundation (LPC on VCF).
 
 ### Steps
 
-1. Log In to your CPC on vCF environment.
+1. Log In to your LPC on VCF environment.
 
-2. Select the datacenter you want to work in.
+![Windows 2019](../../images/dccf/login-html5.png)
 
-![Windows 2019](../../images/dccf/windows-19-dc.png)
+2. Click the Virtual Data Center summary box.
+
+![Data Center Summary](../../images/dccf/data-centers-summary.png)
 
 3. Click __Virtual Machines__ under Compute in the sidebar on the left side of the screen.
 

@@ -1,6 +1,6 @@
 {{{
   "title": "Enable IPSec VPN on Edge Gateway Services",
-  "date": "8-2-2021",
+  "date": "8-03-2021",
   "author": "Anthony Hakim",
   "attachments": [],
   "related-products" : [],
@@ -9,7 +9,7 @@
 }}}
 
 ### Description
-In this KB article, we walk through how to enable an IPSec VPN on Edge Gateway Services within the vCloud Director (vCD) Web Console environment for Lumen Private Cloud on VMware Cloud Foundation™.
+In this KB article, we walk through how to enable an IPSec VPN on Edge Gateway Services within the VMware Cloud Director (VCD) Web Console environment for Lumen Private Cloud on VMware Cloud Foundation™.
 
 ### Prerequisites
 You must configure at least one IPSec VPN site on the NSX Edge before enabling the IPSec VPN service.
@@ -18,16 +18,16 @@ You must configure at least one IPSec VPN site on the NSX Edge before enabling t
 
   ![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/login-html5.png)
 
-* Once logged in, select Data Centers from the menu at the top of the screen, and then click the Data Centers summary box.
+* Once logged in, click __Data Centers__ in the top menu, and then click the Virtual Data Center summary box.
 
 ![Login to Lumen Private Cloud on VMware Cloud Foundation](../../images/dccf/data-centers-summary.png)
 
-* Click on __Edges__ in the panel on the left side. 
-* Click your Edge Gateway.
+* Click on __Edges__ in the panel on the left side.
+* Click your Edge Gateway. Take note of the (Public) IP Address for the Edge Gateway. 
 
   ![IPSec VPN](../../images/dccf/configuring-sslvpn-plus2-html5.png)
 
-* Under __Services__, click __IPSec VPN__.
+* Under Services, click __IPSec VPN__.
 * Click __NEW__.
 
   ![IPSec VPN](../../images/dccf/edge-gws1-html5.png)
@@ -59,4 +59,4 @@ You must configure at least one IPSec VPN site on the NSX Edge before enabling t
 
   ![IPSec VPN](../../images/dccf/edge-gws6.png)
 
-*	Configure the Peer/Remote Site.
+*	Next, configure the Peer/Remote Site.

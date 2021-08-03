@@ -1,6 +1,6 @@
 {{{
   "title": "Configuring a Provider for CAM",
-  "date": "9-18-2018",
+  "date": "7-12-2021",
   "author": "Anthony Hakim",
   "keywords": ["cpc", "cloud", "vmware", "cam", "support", "vcf"],
   "attachments": [],
@@ -13,8 +13,8 @@
 In this KB article, we walk through how to enable a Cloud Application Manager Provider for Lumen Private Cloud on VMware Cloud Foundation™.
 
 ### Prerequisites
-* You must have a Cloud Application Manager Account
-* Your base URL, Organization, and user credentials for Lumen Private Cloud on VMware Cloud Foundation
+* You must have a Cloud Application Manager Account.
+* Your base URL, Organization, and user credentials for Lumen Private Cloud on VMware Cloud Foundation.
 __Note:__ The Organization name is __case sensitive__.
 
 ### Steps
