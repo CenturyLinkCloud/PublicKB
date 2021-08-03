@@ -59,4 +59,4 @@ You must configure at least one IPSec VPN site on the NSX Edge before enabling t
 
   ![IPSec VPN](../../images/dccf/edge-gws6.png)
 
-*	Configure the Peer/Remote Site.
+*	Next, configure the Peer/Remote Site.
