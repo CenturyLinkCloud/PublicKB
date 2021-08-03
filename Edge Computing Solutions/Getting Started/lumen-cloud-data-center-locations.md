@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Computing Solutions Locations",
-  "date": "7-20-2021",
+  "date": "8-3-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -25,6 +25,7 @@ enabling real-time data action at the Edge. Learn more about Network Storage [he
 
 **Region**|**Data Center**|**CLLI Code**|**Provider**|**Physical Address**|**More Information**
 ---------|-----------------|-----------------|-----------------|--------------------------------------------|------------------
+EMEA|Amsterdam, Netherlands|AMSTNLAQ|Lumen|4 1105 AJ Amsterdam, Netherlands|Available Today
 NA|Atlanta,GA|DRVLGAGZ|Lumen|6855 Crescent Dr,Atlanta, GA 30340|Available Today
 NA|Austin, TX|AUSTTXUH|Lumen|4207 Smith School Road,Austin, TX 78744|Available Today
 NA|Boise, ID|BOISIDMA|Lumen|619 W Bannock St, Boise, ID 83702|Available Today
@@ -40,6 +41,7 @@ NA|Herndon, VA|HRNDVAIZ|Lumen|524 Van Buren St., Herndon, VA 20170|Available Tod
 NA|Houston, TX|HSTQTX02|Lumen|12001 North Fwy,Houston, TX 77060|Available Today
 NA|Jacksonville, FL|JCVLFLAI|Lumen|4814 Philips Highway,Jacksonville, FL 32207|Available Today
 NA|Kansas City, MO|KSCBMOVS|Lumen|1212 East 19th Street,Kansas City, MO 64108|Available Today
+CA|Lachine, CA|LCHNPQEQ|Lumen|4825 Rue François Cusson, Lachine, QC H8T 3P6, Canada|Available Today
 NA|Las Vegas, NV|NLVGNVBV|Lumen|1 Aerojet Way North,Las Vegas, NV 89030|Available Today
 NA|Little Rock, AR|LTRKARDR|Lumen|300 S Gaines St,Little Rock, AR 72201|Available Today
 EMEA|London, England|LONDENEH|Lumen|260-266 Goswell Rd,Clerkenwell, London EC1V 7EB, UK|Available Today
@@ -67,8 +69,8 @@ NA|St. Louis, MO|STLSMOPL|Lumen|1015 Locust Street, St. Louis, MO 63101|Availabl
 NA|Tampa,FL|TAMRFLWS|Lumen|7909 Woodland Center Blvd, Tampa, FL 33614|Available Today
 CA|Toronto,CA|TORVONRF|Lumen| 8 Garamond Ct, North York, ON M3C 1Z4, Canada|Available Today
 NA|Tustin, CA|TUSTCAFT|Lumen|14452 Franklin Ave, Tustin, CA 92780|Available Today
+CA|Vancouver, BC|555 W Hastings St 14th Floor, Vancouver, BC V6B 4N4, Canada|Available Today
 NA|Honolulu, HI|MLUAHIAK|Lumen|550 Paiea St, Honolulu, HI 96819|Coming in 2021
-CA|Lachine, CA|LCHNPQEQ|Lumen|4825 Rue François Cusson, Lachine, QC H8T 3P6, Canada|Coming in 2021
 LATAM|Cotia, Brazil|CTIABZAF|Lumen|Rua Eid. Manssur N° 666, Parque São George, Rodovia Raposo Tavares, Km 25, Cotia, Brazil|Coming in 2021
 LATAM|Buenos Aires, Argentina|BNARAGMS|Lumen|Av. Del Campo N° 1301, Buenos Aires, Argentina|Coming in 2021
 
