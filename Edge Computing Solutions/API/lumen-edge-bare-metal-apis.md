@@ -14,7 +14,7 @@ Lumen Edge Bare Metal Beta APIs are now available to all Edge Bare Metal custome
 ## Functional Overview
 
 The Lumen Platform provides on-demand provisioning, monitoring, and logging of low latency compute nodes on the edge.
-This document describes the Lumen Edge Compute API protocol and the available endpoints.
+This document describes the Lumen Edge Compute API protocol and the available API functionality.
 
 ## Intended User (Target Audience)
 
