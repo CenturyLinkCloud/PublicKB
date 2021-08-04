@@ -7,7 +7,6 @@
     "Lumen Edge Private Cloud",
     "Cloud Application Manager",
     "Edge Computing Solutions",
-    "Compliance",
     "Control Portal",
     "Database",
     "Dedicated Cloud Compute",
