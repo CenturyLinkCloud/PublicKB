@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Bare Metal Availability",
-  "date": "8-01-2021",
+  "date": "8-10-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -18,7 +18,7 @@ You can find latency coverage across our Edge portfolio [here](https://www.lumen
 
 **Region**|**Edge Bare Metal Site Locations**|**32 Cores, 384 GB RAM,7,680 GB SSD**|**32 Cores, 768 GB RAM,32,200 GB SSD**
 ----------|----------------------------------|----------------------------------|------------------------------------------|
-EMEA|Amsterdam|0|20
+EMEA|Amsterdam|0|12
 NA|Atlanta,GA|1|2
 NA|Austin,TX|2|2
 NA|Boise,ID|2|7
