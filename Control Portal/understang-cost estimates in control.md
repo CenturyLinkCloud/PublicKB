@@ -1,7 +1,7 @@
 {{{
-  "title": "Understanding Cost Estimates in Control Portal",
-  "date": "12-13-2016",
-  "author": "Gavin Lai",
+  "title": "Using Cost Estimates in Control Portal",
+  "date": "8-05-2021",
+  "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false
 }}}

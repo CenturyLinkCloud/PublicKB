@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Computing Solutions Locations",
-  "date": "8-3-2021",
+  "date": "8-4-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -69,7 +69,7 @@ NA|St. Louis, MO|STLSMOPL|Lumen|1015 Locust Street, St. Louis, MO 63101|Availabl
 NA|Tampa,FL|TAMRFLWS|Lumen|7909 Woodland Center Blvd, Tampa, FL 33614|Available Today
 CA|Toronto,CA|TORVONRF|Lumen| 8 Garamond Ct, North York, ON M3C 1Z4, Canada|Available Today
 NA|Tustin, CA|TUSTCAFT|Lumen|14452 Franklin Ave, Tustin, CA 92780|Available Today
-CA|Vancouver, BC|555 W Hastings St 14th Floor, Vancouver, BC V6B 4N4, Canada|Available Today
+CA|Vancouver, BC|VANCBCHC|Lumen|555 W Hastings St 14th Floor, Vancouver, BC V6B 4N4, Canada|Available Today
 NA|Honolulu, HI|MLUAHIAK|Lumen|550 Paiea St, Honolulu, HI 96819|Coming in 2021
 LATAM|Cotia, Brazil|CTIABZAF|Lumen|Rua Eid. Manssur N° 666, Parque São George, Rodovia Raposo Tavares, Km 25, Cotia, Brazil|Coming in 2021
 LATAM|Buenos Aires, Argentina|BNARAGMS|Lumen|Av. Del Campo N° 1301, Buenos Aires, Argentina|Coming in 2021
