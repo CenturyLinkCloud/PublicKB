@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Bare Metal Availability",
-  "date": "8-10-2021",
+  "date": "8-12-2021",
   "author": "Randy Roten",
   "attachments": [],
   "contentIsHTML": false,
@@ -9,10 +9,10 @@
 
 Lumen is rapidly adding Edge Computing Solutions locations across the globe to provide performance and speed for latency sensitive, data-intensive applications.
 Lumen Edge Bare Metal provides low-latency on-demand Bare Metal servers via the Edge Platform.
+
 Learn more about Edge Bare Metal [here](/edge-computing-solutions/edge-bare-metal/).
 
-The table below provides current availability of Edge Bare Metal configurations at each location, all designed to deliver near-zero latency.
-You can find latency coverage across our Edge portfolio [here](https://www.lumen.com/en-us/resources/network-maps.html#edge-roadmap).
+The table below provides current availability of Edge Bare Metal configurations at each location, all designed to deliver near-zero latency. You can find latency coverage across our Edge portfolio [here](https://www.lumen.com/en-us/resources/network-maps.html#edge-roadmap).
 
 **Lumen Edge Bare Metal Server Configuration Availability By Location**
 
@@ -31,11 +31,11 @@ NA|Denver, CO|9|2
 NA|Detroit, MI|3|9
 NA|El Paso, TX|8|7
 NA|Herndon, VA|4|17
-NA|Houston, TX|3|3
+NA|Houston, TX|3|2
 NA|Jacksonville, FL|6|8
 NA|Kansas City, MO|0|17
 CA|Lachine, Quebec|12|1
-NA|Las Vegas, NV|2|9
+NA|Las Vegas, NV|4|9
 NA|Little Rock, AK|8|6
 EMEA|London, England|0|11
 NA|Madison, WI|7|7
@@ -59,7 +59,7 @@ NA|Seattle, WA|2|4
 NA|Spokane, WA|6|5
 NA|St.Louis, MO|6|3
 NA|Tampa, FL|5|4
-CA|Toronto, ON|11|5
+CA|Toronto, ON|11|6
 NA|Tustin, CA|4|3
 CA|Vancouver, BC|12|2
 NA|W Sacramento, CA|2|9
