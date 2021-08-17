@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Computing Solutions Locations",
-  "date": "8-4-2021",
+  "date": "8-13-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -129,57 +129,3 @@ LATAM|Quito, Euador|Lumen|Juan Barrezueta y Alonso López Sector Carcelén, Lima
 LATAM|Quito, Euador|Lumen|Urbanización Iñaquito alto, Calle 0E-9 Juan Díaz Nro 37-121, Caracas, Ecuador|Available Today
 LATAM|Balboa, Panama|Lumen|265 AV GAILLARD EDIF, Balboa, Panama|Available Today
 LATAM|Mexico City, Mexico|Lumen|Lago Zurich Nro 96, Mexico City, Mexico|Available Today
-NA|Chicago, IL|Lumen|2101 Roberts Drive, Broadview, IL 60155|Coming in 2020
-NA|Seattle, WA|Lumen|1000 Denny Way, Seattle, WA 98109|Coming in 2020
-NA|Cleveland, OH|Lumen|4000 Chester Avenue, Cleveland, OH 44145|Coming in 2020
-NA|Cincinnati, OH|Lumen|400 Pike Street, Cincinnati, OH 45202|Coming in 2020
-NA|New York, NY|Lumen|4260 US Route 1 North, Monmouth Junction, NJ 08852|Coming in 2020
-NA|Pittsburgh, PA|Lumen|143 S 25th Street, Pittsburgh, PA 15023|Coming in 2020
-NA|Detroit, MI|Lumen|19675 West Ten Mile Road, Southfield, MI 48075|Coming in 2020
-NA|Tampa, FL|Lumen|7909 Woodland Center Blvd, Tampa, FL 33614|Coming in 2020
-NA|Los Angeles, CA|Lumen|14452 Franklin Avenue, Tustin, CA 92780|Coming in 2020
-NA|Albuquerque, NM|Lumen|400 Tijeras Ave NW, Albuquerque, NM 87102|Coming in 2021
-NA|Atlanta, GA|Lumen|345 Courtland Street NE, Atlanta, GA 30308|Coming in 2021
-NA|Buffalo, NY|Lumen|240 Scott Street, Buffalo, NY 14204|Coming in 2021
-NA|Omaha, NE|Lumen|1514 Chandler Road , Bellevue, NE 68147|Coming in 2021
-NA|Birmingham, AL|Lumen|2001 Park Pl North, Birmingham, AL 35203|Coming in 2021
-NA|Boston, MA|Lumen|1 Summer St, Boston, MA 2110|Coming in 2021
-NA|Columbus, OH|Lumen|226 N 5th Street, Columbus, OH 43215|Coming in 2021
-NA|Albany, NY|Lumen|10 Airline Dr, Colonie, NY 12205|Coming in 2021
-NA|Corpus Christi, TX|Lumen|4901 Westway Drive, Corpus Christi, TX 78404|Coming in 2021
-NA|El Paso, TX|Lumen|501 W. Overland, El Paso, TX 79936|Coming in 2021
-NA|Fresno, CA|Lumen|305 W. Napa Ave, Fresno, CA 93706|Coming in 2021
-NA|Dallas, TX|Lumen|1601 Jones St, Fort Worth, TX 76102|Coming in 2021
-NA|Brownsville, TX|Lumen|514 E. Monroe Av., Harlingen, TX 78550|Coming in 2021
-NA|Houston, TX|Lumen|2300 Lyons Avenue, Houston, TX 77020|Coming in 2021
-NA|Indianapolis, IN|Lumen|1902 S East Street, Indianapolis, IN 46225|Coming in 2021
-NA|Jackson, MS|Lumen|111 E Capitol Street, Jackson, MS 39201|Coming in 2021
-NA|Jacksonville, FL|Lumen|6263 Philips Hwy, Jacksonville, FL 32216|Coming in 2021
-NA|Kalamazoo, MI|Lumen|830 E Crosstown Pkwy, Kalamazoo, MI 49001|Coming in 2021
-NA|Kansas City, MO|Lumen|1212 E 19th Street, Kansas City, MO 64108|Coming in 2021
-NA|Laredo, TX|Lumen|518 Farragut, Laredo, TX 78040|Coming in 2021
-NA|Lubbock, TX|Lumen|1502 Ave. N, Lubbock, TX 79479|Coming in 2021
-NA|Louisville, KY|Lumen|715 S 7TH St, Louisville, KY 40203|Coming in 2021
-NA|Little Rock, AR|Lumen|124 W Capitol Ave, Little Rock, AR 72201|Coming in 2021
-NA|Madison, WI|Lumen|612 W Main Street, Madison, WI 53703|Coming in 2021
-NA|Miami, FL|Lumen|49 NW 5th Street, Miami, FL 33128|Coming in 2021
-NA|Urban Honolulu, HI|Lumen|550 Paiea St, Honolulu, HW 96819|Coming in 2021
-NA|Memphis, TN, TN|Lumen|3993 Crowfarn Drive, Memphis, TN 38118|Coming in 2021
-NA|Mobile, AL|Lumen|50 N. Lawrence Street, Mobile, AL 36602|Coming in 2021
-NA|New Orleans, LA|Lumen|3220 Lausat Street, Metairie, LA 70001|Coming in 2021
-NA|Las Vegas, NV|Lumen|1 Aerojet Way North, Las Vegas, NV 89030|Coming in 2021
-NA|Oklahoma City, OK|Lumen|201 Robert S Kerr Blvd., Oklahoma City, OK 73102|Coming in 2021
-NA|Portland, OR|Lumen|1335 NW Northrup Street, Portland, OR 97209|Coming in 2021
-NA|Richmond, VA|Lumen|3909 Carolina Ave, Richmond, VA 23222|Coming in 2021
-NA|Raleigh, NC|Lumen|5301 Departure Drive, Raleigh, NC 27616|Coming in 2021
-NA|Shreveport, LA|Lumen|506 Caddo St, Shreveport, LA 71101|Coming in 2021
-NA|Salt Lake City, UT|Lumen|5035 Harold Gatty Drive, Salt Lake City, UT 84116|Coming in 2021
-NA|San Antonio, TX|Lumen|5130 Service Center Drive, San Antonio, TX 78218|Coming in 2021
-NA|Santa Maria, CA|Lumen|122 Helena Ave, Santa Barbara, CA 93101|Coming in 2021
-NA|Stratford, TX|Lumen|501 W. Texas Avenue, Stratford, TX 79084|Coming in 2021
-NA|St. Louis, MO|Lumen|1015 Locust Street, St. Louis, MO 63101|Coming in 2021
-NA|Savannah, GA|Lumen|81 Ross Rd, Savannah, GA 31405|Coming in 2021
-NA|Syracuse, NY|Lumen|2 Clinton Square, Syracuse, NY 13202|Coming in 2021
-NA|Tallahassee, FL|Lumen|619 Mabry Street, Tallahassee, FL 32304|Coming in 2021
-NA|Tulsa, OK|Lumen|18 W. Archer Street, Tulsa, OK 74103|Coming in 2021
-NA|Wichita, KS|Lumen|266 N Main St, Wichita, KS 67202|Coming in 2021
