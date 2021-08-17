@@ -1,7 +1,7 @@
 {{{
   "title": "Cloud Virtual Server Instance Size and Performance",
-  "date": "3-1-2016",
-  "author": "Chris Little",
+  "date": "8-16-2021",
+  "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
