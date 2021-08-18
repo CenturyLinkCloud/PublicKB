@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Computing Solutions Locations",
-  "date": "8-13-2021",
+  "date": "8-18-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -53,6 +53,7 @@ NA|Minneapolis, MN|MNNTMNIC|Lumen|5480 Feltl Rd,Minnesota, MN 55343|Available To
 NA|Nashville, TN|NSVMTN17|Lumen|2990 Sidco Drive,Nashville, TN 37204|Available Today
 NA|New York, NY|NYCPNYYK|Lumen|601 W 26th St,New York, NY 10001|Available Today
 NA|Omaha, NE|OMALNEUN|Lumen|6805 Pine St,Omaha, NE 68106|Available Today
+EMEA|Paris,France|PARSFRAW|Lumen|55 Ave Des Champs Pierreux, Paris,France 92012|Available Today
 NA|Philadelphia, PA|PHLAPAFG|Lumen|401 N Broad St Suite 210,Philadelphia, PA 19108|Available Today
 NA|Phoenix, AZ|PHNDAZ91|Lumen|811 S. 16th Street,Phoenix, AZ 85034|Available Today
 NA|Pittsburgh, PA|PITEPADT|Lumen|143 South 25th Street, Pittsburgh, PA 15203|Available Today
@@ -71,8 +72,8 @@ CA|Toronto,CA|TORVONRF|Lumen| 8 Garamond Ct, North York, ON M3C 1Z4, Canada|Avai
 NA|Tustin, CA|TUSTCAFT|Lumen|14452 Franklin Ave, Tustin, CA 92780|Available Today
 CA|Vancouver, BC|VANCBCHC|Lumen|555 W Hastings St 14th Floor, Vancouver, BC V6B 4N4, Canada|Available Today
 NA|Honolulu, HI|MLUAHIAK|Lumen|550 Paiea St, Honolulu, HI 96819|Coming in 2021
-LATAM|Cotia, Brazil|CTIABZAF|Lumen|Rua Eid. Manssur N° 666, Parque São George, Rodovia Raposo Tavares, Km 25, Cotia, Brazil|Coming in 2021
-LATAM|Buenos Aires, Argentina|BNARAGMS|Lumen|Av. Del Campo N° 1301, Buenos Aires, Argentina|Coming in 2021
+LATAM|Cotia, Brazil|CTIABZAF|Lumen|Rua Eid. Manssur N° 666, Parque São George, Rodovia Raposo Tavares, Km 25, Cotia, Brazil|Coming in 2022
+LATAM|Buenos Aires, Argentina|BNARAGMS|Lumen|Av. Del Campo N° 1301, Buenos Aires, Argentina|Coming in 2022
 
 **Lumen Edge Colocation**
 
