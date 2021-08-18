@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Bare Metal Availability",
-  "date": "8-17-2021",
+  "date": "8-19-2021",
   "author": "Randy Roten",
   "attachments": [],
   "contentIsHTML": false,
@@ -18,48 +18,48 @@ The table below provides current availability of Edge Bare Metal configurations 
 
 **Region**|**Edge Bare Metal Site Locations**|**32 Cores, 384 GB RAM,7,680 GB SSD**|**32 Cores, 768 GB RAM,32,200 GB SSD**
 ----------|----------------------------------|----------------------------------|------------------------------------------|
-EMEA|Amsterdam|0|12
+EMEA|Amsterdam|0|8
 NA|Atlanta, GA|0|2
 NA|Austin, TX|4|3
 NA|Boise, ID|12|8
-NA|Chicago, IL|0|26
-NA|Cambridge, MA|0|2
+NA|Chicago, IL|0|27
+NA|Cambridge, MA|2|2
 NA|Charlotte, NC|6|5
 NA|Cincinnati, OH|5|19
-NA|Dallas, TX|1|1
-NA|Denver, CO|9|3
-NA|Detroit, MI|2|10
+NA|Dallas, TX|1|2
+NA|Denver, CO|1|1
+NA|Detroit, MI|2|11
 NA|El Paso, TX|8|7
-NA|Herndon, VA|4|15
+NA|Herndon, VA|4|16
 NA|Houston, TX|3|5
-NA|Jacksonville, FL|6|8
-NA|Kansas City, MO|1|15
+NA|Jacksonville, FL|8|8
+NA|Kansas City, MO|3|16
 CA|Lachine, Quebec|12|1
 NA|Las Vegas, NV|3|9
-NA|Little Rock, AK|8|6
+NA|Little Rock, AK|8|7
 EMEA|London, England|0|16
 NA|Madison, WI|8|7
-NA|McAllen, TX|6|5
+NA|McAllen, TX|6|6
 NA|Metairie, LA|5|6
 NA|Miami, FL|2|4
-NA|Minneapolis, MN|3|16
-NA|Nashville, TN|0|4
-NA|New York, NY|8|26
+NA|Minneapolis, MN|3|17
+NA|Nashville, TN|0|5
+NA|New York, NY|8|27
 NA|Omaha, NE|9|1
 NA|Philadelphia, PA|8|5
 NA|Phoenix, AZ|2|9
-NA|Pittsburgh, PA|0|2
+NA|Pittsburgh, PA|2|4
 NA|Portland, OR|6|1
-NA|Reno, NV|4|4
+NA|Reno, NV|7|4
 NA|Salt Lake City, UT|5|13
-NA|San Antonio, TX|5|12
+NA|San Antonio, TX|5|13
 NA|San Diego, CA|0|7
 NA|Santa Clara, CA|7|16
-NA|Seattle, WA|3|6
+NA|Seattle, WA|4|6
 NA|Spokane, WA|6|5
 NA|St.Louis, MO|6|3
-NA|Tampa, FL|1|4
+NA|Tampa, FL|4|5
 CA|Toronto, ON|11|5
-NA|Tustin, CA|2|3
-CA|Vancouver, BC|12|2
-NA|W Sacramento, CA|2|10
+NA|Tustin, CA|2|4
+CA|Vancouver, BC|8|2
+NA|W Sacramento, CA|2|11
