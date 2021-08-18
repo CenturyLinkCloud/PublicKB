@@ -46,6 +46,7 @@ NA|Minneapolis, MN|3|17
 NA|Nashville, TN|0|5
 NA|New York, NY|8|27
 NA|Omaha, NE|9|1
+EMEA|Paris, France|0|16
 NA|Philadelphia, PA|8|5
 NA|Phoenix, AZ|2|9
 NA|Pittsburgh, PA|2|4
