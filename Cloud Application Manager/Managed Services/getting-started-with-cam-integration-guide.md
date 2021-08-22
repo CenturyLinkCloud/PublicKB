@@ -61,9 +61,7 @@ Here you will need to request the Managed Services Anywhere's Managed Applicatio
 
 **Note: Both a Windows and Linux version of the Managed Application script box will be shared with your workspace.**
 
-For now, this has some back and forth via email until automation can be put in place.  We found it important to make this available to you sooner rather than later.
-
-So, without further ado... let's send an email to the Managed Services Anywhere team.  [Click this very awesome sentence to send an email with a pre-populated subject and body](mailto:clcos.support@ctl.io?subject=Request%20for%20Managed%20Application&amp;body=Dear%20Managed%20Services%20Anywhere%2C%0D%0A%0D%0AI%20am%20requesting%20the%20creation%20of%20a%20new%20Managed%20Application%20for%20%22%5Bapplication%20name%5D%22%20with%20the%20monitoring%20policy%20named%20%22%5Bapplication%20policy%20name%5D%22%20under%20the%20%22%5Bworkspace%20name%20or%20id%5D%22%20workspace.%0D%0A%0D%0APlease%20review%20the%20policy%20which%20corresponds%20to%20a%20suggested%20application%20name%20of%20%22%5Bsimple%20application%20name%5D%22.%0D%0A%0D%0AThank%20you%2C%0D%0AApp%20Maker%20Man%20or%20Woman).
+For now, this has some back and forth via email until automation can be put in place.  We found it important to make this available to you sooner rather than later. Links are provided within the Cloud Application Manager portal to open a ticket.
 
 Here is example of the contents of the email:
 
