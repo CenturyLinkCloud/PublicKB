@@ -1,11 +1,12 @@
 {{{
-  "title": "Using Lumen Object Storage for Backup as a Service / S3CMD - Object Storage Management for Linux Machines",
-  "date": "6-24-2021",
-  "authors": " Evgeny Rudinsky / Brian Button, updated by Randy Roten",
+  "title": "Lumen Object Storage for Backup as a Service / Linux Machines",
+  "date": "8-10-2021",
+  "author": "Evgeny Rudinsky and Brian Button, updates by Randy Roten",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
 }}}
+
 ### Description
 This article outlines how customers can set up their Lumen Object Storage for Backup as a Service, along with S3CMD Object Storage Management for Linux Machines. 
 
@@ -45,58 +46,58 @@ Lumen Object Storage Cloud customers may wish to leverage our S3 compatible Obje
 
 ### Configuring Lumen Object Storage
 
-1. Open Cloudberry Backup Ultimate Edition, select file, in the main menu select Add New Account and click the **Lumen** icon. ![Cloudberry Backup Ultimate Edition, main menu, select Add New Account](../images/object-storage-baas/001_CBerryBU-OS_AddNewAcct.png)
-![Click the Lumen icon](../images/object-storage-baas/002_CBerryBU-SelectCloudStorage_icon-highlight.png)
+1. Open Cloudberry Backup Ultimate Edition, select file, in the main menu select Add New Account and click the **Lumen** icon. ![Cloudberry Backup Ultimate Edition, main menu, select Add New Account](../../images/object-storage-baas/001_CBerryBU-OS_AddNewAcct.png)
+![Click the Lumen icon](../../images/object-storage-baas/002_CBerryBU-SelectCloudStorage_icon-highlight.png)
 
-2. Populate the S3 Compatible Account information with your Lumen Cloud [Object Storage Access Key, Secret Key, Service Point and bucket name](https://development.ctl.io/knowledge-base/storage/object-storage/using-object-storage-from-the-control-portal/). [All service points are listed here](https://development.ctl.io/knowledge-base/storage/object-storage/object-storage-regions-and-service-points/). ![Populate the S3 Compatible Account information with your Lumen Cloud credentials](../images/object-storage-baas/003_CBerryBU-Account-pop.png)
+2. Populate the S3 Compatible Account information with your Lumen Cloud [Object Storage Access Key, Secret Key, Service Point and bucket name](https://development.ctl.io/knowledge-base/storage/object-storage/using-object-storage-from-the-control-portal/). [All service points are listed here](https://development.ctl.io/knowledge-base/storage/object-storage/object-storage-regions-and-service-points/). ![Populate the S3 Compatible Account information with your Lumen Cloud credentials](../../images/object-storage-baas/003_CBerryBU-Account-pop.png)
 
-3. Optionally, you may input cost estimate parameters as part of the storage account setup. By using this component, the Cloudberry Lab backup software is able to estimate your costs for storage. **This is an estimate on storage (excluding bandwidth charges) and does not necessarily reflect actual Lumen Cloud Object Storage fees.** ![Optionally, input cost estimate parameters as part of the storage account setup](../images/object-storage-baas/004_CBerryBU-CostEstimates.png)
+3. Optionally, you may input cost estimate parameters as part of the storage account setup. By using this component, the Cloudberry Lab backup software is able to estimate your costs for storage. **This is an estimate on storage (excluding bandwidth charges) and does not necessarily reflect actual Lumen Cloud Object Storage fees.** ![Optionally, input cost estimate parameters as part of the storage account setup](../../images/object-storage-baas/004_CBerryBU-CostEstimates.png)
 
-4. Your Lumen object storage account should now be created successfully. ![005_CBerryBU-Lumen-storage-account-should-now-be-created](../images/object-storage-baas/005_CBerryBU-Lumen-storage-account-should-now-be-created.jpg)
+4. Your Lumen object storage account should now be created successfully. ![005_CBerryBU-Lumen-storage-account-should-now-be-created](../../images/object-storage-baas/005_CBerryBU-Lumen-storage-account-should-now-be-created.jpg)
 
 ### Configuring file level backup for Windows
 
-1. Confirm that you are viewing the **Home** tab and click the **Files** icon. ![File icon highlighted on Home tab](../images/object-storage-baas/006_CBerryBU-Home-tab-Files-icon.jpg)
+1. Confirm that you are viewing the **Home** tab and click the **Files** icon. ![File icon highlighted on Home tab](../../images/object-storage-baas/006_CBerryBU-Home-tab-Files-icon.jpg)
 
-2. Select the Lumen Object Storage account you created recently (as described above). ![Select the Lumen Object Storage account you created recently](../images/object-storage-baas/007_CBerryBU-Select-OS-acct.png)
+2. Select the Lumen Object Storage account you created recently (as described above). ![Select the Lumen Object Storage account you created recently](../../images/object-storage-baas/007_CBerryBU-Select-OS-acct.png)
 
-3. Specify a name for the backup plan. We recommend a name that lists and includes the server name, backup type (file, SQL etc.) as a minimum. Additionally, it is advised that backup plan configurations are saved to the backup storage (default). ![Specify a name for the backup plan](../images/object-storage-baas/008_CBerryBU-Name-the-backup-plan.jpg)
+3. Specify a name for the backup plan. We recommend a name that lists and includes the server name, backup type (file, SQL etc.) as a minimum. Additionally, it is advised that backup plan configurations are saved to the backup storage (default). ![Specify a name for the backup plan](../../images/object-storage-baas/008_CBerryBU-Name-the-backup-plan.jpg)
 
-4. Choose an appropriate backup mode based on the features you require. Typical enterprise customers will want to leverage the Advanced Mode approach as it provides for Data Encryption and complex retention policies. ![Choose Backup Mode dialog](../images/object-storage-baas/009_CBerryBU-Choose-backup-mode.jpg)
+4. Choose an appropriate backup mode based on the features you require. Typical enterprise customers will want to leverage the Advanced Mode approach as it provides for Data Encryption and complex retention policies. ![Choose Backup Mode dialog](../../images/object-storage-baas/009_CBerryBU-Choose-backup-mode.jpg)
 
-5. It is recommended to mark the checkbox for **Force using VSS (Volume Shadow Copy Service)** for file level backup in order to access files that could be active in the third-party application when the backup is in progress. Others - optionally, based on backup / restore requirements. ![Mark the checkbox for Force using VSS (Volume Shadow Copy Service)](../images/object-storage-baas/010_CBerryBU-mark-Force-using-VSS.jpg)
+5. It is recommended to mark the checkbox for **Force using VSS (Volume Shadow Copy Service)** for file level backup in order to access files that could be active in the third-party application when the backup is in progress. Others - optionally, based on backup / restore requirements. ![Mark the checkbox for Force using VSS (Volume Shadow Copy Service)](../../images/object-storage-baas/010_CBerryBU-mark-Force-using-VSS.jpg)
 
-6. Select the backup source. Entire Windows volumes, specific directories, UNC Shares (**network shares**) or user profiles can be added to the backup plan. ![Select the backup source](../images/object-storage-baas/011_CBerryBU-Select-backup-source.jpg)
+6. Select the backup source. Entire Windows volumes, specific directories, UNC Shares (**network shares**) or user profiles can be added to the backup plan. ![Select the backup source](../../images/object-storage-baas/011_CBerryBU-Select-backup-source.jpg)
 
-7. The Advanced Filter allows administrators to include or exclude specific file types, folders, and large files. Select the appropriate settings based on IT Department or business policies. ![Advanced Filter](../images/object-storage-baas/012_CBerryBU-AdvancedFilter.png)
+7. The Advanced Filter allows administrators to include or exclude specific file types, folders, and large files. Select the appropriate settings based on IT Department or business policies. ![Advanced Filter](../../images/object-storage-baas/012_CBerryBU-AdvancedFilter.png)
 
-8. In order to secure backup data and reduce cost, customers can enable encryption and compression. **AES 128bit or higher is recommended.** Use encryption keys that are long and complex. Additionally, file name encryption adds another layer of security. Mark the Encrypt filenames checkbox. ![Customers can enable encryption and compression](../images/object-storage-baas/013_CBerryBU-EnableEncryption-and-Compression.jpg)
+8. In order to secure backup data and reduce cost, customers can enable encryption and compression. **AES 128bit or higher is recommended.** Use encryption keys that are long and complex. Additionally, file name encryption adds another layer of security. Mark the Encrypt filenames checkbox. ![Customers can enable encryption and compression](../../images/object-storage-baas/013_CBerryBU-EnableEncryption-and-Compression.jpg)
 
-9. Specify the appropriate retention policy for backup files. Defaults can be viewed by selecting the 'options' hyperlink. Clients may wish to keep file system backups based on number of versions or based on data set age. ![Specify backup files retention policy](../images/object-storage-baas/014_CBerryBU-SpecifyBackupFilesRetentionPolicy.jpg)
+9. Specify the appropriate retention policy for backup files. Defaults can be viewed by selecting the 'options' hyperlink. Clients may wish to keep file system backups based on number of versions or based on data set age. ![Specify backup files retention policy](../../images/object-storage-baas/014_CBerryBU-SpecifyBackupFilesRetentionPolicy.jpg)
 
-10. Choose a backup schedule that meets IT or business requirements. Generally, its best practice to perform a backup at least once per day during off hours. The Cloudberry Backup software supports recurring scheduled backups and even real-time backup of data. ![Choose a backup schedule](../images/object-storage-baas/015_CBerryBU-Specify-aBackupSchedule.jpg)
+10. Choose a backup schedule that meets IT or business requirements. Generally, its best practice to perform a backup at least once per day during off hours. The Cloudberry Backup software supports recurring scheduled backups and even real-time backup of data. ![Choose a backup schedule](../../images/object-storage-baas/015_CBerryBU-Specify-aBackupSchedule.jpg)
 
-11. For this example, we selected **Recurring** and set the schedule for Daily at 8 PM. ![Recurring selected and schedule set for Daily](../images/object-storage-baas/016_CBerryBU-BackupSchedule-Recurring.jpg)
+11. For this example, we selected **Recurring** and set the schedule for Daily at 8 PM. ![Recurring selected and schedule set for Daily](../../images/object-storage-baas/016_CBerryBU-BackupSchedule-Recurring.jpg)
 
-12. Support is provided for Pre / Post Actions, if required. ![Support is provided for Pre / Post Actions](../images/object-storage-baas/017_CBerryBU_Pre-Post-Actions_support.jpg)
+12. Support is provided for Pre / Post Actions, if required. ![Support is provided for Pre / Post Actions](../../images/object-storage-baas/017_CBerryBU_Pre-Post-Actions_support.jpg)
 
-13. Notification Options provide backup administrators with success or failure alerts for each backup plan. Clients can leverage the Cloudberry backup messaging service or specify an SMTP server. ![Notification Options](../images/object-storage-baas/018_CBerryBU_Notification-options.jpg)
+13. Notification Options provide backup administrators with success or failure alerts for each backup plan. Clients can leverage the Cloudberry backup messaging service or specify an SMTP server. ![Notification Options](../../images/object-storage-baas/018_CBerryBU_Notification-options.jpg)
 
-14. A summary of the backup plan will display after configurations have been completed. ![Backup Plan Summary](../images/object-storage-baas/019_CBerryBU_BackupPlanSummary.jpg)
+14. A summary of the backup plan will display after configurations have been completed. ![Backup Plan Summary](../../images/object-storage-baas/019_CBerryBU_BackupPlanSummary.jpg)
 
-15. You have now configured a file system backup plan. ![Backup Plan Successful](../images/object-storage-baas/020_CBerryBU_BackupPlanSuccessful.jpg)
+15. You have now configured a file system backup plan. ![Backup Plan Successful](../../images/object-storage-baas/020_CBerryBU_BackupPlanSuccessful.jpg)
 
 ### Configuring System Image Backup for Windows
 
-1. Confirm that you are viewing the **Home** tab and click the **Image Based** icon ![Image Based icon highlighted on Home tab](../images/object-storage-baas/021_CBerryBU_Home-tab-ImageBased-icon.jpg)
+1. Confirm that you are viewing the **Home** tab and click the **Image Based** icon ![Image Based icon highlighted on Home tab](../../images/object-storage-baas/021_CBerryBU_Home-tab-ImageBased-icon.jpg)
 
 2. After the backup wizard launches, enter a backup name. 
 
-3. Mark the Image Based Backup radio button to select the backup type. ![Mark the Image Based Backup radio button on the backup wizard](../images/object-storage-baas/022_CBerryBU_WindowsBU_Mark-ImageBased-radio-button.jpg)
+3. Mark the Image Based Backup radio button to select the backup type. ![Mark the Image Based Backup radio button on the backup wizard](../../images/object-storage-baas/022_CBerryBU_WindowsBU_Mark-ImageBased-radio-button.jpg)
 
-4. Select the partitions that you want to back up. ![Select the partitions that you want to back up](../images/object-storage-baas/023_CBerryBU_WindowsBU-Configuring_SelectPartitions2back-up.jpg)
+4. Select the partitions that you want to back up. ![Select the partitions that you want to back up](../../images/object-storage-baas/023_CBerryBU_WindowsBU-Configuring_SelectPartitions2back-up.jpg)
 
-5. Set **Advanced Options** as needed. Mark the **Use block level backup** checkbox to use that feature. Follow the dialog instructions to exclude files and folders or leave that checkbox clear. ![Set Advanced Options](../images/object-storage-baas/024_CBerryBU_WindowsBU-SetAdvancedOptions.jpg)
+5. Set **Advanced Options** as needed. Mark the **Use block level backup** checkbox to use that feature. Follow the dialog instructions to exclude files and folders or leave that checkbox clear. ![Set Advanced Options](../../images/object-storage-baas/024_CBerryBU_WindowsBU-SetAdvancedOptions.jpg)
 
 6. In the same way as in file level backup, it is possible to:
 * Enable/disable compression and encryption, 
@@ -109,40 +110,40 @@ All these options have been described in the File Level backup above.
 
 ### Configuring System State Backup for Windows
 
-1. Confirm that you are viewing the **Home** tab and click the **Image Based** icon. ![Image Based icon highlighted on Home tab](../images/object-storage-baas/021_CBerryBU_Home-tab-ImageBased-icon.jpg)
+1. Confirm that you are viewing the **Home** tab and click the **Image Based** icon. ![Image Based icon highlighted on Home tab](../../images/object-storage-baas/021_CBerryBU_Home-tab-ImageBased-icon.jpg)
 
 2. After the backup wizard launches, give it a name. 
 
-3. Mark the **System State** radio button to select the backup type. ![Mark the System State radio button](../images/object-storage-baas/025_CBerryBU_SS-WIN-BU_Mark-SystemState-radio-button.jpg)
+3. Mark the **System State** radio button to select the backup type. ![Mark the System State radio button](../../images/object-storage-baas/025_CBerryBU_SS-WIN-BU_Mark-SystemState-radio-button.jpg)
 
-4. Select items you wish to back up in system state. ![Select items you wish to back up in system state](../images/object-storage-baas/026_CBerryBU_SS-WIN-BU_Select-Items.jpg)
+4. Select items you wish to back up in system state. ![Select items you wish to back up in system state](../../images/object-storage-baas/026_CBerryBU_SS-WIN-BU_Select-Items.jpg)
 
 5. There are other steps similar to either File Level or Imaged Based backups (e.g. compression and encryption options, retention policy, backup schedule, pre / post scripts and notifications). Continue on through these selections to configure your backup and complete the process.
 
 ### Configuring Microsoft SQL Database backup
 
-1. Confirm that you are viewing the **Home** tab and click the **MS SQL Server** icon. ![MS SQL Server icon highlighted on Home tab](../images/object-storage-baas/027_CBerryBU_SQL-DB-BU_Home-tab-MSSQLServer-icon.jpg)
+1. Confirm that you are viewing the **Home** tab and click the **MS SQL Server** icon. ![MS SQL Server icon highlighted on Home tab](../../images/object-storage-baas/027_CBerryBU_SQL-DB-BU_Home-tab-MSSQLServer-icon.jpg)
 
-2. Select the SQL Server instance to back up. ![Select the SQL Server instance to back up](../images/object-storage-baas/028_CBerryBU_SQL-DB-BU_Select-SQL-Server-instance2back-up.jpg)
+2. Select the SQL Server instance to back up. ![Select the SQL Server instance to back up](../../images/object-storage-baas/028_CBerryBU_SQL-DB-BU_Select-SQL-Server-instance2back-up.jpg)
 
-3. Mark the radio button for the desired backup method and enter backup data as needed. ![Select databases to back up](../images/object-storage-baas/029_CBerryBU_SQL-DB-BU_Select-DB2back-up.jpg)
+3. Mark the radio button for the desired backup method and enter backup data as needed. ![Select databases to back up](../../images/object-storage-baas/029_CBerryBU_SQL-DB-BU_Select-DB2back-up.jpg)
 
-4. Schedule your backup using the default template or set times on your own. ![Schedule your backup](../images/object-storage-baas/030_CBerryBU_SQL-DB-BU_Scheduling.jpg)
-![Schedule your backup](../images/object-storage-baas/031_CBerryBU_SQL-DB-BU_SchedulingB.jpg)
+4. Schedule your backup using the default template or set times on your own. ![Schedule your backup](../../images/object-storage-baas/030_CBerryBU_SQL-DB-BU_Scheduling.jpg)
+![Schedule your backup](../../images/object-storage-baas/031_CBerryBU_SQL-DB-BU_SchedulingB.jpg)
 
 5. Set the remaining backup options based on your requirements. The steps are similar to File Level requirements (e.g. compression and encryption options, retention policy, backup schedule, pre / post scripts and notifications). Continue on through these selections to configure your backup and complete the process.
 
 ### Configuring a Microsoft Exchange Backup
 
-1. Confirm that you are viewing the **Home** tab and click the **MS Exchange** icon. ![MS Exchange icon highlighted on Home tab](../images/object-storage-baas/032_CBerryBU_MSXchange-BU_Home-tab-MSExchange-icon.jpg)
+1. Confirm that you are viewing the **Home** tab and click the **MS Exchange** icon. ![MS Exchange icon highlighted on Home tab](../../images/object-storage-baas/032_CBerryBU_MSXchange-BU_Home-tab-MSExchange-icon.jpg)
 
 2. Select backup storage.
 
 3. Enter your plan name.
 
-4. Select the Exchange databases to archive. ![Select the Exchange databases to archive](../images/object-storage-baas/033_CBerryBU_MSXchange-BU_Select-DBs.jpg)
+4. Select the Exchange databases to archive. ![Select the Exchange databases to archive](../../images/object-storage-baas/033_CBerryBU_MSXchange-BU_Select-DBs.jpg)
 
-5. Set compression and encryption parameters. Schedule recurrence and define full backup accordingly. ![Set compression and encryption parameters. Schedule recurrence and define full backup](../images/object-storage-baas/034_CBerryBU_MSXchange-BU_Schedule.jpg)
+5. Set compression and encryption parameters. Schedule recurrence and define full backup accordingly. ![Set compression and encryption parameters. Schedule recurrence and define full backup](../../images/object-storage-baas/034_CBerryBU_MSXchange-BU_Schedule.jpg)
 
 6. Set the remaining backup options based on your requirements. The steps are similar to File Level requirements (e.g. compression and encryption options, retention policy, backup schedule, pre / post scripts and notifications). Continue on through these selections to configure your backup and complete the process.
 
@@ -204,7 +205,7 @@ Once S3CMD has been installed, it must be configured to use Lumen Cloud’s Obje
 
 2. You need both your **Access Key ID** and your **Secret Access Key**. You can find them by clicking **Services > Object Storage**.
 
-3. On the Object Storage page, click the **Users** tab and then the appropriate username. ![S3CMD Users Tab](../images/object-storage-baas/035_S3CMD-Users-tab.png)
+3. On the Object Storage page, click the **Users** tab and then the appropriate username. ![S3CMD Users Tab](../../images/object-storage-baas/035_S3CMD-Users-tab.png)
 
 4. Enter your encryption password.
 
@@ -235,7 +236,7 @@ _**Note:**_ The following configuration line items must be edited.
 * secret_key = YOUR_SECRET_KEY_HERE
 * use_https = False
 
-![S3CMD Sample Configuration File](../images/object-storage-baas/036_S3CMD-Sample-config-file.png)
+![S3CMD Sample Configuration File](../../images/object-storage-baas/036_S3CMD-Sample-config-file.png)
 
 #### Creating the Object Storage Bucket
 
@@ -245,7 +246,7 @@ Before using S3CMD, you’ll need to create an Object Storage user and a bucket,
 
 2. Click the **User** tab and then **create user**.
 
-3. Enter the requested data into the required fields. ![Create New Object Storage User dialog](../images/object-storage-baas/037_S3CMD-CreateNewObjectStorageUser-dialog.png)
+3. Enter the requested data into the required fields. ![Create New Object Storage User dialog](../../images/object-storage-baas/037_S3CMD-CreateNewObjectStorageUser-dialog.png)
 
 4. Click the **save** button.
 
@@ -256,7 +257,7 @@ Before using S3CMD, you’ll need to create an Object Storage user and a bucket,
 7. Select the **owner** from the drop-down menu. 
 
 8. Select a **region**.
-   * You can add additional users or modify the permissions after creating the bucket. Click the bucket name to access those options. ![Create Bucket dialog](../images/object-storage-baas/038_S3CMD-CreateBucket-dialog.png)
+   * You can add additional users or modify the permissions after creating the bucket. Click the bucket name to access those options. ![Create Bucket dialog](../../images/object-storage-baas/038_S3CMD-CreateBucket-dialog.png)
 
 9. Click the **save** button.
 
