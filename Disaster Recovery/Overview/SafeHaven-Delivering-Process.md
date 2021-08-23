@@ -15,7 +15,7 @@ service.
 
 ### Get an Order From Marketing Team
 To start the process, contact the SafeHaven team,
-safehavenmarketing@ctl.io, requesting a free trial or direct order. A SafeHaven
+help@ctl.io, requesting a free trial or direct order. A SafeHaven
 sales lead will deliver a demo and work to create a capacity plan and
 compatibility validation. You will then be transferred to SafeHaven on-boarding team
 when the PoC or direct order is approved.

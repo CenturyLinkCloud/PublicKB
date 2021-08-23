@@ -34,8 +34,8 @@ No, in-place upgrades of the Operating System are not supported.  This means tha
 
 ### Can I bring my own license?
 
-Currently, CLC does not support a Bring Your Own License model for both Windows and RedHat. If this is a need, please submit a [feature request](mailto:features@ctl.io) or contact our [support team](mailto:help@ctl.io).
+Currently, CLC does not support a Bring Your Own License model for both Windows and RedHat.
 
 ### I'd like to deploy an operating system that is not supported. What are my options?
 
-We do not recommend that you deploy unsupported operating systems in the platform. Lumen Cloud SLAs will not apply to virtual machines running an *unsupported* OS. In addition, some features may not work on unsupported OSes. Your options are to request a new OS be supported using our [suggested feature process](mailto:features@ctl.io), or to deploy the OS in a traditional hosting environment.
+We do not recommend that you deploy unsupported operating systems in the platform. Lumen Cloud SLAs will not apply to virtual machines running an *unsupported* OS. In addition, some features may not work on unsupported OSes.
