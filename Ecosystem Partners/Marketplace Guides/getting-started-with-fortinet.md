@@ -51,8 +51,6 @@ After executing the steps in this Getting Started guide, users will have a funct
 
 The deployment process for partner templates currently requires manual interaction via the Service Task process, but will be further automated in future releases of the Lumen Cloud Platform.
 
-If you are interested in seeing this type of partner template deployment as an automated feature in the future, please share your input with us at [features@ctl.io](mailto:features@ctl.io)
-
 ### Prerequisite
 * Access to the Lumen Cloud platform as an authorized user.
 * A Network VLAN for the Fortinet partner template to be deployed on.

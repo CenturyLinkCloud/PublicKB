@@ -45,7 +45,6 @@ After reading this article, the user should feel comfortable deploying the A10 v
 
 This deployment process for Partner Templates currently requires manual interaction via the Service Task process, but will be further automated in future releases of the Lumen Cloud Platform.
 
-If you are interested in seeing this type of Partner Template deployment as an automated feature in the future, please share your input with us at [features@ctl.io](mailto:features@ctl.io).
 
 ### Prerequisite
 * Access to the Lumen Cloud platform as an authorized user.

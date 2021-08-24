@@ -320,6 +320,6 @@ After following the instructions this article, the user should have a working ku
 Since this is an open source project, the instructions on how to use this scripts are found on Github. Please visit [here](https://github.com/CenturyLinkCloud/adm-kubernetes-on-clc) for the detailed instructions on how to install a Kubernetes Cluster on Lumen Cloud.
 
 #### Who should I contact for support?
-* For issues related to creating the Kubernetes cluster, please email kubernetes@ctl.io or create a support ticket.
+* For issues related to creating the Kubernetes cluster, please use the links provided within the Cloud Application Manager portal to open a ticket.
 * For issues related to cloud infrastructure (VM’s, network, etc), please open a Lumen Cloud Support ticket: https://t3n.zendesk.com/tickets/new
 * For more information on using Kubernetes, please visit http://kubernetes.io/v1.1/.

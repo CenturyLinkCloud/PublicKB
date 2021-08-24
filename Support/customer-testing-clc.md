@@ -38,7 +38,7 @@ Any test intended to exploit known, or to find new, vulnerabilities in systems, 
 
 Note that Lumen does not allow customer testing of any parts of the shared infrastructure, any testing must be scoped within a customer’s own deployed solution.
 
-**Required Notification:** Advanced notice to the CLC help desk if the testing is performed on CLC infrastructure by opening a ticket at help@ctl.io.  Also, report any findings related to CLC infrastructure vulnerabilities by opening a ticket at security@ctl.io.
+**Required Notification:** Send an email to help@ctl.io for advanced notice to the CLC help desk if the testing is performed on CLC infrastructure or to report any findings related to CLC infrastructure vulnerabilities.
 
 Tools used for testing include: Metasploit, ZAP, Burp Suite, protocol fuzzers, and other similar tools.
 
