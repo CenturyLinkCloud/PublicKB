@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Bare Metal Availability",
-  "date": "8-24-2021",
+  "date": "8-26-2021",
   "author": "Randy Roten",
   "attachments": [],
   "contentIsHTML": false,
@@ -15,18 +15,18 @@ The table below provides current availability of Edge Bare Metal configurations 
 
 **Lumen Edge Bare Metal Server Configuration Availability By Location**
 
-**Region**|**Edge Bare Metal Site Locations**|**32 Cores, 384 GB RAM,7,680 GB SSD**|**32 Cores, 768 GB RAM,32,200 GB SSD**
+**Region**|**Edge Bare Metal Site Locations**|**32 Cores, 384 GB RAM, 7,680 GB SSD**|**32 Cores, 768 GB RAM, 32,200 GB SSD**
 ----------|----------------------------------|----------------------------------|------------------------------------------|
 EMEA|Amsterdam|0|3
-NA|Atlanta, GA|2|1
+NA|Atlanta, GA|2|3
 NA|Austin, TX|4|3
 NA|Boise, ID|12|8
 NA|Chicago, IL|0|23
 NA|Cambridge, MA|2|2
-NA|Charlotte, NC|6|5
-NA|Cincinnati, OH|5|19
+NA|Charlotte, NC|9|5
+NA|Cincinnati, OH|5|18
 NA|Dallas, TX|1|2
-NA|Denver, CO|2|3
+NA|Denver, CO|1|1
 NA|Detroit, MI|2|11
 NA|El Paso, TX|8|7
 NA|Herndon, VA|4|17
@@ -41,7 +41,7 @@ NA|Madison, WI|8|7
 NA|McAllen, TX|6|6
 NA|Metairie, LA|5|6
 NA|Miami, FL|2|4
-NA|Minneapolis, MN|2|17
+NA|Minneapolis, MN|1|17
 NA|Nashville, TN|0|5
 NA|New York, NY|8|26
 NA|Omaha, NE|9|1
@@ -55,11 +55,11 @@ NA|Salt Lake City, UT|5|14
 NA|San Antonio, TX|5|13
 NA|San Diego, CA|0|7
 NA|Santa Clara, CA|7|16
-NA|Seattle, WA|4|6
+NA|Seattle, WA|4|7
 NA|Spokane, WA|6|5
 NA|St.Louis, MO|6|3
 NA|Tampa, FL|4|6
 CA|Toronto, ON|11|5
-NA|Tustin, CA|2|4
+NA|Tustin, CA|3|4
 CA|Vancouver, BC|8|2
 NA|W Sacramento, CA|3|12
