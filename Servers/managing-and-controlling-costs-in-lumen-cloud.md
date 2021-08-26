@@ -1,7 +1,7 @@
 {{{
   "title": "Managing and Controlling Costs in Lumen Cloud",
-  "date": "5-26-2015",
-  "author": "Chris Little",
+  "date": "8-16-2021",
+  "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -26,9 +26,6 @@ Lumen Cloud provides several tools to enable customers to maximize the benefits 
 
 Pausing is the act of suspending a virtual machine. Servers in a paused state are not billed for compute (RAM, CPU) usage - only storage consumption and licensing costs. Individual machines or entire groups can easily be paused through our Control
 Portal. To do so, simply select the appropriate group and use the **pause** button located on the control bar.
-
-![](../images/pausing.png)
-
 A box will appear which will allow you to choose one or all of the servers to be paused. When this is done, select **Pause**.
 
 #### Archiving

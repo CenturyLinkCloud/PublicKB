@@ -1,6 +1,6 @@
 {{{
   "title": "Edge Bare Metal Billing",
-  "date": "3-11-2021",
+  "date": "7-20-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -46,7 +46,7 @@ For Public Internet, Egress is charged based upon total number of gigabytes tran
 Bandwidth selection identifies the requested rate limit for the internet port and is selected during the provisioning of the Bare Metal server instance.
 **Note:** Higher rate limits can pass more traffic, which could result in additional Internet charges.
 Customers should choose the Bandwidth selection that best fits their business needs to avoid unintended Internet charge spikes.
-Customers are charged for Bandwidth per GB, partial GB output is rounded up.
+Customers are charged for Bandwidth per GB.
 Below is the Public Internet egress cost table.
 
 | Public Egress Tier | Price per GB   |
@@ -69,7 +69,7 @@ Customers will be invoiced monthly, in arrears for their total Edge Computing So
 
 The power states and applicable billing for an Edge Bare Metal server are as follows:
 * Provision a Bare Metal Server: Starts billing
-* On/Running: Continuosly bills at the hourly rate based on the server configuration and applicable services tied to the server. 
+* On/Running: Continuously bills at the hourly rate based on the server configuration and applicable services tied to the server. 
 * Stop: Stops the server but does NOT stop billing. 
 * Delete: Deleting a Bare Metal server will end billing for that server.
 

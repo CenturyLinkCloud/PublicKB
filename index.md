@@ -4,10 +4,9 @@
     "Accounts & Users",
     "Backup",
     "Blueprints",
-    "Lumen Private Cloud on VMware Cloud Foundation",
+    "Lumen Edge Private Cloud",
     "Cloud Application Manager",
     "Edge Computing Solutions",
-    "Compliance",
     "Control Portal",
     "Database",
     "Dedicated Cloud Compute",
@@ -21,6 +20,6 @@
     "Security",
     "Servers",
     "Service Tasks",
-    "Storage"
+    "Lumen Network Storage"
   ]
 }}}
