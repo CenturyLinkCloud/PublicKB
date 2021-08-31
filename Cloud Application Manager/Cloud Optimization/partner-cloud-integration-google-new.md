@@ -22,6 +22,8 @@ For Google Cloud Platform, see our [Service Guide](https://www.ctl.io/legal/clou
 
 * The user must be an Administrator of the organization in Cloud Application Manager.
 
+* You will need to create a [google cloud identity](../Getting Started/setup-cloud-identity-for-gcp.md) using your email.
+
 * A working knowledge of how to use [Cloud Application Manager providers](../Core Concepts/providers.md).
 
 * An understanding of the features and benefits of [Partner Cloud Integration](partner-cloud-integration.md)
