@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Bare Metal Availability",
-  "date": "8-31-2021",
+  "date": "9-2-2021",
   "author": "Randy Roten",
   "attachments": [],
   "contentIsHTML": false,
@@ -9,14 +9,14 @@
 
 Lumen is rapidly adding Edge Computing Solutions locations across the globe to provide performance and speed for latency sensitive, data-intensive applications.
 
-Lumen Edge Bare Metal provides low-latency on-demand Bare Metal servers via the Edge Platform. Learn more about Edge Bare Metal [here](/edge-computing-solutions/edge-bare-metal/).
+**Lumen Edge Bare Metal** provides low-latency on-demand Bare Metal servers via the Edge Platform. Learn more about Edge Bare Metal [here](/edge-computing-solutions/edge-bare-metal/).
 
-The table below provides current availability of Edge Bare Metal configurations at each location, all designed to deliver near-zero latency. You can find latency coverage across our Edge portfolio [here](https://www.lumen.com/en-us/resources/network-maps.html#edge-roadmap).
+The table below provides current availability of Edge Bare Metal configurations at each location, all designed to deliver near-zero latency. Latency coverage across our Edge portfolio can be viewed [here](https://www.lumen.com/en-us/resources/network-maps.html#edge-roadmap).
 
 **Lumen Edge Bare Metal Server Configuration Availability By Location**
 
 **Region**|**Edge Bare Metal Site Locations**|**32 Cores, 384 GB RAM, 7,680 GB SSD**|**32 Cores, 768 GB RAM, 32,200 GB SSD**
-:----------:|:----------------------------:|:----------------------------:|:------------------------------------:|
+:----------:|:------------------------:|:------------------------:|:--------------------------------:|
 EMEA|Amsterdam|0|3
 NA|Atlanta, GA|2|3
 NA|Austin, TX|4|3
