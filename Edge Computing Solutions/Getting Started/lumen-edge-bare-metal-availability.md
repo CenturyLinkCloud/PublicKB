@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Bare Metal Availability",
-  "date": "9-2-2021",
+  "date": "9-7-2021",
   "author": "Randy Roten",
   "attachments": [],
   "contentIsHTML": false,
@@ -16,7 +16,7 @@ The table below provides current availability of Edge Bare Metal configurations 
 **Lumen Edge Bare Metal Server Configuration Availability By Location**
 
 **Region**|**Edge Bare Metal Site Locations**|**32 Cores, 384 GB RAM, 7,680 GB SSD**|**32 Cores, 768 GB RAM, 32,200 GB SSD**
-:----------:|:------------------------:|:------------------------:|:--------------------------------:|
+:----------:|:---------------------:|:---------------------:|:-----------------------------:|
 EMEA|Amsterdam|0|3
 NA|Atlanta, GA|2|3
 NA|Austin, TX|4|3
