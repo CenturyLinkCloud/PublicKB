@@ -23,7 +23,7 @@ We're sorry to see you go. To make sure your off-boarding experience is as easy 
 3. Use the Control Portal or [API][4] to delete any actively billed services.
     - __Services not deleted may accrue further charges before an account is completely deleted (e.g. server storage).__ Confirmation of account closure by the Lumen Cloud team doesn't necessarily mean that no further charges will accumulate, so you should ensure all services have been deleted __before__ requesting account closure.
     - The account's OpenVPN server and network can't be deleted and can safely be ignored. These reside in the account's primary data center and aren't billed as they come with the account by default. The OpenVPN server will follow [platform naming conventions][5] using the name "VPN" (e.g. VA1ABCDVPN01).
-4. Please email [help@ctl.io][7] or [submit a separate ticket][8] to request the account to be closed.
+4. Please email [help@ctl.io][7] to request the account to be closed.
     - There's no guarantee that any server data or configurations can be retrieved after this point.
 
 ### Final Invoice
