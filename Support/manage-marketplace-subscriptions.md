@@ -1,7 +1,7 @@
 {{{
 "title": "Managing Your Marketplace Subscriptions",
 "date": "11-23-2020",
-"author": "Brandy Smith",
+"author": "Brandy Smith; 9-17-2021 Randy Roten edits",
 "attachments": [],
 "contentIsHTML": false,
 "sticky": true
@@ -55,11 +55,11 @@ In this KB article, we walk through how to manage your Marketplace subscriptions
 
 **Reviewing Subscriptions:** Once logged in you can view your Marketplace subscriptions, see estimated monthly charges, request updates to your subscriptions (such as upgrades or downgrades), and terminate subscriptions (if no active term commit is in place). Please note that any taxes, overage, or usage based charges associated with your order are not listed. Rather, they will be reflected on your monthly invoices when applicable.
 
-  ![Marketplace Manager1](../../images/MM1.png)
+  ![Marketplace Manager1](../images/MM1.png)
 
 All subscriptions are shown at the Subscription Order level. By clicking the **+ Show Billable Items** button the subscription will expand to show all billable items that are associated with the subscription. These billable items can include monthly, hourly, usage, and one-time charges. You can collapse the billable items by clicking the **- Hide Billable Items** button.
 
-  ![Marketplace Manager2](../../images/MM2.png)
+  ![Marketplace Manager2](../images/MM2.png)
 
 **Managing Subscriptions:** There are two actions that can be executed in the Marketplace Manager; **Update** and **Terminate**.
 
@@ -82,7 +82,7 @@ Ex. Customer has a subscription that has a core product with multiple add-ons an
 
 1. To update a subscription click on the **Update** button. The form below will populate.
 
-  ![Marketplace Manager3](../../images/MM3.png)
+  ![Marketplace Manager3](../images/MM3.png)
 
 2. Next, fill out the form. The **Contact Email** will auto-populate, however, you can change it to another email if you choose.
 Fill out the **Request Description** field with your request. The request description should state which action you are looking to request.
@@ -103,7 +103,7 @@ Ex. I am requesting to Add Billable Items to my subscription. Please add 10 lice
 
 3. Lastly, you will check the billable item(s) that you are wanting to update from the dropdown list that matches the update option that you are requesting.
 
-  ![Marketplace Manager4](../../images/MM4.png)
+  ![Marketplace Manager4](../images/MM4.png)
 
 4. Click **Request Update** button to submit the request. You will receive a conformation email that your request has been received. *Please note: Submitting an Update Request is a manual process, it does not automatically alter functionality or billing of the product.*
 
@@ -117,7 +117,7 @@ The **Terminate** button allows customers to terminate their Marketplace subscri
 
 1. To make a termination request for a subscription, click on the **Terminate** button. The form below will populate.
 
-  ![Marketplace Manager5](../../images/MM5.png)
+  ![Marketplace Manager5](../images/MM5.png)
 
 2. Next, fill out the form. The **Contact Email** will auto-populate, however, you can change it to another email if you chose.
 Fill out the **Request Description** field with your request.
