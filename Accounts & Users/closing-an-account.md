@@ -1,6 +1,6 @@
 {{{
   "title": "Closing Your Account",
-  "date": "09-10-2019",
+  "date": "09-21-2021",
   "author": "Derek Jansen",
   "keywords": ["terminate", "account"],
   "attachments": [],
