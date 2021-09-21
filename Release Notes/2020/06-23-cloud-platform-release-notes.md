@@ -7,7 +7,7 @@
 "contentIsHTML": false
 }}}
 
-### Lumen Rebranded as Lumen
+### CenturyLink Rebranded as Lumen
 
 Lumen has a new brand name and bold new purpose.
 As Lumen Technologies, or simply Lumen, the company will help lead enterprises through the challenges and opportunities of the 4th Industrial Revolution – a time when smart, connective devices are everywhere.
@@ -17,8 +17,8 @@ We are continuously updating our customer experiences to reflect the exciting ne
 
 **Hybrid IT Products Rebranded as Lumen:**
 
-* Lumen Private Cloud on VMware Cloud Foundation is now [Lumen Private Cloud on VMware Cloud Foundation](https://www.ctl.io/lumen-private-cloud-on-vmware-cloud-foundation/)
-* Lumen Public Cloud is now [Lumen Public Cloud](https://www.ctl.io/lumen-public-cloud/)
+* CenturyLink Private Cloud on VMware Cloud Foundation is now [Lumen Private Cloud on VMware Cloud Foundation](https://www.ctl.io/lumen-private-cloud-on-vmware-cloud-foundation/)
+* CenturyLink Public Cloud is now [Lumen Public Cloud](https://www.ctl.io/lumen-public-cloud/)
 
 ### Lumen Moves to the Edge
 
@@ -29,7 +29,7 @@ Lumen Edge locations and availability for the expanding Edge Computing Service l
 ### End of Availability for Legacy Services/Features
 
 As we grow the Lumen platforms to provide new and robust technology offers, we are retiring some of the legacy features or offers. Below is the list of the features that will be removed from the platforms by December 31, 2020.
-If these changes directly impact customer environments, a direct email communication was or will be sent to the impacted customers outlying the change and any customer action required.  
+If these changes directly impact customer environments, a direct email communication was or will be sent to the impacted customers outlining the change and any customer action required.  
 
 **Cloud Application Manager**
 
