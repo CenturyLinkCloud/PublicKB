@@ -8,6 +8,7 @@
 }}}
 
 ### Description
+
 This article will outline the step-by-step process to provision a bare metal server within the Lumen Edge Services portal specific to the contracted server configuration approved for Solana validators.
 
 ### Prerequisites
