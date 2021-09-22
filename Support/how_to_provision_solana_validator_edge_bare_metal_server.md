@@ -168,6 +168,6 @@ You will see a live tracker that shows you the progression of your server build 
 
 On average, large server configurations take up to 30 minutes to build.
 
-Once the server is built, billing has started and you can manage your Bare Metal Server by going to your Dashboard section and finding the server under the **MY INSTANCES** section of the dashboard.
+After the server is built, billing starts and you can manage your Bare Metal Server by going to your Dashboard section and finding the server under the **MY INSTANCES** section of the dashboard.
 
 To learn more about how to manage your Bare Metal servers, please visit this [Knowledge Base article](https://www.ctl.io/knowledge-base/edge-computing-solutions/getting-started/managing-bare-metal-instances/).
