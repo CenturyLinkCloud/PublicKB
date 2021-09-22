@@ -31,9 +31,9 @@ In the event that you accidentally provision a server prior to adding your crede
 
 Log into your Lumen Edge account within the Lumen Edge Services portal. To start the Provision Server process, use the top navigation and choose **Provisioning**.
 
-1.	Under the **Provisioning** tab, choose **Instances**. 
+1. Under the **Provisioning** tab, choose **Instances**. 
  ![Provisioning > Instances menu](../images/Solana-Validator_grphx/001_Solana-V_Instances.png) 
-2.	Once under the **Instances** tab, Click the **+ADD** button; this will begin the process of Provisioning a Bare Metal server. 
+2. Once under the **Instances** tab, Click the **+ADD** button; this will begin the process of Provisioning a Bare Metal server. 
  ![Click the +Add button](../images/Solana-Validator_grphx/002_Solana-V_+Add-button.jpg)
 3. Create Instance Type: the approved Operating System for Solana Validator software is **Ubuntu 20.04**.
  Choose the Ubuntu operating system for this server and click the **NEXT** button.
@@ -75,7 +75,7 @@ Log into your Lumen Edge account within the Lumen Edge Services portal. To start
 
  **Layout**
  - Required field, pre-populated, cost based on OS.
- This fields pre-populated with the Operating System you selected in Step 4.
+ This field is pre-populated with the Operating System you selected in Step 4.
 
  **IMPORTANT NOTE FOR SOLANA VALIDATORS**
  There is only one Bare Metal Server plan that is approved for Solana Validator software. 
