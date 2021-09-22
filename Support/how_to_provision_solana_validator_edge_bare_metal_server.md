@@ -34,7 +34,7 @@ Log into your Lumen Edge account within the Lumen Edge Services portal. To start
 1. Under the **Provisioning** tab, choose **Instances**. 
  ![Provisioning > Instances menu](../images/Solana-Validator_grphx/001_Solana-V_Instances.png) 
 2. Once under the **Instances** tab, Click the **+ADD** button; this will begin the process of Provisioning a Bare Metal server. 
- ![Click the +Add button](../images/Solana-Validator_grphx/002_Solana-V_+Add-button.jpg)
+ ![Click the +Add button](../images/Solana-Validator_grphx/002_Solana-V_Add-button.jpg)
 3. Create Instance Type: the approved Operating System for Solana Validator software is **Ubuntu 20.04**.
  Choose the Ubuntu operating system for this server and click the **NEXT** button.
  **Note:** Some Operating Systems may have licensing fees associated with them; for ones that have a licensing fee, the cost will be displayed in the portal prior to purchase. Ubuntu 20.04 is an Open Source operating system and no fees will be applied to your account for using this operating system. 
