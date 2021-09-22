@@ -24,7 +24,7 @@ In the event that you accidentally provision a server prior to adding your crede
 2. In the top right corner of the Edge Services Portal, click on your Name.
 3. Click **User Settings**.
 4. Enter your Linux and Windows username(s) and password(s). 
- **Note:** Ubuntu is the approved OS for Solana validators, it is a required step that you enter your Linux credentials under the **User Settings**.
+ **Note:** Ubuntu is the approved OS for Solana validators, it is a required step that you enter your Linux credentials under **User Settings**.
 5. Press **Save**.
 
 ### Steps to Provision a Solana Validator Edge Bare Metal Server
@@ -42,6 +42,7 @@ Log into your Lumen Edge account within the Lumen Edge Services portal. To start
  ![Instance Operating System Select](../images/Solana-Validator_grphx/003_Solana-V_Instance-OS-select.png)
 4. Instance Summary: in this section, you will see multiple fields. 
  ![Instance Summary](../images/Solana-Validator_grphx/004_Solana-V_Instance-Summary.png)
+
  Below outlines the purpose of each field in the image above.
 
  **Group**
@@ -59,7 +60,8 @@ Log into your Lumen Edge account within the Lumen Edge Services portal. To start
   The environment is just there to provide segmentation of server groups across environments.
   The Environments section is where you create and manage your environment labels, which are available in the Environment dropdown during Instance or App provisioning.
  An Instance’s environment label can be changed by editing the Instance.
-  **Label**
+
+ **Label**
  - Required field, free text, no cost.
  Customers can add labels to the servers as they see fit.
  Labels just provide another way for customers to manage, report, or group servers.
@@ -120,7 +122,7 @@ Log into your Lumen Edge account within the Lumen Edge Services portal. To start
     - Tampa
  
  **Network Type**
- - Required field, drop down, 
+ - Required field, drop down. 
  This field is where you select the Network type for connecting to your Edge Bare Metal server.
  Currently, there is only one Network type available, which is Public Internet. Additional Network types, including IPVPN, will be available in future releases.
  To learn more about the list costs associated with Network type selections, please visit this Knowledge Base article.
@@ -150,7 +152,7 @@ Log into your Lumen Edge account within the Lumen Edge Services portal. To start
 6. Automation
  Currently, this section is not functional, please press the **NEXT** button to proceed.
 7. Review 
- ![Configuration Final Review Screen](../images/Solana-Validator_grphx/007_Solana-V_final-review-screen.png)
+![Configuration Final Review Screen](../images/Solana-Validator_grphx/007_Solana-V_final-review-screen.png)
 
 This is the final screen for customers to review all of the sections from the previous steps. Once you press the **COMPLETE** button, the server will begin provisioning.
 
