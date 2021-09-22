@@ -8,7 +8,7 @@
 }}}
 
 ### Description
-This article will outline the step-by-step process to provision a bare metal server within the Lumen Edge Services portal specific to the contracted server configuration approved for Solana validators.
+This article outlines the step-by-step process to provision a bare metal server within the Lumen Edge Services portal specific to the contracted server configuration approved for Solana validators.
 
 ### Prerequisites
 The Solana Validator needs to add credentials for the instance type (Linux or Windows) in their profile. Then at deployment the applicable credentials for the provisioning user are added to the server by default.
@@ -32,7 +32,7 @@ In the event that you accidentally provision a server prior to adding your crede
 Log into your Lumen Edge account within the Lumen Edge Services portal. To start the Provision Server process, use the top navigation and choose **Provisioning**.
 
 1.	Under the **Provisioning** tab, choose **Instances**. 
- ![Provisioning > Instances menu](../images/Solana-Validator_grphx/001_Solana-V_Instances.png)
+ ![Provisioning > Instances menu](../images/Solana-Validator_grphx/001_Solana-V_Instances.png) 
 2.	Once under the **Instances** tab, Click the **+ADD** button; this will begin the process of Provisioning a Bare Metal server. 
  ![Click the +Add button](../images/Solana-Validator_grphx/002_Solana-V_+Add-button.jpg)
 3. Create Instance Type: the approved Operating System for Solana Validator software is **Ubuntu 20.04**.
