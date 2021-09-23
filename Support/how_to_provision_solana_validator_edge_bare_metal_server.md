@@ -65,49 +65,49 @@ Log into your Lumen Edge account within the Lumen Edge Services portal. To start
     Labels just provide another way for customers to manage, report, or group servers.
  
 5. Configuration Options
- In this section, you will see multiple fields. Once you have made selections for all the required fields, please review each for accuracy, and press the **NEXT** button to proceed to the next steps.
- Please note, there are some prerequisites and actions users must take for some fields below. Please read this section carefully before moving on to Step 7.
- ![Configuration Options](../images/Solana-Validator_grphx/005_Solana-V_configuration-options.png)
- Below outlines the purpose of each field in the image above.
+    In this section, you will see multiple fields. Once you have made selections for all the required fields, please review each for accuracy, and press the **NEXT** button to proceed to the next steps.
+    Please note, there are some prerequisites and actions users must take for some fields below. Please read this section carefully before moving on to Step 7.
+    ![Configuration Options](../images/Solana-Validator_grphx/005_Solana-V_configuration-options.png)
+    Below outlines the purpose of each field in the image above.
 
- **Version**
- - Required field, drop down, cost based on OS.
- The operating system approved for Solana Validator software is Ubuntu 20.04. Choose the 20.04 version under the version drop down field. 
+    **Version**
+    - Required field, drop down, cost based on OS.
+    The operating system approved for Solana Validator software is Ubuntu 20.04. Choose the 20.04 version under the version drop down field. 
 
- **Layout**
- - Required field, pre-populated, cost based on OS.
- This field is pre-populated with the Operating System you selected in Step 4.
+    **Layout**
+    - Required field, pre-populated, cost based on OS.
+    This field is pre-populated with the Operating System you selected in Step 4.
 
- **IMPORTANT NOTE FOR SOLANA VALIDATORS**
- There is only one Bare Metal Server plan that is approved for Solana Validator software. 
- It is the responsibility of the Solana validator to select the approved server plan. If the wrong server plan is selected, the validator is responsible for any incurred charges and will be billed accordingly. 
- Solana validators are approved to purchase up to two validator servers at the special Solana contracted rate per the contract you signed. 
- The two validator servers will not have egress bandwidth charges applied. 
- The list pricing in the portal applies to any services you procure above and beyond the two validator servers that are outlined in the Solana Validator contract. 
- The special pricing will be applied at the time of invoicing and the price in the portal is rounded to the nearest hourly unit using the formula below.
+    **IMPORTANT NOTE FOR SOLANA VALIDATORS**
+    There is only one Bare Metal Server plan that is approved for Solana Validator software. 
+    It is the responsibility of the Solana validator to select the approved server plan. If the wrong server plan is selected, the validator is responsible for any incurred charges and will be billed accordingly. 
+    Solana validators are approved to purchase up to two validator servers at the special Solana contracted rate per the contract you signed. 
+    The two validator servers will not have egress bandwidth charges applied. 
+    The list pricing in the portal applies to any services you procure above and beyond the two validator servers that are outlined in the Solana Validator contract. 
+    The special pricing will be applied at the time of invoicing and the price in the portal is rounded to the nearest hourly unit using the formula below.
 
- **ASSUMPTIONS FOR CALCULATION OF HOURLY COMPUTE**
- - 720 hours in a month
- - 30.42 days in a month
- - 4.35 weeks in a month
+    **ASSUMPTIONS FOR CALCULATION OF HOURLY COMPUTE**
+    - 720 hours in a month
+    - 30.42 days in a month
+    - 4.35 weeks in a month
 
- Validators can purchase other plans and services with the Edge Services portal. Please note that those services will all bill at list price. For estimated costing of list prices for Edge services outside of the Solana validator contract, please visit the [Edge Price Estimator](https://www.ctl.io/estimator/).
+    Validators can purchase other plans and services with the Edge Services portal. Please note that those services will all bill at list price. For estimated costing of list prices for Edge services outside of the Solana validator contract, please visit the [Edge Price Estimator](https://www.ctl.io/estimator/).
 
- **Plan**
- - Required field. Select the approved server configuration under the plan drop down field. The approved server configuration and plan for Solana validators is listed below.
- **Cores: 32 RAM (GB): 256 Storage (GB): 2400** 
- ![Configuration Options](../images/Solana-Validator_grphx/006_Solana-V_approved-server-configuration.png)
+    **Plan**
+    - Required field. Select the approved server configuration under the plan drop down field. The approved server configuration and plan for Solana validators is listed below.
+    **Cores: 32 RAM (GB): 256 Storage (GB): 2400** 
+    ![Configuration Options](../images/Solana-Validator_grphx/006_Solana-V_approved-server-configuration.png)
 
- **Volumes**
- - Required field, pre-populated, not editable. 
- This field shows the storage volumes for the related Server Plan selected. 
+    **Volumes**
+    - Required field, pre-populated, not editable. 
+    This field shows the storage volumes for the related Server Plan selected. 
 
- **Location**
- - Required field, drop down. 
- This field is where you will select which Lumen Edge data center you want to deploy the Solana Validator Bare Metal Server in.
- Currently, the below locations are the ONLY locations available for Solana validators, please choose one of the locations listed below. New sites will be added in a phased approach, and this documentation will be updated with the new sites as they become available to Solana Validators. 
+    **Location**
+    - Required field, drop down. 
+    This field is where you will select which Lumen Edge data center you want to deploy the Solana Validator Bare Metal Server in.
+    Currently, the below locations are the ONLY locations available for Solana validators, please choose one of the locations listed below. New sites will be added in a phased approach, and this documentation will be updated with the new sites as they become available to Solana Validators. 
 
- **If you choose a location outside of the list below, the server will fail to provision.** 
+    **If you choose a location outside of the list below, the server will fail to provision.** 
  
     - San Diego
     - Denver
@@ -120,36 +120,36 @@ Log into your Lumen Edge account within the Lumen Edge Services portal. To start
     - Pittsburgh
     - Tampa
  
- **Network Type**
- - Required field, drop down. 
- This field is where you select the Network type for connecting to your Edge Bare Metal server.
- Currently, there is only one Network type available, which is Public Internet. Additional Network types, including IPVPN, will be available in future releases.
- To learn more about the list costs associated with Network type selections, please visit this Knowledge Base article.
- Per the Solana Validator contract that you signed, validators can provision up to two Solana validator Bare Metal instances.
+    **Network Type**
+    - Required field, drop down. 
+    This field is where you select the Network type for connecting to your Edge Bare Metal server.
+    Currently, there is only one Network type available, which is Public Internet. Additional Network types, including IPVPN, will be available in future releases.
+    To learn more about the list costs associated with Network type selections, please visit this Knowledge Base article.
+    Per the Solana Validator contract that you signed, validators can provision up to two Solana validator Bare Metal instances.
 
- **Bandwidth**
- - Required field, drop down.
- This field is where you select your Network Bandwidth.
+    **Bandwidth**
+    - Required field, drop down.
+    This field is where you select your Network Bandwidth.
 
- **Egress is waived for Solana Validators at the 1 Gbps rate for up to 2 Solana Validator Bare Metal Servers**
- The approved Bandwidth rate Selection for Solana Validator Software is 1 Gbps. It is the responsibility of the Solana validator to select the approved Bandwidth selection of 1 Gbps. If you select any other Bandwidth rate other than 1 Gbps, you could incur egress charges based on your true usage. 
+    **Egress is waived for Solana Validators at the 1 Gbps rate for up to 2 Solana Validator Bare Metal Servers**
+    The approved Bandwidth rate Selection for Solana Validator Software is 1 Gbps. It is the responsibility of the Solana validator to select the approved Bandwidth selection of 1 Gbps. If you select any other Bandwidth rate other than 1 Gbps, you could incur egress charges based on your true usage. 
 
- **Note for list pricing for egress**
- Public Internet Egress is charged based upon total number of bytes transferred over the course of the month.
- Bandwidth selection identifies the requested rate limit for the internet port and is selected during the provisioning of the Bare Metal server instance.
+    **Note for list pricing for egress**
+    Public Internet Egress is charged based upon total number of bytes transferred over the course of the month.
+    Bandwidth selection identifies the requested rate limit for the internet port and is selected during the provisioning of the Bare Metal server instance.
 
- **Note:** Higher rate limits can pass more traffic, which could result in additional Internet charges.
- Customers should choose the Bandwidth selection that best fits their business needs to avoid unintended Internet charge spikes.
- Network charges are outlined in [this Knowledge Base article](https://www.ctl.io/knowledge-base/edge-computing-solutions/getting-started/edge-bare-metal-billing/).
+    **Note:** Higher rate limits can pass more traffic, which could result in additional Internet charges.
+    Customers should choose the Bandwidth selection that best fits their business needs to avoid unintended Internet charge spikes.
+    Network charges are outlined in [this Knowledge Base article](https://www.ctl.io/knowledge-base/edge-computing-solutions/getting-started/edge-bare-metal-billing/).
 
- **User Config**
- - Required field, pre-populated, no cost, no action required. 
+    **User Config**
+    - Required field, pre-populated, no cost, no action required. 
 
- **Advanced Options**
- - Non-Required fields, free text, no costs.
- These fields are discretionary for the customer to use as they see fit.
+    **Advanced Options**
+    - Non-Required fields, free text, no costs.
+    These fields are discretionary for the customer to use as they see fit.
 6. Automation
- Currently, this section is not functional, please press the **NEXT** button to proceed.
+    Currently, this section is not functional, please press the **NEXT** button to proceed.
 7. Review 
 ![Configuration Final Review Screen](../images/Solana-Validator_grphx/007_Solana-V_final-review-screen.png)
 
