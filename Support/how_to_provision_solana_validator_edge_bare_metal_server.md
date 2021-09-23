@@ -38,7 +38,6 @@ Log into your Lumen Edge account within the Lumen Edge Services portal. To start
 3. Create Instance Type: the approved Operating System for Solana Validator software is **Ubuntu 20.04**.
  Choose the Ubuntu operating system for this server and click the **NEXT** button.
  **Note:** Some Operating Systems may have licensing fees associated with them; for ones that have a licensing fee, the cost will be displayed in the portal prior to purchase. Ubuntu 20.04 is an Open Source operating system and no fees will be applied to your account for using this operating system. 
-
  ![Instance Operating System Select](../images/Solana-Validator_grphx/003_Solana-V_Instance-OS-select.png)
 4. Instance Summary: in this section, you will see multiple fields. 
  ![Instance Summary](../images/Solana-Validator_grphx/004_Solana-V_Instance-Summary.png)
