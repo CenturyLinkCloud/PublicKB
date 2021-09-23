@@ -40,30 +40,30 @@ Log into your Lumen Edge account within the Lumen Edge Services portal. To start
  **Note:** Some Operating Systems may have licensing fees associated with them; for ones that have a licensing fee, the cost will be displayed in the portal prior to purchase. Ubuntu 20.04 is an Open Source operating system and no fees will be applied to your account for using this operating system. 
  ![Instance Operating System Select](../images/Solana-Validator_grphx/003_Solana-V_Instance-OS-select.png)
 4. Instance Summary: in this section, you will see multiple fields. 
- ![Instance Summary](../images/Solana-Validator_grphx/004_Solana-V_Instance-Summary.png)
+  ![Instance Summary](../images/Solana-Validator_grphx/004_Solana-V_Instance-Summary.png)
 
- Below outlines the purpose of each field in the image above.
+  Below outlines the purpose of each field in the image above.
 
- **Group**
- - Required field, pre-populated, no cost.
- Currently, the only Group option available, "Lumen Administration", and is pre-populated for you.
- As the platform evolves, customers will have more Group options to choose from.
+  **Group**
+  - Required field, pre-populated, no cost.
+  Currently, the only Group option available, "Lumen Administration", and is pre-populated for you.
+  As the platform evolves, customers will have more Group options to choose from.
 
- **Name**
- - Required field, free text, no cost.
- Customers can name the servers as they see fit.
+  **Name**
+  - Required field, free text, no cost.
+  Customers can name the servers as they see fit.
 
- **Environment**
- - Required field, drop down, no cost.
+  **Environment**
+  - Required field, drop down, no cost.
   Customers can choose which environment they want the server to be hosted.
   The environment is just there to provide segmentation of server groups across environments.
   The Environments section is where you create and manage your environment labels, which are available in the Environment dropdown during Instance or App provisioning.
- An Instance’s environment label can be changed by editing the Instance.
+  An Instance’s environment label can be changed by editing the Instance.
 
- **Label**
- - Required field, free text, no cost.
- Customers can add labels to the servers as they see fit.
- Labels just provide another way for customers to manage, report, or group servers.
+  **Label**
+  - Required field, free text, no cost.
+  Customers can add labels to the servers as they see fit.
+  Labels just provide another way for customers to manage, report, or group servers.
 5. Configuration Options
  In this section, you will see multiple fields. Once you have made selections for all the required fields, please review each for accuracy, and press the **NEXT** button to proceed to the next steps.
  Please note, there are some prerequisites and actions users must take for some fields below. Please read this section carefully before moving on to Step 7.
