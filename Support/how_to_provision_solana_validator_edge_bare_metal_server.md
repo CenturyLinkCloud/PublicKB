@@ -41,7 +41,6 @@ Log into your Lumen Edge account within the Lumen Edge Services portal. To start
  ![Instance Operating System Select](../images/Solana-Validator_grphx/003_Solana-V_Instance-OS-select.png)
 4. Instance Summary: in this section, you will see multiple fields. 
   ![Instance Summary](../images/Solana-Validator_grphx/004_Solana-V_Instance-Summary.png)
-
   Below outlines the purpose of each field in the image above.
 
   **Group**
