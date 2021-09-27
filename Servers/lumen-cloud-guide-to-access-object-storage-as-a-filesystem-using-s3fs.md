@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Cloud Guide to Access Object Storage as a Filesystem Using s3fs",
-  "date": "09-14-2016",
+  "date": "09-27-2021",
   "author": "Gavin Lai",
   "attachments": [],
   "contentIsHTML": false
@@ -132,4 +132,4 @@ The parameters required for this script are:
 
 ### Support
 * For issues related to deploying s3fs or accessing the deployed software, please visit the [s3fs Website](//github.com/s3fs-fuse/s3fs-fuse)
-* For issues related to cloud infrastructure (VM's, network, etc), or if you experience a problem deploying any Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](//t3n.zendesk.com/tickets/new).
+* For issues related to cloud infrastructure (VM's, network, etc), or if you experience a problem deploying any Blueprint or Script Package, please open a Lumen Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the Lumen Cloud Support website](https://www.ctl.io/knowledge-base/support/how-do-i-report-a-support-issue/).
