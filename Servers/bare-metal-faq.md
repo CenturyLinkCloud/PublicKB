@@ -1,6 +1,6 @@
 {{{
   "title": "Bare Metal FAQ",
-  "date": "2-28-2018",
+  "date": "09-27-2021",
   "author": "Lumen",
   "attachments": [],
   "contentIsHTML": false,

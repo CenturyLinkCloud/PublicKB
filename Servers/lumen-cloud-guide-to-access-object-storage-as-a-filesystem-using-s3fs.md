@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Cloud Guide to Access Object Storage as a Filesystem Using s3fs",
-  "date": "09-14-2016",
+  "date": "09-27-2021",
   "author": "Gavin Lai",
   "attachments": [],
   "contentIsHTML": false
