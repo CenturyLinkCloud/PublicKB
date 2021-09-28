@@ -1,6 +1,6 @@
 {{{
   "title": "Bare Metal FAQ",
-  "date": "2-28-2018",
+  "date": "09-27-2021",
   "author": "Lumen",
   "attachments": [],
   "contentIsHTML": false,
@@ -178,7 +178,6 @@ For complete customization to configure the RAID controller and disks as desired
 
 For command line scripting:
 * [PERCCLI Utility provided by Dell](http://www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=3XDPP)
-  * [PERCCLI Reference Guide](http://topics-cdn.dell.com/pdf/poweredge-rc-h730_Reference%20Guide_en-us.pdf)
 
 In addition, Runner jobs will soon be made available to help automate certain common configurations making RAID configurations easier.
 
