@@ -1,6 +1,6 @@
 {{{
   "title": "How to Provision a Bare Metal Server",
-  "date": "9-23-2021",
+  "date": "9-28-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -71,7 +71,7 @@ This fields where you select your Bare Metal Server configurations.
 
 *Note,
 Currently there are two server configuration available, additional configurations will be available in future releases.
-For a list of server configuration capacity per site, please visit this [Knowledge Base article](../getting-started/lumen-edge-bare-metal-availability/).
+For a list of server configuration capacity per site, please visit this [Knowledge Base article](../Getting Started/lumen-edge-bare-metal-availability).
 For estimated costing of server configuration, please visit the [Edge Price Estimator](https://www.ctl.io/estimator/).
 Under the plan field, the server configuration selection and the cost associated will populate.
 Ex. Cores: 32  Memory: 768 GB   Price: $3,708.00 / Month
