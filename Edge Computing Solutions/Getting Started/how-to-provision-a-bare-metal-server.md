@@ -141,7 +141,7 @@ In the event that you accidentally provision a server prior to adding your crede
 
 4. Enter your Linux and Windows username(s) and password(s)  
 
- **Note:** Ubuntu is the approved OS for Solana validators, it is a required step that you enter your Linux credentials under the “User Settings”. 
+    **Note:** Ubuntu is the approved OS for Solana validators, it is a required step that you enter your Linux credentials under the “User Settings”. 
 
 5. Press **Save** 
 
