@@ -25,21 +25,21 @@ Cloud Application Manager improved its SAML support to include encryption and SA
 
 ##### EC2 instance role support in Cloud Application Manager Dedicated Edition
 
-Cloud Application Manager Dedicated now supports leveraging an EC2 Instance Role as an authorization mechanism for all AWS API calls the appliance performs. EC2 Instance Roles ease credential management and increase security for applications running in EC2 instances, so this feature only applies to appliances running as AWS EC2 Instances. Once set, you will only be able to configure new AWS providers using an IAM Role. For more information, refer to [Cloud Application Manager Dedicated with EC2 Instance Role](../../Cloud Application Manager/Dedicated Edition/camd-with-aws-master-account.md)
+Cloud Application Manager Dedicated now supports leveraging an EC2 Instance Role as an authorization mechanism for all AWS API calls the appliance performs. EC2 Instance Roles ease credential management and increase security for applications running in EC2 instances, so this feature only applies to appliances running as AWS EC2 Instances. Once set, you will only be able to configure new AWS providers using an IAM Role. For more information, refer to [Cloud Application Manager Dedicated with EC2 Instance Role](https://www.ctl.io/knowledge-base/archive/camd-with-aws-master-account/)
 
 ##### Support for multiple ServiceNow instances
 
-Cloud Application Manager now adds support to configure multiple ServiceNow instances to integrate with. The organization settings page provides the ability to set up multiple ServiceNow instance configurations within the organization. From there, every deployment of an instance in Cloud Application Manager will inform all ServiceNow instances CMDB about the new resource, will show its IDs in the instance details page, and will inform all ServiceNow instances CMDB about termination of an instance so it can be removed there as well.
+Cloud Application Manager now adds support to configure multiple ServiceNow instances to integrate with. The organization settings page provides the ability to set up multiple ServiceNow instance configurations within the organization. From there, every deployment of an instance in Cloud Application Manager will inform all ServiceNow instances in the configuration management database (CMDB) about the new resource, will show its IDs in the instance details page, and will inform all ServiceNow instances in the CMDB about termination of an instance so it can be removed there as well.
 
 ##### User Interface Redesign for Provider Services
 
-Cloud Application Manager has redesigned the user interface formerly used to enable services such as [Managed Services Anywhere](../../Cloud Application Manager/Managed Services/getting-started-with-cam-enable-managed-provider.md), [Automatic Discovery of Resources](../../Cloud Application Manager/Getting Started/register-existing-instance.md) and [Analytics](../../Cloud Application Manager/analytics/cloudapplicationmanageranalyticsui.md). The services toggles that were available in the Edit Provider dialog has been moved to a new tab called Services in the provider details page, where you can manage them and see additional details such as the status of your Managed Services Anywhere enabled locations.
+Cloud Application Manager has redesigned the user interface formerly used to enable services such as [Managed Services Anywhere](https://www.ctl.io/knowledge-base/cloud-application-manager/managed-services/getting-started-with-cam-enable-managed-provider/), [Automatic Discovery of Resources](https://www.ctl.io/knowledge-base/cloud-application-manager/getting-started/register-existing-instance/) and [Analytics](https://www.ctl.io/knowledge-base/cloud-application-manager/analytics/cloudapplicationmanageranalyticsui/). The services toggles that were available in the Edit Provider dialog has been moved to a new tab called Services in the provider details page, where you can manage them and see additional details such as the status of your Managed Services Anywhere enabled locations.
 
 ### Bug Fixes (4)
 
 #### [Lumen Public Cloud](https://www.ctl.io/cloud-platform/)
 
-Fixed bug for API Endpoint /v2/servers/{accountAlias}/{serverName} which allowed the server to be retrieved when providing an incorrect accountAlias as long as it was in the same account hierarchy as the user requesting the data.
+Fixed bug for API Endpoint /v2/servers/{accountAlias}/{serverName}, which allowed the server to be retrieved when providing an incorrect accountAlias as long as it was in the same account hierarchy as the user requesting the data.
 
 #### [Dedicated Cloud Compute (DCC)](https://www.ctl.io/dedicated-cloud-compute/)
 
