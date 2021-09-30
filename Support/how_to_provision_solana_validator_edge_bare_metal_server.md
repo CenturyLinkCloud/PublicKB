@@ -115,7 +115,6 @@ To start the Provision Server process, use the top navigation and choose **Provi
     - Detroit,MI 
     - Jacksonville,FL
     - Kansas City,MO
-    - Kansas City,MO
     - Las Vegas,NV
     - Nashville,TN
     - Phoenix,AZ
