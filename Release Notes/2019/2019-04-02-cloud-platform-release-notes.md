@@ -29,7 +29,7 @@ Cloud Application Manager now adds support to configure multiple ServiceNow inst
 
 ##### User Interface Redesign for Provider Services
 
-Cloud Application Manager has redesigned the user interface formerly used to enable services such as [Managed Services Anywhere](https://www.ctl.io/knowledge-base/cloud-application-manager/managed-services/getting-started-with-cam-enable-managed-provider/), [Automatic Discovery of Resources](https://www.ctl.io/knowledge-base/cloud-application-manager/getting-started/register-existing-instance/) and [Analytics](https://www.ctl.io/knowledge-base/cloud-application-manager/analytics/cloudapplicationmanageranalyticsui/). The services toggles that were available in the Edit Provider dialog has been moved to a new tab called Services in the provider details page, where you can manage them and see additional details such as the status of your Managed Services Anywhere enabled locations.
+Cloud Application Manager has redesigned the user interface formerly used to enable services such as [Managed Services Anywhere](../../Cloud Application Manager/Managed Services/getting-started-with-cam-enable-managed-provider.md), [Automatic Discovery of Resources](../../Cloud Application Manager/Getting Started/register-existing-instance.md) and [Analytics](../../Cloud Application Manager/Analytics/cloudapplicationmanageranalyticsui.md). The services toggles that were available in the Edit Provider dialog has been moved to a new tab called Services in the provider details page, where you can manage them and see additional details such as the status of your Managed Services Anywhere enabled locations.
 
 ### Bug Fixes (4)
 
