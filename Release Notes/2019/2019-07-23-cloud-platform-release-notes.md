@@ -13,7 +13,7 @@
 
 ##### Support for AWS Master Account to authenticate API calls
 
-Cloud Application Manager Dedicated Edition now supports leveraging a custom Master Account as an authorization mechanism for all AWS API calls the appliance performs. In addition to the currently supported EC2 Instance Role for applications running in EC2 instances, this Master Account adds similar privileges for Cloud Application Manager appliances deployed anywhere, simplifying credential management and increasing security. Once the master account is set through the setup console, you will only be able to configure new AWS providers using an IAM Role. For more information, refer to [Cloud Application Manager Dedicated Edition with Master Account](../../archive/camd-with-aws-master-account.md)
+Cloud Application Manager Dedicated Edition now supports leveraging a custom Master Account as an authorization mechanism for all AWS API calls the appliance performs. In addition to the currently supported EC2 Instance Role for applications running in EC2 instances, this Master Account adds similar privileges for Cloud Application Manager appliances deployed anywhere, simplifying credential management and increasing security. Once the master account is set through the setup console, you will only be able to configure new AWS providers using an IAM Role. 
 
 #### [Managed Services Anywhere](https://www.ctl.io/managed-services-anywhere/)
 
