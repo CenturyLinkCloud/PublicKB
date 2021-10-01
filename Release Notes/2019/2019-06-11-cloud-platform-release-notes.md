@@ -13,7 +13,7 @@
 
 ##### Automated vApp Templates Catalog
 
-All new builds will use an automated Catalog subscription model. The Default Catalog, named **(siteID) (data center) cl01 Lumen**, will come populated with various vApp Templates. For more information, please refer to the knowledge base article [Default Catalog and How to Opt Out](../../lumen-edge-private-cloud/catalog/default-catalog.md).
+All new builds will use an automated Catalog subscription model. The Default Catalog, named **(siteID) (data center) cl01 Lumen**, will come populated with various vApp Templates. For more information, please refer to the knowledge base article [Default Catalog and How to Opt Out](../../Lumen Edge Private Cloud/Catalog/default-catalog.md).
 
 #### [Lumen Public Cloud](https://www.ctl.io/dedicated-cloud-compute/)
 
@@ -23,7 +23,7 @@ On May 14, 2019, Microsoft announced CVE-2019-0708, a critical flaw in Remote De
 
 If you have Remote Desktop Services enabled and a public IP, you are at a high risk of being compromised and need to update all machines running Windows 2008 or older ASAP. At the very least, please disable Remote Desktop Services if you can until the updates are performed.  
 
-In all cases, Lumen recommends that you to install the updates for this vulnerability as soon as possible.  Where able, migrate applications to a newer version of Windows as Windows 2008 is going end of support Jan 2020.  For responses to FAQs regarding Windows 2008 support please see [this Knowledge Base article](../../support/windows-2008-end-of-vendor-support-faq.md).
+In all cases, Lumen recommends that you to install the updates for this vulnerability as soon as possible.  Where able, migrate applications to a newer version of Windows as Windows 2008 is going end of support Jan 2020.  For responses to FAQs regarding Windows 2008 support please see [this Knowledge Base article](../../Support/windows-2008-end-of-vendor-support-faq.md).
 
 ##### Important Notice Regarding End of Sale for Lumen Cloud Managed Backup
 
