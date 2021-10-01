@@ -13,7 +13,7 @@
 
 ##### Support for AWS Master Account to authenticate API calls
 
-Cloud Application Manager Dedicated Edition now supports leveraging a custom Master Account as an authorization mechanism for all AWS API calls the appliance performs. In addition to the currently supported EC2 Instance Role for applications running in EC2 instances, this Master Account adds similar privileges for Cloud Application Manager appliances deployed anywhere, simplifying credential management and increasing security. Once the master account is set through the setup console, you will only be able to configure new AWS providers using an IAM Role. For more information, refer to [Cloud Application Manager Dedicated Edition with Master Account](https://www.ctl.io/knowledge-base/archive/camd-with-aws-master-account/)
+Cloud Application Manager Dedicated Edition now supports leveraging a custom Master Account as an authorization mechanism for all AWS API calls the appliance performs. In addition to the currently supported EC2 Instance Role for applications running in EC2 instances, this Master Account adds similar privileges for Cloud Application Manager appliances deployed anywhere, simplifying credential management and increasing security. Once the master account is set through the setup console, you will only be able to configure new AWS providers using an IAM Role. For more information, refer to [Cloud Application Manager Dedicated Edition with Master Account](../../archive/camd-with-aws-master-account/)
 
 #### [Managed Services Anywhere](https://www.ctl.io/managed-services-anywhere/)
 
@@ -31,7 +31,7 @@ As with all Actions, the MS Teams Action type can be applied at all scope levels
 
 ##### Single Sign On for all Lumen products
 
-This month we are deploying a new security feature. Single Sign On (SSO), will provide enhanced security capabilities and enable a single login for all your Lumen products.
+This month we are deploying a new security feature. Single Sign On (SSO) will provide enhanced security capabilities and enable a single login for all your Lumen products.
 
 Once released, you can opt into a one-time setup to create a new Master Account using the "Sign in with Lumen Master Account" button on the login page. You will then receive a one-time prompt to provide credentials to link your services to your master account. This will allow you to navigate between services without re-authenticating going forward.
 
