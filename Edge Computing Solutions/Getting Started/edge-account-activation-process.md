@@ -37,7 +37,7 @@ A Lumen account specialist will reach out to you within 3 business days to assis
 ### Edge Account Activation Process
 
 1. Please go [here](https://www.ctl.io/edge-computing-solutions/account-activation/) to start the process.
-2. Select the "Sign In To Control Center" button.
+2. Select the "SIGN IN TO CONTROL CENTER" button.
 3. Enter your Control Center credentials.
 4. A form will pre-populate based on the Control Center credentials provided.
 5. Fill out the form and review for accuracy.
