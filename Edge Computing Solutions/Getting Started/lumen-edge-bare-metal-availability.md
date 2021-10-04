@@ -17,7 +17,7 @@ The table below provides current availability of **Edge Bare Metal** configurati
 
 **Region**|**Edge Bare Metal Site Locations**|**32 Cores, 384 GB RAM, 7,680 GB SSD**|**32 Cores, 768 GB RAM, 32,200 GB SSD**
 |----------:|:-------------:|:--------------:|:---------------------:|
-EMEA|Amsterdam|0|0
+EMEA|Amsterdam|0|15
 NA|Atlanta, GA|2|5
 NA|Austin, TX|7|5
 NA|Boise, ID|1|10
@@ -36,7 +36,7 @@ NA|Kansas City, MO|1|17
 CA|Lachine, Quebec|14|4
 NA|Las Vegas, NV|4|6
 NA|Little Rock, AK|10|10
-EMEA|London, England|0|0
+EMEA|London, England|0|2
 NA|Madison, WI|12|8
 NA|McAllen, TX|11|12
 NA|Metairie, LA|7|11
@@ -45,7 +45,7 @@ NA|Minneapolis, MN|0|10
 NA|Nashville, TN|1|2
 NA|New York, NY|13|10
 NA|Omaha, NE|14|10
-EMEA|Paris, France|0|0
+EMEA|Paris, France|0|18
 NA|Philadelphia, PA|13|6
 NA|Phoenix, AZ|0|8
 NA|Pittsburgh, PA|1|9
