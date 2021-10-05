@@ -5,7 +5,7 @@
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
-  "sticky": false
+  "sticky": true
 }}}
 
 ### Description
