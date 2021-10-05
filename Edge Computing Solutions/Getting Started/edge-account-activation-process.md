@@ -1,6 +1,6 @@
 {{{
   "title": "Edge Account Activation Process",
-  "date": "2-21-2021",
+  "date": "09-28-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -20,7 +20,7 @@ This article outlines how the self-service Edge Account Activation Process works
 
 **Existing Lumen Customer without a Control Center account**
 
-If you are an existing Lumen customer but do not have a [Control Center account](https://www.lumen.com/help/en-us/control-center.html), you can create a Control Center account [here](https://controlcenter.centurylink.com/business/prelogin/#/self-registration).
+If you are an existing Lumen customer but do not have a [Control Center account](https://www.lumen.com/help/en-us/control-center.html), you can create a Control Center account [here](https://controlcenter.lumen.com/business/prelogin/#/self-registration).
 You will need to provide your company Billing Account Number (BAN) to create the Control Center account.
 
 Once you have successfully created a Control Center account, you can follow the same digital self-service Edge account activation process outlined under the 'Edge Account Activation Process' section below.
@@ -31,13 +31,13 @@ Existing Lumen Customers can also reach out to their account manager for further
 
 Self-service Edge account activation will be available in the future to new customers.
 
-If you are a new Lumen customer and want to create an Edge account, please go [here](/edge-computing-solutions/account-activation/) and choose the "Contact an Expert" button.
+If you are a new Lumen customer and want to create an Edge account, please go [here](https://www.ctl.io/edge-computing-solutions/account-activation/) and choose the "CONTACT AN EXPERT" button.
 A Lumen account specialist will reach out to you within 3 business days to assist you.
 
 ### Edge Account Activation Process
 
-1. Please go [here](/edge-computing-solutions/account-activation/) to start the process.
-2. Select the "Sign In To Control Center" button.
+1. Please go [here](https://www.ctl.io/edge-computing-solutions/account-activation/) to start the process.
+2. Select the "SIGN IN TO CONTROL CENTER" button.
 3. Enter your Control Center credentials.
 4. A form will pre-populate based on the Control Center credentials provided.
 5. Fill out the form and review for accuracy.
@@ -58,7 +58,7 @@ There are two reasons why you may get an Edge account activation failure message
 1. Your organization already has an Edge Account.
 
 In this scenario, you will see a pop-up message display on the page that says "Account Already Exists".
-In this event, you will need to Contact your [Control Center system administrator](https://www.lumen.com/help/en-us/control-center/general/finding-your-organizations-control-center-system-administrator.html) to request access to the account.
+In this event, you will need to Contact your [Control Center system administrator](https://controlcenter.lumen.com/business/prelogin/#/self-registration) to request access to the account.
 
 2. Account Activation Failed for unknown reasons
 
