@@ -36,7 +36,7 @@ NA|Kansas City, MO|1|17
 CA|Lachine, Quebec|14|4
 NA|Las Vegas, NV|4|6
 NA|Little Rock, AK|10|10
-EMEA|London, England|0|2
+EMEA|London, England|0|0
 NA|Madison, WI|12|8
 NA|McAllen, TX|11|12
 NA|Metairie, LA|7|11
