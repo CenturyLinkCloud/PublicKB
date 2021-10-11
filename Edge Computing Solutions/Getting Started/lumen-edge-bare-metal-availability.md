@@ -1,13 +1,13 @@
 {{{
   "title": "Lumen Edge Bare Metal Availability",
-  "date": "10-7-2021",
+  "date": "10-12-2021",
   "author": "Randy Roten",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
 }}}
 
-**Lumen** is rapidly adding **Edge Computing Solutions** locations across the globe to provide performance and speed for latency sensitive, data-intensive applications.
+**Lumen is rapidly adding Edge Computing Solutions** locations across the globe to provide performance and speed for latency sensitive, data-intensive applications.
 
 **Lumen Edge Bare Metal** provides low-latency on-demand Bare Metal servers via the **Edge Platform**. Learn more about **Edge Bare Metal** **[here]**(/edge-computing-solutions/edge-bare-metal/).
 
