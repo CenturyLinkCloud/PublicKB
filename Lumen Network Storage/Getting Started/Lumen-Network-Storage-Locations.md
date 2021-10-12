@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Network Storage Locations",
-  "date": "7-02-2021",
+  "date": "10-12-2021",
   "author": "Brad Lewis",
   "attachments": [],
   "contentIsHTML": false,
