@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Bare Metal Availability",
-  "date": "10-19-2021",
+  "date": "10-21-2021",
   "author": "Randy Roten",
   "attachments": [],
   "contentIsHTML": false,
@@ -19,9 +19,9 @@ The table below provides current availability of **Edge Bare Metal** configurati
 |:----------|:-------------:|:--------------:|:---------------------:|
 EMEA|Amsterdam|0|18
 NA|Atlanta, GA|1|7
-NA|Austin, TX|8|13
+NA|Austin, TX|8|12
 NA|Boise, ID|13|14
-NA|Chicago, IL|0|15
+NA|Chicago, IL|0|14
 NA|Cambridge, MA|12|13
 NA|Charlotte, NC|10|2
 NA|Cincinnati, OH|5|21
@@ -36,9 +36,9 @@ NA|Kansas City, MO|1|18
 CA|Lachine, Quebec|18|14
 NA|Las Vegas, NV|4|8
 NA|Little Rock, AK|12|12
-EMEA|London, England|0|14
+EMEA|London, England|0|13
 NA|Madison, WI|12|8
-NA|McAllen, TX|14|14
+NA|McAllen, TX|14|13
 NA|Metairie, LA|17|14
 NA|Miami, FL|11|9
 NA|Minneapolis, MN|4|11
@@ -47,10 +47,10 @@ NA|New York, NY|14|23
 NA|Omaha, NE|13|10
 EMEA|Paris, France|0|20
 NA|Philadelphia, PA|13|6
-NA|Phoenix, AZ|1|9
+NA|Phoenix, AZ|1|8
 NA|Pittsburgh, PA|1|11
 NA|Portland, OR|8|2
-NA|Reno, NV|12|20
+NA|Reno, NV|12|8
 NA|Salt Lake City, UT|6|21
 NA|San Antonio, TX|3|16
 NA|San Diego, CA|0|10
