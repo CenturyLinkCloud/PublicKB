@@ -50,7 +50,7 @@ View a specific group: `curl https://api.gomorpheus.com/api/groups/:id -H "Autho
 #### Adding Groups
 ---
 
-![New Group dialog](../images/LEO-Group-Creation_art/001_Add_Group.png)
+![New Group dialog](../../images/LEO-Group-Creation_art/001_Add_Group.png)
 
 
 To add a group:
@@ -64,7 +64,7 @@ To add a group:
 #### Managing Groups
 ---
 
-![Group Management interface](../images/LEO-Group-Creation_art/002_Group_View.png)
+![Group management interface](../../images/LEO-Group-Creation_art/002_Group_View.png)
 
 To view a Group:
 
