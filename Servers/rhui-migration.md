@@ -23,18 +23,18 @@ The issue can be fixed by running a package script provided by the Public Cloud 
 #### Control Portal
 
 1. Log into the [control portal](https://control.ctl.io).
-1. Select "infrastructure" on the left-hand navigation menu, then select "servers".
+1. Select "infrastructure" on the left-hand navigation menu, then select "servers".  
 ![Navigating to the Servers List](../images/servers-dashboard-select.png)
-1. Select the server's group (e.g. "Default Group").
+1. Select the server's group (e.g. "Default Group").  
 ![Navigating to the Server's Group](../images/server-group-select.png)
-1. On the action bar above the graphs, select "execute package".
+1. On the action bar above the graphs, select "execute package".  
 ![Opening the Script Package Execution Page](../images/execute-package-select.png)
 1. Select the package script.
     1. Provide "rhui" in the package library search field.
     1. Select the "all" radial button.
-    1. Select "RHUI 2 to 3 Migration Script".
+    1. Select "RHUI 2 to 3 Migration Script".  
     ![Selecting the Script Package](../images/script-package-select.png)
-1. Select the desired server from the server list.
+1. Select the desired server from the server list, then select "execute package".
 1. You will be redirected to the deployment queue. Once the job is complete, log into the server and run `yum clean all` before attempting another update.
 
 #### API
