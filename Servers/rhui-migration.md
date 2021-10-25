@@ -22,7 +22,7 @@ The issue can be fixed by running a package script provided by the Public Cloud 
 
 #### Control Portal
 
-1. Log into the [control portal](https://control.ctl.io).
+1. Log into the [control portal](//control.ctl.io).
 1. Select "infrastructure" on the left-hand navigation menu, then select "servers".  
 ![Navigating to the Servers List](../images/servers-dashboard-select.png)
 1. Select the server's group (e.g. "Default Group").  
@@ -39,7 +39,7 @@ The issue can be fixed by running a package script provided by the Public Cloud 
 
 #### API
 
-There are two methods of calling the API: [directly](https://www.ctl.io/api-docs/v2/#server-actions-execute-package), or by using the [Public Cloud CLI tool](https://www.ctl.io/knowledge-base/servers/lumen-cloud-guide-to-cli). When passing the package ID and parameters to the API, the object should look something like the following where `XXX` is the data center ID (e.g. VA1).
+There are two methods of calling the API: [directly](//www.ctl.io/api-docs/v2/#server-actions-execute-package), or by using the [Public Cloud CLI tool](../Servers/lumen-cloud-guide-to-cli.md). When passing the package ID and parameters to the API, the object should look something like the following where `XXX` is the data center ID (e.g. VA1).
 
 ```
 {
