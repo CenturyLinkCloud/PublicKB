@@ -1,6 +1,6 @@
 {{{
   "title": "How to Provision a Bare Metal Server",
-  "date": "4-21-2021",
+  "date": "9-28-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -9,11 +9,30 @@
  
 ### Description
 
-This article will outline the step-by-step process to provision a bare metal server within the Lumen Edge Orchestrator portal.
+This article will outline the step-by-step process to provision a bare metal server within the Lumen Edge Services portal.
+
+### Prerequisites
+
+The user must add credentials for the instance type (Linux or Windows) in their profile. 
+At deployment the applicable credentials for the provisioning user are added to the server by default.
+
+If you have yet to add credentials for the instance type (Linux or Windows) to your profile, please do that step now by following the steps below. 
+
+**Important**: Failure to add credentials for the instance type in the User Profile will cause you to be locked out of accessing the server.
+
+In the event that you accidentally provision a server prior to adding your credentials, please delete the server, set your credentials, and deploy a new server.
+
+**Steps to add Linux and Windows Settings**
+1. Log into the Edge Services portal.
+2. In the top right corner of the Edge Services Portal, click on your Name.
+3. Click **User Settings**.
+4. Enter your Linux and Windows username(s) and password(s). 
+ **Note:** Ubuntu is the approved OS for Solana Validators/RPC, it is a required step that you enter your Linux credentials under **User Settings**.
+5. Press **Save**.
 
 ### Steps
 
-Log in to the appropriate tenant within the Lumen Edge Orchestrator portal that you want to provision the server in.
+Log in to the appropriate tenant within the Lumen Edge Services portal that you want to provision the server in.
 
 1. To start the Provision Server process, use the top navigation and choose **Provisioning**.
 2. Under the **Provisioning** tab, choose **Instances**.
@@ -35,11 +54,6 @@ Below outlines what each field does in the image above.
 -Required field, pre-populated, no cost
 Currently, the only **Group** option available, **"Lumen Administration"**, is pre-populated for you.
 As the platform evolves, customers will have more Group options to choose from.
-
-**Cloud**
--Required field, pre-populated, no cost
-Currently, the only **Cloud** option available, **"Lumen Edge Computing Solutions"**, is pre-populated for you.
-As the platform evolves, customers will have more Cloud options to choose from.
 
 **Name**
 -Required field, free text, no cost
@@ -75,7 +89,8 @@ This fields pre-populated with the Operating System you selected in Step 4.
 This fields where you select your Bare Metal Server configurations.
 
 *Note,
-Currently there is only one server configuration available, additional configurations will be available in future releases.
+Currently there are two server configuration available, additional configurations will be available in future releases.
+For a list of server configuration capacity per site, please visit this [Knowledge Base article](../Getting Started/lumen-edge-bare-metal-availability).
 For estimated costing of server configuration, please visit the [Edge Price Estimator](https://www.ctl.io/estimator/).
 Under the plan field, the server configuration selection and the cost associated will populate.
 Ex. Cores: 32  Memory: 768 GB   Price: $3,708.00 / Month
@@ -112,9 +127,25 @@ This field applies the user configuration for access to the server.
 Before proceeding, please read.
 
 The customer needs to add credentials for the instance type (Linux or Windows) in their profile. Then at deployment the applicable credentials for the provisioning user is added to the server by default. 
-If you have yet to add credentials for the instance type (Linux or Windows) to your profile, please do that step now.
+If you have yet to add credentials for the instance type (Linux or Windows) to your profile, please complete this by following the steps below.
 **Failure to add credentials for the instance type in the User Profile will cause you to be locked out of accessing the server.**
 In the event that you accidentally provision a server prior to adding your credentials, please delete the server, set your credentials, and deploy a new server.
+
+**Steps to add Linux and Windows Settings** 
+
+1. Log into the Edge Services portal 
+
+2. In the top right corner of the Edge Services Portal, click on your Name 
+
+3. Click **User Settings** 
+
+4. Enter your Linux and Windows username(s) and password(s)  
+
+    **Note:** Ubuntu is the approved OS for Solana validators, it is a required step that you enter your Linux credentials under the “User Settings”. 
+
+5. Press **Save** 
+
+ 
 
 User Groups can also be created to additionally add more users if needed.
 To learn more about overall User Management, please visit this [Knowledge Base article](../Administration/user-management).
@@ -122,7 +153,7 @@ To learn more about overall User Management, please visit this [Knowledge Base a
 **Advanced Options**
 -Non-Required fields, free text, no costs
 These fields are discretionary for the customer to use as they see fit.
-7. Lifecycle
+7. Automation
 Currently, this section is not functional, please press the **NEXT** button to proceed.
 8. Review
   ![PBM6](../../images/PBM6.png)
@@ -133,6 +164,6 @@ If you need to make a change to selections, you can use the **PREVIOUS** button 
 Once you have reviewed for accuracy, please press the **COMPLETE** button to proceed.
 Once you press the **COMPLETE** button your Bare Metal server will begin to provision.
 You will see a live tracker that shows you the progression of your server build with an estimated time of completion.
-On average, large server configurations take up to 30 minutes to build.
+On average, server configurations take up to 30 minutes to build.
 Once the server is built, billing has started and you can manage your Bare Metal Server by going to your **Dashboard** section, and finding the server under the **MY INSTANCES** section of the dashboard.
 To learn more about how to manage your Bare Metal servers, please visit this [Knowledge Base article](../Getting Started/managing-bare-metal-instances).

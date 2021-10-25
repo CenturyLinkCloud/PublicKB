@@ -13,7 +13,7 @@
 
 ##### Automated vApp Templates Catalog
 
-All new builds will use an automated Catalog subscription model. The Default Catalog, named CTL-Golden-Images, will come populated with various vApp Templates. For more information, please refer to the knowledge base article [Default Catalog and How to Opt Out](../../Lumen Private Cloud on VMware Cloud Foundation/Catalog/default-catalog.md).
+All new builds will use an automated Catalog subscription model. The Default Catalog, named **(siteID) (data center) cl01 Lumen**, will come populated with various vApp Templates. For more information, please refer to the knowledge base article [Default Catalog and How to Opt Out](../../Lumen Edge Private Cloud/Catalog/default-catalog.md).
 
 #### [Lumen Public Cloud](https://www.ctl.io/dedicated-cloud-compute/)
 

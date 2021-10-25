@@ -1,11 +1,12 @@
 {{{
-  "title": "Using Lumen Object Storage for Backup as a Service / S3CMD - Object Storage Management for Linux Machines",
-  "date": "6-24-2021",
-  "authors": " Evgeny Rudinsky / Brian Button, updated by Randy Roten",
+  "title": "Lumen Object Storage for Backup as a Service / Linux Machines",
+  "date": "8-10-2021",
+  "author": "Evgeny Rudinsky and Brian Button, updates by Randy Roten",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
 }}}
+
 ### Description
 This article outlines how customers can set up their Lumen Object Storage for Backup as a Service, along with S3CMD Object Storage Management for Linux Machines. 
 

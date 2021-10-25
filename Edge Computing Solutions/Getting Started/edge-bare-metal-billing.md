@@ -1,6 +1,6 @@
 {{{
   "title": "Edge Bare Metal Billing",
-  "date": "3-11-2021",
+  "date": "7-20-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
@@ -46,7 +46,7 @@ For Public Internet, Egress is charged based upon total number of gigabytes tran
 Bandwidth selection identifies the requested rate limit for the internet port and is selected during the provisioning of the Bare Metal server instance.
 **Note:** Higher rate limits can pass more traffic, which could result in additional Internet charges.
 Customers should choose the Bandwidth selection that best fits their business needs to avoid unintended Internet charge spikes.
-Customers are charged for Bandwidth per GB, partial GB output is rounded up.
+Customers are charged for Bandwidth per GB.
 Below is the Public Internet egress cost table.
 
 | Public Egress Tier | Price per GB   |

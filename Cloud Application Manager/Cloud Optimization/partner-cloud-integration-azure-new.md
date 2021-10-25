@@ -17,7 +17,7 @@ multiple Azure subscriptions provides your administrators the ability to easily 
 
 All of our customers are invited to use Cloud Optimization via Cloud Application Manager.
 
-For Azure, we are currently limited to serving billable customers who are not resellers (or customers of resellers) with offices within the United States the United Kingdom, and Canada. Also, the associated Lumen Cloud account cannot be a demo account or internal for Lumen employees. If you need special considerations for setting up an account, please email [cloudintegration@ctl.io](mailto:cloudintegration@ctl.io).
+For Azure, we are currently limited to serving billable customers who are not resellers (or customers of resellers) with offices within the United States the United Kingdom, and Canada. Also, the associated Lumen Cloud account cannot be a demo account or internal for Lumen employees. If you need special considerations for setting up an account, please use the links provided within the Cloud Application Manager portal to open a ticket.
 
 ### Prerequisites
 
