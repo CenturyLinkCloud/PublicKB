@@ -1,29 +1,31 @@
 {{{
   "title": "Getting Started with Managed Microsoft IIS",
-  "date": "4-2-2015",
+  "date": "10-26-2021",
   "author": "Jared Ruckle",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-Internet Information Services (IIS) for Windows&reg; Server is a flexible, secure and manageable Web server for hosting anything on the Web. From media streaming to web applications, IIS's scalable and open architecture is ready to handle the most demanding tasks. MS-IIS Web server application offers a reliable, high performance, and secure vehicle for delivering HTTP content to end users.
+The Internet Information Services (IIS) for Windows&reg; Server is a flexible, secure and manageable Web server for hosting anything on the Web. From media streaming to web applications, IIS's scalable and open architecture is ready to handle the most demanding tasks. The MS-IIS Web server application offers a reliable, high performance, and secure vehicle for delivering HTTP content to end users.
 
-Here's how to create a managed IIS environment in Lumen Cloud. **NOTE: Before you can deploy Managed Microsoft IIS, you must create a Managed Windows server.**
+Here's how to create a managed IIS environment in Lumen Cloud. **NOTE**: Before you can deploy Managed Microsoft IIS, you must create a Managed Windows server.
 
-1. Log on to the [Control Portal](//control.ctl.io/). Using the left side navigation bar, click on **Orchestration** > **Blueprints Library**. Search for IIS. Then, click on the “CLC Managed MS IIS” Blueprint.</strong>
-    ![Blueprint.jpg](https://t3n.zendesk.com/attachments/token/MK7x7CMCYckPkZWt5h8pB492m/?name=Blueprint.jpg)
-2. Click on the "Deploy Blueprint" button.
-    ![Blueprint.jpg](https://t3n.zendesk.com/attachments/token/m1ncTXjaAyDpvPCd7wyrYgSnV/?name=BP_Overview.png)
-3. Fill out the appropriate details for the CLC Managed MS IIS Blueprint, and click "Next".
-    **NOTE** Please choose the same server for both the Installation and Registration of Managed MS IIS. The server must have Managed Windows installed, otherwise the Blueprint will fail.
-    ![Config.jpg](https://t3n.zendesk.com/attachments/token/zMcSjJskKnthuD5Aus7CrpbWC/?name=Config.jpg)
-4. Verify the information is correct.
-5. Once verified, please click on the 'deploy blueprint' button. You will be presented with the deployment details along with an email stating the Blueprint has been queued.
-    ![Queue.jpg](https://t3n.zendesk.com/attachments/token/etFmonl5WMmSvjZ0xwhXrZS1M/?name=Queue.jpg)
+1. Log on to the [Control Portal](//control.ctl.io/). Using the left side navigation bar, select **Orchestration** > **Blueprints Library**. Search for IIS. Then, click the **CLC Managed MS IIS** Blueprint.
+    
+2. Click the **DEPLOY BLUEPRINT** button.
+    
+3. Fill out the appropriate details for the CLC Managed MS IIS Blueprint, and click **Next**.
+
+    **NOTE**: Please choose the same server for both the Installation and Registration of Managed MS IIS. The server must have Managed Windows installed, otherwise the Blueprint will fail.
+    
+4. Verify that the information is correct.
+
+5. Once verified, please click the **DEPLOY BLUEPRINT** button. You will be presented with the deployment details along with an email stating the Blueprint has been queued.
+    
 
 You will receive an email that your Blueprint has been installed when the Blueprint is complete.
 
-**NOTE:** The server now has the Managed MS IIS software installed and activated.
+**NOTE**: The server now has the Managed MS IIS software installed and activated.
 
 ### FREQUENTLY ASKED QUESTIONS
 

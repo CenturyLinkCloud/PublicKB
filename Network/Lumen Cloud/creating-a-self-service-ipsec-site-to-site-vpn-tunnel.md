@@ -1,6 +1,6 @@
 {{{
   "title": "Creating a Self-Service IPsec (Site-to-Site) VPN Tunnel",
-  "date": "1-29-2018",
+  "date": "10-26-2021",
   "author": "Chris Little",
   "attachments": [],
   "contentIsHTML": true
@@ -17,11 +17,11 @@
 </ul>
 <h3>Prerequisites</h3>
 <ul>
-  <li>Must have Account Administrator permissions on the platform</li>
-  <li>Listing of the&nbsp;cloud network(s) you wish to connect to across your tunnel</li>
-  <li>The make, model, and code version of the endpoint device you'll be terminating to</li>
-  <li>Static IP of the peering interface on your device</li>
-  <li>The network blocks you wish to have be reached on your end of the tunnel - <strong>these must be private IP blocks (RFC-1918)</strong>
+  <li>Must have Account Administrator permissions on the platform.</li>
+  <li>Listing of the&nbsp;cloud network(s) you wish to connect to across your tunnel.</li>
+  <li>The make, model, and code version of the endpoint device you'll be terminating to.</li>
+  <li>Static IP of the peering interface on your device.</li>
+  <li>The network blocks you wish to have be reached on your end of the tunnel -- <strong>these must be private IP blocks (RFC-1918).</strong>
   </li>
   <li><strong>You must have resources (server and a network) provisioned for the account and&nbsp;the Cloud&nbsp;data center you wish to connect to.</strong>
   </li>
@@ -31,28 +31,20 @@
   <li><strong>Note:</strong> When making an update to an existing tunnel, a renegotiation may occur depending on what is updated. Making any changes to the Phase1 or Phase2 values will reset the tunnel. Changes to the tunnel encrypted subnets on either side will only affect those subnets modified.</li>
   </ul>
 <ol>
-  <li>Log on to the [Control Portal](https://control.ctl.io/). Using the left side navigation bar, click on **Network** > **VPN**.</li>
-<p>2. Select the create point to point VPN button</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/mdyjptwvqqnnjqa/?name=ipsec+image+02.jpg" alt="ipsec_image_02.jpg" />
-</p>
-<p>3. Select the appropriate Cloud Data Center for the VPN Tunnel</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/de2loiadv00zgzc/?name=ipsec+image+03.jpg" alt="ipsec_image_03.jpg" />
-</p>
+   <p>1. Log on to the <a href="//control.ctl.io/">Control Portal</a>. Using the left side navigation bar, click <b>Network</b> > <b>VPN</b>.</p>
+<p>2. Select the create point to point VPN button.</p>
+<p>3. Select the appropriate Cloud Data Center for the VPN Tunnel.</p>
 <p>4. Select the the network blocks you want reachable under your account. It is permissible to supply tunnel access to specific servers or small subnets within your cloud networks.</p>
-<p><img src="https://t3n.zendesk.com/attachments/token/fjqwdjeo1wpgldw/?name=ipsec+image+04.jpg" alt="ipsec_image_04.jpg" />
-</p>
 <p>5. Input 'Your Site' Information:</p>
 <ul>
   <ul>
     <li>Site Name (ex. Montreal Office)</li>
     <li>Device Type (ex. Cisco ASA5520 v8.3)</li>
     <li>VPN Peer IPv4 Address: &nbsp;Static IP of the peering interface on your device</li>
-    <li>Tunnel Encrypted Subnets: &nbsp;The network blocks you wish to have be reached on your end of the tunnel -&nbsp;<strong>these must be private IP blocks (RFC-1918). Please note that the 172.17.1.0/24 network is in use by CLC for management purposes and should not be used as a remote network. If your remote networks conflict with the CLC customer network blocks in use for the specified datacenter then your VPN becomes a Non-standard configuration that will require NAT. You can email help@ctl.io for a list of CLC customer network blocks for a specified datacenter.</strong>
+    <li>Tunnel Encrypted Subnets: &nbsp;The network blocks you wish to have be reached on your end of the tunnel --&nbsp;<strong>these must be private IP blocks (RFC-1918). Please note that the 172.17.1.0/24 network is in use by CLC for management purposes and should not be used as a remote network. If your remote networks conflict with the CLC customer network blocks in use for the specified datacenter then your VPN becomes a Non-standard configuration that will require NAT. You can email help@ctl.io for a list of CLC customer network blocks for a specified datacenter.</strong>
     </li>
   </ul>
-</ul>
-<p><img src="https://t3n.zendesk.com/attachments/token/izbezakbvlohipc/?name=ipsec+image+05.jpg" alt="ipsec_image_05.jpg" />
-</p>
+</ul></p>
 <p>6. Input the Phase 1 (IKE) information</p>
 <ul>
   <ul>
@@ -66,9 +58,7 @@
     <li>NAT-T State: &nbsp;&nbsp;Allows connections to VPN end-points behind a NAT device. Defaults to 'off' - if you require NAT-T, you also need to provide the private IP address that your VPN endpoint will use to identify itself.</li>
     <li>Remote Identity: &nbsp;The Private IP Address that your VPN endpoint will use to identify itself. Required only when NAT-T state is on.&nbsp;</li>
   </ul>
-</ul>
-<p><img src="https://t3n.zendesk.com/attachments/token/mw8k0nuwjpeyxbj/?name=update+nat-t.png" alt="update_nat-t.png" />
-</p>
+</ul></p>
 <p>7. Input the Phase 2 (IPSEC) information and select Finish to complete the tunnel configuration.</p>
 <ul>
   <ul>
@@ -79,8 +69,6 @@
     <li>Lifetime Value (1 hour; 8 hours; 24 hours). Lifetime is set to 1 Hour&nbsp;(and unlimited KB). This setting is not required to match, as the negotiation process will choose the shortest value supplied by either peer.</li>
   </ul>
 </ul>
-<p><img src="https://t3n.zendesk.com/attachments/token/ufpxph5fmzyhe5o/?name=ipsec+image+07.jpg" alt="ipsec_image_07.jpg" />
-</p>
 
 <h3><strong>Standard Troubleshooting</strong></h3>
 <div>Our configuration will be established based on the parameters in the Control Portal self-service interface. If you need to open a ticket reporting trouble establishing a tunnel, please also start a continuous ping with traffic interesting to the VPN configuration.
