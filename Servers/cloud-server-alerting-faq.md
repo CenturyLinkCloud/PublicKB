@@ -1,6 +1,6 @@
 {{{
   "title": "Cloud Server Alerting FAQ",
-  "date": "10-10-2019",
+  "date": "10-26-2021",
   "author": "Daniel Gainer",
   "attachments": [],
   "contentIsHTML": false
@@ -8,7 +8,7 @@
 
 ### Description
 
-The Lumen Cloud has updated the Server Alerting capabilities which offer a new way to create and manage alert policies.
+The Lumen Cloud has updated the Server Alerting capabilities that offer a new way to create and manage alert policies.
 
 **Q: What's new in the server alerting service?**
 
@@ -46,14 +46,8 @@ Once in the **Alert Policies** submenu, click "+ alert policy" and provide a nam
 
 **A:** The Control Portal now provides a powerful way to detect alerts in progress. First, the user interface navigation highlights which servers are currently in an alert stage. The alerting status rolls up to the group containing the server, and the data center containing the group.
 
-![monitoringfaq03](https://t3n.zendesk.com/attachments/token/ftand3mijcud2dj/?name=monitoringfaq03.png)
-
 The server page itself also shows the alert details. You can see both the current amount of CPU/memory/storage consumption, and where the consumption exceeded the alert threshold.
-
-![monitoringfaq04](https://t3n.zendesk.com/attachments/token/vm6apqjxnfhqkpg/?name=monitoringfaq04.png)
 
 **Q: How do alert webhooks work?**
 
 **A:** Webhooks are a powerful way to build a more event-driven relationship with your cloud environment. Users of webhooks can integrate internal systems with the resources running in the cloud. Alerts are now available as webhooks! Whenever an alert fires, the Lumen Cloud platform sends out a JSON-encoded message to a web address specified by the user. These JSON messages include the name of alert, account name, server name, and threshold violation details. Users can choose to also receive webhook events for alerts raised in any sub accounts.
-
-![monitoringfaq05](https://t3n.zendesk.com/attachments/token/jtiu0cckldrrzll/?name=monitoringfaq05.png)
