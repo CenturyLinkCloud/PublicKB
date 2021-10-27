@@ -1,6 +1,6 @@
 {{{
   "title": "Lumen Edge Bare Metal Availability",
-  "date": "10-26-2021",
+  "date": "10-28-2021",
   "author": "Randy Roten",
   "attachments": [],
   "contentIsHTML": false,
