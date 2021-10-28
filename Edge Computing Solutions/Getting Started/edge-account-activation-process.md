@@ -63,8 +63,8 @@ A Lumen account specialist will reach out to you within 3 business days to assis
 5. Mark the **I'm not a robot** checkbox.
 6. On the **Verify Your Account** dialog, click the **SUBMIT** button to receive a verification code via the Mobile contact number entered on the previous screen. After entering the verification code, your display will transition to the **Lumen Edge Services Details** dialog.
 7. Fill out the form and review for accuracy.
-8. **NOTE THAT YOU MUST MARK THE Business address same as invoice address** checkbox, unless this is not the case. If your business address is not the same as your invoice address, leave this checkbox blank.
-9.	Please review, save, or print the documents linked to in the I have read and agree… section on the form.
+8. NOTE THAT YOU MUST MARK THE **Business address same as invoice address** checkbox, unless this is not the case. If your business address is not the same as your invoice address, leave this checkbox blank.
+9.	Please review, save, or print the documents linked to in the **I have read and agree…** section on the form.
 10.	Mark the check box next to I have read and agree… after you have fully read and agree to the terms provided.
 11. Click the **CREATE ACCOUNT** button after you have fully read and agree to the terms provided.
 12. Your Account Activation request will then automatically process.
@@ -74,7 +74,7 @@ A Lumen account specialist will reach out to you within 3 business days to assis
 
 **Edge Account Activation Failures**
 
-There are two reasons why you may get an Edge account activation failure message.
+Below are two reasons that you may get an Edge account activation failure message.
 
 - Your organization already has an Edge Account.
 
