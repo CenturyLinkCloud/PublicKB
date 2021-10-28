@@ -76,12 +76,12 @@ A Lumen account specialist will reach out to you within 3 business days to assis
 
 There are two reasons why you may get an Edge account activation failure message.
 
-1. Your organization already has an Edge Account.
+- Your organization already has an Edge Account.
 
 In this scenario, a pop-up message will display on the page that says **Account Already Exists**.
 In this event, you will need to contact your [Control Center system administrator](https://controlcenter.lumen.com/business/prelogin/#/self-registration) to request access to the account.
 
-2. Account Activation Failed for unknown reasons
+- Account Activation Failed for unknown reasons
 
 In this scenario, a pop-up message will display on the page that says **Something went wrong**.  
 In this event, please reach out to the Lumen Edge Customer Care team 24/7 by phone 800-536-3273 or by email at [EdgeServicesIncident@lumen.com](mailto:EdgeServicesIncident@lumen.com).
