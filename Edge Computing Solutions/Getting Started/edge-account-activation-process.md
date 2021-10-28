@@ -44,9 +44,9 @@ A Lumen account specialist will reach out to you within 3 business days to assis
 3. Enter your Control Center credentials.
 4. A form will pre-populate based on the Control Center credentials provided.
 5. Fill out the form and review for accuracy.
-6. 9.	Please review, save, or print the documents linked to in the **I have read and agree…** section on the form.
-7. Click the check box next to **I have read and agree…** after you have fully read and agree to the terms provided.
-8. Click the **I'm not a robot** box.
+6. Please review, save, or print the documents linked to in the **I have read and agree…** section on the form.
+7. Mark the checkbox next to **I have read and agree…** after you have fully read and agree to the terms provided.
+8. Mark the **I'm not a robot** checkbox.
 9. Please review the additional terms listed under the **Activate Account** button.
 10. Click the **Activate Account** button after you have fully read and agree to the terms provided.
 11. Your Account Activation request will then automatically process.
@@ -65,7 +65,7 @@ A Lumen account specialist will reach out to you within 3 business days to assis
 7. Fill out the form and review for accuracy.
 8. NOTE THAT YOU MUST MARK THE **Business address same as invoice address** checkbox, unless this is not the case. If your business address is not the same as your invoice address, leave this checkbox blank.
 9.	Please review, save, or print the documents linked to in the **I have read and agree…** section on the form.
-10.	Mark the check box next to I have read and agree… after you have fully read and agree to the terms provided.
+10.	Mark the checkbox next to I have read and agree… after you have fully read and agree to the terms provided.
 11. Click the **CREATE ACCOUNT** button after you have fully read and agree to the terms provided.
 12. Your Account Activation request will then automatically process.
 13. If your account activation is successful, a pop-up message that says **Success!** displays on the page and you will receive an email with your Edge Account information.
