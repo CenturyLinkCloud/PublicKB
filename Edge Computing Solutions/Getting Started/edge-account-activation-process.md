@@ -31,7 +31,7 @@ Existing Lumen Customers can also reach out to their account manager for further
 
 Self-service Edge account activation will be available for U.S. and, in the future, non-U.S. global customers.
 
-If you are a non-U.S. global customer and want to create an Edge account, please go [here](https://www.ctl.io/edge-computing-solutions/account-activation/) click the **CONTACT AN EXPERT** button.
+If you are a non-U.S. global customer and want to create an Edge account, please go [here](https://www.ctl.io/edge-computing-solutions/account-activation/) and click the **CONTACT AN EXPERT** button.
 
 A Lumen account specialist will reach out to you within 3 business days to assist you.
 
