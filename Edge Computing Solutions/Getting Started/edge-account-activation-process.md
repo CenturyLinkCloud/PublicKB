@@ -1,7 +1,7 @@
 {{{
   "title": "Edge Account Activation Process",
-  "date": "09-28-2021",
-  "author": "Brandy Smith",
+  "date": "10-28-2021",
+  "author": "Randy Roten",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
@@ -36,20 +36,39 @@ A Lumen account specialist will reach out to you within 3 business days to assis
 
 ### Edge Account Activation Process
 
+#### Existing Lumen Customer with a Control Center Account
+
 1. Please go [here](https://www.ctl.io/edge-computing-solutions/account-activation/) to start the process.
-2. Select the "SIGN IN TO CONTROL CENTER" button.
+2. Click the **SIGN IN TO CONTROL CENTER** button.
 3. Enter your Control Center credentials.
 4. A form will pre-populate based on the Control Center credentials provided.
 5. Fill out the form and review for accuracy.
-6. Please review, save, or print the documents listed under the 'By clicking Agree' section on the form.
-7. Click the check box next to 'By clicking Agree' after you have fully read and agree to the terms provided.
-8. Click the 'I'm not a robot' box.
-9. Please review the additional terms listed under the 'Activate Account' button.
-10. Click the 'Activate Account' button after you have fully read and agree to the terms provided.
+6. Please review, save, or print the documents listed under the **By clicking Agree** section on the form.
+7. Click the check box next to **By clicking Agree** after you have fully read and agree to the terms provided.
+8. Click the **I'm not a robot** box.
+9. Please review the additional terms listed under the **Activate Account** button.
+10. Click the **Activate Account** button after you have fully read and agree to the terms provided.
 11. Your Account Activation request will then automatically process.
-12. If your account activation is successful, you will see a pop-up message display on the page that says "Success!" and will receive an email with your Edge Account information.
-13. The email will contain the customer specific URL to access the Lumen Edge Orchestrator portal, credentials, and other helpful Getting Started and Support information.
-14. Once you receive the email, you can access the Lumen Edge Orchestrator portal and start to self-service provision Edge Computing Solutions.
+12. If your account activation is successful, a pop-up message that says **Success!** displays on the page and you will receive an email with your Edge Account information.
+13. The email will contain the customer-specific URL to access the Lumen Edge Services portal, credentials, and other helpful Getting Started and Support information.
+14. Once you receive the email, you can access the Lumen Edge Services portal and start to self-service provision your Lumen Edge Services.
+
+#### New Business Customers
+
+1. Please go [here](https://www.ctl.io/edge-computing-solutions/account-activation/) to start the process.
+2. Click the **GET STARTED** button.
+3. Enter your Control Center credentials.
+4. A form will pre-populate based on the Control Center credentials provided.
+5. Fill out the form and review for accuracy.
+6. Please review, save, or print the documents listed under the **By clicking Agree** section on the form.
+7. Click the check box next to **By clicking Agree** after you have fully read and agree to the terms provided.
+8. Click the **I'm not a robot** box.
+9. Please review the additional terms listed under the **Activate Account** button.
+10. Click the **CREATE ACCOUNT** button after you have fully read and agree to the terms provided.
+11. Your Account Activation request will then automatically process.
+12. If your account activation is successful, a pop-up message that says **Success!** displays on the page and you will receive an email with your Edge Account information.
+13. The email will contain the customer-specific URL to access the Lumen Edge Services portal, credentials, and other helpful Getting Started and Support information.
+14. Once you receive the email, you can access the Lumen Edge Services portal and start to self-service provision your Lumen Edge Services.
 
 **Edge Account Activation Failures**
 
