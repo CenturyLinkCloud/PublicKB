@@ -1,3 +1,13 @@
+{{{
+  "title": "Control Portal Navigation Update",
+  "date": "11-3-2021",
+  "author": "Jeremy Peters",
+  "attachments": [],
+  "related-products" : [],
+  "contentIsHTML": false,
+  "sticky": false
+}}}
+
 ### Main Navigation
 
 Using the navigation bar along the left side of the page, we have organized services and settings into eight categories, each containing links to services and settings that fall within each category.
