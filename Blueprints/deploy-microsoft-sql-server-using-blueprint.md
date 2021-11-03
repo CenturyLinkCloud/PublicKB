@@ -100,19 +100,6 @@ The following are quick tips/notes based on past experiences with customers leve
 
     ![confirm inputs and deploy](../images/deploy-microsoft-sql-server-using-blueprint-09.png)
 
-### Installing Microsoft SQL Server using Runner
-
-1. Navigate to **Orchestration, Runner** in Control.
-
-    ![navigate to runner](../images/deploy-microsoft-sql-server-using-blueprint-10.png)
-
-2. Search for **sql**, select the **Install Microsoft SQL Server 2016 on Windows**, and choose **run**.
-
-    ![search for runner job](../images/deploy-microsoft-sql-server-using-blueprint-11.png)
-
-3. Input the appropriate parameters based on the SQL server requirements for your application and select the Virtual Machine(s) you wish to execute the install against. When ready select **run**.
-
-    ![select servers and features for runner](../images/deploy-microsoft-sql-server-using-blueprint-12.png)
 
 ### Changelog
 
