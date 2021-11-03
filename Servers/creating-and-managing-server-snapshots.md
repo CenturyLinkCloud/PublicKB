@@ -53,8 +53,6 @@ Customers can delete a snapshot by selecting the red X next to the snapshot name
 
 ### Scheduling Snapshots
 1. One-time snapshots can be configured as a [Scheduled Task](creating-a-scheduled-task.md)
-2. There are cases where a customer will benefit from taking or reverting snapshots of a server or group on a regular basis. Our [Runner Service](../Runner/getting-started-with-runner.md) provides the ability to schedule repeating snapshot events, there is an existing published Runner Snapshot Job.
-
 
 ### Summary
 The basic points to remember about snapshots:
