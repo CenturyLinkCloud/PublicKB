@@ -1,7 +1,7 @@
 {{{
   "title": "Bare Metal FAQ",
-  "date": "09-27-2021",
-  "author": "Lumen",
+  "date": "11-3-2021",
+  "author": "Jeremy Peters",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": false
