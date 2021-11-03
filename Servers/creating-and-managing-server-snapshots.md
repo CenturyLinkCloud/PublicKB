@@ -1,7 +1,7 @@
 {{{
   "title": "Creating and Managing Server Snapshots",
-  "date": "9-12-2017",
-  "author": "Chris Little",
+  "date": "11-3-2021",
+  "author": "Jeremy Peters",
   "attachments": [],
   "contentIsHTML": false
 }}}
