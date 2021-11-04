@@ -1,7 +1,7 @@
 {{{
   "title": "Deploy Microsoft SQL Server using Blueprint",
-  "date": "2-7-2018",
-  "author": "Chris Little",
+  "date": "11-3-2021",
+  "author": "Jeremy Peters",
   "attachments": [],
   "contentIsHTML": false
 }}}
@@ -17,7 +17,6 @@
 * [General Notes](#general-notes)
 * [Installing Microsoft SQL Server using Execute Package](#installing-microsoft-sql-server-using-execute-package)
 * [Installing Microsoft SQL Server using Blueprint Library](#installing-microsoft-sql-server-using-blueprint-library)
-* [Installing Microsoft SQL Server using Runner](#installing-microsoft-sql-server-using-runner)
 * [Changelog](#changelog)
 
 ### Overview
@@ -52,7 +51,7 @@ The following are quick tips/notes based on past experiences with customers leve
 
 * The Microsoft SQL Server 2016 package allows a customer to select an install drive for the software. Legacy packages (MS SQL 2008, 2012 & 2014) installs to `C:\`. Customers can modify the SQL database, tempdb, log locations post install to other volumes using SQL tools.
 * The Microsoft SQL Server 2016 package leverages Windows Authentication during installation. This is based on Microsoft best practices. Customers who wish to use **mixed** mode authentication can [change the server authentication mode.](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/change-server-authentication-mode) 
-* SQL Server Management Studio is no longer installed by default on SQL 2016 packages. Now that management tools like SSMS are packaged separate from the installer we are leaving it up to the customers to install management software if they desire using [automated methods](https://runner.ctl.io/product/bd967fd2-1fb5-4d8c-8dca-43a753624bcd-sql-server-management-studio) or [downloading the binaries from Microsoft directly.](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms)
+* SQL Server Management Studio is no longer installed by default on SQL 2016 packages. Now that management tools like SSMS are packaged separate from the installer we are leaving it up to the customers to install management software if they desire by [downloading the binaries from Microsoft directly.](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms)
 * The fee's for Microsoft SQL server will be applied automatically to the customers invoice when using the public Blueprint. These fee's are available in the [Pricing Catalog](//www.ctl.io/pricing). If you are unsure what these fee's are please contact your account manager.
 * Licensing fee's are adjusted based on number of vCPU allocated to a virtual machine with a minimum of 4 vCPU license fees incurred.  Customers billing will be modified as vCPU configurations change.
 * Customers can **add features** to an existing SQL instance by running the Blueprint multiple times on the same server and only selecting the additional features required.
@@ -100,19 +99,6 @@ The following are quick tips/notes based on past experiences with customers leve
 
     ![confirm inputs and deploy](../images/deploy-microsoft-sql-server-using-blueprint-09.png)
 
-### Installing Microsoft SQL Server using Runner
-
-1. Navigate to **Orchestration, Runner** in Control.
-
-    ![navigate to runner](../images/deploy-microsoft-sql-server-using-blueprint-10.png)
-
-2. Search for **sql**, select the **Install Microsoft SQL Server 2016 on Windows**, and choose **run**.
-
-    ![search for runner job](../images/deploy-microsoft-sql-server-using-blueprint-11.png)
-
-3. Input the appropriate parameters based on the SQL server requirements for your application and select the Virtual Machine(s) you wish to execute the install against. When ready select **run**.
-
-    ![select servers and features for runner](../images/deploy-microsoft-sql-server-using-blueprint-12.png)
 
 ### Changelog
 
