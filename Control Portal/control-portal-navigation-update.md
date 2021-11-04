@@ -1,24 +1,16 @@
 {{{
   "title": "Control Portal Navigation Update",
-  "date": "7-6-2016",
-  "author": "Nathan Young",
+  "date": "11-3-2021",
+  "author": "Jeremy Peters",
   "attachments": [],
   "related-products" : [],
   "contentIsHTML": false,
   "sticky": false
 }}}
 
-_NOTE: On July 19, the user interface for the Lumen Cloud will be updated with a new navigation menu. Most notably, the interactive main navigation bar at the top of the screen will be removed in favor of a left-hand navigation experience. This new approach better reflects the breadth and depth of our services. Our Creative Director, Nathan Young explains the rationale behind this change, and what users can expect when they login after the update._
-
-Over the past year, we’ve added new services like [Runner](https://www.ctl.io/runner/), [relationalDB](https://www.ctl.io/relational-database/), and [Simple Backup](https://www.ctl.io/simple-backup-service/), with more under development and on the way. With a growing portfolio of services, it’s become clear that we have outgrown the existing navigation menu in the Control Portal. So earlier this year we began to update the design of the Control Portal to better accommodate for existing services, while allowing room for us to add more down the road.
-
-![Screenshot of the Control Portal Dashboard with new main navigation](../images/menu.png)
-
-We’ve redesigned our Control Portal experience with you in mind, to make navigation faster, more intuitive, and mobile-friendly. Additionally, we also want to give you consistent, high-quality experience when interacting with the Lumen Cloud Control Portal, and our cloud-related services. But before it launches, here's a preview of what’s to come.
-
 ### Main Navigation
 
-The green top navigation bar has been replaced with a new nav bar on the left side of the page. We have organized services and settings into eight categories, each containing links to services and settings that fall within each category.
+Using the navigation bar along the left side of the page, we have organized services and settings into eight categories, each containing links to services and settings that fall within each category.
 
 ![Animated gif of Control Portal main navigation menu behavior](../images/menu-behavior.gif)
 
@@ -26,7 +18,7 @@ The green top navigation bar has been replaced with a new nav bar on the left si
 * **Create:** a menu for quickly provision servers or services
 * **Infrastructure:** manage your servers by data center
 * **Network:** network and ip address management
-* **Orchestration:** Runner and Blueprints
+* **Orchestration:** Blueprints
 * **Services:** Relational DB
 * **Queue:** blueprint queue
 * **Settings:** account settings, user management, branding and theming
