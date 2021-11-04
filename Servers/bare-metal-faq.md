@@ -1,7 +1,7 @@
 {{{
   "title": "Bare Metal FAQ",
-  "date": "09-27-2021",
-  "author": "Lumen",
+  "date": "11-3-2021",
+  "author": "Jeremy Peters",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": false
@@ -179,8 +179,6 @@ For complete customization to configure the RAID controller and disks as desired
 For command line scripting:
 * [PERCCLI Utility provided by Dell](http://www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=3XDPP)
 
-In addition, Runner jobs will soon be made available to help automate certain common configurations making RAID configurations easier.
-
 **Can I customize my network interface configuration on a Bare Metal server?**
 
 Yes, Bare Metal servers do support multiple vNIC configurations. Additional vNICs can be [added through the API](//www.ctl.io/api-docs/v2/#servers-add-secondary-network). It is not advised to make any other manual network configuration changes as they may be detrimental to associated support and automated provisioning services.
@@ -296,7 +294,3 @@ Windows VMs in a Hyper-V environment on Bare Metal servers should use IPs in the
 **Does Lumen provide OS media (ISO's) for guest VMs on Windows 2012 Datacenter Edition with Hyper-V?**
 
 Customers are responsible for supplying their own guest VM OS media when using the Windows 2012 Datacenter Edition virtualization features.
-
-**Can I use Runner to automate my deployment and provisioning of Bare Metal?**
-
-Yes, Lumen Runner is integrated with Bare Metal to automate your deployments and provisioning of your servers. For more information on how to leverage Runner on Bare Metal, reference [Lumen Runner](https://www.ctl.io/runner/)   
