@@ -20,8 +20,8 @@ If you have yet to add credentials for the instance type (Linux or Windows) to y
 
 In the event that you accidentally provision a server prior to adding your credentials, please delete the server, set your credentials, and deploy a new server.
 
-**Password Requirnments per Operating System** 
-Below are the Password requirnments per Operating System as defined by the OS vendor. 
+**Password Requirements per Operating System** 
+Below are the Password requirements per Operating System as defined by the OS vendor. 
 
 * There are no password limitation on the clean install of ubuntu and centos, however BAD PASSWORD message will show up while trying to set the password and whenever there is a BAD PASSWORD prompt for the following conditions, user-data script is not able to set the credentials properly and user will not be able to login.
 
@@ -31,20 +31,20 @@ Below are the Password requirnments per Operating System as defined by the OS ve
 
 * Centos 7.9 and 8.3- Email addresses are not allowed, dictionary words can’t be used as a password, the password cannot contain username in any form
 
-**CentOS Specific Password Requirnments**
+**CentOS Specific Password Requirements**
 
 -must be at least eight characters long
 -may contain numbers, letters (upper and lower case) and symbols
 -is case-sensitive and should contain a mix of cases
 -should not be a word, abbreviation, or number associated with you, your organization, or found in a dictionary (including foreign languages)
 
-For more information on CentOS password requirnments, please view the [CentOS Password Guide](https://docs.centos.org/en-US/centos/install-guide/PasswordSpoke-x86/).
+For more information on CentOS password requirements, please view the [CentOS Password Guide](https://docs.centos.org/en-US/centos/install-guide/PasswordSpoke-x86/).
 
-**Linux/Ubuntu Specific Password Requirnments**
+**Linux/Ubuntu Specific Password Requirements**
 
 By default, Ubuntu requires a minimum password length of 6 characters, as well as some basic entropy checks. These values are controlled in the file /etc/pam.d/common-password, which is outlined below.
 
-For more information on Linux/Ubuntu password requirnments, please view the [Linux/Ubuntu Password Guide](https://discourse.ubuntu.com/t/security-users/11881?_ga=2.165443519.1432061935.1635536798-1887843182.1635536798).
+For more information on Linux/Ubuntu password requirements, please view the [Linux/Ubuntu Password Guide](https://discourse.ubuntu.com/t/security-users/11881?_ga=2.165443519.1432061935.1635536798-1887843182.1635536798).
 
 **Steps to add Linux and Windows Settings under the User Profile**
 1. Log into the Edge Services portal.
