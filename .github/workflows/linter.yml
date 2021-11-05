@@ -52,3 +52,5 @@ jobs:
           DEFAULT_BRANCH: master
           VALIDATE_MARKDOWN: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Try to get lint logs
+        run: cat super-linter.log
