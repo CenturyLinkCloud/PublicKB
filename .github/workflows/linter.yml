@@ -55,8 +55,8 @@ jobs:
           VALIDATE_MARKDOWN: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
-      - name: Print logs
-        run: cat super-linter.log
+      - name: Print linting errors
+        run: grep "^\/github\/workspace\/" super-linter.log
       ########################
       # Comment output on PR #
       ########################
@@ -64,7 +64,7 @@ jobs:
         uses: mshick/add-pr-comment@v1
         with:
           message: |
-            **Hello**
+            **Please address the following issues:**
             🌏
             !
           repo-token: ${{ secrets.GITHUB_TOKEN }}
