@@ -55,7 +55,13 @@ jobs:
           VALIDATE_MARKDOWN: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
-      - uses: mshick/add-pr-comment@v1
+      - name: Print logs
+        run: cat super-linter.log
+      ########################
+      # Comment output on PR #
+      ########################
+      - name: Add PR Comment
+        uses: mshick/add-pr-comment@v1
         with:
           message: |
             **Hello**
