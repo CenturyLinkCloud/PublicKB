@@ -57,6 +57,8 @@ jobs:
       
       - name: Print linting errors
         run: grep "^\/github\/workspace\/" super-linter.log
+      - name: Set SUPER_LINTER_OUTPUT variable
+        run: SUPER_LINTER_OUTPUT=$(grep "^\/github\/workspace\/" test.txt | tr '\n' '\1')
       ########################
       # Comment output on PR #
       ########################
@@ -65,7 +67,6 @@ jobs:
         with:
           message: |
             **Please address the following issues:**
-            🌏
-            !
+            ${echo "$SUPER_LINTER_OUTPUT" | tr '\1' '\n'}
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           allow-repeats: false
