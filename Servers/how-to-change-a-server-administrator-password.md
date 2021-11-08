@@ -1,31 +1,77 @@
 {{{
-  "title": "How to change a server administrator or root password",
-  "date": "09-30-2021",
-  "author": "Nathan Young",
+  "title": "Changing a Server Administrator or Root Password",
+  "date": "11-09-2021",
+  "author": "Derek Jansen",
   "attachments": [],
-  "contentIsHTML": true
+  "contentIsHTML": false
 }}}
 
-<p>You can change your password easily through the&nbsp;<a href="https://control.ctl.io/">Lumen Cloud Control Portal</a>. It's important that the Control Portal and your server's password match in order to perform certain control functions such as adding disks, adding IP addresses, and deploying blueprints. There are a couple of pre-requisites required to perform this task:</p>
-<ol>
-  <li>First, you must have an account that has administrator or root access for your company.&nbsp;&nbsp;</li>
-  <li>Next, you must have the prior password for the server that was sent to you when your server was created. If this password has changed, please change it back within the Operating System to match the portal before proceeding.</li>
-</ol>
- If you meet both these requirements, log in to the Control Portal and follow the steps below:
+### Description
 
-<p>From the left navigation menu, click <b>Infrastructure</b> > <b>Servers</b>.</p>
+It is important that the control portal and the server's password match for the following functionality.
 
-<p>This will take you to the Servers page, which lists the servers in your environment. Select the server who's administrator or root password you wish to change, and then click the account link on the top right of the screen.</p>
-<p><img src="../images/dccf/ChangePassword1.png" />
-</p>
+- performing certain functions such as adding disks, adding IP addresses, or cloning virtual machines
+- displaying disk partition information
 
-<p>On the <b>User Profile</b> page, you can update your password for control. Click on the <b>password</b> field, and type a new password.</p>
-<p>&nbsp;<img src="../images/dccf/ChangePassword2.png"  />
-</p>
+### Prerequisites
 
-<p>Click the <b>SAVE</b> button to save your changes and apply your new password.</p>
+- a [control portal user]() with the [appropriate permissions]()
 
-<p><b>Important Information for Windows Domain Controllers and mismatch of root/administrator password between control and server.</b></p>
-<br>
- 
- Our system periodically connects to VMs to get partition information that can be displayed in control. It does this by attempting to use the local administrator account that is registered with it to log in and query the OS. On Domain Controllers, this will most likely show periodic failed login attempts in your event logs, since a local administrator user does not exist. If you view your server in control, you will not see any partition information displayed, which is the result of a failure to get that information from the server's OS. This is a known control portal limitation if a server password doesn't match the control portal, or if the expected administrator/root isn't available. Cloning a Domain Controller is not supported. On both Linux and Windows servers, cloning and other automation will fail if passwords don't match.
+### Detailed Steps
+
+There are two tools that can be used to performing this action: the control portal, and the API.
+
+#### API
+
+There is a CLI tool available for performing a number of API calls. Installation and usage of this tool is covered in our knowledge base article "[Public Cloud Guide to CLI](../Servers/lumen-cloud-guide-to-cli.md)".
+
+Alternatively, our API can be [called directly](//www.ctl.io/api-docs/v2/#servers-set-server-credentials).
+
+#### Control Portal
+
+1. Log into the [Public Cloud control portal](//control.ctl.io).
+2. On the left side of the page, select "infrastructure" then "servers".  
+![Navigating to the Servers Page](../images/servers-dashboard-select.png)
+3. Select the relevant data center, the server's group, then the server itself.  
+![Selecting the Server](../images/server-group-select.png)
+    - Alternatively, use the search function by selecting the magnifying glass icon on the top-right corner of the page next to your username, then provide either the server's name or private IP address.  
+    ![Search Magnifying Glass](../images/search-magnifying-glass.png)  
+    ![Search Field](../images/search-field.png)
+4. On the right side of the action control bar, select "settings".  
+![Opening Server Settings](../images/opening-server-settings.png)
+5. In the information list, select "password".  
+![Opening Password Change Fields](../images/opening-password-change-fields.png)
+6. Fill out the appropriate fields.  
+![Password Change Fields](../images/password-change-fields.png)
+    - Current Password: Provide the password that is [currently stored in the control portal](). If this password is different from the one set on the OS side of the server, proceed to the [troubleshooting section](#troubleshooting).
+    - New/Confirm Password: These fields should have the desired new password.
+
+### Troubleshooting
+
+We have covered a few common troubleshooting scenarios below.
+
+#### Windows Domain Controllers
+
+The event logs may show periodic failed login attempts since the local user "administrator" is disabled. As noted at the top of this article, these logins are attempting to gather disk partition information to be displayed by the platform system via the control portal and the API.
+
+If there is an active user "administrator" on the domain, then the event logs may show periodic failed login attempts because the password, stored by the platform, does not match the one set for that domain user. This can be fixed by following the below steps.
+
+#### OS Password Does Not Match the Platform
+
+When viewing the password stored by the platform via the control portal or the API, it is possible that it does not match what is actually set on the server. The here are two options for fixing this issue.
+
+Option 1:
+
+1. Log into the server and change the password so that it maches what is currently shown by the control portal or the API.
+2. Follow the instructions in the [detailed steps section](#detailed-steps) of this article to change the password in order to ensure that the platform with the server's OS are synchronized.
+
+Option 2:
+
+1. When running the tool the first time, set the following values.
+    - Current Password: This should be the value **currently stored by the platform**.  
+    - New Password: This should be the password that **actually set in the OS**.
+2. During the second run, use the following values.
+    - Current Password: Since the platform and the server now match, make this the actual current value.  
+    - New Password: Provide the desired value.
+
+If the password set on the server is not known, [open a ticket](../Support/how-do-i-report-a-support-issue.md) for assistance with resetting the password.
