@@ -1,3 +1,5 @@
+# For rules reference: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+
 # Default state for all rules
 default: true
 
@@ -6,11 +8,6 @@ extends: null
 
 # MD001/heading-increment/header-increment - Heading levels should only increment by one level at a time
 MD001: true
-
-# MD002/first-heading-h1/first-header-h1 - First heading should be a top-level heading
-MD002:
-  # Heading level
-  level: 1
 
 # MD003/heading-style/header-style - Heading style
 MD003:
@@ -23,10 +20,7 @@ MD004:
   style: "consistent"
 
 # MD005/list-indent - Inconsistent indentation for list items at the same level
-MD005: true
-
-# MD006/ul-start-left - Consider starting bulleted lists at the beginning of the line
-MD006: true
+MD005: false
 
 # MD007/ul-indent - Unordered list indentation
 MD007:
@@ -68,13 +62,13 @@ MD013:
   # Number of characters for code blocks
   code_block_line_length: 80
   # Include code blocks
-  code_blocks: true
+  code_blocks: false
   # Include tables
-  tables: true
+  tables: false
   # Include headings
-  headings: true
+  headings: false
   # Include headings
-  headers: true
+  headers: false
   # Strict length checking
   strict: false
   # Stern length checking
@@ -108,7 +102,7 @@ MD023: true
 # MD024/no-duplicate-heading/no-duplicate-header - Multiple headings with the same content
 MD024:
   # Only check sibling headings
-  allow_different_nesting: false
+  allow_different_nesting: true
   # Only check sibling headings
   siblings_only: false
 
@@ -133,7 +127,7 @@ MD028: true
 # MD029/ol-prefix - Ordered list item prefix
 MD029:
   # List style
-  style: "one_or_ordered"
+  style: "ordered"
 
 # MD030/list-marker-space - Spaces after list markers
 MD030:
@@ -157,7 +151,7 @@ MD032: true
 # MD033/no-inline-html - Inline HTML
 MD033:
   # Allowed elements
-  allowed_elements: []
+  allowed_elements: ["h1", "h2", "h3", "h4", "h5", "h6", "p", "div", "ul", "ol", "li", "table", "thead", "tbody", "tr", "th", "td", "span", "a", "strong", "i"]
 
 # MD034/no-bare-urls - Bare URL used
 MD034: true
@@ -206,7 +200,7 @@ MD044:
   # List of proper names
   names: []
   # Include code blocks
-  code_blocks: true
+  code_blocks: false
 
 # MD045/no-alt-text - Images should have alternate text (alt text)
 MD045: true
