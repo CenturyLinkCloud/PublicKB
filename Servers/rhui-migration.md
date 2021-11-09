@@ -1,5 +1,5 @@
 {{{
-  "title": "RHUI 2 to 3 Migration",
+  "title": "RHUI 2-to-3 Migration",
   "date": "10-25-2021",
   "author": "Derek Jansen",
   "attachments": [],
@@ -8,7 +8,7 @@
   "sticky": false
 }}}
 
-### Description
+## Description
 
 This article will provide instructions for remediating 404 responses from T3N.DOM repositories when updating RHEL 6 or RHEL 7 servers. An example of such a 404 response is as follows.
 
@@ -16,26 +16,26 @@ This article will provide instructions for remediating 404 responses from T3N.DO
 https://VA1T3NRHCDS02.t3n.dom/pulp/repos///content/dist/rhel/rhui/server/7/7Server/x87_64/os/Packages/kernetl-devel-3.10.0-862.e17.x86_64.repm: [Errno 14] HTTPS Error 404 - Not Found
 ```
 
-### Detailed Steps
+## Detailed Steps
 
 The issue can be fixed by running a package script provided by the Public Cloud platform. The following steps are instructions on running the stated package script via the control portal or the API.
 
 #### Control Portal
 
 1. Log into the [control portal](//control.ctl.io).
-1. Select "infrastructure" on the left-hand navigation menu, then select "servers".  
+2. Select "infrastructure" on the left-hand navigation menu, then select "servers".  
 ![Navigating to the Servers List](../images/servers-dashboard-select.png)
-1. Select the server's group (e.g. "Default Group").  
+3. Select the server's group (e.g. "Default Group").  
 ![Navigating to the Server's Group](../images/server-group-select.png)
-1. On the action bar above the graphs, select "execute package".  
+4. On the action bar above the graphs, select "execute package".  
 ![Opening the Script Package Execution Page](../images/execute-package-select.png)
-1. Select the package script.
+5. Select the package script.
     1. Provide "rhui" in the package library search field.
-    1. Select the "all" radial button.
-    1. Select "RHUI 2 to 3 Migration Script".  
+    2. Select the "all" radial button.
+    3. Select "RHUI 2 to 3 Migration Script".  
     ![Selecting the Script Package](../images/script-package-select.png)
-1. Select the desired server from the server list, then select "execute package".
-1. You will be redirected to the deployment queue. Once the job is complete, log into the server and run `yum clean all` before attempting another update.
+6. Select the desired server from the server list, then select "execute package".
+7. You will be redirected to the deployment queue. Once the job is complete, log into the server and run `yum clean all` before attempting another update.
 
 #### API
 
