@@ -23,7 +23,7 @@ Users employed by companies that have agreed to terms with [Lumen Sales](http://
 
 ### Technical Requirements
 * The Managed Server build process requires HTTPS outbound connectivity (and DNS resolution) to the API endpoint webhook.managedos.ctl.io
-* Account impersonation is not supported when building Managed Servers. Account impersonation simply refers to the end users ability to leverage our [Account Hierarchy](../Accounts & Users/account-hierarchy-user-network-and-firewall-policy-primer.md) feature to login to a parent account and operate services in sub-accounts. For the provisioning process of Managed Servers, users of the platform should leverage a named user in the specific [account alias](../Support/determine-control-portal-alias.md) into which the server is being deployed.
+* Account impersonation is not supported when building Managed Servers. Account impersonation simply refers to the end users ability to leverage our [Account Hierarchy](../Accounts & Users/account-hierarchy-user-network-and-firewall-policy-primer.md) feature to login to a parent account and operate services in sub-accounts. For the provisioning process of Managed Servers, users of the platform should leverage a named user in the specific [account alias](../Control Portal/finding-account-alias.md) into which the server is being deployed.
 
 ### Important Information
 
