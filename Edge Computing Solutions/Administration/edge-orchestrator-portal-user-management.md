@@ -1,6 +1,6 @@
 {{{
-  "title": "User Management",
-  "date": "10-28-2021",
+  "title": "Edge Orchestrator Portal User Management",
+  "date": "11-09-2021",
   "author": "Brandy Smith",
   "attachments": [],
   "contentIsHTML": false,
