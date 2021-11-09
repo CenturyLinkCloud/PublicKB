@@ -1,7 +1,7 @@
 {{{
   "title": "Getting Support for Public Cloud Services",
-  "date": "3-1-2018",
-  "author": "Justin Lentz, 9-17-2021 edits: Randy Roten",
+  "date": "11-09-2021",
+  "author": "Derek Jansen",
   "attachments": [],
   "contentIsHTML": false,
   "sticky": true
