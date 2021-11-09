@@ -17,7 +17,7 @@ Images of existing physical or virtual servers can be imported directly onto the
 3. [Open a support ticket](../Support/how-do-i-report-a-support-issue.md). Provide the following details.
     - [support PIN](../Support/pin-authentication-for-support-requests.md)
     - explict approval of [the service task charges](//www.ctl.io/lumen-public-cloud/service-tasks/#169)
-    - [destination account's alias](../Support/determine-control-portal-alias.md)
+    - [destination account's alias](../Control Portal/finding-account-alias.md)
     - name of the server group in the control portal under which the VM will reside
     - [desired VM name](../Servers/server-naming-convention.md)
     - network to be used by the VM as it's represented in the portal
