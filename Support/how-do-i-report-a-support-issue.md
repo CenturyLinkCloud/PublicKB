@@ -1,5 +1,5 @@
 {{{
-  "title": "How do I get support for Lumen Cloud services?",
+  "title": "Getting Support for Public Cloud Services",
   "date": "3-1-2018",
   "author": "Justin Lentz, 9-17-2021 edits: Randy Roten",
   "attachments": [],
@@ -7,7 +7,7 @@
   "sticky": true
 }}}
 
-### Table of Contents
+## Table of Contents
 
 * [Overview](#overview)
 * [Audience](#audience)
@@ -19,22 +19,29 @@
 * [Latin America](#latin-america)
 * [FAQ](#faq)
 
-### Overview
-Lumen Cloud offers [flexible support options](//www.ctl.io/support/) for customers of all sizes, with optional add-on Service Engineering support as needed. In order to provide a quality service and quickly resolve incidents use the information below as a guide.  
+---
+## Overview
 
-### Audience
+Public Cloud offers [flexible support options](//www.ctl.io/support/) for customers of all sizes, with optional add-on Service Engineering support as needed. In order to provide a quality service and quickly resolve incidents use the information below as a guide.  
 
-* Lumen Cloud Customers
+---
+## Audience
 
-### Exceptions
+- Public Cloud customers
+
+---
+## Exceptions
+
 [Managed Services](//www.ctl.io/managed-services) customers should use the data below to request support for Managed OS or Applications:
 
 **Phone**|**Email for Incidents**|**Email for Requests**
 ---------|---------|---------
 US: 888.638.6771<br>UK: +44.118.322.6100<br>Singapore: +65.6305.8099| incident@centurylink.com | request@centurylink.com
 
-### Email Support
-1. Use the template below, providing relevant information for each line item.  It is very important that you include your [account alias,](../Support/determine-control-portal-alias.md) username and [user PIN](../Support/pin-authentication-for-support-requests.md) when submitting a support request as we use this information as a means of authenticating the request.
+---
+## Email Support
+
+1. Use the template below, providing relevant information for each line item.  It is very important that you include your [account alias,](../Control Portal/finding-account-alias.md) username and [user PIN](../Support/pin-authentication-for-support-requests.md) when submitting a support request as we use this information as a means of authenticating the request.
 
     ```
     Account Alias:
@@ -57,7 +64,9 @@ US: 888.638.6771<br>UK: +44.118.322.6100<br>Singapore: +65.6305.8099| incident@c
 
     ![submit a support request](../images/how-do-i-get-support-for-centurylink-cloud-services-01.PNG)
 
-### Chat Support
+---
+## Chat Support
+
 Customers in the **Professional and Enterprise** support tier can leverage our real-time chat system.
 
 1. Login to the [Control Portal](//control.ctl.io), select the **?** icon and choose **Chat with support.**
@@ -69,10 +78,13 @@ Customers in the **Professional and Enterprise** support tier can leverage our r
 2. Provide your Account Alias, [user PIN](../Support/pin-authentication-for-support-requests.md) and description of the problem to the support engineer.
 
 ### Chat System Requirements
-* Supported operating systems: Windows XP, Vista, 7, 8, 8.1, 10, Mac OS X 10.8 and newer
-* Supported browsers: Chrome 31 and newer, Mozilla Firefox 29 and newer, Internet Explorer 7 and newer, Safari 6 and newer, Opera 12 and newer
 
-### Phone Support
+- Supported Operating Systems: Windows XP, Vista, 7, 8, 8.1, 10, Mac OS X 10.8 and newer
+- Supported Browsers: Chrome 31 and newer, Mozilla Firefox 29 and newer, Internet Explorer 7 and newer, Safari 6 and newer, Opera 12 and newer
+
+---
+## Phone Support
+
 Customers in the **Professional and Enterprise** support tier can leverage our phone support.
 
 1. Be prepared with the following information for phone support.
@@ -89,8 +101,9 @@ Customers in the **Professional and Enterprise** support tier can leverage our p
 
 2. Currently Lumen Public Cloud calls should be made directly to the Customer Care team via the USA number at +1 (425) 321-0338.
 
+---
+## Latin America
 
-### Latin America
 Customers in these countries in Latin America can contact support via email or phone:
 
   **Argentina:** <docbaires@centurylink.com>
@@ -128,7 +141,8 @@ Customers in these countries in Latin America can contact support via email or p
   +58 212 204 9301
   After language selection press 3
 
-### FAQ
+---
+## FAQ
 
 **I have an email thread with my sales team on this issue. Why is this not being worked?**
 
