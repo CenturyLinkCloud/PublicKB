@@ -1,6 +1,6 @@
 {{{
   "title": "Configuring MySQL for High Availability",
-  "date": "10-2-2014",
+  "date": "10-26-2021",
   "author": "Bryan Friedman",
   "attachments": [],
   "contentIsHTML": true
@@ -24,7 +24,11 @@ Replication
   is updated. This means you can read data from any slave database server, but should only ever write to the master. There are many potential <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions.html">solutions</a> that
   can take advantage of this type of configuration. Perhaps you want to use the slaves as <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-backups.html">database backups</a>, distribute some data to more <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-partitioning.html"
   target="_self">geographically desirable locations</a> for certain user queries, or even use them as the connection points for read-only analytics applications so as not to affect performance of the master (be careful though, too many slaves can result
-  in <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-performance.html">performance degradation</a> of the master). In the case of a failover situation, if your master goes down, you can (manually) <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-switch.html"
+  in <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-performance.html">performance degradation</a> of the master). 
+  
+  <br>
+  
+  In the case of a failover situation, if your master goes down, you can (manually) <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-switch.html"
  >turn any slave into the master</a> and have the system back up in less time than it might take to rebuild from backups. And, of course, you may simply want to use them to <a href="http://dev.mysql.com/doc/refman/5.7/en/replication-solutions-scaleout.html"
  >scale out </a>your environment and spread your load across multiple servers as you might do on the web tier as well (remember though, the app can read from any slave, but it must always write to the master). Whatever the scenario you
   plan to use replication for, the below steps will walk you through getting MySQL master and slave instances up and running on the Lumen Cloud.</p>
@@ -37,27 +41,22 @@ Replication
 
 <div>
   <ol>
-    <li><strong>Create Server (Master).</strong> Here we will use the Ubuntu 12 64-bit template.
-      <br /><img src="https://t3n.zendesk.com/attachments/token/Yrw7HiEbIwxfVnoqJsRQWe6hm/?name=create-master.png" alt="create-master.png" /><img src="https://t3n.zendesk.com/attachments/token/EsMuteRIDJIxubJ4Kz7sMGMdu/?name=master-server-details.png" alt="master-server-details.png"
-      />
+    <li><strong>Create Server (Master).</strong> You can use the Ubuntu 12 64-bit template.
     </li>
     <li><strong>Install MySQL.</strong> This will become the "master" server.
-      <br />We will use the following script to install the MySQL package using Ubuntu's package manager. You could also create a <a href="https://t3n.zendesk.com/entries/20348448-Blueprints-Script-and-Software-Package-Management">blueprint script</a>      to do this, but since we are only installing on one server for now, we will logon to the server and run the commands manually.
+      <br />You can install the MySQL package using Ubuntu's package manager. You could also create a blueprint script to do this, but since we are only installing on one server for now, we will logon to the server and run the commands manually.
       <pre>apt-get update<br />apt-get -y install mysql-server mysql-client</pre>
       <p>During the installation, you will be prompted to enter a password for the MySQL admin user, which you should not leave blank.</p>
     </li>
-    <li><strong>Clone Server (Slave).</strong> Since we have a basic vanilla install of MySQL now, we will clone the master server before configuring it. This clone will become the "slave".
-      <br /><img src="https://t3n.zendesk.com/attachments/token/Wv2S0jYsBM0ObeuBqWSPAE7jZ/?name=clone-master.png" alt="clone-master.png" /><img src="https://t3n.zendesk.com/attachments/token/v5p7PGjPYpIVFXjOfm4c499tF/?name=clone-master-form.png" alt="clone-master-form.png"
-      />
+    <li><strong>Clone Server (Slave).</strong> Since we have a basic vanilla install of MySQL now, we will clone the master server before configuring it. This clone will become the "slave."
     </li>
     <li><strong>Configure Master.<br /></strong>Log into the master server with SSH and perform the following steps:</li>
     <ol>
       <li><strong>Create database.</strong>
-        <br />Login to the mysql client and use the <code>create database</code> command to create a database. In this example, we will use the name <code>my_database</code>.
-        <br /><img src="https://t3n.zendesk.com/attachments/token/3mcNUvu9PNSnD8VwhOylmaqol/?name=create-database.png" alt="create-database.png" />
+        <br />Login to the mysql client and use the <code>create database</code> command to create a database.</code>
         <br />After creating the database, you can <code>quit</code> the mysql client for now.</li>
       <li><strong>Update config file.</strong>
-        <br />You will need to edit the MySQL config file located at <code>/etc/mysql/my.cnf</code>&nbsp;.
+        <br />You must edit the MySQL config file located at <code>/etc/mysql/my.cnf</code>&nbsp;.
         <pre>vi /etc/mysql/my.cnf</pre>
         <p>First, you need to find the line that says <code>bind-address = 127.0.0.1</code>&nbsp;and replace it with the IP of this server, which you can get from the control portal or by using the <code>ifconfig</code> command. Here's what ours will look
           like in this example:</p>
@@ -69,20 +68,17 @@ Replication
         <pre>log_bin = /var/log/mysql/mysql-bin.log</pre>
         <p>Finally, we set the <code>binlog_do_db</code> parameter to the database that we want to replicate, in this case the database we created in the first step above:</p>
         <pre>binlog_do_db = my_database</pre>
-        <p>Then, all we have to do is restart mysql from the command prompt with <code>service mysql restart</code>:
-          <br /><img src="https://t3n.zendesk.com/attachments/token/kpQvLNdAT1v0pJ8BP1twDJ7fP/?name=mysql-restart.png" alt="mysql-restart.png" />
+        <p>Then, all we have to do is restart mysql from the command prompt with <code>service mysql restart</code>.
         </p>
       </li>
-      <li><strong>Grant privileges and get status.<br /></strong>Back in the mysql command line client, you will use the following command to grant privileges on the database to a user that the slave servers will use to read the data from the master. Here,
-        you can use any password you want, but for this example, we will just use <code>password</code>:
+      <li><strong>Grant privileges and get status.<br /></strong>Back in the mysql command line client, use the following command to grant privileges on the database to a user that the slave servers will use to read the data from the master. Here,
+        you can use any password you want.
         <br />
         <pre>GRANT REPLICATION SLAVE ON *.* TO 'slave_user'@'%' IDENTIFIED BY 'password';<br />FLUSH PRIVILEGES;</pre>
-        <img src="https://t3n.zendesk.com/attachments/token/48VrGoW2P0pzXDJFIJrVTYJz8/?name=grant-privs.png" alt="grant-privs.png" />
         <br />
         <br />Now we need to get some information about the master database with the following command:
         <br />
-        <pre>SHOW MASTER STATUS;</pre> This will show us a table that includes the position from which the slave database will start replicating. Take note of this information as we will need it later to configure the slave:
-        <br /><img src="https://t3n.zendesk.com/attachments/token/AakQM6fhmYUg92eXPKnOkBqoe/?name=show-master.png" alt="show-master.png" />
+        <pre>SHOW MASTER STATUS;</pre> This will show us a table that includes the position from which the slave database will start replicating. Take note of this information as we will need it later to configure the slave.
       </li>
       <li><strong>Export database.<br /></strong>Back at the shell prompt, we'll use the <code>mysqldump</code> command to export the database.&nbsp;<em><em>Note: Since we just created this database, we don't actually have any data in it yet, but if we did, this step would ensure the slave starts with the same data the master already has.<br /></em></em>
         <pre>mysqldump -u root -p --opt my_database &gt; my_database.sql</pre>
@@ -92,14 +88,12 @@ Replication
     <ol>
       <li><strong>Create database.</strong>
         <br />Same as before, login to the mysql client and use the&nbsp;<code>create database</code>&nbsp;command to create a database called <code>my_database</code>.
-        <br /><img src="https://t3n.zendesk.com/attachments/token/3mcNUvu9PNSnD8VwhOylmaqol/?name=create-database.png" alt="create-database.png" />
       </li>
       <li><strong>Import database.<br /></strong>First, we need to retrieve the export file from the master server. We can use <code>scp</code> to do this:
         <br />
         <pre>scp root@10.126.32.14:~/my_database.sql .</pre>
         <p>Then we will import the database:</p>
         <pre>mysql -u root -p my_database &lt; my_database.sql</pre>
-        <img src="https://t3n.zendesk.com/attachments/token/6yVqZGjj6rSCweHA6Rmh6pKu1/?name=import-master-db.png" alt="import-master-db.png" />
       </li>
       <li><strong>Update config file.<br /></strong>Next we update the configuration file in a similar way as we did on the master. We don't need to worry about the IP address in this case, but we need to set the <code>server-id</code> (to something other
         than 1), uncomment the <code>log_bin</code> line, and uncomment and set the <code>binlog_do_db</code> value:
@@ -108,18 +102,16 @@ Replication
         <pre>log_bin = /var/log/mysql/mysql-bin.log</pre>
         <pre>binlog_do_db = my_database</pre> We also need to add one more line that isn't in the file by default:
         <br />
-        <pre>relay-log               = /var/log/mysql/mysql-relay-bin.log</pre> A MySQL restart is required to apply the changes:
-        <br /><img src="https://t3n.zendesk.com/attachments/token/kpQvLNdAT1v0pJ8BP1twDJ7fP/?name=mysql-restart.png" alt="mysql-restart.png" />
+        <pre>relay-log               = /var/log/mysql/mysql-relay-bin.log</pre> A MySQL restart is required to apply the changes.
       </li>
       <li><strong>Start slave.<br /></strong>Now we need that information from the master server that we took down. From the mysql client on the slave, we'll enter the following command based on the IP address of the master and the information we got from
         before, and then start the slave:
         <br />
         <pre>CHANGE MASTER TO MASTER_HOST='10.126.32.14',MASTER_USER='slave_user',MASTER_PASSWORD='password',MASTER_LOG_FILE='mysql-bin.000001',MASTER_LOG_POS=557;<br /><br />START SLAVE;</pre>
-        <img src="https://t3n.zendesk.com/attachments/token/5VuLsu2FQ3FhT5ZHLOx8VlWBN/?name=start-slave.png" alt="start-slave.png" />
       </li>
     </ol>
     <li><strong>Confirm data replication.<br /></strong>You can test the setup by inserting data into a table on the master, then querying the slave to ensure the data is replicated correctly.</li>
-    <li><em>(Optional)</em> Repeat steps 4 and 6 for each additional slave.</li>
+    <li><em><strong>(Optional)</strong></em> Repeat steps 4 and 6 for each additional slave.</li>
   </ol>
   <a name="clustering"></a>
   Cluster
@@ -140,8 +132,6 @@ Replication
     <li><strong>Install MySQL cluster binary.</strong> This will become the "management node" (ndb_mgmd).
       <br />For clustered versions of MySQL, unfortunately we cannot use the regular binaries that come from our public Linux package manager libraries, so we'll have to download the binary from Oracle's site and then copy it on to our server for installation.
       We can find the binaries available at&nbsp;<a href="http://dev.mysql.com/downloads/cluster/">http://dev.mysql.com/downloads/cluster/</a>&nbsp;where for this example we will select and download the&nbsp;<em>MySQL-Cluster-server-gpl-7.3.6-2.el6.x86_64.rpm</em>      package for Red Hat Linux. (For instructions on other operating systems, refer to the <a href="http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster-installation.html">MySQL manual</a>.) Once downloaded, we can use <code>scp</code>      (or another file transfer tool) to copy the file onto the server.
-      <br /><img src="https://t3n.zendesk.com/attachments/token/491wL9Gleycg9Y7teloVDzm0M/?name=scp-mysql-binary.png" alt="scp-mysql-binary.png" />
-      <br />
       <br />Once it's there, we'll login to the server with SSH, change to the directory where it's located, and run the following commands to get it installed. The first command ensures we won't have any version conflicts, and the second command installs the
       package.
       <br />
@@ -278,7 +268,6 @@ hostname=10.71.9.15             # Hostname or IP address
       <li><strong>Confirm successful startup.<br /></strong>From the management node server, you can issue the <code>ndb_mgm</code> command to start the management client. From this prompt, type <code>SHOW</code> to confirm all the nodes are up and running
         successfully. You can use this command at any time to investigate the health of the cluster.
         <br />
-        <br /><img src="https://t3n.zendesk.com/attachments/token/4GMLUwPbdBvlIffrc93o1yr7O/?name=ndb_mgm_show.png" alt="ndb_mgm_show.png" />
       </li>
     </ol>
     <li><strong>Create database and tables.<br /></strong>Now that you have a cluster up and running, you can use it for high-availability databases. You can logon to the SQL node with any MySQL client and create a database. If you want the tables in this

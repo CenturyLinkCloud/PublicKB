@@ -1,6 +1,6 @@
 {{{
   "title": "Building CoreOS Server Cluster on the Lumen Cloud",
-  "date": "10-14-2014",
+  "date": "10-26-2021",
   "author": "Bryan Friedman",
   "attachments": [],
   "contentIsHTML": true
@@ -14,10 +14,6 @@ Overview
 <p>The basic steps are as follows, with further details below.</p>
 <ol>
   <li>Create a dedicated network (VLAN) in the data center you wish to install CoreOS servers.</li>
-    <ul>
-      <li>Reference&nbsp;<a href="https://t3n.zendesk.com/entries/21806469-Creating-and-Deleting-VLANs">Creating and Deleting VLANs</a>&nbsp;for details</li>
-      <li>Take note of the name of this network so you can use it later.</li>
-    </ul>
   <li>Deploy the "DHCP-PXE Server" blueprint.</li>
     <ul>
       <li>Make sure to deploy to the data center/VLAN you set up in Step 1 above.</li>
@@ -37,78 +33,73 @@ Overview
 <p>(Note: There are some <a href="#limitations">limitations</a>&nbsp;to the functionality that the Control Portal provides for interacting with these CoreOS servers.)</p>
 Detailed Steps
 <h3>Setup Network</h3>
-<p>(You may also reference the article, <a href="https://t3n.zendesk.com/entries/21806469-Creating-and-Deleting-VLANs">Creating and Deleting VLANs</a> for more details about the below steps.)</p>
+
 <ol>
-  <li>In the main drop down menu, select "Networks".</li>
+  <li>In the main drop down menu, select "Networks."</li>
   <li>Change to the data center that you wish to provision to.</li>
-  <li>Select "Add Network".&nbsp;This will kick off a new blueprint to add a network to your account.<strong><br /></strong>
+  <li>Select "Add Network."&nbsp;This will kick off a new blueprint to add a network to your account.<strong><br /></strong>
   </li>
   <li>On the network page, select the data center that the network was added to.</li>
   <li>Select the network that was just added.</li>
-  <li>Click on "Edit" and give the network a more friendly name and description such as "CoreOS | 10.xxx.xxx" and then select "Save". This will make it&nbsp;so you can more easily find and select this specific VLAN later.&nbsp;</li>
+  <li>Click "Edit" and give the network a more friendly name and description such as "CoreOS | 10.xxx.xxx" and then select "Save". This will make it&nbsp;so you can more easily find and select this specific VLAN later.&nbsp;</li>
 </ol>
 <h3>Deploy DHCP-PXE Server</h3>
 <ol>
-  <li>In the main drop down menu, select "Blueprints Library".</li>
+  <li>In the main drop down menu, select "Blueprints Library."</li>
   <li>Make sure the data center is selected that you wish to provision to (the same one where you setup the network above).</li>
   <li>Find the blueprint called "DHCP-PXE Server" and click it.</li>
   <li>This will open the details of the blueprint. From here, click "deploy blueprint" to begin the process of provisioning the server.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/MLQZWQ2O9TaKVmU43Vlk11Arl/?name=dhcp-blueprint.jpg" alt="dhcp-blueprint.jpg" />
   </li>
-  <li>The following page will now be displayed, requiring you to enter in some information about the server to be deployed:
+  <li>The next page requires you to enter information about the server to be deployed:
     <ul>
-      <li>Enter a strong password (twice)</li>
-      <li>Select the server group you wish the server to be created in (Default Group is shown here, but you may select a different one if you have created a separate one for your CoreOS cluster for example)</li>
-      <li>Select the network that you created in the first steps above</li>
-      <li>Specify the primary and secondary DNS servers</li>
-      <li>Choose the desired server type (if available) and service level</li>
-      <li>You may also choose to rename the server instead of "DHCP"</li>
-      <li>Leave "Specify Credential" options set to "no"</li>
+      <li>Enter a strong password (twice).</li>
+      <li>Select the server group you wish the server to be created in (You may select a different group from the default if you have created a separate one for your CoreOS cluster, for example.)</li>
+      <li>Select the network that you created in the first steps above.</li>
+      <li>Specify the primary and secondary DNS servers.</li>
+      <li>Choose the desired server type (if available) and service level.</li>
+      <li>You may also choose to rename the server, instead of "DHCP."</li>
+      <li>Leave "Specify Credential" options set to "no."</li>
+      <li>Now click the "next: step 2" button at the bottom of the page to move on to the next step.</li>
     </ul>
-    <img src="https://t3n.zendesk.com/attachments/token/dvPRI9TUAVdhfeXGfJVBGvfqt/?name=deploy-dhcp.jpg" alt="deploy-dhcp.jpg" />
-    <br />
-    <br />Now click the "next: step 2" button at the bottom of the page to move on to the next step.</li>
-  <li>You can now review the selected settings and go back to the previous page (using the links on the left side) if you need to make any changes. If everything looks good, click the "deploy blueprint" button at the bottom of the page to start the blueprint
+    
+  <li>You can now review the selected settings and go back to the previous page (using the links on the left side) if you need to make any changes. If everything looks good, click the "DEPLOY BLUEPRINT" button at the bottom of the page to start the blueprint.
     deployment.</li>
   <li>This will add the blueprint to the queue. Once it completes successfully, you should see a new server set up in the group and data center that you chose during deployment. This server will act as the DHCP and PXE server for the CoreOS servers you will
     create in the following steps.</li>
 </ol>
 <h3>Deploy First CoreOS Server</h3>
 <ol>
-  <li>In the main drop down menu, select "Blueprints Library".</li>
+  <li>In the main drop down menu, select "Blueprints Library."</li>
   <li>Make sure the same data center is selected that you chose in the previous steps.</li>
   <li>Find the blueprint called "CoreOS Server" and click it.</li>
-  <li>This will open the details of the blueprint. From here, click "deploy blueprint" to begin the process of provisioning the server.</li>
+  <li>This will open the details of the blueprint. From here, click "DEPLOY BLUEPRINT" to begin the process of provisioning the server.</li>
   <li>The following page will now be displayed, requiring you to enter in some information about the server to be deployed:
     <ul>
       <li>Enter a strong password (twice) <em>(Note: This password will not actually be used to login to the server as you will use SSH key authorization to access your CoreOS servers. However, you are still required to enter a strong password here in order to deploy the blueprint.)</em>
       </li>
-      <li>Select the server group you wish the server to be created in (Default Group is shown here, but you may select a different one if you have created a separate one for your CoreOS cluster for example)</li>
-      <li>Select the network that you created in the first steps above</li>
-      <li>Specify the primary and secondary DNS servers</li>
-      <li>Choose the desired server type (if available) and service level</li>
-      <li>You may also choose to rename the server instead of "COREOS"</li>
-      <li>Leave "Specify Credential" options set to "no"</li>
+      <li>Select the server group you wish the server to be created in (You may select a different server group than the default one if you have created a separate one for your CoreOS cluster, for example).</li>
+      <li>Select the network that you created in the first steps above.</li>
+      <li>Specify the primary and secondary DNS servers.</li>
+      <li>Choose the desired server type (if available) and service level.</li>
+      <li>You may also choose to rename the server, instead of "COREOS."</li>
+      <li>Leave the "Specify Credential" options set to "no."</li>
       <li><strong>Very Important Step: </strong><em>For "Execute on Server", select the name of the DHCP server you created in the previous step, NOT the COREOS machine you are currently creating. The script to install CoreOS runs remotely from the DHCP server, not on the CoreOS server itself since, as specified above, the password will not work to login directly to the CoreOS machine.</em>
       </li>
       <li>Optionally, you may provide the full string of a public key to be used for logging into the CoreOS server over SSH in the "SSH Public Key" field. If you do not provide a value here, you will have to access the CoreOS server by first using SSH to
         login to the DHCP server using the password provided when deploying that server, and then using SSH from there to login to the CoreOS server. (For information about how to generate an SSH key pair, you can follow the instructions <a href="http://git-scm.com/book/en/Git-on-the-Server-Generating-Your-SSH-Public-Key"
        >here</a>.)</li>
+       <li>Now click the "next: step 2" button at the bottom of the page to move on to the next step.</li>
     </ul>
-    <img src="https://t3n.zendesk.com/attachments/token/iKZpCmjII9uDEDeIC8Vgcq5zR/?name=deploy-coreos.jpg" alt="deploy-coreos.jpg" />
-    <br />
-    <br />Now click the "next: step 2" button at the bottom of the page to move on to the next step.</li>
-  <li>You can now review the selected settings and go back to the previous page (using the links on the left side) if you need to make any changes. If everything looks good, click the "deploy blueprint" button at the bottom of the page to start the blueprint
+  <li>You can now review the selected settings and go back to the previous page (using the links on the left side) if you need to make any changes. If everything looks good, click the "DEPLOY BLUEPRINT" button at the bottom of the page to start the blueprint.
     deployment.</li>
   <li>This will add the blueprint to the queue and take you to the "Request Details" page for the task. Wait for the task to complete, and when it has successfully completed, click the "build log" button.
-    <br /><img src="https://t3n.zendesk.com/attachments/token/f3AJo1wpUfS8qi2wbJUembvhh/?name=coreos-queue-complete.jpg" alt="coreos-queue-complete.jpg" />
   </li>
   <li>This should display a message log with details from the blueprint deployment.</li>
   <ul>
     <li>Search for the text "Server: " and you should find the name of the server that was just deployed.</li>
     <li>Search for the text "IP Address of CoreOS Server" on the page and you should find a message that says "IP Address of CoreOS Server: 10.xxx.xxx.xxx" with the IP address that was used for the server. <em>Take note of this address for future use. (You may even wish to add it to the Description field on the server details page for the server with the name you found in the above step.)</em>
     </li>
-    <li>Right below the IP Address message, you should also see the discovery URL that was used for the CoreOS cluster as well as the cloud-config file that was generated during install in case you find these helpful for interacting with your CoreOS server
+    <li>Right below the IP Address message, you should also see the discovery URL that was used for the CoreOS cluster, as well as the cloud-config file that was generated during install in case you find these helpful for interacting with your CoreOS server
       cluster.&nbsp;</li>
   </ul>
   <li>You should now see a new server set up in the group and data center that you chose during deployment with the name you found next to "Server: " in the previous step. This is your first CoreOS server in the cluster. If you provided a public SSH key,
