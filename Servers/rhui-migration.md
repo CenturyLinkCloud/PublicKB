@@ -16,10 +16,12 @@ This article will provide instructions for remediating 404 responses from T3N.DO
 https://VA1T3NRHCDS02.t3n.dom/pulp/repos///content/dist/rhel/rhui/server/7/7Server/x87_64/os/Packages/kernetl-devel-3.10.0-862.e17.x86_64.repm: [Errno 14] HTTPS Error 404 - Not Found
 ```
 
+---
 ## Prerequisites
 
 - SSH access for Root
 
+---
 ## Detailed Steps
 
 The issue can be fixed by running a package script provided by the Public Cloud platform. The following steps are instructions on running the stated package script via the control portal or the API.
@@ -54,6 +56,7 @@ There are two methods of calling the API: [directly](//www.ctl.io/api-docs/v2/#s
 }
 ```
 
+---
 ## Troubleshooting
 
 If SSH access is not enabled for Root, then the job will fail because the platform uploads and runs the script package via SSH as Root.
