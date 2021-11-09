@@ -48,27 +48,8 @@ jobs:
       ################################
       - name: Lint Code Base
         uses: github/super-linter/slim@v4
-        continue-on-error: true
         env:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: master
           VALIDATE_MARKDOWN: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Print linting errors
-        run: grep "^\/github\/workspace\/" super-linter.log
-      - name: Set SUPER_LINTER_OUTPUT variable
-        run: SUPER_LINTER_OUTPUT=$(grep "^\/github\/workspace\/" super-linter.log | tr '\n' '\1')
-      - name: Print SUPER_LINTER_OUTPUT variable
-        run: echo $SUPER_LINTER_OUTPUT
-      ########################
-      # Comment output on PR #
-      ########################
-      - name: Add PR Comment
-        uses: mshick/add-pr-comment@v1
-        with:
-          message: |
-            **Please address the following issues:**
-            echo ${"$SUPER_LINTER_OUTPUT" | tr '\1' '\n'}
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          allow-repeats: false
