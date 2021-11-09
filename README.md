@@ -1,3 +1,6 @@
+# Archived
+Please see [CenturyLink/Knowledge-Base](https://github.com/CenturyLink/Knowledge-Base)
+
 ![Build Status of master branch](https://travis-ci.org/CenturyLinkCloud/PublicKB.svg?branch=master)
 
 # Lumen Cloud Knowledge Base
