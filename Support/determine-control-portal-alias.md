@@ -1,21 +1,21 @@
 {{{
-  "title": "How do I find my Control Portal account alias?",
-  "date": "2-15-2017",
-  "author": "Chris Little",
+  "title": "Finding the Account Alias",
+  "date": "11-9-2021",
+  "author": "Derek Jansen",
   "attachments": [],
   "contentIsHTML": false
 }}}
 
-### Overview
-Customers at times may be required to find their Control Portal Account Alias.  This is a globally unique Alphanumeric character set used in support requests and other functions.  To obtain or determine your alias you can follow the steps below.
+## Description
 
-### Steps
-1. Login to the [Control Portal.](//control.ctl.io)
+An account alias is a 2-4 character alphanumeric code that is used to uniquely identify a specific account.
 
-2. Navigate to **Settings > Account Profile.**
+---
+## Detailed Steps
 
-  ![Account Profile](../images/determine-control-portal-alias-01.png)
+When logged into the [control portal](//control.ctl.io), the account alias will be shown in the top-left corner of the page. Alternatively, it can also be found using the following steps.
 
-3. The **Account Alias** will be shown on the info tab.
-
-  ![Account alias](../images/determine-control-portal-alias-02.png)
+1. On the left side of the page, select "settings" then "account profile".  
+![Account Profile](../images/determine-control-portal-alias-01.png)
+2. The account alias will be shown on the info tab.  
+![Account alias](../images/determine-control-portal-alias-02.png)
