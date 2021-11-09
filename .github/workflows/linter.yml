@@ -58,7 +58,7 @@ jobs:
       - name: Print linting errors
         run: grep "^\/github\/workspace\/" super-linter.log
       - name: Set SUPER_LINTER_OUTPUT variable
-        run: SUPER_LINTER_OUTPUT=$(grep "^\/github\/workspace\/" test.txt | tr '\n' '\1')
+        run: SUPER_LINTER_OUTPUT=$(grep "^\/github\/workspace\/" super-linter.log | tr '\n' '\1')
       - name: Print SUPER_LINTER_OUTPUT variable
         run: echo $SUPER_LINTER_OUTPUT
       ########################
