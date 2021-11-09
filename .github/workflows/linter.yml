@@ -59,6 +59,8 @@ jobs:
         run: grep "^\/github\/workspace\/" super-linter.log
       - name: Set SUPER_LINTER_OUTPUT variable
         run: SUPER_LINTER_OUTPUT=$(grep "^\/github\/workspace\/" test.txt | tr '\n' '\1')
+      - name: Print SUPER_LINTER_OUTPUT variable
+        run: echo "$SUPER_LINTER_OUTPUT" | tr '\1' '\n'
       ########################
       # Comment output on PR #
       ########################
