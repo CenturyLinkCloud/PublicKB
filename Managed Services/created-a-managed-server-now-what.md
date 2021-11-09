@@ -1,7 +1,7 @@
 {{{
   "title": "I want a managed server. So what do I do now?",
-  "date": "2-13-2018",
-  "author": "Ben Swoboda",
+  "date": "11-09-2021",
+  "author": "Derek Jansen",
   "attachments": [],
   "contentIsHTML": false
 }}}
