@@ -6,18 +6,20 @@
   "contentIsHTML": false
 }}}
 
-### Description
+## Description
 
 It is important that the control portal and the server's password match for the following functionality.
 
 - performing certain functions such as adding disks, adding IP addresses, or cloning virtual machines
 - displaying disk partition information
 
-### Prerequisites
+---
+## Prerequisites
 
 - a [control portal user]() with the [appropriate permissions]()
 
-### Detailed Steps
+---
+## Detailed Steps
 
 There are two tools that can be used to performing this action: the control portal, and the API.
 
@@ -35,8 +37,8 @@ Alternatively, our API can be [called directly](//www.ctl.io/api-docs/v2/#server
 3. Select the relevant data center, the server's group, then the server itself.  
 ![Selecting the Server](../images/server-group-select.png)
     - Alternatively, use the search function by selecting the magnifying glass icon on the top-right corner of the page next to your username, then provide either the server's name or private IP address.  
-    ![Search Magnifying Glass](../images/search-magnifying-glass.png)  
-    ![Search Field](../images/search-field.png)
+    ![Search Magnifying Glass](../images/search-magnifying-glass.png)  
+    ![Search Field](../images/search-field.png)
 4. On the right side of the action control bar, select "settings".  
 ![Opening Server Settings](../images/opening-server-settings.png)
 5. In the information list, select "password".  
@@ -46,7 +48,8 @@ Alternatively, our API can be [called directly](//www.ctl.io/api-docs/v2/#server
     - Current Password: Provide the password that is [currently stored in the control portal](). If this password is different from the one set on the OS side of the server, proceed to the [troubleshooting section](#troubleshooting).
     - New/Confirm Password: These fields should have the desired new password.
 
-### Troubleshooting
+---
+## Troubleshooting
 
 We have covered a few common troubleshooting scenarios below.
 
